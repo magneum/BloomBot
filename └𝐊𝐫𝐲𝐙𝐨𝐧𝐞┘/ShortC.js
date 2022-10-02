@@ -201,3519 +201,3520 @@ let { advice } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/⚡ʀᴀɴᴅᴏ
 let { reddit } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/⚡ʀᴀɴᴅᴏᴍꜱ/reddit");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function checkBalance(user) {
-await Economy.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
-if (!userEco) {
-await new Economy({
-ID: Vlkyre.sender,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-}).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return true;
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-if (userEco.money < 40) {
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Gold.png",
-`Sorry You Need Atleast 40gold!
+  await Economy.findOne(
+    {
+      ID: Vlkyre.sender,
+    },
+    async (Èrrðr, userEco) => {
+      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+      if (!userEco) {
+        await new Economy({
+          ID: Vlkyre.sender,
+          money: 0,
+          daily: 0,
+          timeout: 86400000,
+          fishdone: 0,
+          fishtimeout: 1800000,
+          workdone: 0,
+          worktimeout: 900000,
+        }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+        return true;
+        ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+      } else {
+        if (userEco.money < 40) {
+          return await Image_Button(
+            ӄryӄnz,
+            Vlkyre,
+            Vlkyre.A𝖗𝖌𝖘,
+            "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Gold.png",
+            `Sorry You Need Atleast 40gold!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`
-);
-return false;
-} else {
-return true;
-}
-}
-}
-);
+          );
+          return false;
+        } else {
+          userEco.money = userEco.money - 40;
+          userEco.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+          return true;
+        }
+      }
+    }
+  );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
-switch (Vlkyre.commandName) {
-case "":
-break;
-case "pokemon":
-if (checkBalance(Vlkyre.sender) === false) return;
-await pokemon(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pokedex":
-if (checkBalance(Vlkyre.sender) === false) return;
-await pokedex(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "carbon":
-if (checkBalance(Vlkyre.sender) === false) return;
-await carbon(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "getgif":
-case "gify":
-case "gif":
-if (checkBalance(Vlkyre.sender) === false) return;
-await gify(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "s":
-case "sgif":
-case "sticker":
-case "stickergif":
-if (checkBalance(Vlkyre.sender) === false) return;
-await sticker(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "toimg":
-if (checkBalance(Vlkyre.sender) === false) return;
-await toimg(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pin":
-case "pinterest":
-if (checkBalance(Vlkyre.sender) === false) return;
-await pinterest(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tourl":
-if (checkBalance(Vlkyre.sender) === false) return;
-await tourl(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "remove":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await remove(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "promote":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await promote(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "admin":
-case "admins":
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await admins(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "demote":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await demote(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "setdesc":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await setdesc(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "seticon":
-case "setgpfp":
-case "setppgrup":
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await setgpfp(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tagall":
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await tagall(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "group":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await group(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "warn":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await warn(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "invite":
-case "grouplink":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await invite(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "del":
-case "delete":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await del(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "antilink":
-case "stoplink":
-case "nolink":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await antilink(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "autorank":
-case "autorole":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await autorank(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "welcome":
-case "welcomer":
-case "setwelcome":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await setwelcome(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "test":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await test(
-Ѷ𝖎𝖔𝖓,
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "rdclaim":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await rdclaim(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "dbrem":
-case "dataclean":
-case "purgedata":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await dbrem(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ban":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await ban(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "unban":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-await unban(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "radio":
-case "randmusic":
-case "randaudio":
-case "randomaudio":
-case "randommusic":
-case "suggestaudio":
-case "suggestmusic":
-await radio(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "yta":
-case "play":
-case "song":
-case "sing":
-case "ytmp3":
-case "ytplay":
-case "ytaudio":
-case "ytmusic":
-case "youtubemusic":
-if (checkBalance(Vlkyre.sender) === false) return;
-await yta(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytv":
-case "watch":
-case "stream":
-case "ytmp4":
-case "ytvideo":
-case "youtubevideo":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytv(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "yts":
-case "ytsearch":
-case "ytscrape":
-case "youtubescrape":
-case "youtubesearch":
-if (checkBalance(Vlkyre.sender) === false) return;
-await yts(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "sr":
-case "reddit":
-case "subreddit":
-if (checkBalance(Vlkyre.sender) === false) return;
-await reddit(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "rank":
-if (checkBalance(Vlkyre.sender) === false) return;
-await rank(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tts":
-case "gtts":
-case "text2speech":
-if (checkBalance(Vlkyre.sender) === false) return;
-await tts(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "fun":
-case "joke":
-case "funny":
-case "laugh":
-case "dadjoke":
-if (checkBalance(Vlkyre.sender) === false) return;
-await joke(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "meme":
-if (checkBalance(Vlkyre.sender) === false) return;
-await meme(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tinyurl":
-if (checkBalance(Vlkyre.sender) === false) return;
-await tinyurl(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "join":
-if (checkBalance(Vlkyre.sender) === false) return;
-await join(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "leave":
-if (checkBalance(Vlkyre.sender) === false) return;
-await leave(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "lyrics":
-if (checkBalance(Vlkyre.sender) === false) return;
-await lyrics(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "gimage":
-case "image":
-if (checkBalance(Vlkyre.sender) === false) return;
-await image(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "web":
-case "find":
-case "search":
-case "google":
-if (checkBalance(Vlkyre.sender) === false) return;
-await google(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "take":
-case "steal":
-if (checkBalance(Vlkyre.sender) === false) return;
-await steal(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "iguser":
-if (checkBalance(Vlkyre.sender) === false) return;
-await iguser(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ship":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ship(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "quote":
-if (checkBalance(Vlkyre.sender) === false) return;
-await quote(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "fact":
-if (checkBalance(Vlkyre.sender) === false) return;
-await fact(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "advice":
-if (checkBalance(Vlkyre.sender) === false) return;
-await advice(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pat":
-if (checkBalance(Vlkyre.sender) === false) return;
-await pat(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "hug":
-if (checkBalance(Vlkyre.sender) === false) return;
-await hug(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "kiss":
-if (checkBalance(Vlkyre.sender) === false) return;
-await kiss(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "cuddle":
-if (checkBalance(Vlkyre.sender) === false) return;
-await cuddle(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "kick":
-if (checkBalance(Vlkyre.sender) === false) return;
-await kick(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bite":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bite(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "blush":
-if (checkBalance(Vlkyre.sender) === false) return;
-await blush(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bored":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bored(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "confused":
-if (checkBalance(Vlkyre.sender) === false) return;
-await confused(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "cry":
-if (checkBalance(Vlkyre.sender) === false) return;
-await cry(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "goodnight":
-if (checkBalance(Vlkyre.sender) === false) return;
-await goodnight(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "happy":
-if (checkBalance(Vlkyre.sender) === false) return;
-await happy(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "poke":
-if (checkBalance(Vlkyre.sender) === false) return;
-await poke(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "sad":
-if (checkBalance(Vlkyre.sender) === false) return;
-await sad(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "slap":
-if (checkBalance(Vlkyre.sender) === false) return;
-await slap(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "smile":
-if (checkBalance(Vlkyre.sender) === false) return;
-await smile(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "wave":
-if (checkBalance(Vlkyre.sender) === false) return;
-await wave(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "wink":
-if (checkBalance(Vlkyre.sender) === false) return;
-await wink(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "dance":
-if (checkBalance(Vlkyre.sender) === false) return;
-await dance(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "baka":
-if (checkBalance(Vlkyre.sender) === false) return;
-await baka(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bonk":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bonk(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "hi5":
-case "highfive":
-if (checkBalance(Vlkyre.sender) === false) return;
-await highfive(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "kill":
-if (checkBalance(Vlkyre.sender) === false) return;
-await kill(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "nervous":
-if (checkBalance(Vlkyre.sender) === false) return;
-await nervous(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "punch":
-if (checkBalance(Vlkyre.sender) === false) return;
-await punch(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "scream":
-if (checkBalance(Vlkyre.sender) === false) return;
-await scream(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "stare":
-if (checkBalance(Vlkyre.sender) === false) return;
-await stare(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "yeet":
-if (checkBalance(Vlkyre.sender) === false) return;
-await yeet(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "yes":
-if (checkBalance(Vlkyre.sender) === false) return;
-await yes(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "waifu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await waifu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "neko":
-if (checkBalance(Vlkyre.sender) === false) return;
-await neko(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "anime":
-if (checkBalance(Vlkyre.sender) === false) return;
-await anime(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "manga":
-if (checkBalance(Vlkyre.sender) === false) return;
-await manga(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "wallpaper":
-if (checkBalance(Vlkyre.sender) === false) return;
-await wallpaper(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bc":
-case "bcgroup":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bcgroup(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "reboot":
-case "restart":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ӄ_counter(2);
-await reboot(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-break;
-case "yt8d":
-if (checkBalance(Vlkyre.sender) === false) return;
-await yt8d(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytbassboost":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytbassboost(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytecho":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytecho(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytflanger":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytflanger(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytnightcore":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytnightcore(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytphaser":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytphaser(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytreverse":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytreverse(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytslow":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytslow(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytspeed":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytspeed(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytsubboost":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytsubboost(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytsuperslow":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytsuperspeed(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytsuperslow":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytsuperslow(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytsurround":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytsurround(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytvaporwave":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytvaporwave(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytvibrato":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ytvibrato(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bassboost":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bassboost(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "echo":
-if (checkBalance(Vlkyre.sender) === false) return;
-await echo(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "flanger":
-if (checkBalance(Vlkyre.sender) === false) return;
-await flanger(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "nightcore":
-if (checkBalance(Vlkyre.sender) === false) return;
-await nightcore(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "phaser":
-if (checkBalance(Vlkyre.sender) === false) return;
-await phaser(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "reverse":
-if (checkBalance(Vlkyre.sender) === false) return;
-await reverse(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "slow":
-if (checkBalance(Vlkyre.sender) === false) return;
-await slow(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "speed":
-if (checkBalance(Vlkyre.sender) === false) return;
-await speed(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "subboost":
-if (checkBalance(Vlkyre.sender) === false) return;
-await subboost(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "superspeed":
-if (checkBalance(Vlkyre.sender) === false) return;
-await superspeed(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "surround":
-if (checkBalance(Vlkyre.sender) === false) return;
-await surround(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "vaporwave":
-if (checkBalance(Vlkyre.sender) === false) return;
-await vaporwave(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "vibrato":
-if (checkBalance(Vlkyre.sender) === false) return;
-await vibrato(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ass":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await ass(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bdsm":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await bdsm(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "cum":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await cum(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "doujin":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await doujin(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "feet":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await feet(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "femdom":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await femdom(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "foxgirl":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await foxgirl(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "glasses":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await glasses(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "hentai":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await hentai(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "maid":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await maid(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "masturbation":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await masturbation(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "netorare":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await netorare(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "orgy":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await orgy(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-Vlkyre.pushName,
-Vlkyre.fromMe,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.groupMetadata,
-Vlkyre.participants,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.groupAdmins,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body,
-Vlkyre.mentionByTag,
-Vlkyre.mentionByReply
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "panties":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await panties(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "school":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await school(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tentacles":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await tentacles(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "thighs":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await thighs(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "uniform":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await uniform(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "yuri":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-await yuri(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "dly":
-case "daily":
-if (checkBalance(Vlkyre.sender) === false) return;
-await daily(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "fish":
-case "pond":
-case "fishes":
-if (checkBalance(Vlkyre.sender) === false) return;
-await fish(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bet":
-case "gamble":
-case "betting":
-case "roulette":
-if (checkBalance(Vlkyre.sender) === false) return;
-await gamble(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "hunt":
-case "hunting":
-case "pokehunt":
-if (checkBalance(Vlkyre.sender) === false) return;
-await hunt(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "zoo":
-case "forest":
-case "animals":
-if (checkBalance(Vlkyre.sender) === false) return;
-await zoo(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pay":
-case "loan":
-case "borrow":
-case "payment":
-if (checkBalance(Vlkyre.sender) === false) return;
-await pay(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "job":
-case "work":
-case "earn":
-if (checkBalance(Vlkyre.sender) === false) return;
-await work(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bal":
-case "gold":
-case "money":
-case "balance":
-if (checkBalance(Vlkyre.sender) === false) return;
-await balance(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "buy":
-if (checkBalance(Vlkyre.sender) === false) return;
-await buy(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "mall":
-case "shop":
-case "store":
-case "shopping":
-if (checkBalance(Vlkyre.sender) === false) return;
-await store(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "rob":
-case "thief":
-case "robbery":
-if (checkBalance(Vlkyre.sender) === false) return;
-await rob(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "bag":
-case "inv":
-case "loot":
-case "inventory":
-if (checkBalance(Vlkyre.sender) === false) return;
-await bag(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "sp":
-case "dev":
-case "devs":
-case "mod":
-case "mods":
-case "moderator":
-case "support":
-case "official":
-case "repo":
-case "githubrepo":
-case "repository":
-case "VLKYRE":
-case "KRAKINZLAB":
-case "vlkyre":
-case "krakinzlab":
-case "BOTSUPPORT":
-if (checkBalance(Vlkyre.sender) === false) return;
-await support(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "r":
-case "rule":
-case "rules":
-case "RULES":
-if (checkBalance(Vlkyre.sender) === false) return;
-await rules(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-break;
-case "h":
-case "how":
-case "help":
-case "HELP":
-if (checkBalance(Vlkyre.sender) === false) return;
-await help(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "m":
-case "menu":
-case "allmenu":
-case "command":
-case "commands":
-if (checkBalance(Vlkyre.sender) === false) return;
-await menu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "animationmenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await AnimationMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "animemenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await AnimeMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "audiofiltermenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await AudioFilterMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "convertermenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await ConverterMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "downloadermenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await DownloaderMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "gamemenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await GameMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "groupmenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await GroupMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "hentaimenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await HentaiMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "nsfwmenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await NsfwMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ownermenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await OwnerMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "randommenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await RandomMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "storemenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await StoreMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "webmenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await WebMenu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ytfiltermenu":
-if (checkBalance(Vlkyre.sender) === false) return;
-await 
-menu(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+  switch (Vlkyre.commandName) {
+    case "":
+      break;
+    case "pokemon":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pokemon(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pokedex":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pokedex(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "carbon":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await carbon(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "getgif":
+    case "gify":
+    case "gif":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await gify(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "s":
+    case "sgif":
+    case "sticker":
+    case "stickergif":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await sticker(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "toimg":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await toimg(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pin":
+    case "pinterest":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pinterest(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tourl":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await tourl(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "remove":
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await remove(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "promote":
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await promote(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "admin":
+    case "admins":
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await admins(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "demote":
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await demote(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "setdesc":
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await setdesc(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "seticon":
+    case "setgpfp":
+    case "setppgrup":
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await setgpfp(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tagall":
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await tagall(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "group":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await group(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "warn":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await warn(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "invite":
+    case "grouplink":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await invite(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "del":
+    case "delete":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await del(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "antilink":
+    case "stoplink":
+    case "nolink":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await antilink(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "autorank":
+    case "autorole":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await autorank(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "welcome":
+    case "welcomer":
+    case "setwelcome":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await setwelcome(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "test":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await test(
+        Ѷ𝖎𝖔𝖓,
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "rdclaim":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await rdclaim(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "dbrem":
+    case "dataclean":
+    case "purgedata":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await dbrem(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ban":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await ban(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "unban":
+      if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      await unban(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "radio":
+    case "randmusic":
+    case "randaudio":
+    case "randomaudio":
+    case "randommusic":
+    case "suggestaudio":
+    case "suggestmusic":
+      await radio(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "yta":
+    case "play":
+    case "song":
+    case "sing":
+    case "ytmp3":
+    case "ytplay":
+    case "ytaudio":
+    case "ytmusic":
+    case "youtubemusic":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await yta(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytv":
+    case "watch":
+    case "stream":
+    case "ytmp4":
+    case "ytvideo":
+    case "youtubevideo":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytv(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "yts":
+    case "ytsearch":
+    case "ytscrape":
+    case "youtubescrape":
+    case "youtubesearch":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await yts(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "sr":
+    case "reddit":
+    case "subreddit":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await reddit(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "rank":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await rank(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tts":
+    case "gtts":
+    case "text2speech":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await tts(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "fun":
+    case "joke":
+    case "funny":
+    case "laugh":
+    case "dadjoke":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await joke(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "meme":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await meme(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tinyurl":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await tinyurl(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "join":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await join(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "leave":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await leave(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "lyrics":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await lyrics(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "gimage":
+    case "image":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await image(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "web":
+    case "find":
+    case "search":
+    case "google":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await google(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "take":
+    case "steal":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await steal(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "iguser":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await iguser(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ship":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ship(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "quote":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await quote(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "fact":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await fact(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "advice":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await advice(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pat":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pat(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "hug":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await hug(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "kiss":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await kiss(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "cuddle":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await cuddle(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "kick":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await kick(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bite":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bite(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "blush":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await blush(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bored":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bored(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "confused":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await confused(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "cry":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await cry(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "goodnight":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await goodnight(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "happy":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await happy(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "poke":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await poke(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "sad":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await sad(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "slap":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await slap(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "smile":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await smile(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "wave":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await wave(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "wink":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await wink(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "dance":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await dance(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "baka":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await baka(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bonk":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bonk(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "hi5":
+    case "highfive":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await highfive(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "kill":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await kill(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "nervous":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await nervous(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "punch":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await punch(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "scream":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await scream(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "stare":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await stare(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "yeet":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await yeet(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "yes":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await yes(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "waifu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await waifu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "neko":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await neko(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "anime":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await anime(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "manga":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await manga(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "wallpaper":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await wallpaper(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bc":
+    case "bcgroup":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bcgroup(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "reboot":
+    case "restart":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ӄ_counter(2);
+      await reboot(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      break;
+    case "yt8d":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await yt8d(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytbassboost":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytbassboost(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytecho":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytecho(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytflanger":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytflanger(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytnightcore":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytnightcore(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytphaser":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytphaser(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytreverse":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytreverse(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytslow":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytslow(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytspeed":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytspeed(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytsubboost":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytsubboost(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytsuperslow":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytsuperspeed(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytsuperslow":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytsuperslow(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytsurround":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytsurround(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytvaporwave":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytvaporwave(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytvibrato":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ytvibrato(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bassboost":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bassboost(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "echo":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await echo(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "flanger":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await flanger(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "nightcore":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await nightcore(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "phaser":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await phaser(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "reverse":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await reverse(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "slow":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await slow(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "speed":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await speed(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "subboost":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await subboost(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "superspeed":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await superspeed(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "surround":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await surround(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "vaporwave":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await vaporwave(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "vibrato":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await vibrato(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ass":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await ass(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bdsm":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await bdsm(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "cum":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await cum(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "doujin":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await doujin(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "feet":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await feet(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "femdom":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await femdom(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "foxgirl":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await foxgirl(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "glasses":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await glasses(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "hentai":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await hentai(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "maid":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await maid(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "masturbation":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await masturbation(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "netorare":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await netorare(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "orgy":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await orgy(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.A𝖗𝖌𝖘,
+        Vlkyre.pushName,
+        Vlkyre.fromMe,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.groupMetadata,
+        Vlkyre.participants,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.groupAdmins,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body,
+        Vlkyre.mentionByTag,
+        Vlkyre.mentionByReply
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "panties":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await panties(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "school":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await school(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tentacles":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await tentacles(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "thighs":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await thighs(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "uniform":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await uniform(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "yuri":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      await yuri(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "dly":
+    case "daily":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await daily(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "fish":
+    case "pond":
+    case "fishes":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await fish(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bet":
+    case "gamble":
+    case "betting":
+    case "roulette":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await gamble(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "hunt":
+    case "hunting":
+    case "pokehunt":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await hunt(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "zoo":
+    case "forest":
+    case "animals":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await zoo(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pay":
+    case "loan":
+    case "borrow":
+    case "payment":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pay(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "job":
+    case "work":
+    case "earn":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await work(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bal":
+    case "gold":
+    case "money":
+    case "balance":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await balance(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "buy":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await buy(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "mall":
+    case "shop":
+    case "store":
+    case "shopping":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await store(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "rob":
+    case "thief":
+    case "robbery":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await rob(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "bag":
+    case "inv":
+    case "loot":
+    case "inventory":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await bag(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "sp":
+    case "dev":
+    case "devs":
+    case "mod":
+    case "mods":
+    case "moderator":
+    case "support":
+    case "official":
+    case "repo":
+    case "githubrepo":
+    case "repository":
+    case "VLKYRE":
+    case "KRAKINZLAB":
+    case "vlkyre":
+    case "krakinzlab":
+    case "BOTSUPPORT":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await support(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "r":
+    case "rule":
+    case "rules":
+    case "RULES":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await rules(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      break;
+    case "h":
+    case "how":
+    case "help":
+    case "HELP":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await help(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "m":
+    case "menu":
+    case "allmenu":
+    case "command":
+    case "commands":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await menu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "animationmenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await AnimationMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "animemenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await AnimeMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "audiofiltermenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await AudioFilterMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "convertermenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ConverterMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "downloadermenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await DownloaderMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "gamemenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await GameMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "groupmenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await GroupMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "hentaimenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await HentaiMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "nsfwmenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await NsfwMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ownermenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await OwnerMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "randommenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await RandomMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "storemenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await StoreMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "webmenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await WebMenu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ytfiltermenu":
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await menu(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 
-case "p4k":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await p4k(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pblowjob":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await pblowjob(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pmilf":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await pmilf(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pmilk":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await pmilk(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "ppussy":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await ppussy(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "pslut":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await pslut(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-case "tikporn":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender) === false) return;
-await tikporn(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.pushName,
-Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-Vlkyre.quoted,
-Vlkyre.isMedia,
-Vlkyre.isGroup,
-Vlkyre.isBotAdmin,
-Vlkyre.isSenderAdmin,
-Vlkyre.isSenderTUF,
-Vlkyre.commandName,
-Vlkyre.Body
-);
-await ӄ_counter(2);
-break;
-"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
-default:
-if (checkBalance(Vlkyre.sender) === false) return;
-await ӄ_counter(2);
-return await ӄryӄnz.sendMessage(
-Vlkyre.chatID,
-{
-contextInfo: {
-mentionedJid: [Vlkyre.sender],
-},
-image: {
-url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_404.png",
-},
-caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+    case "p4k":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await p4k(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pblowjob":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pblowjob(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pmilf":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pmilf(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pmilk":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pmilk(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "ppussy":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ppussy(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "pslut":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await pslut(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    case "tikporn":
+      if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
+        return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+      if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
+        return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await tikporn(
+        ӄryӄnz,
+        Vlkyre,
+        Vlkyre.pushName,
+        Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+        Vlkyre.quoted,
+        Vlkyre.isMedia,
+        Vlkyre.isGroup,
+        Vlkyre.isBotAdmin,
+        Vlkyre.isSenderAdmin,
+        Vlkyre.isSenderTUF,
+        Vlkyre.commandName,
+        Vlkyre.Body
+      );
+      await ӄ_counter(2);
+      break;
+      "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+    default:
+      if (checkBalance(Vlkyre.sender) === false) return;
+      await ӄ_counter(2);
+      return await ӄryӄnz.sendMessage(
+        Vlkyre.chatID,
+        {
+          contextInfo: {
+            mentionedJid: [Vlkyre.sender],
+          },
+          image: {
+            url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_404.png",
+          },
+          caption: `❣️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 
 *❌𝕰𝖗𝖗𝖔𝖗:* No Such Command.`,
-footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
-buttons: [
-{
-buttonId: prefix + "HELP",
-buttonText: {
-displayText: prefix + "HELP",
-},
-type: 1,
-},
-{
-buttonId: prefix + "VLKYRE",
-buttonText: {
-displayText: prefix + "VLKYRE",
-},
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-quoted: Vlkyre,
-}
-);
-}
+          footer: "*⦓ ⒸVlkyre ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ",
+          buttons: [
+            {
+              buttonId: prefix + "HELP",
+              buttonText: {
+                displayText: prefix + "HELP",
+              },
+              type: 1,
+            },
+            {
+              buttonId: prefix + "VLKYRE",
+              buttonText: {
+                displayText: prefix + "VLKYRE",
+              },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+        },
+        {
+          quoted: Vlkyre,
+        }
+      );
+  }
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
