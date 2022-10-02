@@ -113,36 +113,15 @@ url: card[0].images.large,
 },
 mimetype: "image/png",
 fileName: "Pokedex.png",
-caption: `💫 *Name:* ${PokemonData.name}
+caption: ` 
+𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐓𝐄𝐒𝐓 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 𝐂𝐀𝐑𝐃 𝐆𝐀𝐌𝐄!
+𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 _!𝐂𝐋𝐀𝐈𝐌_ 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.....
+
+
+💫 *Name:* ${PokemonData.name}
 〽️ *Pokedex ID:* ${PokemonData.id}
 🎀 *Type:* ${PokemonData.type}
-🐞 *Species*: ${PokemonData.species}
-📛 *Abilities:* ${PokemonData.abilities}
-🔆 *Height:* ${PokemonData.height}
-⚖ *Weight:* ${PokemonData.weight}
-🌟 *Base Experience:* ${PokemonData.base_experience}
-♀️ *Geder*: ${PokemonData.gender}
-★ *Egg Groups*: ${PokemonData.egg_groups}
-
-🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒
-✳ *HP:* ${PokemonData.stats.hp}
-⚔ *Attack:* ${PokemonData.stats.attack}
-🔰 *Defense:* ${PokemonData.stats.defense}
-☄ *Special Attack:* ${PokemonData.stats.sp_atk}
-🛡 *Special Defense:* ${PokemonData.stats.sp_def}
-🎐 *Speed:* ${PokemonData.stats.speed}
-🍯 *Total*: ${PokemonData.stats.total}
-
-🌶️𝐅𝐀𝐌𝐈𝐋𝐘
-🌸 *Evolved Stage:* ${PokemonData.family.evolutionStage}
-💮 *Evolved Line:* ${PokemonData.family.evolutionLine}
-🪐 *Generation:* ${PokemonData.generation}
-
-
-💬 *Summary:* ${PokemonData.description}
-🛍️ *Card Market:* ${card[0].cardmarket.url}
-🧀 *TGC Player:* ${card[0].tcgplayer.url}
-`.trim(),
+🐞 *Species*: ${PokemonData.species}`.trim(),
 });
 }
 return;
