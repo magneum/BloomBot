@@ -111,7 +111,7 @@ let groups = Object.entries(getGroups)
 let sendGroups = groups.map((v) => v.id);
 // Send The Created Pokedex Card
 for (let G of sendGroups) {
-await ӄryӄnz.sendMessage(G, {
+return await ӄryӄnz.sendMessage(G, {
 image: {
 url: card[0].images.large,
 },
@@ -128,7 +128,6 @@ caption: `
 🐞 *Species*: ${PokemonData.species}`.trim(),
 });
 }
-return;
 }
 }
 );
