@@ -25,11 +25,12 @@ let { ARanks } = require("./ARanks");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let Heroku = require("heroku-client");
 let { DenyLink } = require("./DenyLink");
-let { req } = require("pino-std-serializers");
-let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let ProTon = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/ProTon");
+let { req } = require("pino-std-serializers");
 let { Caught } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let Bagde = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/badge");
+let ClaimSchem = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/claim");
 let { simpleGit, CleanOptions } = require("simple-git");
 let Ranker = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
 let LinkList = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
@@ -37,6 +38,12 @@ let { Image_Button } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Butt
 let usedUser = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
 let userBanCheck = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 let userExhaust = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/userExhaust");
+let { PokeList } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/pokelist");
+let pokemon = require("pokemontcgsdk");
+let CronJob = require("cron").CronJob;
+let Fetch = require("node-fetch");
+let Https = require("https");
+let Fs = require("fs");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
 if (Vlkyre.message) {
@@ -57,6 +64,99 @@ console.log(
 console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ)));
 }
 }
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+// Executed on every midnight
+var cronJob1 = new CronJob({
+cronTime: "00 00 00 * * * ",
+onTick: async function () {
+console.log(
+"|⬡═══════════════════════|▷ Fetch Any Random Pokemon from Pokedex"
+);
+let PokemonData;
+let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+try {
+let res = await fetch(
+API("https://some-random-api.ml", "/pokedex", {
+pokemon: BasePoke.toLowerCase(),
+})
+).catch((Èrrðr) => console.log(Èrrðr));
+PokemonData = await res.json().catch((Èrrðr) => console.log(Èrrðr));
+pokemon.configure({ apiKey: "123abc" });
+// Get The Card Of The Found Pokemon
+await pokemon.card
+.all({ q: `name:${PokemonData.name}` })
+.then(async (card) => {
+// Check All Needed Data Inside Mongodb if Category Not Found
+await ClaimSchema.findOne(
+{ Active: "N" || null },
+async (Èrrðr, msTdb) => {
+if (Èrrðr) return console.log(Èrrðr);
+if (!msTdb) {
+let getGroups = await ӄryӄnz.groupFetchAllParticipating();
+let newUser = await new ClaimSchema({
+Active: "Y",
+GroupIDs: getGroups,
+UserNumber: undefined,
+})
+.save()
+.catch((Èrrðr) => console.log(Èrrðr));
+// Fetch all Groups and Store it in an object
+let groups = Object.entries(getGroups)
+.slice(0)
+.map((entry) => entry[1]);
+let sendGroups = groups.map((v) => v.id);
+// Send The Created Pokedex Card
+for (let G of sendGroups) {
+await ӄryӄnz.sendMessage(G, {
+image: {
+url: card[0].images.large,
+},
+mimetype: "image/png",
+fileName: "Pokedex.png",
+caption: `💫 *Name:* ${PokemonData.name}
+〽️ *Pokedex ID:* ${PokemonData.id}
+🎀 *Type:* ${PokemonData.type}
+🐞 *Species*: ${PokemonData.species}
+📛 *Abilities:* ${PokemonData.abilities}
+🔆 *Height:* ${PokemonData.height}
+⚖ *Weight:* ${PokemonData.weight}
+🌟 *Base Experience:* ${PokemonData.base_experience}
+♀️ *Geder*: ${PokemonData.gender}
+★ *Egg Groups*: ${PokemonData.egg_groups}
+
+🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒
+✳ *HP:* ${PokemonData.stats.hp}
+⚔ *Attack:* ${PokemonData.stats.attack}
+🔰 *Defense:* ${PokemonData.stats.defense}
+☄ *Special Attack:* ${PokemonData.stats.sp_atk}
+🛡 *Special Defense:* ${PokemonData.stats.sp_def}
+🎐 *Speed:* ${PokemonData.stats.speed}
+🍯 *Total*: ${PokemonData.stats.total}
+
+🌶️𝐅𝐀𝐌𝐈𝐋𝐘
+🌸 *Evolved Stage:* ${PokemonData.family.evolutionStage}
+💮 *Evolved Line:* ${PokemonData.family.evolutionLine}
+🪐 *Generation:* ${PokemonData.generation}
+
+
+💬 *Summary:* ${PokemonData.description}
+🛍️ *Card Market:* ${card[0].cardmarket.url}
+🧀 *TGC Player:* ${card[0].tcgplayer.url}
+`.trim(),
+});
+}
+return;
+}
+}
+);
+});
+} catch (Èrrðr) {
+return console.log(Èrrðr);
+}
+},
+start: true,
+runOnInit: false,
+});
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
 await usedUser.findOne(
