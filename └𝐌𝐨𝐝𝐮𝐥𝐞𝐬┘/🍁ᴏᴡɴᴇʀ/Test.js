@@ -97,6 +97,7 @@ async (Èrrðr, msTdb) => {
 if (Èrrðr) return console.log(Èrrðr);
 if (!msTdb) {
 let getGroups = await ӄryӄnz.groupFetchAllParticipating();
+console.log(getGroups);
 let newUser = await new ClaimSchema({
 Active: "Y",
 GroupIDs: getGroups,
