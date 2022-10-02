@@ -82,6 +82,7 @@ let { unban } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/🍁ᴏᴡɴᴇʀ
 let { reboot } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/🍁ᴏᴡɴᴇʀ/reboot");
 let { support } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/🍁ᴏᴡɴᴇʀ/support");
 let { bcgroup } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/🍁ᴏᴡɴᴇʀ/bcgroup");
+let { rdclaim } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/🍁ᴏᴡɴᴇʀ/rdclaim");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let { zoo } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/💰ɢᴀᴍᴇ/zoo");
 let { pay } = require("../└𝐌𝐨𝐝𝐮𝐥𝐞𝐬┘/💰ɢᴀᴍᴇ/pay");
@@ -498,6 +499,7 @@ await ӄ_counter(2);
 break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "group":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await group(
@@ -518,6 +520,7 @@ await ӄ_counter(2);
 break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "warn":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await warn(
@@ -539,6 +542,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "invite":
 case "grouplink":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await invite(
@@ -560,6 +564,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "del":
 case "delete":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
 return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
@@ -584,6 +589,7 @@ break;
 case "antilink":
 case "stoplink":
 case "nolink":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await antilink(
@@ -605,6 +611,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "autorank":
 case "autorole":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
 return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
@@ -651,8 +658,28 @@ await ӄ_counter(2);
 break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "test":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await test(
 Ѷ𝖎𝖔𝖓,
+ӄryӄnz,
+Vlkyre,
+Vlkyre.pushName,
+Vlkyre.F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+Vlkyre.quoted,
+Vlkyre.isMedia,
+Vlkyre.isGroup,
+Vlkyre.isBotAdmin,
+Vlkyre.isSenderAdmin,
+Vlkyre.isSenderTUF,
+Vlkyre.commandName,
+Vlkyre.Body
+);
+await ӄ_counter(2);
+break;
+"|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
+case "rdclaim":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+await rdclaim(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.pushName,
@@ -672,7 +699,7 @@ break;
 case "dbrem":
 case "dataclean":
 case "purgedata":
-if (!Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await dbrem(
 ӄryӄnz,
 Vlkyre,
@@ -691,6 +718,7 @@ await ӄ_counter(2);
 break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "ban":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await ban(
 ӄryӄnz,
 Vlkyre,
@@ -709,6 +737,7 @@ await ӄ_counter(2);
 break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 case "unban":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await unban(
 ӄryӄnz,
 Vlkyre,

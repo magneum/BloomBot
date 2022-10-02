@@ -71,8 +71,6 @@ commandName,
 body
 ) => {
 try {
-cron.schedule("*/60 * * * * *", async function () {
-console.log("running a task every 60 second");
 console.log(
 "|⬡═══════════════════════|▷ Fetch Any Random Pokemon from Pokedex"
 );
@@ -86,11 +84,9 @@ pokemon: BasePoke.toLowerCase(),
 ).catch((Èrrðr) => console.log(Èrrðr));
 PokemonData = await res.json().catch((Èrrðr) => console.log(Èrrðr));
 pokemon.configure({ apiKey: "123abc" });
-// Get The Card Of The Found Pokemon
 await pokemon.card
 .all({ q: `name:${PokemonData.name}` })
 .then(async (card) => {
-// Check All Needed Data Inside Mongodb if Category Not Found
 await ClaimSchema.findOne(
 { Active: "N" || null },
 async (Èrrðr, msTdb) => {
@@ -105,14 +101,12 @@ UserNumber: undefined,
 })
 .save()
 .catch((Èrrðr) => console.log(Èrrðr));
-// Fetch all Groups and Store it in an object
 let groups = Object.entries(getGroups)
 .slice(0)
 .map((entry) => entry[1]);
 console.log(groups);
 let sendGroups = groups.map((v) => v.id);
 console.log(sendGroups);
-// Send The Created Pokedex Card
 for (let G of sendGroups) {
 return await ӄryӄnz.sendMessage(G, {
 image: {
@@ -138,7 +132,6 @@ caption: `
 } catch (Èrrðr) {
 return console.log(Èrrðr);
 }
-});
 } catch (error) {
 console.log(chalk.black(chalk.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), chalk.bgRed(error)));
 }
