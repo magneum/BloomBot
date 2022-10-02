@@ -109,7 +109,9 @@ UserNumber: undefined,
 let groups = Object.entries(getGroups)
 .slice(0)
 .map((entry) => entry[1]);
+console.log(groups);
 let sendGroups = groups.map((v) => v.id);
+console.log(sendGroups);
 // Send The Created Pokedex Card
 for (let G of sendGroups) {
 return await ӄryӄnz.sendMessage(G, {
