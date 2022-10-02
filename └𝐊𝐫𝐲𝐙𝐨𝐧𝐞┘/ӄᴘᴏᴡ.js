@@ -66,72 +66,72 @@ console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄ
 }
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-cron.schedule("*/60 * * * * *", async function () {
-console.log("running a task every 60 second");
-console.log(
-"|⬡═══════════════════════|▷ Fetch Any Random Pokemon from Pokedex"
-);
-let PokemonData;
-let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
-try {
-let res = await fetch(
-API("https://some-random-api.ml", "/pokedex", {
-pokemon: BasePoke.toLowerCase(),
-})
-).catch((Èrrðr) => console.log(Èrrðr));
-PokemonData = await res.json().catch((Èrrðr) => console.log(Èrrðr));
-pokemon.configure({ apiKey: "123abc" });
-// Get The Card Of The Found Pokemon
-await pokemon.card
-.all({ q: `name:${PokemonData.name}` })
-.then(async (card) => {
-// Check All Needed Data Inside Mongodb if Category Not Found
-await ClaimSchema.findOne(
-{ Active: "N" || null },
-async (Èrrðr, msTdb) => {
-if (Èrrðr) return console.log(Èrrðr);
-if (!msTdb) {
-let getGroups = await ӄryӄnz.groupFetchAllParticipating();
-let newUser = await new ClaimSchema({
-Active: "Y",
-GroupIDs: getGroups,
-UserNumber: undefined,
-})
-.save()
-.catch((Èrrðr) => console.log(Èrrðr));
-// Fetch all Groups and Store it in an object
-let groups = Object.entries(getGroups)
-.slice(0)
-.map((entry) => entry[1]);
-let sendGroups = groups.map((v) => v.id);
-// Send The Created Pokedex Card
-for (let G of sendGroups) {
-await ӄryӄnz.sendMessage(G, {
-image: {
-url: card[0].images.large,
-},
-mimetype: "image/png",
-fileName: "Pokedex.png",
-caption: ` 
-𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐓𝐄𝐒𝐓 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 𝐂𝐀𝐑𝐃 𝐆𝐀𝐌𝐄!
-𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 _!𝐂𝐋𝐀𝐈𝐌_ 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.....
+// cron.schedule("*/60 * * * * *", async function () {
+// console.log("running a task every 60 second");
+// console.log(
+// "|⬡═══════════════════════|▷ Fetch Any Random Pokemon from Pokedex"
+// );
+// let PokemonData;
+// let BasePoke = PokeList[Math.floor(Math.random() * PokeList.length)];
+// try {
+// let res = await fetch(
+// API("https://some-random-api.ml", "/pokedex", {
+// pokemon: BasePoke.toLowerCase(),
+// })
+// ).catch((Èrrðr) => console.log(Èrrðr));
+// PokemonData = await res.json().catch((Èrrðr) => console.log(Èrrðr));
+// pokemon.configure({ apiKey: "123abc" });
+// // Get The Card Of The Found Pokemon
+// await pokemon.card
+// .all({ q: `name:${PokemonData.name}` })
+// .then(async (card) => {
+// // Check All Needed Data Inside Mongodb if Category Not Found
+// await ClaimSchema.findOne(
+// { Active: "N" || null },
+// async (Èrrðr, msTdb) => {
+// if (Èrrðr) return console.log(Èrrðr);
+// if (!msTdb) {
+// let getGroups = await ӄryӄnz.groupFetchAllParticipating();
+// let newUser = await new ClaimSchema({
+// Active: "Y",
+// GroupIDs: getGroups,
+// UserNumber: undefined,
+// })
+// .save()
+// .catch((Èrrðr) => console.log(Èrrðr));
+// // Fetch all Groups and Store it in an object
+// let groups = Object.entries(getGroups)
+// .slice(0)
+// .map((entry) => entry[1]);
+// let sendGroups = groups.map((v) => v.id);
+// // Send The Created Pokedex Card
+// for (let G of sendGroups) {
+// await ӄryӄnz.sendMessage(G, {
+// image: {
+// url: card[0].images.large,
+// },
+// mimetype: "image/png",
+// fileName: "Pokedex.png",
+// caption: ` 
+// 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐓𝐄𝐒𝐓 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 𝐂𝐀𝐑𝐃 𝐆𝐀𝐌𝐄!
+// 𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 _!𝐂𝐋𝐀𝐈𝐌_ 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.....
 
 
-💫 *Name:* ${PokemonData.name}
-〽️ *Pokedex ID:* ${PokemonData.id}
-🎀 *Type:* ${PokemonData.type}
-🐞 *Species*: ${PokemonData.species}`.trim(),
-});
-}
-return;
-}
-}
-);
-});
-} catch (Èrrðr) {
-return console.log(Èrrðr);
-}
-});
+// 💫 *Name:* ${PokemonData.name}
+// 〽️ *Pokedex ID:* ${PokemonData.id}
+// 🎀 *Type:* ${PokemonData.type}
+// 🐞 *Species*: ${PokemonData.species}`.trim(),
+// });
+// }
+// return;
+// }
+// }
+// );
+// });
+// } catch (Èrrðr) {
+// return console.log(Èrrðr);
+// }
+// });
 
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // // Executed on every midnight
