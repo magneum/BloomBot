@@ -95,7 +95,7 @@ irq: 0,
 }
 );
 let timestamp = speed();
-let latensi = speed() (timestamp;
+let latensi = speed();
 let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 ${Object.keys(used)
 .map(
