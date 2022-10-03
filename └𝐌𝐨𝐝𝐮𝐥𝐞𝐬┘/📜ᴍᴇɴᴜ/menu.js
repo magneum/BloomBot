@@ -238,12 +238,12 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 
 ┌🏝️${prefix}ConverterMenu
 │╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
-│║⦁ ${prefix}carbon _(10💰)_
-│║⦁ ${prefix}steal _(10💰)_
-│║⦁ ${prefix}sticker _(10💰)_
-│║⦁ ${prefix}tinyurl _(10💰)_
-│║⦁ ${prefix}toimg _(10💰)_
-│║⦁ ${prefix}stourl _(10💰)_
+│║⦁ ${prefix}carbon _(30💰)_
+│║⦁ ${prefix}steal _(30💰)_
+│║⦁ ${prefix}sticker _(30💰)_
+│║⦁ ${prefix}tinyurl _(30💰)_
+│║⦁ ${prefix}toimg _(30💰)_
+│║⦁ ${prefix}tourl _(30💰)_
 └╚═══════⋑
 
 ┌💰${prefix}GameMenu
