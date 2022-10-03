@@ -227,7 +227,7 @@ return await Image_Button(
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
 "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Gold.png",
-`Sorry You Need Atleast ${deduct}💰!
+`𝐒𝐨𝐫𝐫𝐲 𝐘𝐨𝐮 𝐍𝐞𝐞𝐝 𝐀𝐭𝐥𝐞𝐚𝐬𝐭 _${deduct}💰_ 𝐅𝐨𝐫 𝐓𝐡𝐚𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`
 );
 return false;
