@@ -23,16 +23,19 @@ ID: Vlkyre.sender,
 async (Èrrðr, userEco) => {
 if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
-await new Economy({
+let newUser = new Economy({
 ID: Vlkyre.sender,
-money: 0,
-daily: 0,
+money: 500,
+daily: Date.now(),
 timeout: 86400000,
 fishdone: 0,
 fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
-}).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+});
+await newUser
+.save()
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
