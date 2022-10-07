@@ -831,6 +831,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         🍁ᴏᴡɴᴇʀ        ═══════════════════════════════════════════════════════════════
 case "join":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
 await join(
 ӄryӄnz,
 Vlkyre,
@@ -851,6 +852,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "leave":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
 await leave(
 ӄryӄnz,
 Vlkyre,
@@ -929,6 +931,7 @@ break;
 */
 case "bc":
 case "bcgroup":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
 await bcgroup(
 ӄryӄnz,
 Vlkyre,
@@ -950,6 +953,7 @@ break;
 */
 case "reboot":
 case "restart":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
 await ӄ_counter(2);
 await reboot(
 ӄryӄnz,
@@ -970,8 +974,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "test":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
+await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await test(
 Ѷ𝖎𝖔𝖓,
 ӄryӄnz,
@@ -993,8 +997,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "rdclaim":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
+await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await rdclaim(
 ӄryӄnz,
 Vlkyre,
@@ -1017,8 +1021,8 @@ break;
 case "dbrem":
 case "dataclean":
 case "purgedata":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
+await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await dbrem(
 ӄryӄnz,
 Vlkyre,
@@ -1039,8 +1043,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ban":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
+await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await ban(
 ӄryӄnz,
 Vlkyre,
@@ -1061,8 +1065,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "unban":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
+await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await unban(
 ӄryӄnz,
 Vlkyre,
@@ -2996,6 +3000,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "tagall":
+if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
 return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
