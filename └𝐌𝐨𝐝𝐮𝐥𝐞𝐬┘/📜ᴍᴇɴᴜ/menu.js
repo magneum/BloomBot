@@ -95,7 +95,7 @@ irq: 0,
 }
 );
 let timestamp = speed();
-let latensi = speed() - timestamp;
+let latensi = speed();
 let latest = `════════★ 𝐍𝐨𝐝𝐞𝐉𝐒 𝐌𝐞𝐦-𝐔𝐬𝐚𝐠𝐞:
 ${Object.keys(used)
 .map(
@@ -151,140 +151,141 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
 └╚═══════⋑
 
-┌🐝${prefix}AnimationMenu
-│╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
-│║⦁ ${prefix}baka
-│║⦁ ${prefix}bite
-│║⦁ ${prefix}blush
-│║⦁ ${prefix}bonk
-│║⦁ ${prefix}bored
-│║⦁ ${prefix}confused
-│║⦁ ${prefix}cry
-│║⦁ ${prefix}cuddle
-│║⦁ ${prefix}dance
-│║⦁ ${prefix}goodnight
-│║⦁ ${prefix}happy
-│║⦁ ${prefix}hi5
-│║⦁ ${prefix}highfive
-│║⦁ ${prefix}hug
-│║⦁ ${prefix}kick
-│║⦁ ${prefix}kill
-│║⦁ ${prefix}kiss
-│║⦁ ${prefix}nervous
-│║⦁ ${prefix}pat
-│║⦁ ${prefix}poke
-│║⦁ ${prefix}punch
-│║⦁ ${prefix}sad
-│║⦁ ${prefix}smile
-│║⦁ ${prefix}stare
-│║⦁ ${prefix}wave
-│║⦁ ${prefix}wink
-│║⦁ ${prefix}yeet
-│║⦁ ${prefix}yes
-│║⦁ ${prefix}zerotwo
+
+┌📥${prefix}DownloaderMenu
+│╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
+│║⦁ ${prefix}yta (60💰)
+│║⦁ ${prefix}play (60💰)
+│║⦁ ${prefix}song (60💰)
+│║⦁ ${prefix}sing (60💰)
+│║⦁ ${prefix}ytmp3 (60💰)
+│║⦁ ${prefix}ytplay (60💰)
+│║⦁ ${prefix}ytaudio (60💰)
+│║⦁ ${prefix}ytmusic (60💰)
+│║⦁ ${prefix}youtubemusic (60💰)
+│║⦁ ${prefix}ytv (60💰)
+│║⦁ ${prefix}watch (60💰)
+│║⦁ ${prefix}ytmp4 (60💰)
+│║⦁ ${prefix}stream (60💰)
+│║⦁ ${prefix}ytvideo (60💰)
+│║⦁ ${prefix}youtubevideo (60💰)
+│║⦁ ${prefix}radio (60💰)
+│║⦁ ${prefix}randmusic (60💰)
+│║⦁ ${prefix}randaudio (60💰)
+│║⦁ ${prefix}randomaudio (60💰)
+│║⦁ ${prefix}randommusic (60💰)
+│║⦁ ${prefix}suggestaudio (60💰)
+│║⦁ ${prefix}suggestmusic (60💰)
 └╚═══════⋑
 
 ┌🐾${prefix}AnimeMenu
 │╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
-│║⦁ ${prefix}anime
-│║⦁ ${prefix}manga
+│║⦁ ${prefix}anime (40💰)
+│║⦁ ${prefix}manga (40💰)
+└╚═══════⋑
+
+┌🐝${prefix}AnimationMenu
+│╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
+│║⦁ ${prefix}baka  (20💰)
+│║⦁ ${prefix}bite  (20💰)
+│║⦁ ${prefix}blush  (20💰)
+│║⦁ ${prefix}bonk  (20💰)
+│║⦁ ${prefix}bored  (20💰)
+│║⦁ ${prefix}confused  (20💰)
+│║⦁ ${prefix}cry  (20💰)
+│║⦁ ${prefix}cuddle  (20💰)
+│║⦁ ${prefix}dance  (20💰)
+│║⦁ ${prefix}goodnight  (20💰)
+│║⦁ ${prefix}happy  (20💰)
+│║⦁ ${prefix}hi5  (20💰)
+│║⦁ ${prefix}highfive  (20💰)
+│║⦁ ${prefix}hug  (20💰)
+│║⦁ ${prefix}kick  (20💰)
+│║⦁ ${prefix}kill  (20💰)
+│║⦁ ${prefix}kiss  (20💰)
+│║⦁ ${prefix}nervous  (20💰)
+│║⦁ ${prefix}pat  (20💰)
+│║⦁ ${prefix}poke  (20💰)
+│║⦁ ${prefix}punch  (20💰)
+│║⦁ ${prefix}sad  (20💰)
+│║⦁ ${prefix}smile  (20💰)
+│║⦁ ${prefix}stare  (20💰)
+│║⦁ ${prefix}wave  (20💰)
+│║⦁ ${prefix}wink  (20💰)
+│║⦁ ${prefix}yeet  (20💰)
+│║⦁ ${prefix}yes  (20💰)
+│║⦁ ${prefix}zerotwo  (20💰)
 └╚═══════⋑
 
 ┌👓${prefix}AudioFilterMenu
 │╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
-│║⦁ ${prefix}bassboost
-│║⦁ ${prefix}echo
-│║⦁ ${prefix}fast
-│║⦁ ${prefix}flanger
-│║⦁ ${prefix}nightcore
-│║⦁ ${prefix}phaser
-│║⦁ ${prefix}reverse
-│║⦁ ${prefix}slow
-│║⦁ ${prefix}speed
-│║⦁ ${prefix}subboost
-│║⦁ ${prefix}superslow
-│║⦁ ${prefix}superspeed
-│║⦁ ${prefix}surround
-│║⦁ ${prefix}vaporwave
-│║⦁ ${prefix}vibrato
+│║⦁ ${prefix}bassboost (30💰)
+│║⦁ ${prefix}echo (30💰)
+│║⦁ ${prefix}fast (30💰)
+│║⦁ ${prefix}flanger (30💰)
+│║⦁ ${prefix}nightcore (30💰)
+│║⦁ ${prefix}phaser (30💰)
+│║⦁ ${prefix}reverse (30💰)
+│║⦁ ${prefix}slow (30💰)
+│║⦁ ${prefix}speed (30💰)
+│║⦁ ${prefix}subboost (30💰)
+│║⦁ ${prefix}superslow (30💰)
+│║⦁ ${prefix}superspeed (30💰)
+│║⦁ ${prefix}surround (30💰)
+│║⦁ ${prefix}vaporwave (30💰)
+│║⦁ ${prefix}vibrato (30💰)
 └╚═══════⋑
 
 ┌🏝️${prefix}ConverterMenu
 │╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
-│║⦁ ${prefix}carbon
-│║⦁ ${prefix}steal
-│║⦁ ${prefix}sticker
-│║⦁ ${prefix}tinyurl
-│║⦁ ${prefix}toimg
-│║⦁ ${prefix}stourl
-└╚═══════⋑
-
-┌📥${prefix}DownloaderMenu
-│╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
-│║⦁ ${prefix}yta
-│║⦁ ${prefix}play
-│║⦁ ${prefix}song
-│║⦁ ${prefix}sing
-│║⦁ ${prefix}ytmp3
-│║⦁ ${prefix}ytplay
-│║⦁ ${prefix}ytaudio
-│║⦁ ${prefix}ytmusic
-│║⦁ ${prefix}youtubemusic
-│║⦁ ${prefix}ytv
-│║⦁ ${prefix}watch
-│║⦁ ${prefix}ytmp4
-│║⦁ ${prefix}stream
-│║⦁ ${prefix}ytvideo
-│║⦁ ${prefix}youtubevideo
-│║⦁ ${prefix}radio
-│║⦁ ${prefix}randmusic
-│║⦁ ${prefix}randaudio
-│║⦁ ${prefix}randomaudio
-│║⦁ ${prefix}randommusic
-│║⦁ ${prefix}suggestaudio
-│║⦁ ${prefix}suggestmusic
+│║⦁ ${prefix}carbon (30💰)
+│║⦁ ${prefix}steal (30💰)
+│║⦁ ${prefix}sticker (30💰)
+│║⦁ ${prefix}tinyurl (30💰)
+│║⦁ ${prefix}toimg (30💰)
+│║⦁ ${prefix}tourl (30💰)
 └╚═══════⋑
 
 ┌💰${prefix}GameMenu
 │╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
-│║⦁ ${prefix}job
-│║⦁ ${prefix}work
-│║⦁ ${prefix}earn
-│║⦁ ${prefix}bag
-│║⦁ ${prefix}inv
-│║⦁ ${prefix}loot
-│║⦁ ${prefix}inventory
-│║⦁ ${prefix}dly
-│║⦁ ${prefix}daily
-│║⦁ ${prefix}pond
-│║⦁ ${prefix}fish
-│║⦁ ${prefix}fishesh
-│║⦁ ${prefix}bet
-│║⦁ ${prefix}gamble
-│║⦁ ${prefix}betting
-│║⦁ ${prefix}roulette
-│║⦁ ${prefix}hunt
-│║⦁ ${prefix}hunting
-│║⦁ ${prefix}pokehunt
-│║⦁ ${prefix}zoo
-│║⦁ ${prefix}forest
-│║⦁ ${prefix}animals
-│║⦁ ${prefix}pay
-│║⦁ ${prefix}loan
-│║⦁ ${prefix}borrow
-│║⦁ ${prefix}payment
-│║⦁ ${prefix}rob
-│║⦁ ${prefix}thief
-│║⦁ ${prefix}robbery
-│║⦁ ${prefix}bal
-│║⦁ ${prefix}gold
-│║⦁ ${prefix}money
-│║⦁ ${prefix}balance
-│║⦁ ${prefix}buy
-│║⦁ ${prefix}store
-│║⦁ ${prefix}shop
-│║⦁ ${prefix}mall
-│║⦁ ${prefix}shopping
+│║⦁ ${prefix}job (10💰)
+│║⦁ ${prefix}work (10💰)
+│║⦁ ${prefix}earn (10💰)
+│║⦁ ${prefix}bag (10💰)
+│║⦁ ${prefix}inv (10💰)
+│║⦁ ${prefix}loot (10💰)
+│║⦁ ${prefix}inventory (10💰)
+│║⦁ ${prefix}dly (10💰)
+│║⦁ ${prefix}daily (10💰)
+│║⦁ ${prefix}pond (10💰)
+│║⦁ ${prefix}fish (10💰)
+│║⦁ ${prefix}fishesh (10💰)
+│║⦁ ${prefix}bet (10💰)
+│║⦁ ${prefix}gamble (10💰)
+│║⦁ ${prefix}betting (10💰)
+│║⦁ ${prefix}roulette (10💰)
+│║⦁ ${prefix}hunt (10💰)
+│║⦁ ${prefix}hunting (10💰)
+│║⦁ ${prefix}pokehunt (10💰)
+│║⦁ ${prefix}zoo (10💰)
+│║⦁ ${prefix}forest (10💰)
+│║⦁ ${prefix}animals (10💰)
+│║⦁ ${prefix}pay (10💰)
+│║⦁ ${prefix}loan (10💰)
+│║⦁ ${prefix}borrow (10💰)
+│║⦁ ${prefix}payment (10💰)
+│║⦁ ${prefix}rob (10💰)
+│║⦁ ${prefix}thief (10💰)
+│║⦁ ${prefix}robbery (10💰)
+│║⦁ ${prefix}bal (10💰)
+│║⦁ ${prefix}gold (10💰)
+│║⦁ ${prefix}money (10💰)
+│║⦁ ${prefix}balance (10💰)
+│║⦁ ${prefix}buy (10💰)
+│║⦁ ${prefix}store (10💰)
+│║⦁ ${prefix}shop (10💰)
+│║⦁ ${prefix}mall (10💰)
+│║⦁ ${prefix}shopping (10💰)
 └╚═══════⋑
 
 ┌🔰${prefix}GroupMenu
@@ -307,40 +308,6 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}setgpfp
 │║⦁ ${prefix}tagall
 │║⦁ ${prefix}admins
-└╚═══════⋑
-
-┌🍌${prefix}HentaiMenu
-│╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
-│║⦁ ${prefix}ass
-│║⦁ ${prefix}bdsm
-│║⦁ ${prefix}cum  
-│║⦁ ${prefix}doujin
-│║⦁ ${prefix}feet  
-│║⦁ ${prefix}femdom  
-│║⦁ ${prefix}foxgirl  
-│║⦁ ${prefix}glasses  
-│║⦁ ${prefix}hentai
-│║⦁ ${prefix}maid 
-│║⦁ ${prefix}masturbation
-│║⦁ ${prefix}netorare  
-│║⦁ ${prefix}orgy
-│║⦁ ${prefix}panties
-│║⦁ ${prefix}pussy
-│║⦁ ${prefix}school
-│║⦁ ${prefix}tentacles
-│║⦁ ${prefix}thighs
-│║⦁ ${prefix}uniform
-│║⦁ ${prefix}yuri
-└╚═══════⋑
-
-┌🍑${prefix}NsfwMenu
-│╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
-│║⦁ ${prefix}p4k
-│║⦁ ${prefix}pblowjob
-│║⦁ ${prefix}pmilf
-│║⦁ ${prefix}ppussy
-│║⦁ ${prefix}pslut
-│║⦁ ${prefix}tikporn
 └╚═══════⋑
 
 ┌👑${prefix}OwnerMenu
@@ -377,25 +344,25 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 
 ┌🏳️‍🌈${prefix}RandomMenu
 │╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
-│║⦁ ${prefix}advice
-│║⦁ ${prefix}rank
-│║⦁ ${prefix}fact
-│║⦁ ${prefix}meme
-│║⦁ ${prefix}neko
-│║⦁ ${prefix}quote
-│║⦁ ${prefix}reddit
-│║⦁ ${prefix}sr
-│║⦁ ${prefix}subreddit
-│║⦁ ${prefix}ship
-│║⦁ ${prefix}waifu
-│║⦁ ${prefix}tts
-│║⦁ ${prefix}gtts
-│║⦁ ${prefix}text2speech
-│║⦁ ${prefix}fun
-│║⦁ ${prefix}joke
-│║⦁ ${prefix}funny
-│║⦁ ${prefix}laugh
-│║⦁ ${prefix}dadjoke
+│║⦁ ${prefix}advice (50💰)
+│║⦁ ${prefix}rank (50💰)
+│║⦁ ${prefix}fact (50💰)
+│║⦁ ${prefix}meme (50💰)
+│║⦁ ${prefix}neko (50💰)
+│║⦁ ${prefix}quote (50💰)
+│║⦁ ${prefix}reddit (50💰)
+│║⦁ ${prefix}sr (50💰)
+│║⦁ ${prefix}subreddit (50💰)
+│║⦁ ${prefix}ship (50💰)
+│║⦁ ${prefix}waifu (50💰)
+│║⦁ ${prefix}tts (50💰)
+│║⦁ ${prefix}gtts (50💰)
+│║⦁ ${prefix}text2speech (50💰)
+│║⦁ ${prefix}fun (50💰)
+│║⦁ ${prefix}joke (50💰)
+│║⦁ ${prefix}funny (50💰)
+│║⦁ ${prefix}laugh (50💰)
+│║⦁ ${prefix}dadjoke (50💰)
 └╚═══════⋑
 
 ┌🛍️${prefix}StoreMenu
@@ -413,43 +380,77 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 
 ┌🌐${prefix}WebMenu
 │╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
-│║⦁ ${prefix}gify
-│║⦁ ${prefix}gif
-│║⦁ ${prefix}google
-│║⦁ ${prefix}web
-│║⦁ ${prefix}find
-│║⦁ ${prefix}search
-│║⦁ ${prefix}iguser 
-│║⦁ ${prefix}image
-│║⦁ ${prefix}lyrics
-│║⦁ ${prefix}pinterest
-│║⦁ ${prefix}pokemon
-│║⦁ ${prefix}pokedex
-│║⦁ ${prefix}wallpaper
-│║⦁ ${prefix}yts
-│║⦁ ${prefix}ytsearch
-│║⦁ ${prefix}ytscrape
-│║⦁ ${prefix}youtubescrape
-│║⦁ ${prefix}youtubesearch
+│║⦁ ${prefix}gify (60💰)
+│║⦁ ${prefix}gif (60💰)
+│║⦁ ${prefix}google (60💰)
+│║⦁ ${prefix}web (60💰)
+│║⦁ ${prefix}find (60💰)
+│║⦁ ${prefix}search (60💰)
+│║⦁ ${prefix}iguser (60💰)
+│║⦁ ${prefix}image (60💰)
+│║⦁ ${prefix}lyrics (60💰)
+│║⦁ ${prefix}pinterest (60💰)
+│║⦁ ${prefix}pokemon (60💰)
+│║⦁ ${prefix}pokedex (60💰)
+│║⦁ ${prefix}wallpaper (60💰)
+│║⦁ ${prefix}yts (60💰)
+│║⦁ ${prefix}ytsearch (60💰)
+│║⦁ ${prefix}ytscrape (60💰)
+│║⦁ ${prefix}youtubescrape (60💰)
+│║⦁ ${prefix}youtubesearch (60💰)
 └╚═══════⋑
 
 ┌⭕${prefix}YTFilterMenu
 │╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
-│║⦁ ${prefix}yt8d
-│║⦁ ${prefix}ytbassboost
-│║⦁ ${prefix}ytecho
-│║⦁ ${prefix}ytflanger
-│║⦁ ${prefix}ytnightcore
-│║⦁ ${prefix}ytphaser
-│║⦁ ${prefix}ytreverse
-│║⦁ ${prefix}ytslow
-│║⦁ ${prefix}ytspeed
-│║⦁ ${prefix}ytsubboost
-│║⦁ ${prefix}ytsuperslow
-│║⦁ ${prefix}ytsuperspeed
-│║⦁ ${prefix}ytsurround
-│║⦁ ${prefix}ytvaporwave
-│║⦁ ${prefix}ytvibrato
+│║⦁ ${prefix}yt8d (40💰)
+│║⦁ ${prefix}ytbassboost (40💰)
+│║⦁ ${prefix}ytecho (40💰)
+│║⦁ ${prefix}ytflanger (40💰)
+│║⦁ ${prefix}ytnightcore (40💰)
+│║⦁ ${prefix}ytphaser (40💰)
+│║⦁ ${prefix}ytreverse (40💰)
+│║⦁ ${prefix}ytslow (40💰)
+│║⦁ ${prefix}ytspeed (40💰)
+│║⦁ ${prefix}ytsubboost (40💰)
+│║⦁ ${prefix}ytsuperslow (40💰)
+│║⦁ ${prefix}ytsuperspeed (40💰)
+│║⦁ ${prefix}ytsurround (40💰)
+│║⦁ ${prefix}ytvaporwave (40💰)
+│║⦁ ${prefix}ytvibrato (40💰)
+└╚═══════⋑
+
+┌🍌${prefix}HentaiMenu
+│╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
+│║⦁ ${prefix}ass (80💰)
+│║⦁ ${prefix}bdsm (80💰)
+│║⦁ ${prefix}cum (80💰)
+│║⦁ ${prefix}doujin (80💰)
+│║⦁ ${prefix}feet (80💰)
+│║⦁ ${prefix}femdom (80💰)  
+│║⦁ ${prefix}foxgirl (80💰)  
+│║⦁ ${prefix}glasses (80💰)  
+│║⦁ ${prefix}hentai (80💰)
+│║⦁ ${prefix}maid (80💰)
+│║⦁ ${prefix}masturbation (80💰)
+│║⦁ ${prefix}netorare (80💰)
+│║⦁ ${prefix}orgy (80💰)
+│║⦁ ${prefix}panties (80💰)
+│║⦁ ${prefix}pussy (80💰)
+│║⦁ ${prefix}school (80💰)
+│║⦁ ${prefix}tentacles (80💰)
+│║⦁ ${prefix}thighs (80💰)
+│║⦁ ${prefix}uniform (80💰)
+│║⦁ ${prefix}yuri (80💰)
+└╚═══════⋑
+
+┌🍑${prefix}NsfwMenu
+│╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
+│║⦁ ${prefix}p4k (100💰)
+│║⦁ ${prefix}pblowjob (100💰)
+│║⦁ ${prefix}pmilf (100💰)
+│║⦁ ${prefix}ppussy (100💰)
+│║⦁ ${prefix}pslut (100💰)
+│║⦁ ${prefix}tikporn (100💰)
 └╚═══════⋑`,
 footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
 buttons: [

@@ -25,6 +25,7 @@
 "dependencies": {
 "@adiwajshing/baileys": "4.4.0",
 "@adiwajshing/keyed-db": "^0.2.4",
+"cron": "*",
 "@canvas-fonts/arial-bold": "^1.0.4",
 "@cicciosgamino/openweather-apis": "^5.0.1",
 "@discordjs/voice": "^0.11.0",
