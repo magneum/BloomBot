@@ -14,7 +14,34 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+let Economy = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.Caught = async (ӄryӄnz, Vlkyre, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
+async function checkBalance(user) {
+await Economy.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+if (!userEco) {
+await new Economy({
+ID: Vlkyre.sender,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+}).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+return 0;
+} else {
+return userEco.money;
+}
+}
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
@@ -27,7 +54,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 
 ❗ Vlkyre 𝐀𝐏𝐈 𝐄𝐫𝐫𝐨𝐫 ❗
 Please Try Again Later!`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${checkBalance() || 0}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
