@@ -250,7 +250,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         ⚡ʀᴀɴᴅᴏᴍꜱ        ═══════════════════════════════════════════════════════════════
     case "ship":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await ship(
         ӄryӄnz,
         Vlkyre,
@@ -271,7 +271,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "quote":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await quote(
         ӄryӄnz,
         Vlkyre,
@@ -292,7 +292,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "fact":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await fact(
         ӄryӄnz,
         Vlkyre,
@@ -313,7 +313,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "advice":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await advice(
         ӄryӄnz,
         Vlkyre,
@@ -334,7 +334,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "waifu":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await waifu(
         ӄryӄnz,
         Vlkyre,
@@ -357,7 +357,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "sr":
     case "reddit":
     case "subreddit":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await reddit(
         ӄryӄnz,
         Vlkyre,
@@ -378,7 +378,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "rank":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await rank(
         ӄryӄnz,
         Vlkyre,
@@ -401,7 +401,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "tts":
     case "gtts":
     case "text2speech":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await tts(
         ӄryӄnz,
         Vlkyre,
@@ -426,7 +426,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "funny":
     case "laugh":
     case "dadjoke":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await joke(
         ӄryӄnz,
         Vlkyre,
@@ -447,7 +447,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "meme":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await meme(
         ӄryӄnz,
         Vlkyre,
@@ -468,7 +468,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "neko":
-      if (checkBalance(Vlkyre.sender, 50) !== true) return;
+      if (checkBalance(Vlkyre.sender, 50) === false) return;
       await neko(
         ӄryӄnz,
         Vlkyre,
@@ -502,7 +502,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         ⭕ʏᴛꜰɪʟᴛᴇʀ        ═══════════════════════════════════════════════════════════════
     case "yt8d":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await yt8d(
         ӄryӄnz,
         Vlkyre,
@@ -523,7 +523,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytbassboost":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytbassboost(
         ӄryӄnz,
         Vlkyre,
@@ -544,7 +544,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytecho":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytecho(
         ӄryӄnz,
         Vlkyre,
@@ -565,7 +565,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytflanger":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytflanger(
         ӄryӄnz,
         Vlkyre,
@@ -586,7 +586,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytnightcore":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytnightcore(
         ӄryӄnz,
         Vlkyre,
@@ -607,7 +607,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytphaser":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytphaser(
         ӄryӄnz,
         Vlkyre,
@@ -628,7 +628,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytreverse":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytreverse(
         ӄryӄnz,
         Vlkyre,
@@ -649,7 +649,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytslow":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytslow(
         ӄryӄnz,
         Vlkyre,
@@ -670,7 +670,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytspeed":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytspeed(
         ӄryӄnz,
         Vlkyre,
@@ -691,7 +691,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytsubboost":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytsubboost(
         ӄryӄnz,
         Vlkyre,
@@ -712,7 +712,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytsuperslow":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytsuperspeed(
         ӄryӄnz,
         Vlkyre,
@@ -733,7 +733,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytsuperslow":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytsuperslow(
         ӄryӄnz,
         Vlkyre,
@@ -754,7 +754,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytsurround":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytsurround(
         ӄryӄnz,
         Vlkyre,
@@ -775,7 +775,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytvaporwave":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytvaporwave(
         ӄryӄnz,
         Vlkyre,
@@ -796,7 +796,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "ytvibrato":
-      if (checkBalance(Vlkyre.sender, 40) !== true) return;
+      if (checkBalance(Vlkyre.sender, 40) === false) return;
       await ytvibrato(
         ӄryӄnz,
         Vlkyre,
@@ -1099,7 +1099,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await ass(
         ӄryӄnz,
         Vlkyre,
@@ -1124,7 +1124,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await bdsm(
         ӄryӄnz,
         Vlkyre,
@@ -1149,7 +1149,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await cum(
         ӄryӄnz,
         Vlkyre,
@@ -1174,7 +1174,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await doujin(
         ӄryӄnz,
         Vlkyre,
@@ -1199,7 +1199,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await feet(
         ӄryӄnz,
         Vlkyre,
@@ -1224,7 +1224,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await femdom(
         ӄryӄnz,
         Vlkyre,
@@ -1249,7 +1249,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await foxgirl(
         ӄryӄnz,
         Vlkyre,
@@ -1274,7 +1274,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await glasses(
         ӄryӄnz,
         Vlkyre,
@@ -1299,7 +1299,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await hentai(
         ӄryӄnz,
         Vlkyre,
@@ -1324,7 +1324,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await maid(
         ӄryӄnz,
         Vlkyre,
@@ -1349,7 +1349,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await masturbation(
         ӄryӄnz,
         Vlkyre,
@@ -1374,7 +1374,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await netorare(
         ӄryӄnz,
         Vlkyre,
@@ -1399,7 +1399,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await orgy(
         ӄryӄnz,
         Vlkyre,
@@ -1431,7 +1431,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await panties(
         ӄryӄnz,
         Vlkyre,
@@ -1456,7 +1456,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await school(
         ӄryӄnz,
         Vlkyre,
@@ -1481,7 +1481,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await tentacles(
         ӄryӄnz,
         Vlkyre,
@@ -1506,7 +1506,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await thighs(
         ӄryӄnz,
         Vlkyre,
@@ -1531,7 +1531,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await uniform(
         ӄryӄnz,
         Vlkyre,
@@ -1556,7 +1556,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
         return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-      if (checkBalance(Vlkyre.sender, 80) !== true) return;
+      if (checkBalance(Vlkyre.sender, 80) === false) return;
       await yuri(
         ӄryӄnz,
         Vlkyre,
@@ -1595,7 +1595,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await p4k(
         ӄryӄnz,
         Vlkyre,
@@ -1621,7 +1621,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await pblowjob(
         ӄryӄnz,
         Vlkyre,
@@ -1647,7 +1647,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await pmilf(
         ӄryӄnz,
         Vlkyre,
@@ -1673,7 +1673,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await pmilk(
         ӄryӄnz,
         Vlkyre,
@@ -1699,7 +1699,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await ppussy(
         ӄryӄnz,
         Vlkyre,
@@ -1725,7 +1725,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await pslut(
         ӄryӄnz,
         Vlkyre,
@@ -1749,7 +1749,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
         return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-      if (checkBalance(Vlkyre.sender, 100) !== true) return;
+      if (checkBalance(Vlkyre.sender, 100) === false) return;
       await tikporn(
         ӄryӄnz,
         Vlkyre,
@@ -1784,7 +1784,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     // ═══════════════════════════════════════════════════════════════         💰ɢᴀᴍᴇ        ═══════════════════════════════════════════════════════════════
     case "dly":
     case "daily":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await daily(
         ӄryӄnz,
         Vlkyre,
@@ -1807,7 +1807,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "fish":
     case "pond":
     case "fishes":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await fish(
         ӄryӄnz,
         Vlkyre,
@@ -1831,7 +1831,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "gamble":
     case "betting":
     case "roulette":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await gamble(
         ӄryӄnz,
         Vlkyre,
@@ -1852,7 +1852,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "claim":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await claim(
         ӄryӄnz,
         Vlkyre,
@@ -1875,7 +1875,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "hunt":
     case "hunting":
     case "pokehunt":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await hunt(
         ӄryӄnz,
         Vlkyre,
@@ -1898,7 +1898,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "zoo":
     case "forest":
     case "animals":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await zoo(
         ӄryӄnz,
         Vlkyre,
@@ -1922,7 +1922,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "loan":
     case "borrow":
     case "payment":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await pay(
         ӄryӄnz,
         Vlkyre,
@@ -1945,7 +1945,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "job":
     case "work":
     case "earn":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await work(
         ӄryӄnz,
         Vlkyre,
@@ -1969,7 +1969,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "gold":
     case "money":
     case "balance":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await balance(
         ӄryӄnz,
         Vlkyre,
@@ -1990,7 +1990,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "buy":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await buy(
         ӄryӄnz,
         Vlkyre,
@@ -2014,7 +2014,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "shop":
     case "store":
     case "shopping":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await store(
         ӄryӄnz,
         Vlkyre,
@@ -2037,7 +2037,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "rob":
     case "thief":
     case "robbery":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await rob(
         ӄryӄnz,
         Vlkyre,
@@ -2061,7 +2061,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "inv":
     case "loot":
     case "inventory":
-      if (checkBalance(Vlkyre.sender, 10) !== true) return;
+      if (checkBalance(Vlkyre.sender, 10) === false) return;
       await bag(
         ӄryӄnz,
         Vlkyre,
@@ -2441,7 +2441,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "randommusic":
     case "suggestaudio":
     case "suggestmusic":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await radio(
         ӄryӄnz,
         Vlkyre,
@@ -2470,7 +2470,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "ytaudio":
     case "ytmusic":
     case "youtubemusic":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await yta(
         ӄryӄnz,
         Vlkyre,
@@ -2496,7 +2496,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "ytmp4":
     case "ytvideo":
     case "youtubevideo":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await ytv(
         ӄryӄnz,
         Vlkyre,
@@ -2530,7 +2530,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         📼ᴄᴏɴᴠᴇʀᴛ        ═══════════════════════════════════════════════════════════════
     case "tourl":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await tourl(
         ӄryӄnz,
         Vlkyre,
@@ -2551,7 +2551,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "toimg":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await toimg(
         ӄryӄnz,
         Vlkyre,
@@ -2572,7 +2572,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "tinyurl":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await tinyurl(
         ӄryӄnz,
         Vlkyre,
@@ -2596,7 +2596,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "sgif":
     case "sticker":
     case "stickergif":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await sticker(
         ӄryӄnz,
         Vlkyre,
@@ -2618,7 +2618,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 */
     case "take":
     case "steal":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await steal(
         ӄryӄnz,
         Vlkyre,
@@ -2639,7 +2639,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "carbon":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await carbon(
         ӄryӄnz,
         Vlkyre,
@@ -2673,7 +2673,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         🔎ꜱᴇᴀʀᴄʜ        ═══════════════════════════════════════════════════════════════
     case "pokemon":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await pokemon(
         ӄryӄnz,
         Vlkyre,
@@ -2694,7 +2694,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "pokedex":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await pokedex(
         ӄryӄnz,
         Vlkyre,
@@ -2717,7 +2717,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "getgif":
     case "gify":
     case "gif":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await gify(
         ӄryӄnz,
         Vlkyre,
@@ -2739,7 +2739,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 */
     case "pin":
     case "pinterest":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await pinterest(
         ӄryӄnz,
         Vlkyre,
@@ -2764,7 +2764,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "ytscrape":
     case "youtubescrape":
     case "youtubesearch":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await yts(
         ӄryӄnz,
         Vlkyre,
@@ -2785,7 +2785,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "lyrics":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await lyrics(
         ӄryӄnz,
         Vlkyre,
@@ -2807,7 +2807,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 */
     case "gimage":
     case "image":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await image(
         ӄryӄnz,
         Vlkyre,
@@ -2831,7 +2831,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
     case "find":
     case "search":
     case "google":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await google(
         ӄryӄnz,
         Vlkyre,
@@ -2852,7 +2852,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "iguser":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await iguser(
         ӄryӄnz,
         Vlkyre,
@@ -2873,7 +2873,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "anime":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await anime(
         ӄryӄnz,
         Vlkyre,
@@ -2894,7 +2894,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "manga":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await manga(
         ӄryӄnz,
         Vlkyre,
@@ -2915,7 +2915,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "wallpaper":
-      if (checkBalance(Vlkyre.sender, 60) !== true) return;
+      if (checkBalance(Vlkyre.sender, 60) === false) return;
       await wallpaper(
         ӄryӄnz,
         Vlkyre,
@@ -3290,7 +3290,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         🥐ꜰɪʟᴛᴇʀꜱ        ═══════════════════════════════════════════════════════════════
     case "bassboost":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await bassboost(
         ӄryӄnz,
         Vlkyre,
@@ -3311,7 +3311,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "echo":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await echo(
         ӄryӄnz,
         Vlkyre,
@@ -3332,7 +3332,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "flanger":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await flanger(
         ӄryӄnz,
         Vlkyre,
@@ -3353,7 +3353,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "nightcore":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await nightcore(
         ӄryӄnz,
         Vlkyre,
@@ -3374,7 +3374,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "phaser":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await phaser(
         ӄryӄnz,
         Vlkyre,
@@ -3395,7 +3395,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "reverse":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await reverse(
         ӄryӄnz,
         Vlkyre,
@@ -3416,7 +3416,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "slow":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await slow(
         ӄryӄnz,
         Vlkyre,
@@ -3437,7 +3437,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "speed":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await speed(
         ӄryӄnz,
         Vlkyre,
@@ -3458,7 +3458,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "subboost":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await subboost(
         ӄryӄnz,
         Vlkyre,
@@ -3479,7 +3479,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "superspeed":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await superspeed(
         ӄryӄnz,
         Vlkyre,
@@ -3500,7 +3500,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "surround":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await surround(
         ӄryӄnz,
         Vlkyre,
@@ -3521,7 +3521,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "vaporwave":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await vaporwave(
         ӄryӄnz,
         Vlkyre,
@@ -3542,7 +3542,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "vibrato":
-      if (checkBalance(Vlkyre.sender, 30) !== true) return;
+      if (checkBalance(Vlkyre.sender, 30) === false) return;
       await vibrato(
         ӄryӄnz,
         Vlkyre,
@@ -3576,7 +3576,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
       "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
     // ═══════════════════════════════════════════════════════════════         🥞ᴀɴɪᴍᴇ        ═══════════════════════════════════════════════════════════════
     case "pat":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await pat(
         ӄryӄnz,
         Vlkyre,
@@ -3597,7 +3597,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "hug":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await hug(
         ӄryӄnz,
         Vlkyre,
@@ -3618,7 +3618,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "kiss":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await kiss(
         ӄryӄnz,
         Vlkyre,
@@ -3639,7 +3639,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "cuddle":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await cuddle(
         ӄryӄnz,
         Vlkyre,
@@ -3660,7 +3660,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "kick":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await kick(
         ӄryӄnz,
         Vlkyre,
@@ -3681,7 +3681,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "bite":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await bite(
         ӄryӄnz,
         Vlkyre,
@@ -3702,7 +3702,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "blush":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await blush(
         ӄryӄnz,
         Vlkyre,
@@ -3723,7 +3723,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "bored":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await bored(
         ӄryӄnz,
         Vlkyre,
@@ -3744,7 +3744,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "confused":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await confused(
         ӄryӄnz,
         Vlkyre,
@@ -3765,7 +3765,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "cry":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await cry(
         ӄryӄnz,
         Vlkyre,
@@ -3786,7 +3786,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "goodnight":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await goodnight(
         ӄryӄnz,
         Vlkyre,
@@ -3807,7 +3807,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "happy":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await happy(
         ӄryӄnz,
         Vlkyre,
@@ -3828,7 +3828,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "poke":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await poke(
         ӄryӄnz,
         Vlkyre,
@@ -3849,7 +3849,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "sad":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await sad(
         ӄryӄnz,
         Vlkyre,
@@ -3870,7 +3870,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "slap":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await slap(
         ӄryӄnz,
         Vlkyre,
@@ -3891,7 +3891,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "smile":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await smile(
         ӄryӄnz,
         Vlkyre,
@@ -3912,7 +3912,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "wave":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await wave(
         ӄryӄnz,
         Vlkyre,
@@ -3933,7 +3933,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "wink":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await wink(
         ӄryӄnz,
         Vlkyre,
@@ -3954,7 +3954,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "dance":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await dance(
         ӄryӄnz,
         Vlkyre,
@@ -3975,7 +3975,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "baka":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await baka(
         ӄryӄnz,
         Vlkyre,
@@ -3996,7 +3996,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "bonk":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await bonk(
         ӄryӄnz,
         Vlkyre,
@@ -4018,7 +4018,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 */
     case "hi5":
     case "highfive":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await highfive(
         ӄryӄnz,
         Vlkyre,
@@ -4039,7 +4039,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "kill":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await kill(
         ӄryӄnz,
         Vlkyre,
@@ -4060,7 +4060,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "nervous":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await nervous(
         ӄryӄnz,
         Vlkyre,
@@ -4081,7 +4081,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "punch":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await punch(
         ӄryӄnz,
         Vlkyre,
@@ -4102,7 +4102,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "scream":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await scream(
         ӄryӄnz,
         Vlkyre,
@@ -4123,7 +4123,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "stare":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await stare(
         ӄryӄnz,
         Vlkyre,
@@ -4144,7 +4144,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "yeet":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await yeet(
         ӄryӄnz,
         Vlkyre,
@@ -4165,7 +4165,7 @@ exports.ShortC = async (Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) => {
 |═══════════════════════════════════════════════════════════════|
 */
     case "yes":
-      if (checkBalance(Vlkyre.sender, 20) !== true) return;
+      if (checkBalance(Vlkyre.sender, 20) === false) return;
       await yes(
         ӄryӄnz,
         Vlkyre,
