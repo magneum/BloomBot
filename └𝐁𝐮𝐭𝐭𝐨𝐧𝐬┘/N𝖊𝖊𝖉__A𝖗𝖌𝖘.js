@@ -16,7 +16,7 @@
 require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let Economy = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
-async function checkBalance(user) {
+async function checkBalance(callback) {
 await Economy.findOne(
 {
 ID: Vlkyre.sender,
@@ -34,14 +34,15 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return 0;
+return callback(0);
 } else {
-return userEco.money;
+return callback(userEco.money);
 }
 }
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+console.log(checkBalance);
 await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
