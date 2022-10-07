@@ -219,6 +219,7 @@ async function checkBalance(user, deduct) {
           workdone: 0,
           worktimeout: 900000,
         }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+        console.log(userEco);
         return true;
       }
       if (userEco.money < deduct) {
@@ -230,10 +231,12 @@ async function checkBalance(user, deduct) {
           `𝐒𝐨𝐫𝐫𝐲 𝐘𝐨𝐮 𝐍𝐞𝐞𝐝 𝐀𝐭𝐥𝐞𝐚𝐬𝐭 _${deduct}💰_ 𝐅𝐨𝐫 𝐓𝐡𝐚𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`
         );
+        console.log(userEco);
         return false;
       } else {
         userEco.money = userEco.money - deduct;
         userEco.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+        console.log(userEco);
         return true;
       }
     }
