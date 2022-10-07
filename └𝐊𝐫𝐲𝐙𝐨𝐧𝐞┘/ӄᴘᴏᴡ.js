@@ -112,10 +112,9 @@ console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄ
 // },
 // mimetype: "image/png",
 // fileName: "Pokedex.png",
-// caption: ` 
+// caption: `
 // 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐀 𝐓𝐄𝐒𝐓 𝐏𝐎𝐊𝐄𝐌𝐎𝐍 𝐂𝐀𝐑𝐃 𝐆𝐀𝐌𝐄!
 // 𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 _!𝐂𝐋𝐀𝐈𝐌_ 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.....
-
 
 // 💫 *Name:* ${PokemonData.name}
 // 〽️ *Pokedex ID:* ${PokemonData.id}
@@ -242,6 +241,36 @@ if (!userRank) return;
 await ARanks(Vlkyre, ӄryӄnz, Caught, Vlkyre.A𝖗𝖌𝖘);
 }
 );
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+//   await groupClaim.findOne(
+//     {
+//       ID: Vlkyre.sender,
+//     },
+//     async (Èrrðr, claimg) => {
+//       if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+//       if (!claimg) {
+//         new Economy({
+//           ID: Vlkyre.sender,
+//           claimg: 14400000,
+//           total: 0,
+//         })
+//           .save()
+//           .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+//         return;
+//       }
+//       // if (claimg.fishtimeout - (Date.now() - claimg.fishdone) > 0) {
+//       // let time = ms(claimg.fishtimeout - (Date.now() - claimg.fishdone));
+//       // return await Image_Button(
+//       // ӄryӄnz,
+//       // Vlkyre,
+//       // Vlkyre.A𝖗𝖌𝖘,
+//       // "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_FIsh.png",
+//       // `❌𝗘𝗿𝗿𝗼𝗿: You've Recently Claimed A Pokemon.
+//       // 🕐𝗔𝗴𝗮𝗶𝗻: ${time.hours}h ${time.minutes}m ${time.seconds}s`
+//       // );
+//       // }
+//     }
+//   );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 await ProTon.Vprtn(ӄryӄnz, Vlkyre);
 if (

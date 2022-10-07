@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -46,54 +46,54 @@ let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.bag = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  await Robbery.findOne(
-    {
-      ID: Vlkyre.sender,
-    },
-    async (Èrrðr, userRob) => {
-      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
-      if (!userRob) {
-        var newUser = new Robbery({
-          ID: Vlkyre.sender,
-          sword: 0,
-          laptop: 0,
-          charm: 0,
-          CurrentRobberyTime: 0,
-          PermanentRobberyTime: 900000,
-        });
-        await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-        return await Image_Button(
-          ӄryӄnz,
-          Vlkyre,
-          Vlkyre.A𝖗𝖌𝖘,
-          "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
-          `╔◇══════════◇╗
+await Robbery.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (Èrrðr, userRob) => {
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+if (!userRob) {
+var newUser = new Robbery({
+ID: Vlkyre.sender,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: 0,
+PermanentRobberyTime: 900000,
+});
+await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
+`╔◇══════════◇╗
 ┊ 💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`
-        );
-      } else {
-        return await Image_Button(
-          ӄryӄnz,
-          Vlkyre,
-          Vlkyre.A𝖗𝖌𝖘,
-          "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre.png",
-          `╔◇══════════◇╗
+);
+} else {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre.png",
+`╔◇══════════◇╗
 ┊ 💼𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲💼
 ╚◇══════════◇╝
 
@@ -101,10 +101,10 @@ exports.bag = async (
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽 ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺 ${userRob.charm}`
-        );
-      }
-    }
-  );
+);
+}
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
