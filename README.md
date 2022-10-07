@@ -2,6 +2,8 @@
 
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>[![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)[![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)[![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamriders098/BHOSMANUS)
+
 <h1 align="center">👇🏽Press Below To Check Vlkyre in YouTube👇🏽</h1>
 
 <div align="center">
