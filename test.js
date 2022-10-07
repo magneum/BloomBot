@@ -1,6 +1,4 @@
-function myFunction(a, b) {
-  return a * b;
+async function checkBalance() {
+  return 2 + 2;
 }
-
-var x = myFunction(4, 3);
-console.log(x);
+console.log(checkBalance());

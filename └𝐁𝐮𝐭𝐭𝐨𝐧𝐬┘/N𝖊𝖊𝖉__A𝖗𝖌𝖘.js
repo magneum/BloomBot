@@ -16,16 +16,15 @@
 require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let Economy = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
-async function checkBalance(namer) {
 await Economy.findOne(
 {
-ID: namer,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
 if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 await new Economy({
-ID: namer,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -34,15 +33,20 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return 0;
-} else {
-return userEco.money;
-}
-}
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
+`╔◇══════════◇╗
+┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
+╚◇══════════◇╝
+
+🧈Added To DB for Current command First Time!
+Try The Command Again.`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-var xcv = checkBalance(Vlkyre.sender);
 await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
@@ -54,7 +58,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 │║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 └╚═══════⋑
 ${𝖀𝖘𝖆𝖌𝖊}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -83,6 +87,8 @@ key: Vlkyre.key,
 return await ӄryӄnz
 .sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
 .catch((e) => console.log(e));
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
@@ -98,7 +104,9 @@ return await ӄryӄnz
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
 */
-("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|"); // `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+
+// `|⬡════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════⬡|`;
 
 // // ════════════════════════|▷   (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!   ◁|════════════════════════
 
@@ -175,7 +183,7 @@ return await ӄryӄnz
 // caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 // ${𝖀𝖘𝖆𝖌𝖊}`,
-// footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
+// footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
 // buttons: [
 // {
 // buttonId: prefix + "HELP",

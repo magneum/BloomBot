@@ -16,16 +16,15 @@
 require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let Economy = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.Video_Button = async (ӄryӄnz, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-async function checkBalance(namer) {
 await Economy.findOne(
 {
-ID: namer,
+ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
 if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 await new Economy({
-ID: namer,
+ID: Vlkyre.sender,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -34,15 +33,20 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return 0;
-} else {
-return userEco.money;
-}
-}
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
+`╔◇══════════◇╗
+┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
+╚◇══════════◇╝
+
+🧈Added To DB for Current command First Time!
+Try The Command Again.`
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-var xcv = checkBalance(Vlkyre.sender);
 let ʀᴇᴀᴄᴛ;
 if (Vlkyre.isReply) {
 var Receiver =
@@ -62,7 +66,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -102,7 +106,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -137,7 +141,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -169,6 +173,8 @@ return await ӄryӄnz
 .sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
 .catch((e) => console.log(e));
 }
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
