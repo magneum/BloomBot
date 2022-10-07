@@ -16,16 +16,16 @@
 require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let Economy = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.N𝖊𝖊𝖉__A𝖗𝖌𝖘 = async (ӄryӄnz, Vlkyre, 𝖀𝖘𝖆𝖌𝖊) => {
-async function checkBalance(callback) {
+async function checkBalance(namer) {
 await Economy.findOne(
 {
-ID: Vlkyre.sender,
+ID: namer,
 },
 async (Èrrðr, userEco) => {
 if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
 if (!userEco) {
 await new Economy({
-ID: Vlkyre.sender,
+ID: namer,
 money: 0,
 daily: 0,
 timeout: 86400000,
@@ -34,15 +34,15 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 }).catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return callback(0);
+return 0;
 } else {
-return callback(userEco.money);
+return userEco.money;
 }
 }
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-console.log(checkBalance);
+var xcv = checkBalance(Vlkyre.sender);
 await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
@@ -54,7 +54,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 │║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 └╚═══════⋑
 ${𝖀𝖘𝖆𝖌𝖊}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${checkBalance() || 0}`,
+footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -175,7 +175,7 @@ return await ӄryӄnz
 // caption: `🕊️ *ɴᴀᴍᴇ:* ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 
 // ${𝖀𝖘𝖆𝖌𝖊}`,
-// footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${checkBalance() || 0}`,
+// footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${xcv || 0}`,
 // buttons: [
 // {
 // buttonId: prefix + "HELP",
