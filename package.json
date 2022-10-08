@@ -106,7 +106,6 @@
     "google-search-results-nodejs": "^2.0.1",
     "google-speech-from-buffer": "^0.0.2",
     "google-tts-api": "^2.0.2",
-    "googleapis": "^92.0.0",
     "got": "^11.8.3",
     "heroku-client": "^3.1.0",
     "hubot-warframe-joke": "^1.0.7",
