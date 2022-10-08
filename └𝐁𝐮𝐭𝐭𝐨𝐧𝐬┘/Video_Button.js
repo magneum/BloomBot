@@ -69,7 +69,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -109,7 +109,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
 buttons: [
 {
 buttonId: prefix + "HELP",
@@ -144,7 +144,7 @@ caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 └╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-footer: `❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
 buttons: [
 {
 buttonId: prefix + "HELP",
