@@ -21,7 +21,7 @@ await Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!userEco) {
 let newUser = new Economy({
 ID: Vlkyre.sender,
@@ -35,7 +35,7 @@ worktimeout: 900000,
 });
 await newUser
 .save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr)));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
