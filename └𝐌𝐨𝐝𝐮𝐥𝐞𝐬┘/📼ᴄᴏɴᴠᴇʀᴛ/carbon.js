@@ -149,7 +149,7 @@ exports.carbon = async (
     .setPrettify(true)
     .setTheme(ThemeInput);
   let output = await Carbon.generateCarbon(carbon);
-  let ImgPath = "./Vlkyre🎒Bag/" + Date.now().toString() + ".png";
+  let ImgPath = "./└𝐈𝐧𝐭𝐱」/" + Date.now().toString() + ".png";
   await fs.createWriteStream(ImgPath).write(output);
   await Image_Button(
     ӄryӄnz,

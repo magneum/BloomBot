@@ -81,7 +81,7 @@ exports.slow = async (
     );
   }
   ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.mp3`;
+  let FFmpegFile = `./└𝐈𝐧𝐭𝐱」/${Date.now()}${Vlkyre.key.id}.mp3`;
   let RawFile = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
   exec(`ffmpeg -i ${RawFile} -af "atempo=0.8" ${FFmpegFile}`, async (error) => {
     cleanRF.cleanRF(Convert_From);

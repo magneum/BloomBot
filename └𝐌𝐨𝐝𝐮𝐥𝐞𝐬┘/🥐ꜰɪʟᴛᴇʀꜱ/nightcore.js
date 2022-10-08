@@ -81,7 +81,7 @@ exports.nightcore = async (
     );
   }
   ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.mp3`;
+  let FFmpegFile = `./└𝐈𝐧𝐭𝐱」/${Date.now()}${Vlkyre.key.id}.mp3`;
   let RawFile = await ӄryӄnz.downloadAndSaveMediaMessage(quoted);
   exec(
     `ffmpeg -i ${RawFile} -af "aresample=48000,asetrate=48000*1.25" ${FFmpegFile}`,
