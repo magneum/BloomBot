@@ -144,8 +144,8 @@ exports.ytphaser = async (
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
     );
     /*════════════════════════════════════════════════════════════|▷   ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™  ◁|════════════════════════════════════════════════════════════*/
-    let FFmpegFile = `./Vlkyre🎒Bag/${Date.now()}${Vlkyre.key.id}.mp3`;
-    let FilteredAudio = `./Vlkyre🎒Bag/${Date.now()}-F-${Vlkyre.key.id}.mp3`;
+    let FFmpegFile = `./└𝐈𝐧𝐭𝐱」/${Date.now()}${Vlkyre.key.id}.mp3`;
+    let FilteredAudio = `./└𝐈𝐧𝐭𝐱」/${Date.now()}-F-${Vlkyre.key.id}.mp3`;
     ffmpeg(dl_link)
       .saveToFile(FFmpegFile)
       .on("end", () => {
