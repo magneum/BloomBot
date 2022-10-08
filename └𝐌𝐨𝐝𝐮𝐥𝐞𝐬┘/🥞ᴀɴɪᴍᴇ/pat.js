@@ -62,8 +62,8 @@ exports.pat = async (
   commandName,
   body
 ) => {
-  let ɢᴏᴛꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}}.gif`;
-  let ɢɪᴠᴇꜰɪʟᴇ = `./Vlkyre🎒Bag/${Vlkyre.key.id}}.mp4`;
+  let ɢᴏᴛꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.gif`;
+  let ɢɪᴠᴇꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.mp4`;
   let ꜰɪɴᴀʟʟɪɴᴋ = await fetchJson(`https://api.waifu.pics/sfw/${Final_Name}`);
   const Response = await axios.get(ꜰɪɴᴀʟʟɪɴᴋ.url, {
     responseType: "arraybuffer",
@@ -71,7 +71,7 @@ exports.pat = async (
   if (!Response.data) {
     return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
   }
-  let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./Vlkyre🎒Bag", {
+  let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./└𝐈𝐧𝐭𝐱」", {
     fileName: `${Vlkyre.key.id}}.gif`,
     retry: true,
   });
