@@ -131,6 +131,63 @@ Vlkyre.A𝖗𝖌𝖘,
 }
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+} else if (Vlkyre.A𝖗𝖌𝖘[0] && Vlkyre.A𝖗𝖌𝖘[0].startsWith("@")) {
+let mention = Vlkyre.mentionByTag;
+let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || Vlkyre.msg.contextInfo.participant;
+await userBanCheck.findOne(
+{
+ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
+},
+async (error, userBan) => {
+if (error) return console.log(error);
+if (!userBan) {
+let newUser = new userBanCheck({
+ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
+});
+await newUser.save();
+return await ӄryӄnz.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, 𝕻𝖊𝖗𝖘𝖔𝖓] },
+image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
+caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
+║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
+╚═══════╝
+
+
+*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} Has Been Banned and Bot won't Respond to that dumbo!`,
+footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*",
+buttons: [
+{
+buttonId: prefix + "help",
+buttonText: { displayText: prefix + "help" },
+type: 1,
+},
+{
+buttonId: prefix + "support",
+buttonText: { displayText: prefix + "support" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: Vlkyre,
+}
+);
+} else {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
+`*❌𝗘𝗿𝗿𝗼𝗿:* That Person Is Already banned!`
+);
+}
+}
+);
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else if (!Vlkyre.mentionByReply) {
 await userBanCheck.findOne(
 {

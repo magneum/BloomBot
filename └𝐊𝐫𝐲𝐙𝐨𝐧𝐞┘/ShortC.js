@@ -251,7 +251,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         ⚡ʀᴀɴᴅᴏᴍꜱ        ═══════════════════════════════════════════════════════════════
 case "ship":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await ship(
 ӄryӄnz,
 Vlkyre,
@@ -272,7 +272,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "quote":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await quote(
 ӄryӄnz,
 Vlkyre,
@@ -293,7 +293,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "fact":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await fact(
 ӄryӄnz,
 Vlkyre,
@@ -314,7 +314,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "advice":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await advice(
 ӄryӄnz,
 Vlkyre,
@@ -335,7 +335,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "waifu":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await waifu(
 ӄryӄnz,
 Vlkyre,
@@ -358,7 +358,7 @@ break;
 case "sr":
 case "reddit":
 case "subreddit":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await reddit(
 ӄryӄnz,
 Vlkyre,
@@ -379,7 +379,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "rank":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await rank(
 ӄryӄnz,
 Vlkyre,
@@ -402,7 +402,7 @@ break;
 case "tts":
 case "gtts":
 case "text2speech":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await tts(
 ӄryӄnz,
 Vlkyre,
@@ -427,7 +427,7 @@ case "joke":
 case "funny":
 case "laugh":
 case "dadjoke":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await joke(
 ӄryӄnz,
 Vlkyre,
@@ -448,7 +448,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "meme":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await meme(
 ӄryӄnz,
 Vlkyre,
@@ -469,7 +469,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "neko":
-if (checkBalance(Vlkyre.sender, 50) === false) return;
+// if (checkBalance(Vlkyre.sender, 50) === false) return;
 await neko(
 ӄryӄnz,
 Vlkyre,
@@ -503,7 +503,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         ⭕ʏᴛꜰɪʟᴛᴇʀ        ═══════════════════════════════════════════════════════════════
 case "yt8d":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await yt8d(
 ӄryӄnz,
 Vlkyre,
@@ -524,7 +524,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytbassboost":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytbassboost(
 ӄryӄnz,
 Vlkyre,
@@ -545,7 +545,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytecho":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytecho(
 ӄryӄnz,
 Vlkyre,
@@ -566,7 +566,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytflanger":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytflanger(
 ӄryӄnz,
 Vlkyre,
@@ -587,7 +587,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytnightcore":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytnightcore(
 ӄryӄnz,
 Vlkyre,
@@ -608,7 +608,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytphaser":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytphaser(
 ӄryӄnz,
 Vlkyre,
@@ -629,7 +629,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytreverse":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytreverse(
 ӄryӄnz,
 Vlkyre,
@@ -650,7 +650,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytslow":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytslow(
 ӄryӄnz,
 Vlkyre,
@@ -671,7 +671,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytspeed":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytspeed(
 ӄryӄnz,
 Vlkyre,
@@ -692,7 +692,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytsubboost":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytsubboost(
 ӄryӄnz,
 Vlkyre,
@@ -713,7 +713,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytsuperslow":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytsuperspeed(
 ӄryӄnz,
 Vlkyre,
@@ -734,7 +734,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytsuperslow":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytsuperslow(
 ӄryӄnz,
 Vlkyre,
@@ -755,7 +755,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytsurround":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytsurround(
 ӄryӄnz,
 Vlkyre,
@@ -776,7 +776,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytvaporwave":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytvaporwave(
 ӄryӄnz,
 Vlkyre,
@@ -797,7 +797,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ytvibrato":
-if (checkBalance(Vlkyre.sender, 40) === false) return;
+// if (checkBalance(Vlkyre.sender, 40) === false) return;
 await ytvibrato(
 ӄryӄnz,
 Vlkyre,
@@ -1102,7 +1102,7 @@ break;
 case "ass":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await ass(
 ӄryӄnz,
 Vlkyre,
@@ -1125,7 +1125,7 @@ break;
 case "bdsm":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await bdsm(
 ӄryӄnz,
 Vlkyre,
@@ -1148,7 +1148,7 @@ break;
 case "cum":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await cum(
 ӄryӄnz,
 Vlkyre,
@@ -1171,7 +1171,7 @@ break;
 case "doujin":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await doujin(
 ӄryӄnz,
 Vlkyre,
@@ -1194,7 +1194,7 @@ break;
 case "feet":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await feet(
 ӄryӄnz,
 Vlkyre,
@@ -1217,7 +1217,7 @@ break;
 case "femdom":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await femdom(
 ӄryӄnz,
 Vlkyre,
@@ -1240,7 +1240,7 @@ break;
 case "foxgirl":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await foxgirl(
 ӄryӄnz,
 Vlkyre,
@@ -1263,7 +1263,7 @@ break;
 case "glasses":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await glasses(
 ӄryӄnz,
 Vlkyre,
@@ -1286,7 +1286,7 @@ break;
 case "hentai":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await hentai(
 ӄryӄnz,
 Vlkyre,
@@ -1309,7 +1309,7 @@ break;
 case "maid":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await maid(
 ӄryӄnz,
 Vlkyre,
@@ -1332,7 +1332,7 @@ break;
 case "masturbation":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await masturbation(
 ӄryӄnz,
 Vlkyre,
@@ -1355,7 +1355,7 @@ break;
 case "netorare":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await netorare(
 ӄryӄnz,
 Vlkyre,
@@ -1378,7 +1378,7 @@ break;
 case "orgy":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await orgy(
 ӄryӄnz,
 Vlkyre,
@@ -1408,7 +1408,7 @@ break;
 case "panties":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await panties(
 ӄryӄnz,
 Vlkyre,
@@ -1431,7 +1431,7 @@ break;
 case "school":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await school(
 ӄryӄnz,
 Vlkyre,
@@ -1454,7 +1454,7 @@ break;
 case "tentacles":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await tentacles(
 ӄryӄnz,
 Vlkyre,
@@ -1477,7 +1477,7 @@ break;
 case "thighs":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await thighs(
 ӄryӄnz,
 Vlkyre,
@@ -1500,7 +1500,7 @@ break;
 case "uniform":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await uniform(
 ӄryӄnz,
 Vlkyre,
@@ -1523,7 +1523,7 @@ break;
 case "yuri":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (checkBalance(Vlkyre.sender, 80) === false) return;
+// if (checkBalance(Vlkyre.sender, 80) === false) return;
 await yuri(
 ӄryӄnz,
 Vlkyre,
@@ -1560,7 +1560,7 @@ case "p4k":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await p4k(
 ӄryӄnz,
 Vlkyre,
@@ -1584,7 +1584,7 @@ case "pblowjob":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pblowjob(
 ӄryӄnz,
 Vlkyre,
@@ -1608,7 +1608,7 @@ case "pmilf":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pmilf(
 ӄryӄnz,
 Vlkyre,
@@ -1632,7 +1632,7 @@ case "pmilk":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pmilk(
 ӄryӄnz,
 Vlkyre,
@@ -1656,7 +1656,7 @@ case "ppussy":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await ppussy(
 ӄryӄnz,
 Vlkyre,
@@ -1680,7 +1680,7 @@ case "pslut":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pslut(
 ӄryӄnz,
 Vlkyre,
@@ -1702,7 +1702,7 @@ case "tikporn":
 if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
-if (checkBalance(Vlkyre.sender, 100) === false) return;
+// if (checkBalance(Vlkyre.sender, 100) === false) return;
 await tikporn(
 ӄryӄnz,
 Vlkyre,
@@ -1737,7 +1737,7 @@ break;
 // ═══════════════════════════════════════════════════════════════         💰ɢᴀᴍᴇ        ═══════════════════════════════════════════════════════════════
 case "dly":
 case "daily":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await daily(
 ӄryӄnz,
 Vlkyre,
@@ -1760,7 +1760,7 @@ break;
 case "fish":
 case "pond":
 case "fishes":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await fish(
 ӄryӄnz,
 Vlkyre,
@@ -1784,7 +1784,7 @@ case "bet":
 case "gamble":
 case "betting":
 case "roulette":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await gamble(
 ӄryӄnz,
 Vlkyre,
@@ -1805,7 +1805,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "claim":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await claim(
 ӄryӄnz,
 Vlkyre,
@@ -1828,7 +1828,7 @@ break;
 case "hunt":
 case "hunting":
 case "pokehunt":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await hunt(
 ӄryӄnz,
 Vlkyre,
@@ -1851,7 +1851,7 @@ break;
 case "zoo":
 case "forest":
 case "animals":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await zoo(
 ӄryӄnz,
 Vlkyre,
@@ -1875,7 +1875,7 @@ case "pay":
 case "loan":
 case "borrow":
 case "payment":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await pay(
 ӄryӄnz,
 Vlkyre,
@@ -1898,7 +1898,7 @@ break;
 case "job":
 case "work":
 case "earn":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await work(
 ӄryӄnz,
 Vlkyre,
@@ -1922,7 +1922,7 @@ case "bal":
 case "gold":
 case "money":
 case "balance":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await balance(
 ӄryӄnz,
 Vlkyre,
@@ -1943,7 +1943,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "buy":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await buy(
 ӄryӄnz,
 Vlkyre,
@@ -1967,7 +1967,7 @@ case "mall":
 case "shop":
 case "store":
 case "shopping":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await store(
 ӄryӄnz,
 Vlkyre,
@@ -1990,7 +1990,7 @@ break;
 case "rob":
 case "thief":
 case "robbery":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await rob(
 ӄryӄnz,
 Vlkyre,
@@ -2014,7 +2014,7 @@ case "bag":
 case "inv":
 case "loot":
 case "inventory":
-if (checkBalance(Vlkyre.sender, 10) === false) return;
+// if (checkBalance(Vlkyre.sender, 10) === false) return;
 await bag(
 ӄryӄnz,
 Vlkyre,
@@ -2394,7 +2394,7 @@ case "randomaudio":
 case "randommusic":
 case "suggestaudio":
 case "suggestmusic":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await radio(
 ӄryӄnz,
 Vlkyre,
@@ -2423,7 +2423,7 @@ case "ytplay":
 case "ytaudio":
 case "ytmusic":
 case "youtubemusic":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await yta(
 ӄryӄnz,
 Vlkyre,
@@ -2449,7 +2449,7 @@ case "stream":
 case "ytmp4":
 case "ytvideo":
 case "youtubevideo":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await ytv(
 ӄryӄnz,
 Vlkyre,
@@ -2483,7 +2483,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         📼ᴄᴏɴᴠᴇʀᴛ        ═══════════════════════════════════════════════════════════════
 case "tourl":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await tourl(
 ӄryӄnz,
 Vlkyre,
@@ -2504,7 +2504,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "toimg":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await toimg(
 ӄryӄnz,
 Vlkyre,
@@ -2525,7 +2525,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "tinyurl":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await tinyurl(
 ӄryӄnz,
 Vlkyre,
@@ -2549,7 +2549,7 @@ case "s":
 case "sgif":
 case "sticker":
 case "stickergif":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await sticker(
 ӄryӄnz,
 Vlkyre,
@@ -2571,7 +2571,7 @@ break;
 */
 case "take":
 case "steal":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await steal(
 ӄryӄnz,
 Vlkyre,
@@ -2592,7 +2592,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "carbon":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await carbon(
 ӄryӄnz,
 Vlkyre,
@@ -2626,7 +2626,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         🔎ꜱᴇᴀʀᴄʜ        ═══════════════════════════════════════════════════════════════
 case "pokemon":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await pokemon(
 ӄryӄnz,
 Vlkyre,
@@ -2647,7 +2647,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "pokedex":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await pokedex(
 ӄryӄnz,
 Vlkyre,
@@ -2670,7 +2670,7 @@ break;
 case "getgif":
 case "gify":
 case "gif":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await gify(
 ӄryӄnz,
 Vlkyre,
@@ -2692,7 +2692,7 @@ break;
 */
 case "pin":
 case "pinterest":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await pinterest(
 ӄryӄnz,
 Vlkyre,
@@ -2717,7 +2717,7 @@ case "ytsearch":
 case "ytscrape":
 case "youtubescrape":
 case "youtubesearch":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await yts(
 ӄryӄnz,
 Vlkyre,
@@ -2738,7 +2738,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "lyrics":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await lyrics(
 ӄryӄnz,
 Vlkyre,
@@ -2760,7 +2760,7 @@ break;
 */
 case "gimage":
 case "image":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await image(
 ӄryӄnz,
 Vlkyre,
@@ -2784,7 +2784,7 @@ case "web":
 case "find":
 case "search":
 case "google":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await google(
 ӄryӄnz,
 Vlkyre,
@@ -2805,7 +2805,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "iguser":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await iguser(
 ӄryӄnz,
 Vlkyre,
@@ -2826,7 +2826,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "anime":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await anime(
 ӄryӄnz,
 Vlkyre,
@@ -2847,7 +2847,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "manga":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await manga(
 ӄryӄnz,
 Vlkyre,
@@ -2868,7 +2868,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "wallpaper":
-if (checkBalance(Vlkyre.sender, 60) === false) return;
+// if (checkBalance(Vlkyre.sender, 60) === false) return;
 await wallpaper(
 ӄryӄnz,
 Vlkyre,
@@ -3233,7 +3233,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         🥐ꜰɪʟᴛᴇʀꜱ        ═══════════════════════════════════════════════════════════════
 case "bassboost":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await bassboost(
 ӄryӄnz,
 Vlkyre,
@@ -3254,7 +3254,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "echo":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await echo(
 ӄryӄnz,
 Vlkyre,
@@ -3275,7 +3275,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "flanger":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await flanger(
 ӄryӄnz,
 Vlkyre,
@@ -3296,7 +3296,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "nightcore":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await nightcore(
 ӄryӄnz,
 Vlkyre,
@@ -3317,7 +3317,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "phaser":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await phaser(
 ӄryӄnz,
 Vlkyre,
@@ -3338,7 +3338,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "reverse":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await reverse(
 ӄryӄnz,
 Vlkyre,
@@ -3359,7 +3359,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "slow":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await slow(
 ӄryӄnz,
 Vlkyre,
@@ -3380,7 +3380,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "speed":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await speed(
 ӄryӄnz,
 Vlkyre,
@@ -3401,7 +3401,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "subboost":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await subboost(
 ӄryӄnz,
 Vlkyre,
@@ -3422,7 +3422,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "superspeed":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await superspeed(
 ӄryӄnz,
 Vlkyre,
@@ -3443,7 +3443,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "surround":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await surround(
 ӄryӄnz,
 Vlkyre,
@@ -3464,7 +3464,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "vaporwave":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await vaporwave(
 ӄryӄnz,
 Vlkyre,
@@ -3485,7 +3485,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "vibrato":
-if (checkBalance(Vlkyre.sender, 30) === false) return;
+// if (checkBalance(Vlkyre.sender, 30) === false) return;
 await vibrato(
 ӄryӄnz,
 Vlkyre,
@@ -3519,7 +3519,7 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         🥞ᴀɴɪᴍᴇ        ═══════════════════════════════════════════════════════════════
 case "pat":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await pat(
 ӄryӄnz,
 Vlkyre,
@@ -3540,7 +3540,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "hug":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await hug(
 ӄryӄnz,
 Vlkyre,
@@ -3561,7 +3561,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "kiss":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await kiss(
 ӄryӄnz,
 Vlkyre,
@@ -3582,7 +3582,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "cuddle":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await cuddle(
 ӄryӄnz,
 Vlkyre,
@@ -3603,7 +3603,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "kick":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await kick(
 ӄryӄnz,
 Vlkyre,
@@ -3624,7 +3624,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "bite":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await bite(
 ӄryӄnz,
 Vlkyre,
@@ -3645,7 +3645,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "blush":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await blush(
 ӄryӄnz,
 Vlkyre,
@@ -3666,7 +3666,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "bored":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await bored(
 ӄryӄnz,
 Vlkyre,
@@ -3687,7 +3687,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "confused":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await confused(
 ӄryӄnz,
 Vlkyre,
@@ -3708,7 +3708,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "cry":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await cry(
 ӄryӄnz,
 Vlkyre,
@@ -3729,7 +3729,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "goodnight":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await goodnight(
 ӄryӄnz,
 Vlkyre,
@@ -3750,7 +3750,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "happy":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await happy(
 ӄryӄnz,
 Vlkyre,
@@ -3771,7 +3771,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "poke":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await poke(
 ӄryӄnz,
 Vlkyre,
@@ -3792,7 +3792,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "sad":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await sad(
 ӄryӄnz,
 Vlkyre,
@@ -3813,7 +3813,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "slap":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await slap(
 ӄryӄnz,
 Vlkyre,
@@ -3834,7 +3834,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "smile":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await smile(
 ӄryӄnz,
 Vlkyre,
@@ -3855,7 +3855,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "wave":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await wave(
 ӄryӄnz,
 Vlkyre,
@@ -3876,7 +3876,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "wink":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await wink(
 ӄryӄnz,
 Vlkyre,
@@ -3897,7 +3897,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "dance":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await dance(
 ӄryӄnz,
 Vlkyre,
@@ -3918,7 +3918,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "baka":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await baka(
 ӄryӄnz,
 Vlkyre,
@@ -3939,7 +3939,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "bonk":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await bonk(
 ӄryӄnz,
 Vlkyre,
@@ -3961,7 +3961,7 @@ break;
 */
 case "hi5":
 case "highfive":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await highfive(
 ӄryӄnz,
 Vlkyre,
@@ -3982,7 +3982,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "kill":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await kill(
 ӄryӄnz,
 Vlkyre,
@@ -4003,7 +4003,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "nervous":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await nervous(
 ӄryӄnz,
 Vlkyre,
@@ -4024,7 +4024,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "punch":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await punch(
 ӄryӄnz,
 Vlkyre,
@@ -4045,7 +4045,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "scream":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await scream(
 ӄryӄnz,
 Vlkyre,
@@ -4066,7 +4066,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "stare":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await stare(
 ӄryӄnz,
 Vlkyre,
@@ -4087,7 +4087,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "yeet":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await yeet(
 ӄryӄnz,
 Vlkyre,
@@ -4108,7 +4108,7 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "yes":
-if (checkBalance(Vlkyre.sender, 20) === false) return;
+// if (checkBalance(Vlkyre.sender, 20) === false) return;
 await yes(
 ӄryӄnz,
 Vlkyre,
