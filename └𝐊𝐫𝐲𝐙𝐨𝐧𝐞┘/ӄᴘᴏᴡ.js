@@ -247,7 +247,7 @@ await ARanks(Vlkyre, ӄryӄnz, Caught, Vlkyre.A𝖗𝖌𝖘);
 //       ID: Vlkyre.sender,
 //     },
 //     async (Èrrðr, claimg) => {
-//       if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+//       if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 //       if (!claimg) {
 //         new Economy({
 //           ID: Vlkyre.sender,

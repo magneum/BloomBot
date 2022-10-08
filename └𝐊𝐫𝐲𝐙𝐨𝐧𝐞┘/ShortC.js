@@ -207,7 +207,7 @@ await Economy.findOne(
 ID: Vlkyre.sender,
 },
 async (Èrrðr, userEco) => {
-if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, util.format(Èrrðr));
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
 if (!userEco) {
 await new Economy({
 ID: Vlkyre.sender,
@@ -1100,10 +1100,8 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         🍑ʜᴇɴᴛᴀɪ        ═══════════════════════════════════════════════════════════════
 case "ass":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await ass(
 ӄryӄnz,
@@ -1125,10 +1123,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "bdsm":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await bdsm(
 ӄryӄnz,
@@ -1150,10 +1146,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "cum":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await cum(
 ӄryӄnz,
@@ -1175,10 +1169,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "doujin":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await doujin(
 ӄryӄnz,
@@ -1200,10 +1192,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "feet":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await feet(
 ӄryӄnz,
@@ -1225,10 +1215,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "femdom":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await femdom(
 ӄryӄnz,
@@ -1250,10 +1238,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "foxgirl":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await foxgirl(
 ӄryӄnz,
@@ -1275,10 +1261,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "glasses":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await glasses(
 ӄryӄnz,
@@ -1300,10 +1284,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "hentai":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await hentai(
 ӄryӄnz,
@@ -1325,10 +1307,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "maid":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await maid(
 ӄryӄnz,
@@ -1350,10 +1330,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "masturbation":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await masturbation(
 ӄryӄnz,
@@ -1375,10 +1353,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "netorare":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await netorare(
 ӄryӄnz,
@@ -1400,10 +1376,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "orgy":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await orgy(
 ӄryӄnz,
@@ -1432,10 +1406,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "panties":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await panties(
 ӄryӄnz,
@@ -1457,10 +1429,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "school":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await school(
 ӄryӄnz,
@@ -1482,10 +1452,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "tentacles":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await tentacles(
 ӄryӄnz,
@@ -1507,10 +1475,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "thighs":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await thighs(
 ӄryӄnz,
@@ -1532,10 +1498,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "uniform":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await uniform(
 ӄryӄnz,
@@ -1557,10 +1521,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "yuri":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 if (checkBalance(Vlkyre.sender, 80) === false) return;
 await yuri(
 ӄryӄnz,
@@ -1595,10 +1557,8 @@ break;
 "|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|";
 // ═══════════════════════════════════════════════════════════════         👅ʜᴜᴍᴀɴ        ═══════════════════════════════════════════════════════════════
 case "p4k":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await p4k(
@@ -1621,10 +1581,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "pblowjob":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pblowjob(
@@ -1647,10 +1605,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "pmilf":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pmilf(
@@ -1673,10 +1629,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "pmilk":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pmilk(
@@ -1699,10 +1653,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "ppussy":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await ppussy(
@@ -1725,10 +1677,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "pslut":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await pslut(
@@ -1749,10 +1699,8 @@ await ӄ_counter(2);
 break;
 
 case "tikporn":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 
 if (checkBalance(Vlkyre.sender, 100) === false) return;
 await tikporn(
@@ -3000,11 +2948,8 @@ break;
 |═══════════════════════════════════════════════════════════════|
 */
 case "tagall":
-if (!Vlkyre.isSenderTUF && !Vlkyre.fromMe) return;
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF && !Vlkyre.fromMe) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await tagall(
 ӄryӄnz,
 Vlkyre,
@@ -3093,10 +3038,8 @@ break;
 */
 case "del":
 case "delete":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await del(
 ӄryӄnz,
 Vlkyre,
@@ -3142,10 +3085,8 @@ break;
 */
 case "autorank":
 case "autorole":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await autorank(
 ӄryӄnz,
 Vlkyre,
@@ -3168,10 +3109,8 @@ break;
 case "welcome":
 case "welcomer":
 case "setwelcome":
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
 await setwelcome(
 ӄryӄnz,
 Vlkyre,
@@ -3237,10 +3176,8 @@ break;
 */
 case "admin":
 case "admins":
-if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF)
-return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
-if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF)
-return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isSenderAdmin && !Vlkyre.isSenderTUF) return await Sender_Not_Admin(ӄryӄnz, Vlkyre);
+if (!Vlkyre.isBotAdmin && !Vlkyre.isSenderTUF) return await Bot_Not_Admin(ӄryӄnz, Vlkyre);
 await admins(
 ӄryӄnz,
 Vlkyre,
