@@ -88,11 +88,17 @@ let txt = `🍀 *Author:* ${pushName}
 🔖 *Message:* ${bct}`;
 await ӄryӄnz.sendMessage(i, {
 video: {
-url: `https://telegra.ph/file/3c3f94c8463e7f9c29d73.mp4`,
+url: `./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Notice.mp4`,
 },
 mimetype: `video/mp4`,
-fileName: `bc.mp4`,
-caption: `${txt}`,
+fileName: `Vlkyre-Notice.mp4`,
+caption: `┌╔══『 𝐕𝐥𝐤𝐲𝐫𝐞 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 』
+│║Ῠ 💫𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭𝐞𝐝 𝐁𝐲:  ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+│║Ῠ 🕛𝐓𝐢𝐦𝐞:  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+└╚═══════⋑
+
+
+${txt}`,
 });
 }
 Vlkyre.reply(`Successfuly Broadcasted in ${anu.length} Groups`);
