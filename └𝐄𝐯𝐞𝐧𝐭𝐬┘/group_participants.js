@@ -89,8 +89,6 @@ type: 1,
 ],
 headerType: 4,
 }).catch((error) => console.log(error));
-} else {
-return;
 }
 }
 );
