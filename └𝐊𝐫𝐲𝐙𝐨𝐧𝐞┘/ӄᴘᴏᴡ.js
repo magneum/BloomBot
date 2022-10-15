@@ -206,8 +206,12 @@ console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄ
 // });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (!Vlkyre.isGroup) {
-const botreply = await axios.get(`http://api.brainshop.ai/get?bid=168758&key=Ci7eNhtxpxxDB5FQ&uid=[uid]&msg=[${Vlkyre.Body}]`);
-Vlkyre.reply(`${botreply.data.cnt}`).catch((ᴇʀ) => Caught(ӄryӄnz, Vlkyre, ᴇʀ));
+const botreply = await axios.get(
+`http://api.brainshop.ai/get?bid=168758&key=Ci7eNhtxpxxDB5FQ&uid=[uid]&msg=[${Vlkyre.Body}]`
+);
+Vlkyre.reply(`${botreply.data.cnt}`).catch((ᴇʀ) =>
+Caught(ӄryӄnz, Vlkyre, ᴇʀ)
+);
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function ӄ_counter(Ѷ𝖎𝖔𝖓𝖒𝖔𝖓𝖌𝖔) {
@@ -342,17 +346,70 @@ Vlkyre.isCommand &&
 !MeD.includes(Vlkyre.sender)
 ) {
 return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
-text: `❗𝐕𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍❗
+text: `📢𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐍𝐞𝐞𝐝𝐞𝐝❗
 @${Vlkyre.sender.split("@")[0]}
-*Check The Verification Video:*
-youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA`,
+*Check The Verification Video:* _https://youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA_`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
+await usedUser.findOne(
+{
+User: Vlkyre.sender,
+},
+async (error, ꜱᴇʀᴄ) => {
+if (error) return Caught(ӄryӄnz, Vlkyre, error);
+if (!ꜱᴇʀᴄ) {
+let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
+User: Vlkyre.sender,
+Total: 0,
+LastTime: 0,
+PermaTime: 10000,
+});
+await ɴᴇᴡᴜꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-// await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
 await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+} else {
+let ᴄʟᴏᴄᴋ = ᴍꜱ(ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime));
+if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
+ꜱᴇʀᴄ.Total = Total + 1;
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+return Vlkyre.reply(`📢𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${Vlkyre.sender.split("@")[0]}, Wait for (${ꜱᴇʀᴄ.seconds}s) before trying!
+
+⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>10) will lead to user-ban!`
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+if (ꜱᴇʀᴄ.Total > 10) {
+await userBanCheck.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (error, userBan) => {
+if (error) return console.log(error);
+if (!userBan) {
+let newUser = new userBanCheck({
+ID: Vlkyre.sender,
+});
+await newUser.save();
+return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.sender.split("@")[0]} have been banned for spamming commands in cooldown period!
+
+⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>10) has lead to user-ban!`
+);
+}
+}
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+ꜱᴇʀᴄ.LastTime = Date.now();
+await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
+return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+}
+}
+);
 }
 }
 }
