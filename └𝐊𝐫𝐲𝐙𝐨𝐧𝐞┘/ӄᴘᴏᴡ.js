@@ -400,7 +400,9 @@ ID: Vlkyre.sender,
 await newUser.save();
 return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.sender.split("@")[0]} have been banned for spamming commands in cooldown period!
 
-⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!`
+⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!
+🍯𝐆𝐞𝐭 𝐔𝐧𝐛𝐚𝐧: Contact any Vlkyre Mods. 
+Refer to _https://vlkyre.krakinzkon.repl.co_`
 );
 }
 }
