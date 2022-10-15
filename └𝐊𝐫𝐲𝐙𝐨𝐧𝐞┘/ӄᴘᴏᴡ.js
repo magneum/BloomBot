@@ -350,7 +350,8 @@ contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
 } else {
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
-await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+// await ShortC(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓);
+await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
 }
 }
