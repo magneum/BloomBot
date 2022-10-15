@@ -383,10 +383,10 @@ if (ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0) {
 await ꜱᴇʀᴄ.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return Vlkyre.reply(`📢𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${Vlkyre.sender.split("@")[0]}, Wait for (${ꜱᴇʀᴄ.seconds}s) before trying!
 
-⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>10) will lead to user-ban!`
+⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) will lead to user-ban!`
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (ꜱᴇʀᴄ.Total > 10) {
+} else if (ꜱᴇʀᴄ.Total > 20) {
 await userBanCheck.findOne(
 {
 ID: Vlkyre.sender,
@@ -400,7 +400,7 @@ ID: Vlkyre.sender,
 await newUser.save();
 return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.sender.split("@")[0]} have been banned for spamming commands in cooldown period!
 
-⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>10) has lead to user-ban!`
+⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!`
 );
 }
 }
