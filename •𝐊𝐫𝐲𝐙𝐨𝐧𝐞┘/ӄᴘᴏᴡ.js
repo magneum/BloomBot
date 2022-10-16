@@ -347,7 +347,7 @@ Vlkyre.isCommand &&
 ) {
 return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `📢𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐍𝐞𝐞𝐝𝐞𝐝❗
-@${Vlkyre.sender.split("@")[0]}
+@${Vlkyre.pushName}
 *Check The Verification Video:* _https://youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA_`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
@@ -395,7 +395,7 @@ await ꜱᴇʀᴄ
 .save()
 .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 return Vlkyre.reply(`📢𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${
-Vlkyre.sender.split("@")[0]
+Vlkyre.pushName
 }, Wait for (${ꜱᴇʀᴄ.seconds || 20}s) before trying!
 
 ⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) will lead to user-ban!`);
@@ -416,9 +416,7 @@ let newUser = new userBanCheck({
 ID: Vlkyre.sender,
 });
 await newUser.save();
-return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${
-Vlkyre.sender.split("@")[0]
-} have been banned for spamming commands in cooldown period!
+return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.pushName} have been banned for spamming commands in cooldown period!
 
 ⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!
 🍯𝐆𝐞𝐭 𝐔𝐧𝐛𝐚𝐧: Contact any Vlkyre Mods. 
