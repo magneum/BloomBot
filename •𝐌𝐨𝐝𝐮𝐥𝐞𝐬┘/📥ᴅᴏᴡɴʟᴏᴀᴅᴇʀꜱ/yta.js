@@ -137,8 +137,8 @@ item.thumbnail,
 _${response.mp3}_`
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let dFile = `./-ᴛᴇᴍᴘ-/${Vlkyre.key.id}.mp3`;
-let dLoader = new DownloaderHelper(response.mp3, "./-ᴛᴇᴍᴘ-", {
+let dFile = `./${Vlkyre.key.id}.mp3`;
+let dLoader = new DownloaderHelper(response.mp3, "./", {
 fileName: Vlkyre.key.id + ".mp3",
 });
 await dLoader.on("end", async () => {
@@ -146,7 +146,7 @@ await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
 {
-audio: fs.readFileSync(dFile),
+audio: { url: fs.readFileSync(dFile) },
 contextInfo: {
 externalAdReply: {
 title: `🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}`,
@@ -167,9 +167,7 @@ fileName: `${item.title}.mp3`,
 await dLoader.on("error", async (error) => {
 return await Caught(ӄryӄnz, Vlkyre, error);
 });
-await dLoader.start().catch(async (error) => {
-return await Caught(ӄryӄnz, Vlkyre, error);
-});
+await dLoader.start();
 })
 .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
 } catch (error) {
