@@ -37,11 +37,9 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { yta } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let { yta_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
-let { ytv_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
+let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let YouTube_Regex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
@@ -115,14 +113,9 @@ Found.thumbnail,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let Media = await yta(Found.url, "128kbps");
-let { DLoader, thumb, title, RSize, BSize } = await yta_var(
-Found.url,
-"en136"
-);
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 let DirectFile;
 try {
-DirectFile = await Tinyurl(DLoader);
+DirectFile = await Tinyurl(Media.DLoader);
 } catch (error) {
 DirectFile = "Null";
 }
