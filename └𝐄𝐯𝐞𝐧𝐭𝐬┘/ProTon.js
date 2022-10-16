@@ -13,10 +13,10 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
-let Ranker = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
-let ServerDB = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
-let Welcome = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
+require("../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+let Ranker = require(`../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/autorank`);
+let ServerDB = require(`../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/ServerDB`);
+let Welcome = require(`../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/setwelcome`);
 let ProTon = async (ӄryӄnz, Vlkyre) => {
 await ServerDB.findOne(
 {
@@ -34,7 +34,7 @@ await ӄryӄnz
 .sendMessage(
 Vlkyre.chatID,
 {
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_LabGreen.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_LabGreen.png" },
 caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 ⦔* 
 ▷ 𝐕𝐥𝐤𝐲𝐫𝐞!! is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ▷ 𝐊𝐨𝐧𝐧𝐢𝐜𝐡𝐢𝐰𝐚!! To Admins Of This Group, Some Of Your Members Requested Our Valkyrie HQ to Add Our Bot In This Group.
@@ -43,13 +43,13 @@ caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 �
 │║⦁ 💻𝐆𝐢𝐭𝐇𝐮𝐛: github.com/kryknz/vlkyre
 │║⦁ 🌐𝐖𝐞𝐛𝐬𝐢𝐭𝐞: Vlkyre.krakinzkon.repl.co
 │║⦁ ⭕𝐘𝐨𝐮𝐓𝐮𝐛𝐞: youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA
-└╚═══════⋑
+•╚═══════⋑
 
 ┌╔══『 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 │║⦁ *🔗${prefix}antilink* on/off
 │║⦁ *🎖️${prefix}autorank* on/off
 │║⦁ *❣️setwelcome* text/off
-└╚═══════⋑
+•╚═══════⋑
 
 ┌╔══『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
 │║⦁ 🐝${prefix}AnimationMenu
@@ -66,7 +66,7 @@ caption: `*⦓ ©𝐕𝐥𝐤𝐲𝐫𝐞 ༒ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐫 �
 │║⦁ 🛍️${prefix}StoreMenu
 │║⦁ 🌐${prefix}WebMenu
 │║⦁ ⭕${prefix}YTFilterMenu
-└╚═══════⋑`,
+•╚═══════⋑`,
 footer: "*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*\nᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™",
 buttons: [
 {

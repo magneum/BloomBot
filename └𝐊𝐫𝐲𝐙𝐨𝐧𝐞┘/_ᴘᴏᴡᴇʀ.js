@@ -14,9 +14,9 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("./Settings");
-let { Caught } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
-let { Image_Button } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let UserPrivate = require(`../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/private`);
+let { Caught } = require("../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Image_Button } = require("../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let UserPrivate = require(`../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/private`);
 exports._ᴘᴏᴡᴇʀ = async (ӄryӄnz, Vlkyre) => {
 await UserPrivate.findOne(
 {
@@ -34,7 +34,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Red.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!
@@ -50,7 +50,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Red.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Red.png",
 `✋🏽‍𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫 𝐓𝐨 𝐑𝐞𝐬𝐩𝐨𝐧𝐝!
 • Dear Random User, This Private Is Being Guarded By Vlkyre AI!
 • Do Not Spam The Chat Box!

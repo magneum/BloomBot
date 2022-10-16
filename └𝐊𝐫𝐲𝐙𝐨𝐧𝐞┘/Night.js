@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let ᴍꜱ = require("parse-ms");
 let ӄօʟօʀ = require("chalk");
 let { Night } = require("./Night");
@@ -23,18 +23,18 @@ let { ӄօʟօʀs } = require("./ӄօʟօʀs");
 let Heroku = require("heroku-client");
 let ɢɪᴛᴄᴀʟʟ = require("simple-git")();
 let { DenyLink } = require("./DenyLink");
-let ProTon = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/ProTon");
+let ProTon = require("../•𝐄𝐯𝐞𝐧𝐭𝐬┘/ProTon");
 let { ShortC } = require("./ShortC");
 let { req } = require("pino-std-serializers");
-let { Caught } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 let Hoku = new Heroku({ token: HEROKU_API_KEY });
-let Bagde = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/badge");
-let Ranker = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
-let LinkList = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
+let Bagde = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/badge");
+let Ranker = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/autorank");
+let LinkList = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/antilink");
 let { simpleGit, CleanOptions } = require("simple-git");
-let usedUser = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
-let userBanCheck = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
-let { Image_Button } = require("../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let usedUser = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/usedUser");
+let userBanCheck = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
+let { Image_Button } = require("../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 async function badgeTimeout(Vlkyre, ӄryӄnz, ӄ_counter, Ѷ𝖎𝖔𝖓) {
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
@@ -132,7 +132,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_15AKv5i_omy24uvWcz64NpA.png",
 `*🧈Added To DB for Current command First Time!*
 ⚔️𝗕𝗮𝗱𝗴𝗲: 🧵Basic 
 🧀𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 10 Commands`
@@ -147,7 +147,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre__Shop.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre__Shop.png",
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}
@@ -198,7 +198,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre__Shop.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre__Shop.png",
 `
 ╔══『 ❗𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 』
 ║⚔️𝗕𝗮𝗱𝗴𝗲: ${userBadge.Badge}

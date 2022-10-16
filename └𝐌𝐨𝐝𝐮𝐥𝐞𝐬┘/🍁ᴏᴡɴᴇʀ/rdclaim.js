@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
 isUrl,
 fetchJson,
@@ -21,7 +21,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ");
+} = require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ");
 let fs = require("fs");
 let util = require("util");
 let hxz = require("hxz-api");
@@ -38,15 +38,15 @@ let Hoku = new Heroku({ token: HEROKU_API_KEY });
 let PhoneNumber = require("awesome-phonenumber");
 let { exec, execSync } = require("child_process");
 let { jidDecode } = require("@adiwajshing/baileys");
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require("wa-sticker-formatter");
-let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let ClaimSchema = require("../../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/Claim");
+let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let ClaimSchema = require("../../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/Claim");
 let Present_Path = require("path");
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 let { PokeList } = require("../pokelist");
 let pokemon = require("pokemontcgsdk");
 let CronJob = require("cron").CronJob;
@@ -54,7 +54,7 @@ let Fetch = require("node-fetch");
 let cron = require("node-cron");
 let Https = require("https");
 let Fs = require("fs");
-("|⬡════════════════════════════════════════════════════════════════════└  Vlkyre 𝐀𝐩𝐢®  ┘═══════════════════════════════════════════════════════════════════⬡|");
+("|⬡════════════════════════════════════════════════════════════════════•  Vlkyre 𝐀𝐩𝐢®  ┘═══════════════════════════════════════════════════════════════════⬡|");
 exports.rdclaim = async (
 Ѷ𝖎𝖔𝖓,
 ӄryӄnz,

@@ -98,7 +98,7 @@ _0x165668["push"](_0x165668["shift"]());
 }
 }
 })(_0x4b8f, 0x3407b),
-require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings"),
+require("../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings"),
 (exports["BeutyFly"] = async (_0x3091c1, _0x2c6cf6, _0x1522bf) => {
 const _0x33d70 = _0x2a66;
 console[_0x33d70(0x1d8)](_0x1522bf["red"](_0x33d70(0x1d1))),

@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
 isUrl,
 fetchJson,
@@ -21,7 +21,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -33,15 +33,15 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let userBanCheck = require("../../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
+let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let userBanCheck = require("../../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔/user");
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ban = async (
 ӄryӄnz,
@@ -92,7 +92,7 @@ return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, repliedPerson] },
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
@@ -124,7 +124,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Is Already banned!`
 );
 }
@@ -149,7 +149,7 @@ return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender, 𝕻𝖊𝖗𝖘𝖔𝖓] },
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
@@ -181,7 +181,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* That Person Is Already banned!`
 );
 }
@@ -203,7 +203,7 @@ await newUser.save();
 return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}
@@ -235,7 +235,7 @@ return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-"./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
+"./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/KrakinzLab.png",
 `*❌𝗘𝗿𝗿𝗼𝗿:* ${Vlkyre.groupMetadata.subject} is Already Banned!`
 );
 }

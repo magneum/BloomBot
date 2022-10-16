@@ -39,7 +39,7 @@ else :#line:43
     else :#line:46
         cprint (f"🐍𝐏𝐲: package-lock.json File does not exist!","green")#line:47
 try :#line:48
-    subprocess .run (["node","└𝐑𝐨𝐮𝐭𝐞┘/Krank.js"],check =True ,stdout =subprocess .PIPE ).stdout #line:49
+    subprocess .run (["node","•𝐑𝐨𝐮𝐭𝐞┘/Krank.js"],check =True ,stdout =subprocess .PIPE ).stdout #line:49
 except Exception as Error :#line:50
     if ᴠʟᴋʏʀᴇ =="HEROKU":#line:51
         LOGS .info (str (f"🐍𝐏𝐲: {Error}"))#line:52

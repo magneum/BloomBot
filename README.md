@@ -19,7 +19,7 @@
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
 │║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
-└╚═══════⋑
+•╚═══════⋑
 ```
 
 <h1 align="center">👑𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐨𝐫𝐬👑</h1>
@@ -31,7 +31,7 @@
 │║⦁ Imele:   https://wa.me/2348108178797
 │║⦁ Note: https://wa.me/2349015407879
 │║⦁ War_Ready: 264 85 383 0477
-└╚═══════⋑
+•╚═══════⋑
 
 ❥.ᨘ۫.𝐕𝐥𝐤𝐲𝐫𝐞™ 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 1 ⦔
 https://chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
@@ -64,7 +64,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ 🛍️ !StoreMenu
 │║⦁ 🌐 !WebMenu
 │║⦁ ⭕ !YTFilterMenu
-└╚═══════⋑
+•╚═══════⋑
 ```
 
 <h1 align="center">🏮 𝐕𝐋𝐊𝐘𝐑𝐄 𝐑𝐮𝐥𝐞𝐬 🏮</h1>
@@ -120,13 +120,13 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !shop
 │║⦁ !mall
 │║⦁ !shopping
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🐾 !AnimeMenu
 │╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 │║⦁ !anime
 │║⦁ !manga
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🐝 !AnimationMenu
 │╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
@@ -159,7 +159,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !yeet
 │║⦁ !yes
 │║⦁ !zerotwo
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🏳️‍🌈 !RandomMenu
 │╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
@@ -182,7 +182,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !funny
 │║⦁ !laugh
 │║⦁ !dadjoke
-└╚═══════⋑
+•╚═══════⋑
 
 ┌⭕ !YTFilterMenu
 │╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
@@ -201,7 +201,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !ytsurround
 │║⦁ !ytvaporwave
 │║⦁ !ytvibrato
-└╚═══════⋑
+•╚═══════⋑
 
 ┌👑 !OwnerMenu
 │╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
@@ -233,7 +233,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !help
 │║⦁ !menu
 │║⦁ !allmenu
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🛍️ !StoreMenu
 │╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
@@ -246,7 +246,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !buy sword
 │║⦁ !buy laptop
 │║⦁ !buy charm
-└╚═══════⋑
+•╚═══════⋑
 
 │╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
 │║⦁ !yta
@@ -271,7 +271,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !randommusic
 │║⦁ !suggestaudio
 │║⦁ !suggestmusic
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🏝️ !ConverterMenu
 │╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
@@ -281,7 +281,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !tinyurl
 │║⦁ !toimg
 │║⦁ !stourl
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🌐 !WebMenu
 │╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
@@ -303,7 +303,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !ytscrape
 │║⦁ !youtubescrape
 │║⦁ !youtubesearch
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🔰 !GroupMenu
 │╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
@@ -325,7 +325,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !setgpfp
 │║⦁ !tagall
 │║⦁ !admins
-└╚═══════⋑
+•╚═══════⋑
 
 ┌👓 !AudioFilterMenu
 │╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
@@ -344,7 +344,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !surround
 │║⦁ !vaporwave
 │║⦁ !vibrato
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🍌 !HentaiMenu
 │╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』
@@ -368,7 +368,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !thighs
 │║⦁ !uniform
 │║⦁ !yuri
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🍑 !NsfwMenu
 ││╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
@@ -378,7 +378,7 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 │║⦁ !ppussy
 │║⦁ !pslut
 │║⦁ !tikporn
-└╚═══════⋑
+•╚═══════⋑
 ```
 
 <h1 align="center">🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🍂</h1>

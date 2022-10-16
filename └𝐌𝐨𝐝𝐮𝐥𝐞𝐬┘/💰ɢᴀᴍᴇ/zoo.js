@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
   isUrl,
   fetchJson,
@@ -21,7 +21,7 @@ let {
   jsonformat,
   GIFBufferToVideoBuffer,
   getRandom,
-} = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -34,17 +34,17 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let animals = require(`../../└𝐉𝐬𝐨𝐧┘/animals.json`);
-let Zoology = require(`../../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/zoo`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let animals = require(`../../•𝐉𝐬𝐨𝐧┘/animals.json`);
+let Zoology = require(`../../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/zoo`);
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let Economy = require(`../../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
-let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let Economy = require(`../../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
+let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 exports.zoo = async (
   ӄryӄnz,
@@ -82,7 +82,7 @@ exports.zoo = async (
           ӄryӄnz,
           Vlkyre,
           Vlkyre.A𝖗𝖌𝖘,
-          "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
+          "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_DB.png",
           `╔◇══════════◇╗
 ┊ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧🦋𝐇𝐮𝐧𝐭𝐢𝐧𝐠
 ┊ 𝐌𝐢𝐧𝐞𝐜𝐫𝐚𝐟𝐭 🪵 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
@@ -112,7 +112,7 @@ exports.zoo = async (
                 ӄryӄnz,
                 Vlkyre,
                 Vlkyre.A𝖗𝖌𝖘,
-                "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
+                "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
                 `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -130,7 +130,7 @@ exports.zoo = async (
                   ӄryӄnz,
                   Vlkyre,
                   Vlkyre.A𝖗𝖌𝖘,
-                  "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
+                  "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
                   `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝
@@ -161,7 +161,7 @@ exports.zoo = async (
                   ӄryӄnz,
                   Vlkyre,
                   Vlkyre.A𝖗𝖌𝖘,
-                  "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
+                  "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Forest.png",
                   `╔◇══════════◇╗
 ┊  𝐙𝐨𝐨🐆𝐎𝐰𝐧𝐞𝐫
 ╚◇══════════◇╝

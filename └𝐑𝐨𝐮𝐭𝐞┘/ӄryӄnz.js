@@ -15,8 +15,8 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
-require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings`);
-require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Ѷ𝖆𝖑.js`);
+require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings`);
+require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Ѷ𝖆𝖑.js`);
 let {
 default: 𝖍𝖆𝖜ӄC,
 generateForwardMessageContent,
@@ -41,15 +41,15 @@ let Fs = require("fs");
 let assert = require("assert");
 let { spawn } = require("child_process");
 let PhoneNumber = require(`awesome-phonenumber`);
-let dbAuth = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍂𝖘𝖖𝖑/Auth");
-let dbCloudAuth = require("../└𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇/dbcloud");
-let { smsg, getBuffer, getSizeMedia } = require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+let dbAuth = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🍂𝖘𝖖𝖑/Auth");
+let dbCloudAuth = require("../•𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬┘/🌩️𝖈𝖑𝖔𝖚𝖉𝖉𝖇/dbcloud");
+let { smsg, getBuffer, getSizeMedia } = require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let {
 imageToWebp,
 videoToWebp,
 writeExifImg,
 writeExifVid,
-} = require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/exif`);
+} = require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/exif`);
 let sequelize = DATABASE;
 let Ѷ𝖎𝖔𝖓 = makeInMemoryStore({
 logger: pino().child({ level: `fatal`, stream: `Ѷ𝖎𝖔𝖓` }),
@@ -435,7 +435,7 @@ mimetype = mime,
 pathFile = filename;
 if (options.asDocument) type = `document`;
 if (options.asSticker || /webp/.test(mime)) {
-let { writeExif } = require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/exif`);
+let { writeExif } = require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/exif`);
 let media = { mimetype: mime, data };
 pathFile = await writeExif(media, {
 packname: options.packname ? options.packname : global.packname,
@@ -592,7 +592,7 @@ gradient: ["red", "yellow"],
 });
 }
 
-let connection_update = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/connection_update");
+let connection_update = require("../•𝐄𝐯𝐞𝐧𝐭𝐬┘/connection_update");
 await connection_update.Vcnup(update, Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -602,7 +602,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ӄryӄnz.ev.on("creds.update", (update) => Adapt(update));
 ӄryӄnz.ev.on("messages.upsert", async (update) => {
 try {
-let messages_upsert = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/messages_upsert");
+let messages_upsert = require("../•𝐄𝐯𝐞𝐧𝐭𝐬┘/messages_upsert");
 await messages_upsert.Vmsgup(update, Ѷ𝖎𝖔𝖓, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -611,7 +611,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄryӄnz.ev.on("group-participants.update", async (update) => {
 try {
-let group_participants = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/group_participants");
+let group_participants = require("../•𝐄𝐯𝐞𝐧𝐭𝐬┘/group_participants");
 await group_participants.Vgrpns(update, ӄryӄnz);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
@@ -620,7 +620,7 @@ generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 ӄryӄnz.ws.on("CB:call", async (update) => {
 try {
-let call_updates = require("../└𝐄𝐯𝐞𝐧𝐭𝐬┘/call_updates");
+let call_updates = require("../•𝐄𝐯𝐞𝐧𝐭𝐬┘/call_updates");
 await call_updates.Vclup(ӄryӄnz, update);
 } catch (error) {
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777");

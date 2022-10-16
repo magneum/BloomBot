@@ -22,7 +22,7 @@ await ӄryӄnz
 ᴄᴀʟʟᴇʀɪᴅ,
 {
 contextInfo: { mentionedJid: [ᴄᴀʟʟᴇʀɪᴅ] },
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Orange.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre_Orange.png" },
 caption: `╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 ║ *❣️ ɴᴀᴍᴇ:* ${Vlkyre.pushName || "No_Name"}
 ║ *⚡ ɪᴅ:* ${Vlkyre.chatID.split("@")[0]}

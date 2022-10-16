@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
   isUrl,
   fetchJson,
@@ -21,7 +21,7 @@ let {
   jsonformat,
   GIFBufferToVideoBuffer,
   getRandom,
-} = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -37,16 +37,16 @@ let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { DownloaderHelper } = require("node-downloader-helper");
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
 let YouTube_Regex =
   /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.pat = async (
   ӄryӄnz,
@@ -62,8 +62,8 @@ exports.pat = async (
   commandName,
   body
 ) => {
-  let ɢᴏᴛꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.gif`;
-  let ɢɪᴠᴇꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.mp4`;
+  let ɢᴏᴛꜰɪʟᴇ = `./•𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.gif`;
+  let ɢɪᴠᴇꜰɪʟᴇ = `./•𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}}.mp4`;
   let ꜰɪɴᴀʟʟɪɴᴋ = await fetchJson(`https://api.waifu.pics/sfw/${Final_Name}`);
   const Response = await axios.get(ꜰɪɴᴀʟʟɪɴᴋ.url, {
     responseType: "arraybuffer",
@@ -71,7 +71,7 @@ exports.pat = async (
   if (!Response.data) {
     return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
   }
-  let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./└𝐈𝐧𝐭𝐱」", {
+  let dl𝐀𝐩𝐢 = new DownloaderHelper(Response.data, "./•𝐈𝐧𝐭𝐱」", {
     fileName: `${Vlkyre.key.id}}.gif`,
     retry: true,
   });
@@ -103,7 +103,7 @@ exports.pat = async (
                 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══└ Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
+╔══• Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
 ║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ᴛᴏ: @${ʀᴇᴘʟɪᴇᴅ.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
@@ -128,7 +128,7 @@ exports.pat = async (
                 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══└ Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
+╔══• Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
 ║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ᴛᴏ: @${𝕻𝖊𝖗𝖘𝖔𝖓.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
@@ -151,7 +151,7 @@ exports.pat = async (
                 caption: `*⦓ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ⦔*
 
 
-╔══└ Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
+╔══• Vlkyre 𝐏𝐫𝐨𝐭𝐨® ┘
 ║▷ ꜰʀᴏᴍ: @${Vlkyre.sender.split(`@`)[0] || ""}
 ║▷ ꜰᴇᴇʟɪɴɢ: ${Final_Name}
 ╚═══════╝`,

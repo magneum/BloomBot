@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
 isUrl,
 fetchJson,
@@ -21,7 +21,7 @@ getBuffer,
 jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
-} = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 let os = require(`os`);
 let fs = require(`fs`);
 let util = require(`util`);
@@ -37,17 +37,17 @@ let vers = require(`../../package.json`);
 let { performance } = require(`perf_hooks`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let { formatp, runtime } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Human`);
-let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+let { formatp, runtime } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Human`);
+let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
 let YouTube_Regex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.menu = async (
 ӄryӄnz,
@@ -139,7 +139,7 @@ await ӄryӄnz
 Vlkyre.chatID,
 {
 contextInfo: { mentionedJid: [Vlkyre.sender] },
-image: { url: "./└𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre.png" },
+image: { url: "./•𝐀𝐬𝐬𝐞𝐬𝐭𝐬┘/Vlkyre.png" },
 caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
 ┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
@@ -149,7 +149,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
 │║⦁ 𝐠𝐫𝐨𝐮𝐩: Vlkyre.krakinzkon.repl.co
-└╚═══════⋑
+•╚═══════⋑
 
 
 ┌📥${prefix}DownloaderMenu
@@ -176,13 +176,13 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}randommusic - 60💰
 │║⦁ ${prefix}suggestaudio - 60💰
 │║⦁ ${prefix}suggestmusic - 60💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🐾${prefix}AnimeMenu
 │╔══『 🐾𝐀𝐍𝐈𝐌𝐄_𝐌𝐀𝐍𝐆𝐀🐾 』
 │║⦁ ${prefix}anime - 40💰
 │║⦁ ${prefix}manga - 40💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🐝${prefix}AnimationMenu
 │╔══『 🐝𝐀𝐍𝐈𝐌𝐀𝐓𝐈𝐎𝐍🐝 』
@@ -215,7 +215,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}yeet - 20💰
 │║⦁ ${prefix}yes - 20💰
 │║⦁ ${prefix}zerotwo - 20💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌👓${prefix}AudioFilterMenu
 │╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
@@ -234,7 +234,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}surround - 30💰
 │║⦁ ${prefix}vaporwave - 30💰
 │║⦁ ${prefix}vibrato - 30💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🏝️${prefix}ConverterMenu
 │╔══『 🏝️𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑🏝️ 』
@@ -244,7 +244,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}tinyurl - 30💰
 │║⦁ ${prefix}toimg - 30💰
 │║⦁ ${prefix}tourl - 30💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌💰${prefix}GameMenu
 │╔══『 💰𝐄𝐂𝐎𝐍𝐎𝐌𝐘_𝐆𝐀𝐌𝐄💰 』
@@ -286,7 +286,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}shop - 10💰
 │║⦁ ${prefix}mall - 10💰
 │║⦁ ${prefix}shopping - 10💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🔰${prefix}GroupMenu
 │╔══『 🔰𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃🔰 』
@@ -308,7 +308,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}setgpfp
 │║⦁ ${prefix}tagall
 │║⦁ ${prefix}admins
-└╚═══════⋑
+•╚═══════⋑
 
 ┌👑${prefix}OwnerMenu
 │╔══『 👑𝐎𝐖𝐍𝐄𝐑_𝐒𝐔𝐃𝐎👑 』
@@ -340,7 +340,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}help
 │║⦁ ${prefix}menu
 │║⦁ ${prefix}allmenu
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🏳️‍🌈${prefix}RandomMenu
 │╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』
@@ -363,7 +363,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}funny - 50💰
 │║⦁ ${prefix}laugh - 50💰
 │║⦁ ${prefix}dadjoke - 50💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🛍️${prefix}StoreMenu
 │╔══『 🛍️𝐒𝐓𝐎𝐑𝐄🛍️ 』
@@ -376,7 +376,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}buy sword
 │║⦁ ${prefix}buy laptop
 │║⦁ ${prefix}buy charm
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🌐${prefix}WebMenu
 │╔══『 🌐𝐖𝐄𝐁_𝐒𝐄𝐀𝐑𝐂𝐇🌐 』
@@ -398,7 +398,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}ytscrape - 60💰
 │║⦁ ${prefix}youtubescrape - 60💰
 │║⦁ ${prefix}youtubesearch - 60💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌⭕${prefix}YTFilterMenu
 │╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
@@ -417,7 +417,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}ytsurround - 40💰
 │║⦁ ${prefix}ytvaporwave - 40💰
 │║⦁ ${prefix}ytvibrato - 40💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🍌${prefix}HentaiMenu
 │╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
@@ -441,7 +441,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}thighs - 80💰
 │║⦁ ${prefix}uniform - 80💰
 │║⦁ ${prefix}yuri - 80💰
-└╚═══════⋑
+•╚═══════⋑
 
 ┌🍑${prefix}NsfwMenu
 │╔══『 🍑𝐍𝐒𝐅𝐖🍑 』
@@ -451,7 +451,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}ppussy - 100💰
 │║⦁ ${prefix}pslut - 100💰
 │║⦁ ${prefix}tikporn - 100💰
-└╚═══════⋑`,
+•╚═══════⋑`,
 footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA",
 buttons: [
 {

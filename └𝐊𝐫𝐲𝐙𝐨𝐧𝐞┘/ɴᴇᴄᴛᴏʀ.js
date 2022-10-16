@@ -85,7 +85,7 @@ const _0x2d2372 = [
 "ɴᴇᴄᴛᴏʀ",
 "human-readable",
 "getBufferAsync",
-"ffmpeg\x20-i\x20./└𝐑𝐨𝐮𝐭𝐞┘/",
+"ffmpeg\x20-i\x20./•𝐑𝐨𝐮𝐭𝐞┘/",
 "1206140JGuYcI",
 "918436686758,917430922909",
 "isDeepStrictEqual",
@@ -163,7 +163,7 @@ const _0x2d2372 = [
 "text",
 "length",
 "${Math.floor(Math.random()\x20*\x2010000)}${ext}",
-"./└𝐑𝐨𝐮𝐭𝐞┘/${filename}.mp4",
+"./•𝐑𝐨𝐮𝐭𝐞┘/${filename}.mp4",
 "message",
 "productMessage",
 "74790dMuJaA",
@@ -171,7 +171,7 @@ const _0x2d2372 = [
 "fromMe",
 "random",
 "toObject",
-"./└𝐑𝐨𝐮𝐭𝐞┘/${filename}.gif",
+"./•𝐑𝐨𝐮𝐭𝐞┘/${filename}.gif",
 ".mp4",
 "imageMessage",
 "138783QHNAgm",
@@ -191,7 +191,7 @@ const _0x2d2372 = [
 "env",
 "isBuffer",
 "stanzaId",
-".gif\x20-movflags\x20faststart\x20-pix_fmt\x20yuv420p\x20-vf\x20\x22scale=trunc(iw/2)*2:trunc(ih/2)*2\x22\x20./└𝐑𝐨𝐮𝐭𝐞┘/",
+".gif\x20-movflags\x20faststart\x20-pix_fmt\x20yuv420p\x20-vf\x20\x22scale=trunc(iw/2)*2:trunc(ih/2)*2\x22\x20./•𝐑𝐨𝐮𝐭𝐞┘/",
 "endsWith",
 "util",
 "mtype",
@@ -478,7 +478,7 @@ await fs[_0xd4e84(0x98)](_0xd4e84(0x90), _0x12e5de),
 child_process[_0xd4e84(0xd2)](
 _0xd4e84(0xe7) + _0x5b7f3d + _0xd4e84(0xa4) + _0x5b7f3d + _0xd4e84(0x91)
 );
-var _0x299530 = await fs["readFileSync"]("./└𝐑𝐨𝐮𝐭𝐞┘/${filename}.mp4");
+var _0x299530 = await fs["readFileSync"]("./•𝐑𝐨𝐮𝐭𝐞┘/${filename}.mp4");
 return (
 Promise[_0xd4e84(0x75)]([unlink(_0xd4e84(0x88)), unlink(_0xd4e84(0x90))]),
 _0x299530

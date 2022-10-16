@@ -17,9 +17,9 @@ let ᴋᴏʟᴏʀ = require("chalk");
 let ʏᴛꜱ = require("yt-search");
 let ɴᴏᴅᴇꜰᴇᴛᴄʜ = require("node-fetch");
 let ɢᴇᴛᴠɪᴅᴇᴏɪᴅ = require("get-video-id");
-let { yta } = require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate");
-let { getBuffer } = require(`../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
-let { yta_var } = require("../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers");
+let { yta } = require("../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate");
+let { getBuffer } = require(`../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+let { yta_var } = require("../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers");
 // let ᴄʀᴏɴ = require("node-cron");
 // ᴄʀᴏɴ.schedule("*/30 * * * * *", async () => {
 // await ᴘᴏᴡ();
