@@ -88,11 +88,11 @@ exports.pslut = async (
       } else if (ꜰɪɴᴀʟʟɪɴᴋ.endsWith(".gif")) {
         let ɢᴏᴛꜰɪʟᴇ = `./•𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}.gif`;
         let ɢɪᴠᴇꜰɪʟᴇ = `./•𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}.mp4`;
-        let ꜰɪʟᴇ𝐩𝐢 = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./•𝐈𝐧𝐭𝐱」", {
+        let dLoader = new DownloaderHelper(ꜰɪɴᴀʟʟɪɴᴋ, "./•𝐈𝐧𝐭𝐱」", {
           fileName: `${Vlkyre.key.id}.gif`,
           retry: true,
         });
-        await ꜰɪʟʟ𝐩𝐢.on("end", async () => {
+        await dLoader.on("end", async () => {
           ffmpeg(ɢᴏᴛꜰɪʟᴇ)
             .outputOptions([
               "-pix_fmt yuv420p",
@@ -121,10 +121,10 @@ exports.pslut = async (
                 .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
             });
         });
-        await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
+        await dLoader.on("error", async (Èrrðr) => {
           return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
         });
-        await ꜰɪʟʟ𝐩𝐢.start().catch(async (Èrrðr) => {
+        await dLoader.start().catch(async (Èrrðr) => {
           return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
         });
         ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
