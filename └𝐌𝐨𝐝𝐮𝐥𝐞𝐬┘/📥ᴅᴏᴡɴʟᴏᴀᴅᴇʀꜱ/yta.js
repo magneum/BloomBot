@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  mp3BufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+mp3BufferToVideoBuffer,
+getRandom,
 } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 var Hx = require("hxz-api");
 var http = require("http");
@@ -39,92 +39,93 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { yta } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { DownloaderHelper } = require("node-downloader-helper");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
 let { yta_var } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
 let { ytv_var } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
 let YouTube_Regex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.yta = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* No query provided!
+if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
-  if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
-    if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄryӄnz,
-        Vlkyre,
-        `*❌ERROR:* No query provided!
+);
+}
+if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
+if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-      );
-    }
-  }
-  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let FinalGot;
-  if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-    FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
-  } else {
-    FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-  }
-  let LinkFound = await yts(FinalGot);
-  if (!LinkFound) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* No Music Found!
+);
+}
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let FinalGot;
+if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
+} else {
+FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+}
+let LinkFound = await yts(FinalGot);
+if (!LinkFound) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No Music Found!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
-  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let TubeFile = LinkFound.videos.slice(0, 1);
-  TubeFile.forEach(async function (Found) {
-    if (Found.seconds > 1800) {
-      return await Image_Button(
-        ӄryӄnz,
-        Vlkyre,
-        Vlkyre.A𝖗𝖌𝖘,
-        Found.thumbnail,
-        `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let TubeFile = LinkFound.videos.slice(0, 1);
+TubeFile.forEach(async function (Found) {
+if (Found.seconds > 1800) {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+Found.thumbnail,
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
 ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`
-      );
-    }
-    ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-    try {
-      Hx.youtube(Found.url)
-        .then(async (response) => {
-          await Image_Button(
-            ӄryӄnz,
-            Vlkyre,
-            Vlkyre.A𝖗𝖌𝖘,
-            Found.thumbnail,
-            `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+try {
+Hx.youtube(Found.url)
+.then(async (response) => {
+await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+Found.thumbnail,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
@@ -136,48 +137,48 @@ exports.yta = async (
 
 *👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
 _${response.mp3}_`
-          );
-          ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-          let ɢᴏᴛꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}.mp3`;
-          let ꜰɪʟᴇ𝐩𝐢 = new DownloaderHelper(response.mp3, "./└𝐈𝐧𝐭𝐱」", {
-            fileName: `${Vlkyre.key.id}.mp3`,
-            retry: true,
-          });
-          await ꜰɪʟʟ𝐩𝐢.on("end", async () => {
-            await ӄryӄnz
-              .sendMessage(
-                Vlkyre.chatID,
-                {
-                  audio: fs.readFileSync(ɢᴏᴛꜰɪʟᴇ),
-                  contextInfo: {
-                    externalAdReply: {
-                      title: `🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}`,
-                      body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-                      mediaType: 2,
-                      thumbnail: await getBuffer(Found.thumbnail),
-                      mediaUrl: Found.thumbnail,
-                    },
-                  },
-                  mimetype: `audio/mpeg`,
-                  fileName: `${Found.title}.mp3`,
-                },
-                { quoted: Vlkyre }
-              )
-              .then(fs.unlinkSync(ɢᴏᴛꜰɪʟᴇ))
-              .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-          });
-          await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
-            return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
-          });
-          await ꜰɪʟʟ𝐩𝐢.start().catch(async (Èrrðr) => {
-            return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
-          });
-        })
-        .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-    } catch (error) {
-      Caught(ӄryӄnz, Vlkyre, Èrrðr);
-    }
-  });
+);
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let ɢᴏᴛꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}.mp3`;
+let ꜰɪʟᴇ𝐩𝐢 = new DownloaderHelper(response.mp3, "./└𝐈𝐧𝐭𝐱」", {
+fileName: `${Vlkyre.key.id}.mp3`,
+retry: true,
+});
+await ꜰɪʟʟ𝐩𝐢.on("end", async () => {
+await ӄryӄnz
+.sendMessage(
+Vlkyre.chatID,
+{
+audio: fs.readFileSync(ɢᴏᴛꜰɪʟᴇ),
+contextInfo: {
+externalAdReply: {
+title: `🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}`,
+body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+mediaType: 2,
+thumbnail: await getBuffer(Found.thumbnail),
+mediaUrl: Found.thumbnail,
+},
+},
+mimetype: `audio/mpeg`,
+fileName: `${Found.title}.mp3`,
+},
+{ quoted: Vlkyre }
+)
+.then(fs.unlinkSync(ɢᴏᴛꜰɪʟᴇ))
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+});
+await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
+});
+await ꜰɪʟʟ𝐩𝐢.start().catch(async (Èrrðr) => {
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
+});
+})
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+} catch (error) {
+Caught(ӄryӄnz, Vlkyre, Èrrðr);
+}
+});
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
