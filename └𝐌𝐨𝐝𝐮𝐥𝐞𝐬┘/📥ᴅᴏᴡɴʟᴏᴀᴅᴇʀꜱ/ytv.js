@@ -38,6 +38,7 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { ytv } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+let { DownloaderHelper } = require("node-downloader-helper");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
@@ -115,31 +116,63 @@ Found.thumbnail,
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-try {
+
 try {
 Hx.youtube(Found.url)
-.then(async (res) => {
-return await Video_Button(
+.then(async (response) => {
+await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-res.link,
+Found.thumbnail,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${BSize || "undefined"}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}
+
+
+*👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
+_${response.mp4}_`
+);
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let ɢᴏᴛꜰɪʟᴇ = `./└𝐈𝐧𝐭𝐱」/${Vlkyre.key.id}.mp4`;
+let ꜰɪʟᴇ𝐩𝐢 = new DownloaderHelper(response.mp4, "./└𝐈𝐧𝐭𝐱」", {
+fileName: `${Vlkyre.key.id}.mp4`,
+retry: true,
+});
+await ꜰɪʟʟ𝐩𝐢.on("end", async () => {
+await Video_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+fs.readFileSync(ɢᴏᴛꜰɪʟᴇ),
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
 🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${BSize || "undefined"}
-🌐𝗪𝗲𝗯 𝗗𝗟: ${res.link}
+🌐𝗪𝗲𝗯 𝗗𝗟: ${response.link}
 🔗𝐋𝐢𝐧𝐤: ${Found.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
 );
+return await fs.unlinkSync(ɢᴏᴛꜰɪʟᴇ);
+});
+await ꜰɪʟʟ𝐩𝐢.on("error", async (Èrrðr) => {
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
+});
+await ꜰɪʟʟ𝐩𝐢.start().catch(async (Èrrðr) => {
+return await Caught(ӄryӄnz, Vlkyre, Èrrðr);
+});
 })
-.catch((error) => console.log(error));
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
 } catch (error) {
-console.log(error);
+Caught(ӄryӄnz, Vlkyre, Èrrðr);
 }
-} catch {}
 });
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
