@@ -2,8 +2,7 @@
 # ENV KrakinzLab™ "/venv"
 # RUN python -m venv $KrakinzLab™
 # ENV PATH "$KrakinzLab™/bin:$PATH"
-FROM scratch
-ADD rootfs.tar.xz /
+FROM node:lts-buster
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install aptitude -y
