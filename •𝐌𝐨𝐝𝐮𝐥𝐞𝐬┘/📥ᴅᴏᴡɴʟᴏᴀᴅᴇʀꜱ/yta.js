@@ -113,7 +113,7 @@ rawFound.thumbnail,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 yta(rawFound.url).then(async (res) => {
-const { dl_link, thumb, title, filesizeF, filesize } = res;
+const { dl_link, thumb, title } = res;
 let shorten = await Tinyurl(dl_link);
 await Image_Button(
 ӄryӄnz,
