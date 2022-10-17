@@ -41,7 +41,7 @@ url,
 q_auto: 0,
 ajax: 1,
 })
-.then((res) => res.json())
+.then((res) => res.text())
 .then((res) => {
 let document = new JSDOM(res.result).window.document;
 let type = document.querySelectorAll("td");
@@ -62,7 +62,7 @@ token: "",
 ftype: "mp3",
 fquality: 128,
 })
-.then((res) => res.json())
+.then((res) => res.text())
 .then((res) => {
 let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
 resolve({
@@ -144,7 +144,7 @@ url,
 q_auto: 0,
 ajax: 1,
 })
-.then((res) => res.json())
+.then((res) => res.text())
 .then((res) => {
 document = new JSDOM(res.result).window.document;
 yaha = document.querySelectorAll("td");
@@ -162,7 +162,7 @@ token: "",
 ftype: "mp4",
 fquality: 360,
 })
-.then((res) => res.json())
+.then((res) => res.text())
 .then((res) => {
 let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
 resolve({
@@ -190,7 +190,7 @@ await fetch("https://telegra.ph/upload", {
 method: "POST",
 body: form,
 })
-.then((res) => res.json())
+.then((res) => res.text())
 .then((res) => {
 if (res.error) return reject(res.error);
 resolve("https://telegra.ph" + res[0].src);
