@@ -45,8 +45,8 @@ let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_B
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let YouTube_Regex = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 const {
-    yta,
-    ytv,
+yta,
+ytv,
 igdl,
 upload,
 formatDate,
