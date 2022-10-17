@@ -112,29 +112,13 @@ item.forEach(function (data) {
 try {
 pHxz.youtube(data.url).then(async (response) => {
 var shorten = await pShort(response.mp3);
-let dFile = "./" + Vlkyre.key.id + ".mp3";
-let dLoader = new DownloaderHelper(shorten, "./", {
+let dFile = "./-ᴛᴇᴍᴘ-" + Vlkyre.key.id + ".mp3";
+let dLoader = new DownloaderHelper(shorten, "./-ᴛᴇᴍᴘ-", {
 fileName: Vlkyre.key.id + ".mp3",
 });
-await dLoader
-.start()
-.then(async (response) => {
-var voiceLineProtocolo = fs.readFileSync(dFile);
-await ӄryӄnz.sendMessage(
-Vlkyre.chatID,
-voiceLineProtocolo,
-"audioMessage",
-{
-quoted: Vlkyre,
-mimetype: "audio/mp4",
-}
-);
-})
-.catch(async (error) => {
-return await Caught(ӄryӄnz, Vlkyre, error);
-});
-await dLoader.on("end", async () => {
-await Image_Button(
+
+await dLoader.start().then(() => {
+Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
@@ -151,7 +135,23 @@ item.thumbnail,
 *👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
 _${shorten}_`
 );
+}).catch(async (error) => {
+return await Caught(ӄryӄnz, Vlkyre, error);
 });
+
+await dLoader.on("end", async () => {
+var voiceLineProtocolo = fs.readFileSync(dFile);
+await ӄryӄnz.sendMessage(
+Vlkyre.chatID,
+voiceLineProtocolo,
+"audioMessage",
+{
+quoted: Vlkyre,
+mimetype: "audio/mp4",
+}
+);
+});
+
 await dLoader.on("error", async (error) => {
 return await Caught(ӄryӄnz, Vlkyre, error);
 });
