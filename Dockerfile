@@ -1,8 +1,3 @@
-# FROM python:latest
-# ENV KrakinzLab™ "/venv"
-# RUN python -m venv $KrakinzLab™
-# ENV PATH "$KrakinzLab™/bin:$PATH"
-# FROM node:lts-buster
 FROM ubuntu 
 RUN apt update 
 RUN apt upgrade -y 
@@ -21,12 +16,18 @@ RUN n install 16
 RUN hash -r 
 RUN npm install -g spotify-dl spdl-core typescript forever --force 
 RUN npm install --silent --force
+RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
+RUN git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
+RUN git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
+CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
+
+
+# FROM python:latest
+# ENV KrakinzLab™ "/venv"
+# RUN python -m venv $KrakinzLab™
+# ENV PATH "$KrakinzLab™/bin:$PATH"
 # RUN yarn config set ignore-engines true 
 # RUN yarn install --ignore-engines
 # RUN git config --global user.name "KryKnz" 
 # RUN git config --global user.email "KrakinzKon@gmail.com"
 # RUN git config pull.rebase false 
-RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
-RUN git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
-RUN git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
-CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
