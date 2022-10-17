@@ -156,7 +156,7 @@ thumbnail: await getBuffer(Found.thumbnail),
 mediaUrl: Found.thumbnail,
 },
 },
-mimetype: `audio/mpeg`,
+mimetype: `audio/mp3`,
 fileName: `${Found.title}.mp3`,
 },
 { quoted: Vlkyre }
