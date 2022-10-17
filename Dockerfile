@@ -2,7 +2,8 @@
 # ENV KrakinzLab™ "/venv"
 # RUN python -m venv $KrakinzLab™
 # ENV PATH "$KrakinzLab™/bin:$PATH"
-FROM node:lts-buster
+# FROM node:lts-buster
+FROM ubuntu 
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install aptitude -y
