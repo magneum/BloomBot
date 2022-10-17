@@ -15,13 +15,14 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
-isUrl,
-fetchJson,
-getBuffer,
-jsonformat,
-mp3BufferToVideoBuffer,
-getRandom,
+  isUrl,
+  fetchJson,
+  getBuffer,
+  jsonformat,
+  mp3BufferToVideoBuffer,
+  getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+var { MessageType } = require("@adiwajshing/baileys");
 var Hx = require("hxz-api");
 var http = require("http");
 let fs = require(`fs`);
@@ -46,7 +47,7 @@ let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_B
 let { yta_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
 let { ytv_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
 let YouTube_Regex =
-/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
@@ -59,84 +60,99 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 require("events").EventEmitter.prototype._maxListeners = 0;
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.yta = async (
-ӄryӄnz,
-Vlkyre,
-pushName,
-F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-quoted,
-isMedia,
-isGroup,
-isBotAdmin,
-isSenderAdmin,
-isSenderTUF,
-commandName,
-body
+  ӄryӄnz,
+  Vlkyre,
+  pushName,
+  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+  quoted,
+  isMedia,
+  isGroup,
+  isBotAdmin,
+  isSenderAdmin,
+  isSenderTUF,
+  commandName,
+  body
 ) => {
-if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* No query provided!
+  if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-);
-}
-if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
-if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* No query provided!
+    );
+  }
+  if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
+    if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+        ӄryӄnz,
+        Vlkyre,
+        `*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-);
-}
-}
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let string;
-if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-string = Vlkyre.A𝖗𝖌𝖘[0];
-} else {
-string = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-}
-var raw = await pSearch(string);
-var item = raw.videos.slice(0, 1);
-if (!raw) {
-return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-ӄryӄnz,
-Vlkyre,
-`*❌ERROR:* No Music item!
+      );
+    }
+  }
+  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+  let string;
+  if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+    string = Vlkyre.A𝖗𝖌𝖘[0];
+  } else {
+    string = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+  }
+  var raw = await pSearch(string);
+  var item = raw.videos.slice(0, 1);
+  if (!raw) {
+    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+      ӄryӄnz,
+      Vlkyre,
+      `*❌ERROR:* No Music item!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-);
-}
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-item.forEach(function (data) {
-try {
-pHxz.youtube(data.url).then(async (response) => {
-var shorten = await pShort(response.mp3);
-await ӄryӄnz
-.sendMessage(
-Vlkyre.chatID,
-{
-audio: { url: shorten },
-contextInfo: {
-externalAdReply: {
-title: `🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}`,
-body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
-mediaType: 2,
-thumbnail: await getBuffer(item.thumbnail),
-mediaUrl: item.thumbnail,
-},
-},
-mimetype: `audio/mpeg`,
-fileName: `${item.title}.mp3`,
-},
-{ quoted: Vlkyre }
-)
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-});
-} catch (error) {
-Caught(ӄryӄnz, Vlkyre, error);
-}
-});
+    );
+  }
+  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+  item.forEach(function (data) {
+    try {
+      pHxz.youtube(data.url).then(async (response) => {
+        var shorten = await pShort(response.mp3);
+        let dFile = "./" + Vlkyre.key.id + ".mp3";
+        let dLoader = new DownloaderHelper(shorten, "./", {
+          fileName: Vlkyre.key.id + ".mp3",
+        });
+        await dLoader.on("end", async () => {
+          try {
+            var voiceLineProtocolo = fs.readFileSync(dFile);
+            await ӄryӄnz
+              .sendMessage(
+                Vlkyre.chatID,
+                voiceLineProtocolo,
+                MessageType.audio,
+                {
+                  quoted: Vlkyre,
+                  mimetype: "audio/mp4",
+                }
+              )
+              .then(fs.unlinkSync(dFile))
+              .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+          } catch {
+            await ӄryӄnz
+              .sendMessage(Vlkyre.chatID, {
+                audio: { url: "./" + Vlkyre.key.id + ".mp3" },
+                mimetype: "audio/mp4",
+              })
+              .then(fs.unlinkSync(dFile))
+              .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+          }
+        });
+        await dLoader.on("error", async (error) => {
+          return await Caught(ӄryӄnz, Vlkyre, error);
+        });
+        await dLoader.start().catch(async (error) => {
+          return await Caught(ӄryӄnz, Vlkyre, error);
+        });
+      });
+    } catch (error) {
+      Caught(ӄryӄnz, Vlkyre, error);
+    }
+  });
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
