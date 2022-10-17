@@ -95,33 +95,33 @@ FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
 } else {
 FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
-let LinkFound = await yts(FinalGot);
-if (!LinkFound) {
+let rawSearch = await yts(FinalGot);
+if (!rawSearch) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄryӄnz,
 Vlkyre,
-`*❌ERROR:* No Music Found!
+`*❌ERROR:* No Music rawFound!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let TubeFile = LinkFound.videos.slice(0, 1);
-TubeFile.forEach(async function (Found) {
-if (Found.seconds > 1800) {
+let raw = rawSearch.videos.slice(0, 1);
+raw.forEach(async function (rawFound) {
+if (rawFound.seconds > 1800) {
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-Found.thumbnail,
+rawFound.thumbnail,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
-⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
-🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`
+⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${rawFound.title}
+🍻𝐓𝐢𝐭𝐥𝐞: ${rawFound.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${rawFound.timestamp}`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-yta(Found.url).then(async (res) => {
+yta(rawFound.url).then(async (res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 let DirectFile;
 try {
@@ -134,14 +134,14 @@ await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-Found.thumbnail,
+rawFound.thumbnail,
 `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
-🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
-🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
-🔗𝐋𝐢𝐧𝐤: ${Found.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
+🍻𝐓𝐢𝐭𝐥𝐞: ${rawFound.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${rawFound.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${rawFound.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${rawFound.author.name}
+🔗𝐋𝐢𝐧𝐤: ${rawFound.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${rawFound.description}`
 );
 return await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
@@ -149,15 +149,15 @@ Vlkyre.chatID,
 audio: { url: dl_link },
 contextInfo: {
 externalAdReply: {
-title: `🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}`,
+title: `🍻𝐓𝐢𝐭𝐥𝐞: ${rawFound.title}`,
 body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 mediaType: 2,
-thumbnail: await getBuffer(Found.thumbnail),
-mediaUrl: Found.thumbnail,
+thumbnail: await getBuffer(rawFound.thumbnail),
+mediaUrl: rawFound.thumbnail,
 },
 },
 mimetype: `audio/mp3`,
-fileName: `${Found.title}.mp3`,
+fileName: `${rawFound.title}.mp3`,
 },
 { quoted: Vlkyre }
 );
