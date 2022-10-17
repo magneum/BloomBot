@@ -3,7 +3,7 @@
 # RUN python -m venv $KrakinzLab™
 # ENV PATH "$KrakinzLab™/bin:$PATH"
 FROM scratch
-ADD rootfs.tar.xz
+ADD rootfs.tar.xz /
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install aptitude -y
