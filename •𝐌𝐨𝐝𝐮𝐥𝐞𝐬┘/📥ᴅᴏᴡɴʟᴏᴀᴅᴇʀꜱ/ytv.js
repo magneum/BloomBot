@@ -22,7 +22,6 @@ jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
-var Hx = require("hxz-api");
 let fs = require(`fs`);
 let util = require(`util`);
 let hxz = require(`hxz-api`);
@@ -38,7 +37,6 @@ let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
 let { ytv } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-let { DownloaderHelper } = require("node-downloader-helper");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
@@ -84,91 +82,64 @@ Vlkyre,
 }
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let string;
+let FinalGot;
 if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-string = Vlkyre.A𝖗𝖌𝖘[0];
+FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
 } else {
-string = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
-let Linkitem = await yts(string);
-if (!Linkitem) {
+let LinkFound = await yts(FinalGot);
+if (!LinkFound) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄryӄnz,
 Vlkyre,
-`*❌ERROR:* No Music item!
+`*❌ERROR:* No Music Found!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let TubeFile = Linkitem.videos.slice(0, 1);
-TubeFile.forEach(async function (item) {
-if (item.seconds > 1800) {
+let TubeFile = LinkFound.videos.slice(0, 1);
+TubeFile.forEach(async function (Found) {
+if (Found.seconds > 1800) {
 return await Image_Button(
 ӄryӄnz,
 Vlkyre,
 Vlkyre.A𝖗𝖌𝖘,
-item.thumbnail,
+Found.thumbnail,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
-⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${item.title}
-🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}`
+⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${Found.title}
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}`
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-
+let { DLoader, thumb, title, RSize, BSize } = await ytv_var(
+Found.url,
+"id4"
+);
+let DirectFile;
 try {
-Hx.youtube(item.url)
-.then(async (response) => {
-await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-item.thumbnail,
-`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
-🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
-🙈𝐕𝐢𝐞𝐰𝐬: ${item.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${item.author.name}
-🔗𝐋𝐢𝐧𝐤: ${item.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}
-
-
-*👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
-_${response.mp4}_`
-);
-("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let dFile = `./${Vlkyre.key.id}.mp4`;
-let dLoader = new DownloaderHelper(response.mp4, "./", {
-fileName: `${Vlkyre.key.id}.mp4`,
-});
-await dLoader.on("end", async () => {
-await Video_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-fs.readFileSync(dFile),
-`𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
-🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
-🙈𝐕𝐢𝐞𝐰𝐬: ${item.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${item.author.name}
-🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${BSize || "undefined"}
-🌐𝗪𝗲𝗯 𝗗𝗟: ${response.link}
-🔗𝐋𝐢𝐧𝐤: ${item.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}`
-);
-return await fs.unlinkSync(dFile);
-});
-await dLoader.on("error", async (error) => {
-return await Caught(ӄryӄnz, Vlkyre, error);
-});
-await dLoader.start();
-})
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+DirectFile = await Tinyurl(DLoader);
 } catch (error) {
-Caught(ӄryӄnz, Vlkyre, Èrrðr);
+DirectFile = "Null";
 }
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+return await Video_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+DLoader,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+🍻𝐓𝐢𝐭𝐥𝐞: ${Found.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${Found.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${Found.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${Found.author.name}
+🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${BSize || "undefined"}
+🌐𝗪𝗲𝗯 𝗗𝗟: ${DirectFile}
+🔗𝐋𝐢𝐧𝐤: ${Found.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${Found.description}`
+);
 });
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
