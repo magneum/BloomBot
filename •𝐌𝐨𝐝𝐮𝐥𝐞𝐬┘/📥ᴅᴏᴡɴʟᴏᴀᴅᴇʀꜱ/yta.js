@@ -121,7 +121,7 @@ Found.thumbnail,
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-yta("https://www.youtube.com/watch?v=g6fnFALEseI").then(async (res) => {
+yta(Found.url).then(async (res) => {
 const { dl_link, thumb, title, filesizeF, filesize } = res;
 let DirectFile;
 try {
