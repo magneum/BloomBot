@@ -14,7 +14,7 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
-let {
+var {
 isUrl,
 fetchJson,
 getBuffer,
@@ -22,30 +22,30 @@ jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
-let fs = require(`fs`);
-let util = require(`util`);
-let hxz = require(`hxz-api`);
-let chalk = require(`chalk`);
-let db = require(`quick.db`);
-let axios = require(`axios`);
-let yts = require(`yt-search`);
-let Present_Path = require(`path`);
-let Tinyurl = require("tinyurl-api");
-let canvacord = require(`canvacord`);
-let { Character } = require(`mailist`);
-let moment = require(`moment-timezone`);
-let Carbon = require(`unofficial-carbon-now`);
-let { exec, execSync } = require(`child_process`);
-let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
-let Script_Name = Present_Path.basename(__filename);
-let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let YouTube_Regex =
+var fs = require(`fs`);
+var util = require(`util`);
+var hxz = require(`hxz-api`);
+var chalk = require(`chalk`);
+var db = require(`quick.db`);
+var axios = require(`axios`);
+var yts = require(`yt-search`);
+const { yta } = require("./dL");
+var Present_Path = require(`path`);
+var Tinyurl = require("tinyurl-api");
+var canvacord = require(`canvacord`);
+var { Character } = require(`mailist`);
+var moment = require(`moment-timezone`);
+var Carbon = require(`unofficial-carbon-now`);
+var { exec, execSync } = require(`child_process`);
+var { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+var Script_Name = Present_Path.basename(__filename);
+var Final_Name = Script_Name.slice(0, -3).toLowerCase();
+var { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+var { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+var { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+var { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+var YouTube_Regex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-const { yta, ytv, igdl, upload, formatDate } = require("./dL");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.yta = async (
 ӄryӄnz,
@@ -80,13 +80,13 @@ Vlkyre,
 }
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let FinalGot;
+var FinalGot;
 if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
 } else {
 FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
-let rawSearch = await yts(FinalGot);
+var rawSearch = await yts(FinalGot);
 if (!rawSearch) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄryӄnz,
@@ -96,7 +96,7 @@ Vlkyre,
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let raw = rawSearch.videos.slice(0, 1);
+var raw = rawSearch.videos.slice(0, 1);
 raw.forEach(function (rawFound) {
 if (rawFound.seconds > 1800) {
 return Image_Button(
@@ -113,8 +113,8 @@ rawFound.thumbnail,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 yta(rawFound.url).then(async (res) => {
-const { dl_link, thumb, title } = res;
-let shorten = await Tinyurl(dl_link);
+var { dl_link } = res;
+var shorten = await Tinyurl(dl_link);
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
