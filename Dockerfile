@@ -6,7 +6,7 @@ FROM node:lts-buster
 RUN apt update 
 RUN apt upgrade -y 
 RUN apt install aptitude -y
-RUN aptitude install -y jq git curl wget ffmpeg nodejs npm bpm-tools python3-pip opus-tools python-is-python3 
+RUN aptitude install -y jq git curl wget ffmpeg nodejs npm bpm-tools python3-pip opus-tools python3 
 RUN git clone https://github.com/KryKnz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+rx /usr/local/bin/youtube-dl 
