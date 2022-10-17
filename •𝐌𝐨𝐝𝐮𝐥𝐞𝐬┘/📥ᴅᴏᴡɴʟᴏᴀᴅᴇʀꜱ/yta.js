@@ -22,7 +22,6 @@ jsonformat,
 mp3BufferToVideoBuffer,
 getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
-var { MessageType } = require("@adiwajshing/baileys");
 var Hx = require("hxz-api");
 var http = require("http");
 let fs = require(`fs`);
@@ -117,35 +116,43 @@ let dFile = "./" + Vlkyre.key.id + ".mp3";
 let dLoader = new DownloaderHelper(shorten, "./", {
 fileName: Vlkyre.key.id + ".mp3",
 });
-await dLoader.on("end", async () => {
-try {
+await dLoader
+.start()
+.then(async (response) => {
 var voiceLineProtocolo = fs.readFileSync(dFile);
-await ӄryӄnz
-.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 voiceLineProtocolo,
-MessageType.audio,
+"audioMessage",
 {
 quoted: Vlkyre,
 mimetype: "audio/mp4",
 }
-)
-.then(fs.unlinkSync(dFile))
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-} catch {
-await ӄryӄnz
-.sendMessage(Vlkyre.chatID, {
-audio: { url: "./" + Vlkyre.key.id + ".mp3" },
-mimetype: "audio/mp4",
+);
 })
-.then(fs.unlinkSync(dFile))
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-}
-});
-await dLoader.on("error", async (error) => {
+.catch(async (error) => {
 return await Caught(ӄryӄnz, Vlkyre, error);
 });
-await dLoader.start().catch(async (error) => {
+await dLoader.on("end", async () => {
+await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+item.thumbnail,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${item.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${item.author.name}
+🔗𝐋𝐢𝐧𝐤: ${item.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}
+
+
+*👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
+_${shorten}_`
+);
+});
+await dLoader.on("error", async (error) => {
 return await Caught(ӄryӄnz, Vlkyre, error);
 });
 });

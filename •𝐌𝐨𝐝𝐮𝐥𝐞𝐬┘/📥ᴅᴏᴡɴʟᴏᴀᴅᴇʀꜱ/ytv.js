@@ -15,12 +15,12 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
-  isUrl,
-  fetchJson,
-  getBuffer,
-  jsonformat,
-  GIFBufferToVideoBuffer,
-  getRandom,
+isUrl,
+fetchJson,
+getBuffer,
+jsonformat,
+GIFBufferToVideoBuffer,
+getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 var Hx = require("hxz-api");
 let fs = require(`fs`);
@@ -45,111 +45,110 @@ let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_B
 let { yta_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
 let { ytv_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
 let YouTube_Regex =
-  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
 let Script_Name = Present_Path.basename(__filename);
 let Final_Name = Script_Name.slice(0, -3).toLowerCase();
 let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 exports.ytv = async (
-  ӄryӄnz,
-  Vlkyre,
-  pushName,
-  F𝖚𝖑𝖑_A𝖗𝖌𝖘,
-  quoted,
-  isMedia,
-  isGroup,
-  isBotAdmin,
-  isSenderAdmin,
-  isSenderTUF,
-  commandName,
-  body
+ӄryӄnz,
+Vlkyre,
+pushName,
+F𝖚𝖑𝖑_A𝖗𝖌𝖘,
+quoted,
+isMedia,
+isGroup,
+isBotAdmin,
+isSenderAdmin,
+isSenderTUF,
+commandName,
+body
 ) => {
-  if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* No query provided!
+if (Vlkyre.A𝖗𝖌𝖘.length === 0) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
-  if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
-    if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-      return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-        ӄryӄnz,
-        Vlkyre,
-        `*❌ERROR:* No query provided!
+);
+}
+if (Vlkyre.A𝖗𝖌𝖘.includes("yout")) {
+if (!YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No query provided!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-      );
-    }
-  }
-  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let string;
-  if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
-    string = Vlkyre.A𝖗𝖌𝖘[0];
-  } else {
-    string = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
-  }
-  let Linkitem = await yts(string);
-  if (!Linkitem) {
-    return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
-      ӄryӄnz,
-      Vlkyre,
-      `*❌ERROR:* No Music item!
+);
+}
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let string;
+if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
+string = Vlkyre.A𝖗𝖌𝖘[0];
+} else {
+string = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
+}
+let Linkitem = await yts(string);
+if (!Linkitem) {
+return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
+ӄryӄnz,
+Vlkyre,
+`*❌ERROR:* No Music item!
 *⚡USAGE:* ${prefix}${Final_Name} <song name or youtube link>`
-    );
-  }
-  ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-  let TubeFile = Linkitem.videos.slice(0, 1);
-  TubeFile.forEach(async function (item) {
-    if (item.seconds > 1800) {
-      return await Image_Button(
-        ӄryӄnz,
-        Vlkyre,
-        Vlkyre.A𝖗𝖌𝖘,
-        item.thumbnail,
-        `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let TubeFile = Linkitem.videos.slice(0, 1);
+TubeFile.forEach(async function (item) {
+if (item.seconds > 1800) {
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+item.thumbnail,
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 
 ⭕️𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐀𝐈: ${item.title}
 🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}`
-      );
-    }
-    ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+);
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 
-    try {
-      Hx.youtube(item.url)
-        .then(async (response) => {
-          await Image_Button(
-            ӄryӄnz,
-            Vlkyre,
-            Vlkyre.A𝖗𝖌𝖘,
-            item.thumbnail,
-            `𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
+try {
+Hx.youtube(item.url)
+.then(async (response) => {
+await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+item.thumbnail,
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞⭕️𝐌𝐮𝐬𝐢𝐜
 🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${item.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}
 ✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${item.author.name}
-🫖𝗙𝗶𝗹𝗲𝘀𝗶𝘇𝗲: ${BSize || "undefined"}
 🔗𝐋𝐢𝐧𝐤: ${item.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}
 
 
 *👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
 _${response.mp4}_`
-          );
-          ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-          let dFile = `./${Vlkyre.key.id}.mp4`;
-          let dLoader = new DownloaderHelper(response.mp4, "./", {
-            fileName: `${Vlkyre.key.id}.mp4`,
-          });
-          await dLoader.on("end", async () => {
-            await Video_Button(
-              ӄryӄnz,
-              Vlkyre,
-              Vlkyre.A𝖗𝖌𝖘,
-              fs.readFileSync(dFile),
-              `𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
+);
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let dFile = `./${Vlkyre.key.id}.mp4`;
+let dLoader = new DownloaderHelper(response.mp4, "./", {
+fileName: `${Vlkyre.key.id}.mp4`,
+});
+await dLoader.on("end", async () => {
+await Video_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+fs.readFileSync(dFile),
+`𝐘𝐨𝐮𝐓𝐮𝐛𝐞📹𝐕𝐢𝐝𝐞𝐨
 🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}
 🙈𝐕𝐢𝐞𝐰𝐬: ${item.views}
 ⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${item.timestamp}
@@ -158,19 +157,19 @@ _${response.mp4}_`
 🌐𝗪𝗲𝗯 𝗗𝗟: ${response.link}
 🔗𝐋𝐢𝐧𝐤: ${item.url}
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}`
-            );
-            return await fs.unlinkSync(dFile);
-          });
-          await dLoader.on("error", async (error) => {
-            return await Caught(ӄryӄnz, Vlkyre, error);
-          });
-          await dLoader.start();
-        })
-        .catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-    } catch (error) {
-      Caught(ӄryӄnz, Vlkyre, Èrrðr);
-    }
-  });
+);
+return await fs.unlinkSync(dFile);
+});
+await dLoader.on("error", async (error) => {
+return await Caught(ӄryӄnz, Vlkyre, error);
+});
+await dLoader.start();
+})
+.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+} catch (error) {
+Caught(ӄryӄnz, Vlkyre, Èrrðr);
+}
+});
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
