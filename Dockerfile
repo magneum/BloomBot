@@ -3,28 +3,6 @@ ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
 RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 
-
-# Vlkyre os dependency Instalation
-RUN apt-get update && apt-get install -y \
-    jq \
-    git \
-    curl \
-    wget \
-    ffmpeg \
-    nodejs \
-    npm \
-    bpm-tools \
-    python3-pip \
-    opus-tools \
-    python-is-python3
-
-# Vlkyre runtime dependency Installation
-RUN git clone https://github.com/KryKnz/Vlkyre.git
-RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
-RUN chmod a+rx /usr/local/bin/youtube-dl 
-RUN curl https://cli-assets.heroku.com/install.sh | sh 
-RUN heroku plugins:install heroku-builds 
-
 # Chrome dependency Instalation
 # RUN apt-get update && apt-get install -y \
 #     fonts-liberation \
@@ -59,6 +37,27 @@ RUN sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /et
 RUN apt-get update
 RUN apt-get install google-chrome-stable
 
+
+# Vlkyre os dependency Instalation
+RUN apt-get update && apt-get install -y \
+    jq \
+    git \
+    curl \
+    wget \
+    ffmpeg \
+    nodejs \
+    npm \
+    bpm-tools \
+    python3-pip \
+    opus-tools \
+    python-is-python3
+
+# Vlkyre runtime dependency Installation
+RUN git clone https://github.com/KryKnz/Vlkyre.git
+RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
+RUN chmod a+rx /usr/local/bin/youtube-dl 
+RUN curl https://cli-assets.heroku.com/install.sh | sh 
+RUN heroku plugins:install heroku-builds 
 
 
 # Vlkyre Runtime support Installation
