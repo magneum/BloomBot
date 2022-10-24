@@ -1,5 +1,5 @@
-# FROM ubuntu 
-FROM node:16.16.0 as base
+FROM ubuntu as base
+# FROM node:16.16.0 as base
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
