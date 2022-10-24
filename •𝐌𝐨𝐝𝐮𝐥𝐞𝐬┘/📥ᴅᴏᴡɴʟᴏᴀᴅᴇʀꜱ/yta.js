@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-require("../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
+require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
 let {
 isUrl,
 fetchJson,
@@ -21,7 +21,7 @@ getBuffer,
 jsonformat,
 mp3BufferToVideoBuffer,
 getRandom,
-} = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
+} = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
 var Hx = require("hxz-api");
 var http = require("http");
 let fs = require(`fs`);
@@ -37,14 +37,14 @@ let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
 let Carbon = require(`unofficial-carbon-now`);
 let { exec, execSync } = require(`child_process`);
-let { yta } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
+let { yta } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { DownloaderHelper } = require("node-downloader-helper");
 let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
 let { Image_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
 let { Video_Button } = require("../../└𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let { yta_var } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
-let { ytv_var } = require(`../../└𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
+let { yta_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
+let { ytv_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/letiableServers`);
 let YouTube_Regex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 let Present_Path = require(`path`);
