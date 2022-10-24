@@ -30,6 +30,10 @@ let hxz = require(`hxz-api`);
 let chalk = require(`chalk`);
 let db = require(`quick.db`);
 let axios = require(`axios`);
+
+let ytdl = require("ytdl-core");
+let ffmpeg = require("fluent-ffmpeg");
+
 let yts = require(`yt-search`);
 let Tinyurl = require("tinyurl-api");
 let canvacord = require(`canvacord`);
@@ -115,8 +119,9 @@ item.thumbnail,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 try {
-var response = await yta(item.url, "128kbps", "en154");
-dLink = await Tinyurl(response.dl_link);
+var stream = ytdl(item.videoId, {
+quality: "highestaudio",
+});
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
@@ -135,10 +140,15 @@ item.thumbnail,
 _${dLink}_`
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+ffmpeg(stream)
+.audioBitrate(320)
+.toFormat("ipod")
+.saveToFile(`${item.videoId}.mp3`)
+.on("end", async () => {
 await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
-audio: { url: dLink },
+audio: fs.readFileSync(`${item.videoId}.mp3`),
 contextInfo: {
 externalAdReply: {
 title: `🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}`,
@@ -153,6 +163,7 @@ fileName: `${item.title}.mp3`,
 },
 { quoted: Vlkyre }
 );
+});
 } catch (error) {
 return await Caught(ӄryӄnz, Vlkyre, error);
 }
