@@ -148,7 +148,7 @@ exports.ytvaporwave = async (
       .saveToFile(FFmpegFile)
       .on("end", () => {
         require("child_process").exec(
-          `ffmpeg -i ${FFmpegFile} -af"aresample=48000,asetrate=48000*0.8" ${FilteredAudio}`,
+          `ffmpeg -i ${FFmpegFile} -af" aresample=48000,asetrate=48000*0.8" ${FilteredAudio}`,
           async (error) => {
             if (error) {
               return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(

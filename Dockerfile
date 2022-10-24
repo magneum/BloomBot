@@ -1,19 +1,63 @@
-FROM ubuntu 
-RUN apt update 
-RUN apt upgrade -y 
-RUN apt install aptitude -y
-RUN aptitude install -y jq git curl wget ffmpeg nodejs npm bpm-tools python3-pip opus-tools python-is-python3 
+# FROM ubuntu 
+FROM node:16.16.0 as base
+
+# Vlkyre os dependency Instalation
+RUN apt-get update && apt-get install -y \
+    jq \
+    git \
+    curl \
+    wget \
+    ffmpeg \
+    nodejs \
+    npm \
+    bpm-tools \
+    python3-pip \
+    opus-tools \
+    python-is-python3 
+
+# Vlkyre runtime dependency Installation
 RUN git clone https://github.com/KryKnz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+rx /usr/local/bin/youtube-dl 
 RUN curl https://cli-assets.heroku.com/install.sh | sh 
 RUN heroku plugins:install heroku-builds 
+
+# Chrome dependency Instalation
+RUN apt-get update && apt-get install -y \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libatspi2.0-0 \
+    libcups2 \
+    libdbus-1-3 \
+    libdrm2 \
+    libgbm1 \
+    libgtk-3-0 \
+    libgtk-4-1 \
+    libnspr4 \
+    libnss3 \
+    libwayland-client0 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxfixes3 \
+    libxkbcommon0 \
+    libxrandr2 \
+    xdg-utils \
+    libu2f-udev \
+    libvulkan1
+
+ # Chrome instalation 
+RUN curl -LO  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN apt-get install -y ./google-chrome-stable_current_amd64.deb
+RUN rm google-chrome-stable_current_amd64.deb
+RUN echo "Chrome: " && google-chrome --version
+
+# Vlkyre Runtime support Installation
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
-RUN npm install -g n pm2 yarn 
-RUN n install 16 
-RUN hash -r 
+RUN npm install -g n && n install 16 && hash -r 
 RUN npm install -g spotify-dl spdl-core typescript forever --force 
 RUN npm install --silent --force
 RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 

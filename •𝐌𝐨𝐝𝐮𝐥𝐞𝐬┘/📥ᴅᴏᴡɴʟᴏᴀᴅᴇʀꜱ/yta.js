@@ -1,4 +1,871 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
@@ -14,7 +881,7 @@
 */
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 require("../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/Settings");
-let {
+var {
 isUrl,
 fetchJson,
 getBuffer,
@@ -22,32 +889,38 @@ jsonformat,
 GIFBufferToVideoBuffer,
 getRandom,
 } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/ɴᴇᴄᴛᴏʀ`);
-let fs = require(`fs`);
-let util = require(`util`);
-let hxz = require(`hxz-api`);
-let chalk = require(`chalk`);
-let db = require(`quick.db`);
-let axios = require(`axios`);
-let yts = require(`yt-search`);
-let Present_Path = require(`path`);
-let Tinyurl = require("tinyurl-api");
-let canvacord = require(`canvacord`);
-let { Character } = require(`mailist`);
-let moment = require(`moment-timezone`);
-let Carbon = require(`unofficial-carbon-now`);
-let { exec, execSync } = require(`child_process`);
-let { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
-let Script_Name = Present_Path.basename(__filename);
-let Final_Name = Script_Name.slice(0, -3).toLowerCase();
-let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
-let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
-let { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
-let { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
-let YouTube_Regex =
+var qs = require("qs");
+var cheerio = require("cheerio");
+var { JSDOM } = require("jsdom");
+var fetch = require("node-fetch");
+var FormData = require("form-data");
+var { fromBuffer } = require("file-type");
+var fs = require(`fs`);
+var util = require(`util`);
+var hxz = require(`hxz-api`);
+var chalk = require(`chalk`);
+var db = require(`quick.db`);
+var axios = require(`axios`);
+var yts = require(`yt-search`);
+var Present_Path = require(`path`);
+var Tinyurl = require("tinyurl-api");
+var canvacord = require(`canvacord`);
+var { YouAudio } = require("./dL");
+var { Character } = require(`mailist`);
+var moment = require(`moment-timezone`);
+var Carbon = require(`unofficial-carbon-now`);
+var { exec, execSync } = require(`child_process`);
+var { Caught } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Caught");
+var Script_Name = Present_Path.basename(__filename);
+var Final_Name = Script_Name.slice(0, -3).toLowerCase();
+var { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
+var { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
+var { Video_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Video_Button");
+var { Sticker, StickerTypes } = require(`wa-sticker-formatter`);
+var YouTube_Regex =
 /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-const { yta, ytv, igdl, upload, formatDate } = require("./dL");
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-exports.yta = async (
+exports.YouAudio = async (
 ӄryӄnz,
 Vlkyre,
 pushName,
@@ -80,13 +953,13 @@ Vlkyre,
 }
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let FinalGot;
+var FinalGot;
 if (YouTube_Regex.test(Vlkyre.A𝖗𝖌𝖘[0])) {
 FinalGot = Vlkyre.A𝖗𝖌𝖘[0];
 } else {
 FinalGot = F𝖚𝖑𝖑_A𝖗𝖌𝖘;
 }
-let rawSearch = await yts(FinalGot);
+var rawSearch = await yts(FinalGot);
 if (!rawSearch) {
 return await N𝖊𝖊𝖉__A𝖗𝖌𝖘(
 ӄryӄnz,
@@ -96,7 +969,7 @@ Vlkyre,
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let raw = rawSearch.videos.slice(0, 1);
+var raw = rawSearch.videos.slice(0, 1);
 raw.forEach(function (rawFound) {
 if (rawFound.seconds > 1800) {
 return Image_Button(
@@ -112,9 +985,66 @@ rawFound.thumbnail,
 );
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-yta(rawFound.url).then(async (res) => {
-const { dl_link, thumb, title } = res;
-let shorten = await Tinyurl(dl_link);
+async function YouAudio(url) {
+return new Promise(async (resolve, reject) => {
+if (YouTube_Regex.test(url)) {
+let ytId = YouTube_Regex.exec(url);
+url = "https://youtu.be/" + ytId[1];
+async function post(url, formdata) {
+return fetch(url, {
+method: "POST",
+headers: {
+accept: "*/*",
+"accept-language": "en-US,en;q=0.9",
+"content-type":
+"application/x-www-form-urlencoded; charset=UTF-8",
+},
+body: Object.keys(formdata)
+.map((key) => `${key}=${encodeURIComponent(formdata[key])}`)
+.join("&"),
+});
+}
+await post("https://www.y2mate.com/mates/en60/analyze/ajax", {
+url,
+q_auto: 0,
+ajax: 1,
+}).then((response) => response.json())
+.then((response) => {
+let document = new JSDOM(response.result).window.document;
+let type = document.querySelectorAll("td");
+let filesize = type[type.length - 10].innerHTML;
+let id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || ["","",];
+let thumb = document.querySelector("img").src;
+let title = document.querySelector("b").innerHTML;
+post("https://www.y2mate.com/mates/en60/convert", {
+type: "youtube",
+_id: id[1],
+v_id: ytId[1],
+ajax: "1",
+token: "",
+ftype: "mp3",
+fquality: 128,
+})
+.then((response) => response.json())
+.then((response) => {
+let KB = parseFloat(filesize) * (1000 * /MB$/.test(filesize));
+resolve({
+dl_link: /<a.+?href="(.+?)"/.exec(response.result)[1],
+thumb,
+title,
+filesizeF: filesize,
+filesize: KB,
+});
+})
+.catch(reject);
+})
+.catch(reject);
+} else reject("Wrong Url String!");
+});
+}
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+YouAudio(rawFound.url).then(async (response) => {
+var shorten = await Tinyurl(response.dl_link);
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
