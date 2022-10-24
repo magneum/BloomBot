@@ -1,8 +1,8 @@
-# FROM python:latest
-# ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
-# RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-# ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
-FROM browserless/chrome
+FROM python:latest
+ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
+RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
+
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
@@ -26,34 +26,40 @@ RUN curl https://cli-assets.heroku.com/install.sh | sh
 RUN heroku plugins:install heroku-builds 
 
 # Chrome dependency Instalation
-RUN apt-get update && apt-get install -y \
-    fonts-liberation \
-    libasound2 \
-    libatk-bridge2.0-0 \
-    libatk1.0-0 \
-    libatspi2.0-0 \
-    libcups2 \
-    libdbus-1-3 \
-    libdrm2 \
-    libgbm1 \
-    libgtk-3-0 \
-    libnspr4 \
-    libnss3 \
-    libwayland-client0 \
-    libxcomposite1 \
-    libxdamage1 \
-    libxfixes3 \
-    libxkbcommon0 \
-    libxrandr2 \
-    xdg-utils \
-    libu2f-udev \
-    libvulkan1
+# RUN apt-get update && apt-get install -y \
+#     fonts-liberation \
+#     libasound2 \
+#     libatk-bridge2.0-0 \
+#     libatk1.0-0 \
+#     libatspi2.0-0 \
+#     libcups2 \
+#     libdbus-1-3 \
+#     libdrm2 \
+#     libgbm1 \
+#     libgtk-3-0 \
+#     libnspr4 \
+#     libnss3 \
+#     libwayland-client0 \
+#     libxcomposite1 \
+#     libxdamage1 \
+#     libxfixes3 \
+#     libxkbcommon0 \
+#     libxrandr2 \
+#     xdg-utils \
+#     libu2f-udev \
+#     libvulkan1
 
  # Chrome instalation 
-RUN curl -LO  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-RUN apt-get install -y ./google-chrome-stable_current_amd64.deb
-RUN rm google-chrome-stable_current_amd64.deb
-RUN echo "Chrome: " && google-chrome --version
+# RUN curl -LO  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# RUN apt-get install -y ./google-chrome-stable_current_amd64.deb
+# RUN rm google-chrome-stable_current_amd64.deb
+# RUN echo "Chrome: " && google-chrome --version
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+RUN sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+RUN apt-get update
+RUN apt-get install google-chrome-stable
+
+
 
 # Vlkyre Runtime support Installation
 RUN cd Vlkyre
