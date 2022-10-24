@@ -1,5 +1,7 @@
-FROM ubuntu as base
-# FROM node:16.16.0 as base
+FROM python:latest
+ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
+RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
@@ -66,9 +68,9 @@ CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
 
 
 # FROM python:latest
-# ENV KrakinzLab™ "/venv"
-# RUN python -m venv $KrakinzLab™
-# ENV PATH "$KrakinzLab™/bin:$PATH"
+# ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
+# RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+# ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 # RUN yarn config set ignore-engines true 
 # RUN yarn install --ignore-engines
 # RUN git config --global user.name "KryKnz" 
