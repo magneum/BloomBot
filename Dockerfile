@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     bpm-tools \
     python3-pip \
     opus-tools \
-    python-is-python3 
+    python3 
 
 # Vlkyre runtime dependency Installation
 RUN git clone https://github.com/KryKnz/Vlkyre.git
