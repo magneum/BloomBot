@@ -1,7 +1,8 @@
-FROM python:latest
-ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
-RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
+# FROM python:latest
+# ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
+# RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
+# ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
+FROM selenium/standalone-chrome
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
@@ -65,14 +66,3 @@ RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬�
 RUN git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
 RUN git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
 CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
-
-
-# FROM python:latest
-# ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
-# RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
-# ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
-# RUN yarn config set ignore-engines true 
-# RUN yarn install --ignore-engines
-# RUN git config --global user.name "KryKnz" 
-# RUN git config --global user.email "KrakinzKon@gmail.com"
-# RUN git config pull.rebase false 
