@@ -2,7 +2,7 @@
 # ENV ᴋʀᴀᴋɪɴᴢʟᴀʙ™ "/venv"
 # RUN python -m venv $ᴋʀᴀᴋɪɴᴢʟᴀʙ™
 # ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
-FROM selenium/standalone-chrome
+FROM browserless/chrome
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
