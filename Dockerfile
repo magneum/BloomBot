@@ -34,7 +34,6 @@ RUN apt-get update && apt-get install -y \
     libdrm2 \
     libgbm1 \
     libgtk-3-0 \
-    libgtk-4-1 \
     libnspr4 \
     libnss3 \
     libwayland-client0 \
