@@ -353,93 +353,96 @@ contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 } else {
-if (Vlkyre.isSenderTUF && Vlkyre.fromMe) {
 await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
 await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
 return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-} else {
-await usedUser.findOne(
-{
-User: Vlkyre.sender,
-},
-async (error, ꜱᴇʀᴄ) => {
-if (error) return Caught(ӄryӄnz, Vlkyre, error);
-if (!ꜱᴇʀᴄ) {
-let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
-User: Vlkyre.sender,
-Total: 0,
-LastTime: 0,
-PermaTime: 10000,
-});
-await ɴᴇᴡᴜꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-await ӄryӄnz.sendPresenceUpdate(
-"composing",
-Vlkyre.chatID
-);
-await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
-return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
-("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-let ᴄʟᴏᴄᴋ = ᴍꜱ(
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
-);
-if (
-!Vlkyre.isSenderTUF &&
-!Vlkyre.fromMe &&
-ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0
-) {
-ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + 1;
-await ꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-return Vlkyre.reply(`📢𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${
-Vlkyre.pushName
-}, Wait for (${ꜱᴇʀᴄ.seconds || 20}s) before trying!
+// if (Vlkyre.isSenderTUF && Vlkyre.fromMe) {
+// await ӄryӄnz.sendPresenceUpdate("composing", Vlkyre.chatID);
+// await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
+// return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+// } else {
+// await usedUser.findOne(
+// {
+// User: Vlkyre.sender,
+// },
+// async (error, ꜱᴇʀᴄ) => {
+// if (error) return Caught(ӄryӄnz, Vlkyre, error);
+// if (!ꜱᴇʀᴄ) {
+// let ɴᴇᴡᴜꜱᴇʀᴄ = new usedUser({
+// User: Vlkyre.sender,
+// Total: 0,
+// LastTime: 0,
+// PermaTime: 10000,
+// });
+// await ɴᴇᴡᴜꜱᴇʀᴄ
+// .save()
+// .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+// await ӄryӄnz.sendPresenceUpdate(
+// "composing",
+// Vlkyre.chatID
+// );
+// await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
+// return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+// }
+// ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+// let ᴄʟᴏᴄᴋ = ᴍꜱ(
+// ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime)
+// );
+// if (
+// !Vlkyre.isSenderTUF &&
+// !Vlkyre.fromMe &&
+// ꜱᴇʀᴄ.PermaTime - (Date.now() - ꜱᴇʀᴄ.LastTime) > 0
+// ) {
+// ꜱᴇʀᴄ.Total = ꜱᴇʀᴄ.Total + 1;
+// await ꜱᴇʀᴄ
+// .save()
+// .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+// return Vlkyre.reply(`📢𝐂𝐨𝐨𝐥𝐝𝐨𝐰𝐧: @${
+// Vlkyre.pushName
+// }, Wait for (${ꜱᴇʀᴄ.seconds || 20}s) before trying!
 
-⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) will lead to user-ban!`);
-("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else if (
-!Vlkyre.isSenderTUF &&
-!Vlkyre.fromMe &&
-ꜱᴇʀᴄ.Total > 20
-) {
-await userBanCheck.findOne(
-{
-ID: Vlkyre.sender,
-},
-async (error, userBan) => {
-if (error) return console.log(error);
-if (!userBan) {
-let newUser = new userBanCheck({
-ID: Vlkyre.sender,
-});
-await newUser.save();
-return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.pushName} have been banned for spamming commands in cooldown period!
+// ⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) will lead to user-ban!`);
+// ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+// } else if (
+// !Vlkyre.isSenderTUF &&
+// !Vlkyre.fromMe &&
+// ꜱᴇʀᴄ.Total > 20
+// ) {
+// await userBanCheck.findOne(
+// {
+// ID: Vlkyre.sender,
+// },
+// async (error, userBan) => {
+// if (error) return console.log(error);
+// if (!userBan) {
+// let newUser = new userBanCheck({
+// ID: Vlkyre.sender,
+// });
+// await newUser.save();
+// return Vlkyre.reply(`😈𝐔𝐬𝐞𝐫 𝐁𝐚𝐧𝐧𝐞𝐝: @${Vlkyre.pushName} have been banned for spamming commands in cooldown period!
 
-⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!
-🍯𝐆𝐞𝐭 𝐔𝐧𝐛𝐚𝐧: Contact any Vlkyre Mods. 
-Refer to _https://vlkyre.krakinzkon.repl.co_`);
-}
-}
-);
-("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-} else {
-ꜱᴇʀᴄ.LastTime = Date.now();
-await ꜱᴇʀᴄ
-.save()
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-await ӄryӄnz.sendPresenceUpdate(
-"composing",
-Vlkyre.chatID
-);
-await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
-return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
-}
-}
-);
-}
+// ⚠️𝐒𝐩𝐚𝐦 𝐂𝐨𝐮𝐧𝐭: (${ꜱᴇʀᴄ.Total}>20) has lead to user-ban!
+// 🍯𝐆𝐞𝐭 𝐔𝐧𝐛𝐚𝐧: Contact any Vlkyre Mods. 
+// Refer to _https://vlkyre.krakinzkon.repl.co_`);
+// }
+// }
+// );
+// ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+// } else {
+// ꜱᴇʀᴄ.LastTime = Date.now();
+// await ꜱᴇʀᴄ
+// .save()
+// .catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+// await ӄryӄnz.sendPresenceUpdate(
+// "composing",
+// Vlkyre.chatID
+// );
+// await ShortC(Vlkyre, ӄryӄnz, Ѷ𝖎𝖔𝖓);
+// return await ӄօʟօʀs(ӄryӄnz, Vlkyre);
+// }
+// }
+// );
+// }
 }
 }
 }
