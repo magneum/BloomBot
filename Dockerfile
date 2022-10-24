@@ -58,7 +58,7 @@ WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
 RUN npm install -g n && n install 16 && hash -r 
 RUN npm install -g spotify-dl spdl-core typescript forever --force 
-RUN npm install --silent --force
+RUN npm install --force
 RUN git init --initial-branch=𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
 RUN git fetch origin 𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
 RUN git reset --hard origin/𝐕𝐥𝐤𝐲𝐫𝐞▲𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
