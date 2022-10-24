@@ -35,11 +35,9 @@ let Tinyurl = require("tinyurl-api");
 let canvacord = require(`canvacord`);
 let { Character } = require(`mailist`);
 let moment = require(`moment-timezone`);
+var { yta, ytv } = require("./YouTube");
 let Carbon = require(`unofficial-carbon-now`);
-let { yta } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/y2mate`);
 let { exec, execSync } = require(`child_process`);
-let { yta_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
-let { ytv_var } = require(`../../•𝐊𝐫𝐲𝐙𝐨𝐧𝐞┘/vYTServers`);
 let { N𝖊𝖊𝖉__A𝖗𝖌𝖘 } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/N𝖊𝖊𝖉__A𝖗𝖌𝖘");
 let { DownloaderHelper } = require("node-downloader-helper");
 let { Image_Button } = require("../../•𝐁𝐮𝐭𝐭𝐨𝐧𝐬┘/Image_Button");
@@ -117,8 +115,8 @@ item.thumbnail,
 }
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
 try {
-Hx.youtube(item.url)
-.then(async (response) => {
+var response = await yta(item.url, "128kbps", "en154");
+dLink = await Tinyurl(response.dl_link);
 await Image_Button(
 ӄryӄnz,
 Vlkyre,
@@ -134,19 +132,13 @@ item.thumbnail,
 📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${item.description}
 
 *👇🏽‍𝐏𝐫𝐞𝐬𝐬 𝐓𝐡𝐢𝐬👇🏽‍*
-_${response.mp3}_`
+_${dLink}_`
 );
 ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-let dFile = "./└𝐈𝐧𝐭𝐱」/" + Vlkyre.key.id + ".mp3";
-let dLoader = new DownloaderHelper(response.mp3, "./└𝐈𝐧𝐭𝐱」", {
-fileName: Vlkyre.key.id + ".mp3",
-});
-await dLoader.on("end", async () => {
-await ӄryӄnz
-.sendMessage(
+await ӄryӄnz.sendMessage(
 Vlkyre.chatID,
 {
-audio: fs.readFileSync(dFile),
+audio: { url: dLink },
 contextInfo: {
 externalAdReply: {
 title: `🍻𝐓𝐢𝐭𝐥𝐞: ${item.title}`,
@@ -160,18 +152,7 @@ mimetype: `audio/mpeg`,
 fileName: `${item.title}.mp3`,
 },
 { quoted: Vlkyre }
-)
-.then(fs.unlinkSync(dFile))
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
-});
-await dLoader.on("error", async (error) => {
-return await Caught(ӄryӄnz, Vlkyre, error);
-});
-await dLoader.start().catch(async (error) => {
-return await Caught(ӄryӄnz, Vlkyre, error);
-});
-})
-.catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+);
 } catch (error) {
 return await Caught(ӄryӄnz, Vlkyre, error);
 }
