@@ -100,11 +100,9 @@ console.log(error);
 );
 var vport = process.env.PORT || 8080;
 var νℓpage = express();
+var { state, saveState } = useSingleFileAuthState("./Events/νℓкуяє.кяукηz");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function run() {
-var { state, saveState } = await useSingleFileAuthState(
-"./Events/νℓкуяє.кяукηz"
-);
 var νℓкуяє = νℓкуяєConnect({
 auth: state,
 printQRInTerminal: true,
