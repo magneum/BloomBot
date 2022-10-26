@@ -84,12 +84,7 @@ console.log(error);
 process.exit(0);
 });
 } finally {
-generateWA(
-"⚡ɪɴꜰᴏ: ",
-"#2D5A27",
-"Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.",
-"#849871"
-);
+generateWA("⚡ɪɴꜰᴏ: ","#2D5A27","Connected With 🍃𝖒𝖔𝖓𝖌𝖔 + 𝖀𝖘𝖊𝖗🍣𝖒𝖔𝖓𝖌𝖔.","#849871");
 }
 try {
 await sequelize.authenticate();
