@@ -149,7 +149,7 @@ border-color: red;
 <head>
 <title>☊Vlkyre Whatsapp Bot</title>
 <meta charset="UTF-8" />
-<meta http-equiv="refresh" content="6">
+<meta http-equiv="refresh" content="8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -218,7 +218,7 @@ Section.
 <div class="flex flex-wrap w-full mb-20">
 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-red-500">🎐𝐋𝐢𝐯𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐁𝐨𝐭🎐</h1>
-<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"><I>⚠️Auto refresh in every 6seconds...</I></p>
+<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"><I>⚠️Auto refresh in every 8seconds...</I></p>
 <div class="h-1 w-20 bg-yellow-500 rounded"></div>
 </div>
 <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"><I>📢Below You Can Check All Information Logged By Vlkyre!</I></p>
@@ -240,9 +240,9 @@ Section.
 <img class="h-40 rounded w-full object-cover object-center mb-6" src=${puser} alt="content">
 <h3 class="tracking-widest text-red-500 text-xs font-medium title-font"><b>🧛🏻‍♂️ USER INFORMATION CONSOLE</b></h3>
 <h2 class="text-lg text-white font-medium title-font mb-4"> </h2>
-<p class="leading-relaxed text-base"><b>❣️ User Name:</b><br>> <I>${gcName}</I></p>
-<p class="leading-relaxed text-base"><b>📱 User Number:</b><br>> <I>${gcName}</I></p>
-<p class="leading-relaxed text-base"><b>❓ Is User Admin:</b><br>> <I>${gcName}</I></p>
+<p class="leading-relaxed text-base"><b>❣️ User Name:</b><br>> <I>${νℓкуяє.pushname}</I></p>
+<p class="leading-relaxed text-base"><b>📱 User Number:</b><br>> <I>${νcнαт.sender}</I></p>
+<p class="leading-relaxed text-base"><b>❓ Is User Admin:</b><br>> <I>${gcAdminCheck}</I></p>
 </div>
 </div>
 <div class="xl:w-1/4 md:w-1/2 p-4">
@@ -316,7 +316,7 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 </body>
 </div>
 </html>`;
-νℓpage.get("/vlkyre", (req, res) => {
+νℓpage.get("/", (req, res) => {
 res.send(html);
 });
 console.log(coreback);
