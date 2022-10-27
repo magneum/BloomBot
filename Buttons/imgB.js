@@ -22,12 +22,11 @@ module.exports = async (νℓкуяє, νcнαт, 𝚌𝚘𝚗𝚝є𝚡𝚝, im
         caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${νcнαт.chat.split("@")[0]}
-│║⦁ *🛸Web View:* ${νℓкуяє.ShowInfo}
 ╰╚═══════⋑
 
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*νℓкуяє™ вσт ву кяукηz*",
+        footer: "*νℓкуяє™ вσт ву кяукηz*\n" + νℓкуяє.ShowInfo,
         mentions: [νcнαт.sender],
         buttons: [
           {
