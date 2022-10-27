@@ -25,6 +25,7 @@ var mod = process.env.mods;
 if (!mod) {
   mod = "918436686758";
 }
+global.Brwoser = process.env.Browser;
 global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
 global.mongodb = process.env.mongodb;
