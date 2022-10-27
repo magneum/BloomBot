@@ -149,7 +149,7 @@ border-color: red;
 <head>
 <title>☊Vlkyre Whatsapp Bot</title>
 <meta charset="UTF-8" />
-<meta http-equiv="refresh" content="5">
+<meta http-equiv="refresh" content="6">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -218,9 +218,10 @@ Section.
 <div class="flex flex-wrap w-full mb-20">
 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-red-500">🎐𝐋𝐢𝐯𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐁𝐨𝐭🎐</h1>
-<div class="h-1 w-20 bg-indigo-500 rounded"></div>
+<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"><I>⚠️Auto refresh in every 6seconds...</I></p>
+<div class="h-1 w-20 bg-yellow-500 rounded"></div>
 </div>
-<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">📢𝘉𝘦𝘭𝘰𝘸 𝘠𝘰𝘶 𝘊𝘢𝘯 𝘍𝘪𝘯𝘥 𝘈𝘭𝘭 𝘐𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘰𝘯 𝘉𝘦𝘪𝘯𝘨 𝘓𝘰𝘨𝘨𝘦𝘥 𝘢𝘯𝘥 𝘚𝘵𝘰𝘳𝘦𝘥 𝘉𝘺 𝘉𝘰𝘵!</p>
+<p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"><I>📢Below You Can Check All Information Logged By Vlkyre!</I></p>
 </div>
 <div class="flex flex-wrap -m-4">
 <div class="xl:w-1/4 md:w-1/2 p-4">
