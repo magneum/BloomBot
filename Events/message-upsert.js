@@ -101,6 +101,7 @@ text-align: center;
 </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="2">
 <body style="background-color: #202020">
 <h1 style="font-size:4vw; color:rgb(255, 255, 255);">『 🎐Live Information🎐 』</h1>
 <p style="font-size:1.5vw; color:#cec3a8"><b>🖊️Command:</b> <I>${
