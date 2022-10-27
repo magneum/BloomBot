@@ -18,7 +18,7 @@
       "name": "yarn install --ignore-engines",
       "command": "yarn install --ignore-engines"
     },
-    "npm i --force && clear && node ": {
+    "npm i --force && clear && node νℓкуяє.js": {
       "name": "npm i --force && clear && node νℓкуяє.js",
       "command": "npm i --force && clear && node νℓкуяє.js"
     }
