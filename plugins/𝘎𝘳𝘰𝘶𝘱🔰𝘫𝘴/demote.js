@@ -51,11 +51,9 @@ return νcнαт.reply(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νℓкуяє.mentionByTag) {
-let users = νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.mentionedJid
-: [];
+if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
+let mention = νℓкуяє.mentionByTag;
+let users = (await mention[0]) || νcнαт.msg.contextInfo.participant;
 if (!users) {
 return νcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_

@@ -51,9 +51,8 @@ return νcнαт.reply(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νℓкуяє.mentionByTag) {
+if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
 let mention = νℓкуяє.mentionByTag;
-console.log(mention);
 let users = (await mention[0]) || νcнαт.msg.contextInfo.participant;
 if (!users) {
 return νcнαт.reply(
