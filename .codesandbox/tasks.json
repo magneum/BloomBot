@@ -13,6 +13,10 @@
       "name": "npx forever --no-warnings νℓкуяє.js --color",
       "command": "npx forever --no-warnings νℓкуяє.js --color",
       "runAtStart": true
+    },
+    "yarn install --ignore-engines": {
+      "name": "yarn install --ignore-engines",
+      "command": "yarn install --ignore-engines"
     }
   }
 }
