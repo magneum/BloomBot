@@ -50,7 +50,7 @@ return νcнαт.reply(
 > _Bot not Admin!_`
 );
 }
-if (!νℓкуяє.args) {
+if (!νℓкуяє.args.join(" ")) {
 return νcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
