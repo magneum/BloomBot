@@ -91,11 +91,14 @@ module.exports = async (νℓкуяє, νcнαт, update, store) => {
 νℓкуяє.Manga = Manga;
 νℓкуяє.AnimeWallpaper = AnimeWallpaper;
 
-νℓкуяє.sessionName = "νℓкуяє";
-νℓкуяє.request = require("request");
 νℓкуяє.msgFilter = require("./msgFilter");
 νℓкуяє.imgB = require("../Buttons/imgB");
 νℓкуяє.vidB = require("../Buttons/vidB");
+νℓкуяє.ytv2mate = require("./y2mate");
+νℓкуяє.yta2mate = require("./y2mate");
+
+νℓкуяє.sessionName = "νℓкуяє";
+νℓкуяє.request = require("request");
 νℓкуяє.fetch = require("node-fetch");
 νℓкуяє.db = require("quick.db");
 νℓкуяє.nHentai = require("shentai");

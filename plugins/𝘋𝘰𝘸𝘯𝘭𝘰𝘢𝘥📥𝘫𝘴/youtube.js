@@ -66,26 +66,61 @@ return await νℓкуяє.imgB(
 νℓкуяє,
 νcнαт,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
-🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${one.timestamp}`,
+*🍻Title:* ${one.title}
+*⏰Duration:* ${one.timestamp}`,
 one.thumbnail
 );
 }
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var stream = await νℓкуяє.ytdl(one.videoId, {
-quality: "highestaudio",
-});
 var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+try {
+var direct = await νℓкуяє.ytv2mate(one.url, "128kbps");
+var directShorten = await νℓкуяє.Tinyurl(direct);
 await νℓкуяє.imgB(
 νℓкуяє,
 νcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}
-🙈𝐕𝐢𝐞𝐰𝐬: ${one.views}
-⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${one.timestamp}
-✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${one.author.name}
-🔗𝐋𝐢𝐧𝐤: ${one.url}
-📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${one.description}`,
+*🍻Title:* ${one.title}
+*🙈Views:* ${one.views}
+*⏰Duration:* ${one.timestamp}
+*✒️Author:* ${one.author.name}
+*🔗Link:* ${directShorten}
+*📜Description:* ${one.description}`,
+one.thumbnail
+);
+return await νℓкуяє.sendMessage(
+νcнαт.chat,
+{
+audio: { url: direct },
+contextInfo: {
+externalAdReply: {
+title: `*🍻Title:* ${one.title}`,
+body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+mediaType: 2,
+thumbnail: Thumb,
+mediaUrl: one.url,
+},
+},
+mimetype: "audio/mpeg",
+fileName: `${one.title}.mp3`,
+},
+{ quoted: νcнαт }
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch {
+var stream = await νℓкуяє.ytdl(one.videoId, {
+quality: "highestaudio",
+});
+await νℓкуяє.imgB(
+νℓкуяє,
+νcнαт,
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*🍻Title:* ${one.title}
+*🙈Views:* ${one.views}
+*⏰Duration:* ${one.timestamp}
+*✒️Author:* ${one.author.name}
+*🔗Link:* ${one.url}
+*📜Description:* ${one.description}`,
 one.thumbnail
 );
 νℓкуяє
@@ -93,28 +128,29 @@ one.thumbnail
 .audioBitrate(320)
 .toFormat("ipod")
 .saveToFile(`${one.videoId}.mp3`)
-.on("end", async () => {
-await νℓкуяє
+.on("end", () => {
+return νℓкуяє
 .sendMessage(
 νcнαт.chat,
 {
 audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
 contextInfo: {
 externalAdReply: {
-title: `🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}`,
+title: `*🍻Title:* ${one.title}`,
 body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
 mediaType: 2,
-thumbnail: await νℓкуяє.getBuffer(one.thumbnail),
+thumbnail: Thumb,
 mediaUrl: one.url,
 },
 },
-mimetype: `audio/mpeg`,
+mimetype: "audio/mpeg",
 fileName: `${one.title}.mp3`,
 },
 { quoted: νcнαт }
 )
 .then(νℓкуяє.fs.unlinkSync(`${one.videoId}.mp3`));
 });
+}
 });
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
