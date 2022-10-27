@@ -32,13 +32,14 @@ try {
 await νℓкуяє.imgB(
 νℓкуяє,
 νcнαт,
-`*🐠Hello, I am Vlkyre v5 Bot🐠*
-_Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!_
-My developers are working on my code.
-Untill then you can send your group links in my private.
-Once bot will be ready, it will auto join all groups.
+`*🤖Hello, I am Vlkyre (v5 Bot)🤖*
+> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> My developers are working on my code.
+> Untill then you can send your group links in my private.
+> Once bot will be ready, it will auto join all groups.
 
-『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
+
+『 *🎐Information🎐* 』
 *💤Prefix:* ${νℓкуяє.prefix}
 *📜Git:* 
 > https://github.com/kryknz/vlkyre
@@ -46,102 +47,104 @@ Once bot will be ready, it will auto join all groups.
 > https://vlkyre.krakinzkon.repl.co
 
 
-┌〨🌐 ${νℓкуяє.prefix}h.search
-│╔══『 *🌐SEARCH HUB🌐* 』
-│║> ${νℓкуяє.prefix}advice
-│║> ${νℓкуяє.prefix}anime
-│║> ${νℓкуяє.prefix}fact
-│║> ${νℓкуяє.prefix}google
-│║> ${νℓкуяє.prefix}joke
-│║> ${νℓкуяє.prefix}manga
-│║> ${νℓкуяє.prefix}meme
-│║> ${νℓкуяє.prefix}quote
-│║> ${νℓкуяє.prefix}reddit
-└╚═══════⋑
-
-
-┌〨🖼️ ${νℓкуяє.prefix}h.image
-│╔══『 *🖼️IMAGE HUB🖼️* 』
-│║> ${νℓкуяє.prefix}image
-│║> ${νℓкуяє.prefix}neko
-│║> ${νℓкуяє.prefix}pinterest
-│║> ${νℓкуяє.prefix}waifu
-│║> ${νℓкуяє.prefix}wallpaper
-└╚═══════⋑
-
-
-┌〨🔰 ${νℓкуяє.prefix}h.group
-│╔══『 *🔰GROUP HUB🔰* 』
-│║> ${νℓкуяє.prefix}demote
-│║> ${νℓкуяє.prefix}group
-│║> ${νℓкуяє.prefix}promote
-│║> ${νℓкуяє.prefix}remove
-│║> ${νℓкуяє.prefix}setdesc
-│║> ${νℓкуяє.prefix}seticon
-│║> ${νℓкуяє.prefix}tagall
-└╚═══════⋑
-
-
-┌〨🐝 ${νℓкуяє.prefix}h.anime
-│╔══『 *🐝ANIME HUB🐝* 』
-│║> ${νℓкуяє.prefix}bite
-│║> ${νℓкуяє.prefix}blush
-│║> ${νℓкуяє.prefix}bonk
-│║> ${νℓкуяє.prefix}bored
-│║> ${νℓкуяє.prefix}confused
-│║> ${νℓкуяє.prefix}cry
-│║> ${νℓкуяє.prefix}cuddle
-│║> ${νℓкуяє.prefix}dance
-│║> ${νℓкуяє.prefix}goodnight
-│║> ${νℓкуяє.prefix}happy
-│║> ${νℓкуяє.prefix}highfive
-│║> ${νℓкуяє.prefix}hug
-│║> ${νℓкуяє.prefix}kick
-│║> ${νℓкуяє.prefix}kill
-│║> ${νℓкуяє.prefix}kiss
-│║> ${νℓкуяє.prefix}nervous
-│║> ${νℓкуяє.prefix}pat
-│║> ${νℓкуяє.prefix}poke
-│║> ${νℓкуяє.prefix}punch
-│║> ${νℓкуяє.prefix}sad
-│║> ${νℓкуяє.prefix}scream
-│║> ${νℓкуяє.prefix}slap
-│║> ${νℓкуяє.prefix}smile
-│║> ${νℓкуяє.prefix}stare
-│║> ${νℓкуяє.prefix}wave
-│║> ${νℓкуяє.prefix}wink
-│║> ${νℓкуяє.prefix}yeet
-│║> ${νℓкуяє.prefix}yes
-└╚═══════⋑
-
-
-┌〨🍌 ${νℓкуяє.prefix}h.hentai
-│╔══『 *🍌HENTAI HUB🍌* 』 
-│║> ${νℓкуяє.prefix}ass
-│║> ${νℓкуяє.prefix}bdsm
-│║> ${νℓкуяє.prefix}blowjob
-│║> ${νℓкуяє.prefix}cum
-│║> ${νℓкуяє.prefix}doujin
-│║> ${νℓкуяє.prefix}feet
-│║> ${νℓкуяє.prefix}femdom  
-│║> ${νℓкуяє.prefix}foxgirl  
-│║> ${νℓкуяє.prefix}glasses  
-│║> ${νℓкуяє.prefix}hentai
-│║> ${νℓкуяє.prefix}maid
-│║> ${νℓкуяє.prefix}masturbation
-│║> ${νℓкуяє.prefix}netorare
-│║> ${νℓкуяє.prefix}orgy
-│║> ${νℓкуяє.prefix}panties
-│║> ${νℓкуяє.prefix}pussy
-│║> ${νℓкуяє.prefix}school
-│║> ${νℓкуяє.prefix}succubus
-│║> ${νℓкуяє.prefix}tentacles
-│║> ${νℓкуяє.prefix}thighs
-│║> ${νℓкуяє.prefix}uglyBastard
-│║> ${νℓкуяє.prefix}uniform
-│║> ${νℓкуяє.prefix}yuri
-│║> ${νℓкуяє.prefix}zettaiRyouiki
-└╚═══════⋑`,
+『 *❓Commands❓* 』
+╔══════════════╗
+║ ┌〨🌐 ${νℓкуяє.prefix}h.search
+║ │╔══『 *🌐SEARCH HUB🌐* 』
+║ │║> ${νℓкуяє.prefix}advice
+║ │║> ${νℓкуяє.prefix}anime
+║ │║> ${νℓкуяє.prefix}fact
+║ │║> ${νℓкуяє.prefix}google
+║ │║> ${νℓкуяє.prefix}joke
+║ │║> ${νℓкуяє.prefix}manga
+║ │║> ${νℓкуяє.prefix}meme
+║ │║> ${νℓкуяє.prefix}quote
+║ │║> ${νℓкуяє.prefix}reddit
+║ └╚═══════⋑
+║
+║
+║ ┌〨🖼️ ${νℓкуяє.prefix}h.image
+║ │╔══『 *🖼️IMAGE HUB🖼️* 』
+║ │║> ${νℓкуяє.prefix}image
+║ │║> ${νℓкуяє.prefix}neko
+║ │║> ${νℓкуяє.prefix}pinterest
+║ │║> ${νℓкуяє.prefix}waifu
+║ │║> ${νℓкуяє.prefix}wallpaper
+║ └╚═══════⋑
+║
+║
+║ ┌〨🔰 ${νℓкуяє.prefix}h.group
+║ │╔══『 *🔰GROUP HUB🔰* 』
+║ │║> ${νℓкуяє.prefix}demote
+║ │║> ${νℓкуяє.prefix}group
+║ │║> ${νℓкуяє.prefix}promote
+║ │║> ${νℓкуяє.prefix}remove
+║ │║> ${νℓкуяє.prefix}setdesc
+║ │║> ${νℓкуяє.prefix}seticon
+║ │║> ${νℓкуяє.prefix}tagall
+║ └╚═══════⋑
+║
+║
+║ ┌〨🐝 ${νℓкуяє.prefix}h.anime
+║ │╔══『 *🐝ANIME HUB🐝* 』
+║ │║> ${νℓкуяє.prefix}bite
+║ │║> ${νℓкуяє.prefix}blush
+║ │║> ${νℓкуяє.prefix}bonk
+║ │║> ${νℓкуяє.prefix}bored
+║ │║> ${νℓкуяє.prefix}confused
+║ │║> ${νℓкуяє.prefix}cry
+║ │║> ${νℓкуяє.prefix}cuddle
+║ │║> ${νℓкуяє.prefix}dance
+║ │║> ${νℓкуяє.prefix}goodnight
+║ │║> ${νℓкуяє.prefix}happy
+║ │║> ${νℓкуяє.prefix}highfive
+║ │║> ${νℓкуяє.prefix}hug
+║ │║> ${νℓкуяє.prefix}kick
+║ │║> ${νℓкуяє.prefix}kill
+║ │║> ${νℓкуяє.prefix}kiss
+║ │║> ${νℓкуяє.prefix}nervous
+║ │║> ${νℓкуяє.prefix}pat
+║ │║> ${νℓкуяє.prefix}poke
+║ │║> ${νℓкуяє.prefix}punch
+║ │║> ${νℓкуяє.prefix}sad
+║ │║> ${νℓкуяє.prefix}scream
+║ │║> ${νℓкуяє.prefix}slap
+║ │║> ${νℓкуяє.prefix}smile
+║ │║> ${νℓкуяє.prefix}stare
+║ │║> ${νℓкуяє.prefix}wave
+║ │║> ${νℓкуяє.prefix}wink
+║ │║> ${νℓкуяє.prefix}yeet
+║ │║> ${νℓкуяє.prefix}yes
+║ └╚═══════⋑
+║
+║
+║ ┌〨🍌 ${νℓкуяє.prefix}h.hentai
+║ │╔══『 *🍌HENTAI HUB🍌* 』 
+║ │║> ${νℓкуяє.prefix}ass
+║ │║> ${νℓкуяє.prefix}bdsm
+║ │║> ${νℓкуяє.prefix}blowjob
+║ │║> ${νℓкуяє.prefix}cum
+║ │║> ${νℓкуяє.prefix}doujin
+║ │║> ${νℓкуяє.prefix}feet
+║ │║> ${νℓкуяє.prefix}femdom  
+║ │║> ${νℓкуяє.prefix}foxgirl  
+║ │║> ${νℓкуяє.prefix}glasses  
+║ │║> ${νℓкуяє.prefix}hentai
+║ │║> ${νℓкуяє.prefix}maid
+║ │║> ${νℓкуяє.prefix}masturbation
+║ │║> ${νℓкуяє.prefix}netorare
+║ │║> ${νℓкуяє.prefix}orgy
+║ │║> ${νℓкуяє.prefix}panties
+║ │║> ${νℓкуяє.prefix}pussy
+║ │║> ${νℓкуяє.prefix}school
+║ │║> ${νℓкуяє.prefix}succubus
+║ │║> ${νℓкуяє.prefix}tentacles
+║ │║> ${νℓкуяє.prefix}thighs
+║ │║> ${νℓкуяє.prefix}uglyBastard
+║ │║> ${νℓкуяє.prefix}uniform
+║ │║> ${νℓкуяє.prefix}yuri
+║ │║> ${νℓкуяє.prefix}zettaiRyouiki
+╚═└╚═══════⋑`,
 "https://i.postimg.cc/TPLYb38J/image.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
