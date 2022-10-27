@@ -74,7 +74,7 @@ one.thumbnail
 var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-var direct = await νℓкуяє.ytv2mate(one.url, "128kbps");
+var direct = await νℓкуяє.yta2mate(one.url, "128kbps");
 var directShorten = await νℓкуяє.Tinyurl(direct);
 await νℓкуяє.imgB(
 νℓкуяє,
