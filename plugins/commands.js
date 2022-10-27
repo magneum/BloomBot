@@ -38,13 +38,12 @@ My developers are working on my code.
 Untill then you can send your group links in my private.
 Once bot will be ready, it will auto join all groups.
 
-┌╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║ *💤Prefix:* _${νℓкуяє.prefix}_
-│║ *📜Git:* 
-│║> _https://github.com/kryknz/vlkyre_
-│║ *⚡Website:* 
-│║> _https://vlkyre.krakinzkon.repl.co_
-└╚═══════⋑
+『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
+*💤Prefix:* ${νℓкуяє.prefix}
+*📜Git:* 
+> https://github.com/kryknz/vlkyre
+*⚡Website:* 
+> https://vlkyre.krakinzkon.repl.co
 
 
 ┌〨🌐 ${νℓкуяє.prefix}h.search
@@ -80,6 +79,39 @@ Once bot will be ready, it will auto join all groups.
 │║> ${νℓкуяє.prefix}setdesc
 │║> ${νℓкуяє.prefix}seticon
 │║> ${νℓкуяє.prefix}tagall
+└╚═══════⋑
+
+
+┌〨🐝 ${νℓкуяє.prefix}h.anime
+│╔══『 *🐝ANIME HUB🐝* 』
+│║> ${νℓкуяє.prefix}bite
+│║> ${νℓкуяє.prefix}blush
+│║> ${νℓкуяє.prefix}bonk
+│║> ${νℓкуяє.prefix}bored
+│║> ${νℓкуяє.prefix}confused
+│║> ${νℓкуяє.prefix}cry
+│║> ${νℓкуяє.prefix}cuddle
+│║> ${νℓкуяє.prefix}dance
+│║> ${νℓкуяє.prefix}goodnight
+│║> ${νℓкуяє.prefix}happy
+│║> ${νℓкуяє.prefix}highfive
+│║> ${νℓкуяє.prefix}hug
+│║> ${νℓкуяє.prefix}kick
+│║> ${νℓкуяє.prefix}kill
+│║> ${νℓкуяє.prefix}kiss
+│║> ${νℓкуяє.prefix}nervous
+│║> ${νℓкуяє.prefix}pat
+│║> ${νℓкуяє.prefix}poke
+│║> ${νℓкуяє.prefix}punch
+│║> ${νℓкуяє.prefix}sad
+│║> ${νℓкуяє.prefix}scream
+│║> ${νℓкуяє.prefix}slap
+│║> ${νℓкуяє.prefix}smile
+│║> ${νℓкуяє.prefix}stare
+│║> ${νℓкуяє.prefix}wave
+│║> ${νℓкуяє.prefix}wink
+│║> ${νℓкуяє.prefix}yeet
+│║> ${νℓкуяє.prefix}yes
 └╚═══════⋑
 
 
