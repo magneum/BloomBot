@@ -131,6 +131,7 @@ color: "cyan",
 succeedColor: "green",
 spinner: νℓкуяє.spinner,
 });
+νℓкуяє.TubeRegex =  /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
 νℓкуяє.packname = packname;
 νℓкуяє.pgdb = DATABASE_URL;
 νℓкуяє.mongodb = mongodb;

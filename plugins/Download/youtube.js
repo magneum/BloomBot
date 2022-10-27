@@ -29,14 +29,92 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
+if (!νℓкуяє.args.join(" ")) {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _No query provided!_
 
+*⚡Usage*   
+> _${νℓкуяє.prefix}${pfname} song/link_`
+);
+} else if (νℓкуяє.args.join(" ").includes("yout")) {
+if (!νℓкуяє.TubeRegex.test(νℓкуяє.args.join(" "))) {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _No query provided!_
 
-
-
-
-
-
-    
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} song/link_`
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else {
+var Audios = await νℓкуяє.TubeSearch(νℓкуяє.args.join(" "));
+if (!Audios) {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _No Music Found!_`
+);
+}
+var oneAudio = Audios.videos.slice(0, 1);
+oneAudio.forEach(async function (one) {
+if (one.seconds > 1800) {
+return await νℓкуяє.imgB(
+νℓкуяє,
+νcнαт,
+`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
+🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${one.timestamp}`,
+one.thumbnail
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var stream = await νℓкуяє.ytdl(one.videoId, {
+quality: "highestaudio",
+});
+var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
+await νℓкуяє.imgB(
+νℓкуяє,
+νcнαт,
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}
+🙈𝐕𝐢𝐞𝐰𝐬: ${one.views}
+⏰𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: ${one.timestamp}
+✒️𝐀𝐮𝐭𝐡𝐨𝐫: ${one.author.name}
+🔗𝐋𝐢𝐧𝐤: ${one.url}
+📜𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: ${one.description}`,
+one.thumbnail
+);
+νℓкуяє
+.FFmpeg(stream)
+.audioBitrate(320)
+.toFormat("ipod")
+.saveToFile(`${one.videoId}.mp3`)
+.on("end", async () => {
+await νℓкуяє.sendMessage(
+νcнαт.chat,
+{
+audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
+contextInfo: {
+externalAdReply: {
+title: `🍻𝐓𝐢𝐭𝐥𝐞: ${one.title}`,
+body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+mediaType: 2,
+thumbnail: await νℓкуяє.getBuffer(one.thumbnail),
+mediaUrl: one.thumbnail,
+},
+},
+mimetype: `audio/mpeg`,
+fileName: `${one.title}.mp3`,
+},
+{ quoted: νcнαт }
+);
+});
+});
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
 return кяуcαℓℓ(error);
