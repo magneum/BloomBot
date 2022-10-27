@@ -95,7 +95,7 @@ audio: { url: direct },
 contextInfo: {
 externalAdReply: {
 title: `*🍻Title:* ${one.title}`,
-body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+body: "νℓкуяє вσт ву кяукηz™",
 mediaType: 2,
 thumbnail: Thumb,
 mediaUrl: one.url,
@@ -137,7 +137,7 @@ audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
 contextInfo: {
 externalAdReply: {
 title: `*🍻Title:* ${one.title}`,
-body: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™`,
+body: "νℓкуяє вσт ву кяукηz™",
 mediaType: 2,
 thumbnail: Thumb,
 mediaUrl: one.url,
