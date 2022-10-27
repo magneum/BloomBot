@@ -83,7 +83,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/advice")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -120,7 +120,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/fact")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -157,7 +157,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/joke")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -194,7 +194,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/meme")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -231,7 +231,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/quote")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -268,7 +268,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/joke")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -305,7 +305,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/anime")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -342,7 +342,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/manga")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -379,7 +379,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Search/google")(
+await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -430,7 +430,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Image/image")(
+await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -467,7 +467,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Image/neko")(
+await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -504,7 +504,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Image/pinterest")(
+await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -541,7 +541,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Image/waifu")(
+await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -578,7 +578,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Image/wallpaper")(
+await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -629,7 +629,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/ass")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/ass")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -666,7 +666,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/bdsm")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/bdsm")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -703,7 +703,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/blowjob")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/blowjob")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -740,7 +740,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/cum")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/cum")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -777,7 +777,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/doujin")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/doujin")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -814,7 +814,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/feet")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/feet")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -851,7 +851,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/femdom")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/femdom")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -888,7 +888,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/foxgirl")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/foxgirl")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -925,7 +925,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/glasses")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/glasses")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -962,7 +962,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/hentai")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/hentai")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -999,7 +999,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/maid")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/maid")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1036,7 +1036,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/masturbation")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/masturbation")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1073,7 +1073,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/netorare")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/netorare")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1110,7 +1110,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/orgy")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/orgy")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1147,7 +1147,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/pussy")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/pussy")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1184,7 +1184,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/school")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/school")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1221,7 +1221,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/succubus")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/succubus")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1258,7 +1258,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/tentacles")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/tentacles")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1295,7 +1295,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/thighs")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/thighs")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1332,7 +1332,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/uglyBastard")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uglyBastard")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1369,7 +1369,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/uniform")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uniform")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1406,7 +1406,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/yuri")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/yuri")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1443,7 +1443,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Hentai/zettaiRyouiki")(
+await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/zettaiRyouiki")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1494,7 +1494,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/demote")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1531,7 +1531,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/group")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1568,7 +1568,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/promote")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1605,7 +1605,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/remove")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/remove")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1642,7 +1642,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/setdesc")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1679,7 +1679,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/seticon")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1716,7 +1716,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Group/tagall")(
+await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
@@ -1759,7 +1759,7 @@ try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
 // });
-await require("../plugins/Download/youtube")(
+await require("../plugins/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(
 νℓкуяє,
 νcнαт,
 groupMetadata,
