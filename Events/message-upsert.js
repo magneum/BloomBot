@@ -119,14 +119,6 @@ text-align: center;
 </html>`);
 });
 console.log(coreback);
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${coreback}`
-);
 // spinnies.succeed("νℓкуяє", { text: coreback });
 }
 );
