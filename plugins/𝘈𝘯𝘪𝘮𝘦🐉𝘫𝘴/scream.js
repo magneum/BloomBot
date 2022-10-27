@@ -63,7 +63,7 @@ video: νℓкуяє.fs.readFileSync(dataMname),
 caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🎋Feeling:* ${pfname}
 *📢From:* ${νℓкуяє.pushname}
-*⚡For:* ${dataFor.split("@")[0] || ""}`,
+*⚡For:* @${dataFor.split("@")[0] || ""}`,
 mentions: [dataFor, νcнαт.sender],
 },
 { quoted: νcнαт }
