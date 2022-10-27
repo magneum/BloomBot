@@ -21,6 +21,10 @@
     "npm install --save --force && clear && node νℓкуяє.js": {
       "name": "npm install --save --force && clear && node νℓкуяє.js",
       "command": "npm install --save --force && clear && node νℓкуяє.js"
+    },
+    "rm -rf node_modules": {
+      "name": "rm -rf node_modules",
+      "command": "rm -rf node_modules"
     }
   }
 }
