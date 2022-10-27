@@ -14,10 +14,6 @@
       "command": "npx forever --no-warnings νℓкуяє.js --color",
       "runAtStart": true
     },
-    "yarn install --ignore-engines": {
-      "name": "yarn install --ignore-engines",
-      "command": "yarn install --ignore-engines"
-    },
     "npm install --save --force && clear && node νℓкуяє.js": {
       "name": "npm install --save --force && clear && node νℓкуяє.js",
       "command": "npm install --save --force && clear && node νℓкуяє.js"
