@@ -94,7 +94,8 @@ one.thumbnail
 .toFormat("ipod")
 .saveToFile(`${one.videoId}.mp3`)
 .on("end", async () => {
-await νℓкуяє.sendMessage(
+await νℓкуяє
+.sendMessage(
 νcнαт.chat,
 {
 audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
@@ -111,7 +112,8 @@ mimetype: `audio/mpeg`,
 fileName: `${one.title}.mp3`,
 },
 { quoted: νcнαт }
-);
+)
+.then(νℓкуяє.fs.unlinkSync(`${one.videoId}.mp3`));
 });
 });
 }
