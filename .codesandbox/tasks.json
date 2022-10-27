@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "npm install --save --force"
     }
   ],
 
@@ -14,13 +14,13 @@
       "command": "npx forever --no-warnings νℓкуяє.js --color",
       "runAtStart": true
     },
-    "yarn install --ignore-engines": {
-      "name": "yarn install --ignore-engines",
-      "command": "yarn install --ignore-engines"
-    },
     "npm install --save --force && clear && node νℓкуяє.js": {
       "name": "npm install --save --force && clear && node νℓкуяє.js",
       "command": "npm install --save --force && clear && node νℓкуяє.js"
+    },
+    "rm -rf node_modules": {
+      "name": "rm -rf node_modules",
+      "command": "rm -rf node_modules"
     }
   }
 }
