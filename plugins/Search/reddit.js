@@ -42,9 +42,6 @@ await νℓкуяє.imgB(
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
-ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
-ShowYellow("🐞𝐏𝐚𝐭𝐡: ", psname);
-ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", error);
 return кяуcαℓℓ(error);
 }
 };
