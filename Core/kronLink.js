@@ -92,6 +92,7 @@ module.exports = async (νℓкуяє, νcнαт, update, store) => {
 νℓкуяє.AnimeWallpaper = AnimeWallpaper;
 
 νℓкуяє.sessionName = "νℓкуяє";
+νℓкуяє.request = require("request");
 νℓкуяє.msgFilter = require("./msgFilter");
 νℓкуяє.imgB = require("../Buttons/imgB");
 νℓкуяє.vidB = require("../Buttons/vidB");
@@ -113,6 +114,7 @@ module.exports = async (νℓкуяє, νcнαт, update, store) => {
 νℓкуяє.chalk = require("chalk");
 νℓкуяє.util = require("util");
 νℓкуяє.fs = require("fs");
+νℓкуяє.Anime = require("anime-actions");
 νℓкуяє.gis = require("g-i-s");
 νℓкуяє.Tinyurl = require("tinyurl-api");
 νℓкуяє.akaneko = require("akaneko");

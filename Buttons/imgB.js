@@ -27,8 +27,8 @@ caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer:
-"*νℓкуяє™ вσт ву кяукηz*\nhttps://rusd5u-8080.preview.csb.app/vlkyre",
-mentions: [νℓкуяє.sender],
+"*νℓкуяє™ вσт ву кяукηz*",
+mentions: [νcнαт.sender],
 buttons: [
 {
 buttonId: `${νℓкуяє.prefix}Commands`,

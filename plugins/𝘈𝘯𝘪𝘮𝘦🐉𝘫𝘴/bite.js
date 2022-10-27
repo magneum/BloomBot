@@ -29,112 +29,80 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νcнαт.isGroup) {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _It's a group command!_`
-);
-}
-if (!isAdmin) {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _This is an Admin only Command!_`
-);
-}
-if (!isBotAdmin) {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Bot not Admin!_`
-);
-}
+var data = await νℓкуяє.fetchJson("https://api.waifu.pics/sfw/" + pfname);
+console.log(data);
+var rando = Math.random().toString(36).replace(".", "");
+var dataGname = `${pfname}_${rando}.gif`;
+var dataMname = `${pfname}_${rando}.mp4`;
+νℓкуяє.request(data).pipe(νℓкуяє.fs.createWriteStream(dataGname)).on("close", () => {
+νℓкуяє.FFmpeg(dataGname)
+.outputOptions([
+"-pix_fmt yuv420p",
+"-c:v libx264",
+"-movflags +faststart",
+"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+])
+.save(dataMname)
+.on("end", async () => {
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νℓкуяє.mentionByTag) {
-let users = νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.mentionedJid
-: [];
-if (!users) {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Couldn't find any userID in context!_
-
-*⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} @tag/reply_`
-);
-}
-try {
-await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "demote");
-} catch {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Check if the person already not an admin!_`
-);
-}
-try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
-} catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
-}
-await νℓкуяє.imgB(
-νℓкуяє,
-νcнαт,
-`OOPs!! looks like someone demoted @${users.split("@")[0]}`,
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞
-);
+if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
+let mention = νℓкуяє.mentionByTag;
+let dataFor = (await mention[0]) || νcнαт.msg.contextInfo.participant;
+return await νℓкуяє.sendMessage(νcнαт.chat,
+{
+gifPlayback: true,
+video: νℓкуяє.fs.readFileSync(dataMname),
+caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*🎋Feeling:* ${pfname}
+*📢From:* ${νℓкуяє.pushname}
+*⚡For:* ${dataFor.split("@")[0] || ""}`,
+mentions: [dataFor, νcнαт.sender],
+},
+{ quoted: νcнαт }
+)
+.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (νℓкуяє.mentionByReply) {
-let users =
-νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.participant || ""
-: "";
-if (!users) {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Couldn't find any userID in context!_
-
-*⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} @tag/reply_`
-);
-}
-try {
-await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "demote");
-} catch {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Check if the person already not an admin!_`
-);
-}
-try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
-} catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
-}
-await νℓкуяє.imgB(
-νℓкуяє,
-νcнαт,
-`OOPs!! looks like someone demoted @${users.split("@")[0]}`,
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞
-);
+let dataFor = νcнαт.mtype == "extendedTextMessage" &&νcнαт.message.extendedTextMessage.contextInfo != null? νcнαт.message.extendedTextMessage.contextInfo.participant ||"": "";
+return await νℓкуяє.sendMessage(νcнαт.chat,
+{
+gifPlayback: true,
+video: νℓкуяє.fs.readFileSync(dataMname),
+caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*🎋Feeling:* ${pfname}
+*📢From:* ${νℓкуяє.pushname}
+*⚡For:* ${dataFor.split("@")[0] || ""}`,
+mentions: [dataFor, νcнαт.sender],
+},
+{ quoted: νcнαт }
+)
+.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
+return await νℓкуяє.sendMessage(νcнαт.chat,
+{
+gifPlayback: true,
+video: νℓкуяє.fs.readFileSync(dataMname),
+caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*⚡For:* ${νℓкуяє.pushname}
+*🎋Feeling:* ${pfname}`,
+},
+{ quoted: νcнαт }
+)
+.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
+}
+})
+.on("error", (error) => {
 return νcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
-> _Couldn't find any userID in context!_
+> _There has been an API Error. Please try again later._
 
-*⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} @tag/reply_`
+*🐞Bug* 
+> ${error}`
 );
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+});
+});
 } catch (error) {
 return кяуcαℓℓ(error);
 }
