@@ -34,21 +34,32 @@ console.log(data);
 var rando = Math.random().toString(36).replace(".", "");
 var dataGname = `${pfname}_${rando}.gif`;
 var dataMname = `${pfname}_${rando}.mp4`;
-νℓкуяє.request(data).pipe(νℓкуяє.fs.createWriteStream(dataGname)).on("close", () => {
-νℓкуяє.FFmpeg(dataGname)
-.outputOptions([
-"-pix_fmt yuv420p",
-"-c:v libx264",
-"-movflags +faststart",
-"-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-])
-.save(dataMname)
-.on("end", async () => {
+νℓкуяє
+.request(data)
+.pipe(νℓкуяє.fs.createWriteStream(dataGname))
+.on("close", () => {
+νℓкуяє.exec(
+νℓкуяє.pathFFmpeg +
+` -i ${dataGname} -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' ${dataMname}`,
+async (error) => {
+if (error) {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${error}`
+);
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
 let mention = νℓкуяє.mentionByTag;
-let dataFor = (await mention[0]) || νcнαт.msg.contextInfo.participant;
-return await νℓкуяє.sendMessage(νcнαт.chat,
+let dataFor =
+(await mention[0]) || νcнαт.msg.contextInfo.participant;
+return await νℓкуяє
+.sendMessage(
+νcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -60,11 +71,21 @@ mentions: [dataFor, νcнαт.sender],
 },
 { quoted: νcнαт }
 )
-.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
+.then(
+νℓкуяє.fs.unlinkSync(dataGname),
+νℓкуяє.fs.unlinkSync(dataMname)
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (νℓкуяє.mentionByReply) {
-let dataFor = νcнαт.mtype == "extendedTextMessage" &&νcнαт.message.extendedTextMessage.contextInfo != null? νcнαт.message.extendedTextMessage.contextInfo.participant ||"": "";
-return await νℓкуяє.sendMessage(νcнαт.chat,
+let dataFor =
+νcнαт.mtype == "extendedTextMessage" &&
+νcнαт.message.extendedTextMessage.contextInfo != null
+? νcнαт.message.extendedTextMessage.contextInfo.participant ||
+""
+: "";
+return await νℓкуяє
+.sendMessage(
+νcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -76,10 +97,15 @@ mentions: [dataFor, νcнαт.sender],
 },
 { quoted: νcнαт }
 )
-.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
+.then(
+νℓкуяє.fs.unlinkSync(dataGname),
+νℓкуяє.fs.unlinkSync(dataMname)
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
-return await νℓкуяє.sendMessage(νcнαт.chat,
+return await νℓкуяє
+.sendMessage(
+νcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -89,19 +115,13 @@ caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 },
 { quoted: νcнαт }
 )
-.then(νℓкуяє.fs.unlinkSync(dataGname),νℓкуяє.fs.unlinkSync(dataMname));
-}
-})
-.on("error", (error) => {
-return νcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
+.then(
+νℓкуяє.fs.unlinkSync(dataGname),
+νℓкуяє.fs.unlinkSync(dataMname)
 );
-});
+}
+}
+);
 });
 } catch (error) {
 return кяуcαℓℓ(error);
