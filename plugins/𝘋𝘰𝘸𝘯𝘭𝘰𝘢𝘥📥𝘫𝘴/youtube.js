@@ -74,8 +74,11 @@ module.exports = async (
         var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         try {
-          var direct = await νℓкуяє.yta2mate(one.url, "128kbps");
-          var directShorten = await νℓкуяє.Tinyurl(direct.dl_link);
+          var { DLoader, thumb, title, RSize, BSize } = await νℓкуяє.Tube_Audio(
+            one.url,
+            "en136"
+          );
+          var directShorten = await νℓкуяє.Tinyurl(DLoader);
           await νℓкуяє.imgB(
             νℓкуяє,
             νcнαт,
@@ -91,7 +94,7 @@ module.exports = async (
           return await νℓкуяє.sendMessage(
             νcнαт.chat,
             {
-              audio: { url: direct.dl_link },
+              audio: { url: DLoader },
               contextInfo: {
                 externalAdReply: {
                   title: `*🍻Title:* ${one.title}`,
