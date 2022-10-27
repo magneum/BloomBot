@@ -51,8 +51,10 @@ return νcнαт.reply(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-let users =
-(await νℓкуяє.mentionByTag[0]) || νℓкуяє.msg.contextInfo.participant;
+if (νℓкуяє.mentionByTag) {
+let mention = νℓкуяє.mentionByTag;
+console.log(mention);
+let users = (await mention[0]) || νcнαт.msg.contextInfo.participant;
 if (!users) {
 return νcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -60,10 +62,18 @@ return νcнαт.reply(
 > _Couldn't find any userID in context!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} @tag_`
+> _${νℓкуяє.prefix}${pfname} @tag/reply_`
 );
 }
+try {
 await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "promote");
+} catch {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Check if the person already not an admin!_`
+);
+}
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
 } catch {
@@ -75,6 +85,54 @@ await νℓкуяє.imgB(
 `OOPs!! looks like someone promoted @${users.split("@")[0]}`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 );
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else if (νℓкуяє.mentionByReply) {
+let users =
+νcнαт.mtype == "extendedTextMessage" &&
+νcнαт.message.extendedTextMessage.contextInfo != null
+? νcнαт.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+if (!users) {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Couldn't find any userID in context!_
+
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} @tag/reply_`
+);
+}
+try {
+await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "promote");
+} catch {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Check if the person already not an admin!_`
+);
+}
+try {
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
+} catch {
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
+}
+await νℓкуяє.imgB(
+νℓкуяє,
+νcнαт,
+`OOPs!! looks like someone promoted @${users.split("@")[0]}`,
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else {
+return νcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Couldn't find any userID in context!_
+
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} @tag/reply_`
+);
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
 return кяуcαℓℓ(error);
