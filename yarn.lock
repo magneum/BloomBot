@@ -3534,6 +3534,13 @@ ffmpeg-static@^5.1.0:
     https-proxy-agent "^5.0.0"
     progress "^2.0.3"
 
+ffmpeg@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/ffmpeg/-/ffmpeg-0.0.4.tgz#1c460df8e7da5127f62ceef4bfa06c59c89630cb"
+  integrity sha512-3TgWUJJlZGQn+crJFyhsO/oNeRRnGTy6GhgS98oUCIfZrOW5haPPV7DUfOm3xJcHr5q3TJpjk2GudPutrNisRA==
+  dependencies:
+    when ">= 0.0.1"
+
 file-type@^12.4.1:
   version "12.4.2"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
@@ -8391,6 +8398,11 @@ whatwg-url@^8.0.0, whatwg-url@^8.5.0:
     lodash "^4.7.0"
     tr46 "^2.1.0"
     webidl-conversions "^6.1.0"
+
+"when@>= 0.0.1":
+  version "3.7.8"
+  resolved "https://registry.yarnpkg.com/when/-/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
+  integrity sha512-5cZ7mecD3eYcMiCH4wtRPA5iFJZ50BJYDfckI5RRpQiktMiYTcn0ccLTZOvcbBume+1304fQztxeNzNS9Gvrnw==
 
 which-boxed-primitive@^1.0.1, which-boxed-primitive@^1.0.2:
   version "1.0.2"
