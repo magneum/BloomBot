@@ -107,7 +107,7 @@ async function run() {
     auth: state,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
-    browser: [`vlkyre: ${Browser}`, "Safari", "1.0.1"],
+    browser: [`vlkyre: ${Browser || "v5"}`, "Safari", "1.0.1"],
     version: getVersionWaweb() || [2, 2204, 13],
     msgRetryCounterMap,
     getMessage: async (key) => {
