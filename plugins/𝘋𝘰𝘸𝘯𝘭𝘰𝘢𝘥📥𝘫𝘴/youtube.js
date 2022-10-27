@@ -91,7 +91,7 @@ module.exports = async (
           return await νℓкуяє.sendMessage(
             νcнαт.chat,
             {
-              audio: { url: directShorten },
+              audio: { url: direct.dl_link },
               contextInfo: {
                 externalAdReply: {
                   title: `*🍻Title:* ${one.title}`,
