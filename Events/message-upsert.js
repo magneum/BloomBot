@@ -25,7 +25,7 @@ Object.keys(νTēxt.message)[0] === "ephemeralMessage"
 if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
 if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
 if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-νcнαт = await νkmake(νℓкуяє, νTēxt, store);
+νℓcнαт = await νkmake(νℓкуяє, νTēxt, store);
 
 spinner = {
 interval: 100,
@@ -41,35 +41,35 @@ spinner: spinner,
 // });
 await require("../Core/νc໐rē.js")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 update,
 store,
 spinnies,
 νℓpage,
 async (coreback) => {
-gcMetaData = νcнαт.isGroup? await νℓкуяє.groupMetadata(νcнαт.chat).catch((e) => {}): "";
+gcMetaData = νℓcнαт.isGroup? await νℓкуяє.groupMetadata(νℓcнαт.chat).catch((e) => {}): "";
 gcName = gcMetaData.subject || "no_subject";
 gcOwner = gcMetaData.owner.split("@")[0] || "Unknown";
 gcDescprition = gcMetaData.desc.toString() || "no description";
-gcParticipants = νcнαт.isGroup ? await gcMetaData.participants : "";
-gcAdmins = νcнαт.isGroup? await gcParticipants.filter((v) => v.admin !== null).map((v) => v.id): "";
-gcAdminCheck = νcнαт.isGroup? gcAdmins.includes(νcнαт.sender): false;
+gcParticipants = νℓcнαт.isGroup ? await gcMetaData.participants : "";
+gcAdmins = νℓcнαт.isGroup? await gcParticipants.filter((v) => v.admin !== null).map((v) => v.id): "";
+gcAdminCheck = νℓcнαт.isGroup? gcAdmins.includes(νℓcнαт.sender): false;
 gcCreadted = require("moment")(new Date(parseInt(gcMetaData.creation) * 1000)).format("DD MMM YYYY HH:mm:ss");
 
 try {
-puser = await νℓкуяє.profilePictureUrl(νcнαт.sender, "image");
+puser = await νℓкуяє.profilePictureUrl(νℓcнαт.sender, "image");
 } catch {
 puser = "https://i.postimg.cc/TPLYb38J/image.png";
 }
 
 try {
-pgroup = await νℓкуяє.profilePictureUrl(νcнαт.chat, "image");
+pgroup = await νℓкуяє.profilePictureUrl(νℓcнαт.chat, "image");
 } catch {
 pgroup = "https://i.postimg.cc/TPLYb38J/image.png";
 }
 
 Today = new Date();
-if (νcнαт.isGroup) {
+if (νℓcнαт.isGroup) {
 gN = `<p style="font-size:1.5vw; color:#cec3a8"><b>🎋𝐆𝐫𝐨𝐮𝐩-𝐍𝐚𝐦𝐞:</b> ${gcName}`;
 } else {
 gN = `<p style="font-size:1.5vw; color:#cec3a8"><b>🎋𝐆𝐫𝐨𝐮𝐩-𝐍𝐚𝐦𝐞:</b> null`;
@@ -80,10 +80,10 @@ LogText = `
 <br>│╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐』
 <br>│║✡ 🖊️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <I>${νℓкуяє.budy || νℓкуяє.mtype}</I>
 <br>│║✡ ❣️ 𝐔𝐬𝐞𝐫-𝐍𝐚𝐦𝐞: <I>${νℓкуяє.pushname}</I>
-<br>│║✡ 📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: <I>${νcнαт.sender}</I>
+<br>│║✡ 📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: <I>${νℓcнαт.sender}</I>
 <br>│║✡ 👑 𝐔𝐬𝐞𝐫-𝐀𝐝𝐦𝐢𝐧: <I>${gcAdminCheck}</I>
 <br>│║✡ ${gN}
-<br>│║✡ 💬 𝐂𝐡𝐚𝐭-𝐈𝐝: <I>${νcнαт.chat}</I>
+<br>│║✡ 💬 𝐂𝐡𝐚𝐭-𝐈𝐝: <I>${νℓcнαт.chat}</I>
 <br>│║✡ 🗓️𝐃𝐚𝐭𝐞: <I>${Today.getDate()}d : ${
 Today.getMonth() + 1
 }m : ${Today.getFullYear()}y</I>
@@ -231,7 +231,7 @@ Section.
 <h2 class="text-lg text-white font-medium title-font mb-4"> </h2>
 <p class="leading-relaxed text-base"><b>🧀 Group Name:</b><br>> <I>${gcName}</I></p>
 <p class="leading-relaxed text-base"><b>👑 Group Owner:</b><br>> <I>${gcOwner}</I></p>
-<p class="leading-relaxed text-base"><b>💬 Group Id:</b><br>> <I>${νcнαт.chat}</I></p>
+<p class="leading-relaxed text-base"><b>💬 Group Id:</b><br>> <I>${νℓcнαт.chat}</I></p>
 <p class="leading-relaxed text-base"><b>⏰ Created On:</b><br>> <I>${gcCreadted}</I></p>
 </div>
 </div>
@@ -241,7 +241,7 @@ Section.
 <h3 class="tracking-widest text-red-500 text-xs font-medium title-font"><b>🧛🏻‍♂️ USER INFORMATION CONSOLE</b></h3>
 <h2 class="text-lg text-white font-medium title-font mb-4"> </h2>
 <p class="leading-relaxed text-base"><b>❣️ User Name:</b><br>> <I>${νℓкуяє.pushname}</I></p>
-<p class="leading-relaxed text-base"><b>📱 User Number:</b><br>> <I>${νcнαт.sender}</I></p>
+<p class="leading-relaxed text-base"><b>📱 User Number:</b><br>> <I>${νℓcнαт.sender}</I></p>
 <p class="leading-relaxed text-base"><b>❓ Is User Admin:</b><br>> <I>${gcAdminCheck}</I></p>
 </div>
 </div>

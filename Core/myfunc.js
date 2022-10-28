@@ -98,21 +98,21 @@ exports.runtime = function (seconds) {
 seconds = Number(seconds);
 var d = Math.floor(seconds / (3600 * 24));
 var h = Math.floor((seconds % (3600 * 24)) / 3600);
-var νcнαт = Math.floor((seconds % 3600) / 60);
+var νℓcнαт = Math.floor((seconds % 3600) / 60);
 var s = Math.floor(seconds % 60);
 var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
 var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
 var mDisplay =
-νcнαт > 0 ? νcнαт + (νcнαт == 1 ? " minute, " : " minutes, ") : "";
+νℓcнαт > 0 ? νℓcнαт + (νℓcнαт == 1 ? " minute, " : " minutes, ") : "";
 var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
 return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
 let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-let νcнαт = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+let νℓcнαт = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
 let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-return [h, νcнαт, s].map((v) => v.toString().padStart(2, 0)).join(":");
+return [h, νℓcнαт, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -236,121 +236,127 @@ unlink(`./Bin/${filename}.gif`),
 return buffer5;
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-exports.νkmake = async (νℓкуяє, νcнαт, store) => {
-if (!νcнαт) return νcнαт;
+exports.νkmake = async (νℓкуяє, νℓcнαт, store) => {
+if (!νℓcнαт) return νℓcнαт;
 let νproto = proto.WebMessageInfo;
-if (νcнαт.key) {
-νcнαт.id = νcнαт.key.id;
-νcнαт.isBaileys = νcнαт.id.startsWith("BAE5") && νcнαт.id.length === 16;
-νcнαт.chat = νcнαт.key.remoteJid;
-νcнαт.fromMe = νcнαт.key.fromMe;
-νcнαт.isGroup = νcнαт.chat.endsWith("@g.us");
-νcнαт.sender = νℓкуяє.decodeJid(
-(νcнαт.fromMe && νℓкуяє.user.id) ||
-νcнαт.participant ||
-νcнαт.key.participant ||
-νcнαт.chat ||
+if (νℓcнαт.key) {
+νℓcнαт.id = νℓcнαт.key.id;
+νℓcнαт.isBaileys = νℓcнαт.id.startsWith("BAE5") && νℓcнαт.id.length === 16;
+νℓcнαт.chat = νℓcнαт.key.remoteJid;
+νℓcнαт.fromMe = νℓcнαт.key.fromMe;
+νℓcнαт.isGroup = νℓcнαт.chat.endsWith("@g.us");
+νℓcнαт.sender = νℓкуяє.decodeJid(
+(νℓcнαт.fromMe && νℓкуяє.user.id) ||
+νℓcнαт.participant ||
+νℓcнαт.key.participant ||
+νℓcнαт.chat ||
 ""
 );
-if (νcнαт.isGroup)
-νcнαт.participant = νℓкуяє.decodeJid(νcнαт.key.participant) || "";
+if (νℓcнαт.isGroup)
+νℓcнαт.participant = νℓкуяє.decodeJid(νℓcнαт.key.participant) || "";
 }
-if (νcнαт.message) {
-νcнαт.mtype = getContentType(νcнαт.message);
-νcнαт.msg =
-νcнαт.mtype == "viewOnceMessage"
-? νcнαт.message[νcнαт.mtype].message[
-  getContentType(νcнαт.message[νcнαт.mtype].message)
+if (νℓcнαт.message) {
+νℓcнαт.mtype = getContentType(νℓcнαт.message);
+νℓcнαт.msg =
+νℓcнαт.mtype == "viewOnceMessage"
+? νℓcнαт.message[νℓcнαт.mtype].message[
+getContentType(νℓcнαт.message[νℓcнαт.mtype].message)
 ]
-: νcнαт.message[νcнαт.mtype];
-νcнαт.body =
-νcнαт.message.conversation ||
-νcнαт.msg.caption ||
-νcнαт.msg.text ||
-(νcнαт.mtype == "listResponseMessage" &&
-νcнαт.msg.singleSelectReply.selectedRowId) ||
-(νcнαт.mtype == "buttonsResponseMessage" && νcнαт.msg.selectedButtonId) ||
-(νcнαт.mtype == "viewOnceMessage" && νcнαт.msg.caption) ||
-νcнαт.text;
-let quoted = (νcнαт.quoted = νcнαт.msg.contextInfo
-? νcнαт.msg.contextInfo.quotedMessage
+: νℓcнαт.message[νℓcнαт.mtype];
+νℓcнαт.body =
+νℓcнαт.message.conversation ||
+νℓcнαт.msg.caption ||
+νℓcнαт.msg.text ||
+(νℓcнαт.mtype == "listResponseMessage" &&
+νℓcнαт.msg.singleSelectReply.selectedRowId) ||
+(νℓcнαт.mtype == "buttonsResponseMessage" &&
+νℓcнαт.msg.selectedButtonId) ||
+(νℓcнαт.mtype == "viewOnceMessage" && νℓcнαт.msg.caption) ||
+νℓcнαт.text;
+let quoted = (νℓcнαт.quoted = νℓcнαт.msg.contextInfo
+? νℓcнαт.msg.contextInfo.quotedMessage
 : null);
-νcнαт.mentionedJid = νcнαт.msg.contextInfo
-? νcнαт.msg.contextInfo.mentionedJid
+νℓcнαт.mentionedJid = νℓcнαт.msg.contextInfo
+? νℓcнαт.msg.contextInfo.mentionedJid
 : [];
-if (νcнαт.quoted) {
+if (νℓcнαт.quoted) {
 let type = getContentType(quoted);
-νcнαт.quoted = νcнαт.quoted[type];
+νℓcнαт.quoted = νℓcнαт.quoted[type];
 if (["productMessage"].includes(type)) {
-type = getContentType(νcнαт.quoted);
-νcнαт.quoted = νcнαт.quoted[type];
+type = getContentType(νℓcнαт.quoted);
+νℓcнαт.quoted = νℓcнαт.quoted[type];
 }
-if (typeof νcнαт.quoted === "string")
-νcнαт.quoted = {
-text: νcнαт.quoted,
+if (typeof νℓcнαт.quoted === "string")
+νℓcнαт.quoted = {
+text: νℓcнαт.quoted,
 };
-νcнαт.quoted.mtype = type;
-νcнαт.quoted.id = νcнαт.msg.contextInfo.stanzaId;
-νcнαт.quoted.chat = νcнαт.msg.contextInfo.remoteJid || νcнαт.chat;
-νcнαт.quoted.isBaileys = νcнαт.quoted.id
-? νcнαт.quoted.id.startsWith("BAE5") && νcнαт.quoted.id.length === 16
+νℓcнαт.quoted.mtype = type;
+νℓcнαт.quoted.id = νℓcнαт.msg.contextInfo.stanzaId;
+νℓcнαт.quoted.chat = νℓcнαт.msg.contextInfo.remoteJid || νℓcнαт.chat;
+νℓcнαт.quoted.isBaileys = νℓcнαт.quoted.id
+? νℓcнαт.quoted.id.startsWith("BAE5") && νℓcнαт.quoted.id.length === 16
 : false;
-νcнαт.quoted.sender = νℓкуяє.decodeJid(νcнαт.msg.contextInfo.participant);
-νcнαт.quoted.fromMe =
-νcнαт.quoted.sender === (νℓкуяє.user && νℓкуяє.user.id);
-νcнαт.quoted.text =
-νcнαт.quoted.text ||
-νcнαт.quoted.caption ||
-νcнαт.quoted.conversation ||
-νcнαт.quoted.contentText ||
-νcнαт.quoted.selectedDisplayText ||
-νcнαт.quoted.title ||
+νℓcнαт.quoted.sender = νℓкуяє.decodeJid(
+νℓcнαт.msg.contextInfo.participant
+);
+νℓcнαт.quoted.fromMe =
+νℓcнαт.quoted.sender === (νℓкуяє.user && νℓкуяє.user.id);
+νℓcнαт.quoted.text =
+νℓcнαт.quoted.text ||
+νℓcнαт.quoted.caption ||
+νℓcнαт.quoted.conversation ||
+νℓcнαт.quoted.contentText ||
+νℓcнαт.quoted.selectedDisplayText ||
+νℓcнαт.quoted.title ||
 "";
-νcнαт.quoted.mentionedJid = νcнαт.msg.contextInfo
-? νcнαт.msg.contextInfo.mentionedJid
+νℓcнαт.quoted.mentionedJid = νℓcнαт.msg.contextInfo
+? νℓcнαт.msg.contextInfo.mentionedJid
 : [];
-νcнαт.getQuotedObj = νcнαт.getQuotedMessage = async () => {
-if (!νcнαт.quoted.id) return false;
-let q = await store.loadMessage(νcнαт.chat, νcнαт.quoted.id, νℓкуяє);
+νℓcнαт.getQuotedObj = νℓcнαт.getQuotedMessage = async () => {
+if (!νℓcнαт.quoted.id) return false;
+let q = await store.loadMessage(νℓcнαт.chat, νℓcнαт.quoted.id, νℓкуяє);
 return exports.νkmake(νℓкуяє, q, store);
 };
-let vM = (νcнαт.quoted.fakeObj = νproto.fromObject({
+let vM = (νℓcнαт.quoted.fakeObj = νproto.fromObject({
 key: {
-remoteJid: νcнαт.quoted.chat,
-fromMe: νcнαт.quoted.fromMe,
-id: νcнαт.quoted.id,
+remoteJid: νℓcнαт.quoted.chat,
+fromMe: νℓcнαт.quoted.fromMe,
+id: νℓcнαт.quoted.id,
 },
 message: quoted,
-...(νcнαт.isGroup ? { participant: νcнαт.quoted.sender } : {}),
+...(νℓcнαт.isGroup ? { participant: νℓcнαт.quoted.sender } : {}),
 }));
-νcнαт.quoted.delete = () =>
-νℓкуяє.sendMessage(νcнαт.quoted.chat, { delete: vM.key });
-νcнαт.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+νℓcнαт.quoted.delete = () =>
+νℓкуяє.sendMessage(νℓcнαт.quoted.chat, { delete: vM.key });
+νℓcнαт.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
 νℓкуяє.copyNForward(jid, vM, forceForward, options);
-νcнαт.quoted.download = () => νℓкуяє.downloadMediaMessage(νcнαт.quoted);
+νℓcнαт.quoted.download = () => νℓкуяє.downloadMediaMessage(νℓcнαт.quoted);
 }
 }
 
-if (νcнαт.msg.url)
-νcнαт.download = () => νℓкуяє.downloadMediaMessage(νcнαт.msg);
-νcнαт.text =
-νcнαт.msg.text ||
-νcнαт.msg.caption ||
-νcнαт.message.conversation ||
-νcнαт.msg.contentText ||
-νcнαт.msg.selectedDisplayText ||
-νcнαт.msg.title ||
+if (νℓcнαт.msg.url)
+νℓcнαт.download = () => νℓкуяє.downloadMediaMessage(νℓcнαт.msg);
+νℓcнαт.text =
+νℓcнαт.msg.text ||
+νℓcнαт.msg.caption ||
+νℓcнαт.message.conversation ||
+νℓcнαт.msg.contentText ||
+νℓcнαт.msg.selectedDisplayText ||
+νℓcнαт.msg.title ||
 "";
-νcнαт.reply = (text, chatId = νcнαт.chat, options = {}) =>
+νℓcнαт.reply = (text, chatId = νℓcнαт.chat, options = {}) =>
 Buffer.isBuffer(text)
-? νℓкуяє.sendMedia(chatId, text, "file", "", νcнαт, { ...options })
-: νℓкуяє.sendText(chatId, text, νcнαт, { ...options });
-νcнαт.copy = () =>
-exports.νkmake(νℓкуяє, νproto.fromObject(νproto.toObject(νcнαт)));
-νcнαт.copyNForward = (jid = νcнαт.chat, forceForward = false, options = {}) =>
-νℓкуяє.copyNForward(jid, νcнαт, forceForward, options);
+? νℓкуяє.sendMedia(chatId, text, "file", "", νℓcнαт, { ...options })
+: νℓкуяє.sendText(chatId, text, νℓcнαт, { ...options });
+νℓcнαт.copy = () =>
+exports.νkmake(νℓкуяє, νproto.fromObject(νproto.toObject(νℓcнαт)));
+νℓcнαт.copyNForward = (
+jid = νℓcнαт.chat,
+forceForward = false,
+options = {}
+) => νℓкуяє.copyNForward(jid, νℓcнαт, forceForward, options);
 
-return νcнαт;
+return νℓcнαт;
 };
 
 let file = require.resolve(__filename);

@@ -39,28 +39,28 @@ var chalk = require("chalk");
 var moment = require("moment-timezone");
 var msgFilter = require("./msgFilter.js");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νcнαт, update, store) => {
+module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.body =
-νcнαт.mtype === "conversation"
-? νcнαт.message.conversation
-: νcнαт.mtype == "imageMessage"
-? νcнαт.message.imageMessage.caption
-: νcнαт.mtype == "videoMessage"
-? νcнαт.message.videoMessage.caption
-: νcнαт.mtype == "extendedTextMessage"
-? νcнαт.message.extendedTextMessage.text
-: νcнαт.mtype == "buttonsResponseMessage"
-? νcнαт.message.buttonsResponseMessage.selectedButtonId
-: νcнαт.mtype == "listResponseMessage"
-? νcнαт.message.listResponseMessage.singleSelectReply.selectedRowId
-: νcнαт.mtype == "templateButtonReplyMessage"
-? νcнαт.message.templateButtonReplyMessage.selectedId
-: νcнαт.mtype === "messageContextInfo"
-? νcнαт.message.buttonsResponseMessage?.selectedButtonId ||
-νcнαт.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-νcнαт.text
+νℓcнαт.mtype === "conversation"
+? νℓcнαт.message.conversation
+: νℓcнαт.mtype == "imageMessage"
+? νℓcнαт.message.imageMessage.caption
+: νℓcнαт.mtype == "videoMessage"
+? νℓcнαт.message.videoMessage.caption
+: νℓcнαт.mtype == "extendedTextMessage"
+? νℓcнαт.message.extendedTextMessage.text
+: νℓcнαт.mtype == "buttonsResponseMessage"
+? νℓcнαт.message.buttonsResponseMessage.selectedButtonId
+: νℓcнαт.mtype == "listResponseMessage"
+? νℓcнαт.message.listResponseMessage.singleSelectReply.selectedRowId
+: νℓcнαт.mtype == "templateButtonReplyMessage"
+? νℓcнαт.message.templateButtonReplyMessage.selectedId
+: νℓcнαт.mtype === "messageContextInfo"
+? νℓcнαт.message.buttonsResponseMessage?.selectedButtonId ||
+νℓcнαт.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+νℓcнαт.text
 : "";
-νℓкуяє.budy = typeof νcнαт.text == "string" ? νcнαт.text : "";
+νℓкуяє.budy = typeof νℓcнαт.text == "string" ? νℓcнαт.text : "";
 νℓкуяє.icmd = νℓкуяє.body.startsWith(prefix);
 νℓкуяє.isCmd =
 prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
@@ -69,28 +69,28 @@ prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
 ? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase()
 : "";
 νℓкуяє.args = νℓкуяє.body.trim().split(/ +/).slice(1);
-νℓкуяє.pushname = νcнαт.pushName || "No Name";
+νℓкуяє.pushname = νℓcнαт.pushName || "No Name";
 νℓкуяє.botNumber = await νℓкуяє.decodeJid(νℓкуяє.user.id);
 νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.mods]
 .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-.includes(νcнαт.sender);
-νℓкуяє.itsMe = νcнαт.sender == νℓкуяє.botNumber ? true : false;
+.includes(νℓcнαт.sender);
+νℓкуяє.itsMe = νℓcнαт.sender == νℓкуяє.botNumber ? true : false;
 νℓкуяє.botName = process.env.NAME || "Mizuhara";
 νℓкуяє.Fullarg = νℓкуяє.args.join(" ");
 νℓкуяє.contant = q = νℓкуяє.args.join(" ");
-νℓкуяє.quoted = νcнαт.quoted ? νcнαт.quoted : νcнαт;
+νℓкуяє.quoted = νℓcнαт.quoted ? νℓcнαт.quoted : νℓcнαт;
 νℓкуяє.mime = (νℓкуяє.quoted.msg || νℓкуяє.quoted).mimetype || "";
 νℓкуяє.isMedia = /image|video|sticker|audio/.test(νℓкуяє.mime);
 νℓкуяє.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
 νℓкуяє.mentionByTag =
-νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.mentionedJid
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.mentionedJid
 : [];
 νℓкуяє.mentionByReply =
-νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.participant || ""
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 return νℓкуяє;
 };

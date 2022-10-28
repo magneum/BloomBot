@@ -15,28 +15,28 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 update,
 store,
 spinnies,
 νℓpage,
 coreback
 ) => {
-var groupMetadata = νcнαт.isGroup
-? await νℓкуяє.groupMetadata(νcнαт.chat).catch((e) => {})
+var groupMetadata = νℓcнαт.isGroup
+? await νℓкуяє.groupMetadata(νℓcнαт.chat).catch((e) => {})
 : "";
-var groupName = νcнαт.isGroup ? groupMetadata.subject : "";
-var participants = νcнαт.isGroup ? await groupMetadata.participants : "";
-var groupAdmins = νcнαт.isGroup
+var groupName = νℓcнαт.isGroup ? groupMetadata.subject : "";
+var participants = νℓcнαт.isGroup ? await groupMetadata.participants : "";
+var groupAdmins = νℓcнαт.isGroup
 ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
 : "";
-var groupOwner = νcнαт.isGroup ? groupMetadata.owner : "";
-var isBotAdmin = νcнαт.isGroup
+var groupOwner = νℓcнαт.isGroup ? groupMetadata.owner : "";
+var isBotAdmin = νℓcнαт.isGroup
 ? groupAdmins.includes(await νℓкуяє.decodeJid(νℓкуяє.user.id))
 : false;
-var isAdmin = νcнαт.isGroup ? groupAdmins.includes(νcнαт.sender) : false;
-require("./graphine")(νℓкуяє, νcнαт, update, store);
-require("./kronLink")(νℓкуяє, νcнαт, update, store);
+var isAdmin = νℓcнαт.isGroup ? groupAdmins.includes(νℓcнαт.sender) : false;
+require("./graphine")(νℓкуяє, νℓcнαт, update, store);
+require("./kronLink")(νℓкуяє, νℓcнαт, update, store);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 function ShowRed(Topic, Text) {
 let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
@@ -71,7 +71,7 @@ console.log(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νcнαт.isGroup && νℓкуяє.command) {
+if (νℓcнαт.isGroup && νℓкуяє.command) {
 console.log("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 console.log(
 νℓкуяє.chalk.blueBright("> 🖊️𝐂𝐨𝐦𝐦𝐚𝐧𝐝: "),
@@ -83,11 +83,11 @@ console.log(
 );
 console.log(
 νℓкуяє.chalk.blueBright("> 📱𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: "),
-νℓкуяє.chalk.green(νcнαт.sender)
+νℓкуяє.chalk.green(νℓcнαт.sender)
 );
 console.log(
 νℓкуяє.chalk.blueBright("> 💬𝐂𝐡𝐚𝐭-𝐈𝐝: "),
-νℓкуяє.chalk.green(νcнαт.chat)
+νℓкуяє.chalk.green(νℓcнαт.chat)
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 switch (νℓкуяє.command) {
@@ -98,7 +98,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -109,7 +109,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -133,7 +133,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -144,7 +144,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -168,7 +168,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -179,7 +179,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -203,7 +203,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -214,7 +214,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -238,7 +238,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -249,7 +249,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -273,7 +273,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -284,7 +284,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -308,7 +308,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -319,7 +319,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -343,7 +343,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -354,7 +354,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -378,7 +378,7 @@ try {
 // });
 await require("../plugins/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -389,7 +389,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -427,7 +427,7 @@ try {
 // });
 await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -438,7 +438,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -462,7 +462,7 @@ try {
 // });
 await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -473,7 +473,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -497,7 +497,7 @@ try {
 // });
 await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -508,7 +508,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -532,7 +532,7 @@ try {
 // });
 await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -543,7 +543,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -567,7 +567,7 @@ try {
 // });
 await require("../plugins/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -578,7 +578,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -616,7 +616,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/ass")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -627,7 +627,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -651,7 +651,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/bdsm")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -662,7 +662,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -686,7 +686,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/blowjob")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -697,7 +697,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -721,7 +721,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/cum")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -732,7 +732,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -756,7 +756,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/doujin")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -767,7 +767,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -791,7 +791,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/feet")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -802,7 +802,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -826,7 +826,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/femdom")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -837,7 +837,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -861,7 +861,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/foxgirl")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -872,7 +872,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -896,7 +896,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/glasses")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -907,7 +907,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -931,7 +931,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/hentai")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -942,7 +942,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -966,7 +966,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/maid")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -977,7 +977,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1001,7 +1001,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/masturbation")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1012,7 +1012,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1036,7 +1036,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/netorare")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1047,7 +1047,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1071,7 +1071,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/orgy")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1082,7 +1082,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1106,7 +1106,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/pussy")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1117,7 +1117,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1141,7 +1141,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/school")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1152,7 +1152,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1176,7 +1176,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/succubus")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1187,7 +1187,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1211,7 +1211,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/tentacles")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1222,7 +1222,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1246,7 +1246,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/thighs")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1257,7 +1257,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1281,7 +1281,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uglyBastard")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1292,7 +1292,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1316,7 +1316,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uniform")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1327,7 +1327,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1351,7 +1351,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/yuri")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1362,7 +1362,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1386,7 +1386,7 @@ try {
 // });
 await require("../plugins/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/zettaiRyouiki")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1397,7 +1397,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1435,7 +1435,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1446,7 +1446,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1470,7 +1470,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1481,7 +1481,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1505,7 +1505,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1516,7 +1516,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1540,7 +1540,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/remove")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1551,7 +1551,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1575,7 +1575,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1586,7 +1586,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1610,7 +1610,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1621,7 +1621,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1645,7 +1645,7 @@ try {
 // });
 await require("../plugins/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1656,7 +1656,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1686,7 +1686,7 @@ try {
 // });
 await require("../plugins/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1697,7 +1697,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1735,7 +1735,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bite")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1746,7 +1746,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1770,7 +1770,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/blush")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1781,7 +1781,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1805,7 +1805,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bonk")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1816,7 +1816,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1840,7 +1840,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bored")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1851,7 +1851,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1875,7 +1875,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/confused")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1886,7 +1886,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1910,7 +1910,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cry")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1921,7 +1921,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1945,7 +1945,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cuddle")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1956,7 +1956,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -1980,7 +1980,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/dance")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -1991,7 +1991,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2015,7 +2015,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/goodnight")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2026,7 +2026,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2050,7 +2050,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/happy")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2061,7 +2061,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2085,7 +2085,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/highfive")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2096,7 +2096,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2120,7 +2120,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/hug")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2131,7 +2131,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2155,7 +2155,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kick")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2166,7 +2166,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2190,7 +2190,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kill")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2201,7 +2201,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2225,7 +2225,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kiss")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2236,7 +2236,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2260,7 +2260,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/nervous")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2271,7 +2271,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2295,7 +2295,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/pat")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2306,7 +2306,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2330,7 +2330,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/poke")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2341,7 +2341,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2365,7 +2365,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/punch")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2376,7 +2376,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2400,7 +2400,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/sad")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2411,7 +2411,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2435,7 +2435,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/scream")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2446,7 +2446,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2470,7 +2470,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/slap")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2481,7 +2481,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2505,7 +2505,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/smile")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2516,7 +2516,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2540,7 +2540,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/stare")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2551,7 +2551,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2575,7 +2575,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wave")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2586,7 +2586,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2610,7 +2610,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wink")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2621,7 +2621,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2645,7 +2645,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yeet")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2656,7 +2656,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2680,7 +2680,7 @@ try {
 // });
 await require("../plugins/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yes")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2691,7 +2691,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2729,7 +2729,7 @@ try {
 // });
 await require("../plugins/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/sticker")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2740,7 +2740,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2799,7 +2799,7 @@ try {
 // });
 await require("../plugins/commands")(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -2810,7 +2810,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -2844,11 +2844,11 @@ break;
 default:
 try {
 νℓкуяє.sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 text: `❗ Couldn't find any matching commands. Try again with the commands from the help list`,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 );
 coreback(`✅ with no error...`);
 } catch (error) {

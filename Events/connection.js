@@ -15,78 +15,78 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 let QR_GENERATE = "invalid";
 module.exports = async (update, νℓкуяє, DisconnectReason, run) => {
-  var { lastDisconnect, connection, qr } = update;
-  var { Boom } = require("@hapi/boom");
-  var chalk = require("chalk");
-  var fs = require("fs");
-  function ShowRed(Topic, Text) {
-    let TShow = chalk.hex("#ff6347").bold(Topic);
-    let Show = chalk.hex("#ed7777").italic.bold(Text);
-    console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-  }
-  function ShowBlue(Topic, Text) {
-    let TShow = chalk.hex("#008B8B").bold(Topic);
-    let Show = chalk.hex("#818d94").italic.bold(Text);
-    console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-  }
-  function ShowGreen(Topic, Text) {
-    let TShow = chalk.hex("#2D5A27").bold(Topic);
-    let Show = chalk.hex("#849871").italic.bold(Text);
-    console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-  }
-  function ShowYellow(Topic, Text) {
-    let TShow = chalk.hex("#8B8000").bold(Topic);
-    let Show = chalk.hex("#ECCF8D").italic.bold(Text);
-    console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  if (connection == "open")
-    ShowGreen("🟢νℓкуяє: ", "Successfully connected to whatsapp");
-  if (connection === "close") {
-    ShowRed("🔴 νℓкуяє: ", "Connection terminated...");
-    let reason = new Boom(lastDisconnect.error).output.statusCode;
-    if (reason === DisconnectReason.badSession) {
-      ShowRed("🔴 νℓкуяє: ", "Bad Session File, Please Scan Again...");
-      νℓкуяє.logout();
-    } else if (reason === DisconnectReason.connectionClosed) {
-      ShowYellow("🟡 νℓкуяє: ", "Connection closed, reconnecting....");
-      run();
-    } else if (reason === DisconnectReason.connectionLost) {
-      ShowBlue("🔵 νℓкуяє: ", "Connection Lost from Server, reconnecting...");
-      run();
-    } else if (reason === DisconnectReason.connectionReplaced) {
-      ShowRed(
-        "🔴 νℓкуяє: ",
-        "Connection Replaced, Another New Session Opened, Please Close Current Session First..."
-      );
-      νℓкуяє.logout();
-      if (fs.existsSync("./Events/νℓкуяє.кяукηz")) {
-        fs.unlinkSync("./Events/νℓкуяє.кяукηz");
-      }
-      run();
-    } else if (reason === DisconnectReason.loggedOut) {
-      ShowRed("🔴 νℓкуяє: ", "Device Logged Out, Please Scan Again...");
-      νℓкуяє.logout();
-      if (fs.existsSync("./Events/νℓкуяє.кяукηz")) {
-        fs.unlinkSync("./Events/νℓкуяє.кяукηz");
-      }
-      run();
-    } else if (reason === DisconnectReason.restartRequired) {
-      ShowYellow("🟡 νℓкуяє: ", "Restart Required, Restarting...");
-      run();
-    } else if (reason === DisconnectReason.timedOut) {
-      ShowYellow("🟡 νℓкуяє: ", "Connection TimedOut, Reconnecting...");
-      run();
-    } else {
-      νℓкуяє.end(`Unknown DisconnectReason: ${reason}|${lastDisconnect.error}`);
-    }
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  if (qr) {
-    console.clear();
-    ShowBlue("🔵 νℓкуяє: ", "New QR generated. Please Scan...");
-    QR_GENERATE = qr;
-  }
+var { lastDisconnect, connection, qr } = update;
+var { Boom } = require("@hapi/boom");
+var chalk = require("chalk");
+var fs = require("fs");
+function ShowRed(Topic, Text) {
+let TShow = chalk.hex("#ff6347").bold(Topic);
+let Show = chalk.hex("#ed7777").italic.bold(Text);
+console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowBlue(Topic, Text) {
+let TShow = chalk.hex("#008B8B").bold(Topic);
+let Show = chalk.hex("#818d94").italic.bold(Text);
+console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowGreen(Topic, Text) {
+let TShow = chalk.hex("#2D5A27").bold(Topic);
+let Show = chalk.hex("#849871").italic.bold(Text);
+console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowYellow(Topic, Text) {
+let TShow = chalk.hex("#8B8000").bold(Topic);
+let Show = chalk.hex("#ECCF8D").italic.bold(Text);
+console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (connection == "open")
+ShowGreen("🟢νℓкуяє: ", "Successfully connected to whatsapp");
+if (connection === "close") {
+ShowRed("🔴 νℓкуяє: ", "Connection terminated...");
+let reason = new Boom(lastDisconnect.error).output.statusCode;
+if (reason === DisconnectReason.badSession) {
+ShowRed("🔴 νℓкуяє: ", "Bad Session File, Please Scan Again...");
+νℓкуяє.logout();
+} else if (reason === DisconnectReason.connectionClosed) {
+ShowYellow("🟡 νℓкуяє: ", "Connection closed, reconnecting....");
+run();
+} else if (reason === DisconnectReason.connectionLost) {
+ShowBlue("🔵 νℓкуяє: ", "Connection Lost from Server, reconnecting...");
+run();
+} else if (reason === DisconnectReason.connectionReplaced) {
+ShowRed(
+"🔴 νℓкуяє: ",
+"Connection Replaced, Another New Session Opened, Please Close Current Session First..."
+);
+νℓкуяє.logout();
+if (fs.existsSync("./Events/νℓкуяє.кяукηz")) {
+fs.unlinkSync("./Events/νℓкуяє.кяукηz");
+}
+run();
+} else if (reason === DisconnectReason.loggedOut) {
+ShowRed("🔴 νℓкуяє: ", "Device Logged Out, Please Scan Again...");
+νℓкуяє.logout();
+if (fs.existsSync("./Events/νℓкуяє.кяукηz")) {
+fs.unlinkSync("./Events/νℓкуяє.кяукηz");
+}
+run();
+} else if (reason === DisconnectReason.restartRequired) {
+ShowYellow("🟡 νℓкуяє: ", "Restart Required, Restarting...");
+run();
+} else if (reason === DisconnectReason.timedOut) {
+ShowYellow("🟡 νℓкуяє: ", "Connection TimedOut, Reconnecting...");
+run();
+} else {
+νℓкуяє.end(`Unknown DisconnectReason: ${reason}|${lastDisconnect.error}`);
+}
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (qr) {
+console.clear();
+ShowBlue("🔵 νℓкуяє: ", "New QR generated. Please Scan...");
+QR_GENERATE = qr;
+}
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*

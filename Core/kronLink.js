@@ -54,7 +54,7 @@ var { Doujin } = require("@shineiichijo/nhentai-pdf");
 var { exec, spawn, execSync } = require("child_process");
 var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νcнαт, update, store) => {
+module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.performance = performance;
 νℓкуяє.createWorker = createWorker;
 νℓкуяє.JSDOM = JSDOM;
