@@ -29,6 +29,7 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
+JworkR = νℓкуяє.Jwork[Math.floor(Math.random() * νℓкуяє.Jwork.length)];
 
 
 
