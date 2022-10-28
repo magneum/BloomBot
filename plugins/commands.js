@@ -39,14 +39,6 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *🎐Information🎐* 』
-*💤Prefix:* ${νℓкуяє.prefix}
-*📜Git:* 
-> https://github.com/kryknz/vlkyre
-*⚡Website:* 
-> https://vlkyre.krakinzkon.repl.co
-
-
 『 *❓Commands❓* 』
 ╔══════════════╗
 ║ ┌〨🌐 ${νℓкуяє.prefix}h.search
