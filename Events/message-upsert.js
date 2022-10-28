@@ -77,8 +77,13 @@ Today = new Date();
 var console_page = `<!DOCTYPE html>
 <html>
 <style>
+
 hr.new1 {
 border-top: 1px solid rgb(167, 18, 18);
+}
+
+body {
+  font-family: cursive;
 }
 
 hr.new2 {
@@ -416,8 +421,13 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 var Group = `<!DOCTYPE html>
 <html>
 <style>
+
 hr.new1 {
 border-top: 1px solid rgb(167, 18, 18);
+}
+
+body {
+  font-family: cursive;
 }
 
 hr.new2 {
