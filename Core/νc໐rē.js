@@ -24,15 +24,6 @@ coreback
 ) => {
 require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
-console.log(νℓкуяє.FastGit);
-await νℓкуяє.FastHub.fetch();
-var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
-if (newCommits.total != 0) {
-console.log("🛸𝐆𝐢𝐭𝐇𝐮𝐛: Update Found.  Updating.....");
-await νℓкуяє.FastHub.pull();
-console.log("🛸𝐆𝐢𝐭𝐇𝐮𝐛: Updated. Now Rebooting.....");
-process.exit(0);
-}
 function ShowRed(Topic, Text) {
 let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
 let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
@@ -64,6 +55,15 @@ console.log(
 νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
 νℓкуяє.chalk.black(Show)
 );
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+await νℓкуяє.FastHub.fetch();
+var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
+if (newCommits.total != 0) {
+ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....")
+await νℓкуяє.FastHub.pull();
+ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....")
+process.exit(0);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {
