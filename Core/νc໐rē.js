@@ -61,6 +61,7 @@ await νℓкуяє.FastHub.fetch();
 newgit = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
 if (newgit.total != 0) {
 ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....")
+// await νℓкуяє.FastHub.pull();
 ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....")
 process.exit(0);
 }
