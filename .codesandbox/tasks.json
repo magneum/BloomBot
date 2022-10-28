@@ -1,26 +1,19 @@
 {
-  // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": [
-    {
-      "name": "Install Dependencies",
-      "command": "npm install --save --force"
-    }
-  ],
-
-  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {
-    "npx forever --no-warnings νℓкуяє.js --color": {
-      "name": "npx forever --no-warnings νℓкуяє.js --color",
-      "command": "npx forever --no-warnings νℓкуяє.js --color",
-      "runAtStart": true
-    },
-    "npm install --save --force && clear && node νℓкуяє.js": {
-      "name": "npm install --save --force && clear && node νℓкуяє.js",
-      "command": "npm install --save --force && clear && node νℓкуяє.js"
-    },
-    "rm -rf node_modules": {
-      "name": "rm -rf node_modules",
-      "command": "rm -rf node_modules"
-    }
-  }
+"setupTasks": [
+{
+"name": "Install Dependencies",
+"command": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color"
+}
+],
+"tasks": {
+"npx forever --no-warnings νℓкуяє.js --color": {
+"name": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color",
+"command": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color",
+"runAtStart": true
+},
+"rm -rf node_modules": {
+"name": "rm -rf node_modules",
+"command": "rm -rf node_modules"
+}
+}
 }
