@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -29,29 +29,29 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νcнαт.isGroup) {
-return νcнαт.reply(
+if (!νℓcнαт.isGroup) {
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
 );
 }
 if (!isAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
 );
 }
 if (!isBotAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
 );
 }
 if (!/image/.test(νℓкуяє.mime)) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
@@ -61,7 +61,7 @@ return νcнαт.reply(
 );
 }
 if (/webp/.test(νℓкуяє.mime)) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
@@ -73,18 +73,18 @@ return νcнαт.reply(
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 let media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted);
 await νℓкуяє
-.updateProfilePicture(νcнαт.chat, { url: media })
+.updateProfilePicture(νℓcнαт.chat, { url: media })
 .then(
 νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `> *Group icone has been changed: ${νℓкуяє.pushname}*`,
 media
 )
 )
 .catch((error) => {
 νℓкуяє.fs.unlinkSync(media);
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Could not change group image!_

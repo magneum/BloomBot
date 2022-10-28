@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -29,22 +29,22 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νcнαт.isGroup) {
-return νcнαт.reply(
+if (!νℓcнαт.isGroup) {
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
 );
 }
 if (!isAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
 );
 }
 if (!isBotAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
@@ -53,9 +53,9 @@ return νcнαт.reply(
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
 let mention = νℓкуяє.mentionByTag;
-let users = (await mention[0]) || νcнαт.msg.contextInfo.participant;
+let users = (await mention[0]) || νℓcнαт.msg.contextInfo.participant;
 if (!users) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_
@@ -65,9 +65,9 @@ return νcнαт.reply(
 );
 }
 try {
-await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "remove");
+await νℓкуяє.groupParticipantsUpdate(νℓcнαт.chat, [users], "remove");
 } catch {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Check if the person already not an admin!_`
@@ -80,19 +80,19 @@ try {
 }
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `OOPs!! looks like someone removed @${users.split("@")[0]}`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (νℓкуяє.mentionByReply) {
 let users =
-νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.participant || ""
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.participant || ""
 : "";
 if (!users) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_
@@ -102,9 +102,9 @@ return νcнαт.reply(
 );
 }
 try {
-await νℓкуяє.groupParticipantsUpdate(νcнαт.chat, [users], "remove");
+await νℓкуяє.groupParticipantsUpdate(νℓcнαт.chat, [users], "remove");
 } catch {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Check if the person already not an admin!_`
@@ -117,13 +117,13 @@ try {
 }
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `OOPs!! looks like someone removed @${users.split("@")[0]}`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_

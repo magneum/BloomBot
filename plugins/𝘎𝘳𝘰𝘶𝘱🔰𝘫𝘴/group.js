@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -29,22 +29,22 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νcнαт.isGroup) {
-return νcнαт.reply(
+if (!νℓcнαт.isGroup) {
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
 );
 }
 if (!isAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
 );
 }
 if (!isBotAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
@@ -52,24 +52,24 @@ return νcнαт.reply(
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νcнαт.sender, "image");;
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓcнαт.sender, "image");;
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
 }
 if (νℓкуяє.args[0] === "open") {
 await νℓкуяє
-.groupSettingUpdate(νcнαт.chat, "not_announcement")
+.groupSettingUpdate(νℓcнαт.chat, "not_announcement")
 .then(
 async (res) =>
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `> *Group have been Opened by: ${νℓкуяє.pushname}*`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 )
 )
 .catch((error) =>
-νcнαт.reply(
+νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -78,18 +78,18 @@ await νℓкуяє.imgB(
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (νℓкуяє.args[0] === "close") {
 await νℓкуяє
-.groupSettingUpdate(νcнαт.chat, "announcement")
+.groupSettingUpdate(νℓcнαт.chat, "announcement")
 .then(
 async (res) =>
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `> *Group have been Closed by: ${νℓкуяє.pushname}*`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 )
 )
 .catch((error) =>
-νcнαт.reply(
+νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -97,7 +97,7 @@ await νℓкуяє.imgB(
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Argument Missing!_

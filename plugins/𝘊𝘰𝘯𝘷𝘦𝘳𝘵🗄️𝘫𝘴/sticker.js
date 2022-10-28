@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.quoted) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image/Video in context!_
@@ -53,16 +53,16 @@ background: "transparent",
 });
 const buffer = await sticker.toBuffer();
 return await νℓкуяє.sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 sticker: buffer,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (/video/.test(νℓкуяє.mime)) {
 if ((νℓкуяє.quoted.msg || νℓкуяє.quoted).seconds > 20) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Cannot convert videos longer than 21 Seconds!_`
@@ -80,16 +80,16 @@ background: "transparent",
 });
 const buffer = await sticker.toBuffer();
 return await νℓкуяє.sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 sticker: buffer,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image/Video in context!_

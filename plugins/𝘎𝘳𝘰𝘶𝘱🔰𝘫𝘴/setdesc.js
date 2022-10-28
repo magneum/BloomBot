@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -29,29 +29,29 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νcнαт.isGroup) {
-return νcнαт.reply(
+if (!νℓcнαт.isGroup) {
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
 );
 }
 if (!isAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
 );
 }
 if (!isBotAdmin) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
 );
 }
 if (!νℓкуяє.args.join(" ")) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -62,14 +62,14 @@ return νcнαт.reply(
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νcнαт.chat, "image");;
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓcнαт.chat, "image");;
 } catch {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
 }
-await νℓкуяє.groupUpdateDescription(νcнαт.chat, νℓкуяє.args.join(" "));
+await νℓкуяє.groupUpdateDescription(νℓcнαт.chat, νℓкуяє.args.join(" "));
 return await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `> *Group Description Changed successfuly by: ${νℓкуяє.pushname}*
 
 *📜New Description:*

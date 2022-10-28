@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.args.join(" ")) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -40,7 +40,7 @@ return νcнαт.reply(
 );
 } else if (νℓкуяє.args.join(" ").includes("yout")) {
 if (!νℓкуяє.TubeRegex.test(νℓкуяє.args.join(" "))) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -53,7 +53,7 @@ return νcнαт.reply(
 } else {
 var Audios = await νℓкуяє.TubeSearch(νℓкуяє.args.join(" "));
 if (!Audios) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No Music Found!_`
@@ -64,7 +64,7 @@ oneAudio.forEach(async function (one) {
 if (one.seconds > 1800) {
 return await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
 *🍻Title:* ${one.title}
 *⏰Duration:* ${one.timestamp}`,
@@ -81,7 +81,7 @@ one.url,
 var directShorten = await νℓкуяє.Tinyurl(DLoader);
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🍻Title:* ${one.title}
 *🙈Views:* ${one.views}
@@ -92,7 +92,7 @@ await νℓкуяє.imgB(
 one.thumbnail
 );
 return await νℓкуяє.sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 audio: { url: DLoader },
 contextInfo: {
@@ -107,7 +107,7 @@ mediaUrl: one.url,
 mimetype: "audio/mpeg",
 fileName: `${one.title}.mp3`,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
@@ -117,7 +117,7 @@ quality: "highestaudio",
 });
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🍻Title:* ${one.title}
 *🙈Views:* ${one.views}
@@ -135,7 +135,7 @@ one.thumbnail
 .on("end", () => {
 return νℓкуяє
 .sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
 contextInfo: {
@@ -150,7 +150,7 @@ mediaUrl: one.url,
 mimetype: "audio/mpeg",
 fileName: `${one.title}.mp3`,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 )
 .then(νℓкуяє.fs.unlinkSync(`${one.videoId}.mp3`));
 });
