@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -32,7 +32,7 @@ try {
 var data = await νℓкуяє.Anime.stare();
 var animeExt = data.slice(-4);
 if (!animeExt.endsWith(".gif")) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._`
@@ -51,7 +51,7 @@ var dataMname = `${pfname}_${rando}.mp4`;
 ` -i ${dataGname} -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' ${dataMname}`,
 async (error) => {
 if (error) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _There has been an API Error. Please try again later._
@@ -64,10 +64,10 @@ return νcнαт.reply(
 if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
 let mention = νℓкуяє.mentionByTag;
 let dataFor =
-(await mention[0]) || νcнαт.msg.contextInfo.participant;
+(await mention[0]) || νℓcнαт.msg.contextInfo.participant;
 return await νℓкуяє
 .sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -75,9 +75,9 @@ caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🎋Feeling:* ${pfname}
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
-mentions: [dataFor, νcнαт.sender],
+mentions: [dataFor, νℓcнαт.sender],
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 )
 .then(
 νℓкуяє.fs.unlinkSync(dataGname),
@@ -86,14 +86,14 @@ mentions: [dataFor, νcнαт.sender],
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (νℓкуяє.mentionByReply) {
 let dataFor =
-νcнαт.mtype == "extendedTextMessage" &&
-νcнαт.message.extendedTextMessage.contextInfo != null
-? νcнαт.message.extendedTextMessage.contextInfo.participant ||
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.participant ||
 ""
 : "";
 return await νℓкуяє
 .sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -101,9 +101,9 @@ caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🎋Feeling:* ${pfname}
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
-mentions: [dataFor, νcнαт.sender],
+mentions: [dataFor, νℓcнαт.sender],
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 )
 .then(
 νℓкуяє.fs.unlinkSync(dataGname),
@@ -113,7 +113,7 @@ mentions: [dataFor, νcнαт.sender],
 } else {
 return await νℓкуяє
 .sendMessage(
-νcнαт.chat,
+νℓcнαт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync(dataMname),
@@ -121,7 +121,7 @@ caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *⚡For:* ${νℓкуяє.pushname}
 *🎋Feeling:* ${pfname}`,
 },
-{ quoted: νcнαт }
+{ quoted: νℓcнαт }
 )
 .then(
 νℓкуяє.fs.unlinkSync(dataGname),
