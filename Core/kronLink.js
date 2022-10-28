@@ -57,7 +57,7 @@ var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 module.exports = async (νℓкуяє, νcнαт, update, store) => {
 νℓкуяє.performance = performance;
 νℓкуяє.createWorker = createWorker;
-νℓкуяєDOM = JSDOM;
+νℓкуяє.JSDOM = JSDOM;
 νℓкуяє.Character = Character;
 νℓкуяє.execSync = execSync;
 νℓкуяє.spawn = spawn;
@@ -101,7 +101,25 @@ module.exports = async (νℓкуяє, νcнαт, update, store) => {
 νℓкуяє.imgB = require("../Buttons/imgB");
 νℓкуяє.vidB = require("../Buttons/vidB");
 
-νℓкуяє.sessionName = "νℓкуяє";
+νℓкуяє.LinkList = require("../mongBase/antilink");
+νℓкуяє.Ranker = require("../mongBase/autorank");
+νℓкуяє.Bagde = require("../mongBase/badge");
+νℓкуяє.userBanCheck = require("../mongBase/ban");
+νℓкуяє.Cooldown = require("../mongBase/cooldown");
+νℓкуяє.DebugMode = require("../mongBase/debug");
+νℓкуяє.Economy = require("../mongBase/economy");
+νℓкуяє.Ranker = require("../mongBase/experience");
+νℓкуяє.Gamble = require("../mongBase/gamble");
+νℓкуяє.Halt = require("../mongBase/halt");
+νℓкуяє.nsfwCheck = require("../mongBase/nsfw");
+νℓкуяє.Pokemon = require("../mongBase/pokemon");
+νℓкуяє.UserPrivate = require("../mongBase/private");
+νℓкуяє.Robbery = require("../mongBase/robbery");
+νℓкуяє.ServerDB = require("../mongBase/ServerDB");
+νℓкуяє.Welcome = require("../mongBase/setwelcome");
+νℓкуяє.Warning = require("../mongBase/warning");
+νℓкуяє.Zoology = require("../mongBase/zoo");
+
 νℓкуяє.request = require("request");
 νℓкуяє.fetch = require("node-fetch");
 νℓкуяє.db = require("quick.db");
