@@ -161,10 +161,10 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.memberRespB = [];
 νℓкуяє.memberRespC = [];
 νℓкуяє.memberRespD = [];
-// νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
-// νℓкуяє.resp2 = await νℓкуяє.groupInviteCode("120363039223842047@g.us");
-// νℓкуяє.resp3 = await νℓкуяє.groupInviteCode("120363024871653603@g.us");
-// νℓкуяє.resp4 = await νℓкуяє.groupInviteCode("120363042762307739@g.us");
+νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
+νℓкуяє.resp2 = await νℓкуяє.groupInviteCode("120363039223842047@g.us");
+νℓкуяє.resp3 = await νℓкуяє.groupInviteCode("120363024871653603@g.us");
+νℓкуяє.resp4 = await νℓкуяє.groupInviteCode("120363042762307739@g.us");
 νℓкуяє.letResp = [
 "h",
 "m",
