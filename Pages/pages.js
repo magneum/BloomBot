@@ -104,18 +104,15 @@ font-family: "Times New Roman", Times, serif;
 <body style="background-color: #202020">
 <header class="text-gray-400 body-font">
 <div
-class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
->
-<a
-class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
->
-<span class="ml-3 text-xl">🕊️ 𝐕𝐥𝐤𝐲𝐫𝐞 ☊ 𝐁𝐨𝐭🕊️</span>
+class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<a href="/Group" class="flex title-font font-medium items-center text-white mb-4 md:mb-0 ">
+<span class="ml-3 text-xl hover:text-red-600 "><b>🕊️ Try Vlkyre Bot</b> <I>(press me)</I></span>
 </a>
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <button
 onclick="window.location.href='https://github.com/KryKnz/Vlkyre'"
@@ -269,10 +266,10 @@ stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 </section>
 <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎") -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
 <hr style="height: 1px; border-top: 2px solid #cec3a8" />
@@ -470,18 +467,15 @@ font-family: "Times New Roman", Times, serif;
 <body style="background-color: #202020">
 <header class="text-gray-400 body-font">
 <div
-class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
->
-<a
-class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
->
-<span class="ml-3 text-xl">🕊️ 𝐕𝐥𝐤𝐲𝐫𝐞 ☊ 𝐁𝐨𝐭🕊️</span>
+class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<a href="/Group" class="flex title-font font-medium items-center text-white mb-4 md:mb-0 ">
+<span class="ml-3 text-xl hover:text-red-600 "><b>🕊️ Try Vlkyre Bot</b> <I>(press me)</I></span>
 </a>
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <button
 onclick="window.location.href='https://github.com/KryKnz/Vlkyre'"
@@ -654,10 +648,10 @@ src="https://i.postimg.cc/hjXBjsJg/Univ-B.png" alt="step">
 </section>
 <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎") -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
 <hr style="height: 1px; border-top: 2px solid #cec3a8" />
@@ -841,18 +835,15 @@ border-color: red;
 <body style="background-color: #202020">
 <header class="text-gray-400 body-font">
 <div
-class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
->
-<a
-class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
->
-<span class="ml-3 text-xl">🕊️ 𝐕𝐥𝐤𝐲𝐫𝐞 ☊ 𝐁𝐨𝐭🕊️</span>
+class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<a href="/Group" class="flex title-font font-medium items-center text-white mb-4 md:mb-0 ">
+<span class="ml-3 text-xl hover:text-red-600 "><b>🕊️ Try Vlkyre Bot</b> <I>(press me)</I></span>
 </a>
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <button
 onclick="window.location.href='https://github.com/KryKnz/Vlkyre'"
@@ -1259,10 +1250,10 @@ class="flex mx-auto mt-16 text-white bg-red-900 border-0 py-2 px-8 focus:outline
 </section>
 <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎") -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-<a href="/" class="mr-5 text-red-700 hover:text-white">🏠|● 𝐇𝐨𝐦𝐞</a>
-<a href="/Command" class="mr-5 text-red-700 hover:text-white">💻|● 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</a>
-<a href="/FAQ" class="mr-5 text-red-700 hover:text-white">❓|● 𝐅𝐀𝐐𝐬</a>
-<a href="/Group" class="mr-5 text-red-700 hover:text-white">❣️|● 𝐆𝐫𝐨𝐮𝐩𝐬</a>
+<a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
+<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
 <hr style="height: 1px; border-top: 2px solid #cec3a8" />
