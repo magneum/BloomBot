@@ -16,30 +16,41 @@
 Home = `<!DOCTYPE html>
 <html>
 <style>
+
 hr.new1 {
 border-top: 1px solid rgb(167, 18, 18);
+font-family: "Times New Roman", Times, serif;
+}
+
+body {
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new2 {
 border-top: 1px dashed rgb(146, 18, 18);
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new3 {
 border-top: 1px dotted #641010;
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new4 {
 border: 1px solid rgb(77, 12, 12);
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new5 {
 border: 10px solid rgb(9, 53, 9);
 border-radius: 5px;
+font-family: "Times New Roman", Times, serif;
 }
 
 p {
 font-size: 14px;
 color: #cec3a8;
+font-family: "Times New Roman", Times, serif;
 }
 
 mark.red {
@@ -47,12 +58,14 @@ color: #cec3a8;
 background: rgb(63, 13, 13);
 border-radius: 4px;
 font-weight: bold;
+font-family: "Times New Roman", Times, serif;
 }
 
 mark.gry {
 color: #cec3a8;
 background: #cec3a8;
 border-radius: 4px;
+font-family: "Times New Roman", Times, serif;
 }
 
 hr {
@@ -64,6 +77,7 @@ margin-right: auto;
 border-style: inset;
 border-width: 1px;
 border-color: red;
+font-family: "Times New Roman", Times, serif;
 }
 /* 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -368,30 +382,41 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 FAQ = `<!DOCTYPE html>
 <html>
 <style>
+
 hr.new1 {
 border-top: 1px solid rgb(167, 18, 18);
+font-family: "Times New Roman", Times, serif;
+}
+
+body {
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new2 {
 border-top: 1px dashed rgb(146, 18, 18);
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new3 {
 border-top: 1px dotted #641010;
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new4 {
 border: 1px solid rgb(77, 12, 12);
+font-family: "Times New Roman", Times, serif;
 }
 
 hr.new5 {
 border: 10px solid rgb(9, 53, 9);
 border-radius: 5px;
+font-family: "Times New Roman", Times, serif;
 }
 
 p {
 font-size: 14px;
 color: #cec3a8;
+font-family: "Times New Roman", Times, serif;
 }
 
 mark.red {
@@ -399,12 +424,14 @@ color: #cec3a8;
 background: rgb(63, 13, 13);
 border-radius: 4px;
 font-weight: bold;
+font-family: "Times New Roman", Times, serif;
 }
 
 mark.gry {
 color: #cec3a8;
 background: #cec3a8;
 border-radius: 4px;
+font-family: "Times New Roman", Times, serif;
 }
 
 hr {
@@ -416,6 +443,7 @@ margin-right: auto;
 border-style: inset;
 border-width: 1px;
 border-color: red;
+font-family: "Times New Roman", Times, serif;
 }
 /* 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
