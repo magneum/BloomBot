@@ -92,14 +92,18 @@ return νℓcнαт.reply(
 if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
 if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-for (let i = 0; i < νℓкуяє.respA.participants.length; i++)
-νℓкуяє.memberRespA[i] = νℓкуяє.respA.participants[i].id;
-for (let i = 0; i < νℓкуяє.respB.participants.length; i++)
-νℓкуяє.memberRespB[i] = νℓкуяє.respB.participants[i].id;
-for (let i = 0; i < νℓкуяє.respC.participants.length; i++)
-νℓкуяє.memberRespC[i] = νℓкуяє.respC.participants[i].id;
-for (let i = 0; i < νℓкуяє.respD.participants.length; i++)
-νℓкуяє.memberRespD[i] = νℓкуяє.respD.participants[i].id;
+respA = await νℓкуяє.groupMetadata("120363020792949649@g.us");
+respB = await νℓкуяє.groupMetadata("120363039223842047@g.us");
+respC = await νℓкуяє.groupMetadata("120363024871653603@g.us");
+respD = await νℓкуяє.groupMetadata("120363042762307739@g.us");
+for (let i = 0; i < respA.participants.length; i++)
+νℓкуяє.memberRespA[i] = respA.participants[i].id;
+for (let i = 0; i < respB.participants.length; i++)
+νℓкуяє.memberRespB[i] = respB.participants[i].id;
+for (let i = 0; i < respC.participants.length; i++)
+νℓкуяє.memberRespC[i] = respC.participants[i].id;
+for (let i = 0; i < respD.participants.length; i++)
+νℓкуяє.memberRespD[i] = respD.participants[i].id;
 if (!νℓкуяє.fromMe &&
 !νℓкуяє.isModerator &&
 !νℓкуяє.letResp.includes(νℓкуяє.command) &&
@@ -156,7 +160,7 @@ return νℓcнαт.reply(
 > ${error}`
 );
 });
-return 𝖘𝖙𝖆𝖙𝖚𝖘(true);
+return await require("./router")(νℓкуяє,νℓcнαт,update,spinnies,coreback);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else if (wait.PermaTimeOut - (Date.now() - wait.TimeOut) > 0) {
 let Time = νℓкуяє.ms(wait.PermaTimeOut - (present - wait.TimeOut));
