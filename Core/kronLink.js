@@ -41,7 +41,6 @@ var { tmpdir } = require("os");
 var { JSDOM } = require("jsdom");
 var { yta, ytv } = require("./y2mate");
 var { Character } = require("mailist");
-var FastHub = require("simple-git");
 var { readFile } = require("fs/promises");
 var { Chalk } = require("cfonts/lib/Chalk");
 var { performance } = require("perf_hooks");
@@ -98,7 +97,6 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.Tube_Audio = Tube_Audio;
 νℓкуяє.Tube_Video = Tube_Video;
 νℓкуяє.νℓpage = νℓpage;
-νℓкуяє.FastHub = FastHub;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.msgFilter = require("./msgFilter");
 νℓкуяє.imgB = require("../Buttons/imgB");
