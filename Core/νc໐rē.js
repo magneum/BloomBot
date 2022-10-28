@@ -24,7 +24,13 @@ coreback
 ) => {
 require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
-
+await νℓкуяє.FastHub.fetch();
+var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
+if (newCommits.total != 0) {
+console.clear();
+console.log("Rebooting.....");
+process.exit(0);
+}
 function ShowRed(Topic, Text) {
 let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
 let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);

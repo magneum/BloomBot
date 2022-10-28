@@ -36,6 +36,7 @@ global.author = process.env.author;
 global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
 global.name = process.env.name;
+global.FastGit = process.env.FastGit;
 global.nameApi = {
 nrtm: process.env.nrtm,
 dzx: process.env.dzx,
