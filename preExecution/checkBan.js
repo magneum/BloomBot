@@ -13,9 +13,8 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = (νℓкуяє, νℓcнαт, status) => {
-userBanCheck = require("../mongBase/ban");
-userBanCheck.findOne(
+module.exports = async (νℓкуяє, νℓcнαт, status) => {
+νℓкуяє.userBanCheck.findOne(
 {
 ID: νℓcнαт.sender,
 },
@@ -30,7 +29,7 @@ return νℓcнαт.reply(
 > ${error}`
 );
 }
-userBanCheck.findOne(
+νℓкуяє.userBanCheck.findOne(
 {
 ID: νℓcнαт.chat,
 },

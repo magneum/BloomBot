@@ -60,6 +60,8 @@
     "node-tesseract-ocr": "^2.2.1",
     "node-webpmux": "^3.1.0",
     "os": "^0.1.2",
+    "parse-ms": "^2.1.0",
+    "parse-time": "^0.1.4",
     "path": "^0.12.7",
     "perf_hooks": "0.0.1",
     "pg": "^8.7.3",

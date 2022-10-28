@@ -13,13 +13,65 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νℓcнαт) => {
+module.exports = async (νℓкуяє, νℓcнαт, status) => {
+let MeA = [];
+let MeB = [];
+let MeC = [];
+let MeD = [];
+// let resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
+// let resp2 = await νℓкуяє.groupInviteCode("120363039223842047@g.us");
+// let resp3 = await νℓкуяє.groupInviteCode("120363024871653603@g.us");
+// let resp4 = await νℓкуяє.groupInviteCode("120363042762307739@g.us");
+let respA = await νℓкуяє.groupMetadata("120363020792949649@g.us");
+let respB = await νℓкуяє.groupMetadata("120363039223842047@g.us");
+let respC = await νℓкуяє.groupMetadata("120363024871653603@g.us");
+let respD = await νℓкуяє.groupMetadata("120363042762307739@g.us");
+for (let i = 0; i < respA.participants.length; i++)
+MeA[i] = respA.participants[i].id;
+for (let i = 0; i < respB.participants.length; i++)
+MeB[i] = respB.participants[i].id;
+for (let i = 0; i < respC.participants.length; i++)
+MeC[i] = respC.participants[i].id;
+for (let i = 0; i < respD.participants.length; i++)
+MeD[i] = respD.participants[i].id;
+var respAllow = [
+"h",
+"m",
+"c",
+"help",
+"menu",
+"command",
+"commands",
+"🛰️Vlkyre",
+"✈️Commands",
+];
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (
+!νℓкуяє.fromMe &&
+νℓкуяє.isCommand &&
+!νℓкуяє.isSenderTUF &&
+!respAllow.includes(νℓкуяє.Body) &&
+!MeA.includes(νℓcнαт.sender) &&
+!MeB.includes(νℓcнαт.sender) &&
+!MeC.includes(νℓcнαт.sender) &&
+!MeD.includes(νℓcнαт.sender)
+) {
+await νℓкуяє.imgB(
+νℓкуяє,
+νℓcнαт,
+`*📢Verification Needed*
+*😥Sorry:* _${νℓкуяє.pushname}_
 
-
-
-
-
-
+*❌Error* 
+> _You need to be verified to use bot..._
+> _https://tinyurl.com/Vlkyre-YouTube_
+`,
+"https://i.postimg.cc/G2YxctNp/Verity-Vlkyre.png"
+);
+return status(false);
+} else {
+return status(true);
+}
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
