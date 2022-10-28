@@ -1,19 +1,19 @@
 {
-"setupTasks": [
-{
-"name": "Install Dependencies",
-"command": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color"
-}
-],
-"tasks": {
-"💡Boot Vlkyre By KryKnz": {
-"name": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color",
-"command": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color",
-"runAtStart": true
-},
-"rm -rf node_modules": {
-"name": "rm -rf node_modules",
-"command": "rm -rf node_modules"
-}
-}
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install --save && clear && npx forever νℓкуяє.js --color"
+    }
+  ],
+  "tasks": {
+    "💡Boot Vlkyre By KryKnz": {
+      "name": "npm install --save && clear && npx forever νℓкуяє.js --color",
+      "command": "npm install --save && clear && npx forever νℓкуяє.js --color",
+      "runAtStart": true
+    },
+    "🐞Remove Node_Modules": {
+      "name": "rm -rf node_modules",
+      "command": "rm -rf node_modules"
+    }
+  }
 }
