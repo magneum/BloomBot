@@ -272,7 +272,8 @@ stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
-<hr style="height: 1px; border-top: 2px solid #cec3a8" />
+<hr style="height:6px;border-top:1px solid #cec3a8" />
+<hr style="height: 0.5px; border-top: 2px solid #9c3028" />
 <footer class="text-gray-400 body-font">
 <div
 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
@@ -654,7 +655,8 @@ src="https://i.postimg.cc/hjXBjsJg/Univ-B.png" alt="step">
 <a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
-<hr style="height: 1px; border-top: 2px solid #cec3a8" />
+<hr style="height:6px;border-top:1px solid #cec3a8" />
+<hr style="height: 0.5px; border-top: 2px solid #9c3028" />
 <footer class="text-gray-400 body-font">
 <div
 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
@@ -1256,7 +1258,8 @@ class="flex mx-auto mt-16 text-white bg-red-900 border-0 py-2 px-8 focus:outline
 <a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
 </nav>
 <br>
-<hr style="height: 1px; border-top: 2px solid #cec3a8" />
+<hr style="height:6px;border-top:1px solid #cec3a8" />
+<hr style="height: 0.5px; border-top: 2px solid #9c3028" />
 <footer class="text-gray-400 body-font">
 <div
 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
