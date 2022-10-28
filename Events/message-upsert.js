@@ -83,7 +83,7 @@ border-top: 1px solid rgb(167, 18, 18);
 }
 
 body {
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 
 hr.new2 {
@@ -427,7 +427,7 @@ border-top: 1px solid rgb(167, 18, 18);
 }
 
 body {
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 
 hr.new2 {
