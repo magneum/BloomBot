@@ -167,7 +167,7 @@ class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
 <div class="flex flex-wrap -m-4">
 <div class="p-4 md:w-1/3">
 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.postimg.cc/KzKjcD50/vlkUvar.gif" alt="blog">
+<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.postimg.cc/nLNqccRh/vlkyre.gif" alt="blog">
 <div class="p-6">
 <h1 class="tracking-widest text-xs title-font font-medium text-red-600 mb-1"><I><b>made with ❣️ by:</I></b></h1>
 <h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKnz</h1>
@@ -896,7 +896,7 @@ class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
 <section class="text-gray-400 body-font">
 <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-<img class="object-cover object-center rounded" src="https://i.postimg.cc/KzKjcD50/vlkUvar.gif">
+<img class="object-cover object-center rounded" src="https://i.postimg.cc/nLNqccRh/vlkyre.gif">
 </div>
 <div
 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
