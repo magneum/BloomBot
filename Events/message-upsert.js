@@ -16,19 +16,8 @@
 module.exports = async (update, νℓкуяє, νkmake, store, νℓpage) => {
 system = require("fs");
 Spinnies = require("spinnies");
-νTēxt = update.messages[0];
-if (!νTēxt.message) return;
-νTēxt.message =
-Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-? νTēxt.message.ephemeralMessage.message
-: νTēxt.message;
-if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
-if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-νℓcнαт = await νkmake(νℓкуяє, νTēxt, store);
-
 spinner = {
-interval: 100,
+interval: 80,
 frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
 };
 spinnies = new Spinnies({
@@ -39,6 +28,18 @@ spinner: spinner,
 // spinnies.add("νℓкуяє", {
 // text: "🛰️...",
 // });
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νTēxt = update.messages[0];
+if (!νTēxt.message) return;
+νTēxt.message =
+Object.keys(νTēxt.message)[0] === "ephemeralMessage"
+? νTēxt.message.ephemeralMessage.message
+: νTēxt.message;
+if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
+if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
+if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
+νℓcнαт = await νkmake(νℓкуяє, νTēxt, store);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 await require("../Core/νc໐rē.js")(
 νℓкуяє,
 νℓcнαт,
@@ -55,41 +56,17 @@ gcParticipants = νℓcнαт.isGroup ? await gcMetaData.participants : "";
 gcAdmins = νℓcнαт.isGroup? await gcParticipants.filter((v) => v.admin !== null).map((v) => v.id): "";
 gcAdminCheck = νℓcнαт.isGroup? gcAdmins.includes(νℓcнαт.sender): false;
 gcCreadted = require("moment")(new Date(parseInt(gcMetaData.creation) * 1000)).format("DD MMM YYYY HH:mm:ss");
-
 try {
 puser = await νℓкуяє.profilePictureUrl(νℓcнαт.sender, "image");
 } catch {
 puser = "https://i.postimg.cc/TPLYb38J/image.png";
 }
-
 try {
 pgroup = await νℓкуяє.profilePictureUrl(νℓcнαт.chat, "image");
 } catch {
 pgroup = "https://i.postimg.cc/TPLYb38J/image.png";
 }
-
 Today = new Date();
-if (νℓcнαт.isGroup) {
-gN = `<p style="font-size:1.5vw; color:#cec3a8"><b>🎋𝐆𝐫𝐨𝐮𝐩-𝐍𝐚𝐦𝐞:</b> ${gcName}`;
-} else {
-gN = `<p style="font-size:1.5vw; color:#cec3a8"><b>🎋𝐆𝐫𝐨𝐮𝐩-𝐍𝐚𝐦𝐞:</b> null`;
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-LogText = `
-<br>┌〨 νℓкуяє вσт ву кяукηz
-<br>│╔══『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐』
-<br>│║✡ 🖊️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: <I>${νℓкуяє.budy || νℓкуяє.mtype}</I>
-<br>│║✡ ❣️ 𝐔𝐬𝐞𝐫-𝐍𝐚𝐦𝐞: <I>${νℓкуяє.pushname}</I>
-<br>│║✡ 📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: <I>${νℓcнαт.sender}</I>
-<br>│║✡ 👑 𝐔𝐬𝐞𝐫-𝐀𝐝𝐦𝐢𝐧: <I>${gcAdminCheck}</I>
-<br>│║✡ ${gN}
-<br>│║✡ 💬 𝐂𝐡𝐚𝐭-𝐈𝐝: <I>${νℓcнαт.chat}</I>
-<br>│║✡ 🗓️𝐃𝐚𝐭𝐞: <I>${Today.getDate()}d : ${
-Today.getMonth() + 1
-}m : ${Today.getFullYear()}y</I>
-<br>│║✡ ⏰𝐓𝐢𝐦𝐞: <I>${Today.getHours()}h : ${Today.getMinutes()}m : ${Today.getSeconds()}s</I>
-<br>│║✡ ${coreback}
-<br>└╚═══════⋑`;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 html = `<!DOCTYPE html>
 <html>
