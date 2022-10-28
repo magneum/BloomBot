@@ -29,7 +29,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLKYRE™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${νℓкуяє.ShowInfo}_
-_*⛺HomeLog:* ${νℓкуяє.ShowInfo}+_`,
+_*⛺HomeLog:* ${νℓкуяє.ShowLogger}+_`,
 mentions: [νℓcнαт.sender],
 buttons: [
 {
