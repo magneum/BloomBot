@@ -431,8 +431,6 @@ class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
 <p class="leading-relaxed text-lg">
 <mark class="red"><b></b>⧪:</b></mark> Vlkyre is an Advance <I>Whatsapp User-Bot.</I>
 <br>
-<mark class="red"><b></b>⧪:</b></mark> Vlkyre uses <b>[ ${νℓкуяє.prefix} ]</b> as prefix.
-<br>
 <mark class="red"><b></b>⧪:</b></mark> Vlkyre has over 100+ commands For <I>Moderation, Social, Federation</I> and more.
 <br>
 <mark class="red"><b></b>⧪:</b></mark> Vlkyre has it's own browser based console where you can check what is being logged.
@@ -472,7 +470,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 1</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href=${νℓкуяє.resp1}"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp1}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-1
 </button>
@@ -497,7 +495,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 2</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href=${νℓкуяє.resp2}"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp2}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-2
 </button>
@@ -522,7 +520,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 3</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href=${νℓкуяє.resp3}"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp3}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-3
 </button>
@@ -548,7 +546,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 4</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href=${νℓкуяє.resp4}"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp4}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-4
 </button>

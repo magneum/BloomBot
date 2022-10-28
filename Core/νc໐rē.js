@@ -57,13 +57,19 @@ console.log(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+try {
 await νℓкуяє.FastHub.fetch();
-newgit = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
+newgit = await νℓкуяє.FastHub.log([
+`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`,
+]);
 if (newgit.total != 0) {
-ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....")
+ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
 // await νℓкуяє.FastHub.pull();
-ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....")
+ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....");
 process.exit(0);
+}
+} catch {
+ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {
@@ -112,7 +118,8 @@ for (let i = 0; i < respC.participants.length; i++)
 νℓкуяє.memberRespC[i] = respC.participants[i].id;
 for (let i = 0; i < respD.participants.length; i++)
 νℓкуяє.memberRespD[i] = respD.participants[i].id;
-if (!νℓкуяє.fromMe &&
+if (
+!νℓкуяє.fromMe &&
 !νℓкуяє.isModerator &&
 !νℓкуяє.letResp.includes(νℓкуяє.command) &&
 !νℓкуяє.memberRespA.includes(νℓcнαт.sender) &&
@@ -168,10 +175,21 @@ return νℓcнαт.reply(
 > ${error}`
 );
 });
-return await require("./router")(νℓкуяє,νℓcнαт,update,spinnies,coreback);
+return await require("./router")(
+νℓкуяє,
+νℓcнαт,
+update,
+spinnies,
+coreback
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else if (wait.PermaTimeOut - (Date.now() - wait.TimeOut) > 0) {
-let Time = νℓкуяє.ms(wait.PermaTimeOut - (present - wait.TimeOut));
+} else if (
+wait.PermaTimeOut - (Date.now() - wait.TimeOut) >
+0
+) {
+let Time = νℓкуяє.ms(
+wait.PermaTimeOut - (present - wait.TimeOut)
+);
 wait.PermaTimeOut = 10000;
 wait.TimeOut = present;
 await wait.save().catch((error) => {
@@ -204,7 +222,13 @@ return νℓcнαт.reply(
 > ${error}`
 );
 });
-return await require("./router")(νℓкуяє,νℓcнαт,update,spinnies,coreback);
+return await require("./router")(
+νℓкуяє,
+νℓcнαт,
+update,
+spinnies,
+coreback
+);
 }
 }
 );
