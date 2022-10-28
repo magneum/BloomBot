@@ -105,12 +105,26 @@ var vport = process.env.PORT || 8080;
 async function run() {
 var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
 var νℓpage = express();
-νℓpage.get("/", (req, res) => {
-res.send(home_page);
+νℓpage.get("/", function (rege, νℓp) {
+νℓp.sendFile("/Pages/Home.html", { root: __dirname });
 });
+νℓpage.get("/Console", function (rege, νℓp) {
+νℓp.sendFile("/Pages/Console.html", { root: __dirname });
+});
+νℓpage.get("/Group", function (rege, νℓp) {
+νℓp.sendFile("/Pages/Group.html", { root: __dirname });
+});
+νℓpage.get("/FAQ", function (rege, νℓp) {
+νℓp.sendFile("/Pages/FAQ.html", { root: __dirname });
+});
+νℓpage.get("/Command", function (rege, νℓp) {
+νℓp.sendFile("/Pages/Command.html", { root: __dirname });
+});
+console.clear();
 νℓpage.listen(vport, () => {
-console.log("Introduction Page: http://localhost:" + vport + "/");
+console.log("🦋𝐒𝐞𝐫𝐯𝐞𝐫 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐈𝐧: http://localhost:8080" + vport + "/");
 });
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 autoPoke.start();
 await monGoose
 .connect(mongodb, {
@@ -602,8 +616,8 @@ options
 ...(options.contextInfo
 ? {
 contextInfo: {
-  ...content[ctype].contextInfo,
-  ...options.contextInfo,
+...content[ctype].contextInfo,
+...options.contextInfo,
 },
 }
 : {}),
