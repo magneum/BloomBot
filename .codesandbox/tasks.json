@@ -2,13 +2,13 @@
 "setupTasks": [
 {
 "name": "Install Dependencies",
-"command": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color"
+"command": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color"
 }
 ],
 "tasks": {
-"npx forever --no-warnings νℓкуяє.js --color": {
-"name": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color",
-"command": "npm install --save && clear && npx forever --no-warnings νℓкуяє.js --color",
+"💡Boot Vlkyre By KryKnz": {
+"name": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color",
+"command": "git pull && npm install --save && clear && npx forever νℓкуяє.js --color",
 "runAtStart": true
 },
 "rm -rf node_modules": {
