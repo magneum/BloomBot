@@ -54,7 +54,7 @@ var { Doujin } = require("@shineiichijo/nhentai-pdf");
 var { exec, spawn, execSync } = require("child_process");
 var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
+module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) => {
 νℓкуяє.performance = performance;
 νℓкуяє.createWorker = createWorker;
 νℓкуяє.JSDOM = JSDOM;
@@ -96,6 +96,7 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.yta2mate = ytv;
 νℓкуяє.Tube_Audio = Tube_Audio;
 νℓкуяє.Tube_Video = Tube_Video;
+νℓкуяє.νℓpage = νℓpage;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.msgFilter = require("./msgFilter");
 νℓкуяє.imgB = require("../Buttons/imgB");

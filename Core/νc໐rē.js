@@ -22,8 +22,8 @@ spinnies,
 νℓpage,
 coreback
 ) => {
-require("./graphine")(νℓкуяє, νℓcнαт, update, store);
-require("./kronLink")(νℓкуяє, νℓcнαт, update, store);
+require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
+require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 
 function ShowRed(Topic, Text) {
 let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
@@ -74,7 +74,7 @@ if (𝖘𝖙𝖆𝖙𝖚𝖘v === true) {
 require("../preExecution/checkWait")(νℓкуяє,νℓcнαт,Date.now(),(𝖘𝖙𝖆𝖙𝖚𝖘w) => {
 if (𝖘𝖙𝖆𝖙𝖚𝖘w === false) console.log("📢User On Cooldown...");
 if (𝖘𝖙𝖆𝖙𝖚𝖘w === true) {
-require("./router")(νℓкуяє,νℓcнαт,update,spinnies,coreback);
+require("./router")(νℓкуяє,νℓcнαт,update,spinnies,coreback, νℓpage);
 }
 }
 );
