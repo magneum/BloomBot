@@ -101,19 +101,19 @@ console.log(error);
 },
 { scheduled: true, timezone: timezone }
 );
-var vport = process.env.PORT || 8080;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function run() {
 var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
-var νℓpage = express();
+νℓpage = express();
+vport = process.env.PORT || 8080;
 νℓpage.get("/", function (rege, νℓp) {
-νℓp.send(Home);
+νℓp.sendFile("Pages/Home.html", { root: __dirname });
 });
 νℓpage.get("/FAQ", function (rege, νℓp) {
-νℓp.send(FAQ);
+νℓp.sendFile("Pages/FAQ.html", { root: __dirname });
 });
 νℓpage.get("/Command", function (rege, νℓp) {
-νℓp.send(Command);
+νℓp.sendFile("Pages/Command.html", { root: __dirname });
 });
 console.clear();
 νℓpage.listen(vport, () => {
@@ -170,23 +170,23 @@ return new Promise(async (resolve) => {
 v = store.contacts[id] || {};
 if (!(v.name || v.subject)) v = νℓкуяє.groupMetadata(id) || {};
 resolve(
-  v.name ||
-    v.subject ||
-    PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
-      "international"
-    )
+v.name ||
+v.subject ||
+PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
+"international"
+)
 );
 });
 else
 v =
 id === "0@s.whatsapp.net"
-  ? {
-      id,
-      name: "WhatsApp",
-    }
-  : id === νℓкуяє.decodeJid(νℓкуяє.user.id)
-  ? νℓкуяє.user
-  : store.contacts[id] || {};
+? {
+id,
+name: "WhatsApp",
+}
+: id === νℓкуяє.decodeJid(νℓкуяє.user.id)
+? νℓкуяє.user
+: store.contacts[id] || {};
 return (
 (withoutContact ? "" : v.name) ||
 v.subject ||
@@ -203,9 +203,9 @@ for (let i of kon) {
 list.push({
 displayName: await νℓкуяє.getName(i + "@s.whatsapp.net"),
 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await νℓкуяє.getName(
-  i + "@s.whatsapp.net"
+i + "@s.whatsapp.net"
 )}\nFN:${await νℓкуяє.getName(
-  i + "@s.whatsapp.net"
+i + "@s.whatsapp.net"
 )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
 });
 }
@@ -238,12 +238,12 @@ var template = generateWAMessageFromContent(
 νℓcнαт.chat,
 proto.Message.fromObject({
 templateMessage: {
-  hydratedTemplate: {
-    imageMessage: message.imageMessage,
-    hydratedContentText: text,
-    hydratedFooterText: footer,
-    hydratedButtons: but,
-  },
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: text,
+hydratedFooterText: footer,
+hydratedButtons: but,
+},
 },
 }),
 options
@@ -388,9 +388,9 @@ jid,
 {
 text: text,
 contextInfo: {
-  mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
-    (v) => v[1] + "@s.whatsapp.net"
-  ),
+mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
+(v) => v[1] + "@s.whatsapp.net"
+),
 },
 ...options,
 },
@@ -580,8 +580,8 @@ message.message =
 message.message &&
 message.message.ephemeralMessage &&
 message.message.ephemeralMessage.message
-  ? message.message.ephemeralMessage.message
-  : message.message || undefined;
+? message.message.ephemeralMessage.message
+: message.message || undefined;
 vtype = Object.keys(message.message.viewOnceMessage.message)[0];
 delete (message.message && message.message.ignore
 ? message.message.ignore
@@ -606,17 +606,17 @@ jid,
 content,
 options
 ? {
-    ...content[ctype],
-    ...options,
-    ...(options.contextInfo
-      ? {
-          contextInfo: {
-            ...content[ctype].contextInfo,
-            ...options.contextInfo,
-          },
-        }
-      : {}),
-  }
+...content[ctype],
+...options,
+...(options.contextInfo
+? {
+contextInfo: {
+...content[ctype].contextInfo,
+...options.contextInfo,
+},
+}
+: {}),
+}
 : {}
 );
 await νℓкуяє.relayMessage(jid, waMessage.message, {
