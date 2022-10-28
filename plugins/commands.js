@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -31,7 +31,7 @@ isAdmin,
 try {
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🤖Hello, I am Vlkyre (v5 Bot)🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.

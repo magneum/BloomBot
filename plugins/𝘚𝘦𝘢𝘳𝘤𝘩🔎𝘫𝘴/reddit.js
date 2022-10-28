@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -32,7 +32,7 @@ try {
 var кяуяєs = await νℓкуяє.axios.get("https://meme-api.herokuapp.com/gimme/" + νℓкуяє.args.join(" ") + "/");
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
 > *🖌️Title:* ${response.data.title}
 > *👨‍🎨Author:* ${response.data.author}

@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.args) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -44,7 +44,7 @@ return νcнαт.reply(
 var Image = result[Math.floor(Math.random() * result.length)].url;
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
 Image
 );

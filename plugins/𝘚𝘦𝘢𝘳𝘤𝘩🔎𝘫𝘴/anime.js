@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.args) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -44,7 +44,7 @@ var { data: jap } = await νℓкуяє.axios.get(
 `https://api.jikan.moe/v3/search/anime?q=${νℓкуяє.args.join(" ")}`
 );
 if (!jap.results[0].title) {
-return νcнαт.reply(`*❌Error*
+return νℓcнαт.reply(`*❌Error*
 > Couldn't find any results on the term *${νℓкуяє.args.join(" ")}*`);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -72,7 +72,7 @@ let Found =
 *📚Synopsis:* ${data[0].synopsis}`;
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
 > ${Found}`,
 data[0].images.jpg.image_url

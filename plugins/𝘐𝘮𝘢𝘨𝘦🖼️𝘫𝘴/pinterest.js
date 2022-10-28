@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.args) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -42,7 +42,7 @@ return νcнαт.reply(
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var result = await νℓкуяє.hxz.pinterest(νℓкуяє.args.join(" "));
 if (!result) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > Couldn't find any results on ${νℓкуяє.args.join(" ")}_`
@@ -52,7 +52,7 @@ return νcнαт.reply(
 var pint = result[Math.floor(Math.random() * result.length)];
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
 pint
 ); 

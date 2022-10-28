@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -42,7 +42,7 @@ var bson = await кяуяєsi.json();
 var bsoni = bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
@@ -52,7 +52,7 @@ bsoni.url_image
 } catch {
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}

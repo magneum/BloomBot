@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 groupMetadata,
 groupName,
 participants,
@@ -30,7 +30,7 @@ isAdmin,
 ) => {
 try {
 if (!νℓкуяє.args) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
@@ -47,7 +47,7 @@ type: "sfw",
 page: [1, 2, 3, 4],
 });
 if (!wallpaper) {
-return νcнαт.reply(
+return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > Couldn't find any results on ${νℓкуяє.args.join(" ")}_`
@@ -56,7 +56,7 @@ return νcнαт.reply(
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 await νℓкуяє.imgB(
 νℓкуяє,
-νcнαт,
+νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
 wallpaper[Math.floor(Math.random() * wallpaper.length)].image
 ); 
