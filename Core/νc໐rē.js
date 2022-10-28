@@ -24,9 +24,8 @@ coreback
 ) => {
 require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
-FastHub = require("simple-git");
-await FastHub.fetch();
-var newCommits = await FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
+await νℓкуяє.FastHub.fetch();
+var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
 if (newCommits.total != 0) {
 console.clear();
 console.log("Update Found Rebooting.....");
