@@ -76,7 +76,7 @@ return await νℓкуяє.imgB(
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-let time = ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
+let time = νℓкуяє.ms(userEco.fishtimeout - (Date.now() - userEco.fishdone));
 return await νℓкуяє.imgB(
 νℓкуяє,
 νℓcнαт,
@@ -94,7 +94,7 @@ else if (fishID < 8) rarity = `common`;
 else if (fishID < 9) rarity = `uncommon`;
 else if (fishID < 10) rarity = `rare`;
 else rarity = `legendary`;
-let fishh = Fishes[rarity];
+let fishh = νℓкуяє.Fishes[rarity];
 let worth =
 Math.floor(Math.random() * (fishh.max - fishh.min + 1)) + fishh.min;
 userEco.money = userEco.money + worth;

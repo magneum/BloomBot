@@ -79,7 +79,7 @@ return await νℓкуяє.imgB(
 ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
 } else {
 if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-let ᴄʟᴏᴄᴋ = ms(userEco.timeout - (Date.now() - userEco.daily));
+let ᴄʟᴏᴄᴋ = νℓкуяє.ms(userEco.timeout - (Date.now() - userEco.daily));
 return await νℓкуяє.imgB(
 νℓкуяє,
 νℓcнαт,
