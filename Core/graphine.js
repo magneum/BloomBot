@@ -54,6 +54,26 @@ var { Tube_Audio, Tube_Video } = require("./youtube");
 var { Doujin } = require("@shineiichijo/nhentai-pdf");
 var { exec, spawn, execSync } = require("child_process");
 var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+
+var LinkList = require("../mongBase/antilink");
+var Ranker = require("../mongBase/autorank");
+var Bagde = require("../mongBase/badge");
+var userBanCheck = require("../mongBase/ban");
+var Cooldown = require("../mongBase/cooldown");
+var DebugMode = require("../mongBase/debug");
+var Economy = require("../mongBase/economy");
+var Ranker = require("../mongBase/experience");
+var Gamble = require("../mongBase/gamble");
+var Halt = require("../mongBase/halt");
+var nsfwCheck = require("../mongBase/nsfw");
+var Pokemon = require("../mongBase/pokemon");
+var UserPrivate = require("../mongBase/private");
+var Robbery = require("../mongBase/robbery");
+var ServerDB = require("../mongBase/ServerDB");
+var Welcome = require("../mongBase/setwelcome");
+var Warning = require("../mongBase/warning");
+var Zoology = require("../mongBase/zoo");
+
 module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.body =
 νℓcнαт.mtype === "conversation"
@@ -78,8 +98,12 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.budy = typeof νℓcнαт.text == "string" ? νℓcнαт.text : "";
 νℓкуяє.icmd = νℓкуяє.body.startsWith(prefix);
-νℓкуяє.isCmd =prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&νℓкуяє.body.slice(1) != "";
-νℓкуяє.command = νℓкуяє.isCmd? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase(): "";
+νℓкуяє.isCmd =
+prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
+νℓкуяє.body.slice(1) != "";
+νℓкуяє.command = νℓкуяє.isCmd
+? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase()
+: "";
 νℓкуяє.args = νℓкуяє.body.trim().split(/ +/).slice(1);
 νℓкуяє.pushname = νℓcнαт.pushName || "No Name";
 νℓкуяє.botNumber = await νℓкуяє.decodeJid(νℓкуяє.user.id);
@@ -90,9 +114,19 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.mime = (νℓкуяє.quoted.msg || νℓкуяє.quoted).mimetype || "";
 νℓкуяє.isMedia = /image|video|sticker|audio/.test(νℓкуяє.mime);
 νℓкуяє.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.mods].map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(νℓcнαт.sender);
-νℓкуяє.mentionByTag =νℓcнαт.mtype == "extendedTextMessage" &&νℓcнαт.message.extendedTextMessage.contextInfo != null? νℓcнαт.message.extendedTextMessage.contextInfo.mentionedJid: [];
-νℓкуяє.mentionByReply =νℓcнαт.mtype == "extendedTextMessage" &&νℓcнαт.message.extendedTextMessage.contextInfo != null? νℓcнαт.message.extendedTextMessage.contextInfo.participant || "": "";
+νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.mods]
+.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+.includes(νℓcнαт.sender);
+νℓкуяє.mentionByTag =
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.mentionedJid
+: [];
+νℓкуяє.mentionByReply =
+νℓcнαт.mtype == "extendedTextMessage" &&
+νℓcнαт.message.extendedTextMessage.contextInfo != null
+? νℓcнαт.message.extendedTextMessage.contextInfo.participant || ""
+: "";
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.performance = performance;
 νℓкуяє.createWorker = createWorker;
@@ -139,24 +173,24 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.imgB = require("../Buttons/imgB");
 νℓкуяє.vidB = require("../Buttons/vidB");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-νℓкуяє.LinkList = require("../mongBase/antilink");
-νℓкуяє.Ranker = require("../mongBase/autorank");
-νℓкуяє.Bagde = require("../mongBase/badge");
-νℓкуяє.userBanCheck = require("../mongBase/ban");
-νℓкуяє.Cooldown = require("../mongBase/cooldown");
-νℓкуяє.DebugMode = require("../mongBase/debug");
-νℓкуяє.Economy = require("../mongBase/economy");
-νℓкуяє.Ranker = require("../mongBase/experience");
-νℓкуяє.Gamble = require("../mongBase/gamble");
-νℓкуяє.Halt = require("../mongBase/halt");
-νℓкуяє.nsfwCheck = require("../mongBase/nsfw");
-νℓкуяє.Pokemon = require("../mongBase/pokemon");
-νℓкуяє.UserPrivate = require("../mongBase/private");
-νℓкуяє.Robbery = require("../mongBase/robbery");
-νℓкуяє.ServerDB = require("../mongBase/ServerDB");
-νℓкуяє.Welcome = require("../mongBase/setwelcome");
-νℓкуяє.Warning = require("../mongBase/warning");
-νℓкуяє.Zoology = require("../mongBase/zoo");
+νℓкуяє.LinkList = LinkList;
+νℓкуяє.Ranker = Ranker;
+νℓкуяє.Bagde = Bagde;
+νℓкуяє.userBanCheck = userBanCheck;
+νℓкуяє.Cooldown = Cooldown;
+νℓкуяє.DebugMode = DebugMode;
+νℓкуяє.Economy = Economy;
+νℓкуяє.Ranker = Ranker;
+νℓкуяє.Gamble = Gamble;
+νℓкуяє.Halt = Halt;
+νℓкуяє.nsfwCheck = nsfwCheck;
+νℓкуяє.Pokemon = Pokemon;
+νℓкуяє.UserPrivate = UserPrivate;
+νℓкуяє.Robbery = Robbery;
+νℓкуяє.ServerDB = ServerDB;
+νℓкуяє.Welcome = Welcome;
+νℓкуяє.Warning = Warning;
+νℓкуяє.Zoology = Zoology;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.request = require("request");
 νℓкуяє.fetch = require("node-fetch");
@@ -209,9 +243,13 @@ spinner: νℓкуяє.spinner,
 νℓкуяє.prefix = prefix;
 νℓкуяє.mods = mods;
 
-modString = process.env.mods === undefined? "918436686758,917430922909": process.env.mods;
-νℓкуяє.isModerator = modString.includes(νℓcнαт.sender.substring(0, νℓcнαт.sender.indexOf("@")));
-
+modString =
+process.env.mods === undefined
+? "918436686758,917430922909"
+: process.env.mods;
+νℓкуяє.isModerator = modString.includes(
+νℓcнαт.sender.substring(0, νℓcнαт.sender.indexOf("@"))
+);
 
 return νℓкуяє;
 };
