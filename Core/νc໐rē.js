@@ -24,6 +24,7 @@ coreback
 ) => {
 require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
+console.log(νℓкуяє.FastGit);
 await νℓкуяє.FastHub.fetch();
 var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
 if (newCommits.total != 0) {
