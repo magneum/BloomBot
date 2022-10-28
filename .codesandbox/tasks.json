@@ -2,13 +2,13 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm install --save && clear && npx forever νℓкуяє.js --color"
+      "command": "npm install --save && npx forever νℓкуяє.js --color"
     }
   ],
   "tasks": {
     "💡Boot Vlkyre By KryKnz": {
-      "name": "npm install --save && clear && npx forever νℓкуяє.js --color",
-      "command": "npm install --save && clear && npx forever νℓкуяє.js --color",
+      "name": "npm install --save && npx forever νℓкуяє.js --color",
+      "command": "npm install --save && npx forever νℓкуяє.js --color",
       "runAtStart": true
     },
     "🐞Remove Node_Modules": {
