@@ -178,7 +178,7 @@ class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
 <div class="flex items-center flex-wrap ">
 <button onclick="window.location.href='/'"
 class="inline-flex items-center bg-red-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">
-<I>⚡To Vlkyre Home Page</I>
+<I>⚡To Home Page</I>
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -210,7 +210,7 @@ stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <div class="flex items-center flex-wrap">
 <button onclick="window.location.href='/Console'"
 class="inline-flex items-center bg-red-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">
-<I>🛩️To Vlkyre Console Page</I>
+<I>🛩️To Console Page</I>
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -242,7 +242,7 @@ stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <div class="flex items-center flex-wrap ">
 <button onclick="window.location.href='https://tinyurl.com/Vlkyre-YouTube'"
 class="inline-flex items-center bg-red-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">
-<I>⭕To Vlkyre YouTube Channel</I>
+<I>⭕To YouTube Channel</I>
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -971,7 +971,7 @@ class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outli
 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">꧁𝐕𝐥𝐤𝐲𝐫𝐞 𝐇𝐞𝐥𝐩
 𝐌𝐨𝐝𝐮𝐥𝐞꧂</h1>
 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-Below You Will Find Every Command Of Valkyrie!
+Below You Will Find Every Command Of Vlkyre!
 </p>
 </div>
 <div class="flex flex-wrap">
