@@ -319,7 +319,6 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 νℓpage.get("/", (req, res) => {
 res.send(html);
 });
-console.log(coreback);
 // spinnies.succeed("νℓкуяє", { text: coreback });
 }
 );
