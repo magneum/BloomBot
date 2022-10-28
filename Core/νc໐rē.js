@@ -28,8 +28,9 @@ console.log(νℓкуяє.FastGit);
 await νℓкуяє.FastHub.fetch();
 var newCommits = await νℓкуяє.FastHub.log([`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`]);
 if (newCommits.total != 0) {
-console.clear();
-console.log("🛸𝐆𝐢𝐭𝐇𝐮𝐛: Update Found Rebooting.....");
+console.log("🛸𝐆𝐢𝐭𝐇𝐮𝐛: Update Found.  Updating.....");
+await νℓкуяє.FastHub.pull();
+console.log("🛸𝐆𝐢𝐭𝐇𝐮𝐛: Updated. Now Rebooting.....");
 process.exit(0);
 }
 function ShowRed(Topic, Text) {
