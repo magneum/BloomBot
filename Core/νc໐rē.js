@@ -36,7 +36,7 @@ var isBotAdmin = νℓcнαт.isGroup
 : false;
 var isAdmin = νℓcнαт.isGroup ? groupAdmins.includes(νℓcнαт.sender) : false;
 require("./graphine")(νℓкуяє, νℓcнαт, update, store);
-require("./kronLink")(νℓкуяє, νℓcнαт, update, store);
+// require("./kronLink")(νℓкуяє, νℓcнαт, update, store);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 function ShowRed(Topic, Text) {
 let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
@@ -72,6 +72,24 @@ console.log(
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {
+var userNgroupCheck = require("../preExecution/checkBan")(νℓкуяє, νℓcнαт);
+console.log(userNgroupCheck);
+if (userNgroupCheck === true) return;
+console.log(userNgroupCheck);
+
+
+
+
+
+
+
+
+
+
+
+
+
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 console.log("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 console.log(
 νℓкуяє.chalk.blueBright("> 🖊️𝐂𝐨𝐦𝐦𝐚𝐧𝐝: "),

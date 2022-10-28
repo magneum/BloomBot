@@ -15,7 +15,13 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../process");
 var {
-smsg,
+Simp,
+Pokemon,
+Ship,
+IShipOptions,
+} = require("@shineiichijo/canvas-chan");
+var {
+νkmake,
 formatp,
 formatDate,
 getTime,
@@ -31,14 +37,23 @@ parseMention,
 GIFBufferToVideoBuffer,
 getRandom,
 } = require("./myfunc");
-var fs = require("fs");
-var os = require("os");
-var path = require("path");
-var util = require("util");
-var chalk = require("chalk");
+var { tmpdir } = require("os");
+var { JSDOM } = require("jsdom");
+var { Character } = require("mailist");
+var { yta, ytv } = require("./y2mate");
 var moment = require("moment-timezone");
-var msgFilter = require("./msgFilter.js");
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var { readFile } = require("fs/promises");
+var { Chalk } = require("cfonts/lib/Chalk");
+var { performance } = require("perf_hooks");
+var { Primbon } = require("scrape-primbon");
+var { getDadjoke } = require("random-jokes");
+var { createWorker } = require("tesseract.js");
+var { Manga } = require("@shineiichijo/marika");
+var { AnimeWallpaper } = require("anime-wallpaper");
+var { Tube_Audio, Tube_Video } = require("./youtube");
+var { Doujin } = require("@shineiichijo/nhentai-pdf");
+var { exec, spawn, execSync } = require("child_process");
+var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓкуяє.body =
 νℓcнαт.mtype === "conversation"
@@ -60,38 +75,144 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store) => {
 νℓcнαт.message.listResponseMessage?.singleSelectReply.selectedRowId ||
 νℓcнαт.text
 : "";
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.budy = typeof νℓcнαт.text == "string" ? νℓcнαт.text : "";
 νℓкуяє.icmd = νℓкуяє.body.startsWith(prefix);
-νℓкуяє.isCmd =
-prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
-νℓкуяє.body.slice(1) != "";
-νℓкуяє.command = νℓкуяє.isCmd
-? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase()
-: "";
+νℓкуяє.isCmd =prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&νℓкуяє.body.slice(1) != "";
+νℓкуяє.command = νℓкуяє.isCmd? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase(): "";
 νℓкуяє.args = νℓкуяє.body.trim().split(/ +/).slice(1);
 νℓкуяє.pushname = νℓcнαт.pushName || "No Name";
 νℓкуяє.botNumber = await νℓкуяє.decodeJid(νℓкуяє.user.id);
-νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.mods]
-.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-.includes(νℓcнαт.sender);
-νℓкуяє.itsMe = νℓcнαт.sender == νℓкуяє.botNumber ? true : false;
-νℓкуяє.botName = process.env.NAME || "Mizuhara";
+νℓкуяє.frome = νℓcнαт.sender == νℓкуяє.botNumber ? true : false;
 νℓкуяє.Fullarg = νℓкуяє.args.join(" ");
 νℓкуяє.contant = q = νℓкуяє.args.join(" ");
 νℓкуяє.quoted = νℓcнαт.quoted ? νℓcнαт.quoted : νℓcнαт;
 νℓкуяє.mime = (νℓкуяє.quoted.msg || νℓкуяє.quoted).mimetype || "";
 νℓкуяє.isMedia = /image|video|sticker|audio/.test(νℓкуяє.mime);
 νℓкуяє.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-νℓкуяє.mentionByTag =
-νℓcнαт.mtype == "extendedTextMessage" &&
-νℓcнαт.message.extendedTextMessage.contextInfo != null
-? νℓcнαт.message.extendedTextMessage.contextInfo.mentionedJid
-: [];
-νℓкуяє.mentionByReply =
-νℓcнαт.mtype == "extendedTextMessage" &&
-νℓcнαт.message.extendedTextMessage.contextInfo != null
-? νℓcнαт.message.extendedTextMessage.contextInfo.participant || ""
-: "";
+νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.mods].map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(νℓcнαт.sender);
+νℓкуяє.mentionByTag =νℓcнαт.mtype == "extendedTextMessage" &&νℓcнαт.message.extendedTextMessage.contextInfo != null? νℓcнαт.message.extendedTextMessage.contextInfo.mentionedJid: [];
+νℓкуяє.mentionByReply =νℓcнαт.mtype == "extendedTextMessage" &&νℓcнαт.message.extendedTextMessage.contextInfo != null? νℓcнαт.message.extendedTextMessage.contextInfo.participant || "": "";
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.performance = performance;
+νℓкуяє.createWorker = createWorker;
+νℓкуяє.JSDOM = JSDOM;
+νℓкуяє.Character = Character;
+νℓкуяє.execSync = execSync;
+νℓкуяє.spawn = spawn;
+νℓкуяє.exec = exec;
+νℓкуяє.Primbon = Primbon;
+νℓкуяє.IShipOptions = IShipOptions;
+νℓкуяє.Ship = Ship;
+νℓкуяє.Pokemon = Pokemon;
+νℓкуяє.Simp = Simp;
+νℓкуяє.readFile = readFile;
+νℓкуяє.tmpdir = tmpdir;
+νℓкуяє.Doujin = Doujin;
+νℓкуяє.Chalk = Chalk;
+νℓкуяє.Sticker = Sticker;
+νℓкуяє.createSticker = createSticker;
+νℓкуяє.StickerTypes = StickerTypes;
+νℓкуяє.νkmake = νkmake;
+νℓкуяє.formatp = formatp;
+νℓкуяє.formatDate = formatDate;
+νℓкуяє.getTime = getTime;
+νℓкуяє.isUrl = isUrl;
+νℓкуяє.sleep = sleep;
+νℓкуяє.clockString = clockString;
+νℓкуяє.runtime = runtime;
+νℓкуяє.fetchJson = fetchJson;
+νℓкуяє.getBuffer = getBuffer;
+νℓкуяєonformat = jsonformat;
+νℓкуяє.format = format;
+νℓкуяє.parseMention = parseMention;
+νℓкуяє.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+νℓкуяє.getRandom = getRandom;
+νℓкуяє.getDadjoke = getDadjoke;
+νℓкуяє.Manga = Manga;
+νℓкуяє.AnimeWallpaper = AnimeWallpaper;
+νℓкуяє.ytv2mate = yta;
+νℓкуяє.yta2mate = ytv;
+νℓкуяє.Tube_Audio = Tube_Audio;
+νℓкуяє.Tube_Video = Tube_Video;
+νℓкуяє.msgFilter = require("./msgFilter");
+νℓкуяє.imgB = require("../Buttons/imgB");
+νℓкуяє.vidB = require("../Buttons/vidB");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.LinkList = require("../mongBase/antilink");
+νℓкуяє.Ranker = require("../mongBase/autorank");
+νℓкуяє.Bagde = require("../mongBase/badge");
+νℓкуяє.userBanCheck = require("../mongBase/ban");
+νℓкуяє.Cooldown = require("../mongBase/cooldown");
+νℓкуяє.DebugMode = require("../mongBase/debug");
+νℓкуяє.Economy = require("../mongBase/economy");
+νℓкуяє.Ranker = require("../mongBase/experience");
+νℓкуяє.Gamble = require("../mongBase/gamble");
+νℓкуяє.Halt = require("../mongBase/halt");
+νℓкуяє.nsfwCheck = require("../mongBase/nsfw");
+νℓкуяє.Pokemon = require("../mongBase/pokemon");
+νℓкуяє.UserPrivate = require("../mongBase/private");
+νℓкуяє.Robbery = require("../mongBase/robbery");
+νℓкуяє.ServerDB = require("../mongBase/ServerDB");
+νℓкуяє.Welcome = require("../mongBase/setwelcome");
+νℓкуяє.Warning = require("../mongBase/warning");
+νℓкуяє.Zoology = require("../mongBase/zoo");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.request = require("request");
+νℓкуяє.fetch = require("node-fetch");
+νℓкуяє.db = require("quick.db");
+νℓкуяє.nHentai = require("shentai");
+νℓкуяє.cheerio = require("cheerio");
+νℓкуяє.hxz = require("hxz-api");
+νℓкуяє.xfar = require("xfarr-api");
+νℓкуяє.canvacord = require("canvacord");
+νℓкуяє.primbon = new Primbon();
+νℓкуяє.google = require("google-it");
+νℓкуяє.Carbon = require("unofficial-carbon-now");
+νℓкуяє.cron = require("node-cron");
+νℓкуяє.moment = require("moment-timezone");
+νℓкуяє.os = require("os");
+νℓкуяє.path = require("path");
+νℓкуяє.axios = require("axios");
+νℓкуяє.chalk = require("chalk");
+νℓкуяє.util = require("util");
+νℓкуяє.fs = require("fs");
+νℓкуяє.Anime = require("anime-actions");
+νℓкуяє.gis = require("g-i-s");
+νℓкуяє.Tinyurl = require("tinyurl-api");
+νℓкуяє.akaneko = require("akaneko");
+νℓкуяє.ytdl = require("ytdl-core");
+νℓкуяє.Spinnies = require("spinnies");
+νℓкуяє.moment = require("moment-timezone");
+νℓкуяє.speed = require("performance-now");
+νℓкуяє.FFmpeg = require("fluent-ffmpeg");
+νℓкуяє.pathFFmpeg = require("ffmpeg-static");
+νℓкуяє.TubeSearch = require("yt-search");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.spinner = {
+interval: 80,
+frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
+};
+νℓкуяє.spinnies = new νℓкуяє.Spinnies({
+color: "cyan",
+succeedColor: "green",
+spinner: νℓкуяє.spinner,
+});
+νℓкуяє.TubeRegex =
+/(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
+νℓкуяє.botName = process.env.botName;
+νℓкуяє.packname = packname;
+νℓкуяє.pgdb = DATABASE_URL;
+νℓкуяє.ShowInfo = ShowInfo;
+νℓкуяє.mongodb = mongodb;
+νℓкуяє.author = author;
+νℓкуяє.prefix = prefix;
+νℓкуяє.mods = mods;
+
+modString = process.env.mods === undefined? "918436686758,917430922909": process.env.mods;
+νℓкуяє.isModerator = modString.includes(νℓcнαт.sender.substring(0, νℓcнαт.sender.indexOf("@")));
+
+
 return νℓкуяє;
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
