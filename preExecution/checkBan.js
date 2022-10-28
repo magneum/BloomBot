@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νℓcнαт, status) => {
+module.exports = async (νℓкуяє, νℓcнαт, 𝖘𝖙𝖆𝖙𝖚𝖘) => {
 νℓкуяє.userBanCheck.findOne(
 {
 ID: νℓcнαт.sender,
@@ -44,9 +44,9 @@ return νℓcнαт.reply(
 > ${error}`
 );
 }
-if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return status(false);
-if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return status(false);
-return status(true);
+if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return 𝖘𝖙𝖆𝖙𝖚𝖘(false);
+if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return 𝖘𝖙𝖆𝖙𝖚𝖘(false);
+return 𝖘𝖙𝖆𝖙𝖚𝖘(true);
 }
 );
 }

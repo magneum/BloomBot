@@ -13,15 +13,7 @@
 ╚════════════╝
 */
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-module.exports = async (
-νℓкуяє,
-νℓcнαт,
-update,
-store,
-spinnies,
-νℓpage,
-coreback
-) => {
+module.exports = async (νℓкуяє, νℓcнαт, update, spinnies, coreback) => {
 var groupMetadata = νℓcнαт.isGroup
 ? await νℓкуяє.groupMetadata(νℓcнαт.chat).catch((e) => {})
 : "";
