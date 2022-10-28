@@ -25,12 +25,11 @@ caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*νℓкуяє™ вσт ву кяукηz*
+footer: `*VLKYRE™ Bot By KRYKNZ*
 
-*💻HomePage:* _${νℓкуяє.ShowInfo}_
-*⛺HomeLog:* _${νℓкуяє.ShowInfo}+_`,
+_*💻HomePage:* ${νℓкуяє.ShowInfo}_
+_*⛺HomeLog:* ${νℓкуяє.ShowInfo}+_`,
 mentions: [νℓcнαт.sender],
 buttons: [
 {
