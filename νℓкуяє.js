@@ -105,6 +105,9 @@ var vport = process.env.PORT || 8080;
 async function run() {
 var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
 var νℓpage = express();
+νℓpage.get("/", (req, res) => {
+res.send(home_page);
+});
 νℓpage.listen(vport, () => {
 console.log("Introduction Page: http://localhost:" + vport + "/");
 });
