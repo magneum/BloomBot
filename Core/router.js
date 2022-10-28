@@ -2714,7 +2714,320 @@ break;
 ╚════════════╝
 */
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "balance":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/balance")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
 
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "buy":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/buy")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "daily":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/daily")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "fish":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/fish")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "gamble":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "inv":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/inv")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "store":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/store")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "work":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/work")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "zoo":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘎𝘢𝘮𝘦💰𝘑𝘴/zoo")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
