@@ -104,16 +104,15 @@ async function run() {
 var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
 νℓpage = express();
 vport = process.env.PORT || 8080;
-νℓpage.get("/", function (rege, νℓp) {
-νℓp.sendFile("Pages/Home.html", { root: __dirname });
-});
-νℓpage.get("/FAQ", function (rege, νℓp) {
-νℓp.sendFile("Pages/FAQ.html", { root: __dirname });
-});
-νℓpage.get("/Command", function (rege, νℓp) {
-νℓp.sendFile("Pages/Command.html", { root: __dirname });
-});
-console.clear();
+// νℓpage.get("/", function (rege, νℓp) {
+// νℓp.sendFile("Pages/Home.html", { root: __dirname });
+// });
+// νℓpage.get("/FAQ", function (rege, νℓp) {
+// νℓp.sendFile("Pages/FAQ.html", { root: __dirname });
+// });
+// νℓpage.get("/Command", function (rege, νℓp) {
+// νℓp.sendFile("Pages/Command.html", { root: __dirname });
+// });
 νℓpage.listen(vport, () => {
 console.log("🦋𝐒𝐞𝐫𝐯𝐞𝐫 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐈𝐧: http://localhost:" + vport);
 });
