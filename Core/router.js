@@ -2700,6 +2700,111 @@ coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
 }
 break;
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "tinyurl":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tinyurl")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "toimg":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/toimg")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "tourl":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tourl")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909

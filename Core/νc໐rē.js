@@ -57,20 +57,22 @@ console.log(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-try {
-await νℓкуяє.FastHub.fetch();
-newgit = await νℓкуяє.FastHub.log([
-`${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`,
-]);
-if (newgit.total != 0) {
-ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
-// await νℓкуяє.FastHub.pull();
-ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....");
-process.exit(0);
-}
-} catch {
-ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
-}
+// try {
+// await νℓкуяє.FastHub.fetch();
+// newgit = await νℓкуяє.FastHub.log([
+// `${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`,
+// ]);
+// if (newgit.total != 0) {
+// ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
+// // await νℓкуяє.FastHub.pull();
+// ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....");
+// process.exit(0);
+// }
+// } catch {
+// ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
+// }
+console.log(νℓcнαт.prefix);
+console.log(νℓкуяє.FastGit);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {
 νℓкуяє.userBanCheck.findOne(
