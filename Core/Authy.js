@@ -14,48 +14,51 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 "use strict";
-var impModule = (this && this.impModule) || function (mod) {
+var __importDefault = (this && this.__importDefault) || function (mod) {
 return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.slot = exports.credentials = void 0;
-var seql = require("sequelize");
-require("../process")
-var Sequelize = DATABASE;
-class credentials extends seql.Model {
-}
-exports.credentials = credentials;
-credentials.init({
+exports.Key = exports.Cred = void 0;
+require("../process");
+const sequelize_1 = require("sequelize");
+const sequelize = DATABASE;
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+class Cred extends sequelize_1.Model {}
+exports.Cred = Cred;
+Cred.init(
+{
 key: {
-type: seql.DataTypes.STRING,
+type: sequelize_1.DataTypes.STRING,
 allowNull: false,
 },
 value: {
-type: seql.DataTypes.JSON,
-}
-}, { Sequelize,
-tableName: "Credentials",
-timestamps: false
-});
-class slot extends seql.Model {
-}
-exports.slot = slot;
-slot.init({
+type: sequelize_1.DataTypes.JSON,
+},
+},
+{ sequelize, tableName: "Creds", timestamps: false }
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+class Key extends sequelize_1.Model {}
+exports.Key = Key;
+Key.init(
+{
 key: {
-type: seql.DataTypes.STRING(1000000),
+type: sequelize_1.DataTypes.STRING(1000000),
 allowNull: false,
 },
 value: {
-type: seql.DataTypes.STRING(1000000)
+type: sequelize_1.DataTypes.STRING(1000000),
 },
 type: {
-type: seql.DataTypes.STRING(1000000),
-}
-}, {
-Sequelize,
-tableName: "credSlots",
+type: sequelize_1.DataTypes.STRING(1000000),
+},
+},
+{
+sequelize,
+tableName: "Keys",
 timestamps: false,
-});
+}
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
