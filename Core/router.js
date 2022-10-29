@@ -27,12 +27,28 @@ var isBotAdmin = νℓcнαт.isGroup
 ? groupAdmins.includes(await νℓкуяє.decodeJid(νℓкуяє.user.id))
 : false;
 var isAdmin = νℓcнαт.isGroup ? groupAdmins.includes(νℓcнαт.sender) : false;
-console.log("\n◎✕———————————————————————✕ νℓкуяє вσт ву кяукηz ✕———————————————————————✕◎");
-console.log(νℓкуяє.chalk.blueBright("       🖊️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: "),νℓкуяє.chalk.green(νℓкуяє.budy || νℓкуяє.mtype));
-console.log(νℓкуяє.chalk.blueBright("       ❣️ 𝐔𝐬𝐞𝐫-𝐍𝐚𝐦𝐞: "),νℓкуяє.chalk.green(νℓкуяє.pushname));
-console.log(νℓкуяє.chalk.blueBright("       📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: "),νℓкуяє.chalk.green(νℓcнαт.sender));
-console.log(νℓкуяє.chalk.blueBright("       💬 𝐂𝐡𝐚𝐭-𝐈𝐝: "),νℓкуяє.chalk.green(νℓcнαт.chat));
-console.log("◎✕———————————————————————✕ νℓкуяє вσт ву кяукηz ✕———————————————————————✕◎\n");
+console.log(
+"\n◎✕———————————————————————✕ νℓкуяє вσт ву кяукηz ✕———————————————————————✕◎"
+);
+console.log(
+νℓкуяє.chalk.blueBright("       🖊️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: "),
+νℓкуяє.chalk.green(νℓкуяє.budy || νℓкуяє.mtype)
+);
+console.log(
+νℓкуяє.chalk.blueBright("       ❣️ 𝐔𝐬𝐞𝐫-𝐍𝐚𝐦𝐞: "),
+νℓкуяє.chalk.green(νℓкуяє.pushname)
+);
+console.log(
+νℓкуяє.chalk.blueBright("       📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: "),
+νℓкуяє.chalk.green(νℓcнαт.sender)
+);
+console.log(
+νℓкуяє.chalk.blueBright("       💬 𝐂𝐡𝐚𝐭-𝐈𝐝: "),
+νℓкуяє.chalk.green(νℓcнαт.chat)
+);
+console.log(
+"◎✕———————————————————————✕ νℓкуяє вσт ву кяукηz ✕———————————————————————✕◎\n"
+);
 switch (νℓкуяє.command) {
 case "advice":
 try {
@@ -3148,6 +3164,1015 @@ break;
 ╚════════════╝
 */
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "bassboost":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/bassboost")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "echo":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/echo")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "flanger":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/flanger")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "nightcore":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/nightcore")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "phaser":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/phaser")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "reverse":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/reverse")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "slow":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/slow")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "speed":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/speed")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "subboost":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/subboost")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "superslow":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superslow")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "superspeed":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superspeed")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "surround":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/surround")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "vaporwave":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vaporwave")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "vibrato":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vibrato")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+/*
+╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ νℓкуяє was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚════════════╝
+*/
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytbassboost":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytbassboost")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytecho":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytecho")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytflanger":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytflanger")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytnightcore":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytnightcore")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytphaser":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytphaser")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytreverse":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytreverse")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytslow":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytslow")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytspeed":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytspeed")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytsubboost":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsubboost")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytsuperslow":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperslow")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytsuperspeed":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperspeed")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytsurround":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsurround")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytvaporwave":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvaporwave")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+case "ytvibrato":
+try {
+// await νℓкуяє.spinnies.add("νℓкуяє", {
+// text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
+// });
+await require("../plugins/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvibrato")(
+νℓкуяє,
+νℓcнαт,
+groupMetadata,
+groupName,
+participants,
+groupOwner,
+isBotAdmin,
+isAdmin,
+(кяуcαℓℓ) => {
+if (кяуcαℓℓ) {
+ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
+ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${кяуcαℓℓ}`
+);
+}
+}
+);
+coreback(`✅ with no error...`);
+} catch (error) {
+coreback(`❌ ${νℓкуяє.command.toUpperCase()} with: ${error}`);
+}
+break;
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+/*
+╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ νℓкуяє was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚════════════╝
+*/
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+
 case "help":
 case "menu":
 case "command":
