@@ -169,25 +169,39 @@ font-family: "Times New Roman", Times, serif;
 <body style="background-color: #1b1b1b">
 <header class="text-gray-400 body-font">
 <div id="Introduction" class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-<a href="/Group"
+<a href="#Groups"
 class="flex title-font font-medium items-center text-white mb-4 md:mb-0 justify-center ">
 <span class="ml-3 text-xl hover:text-red-600 "><b>🕊️ Try Vlkyre Bot</b> <I>(press me)</I></span>
 </a>
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 <a href="/" class="mr-5 text-red-400 hover:text-white">🏠| Home </a>
-<a href="/Command" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
-<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
-<a href="/Group" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
+<a href="#Commands" class="mr-5 text-red-400 hover:text-white">💻| Commands</a>
+<a href="#FAQs" class="mr-5 text-red-400 hover:text-white">❓| FAQs</a>
+<a href="#Groups" class="mr-5 text-red-400 hover:text-white">❣️| Groups</a>
+<a href="#Console" class="mr-5 text-red-400 hover:text-white">💽| Console</a>
 </nav>
-<button onclick="window.location.href='https://github.com/KryKnz'"
-class="inline-flex items-center bg-red-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0">💡GitHub
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-stroke-width="5" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+</div>
+</header>
+<hr style="height:6px;border-top:1px solid #666666" />
+<hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+
+<button onclick="window.location.href='https://github.com/KryKnz'" class="inline-flex 
+items-center 
+bg-red-600 
+text-white 
+py-1 px-3 
+focus:outline-none 
+hover:bg-gray-800 
+rounded
+text-base 
+mt-0
+md:mt-0">💡GitHub
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+class="w-4 h-4 ml-1" viewBox="0 0 24 24">
 <path d="M5 12h14M12 5l7 7-7 7"></path>
 </svg>
 </button>
-</div>
-</header>
+
 <section class="text-gray-400 body-font">
 <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
 <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded-lg"
