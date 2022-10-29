@@ -20,7 +20,6 @@ console.error(error, "Uncaught Exception....");
 });
 require("./Core/νc໐rē.js");
 require("./process");
-console.clear();
 var {
 default: νℓкуяєConnect,
 useMultiFileAuthState,
@@ -35,14 +34,15 @@ MessageRetryMap,
 jidDecode,
 proto,
 } = require("@adiwajshing/baileys");
-var pino = require("pino");
 var fs = require("fs");
+var pino = require("pino");
+var path = require("path");
 var chalk = require("chalk");
 var qrcode = require("qrcode");
 var CFonts = require("cfonts");
-var monGoose = require("mongoose");
 var express = require("express");
 var Krone = require("node-cron");
+var monGoose = require("mongoose");
 var FileType = require("file-type");
 var moment = require("moment-timezone");
 var {
@@ -65,7 +65,6 @@ getSizeMedia,
 generateMessageTag,
 } = require("./Core/myfunc");
 var Canvas = require("discord-canvas");
-var path = require("path");
 var PhoneNumber = require("awesome-phonenumber");
 var {
 imageToWebp,

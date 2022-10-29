@@ -13,18 +13,16 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+require("dotenv");
 var fs = require("fs");
 var path = require("path");
 var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
-  require("dotenv").config({ path: __dirname + "/.env" });
-} else {
-  require("dotenv");
+console.log("Found .ENV So Using it as environmental feed-hub....");
+require("dotenv").config({ path: __dirname + "/.env" });
 }
 var mod = process.env.mods;
-if (!mod) {
-  mod = "918436686758";
-}
+if (!mod) mod = "918436686758,917430922909";
 global.Browser = process.env.Browser;
 global.ShowLogger = process.env.ShowLogger;
 global.ShowInfo = process.env.ShowInfo;
@@ -39,51 +37,51 @@ global.timezone = process.env.timezone;
 global.name = process.env.name;
 global.FastGit = process.env.FastGit;
 global.nameApi = {
-  nrtm: process.env.nrtm,
-  dzx: process.env.dzx,
-  xteam: process.env.xteam,
-  zahir: process.env.zahir,
-  zeks: process.env.zeks,
-  pencarikode: process.env.pencarikode,
-  LeysCoder: process.env.LeysCoder,
+nrtm: process.env.nrtm,
+dzx: process.env.dzx,
+xteam: process.env.xteam,
+zahir: process.env.zahir,
+zeks: process.env.zeks,
+pencarikode: process.env.pencarikode,
+LeysCoder: process.env.LeysCoder,
 };
 global.keyApi = {
-  "https://api.xteam.xyz": process.env.xteamApi,
-  "https://zahirr-web.herokuapp.com": process.env.zahirrApi,
-  "https://api.zeks.xyz": process.env.zeksApi,
-  "https://pencarikode.xyz": process.env.pencarikodeApi,
-  "https://leyscoders-api.herokuapp.com": process.env.leyscodersApi,
+"https://api.xteam.xyz": process.env.xteamApi,
+"https://zahirr-web.herokuapp.com": process.env.zahirrApi,
+"https://api.zeks.xyz": process.env.zeksApi,
+"https://pencarikode.xyz": process.env.pencarikodeApi,
+"https://leyscoders-api.herokuapp.com": process.env.leyscodersApi,
 };
 var Log = (value) => {
-  var log = false;
-  if (typeof value === "string") {
-    if (value.toLowerCase() === "true") {
-      log = console.log;
-    }
-  }
-  return log;
+var log = false;
+if (typeof value === "string") {
+if (value.toLowerCase() === "true") {
+log = console.log;
+}
+}
+return log;
 };
 process.env.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./νℓкуяє.db"
-    : process.env.DATABASE_URL;
+process.env.DATABASE_URL === undefined
+? "./νℓкуяє.db"
+: process.env.DATABASE_URL;
 global.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./νℓкуяє.db"
-    : process.env.DATABASE_URL;
+process.env.DATABASE_URL === undefined
+? "./νℓкуяє.db"
+: process.env.DATABASE_URL;
 global.DATABASE =
-  process.env.DATABASE_URL === "./νℓкуяє.db"
-    ? new sequelize.Sequelize({
-        dialect: "sqlite",
-        storage: process.env.DATABASE_URL,
-        lomodsing: Log("false"),
-      })
-    : new sequelize.Sequelize(process.env.DATABASE_URL, {
-        dialect: "postgres",
-        protocol: "postgres",
-        lomodsing: Log("false"),
-        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-      });
+process.env.DATABASE_URL === "./νℓкуяє.db"
+? new sequelize.Sequelize({
+dialect: "sqlite",
+storage: process.env.DATABASE_URL,
+lomodsing: Log("false"),
+})
+: new sequelize.Sequelize(process.env.DATABASE_URL, {
+dialect: "postgres",
+protocol: "postgres",
+lomodsing: Log("false"),
+dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+});
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
