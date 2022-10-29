@@ -13,7 +13,7 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-require("../process");
+require("../process.js");
 var {
 Simp,
 Pokemon,
@@ -197,7 +197,7 @@ spinner: νℓкуяє.spinner,
 νℓкуяє.pgdb = DATABASE_URL;
 νℓкуяє.ShowInfo = ShowInfo;
 νℓкуяє.mongodb = mongodb;
-νℓкуяє.FastGit = FastGit;
+νℓкуяє.upbranch = upbranch;
 νℓкуяє.author = author;
 νℓкуяє.prefix = prefix;
 νℓкуяє.mods = mods;

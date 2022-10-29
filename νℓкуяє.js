@@ -137,7 +137,7 @@ auth: state,
 printQRInTerminal: true,
 logger: pino({ level: "silent" }),
 defaultQueryTimeoutMs: undefined,
-browser: [`vlkyre: ${Browser || "v5"}`, "Chrome", "4.0.0"],
+browser: [`vlkyre: ${upVersion || "v5"}`, "Chrome", "4.0.0"],
 version: getVersionWaweb() || [2, 2204, 13],
 msgRetryCounterMap,
 getMessage: async (data) => {

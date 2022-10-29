@@ -23,7 +23,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 }
 var mod = process.env.mods;
 if (!mod) mod = "918436686758,917430922909";
-global.Browser = process.env.Browser;
+global.upVersion = process.env.upVersion;
 global.ShowLogger = process.env.ShowLogger;
 global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
@@ -35,7 +35,7 @@ global.author = process.env.author;
 global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
 global.name = process.env.name;
-global.FastGit = process.env.FastGit;
+global.upbranch = process.env.upbranch;
 global.nameApi = {
 nrtm: process.env.nrtm,
 dzx: process.env.dzx,

@@ -61,7 +61,7 @@ console.log(
 // try {
 // await νℓкуяє.FastHub.fetch();
 // newgit = await νℓкуяє.FastHub.log([
-// `${νℓкуяє.FastGit}..origin/${νℓкуяє.FastGit}`,
+// `${νℓкуяє.upbranch}..origin/${νℓкуяє.upbranch}`,
 // ]);
 // if (newgit.total != 0) {
 // ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
@@ -72,9 +72,9 @@ console.log(
 // } catch {
 // ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
 // }
+console.log(upVersion);
 console.log(νℓкуяє.prefix);
-console.log(νℓкуяє.Browser);
-console.log(νℓкуяє.FastGit);
+console.log(νℓкуяє.upbranch);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {
 νℓкуяє.userBanCheck.findOne(
