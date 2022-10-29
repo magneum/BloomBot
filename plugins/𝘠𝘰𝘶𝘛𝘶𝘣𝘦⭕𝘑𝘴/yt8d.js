@@ -38,7 +38,9 @@ return νℓcнαт.reply(
 *⚡Usage*   
 > _${νℓкуяє.prefix}${pfname} song/link_`
 );
-} else if (νℓкуяє.args.join(" ").includes("yout")) {
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (νℓкуяє.args.join(" ").includes("yout")) {
 if (!νℓкуяє.TubeRegex.test(νℓкуяє.args.join(" "))) {
 return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -49,8 +51,8 @@ return νℓcнαт.reply(
 > _${νℓкуяє.prefix}${pfname} song/link_`
 );
 }
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else {
 var Audios = await νℓкуяє.TubeSearch(νℓкуяє.args.join(" "));
 if (!Audios) {
 return νℓcнαт.reply(
@@ -59,6 +61,7 @@ return νℓcнαт.reply(
 > _No Music Found!_`
 );
 }
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var oneAudio = Audios.videos.slice(0, 1);
 oneAudio.forEach(async function (one) {
 if (one.seconds > 1800) {
@@ -71,19 +74,13 @@ return await νℓкуяє.imgB(
 one.thumbnail
 );
 }
-var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-try {
-var { DLoader, thumb, title, RSize, BSize } = await νℓкуяє.Tube_Audio(
-one.url,
-"en136"
-);
-var directShorten = await νℓкуяє.Tinyurl(DLoader);
+var { DLoader, thumb, title, RSize, BSize } = await νℓкуяє.Tube_Audio(one.url, "en136");
 await νℓкуяє.imgB(
 νℓкуяє,
 νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🍻Title:* ${one.title}
+*⭕Filter:* ${pfname}
 *🙈Views:* ${one.views}
 *⏰Duration:* ${one.timestamp}
 *✒️Author:* ${one.author.name}
@@ -91,10 +88,23 @@ await νℓкуяє.imgB(
 *📜Description:* ${one.description}`,
 one.thumbnail
 );
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${DLoader} -af "apulsator=hz=0.08" ${Date.now() + one.videoId}.mp3`,
+async (error) => {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _There has been an API Error. Please try again later._
+
+*🐞Bug* 
+> ${error}`
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
 return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
-audio: { url: DLoader },
+audio: νℓкуяє.fs.readFileSync(`${Date.now() + one.videoId}.mp3`),
 contextInfo: {
 externalAdReply: {
 title: `🍻Title: ${one.title}`,
@@ -109,54 +119,8 @@ fileName: `${one.title}.mp3`,
 },
 { quoted: νℓcнαт }
 );
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-console.log(error);
-var stream = await νℓкуяє.ytdl(one.videoId, {
-quality: "highestaudio",
 });
-await νℓкуяє.imgB(
-νℓкуяє,
-νℓcнαт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*🍻Title:* ${one.title}
-*🙈Views:* ${one.views}
-*⏰Duration:* ${one.timestamp}
-*✒️Author:* ${one.author.name}
-*🔗Link:* ${one.url}
-*📜Description:* ${one.description}`,
-one.thumbnail
-);
-νℓкуяє
-.FFmpeg(stream)
-.audioBitrate(320)
-.toFormat("ipod")
-.saveToFile(`${one.videoId}.mp3`)
-.on("end", () => {
-return νℓкуяє
-.sendMessage(
-νℓcнαт.chat,
-{
-audio: νℓкуяє.fs.readFileSync(`${one.videoId}.mp3`),
-contextInfo: {
-externalAdReply: {
-title: `*🍻Title:* ${one.title}`,
-body: "νℓкуяє вσт ву кяукηz™",
-mediaType: 2,
-thumbnail: Thumb,
-mediaUrl: one.url,
-},
-},
-mimetype: "audio/mpeg",
-fileName: `${one.title}.mp3`,
-},
-{ quoted: νℓcнαт }
-)
-.then(νℓкуяє.fs.unlinkSync(`${one.videoId}.mp3`));
 });
-}
-});
-}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
 return кяуcαℓℓ(error);
