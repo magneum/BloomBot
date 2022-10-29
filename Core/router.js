@@ -1637,8 +1637,11 @@ case "play":
 case "song":
 case "sing":
 case "music":
-case "youtube":
+case "ytmp3":
+case "ytplay":
 case "ytaudio":
+case "ytmusic":
+case "youtubemusic":
 try {
 // await νℓкуяє.spinnies.add("νℓкуяє", {
 // text: "𝐒𝐭𝐚𝐫𝐭𝐞𝐝: " + νℓкуяє.command,
