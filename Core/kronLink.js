@@ -197,7 +197,6 @@ spinner: νℓкуяє.spinner,
 νℓкуяє.pgdb = DATABASE_URL;
 νℓкуяє.ShowInfo = ShowInfo;
 νℓкуяє.mongodb = mongodb;
-νℓкуяє.upbranch = upbranch;
 νℓкуяє.author = author;
 νℓкуяє.prefix = prefix;
 νℓкуяє.mods = mods;
