@@ -20,16 +20,15 @@ return await νℓкуяє.sendMessage(
 {
 image: { url: νidē໐ },
 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
-│║⦁ *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${νℓcнαт.chat.split("@")[0]}
-│║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
+│║Ῠ  *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║Ῠ  *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLKYRE™ Bot By KRYKNZ*
 
-_*💻HomePage:* ${νℓкуяє.ShowInfo}_
-_*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
+*💻HomePage:* _${νℓкуяє.ShowInfo}_
+*⛺HomeLog:* _${νℓкуяє.ShowLogger}_`,
 mentions: [νℓcнαт.sender],
 buttons: [
 {
