@@ -29,68 +29,21 @@ isAdmin,
 кяуcαℓℓ
 ) => {
 try {
-if (!νℓкуяє.args.join(" ")) {
+if (!νℓкуяє.quoted) {
 return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
-> _No query provided!_
-
-*⚡Usage*   
-> _${νℓкуяє.prefix}${pfname} song/link_`
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νℓкуяє.args.join(" ").includes("yout")) {
-if (!νℓкуяє.TubeRegex.test(νℓкуяє.args.join(" "))) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _No query provided!_
+> _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} song/link_`
-);
-}
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var Audios = await νℓкуяє.TubeSearch(νℓкуяє.args.join(" "));
-if (!Audios) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _No Music Found!_`
+> _${νℓкуяє.prefix}${pfname} reply to Audio_`
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var oneAudio = Audios.videos.slice(0, 1);
-oneAudio.forEach(async function (one) {
-if (one.seconds > 1800) {
-return await νℓкуяє.imgB(
-νℓкуяє,
-νℓcнαт,
-`❌𝗘𝗿𝗿𝗼𝗿: _Choose Smaller Audio less then 30mins!_
-*🍻Title:* ${one.title}
-*⏰Duration:* ${one.timestamp}`,
-one.thumbnail
-);
-}
-var { DLoader, thumb, title, RSize, BSize } = await νℓкуяє.Tube_Audio(one.url, "en136");
-await νℓкуяє.imgB(
-νℓкуяє,
-νℓcнαт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*🍻Title:* ${one.title}
-*⭕Filter:* ${pfname}
-*🙈Views:* ${one.views}
-*⏰Duration:* ${one.timestamp}
-*✒️Author:* ${one.author.name}
-*🔗Link:* ${directShorten}
-*📜Description:* ${one.description}`,
-one.thumbnail
-);
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (/audio/.test(νℓкуяє.mime)) {
 random = Math.floor(Math.random() * 10000);
-νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${DLoader} -af "aresample=48000,asetrate=48000*1.25" ${random + one.videoId}.mp3`,
+media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, random);
+νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${media} -af "aecho=0.8:0.9:1000:0.3" ${random}.mp3`,
 async (error) => {
 return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -101,14 +54,14 @@ return νℓcнαт.reply(
 > ${error}`
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
+var Thumb = await νℓкуяє.getBuffer("https://i.postimg.cc/TPLYb38J/image.png");
 return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
-audio: νℓкуяє.fs.readFileSync(`${random + one.videoId}.mp3`),
+audio: νℓкуяє.fs.readFileSync(`${random}.mp3`),
 contextInfo: {
 externalAdReply: {
-title: `🍻Title: ${one.title}`,
+title: `*🎙️Filter:* _${pfname}_`,
 body: "νℓкуяє вσт ву кяукηz™",
 mediaType: 2,
 thumbnail: Thumb,
@@ -119,9 +72,19 @@ mimetype: "audio/mpeg",
 fileName: `${one.title}.mp3`,
 },
 { quoted: νℓcнαт }
-).then(νℓкуяє.fs.unlinkSync(`${random + one.videoId}.mp3`));
+).then(νℓкуяє.fs.unlinkSync(`${random}.mp3`));
 });
-});
+} else {
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Could not find any Audio in context!_
+
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} reply to Audio_`
+);
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
 return кяуcαℓℓ(error);

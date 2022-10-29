@@ -89,7 +89,8 @@ await νℓкуяє.imgB(
 one.thumbnail
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${DLoader} -af "asubboost" ${Date.now() + one.videoId}.mp3`,
+random = Math.floor(Math.random() * 10000);
+νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${DLoader} -af "asubboost" ${random + one.videoId}.mp3`,
 async (error) => {
 return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -104,7 +105,7 @@ var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
 return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
-audio: νℓкуяє.fs.readFileSync(`${Date.now() + one.videoId}.mp3`),
+audio: νℓкуяє.fs.readFileSync(`${random + one.videoId}.mp3`),
 contextInfo: {
 externalAdReply: {
 title: `🍻Title: ${one.title}`,
@@ -118,7 +119,7 @@ mimetype: "audio/mpeg",
 fileName: `${one.title}.mp3`,
 },
 { quoted: νℓcнαт }
-);
+).then(νℓкуяє.fs.unlinkSync(`${random + one.videoId}.mp3`));
 });
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
