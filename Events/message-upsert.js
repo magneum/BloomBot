@@ -77,7 +77,53 @@ Today = new Date();
 νℓкуяє.νℓpage.get("/", function (rege, νℓp) {
 νℓp.send(`<!DOCTYPE html>
 <html>
+<title>Vlkyre❣️by Kryknz</title>
 <style>
+#loader {
+border: 20px solid #f3f3f3;
+border-radius: 200%;
+border-top: 20px solid #833025;
+width: 120px;
+height: 120px;
+-webkit-animation: spin 4s linear infinite;
+animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+100% {
+transform: rotate(360deg);
+}
+}
+
+.center {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+@-webkit-keyframes spin {
+0% {
+-webkit-transform: rotate(0deg);
+}
+
+100% {
+-webkit-transform: rotate(360deg);
+}
+}
+
+@keyframes spin {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}
+
 hr.new1 {
 border-top: 1px solid rgb(167, 18, 18);
 font-family: "Times New Roman", Times, serif;
@@ -141,6 +187,11 @@ border-color: red;
 font-family: "Times New Roman", Times, serif;
 }
 
+
+
+
+
+
 /* 
 |⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
@@ -165,8 +216,25 @@ font-family: "Times New Roman", Times, serif;
 </head>
 
 <body>
+<div id="loader" class="center"></div>
+<script>
+document.onreadystatechange = function () {
+if (document.readyState !== "complete") {
+document.querySelector("body").style.visibility = "hidden";
+document.querySelector("#loader").style.visibility = "visible";
+} else {
+document.querySelector("#loader").style.display = "none";
+document.querySelector("body").style.visibility = "visible";
+}
+};
+</script>
 
-<body style="background-color: #1b1b1b">
+
+
+
+<!-- <div class="loader"></div> -->
+
+<body style="background-color: #1a1919">
 <header class="text-gray-400 body-font">
 <div id="Introduction" class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 <a href="#Groups"
@@ -424,9 +492,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 1</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href='https://chat.whatsapp.com/${
-νℓкуяє.resp1
-}'"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp1}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-1
 </button>
@@ -453,9 +519,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 2</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href='https://chat.whatsapp.com/${
-νℓкуяє.resp2
-}'"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp2}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-2
 </button>
@@ -482,9 +546,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 3</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href='https://chat.whatsapp.com/${
-νℓкуяє.resp3
-}'"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp3}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-3
 </button>
@@ -512,9 +574,7 @@ class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
 <span class="title-font font-medium text-white">Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ 4</span>
 <!-- <span class="text-gray-500 text-sm">▸ ♔𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</span> -->
 </span>
-<button onclick="window.location.href='https://chat.whatsapp.com/${
-νℓкуяє.resp4
-}'"
+<button onclick="window.location.href='https://chat.whatsapp.com/${νℓкуяє.resp4}'"
 class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 🤖Vlkyre-4
 </button>
@@ -550,30 +610,21 @@ class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outli
 class="flex title-font font-medium items-center text-white mb-4 md:mb-0 justify-center"><span
 class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span></a>
 
+<section class="text-gray-600 body-font">
+<div class="container px-5 py-24 mx-auto">
+<div class="flex flex-wrap -mx-4 -my-8">
 
-<section class="text-gray-400 body-font">
-<div id="Commands" class="container px-5 py-24 mx-auto flex flex-wrap">
-<div class="flex flex-col text-center w-full mb-20">
-<h1 class="sm:text-3xl text-2xl font-bold title-font text-white"><b>📂Vlkyre Commander
-Hub</b><br>⬡════⬡
-</h1>
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">💰</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
 </div>
-
-<div class="flex flex-wrap -m-4">
-<div class="p-4 md:w-1/3">
-<div class="flex rounded-lg h-full bg-red-900 bg-opacity-60 p-8 flex-col">
-<div class="flex items-center mb-3">
-<div
-class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-600 text-gray-900 flex-shrink-0">
-<svg fill="none" stroke="currentColor" stroke-linecap="round"
-stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-</svg>
-</div>
-<h2 class="text-white text-lg title-font font-medium">💰| Game Category</h2>
-</div>
-<div class="flex-grow">
-<p class="leading-relaxed text-base">
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">GAME CATEGORY</h1>
+<p class="leading-relaxed mb-5">
 shop,
 zoo,
 inv,
@@ -588,25 +639,368 @@ balance,
 rob,
 truthdare
 </p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Alper Kamu</span>
+</span>
+</a>
 </div>
 </div>
 </div>
 
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">⭕</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">YOUTUBE FILTER CATEGORY
+</h1>
+<p class="leading-relaxed mb-5">
+yt8d,
+ytbassboost,
+ytecho,
+ytflanger,
+ytnightcore,
+ytphaser,
+ytreverse,
+ytslow,
+ytspeed,
+ytsubboost,
+ytsuperslow,
+ytsuperspeed,
+ytsurround,
+ytvaporwave,
+ytvibrato
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+</span>
+</a>
+</div>
+</div>
+</div>
 
-<div class="p-4 md:w-1/3">
-<div class="flex rounded-lg h-full bg-red-900 bg-opacity-60 p-8 flex-col">
-<div class="flex items-center mb-3">
-<div
-class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-600 text-gray-900 flex-shrink-0">
-<svg fill="none" stroke="currentColor" stroke-linecap="round"
-stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-</svg>
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🍰</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
 </div>
-<h2 class="text-white text-lg title-font font-medium">🔎| Search Category</h2>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">SOUND FILTER CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+8d,
+bassboost,
+echo,
+fast,
+flanger,
+nightcore,
+phaser,
+reverse,
+slow,
+speed,
+subboost,
+superslow,
+superspeed,
+surround,
+vaporwave,
+vibrato
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Henry Letham</span>
+</span>
+</a>
 </div>
-<div class="flex-grow">
-<p class="leading-relaxed text-base">
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">👑</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">BOT OWNER</h1>
+<p class="leading-relaxed mb-5">
+join,
+dyno,
+ban,
+unban,
+broadcast,
+bugreport,
+help,
+reboot,
+broadcast,
+leave,
+spam
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Alper Kamu</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🍙</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">ANIMATION CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+bite,
+blush,
+bonk,
+bored,
+confused,
+cry,
+cuddle,
+dance,
+goodnight,
+happy,
+highfive,
+hug,
+kick,
+kill,
+kiss,
+nervous,
+pat,
+poke,
+punch,
+sad,
+scream,
+slap,
+smile,
+stare,
+wave,
+wink,
+yeet,
+yes
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🔰</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">GROUP MODERATION</h1>
+<p class="leading-relaxed mb-5">
+antilink,
+autorank,
+setwelcome,
+delete,
+promote,
+demote,
+warn,
+unwarn,
+invite,
+lock,
+unlock,
+admins,
+groupdp,
+kick,
+getdesc,
+getdp,
+tagall
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Henry Letham</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🦄</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">RANDOM CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+rank,
+leaderboard,
+joke,
+meme,
+trivia,
+fact,
+tr,
+tts,
+pokedex,
+triggered
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Alper Kamu</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🎨</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">PERSONALITY CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+gaycheck,
+lesbocheck,
+beautycheck,
+dumbcheck,
+gay,
+lesbo,
+beauty,
+dumb
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🥃</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">ADULT 18+ CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+4k,
+blowjob,
+milf,
+milk,
+pussy,
+slut,
+tikporn
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Henry Letham</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🍑</span>
+<span class="font-medium text-lg text-gray-200 title-font leading-none">⧩</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">HENTAI 16+ CATEGORY</h1>
+<p class="leading-relaxed mb-5">
+ass,
+bdsm,
+cum,
+doujin,
+feet,
+femdom,
+foxgirl,
+glasses,
+hentai,
+maid,
+masturbation,
+netorare,
+orgy,
+panties,
+pussy,
+school,
+tentacles,
+thighs,
+uniform,
+yuri
+</p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Alper Kamu</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">🔎</span>
+<span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
+</div>
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">SEARCH CATEGORY</h1>
+<p class="leading-relaxed mb-5">
 ytsearch,
 lyrics,
 github,
@@ -619,30 +1013,40 @@ tenor,
 gif,
 wallpaper
 </p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+</span>
+</a>
 </div>
 </div>
 </div>
 
-
-<div class="p-4 md:w-1/3">
-<div class="flex rounded-lg h-full bg-red-900 bg-opacity-60 p-8 flex-col">
-<div class="flex items-center mb-3">
-<div
-class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-600 text-gray-900 flex-shrink-0">
-<svg fill="none" stroke="currentColor" stroke-linecap="round"
-stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-</svg>
+<div class="py-8 px-4 lg:w-1/3">
+<div class="h-full flex items-start">
+<div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+<span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">📥</span>
+<span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
 </div>
-<h2 class="text-white text-lg title-font font-medium">📥| Downloader Category</h2>
-</div>
-<div class="flex-grow">
-<p class="leading-relaxed text-base">
+<div class="flex-grow pl-6">
+<h2 class="tracking-widest text-xs title-font font-medium text-red-400 mb-1"><b> /< ⟐>/
+</b></h2>
+<h1 class="title-font text-xl font-medium text-red-600 mb-3">DOWNLOADER CATEGORY</h1>
+<p class="leading-relaxed mb-5">
 play,
 watch,
 soundcloud,
 spotify
 </p>
+<a class="inline-flex items-center">
+<img alt="blog" src="https://i.postimg.cc/0y8YCLNk/Loading-GIF-Animation.gif"
+class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+<span class="flex-grow flex flex-col pl-3">
+<span class="title-font font-medium text-gray-900">Henry Letham</span>
+</span>
+</a>
 </div>
 </div>
 </div>
@@ -650,6 +1054,7 @@ spotify
 </div>
 </div>
 </section>
+
 <!--
 ╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 (𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬) ══════════════════════════════════════════⬡|
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
@@ -877,7 +1282,9 @@ INFORMATION CONSOLE</b></h3>
 <h2 class="text-lg text-white font-medium title-font mb-4"> </h2>
 <p class="leading-relaxed text-base"><b>⏰ Time:</b><br>> <I>${Today.getHours()}h :
 ${Today.getMinutes()}m : ${Today.getSeconds()}s</I></p>
-<p class="leading-relaxed text-base"><b>🗓️ Date:</b><br>> <I>${Today.getDate()}d : ${Today.getMonth() + 1}m : ${Today.getFullYear()}y</I></p>
+<p class="leading-relaxed text-base"><b>🗓️ Date:</b><br>> <I>${Today.getDate()}d : ${
+Today.getMonth() + 1
+}m : ${Today.getFullYear()}y</I></p>
 </div>
 </div>
 <div class="xl:w-1/4 md:w-1/2 p-4">
