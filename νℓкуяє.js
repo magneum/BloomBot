@@ -18,6 +18,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
 console.error(error, "Uncaught Exception....");
 });
+
 require("./Core/νc໐rē.js");
 require("./process");
 var {
@@ -45,6 +46,7 @@ var Krone = require("node-cron");
 var monGoose = require("mongoose");
 var FileType = require("file-type");
 var moment = require("moment-timezone");
+var Authenticator = require("./Core/Authenticator");
 var {
 νkmake,
 formatp,
@@ -101,7 +103,19 @@ console.log(error);
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function run() {
-var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
+var c = require("./process");
+var sequelize = c.DATABASE;
+try {
+await sequelize.authenticate();
+console.log("[INFO] Connection has been established successfully.");
+} catch (error) {
+console.error("[ERROR] Unable to connect to the database:", error);
+}
+console.log("[INFO] Syncing Database...");
+await sequelize.sync();
+
+// var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
+var { state, saveCreds } = await Authenticator();
 νℓpage = express();
 vport = process.env.PORT || 8080;
 // νℓpage.get("/", function (rege, νℓp) {

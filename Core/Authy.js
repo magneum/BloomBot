@@ -19,9 +19,9 @@ return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.slot = exports.credentials = void 0;
-var config = impModule(require("../process"));
+require("../process")
 var seql = require("sequelize");
-var Sequelize = config.default.DATABASE;
+var Sequelize = DATABASE;
 class credentials extends seql.Model {
 }
 exports.credentials = credentials;

@@ -76,15 +76,32 @@ log = console.log;
 }
 return log;
 };
-process.env.DATABASE_URL = process.env.DATABASE_URL === undefined ? "./νℓкуяє.db" : process.env.DATABASE_URL;
+process.env.DATABASE_URL =
+process.env.DATABASE_URL === undefined
+? "./νℓкуяє.db"
+: process.env.DATABASE_URL;
 process.env.DEBUG = process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
-const config = {
-DATABASE_URL: process.env.DATABASE_URL === undefined ? "./νℓкуяє.db" : process.env.DATABASE_URL,
+const c = {
+DATABASE_URL:
+process.env.DATABASE_URL === undefined
+? "./νℓкуяє.db"
+: process.env.DATABASE_URL,
 DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
-DATABASE: process.env.DATABASE_URL === "./νℓкуяє.db" ? new sequelize.Sequelize({ dialect: "sqlite", storage: process.env.DATABASE_URL, logging: convertToLogLevel(process.env.DEBUG) }) : 
-new sequelize.Sequelize(process.env.DATABASE_URL, { dialect: "postgres", protocol: "postgres", logging: convertToLogLevel(process.env.DEBUG), dialectOptions: { ssl: { require: true, rejectUnauthorized: false } } }),
+DATABASE:
+process.env.DATABASE_URL === "./νℓкуяє.db"
+? new sequelize.Sequelize({
+dialect: "sqlite",
+storage: process.env.DATABASE_URL,
+logging: convertToLogLevel(process.env.DEBUG),
+})
+: new sequelize.Sequelize(process.env.DATABASE_URL, {
+dialect: "postgres",
+protocol: "postgres",
+logging: convertToLogLevel(process.env.DEBUG),
+dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+}),
 };
-exports.default = config;
+exports.default = c;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 

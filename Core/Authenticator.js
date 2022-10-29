@@ -91,7 +91,7 @@ keys[type][key] = val;
 return keys;
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var SaveAuthCreds = (data) =>
+var saveCreds = (data) =>
 _impHold(void 0, void 0, void 0, function* () {
 if (!data) {
 console.log("Saving all creds");
@@ -199,7 +199,7 @@ keys = final.keys;
 } else {
 creds = (0, Baileys.initAuthCreds)();
 keys = {};
-SaveAuthCreds();
+saveCreds();
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 return {
@@ -235,7 +235,7 @@ yield saveKey(key, data, _key);
 }),
 },
 },
-SaveAuthCreds,
+saveCreds,
 };
 });
 };
