@@ -187,7 +187,7 @@ class="flex title-font font-medium items-center text-white mb-4 md:mb-0 justify-
 
 <button onclick="window.location.href='https://github.com/KryKnz'" class="inline-flex 
 items-center 
-bg-red-600 
+bg-red-700 
 text-white 
 py-1 px-3 
 focus:outline-none 
@@ -384,9 +384,10 @@ d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 2
 ╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 <a href="/" class="mr-5 text-red-400 hover:text-white">| Home </a>
-<a href="/Command" class="mr-5 text-red-400 hover:text-white">| Commands</a>
-<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
-<a href="/Group" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Commands" class="mr-5 text-red-400 hover:text-white">| Commands</a>
+<a href="#FAQs" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
+<a href="#Groups" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Console" class="mr-5 text-red-400 hover:text-white">| Console</a>
 </nav>
 <hr style="height:6px;border-top:1px solid #666666" />
 <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
@@ -397,7 +398,7 @@ class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span><
 
 
 <section class="text-gray-400 body-font">
-<div class="container px-5 py-24 mx-auto">
+<div id="Groups" class="container px-5 py-24 mx-auto">
 <h1 class="text-3xl font-medium title-font text-white mb-12 text-center text-white">🤩Official Vlkyre
 Groups<br>⬡════⬡
 </h1>
@@ -538,9 +539,10 @@ class="ml-4 inline-flex text-gray-900 bg-gray-200 border-0 py-2 px-6 focus:outli
 ╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 <a href="/" class="mr-5 text-red-400 hover:text-white">| Home </a>
-<a href="/Command" class="mr-5 text-red-400 hover:text-white">| Commands</a>
-<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
-<a href="/Group" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Commands" class="mr-5 text-red-400 hover:text-white">| Commands</a>
+<a href="#FAQs" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
+<a href="#Groups" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Console" class="mr-5 text-red-400 hover:text-white">| Console</a>
 </nav>
 <hr style="height:6px;border-top:1px solid #666666" />
 <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
@@ -550,7 +552,7 @@ class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span><
 
 
 <section class="text-gray-400 body-font">
-<div class="container px-5 py-24 mx-auto flex flex-wrap">
+<div id="Commands" class="container px-5 py-24 mx-auto flex flex-wrap">
 <div class="flex flex-col text-center w-full mb-20">
 <h1 class="sm:text-3xl text-2xl font-bold title-font text-white"><b>📂Vlkyre Commander
 Hub</b><br>⬡════⬡
@@ -662,9 +664,10 @@ spotify
 ╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 <a href="/" class="mr-5 text-red-400 hover:text-white">| Home </a>
-<a href="/Command" class="mr-5 text-red-400 hover:text-white">| Commands</a>
-<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
-<a href="/Group" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Commands" class="mr-5 text-red-400 hover:text-white">| Commands</a>
+<a href="#FAQs" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
+<a href="#Groups" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Console" class="mr-5 text-red-400 hover:text-white">| Console</a>
 </nav>
 <hr style="height:6px;border-top:1px solid #666666" />
 <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
@@ -674,7 +677,7 @@ class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span><
 
 
 <section class="text-gray-400 body-font">
-<div class="container px-5 py-24 mx-auto flex flex-wrap">
+<div id="FAQs" class="container px-5 py-24 mx-auto flex flex-wrap">
 <h1 class="text-3xl font-medium title-font text-white mb-12 text-center text-white"><b>❓Frequently
 Asked Questions - FAQs<br>⬡════⬡
 </b></h1>
@@ -811,9 +814,10 @@ src="https://i.postimg.cc/nLNqccRh/vlkyre.gif" alt="step">
 ╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 <a href="/" class="mr-5 text-red-400 hover:text-white">| Home </a>
-<a href="/Command" class="mr-5 text-red-400 hover:text-white">| Commands</a>
-<a href="/FAQ" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
-<a href="/Group" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Commands" class="mr-5 text-red-400 hover:text-white">| Commands</a>
+<a href="#FAQs" class="mr-5 text-red-400 hover:text-white">| FAQs</a>
+<a href="#Groups" class="mr-5 text-red-400 hover:text-white">| Groups</a>
+<a href="#Console" class="mr-5 text-red-400 hover:text-white">| Console</a>
 </nav>
 <hr style="height:6px;border-top:1px solid #666666" />
 <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
@@ -823,7 +827,7 @@ class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span><
 
 
 <section class="text-gray-400 body-font">
-<div class="container px-5 py-24 mx-auto">
+<div id="Console" class="container px-5 py-24 mx-auto">
 <div class="flex flex-wrap w-full mb-20">
 <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"><b>🎐Live Information
@@ -962,6 +966,7 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 </footer>
 </body>
 </body>
+
 </html>`);
 });
 // spinnies.succeed("νℓкуяє", { text: coreback });
