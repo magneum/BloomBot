@@ -45,7 +45,7 @@ var express = require("express");
 var Krone = require("node-cron");
 var monGoose = require("mongoose");
 var FileType = require("file-type");
-var dbAuth = require("./🍂𝖘𝖖𝖑/Auth");
+var dbAuth = require("./Core/Auth");
 var moment = require("moment-timezone");
 var {
 νkmake,
@@ -103,28 +103,17 @@ console.log(error);
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function run() {
-var c = require("./process");
 try {
 await sequelize.authenticate();
-console.log("[INFO] Connection has been established successfully.");
-} catch (error) {
-console.error("[ERROR] Unable to connect to the database:", error);
-}
-console.log("[INFO] Syncing Database...");
 await sequelize.sync();
-// var { state, saveCreds } = await useMultiFileAuthState("νℓкуяє.кяукηz");
+console.log(" Connection has been established successfully....");
+} catch (error) {
+console.error("Unable to connect to the database:", error);
+process.exit(0);
+}
 let { state, Adapt } = await dbAuth();
 νℓpage = express();
 vport = process.env.PORT || 8080;
-// νℓpage.get("/", function (rege, νℓp) {
-// νℓp.sendFile("Pages/Home.html", { root: __dirname });
-// });
-// νℓpage.get("/FAQ", function (rege, νℓp) {
-// νℓp.sendFile("Pages/FAQ.html", { root: __dirname });
-// });
-// νℓpage.get("/Command", function (rege, νℓp) {
-// νℓp.sendFile("Pages/Command.html", { root: __dirname });
-// });
 νℓpage.listen(vport, () => {
 console.log("🦋𝐒𝐞𝐫𝐯𝐞𝐫 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐈𝐧: http://localhost:" + vport);
 });
