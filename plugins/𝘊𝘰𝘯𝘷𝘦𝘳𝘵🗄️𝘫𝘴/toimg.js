@@ -40,10 +40,12 @@ return νℓcнαт.reply(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-name = Math.floor(Math.random() * 10000) + ".png";
 if (/image/.test(νℓкуяє.mime)) {
-media = await νℓкуяє.quoted.download();
-νℓкуяє.exec(νℓкуяє.pathFFmpeg + ` -i ${media} ${name}`, async (error) => {
+random = Math.floor(Math.random() * 10000);
+media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, random);
+νℓкуяє.exec(
+νℓкуяє.pathFFmpeg + ` -i ${media} ${random}.png`,
+async (error) => {
 if (error) {
 return νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -55,15 +57,66 @@ return νℓcнαт.reply(
 );
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-let buffer = νℓкуяє.fs.readFileSync(name);
-await νℓкуяє.imgB(
-νℓкуяє,
-νℓcнαт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
-buffer
+if (νℓкуяє.fs.existsSync(random + ".png")) {
+Found = random + ".png";
+} else if (νℓкуяє.fs.existsSync(random + ".jpg")) {
+Found = random + ".jpg";
+} else if (νℓкуяє.fs.existsSync(random + ".jpeg")) {
+Found = random + ".jpeg";
+} else if (νℓкуяє.fs.existsSync(random + ".webp")) {
+Found = random + ".webp";
+} else {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _Could not find any Image in context!_
+
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} reply to Image_`
 );
-});
-await νℓкуяє.fs.unlinkSync(name);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+return await νℓкуяє
+.sendMessage(
+νℓcнαт.chat,
+{
+image: νℓкуяє.fs.readFileSync(Found),
+caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
+│║⦁ *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ *🎭ChatId:* ${νℓcнαт.chat.split("@")[0]}
+│║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
+╰╚═══════⋑
+
+*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
+footer: `*VLKYRE™ Bot By KRYKNZ*
+
+_*💻HomePage:* ${νℓкуяє.ShowInfo}_
+_*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
+mentions: [νℓcнαт.sender],
+buttons: [
+{
+buttonId: `${νℓкуяє.prefix}Commands`,
+buttonText: { displayText: `${νℓкуяє.prefix}✈️Commands` },
+type: 1,
+},
+{
+buttonId: `${νℓкуяє.prefix}Vlkyre`,
+buttonText: { displayText: `${νℓкуяє.prefix}🛰️Vlkyre` },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: νℓcнαт,
+}
+)
+.then(
+νℓкуяє.fs.unlinkSync(Found),
+νℓкуяє.fs.unlinkSync(random + ".png")
+);
+}
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
 return νℓcнαт.reply(

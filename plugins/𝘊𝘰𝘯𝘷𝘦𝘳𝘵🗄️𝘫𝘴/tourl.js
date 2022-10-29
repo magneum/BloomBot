@@ -43,6 +43,7 @@ return νℓcнαт.reply(
 if (/image/.test(νℓкуяє.mime)) {
 media = await νℓкуяє.quoted.download();
 upload = await νℓкуяє.TelegraPh(media);
+console.log(media, upload);
 await νℓкуяє.imgB(
 νℓкуяє,
 νℓcнαт,
