@@ -62,9 +62,9 @@ log = console.log;
 }
 return log;
 };
-process.env.DATABASE_URL =process.env.DATABASE_URL === undefined? "./νℓкуяє.kz": process.env.DATABASE_URL;
-global.DATABASE_URL =process.env.DATABASE_URL === undefined? "./νℓкуяє.kz": process.env.DATABASE_URL;
-global.DATABASE =process.env.DATABASE_URL === "./νℓкуяє.kz"
+process.env.DATABASE_URL =process.env.DATABASE_URL === undefined? "./νℓкуяє.db": process.env.DATABASE_URL;
+global.DATABASE_URL =process.env.DATABASE_URL === undefined? "./νℓкуяє.db": process.env.DATABASE_URL;
+global.DATABASE =process.env.DATABASE_URL === "./νℓкуяє.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
