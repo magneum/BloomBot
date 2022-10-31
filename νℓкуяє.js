@@ -137,8 +137,6 @@ ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 await autoPoke.start();
 var sequelize = DATABASE;
-var FileAuth = require("./Core/Authenticator");
-var { state, saveCreds } = await FileAuth.useRemoteFileAuthState();
 try {
 await sequelize.authenticate();
 ShowGreen("🦋Info: ", " Connected with (useRemoteFileAuthState)...");
@@ -150,7 +148,7 @@ process.exit(0);
 await sequelize.sync();
 ShowYellow("🦋Info: ", "Syncing Database...");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-// var { state, saveState } = await useSingleFileAuthState(кяу);
+var { state, saveState } = await useSingleFileAuthState(кяу);
 var νℓкуяє = кяуνℓ({
 auth: state,
 printQRInTerminal: true,
@@ -182,15 +180,15 @@ store,
 νℓкуяє.ev.on("group-participants.update", async (update, νℓкуяє) => {
 await require("./Events/group-parts")(update);
 });
-// νℓкуяє.ev.on("connection.update", async (update) => {
-// await require("./Events/connection")(
-// update,
-// νℓкуяє,
-// DisconnectReason,
-// кяукηz,
-// кяу
-// );
-// });
+νℓкуяє.ev.on("connection.update", async (update) => {
+await require("./Events/connection")(
+update,
+νℓкуяє,
+DisconnectReason,
+кяукηz,
+кяу
+);
+});
 νℓкуяє.ev.on("contacts.update", async (update) => {
 await require("./Events/contacts")(update, νℓкуяє, store);
 });
