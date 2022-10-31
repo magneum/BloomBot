@@ -143,7 +143,7 @@ async function кяукηz() {
   await autoPoke.start();
   var sequelize = DATABASE;
   var dbAuth_1 = __importDefault(require("./Core/Authenticator"));
-  var { saveCreds } = yield(0, dbAuth_1.default)();
+  var { saveCreds } = await dbAuth_1.default();
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   var { state, saveState } = await useSingleFileAuthState(кяу);
   try {
