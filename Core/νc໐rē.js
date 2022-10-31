@@ -105,6 +105,127 @@ return νℓcнαт.reply(
 if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
 if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+await νℓкуяє.LinkList.findOne(
+{
+serverID: νℓcнαт.chat,
+},
+async (error, server) => {
+if (error) {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error*
+> _There has been an API Error. Please try again later._
+
+*🐞Bug*
+> ${error}`
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (!server) return;
+let currentGcL = await νℓкуяє.groupInviteCode(νℓcнαт.chat);
+let gcRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+let isGcL = gcRegex.exec(νℓкуяє.body);  
+let presentGcL = new RegExp("https://chat.whatsapp.com/" + currentGcL, "i");
+let isCurrentGcL = presentGcL.test(νℓкуяє.body);
+if (isGcL && !isCurrentGcL) {
+await νℓcнαт.reply(
+`*❌Anti-Link*
+> _Sent some type of Link in this Group!_
+
+*🐞Status*
+> Kicked!`
+);
+await νℓкуяє
+.sendMessage(νℓcнαт.chat, {
+delete: {
+remoteJid: νℓcнαт.chat,
+fromMe: false,
+id: νℓкуяє.quoted.id,
+participant: νℓкуяє.quoted.sender,
+},
+})
+.catch((error) => {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error*
+> _There has been an API Error. Please try again later._
+
+*🐞Bug*
+> ${error}`
+);
+});
+return await νℓкуяє
+.groupParticipantsUpdate(
+νℓcнαт.chat,
+[νℓcнαт.sender],
+"remove"
+)
+.catch((error) => {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error*
+> _There has been an API Error. Please try again later._
+
+*🐞Bug*
+> ${error}`
+);
+});
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (
+νℓкуяє.body.includes("https://t.me/") &&
+νℓкуяє.body.includes("discord.com") &&
+νℓкуяє.body.includes("discord.gg") &&
+νℓкуяє.body.includes("/t.me/") &&
+νℓкуяє.body.includes("wa.me/") &&
+νℓкуяє.body.includes("www.")
+) {
+await νℓcнαт.reply(
+`*❌Anti-Link*
+> _Sent some type of Link in this Group!_
+
+*🐞Status*
+> Kicked!`
+);
+await νℓкуяє
+.sendMessage(νℓcнαт.chat, {
+delete: {
+remoteJid: νℓcнαт.chat,
+fromMe: false,
+id: νℓкуяє.quoted.id,
+participant: νℓкуяє.quoted.sender,
+},
+})
+.catch((error) => {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error*
+> _There has been an API Error. Please try again later._
+
+*🐞Bug*
+> ${error}`
+);
+});
+return await νℓкуяє
+.groupParticipantsUpdate(
+νℓcнαт.chat,
+[νℓcнαт.sender],
+"remove"
+)
+.catch((error) => {
+return νℓcнαт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error*
+> _There has been an API Error. Please try again later._
+
+*🐞Bug*
+> ${error}`
+);
+});
+}
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 respA = await νℓкуяє.groupMetadata("120363020792949649@g.us");
 respB = await νℓкуяє.groupMetadata("120363039223842047@g.us");
 respC = await νℓкуяє.groupMetadata("120363024871653603@g.us");
