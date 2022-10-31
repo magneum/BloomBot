@@ -103,7 +103,7 @@ if (
 νℓкуяє.args[1] === "on" ||
 νℓкуяє.args[1] === "On"
 ) {
-return await LinkList.findOne(
+return await νℓкуяє.LinkList.findOne(
 {
 serverID: νℓcнαт.chat,
 },
@@ -120,7 +120,7 @@ return νℓcнαт.reply(
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (!server) {
-let newServer = new LinkList({
+let newServer = new νℓкуяє.LinkList({
 serverID: νℓcнαт.chat,
 value: "ON",
 });
@@ -147,7 +147,7 @@ return await νℓкуяє.imgB(
 νℓкуяє.args[1] === "off" ||
 νℓкуяє.args[1] === "Off"
 ) {
-return await LinkList.findOne(
+return await νℓкуяє.LinkList.findOne(
 {
 serverID: νℓcнαт.chat,
 },
