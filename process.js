@@ -54,7 +54,7 @@ global.keyApi = {
 "https://pencarikode.xyz": process.env.pencarikodeApi,
 "https://leyscoders-api.herokuapp.com": process.env.leyscodersApi,
 };
-
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
 function ShowRed(Topic, Text) {
 let TShow = chalk.hex("#ff6347").bold(Topic);
@@ -66,7 +66,8 @@ let TShow = chalk.hex("#2D5A27").bold(Topic);
 let Show = chalk.hex("#849871").italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
-await monGoose.connect(process.env.mongodb, {
+await monGoose
+.connect(process.env.mongodb, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
@@ -79,7 +80,6 @@ process.exit(0);
 })
 .then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
 })();
-
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var Log = (value) => {
 var log = false;
