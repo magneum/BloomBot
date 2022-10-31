@@ -13,7 +13,6 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-let QR_GENERATE = "invalid";
 module.exports = async (update, νℓкуяє, DisconnectReason, кяукηz) => {
 var { lastDisconnect, connection, qr } = update;
 var { Boom } = require("@hapi/boom");
@@ -40,43 +39,33 @@ let Show = chalk.hex("#ECCF8D").italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (connection == "open")
-ShowGreen("🟢νℓкуяє: ", "Successfully connected to whatsapp");
+if (connection == "open") ShowGreen("🟢νℓкуяє: ", "Successfully connected to whatsapp...");
 if (connection === "close") {
-ShowRed("🔴 νℓкуяє: ", "Connection terminated...");
+ShowRed("🔴Error: ", "Connection terminated...");
 let reason = new Boom(lastDisconnect.error).output.statusCode;
 if (reason === DisconnectReason.badSession) {
-ShowRed("🔴 νℓкуяє: ", "Bad Session File, Please Scan Again...");
-νℓкуяє.logout();
+ShowRed("🔴Error: ", "Bad Session File.Please Scan Again...");
+process.exit(0);
 } else if (reason === DisconnectReason.connectionClosed) {
-ShowYellow("🟡 νℓкуяє: ", "Connection closed, reconnecting....");
-кяукηz();
+ShowYellow("🟡Info: ", "Connection closed.Reconnecting....");
+await кяукηz();
 } else if (reason === DisconnectReason.connectionLost) {
-ShowBlue("🔵 νℓкуяє: ", "Connection Lost from Server, reconnecting...");
-кяукηz();
+ShowBlue("🔵Info: ", "Connection Lost from Server.Reconnecting...");
+await кяукηz();
 } else if (reason === DisconnectReason.connectionReplaced) {
-ShowRed(
-"🔴 νℓкуяє: ",
-"Connection Replaced, Another New Session Opened, Please Close Current Session First..."
-);
-νℓкуяє.logout();
-if (fs.existsSync("νℓкуяє.кяу")) {
-fs.unlinkSync("νℓкуяє.кяу");
-}
-кяукηz();
+ShowRed("🔴Error: ","Connection Replaced, Another New Session Opened.Please Close Current Session First...");
+if (fs.existsSync("νℓкуяє.кяу")) fs.unlinkSync("νℓкуяє.кяу");
+await кяукηz();
 } else if (reason === DisconnectReason.loggedOut) {
-ShowRed("🔴 νℓкуяє: ", "Device Logged Out, Please Scan Again...");
-νℓкуяє.logout();
-if (fs.existsSync("νℓкуяє.кяу")) {
-fs.unlinkSync("νℓкуяє.кяу");
-}
-кяукηz();
+ShowRed("🔴Error: ", "Device Logged Out.Please Scan Again...");
+if (fs.existsSync("νℓкуяє.кяу")) fs.unlinkSync("νℓкуяє.кяу");
+await кяукηz();
 } else if (reason === DisconnectReason.restartRequired) {
-ShowYellow("🟡 νℓкуяє: ", "Restart Required, Restarting...");
-кяукηz();
+ShowYellow("🟡Info: ", "Restart Required.Restarting...");
+await кяукηz();
 } else if (reason === DisconnectReason.timedOut) {
-ShowYellow("🟡 νℓкуяє: ", "Connection TimedOut, Reconnecting...");
-кяукηz();
+ShowYellow("🟡Info: ", "Connection Timedout.Reconnecting...");
+await кяукηz();
 } else {
 νℓкуяє.end(`Unknown DisconnectReason: ${reason}|${lastDisconnect.error}`);
 }
@@ -84,8 +73,8 @@ ShowYellow("🟡 νℓкуяє: ", "Connection TimedOut, Reconnecting...");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (qr) {
 console.clear();
-ShowBlue("🔵 νℓкуяє: ", "New QR generated. Please Scan...");
-QR_GENERATE = qr;
+ShowYellow("🦋Info: ", qr);
+ShowBlue("🔵Info: ", "New QR generated.Please Scan...");
 }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
