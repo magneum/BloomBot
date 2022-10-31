@@ -20,7 +20,6 @@ process.on("uncaughtException", (error) => {
 });
 require("./Core/νc໐rē.js");
 require("./process.js");
-кяу = "νℓкуяє.кяу";
 var {
   default: кяуνℓ,
   useSingleFileAuthState,
@@ -148,13 +147,13 @@ async function кяукηz() {
   await sequelize.sync();
   ShowYellow("🦋Info: ", "Syncing Database...");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  var { state, saveState } = await useSingleFileAuthState(кяу);
+  var { state, saveState } = await useSingleFileAuthState("νℓкуяє.кяу");
   var νℓкуяє = кяуνℓ({
     auth: state,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
     defaultQueryTimeoutMs: undefined,
-    browser: [`Vlkyre: ${upVersion || "vBeta"}`, "Safari", "1.0.1"],
+    browser: [`Vlkyre: ${upVersion}`, "Chrome", "1.0.0"],
     version: getVersionWaweb() || [2, 2204, 13],
     msgRetryCounterMap,
     getMessage: async (data) => {
@@ -185,8 +184,7 @@ async function кяукηz() {
       update,
       νℓкуяє,
       DisconnectReason,
-      кяукηz,
-      кяу
+      кяукηz
     );
   });
   νℓкуяє.ev.on("contacts.update", async (update) => {

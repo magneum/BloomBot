@@ -14,7 +14,7 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 let QR_GENERATE = "invalid";
-module.exports = async (update, νℓкуяє, DisconnectReason, кяукηz, кяу) => {
+module.exports = async (update, νℓкуяє, DisconnectReason, кяукηz) => {
 var { lastDisconnect, connection, qr } = update;
 var { Boom } = require("@hapi/boom");
 var chalk = require("chalk");
@@ -59,17 +59,17 @@ ShowRed(
 "🔴 νℓкуяє: ",
 "Connection Replaced, Another New Session Opened, Please Close Current Session First..."
 );
-if (fs.existsSync(кяу)) {
-fs.unlinkSync(кяу);
-}
 νℓкуяє.logout();
+if (fs.existsSync("νℓкуяє.кяу")) {
+fs.unlinkSync("νℓкуяє.кяу");
+}
 кяукηz();
 } else if (reason === DisconnectReason.loggedOut) {
 ShowRed("🔴 νℓкуяє: ", "Device Logged Out, Please Scan Again...");
-if (fs.existsSync(кяу)) {
-fs.unlinkSync(кяу);
-}
 νℓкуяє.logout();
+if (fs.existsSync("νℓкуяє.кяу")) {
+fs.unlinkSync("νℓкуяє.кяу");
+}
 кяукηz();
 } else if (reason === DisconnectReason.restartRequired) {
 ShowYellow("🟡 νℓкуяє: ", "Restart Required, Restarting...");
