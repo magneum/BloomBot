@@ -5,7 +5,7 @@
     "dev": "enode --no-warnings νℓкуяє.js"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/baileys": "4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@canvas-fonts/arial-bold": "^1.0.4",
     "@nuintun/qrcode": "^3.0.1",
