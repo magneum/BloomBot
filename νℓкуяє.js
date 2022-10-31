@@ -20,7 +20,6 @@ process.on("uncaughtException", (error) => {
 });
 require("./Core/νc໐rē.js");
 require("./process.js");
-// var sequelize = DATABASE;
 var {
   default: νℓкуяєConnect,
   useSingleFileAuthState,
@@ -46,10 +45,6 @@ var Krone = require("node-cron");
 var monGoose = require("mongoose");
 var FileType = require("file-type");
 var moment = require("moment-timezone");
-// const config_1 = require("./config");
-// const sequelize = config_1.default.DATABASE;
-// const dbAuth_js_1 = require("./database/dbAuth.js");
-// var Authenticator = require("./Core/Authenticator");
 var {
   νkmake,
   formatp,
@@ -77,6 +72,28 @@ var {
   writeExifImg,
   writeExifVid,
 } = require("./Core/exif");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+function ShowRed(Topic, Text) {
+  let TShow = chalk.hex("#ff6347").bold(Topic);
+  let Show = chalk.hex("#ed7777").italic.bold(Text);
+  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowBlue(Topic, Text) {
+  let TShow = chalk.hex("#008B8B").bold(Topic);
+  let Show = chalk.hex("#818d94").italic.bold(Text);
+  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowGreen(Topic, Text) {
+  let TShow = chalk.hex("#2D5A27").bold(Topic);
+  let Show = chalk.hex("#849871").italic.bold(Text);
+  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+function ShowYellow(Topic, Text) {
+  let TShow = chalk.hex("#8B8000").bold(Topic);
+  let Show = chalk.hex("#ECCF8D").italic.bold(Text);
+  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var store = makeInMemoryStore({
   logger: pino().child({ level: "silent", stream: "store" }),
 });
@@ -106,35 +123,18 @@ var autoPoke = Krone.schedule(
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function run() {
-  // try {
-  // await sequelize.authenticate();
-  // await sequelize.sync();
-  // console.log(" Connection has been established successfully....");
-  // } catch (error) {
-  // console.error("Unable to connect to the database:", error);
-  // process.exit(0);
-  // }
-  // var Auth = require("./🍂𝖘𝖖𝖑/Auth");
-  // var {state, saveCreds} = await Auth();
-  // let { state, saveCreds } = await Authenticator.default();
-  var { state, saveState } = await useSingleFileAuthState("νℓкуяє.db");
-  // try {
-  // await sequelize.authenticate();
-  // console.log("[INFO] Connection has been established successfully.");
-  // } catch (error) {
-  // console.error("[ERROR] Unable to connect to the database:", error);
-  // }
-  // console.log("[INFO] Syncing Database...");
-  // await sequelize.sync();
-  // const { state, saveCreds } = await dbAuth_js_1.useRemoteFileAuthState();
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓpage = express();
   vport = process.env.PORT || 8080;
   νℓpage.listen(vport, () => {
-    console.log("🦋𝐒𝐞𝐫𝐯𝐞𝐫 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐈𝐧: http://localhost:" + vport);
+    if (fs.existsSync(".env")) {
+      ShowGreen("🦋Info: Local Server: http://localhost: ", vport);
+    } else {
+      ShowGreen("🦋Info: Website live: ", ShowInfo);
+      ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
+    }
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  autoPoke.start();
+  await autoPoke.start();
   await monGoose
     .connect(mongodb, {
       useNewUrlParser: true,
@@ -143,17 +143,36 @@ async function run() {
       useFindAndModify: false,
     })
     .catch((error) => {
-      console.log("❌Error: Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔.....");
+      ShowRed("❌Error: ", "Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔.....");
       console.log(error);
       process.exit(0);
     })
-    .then(console.log("Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
+    .then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  var sequelize = DATABASE;
+  var dbAuthen = require("./Core/Authy");
+  var Authenticator = require("./Core/Authenticator");
+  var { saveCreds } = await dbAuthen.useRemoteFileAuthState();
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  var { state, saveState } = await useSingleFileAuthState("νℓкуяє.db");
+  try {
+    await sequelize.authenticate();
+    ShowGreen("🦋Info: ", " Connected with (useRemoteFileAuthState)...");
+  } catch (error) {
+    console.log(error);
+    ShowRed("❌Error: ", "Unable to connect (useRemoteFileAuthState)...");
+    process.exit(0);
+  } finally {
+    await sequelize.sync();
+    ShowYellow("🦋Info: ", "Syncing Database...");
+  }
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   var νℓкуяє = νℓкуяєConnect({
     auth: state,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
     defaultQueryTimeoutMs: undefined,
-    browser: [`vlkyre: ${upVersion || "v5"}`, "Chrome", "4.0.0"],
+    browser: [`Vlkyre: ${upVersion || "vBeta"}`, "Safari", "1.0.1"],
     version: getVersionWaweb() || [2, 2204, 13],
     msgRetryCounterMap,
     getMessage: async (data) => {
@@ -174,7 +193,6 @@ async function run() {
       );
     } else return jid;
   };
-
   νℓкуяє.getName = (jid, withoutContact = false) => {
     id = νℓкуяє.decodeJid(jid);
     withoutContact = νℓкуяє.withoutContact || withoutContact;
@@ -210,7 +228,7 @@ async function run() {
       )
     );
   };
-
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
