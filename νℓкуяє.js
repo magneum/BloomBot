@@ -151,9 +151,8 @@ process.exit(0);
 .then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var sequelize = DATABASE;
-var dbAuthen = require("./Core/Authy");
 var Authenticator = require("./Core/Authenticator");
-var { saveCreds } = await dbAuthen.useRemoteFileAuthState();
+var { saveCreds } = await Authenticator.default.Authenticator();
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var { state, saveState } = await useSingleFileAuthState(кяу);
 try {
