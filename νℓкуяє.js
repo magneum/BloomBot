@@ -136,19 +136,17 @@ ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 await autoPoke.start();
-await monGoose
-.connect(mongodb, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((error) => {
-ShowRed("❌Error: ", "Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔.....");
-console.log(error);
-process.exit(0);
-})
-.then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
+// await monGoose.connect(mongodb, {
+// useNewUrlParser: true,
+// useUnifiedTopology: true,
+// useCreateIndex: true,
+// useFindAndModify: false,
+// }).catch((error) => {
+// ShowRed("❌Error: ", "Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔.....");
+// console.log(error);
+// process.exit(0);
+// })
+// .then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var sequelize = DATABASE;
 var Authenticator = require("./Core/Authenticator");
