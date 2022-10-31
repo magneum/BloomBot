@@ -139,41 +139,6 @@ return await νℓкуяє.imgB(
 "https://i.postimg.cc/G2YxctNp/Verity-Vlkyre.png"
 );
 }
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var present = Date.now();
-νℓкуяє.Halt.findOne(
-{
-ID: νℓcнαт.sender,
-},
-async (error, wait) => {
-if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (!wait) {
-new νℓкуяє.Halt({
-ID: νℓcнαт.sender,
-TimeOut: present,
-PermaTimeOut: 10000,
-})
-.save()
-.catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
-});
 return await require("./router")(
 νℓкуяє,
 νℓcнαт,
@@ -182,55 +147,97 @@ spinnies,
 coreback
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else if (
-wait.PermaTimeOut - (Date.now() - wait.TimeOut) >
-0
-) {
-let Time = νℓкуяє.ms(
-wait.PermaTimeOut - (present - wait.TimeOut)
-);
-wait.PermaTimeOut = 10000;
-wait.TimeOut = present;
-await wait.save().catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
+// var present = Date.now();
+// νℓкуяє.Halt.findOne(
+// {
+// ID: νℓcнαт.sender,
+// },
+// async (error, wait) => {
+// if (error) {
+// return νℓcнαт.reply(
+// `*😥Sorry:* _${νℓкуяє.pushname}_
+// *❌Error*
+// > _There has been an API Error. Please try again later._
 
-*🐞Bug* 
-> ${error}`
-);
-});
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
+// *🐞Bug*
+// > ${error}`
+// );
+// }
+// ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// if (!wait) {
+// new νℓкуяє.Halt({
+// ID: νℓcнαт.sender,
+// TimeOut: present,
+// PermaTimeOut: 10000,
+// })
+// .save()
+// .catch((error) => {
+// return νℓcнαт.reply(
+// `*😥Sorry:* _${νℓкуяє.pushname}_
+// *❌Error*
+// > _There has been an API Error. Please try again later._
 
-*❌Error* 
-> _Cooldown: 10seconds..._
-> _Remaining: ${Time.seconds}s_
-> _The more you spam, more you gotta wait..._`
-);
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else {
-await wait.deleteOne().catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
+// *🐞Bug*
+// > ${error}`
+// );
+// });
+// return await require("./router")(
+// νℓкуяє,
+// νℓcнαт,
+// update,
+// spinnies,
+// coreback
+// );
+// ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// } else if (
+// wait.PermaTimeOut - (Date.now() - wait.TimeOut) >
+// 0
+// ) {
+// let Time = νℓкуяє.ms(
+// wait.PermaTimeOut - (present - wait.TimeOut)
+// );
+// wait.PermaTimeOut = 10000;
+// wait.TimeOut = present;
+// await wait.save().catch((error) => {
+// return νℓcнαт.reply(
+// `*😥Sorry:* _${νℓкуяє.pushname}_
+// *❌Error*
+// > _There has been an API Error. Please try again later._
 
-*🐞Bug* 
-> ${error}`
-);
-});
-return await require("./router")(
-νℓкуяє,
-νℓcнαт,
-update,
-spinnies,
-coreback
-);
-}
-}
-);
+// *🐞Bug*
+// > ${error}`
+// );
+// });
+// return νℓcнαт.reply(
+// `*😥Sorry:* _${νℓкуяє.pushname}_
+
+// *❌Error*
+// > _Cooldown: 10seconds..._
+// > _Remaining: ${Time.seconds}s_
+// > _The more you spam, more you gotta wait..._`
+// );
+// ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// } else {
+// await wait.deleteOne().catch((error) => {
+// return νℓcнαт.reply(
+// `*😥Sorry:* _${νℓкуяє.pushname}_
+// *❌Error*
+// > _There has been an API Error. Please try again later._
+
+// *🐞Bug*
+// > ${error}`
+// );
+// });
+// return await require("./router")(
+// νℓкуяє,
+// νℓcнαт,
+// update,
+// spinnies,
+// coreback
+// );
+// }
+// }
+// );
 }
 );
 }
