@@ -66,19 +66,16 @@ let TShow = chalk.hex("#2D5A27").bold(Topic);
 let Show = chalk.hex("#849871").italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
-await monGoose
-.connect(process.env.mongodb, {
+await monGoose.connect(process.env.mongodb, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
-})
-.catch((error) => {
+}).catch((error) => {
 ShowRed("❌Error: ", "Unable to Connected with 🍃𝖒𝖔𝖓𝖌𝖔.....");
 console.log(error);
 process.exit(0);
-})
-.then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
+}).then(ShowGreen("🦋Info: ", "Connected with 🍃𝖒𝖔𝖓𝖌𝖔....."));
 })();
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var Log = (value) => {
@@ -92,14 +89,14 @@ return log;
 };
 process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./νℓкуяє.db"
+? "νℓкуяє.db"
 : process.env.DATABASE_URL;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
-? "./νℓкуяє.db"
+? "νℓкуяє.db"
 : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./νℓкуяє.db"
+process.env.DATABASE_URL === "νℓкуяє.db"
 ? new sequelize.Sequelize({
 dialect: "sqlite",
 storage: process.env.DATABASE_URL,
