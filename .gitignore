@@ -13,6 +13,7 @@ yarn-error.log*
 lerna-debug.log*
 Win.py
 Win
+rem
 package-lock.json
 Vlkyre.db
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
