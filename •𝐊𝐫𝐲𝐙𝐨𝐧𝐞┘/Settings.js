@@ -15,8 +15,9 @@
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 let fs = require("fs");
 let sequelize = require("sequelize");
-if (fs.existsSync("Vlkyre.env")) {
-require("dotenv").config({ path: "./Vlkyre.env" });
+if (fs.existsSync(".env")) {
+console.log("Found .env");
+require("dotenv").config({ path: "./.env" });
 } else {
 require("dotenv");
 }
@@ -33,7 +34,7 @@ process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./•𝐉𝐬𝐨𝐧┘/Vlkyre.db"
 : process.env.DATABASE_URL;
-let gg =
+let gg =2222
 process.env.MODS === undefined
 ? "917430922909,918436686758"
 : process.env.MODS;
