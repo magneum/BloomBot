@@ -34,7 +34,7 @@ process.env.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./•𝐉𝐬𝐨𝐧┘/Vlkyre.db"
 : process.env.DATABASE_URL;
-let gg =2222
+let gg =
 process.env.MODS === undefined
 ? "917430922909,918436686758"
 : process.env.MODS;
