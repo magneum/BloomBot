@@ -68,7 +68,7 @@ global.DATABASE =
         logging: Log("false"),
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
-global.prefix = process.env.PREFIX || "#";
+global.prefix = process.env.Prefix || "#";
 global.port = process.env.PORT || 8080;
 global.packname = "Vlkyre";
 global.author = "Vlkyre";
