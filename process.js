@@ -29,10 +29,10 @@ global.upVersion = process.env.upVersion;
 global.ShowLogger = process.env.ShowLogger;
 global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
-global.mongodb = process.env.mongodb;
+global.MongoDb = process.env.MongoDb;
 global.pgdb = process.env.pgdb;
 global.packname = process.env.packname;
-global.prefix = process.env.prefix;
+global.Prefix = process.env.Prefix;
 global.author = process.env.author;
 global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
@@ -66,7 +66,7 @@ let TShow = chalk.hex("#2D5A27").bold(Topic);
 let Show = chalk.hex("#849871").italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
-await monGoose.connect(process.env.mongodb, {
+await monGoose.connect(process.env.MongoDb, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
