@@ -244,19 +244,5 @@
     "ytdl-core-discord": "^1.3.1",
     "ytfps": "^1.0.5",
     "ytpl": "^2.2.3"
-  },
-  "optionalDependencies": {
-    "@discordjs/opus": "^0.8.0",
-    "libsodium-wrappers": "^0.7.10",
-    "opusscript": "^0.0.8",
-    "sodium-native": "^3.3.0",
-    "tweetnacl": "^1.0.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog",
-      "disableScopeLowerCase": false,
-      "disableSubjectLowerCase": false
-    }
   }
 }
