@@ -1,4 +1,5 @@
 {
+    "name": "vlkyre",
     "scripts": {
         "start": "npx forever --no-warnings νℓкуяє.js --color",
         "test": "echo \"Error: no test specified\" && exit 1",
