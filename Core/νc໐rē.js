@@ -25,50 +25,18 @@ coreback
 ) => {
 require("./graphine")(νℓкуяє, νℓcнαт, update, store, νℓpage);
 require("./kronLink")(νℓкуяє, νℓcнαт, update, store, νℓpage);
-function ShowRed(Topic, Text) {
-let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
-let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
-console.log(
-νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-νℓкуяє.chalk.black(Show)
-);
-}
-function ShowBlue(Topic, Text) {
-let TShow = νℓкуяє.chalk.hex("#008B8B").bold(Topic);
-let Show = νℓкуяє.chalk.hex("#818d94").italic.bold(Text);
-console.log(
-νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-νℓкуяє.chalk.black(Show)
-);
-}
-function ShowGreen(Topic, Text) {
-let TShow = νℓкуяє.chalk.hex("#2D5A27").bold(Topic);
-let Show = νℓкуяє.chalk.hex("#849871").italic.bold(Text);
-console.log(
-νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-νℓкуяє.chalk.black(Show)
-);
-}
-function ShowYellow(Topic, Text) {
-let TShow = νℓкуяє.chalk.hex("#8B8000").bold(Topic);
-let Show = νℓкуяє.chalk.hex("#ECCF8D").italic.bold(Text);
-console.log(
-νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-νℓкуяє.chalk.black(Show)
-);
-}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
 await νℓкуяє.FastHub.fetch();
 newgit = await νℓкуяє.FastHub.log([`${upbranch}..origin/${upbranch}`]);
 if (newgit.total != 0) {
-ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
+νℓкуяє.ShowBlue("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Found | Updating.....");
 // await νℓкуяє.FastHub.pull();
-ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....");
+νℓкуяє.ShowYellow("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Update Done | Now Rebooting.....");
 process.exit(0);
 }
 } catch {
-ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
+νℓкуяє.ShowRed("🛸𝐆𝐢𝐭𝐇𝐮𝐛: ", "Could not check for updates....");
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓcнαт.isGroup && νℓкуяє.command) {

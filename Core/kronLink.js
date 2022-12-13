@@ -181,6 +181,43 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 "✈️Commands",
 ];
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+function ShowGreen(Topic, Text) {
+let TShow = νℓкуяє.chalk.hex("#2D5A27").bold(Topic);
+let Show = νℓкуяє.chalk.hex("#849871").italic.bold(Text);
+console.log(
+νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
+νℓкуяє.chalk.black(Show)
+);
+}
+function ShowBlue(Topic, Text) {
+let TShow = νℓкуяє.chalk.hex("#008B8B").bold(Topic);
+let Show = νℓкуяє.chalk.hex("#818d94").italic.bold(Text);
+console.log(
+νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
+νℓкуяє.chalk.black(Show)
+);
+}
+function ShowRed(Topic, Text) {
+let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
+let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
+console.log(
+νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
+νℓкуяє.chalk.black(Show)
+);
+}
+function ShowYellow(Topic, Text) {
+let TShow = νℓкуяє.chalk.hex("#8B8000").bold(Topic);
+let Show = νℓкуяє.chalk.hex("#ECCF8D").italic.bold(Text);
+console.log(
+νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
+νℓкуяє.chalk.black(Show)
+);
+}
+νℓкуяє.ShowGreen = ShowGreen;
+νℓкуяє.ShowBlue = ShowBlue;
+νℓкуяє.ShowRed = ShowRed;
+νℓкуяє.ShowYellow = ShowYellow;
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.spinner = {
 interval: 80,
 frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
