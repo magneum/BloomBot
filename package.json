@@ -2,7 +2,7 @@
     "name": "vlkyre",
     "scripts": {
         "start": "npx forever --no-warnings νℓкуяє.js --color",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "yarn install --ignore-engines",
         "dev": "node --no-warnings νℓкуяє.js"
     },
     "dependencies": {
