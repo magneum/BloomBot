@@ -41,48 +41,14 @@ await νℓкуяє.imgB(
 
 『 *❓Commands❓* 』
 ╔══════════════╗
-║ ┌〨🌐 
-║ │╔══『 *🌐SEARCH HUB🌐* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.search
-║ └╚═══════⋑
-║
-║ ┌〨📥 
-║ │╔══『 *📥DOWNLOAD HUB📥* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.download
-║ └╚═══════⋑
-║
-║ ┌〨🖼️ 
-║ │╔══『 *🖼️IMAGE HUB🖼️* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.image
-║ └╚═══════⋑
-║
-║ ┌〨🔰 
-║ │╔══『 *🔰GROUP HUB🔰* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.group
-║ └╚═══════⋑
-║ ┌〨💰 
-║ │╔══『 *💰GAME HUB💰* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.game
-║ └╚═══════⋑
-║
-║ ┌〨⭕ 
-║ │╔══『 *⭕YT-FILTER HUB⭕* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.ytfilter
-║ └╚═══════⋑
-║ 
-║ ┌〨📢 
-║ │╔══『 *📢FILTER HUB📢* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.filter
-║ └╚═══════⋑
-║ 
-║ 
-║ ┌〨🐝 
-║ │╔══『 *🐝ANIME HUB🐝* 』
 ║ │║Ῠ ${νℓкуяє.prefix}h.anime
-║ └╚═══════⋑
-║
-║ ┌〨🍌 
-║ │╔══『 *🍌HENTAI HUB🍌* 』 
 ║ │║Ῠ ${νℓкуяє.prefix}h.hentai
 ╚═└╚═══════⋑`,
 "https://i.postimg.cc/TPLYb38J/image.png"
