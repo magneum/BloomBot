@@ -39,20 +39,18 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *❓Commands❓* 』
+『 *💰GAME HUB💰* 』
 ╔══════════════╗
-║ ┌〨💰 ${νℓкуяє.prefix}h.game
-║ │╔══『 *💰GAME HUB💰* 』
-║ │║Ῠ ${νℓкуяє.prefix}balance
-║ │║Ῠ ${νℓкуяє.prefix}buy
-║ │║Ῠ ${νℓкуяє.prefix}daily
-║ │║Ῠ ${νℓкуяє.prefix}fish
-║ │║Ῠ ${νℓкуяє.prefix}gamble
-║ │║Ῠ ${νℓкуяє.prefix}inv
-║ │║Ῠ ${νℓкуяє.prefix}store
-║ │║Ῠ ${νℓкуяє.prefix}work
-║ │║Ῠ ${νℓкуяє.prefix}zoo
-╚═└╚═══════⋑`,
+║│Ῠ ${νℓкуяє.prefix}balance
+║│Ῠ ${νℓкуяє.prefix}buy
+║│Ῠ ${νℓкуяє.prefix}daily
+║│Ῠ ${νℓкуяє.prefix}fish
+║│Ῠ ${νℓкуяє.prefix}gamble
+║│Ῠ ${νℓкуяє.prefix}inv
+║│Ῠ ${νℓкуяє.prefix}store
+║│Ῠ ${νℓкуяє.prefix}work
+║│Ῠ ${νℓкуяє.prefix}zoo
+╚└╚═══════⋑`,
 "https://i.postimg.cc/TPLYb38J/image.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
