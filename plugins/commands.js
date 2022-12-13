@@ -41,16 +41,16 @@ await νℓкуяє.imgB(
 
 『 *❓Commands❓* 』
 ╔══════════════╗
-║│Ῠ ${νℓкуяє.prefix}h.search
-║│Ῠ ${νℓкуяє.prefix}h.download
-║│Ῠ ${νℓкуяє.prefix}h.image
-║│Ῠ ${νℓкуяє.prefix}h.group
-║│Ῠ ${νℓкуяє.prefix}h.game
-║│Ῠ ${νℓкуяє.prefix}h.ytfilter
-║│Ῠ ${νℓкуяє.prefix}h.filter
-║│Ῠ ${νℓкуяє.prefix}h.anime
-║│Ῠ ${νℓкуяє.prefix}h.hentai
-╚└╚═══════⋑`,
+║Ῠ ${νℓкуяє.prefix}h.search
+║Ῠ ${νℓкуяє.prefix}h.download
+║Ῠ ${νℓкуяє.prefix}h.image
+║Ῠ ${νℓкуяє.prefix}h.group
+║Ῠ ${νℓкуяє.prefix}h.game
+║Ῠ ${νℓкуяє.prefix}h.ytfilter
+║Ῠ ${νℓкуяє.prefix}h.filter
+║Ῠ ${νℓкуяє.prefix}h.anime
+║Ῠ ${νℓкуяє.prefix}h.hentai
+╚═══════⋑`,
 "https://i.postimg.cc/TPLYb38J/image.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

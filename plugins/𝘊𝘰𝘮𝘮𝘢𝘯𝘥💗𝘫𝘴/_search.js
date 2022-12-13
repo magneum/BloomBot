@@ -41,16 +41,16 @@ await νℓкуяє.imgB(
 
 『 *🌐SEARCH HUB🌐* 』
 ╔══════════════╗
-║│Ῠ ${νℓкуяє.prefix}advice
-║│Ῠ ${νℓкуяє.prefix}anime
-║│Ῠ ${νℓкуяє.prefix}fact
-║│Ῠ ${νℓкуяє.prefix}google
-║│Ῠ ${νℓкуяє.prefix}joke
-║│Ῠ ${νℓкуяє.prefix}manga
-║│Ῠ ${νℓкуяє.prefix}meme
-║│Ῠ ${νℓкуяє.prefix}quote
-║│Ῠ ${νℓкуяє.prefix}reddit
-╚└╚═══════⋑`,
+║Ῠ ${νℓкуяє.prefix}advice
+║Ῠ ${νℓкуяє.prefix}anime
+║Ῠ ${νℓкуяє.prefix}fact
+║Ῠ ${νℓкуяє.prefix}google
+║Ῠ ${νℓкуяє.prefix}joke
+║Ῠ ${νℓкуяє.prefix}manga
+║Ῠ ${νℓкуяє.prefix}meme
+║Ῠ ${νℓкуяє.prefix}quote
+║Ῠ ${νℓкуяє.prefix}reddit
+╚═══════⋑`,
 "https://i.postimg.cc/TPLYb38J/image.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
