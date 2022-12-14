@@ -1,0 +1,40 @@
+{
+  "name": "ytfps",
+  "version": "1.1.0",
+  "description": "scraps youtube playlist metadata and all its videos (not limited to 100), does not require API key",
+  "keywords": [
+    "youtube",
+    "playlist",
+    "youtube playlist",
+    "scraper",
+    "yt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Caier/ytfps"
+  },
+  "main": "out/index.js",
+  "type": "commonjs",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "start": "node out/index.js",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "try": "tsc && npm start",
+    "test": "mocha"
+  },
+  "author": "caier",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/node": "^13.13.39",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

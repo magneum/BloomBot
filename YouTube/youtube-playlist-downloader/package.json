@@ -1,0 +1,26 @@
+{
+  "name": "youtube-playlist-downloader",
+  "version": "1.0.2",
+  "description": "The application helps to download videos from youtube playlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Shrivishnu",
+  "license": "MIT",
+  "dependencies": {
+    "youtube-playlist": "^1.0.4",
+    "ytdl-core": "^3.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshrivishnu/yt-playlist-download.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamshrivishnu/yt-playlist-download/issues"
+  },
+  "homepage": "https://github.com/iamshrivishnu/yt-playlist-download#readme"
+}

@@ -1,0 +1,155 @@
+{
+    "title": "The Prophecy",
+    "url": "https://www.youtube.com/playlist?list=OLAK5uy_mPFpBY7OwJ9mFvKxWKzSDJUXNKY9YXjOA",
+    "id": "OLAK5uy_mPFpBY7OwJ9mFvKxWKzSDJUXNKY9YXjOA",
+    "video_count": 12,
+    "description": "",
+    "isUnlisted": false,
+    "isAlbum": true,
+    "videos": [
+        {
+            "title": "Intro (The)",
+            "url": "https://www.youtube.com/watch?v=cQw5CqIK_NA",
+            "id": "cQw5CqIK_NA",
+            "length": "1:12",
+            "milis_length": 72000,
+            "thumbnail_url": "https://i.ytimg.com/vi/cQw5CqIK_NA/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "The Mystic Crystal",
+            "url": "https://www.youtube.com/watch?v=kElj7EENGI4",
+            "id": "kElj7EENGI4",
+            "length": "11:55",
+            "milis_length": 715000,
+            "thumbnail_url": "https://i.ytimg.com/vi/kElj7EENGI4/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "It's Bedtime - NSP",
+            "url": "https://www.youtube.com/watch?v=MjPIbxFJdwg",
+            "id": "MjPIbxFJdwg",
+            "length": "3:16",
+            "milis_length": 196000,
+            "thumbnail_url": "https://i.ytimg.com/vi/MjPIbxFJdwg/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "The Wishing Bear",
+            "url": "https://www.youtube.com/watch?v=509cuhwjsNA",
+            "id": "509cuhwjsNA",
+            "length": "0:53",
+            "milis_length": 53000,
+            "thumbnail_url": "https://i.ytimg.com/vi/509cuhwjsNA/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "I Don't Know What We're Talking About - NSP",
+            "url": "https://www.youtube.com/watch?v=YhOadP3i3a8",
+            "id": "YhOadP3i3a8",
+            "length": "3:46",
+            "milis_length": 226000,
+            "thumbnail_url": "https://i.ytimg.com/vi/YhOadP3i3a8/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Welcome To My Parents' House - NSP",
+            "url": "https://www.youtube.com/watch?v=3YXUWWZJXpE",
+            "id": "3YXUWWZJXpE",
+            "length": "3:56",
+            "milis_length": 236000,
+            "thumbnail_url": "https://i.ytimg.com/vi/3YXUWWZJXpE/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Wondering Tonight - NSP",
+            "url": "https://www.youtube.com/watch?v=Dh3CddzpgYo",
+            "id": "Dh3CddzpgYo",
+            "length": "3:30",
+            "milis_length": 210000,
+            "thumbnail_url": "https://i.ytimg.com/vi/Dh3CddzpgYo/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Ninja Brian's Kids' album",
+            "url": "https://www.youtube.com/watch?v=tyixW91t4Po",
+            "id": "tyixW91t4Po",
+            "length": "0:21",
+            "milis_length": 21000,
+            "thumbnail_url": "https://i.ytimg.com/vi/tyixW91t4Po/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "The Decision Part 2: Ten Years Later - NSP",
+            "url": "https://www.youtube.com/watch?v=oufFWs7TuGI",
+            "id": "oufFWs7TuGI",
+            "length": "3:31",
+            "milis_length": 211000,
+            "thumbnail_url": "https://i.ytimg.com/vi/oufFWs7TuGI/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Do Math with U",
+            "url": "https://www.youtube.com/watch?v=29AP9ty5CKM",
+            "id": "29AP9ty5CKM",
+            "length": "3:55",
+            "milis_length": 235000,
+            "thumbnail_url": "https://i.ytimg.com/vi/29AP9ty5CKM/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Thunder & Lightning - NSP",
+            "url": "https://www.youtube.com/watch?v=-rSGoP5iGZQ",
+            "id": "-rSGoP5iGZQ",
+            "length": "3:16",
+            "milis_length": 196000,
+            "thumbnail_url": "https://i.ytimg.com/vi/-rSGoP5iGZQ/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        },
+        {
+            "title": "Outro (Prophecy)",
+            "url": "https://www.youtube.com/watch?v=qcWJ-sbPHOs",
+            "id": "qcWJ-sbPHOs",
+            "length": "0:23",
+            "milis_length": 23000,
+            "thumbnail_url": "https://i.ytimg.com/vi/qcWJ-sbPHOs/hqdefault.jpg",
+            "author": {
+                "name": "Ninja Sex Party",
+                "url": "https://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"
+            }
+        }
+    ]
+}

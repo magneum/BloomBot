@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {                 
+      "target": "ES2017",                     
+      "module": "commonjs",
+      //"types": ["node"],                              
+      "declaration": true,                   
+      "declarationMap": true,                                   
+      "outDir": "./out",                      
+      "strict": true,                         
+      "moduleResolution": "node",                                  
+      "rootDirs": ["./lib"],                  
+      "typeRoots": ["./node_modules/@types"], 
+      "esModuleInterop": true,                               
+      "inlineSourceMap": true,               
+      "inlineSources": true,                
+      "forceConsistentCasingInFileNames": true
+    }
+}
