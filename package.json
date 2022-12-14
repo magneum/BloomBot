@@ -19,8 +19,8 @@
 "•𝐂𝐚𝐧𝐯𝐚𝐬┘": "•𝐂𝐚𝐧𝐯𝐚𝐬┘"
 },
 "scripts": {
+"sync": "forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •𝐑𝐨𝐮𝐭𝐞┘/ӄryӄnz.js --color",
 "build": "npm install --location=global spotify-dl spdl-core typescript forever --force",
-"sync": "node --no-warnings •𝐑𝐨𝐮𝐭𝐞┘/🪔S𝖞𝖓𝖈.js",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py",
 "commit": "cz"
 },
