@@ -77,7 +77,7 @@ Today = new Date();
 νℓкуяє.νℓpage.get("/", function (rege, νℓp) {
 νℓp.send(`<!DOCTYPE html>
 <html>
-<title>Vlkyre❣️by Kryknz</title>
+<title>Vlkyre❣️by KryKenz</title>
 <style>
 #loader {
 border: 20px solid #f3f3f3;
@@ -253,7 +253,7 @@ class="flex title-font font-medium items-center text-white mb-4 md:mb-0 justify-
 <hr style="height:6px;border-top:1px solid #666666" />
 <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
 
-<button onclick="window.location.href='https://github.com/KryKnz'" class="inline-flex 
+<button onclick="window.location.href='https://github.com/KryKenz'" class="inline-flex 
 items-center 
 bg-red-700 
 text-white 
@@ -292,7 +292,7 @@ Official Groups.</i>
 <br>
 <br>
 </p>
-<h1 class="text-xl font-medium title-font mb-4 text-white">Made With❣️by Kryknz</h1>
+<h1 class="text-xl font-medium title-font mb-4 text-white">Made With❣️by KryKenz</h1>
 <h1 class="text-sm text-center font-family title-font mb-1 text-gray-400"><i>All Rights Reserved |
 Licensed Under Apache License Version 2.0</i></h1>
 <hr style="height:6px;border-top:1px solid #ffffff" />
@@ -322,7 +322,7 @@ src="https://i.postimg.cc/nLNqccRh/vlkyre.gif" alt="blog">
 <div class="p-6">
 <h1 class="tracking-wider text-xs title-font font-medium text-red-600 mb-1"><I><b>made
 with ❣️ by:</I></b></h1>
-<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKnz</h1>
+<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKenz</h1>
 <p class="leading-relaxed mb-3">Head over to the sub menu of this category.</p>
 <div class="flex items-center flex-wrap ">
 <button onclick="window.location.href='/'"
@@ -362,7 +362,7 @@ src="https://i.postimg.cc/NFXMjgyG/Type-Writter.gif" alt="blog">
 <div class="p-6">
 <h1 class="tracking-wider text-xs title-font font-medium text-red-600 mb-1"><I><b>made
 with ❣️ by:</I></b></h1>
-<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKnz</h1>
+<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKenz</h1>
 <p class="leading-relaxed mb-3">Head over to the sub menu of this category.</p>
 <div class="flex items-center flex-wrap">
 <button onclick="window.location.href='/Console'"
@@ -402,7 +402,7 @@ src="https://i.postimg.cc/tJdLRfzn/YouTube.gif" alt="blog">
 <div class="p-6">
 <h1 class="tracking-wider text-xs title-font font-medium text-red-600 mb-1"><I><b>made
 with ❣️ by:</I></b></h1>
-<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKnz</h1>
+<h1 class="title-font text-lg font-medium text-red-600 mb-3">KryKenz</h1>
 <p class="leading-relaxed mb-3">Head over to the sub menu of this category.</p>
 <div class="flex items-center flex-wrap ">
 <button onclick="window.location.href='https://tinyurl.com/Vlkyre-YouTube'"
@@ -1334,11 +1334,11 @@ class="ml-3 text-xl hover:text-red-600 "><b><I>🔔 Beginning...</I></b></span><
 <footer class="text-gray-400 body-font">
 <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
 <a class="flex title-font font-medium items-center md:justify-start justify-center text-red-500">
-<span class="ml-3 text-xl hover:text-red-600">❝ Ⓒ𝐕𝐋𝐊𝐘𝐑𝐄™ <I>Powered By KryKnz</I> ❞</span>
+<span class="ml-3 text-xl hover:text-red-600">❝ Ⓒ𝐕𝐋𝐊𝐘𝐑𝐄™ <I>Powered By KryKenz</I> ❞</span>
 </a>
 <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
 <b>𝐒𝐢𝐧𝐜𝐞 𝟐𝟎𝟐𝟏: </b>
-<a href="https://github.com/Kryknz/Vlkyre/blob/%F0%9D%90%95%F0%9D%90%A5%F0%9D%90%A4%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%E2%96%B2%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%AC%F0%9D%90%80%F0%9D%90%A9%F0%9D%90%A9/LICENSE"
+<a href="https://github.com/KryKenz/Vlkyre/blob/%F0%9D%90%95%F0%9D%90%A5%F0%9D%90%A4%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%E2%96%B2%F0%9D%90%96%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%AC%F0%9D%90%80%F0%9D%90%A9%F0%9D%90%A9/LICENSE"
 class="text-gray-500 ml-1 hover:text-gray-200" target="_blank"
 rel="noopener noreferrer"><i>Licensed Under Apache License Version 2.0</i></a>
 </p>
