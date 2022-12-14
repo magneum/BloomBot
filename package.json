@@ -20,8 +20,8 @@
 },
 "scripts": {
 "prestart": "git reset --hard && git pull && yarn install --ignore-warnings && pip install -r •𝐈𝐧𝐭𝐱┘/⭕𝖈𝖆𝖗𝖆.txt && rm yarn.lock",
+"build": "pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install -g spotify-dl spdl-core typescript forever --force",
 "sync": "node --no-warnings •𝐑𝐨𝐮𝐭𝐞┘/🪔S𝖞𝖓𝖈.js",
-"build": "yarn install --ignore-engines",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py",
 "commit": "cz"
 },
