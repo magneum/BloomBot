@@ -152,14 +152,14 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.gis = require("g-i-s");
 νℓкуяє.Tinyurl = require("tinyurl-api");
 νℓкуяє.akaneko = require("akaneko");
-νℓкуяє.ytdl = require("ytdl-core");
 νℓкуяє.Spinnies = require("spinnies");
 νℓкуяє.moment = require("moment-timezone");
 νℓкуяє.speed = require("performance-now");
 νℓкуяє.FFmpeg = require("fluent-ffmpeg");
-νℓкуяє.pathFFmpeg = require("ffmpeg-static");
-νℓкуяє.TubeSearch = require("yt-search");
 νℓкуяє.FastHub = require("simple-git")();
+νℓкуяє.pathFFmpeg = require("ffmpeg-static");
+νℓкуяє.ytdl = require("../Module/ytdl-core");
+νℓкуяє.TubeSearch = require("../Module/yt-search");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.memberRespA = [];
 νℓкуяє.memberRespB = [];
