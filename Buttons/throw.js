@@ -19,7 +19,10 @@ return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
 image: { url: imåge },
-caption: `*😥Sorry:* _${νℓкуяє.pushname}_
+caption: `Ῠ  *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\nῨ  *📢ID:* ${νℓкуяє.chatId}
+
+
+*😥Sorry:* _${νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
