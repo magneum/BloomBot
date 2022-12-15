@@ -152,12 +152,22 @@ auth: state,
 printQRInTerminal: true,
 logger: pino({ level: "silent" }),
 defaultQueryTimeoutMs: undefined,
-browser: [`Vlkyre: ${upVersion}`, "Chrome", "1.0.0"],
-version: getVersionWaweb() || [2, 2204, 13],
+// browser: [`Vlkyre: ${upVersion}`, "Chrome", "1.0.0"],
+browser: [`Vlkyre: ${upVersion}`, "safari", "1.0.0"],
+version: getVersionWaweb() || [2, 2242, 6],
+fireInitQueries: false,
+shouldSyncHistoryMessage: false,
+downloadHistory: false,
+syncFullHistory: false,
+generateHighQualityLinkPreview: true,
 msgRetryCounterMap,
-getMessage: async (data) => {
+getMessage: async (key) => {
+if (store) {
+const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
+return msg.message || undefined;
+}
 return {
-conversation: data,
+conversation: "An Error Occurred, Repeat Command!",
 };
 },
 });
@@ -628,7 +638,12 @@ store,
 await require("./Events/group-parts")(update);
 });
 νℓкуяє.ev.on("connection.update", async (update) => {
-await require("./Events/connection")(update,νℓкуяє,DisconnectReason,кяукηz);
+await require("./Events/connection")(
+update,
+νℓкуяє,
+DisconnectReason,
+кяукηz
+);
 });
 νℓкуяє.ev.on("contacts.update", async (update) => {
 await require("./Events/contacts")(update, νℓкуяє, store);

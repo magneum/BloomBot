@@ -1,0 +1,38 @@
+{
+  "name": "youtube-audio-stream",
+  "description": "youtube-audio-stream",
+  "version": "0.3.61",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jameskyburz/youtube-audio-stream.git"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "youtube-audio-stream": "index.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "node --unhandled-rejections=strict ./test/server.js",
+    "test:ci": "node --unhandled-rejections=strict ./test/ci.js",
+    "prepublishOnly": "npx standard",
+    "version": "npx standard"
+  },
+  "keywords": [
+    "audio",
+    "youtube",
+    "stream",
+    "streaming"
+  ],
+  "dependencies": {
+    "fluent-ffmpeg": "2.1.2",
+    "ytdl-core": "4.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23"
+  },
+  "license": "MIT"
+}

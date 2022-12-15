@@ -1,0 +1,30 @@
+{
+  "title": "testowa4ytfps",
+  "url": "https://www.youtube.com/playlist?list=PLXJzeXpFb-pDFQSy6EK7JEFRM1b8I1TTW",
+  "id": "PLXJzeXpFb-pDFQSy6EK7JEFRM1b8I1TTW",
+  "video_count": 1,
+  "view_count": 32,
+  "description": "this is a test",
+  "isUnlisted": true,
+  "isAlbum": false,
+  "thumbnail_url": "https://i.ytimg.com/vi/2chfsFTNEXw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCgbp1vCsj3C3W5jOkVBJ-UPPuSlg",
+  "author": {
+    "name": "アヌス",
+    "url": "https://www.youtube.com/user/CairoPl",
+    "avatar_url": "https://yt3.ggpht.com/ytc/AKedOLSWzNdncoPdCV9F0RVWzjiZJcd58IF0AQqKYw4k=s176-c-k-c0x00ffffff-no-rj"
+  },
+  "videos": [
+    {
+      "title": "alternative songs to take a break from whatever you're listening now (maybe it'll help u)/ playlist",
+      "url": "https://www.youtube.com/watch?v=2chfsFTNEXw",
+      "id": "2chfsFTNEXw",
+      "length": "2:02:10",
+      "milis_length": 7330000,
+      "thumbnail_url": "https://i.ytimg.com/vi/2chfsFTNEXw/hqdefault.jpg",
+      "author": {
+        "name": "hasoyi",
+        "url": "https://www.youtube.com/c/hasoyi"
+      }
+    }
+  ]
+}
