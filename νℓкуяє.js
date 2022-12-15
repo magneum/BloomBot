@@ -22,7 +22,6 @@ require("./Core/νc໐rē.js");
 require("./process.js");
 var {
 default: кяуνℓ,
-useSingleFileAuthState,
 DisconnectReason,
 generateForwardMessageContent,
 prepareWAMessageMedia,
@@ -40,7 +39,6 @@ var chalk = require("chalk");
 var express = require("express");
 var Krone = require("node-cron");
 var FileType = require("file-type");
-var moment = require("moment-timezone");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./Core/myfunc");
 var PhoneNumber = require("awesome-phonenumber");
 var {
@@ -131,8 +129,7 @@ auth: state,
 printQRInTerminal: true,
 logger: pino({ level: "silent" }),
 defaultQueryTimeoutMs: undefined,
-// browser: [`Vlkyre: ${upVersion}`, "Chrome", "1.0.0"],
-browser: [`Vlkyre: ${upVersion}`, "safari", "1.0.0"],
+browser: [`Vlkyre: v4.4.0`, "safari", "1.0.0"],
 version: getVersionWaweb() || [2, 2242, 6],
 fireInitQueries: false,
 shouldSyncHistoryMessage: false,
