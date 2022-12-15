@@ -1,7 +1,6 @@
 <h1 align="center">🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞🕊️: 𝐓𝐬+ 𝐉𝐬 + 𝐏𝐲 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 </h1>
 
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>[![Generic badge](https://img.shields.io/badge/🚀HEROKU-purple.svg)](https://VlkyreAI.krakinzkon.repl.co/)[![Generic badge](https://img.shields.io/badge/🌐WEBSITE-white.svg)](https://VlkyreAI.krakinzkon.repl.co/)[![Generic badge](https://img.shields.io/badge/🍾GROUPS-darkgreen.svg)](https://aigroups.krakinzkon.repl.co/)
-
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKnz"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 <p align="centre"><img  width="800%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/Valkyrie/Gallery/%CE%BD%E2%84%93%D0%BA%D1%83%D1%8F%D1%94.gif" /></p>
 
