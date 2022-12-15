@@ -52,7 +52,8 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ```
 
 <h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱</h1>
-[![Generic badge](https://img.shields.io/badge/Press❗Me.svg)](https://krykenz.github.io/Vlkyre.pg/)
+
+[![forthebadge cc-0](http://ForTheBadge.com/images/badges/cc-0.svg)](https://krykenz.github.io/Vlkyre.pg)
 
 
 <h1 align="center">🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🍂</h1>
