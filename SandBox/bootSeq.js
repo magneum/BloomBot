@@ -47,7 +47,7 @@ return version;
 var msgRetryCounterMap = MessageRetryMap;
 async function кяукηz() {
 await sequelize.sync();
-let { state, Adapt } = await dbAuth();
+let { state, sandbox } = await dbAuth();
 console.log("νℓкуяє  -------")
 var νℓкуяє = кяуνℓ({
 auth: state,
@@ -73,7 +73,7 @@ conversation: "An Error Occurred, Repeat Command!",
 },
 });
 store.bind(νℓкуяє.ev);
-νℓкуяє.ev.on("creds.update", (update) => Adapt(update));
+νℓкуяє.ev.on("creds.update", (update) => sandbox(update));
 νℓкуяє.ev.on("connection.update", async (update) => {
 var { lastDisconnect, connection, qr } = update;
 var { Boom } = require("@hapi/boom");

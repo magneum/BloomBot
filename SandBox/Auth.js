@@ -230,7 +230,7 @@ for (let _0x534241 in _0x1dff97) {
 },
 },
 },
-Adapt: _0x3897b5,
+sandbox: _0x3897b5,
 };
 };
 function _0xb860() {

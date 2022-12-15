@@ -27,7 +27,6 @@ DisconnectReason,
 generateForwardMessageContent,
 prepareWAMessageMedia,
 generateWAMessageFromContent,
-generateMessageID,
 downloadContentFromMessage,
 makeInMemoryStore,
 MessageRetryMap,
@@ -38,33 +37,11 @@ var fs = require("fs");
 var pino = require("pino");
 var path = require("path");
 var chalk = require("chalk");
-var qrcode = require("qrcode");
-var CFonts = require("cfonts");
 var express = require("express");
 var Krone = require("node-cron");
-var monGoose = require("mongoose");
 var FileType = require("file-type");
 var moment = require("moment-timezone");
-var {
-νkmake,
-formatp,
-formatDate,
-getTime,
-isUrl,
-clockString,
-runtime,
-fetchJson,
-getBuffer,
-jsonformat,
-format,
-parseMention,
-GIFBufferToVideoBuffer,
-getRandom,
-sleep,
-getSizeMedia,
-generateMessageTag,
-} = require("./Core/myfunc");
-var Canvas = require("discord-canvas");
+var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./Core/myfunc");
 var PhoneNumber = require("awesome-phonenumber");
 var {
 imageToWebp,
@@ -72,6 +49,8 @@ videoToWebp,
 writeExifImg,
 writeExifVid,
 } = require("./Core/exif");
+let dbAuth = require("./SandBox/Auth.js");
+let sequelize = DATABASE;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 function ShowRed(Topic, Text) {
 let TShow = chalk.hex("#ff6347").bold(Topic);
@@ -134,7 +113,7 @@ ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
 }
 });
 await autoPoke.start();
-var sequelize = DATABASE;
+await sequelize.sync();
 try {
 await sequelize.authenticate();
 ShowGreen("🦋Info: ", " Connected with (useRemoteFileAuthState)...");
@@ -146,7 +125,7 @@ process.exit(0);
 await sequelize.sync();
 ShowYellow("🦋Info: ", "Syncing Database...");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var { state, saveState } = await useSingleFileAuthState("νℓкуяє.кяу");
+let { state, sandbox } = await dbAuth();
 var νℓкуяє = кяуνℓ({
 auth: state,
 printQRInTerminal: true,
@@ -651,8 +630,7 @@ await require("./Events/contacts")(update, νℓкуяє, store);
 νℓкуяє.ev.on("groups.update", async (update) => {
 await require("./Events/group-update")(update, νℓкуяє, store);
 });
-νℓкуяє.ev.on("creds.update", () => saveState());
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє.ev.on("creds.update", (update) => sandbox(update));
 return νℓкуяє;
 }
 кяукηz();
