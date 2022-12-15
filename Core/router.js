@@ -68,14 +68,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -103,14 +96,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -138,14 +124,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -173,14 +152,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -208,14 +180,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -243,14 +208,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -278,14 +236,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -313,14 +264,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -348,14 +292,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -383,14 +320,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -418,14 +348,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -453,14 +376,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -488,14 +404,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -523,14 +432,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -558,14 +460,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -593,14 +488,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -628,14 +516,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -663,14 +544,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -712,14 +586,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -747,14 +614,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -782,14 +642,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -817,14 +670,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -852,14 +698,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -901,14 +740,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -936,14 +768,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -971,14 +796,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1006,14 +824,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1041,14 +852,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1076,14 +880,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1111,14 +908,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1146,14 +936,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1181,14 +964,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1216,14 +992,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1251,14 +1020,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1286,14 +1048,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1321,14 +1076,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1356,14 +1104,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1391,14 +1132,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1426,14 +1160,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1461,14 +1188,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1496,14 +1216,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1531,14 +1244,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1566,14 +1272,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1601,14 +1300,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1636,14 +1328,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1671,14 +1356,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1720,14 +1398,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1755,14 +1426,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1790,14 +1454,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1825,14 +1482,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1860,14 +1510,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1895,14 +1538,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1930,14 +1566,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -1974,14 +1603,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2023,14 +1645,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2058,14 +1673,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2093,14 +1701,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2128,14 +1729,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2163,14 +1757,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2198,14 +1785,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2233,14 +1813,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2268,14 +1841,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2303,14 +1869,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2338,14 +1897,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2373,14 +1925,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2408,14 +1953,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2443,14 +1981,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2478,14 +2009,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2513,14 +2037,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2548,14 +2065,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2583,14 +2093,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2618,14 +2121,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2653,14 +2149,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2688,14 +2177,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2723,14 +2205,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2758,14 +2233,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2793,14 +2261,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2828,14 +2289,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2863,14 +2317,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2898,14 +2345,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2933,14 +2373,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -2968,14 +2401,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3017,14 +2443,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3052,14 +2471,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3087,14 +2499,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3122,14 +2527,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3171,14 +2569,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3206,14 +2597,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3241,14 +2625,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3276,14 +2653,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3311,14 +2681,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3346,14 +2709,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3381,14 +2737,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3416,14 +2765,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3451,14 +2793,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3500,14 +2835,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3535,14 +2863,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3570,14 +2891,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3605,14 +2919,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3640,14 +2947,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3675,14 +2975,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3710,14 +3003,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3745,14 +3031,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3780,14 +3059,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3815,14 +3087,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3850,14 +3115,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3885,14 +3143,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3920,14 +3171,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -3955,14 +3199,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4004,14 +3241,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4039,14 +3269,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4074,14 +3297,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4109,14 +3325,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4144,14 +3353,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4179,14 +3381,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4214,14 +3409,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4249,14 +3437,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4284,14 +3465,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4319,14 +3493,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4354,14 +3521,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4389,14 +3549,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4424,14 +3577,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4459,14 +3605,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
@@ -4514,14 +3653,7 @@ isAdmin,
 if (кяуcαℓℓ) {
 νℓкуяє.ShowBlue("🔎𝐂𝐨𝐦𝐦𝐚𝐧𝐝: ", νℓкуяє.command.toUpperCase());
 νℓкуяє.ShowRed("❗𝐄𝐫𝐫𝐨𝐫: ", кяуcαℓℓ);
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${кяуcαℓℓ}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 }
 );
