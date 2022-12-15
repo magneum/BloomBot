@@ -23,38 +23,24 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 <h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
 
 ```sh
-┌┌『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
-│║⦁ 🐝 #AnimationMenu
-│║⦁ 🐾 #AnimeMenu
-│║⦁ 👓 #AudioFilterMenu
-│║⦁ 🏝️ #ConverterMenu
-│║⦁ 📥 #DownloaderMenu
-│║⦁ 💰 #GameMenu
-│║⦁ 🔰 #GroupMenu
-│║⦁ 🍌 #HentaiMenu
-│║⦁ 🍑 #NsfwMenu
-│║⦁ 👑 #OwnerMenu
-│║⦁ 🏳️‍🌈 #RandomMenu
-│║⦁ 🛍️ #StoreMenu
-│║⦁ 🌐 #WebMenu
-│║⦁ ⭕ #YTFilterMenu
-••╚═══════⋑
+┌『 ❓Commands❓ 』
+│║💰 #h.game
+│║🌐 #h.search
+│║⭕ #h.ytfilter
+│║📥 #h.download
+│║🏝️ #h.image
+│║🔰 #h.group
+│║👓 #h.filter
+│║🐝 #h.anime
+│║🍌 #h.hentai
+•╚═══════⋑
 ```
 
-<h1 align="center">🏮 𝐕𝐋𝐊𝐘𝐑𝐄 𝐑𝐮𝐥𝐞𝐬 🏮</h1>
+<h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱
 
-```sh
-⚠️ Do not abuse/disrespect bot and its owner.
-⚠️ If you want this bot in your group then contact devs.
-⚠️ Do not call bot, if you do then you'll get blocked by bot.
-⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
-⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.
-```
+[![Generic badge](https://img.shields.io/badge/Press💡Me-Vlkyre.pg-darkorange.svg)](https://krykenz.github.io/Vlkyre.pg)
 
-<h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱</h1>
-
-[![forthebadge cc-0](http://ForTheBadge.com/images/badges/cc-0.svg)](https://krykenz.github.io/Vlkyre.pg)
-
+</h1>
 
 <h1 align="center">🍂𝐃𝐢𝐬𝐜𝐥𝐚𝐢𝐦𝐞𝐫🍂</h1>
 
@@ -71,4 +57,14 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 ║ Forking Repo is fine. But if you edit something we will not provide any help.
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
+```
+
+<h1 align="center">🏮 𝐕𝐋𝐊𝐘𝐑𝐄 𝐑𝐮𝐥𝐞𝐬 🏮</h1>
+
+```sh
+⚠️ Do not abuse/disrespect bot and its owner.
+⚠️ If you want this bot in your group then contact devs.
+⚠️ Do not call bot, if you do then you'll get blocked by bot.
+⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
+⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.
 ```
