@@ -25,10 +25,7 @@ caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 ╰╚═══════⋑
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*VLKYRE™ Bot By KryKenz*
-
-*💻HomePage:* _${νℓкуяє.ShowInfo}_
-*⛺HomeLog:* _${νℓкуяє.ShowLogger}_`,
+footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://krykenz.github.io/Vlkyre.pg`,
 mentions: [νℓcнαт.sender],
 buttons: [
 {
