@@ -54,7 +54,7 @@ return νℓcнαт.reply(
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓcнαт.sender, "image");;
 } catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє_beta.png";
 }
 if (νℓкуяє.args) {
 return await νℓкуяє.sendMessage(

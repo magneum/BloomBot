@@ -54,7 +54,7 @@ return νℓcнαт.reply(
 > ${error}`
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var Thumb = await νℓкуяє.getBuffer("https://i.postimg.cc/TPLYb38J/image.png");
+var Thumb = await νℓкуяє.getBuffer("./Gallery/νℓкуяє_beta.png");
 return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {

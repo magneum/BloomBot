@@ -52,7 +52,7 @@ await νℓкуяє.imgB(
 ║Ῠ ${νℓкуяє.prefix}group antilink on
 ║Ῠ ${νℓкуяє.prefix}group antilink off
 ╚═══════⋑`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {

@@ -51,7 +51,7 @@ await νℓкуяє.imgB(
 ║Ῠ ${νℓкуяє.prefix}work
 ║Ῠ ${νℓкуяє.prefix}zoo
 ╚═══════⋑`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {

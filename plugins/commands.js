@@ -51,7 +51,7 @@ await νℓкуяє.imgB(
 ║Ῠ ${νℓкуяє.prefix}h.anime
 ║Ῠ ${νℓкуяє.prefix}h.hentai
 ╚═══════⋑`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_beta.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {

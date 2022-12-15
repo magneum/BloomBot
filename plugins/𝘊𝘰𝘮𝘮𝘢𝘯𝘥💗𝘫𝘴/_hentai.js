@@ -66,7 +66,7 @@ await νℓкуяє.imgB(
 ║Ῠ ${νℓкуяє.prefix}yuri
 ║Ῠ ${νℓкуяє.prefix}zettaiRyouiki
 ╚═══════⋑`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {

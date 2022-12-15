@@ -47,7 +47,7 @@ await νℓкуяє.imgB(
 ║Ῠ ${νℓкуяє.prefix}waifu
 ║Ῠ ${νℓкуяє.prefix}wallpaper
 ╚═══════⋑`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {

@@ -76,7 +76,7 @@ return νℓcнαт.reply(
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
 } catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє_beta.png";
 }
 await νℓкуяє.imgB(
 νℓкуяє,
@@ -113,7 +113,7 @@ return νℓcнαт.reply(
 try {
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
 } catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/TPLYb38J/image.png";
+𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє_beta.png";
 }
 await νℓкуяє.imgB(
 νℓкуяє,

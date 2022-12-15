@@ -70,7 +70,7 @@ return await νℓкуяє.imgB(
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_white.png"
 );
 }
 return await νℓкуяє.imgB(
@@ -78,7 +78,7 @@ return await νℓкуяє.imgB(
 νℓcнαт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_white.png"
 );
 }
 );

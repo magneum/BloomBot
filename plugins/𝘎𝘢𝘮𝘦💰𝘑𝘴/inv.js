@@ -51,7 +51,7 @@ return await νℓкуяє.imgB(
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_white.png"
 );
 }
 return await νℓкуяє.imgB(
@@ -61,7 +61,7 @@ return await νℓкуяє.imgB(
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
-"https://i.postimg.cc/TPLYb38J/image.png"
+"./Gallery/νℓкуяє_white.png"
 );
 }
 );
