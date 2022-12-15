@@ -348,7 +348,9 @@ Vlkyre.isCommand &&
 return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `📢𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐍𝐞𝐞𝐝𝐞𝐝❗
 @${Vlkyre.pushName}
-*Check The Verification Video:* _https://youtube.com/channel/UC5_VwWIUIdmv96OvR5rFvaA_`,
+
+*JOIN ANY GROUP TO BE VERIFIED*
+https://krykenz.github.io/Vlkyre.pg/#Groups`,
 contextInfo: { mentionedJid: [Vlkyre.sender] },
 });
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
