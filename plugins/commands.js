@@ -39,18 +39,17 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *❓Commands❓* 』
-╔══════════════╗
-║Ῠ ${νℓкуяє.prefix}h.search
-║Ῠ ${νℓкуяє.prefix}h.download
-║Ῠ ${νℓкуяє.prefix}h.image
-║Ῠ ${νℓкуяє.prefix}h.group
-║Ῠ ${νℓкуяє.prefix}h.game
-║Ῠ ${νℓкуяє.prefix}h.ytfilter
-║Ῠ ${νℓкуяє.prefix}h.filter
-║Ῠ ${νℓкуяє.prefix}h.anime
-║Ῠ ${νℓкуяє.prefix}h.hentai
-╚═══════⋑`,
+┌『 *❓Commands❓* 』
+│║⦁ ${νℓкуяє.prefix}h.search
+│║⦁ ${νℓкуяє.prefix}h.download
+│║⦁ ${νℓкуяє.prefix}h.image
+│║⦁ ${νℓкуяє.prefix}h.group
+│║⦁ ${νℓкуяє.prefix}h.game
+│║⦁ ${νℓкуяє.prefix}h.ytfilter
+│║⦁ ${νℓкуяє.prefix}h.filter
+│║⦁ ${νℓкуяє.prefix}h.anime
+│║⦁ ${νℓкуяє.prefix}h.hentai
+•╚═══════⋑`,
 "./Gallery/νℓкуяє_beta.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

@@ -39,24 +39,23 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *⭕YT-FILTER HUB⭕* 』
-╔══════════════╗
-║Ῠ ${νℓкуяє.prefix}yt8d
-║Ῠ ${νℓкуяє.prefix}ytbassboost
-║Ῠ ${νℓкуяє.prefix}ytecho
-║Ῠ ${νℓкуяє.prefix}ytflanger
-║Ῠ ${νℓкуяє.prefix}ytnightcore
-║Ῠ ${νℓкуяє.prefix}ytphaser
-║Ῠ ${νℓкуяє.prefix}ytreverse
-║Ῠ ${νℓкуяє.prefix}ytslow
-║Ῠ ${νℓкуяє.prefix}ytspeed
-║Ῠ ${νℓкуяє.prefix}ytsubboost
-║Ῠ ${νℓкуяє.prefix}ytsuperslow
-║Ῠ ${νℓкуяє.prefix}ytsuperspeed
-║Ῠ ${νℓкуяє.prefix}ytsurround
-║Ῠ ${νℓкуяє.prefix}ytvaporwave
-║Ῠ ${νℓкуяє.prefix}ytvibrato
-╚═══════⋑`,
+┌『 *⭕YT-FILTER HUB⭕* 』
+│║⦁ ${νℓкуяє.prefix}yt8d
+│║⦁ ${νℓкуяє.prefix}ytbassboost
+│║⦁ ${νℓкуяє.prefix}ytecho
+│║⦁ ${νℓкуяє.prefix}ytflanger
+│║⦁ ${νℓкуяє.prefix}ytnightcore
+│║⦁ ${νℓкуяє.prefix}ytphaser
+│║⦁ ${νℓкуяє.prefix}ytreverse
+│║⦁ ${νℓкуяє.prefix}ytslow
+│║⦁ ${νℓкуяє.prefix}ytspeed
+│║⦁ ${νℓкуяє.prefix}ytsubboost
+│║⦁ ${νℓкуяє.prefix}ytsuperslow
+│║⦁ ${νℓкуяє.prefix}ytsuperspeed
+│║⦁ ${νℓкуяє.prefix}ytsurround
+│║⦁ ${νℓкуяє.prefix}ytvaporwave
+│║⦁ ${νℓкуяє.prefix}ytvibrato
+•╚═══════⋑`,
 "./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

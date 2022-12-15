@@ -39,18 +39,17 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *💰GAME HUB💰* 』
-╔══════════════╗
-║Ῠ ${νℓкуяє.prefix}balance
-║Ῠ ${νℓкуяє.prefix}buy
-║Ῠ ${νℓкуяє.prefix}daily
-║Ῠ ${νℓкуяє.prefix}fish
-║Ῠ ${νℓкуяє.prefix}gamble
-║Ῠ ${νℓкуяє.prefix}inv
-║Ῠ ${νℓкуяє.prefix}store
-║Ῠ ${νℓкуяє.prefix}work
-║Ῠ ${νℓкуяє.prefix}zoo
-╚═══════⋑`,
+┌『 *💰GAME HUB💰* 』
+│║⦁ ${νℓкуяє.prefix}balance
+│║⦁ ${νℓкуяє.prefix}buy
+│║⦁ ${νℓкуяє.prefix}daily
+│║⦁ ${νℓкуяє.prefix}fish
+│║⦁ ${νℓкуяє.prefix}gamble
+│║⦁ ${νℓкуяє.prefix}inv
+│║⦁ ${νℓкуяє.prefix}store
+│║⦁ ${νℓкуяє.prefix}work
+│║⦁ ${νℓкуяє.prefix}zoo
+•╚═══════⋑`,
 "./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

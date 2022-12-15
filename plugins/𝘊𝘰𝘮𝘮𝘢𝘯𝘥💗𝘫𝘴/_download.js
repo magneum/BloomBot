@@ -39,19 +39,18 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-╔══『 *📥DOWNLOAD HUB📥* 』
-╔══════════════╗
-║Ῠ ${νℓкуяє.prefix}yta
-║Ῠ ${νℓкуяє.prefix}play
-║Ῠ ${νℓкуяє.prefix}song
-║Ῠ ${νℓкуяє.prefix}sing
-║Ῠ ${νℓкуяє.prefix}ytmp3
-║Ῠ ${νℓкуяє.prefix}music
-║Ῠ ${νℓкуяє.prefix}ytplay
-║Ῠ ${νℓкуяє.prefix}ytaudio
-║Ῠ ${νℓкуяє.prefix}ytmusic
-║Ῠ ${νℓкуяє.prefix}youtubemusic
-╚═══════⋑`,
+╔══┌┌『 *📥DOWNLOAD HUB📥* 』
+│║⦁ ${νℓкуяє.prefix}yta
+│║⦁ ${νℓкуяє.prefix}play
+│║⦁ ${νℓкуяє.prefix}song
+│║⦁ ${νℓкуяє.prefix}sing
+│║⦁ ${νℓкуяє.prefix}ytmp3
+│║⦁ ${νℓкуяє.prefix}music
+│║⦁ ${νℓкуяє.prefix}ytplay
+│║⦁ ${νℓкуяє.prefix}ytaudio
+│║⦁ ${νℓкуяє.prefix}ytmusic
+│║⦁ ${νℓкуяє.prefix}youtubemusic
+•╚═══════⋑`,
 "./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

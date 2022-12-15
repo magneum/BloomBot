@@ -39,33 +39,32 @@ await νℓкуяє.imgB(
 > Once bot will be ready, it will auto join all groups.
 
 
-『 *🍌HENTAI HUB🍌* 』 
-╔══════════════╗
-║Ῠ ${νℓкуяє.prefix}ass
-║Ῠ ${νℓкуяє.prefix}bdsm
-║Ῠ ${νℓкуяє.prefix}blowjob
-║Ῠ ${νℓкуяє.prefix}cum
-║Ῠ ${νℓкуяє.prefix}doujin
-║Ῠ ${νℓкуяє.prefix}feet
-║Ῠ ${νℓкуяє.prefix}femdom  
-║Ῠ ${νℓкуяє.prefix}foxgirl  
-║Ῠ ${νℓкуяє.prefix}glasses  
-║Ῠ ${νℓкуяє.prefix}hentai
-║Ῠ ${νℓкуяє.prefix}maid
-║Ῠ ${νℓкуяє.prefix}masturbation
-║Ῠ ${νℓкуяє.prefix}netorare
-║Ῠ ${νℓкуяє.prefix}orgy
-║Ῠ ${νℓкуяє.prefix}panties
-║Ῠ ${νℓкуяє.prefix}pussy
-║Ῠ ${νℓкуяє.prefix}school
-║Ῠ ${νℓкуяє.prefix}succubus
-║Ῠ ${νℓкуяє.prefix}tentacles
-║Ῠ ${νℓкуяє.prefix}thighs
-║Ῠ ${νℓкуяє.prefix}uglyBastard
-║Ῠ ${νℓкуяє.prefix}uniform
-║Ῠ ${νℓкуяє.prefix}yuri
-║Ῠ ${νℓкуяє.prefix}zettaiRyouiki
-╚═══════⋑`,
+┌『 *🍌HENTAI HUB🍌* 』 
+│║⦁ ${νℓкуяє.prefix}ass
+│║⦁ ${νℓкуяє.prefix}bdsm
+│║⦁ ${νℓкуяє.prefix}blowjob
+│║⦁ ${νℓкуяє.prefix}cum
+│║⦁ ${νℓкуяє.prefix}doujin
+│║⦁ ${νℓкуяє.prefix}feet
+│║⦁ ${νℓкуяє.prefix}femdom  
+│║⦁ ${νℓкуяє.prefix}foxgirl  
+│║⦁ ${νℓкуяє.prefix}glasses  
+│║⦁ ${νℓкуяє.prefix}hentai
+│║⦁ ${νℓкуяє.prefix}maid
+│║⦁ ${νℓкуяє.prefix}masturbation
+│║⦁ ${νℓкуяє.prefix}netorare
+│║⦁ ${νℓкуяє.prefix}orgy
+│║⦁ ${νℓкуяє.prefix}panties
+│║⦁ ${νℓкуяє.prefix}pussy
+│║⦁ ${νℓкуяє.prefix}school
+│║⦁ ${νℓкуяє.prefix}succubus
+│║⦁ ${νℓкуяє.prefix}tentacles
+│║⦁ ${νℓкуяє.prefix}thighs
+│║⦁ ${νℓкуяє.prefix}uglyBastard
+│║⦁ ${νℓкуяє.prefix}uniform
+│║⦁ ${νℓкуяє.prefix}yuri
+│║⦁ ${νℓкуяє.prefix}zettaiRyouiki
+•╚═══════⋑`,
 "./Gallery/νℓкуяє_dark.png"
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
