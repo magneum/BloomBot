@@ -31,12 +31,9 @@ global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
 global.MONGO_URL = process.env.MONGO_URL;
 global.pgdb = process.env.pgdb;
-global.packname = "νℓкуяє";
 global.prefix = process.env.prefix;
-global.author = "KryKenz";
 global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
-global.name = "νℓкуяє";
 global.upbranch = process.env.upbranch;
 global.nameApi = {
 nrtm: "https://nurutomo.herokuapp.com",
@@ -54,6 +51,9 @@ global.keyApi = {
 "https://pencarikode.xyz": "pais",
 "https://leyscoders-api.herokuapp.com": "dappakntlll",
 };
+global.packname = "νℓкуяє";
+global.author = "KryKenz";
+global.name = "νℓкуяє";
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
 function ShowRed(Topic, Text) {
