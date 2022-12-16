@@ -29,7 +29,7 @@ global.upVersion = process.env.upVersion;
 global.ShowLogger = process.env.ShowLogger;
 global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
-global.MongoDb = process.env.MONGO_URL;
+global.MONGO_URL = process.env.MONGO_URL;
 global.pgdb = process.env.pgdb;
 global.packname = process.env.packname;
 global.prefix = process.env.prefix;
@@ -67,7 +67,7 @@ let Show = chalk.hex("#849871").italic.bold(Text);
 console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
 await monGoose
-.connect(process.env.MongoDb, {
+.connect(process.env.MONGO_URL, {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
