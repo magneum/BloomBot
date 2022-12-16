@@ -171,7 +171,7 @@ resolve(
 v.name ||
 v.subject ||
 PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
-"international"
+    "international"
 )
 );
 });
@@ -179,8 +179,8 @@ else
 v =
 id === "0@s.whatsapp.net"
 ? {
-id,
-name: "WhatsApp",
+    id,
+    name: "WhatsApp",
 }
 : id === νℓкуяє.decodeJid(νℓкуяє.user.id)
 ? νℓкуяє.user
@@ -514,13 +514,13 @@ options
 ...content[ctype],
 ...options,
 ...(options.contextInfo
-? {
-contextInfo: {
-...content[ctype].contextInfo,
-...options.contextInfo,
-},
-}
-: {}),
+    ? {
+        contextInfo: {
+        ...content[ctype].contextInfo,
+        ...options.contextInfo,
+        },
+    }
+    : {}),
 }
 : {}
 );
@@ -630,7 +630,12 @@ await require("./Events/group-update")(update, νℓкуяє, store);
 νℓкуяє.ev.on("creds.update", (update) => sandbox(update));
 return νℓкуяє;
 }
-кяукηz();
+кяукηz().catch((error) => console.log(error));
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+var xprs = require("express");
+var p = xprs();
+p.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre.pg/"));
+p.listen(8000, () => console.log(`Vlkyre Server listening on port 8000`));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
