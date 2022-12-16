@@ -27,4 +27,4 @@ RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
 RUN npm install --location=global spotify-dl spdl-core forever --force
 RUN npm install --force youtube-sr@4.2.0 yt-search@2.10.3 @ytdl-core
-CMD [ "npm", "run", "ignite" ]
+CMD node --no-warnings •Route/ӄryӄnz.js
