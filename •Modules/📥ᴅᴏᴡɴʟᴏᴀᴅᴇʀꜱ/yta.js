@@ -31,7 +31,7 @@ let chalk = require(`chalk`);
 let db = require(`quick.db`);
 let axios = require(`axios`);
 
-let ytdl = require("ytdl-core");
+let ytdl = require("../../YouTube/cord-dl");
 let ffmpeg = require("fluent-ffmpeg");
 
 let yts = require(`yt-search`);
