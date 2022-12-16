@@ -40,8 +40,8 @@ RUN rm -rf node_modules && npm install -g n && n install 16 && hash -r
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
-RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary && hash -r 
-RUN npm install -g spotify-dl spdl-core typescript forever
+RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
+RUN npm install -g spotify-dl spdl-core typescript forever --force && npm install --force
 CMD forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color
 # ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 # /*
