@@ -18,7 +18,7 @@
 "•Json": "•Json"
 },
 "scripts": {
-"koyeb": "forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color",
+"ignite": "forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color",
 "build": "npm install --location=global spotify-dl spdl-core typescript forever --force",
 "start": "python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py",
 "commit": "cz"
@@ -78,7 +78,6 @@
 "discord-chatbot": "^2.1.0",
 "discord-gamecord": "^1.1.4",
 "discord-xp": "^1.1.16",
-"discord-ytdl-core": "^5.0.2",
 "discord.js": "^13.1.0",
 "dotenv": "^16.0.0",
 "download-file": "^0.1.5",
