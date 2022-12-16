@@ -32,4 +32,4 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
 RUN npm install -g spotify-dl spdl-core forever --force
 RUN npm install --force --silent --save
-CMD node --no-warnings •Route/ӄryӄnz.js
+CMD node --no-warnings νℓкуяє.js
