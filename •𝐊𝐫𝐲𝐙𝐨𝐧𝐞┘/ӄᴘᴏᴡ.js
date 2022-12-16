@@ -48,24 +48,24 @@ let Https = require("https");
 let Fs = require("fs");
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 exports.ӄᴘᴏᴡ = async (Ѷ𝖎𝖔𝖓, ӄryӄnz, Vlkyre) => {
-if (Vlkyre.message) {
-try {
-let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
-await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
-let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["Primary..origin/Primary"]);
-if (ɴᴇᴡ.total != 0) {
-await Hoku.delete(
-"/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
-).catch((ᴇʀ) =>
-console.log(
-ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ))
-)
-);
-}
-} catch (ᴇʀ) {
-console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ)));
-}
-}
+// if (Vlkyre.message) {
+// try {
+// let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
+// await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
+// let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["Primary..origin/Primary"]);
+// if (ɴᴇᴡ.total != 0) {
+// await Hoku.delete(
+// "/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"
+// ).catch((ᴇʀ) =>
+// console.log(
+// ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐇𝐞𝐫𝐨𝐤𝐮 𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ))
+// )
+// );
+// }
+// } catch (ᴇʀ) {
+// console.log(ӄօʟօʀ.black(ӄօʟօʀ.bgWhite("❌𝐄𝐫𝐫𝐨𝐫: "), ӄօʟօʀ.bgRed(ᴇʀ)));
+// }
+// }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 // cron.schedule("*/60 * * * * *", async function () {
 // console.log("running a task every 60 second");
