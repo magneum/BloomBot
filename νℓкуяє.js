@@ -101,7 +101,8 @@ console.log(error);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function кяукηz() {
 νℓpage = express();
-vport = process.env.VPORT || 8080;
+vport = process.env.PORT || 8080;
+νℓpage.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre.pg"));
 νℓpage.listen(vport, () => {
 if (fs.existsSync(".env")) {
 ShowGreen("🦋Info: Local Server: ", "http://localhost:" + vport);
