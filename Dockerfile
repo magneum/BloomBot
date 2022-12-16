@@ -44,6 +44,7 @@ ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 # RUN apt-get update
 # RUN apt-get install firefox -y
 
+RUN apt-get--fix-missing
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
