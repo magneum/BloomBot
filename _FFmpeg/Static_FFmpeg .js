@@ -1,4 +1,4 @@
-var Path_To_Static_FFmpeg = require("ffmpeg-static");
+var Path_To_Static_FFmpeg = require("../_FFmpeg/ffmpeg-static");
 console.log(Path_To_Static_FFmpeg);
 const { exec } = require("child_process");
 exec(Path_To_Static_FFmpeg + " -i Hug.gif -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' Hug.mp4", (error, stdout, stderr) => {
