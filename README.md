@@ -17,7 +17,7 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: https://github.com/KryKenz/Vlkyre
 │║⦁ 𝐠𝐫𝐨𝐮𝐩: https://krykenz.github.io/Vlkyre.pg
-••╚═══════⋑
+┕╚═══════⋑
 ```
 
 <h1 align="center">🎊𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬🎊</h1>
@@ -33,7 +33,7 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 │║👓 #h.filter
 │║🐝 #h.anime
 │║🍌 #h.hentai
-•╚═══════⋑
+┕╚═══════⋑
 ```
 
 <h1 align="center">🌱𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬🌱
