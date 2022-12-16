@@ -112,6 +112,7 @@ ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
 }
 });
 await autoPoke.start();
+let { state, sandbox } = await dbAuth();
 await sequelize.sync();
 try {
 await sequelize.authenticate();
@@ -124,7 +125,6 @@ process.exit(0);
 await sequelize.sync();
 ShowYellow("🦋Info: ", "Syncing Database...");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-let { state, sandbox } = await dbAuth();
 var νℓкуяє = кяуνℓ({
 auth: state,
 printQRInTerminal: true,
