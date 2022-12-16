@@ -104,7 +104,7 @@ async function кяукηz() {
 vport = process.env.PORT || 8080;
 νℓpage.listen(vport, () => {
 if (fs.existsSync(".env")) {
-ShowGreen("🦋Info: Local Server: http://localhost: ", vport);
+ShowGreen("🦋Info: Local Server: ", "http://localhost:" + vport);
 } else {
 ShowGreen("🦋Info: Website live: ", ShowInfo);
 ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
