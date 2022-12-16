@@ -18,7 +18,7 @@ opus-tools \
 python3-pip \
 lsb-release \
 python-is-python3
-RUN git clone hhttps://github.com/KryKenz/Vlkyre
+RUN git clone https://github.com/KryKenz/Vlkyre
 RUN git checkout -b Valkyrie
 RUN git pull origin Valkyrie
 RUN rm -rf node_modules && npm install -g n
