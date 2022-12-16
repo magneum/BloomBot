@@ -108,7 +108,5 @@
 "wa-sticker-formatter": "^4.3.2",
 "wa-sticker-hamma": "^2.3.6",
 "xfarr-api": "^1.0.3",
-"yargs": "^17.2.1",
-"yarn": "^1.22.18"
-}
+"yargs": "^17.2.1"
 }
