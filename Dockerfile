@@ -22,7 +22,7 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
 RUN npm install -g spotify-dl spdl-core forever --force
-RUN npm install --force --silent --save
+RUN npm install --force
 CMD npm run web
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
