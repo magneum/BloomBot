@@ -50,7 +50,7 @@ process.env.HEROKU_APP_NAME === undefined
 ? "Null"
 : process.env.HEROKU_APP_NAME;
 global.owner = gg.split(",");
-global.MONGOOSE = process.env.MongoDb;
+global.MONGOOSE = process.env.MONGO_URL;
 global.DATABASE_URL =
 process.env.DATABASE_URL === undefined
 ? "./Vlkyre.db"
