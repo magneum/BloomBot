@@ -26,6 +26,9 @@ RUN curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/
 RUN echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
 RUN apt-get update && apt-get install redis -y
 
+# Vlkyre Railway.app Installation
+RUN curl -fsSL https://railway.app/install.sh | sh
+
 
 # Vlkyre Runtime support Installation
 RUN cd Vlkyre

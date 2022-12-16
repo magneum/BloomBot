@@ -159,8 +159,8 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.FFmpeg = require("fluent-ffmpeg");
 νℓкуяє.FastHub = require("simple-git")();
 νℓкуяє.pathFFmpeg = require("ffmpeg-static");
-νℓкуяє.ytdl = require("../YouTube/ytdl-core");
-νℓкуяє.TubeSearch = require("../YouTube/yt-search");
+νℓкуяє.ytdl = require("../YouTube/Core-Tube");
+νℓкуяє.TubeSearch = require("../YouTube/Core-Search");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.memberRespA = [];
 νℓкуяє.memberRespB = [];
