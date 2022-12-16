@@ -156,9 +156,9 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.Spinnies = require("spinnies");
 νℓкуяє.moment = require("moment-timezone");
 νℓкуяє.speed = require("performance-now");
-νℓкуяє.FFmpeg = require("fluent-ffmpeg");
+νℓкуяє.FFmpeg = require("../FFmpeg/fluent-ffmpeg");
 νℓкуяє.FastHub = require("simple-git")();
-νℓкуяє.pathFFmpeg = require("ffmpeg-static");
+νℓкуяє.pathFFmpeg = require("../FFmpeg/ffmpeg-static");
 νℓкуяє.TubeDL = require("../Tube/Core-Tube");
 νℓкуяє.TubeSearch = require("../Tube/Core-Search");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
