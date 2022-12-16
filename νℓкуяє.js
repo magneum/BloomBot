@@ -104,7 +104,7 @@ console.log(error);
 async function кяукηz() {
 νℓpage.listen(vport, () => {
 if (fs.existsSync(".env")) {
-ShowGreen("🦋Info: Local Server: ", "http://localhost:" + vport);
+ShowGreen("🦋Info: ", "Running Locally in port: http://localhost:" + vport);
 } else {
 ShowGreen("🦋Info: Website live: ", ShowInfo);
 ShowBlue("🦋Info: Website dashboard: ", ShowLogger);
