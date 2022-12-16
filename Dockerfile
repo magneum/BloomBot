@@ -35,11 +35,6 @@ python-is-python3
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
 RUN rm -rf node_modules && npm install -g n
 RUN n install 16 && hash -r
-# ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Redis + Railway.app Installation
-RUN curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
-RUN echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
-RUN curl -fsSL https://railway.app/install.sh | sh
-RUN apt-get update && apt-get install redis -y
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Runtime support Installation ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 RUN cd Vlkyre
 WORKDIR /Vlkyre
