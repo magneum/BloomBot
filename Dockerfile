@@ -62,6 +62,8 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/Krykenz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+rx /usr/local/bin/youtube-dl 
+RUN rm -rf node_modules
+RUN npm install -g n && n install 16 && hash -r 
 # RUN curl https://cli-assets.heroku.com/install.sh | sh 
 # RUN heroku plugins:install heroku-builds 
 
@@ -70,8 +72,7 @@ RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
-RUN npm install --location-global n && n install 16 && hash -r 
-RUN npm install --location-global spotify-dl spdl-core typescript forever --force 
+RUN npm install -g spotify-dl spdl-core typescript forever
 RUN git init --initial-branch=Primary 
 RUN git fetch origin Primary 
 RUN git reset --hard origin/Primary 
