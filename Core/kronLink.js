@@ -158,7 +158,7 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.Carbon = require("unofficial-carbon-now");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.TubeDL = require("../Tube/Core-Tube");
-// νℓкуяє.FFmpeg = require("../FFmpeg/fluent-ffmpeg");
+νℓкуяє.FFmpeg = require("../FFmpeg/fluent-ffmpeg");
 νℓкуяє.TubeSearch = require("../Tube/Core-Search");
 νℓкуяє.pathFFmpeg = require("../FFmpeg/ffmpeg-static");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
