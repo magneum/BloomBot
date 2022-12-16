@@ -158,9 +158,9 @@ module.exports = async (νℓкуяє, νℓcнαт, update, store, νℓpage) =
 νℓкуяє.Carbon = require("unofficial-carbon-now");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.TubeDL = require("../Tube/Core-Tube");
+νℓкуяє.FFmpeg = require("../FFmpeg/fluent-ffmpeg");
 νℓкуяє.TubeSearch = require("../Tube/Core-Search");
-νℓкуяє.FFmpeg = require(process.cwd() + "/FFmpeg/ffmpeg-static/ffmpeg");
-νℓкуяє.pathFFmpeg = require(process.cwd() + "/FFmpeg/ffmpeg-static/ffmpeg");
+νℓкуяє.pathFFmpeg = require("../FFmpeg/ffmpeg-static");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.memberRespA = [];
 νℓкуяє.memberRespB = [];
