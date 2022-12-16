@@ -18,7 +18,7 @@ opus-tools \
 python3-pip \
 lsb-release \
 python-is-python3
-RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
+RUN git clone https://github.com/KryKenz/Vlkyre
 RUN rm -rf node_modules && npm install -g n
 RUN n install 16 && hash -r
 # ====================== Vlkyre Redis + Railway.app Installation
