@@ -1,9 +1,9 @@
 # ====================== Vlkyre Linux-OS Installation
+FROM debian:latest
 # FROM python:latest
 # ENV BUN "/venv"
 # RUN python -m venv $BUN
 # ENV PATH "$BUN/bin:$PATH"
-FROM debian:latest
 # ====================== Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
 jq \
