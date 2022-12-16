@@ -44,8 +44,6 @@ ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 # RUN apt-get update
 # RUN apt-get install firefox -y
 
-RUN apt-get--fix-missing
-
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
     jq \
@@ -77,4 +75,5 @@ RUN npm install --location-global spotify-dl spdl-core typescript forever --forc
 RUN git init --initial-branch=Primary 
 RUN git fetch origin Primary 
 RUN git reset --hard origin/Primary 
-CMD python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
+CMD forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •𝐑𝐨𝐮𝐭𝐞┘/ӄryӄnz.js --color
+# python3 🌱𝖆𝖕𝖗𝖎𝖑𝖑𝖆.py
