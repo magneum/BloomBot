@@ -5,17 +5,17 @@ ENV PATH "$ᴋʀᴀᴋɪɴᴢʟᴀʙ™/bin:$PATH"
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
-    jq \
-    git \
-    curl \
-    wget \
-    ffmpeg \
-    nodejs \
-    npm \
-    bpm-tools \
-    python3-pip \
-    opus-tools \
-    python-is-python3
+jq \
+git \
+curl \
+wget \
+ffmpeg \
+nodejs \
+npm \
+bpm-tools \
+python3-pip \
+opus-tools \
+python-is-python3
 
 # Vlkyre runtime dependency Installation
 RUN git clone https://github.com/Krykenz/Vlkyre.git
