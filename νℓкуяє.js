@@ -20,8 +20,6 @@ console.error(error, "Uncaught Exception....");
 });
 require("./Core/νc໐rē.js");
 require("./process.js");
-var νℓpage = express();
-var vport = process.env.PORT || 8080;
 var {
 default: кяуνℓ,
 DisconnectReason,
@@ -41,6 +39,8 @@ var chalk = require("chalk");
 var express = require("express");
 var Krone = require("node-cron");
 var FileType = require("file-type");
+var νℓpage = express();
+var vport = process.env.PORT || 8080;
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./Core/myfunc");
 var PhoneNumber = require("awesome-phonenumber");
 var {
