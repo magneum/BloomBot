@@ -19,7 +19,7 @@
 },
 "scripts": {
 "ignite": "forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color",
-"build": "npm install --location=global spotify-dl spdl-core typescript forever --force"
+"make": "npm install --location=global spotify-dl spdl-core typescript forever --force"
 },
 "dependencies": {
 "@adiwajshing/baileys": "4.4.0",
