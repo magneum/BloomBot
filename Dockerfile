@@ -26,5 +26,5 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
-RUN npm install -g spotify-dl spdl-core typescript forever --force && npm install --force
+RUN npm install --location=global spotify-dl spdl-core typescript forever ytdl-core@^4.11.0 --force && npm install --force
 CMD [ "npm", "run", "ignite" ]
