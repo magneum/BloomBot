@@ -15,10 +15,18 @@ ffmpeg \
 bpm-tools \
 opus-tools \
 python3-pip \
+lsb-release \
 python-is-python3
 RUN git clone https://github.com/Krykenz/Vlkyre/tree/Valkyrie
 RUN rm -rf node_modules && npm install -g n
 RUN n install 16 && hash -r
+
+
+# Vlkyre Redis Installation
+RUN curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+RUN echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+RUN apt-get update && apt-get install redis -y
+
 
 # Vlkyre Runtime support Installation
 RUN cd Vlkyre
