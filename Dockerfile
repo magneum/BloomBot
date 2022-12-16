@@ -17,8 +17,7 @@ FROM python:latest
 ENV Caution "/venv"
 RUN python -m venv $Caution
 ENV PATH "$Caution/bin:$PATH"
-# ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-# Vlkyre os dependency Instalation
+                                                # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
 jq \
 npm \
@@ -35,8 +34,7 @@ RUN git clone https://github.com/Krykenz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+rx /usr/local/bin/youtube-dl 
 RUN rm -rf node_modules && npm install -g n && n install 16 && hash -r 
-# ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-# Vlkyre Runtime support Installation
+                                                    # Vlkyre Runtime support Installation
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
