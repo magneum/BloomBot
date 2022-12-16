@@ -234,7 +234,7 @@ spinner: νℓкуяє.spinner,
 νℓкуяє.packname = packname;
 νℓкуяє.pgdb = DATABASE_URL;
 νℓкуяє.ShowInfo = ShowInfo;
-νℓкуяє.MongoDb = MongoDb;
+νℓкуяє.MONGO_URL = MONGO_URL;
 νℓкуяє.author = author;
 νℓкуяє.prefix = prefix;
 νℓкуяє.mods = mods;
