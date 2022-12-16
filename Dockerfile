@@ -17,7 +17,8 @@ FROM python:latest
 ENV Caution "/venv"
 RUN python -m venv $Caution
 ENV PATH "$Caution/bin:$PATH"
-                                                # Vlkyre os dependency Instalation
+
+# Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
 jq \
 npm \
@@ -34,13 +35,14 @@ RUN git clone https://github.com/Krykenz/Vlkyre.git
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
 RUN chmod a+rx /usr/local/bin/youtube-dl 
 RUN rm -rf node_modules && npm install -g n && n install 16 && hash -r 
-                                                    # Vlkyre Runtime support Installation
+
+# Vlkyre Runtime support Installation
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary && hash -r 
 RUN npm install -g spotify-dl spdl-core typescript forever
-CMD forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •𝐑𝐨𝐮𝐭𝐞┘/ӄryӄnz.js --color
+CMD forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color
 # ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 # /*
 # ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
