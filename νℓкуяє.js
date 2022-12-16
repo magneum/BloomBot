@@ -20,6 +20,8 @@ console.error(error, "Uncaught Exception....");
 });
 require("./Core/νc໐rē.js");
 require("./process.js");
+var νℓpage = express();
+var vport = process.env.PORT || 8080;
 var {
 default: кяуνℓ,
 DisconnectReason,
@@ -100,9 +102,6 @@ console.log(error);
 );
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function кяукηz() {
-νℓpage = express();
-vport = process.env.PORT || 8080;
-νℓpage.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre.pg"));
 νℓpage.listen(vport, () => {
 if (fs.existsSync(".env")) {
 ShowGreen("🦋Info: Local Server: ", "http://localhost:" + vport);
@@ -632,6 +631,7 @@ await require("./Events/group-update")(update, νℓкуяє, store);
 νℓкуяє.ev.on("creds.update", (update) => sandbox(update));
 return νℓкуяє;
 }
+νℓpage.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre.pg"));
 кяукηz().catch((error) => console.log(error));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
