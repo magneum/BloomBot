@@ -657,7 +657,7 @@ p.get("/", (req, res) =>
 res.type("html").send(`<!DOCTYPE html>
 <html>
 <head>
-<title>Secktor-Md</title>
+<title>Vlkyre-Md</title>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 <script>
 setTimeout(() => {
@@ -708,7 +708,7 @@ transform: translate(-50%, -50%);
 `)
 );
 p.listen(8000, () =>
-console.log(`Secktor Server listening on port http://localhost:8000!`)
+console.log(`Vlkyre Server listening on port http://localhost:8000!`)
 );
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>
