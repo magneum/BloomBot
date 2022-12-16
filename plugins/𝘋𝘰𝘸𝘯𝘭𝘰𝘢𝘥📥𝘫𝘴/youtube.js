@@ -112,7 +112,7 @@ fileName: `${one.title}.mp3`,
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } catch (error) {
 console.log(error);
-var stream = await νℓкуяє.ytdl(one.videoId, {
+var stream = await νℓкуяє.TubeDL(one.videoId, {
 quality: "highestaudio",
 });
 await νℓкуяє.imgB(
