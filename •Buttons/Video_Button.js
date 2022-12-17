@@ -16,166 +16,166 @@
 require("../•Sandbox/Settings");
 let Economy = require(`../•dBase/🍃𝖒𝖔𝖓𝖌𝖔/economy`);
 exports.Video_Button = async (ӄryӄnz, Vlkyre, A𝖗𝖌𝖘, M𝖊𝖉𝖎𝖆, 𝕮𝖔𝖓𝖙𝖊𝖓𝖙) => {
-  await Economy.findOne(
-    {
-      ID: Vlkyre.sender,
-    },
-    async (Èrrðr, userEco) => {
-      if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
-      if (!userEco) {
-        let newUser = new Economy({
-          ID: Vlkyre.sender,
-          money: 500,
-          daily: Date.now(),
-          timeout: 86400000,
-          fishdone: 0,
-          fishtimeout: 1800000,
-          workdone: 0,
-          worktimeout: 900000,
-        });
-        await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-        return await Image_Button(
-          ӄryӄnz,
-          Vlkyre,
-          Vlkyre.A𝖗𝖌𝖘,
-          "./•Assests/Vlkyre_DB.png",
-          `╔◇══════════◇╗
+await Economy.findOne(
+{
+ID: Vlkyre.sender,
+},
+async (Èrrðr, userEco) => {
+if (Èrrðr) return Caught(ӄryӄnz, Vlkyre, Èrrðr);
+if (!userEco) {
+let newUser = new Economy({
+ID: Vlkyre.sender,
+money: 500,
+daily: Date.now(),
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+});
+await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+return await Image_Button(
+ӄryӄnz,
+Vlkyre,
+Vlkyre.A𝖗𝖌𝖘,
+"./•Assests/Vlkyre_DB.png",
+`╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
 Try The Command Again.`
-        );
-      }
-      ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
-      let ʀᴇᴀᴄᴛ;
-      if (Vlkyre.isReply) {
-        var Receiver =
-          Vlkyre.mtype == "extendedTextMessage" &&
-          Vlkyre.message.extendedTextMessage.contextInfo != null
-            ? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
-            : "";
-        ʀᴇᴀᴄᴛ = await ӄryӄnz
-          .sendMessage(
-            Vlkyre.chatID,
-            {
-              contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
-              video: { url: M𝖊𝖉𝖎𝖆 },
-              caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+);
+}
+("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
+let ʀᴇᴀᴄᴛ;
+if (Vlkyre.isReply) {
+var Receiver =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+ʀᴇᴀᴄᴛ = await ӄryӄnz
+.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 │║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 •╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-              footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
-              buttons: [
-                {
-                  buttonId: prefix + "HELP",
-                  buttonText: { displayText: prefix + "HELP" },
-                  type: 1,
-                },
-                {
-                  buttonId: prefix + "VLKYRE",
-                  buttonText: { displayText: prefix + "VLKYRE" },
-                  type: 1,
-                },
-              ],
-              headerType: 5,
-            },
-            {
-              contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
-              quoted: Vlkyre,
-            }
-          )
-          .catch((e) => console.log(e));
-        ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-      } else if (Vlkyre.mentionByTag) {
-        var Receiver =
-          Vlkyre.mtype == "extendedTextMessage" &&
-          Vlkyre.message.extendedTextMessage.contextInfo != null
-            ? Vlkyre.message.extendedTextMessage.contextInfo.mentionedJid
-            : [];
-        ʀᴇᴀᴄᴛ = await ӄryӄnz
-          .sendMessage(
-            Vlkyre.chatID,
-            {
-              contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
-              video: { url: M𝖊𝖉𝖎𝖆 },
-              caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+quoted: Vlkyre,
+}
+)
+.catch((e) => console.log(e));
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+} else if (Vlkyre.mentionByTag) {
+var Receiver =
+Vlkyre.mtype == "extendedTextMessage" &&
+Vlkyre.message.extendedTextMessage.contextInfo != null
+? Vlkyre.message.extendedTextMessage.contextInfo.mentionedJid
+: [];
+ʀᴇᴀᴄᴛ = await ӄryӄnz
+.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 │║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 •╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-              footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
-              buttons: [
-                {
-                  buttonId: prefix + "HELP",
-                  buttonText: { displayText: prefix + "HELP" },
-                  type: 1,
-                },
-                {
-                  buttonId: prefix + "VLKYRE",
-                  buttonText: { displayText: prefix + "VLKYRE" },
-                  type: 1,
-                },
-              ],
-              headerType: 5,
-            },
-            {
-              contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
-              quoted: Vlkyre,
-            }
-          )
-          .catch((e) => console.log(e));
-        ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-      } else {
-        ʀᴇᴀᴄᴛ = await ӄryӄnz
-          .sendMessage(
-            Vlkyre.chatID,
-            {
-              contextInfo: { mentionedJid: [Vlkyre.sender] },
-              video: { url: M𝖊𝖉𝖎𝖆 },
-              caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+quoted: Vlkyre,
+}
+)
+.catch((e) => console.log(e));
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+} else {
+ʀᴇᴀᴄᴛ = await ӄryӄnz
+.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender] },
+video: { url: M𝖊𝖉𝖎𝖆 },
+caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
 │║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
 •╚═══════⋑
 
 ${𝕮𝖔𝖓𝖙𝖊𝖓𝖙}`,
-              footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
-              buttons: [
-                {
-                  buttonId: prefix + "HELP",
-                  buttonText: { displayText: prefix + "HELP" },
-                  type: 1,
-                },
-                {
-                  buttonId: prefix + "VLKYRE",
-                  buttonText: { displayText: prefix + "VLKYRE" },
-                  type: 1,
-                },
-              ],
-              headerType: 5,
-            },
-            {
-              quoted: Vlkyre,
-            }
-          )
-          .catch((e) => console.log(e));
-        ("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
-        let ʀᴇᴀᴄᴛionMessage = {
-          ʀᴇᴀᴄᴛ: {
-            text: `⚡`,
-            key: ʀᴇᴀᴄᴛ.key,
-          },
-        };
-        console.log(ʀᴇᴀᴄᴛ);
-        return await ӄryӄnz
-          .sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
-          .catch((e) => console.log(e));
-      }
-    }
-  );
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
+type: 1,
+},
+],
+headerType: 5,
+},
+{
+quoted: Vlkyre,
+}
+)
+.catch((e) => console.log(e));
+("|⬡════════════════════════════════════════════════════════════════════════════════════|▷◁|═════════════════════════════════════════════════════════════════════⬡|");
+let ʀᴇᴀᴄᴛionMessage = {
+ʀᴇᴀᴄᴛ: {
+text: `⚡`,
+key: ʀᴇᴀᴄᴛ.key,
+},
+};
+console.log(ʀᴇᴀᴄᴛ);
+return await ӄryӄnz
+.sendMessage(Vlkyre.chatID, ʀᴇᴀᴄᴛionMessage)
+.catch((e) => console.log(e));
+}
+}
+);
 };
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 /*
