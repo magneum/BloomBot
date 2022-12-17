@@ -73,11 +73,11 @@ else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
     subprocess.run(["git","config","--global","user.name",GitName],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","config","--global","user.email",GitEmail],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","init","--initial-branch=Primary"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","fetch","origin","Primary"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","reset","--hard","origin/Primary"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","init","--initial-branch=Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","fetch","origin","Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","reset","--hard","origin/Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 
     if DOCKER=="DOCKER":
         LOGS.info(str("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!"))
@@ -95,9 +95,9 @@ except Exception as Error:
         subprocess.run(["git","config","--global","user.name",GitName],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","config","--global","user.email",GitEmail],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","init","--initial-branch=Primary"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","fetch","origin","Primary"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","reset","--hard","origin/Primary"],check=True,stdout=subprocess.PIPE).stdout 
+        subprocess.run(["git","init","--initial-branch=Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
+        subprocess.run(["git","fetch","origin","Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
+        subprocess.run(["git","reset","--hard","origin/Valkyrie"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","stash"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","stash","drop"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 

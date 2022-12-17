@@ -23,6 +23,7 @@
 "build": "npm install --location=global forever --force",
 "worker": "forever --no-warnings νℓкуяє.js --color",
 "vDev": "node --no-warnings νℓкуяє.js",
+"start": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && npm run web",
 "stop": "pm2 stop νℓкуяє"
 },
 "dependencies": {
