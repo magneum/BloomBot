@@ -9,8 +9,6 @@
 <img src="https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg" alt="https://www.youtube.com/watch?v=C6h0HvxeqFc "></a>
 </div>
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/EIKYij?referralCode=B6ZmKf)
-
 ```sh
 Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 
@@ -399,7 +397,5 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 ║ In short, Fork At Your Own Risk.
 ╚════════════╝
 ```
-
-# 💠 DΣPLӨY
-
+# 💠 DΣPLӨY  
 - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KryKnz/Vlkyre/tree/Primary)

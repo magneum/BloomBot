@@ -148,14 +148,16 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 𝐠𝐩𝐚𝐲: +918436686758
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre/#Groups
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre.pg/#Groups
 •╚═══════⋑
 
 
 ┌╔══『 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐢𝐞𝐬 』
 │║⦁ 🐝${prefix}AnimationMenu
 │║⦁ 🐾${prefix}AnimeMenu
+│║⦁ 👓${prefix}AudioFilterMenu
 │║⦁ 🏝️${prefix}ConverterMenu
+│║⦁ 📥${prefix}DownloaderMenu
 │║⦁ 💰${prefix}GameMenu
 │║⦁ 🔰${prefix}GroupMenu
 │║⦁ 🍌${prefix}HentaiMenu
@@ -164,8 +166,9 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 🏳️‍🌈${prefix}RandomMenu
 │║⦁ 🛍️${prefix}StoreMenu
 │║⦁ 🌐${prefix}WebMenu
+│║⦁ ⭕${prefix}YTFilterMenu
 •╚═══════⋑`,
-footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre",
+footer: "❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre.pg",
 buttons: [
 {
 buttonId: prefix + "MENU",

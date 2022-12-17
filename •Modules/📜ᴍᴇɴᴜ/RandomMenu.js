@@ -72,7 +72,7 @@ Vlkyre.A𝖗𝖌𝖘,
 │║⦁ 𝐠𝐩𝐚𝐲: +918436686758
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre/#Groups
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre.pg/#Groups
 •╚═══════⋑
 
 ┌╔══『 🏳️‍🌈𝐑𝐀𝐍𝐃𝐎𝐌🏳️‍🌈 』

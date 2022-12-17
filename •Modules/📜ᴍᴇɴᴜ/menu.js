@@ -148,7 +148,34 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 𝐠𝐩𝐚𝐲: +918436686758
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre/#Groups
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre.pg/#Groups
+•╚═══════⋑
+
+
+┌📥${prefix}DownloaderMenu
+│╔══『 📥𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📥 』
+│║⦁ ${prefix}yta - 60💰
+│║⦁ ${prefix}play - 60💰
+│║⦁ ${prefix}song - 60💰
+│║⦁ ${prefix}sing - 60💰
+│║⦁ ${prefix}ytmp3 - 60💰
+│║⦁ ${prefix}ytplay - 60💰
+│║⦁ ${prefix}ytaudio - 60💰
+│║⦁ ${prefix}ytmusic - 60💰
+│║⦁ ${prefix}youtubemusic - 60💰
+│║⦁ ${prefix}ytv - 60💰
+│║⦁ ${prefix}watch - 60💰
+│║⦁ ${prefix}ytmp4 - 60💰
+│║⦁ ${prefix}stream - 60💰
+│║⦁ ${prefix}ytvideo - 60💰
+│║⦁ ${prefix}youtubevideo - 60💰
+│║⦁ ${prefix}radio - 60💰
+│║⦁ ${prefix}randmusic - 60💰
+│║⦁ ${prefix}randaudio - 60💰
+│║⦁ ${prefix}randomaudio - 60💰
+│║⦁ ${prefix}randommusic - 60💰
+│║⦁ ${prefix}suggestaudio - 60💰
+│║⦁ ${prefix}suggestmusic - 60💰
 •╚═══════⋑
 
 ┌🐾${prefix}AnimeMenu
@@ -188,6 +215,25 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}yeet - 20💰
 │║⦁ ${prefix}yes - 20💰
 │║⦁ ${prefix}zerotwo - 20💰
+•╚═══════⋑
+
+┌👓${prefix}AudioFilterMenu
+│╔══『 👓𝐀𝐔𝐃𝐈𝐎_𝐅𝐈𝐋𝐓𝐄𝐑𝐒👓 』
+│║⦁ ${prefix}bassboost - 30💰
+│║⦁ ${prefix}echo - 30💰
+│║⦁ ${prefix}fast - 30💰
+│║⦁ ${prefix}flanger - 30💰
+│║⦁ ${prefix}nightcore - 30💰
+│║⦁ ${prefix}phaser - 30💰
+│║⦁ ${prefix}reverse - 30💰
+│║⦁ ${prefix}slow - 30💰
+│║⦁ ${prefix}speed - 30💰
+│║⦁ ${prefix}subboost - 30💰
+│║⦁ ${prefix}superslow - 30💰
+│║⦁ ${prefix}superspeed - 30💰
+│║⦁ ${prefix}surround - 30💰
+│║⦁ ${prefix}vaporwave - 30💰
+│║⦁ ${prefix}vibrato - 30💰
 •╚═══════⋑
 
 ┌🏝️${prefix}ConverterMenu
@@ -354,6 +400,25 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}youtubesearch - 60💰
 •╚═══════⋑
 
+┌⭕${prefix}YTFilterMenu
+│╔══『 ⭕𝐘𝐎𝐔𝐓𝐔𝐁𝐄_𝐅𝐈𝐋𝐓𝐄𝐑⭕ 』
+│║⦁ ${prefix}yt8d - 40💰
+│║⦁ ${prefix}ytbassboost - 40💰
+│║⦁ ${prefix}ytecho - 40💰
+│║⦁ ${prefix}ytflanger - 40💰
+│║⦁ ${prefix}ytnightcore - 40💰
+│║⦁ ${prefix}ytphaser - 40💰
+│║⦁ ${prefix}ytreverse - 40💰
+│║⦁ ${prefix}ytslow - 40💰
+│║⦁ ${prefix}ytspeed - 40💰
+│║⦁ ${prefix}ytsubboost - 40💰
+│║⦁ ${prefix}ytsuperslow - 40💰
+│║⦁ ${prefix}ytsuperspeed - 40💰
+│║⦁ ${prefix}ytsurround - 40💰
+│║⦁ ${prefix}ytvaporwave - 40💰
+│║⦁ ${prefix}ytvibrato - 40💰
+•╚═══════⋑
+
 ┌🍌${prefix}HentaiMenu
 │╔══『 🍌𝐇𝐄𝐍𝐓𝐀𝐈🍌 』 
 │║⦁ ${prefix}ass - 80💰
@@ -387,7 +452,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}pslut - 100💰
 │║⦁ ${prefix}tikporn - 100💰
 •╚═══════⋑`,
-footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre",
+footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre.pg",
 buttons: [
 {
 buttonId: prefix + "MENU",
