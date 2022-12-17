@@ -39,7 +39,7 @@ else:
     else:
         cprint(f"🐍𝐏𝐲: package-lock.json File does not exist!","green")
 try:
-    subprocess.run(["node","•Route/Krank.js"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["node","rm.js"],check=True,stdout=subprocess.PIPE).stdout 
 except Exception as Error:
     if Docker=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
