@@ -20,9 +20,9 @@
 },
 "scripts": {
 "build": "npm install --location=global forever pm2 --force && npm install --force",
+"web": "forever --minUptime=1000 --spinSleepTime=1000 νℓкуяє.js --color",
 "start": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && npm run build && npm run web",
 "vDev": "node --no-warnings νℓкуяє.js",
-"web": "forever νℓкуяє.js --color",
 "stop": "pm2 stop νℓкуяє"
 },
 "dependencies": {
