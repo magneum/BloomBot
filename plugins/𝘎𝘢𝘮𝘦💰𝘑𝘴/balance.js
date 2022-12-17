@@ -35,14 +35,7 @@ ID: νℓcнαт.sender,
 },
 async (error, userEco) => {
 if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 }
 if (!userEco) {
 new νℓкуяє.Economy({
@@ -55,14 +48,7 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 }).catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 });
 return await νℓкуяє.imgB(
 νℓкуяє,

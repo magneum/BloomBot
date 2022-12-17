@@ -45,14 +45,7 @@ random = Math.floor(Math.random() * 10000);
 media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, random);
 νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${media} -af "flanger" ${random}.mp3`,
 async (error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var Thumb = await νℓкуяє.getBuffer("./Gallery/νℓкуяє_beta.png");
 return await νℓкуяє.sendMessage(
