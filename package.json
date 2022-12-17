@@ -19,8 +19,8 @@
     "Tube": "Tube"
   },
   "scripts": {
-    "build": "rm -rf node_modules && npm install --location=global forever pm2 --force",
     "web": "pm2 start νℓкуяє.js --deep-monitoring --attach --name νℓкуяє",
+    "build": "npm install --location=global forever pm2 --force",
     "start": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && npm run build && npm run web",
     "vDev": "node --no-warnings νℓкуяє.js",
     "stop": "pm2 stop νℓкуяє"
