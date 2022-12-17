@@ -24,7 +24,7 @@ RUN git fetch origin Valkyrie
 RUN git reset --hard origin/Valkyrie
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN npm install -g forever pm2 --force && npm install --force
-RUN python3 🐍𝖛𝖑𝖐𝖕𝖞.py
+# RUN python3 🐍𝖛𝖑𝖐𝖕𝖞.py
 CMD npm run web
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
