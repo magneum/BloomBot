@@ -3290,7 +3290,6 @@ case "help":
 case "menu":
 case "command":
 case "commands":
-case "🛰️Vlkyre":
 case "✈️Commands":
 try {
 await require("../Plugins/commands")(
