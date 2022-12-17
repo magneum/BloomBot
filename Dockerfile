@@ -24,4 +24,4 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN npm install -g spotify-dl spdl-core forever --force
 RUN git init --initial-branch=version_4 && git fetch origin version_4 && git reset --hard origin/version_4
-CMD npm run build
+CMD npm run vlkyre
