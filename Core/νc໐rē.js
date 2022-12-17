@@ -46,14 +46,7 @@ ID: νℓcнαт.sender,
 },
 (error, banCheck) => {
 if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 νℓкуяє.userBanCheck.findOne(
 {
@@ -61,14 +54,7 @@ ID: νℓcнαт.chat,
 },
 async (error, groupCheck) => {
 if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(кяуcαℓℓ, "./Gallery/νℓкуяє_error.png");
 }
 if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
 if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;

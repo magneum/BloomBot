@@ -47,14 +47,7 @@ media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, ra
 νℓкуяє.pathFFmpeg + ` -i ${media} ${random}.png`,
 async (error) => {
 if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (νℓкуяє.fs.existsSync(random + ".png")) {
