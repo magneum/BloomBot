@@ -119,18 +119,18 @@ except Exception as Error:
         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}"))
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
-pkgFile=pathlib.Path("package-lock.json")
-if pkgFile.exists():
-    os.remove("package-lock.json")
-    if DOCKER=="DOCKER":
-        LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!"))
-    else:
-        cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!","yellow")
-else:
-    if DOCKER=="DOCKER":
-        LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!"))
-    else:
-        cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
+# pkgFile=pathlib.Path("package-lock.json")
+# if pkgFile.exists():
+#     os.remove("package-lock.json")
+#     if DOCKER=="DOCKER":
+#         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!"))
+#     else:
+#         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!","yellow")
+# else:
+#     if DOCKER=="DOCKER":
+#         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!"))
+#     else:
+#         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
 #("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 # /*
 #  * * * * * * * * * * |       (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
