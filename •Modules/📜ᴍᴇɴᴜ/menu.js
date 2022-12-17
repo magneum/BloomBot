@@ -148,7 +148,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ 𝐠𝐩𝐚𝐲: +918436686758
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: github.com/kryknz/vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre.pg/#Groups
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: krykenz.github.io/Vlkyre/#Groups
 •╚═══════⋑
 
 
@@ -452,7 +452,7 @@ caption: `Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,mod
 │║⦁ ${prefix}pslut - 100💰
 │║⦁ ${prefix}tikporn - 100💰
 •╚═══════⋑`,
-footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre.pg",
+footer: "*❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 ❞\n⭕https://krykenz.github.io/Vlkyre",
 buttons: [
 {
 buttonId: prefix + "MENU",
