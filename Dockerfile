@@ -21,7 +21,9 @@ RUN npm install -g forever pm2 spotify-dl spdl-core
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
-RUN git init --initial-branch=Valkyrie && git fetch origin Valkyrie && git reset --hard origin/Valkyrie
+RUN git init --initial-branch=Valkyrie 
+RUN git fetch origin Valkyrie 
+RUN git reset --hard origin/Valkyrie
 CMD npm run start
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
