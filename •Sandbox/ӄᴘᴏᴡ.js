@@ -288,41 +288,25 @@ if (userGCheck && !Vlkyre.fromMe && !Vlkyre.isSenderTUF) return;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (Vlkyre.isCommand) {
 let MeA = [];
-let MeB = [];
-let MeC = [];
-let MeD = [];
-let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode(
-"120363042762307739@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata(
-"120363020792949649@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄryӄnz.groupMetadata(
-"120363039223842047@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata(
-"120363024871653603@g.us"
-);
-let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata(
-"120363042762307739@g.us"
-);
+// let MeB = [];
+// let MeC = [];
+// let MeD = [];
+let ʀᴇꜱᴘᴏɴꜱᴇ1 = await ӄryӄnz.groupInviteCode("120363020792949649@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇ2 = await ӄryӄnz.groupInviteCode("120363039223842047@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇ3 = await ӄryӄnz.groupInviteCode("120363024871653603@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇ4 = await ӄryӄnz.groupInviteCode("120363042762307739@g.us");
+let ʀᴇꜱᴘᴏɴꜱᴇA = await ӄryӄnz.groupMetadata("120363020792949649@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇB = await ӄryӄnz.groupMetadata("120363039223842047@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇC = await ӄryӄnz.groupMetadata("120363024871653603@g.us");
+// let ʀᴇꜱᴘᴏɴꜱᴇD = await ӄryӄnz.groupMetadata("120363042762307739@g.us");
 for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇA.participants.length; i++)
 MeA[i] = ʀᴇꜱᴘᴏɴꜱᴇA.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
-MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
-MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
-for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
-MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
+// for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇB.participants.length; i++)
+// MeB[i] = ʀᴇꜱᴘᴏɴꜱᴇB.participants[i].id;
+// for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇC.participants.length; i++)
+// MeC[i] = ʀᴇꜱᴘᴏɴꜱᴇC.participants[i].id;
+// for (let i = 0; i < ʀᴇꜱᴘᴏɴꜱᴇD.participants.length; i++)
+// MeD[i] = ʀᴇꜱᴘᴏɴꜱᴇD.participants[i].id;
 ("|⬡═══════════════════════════════════════════════════════════════| (c)Ѷ𝖑𝐤𝐲𝖗𝖊🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
 if (
 !Vlkyre.fromMe &&
@@ -341,10 +325,10 @@ Vlkyre.isCommand &&
 !Vlkyre.Body.includes("RULES") &&
 !Vlkyre.Body.includes("VLKYRE") &&
 !Vlkyre.Body.includes("SUPPORT") &&
-!MeA.includes(Vlkyre.sender) &&
-!MeB.includes(Vlkyre.sender) &&
-!MeC.includes(Vlkyre.sender) &&
-!MeD.includes(Vlkyre.sender)
+!MeA.includes(Vlkyre.sender)
+// !MeB.includes(Vlkyre.sender) &&
+// !MeC.includes(Vlkyre.sender) &&
+// !MeD.includes(Vlkyre.sender)
 ) {
 return await ӄryӄnz.sendMessage(Vlkyre.chatID, {
 text: `📢𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐍𝐞𝐞𝐝𝐞𝐝❗
