@@ -18,11 +18,10 @@ python-is-python3
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
 RUN rm -rf node_modules && npm install -g n
 RUN n install 16 && hash -r
+RUN npm install --location=global forever pm2 spotify-dl spdl-core --force
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=Primary && git fetch origin Primary && git reset --hard origin/Primary
-RUN npm install -g spotify-dl spdl-core forever --force
-RUN npm install --force
 CMD npm start
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
