@@ -16,9 +16,8 @@ bpm-tools \
 opus-tools \
 python3-pip \
 python-is-python3
-RUN git clone --branch version_4 https://github.com/Krykenz/Vlkyre.git
-RUN rm -rf node_modules && npm install -g n
-RUN n install 16 && hash -r
+RUN git clone --branch version_4 https://github.com/Krykenz/Vlkyre
+RUN npm install -g n && n install 16 && hash -r
 
 # Vlkyre Runtime support Installation
 RUN cd Vlkyre
