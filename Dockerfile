@@ -22,6 +22,7 @@ RUN git clone --branch version_4 https://github.com/Krykenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=version_4 && git fetch origin version_4 && git reset --hard origin/version_4
+RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force
 CMD npm run vlkyre
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
