@@ -21,8 +21,7 @@
 "docs": "docs"
 },
 "scripts": {
-"ignite": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color",
-"vlkyre": "npm install youtube-sr@4.2.0 yt-search@2.10.3 ytdl-core --force && npm run ignite"
+"vlkyre": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color"
 },
 "dependencies": {
 "@adiwajshing/baileys": "4.4.0",
