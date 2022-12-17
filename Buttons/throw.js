@@ -19,7 +19,7 @@ return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
 image: { url: imåge },
-caption: `Ῠ  *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\nῨ  *📢ID:* ${νℓcнαт.chat}
+caption: `*🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\n*📢ID:* ${νℓcнαт.chat}
 
 
 *😥Sorry:* _${νℓкуяє.pushname}_

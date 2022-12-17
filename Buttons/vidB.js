@@ -19,7 +19,7 @@ return await νℓкуяє.sendMessage(
 νℓcнαт.chat,
 {
 image: { url: νidē໐ },
-caption: `Ῠ  *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\nῨ  *📢ID:* ${νℓcнαт.chat}
+caption: `*🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\n*📢ID:* ${νℓcнαт.chat}
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://krykenz.github.io/Vlkyre.pg`,
