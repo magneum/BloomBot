@@ -21,7 +21,7 @@
 "docs": "docs"
 },
 "scripts": {
-"ignite": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && node --no-warnings •Route/ӄryӄnz.js",
+"ignite": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color",
 "build": "npm install --location=global spotify-dl spdl-core typescript forever --force"
 },
 "dependencies": {
