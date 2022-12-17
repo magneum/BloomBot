@@ -8,14 +8,17 @@
 },
 "depecrated": false,
 "directories": {
-"•Sandbox": "•Sandbox",
-"•dBase": "•dBase",
-"•Modules": "•Modules",
-"•Buttons": "•Buttons",
-"•Events": "•Events",
 "•Assests": "•Assests",
+"•Buttons": "•Buttons",
+"•Canvas": "•Canvas",
+"•dBase": "•dBase",
+"•Events": "•Events",
+"•Ext": "•Ext",
+"•Json": "•Json",
+"•Modules": "•Modules",
 "•Route": "•Route",
-"•Json": "•Json"
+"•Sandbox": "•Sandbox",
+"docs": "docs"
 },
 "scripts": {
 "ignite": "forever --minUptime 1000 --spinSleepTime 1000  --no-warnings •Route/ӄryӄnz.js --color",
