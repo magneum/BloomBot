@@ -73,7 +73,7 @@ else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
     subprocess.run(["git","config","--global","user.name",GitName],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","config","--global","user.email",GitEmail],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","init","--initial-branch=Primary"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","fetch","origin","Primary"],check=True,stdout=subprocess.PIPE).stdout 
