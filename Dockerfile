@@ -13,10 +13,11 @@ python3-pip \
 python-is-python3
 RUN apt-get update && npm install -g spotify-dl spdl-core forever pm2 --force
 RUN git clone --branch version_4 https://github.com/Krykenz/Vlkyre
+RUN yarn config set ignore-engines true
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=version_4 && git fetch origin version_4 && git reset --hard origin/version_4
-RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force
+RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && yarn install --ignore-engines
 CMD npm run vlkyre
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
