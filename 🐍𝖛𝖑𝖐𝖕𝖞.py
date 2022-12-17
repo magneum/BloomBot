@@ -53,7 +53,7 @@ else:
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
 try:
-    subprocess.run(["node","rm.js"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["node","contents.js"],check=True,stdout=subprocess.PIPE).stdout 
 except Exception as Error:
     if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}"))
