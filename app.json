@@ -1,0 +1,17 @@
+{
+"logo": "https://img.youtube.com/vi/C6h0HvxeqFc/0.jpg",
+"repository": "https://github.com/KryKnz/Vlkyre.git",
+"website": "https://aigroups.krakinzkon.repl.co",
+"name": "Ѷ𝖑𝐤𝐲𝖗𝖊",
+"stack": "container",  
+"formation": { "worker": { "quantity": 1 }},
+"env": {  
+"prefix": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"upVersion": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"upbranch": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"timezone": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"mods": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"DATABASE_URL": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true },
+"MONGO_URL": {  "description": "Enter The Required Key from @KrakinzBot...",  "required": true }
+}
+}
