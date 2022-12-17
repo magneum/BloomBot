@@ -19,10 +19,10 @@ RUN apt-get install nodejs -y && node -v && hash -r
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN git init --initial-branch=Valkyrie 
 RUN git fetch origin Valkyrie 
 RUN git reset --hard origin/Valkyrie
+RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN npm run build
 CMD npm start
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
