@@ -3,16 +3,29 @@
 #  * * * * * * * * * * |       (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
 #  */
 #("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
-import os 
-import logging 
-import pathlib 
-import git as 𝖛 
-import subprocess 
-from loguru import *
-from datetime import *
-from termcolor import *
-from os import getenv 
-from dotenv import load_dotenv 
+try:
+    import os 
+    import logging 
+    import pathlib 
+    import git as 𝖛 
+    import subprocess 
+    from loguru import *
+    from datetime import *
+    from termcolor import *
+    from os import getenv 
+    from dotenv import load_dotenv 
+except ImportError:
+    subprocess.run(["pip", "install", "-r", "⭕𝖈𝖆𝖗𝖆.txt"],check=True,stdout=subprocess.PIPE).stdout 
+    import os 
+    import logging 
+    import pathlib 
+    import git as 𝖛 
+    import subprocess 
+    from loguru import *
+    from datetime import *
+    from termcolor import *
+    from os import getenv 
+    from dotenv import load_dotenv 
 load_dotenv("./.env")
 DOCKER=getenv("DOCKER",None)
 GitName=getenv("GIT_USERNAME",None)
