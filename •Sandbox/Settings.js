@@ -70,9 +70,9 @@ dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
 global.prefix = process.env.prefix || "#";
 global.port = process.env.PORT || 8080;
-global.packname = "Vlkyre";
-global.author = "Vlkyre";
-global.name = "Vlkyre";
+global.packname = "Vlkyre:v4";
+global.author = "KryKenz";
+global.name = "Vlkyre:v4";
 global.APIs = {
 nrtm: "https://nurutomo.herokuapp.com",
 dzx: "https://api.dhamzxploit.my.id",
