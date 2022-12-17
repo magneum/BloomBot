@@ -1,23 +1,17 @@
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-FROM python:latest
-ENV version_4 "/venv"
-RUN python -m venv $version_4
-ENV PATH "$version_4/bin:$PATH"
+FROM node:16.19.0-bullseye
 RUN apt-get update && apt-get install -y \
 jq \
 npm \
 git \
 curl \
 wget \
-nodejs \
 ffmpeg \
 bpm-tools \
 opus-tools \
 python3-pip \
 python-is-python3
-RUN curl -s https://deb.nodesource.com/setup_16.x | bash
-RUN apt-get install nodejs -y && hash -r
-RUN npm install -g spotify-dl spdl-core forever pm2 --force
+RUN apt-get update && npm install -g spotify-dl spdl-core forever pm2 --force
 RUN git clone --branch version_4 https://github.com/Krykenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
