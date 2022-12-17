@@ -92,14 +92,7 @@ one.thumbnail
 random = Math.floor(Math.random() * 10000);
 νℓкуяє.exec(`${νℓкуяє.pathFFmpeg} -i ${DLoader} -af "atempo=0.8" ${random + one.videoId}.mp3`,
 async (error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var Thumb = await νℓкуяє.getBuffer(one.thumbnail);
 return await νℓкуяє.sendMessage(

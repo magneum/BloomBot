@@ -20,14 +20,7 @@ ID: νℓcнαт.sender,
 },
 async (error, wait) => {
 if (error) {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (!wait) {
@@ -38,14 +31,7 @@ PermaTimeOut: 10000,
 })
 .save()
 .catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 });
 return 𝖘𝖙𝖆𝖙𝖚𝖘(true);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -54,14 +40,7 @@ let Time = νℓкуяє.ms(wait.PermaTimeOut - (present - wait.TimeOut));
 wait.PermaTimeOut = 10000;
 wait.TimeOut = present;
 await wait.save().catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 });
 νℓcнαт.reply(
 `*😥Sorry:* _${νℓкуяє.pushname}_
@@ -75,14 +54,7 @@ return 𝖘𝖙𝖆𝖙𝖚𝖘(false);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
 await wait.deleteOne().catch((error) => {
-return νℓcнαт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-);
+return νℓкуяє.throw(error, "./Gallery/νℓкуяє_error.png");
 });
 return 𝖘𝖙𝖆𝖙𝖚𝖘(true);
 }
