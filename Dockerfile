@@ -16,14 +16,13 @@ python3-pip \
 lsb-release \
 python-is-python3
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
-RUN rm -rf node_modules && npm install -g n
-RUN n install 16 && hash -r
-RUN npm install --location=global forever pm2 spotify-dl spdl-core --force
+RUN npm install -g n && n install 16 && hash -r
+RUN npm install -g forever pm2 spotify-dl spdl-core
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN git init --initial-branch=Valkyrie && git fetch origin Valkyrie && git reset --hard origin/Valkyrie
-CMD ["npm","start"]
+CMD npm run start
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
 # ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
