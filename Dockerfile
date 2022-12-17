@@ -8,16 +8,17 @@ npm \
 git \
 curl \
 wget \
-nodejs \
 ffmpeg \
 bpm-tools \
 opus-tools \
 python3-pip \
 lsb-release \
 python-is-python3
+RUN curl -s https://deb.nodesource.com/setup_16.x | bash
+RUN apt-get install nodejs -y && node -v && hash -r
+
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
-RUN npm install -g n && n install 16 && hash -r
-RUN npm install -g forever pm2 spotify-dl spdl-core
+RUN npm install -g spotify-dl spdl-core forever --force
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
