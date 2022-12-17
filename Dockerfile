@@ -16,15 +16,14 @@ lsb-release \
 python-is-python3
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get install nodejs -y && node -v && hash -r
-
 RUN git clone --branch Valkyrie https://github.com/KryKenz/Vlkyre
-RUN npm install -g spotify-dl spdl-core forever --force
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt
 RUN git init --initial-branch=Valkyrie 
 RUN git fetch origin Valkyrie 
 RUN git reset --hard origin/Valkyrie
+RUN npm run build
 CMD npm run start
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
