@@ -22,7 +22,6 @@ RUN npm install -g n && n install 16 && hash -r
 # Vlkyre Runtime support Installation
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git init --initial-branch=version_4 && git fetch origin version_4 && git reset --hard origin/version_4
 RUN npm install -g spotify-dl spdl-core forever --force
-RUN npm install --force youtube-sr@4.2.0 yt-search@2.10.3 ytdl-core
-CMD node --no-warnings •Route/ӄryӄnz.js
+RUN git init --initial-branch=version_4 && git fetch origin version_4 && git reset --hard origin/version_4
+CMD npm run build
