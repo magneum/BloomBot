@@ -14,7 +14,7 @@ from termcolor import *
 from os import getenv 
 from dotenv import load_dotenv 
 load_dotenv("./.env")
-Docker=getenv("DOCKER",None)
+DOCKER=getenv("DOCKER",None)
 GitName=getenv("GIT_USERNAME",None)
 GitEmail=getenv("GIT_USEREMAIL",None)
 class InterceptHandler(logging.Handler):
@@ -29,31 +29,31 @@ LOGS=logging.getLogger(__name__)
 pkgFile=pathlib.Path("package-lock.json")
 if pkgFile.exists():
     os.remove("package-lock.json")
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package-lock.json has been cleaned!"))
     else:
         cprint(f"🐍𝐏𝐲: package-lock.json has been cleaned!","yellow")
 else:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package-lock.json File does not exist!"))
     else:
         cprint(f"🐍𝐏𝐲: package-lock.json File does not exist!","green")
 try:
     subprocess.run(["node","rm.js"],check=True,stdout=subprocess.PIPE).stdout 
 except Exception as Error:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
     else:
         cprint(f"🐍𝐏𝐲: {Error}")
 pkgFile=pathlib.Path("package.json")
 if pkgFile.exists():
     os.remove("package.json")
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package.json has been cleaned!"))
     else:
         cprint(f"🐍𝐏𝐲: package.json has been cleaned!","yellow")
 else:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package.json File does not exist!"))
     else:
         cprint(f"🐍𝐏𝐲: package.json File does not exist!","green")
@@ -65,12 +65,12 @@ try:
     subprocess.run(["git","fetch","origin","Primary"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","reset","--hard","origin/Primary"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str("🐍𝐏𝐲: git sync done!"))
     else:
         cprint("🐍𝐏𝐲: git sync done!","green")
 except Exception as Error:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
         LOGS.info(str("🐍𝐏𝐲: Error In git sync!"))
         LOGS.info(str("🐍𝐏𝐲: Trying TO Stash and ReTry!"))
@@ -88,7 +88,7 @@ except Exception as Error:
         subprocess.run(["git","stash","drop"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 
     except Exception as Error:
-        if Docker=="DOCKER":
+        if DOCKER=="DOCKER":
             LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
             LOGS.info(str("🐍𝐏𝐲: Nothing To Stash and Drop!"))
         else:
@@ -96,37 +96,27 @@ except Exception as Error:
             cprint("🐍𝐏𝐲: Nothing To Stash and Drop!","blue")
 try:
     subprocess.run(["npm","install","--force","--save"],check=True,stdout=subprocess.PIPE).stdout 
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: npm install done using python subprocess!"))
     else:
         cprint(f"🐍𝐏𝐲: npm install done using python subprocess!")
 except Exception as Error:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
     else:
         cprint(f"🐍𝐏𝐲: {Error}")
 pkgFile=pathlib.Path("package-lock.json")
 if pkgFile.exists():
     os.remove("package-lock.json")
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package-lock.json has been cleaned!"))
     else:
         cprint(f"🐍𝐏𝐲: package-lock.json has been cleaned!","yellow")
 else:
-    if Docker=="DOCKER":
+    if DOCKER=="DOCKER":
         LOGS.info(str(f"🐍𝐏𝐲: package-lock.json File does not exist!"))
     else:
         cprint(f"🐍𝐏𝐲: package-lock.json File does not exist!","green")
-
-try:
-    subprocess.run(["node", "--no-warnings", "•Route/ӄryӄnz.js"],check=True,stdout=subprocess.PIPE).stdout 
-except Exception as Error:
-    if Docker=="DOCKER":
-        LOGS.info(str(f"🐍𝐏𝐲: {Error}"))
-        LOGS.info(str("🐍𝐏𝐲: Could not connect to ӄryӄnz.js"))
-    else:
-        cprint(f"🐍𝐏𝐲: {Error}")
-        cprint("🐍𝐏𝐲: Could not connect to ӄryӄnz.js","red")
 #("|⬡════════════════════════════════════════════════════════════|▷   ʍǟɖɛ ɮʏ ӄʀǟӄɨռʐʟǟɮ™  ◁|════════════════════════════════════════════════════════════⬡|");
 # /*
 #  * * * * * * * * * * |       (𝐜)Vlkyre 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!        * * * * * * * * * *
