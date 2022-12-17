@@ -22,7 +22,7 @@ image: { url: νidē໐ },
 caption: `*🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\n*📢ID:* ${νℓcнαт.chat}
 
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://krykenz.github.io/Vlkyre.pg`,
+footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* krykenz.github.io/Vlkyre.pg`,
 mentions: [νℓcнαт.sender],
 buttons: [
 {
