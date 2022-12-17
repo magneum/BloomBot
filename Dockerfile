@@ -1,7 +1,7 @@
 FROM python:latest
-ENV BUN "/venv"
-RUN python -m venv $BUN
-ENV PATH "$BUN/bin:$PATH"
+ENV version_4 "/venv"
+RUN python -m venv $version_4
+ENV PATH "$version_4/bin:$PATH"
 
 # Vlkyre os dependency Instalation
 RUN apt-get update && apt-get install -y \
