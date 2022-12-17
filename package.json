@@ -21,8 +21,6 @@
   "scripts": {
     "web": "forever --minUptime=1000 --spinSleepTime=1000 νℓкуяє.js --color",
     "spin": "pm2 start νℓкуяє.js --deep-monitoring --attach --name νℓкуяє",
-    "build": "npm install -g forever pm2 --force && npm install --force",
-    "start": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && npm install --force && npm run web",
     "vDev": "node --no-warnings νℓкуяє.js",
     "end": "pm2 stop νℓкуяє"
   },
