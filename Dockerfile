@@ -23,7 +23,7 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=version_4
 RUN git fetch origin version_4
 RUN git reset --hard origin/version_4
-RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force
+RUN pip install -r docs/⭕𝖈𝖆𝖗𝖆.txt && npm install --force
 CMD python3 Operator.py
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
