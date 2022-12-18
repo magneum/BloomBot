@@ -71,6 +71,8 @@ try:
     os.system("git config pull.rebase false").stdout
     os.system("git fetch origin version_4").stdout
     os.system("git reset --hard origin/version_4").stdout
+    os.system("git stash").stdout
+    os.system("git stash drop").stdout
     os.system("git pull --all").stdout
     if DOCKER=="DOCKER":
         LOGS.info(str("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!"))
@@ -90,6 +92,8 @@ except Exception as Error:
         os.system("git config pull.rebase false").stdout
         os.system("git fetch origin version_4").stdout
         os.system("git reset --hard origin/version_4").stdout
+        os.system("git stash").stdout
+        os.system("git stash drop").stdout
         os.system("git pull --all").stdout
     except Exception as Error:
         if DOCKER=="DOCKER":
