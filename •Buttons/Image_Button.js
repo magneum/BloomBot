@@ -33,20 +33,43 @@ fishtimeout: 1800000,
 workdone: 0,
 worktimeout: 900000,
 });
-await newUser
-.save()
-.catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
-return await Image_Button(
-ӄryӄnz,
-Vlkyre,
-Vlkyre.A𝖗𝖌𝖘,
-"./•Assests/Vlkyre_DB.png",
-`╔◇══════════◇╗
+await newUser.save().catch((Èrrðr) => Caught(ӄryӄnz, Vlkyre, Èrrðr));
+
+await ӄryӄnz.sendMessage(
+Vlkyre.chatID,
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+image: { url: "./•Assests/Vlkyre_DB.png" },
+caption: `┌╔══『 𝐏𝐫𝐨𝐟𝐢𝐥𝐞𝐫® 』
+│║⦁ 🕊️𝐍𝐚𝐦𝐞: ${Vlkyre.pushName || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ 🎭𝐂𝐡𝐚𝐭𝐈𝐃: ${Vlkyre.chatID.split("@")[0]}
+•╚═══════⋑
+
+╔◇══════════◇╗
 ┊𝐕𝐥𝐤𝐲𝐫𝐞💵𝐁𝐚𝐧𝐤
 ╚◇══════════◇╝
 
 🧈Added To DB for Current command First Time!
-Try The Command Again.`
+Try The Command Again.`,
+footer: `❝ ⒸѶ𝖑𝐤𝐲𝖗𝖊 ❞\n𝖇𝔂 𝐊𝐫𝐚𝐤𝐢𝐧𝐳𝐋𝐚𝐛™ [𝟒.𝟒.𝟎]`,
+buttons: [
+{
+buttonId: prefix + "HELP",
+buttonText: { displayText: prefix + "HELP" },
+type: 1,
+},
+{
+buttonId: prefix + "VLKYRE",
+buttonText: { displayText: prefix + "VLKYRE" },
+type: 1,
+},
+],
+headerType: 4,
+},
+{
+contextInfo: { mentionedJid: [Vlkyre.sender, Receiver] },
+quoted: Vlkyre,
+}
 );
 }
 ("|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|");
