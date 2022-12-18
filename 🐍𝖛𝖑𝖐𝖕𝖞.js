@@ -15,7 +15,7 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 let fs = require("fs");
 let rimraf = require("rimraf");
-let exec = require("child_process");
+let { exec } = require("child_process");
 if (fs.existsSync("package-lock.json")) {
 let folders = [".", ...Object.keys(require("./package.json").directories)];
 for (let folder of folders) {
