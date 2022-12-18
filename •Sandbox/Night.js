@@ -225,7 +225,7 @@ if (Vlkyre.message) {
 try {
 let ʀᴇᴠ_ɢɪᴛʜᴜʙ = ʀᴇᴠ_ɢɪᴛ();
 await ʀᴇᴠ_ɢɪᴛʜᴜʙ.fetch();
-let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["Primary..origin/Primary"]);
+let ɴᴇᴡ = await ɢɪᴛᴄᴀʟʟ.log(["version_4..origin/version_4"]);
 if (ɴᴇᴡ.total != 0) {
 await Hoku.delete(
 "/apps/" + HEROKU_APP_NAME + "/dynos/" + "worker"

@@ -12,7 +12,7 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 │║⦁ 𝐠𝐩𝐚𝐲: +918436686758
 │║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
 │║⦁ 𝐠𝐢𝐭: https://github.com/KryKenz/Vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: https://krykenz.github.io/Vlkyre.pg
+│║⦁ 𝐠𝐫𝐨𝐮𝐩: https://krykenz.github.io/Vlkyre
 ┕╚═══════⋑
 ```
 

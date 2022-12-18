@@ -398,4 +398,4 @@ https://chat.whatsapp.com/BCMya84xpj0Cjk0IIvbkxN
 ╚════════════╝
 ```
 # 💠 DΣPLӨY  
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KryKnz/Vlkyre/tree/Primary)
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KryKnz/Vlkyre/tree/version_4)

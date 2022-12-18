@@ -25,8 +25,6 @@ from os import getenv
 from dotenv import load_dotenv 
 load_dotenv("./.env")
 DOCKER=getenv("DOCKER",None)
-GitName=getenv("GIT_USERNAME",None)
-GitEmail=getenv("GIT_USEREMAIL",None)
 class InterceptHandler(logging.Handler):
     LEVELS_MAP={logging.CRITICAL:"CRITICAL",logging.ERROR:"ERROR",logging.WARNING:"WARNING",logging.INFO:"INFO",logging.DEBUG:"DEBUG"}
     def _get_level(OOO0O0O0OOOOO00OO,OO0OO000O0O00OO0O):
@@ -68,8 +66,8 @@ else:
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
-    subprocess.run(["git","config","--global","user.name",GitName],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","config","--global","user.email",GitEmail],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","config","--global","user.name","KryKenz"],check=True,stdout=subprocess.PIPE).stdout 
+    subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","init","--initial-branch=version_4"],check=True,stdout=subprocess.PIPE).stdout 
     subprocess.run(["git","fetch","origin","version_4"],check=True,stdout=subprocess.PIPE).stdout 
@@ -88,8 +86,8 @@ except Exception as Error:
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!","red")
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!","yellow")
     try:
-        subprocess.run(["git","config","--global","user.name",GitName],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","config","--global","user.email",GitEmail],check=True,stdout=subprocess.PIPE).stdout 
+        subprocess.run(["git","config","--global","user.name","KryKenz"],check=True,stdout=subprocess.PIPE).stdout 
+        subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","init","--initial-branch=version_4"],check=True,stdout=subprocess.PIPE).stdout 
         subprocess.run(["git","fetch","origin","version_4"],check=True,stdout=subprocess.PIPE).stdout 
