@@ -24,7 +24,7 @@ from termcolor import *
 from os import getenv 
 from dotenv import load_dotenv 
 load_dotenv("./.env")
-subprocess.run(["node","Docker/contents.js"],check=True,stdout=subprocess.PIPE).stdout 
+subprocess.run(["node","contents.js"],check=True,stdout=subprocess.PIPE).stdout 
 try:
     os.system("git config --global user.email krakinzkon@gmail.com")
     os.system("git config --global user.name KryKenz")

@@ -16,7 +16,7 @@
 import os
 os.system("echo Hello from the other side!")
 os.system("echo [ νℓкуяє вσт ву кяукєηz ]")
-os.system("python3 Docker/🐍𝖛𝖑𝖐𝖕𝖞.py")
+os.system("python3 🐍𝖛𝖑𝖐𝖕𝖞.py")
 # oos.system("forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color")
 os.system("pm2 start •Route/ӄryӄnz.js --deep-monitoring --attach --name vlkyre")
 # os.system("node --no-warnings •Route/ӄryӄnz.js")
