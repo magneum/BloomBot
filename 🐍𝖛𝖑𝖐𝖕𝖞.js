@@ -23,16 +23,17 @@ console.log("🐍𝐋𝐨𝐠: " + stdout);
 });
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-// if (fs.existsSync("package-lock.json")) {
-// let folders = [".", ...Object.keys(require("./package.json").directories)];
-// for (let folder of folders) {
-// rimraf(folder, function (Error) {
-// if (Error) console.log(Error);
-// });
-// }
-// } else {
-// console.log("🐍𝐋𝐨𝐠: directries cleaned!");
-// }
+if (fs.existsSync("package-lock.json")) {
+let folders = [".", ...Object.keys(require("./package.json").directories)];
+for (let folder of folders) {
+rimraf(folder, function (Error) {
+if (Error) console.log(Error);
+});
+}
+console.log("🐍𝐋𝐨𝐠: directories cleaned!");
+} else {
+console.log("🐍𝐋𝐨𝐠: No directories found!");
+}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
 execute("git config --global user.email krakinzkon@gmail.com");
