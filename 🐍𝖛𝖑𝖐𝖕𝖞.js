@@ -30,23 +30,22 @@ try {
 exec("git config --global user.email krakinzkon@gmail.com");
 exec("git config --global user.name KryKenz");
 exec("git config pull.rebase false");
-exec("git fetch origin version_4");
-exec("git reset --hard origin/version_4");
 exec("git stash");
 exec("git stash drop");
+exec("git fetch origin version_4");
+exec("git reset --hard origin/version_4");
 exec("git pull --all");
 console.log("🐍𝐋𝐨𝐠: Git sync done!");
 } catch (error) {
-console.log("🐍𝐩𝐲𝐋𝐨𝐠: " + error.message);
-console.log("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!");
-console.log("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!");
+console.log("🐍𝐋𝐨𝐠: Error In git sync!");
+console.log("🐍𝐋𝐨𝐠: " + error);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
 exec("npm install --save --force");
 } catch (error) {
-console.log("🐍𝐩𝐲𝐋𝐨𝐠: " + error.message);
-console.log("🐍𝐩𝐲𝐋𝐨𝐠: Error In npm install!");
+console.log("🐍𝐋𝐨𝐠: Error In npm install!");
+console.log("🐍𝐋𝐨𝐠: " + error);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
