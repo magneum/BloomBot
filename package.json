@@ -20,9 +20,6 @@
 "•Sandbox": "•Sandbox",
 "docs": "docs"
 },
-"scripts": {
-"vlkyre": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py && forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color"
-},
 "dependencies": {
 "@adiwajshing/baileys": "4.4.0",
 "@adiwajshing/keyed-db": "0.2.4",
@@ -159,6 +156,7 @@
 "ping": "0.4.1",
 "pino": "7.11.0",
 "pino-std-serializers": "^6.0.0",
+"play-dl": "^1.9.6",
 "play-sound": "1.1.5",
 "pokedex-promise-v2": "4.0.0",
 "pokemon-gif": "1.0.14",
