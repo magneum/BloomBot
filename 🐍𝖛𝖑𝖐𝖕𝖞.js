@@ -20,10 +20,8 @@ require("child_process").exec("echo test", (error, stdout, stderr) => {
 if (error) {
 return console.error(`exec error: ${error}`);
 }
-data = stdout;
 console.log(`stdout: ${stdout}`);
 });
-console.log(data);
 }
 // ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (fs.existsSync("package-lock.json")) {
