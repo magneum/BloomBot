@@ -68,7 +68,7 @@ protocol: "postgres",
 logging: Log("false"),
 dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 });
-global.prefix = process.env.prefix || "#";
+global.prefix = process.env.prefix || "!";
 global.port = process.env.PORT || 8080;
 global.packname = "Vlkyre:v4";
 global.author = "KryKenz";
