@@ -654,7 +654,7 @@ return ӄryӄnz;
 var xpress = require("express");
 var p = xpress();
 p.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre/"));
-p.listen(8000, () => console.log(`Vlkyre Server listening on port 8000`));
+p.listen(8000);
 Ѷ𝖎𝖔𝖓ᴇᴏɴᴇ().catch((error) =>
 generateWA("❌ᴇʀʀᴏʀ: ", "#ff6347", error, "#ed7777")
 );
