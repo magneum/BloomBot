@@ -69,7 +69,6 @@ try:
     os.system("git config --global user.name KryKenz").stdout
     os.system("git config --global user.email krakinzkon@gmail.com").stdout
     os.system("git config pull.rebase false").stdout
-    os.system("git init --initial-branch=version_4").stdout
     os.system("git fetch origin version_4").stdout
     os.system("git reset --hard origin/version_4").stdout
     os.system("git pull").stdout
