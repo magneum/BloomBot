@@ -14,7 +14,7 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-let folders = [".", ...Object.keys(require("../package.json").directories)];
+let folders = [".", ...Object.keys(require("./package.json").directories)];
 let rimraf = require("rimraf");
 for (let folder of folders) {
 rimraf(folder, function (Error) {
