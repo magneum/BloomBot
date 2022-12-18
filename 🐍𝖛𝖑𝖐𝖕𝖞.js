@@ -14,19 +14,13 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
-let fs = require("fs");
-let rimraf = require("rimraf");
-if (fs.existsSync("package-lock.json")) {
-let folders = [".", ...Object.keys(require("./package.json").directories)];
-for (let folder of folders) {
-rimraf(folder, function (Error) {
-if (Error) console.log(Error);
-});
+require("child_process").exec(
+"npm install --save --force",
+(error, stdout, stderr) => {
+if (error) return console.error(`🐍𝐋𝐨𝐠:  Exec Error ${error}`);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
-console.log("🐍𝐋𝐨𝐠: directories cleaned!");
-} else {
-console.log("🐍𝐋𝐨𝐠: No directories found!");
-}
+);
 try {
 require("child_process").exec(
 "git config --global user.email krakinzkon@gmail.com && git config --global user.name KryKenz && git config pull.rebase false && git stash && git stash drop && git fetch origin version_4 && git reset --hard origin/version_4 && git pull --all",
