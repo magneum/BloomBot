@@ -56,20 +56,6 @@ if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
 console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
 );
-
-require("child_process").exec("git stash", 
-(error, stdout, stderr) => {
-if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
-console.log("🐍𝐋𝐨𝐠: " + stdout);
-}
-);
-
-require("child_process").exec("git stash drop", 
-(error, stdout, stderr) => {
-if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
-console.log("🐍𝐋𝐨𝐠: " + stdout);
-}
-);
     
 require("child_process").exec("git pull --all", 
 (error, stdout, stderr) => {
