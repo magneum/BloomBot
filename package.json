@@ -7,7 +7,7 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "prestart": "python3 python3 🐍𝖛𝖑𝖐𝖕𝖞.py",
+    "prestart": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py",
     "start": "node no--warnings •Route/ӄryӄnz.js",
     "poststart": "rm package-lock.json"
   },
