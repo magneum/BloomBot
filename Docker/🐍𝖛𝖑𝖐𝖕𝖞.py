@@ -24,29 +24,15 @@ from termcolor import *
 from os import getenv 
 from dotenv import load_dotenv 
 load_dotenv("./.env")
-DOCKER=getenv("DOCKER",None)
-pkgFile=pathlib.Path("package-lock.json")
-if pkgFile.exists():
-    os.remove("package-lock.json")
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
-try:
-    subprocess.run(["node","contents.js"],check=True,stdout=subprocess.PIPE).stdout 
-except Exception as Error:
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
-pkgFile=pathlib.Path("package.json")
-if pkgFile.exists():
-    os.remove("package.json")
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json has been cleaned!","yellow")
-else:
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
+subprocess.run(["node","Docker/contents.js"],check=True,stdout=subprocess.PIPE).stdout 
 try:
     os.system("git config --global user.email krakinzkon@gmail.com")
     os.system("git config --global user.name KryKenz")
     os.system("git config pull.rebase false")
-    os.system("git fetch origin version_4")
-    os.system("git reset --hard origin/version_4")
     os.system("git stash")
     os.system("git stash drop")
+    os.system("git fetch origin version_4")
+    os.system("git reset --hard origin/version_4")
     os.system("git pull --all")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!","green")
 except Exception as Error:
