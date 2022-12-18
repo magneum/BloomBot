@@ -66,12 +66,12 @@ else:
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
-    os.system("git config --global user.name KryKenz").stdout
     os.system("git config --global user.email krakinzkon@gmail.com").stdout
+    os.system("git config --global user.name KryKenz").stdout
     os.system("git config pull.rebase false").stdout
     os.system("git fetch origin version_4").stdout
     os.system("git reset --hard origin/version_4").stdout
-    os.system("git pull").stdout
+    os.system("git pull --all").stdout
     if DOCKER=="DOCKER":
         LOGS.info(str("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!"))
     else:
@@ -85,13 +85,12 @@ except Exception as Error:
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!","red")
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!","yellow")
     try:
-        os.system("git config --global user.name KryKenz").stdout
         os.system("git config --global user.email krakinzkon@gmail.com").stdout
+        os.system("git config --global user.name KryKenz").stdout
         os.system("git config pull.rebase false").stdout
-        os.system("git init --initial-branch=version_4").stdout
         os.system("git fetch origin version_4").stdout
         os.system("git reset --hard origin/version_4").stdout
-        os.system("git pull").stdout
+        os.system("git pull --all").stdout
     except Exception as Error:
         if DOCKER=="DOCKER":
             LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}"))
@@ -110,18 +109,6 @@ except Exception as Error:
         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}"))
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
-# pkgFile=pathlib.Path("package-lock.json")
-# if pkgFile.exists():
-#     os.remove("package-lock.json")
-#     if DOCKER=="DOCKER":
-#         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!"))
-#     else:
-#         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!","yellow")
-# else:
-#     if DOCKER=="DOCKER":
-#         LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!"))
-#     else:
-#         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 # /*
 # ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
