@@ -66,13 +66,13 @@ else:
     else:
         cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
-    subprocess.run(["git","config","--global","user.name","KryKenz"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","init","--initial-branch=version_4"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","fetch","origin","version_4"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","reset","--hard","origin/version_4"],check=True,stdout=subprocess.PIPE).stdout 
-    subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 
+    os.system("git config --global user.name KryKenz").stdout
+    os.system("git config --global user.email krakinzkon@gmail.com").stdout
+    os.system("git config pull.rebase false").stdout
+    os.system("git init --initial-branch=version_4").stdout
+    os.system("git fetch origin version_4").stdout
+    os.system("git reset --hard origin/version_4").stdout
+    os.system("git pull").stdout
     if DOCKER=="DOCKER":
         LOGS.info(str("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!"))
     else:
@@ -86,15 +86,13 @@ except Exception as Error:
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!","red")
         cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!","yellow")
     try:
-        subprocess.run(["git","config","--global","user.name","KryKenz"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","config","--global","user.email","krakinzkon@gmail.com"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","config","pull.rebase","false"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","init","--initial-branch=version_4"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","fetch","origin","version_4"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","reset","--hard","origin/version_4"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","stash"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","stash","drop"],check=True,stdout=subprocess.PIPE).stdout 
-        subprocess.run(["git","pull"],check=True,stdout=subprocess.PIPE).stdout 
+        os.system("git config --global user.name KryKenz").stdout
+        os.system("git config --global user.email krakinzkon@gmail.com").stdout
+        os.system("git config pull.rebase false").stdout
+        os.system("git init --initial-branch=version_4").stdout
+        os.system("git fetch origin version_4").stdout
+        os.system("git reset --hard origin/version_4").stdout
+        os.system("git pull").stdout
     except Exception as Error:
         if DOCKER=="DOCKER":
             LOGS.info(str(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}"))
