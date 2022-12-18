@@ -57,7 +57,7 @@ console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
 );
     
-require("child_process").exec("git pull --all", 
+require("child_process").exec("git pull", 
 (error, stdout, stderr) => {
 if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
 console.log("🐍𝐋𝐨𝐠: " + stdout);
