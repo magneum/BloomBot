@@ -15,7 +15,17 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 let fs = require("fs");
 let rimraf = require("rimraf");
-let { exec } = require("child_process");
+function execute(argument) {
+require("child_process").exec("echo test", (error, stdout, stderr) => {
+if (error) {
+return console.error(`exec error: ${error}`);
+}
+data = stdout;
+console.log(`stdout: ${stdout}`);
+});
+console.log(data);
+}
+// ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (fs.existsSync("package-lock.json")) {
 let folders = [".", ...Object.keys(require("./package.json").directories)];
 for (let folder of folders) {
@@ -26,16 +36,16 @@ if (Error) console.log(Error);
 } else {
 console.log("🐍𝐋𝐨𝐠: directries cleaned!");
 }
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-exec("git config --global user.email krakinzkon@gmail.com");
-exec("git config --global user.name KryKenz");
-exec("git config pull.rebase false");
-exec("git stash");
-exec("git stash drop");
-exec("git fetch origin version_4");
-exec("git reset --hard origin/version_4");
-exec("git pull --all");
+execute("git config --global user.email krakinzkon@gmail.com");
+execute("git config --global user.name KryKenz");
+execute("git config pull.rebase false");
+execute("git stash");
+execute("git stash drop");
+execute("git fetch origin version_4");
+execute("git reset --hard origin/version_4");
+execute("git pull --all");
 console.log("🐍𝐋𝐨𝐠: Git sync done!");
 } catch (error) {
 console.log("🐍𝐋𝐨𝐠: Error In git sync!");
@@ -43,7 +53,7 @@ console.log("🐍𝐋𝐨𝐠: " + error);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 try {
-exec("npm install --save --force");
+execute("npm install --save --force");
 } catch (error) {
 console.log("🐍𝐋𝐨𝐠: Error In npm install!");
 console.log("🐍𝐋𝐨𝐠: " + error);
