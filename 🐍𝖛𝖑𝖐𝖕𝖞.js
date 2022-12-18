@@ -13,6 +13,7 @@
 ╚════════════╝
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+let fs = require("fs");
 let rimraf = require("rimraf");
 let exec = require("child_process");
 if (fs.existsSync("package-lock.json")) {
