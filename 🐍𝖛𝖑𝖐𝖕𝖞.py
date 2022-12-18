@@ -55,18 +55,6 @@ except Exception as Error:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}","red")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!","red")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!","yellow")
-    try:
-        os.system("git config --global user.email krakinzkon@gmail.com").stdout
-        os.system("git config --global user.name KryKenz").stdout
-        os.system("git config pull.rebase false").stdout
-        os.system("git fetch origin version_4").stdout
-        os.system("git reset --hard origin/version_4").stdout
-        os.system("git stash").stdout
-        os.system("git stash drop").stdout
-        os.system("git pull --all").stdout
-    except Exception as Error:
-            cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
-            cprint("🐍𝐩𝐲𝐋𝐨𝐠: Nothing To Stash and Drop!","blue")
 try:
     subprocess.run(["npm","install","--force","--save"],check=True,stdout=subprocess.PIPE).stdout 
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: npm install done using python subprocess!")
