@@ -16,7 +16,6 @@
 (async () => {
 let fs = require("fs");
 let rimraf = require("rimraf");
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 function execute(argument) {
 require("child_process").exec(argument, (error, stdout, stderr) => {
 if (error) return console.error(`🐍𝐋𝐨𝐠:  Exec Error ${error}`);
