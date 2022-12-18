@@ -28,8 +28,6 @@ DOCKER=getenv("DOCKER",None)
 pkgFile=pathlib.Path("package-lock.json")
 if pkgFile.exists():
     os.remove("package-lock.json")
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json has been cleaned!","yellow")
-else:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package-lock.json File does not exist!","green")
 try:
     subprocess.run(["node","contents.js"],check=True,stdout=subprocess.PIPE).stdout 
@@ -42,14 +40,14 @@ if pkgFile.exists():
 else:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: package.json File does not exist!","green")
 try:
-    os.system("git config --global user.email krakinzkon@gmail.com").stdout
-    os.system("git config --global user.name KryKenz").stdout
-    os.system("git config pull.rebase false").stdout
-    os.system("git fetch origin version_4").stdout
-    os.system("git reset --hard origin/version_4").stdout
-    os.system("git stash").stdout
-    os.system("git stash drop").stdout
-    os.system("git pull --all").stdout
+    os.system("git config --global user.email krakinzkon@gmail.com")
+    os.system("git config --global user.name KryKenz")
+    os.system("git config pull.rebase false")
+    os.system("git fetch origin version_4")
+    os.system("git reset --hard origin/version_4")
+    os.system("git stash")
+    os.system("git stash drop")
+    os.system("git pull --all")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!","green")
 except Exception as Error:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}","red")
