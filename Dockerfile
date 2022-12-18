@@ -22,4 +22,4 @@ RUN git fetch origin version_4
 RUN git reset --hard origin/version_4
 RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt 
 RUN npm install --force
-CMD npm run start
+CMD npm run vlkyre
