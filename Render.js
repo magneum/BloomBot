@@ -16,9 +16,9 @@
 let { exec } = require("child_process");
 exec("echo Hello from the other side!");
 exec("echo [ νℓкуяє вσт ву кяукєηz ]");
-exec("forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color");
+// exec("forever --minUptime=1000 --spinSleepTime=1000 •Route/ӄryӄnz.js --color");
 // exec("pm2 start •Route/ӄryӄnz.js --deep-monitoring --attach --name vlkyre");
-// exec("node --no-warnings •Route/ӄryӄnz.js");
+exec("node --no-warnings •Route/ӄryӄnz.js");
 // exec("pm2 stop vlkyre");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
