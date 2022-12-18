@@ -14,36 +14,71 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
-require("child_process").exec(
-"npm install --save --force",
+
+require("child_process").exec("git config --global user.email krakinzkon@gmail.com", 
 (error, stdout, stderr) => {
-if (error) return console.error(`🐍𝐋𝐨𝐠:  Exec Error ${error}`);
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
 console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
 );
-try {
-require("child_process").exec(
-"git config --global user.email krakinzkon@gmail.com && git config --global user.name KryKenz && git config pull.rebase false && git stash && git stash drop && git fetch origin version_4 && git reset --hard origin/version_4 && git pull --all",
+
+require("child_process").exec("git config --global user.name KryKenz", 
 (error, stdout, stderr) => {
-if (error) return console.error(`🐍𝐋𝐨𝐠:  Exec Error ${error}`);
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
 console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
 );
-console.log("🐍𝐋𝐨𝐠: Git sync done!");
-} catch (error) {
-console.log("🐍𝐋𝐨𝐠: " + error);
-}
-try {
-require("child_process").exec(
-"npm install --save --force",
+
+require("child_process").exec("git config pull.rebase false", 
 (error, stdout, stderr) => {
-if (error) return console.error(`🐍𝐋𝐨𝐠:  Exec Error ${error}`);
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
 console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
 );
-} catch (error) {
-console.log("🐍𝐋𝐨𝐠: " + error);
+
+require("child_process").exec("git stash", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
 }
+);
+
+require("child_process").exec("git stash drop", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
+require("child_process").exec("git fetch origin version_4", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
+require("child_process").exec("git reset --hard origin/version_4", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
+require("child_process").exec("git pull --all", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
+
+require("child_process").exec("npm install --save --force",
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
 })();
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
