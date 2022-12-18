@@ -8,7 +8,7 @@
   },
   "scripts": {
     "prestart": "python3 🐍𝖛𝖑𝖐𝖕𝖞.py",
-    "start": "node -no--warnings •Route/ӄryӄnz.js",
+    "start": "node --no-warnings •Route/ӄryӄnz.js",
     "poststart": "rm package-lock.json"
   },
   "depecrated": false,
