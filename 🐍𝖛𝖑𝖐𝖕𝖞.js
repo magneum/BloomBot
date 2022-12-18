@@ -15,6 +15,13 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
 
+require("child_process").exec("node contents.js", 
+(error, stdout, stderr) => {
+if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
+console.log("🐍𝐋𝐨𝐠: " + stdout);
+}
+);
+
 require("child_process").exec("git config --global user.email krakinzkon@gmail.com", 
 (error, stdout, stderr) => {
 if (error) return console.error("🐍𝐋𝐨𝐠: " + error);
