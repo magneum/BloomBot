@@ -1,21 +1,18 @@
+[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre)
+
 <h1 align="center">
 🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞:  <I>Advance Javascript + Python Whatsapp UserBot</I>
 
-##
+# 🐧𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧
 
 ```
-🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞🕊️: 𝐓𝐬+ 𝐉𝐬 + 𝐏𝐲 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭
-is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
+📍 MANUALLY:
 
-┌┌『 🎐𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧🎐 』
-│║⦁ 𝐩𝐫𝐞𝐟𝐢𝐱: !
-│║⦁ 𝐧𝐚𝐦𝐞: Vlkyre
-│║⦁ 𝐠𝐩𝐚𝐲: +918436686758
-│║⦁ 𝐮𝐩𝐢: krakinzkon@oksbi
-│║⦁ 𝐠𝐢𝐭: https://github.com/KryKenz/Vlkyre
-│║⦁ 𝐠𝐫𝐨𝐮𝐩: https://krykenz.github.io/Vlkyre
-┕╚═══════⋑
+> npm i vlkyre --force
+> yarn add vlkyre --ignore-engines
 ```
+
+[![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre/)
 
 <h1 align="center">🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭</h1>
 
@@ -87,7 +84,9 @@ MONGO_URL="the url you got"
 
 # 🚨𝐋𝐞𝐠𝐚𝐥
 
+```
 Vlkyre is in no way affiliated with, authorized, maintained,
 sponsored or endorsed by WhatsApp or any of its affiliates or
 subsidiaries. This is an independent and unofficial software.
 Use at your own risk.
+```
