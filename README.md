@@ -46,7 +46,7 @@ Vlkyre Needs 1 Secret Environment Variables.
 Once you get the above secret variables, make a file (.env) inside 'Vlkyre' folder and save it as
 MONGO_URL="the url you got"
 
-📍FINALLY:
+📍 FINALLY:
 - type this in terminal
 - python3 Operator.py
 - scan the qr code with whatsapp and enjoy
