@@ -28,7 +28,7 @@ is a whatsapp userbot with automation,moderation,music,games and 140+ commands!
 <h1 align="left">🔥𝐒𝐞𝐥𝐟 𝐇𝐨𝐬𝐭𝐢𝐧𝐠 𝐔𝐬𝐢𝐧𝐠 𝐋𝐢𝐧𝐮𝐱</h1>
 
 ```
-INITIAL:
+📍 FIRSTLY:
 You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
 Just Follow These Setps.
 
@@ -39,14 +39,14 @@ Just Follow These Setps.
 - git clone --branch self-host https://github.com/krykenz/vlkyre
 - cd vlkyre && pip install -r SandBox/⭕𝖈𝖆𝖗𝖆.txt && npm install --force
 
-NOTE:
+📍 NOTE:
 Vlkyre Needs 1 Secret Environment Variables.
 - MONGO_URL: get it from [   ]
 
 Once you get the above secret variables, make a file (.env) inside 'Vlkyre' folder and save it as
 MONGO_URL="the url you got"
 
-FINALLY:
+📍 FINALLY:
 - type this in terminal
 - python3 Operator.py
 - scan the qr code with whatsapp and enjoy
