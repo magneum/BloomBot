@@ -8,8 +8,8 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "prestart": "yarn global add forever pm2 && clear",
-    "build": "yarn install --ignore-engines",
+    "prestart": "npm install -g forever",
+    "build": "npm install --force",
     "start": "forever src/index.js"
   },
   "depecrated": false,
