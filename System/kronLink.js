@@ -151,8 +151,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.moment = require("moment-timezone");
   νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   νℓкуяє.Carbon = require("unofficial-carbon-now");
-  νℓкуяє.getVideoId = require("get-video-id");
   νℓкуяє.yClient = require("railway-youtube");
+  νℓкуяє.ySearch = require("railway-yts");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
@@ -200,11 +200,23 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       νℓкуяє.chalk.black(Show)
     );
   }
+  function between(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  function clearStorage(files) {
+    for (const file of files) {
+      νℓкуяє.fs.unlink(file, (err) => {
+        if (err) throw err;
+      });
+    }
+  }
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ShowGreen = ShowGreen;
   νℓкуяє.ShowBlue = ShowBlue;
   νℓкуяє.ShowRed = ShowRed;
   νℓкуяє.ShowYellow = ShowYellow;
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  νℓкуяє.between = between;
+  νℓкуяє.clearStorage = clearStorage;
   νℓкуяє.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
