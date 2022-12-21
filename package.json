@@ -1,39 +1,12 @@
 {
   "name": "vlkyre",
-  "version": "6.3.3",
+  "version": "6.2.3",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
     "node": ">=16.0.0 <17.0.0"
   },
-  "keywords": [
-    "whatsappbot",
-    "whatsapp",
-    "deployment",
-    "game",
-    "moderation",
-    "hentai",
-    "anime",
-    "converter",
-    "downloader",
-    "filter",
-    "audio",
-    "youtube",
-    "image",
-    "wallpaper",
-    "google",
-    "search",
-    "userbot",
-    "javascript",
-    "python"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/krykenz/vlkyre.git"
-  },
-  "author": "KryKenz <krakinzkon@gmail.com> (https://github.com/krykenz)",
-  "license": "MIT",
   "depecrated": false,
   "directories": {
     "Authenticator": "Authenticator",
