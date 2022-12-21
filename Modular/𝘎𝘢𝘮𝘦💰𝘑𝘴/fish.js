@@ -18,89 +18,89 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
-try {
-await νℓкуяє.Economy.findOne(
-{
-ID: vcнaт.sender,
-},
-async (error, userEco) => {
-if (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (!userEco) {
-new νℓкуяє.Economy({
-ID: vcнaт.sender,
-money: 0,
-daily: 0,
-timeout: 0,
-fishdone: Date.now(),
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-})
-.save()
-.catch((error) => {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-});
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+  try {
+    await νℓкуяє.Economy.findOne(
+      {
+        ID: vcнaт.sender,
+      },
+      async (error, userEco) => {
+        if (error) {
+          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        }
+        ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+        if (!userEco) {
+          new νℓкуяє.Economy({
+            ID: vcнaт.sender,
+            money: 0,
+            daily: 0,
+            timeout: 0,
+            fishdone: Date.now(),
+            fishtimeout: 1800000,
+            workdone: 0,
+            worktimeout: 900000,
+          })
+            .save()
+            .catch((error) => {
+              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            });
+          return await νℓкуяє.imgB(
+            νℓкуяє,
+            vcнaт,
+            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`,
-"./Gallery/νℓкуяє_white.png"
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-let time = νℓкуяє.ms(
-userEco.fishtimeout - (Date.now() - userEco.fishdone)
-);
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            "./Gallery/vlkyre.png"
+          );
+          ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+        } else {
+          if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
+            let time = νℓкуяє.ms(
+              userEco.fishtimeout - (Date.now() - userEco.fishdone)
+            );
+            return await νℓкуяє.imgB(
+              νℓкуяє,
+              vcнaт,
+              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-"./Gallery/νℓкуяє_white.png"
-);
-("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
-} else {
-let fishID = Math.floor(Math.random() * 10) + 1;
-let rarity;
-if (fishID < 5) rarity = `junk`;
-else if (fishID < 8) rarity = `common`;
-else if (fishID < 9) rarity = `uncommon`;
-else if (fishID < 10) rarity = `rare`;
-else rarity = `legendary`;
-let fishh = νℓкуяє.Fishes[rarity];
-let worth =
-Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
-fishh.min;
-userEco.money = userEco.money + worth;
-userEco.fishdone = Date.now();
-userEco.fishtimeout = 1800000;
-userEco.save().catch((error) => {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-});
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              "./Gallery/vlkyre.png"
+            );
+            ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
+          } else {
+            let fishID = Math.floor(Math.random() * 10) + 1;
+            let rarity;
+            if (fishID < 5) rarity = `junk`;
+            else if (fishID < 8) rarity = `common`;
+            else if (fishID < 9) rarity = `uncommon`;
+            else if (fishID < 10) rarity = `rare`;
+            else rarity = `legendary`;
+            let fishh = νℓкуяє.Fishes[rarity];
+            let worth =
+              Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
+              fishh.min;
+            userEco.money = userEco.money + worth;
+            userEco.fishdone = Date.now();
+            userEco.fishtimeout = 1800000;
+            userEco.save().catch((error) => {
+              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            });
+            return await νℓкуяє.imgB(
+              νℓкуяє,
+              vcнaт,
+              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,
-"./Gallery/νℓкуяє_white.png"
-);
-}
-}
-}
-);
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
+              "./Gallery/vlkyre.png"
+            );
+          }
+        }
+      }
+    );
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+  }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
