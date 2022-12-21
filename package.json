@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "version": "6.4.4",
+  "version": "6.4.5",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
   "main": "src/index.js",
   "engines": {
@@ -8,9 +8,9 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
+    "start": "forever src/index.js --color",
     "prestart": "npm install -g forever",
-    "build": "npm install --force",
-    "start": "forever src/index.js"
+    "build": "npm install --force"
   },
   "depecrated": false,
   "private": false,
