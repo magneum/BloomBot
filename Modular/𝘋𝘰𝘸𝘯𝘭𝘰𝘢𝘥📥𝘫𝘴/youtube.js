@@ -41,74 +41,71 @@ module.exports = async (νℓкуяє, vcнaт) => {
     }
   }
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  let yt_info = await νℓкуяє.playdl.search(νℓкуяє.args.join(" "), {
-    limit: 1,
-  });
-  if (!yt_info[0].url) {
-    return vcнaт.reply(
-      `*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _No Music Found!_`
-    );
-  }
-  if (yt_info[0].durationRaw > 600) {
-    return vcнaт.reply(
-      `*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _Cannot Download More Then 10m audio!_`
-    );
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  var finalId = νℓкуяє.getVideoId(yt_info[0].url);
-  var thumbUrl =
-    `http://img.youtube.com/vi/${finalId.id}/maxresdefault.jpg` ||
-    `http://img.youtube.com/vi/${finalId.id}/hqdefault.jpg` ||
-    `http://img.youtube.com/vi/${finalId.id}/default.jpg`;
-  await νℓкуяє.imgB(
-    νℓкуяє,
-    vcнaт,
-    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*🍻Title:* ${yt_info[0].title}
-*🙈Views:* ${yt_info[0].views}
-*⏰Duration:* ${yt_info[0].durationRaw}
-*🔗Link:* ${yt_info[0].url}
-*📜Description:* ${yt_info[0].description}`,
-    thumbUrl
-  );
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  let randomName = vcнaт.chat + ".mp3";
-  const stream = νℓкуяє
-    .yClient(yt_info[0].url, {
-      filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-    })
-    .pipe(νℓкуяє.fs.createWriteStream(`./${randomName}`));
-  await new Promise((resolve, reject) => {
-    stream.on("error", reject);
-    stream.on("finish", resolve);
-  });
-  await νℓкуяє.sendMessage(
-    vcнaт.chat,
-    {
-      audio: νℓкуяє.fs.readFileSync(`./${randomName}`),
-      mimetype: "audio/mpeg",
-      fileName: yt_info[0].title + ".mp3",
-      headerType: 4,
-      contextInfo: {
-        externalAdReply: {
-          title: yt_info[0].title,
-          body: "❣️Made by KryKenz.",
-          renderLargerThumbnail: true,
-          thumbnailUrl: thumbUrl,
-          mediaUrl: yt_info[0].url,
-          mediaType: 1,
-          thumbnail: await νℓкуяє.getBuffer(thumbUrl),
-          sourceUrl: yt_info[0].url,
+  var Found = await νℓкуяє.ySearch(νℓкуяє.args.join(" "));
+  var vFound = Found.videos.slice(0, 1);
+  vFound.forEach(async function (vData) {
+    if (!vData.url) {
+      return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+
+*❌Error*
+> _No Music Found!_`);
+    } else if (vData.seconds > 600) {
+      return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+
+*❌Error*
+> _Cannot Download More Then 10m audio!_`);
+    } else {
+      await νℓкуяє.imgB(
+        νℓкуяє,
+        vcнaт,
+        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*🍻Title:* ${vData.title}
+*🙈Views:* ${vData.views}
+*⏰Duration:* ${vData.timestamp}
+*🔗Link:* ${vData.url}
+*🖊️Author:* ${vData.author.name}
+
+
+*📜Description:*
+${vData.description}`,
+        vData.thumbnail
+      );
+      let audiOut = Math.random() + vData.videoId + ".mp3";
+      var audio = νℓкуяє
+        .yClient(vData.url, {
+          filter: (info) =>
+            info.audioBitrate == 160 || info.audioBitrate == 128,
+        })
+        .pipe(νℓкуяє.fs.createWriteStream(`./${audiOut}`));
+      await new Promise((resolve, reject) => {
+        audio.on("error", reject);
+        audio.on("finish", resolve);
+      });
+      await νℓкуяє.sendMessage(
+        vcнaт.chat,
+        {
+          audio: νℓкуяє.fs.readFileSync(`./${audiOut}`),
+          mimetype: "audio/mpeg",
+          fileName: vData.title + ".mp3",
+          headerType: 4,
+          contextInfo: {
+            externalAdReply: {
+              title: vData.title,
+              body: "❣️Made by KryKenz.",
+              renderLargerThumbnail: true,
+              thumbnailUrl: vData.thumbnail,
+              mediaUrl: vData.url,
+              mediaType: 1,
+              thumbnail: await νℓкуяє.getBuffer(vData.thumbnail),
+              sourceUrl: vData.url,
+            },
+          },
         },
-      },
-    },
-    { quoted: vcнaт }
-  );
-  return νℓкуяє.fs.unlinkSync(`./${randomName}`);
+        { quoted: vcнaт }
+      );
+      return νℓкуяє.fs.unlinkSync(`./${audiOut}`);
+    }
+  });
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*

@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "version": "6.4.2-f",
+  "version": "6.4.3",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
@@ -19,7 +19,6 @@
     "System": "System"
   },
   "dependencies": {
-    "vlkyre": "*",
     "@adiwajshing/baileys": "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.0",
@@ -44,7 +43,6 @@
     "fluent-ffmpeg": "^2.1.2",
     "forever": "^4.0.3",
     "g-i-s": "^2.1.6",
-    "get-video-id": "^3.6.5",
     "global": "^4.4.0",
     "google-it": "^1.6.3",
     "human-readable": "^0.2.1",
@@ -71,6 +69,7 @@
     "qrcode-terminal": "^0.12.0",
     "quick.db": "^7.1.3",
     "railway-youtube": "^*",
+    "railway-yts": "^0.0.1",
     "random-jokes": "^2.0.3",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
@@ -83,6 +82,7 @@
     "tinyurl-api": "^1.0.1",
     "unofficial-carbon-now": "^1.0.6",
     "util": "^0.12.4",
+    "vlkyre": "*",
     "wa-sticker-formatter": "^4.3.2",
     "xfarr-api": "^1.0.3"
   }
