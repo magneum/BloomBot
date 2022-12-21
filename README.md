@@ -28,23 +28,21 @@
 
 ```
 📍 FIRSTLY 📍
-- You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
-- Just Follow These Setps.
+⧫ You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
+⧫ Just Follow These Setps.
 
 📍 SET ENVIRONMENT VARIABLES 📍
-> export MONGO_URL= your mongodb url string
-> (optional) export DATABASE_URL= your postgres url string
+⧭ export MONGO_URL= your mongodb url string
+⧭ (optional) export DATABASE_URL= your postgres url string
 
-📍 PREPARATION 📍
-> rm -rf node_modules
-> npm install vlkyre --force
-> cp -R node_modules/vlkyre .
-> cd vlkyre
-> node .
+📍 PREPARATION 📍 (copy and paste)
+⧪ rm -rf node_modules && npm install vlkyre --force
+⧪ cp -R node_modules/vlkyre .
+⧪ cd vlkyre
+⧪ node .
 
 📍 RUN VLKYRE 📍
-> node node_modules/vlkyre
-> follow the on-screen prompts and have fun!
+⧯ follow the on-screen prompts and have fun!
 ```
 
 <h1 align="left">🍀Deploy in Koyeb Using Docker Image</h1>
