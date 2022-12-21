@@ -38,7 +38,7 @@
 📍 PREPARATION 📍 (copy and paste)
 ⧪ rm -rf node_modules && npm install vlkyre --force
 ⧪ cp -R node_modules/vlkyre .
-⧪ cd vlkyre
+⧪ cp .env vlkyre && cd vlkyre
 ⧪ node .
 
 📍 RUN VLKYRE 📍
