@@ -5,7 +5,7 @@
 
 ##
 
-<p align="centre"><img  width="40%" height="80%" img src="[https://telegra.ph/file/f9a2845e68e553eff9cf2.jpg](https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png)" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/>
 <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
