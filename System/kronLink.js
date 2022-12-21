@@ -200,11 +200,23 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       νℓкуяє.chalk.black(Show)
     );
   }
+  function between(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  function clearStorage(files) {
+    for (const file of files) {
+      νℓкуяє.fs.unlink(file, (err) => {
+        if (err) throw err;
+      });
+    }
+  }
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ShowGreen = ShowGreen;
   νℓкуяє.ShowBlue = ShowBlue;
   νℓкуяє.ShowRed = ShowRed;
   νℓкуяє.ShowYellow = ShowYellow;
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  νℓкуяє.between = between;
+  νℓкуяє.clearStorage = clearStorage;
   νℓкуяє.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
