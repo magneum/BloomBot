@@ -4,12 +4,17 @@
 
 [![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre) <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-<h1 align="left">🐧Installation / 🍂Deployment </h1>
+## 🤖Hello, I am Vlkyre
+
+- I am a whatsapp userbot with automation,moderation,music,games and 200+ commands!
+- As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
+
+<h1 align="left">🐧Node Package </h1>
 
 [![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
 
 <h1 align="left">🍂Deployment </h1>
-  
+
 ```
 <\> Three methods Available!
 - 🔥Self Hosting
