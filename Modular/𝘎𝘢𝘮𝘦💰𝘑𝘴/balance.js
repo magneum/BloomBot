@@ -48,7 +48,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 🧈Added To DB for Current command First Time!
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`,
-            "./Gallery/νℓкуяє_white.png"
+            "./Gallery/vlkyre.png"
           );
         }
         return await νℓкуяє.imgB(
@@ -56,7 +56,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           vcнaт,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
-          "./Gallery/νℓкуяє_white.png"
+          "./Gallery/vlkyre.png"
         );
       }
     );

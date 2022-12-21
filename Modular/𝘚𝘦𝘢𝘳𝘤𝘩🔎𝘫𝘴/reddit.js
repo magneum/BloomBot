@@ -19,6 +19,16 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
   try {
+    if (!νℓкуяє.args.join(" ")) {
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _No Reddit Topic Given!_
+
+*⚡Usage* 
+> _${νℓкуяє.prefix}${pfname} topic_`
+      );
+    }
     var кяуяєs = await νℓкуяє.axios.get(
       "https://meme-api.herokuapp.com/gimme/" + νℓкуяє.args.join(" ") + "/"
     );

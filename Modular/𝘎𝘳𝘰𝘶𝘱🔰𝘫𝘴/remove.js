@@ -75,7 +75,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє_beta.png";
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє.png";
       }
       await νℓкуяє.imgB(
         νℓкуяє,
@@ -112,7 +112,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє_beta.png";
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє.png";
       }
       await νℓкуяє.imgB(
         νℓкуяє,
