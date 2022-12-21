@@ -38,6 +38,7 @@ var chalk = require("chalk");
 var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
+let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
