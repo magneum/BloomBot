@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
