@@ -447,7 +447,7 @@ vcнaт,
 ╚◇══════════◇╝
 
 *❌ERROR:* No query provided!
-*⚡USAGE:* Reply Person: ${prefix}${Final_Name}
+*⚡USAGE:* Reply Person: ${prefix}${pfname}}
 
 
 ┌『 *⚔️Swords* 』
