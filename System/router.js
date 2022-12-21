@@ -319,6 +319,11 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "roulette":
       require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(νℓкуяє, vcнaт);
       break;
+    case "rob":
+    case "thief":
+    case "robbery":
+      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/rob")(νℓкуяє, vcнaт);
+      break;
     case "bag":
     case "inv":
     case "loot":
