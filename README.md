@@ -1,4 +1,5 @@
-<h1 align="left"> 🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞:  <I>Advance Javascript + Python Whatsapp UserBot</I>
+<h1 align="centre"> 🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞🕊️
+<h2 align="left"><I>Advance Javascript + Python Whatsapp UserBot</I>
 
 ##
 
