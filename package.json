@@ -8,9 +8,9 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "start": "forever src/index.js --color",
-    "prestart": "npm install -g forever",
-    "build": "npm install --force"
+    "prestart": "npm install -g spotify-dl spdl-core forever pm2 --force && pip install -r ⭕𝖈𝖆𝖗𝖆.txt",
+    "build": "npm install -g spotify-dl spdl-core forever pm2 --force && pip install -r ⭕𝖈𝖆𝖗𝖆.txt",
+    "start": "python3 Operator.py"
   },
   "depecrated": false,
   "private": false,
