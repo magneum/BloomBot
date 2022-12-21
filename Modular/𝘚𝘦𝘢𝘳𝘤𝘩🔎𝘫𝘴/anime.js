@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
   try {
-    if (!νℓкуяє.args) {
+    if (!νℓкуяє.args.join(" ")) {
       return vcнaт.reply(
         `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
