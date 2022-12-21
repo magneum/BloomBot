@@ -55,7 +55,7 @@
 
 - To Deploy in Railway watch this [video](https://youtube.com)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/GN97ec?referralCode=B6ZmKf)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/hERJwZ?referralCode=B6ZmKf)
 
 <h1 align="left">⚠️Disclaimer</h1>
 
