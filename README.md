@@ -1,5 +1,3 @@
-<span style="font-family: 'Times New Roman';">
-
 # [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://krykenz.github.io/Vlkyre)
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
@@ -11,11 +9,13 @@
 [![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
 
 <h1 align="left">🍂Deployment </h1>
-  <b>Three methods Available!</b>
-
-- 🔥𝐒𝐞𝐥𝐟
-- 🍀𝐊𝐨𝐲𝐞𝐛
-- 🚄𝐑𝐚𝐢𝐥𝐰𝐚𝐲
+  
+```
+<\> Three methods Available!
+- 🔥Self Hosting
+- 🍀Koyeb
+- 🚄Railway
+```
 
 <h1 align="left">🔥Self Hosting Using Linux</h1>
 
@@ -66,7 +66,7 @@ Forking Repo is fine. But if you edit something we will not provide any help.
 In short, Fork At Your Own Risk.
 ```
 
-<h1 align="left">🚨Legal
+<h1 align="left">🚨Legal</h1>
 
 ```
 Vlkyre is in no way affiliated with, authorized, maintained,
@@ -74,5 +74,3 @@ sponsored or endorsed by WhatsApp or any of its affiliates or
 subsidiaries. This is an independent and unofficial software.
 Use at your own risk.
 ```
-
-</span>
