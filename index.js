@@ -18,7 +18,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
   console.error(error, "Uncaught Exception....");
 });
-require("../global.js");
+require("./global.js");
 var {
   default: кяуνℓ,
   DisconnectReason,
@@ -39,8 +39,8 @@ var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("../Authenticator/Database");
-var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("../System/myfunc");
+var { useRemoteFileAuthState } = require("./Authenticator/Database");
+var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 function ShowRed(Topic, Text) {
   var TShow = chalk.hex("#ff6347").bold(Topic);
@@ -201,7 +201,7 @@ async function кяукєηz() {
     if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
-    await require("../System/νc໐rē.js")(νℓкуяє, vcнaт, update, store);
+    await require("./System/νc໐rē.js")(νℓкуяє, vcнaт, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.decodeJid = (jid) => {
@@ -506,7 +506,7 @@ async function кяукєηz() {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("../System/exif");
+      let { writeExif } = require("./System/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,
