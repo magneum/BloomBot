@@ -8,19 +8,29 @@
 ```
 📍 MANUALLY:
 
-> npm i vlkyre --force
-> yarn add vlkyre --ignore-engines
+> rm -rf node_modules && npm i vlkyre --force
+or
+> rm -rf node_modules && yarn add vlkyre --ignore-engines
+
+📍 SET ENVIRONMENT VARIABLES:
+> export MONGO_URL= your mongodb url string
+> (optional) export DATABASE_URL= your postgres url string
+
+📍 RUN VLKYRE
+> node node_modules/vlkyre
+> follow the on-screen prompts and have fun!
+
 ```
 
-[![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre/)
+[![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
 
 <h1 align="center">🍂𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭</h1>
 
 <b>Three methods Available!</b>
 
-- [🔥𝐒𝐞𝐥𝐟 (press to branch)](https://github.com/krykenz/vlkyre/tree/self-host)
-- [🍀𝐊𝐨𝐲𝐞𝐛 (press to branch)](https://github.com/krykenz/vlkyre/tree/koyeb)
-- [🚄𝐑𝐚𝐢𝐥𝐰𝐚𝐲 (press to branch)](https://github.com/krykenz/vlkyre/tree/railway)
+- 🔥𝐒𝐞𝐥𝐟
+- 🍀𝐊𝐨𝐲𝐞𝐛
+- 🚄𝐑𝐚𝐢𝐥𝐰𝐚𝐲
 
 <h1 align="left">🔥𝐒𝐞𝐥𝐟 𝐇𝐨𝐬𝐭𝐢𝐧𝐠 𝐔𝐬𝐢𝐧𝐠 𝐋𝐢𝐧𝐮𝐱</h1>
 
