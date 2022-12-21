@@ -1,11 +1,11 @@
-[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre) <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
-
 <h1 align="center">
 🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞:  <I>Advance Javascript + Python Whatsapp UserBot</I>
 
 ##
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
+
+[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre) <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 # 🐧𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧
 
