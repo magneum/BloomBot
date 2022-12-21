@@ -22,7 +22,7 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=npm
 RUN git fetch origin npm
 RUN git reset --hard origin/npm
-RUN pip install -r ⭕𝖈𝖆𝖗𝖆.txt && npm install --force
+RUN pip install -r requirements.txt && npm install --force
 EXPOSE 8080
 CMD [ "npm", "run", "start" ]
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
