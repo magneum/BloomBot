@@ -3,10 +3,11 @@
 <h1 align="center">
 🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞:  <I>Advance Javascript + Python Whatsapp UserBot</I>
 
-<p align="center">
-  <img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" width="350" title="hover text">
-  <img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.pnge" width="350" alt="accessibility text">
-</p>
+##
+
+<p align="centre"><img  width="40%" height="80%" img src="[https://telegra.ph/file/f9a2845e68e553eff9cf2.jpg](https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png)" /></p>
+<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/>
+<img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 # 🐧𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧
 
