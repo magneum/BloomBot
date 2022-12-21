@@ -24,7 +24,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     var animeLink = await νℓкуяє.Anime.yeet();
     νℓкуяє
       .request(animeLink)
-      .pipe(νℓкуяє.fs.createWriteStream(animeOld))
+      .pipe(fs.createWriteStream(animeOld))
       .on("close", () => {
         νℓкуяє.exec(
           νℓкуяє.pathFFmpeg +
