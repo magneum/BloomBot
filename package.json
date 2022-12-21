@@ -1,14 +1,11 @@
 {
   "name": "vlkyre",
-  "version": "6.4.1",
+  "version": "6.4.2",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
     "node": ">=16.0.0 <17.0.0"
-  },
-  "scripts": {
-    "prestart": "yarn add global forever"
   },
   "depecrated": false,
   "directories": {
