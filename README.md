@@ -13,7 +13,7 @@
 
 [![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
 
-[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre)
+[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre/)
 
 <h1 align="left">🍂Deployment </h1>
 
