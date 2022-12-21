@@ -27,19 +27,22 @@
 <h1 align="left">🔥Self Hosting Using Linux</h1>
 
 ```
-📍 FIRSTLY:
-You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
-Just Follow These Setps.
+📍 FIRSTLY 📍
+- You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
+- Just Follow These Setps.
 
-> rm -rf node_modules && npm i vlkyre --force
-or
-> rm -rf node_modules && yarn add vlkyre --ignore-engines
-
-📍 SET ENVIRONMENT VARIABLES:
+📍 SET ENVIRONMENT VARIABLES 📍
 > export MONGO_URL= your mongodb url string
 > (optional) export DATABASE_URL= your postgres url string
 
-📍 RUN VLKYRE
+📍 PREPARATION 📍
+> rm -rf node_modules
+> npm install vlkyre --force
+> cp -R node_modules/vlkyre .
+> cd vlkyre
+> node .
+
+📍 RUN VLKYRE 📍
 > node node_modules/vlkyre
 > follow the on-screen prompts and have fun!
 ```
