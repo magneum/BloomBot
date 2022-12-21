@@ -2,7 +2,7 @@
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
 
-[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre) <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
+<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 ## 🤖Hello, I am Vlkyre
 
@@ -12,6 +12,8 @@
 <h1 align="left">🐧Node Package </h1>
 
 [![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
+
+[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre)
 
 <h1 align="left">🍂Deployment </h1>
 
