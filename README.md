@@ -34,6 +34,8 @@
 📍 SET ENVIRONMENT VARIABLES 📍
 ⧭ export MONGO_URL= your mongodb url string
 ⧭ (optional) export DATABASE_URL= your postgres url string
+or
+⧭ make a .env file and save these two variables.
 
 📍 PREPARATION 📍 (copy and paste)
 ⧪ rm -rf node_modules && npm install vlkyre --force
