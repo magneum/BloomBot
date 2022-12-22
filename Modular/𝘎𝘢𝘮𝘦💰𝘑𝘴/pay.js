@@ -64,7 +64,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         νℓкуяє.message.extendedTextMessage.contextInfo != null
           ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
           : "";
-      let dataFor_Person = await ӄryӄnz.getName(dataFor);
+      let dataFor_Person = await νℓкуяє.getName(dataFor);
       if (dataFor === vcнaт.sender) {
         return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
