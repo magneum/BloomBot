@@ -44,26 +44,26 @@ module.exports = async (νℓкуяє, vcнaт) => {
       }
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    try {
-      var Found = await νℓкуяє.ySearch(gotArgument);
-      var vFound = Found.videos.slice(0, 1);
-      vFound.forEach(async function (vData) {
-        if (!vData.url) {
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+
+    var Found = await νℓкуяє.ySearch(gotArgument);
+    var vFound = Found.videos.slice(0, 1);
+    vFound.forEach(async function (vData) {
+      if (!vData.url) {
+        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 
 *❌Error*
 > _No Music Found!_`);
-        } else if (vData.seconds > 600) {
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+      } else if (vData.seconds > 600) {
+        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 
 *❌Error*
 > _Cannot Download More Then 10m audio!_`);
-        } else {
-          console.log(vData);
-          await νℓкуяє.imgB(
-            νℓкуяє,
-            vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+      } else {
+        console.log(vData);
+        await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *⭕Filter:* ${pfname}
 *🍻Title:* ${vData.title || "null"}
 *🙈Views:* ${vData.views || "null"}
@@ -74,59 +74,55 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
 *📜Description:*
 ${vData.description || "null"}`,
-            vData.thumbnail
-          );
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          let audiOut = νℓкуяє.between(1000, 2000) + vData.videoId + ".mp3";
-          var audio = νℓкуяє
-            .yClient(vData.url, {
-              filter: (info) =>
-                info.audioBitrate == 160 || info.audioBitrate == 128,
-            })
-            .pipe(νℓкуяє.fs.createWriteStream(`./${audiOut}`));
-          await new Promise((resolve, reject) => {
-            audio.on("error", reject);
-            audio.on("finish", resolve);
-          });
-          let audioConv = νℓкуяє.between(3000, 4000) + vData.videoId + ".mp3";
-          νℓкуяє.exec(
-            `${νℓкуяє.pathFFmpeg} -i ${audiOut} -af "flanger" ${audioConv}`,
-            async (error) => {
-              if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-              else {
-                await νℓкуяє.sendMessage(
-                  vcнaт.chat,
-                  {
-                    audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
-                    mimetype: "audio/mpeg",
-                    fileName: vData.title + ".mp3",
-                    headerType: 4,
-                    contextInfo: {
-                      externalAdReply: {
-                        title: vData.title,
-                        body: "YT-Filter⭕Made by KryKenz.",
-                        renderLargerThumbnail: true,
-                        thumbnailUrl: vData.thumbnail,
-                        mediaUrl: vData.url,
-                        mediaType: 1,
-                        thumbnail: await νℓкуяє.getBuffer(vData.thumbnail),
-                        sourceUrl: "https://bit.ly/krykenz",
-                      },
+          vData.thumbnail
+        );
+        ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+        let audiOut = νℓкуяє.between(1000, 2000) + vData.videoId + ".mp3";
+        var audio = νℓкуяє
+          .yClient(vData.url, {
+            filter: (info) =>
+              info.audioBitrate == 160 || info.audioBitrate == 128,
+          })
+          .pipe(νℓкуяє.fs.createWriteStream(`./${audiOut}`));
+        await new Promise((resolve, reject) => {
+          audio.on("error", reject);
+          audio.on("finish", resolve);
+        });
+        let audioConv = νℓкуяє.between(3000, 4000) + vData.videoId + ".mp3";
+        νℓкуяє.exec(
+          `${νℓкуяє.pathFFmpeg} -i ${audiOut} -af "flanger" ${audioConv}`,
+          async (error) => {
+            if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            else {
+              await νℓкуяє.sendMessage(
+                vcнaт.chat,
+                {
+                  audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
+                  mimetype: "audio/mpeg",
+                  fileName: vData.title + ".mp3",
+                  headerType: 4,
+                  contextInfo: {
+                    externalAdReply: {
+                      title: vData.title,
+                      body: "YT-Filter⭕Made by KryKenz.",
+                      renderLargerThumbnail: true,
+                      thumbnailUrl: vData.thumbnail,
+                      mediaUrl: vData.url,
+                      mediaType: 1,
+                      thumbnail: await νℓкуяє.getBuffer(vData.thumbnail),
+                      sourceUrl: "https://bit.ly/krykenz",
                     },
                   },
-                  { quoted: vcнaт }
-                );
-                await νℓкуяє.fs.unlinkSync(`./${audiOut}`);
-                return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
-              }
+                },
+                { quoted: vcнaт }
+              );
+              await νℓкуяє.fs.unlinkSync(`./${audiOut}`);
+              return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
             }
-          );
-        }
-      });
-    } catch (error) {
-      return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+          }
+        );
+      }
+    });
   } catch (error) {
     return νℓкуяє.grab(νℓкуяє, vcнaт, error);
   }
