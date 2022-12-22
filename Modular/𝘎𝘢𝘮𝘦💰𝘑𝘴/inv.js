@@ -24,7 +24,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         ID: vcнaт.sender,
       },
       async (error, userRob) => {
-        if (error) return Caught(ӄryӄnz, Vlkyre, util.format(error));
+        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
         if (!userRob) {
           var newUser = new νℓкуяє.Robbery({
             ID: vcнaт.sender,
@@ -34,7 +34,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
             CurrentRobberyTime: 0,
             PermanentRobberyTime: 900000,
           });
-          await newUser.save().catch((error) => Caught(ӄryӄnz, Vlkyre, error));
+          await newUser
+            .save()
+            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
