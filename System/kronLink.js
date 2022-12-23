@@ -149,6 +149,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.moment = require("moment-timezone");
   νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   νℓкуяє.Carbon = require("unofficial-carbon-now");
+  νℓкуяє.Levels = require("discord-xp");
+  νℓкуяє.canvacord = require("canvacord");
+  νℓкуяє.randomMC = require("random-material-color");
+
   νℓкуяє.yClient = require("railway-youtube");
   νℓкуяє.ySearch = require("railway-yts");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

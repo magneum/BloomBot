@@ -18,88 +18,92 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
-if (!νℓкуяє.mentionByReply) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+  if (!νℓкуяє.mentionByReply) {
+    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-if (νℓкуяє.args.length === 0) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+  }
+  if (νℓкуяє.args.length === 0) {
+    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(νℓкуяє.args[0])) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+  }
+  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(νℓкуяє.args[0])) {
+    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-if (νℓкуяє.args[0].match(/[a-z]/i)) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+  }
+  if (νℓкуяє.args[0].match(/[a-z]/i)) {
+    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (νℓкуяє.mentionByReply) {
-receiver =
-νℓкуяє.mtype == "extendedTextMessage" &&
-νℓкуяє.message.extendedTextMessage.contextInfo != null
-? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
-: "";
-receiverName = await νℓкуяє.getName(receiver);
-if (receiver === vcнaт.sender) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+  }
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  if (νℓкуяє.mentionByReply) {
+    receiver =
+      νℓкуяє.mtype == "extendedTextMessage" &&
+      νℓкуяє.message.extendedTextMessage.contextInfo != null
+        ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
+    receiverName = await νℓкуяє.getName(receiver);
+    if (receiver === vcнaт.sender) {
+      return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-await νℓкуяє.Economy.findOne(
-{
-ID: vcнaт.sender,
-},
-async (error, uPayer) => {
-if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-if (!uPayer) {
-new νℓкуяє.Economy({
-ID: vcнaт.sender,
-money: 0,
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-}).save();
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    await νℓкуяє.Economy.findOne(
+      {
+        ID: vcнaт.sender,
+      },
+      async (error, uPayer) => {
+        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (!uPayer) {
+          new νℓкуяє.Economy({
+            ID: vcнaт.sender,
+            money: 0,
+            daily: 0,
+            timeout: 86400000,
+            fishdone: 0,
+            fishtimeout: 1800000,
+            workdone: 0,
+            worktimeout: 900000,
+          })
+            .save()
+            .catch((error) => {
+              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            });
+          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-if (parseInt(νℓкуяє.args[0]) > uPayer.money) {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+        }
+        ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+        if (parseInt(νℓкуяє.args[0]) > uPayer.money) {
+          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -109,30 +113,36 @@ return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-} else {
-await νℓкуяє.Economy.findOne(
-{
-ID: receiver,
-},
-async (error, uBonus) => {
-if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-if (!uBonus) {
-new νℓкуяє.Economy({
-ID: receiver,
-money: parseInt(νℓкуяє.args[0]),
-daily: 0,
-timeout: 86400000,
-fishdone: 0,
-fishtimeout: 1800000,
-workdone: 0,
-worktimeout: 900000,
-}).save();
-uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
-await uPayer.save();
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        } else {
+          await νℓкуяє.Economy.findOne(
+            {
+              ID: receiver,
+            },
+            async (error, uBonus) => {
+              if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              if (!uBonus) {
+                new νℓкуяє.Economy({
+                  ID: receiver,
+                  money: parseInt(νℓкуяє.args[0]),
+                  daily: 0,
+                  timeout: 86400000,
+                  fishdone: 0,
+                  fishtimeout: 1800000,
+                  workdone: 0,
+                  worktimeout: 900000,
+                })
+                  .save()
+                  .catch((error) => {
+                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  });
+                uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
+                uPayer.save().catch((error) => {
+                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                });
+                return await νℓкуяє.imgB(
+                  νℓкуяє,
+                  vcнaт,
+                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -143,18 +153,22 @@ vcнaт,
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-"./Gallery/vlkyre.png"
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
-await uPayer.save();
-uBonus.money = uBonus.money + parseInt(νℓкуяє.args[0]);
-await uBonus.save();
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  "./Gallery/vlkyre.png"
+                );
+              }
+              ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+              uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
+              uPayer.save().catch((error) => {
+                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              });
+              uBonus.money = uBonus.money + parseInt(νℓкуяє.args[0]);
+              uBonus.save().catch((error) => {
+                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              });
+              return await νℓкуяє.imgB(
+                νℓкуяє,
+                vcнaт,
+                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -165,25 +179,24 @@ vcнaт,
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-"./Gallery/vlkyre.png"
-);
-}
-);
-}
-}
-);
+                "./Gallery/vlkyre.png"
+              );
+            }
+          );
+        }
+      }
+    );
 
-
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); 
-} else {
-return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else {
+    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
-}
+  }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*

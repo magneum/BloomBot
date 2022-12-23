@@ -26,15 +26,14 @@ module.exports = async (νℓкуяє, vcнaт) => {
       async (error, userRob) => {
         if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
         if (!userRob) {
-          var newUser = new νℓкуяє.Robbery({
+          new νℓкуяє.Robbery({
             ID: vcнaт.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
             CurrentRobberyTime: 0,
             PermanentRobberyTime: 900000,
-          });
-          await newUser
+          })
             .save()
             .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
           return await νℓкуяє.imgB(

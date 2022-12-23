@@ -30,7 +30,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (!userEco) {
-          var newUser = new νℓкуяє.Economy({
+          new νℓкуяє.Economy({
             ID: vcнaт.sender,
             money: 0,
             daily: 0,
@@ -39,10 +39,11 @@ module.exports = async (νℓкуяє, vcнaт) => {
             fishtimeout: 1800000,
             workdone: Date.now(),
             worktimeout: 900000,
-          });
-          await newUser.save().catch((error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          });
+          })
+            .save()
+            .catch((error) => {
+              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            });
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,

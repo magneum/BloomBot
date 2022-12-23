@@ -59,14 +59,15 @@ module.exports = async (νℓкуяє, vcнaт) => {
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, Vlkyre, error);
               if (!userZoo) {
-                let newUser = new νℓкуяє.Zoology({
+                new νℓкуяє.Zoology({
                   ID: vcнaт.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
-                });
-                await newUser.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-                });
+                })
+                  .save()
+                  .catch((error) => {
+                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
@@ -105,7 +106,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   userEco.money = userEco.money + worth;
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
-                  await userZoo.save().catch((error) => {
+                  userZoo.save().catch((error) => {
                     return νℓкуяє.grab(νℓкуяє, vcнaт, error);
                   });
                   return await νℓкуяє.imgB(

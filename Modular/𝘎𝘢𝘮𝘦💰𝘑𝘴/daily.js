@@ -71,7 +71,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
-          await userEco.save().catch((error) => {
+          userEco.save().catch((error) => {
             return νℓкуяє.grab(νℓкуяє, vcнaт, error);
           });
           return await νℓкуяє.imgB(
