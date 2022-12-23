@@ -41,7 +41,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}ytmusic
 │║⦁ ${νℓкуяє.prefix}youtubemusic
 ┕╚═══════⋑`,
-      "./Gallery/KryPage.PNG"
+      "./Gallery/KryPage.png"
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {

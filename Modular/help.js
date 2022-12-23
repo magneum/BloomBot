@@ -122,8 +122,11 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}tagall
 │║⦁ ${νℓкуяє.prefix}group open
 │║⦁ ${νℓкуяє.prefix}group close
-│║⦁ ${νℓкуяє.prefix}group antilink on
-│║⦁ ${νℓкуяє.prefix}group antilink off
+│║⦁ ${νℓкуяє.prefix}antilink on/off
+│║⦁ ${νℓкуяє.prefix}stoplink on/off
+│║⦁ ${νℓкуяє.prefix}nolink on/off
+│║⦁ ${νℓкуяє.prefix}autorank on/off
+│║⦁ ${νℓкуяє.prefix}autorole on/off
 ┕╚═══════⋑
 
 ┌『 *🍌HENTAI HUB🍌* 』 
@@ -190,7 +193,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}ytvaporwave
 │║⦁ ${νℓкуяє.prefix}ytvibrato
 ┕╚═══════⋑`,
-    "./Gallery/KryPage.PNG"
+    "./Gallery/KryPage.png"
   );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

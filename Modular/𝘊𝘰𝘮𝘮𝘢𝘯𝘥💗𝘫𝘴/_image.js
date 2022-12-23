@@ -36,7 +36,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}waifu
 │║⦁ ${νℓкуяє.prefix}wallpaper
 ┕╚═══════⋑`,
-      "./Gallery/KryPage.PNG"
+      "./Gallery/KryPage.png"
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {

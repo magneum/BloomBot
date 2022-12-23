@@ -572,6 +572,20 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
         participants
       );
       break;
+    case "antilink":
+    case "stoplink":
+    case "nolink":
+      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/antilink")(
+        νℓкуяє,
+        vcнaт,
+        gmeta,
+        isAdmin,
+        groupName,
+        isBotAdmin,
+        groupAdmins,
+        participants
+      );
+      break;
 
     default:
       return await νℓкуяє.imgB(
