@@ -16,12 +16,12 @@ exports.noLink = async (νℓкуяє, vcнaт, update, store) => {
   try {
     let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(vcнaт.chat);
     let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-    let isGroupLink = GroupLinkRegex.exec(Figure);
+    let isGroupLink = GroupLinkRegex.exec(νℓкуяє.Body);
     let PresentGroupLink = new RegExp(
       `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
       "i"
     );
-    let isCurrentGroupLink = PresentGroupLink.test(Figure);
+    let isCurrentGroupLink = PresentGroupLink.test(νℓкуяє.Body);
     if (isGroupLink && !isCurrentGroupLink) {
       await νℓкуяє
         .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
@@ -41,12 +41,12 @@ exports.noLink = async (νℓкуяє, vcнaт, update, store) => {
       });
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else if (
-      Figure.includes("https://t.me/") &&
-      Figure.includes("discord.gg") &&
-      Figure.includes("discord.com") &&
-      Figure.includes("/t.me/") &&
-      Figure.includes("wa.me/") &&
-      Figure.includes("www.")
+      νℓкуяє.Body.includes("https://t.me/") &&
+      νℓкуяє.Body.includes("discord.gg") &&
+      νℓкуяє.Body.includes("discord.com") &&
+      νℓкуяє.Body.includes("/t.me/") &&
+      νℓкуяє.Body.includes("wa.me/") &&
+      νℓкуяє.Body.includes("www.")
     ) {
       await νℓкуяє
         .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
