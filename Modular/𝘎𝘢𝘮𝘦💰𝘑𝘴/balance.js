@@ -18,53 +18,48 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
-  try {
-    await νℓкуяє.Economy.findOne(
-      {
-        ID: vcнaт.sender,
-      },
-      async (error, userEco) => {
-        if (error) {
-          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-        }
-        if (!userEco) {
-          new νℓкуяє.Economy({
-            ID: vcнaт.sender,
-            money: 0,
-            daily: 0,
-            timeout: 86400000,
-            fishdone: 0,
-            fishtimeout: 1800000,
-            workdone: 0,
-            worktimeout: 900000,
-          })
-            .save()
-            .catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-            });
-          return await νℓкуяє.imgB(
-            νℓкуяє,
-            vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-🧈Added To DB for Current command First Time!
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: Just Opened Your Account!`,
-            "./Gallery/vlkyre.png"
-          );
-        }
+  await νℓкуяє.Economy.findOne(
+    {
+      ID: vcнaт.sender,
+    },
+    async (error, data) => {
+      if (error) {
+        return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+      }
+      if (!data) {
+        new νℓкуяє.Economy({
+          ID: vcнaт.sender,
+          money: 0,
+          daily: 0,
+          timeout: 86400000,
+          fishdone: 0,
+          fishtimeout: 1800000,
+          workdone: 0,
+          worktimeout: 900000,
+        })
+          .save()
+          .catch((error) => {
+            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          });
         return await νℓкуяє.imgB(
           νℓкуяє,
           vcнaт,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
+*🧈Status:* Added To DB!
+*💰Balance:* Just Opened Your Account!`,
+          "./Gallery/vlkyre.png"
+        );
+      } else {
+        return await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*💰Balance:* ${data.money}`,
           "./Gallery/vlkyre.png"
         );
       }
-    );
-
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+    }
+  );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*

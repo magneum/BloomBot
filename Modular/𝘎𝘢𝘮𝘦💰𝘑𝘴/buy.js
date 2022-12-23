@@ -148,7 +148,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               νℓкуяє,
               vcнaт,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
+*💰Balance:* _Just Opened Your Account!_`,
               "./Gallery/vlkyre.png"
             );
           }
@@ -177,7 +177,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   νℓкуяє,
                   vcнaт,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-💰𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
+*💰Balance:* _Just Opened Your Account!_`,
                   "./Gallery/vlkyre.png"
                 );
               } else {

@@ -1,4 +1,4 @@
-# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://krykenz.github.io/Vlkyre)
+# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/krykenz)
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
 

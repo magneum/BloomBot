@@ -566,7 +566,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       νℓкуяє.sendMessage(
         vcнaт.chat,
         {
-          text: "*8( No Such Command Found!*\n*⧪Press:* https://krykenz.github.io/Vlkyre",
+          text: "*:( No Such Command Found!*\n*⧪Press:* https://bit.ly/krykenz",
         },
         { quoted: vcнaт }
       );

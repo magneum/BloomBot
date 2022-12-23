@@ -65,7 +65,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 
 *❌Error* 
 > _You need to be verified to use bot..._
-> _Press YouTube: ${νℓкуяє.ShowInfo}_
+> _Press: https://bit.ly/krykenz_
 `,
                 "https://i.postimg.cc/G2YxctNp/Verity-Vlkyre.png"
               );

@@ -22,8 +22,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     νℓкуяє,
     vcнaт,
     `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-
-*⧪Press:* https://krykenz.github.io/Vlkyre`,
+*⧪Press:* https://bit.ly/krykenz`,
     "./Gallery/νℓкуяє_page.png"
   );
 };

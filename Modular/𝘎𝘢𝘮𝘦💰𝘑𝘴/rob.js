@@ -23,20 +23,20 @@ module.exports = async (νℓкуяє, vcнaт) => {
   let MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   let MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (νℓкуяє.mentionByReply) {
-    let dataFor =
+    let receiver =
       vcнaт.mtype == "extendedTextMessage" &&
       vcнaт.message.extendedTextMessage.contextInfo != null
         ? vcнaт.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    let dataFor_Person = await νℓкуяє.getName(dataFor);
-    if (dataFor === vcнaт.sender) {
+    let receiverName = await νℓкуяє.getName(receiver);
+    if (receiver === vcнaт.sender) {
       return vcнaт.reply(
         `*😥Sorry:* _${νℓкуяє.pushname}_
 *❌Error* 
 > _Can't rob your own bank_`
       );
     }
-
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     νℓкуяє.Economy.findOne(
       {
         ID: vcнaт.sender,
@@ -45,13 +45,13 @@ module.exports = async (νℓкуяє, vcнaт) => {
         if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
         νℓкуяє.Economy.findOne(
           {
-            ID: dataFor,
+            ID: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
             if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
             if (!ᴠᴇᴄᴏ) {
               let newUser = new νℓкуяє.Economy({
-                ID: dataFor,
+                ID: receiver,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -72,8 +72,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person}'s Bank Guard Caught You and Took You To The Jail!
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested and Took 0gold.ReTry Again!`,
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
+*🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
                 "./Gallery/vlkyre.png"
               );
             }
@@ -134,7 +134,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*@${dataFor_Person}*
+*@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
                 "./Gallery/vlkyre.png"
@@ -149,13 +149,13 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
                 Robbery.findOne(
                   {
-                    ID: dataFor,
+                    ID: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
                     if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       let newUser = new Robbery({
-                        ID: dataFor,
+                        ID: receiver,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -179,9 +179,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
 
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 3/4 used
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person}'s Bank Police Caught You and Took You To The Jail!
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
-*💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲:* ${ᴄᴇᴄᴏ.money}`,
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
+*🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
+*💰Balance:* ${ᴄᴇᴄᴏ.money}`,
                         "./Gallery/vlkyre.png"
                       );
                     }
@@ -211,9 +211,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 4/4 used
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person} caught You Red Handed and Sent You To The Jail!
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
-*💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲:* ${ᴄᴇᴄᴏ.money}`,
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
+*🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
+*💰Balance:* ${ᴄᴇᴄᴏ.money}`,
                         "./Gallery/vlkyre.png"
                       );
                     }
@@ -272,8 +272,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person} had a powerful ⚔️sword that killed you!
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested!
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} had a powerful ⚔️sword that killed you!
+*🧈Status:* You Got Arrested!
 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
@@ -312,8 +312,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested!
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person} had a 💻laptop that caught you digitally-robbing!
+*🧈Status:* You Got Arrested!
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} had a 💻laptop that caught you digitally-robbing!
 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
@@ -352,8 +352,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*💡‍𝐒𝐭𝐚𝐭𝐮𝐬:* You Got Arrested!
-*❌𝗘𝗿𝗿𝗼𝗿:* @${dataFor_Person} had a 🔮charm that magically saved their bank!
+*🧈Status:* You Got Arrested!
+*❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} had a 🔮charm that magically saved their bank!
 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
@@ -381,17 +381,17 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${dataFor_Person} _Got Robbed!_
+*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${receiverName} _Got Robbed!_
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
                           ᴠᴇᴄᴏ.money
                         }!
-*⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${dataFor_Person}, visit ${prefix}shop ASAP.
+*⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${νℓкуяє.pushname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
-*💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${dataFor_Person}
+*💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
                         "./Gallery/vlkyre.png"
@@ -415,15 +415,15 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ╚◇══════════◇╝
 
 
-*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${dataFor_Person} _Got Robbed!_
+*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${receiverName} _Got Robbed!_
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
-*⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${dataFor_Person}, visit ${prefix}shop ASAP.
+*⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${νℓкуяє.pushname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
-*💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${dataFor_Person}
+*💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
                         "./Gallery/vlkyre.png"

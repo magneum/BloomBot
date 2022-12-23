@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             νℓкуяє,
             vcнaт,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-🧈Added To DB for Current command First Time!
+*🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             "./Gallery/vlkyre.png"
           );

@@ -14,46 +14,105 @@
 */
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
-  try {
-    return await νℓкуяє.sendMessage(
-      vcнaт.chat,
-      {
-        image: { url: νidē໐ },
-        caption: `*🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}\n*📢ID:* ${
-          vcнaт.chat
-        }
-
+  if (νℓкуяє.isReply) {
+    var receiver =
+      νℓкуяє.mtype == "extendedTextMessage" &&
+      νℓкуяє.message.extendedTextMessage.contextInfo != null
+        ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
+    await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: νidē໐ },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* krykenz.github.io/Vlkyre`,
-        mentions: [vcнaт.sender],
-        buttons: [
-          {
-            buttonId: `${νℓкуяє.prefix}Commands`,
-            buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
-            type: 1,
-          },
-          {
-            buttonId: `${νℓкуяє.prefix}Vlkyre`,
-            buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
-            type: 1,
-          },
-        ],
-        headerType: 5,
-      },
-      {
-        quoted: vcнaт,
-      }
-    );
-  } catch (error) {
-    console.log("❗𝐄𝐫𝐫𝐨𝐫: " + νℓкуяє.command.toUpperCase() + " :" + error);
-    return vcнaт.reply(
-      `*😥Sorry:* _${νℓкуяє.pushname}_
-*❌Error* 
-> _There has been an API Error. Please try again later._
-
-*🐞Bug* 
-> ${error}`
-    );
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Commands`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 5,
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else if (νℓкуяє.mentionByTag) {
+    var receiver =
+      νℓкуяє.mtype == "extendedTextMessage" &&
+      νℓкуяє.message.extendedTextMessage.contextInfo != null
+        ? νℓкуяє.message.extendedTextMessage.contextInfo.mentionedJid
+        : [];
+    await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: νidē໐ },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
+${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Commands`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 5,
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else {
+    return await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: νidē໐ },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
+${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Commands`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 5,
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
   }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

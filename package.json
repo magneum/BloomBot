@@ -2,13 +2,13 @@
   "name": "vlkyre",
   "version": "6.5.0",
   "description": "vlkyre is a whatsappbot with automation, moderation, music, games and 200+ commands!",
-  "main": "src/index.js",
+  "main": "index.js",
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "start": "forever src/index.js --color",
+    "start": "clear && forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "prestart": "npm install -g forever",
     "build": "npm install --force"
   },
