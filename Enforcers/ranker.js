@@ -13,8 +13,6 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
 exports.sendRanks = async (νℓкуяє, vcнaт, update, store) => {
-  if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  if (!userRank) return;
   νℓкуяє.Levels.setURL(MONGO_URL);
   var color = νℓкуяє.randomMC.getColor();
   var randomXp = Math.floor(Math.random() * 3) + +10;

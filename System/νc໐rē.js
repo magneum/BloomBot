@@ -48,7 +48,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               {
                 serverID: vcнaт.chat,
               },
-              async (ᴇʀ, userRank) => {
+              async (error, userRank) => {
+                if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
                 if (!userRank) return;
                 var { sendRanks } = require("../Enforcers/ranker");
                 return sendRanks(νℓкуяє, vcнaт, update, store);
