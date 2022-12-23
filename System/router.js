@@ -51,7 +51,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   switch (νℓкуяє.command) {
     case "vlkyre":
-      return await require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+      await require("../Modular/vlkyre")(νℓкуяє, vcнaт);
       break;
     case "h":
     case "how":
@@ -62,7 +62,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "allmenu":
     case "command":
     case "commands":
-      return await require("../Modular/help")(νℓкуяє, vcнaт);
+      await require("../Modular/help")(νℓкуяє, vcнaт);
       break;
 
     case "yta":
@@ -75,414 +75,411 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "ytaudio":
     case "ytmusic":
     case "youtubemusic":
-      return await require("../Modular/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(νℓкуяє, vcнaт);
       break;
 
     case "bite":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bite")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bite")(νℓкуяє, vcнaт);
       break;
     case "blush":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/blush")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/blush")(νℓкуяє, vcнaт);
       break;
     case "bonk":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bonk")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bonk")(νℓкуяє, vcнaт);
       break;
     case "bored":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bored")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bored")(νℓкуяє, vcнaт);
       break;
     case "confused":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/confused")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/confused")(νℓкуяє, vcнaт);
       break;
     case "cry":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cry")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cry")(νℓкуяє, vcнaт);
       break;
     case "cuddle":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cuddle")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cuddle")(νℓкуяє, vcнaт);
       break;
     case "dance":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/dance")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/dance")(νℓкуяє, vcнaт);
       break;
     case "goodnight":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/goodnight")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/goodnight")(νℓкуяє, vcнaт);
       break;
     case "happy":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/happy")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/happy")(νℓкуяє, vcнaт);
       break;
     case "highfive":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/highfive")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/highfive")(νℓкуяє, vcнaт);
       break;
     case "hug":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/hug")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/hug")(νℓкуяє, vcнaт);
       break;
     case "kick":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kick")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kick")(νℓкуяє, vcнaт);
       break;
     case "kill":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kill")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kill")(νℓкуяє, vcнaт);
       break;
     case "kiss":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kiss")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kiss")(νℓкуяє, vcнaт);
       break;
     case "nervous":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/nervous")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/nervous")(νℓкуяє, vcнaт);
       break;
     case "pat":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/pat")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/pat")(νℓкуяє, vcнaт);
       break;
     case "poke":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/poke")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/poke")(νℓкуяє, vcнaт);
       break;
     case "punch":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/punch")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/punch")(νℓкуяє, vcнaт);
       break;
     case "sad":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/sad")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/sad")(νℓкуяє, vcнaт);
       break;
     case "scream":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/scream")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/scream")(νℓкуяє, vcнaт);
       break;
     case "slap":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/slap")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/slap")(νℓкуяє, vcнaт);
       break;
     case "smile":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/smile")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/smile")(νℓкуяє, vcнaт);
       break;
     case "stare":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/stare")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/stare")(νℓкуяє, vcнaт);
       break;
     case "wave":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wave")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wave")(νℓкуяє, vcнaт);
       break;
     case "wink":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wink")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wink")(νℓкуяє, vcнaт);
       break;
     case "yeet":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yeet")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yeet")(νℓкуяє, vcнaт);
       break;
     case "yes":
-      return await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yes")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yes")(νℓкуяє, vcнaт);
       break;
 
     case "h.anime":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_anime")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_anime")(νℓкуяє, vcнaт);
       break;
     case "h.download":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_download")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_download")(νℓкуяє, vcнaт);
       break;
     case "h.filter":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_filter")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_filter")(νℓкуяє, vcнaт);
       break;
     case "h.game":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_game")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_game")(νℓкуяє, vcнaт);
       break;
     case "h.group":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_group")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_group")(νℓкуяє, vcнaт);
       break;
     case "h.hentai":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_hentai")(νℓкуяє, vcнaт);
+      await require("../Bin/_hentai")(νℓкуяє, vcнaт);
       break;
     case "h.image":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_image")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_image")(νℓкуяє, vcнaт);
       break;
     case "h.search":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_search")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_search")(νℓкуяє, vcнaт);
       break;
     case "h.ytfilter":
-      return await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_ytfilter")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_ytfilter")(νℓкуяє, vcнaт);
       break;
 
     case "8d":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/8d")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/8d")(νℓкуяє, vcнaт);
       break;
     case "bassboost":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/bassboost")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/bassboost")(νℓкуяє, vcнaт);
       break;
     case "echo":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/echo")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/echo")(νℓкуяє, vcнaт);
       break;
     case "flanger":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/flanger")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/flanger")(νℓкуяє, vcнaт);
       break;
     case "nightcore":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/nightcore")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/nightcore")(νℓкуяє, vcнaт);
       break;
     case "phaser":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/phaser")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/phaser")(νℓкуяє, vcнaт);
       break;
     case "reverse":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/reverse")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/reverse")(νℓкуяє, vcнaт);
       break;
     case "slow":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/slow")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/slow")(νℓкуяє, vcнaт);
       break;
     case "speed":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/speed")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/speed")(νℓкуяє, vcнaт);
       break;
     case "subboost":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/subboost")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/subboost")(νℓкуяє, vcнaт);
       break;
     case "superslow":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superslow")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superslow")(νℓкуяє, vcнaт);
       break;
     case "superspeed":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superspeed")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superspeed")(νℓкуяє, vcнaт);
       break;
     case "surround":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/surround")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/surround")(νℓкуяє, vcнaт);
       break;
     case "vaporwave":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vaporwave")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vaporwave")(νℓкуяє, vcнaт);
       break;
     case "vibrato":
-      return await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vibrato")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vibrato")(νℓкуяє, vcнaт);
       break;
 
     case "yt8d":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/yt8d")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/yt8d")(νℓкуяє, vcнaт);
       break;
     case "ytbassboost":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytbassboost")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytbassboost")(νℓкуяє, vcнaт);
       break;
     case "ytecho":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytecho")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytecho")(νℓкуяє, vcнaт);
       break;
     case "ytflanger":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytflanger")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytflanger")(νℓкуяє, vcнaт);
       break;
     case "ytnightcore":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytnightcore")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytnightcore")(νℓкуяє, vcнaт);
       break;
     case "ytphaser":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytphaser")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytphaser")(νℓкуяє, vcнaт);
       break;
     case "ytreverse":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytreverse")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytreverse")(νℓкуяє, vcнaт);
       break;
     case "ytslow":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytslow")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytslow")(νℓкуяє, vcнaт);
       break;
     case "ytspeed":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytspeed")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytspeed")(νℓкуяє, vcнaт);
       break;
     case "ytsubboost":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsubboost")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsubboost")(νℓкуяє, vcнaт);
       break;
     case "ytsuperslow":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperslow")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperslow")(νℓкуяє, vcнaт);
       break;
     case "ytsuperspeed":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperspeed")(
-        νℓкуяє,
-        vcнaт
-      );
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperspeed")(νℓкуяє, vcнaт);
       break;
     case "ytsurround":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsurround")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsurround")(νℓкуяє, vcнaт);
       break;
     case "ytvaporwave":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvaporwave")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvaporwave")(νℓкуяє, vcнaт);
       break;
     case "ytvibrato":
-      return await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvibrato")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvibrato")(νℓкуяє, vcнaт);
       break;
 
     case "s":
     case "sgif":
     case "sticker":
     case "stickergif":
-      return await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/sticker")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/sticker")(νℓкуяє, vcнaт);
       break;
     case "tinyurl":
-      return await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tinyurl")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tinyurl")(νℓкуяє, vcнaт);
       break;
     case "toimg":
-      return await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/toimg")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/toimg")(νℓкуяє, vcнaт);
       break;
     case "tourl":
-      return await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tourl")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tourl")(νℓкуяє, vcнaт);
       break;
 
     case "bal":
     case "gold":
     case "money":
     case "balance":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/balance")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/balance")(νℓкуяє, vcнaт);
       break;
     case "buy":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/buy")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/buy")(νℓкуяє, vcнaт);
       break;
     case "dly":
     case "daily":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/daily")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/daily")(νℓкуяє, vcнaт);
       break;
     case "fish":
     case "pond":
     case "fishes":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/fish")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/fish")(νℓкуяє, vcнaт);
       break;
     case "bet":
     case "gamble":
     case "betting":
     case "roulette":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(νℓкуяє, vcнaт);
       break;
     case "pay":
     case "loan":
     case "borrow":
     case "payment":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/pay")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/pay")(νℓкуяє, vcнaт);
       break;
     case "rob":
     case "thief":
     case "robbery":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/rob")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/rob")(νℓкуяє, vcнaт);
       break;
     case "bag":
     case "inv":
     case "loot":
     case "inventory":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/inv")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/inv")(νℓкуяє, vcнaт);
       break;
     case "mall":
     case "shop":
     case "store":
     case "shopping":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/store")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/store")(νℓкуяє, vcнaт);
       break;
     case "job":
     case "work":
     case "earn":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/work")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/work")(νℓкуяє, vcнaт);
       break;
     case "zoo":
     case "forest":
     case "animals":
-      return await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/zoo")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/zoo")(νℓкуяє, vcнaт);
       break;
 
-    case "ass":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/ass")(νℓкуяє, vcнaт);
-      break;
-    case "bsdm":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/bdsm")(νℓкуяє, vcнaт);
-      break;
-    case "blowjob":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/blowjob")(νℓкуяє, vcнaт);
-      break;
-    case "cum":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/cum")(νℓкуяє, vcнaт);
-      break;
-    case "doujin":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/doujin")(νℓкуяє, vcнaт);
-      break;
-    case "feet":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/feet")(νℓкуяє, vcнaт);
-      break;
-    case "femdom":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/femdom")(νℓкуяє, vcнaт);
-      break;
-    case "foxgirl":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/foxgirl")(νℓкуяє, vcнaт);
-      break;
-    case "glasses":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/glasses")(νℓкуяє, vcнaт);
-      break;
-    case "hentai":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/hentai")(νℓкуяє, vcнaт);
-      break;
-    case "maid":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/maid")(νℓкуяє, vcнaт);
-      break;
-    case "masturbation":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/masturbation")(νℓкуяє, vcнaт);
-      break;
-    case "netorare":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/netorare")(νℓкуяє, vcнaт);
-      break;
-    case "orgy":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/orgy")(νℓкуяє, vcнaт);
-      break;
-    case "pussy":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/pussy")(νℓкуяє, vcнaт);
-      break;
-    case "school":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/school")(νℓкуяє, vcнaт);
-      break;
-    case "succubus":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/succubus")(νℓкуяє, vcнaт);
-      break;
-    case "tentacles":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/tentacles")(νℓкуяє, vcнaт);
-      break;
-    case "thighs":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/thighs")(νℓкуяє, vcнaт);
-      break;
-    case "uglyBastard":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uglyBastard")(νℓкуяє, vcнaт);
-      break;
-    case "uniform":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uniform")(νℓкуяє, vcнaт);
-      break;
-    case "yuri":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/yuri")(νℓкуяє, vcнaт);
-      break;
-    case "zettaiRyouiki":
-      return await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/zettaiRyouiki")(
-        νℓкуяє,
-        vcнaт
-      );
-      break;
+    // case "ass":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/ass")(νℓкуяє, vcнaт);
+    //   break;
+    // case "bsdm":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/bdsm")(νℓкуяє, vcнaт);
+    //   break;
+    // case "blowjob":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/blowjob")(νℓкуяє, vcнaт);
+    //   break;
+    // case "cum":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/cum")(νℓкуяє, vcнaт);
+    //   break;
+    // case "doujin":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/doujin")(νℓкуяє, vcнaт);
+    //   break;
+    // case "feet":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/feet")(νℓкуяє, vcнaт);
+    //   break;
+    // case "femdom":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/femdom")(νℓкуяє, vcнaт);
+    //   break;
+    // case "foxgirl":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/foxgirl")(νℓкуяє, vcнaт);
+    //   break;
+    // case "glasses":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/glasses")(νℓкуяє, vcнaт);
+    //   break;
+    // case "hentai":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/hentai")(νℓкуяє, vcнaт);
+    //   break;
+    // case "maid":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/maid")(νℓкуяє, vcнaт);
+    //   break;
+    // case "masturbation":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/masturbation")(νℓкуяє, vcнaт);
+    //   break;
+    // case "netorare":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/netorare")(νℓкуяє, vcнaт);
+    //   break;
+    // case "orgy":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/orgy")(νℓкуяє, vcнaт);
+    //   break;
+    // case "pussy":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/pussy")(νℓкуяє, vcнaт);
+    //   break;
+    // case "school":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/school")(νℓкуяє, vcнaт);
+    //   break;
+    // case "succubus":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/succubus")(νℓкуяє, vcнaт);
+    //   break;
+    // case "tentacles":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/tentacles")(νℓкуяє, vcнaт);
+    //   break;
+    // case "thighs":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/thighs")(νℓкуяє, vcнaт);
+    //   break;
+    // case "uglyBastard":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uglyBastard")(νℓкуяє, vcнaт);
+    //   break;
+    // case "uniform":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/uniform")(νℓкуяє, vcнaт);
+    //   break;
+    // case "yuri":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/yuri")(νℓкуяє, vcнaт);
+    //   break;
+    // case "zettaiRyouiki":
+    //   await require("../Modular/𝘏𝘦𝘯𝘵𝘢𝘪🍑𝘫𝘴/zettaiRyouiki")(
+    //     νℓкуяє,
+    //     vcнaт
+    //   );
+    //   break;
 
     case "gimage":
     case "image":
-      return await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(νℓкуяє, vcнaт);
       break;
     case "neko":
-      return await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(νℓкуяє, vcнaт);
       break;
     case "pin":
     case "pinterest":
-      return await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(νℓкуяє, vcнaт);
       break;
     case "waifu":
-      return await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(νℓкуяє, vcнaт);
       break;
     case "wallpaper":
-      return await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(νℓкуяє, vcнaт);
       break;
     case "advice":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(νℓкуяє, vcнaт);
       break;
     case "fact":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(νℓкуяє, vcнaт);
       break;
     case "joke":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
       break;
     case "meme":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(νℓкуяє, vcнaт);
       break;
     case "quote":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(νℓкуяє, vcнaт);
       break;
 
     case "sr":
     case "reddit":
     case "subreddit":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
       break;
     case "anime":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(νℓкуяє, vcнaт);
       break;
     case "manga":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(νℓкуяє, vcнaт);
       break;
     case "google":
-      return await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(νℓкуяє, vcнaт);
+      await require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(νℓкуяє, vcнaт);
       break;
 
     case "demote":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -494,7 +491,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "group":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -506,7 +503,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "promote":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -518,7 +515,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "remove":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/remove")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/remove")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -530,7 +527,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "setdesc":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -542,7 +539,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "seticon":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -554,7 +551,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       );
       break;
     case "tagall":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -567,7 +564,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       break;
     case "autorank":
     case "autorole":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/autorank")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/autorank")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -581,7 +578,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "antilink":
     case "stoplink":
     case "nolink":
-      return await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/antilink")(
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/antilink")(
         νℓкуяє,
         vcнaт,
         gmeta,
@@ -594,7 +591,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
       break;
 
     default:
-      return await νℓкуяє.imgB(
+      await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
         `*😥Sorry:* _${νℓкуяє.pushname}_
