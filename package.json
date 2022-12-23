@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "prestart": "npm install -g forever",
+    "prestart": "npm install -g forever --silent",
     "build": "npm install --force"
   },
   "depecrated": false,
