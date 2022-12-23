@@ -8,7 +8,7 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "start": "clear && forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "prestart": "npm install -g forever",
     "build": "npm install --force"
   },
