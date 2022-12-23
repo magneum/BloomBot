@@ -36,7 +36,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
   );
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   gmeta = vcнaт.isGroup
-    ? await νℓкуяє.groupMetadata(vcнaт.chat).catch((e) => {})
+    ? await νℓкуяє.groupMetadata(vcнaт.chat).catch((error) => {})
     : "";
   groupName = vcнaт.isGroup ? gmeta.subject : "";
   participants = vcнaт.isGroup ? await gmeta.participants : "";
@@ -595,7 +595,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
 *❌Error* 
 > _No Such Command Found_
 > Visit To Know Commands: _bit.ly/krykenz_`,
-        "./Gallery/KryPage.PNG"
+        "./Gallery/KryPage.png"
       );
       break;
   }
