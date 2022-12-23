@@ -23,5 +23,4 @@ RUN git init --initial-branch=npm
 RUN git fetch origin npm
 RUN git reset --hard origin/npm
 RUN pip install -r requirements.txt && npm install --force
-EXPOSE 8080
 CMD [ "npm", "run", "start" ]
