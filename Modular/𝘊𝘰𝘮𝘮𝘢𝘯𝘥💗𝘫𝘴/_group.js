@@ -22,7 +22,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     await νℓкуяє.imgB(
       νℓкуяє,
       vcнaт,
-      `*🤖Hello, I am Vlkyre (v5 Bot)🤖*
+      `*🤖Hello, I am Vlkyre User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 > Untill then you can send your group links in my private.
@@ -43,6 +43,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}nolink on/off
 │║⦁ ${νℓкуяє.prefix}autorank on/off
 │║⦁ ${νℓкуяє.prefix}autorole on/off
+│║⦁ ${νℓкуяє.prefix}bcg
+│║⦁ ${νℓкуяє.prefix}bcgroup
+│║⦁ ${νℓкуяє.prefix}broadcast
 ┕╚═══════⋑`,
       "./Gallery/KryPage.png"
     );

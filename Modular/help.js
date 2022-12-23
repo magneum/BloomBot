@@ -19,7 +19,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   await νℓкуяє.imgB(
     νℓкуяє,
     vcнaт,
-    `*🤖Hello, I am Vlkyre (v5 Bot)🤖*
+    `*🤖Hello, I am Vlkyre User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 > Untill then you can send your group links in my private.
@@ -35,6 +35,20 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}h.ytfilter
 │║⦁ ${νℓкуяє.prefix}h.filter
 │║⦁ ${νℓкуяє.prefix}h.anime
+┕╚═══════⋑
+
+
+╔══┌┌『 *📥DOWNLOAD HUB📥* 』
+│║⦁ ${νℓкуяє.prefix}yta
+│║⦁ ${νℓкуяє.prefix}play
+│║⦁ ${νℓкуяє.prefix}song
+│║⦁ ${νℓкуяє.prefix}sing
+│║⦁ ${νℓкуяє.prefix}ytmp3
+│║⦁ ${νℓкуяє.prefix}music
+│║⦁ ${νℓкуяє.prefix}ytplay
+│║⦁ ${νℓкуяє.prefix}ytaudio
+│║⦁ ${νℓкуяє.prefix}ytmusic
+│║⦁ ${νℓкуяє.prefix}youtubemusic
 ┕╚═══════⋑
 
 
@@ -67,19 +81,6 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}wink
 │║⦁ ${νℓкуяє.prefix}yeet
 │║⦁ ${νℓкуяє.prefix}yes
-┕╚═══════⋑
-
-╔══┌┌『 *📥DOWNLOAD HUB📥* 』
-│║⦁ ${νℓкуяє.prefix}yta
-│║⦁ ${νℓкуяє.prefix}play
-│║⦁ ${νℓкуяє.prefix}song
-│║⦁ ${νℓкуяє.prefix}sing
-│║⦁ ${νℓкуяє.prefix}ytmp3
-│║⦁ ${νℓкуяє.prefix}music
-│║⦁ ${νℓкуяє.prefix}ytplay
-│║⦁ ${νℓкуяє.prefix}ytaudio
-│║⦁ ${νℓкуяє.prefix}ytmusic
-│║⦁ ${νℓкуяє.prefix}youtubemusic
 ┕╚═══════⋑
 
 ┌『 *📢FILTER HUB📢* 』
@@ -126,6 +127,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}nolink on/off
 │║⦁ ${νℓкуяє.prefix}autorank on/off
 │║⦁ ${νℓкуяє.prefix}autorole on/off
+│║⦁ ${νℓкуяє.prefix}bcg
+│║⦁ ${νℓкуяє.prefix}bcgroup
+│║⦁ ${νℓкуяє.prefix}broadcast
 ┕╚═══════⋑
 
 ┌『 *🖼️IMAGE HUB🖼️* 』

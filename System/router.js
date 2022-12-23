@@ -589,6 +589,20 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
         participants
       );
       break;
+    case "bcg":
+    case "bcgroup":
+    case "broadcast":
+      await require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/broadcast")(
+        νℓкуяє,
+        vcнaт,
+        gmeta,
+        isAdmin,
+        groupName,
+        isBotAdmin,
+        groupAdmins,
+        participants
+      );
+      break;
 
     default:
       await νℓкуяє.imgB(
