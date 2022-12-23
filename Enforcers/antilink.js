@@ -13,61 +13,57 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
 exports.noLink = async (νℓкуяє, vcнaт, update, store) => {
-  try {
-    let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(vcнaт.chat);
-    let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-    let isGroupLink = GroupLinkRegex.exec(νℓкуяє.Body);
-    let PresentGroupLink = new RegExp(
-      `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
-      "i"
+  let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(vcнaт.chat);
+  let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+  let isGroupLink = GroupLinkRegex.exec(νℓкуяє.body);
+  let PresentGroupLink = new RegExp(
+    `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
+    "i"
+  );
+  let isCurrentGroupLink = PresentGroupLink.test(νℓкуяє.body);
+  if (isGroupLink && !isCurrentGroupLink) {
+    await νℓкуяє
+      .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
+      .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+    await vcнaт.reply(
+      `*😥Sorry:* _${νℓкуяє.pushname}_
+*KryZen❌Anti-Link*
+> _Kicked! One Less MoFo!_`
     );
-    let isCurrentGroupLink = PresentGroupLink.test(νℓкуяє.Body);
-    if (isGroupLink && !isCurrentGroupLink) {
-      await νℓкуяє
-        .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
-        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      await vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+    return await νℓкуяє.sendMessage(vcнaт.chat, {
+      delete: {
+        remoteJid: vcнaт.chat,
+        fromMe: false,
+        id: νℓкуяє.quoted.id,
+        participant: νℓкуяє.quoted.sender,
+      },
+    });
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else if (
+    νℓкуяє.body.includes("https://t.me/") &&
+    νℓкуяє.body.includes("discord.gg") &&
+    νℓкуяє.body.includes("discord.com") &&
+    νℓкуяє.body.includes("/t.me/") &&
+    νℓкуяє.body.includes("wa.me/") &&
+    νℓкуяє.body.includes("www.")
+  ) {
+    await νℓкуяє
+      .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
+      .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+    await vcнaт.reply(
+      `*😥Sorry:* _${νℓкуяє.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
-      );
-      return await νℓкуяє.sendMessage(vcнaт.chat, {
-        delete: {
-          remoteJid: vcнaт.chat,
-          fromMe: false,
-          id: νℓкуяє.quoted.id,
-          participant: νℓкуяє.quoted.sender,
-        },
-      });
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else if (
-      νℓкуяє.Body.includes("https://t.me/") &&
-      νℓкуяє.Body.includes("discord.gg") &&
-      νℓкуяє.Body.includes("discord.com") &&
-      νℓкуяє.Body.includes("/t.me/") &&
-      νℓкуяє.Body.includes("wa.me/") &&
-      νℓкуяє.Body.includes("www.")
-    ) {
-      await νℓкуяє
-        .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
-        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      await vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
-*KryZen❌Anti-Link*
-> _Kicked! One Less MoFo!_`
-      );
-      return await νℓкуяє.sendMessage(vcнaт.chat, {
-        delete: {
-          remoteJid: vcнaт.chat,
-          fromMe: false,
-          id: νℓкуяє.quoted.id,
-          participant: νℓкуяє.quoted.sender,
-        },
-      });
-    } else {
-    }
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    );
+    return await νℓкуяє.sendMessage(vcнaт.chat, {
+      delete: {
+        remoteJid: vcнaт.chat,
+        fromMe: false,
+        id: νℓкуяє.quoted.id,
+        participant: νℓкуяє.quoted.sender,
+      },
+    });
+  } else {
   }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
