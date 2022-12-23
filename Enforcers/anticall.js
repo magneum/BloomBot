@@ -15,7 +15,7 @@ require("../global.js");
 exports.noCall = async (νℓкуяє, vcнaт, update, store) => {
   try {
   } catch (error) {
-    console.log(error);
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
   }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

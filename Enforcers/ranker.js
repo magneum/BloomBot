@@ -214,7 +214,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт, update, store) => {
       });
     }
   } catch (error) {
-    console.log(error);
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
   }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
