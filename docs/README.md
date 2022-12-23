@@ -1,6 +1,6 @@
 # [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/krykenz)
 
-<p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/vlkyre.png" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/npm/Gallery/νℓкуяє.png" /></p>
 
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
