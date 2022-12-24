@@ -3,4 +3,5 @@ node_modules
 json.sqlite
 νℓкуяє.db
 .vscode
+.yarn
 .env
