@@ -16,7 +16,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт) => {
   νℓкуяє.Levels.setURL(MONGO_URL);
   var color = νℓкуяє.randomMC.getColor();
   var randomXp = Math.floor(Math.random() * 3) + +10;
-  var user = await νℓкуяє.Levels.νℓкуяє.fetch(νℓкуяє.sender, vcнaт.chat, true);
+  var user = await νℓкуяє.Levels.fetch(νℓкуяє.sender, vcнaт.chat, true);
   if (!user) {
     await νℓкуяє.Levels.createUser(νℓкуяє.sender, vcнaт.chat);
     await νℓкуяє.Levels.setLevel(νℓкуяє.sender, vcнaт.chat, 1);
