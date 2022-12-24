@@ -13,10 +13,10 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (νℓкуяє, vcнaт, update) => {
 console.log("\n◎✕———————————————————————✕ νℓкуяє вσт ву кяукєηz ✕———————————————————————✕◎");
-console.log(νℓкуяє.chalk.blueBright("🖊️ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝: "),νℓкуяє.chalk.green(νℓкуяє.budy || νℓкуяє.mtype));
-console.log(νℓкуяє.chalk.blueBright("❣️ 𝐔𝐬𝐞𝐫-𝐍𝐚𝐦𝐞: "),νℓкуяє.chalk.green(νℓкуяє.pushname));
-console.log(νℓкуяє.chalk.blueBright("📱 𝐔𝐬𝐞𝐫-𝐍𝐮𝐦𝐛𝐞𝐫: "),νℓкуяє.chalk.green(vcнaт.sender));
-console.log(νℓкуяє.chalk.blueBright("💬 𝐂𝐡𝐚𝐭-𝐈𝐝: "),νℓкуяє.chalk.green(vcнaт.chat));
+console.log(νℓкуяє.chalk.blueBright("🖊️COMMAND_NAME: "),νℓкуяє.chalk.green(νℓкуяє.budy || νℓкуяє.mtype));
+console.log(νℓкуяє.chalk.blueBright("❣️USER_NAME: "),νℓкуяє.chalk.green(νℓкуяє.pushname));
+console.log(νℓкуяє.chalk.blueBright("📱USER_NUMBER: "),νℓкуяє.chalk.green(vcнaт.sender));
+console.log(νℓкуяє.chalk.blueBright("💬CHAT_ID: "),νℓкуяє.chalk.green(vcнaт.chat));
 console.log("◎✕———————————————————————✕ νℓкуяє вσт ву кяукєηz ✕———————————————————————✕◎\n");
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 gmeta = vcнaт.isGroup
