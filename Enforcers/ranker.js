@@ -14,9 +14,12 @@
 require("../global.js");
 let fetch = require("node-fetch");
 let Levels = require("discord-xp");
+let canvacord = require("canvacord");
+let randomMC = require("random-material-color");
+let color = randomMC.getColor();
+Levels.setURL(MONGO_URL);
 exports.sendRanks = async (νℓкуяє, vcнaт) => {
-  Levels.setURL(MONGO_URL);
-  var color = νℓкуяє.randomMC.getColor();
+  var color = randomMC.getColor();
   var randomXp = Math.floor(Math.random() * 3) + +10;
   var user = await Levels.fetch(νℓкуяє.sender, vcнaт.chat, true);
   if (!user) {
@@ -129,7 +132,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт) => {
       Img = "https://i.postimg.cc/Kc65RLnX/Full.png";
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    var rankMaker = new νℓкуяє.canvacord.Rank()
+    var rankMaker = new canvacord.Rank()
       .setAvatar(dProfile)
       .setCurrentXP(user.xp)
       .setRequiredXP(Levels.xpFor(user.level + 1))
