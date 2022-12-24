@@ -42,7 +42,7 @@ python3-pip \
 python-is-python3
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash 
 RUN apt-get update && apt-get install nodejs -y
-RUN rm -rf node_modules && npm install vlkyre
+RUN yarn install vlkyre --ignore-engines
 RUN cp -R node_modules/vlkyre . && cd vlkyre
 WORKDIR /vlkyre
 CMD npm run start
