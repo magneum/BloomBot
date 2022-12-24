@@ -12,22 +12,20 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
+let fetch = require("node-fetch");
+let Levels = require("discord-xp");
 exports.sendRanks = async (νℓкуяє, vcнaт) => {
-  νℓкуяє.Levels.setURL(MONGO_URL);
+  Levels.setURL(MONGO_URL);
   var color = νℓкуяє.randomMC.getColor();
   var randomXp = Math.floor(Math.random() * 3) + +10;
-  var user = await νℓкуяє.Levels.fetch(νℓкуяє.sender, vcнaт.chat, true);
+  var user = await Levels.fetch(νℓкуяє.sender, vcнaт.chat, true);
   if (!user) {
-    await νℓкуяє.Levels.createUser(νℓкуяє.sender, vcнaт.chat);
-    await νℓкуяє.Levels.setLevel(νℓкуяє.sender, vcнaт.chat, 1);
-    await νℓкуяє.Levels.setXp(νℓкуяє.sender, vcнaт.chat, 1);
+    await Levels.createUser(νℓкуяє.sender, vcнaт.chat);
+    await Levels.setLevel(νℓкуяє.sender, vcнaт.chat, 1);
+    await Levels.setXp(νℓкуяє.sender, vcнaт.chat, 1);
     return;
   }
-  var hasLeveledUp = await νℓкуяє.Levels.appendXp(
-    νℓкуяє.sender,
-    vcнaт.chat,
-    randomXp
-  );
+  var hasLeveledUp = await Levels.appendXp(νℓкуяє.sender, vcнaт.chat, randomXp);
   if (hasLeveledUp) {
     var lvlRole = user.level;
     var role = "Warrior";
@@ -134,7 +132,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт) => {
     var rankMaker = new νℓкуяє.canvacord.Rank()
       .setAvatar(dProfile)
       .setCurrentXP(user.xp)
-      .setRequiredXP(νℓкуяє.Levels.xpFor(user.level + 1))
+      .setRequiredXP(Levels.xpFor(user.level + 1))
       .setRank(user.position)
       .setLevel(user.level)
       .setStatus("online")
@@ -172,7 +170,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт) => {
 ┊ *🎉Ranker*
 ╚◇══════════◇╝
 *🎉LEVEL UP CONGRATS!🎉*
-*🍀Exp*: ${user.xp} / ${νℓкуяє.Levels.xpFor(user.level + 1)}
+*🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*
 
@@ -192,7 +190,7 @@ exports.sendRanks = async (νℓкуяє, vcнaт) => {
 ┊ *🎉Ranker*
 ╚◇══════════◇╝
 *🎉LEVEL UP CONGRATS!🎉*
-*🍀Exp*: ${user.xp} / ${νℓкуяє.Levels.xpFor(user.level + 1)}
+*🍀Exp*: ${user.xp} / ${Levels.xpFor(user.level + 1)}
 *🎐Level*: ${user.level}
 *🔮️Role*: *${role}*
 
