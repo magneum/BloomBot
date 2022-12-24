@@ -26,5 +26,5 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=npm
 RUN git fetch origin npm
 RUN git reset --hard origin/npm
-RUN pip install -r requirements.txt && yarn add vlkyre
+RUN pip install -r requirements.txt
 CMD [ "python", "Operator.py" ]
