@@ -473,19 +473,6 @@ groupAdmins,
 participants
 );
 break;
-case "autorank":
-case "autorole":
-require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/autorank")(
-νℓкуяє,
-vcнaт,
-gmeta,
-isAdmin,
-groupName,
-isBotAdmin,
-groupAdmins,
-participants
-);
-break;
 case "antilink":
 case "stoplink":
 case "nolink":

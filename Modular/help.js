@@ -125,11 +125,6 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}antilink on/off
 │║⦁ ${νℓкуяє.prefix}stoplink on/off
 │║⦁ ${νℓкуяє.prefix}nolink on/off
-│║⦁ ${νℓкуяє.prefix}autorank on/off
-│║⦁ ${νℓкуяє.prefix}autorole on/off
-│║⦁ ${νℓкуяє.prefix}bcg
-│║⦁ ${νℓкуяє.prefix}bcgroup
-│║⦁ ${νℓкуяє.prefix}broadcast
 ┕╚═══════⋑
 
 ┌『 *🖼️IMAGE HUB🖼️* 』
