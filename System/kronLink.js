@@ -153,8 +153,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.canvacord = require("canvacord");
   νℓкуяє.randomMC = require("random-material-color");
 
-  νℓкуяє.yClient = require("railway-youtube");
-  νℓкуяє.ySearch = require("railway-yts");
+  νℓкуяє.yClient = require("krytek-ytdl");
+  νℓкуяє.ySearch = require("krytek-yts");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");

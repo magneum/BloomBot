@@ -58,6 +58,8 @@
     "hxz-api": "^1.0.1",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
+    "krytek-ytdl": "^1.0.0",
+    "krytek-yts": "^1.0.0",
     "mailist": "^1.0.3",
     "moment-timezone": "^0.5.34",
     "mongoose": "^5.10.7",
