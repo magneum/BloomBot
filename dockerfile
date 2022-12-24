@@ -35,6 +35,7 @@ npm \
 git \
 curl \
 wget \
+yarn \
 ffmpeg \
 bpm-tools \
 opus-tools \
