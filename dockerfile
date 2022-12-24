@@ -22,5 +22,5 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=npm
 RUN git fetch origin npm
 RUN git reset --hard origin/npm
-RUN pip install -r requirements.txt && npm install --force
+RUN pip install -r requirements.txt && yarn add v1.22.19
 CMD [ "python", "Operator.py" ]
