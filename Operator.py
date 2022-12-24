@@ -14,7 +14,5 @@
 # */
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 import os
-os.system("echo Hello from the other side!")
-os.system("echo [ νℓкуяє вσт ву кяукєηz ]")
 os.system("python3 🐍𝖛𝖑𝖐𝖕𝖞.py")
 os.system("forever --minUptime=1000 --spinSleepTime=1000 νℓкуяє.js --color")
