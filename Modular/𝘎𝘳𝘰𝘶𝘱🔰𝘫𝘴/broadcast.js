@@ -66,7 +66,7 @@ module.exports = async (
         fileName: "Vlkyre-Notice.mp4",
         caption: `┌『*VLKYRE📢BROADCAST* 』
 │║⦁ *💫By:*  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🕛Time:*  ${moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+│║⦁ *🕛Time:*  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 ┕╚═══════⋑
 
 *🔖Message:*
