@@ -13,7 +13,6 @@
     "build": "yarn install --ignore-engines"
   },
   "depecrated": false,
-  "private": false,
   "directories": {
     "Authenticator": "Authenticator",
     "Bin": "Bin",
@@ -97,5 +96,6 @@
     "vlkyre": "*",
     "wa-sticker-formatter": "^4.3.2",
     "xfarr-api": "^1.0.3"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }
