@@ -254,16 +254,16 @@ vcнaт.mtype == "viewOnceMessage"
 getContentType(vcнaт.message[vcнaт.mtype].message)
 ]
 : vcнaт.message[vcнaт.mtype];
-// vcнaт.body =
-// vcнaт.message.conversation ||
-// vcнaт.msg.caption ||
-// vcнaт.msg.text ||
-// (vcнaт.mtype == "listResponseMessage" &&
-// vcнaт.msg.singleSelectReply.selectedRowId) ||
-// (vcнaт.mtype == "buttonsResponseMessage" &&
-// vcнaт.msg.selectedButtonId) ||
-// (vcнaт.mtype == "viewOnceMessage" && vcнaт.msg.caption) ||
-// vcнaт.text;
+vcнaт.body =
+vcнaт.message.conversation ||
+vcнaт.msg.caption ||
+vcнaт.msg.text ||
+(vcнaт.mtype == "listResponseMessage" &&
+vcнaт.msg.singleSelectReply.selectedRowId) ||
+(vcнaт.mtype == "buttonsResponseMessage" &&
+vcнaт.msg.selectedButtonId) ||
+(vcнaт.mtype == "viewOnceMessage" && vcнaт.msg.caption) ||
+vcнaт.text;
 let quoted = (vcнaт.quoted = vcнaт.msg.contextInfo
 ? vcнaт.msg.contextInfo.quotedMessage
 : null);
