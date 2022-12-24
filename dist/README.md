@@ -36,7 +36,7 @@ or
 > rm -rf node_modules && yarn add vlkyre --ignore-engines
 
 📍 SET ENVIRONMENT VARIABLES:
-> export MONGO_URL= your mongodb url string
+> export ATLAS_URL= your mongodb url string
 > (optional) export DATABASE_URL= your postgres url string
 
 📍 RUN VLKYRE

@@ -17,7 +17,7 @@ let Levels = require("discord-xp");
 let canvacord = require("canvacord");
 let randomMC = require("random-material-color");
 let color = randomMC.getColor();
-Levels.setURL(MONGO_URL);
+Levels.setURL(ATLAS_URL);
 exports.sendRanks = async (νℓкуяє, vcнaт) => {
   var color = randomMC.getColor();
   var randomXp = Math.floor(Math.random() * 3) + +10;
