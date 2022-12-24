@@ -18,7 +18,8 @@ RUN apt-get install nodejs -y
 RUN corepack enable
 RUN corepack prepare yarn@stable --activate
 RUN yarn set version berry
-RUN npm install -g spotify-dl spdl-core forever pm2
+RUN hash -r
+RUN npm install -g spotify-dl spdl-core forever pm2 && hash -r
 RUN git clone --branch npm https://github.com/KryKenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
