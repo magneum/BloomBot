@@ -45,4 +45,4 @@ RUN apt-get update && apt-get install nodejs -y
 RUN yarn install vlkyre --ignore-engines
 RUN cp -R node_modules/vlkyre . && cd vlkyre
 WORKDIR /vlkyre
-CMD npm run start
+CMD yarn run start
