@@ -53,11 +53,9 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "vlkyre":
       await require("../Modular/vlkyre")(νℓкуяє, vcнaт);
       break;
-    case "h":
     case "how":
     case "help":
     case "HELP":
-    case "m":
     case "menu":
     case "allmenu":
     case "command":
