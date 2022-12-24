@@ -1,7 +1,7 @@
 FROM python:latest
-ENV _кяукєηz_ "/venv"
-RUN python -m venv $_кяукєηz_
-ENV PATH "$_кяукєηz_/bin:$PATH"
+ENV _кєηz_ "/venv"
+RUN python -m venv $_кєηz_
+ENV PATH "$_кєηz_/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 npm \
