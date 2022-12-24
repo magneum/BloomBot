@@ -25,7 +25,10 @@
 # RUN pip install -r requirements.txt && npm install --force
 # CMD [ "python", "Operator.py" ]
 # ========================================================================
-FROM debian:bullseye/main
+FROM python:latest
+ENV _кяукєηz_ "/venv"
+RUN python -m venv $_кяукєηz_
+ENV PATH "$_кяукєηz_/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 npm \
