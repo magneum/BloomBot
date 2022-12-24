@@ -18,10 +18,10 @@ RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update
 RUN apt-get install nodejs -y
 RUN corepack enable
-RUN corepack prepare yarn@berry --activate
+RUN corepack prepare yarn@stable --activate
 RUN yarn set version berry
-RUN yarn global install spotify-dl spdl-core forever pm2 --ignore-engines
-RUN yarn install vlkyre --ignore-engines
+RUN npm install -g spotify-dl spdl-core forever pm2
+RUN yarn add vlkyre
 RUN git clone --branch npm https://github.com/KryKenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre

@@ -13162,7 +13162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vlkyre@*, vlkyre@workspace:.":
+"vlkyre@^6.5.2, vlkyre@workspace:.":
   version: 0.0.0-use.local
   resolution: "vlkyre@workspace:."
   dependencies:
@@ -13235,7 +13235,7 @@ __metadata:
     tinyurl-api: ^1.0.1
     unofficial-carbon-now: ^1.0.6
     util: ^0.12.4
-    vlkyre: "*"
+    vlkyre: ^6.5.2
     wa-sticker-formatter: ^4.3.2
     xfarr-api: ^1.0.3
   languageName: unknown
