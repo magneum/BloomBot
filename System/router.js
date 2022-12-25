@@ -37,11 +37,9 @@ switch (νℓкуяє.command) {
 case "vlkyre":
 require("../Modular/vlkyre")(νℓкуяє, vcнaт);
 break;
-case "h":
 case "how":
 case "help":
 case "HELP":
-case "m":
 case "menu":
 case "allmenu":
 case "command":
