@@ -96,9 +96,6 @@ break;
 case "hug":
 require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/hug")(νℓкуяє, vcнaт);
 break;
-case "kick":
-require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kick")(νℓкуяє, vcнaт);
-break;
 case "kill":
 require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kill")(νℓкуяє, vcнaт);
 break;
@@ -423,8 +420,8 @@ groupAdmins,
 participants
 );
 break;
-case "remove":
-require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/remove")(
+case "kick":
+require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/kick")(
 νℓкуяє,
 vcнaт,
 gmeta,

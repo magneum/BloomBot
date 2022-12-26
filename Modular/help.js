@@ -65,7 +65,6 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}happy
 │║⦁ ${νℓкуяє.prefix}highfive
 │║⦁ ${νℓкуяє.prefix}hug
-│║⦁ ${νℓкуяє.prefix}kick
 │║⦁ ${νℓкуяє.prefix}kill
 │║⦁ ${νℓкуяє.prefix}kiss
 │║⦁ ${νℓкуяє.prefix}nervous
@@ -116,7 +115,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ┌『 *🔰GROUP HUB🔰* 』
 │║⦁ ${νℓкуяє.prefix}demote
 │║⦁ ${νℓкуяє.prefix}promote
-│║⦁ ${νℓкуяє.prefix}remove
+│║⦁ ${νℓкуяє.prefix}kick
 │║⦁ ${νℓкуяє.prefix}setdesc
 │║⦁ ${νℓкуяє.prefix}seticon
 │║⦁ ${νℓкуяє.prefix}tagall

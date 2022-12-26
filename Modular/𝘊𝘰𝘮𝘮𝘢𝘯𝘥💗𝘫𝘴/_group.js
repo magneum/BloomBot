@@ -32,7 +32,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ┌『 *🔰GROUP HUB🔰* 』
 │║⦁ ${νℓкуяє.prefix}demote
 │║⦁ ${νℓкуяє.prefix}promote
-│║⦁ ${νℓкуяє.prefix}remove
+│║⦁ ${νℓкуяє.prefix}kick
 │║⦁ ${νℓкуяє.prefix}setdesc
 │║⦁ ${νℓкуяє.prefix}seticon
 │║⦁ ${νℓкуяє.prefix}tagall
