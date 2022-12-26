@@ -13,7 +13,7 @@ var dBoardSchema = new mongoose.Schema({
   happy: Number,
   highfive: Number,
   hug: Number,
-  kick: Number,
+
   kill: Number,
   kiss: Number,
   nervous: Number,
@@ -66,7 +66,7 @@ var dBoardSchema = new mongoose.Schema({
   demote: Number,
   group: Number,
   promote: Number,
-  remove: Number,
+  kick: Number,
   setdesc: Number,
   seticon: Number,
   tagall: Number,
