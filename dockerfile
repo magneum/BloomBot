@@ -20,8 +20,8 @@ RUN npm install -g spotify-dl spdl-core forever pm2 && hash -r
 RUN git clone --branch npm https://github.com/KryKenz/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git init --initial-branch=npm
-RUN git fetch origin npm
-RUN git reset --hard origin/npm
+RUN git init --initial-branch=krytek
+RUN git fetch origin krytek
+RUN git reset --hard origin/krytek
 RUN pip install -r requirements.txt && npm install --force
 CMD [ "python", "Operator.py" ]
