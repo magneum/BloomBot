@@ -12,7 +12,7 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-exports.dBoard = async (νℓкуяє, vcнaт) => {
+exports.noLink = async (νℓкуяє, vcнaт) => {
   let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(vcнaт.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   let isGroupLink = GroupLinkRegex.exec(νℓкуяє.body);

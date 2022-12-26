@@ -97,7 +97,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.imgB = require("../Buttons/imgB");
   νℓкуяє.vidB = require("../Buttons/vidB");
   νℓкуяє.grab = require("../Buttons/grab");
-  νℓкуяє.dBoard = require("../mongBase/dashboard");
   νℓкуяє.LinkList = require("../mongBase/antilink");
   νℓкуяє.Ranker = require("../mongBase/autorank");
   νℓкуяє.Bagde = require("../mongBase/badge");
