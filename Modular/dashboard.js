@@ -20,10 +20,10 @@ await νℓкуяє.dashboard.findOne(
 {
 ID: vcнaт.sender,
 },
-async (error, data) => {
+async (error, uBoard) => {
 if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 
-if (!data) {
+if (!uBoard) {
 new νℓкуяє.dashboard({
 ID: vcнaт.sender,
 bite: 0,
@@ -149,128 +149,128 @@ vcнaт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 
 ╔══┌┌『 *📥DOWNLOAD HUB📥* 』
-│║⦁ ${νℓкуяє.prefix}yta: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}play: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}song: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}sing: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}ytmp3: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}music: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}ytplay: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}ytaudio: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}ytmusic: ${data.youtube}
-│║⦁ ${νℓкуяє.prefix}youtubemusic: ${data.youtube}
+│║⦁ ${νℓкуяє.prefix}yta: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}play: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}song: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}sing: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}ytmp3: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}music: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}ytplay: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}ytaudio: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}ytmusic: ${uBoard.youtube}
+│║⦁ ${νℓкуяє.prefix}youtubemusic: ${uBoard.youtube}
 ┕╚═══════⋑
 
 
 ┌『 *🐝ANIME HUB🐝* 』
-│║⦁ ${νℓкуяє.prefix}bite: ${data.bite}
-│║⦁ ${νℓкуяє.prefix}blush: ${data.blush}
-│║⦁ ${νℓкуяє.prefix}bonk: ${data.bonk}
-│║⦁ ${νℓкуяє.prefix}bored: ${data.bored}
-│║⦁ ${νℓкуяє.prefix}confused: ${data.confused}
-│║⦁ ${νℓкуяє.prefix}cry: ${data.cry}
-│║⦁ ${νℓкуяє.prefix}cuddle: ${data.cuddle}
-│║⦁ ${νℓкуяє.prefix}dance: ${data.dance}
-│║⦁ ${νℓкуяє.prefix}goodnight: ${data.goodnight}
-│║⦁ ${νℓкуяє.prefix}happy: ${data.happy}
-│║⦁ ${νℓкуяє.prefix}highfive: ${data.highfive}
-│║⦁ ${νℓкуяє.prefix}hug: ${data.hug}
-│║⦁ ${νℓкуяє.prefix}kill: ${data.kill}
-│║⦁ ${νℓкуяє.prefix}kiss: ${data.kiss}
-│║⦁ ${νℓкуяє.prefix}nervous: ${data.nervous}
-│║⦁ ${νℓкуяє.prefix}pat: ${data.pat}
-│║⦁ ${νℓкуяє.prefix}poke: ${data.poke}
-│║⦁ ${νℓкуяє.prefix}punch: ${data.punch}
-│║⦁ ${νℓкуяє.prefix}sad: ${data.sad}
-│║⦁ ${νℓкуяє.prefix}scream: ${data.scream}
-│║⦁ ${νℓкуяє.prefix}slap: ${data.slap}
-│║⦁ ${νℓкуяє.prefix}smile: ${data.smile}
-│║⦁ ${νℓкуяє.prefix}stare: ${data.stare}
-│║⦁ ${νℓкуяє.prefix}wave: ${data.wave}
-│║⦁ ${νℓкуяє.prefix}wink: ${data.wink}
-│║⦁ ${νℓкуяє.prefix}yeet: ${data.yeet}
-│║⦁ ${νℓкуяє.prefix}yes: ${data.yes}
+│║⦁ ${νℓкуяє.prefix}bite: ${uBoard.bite}
+│║⦁ ${νℓкуяє.prefix}blush: ${uBoard.blush}
+│║⦁ ${νℓкуяє.prefix}bonk: ${uBoard.bonk}
+│║⦁ ${νℓкуяє.prefix}bored: ${uBoard.bored}
+│║⦁ ${νℓкуяє.prefix}confused: ${uBoard.confused}
+│║⦁ ${νℓкуяє.prefix}cry: ${uBoard.cry}
+│║⦁ ${νℓкуяє.prefix}cuddle: ${uBoard.cuddle}
+│║⦁ ${νℓкуяє.prefix}dance: ${uBoard.dance}
+│║⦁ ${νℓкуяє.prefix}goodnight: ${uBoard.goodnight}
+│║⦁ ${νℓкуяє.prefix}happy: ${uBoard.happy}
+│║⦁ ${νℓкуяє.prefix}highfive: ${uBoard.highfive}
+│║⦁ ${νℓкуяє.prefix}hug: ${uBoard.hug}
+│║⦁ ${νℓкуяє.prefix}kill: ${uBoard.kill}
+│║⦁ ${νℓкуяє.prefix}kiss: ${uBoard.kiss}
+│║⦁ ${νℓкуяє.prefix}nervous: ${uBoard.nervous}
+│║⦁ ${νℓкуяє.prefix}pat: ${uBoard.pat}
+│║⦁ ${νℓкуяє.prefix}poke: ${uBoard.poke}
+│║⦁ ${νℓкуяє.prefix}punch: ${uBoard.punch}
+│║⦁ ${νℓкуяє.prefix}sad: ${uBoard.sad}
+│║⦁ ${νℓкуяє.prefix}scream: ${uBoard.scream}
+│║⦁ ${νℓкуяє.prefix}slap: ${uBoard.slap}
+│║⦁ ${νℓкуяє.prefix}smile: ${uBoard.smile}
+│║⦁ ${νℓкуяє.prefix}stare: ${uBoard.stare}
+│║⦁ ${νℓкуяє.prefix}wave: ${uBoard.wave}
+│║⦁ ${νℓкуяє.prefix}wink: ${uBoard.wink}
+│║⦁ ${νℓкуяє.prefix}yeet: ${uBoard.yeet}
+│║⦁ ${νℓкуяє.prefix}yes: ${uBoard.yes}
 ┕╚═══════⋑
 
 ┌『 *📢FILTER HUB📢* 』
-│║⦁ ${νℓкуяє.prefix}bassboost: ${data.bassboost}
-│║⦁ ${νℓкуяє.prefix}echo: ${data.echo}
-│║⦁ ${νℓкуяє.prefix}fast: ${data.fast}
-│║⦁ ${νℓкуяє.prefix}flanger: ${data.flanger}
-│║⦁ ${νℓкуяє.prefix}nightcore: ${data.nightcore}
-│║⦁ ${νℓкуяє.prefix}phaser: ${data.phaser}
-│║⦁ ${νℓкуяє.prefix}reverse: ${data.reverse}
-│║⦁ ${νℓкуяє.prefix}slow: ${data.slow}
-│║⦁ ${νℓкуяє.prefix}speed: ${data.speed}
-│║⦁ ${νℓкуяє.prefix}subboost: ${data.subboost}
-│║⦁ ${νℓкуяє.prefix}superslow: ${data.superslow}
-│║⦁ ${νℓкуяє.prefix}superspeed: ${data.superspeed}
-│║⦁ ${νℓкуяє.prefix}surround: ${data.surround}
-│║⦁ ${νℓкуяє.prefix}vaporwave: ${data.vaporwave}
-│║⦁ ${νℓкуяє.prefix}vibrato: ${data.vibrato}
+│║⦁ ${νℓкуяє.prefix}bassboost: ${uBoard.bassboost}
+│║⦁ ${νℓкуяє.prefix}echo: ${uBoard.echo}
+│║⦁ ${νℓкуяє.prefix}fast: ${uBoard.fast}
+│║⦁ ${νℓкуяє.prefix}flanger: ${uBoard.flanger}
+│║⦁ ${νℓкуяє.prefix}nightcore: ${uBoard.nightcore}
+│║⦁ ${νℓкуяє.prefix}phaser: ${uBoard.phaser}
+│║⦁ ${νℓкуяє.prefix}reverse: ${uBoard.reverse}
+│║⦁ ${νℓкуяє.prefix}slow: ${uBoard.slow}
+│║⦁ ${νℓкуяє.prefix}speed: ${uBoard.speed}
+│║⦁ ${νℓкуяє.prefix}subboost: ${uBoard.subboost}
+│║⦁ ${νℓкуяє.prefix}superslow: ${uBoard.superslow}
+│║⦁ ${νℓкуяє.prefix}superspeed: ${uBoard.superspeed}
+│║⦁ ${νℓкуяє.prefix}surround: ${uBoard.surround}
+│║⦁ ${νℓкуяє.prefix}vaporwave: ${uBoard.vaporwave}
+│║⦁ ${νℓкуяє.prefix}vibrato: ${uBoard.vibrato}
 ┕╚═══════⋑
 
 ┌『 *💰GAME HUB💰* 』
-│║⦁ ${νℓкуяє.prefix}balance: ${data.balance}
-│║⦁ ${νℓкуяє.prefix}buy: ${data.buy}
-│║⦁ ${νℓкуяє.prefix}daily: ${data.daily}
-│║⦁ ${νℓкуяє.prefix}fish: ${data.fish}
-│║⦁ ${νℓкуяє.prefix}gamble: ${data.gamble}
-│║⦁ ${νℓкуяє.prefix}inv: ${data.inv}
-│║⦁ ${νℓкуяє.prefix}store: ${data.store}
-│║⦁ ${νℓкуяє.prefix}work: ${data.work}
-│║⦁ ${νℓкуяє.prefix}zoo: ${data.zoo}
+│║⦁ ${νℓкуяє.prefix}balance: ${uBoard.balance}
+│║⦁ ${νℓкуяє.prefix}buy: ${uBoard.buy}
+│║⦁ ${νℓкуяє.prefix}daily: ${uBoard.daily}
+│║⦁ ${νℓкуяє.prefix}fish: ${uBoard.fish}
+│║⦁ ${νℓкуяє.prefix}gamble: ${uBoard.gamble}
+│║⦁ ${νℓкуяє.prefix}inv: ${uBoard.inv}
+│║⦁ ${νℓкуяє.prefix}store: ${uBoard.store}
+│║⦁ ${νℓкуяє.prefix}work: ${uBoard.work}
+│║⦁ ${νℓкуяє.prefix}zoo: ${uBoard.zoo}
 ┕╚═══════⋑
 
 ┌『 *🔰GROUP HUB🔰* 』
-│║⦁ ${νℓкуяє.prefix}demote: ${data.demote}
-│║⦁ ${νℓкуяє.prefix}promote: ${data.promote}
-│║⦁ ${νℓкуяє.prefix}kick: ${data.kick}
-│║⦁ ${νℓкуяє.prefix}setdesc: ${data.setdesc}
-│║⦁ ${νℓкуяє.prefix}seticon: ${data.seticon}
-│║⦁ ${νℓкуяє.prefix}tagall: ${data.tagall}
-│║⦁ ${νℓкуяє.prefix}group open: ${data.group}
-│║⦁ ${νℓкуяє.prefix}group close: ${data.group}
-│║⦁ ${νℓкуяє.prefix}antilink: ${data.antilink}
-│║⦁ ${νℓкуяє.prefix}stoplink: ${data.stoplink}
-│║⦁ ${νℓкуяє.prefix}nolink: ${data.nolink}
+│║⦁ ${νℓкуяє.prefix}demote: ${uBoard.demote}
+│║⦁ ${νℓкуяє.prefix}promote: ${uBoard.promote}
+│║⦁ ${νℓкуяє.prefix}kick: ${uBoard.kick}
+│║⦁ ${νℓкуяє.prefix}setdesc: ${uBoard.setdesc}
+│║⦁ ${νℓкуяє.prefix}seticon: ${uBoard.seticon}
+│║⦁ ${νℓкуяє.prefix}tagall: ${uBoard.tagall}
+│║⦁ ${νℓкуяє.prefix}group open: ${uBoard.group}
+│║⦁ ${νℓкуяє.prefix}group close: ${uBoard.group}
+│║⦁ ${νℓкуяє.prefix}antilink: ${uBoard.antilink}
+│║⦁ ${νℓкуяє.prefix}stoplink: ${uBoard.stoplink}
+│║⦁ ${νℓкуяє.prefix}nolink: ${uBoard.nolink}
 ┕╚═══════⋑
 
 ┌『 *🖼️IMAGE HUB🖼️* 』
-│║⦁ ${νℓкуяє.prefix}image: ${data.image}
-│║⦁ ${νℓкуяє.prefix}neko: ${data.neko}
-│║⦁ ${νℓкуяє.prefix}pinterest: ${data.pinterest}
-│║⦁ ${νℓкуяє.prefix}waifu: ${data.waifu}
-│║⦁ ${νℓкуяє.prefix}wallpaper: ${data.wallpaper}
+│║⦁ ${νℓкуяє.prefix}image: ${uBoard.image}
+│║⦁ ${νℓкуяє.prefix}neko: ${uBoard.neko}
+│║⦁ ${νℓкуяє.prefix}pinterest: ${uBoard.pinterest}
+│║⦁ ${νℓкуяє.prefix}waifu: ${uBoard.waifu}
+│║⦁ ${νℓкуяє.prefix}wallpaper: ${uBoard.wallpaper}
 ┕╚═══════⋑
 
 ┌『 *🌐SEARCH HUB🌐* 』
-│║⦁ ${νℓкуяє.prefix}advice: ${data.advice}
-│║⦁ ${νℓкуяє.prefix}anime: ${data.anime}
-│║⦁ ${νℓкуяє.prefix}fact: ${data.fact}
-│║⦁ ${νℓкуяє.prefix}google: ${data.google}
-│║⦁ ${νℓкуяє.prefix}joke: ${data.joke}
-│║⦁ ${νℓкуяє.prefix}manga: ${data.manga}
-│║⦁ ${νℓкуяє.prefix}meme: ${data.meme}
-│║⦁ ${νℓкуяє.prefix}quote: ${data.quote}
-│║⦁ ${νℓкуяє.prefix}reddit: ${data.reddit}
+│║⦁ ${νℓкуяє.prefix}advice: ${uBoard.advice}
+│║⦁ ${νℓкуяє.prefix}anime: ${uBoard.anime}
+│║⦁ ${νℓкуяє.prefix}fact: ${uBoard.fact}
+│║⦁ ${νℓкуяє.prefix}google: ${uBoard.google}
+│║⦁ ${νℓкуяє.prefix}joke: ${uBoard.joke}
+│║⦁ ${νℓкуяє.prefix}manga: ${uBoard.manga}
+│║⦁ ${νℓкуяє.prefix}meme: ${uBoard.meme}
+│║⦁ ${νℓкуяє.prefix}quote: ${uBoard.quote}
+│║⦁ ${νℓкуяє.prefix}reddit: ${uBoard.reddit}
 ┕╚═══════⋑
 
 ┌『 *⭕YT-FILTER HUB⭕* 』
-│║⦁ ${νℓкуяє.prefix}ytbassboost: ${data.ytbassboost}
-│║⦁ ${νℓкуяє.prefix}ytecho: ${data.ytecho}
-│║⦁ ${νℓкуяє.prefix}ytflanger: ${data.ytflanger}
-│║⦁ ${νℓкуяє.prefix}ytnightcore: ${data.ytnightcore}
-│║⦁ ${νℓкуяє.prefix}ytphaser: ${data.ytphaser}
-│║⦁ ${νℓкуяє.prefix}ytreverse: ${data.ytreverse}
-│║⦁ ${νℓкуяє.prefix}ytslow: ${data.ytslow}
-│║⦁ ${νℓкуяє.prefix}ytspeed: ${data.ytspeed}
-│║⦁ ${νℓкуяє.prefix}ytsubboost: ${data.ytsubboost}
-│║⦁ ${νℓкуяє.prefix}ytsuperslow: ${data.ytsuperslow}
-│║⦁ ${νℓкуяє.prefix}ytsuperspeed: ${data.ytsuperspeed}
-│║⦁ ${νℓкуяє.prefix}ytsurround: ${data.ytsurround}
-│║⦁ ${νℓкуяє.prefix}ytvaporwave: ${data.ytvaporwave}
-│║⦁ ${νℓкуяє.prefix}ytvibrato: ${data.ytvibrato}
+│║⦁ ${νℓкуяє.prefix}ytbassboost: ${uBoard.ytbassboost}
+│║⦁ ${νℓкуяє.prefix}ytecho: ${uBoard.ytecho}
+│║⦁ ${νℓкуяє.prefix}ytflanger: ${uBoard.ytflanger}
+│║⦁ ${νℓкуяє.prefix}ytnightcore: ${uBoard.ytnightcore}
+│║⦁ ${νℓкуяє.prefix}ytphaser: ${uBoard.ytphaser}
+│║⦁ ${νℓкуяє.prefix}ytreverse: ${uBoard.ytreverse}
+│║⦁ ${νℓкуяє.prefix}ytslow: ${uBoard.ytslow}
+│║⦁ ${νℓкуяє.prefix}ytspeed: ${uBoard.ytspeed}
+│║⦁ ${νℓкуяє.prefix}ytsubboost: ${uBoard.ytsubboost}
+│║⦁ ${νℓкуяє.prefix}ytsuperslow: ${uBoard.ytsuperslow}
+│║⦁ ${νℓкуяє.prefix}ytsuperspeed: ${uBoard.ytsuperspeed}
+│║⦁ ${νℓкуяє.prefix}ytsurround: ${uBoard.ytsurround}
+│║⦁ ${νℓкуяє.prefix}ytvaporwave: ${uBoard.ytvaporwave}
+│║⦁ ${νℓкуяє.prefix}ytvibrato: ${uBoard.ytvibrato}
 ┕╚═══════⋑`,
 "./Gallery/KryPage.png"
 );
