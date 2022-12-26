@@ -39,13 +39,17 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "help":
     case "HELP":
     case "menu":
-    case "allmenu":
     case "command":
     case "commands":
       require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
         dback.help = dback.help + 1;
         require("../Modular/help")(νℓкуяє, vcнaт);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "dashboard":
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        require("../Modular/dashboard")(νℓкуяє, vcнaт);
       });
       break;
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";

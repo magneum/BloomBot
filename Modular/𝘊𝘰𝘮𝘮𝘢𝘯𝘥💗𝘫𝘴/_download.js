@@ -29,7 +29,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Once bot will be ready, it will auto join all groups.
 
 
-╔══┌┌『 *📥DOWNLOAD HUB📥* 』
+┌『 *📥DOWNLOAD HUB📥* 』
 │║⦁ ${νℓкуяє.prefix}yta
 │║⦁ ${νℓкуяє.prefix}play
 │║⦁ ${νℓкуяє.prefix}song

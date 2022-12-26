@@ -148,7 +148,7 @@ await νℓкуяє.imgB(
 vcнaт,
 `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 
-╔══┌┌『 *📥DOWNLOAD HUB📥* 』
+┌『 *📥DOWNLOAD HUB📥* 』
 │║⦁ ${νℓкуяє.prefix}yta: ${uBoard.youtube}
 │║⦁ ${νℓкуяє.prefix}play: ${uBoard.youtube}
 │║⦁ ${νℓкуяє.prefix}song: ${uBoard.youtube}
