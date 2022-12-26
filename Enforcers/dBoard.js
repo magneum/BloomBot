@@ -12,16 +12,15 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-database = require("../mongBase/dashboard");
 module.exports = async (νℓкуяє, vcнaт, dback) => {
-  await database.findOne(
+  await νℓкуяє.dashboard.findOne(
     {
       ID: vcнaт.sender,
     },
     async (error, udBase) => {
       if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
       if (!udBase) {
-        new database({
+        new νℓкуяє.dashboard({
           ID: vcнaт.sender,
           bite: 0,
           blus: 0,
