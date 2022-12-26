@@ -13,19 +13,18 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var dboard = require("../Enforcers/dboard");
 module.exports = async (νℓкуяє, vcнaт, update) => {
-console.log("\n◎✕———————————————————————✕ νℓкуяє вσт ву кяукєηz ✕———————————————————————✕◎");
-console.log(νℓкуяє.chalk.blueBright("🖊️COMMAND_NAME: "),νℓкуяє.chalk.green(νℓкуяє.budy || νℓкуяє.mtype));
-console.log(νℓкуяє.chalk.blueBright("❣️USER_NAME: "),νℓкуяє.chalk.green(νℓкуяє.pushname));
-console.log(νℓкуяє.chalk.blueBright("📱USER_NUMBER: "),νℓкуяє.chalk.green(vcнaт.sender));
-console.log(νℓкуяє.chalk.blueBright("💬CHAT_ID: "),νℓкуяє.chalk.green(vcнaт.chat));
-console.log("◎✕———————————————————————✕ νℓкуяє вσт ву кяукєηz ✕———————————————————————✕◎\n\n");
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-gmeta = vcнaт.isGroup ? await νℓкуяє.groupMetadata(vcнaт.chat).catch((error) => {}) : "";
+gmeta = vcнaт.isGroup
+? await νℓкуяє.groupMetadata(vcнaт.chat).catch((error) => {})
+: "";
 groupName = vcнaт.isGroup ? gmeta.subject : "";
 participants = vcнaт.isGroup ? await gmeta.participants : "";
-groupAdmins = vcнaт.isGroup ? await participants.filter((v) => v.admin !== null).map((v) => v.id) : "";
+groupAdmins = vcнaт.isGroup
+? await participants.filter((v) => v.admin !== null).map((v) => v.id)
+: "";
 groupOwner = vcнaт.isGroup ? gmeta.owner : "";
-isBotAdmin = vcнaт.isGroup ? groupAdmins.includes(await νℓкуяє.decodeJid(νℓкуяє.user.id)) : false;
+isBotAdmin = vcнaт.isGroup
+? groupAdmins.includes(await νℓкуяє.decodeJid(νℓкуяє.user.id))
+: false;
 isAdmin = vcнaт.isGroup ? groupAdmins.includes(vcнaт.sender) : false;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 switch (νℓкуяє.command) {
@@ -37,9 +36,6 @@ udBase.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error)
 console.log(udBase);
 });
 break;
-
-
-
 
 case "how":
 case "help":
