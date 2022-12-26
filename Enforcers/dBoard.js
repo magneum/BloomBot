@@ -133,9 +133,7 @@ var dboard = async (νℓкуяє, vcнaт, dbata) => {
         })
           .save()
           .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-        var msg = `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-          *🧈Status:* Your New Dashboard is ready!`;
-        return (dbata = msg);
+        return dbata;
       } else {
         return dbata;
       }
