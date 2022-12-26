@@ -11,7 +11,7 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, vcнaт, update) => { 
+module.exports = async (νℓкуяє, vcнaт, update) => {
   gmeta = vcнaт.isGroup
     ? await νℓкуяє.groupMetadata(vcнaт.chat).catch((error) => {})
     : "";
@@ -28,16 +28,13 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   switch (νℓкуяє.command) {
     case "vlkyre":
-      require("../Enforcers/dboard")(
-        νℓкуяє,
-        vcнaт,
-        require("../Modular/vlkyre")(νℓкуяє, vcнaт),
-        function (dback) {
-          console.log(dback);
-        }
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "how":
     case "help":
     case "HELP":
@@ -45,9 +42,13 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "allmenu":
     case "command":
     case "commands":
-      require("../Modular/help")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.help = dback.help + 1;
+        require("../Modular/help")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "yta":
     case "play":
     case "song":
@@ -58,444 +59,879 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "ytaudio":
     case "ytmusic":
     case "youtubemusic":
-      require("../Modular/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥📥𝘫𝘴/youtube")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "bite":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bite")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "blush":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/blush")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "bonk":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bonk")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "bored":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/bored")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "confused":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/confused")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "cry":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cry")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "cuddle":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/cuddle")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "dance":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/dance")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "goodnight":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/goodnight")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "happy":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/happy")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "highfive":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/highfive")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "hug":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/hug")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "kill":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kill")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "kiss":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/kiss")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "nervous":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/nervous")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "pat":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/pat")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "poke":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/poke")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "punch":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/punch")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "sad":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/sad")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "scream":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/scream")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "slap":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/slap")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "smile":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/smile")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "stare":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/stare")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "wave":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wave")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "wink":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/wink")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "yeet":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yeet")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "yes":
       require("../Modular/𝘈𝘯𝘪𝘮𝘦🐉𝘫𝘴/yes")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "h.anime":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_anime")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.download":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_download")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.filter":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_filter")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.game":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_game")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.group":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_group")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.hentai":
       require("../Bin/_hentai")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.image":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_image")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.search":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_search")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "h.ytfilter":
       require("../Modular/𝘊𝘰𝘮𝘮𝘢𝘯𝘥💗𝘫𝘴/_ytfilter")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vlkyre = dback.vlkyre + 1;
+        require("../Modular/vlkyre")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
-    case "8d":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/8d")(νℓкуяє, vcнaт);
-      break;
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "bassboost":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/bassboost")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.bassboost = dback.bassboost + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/bassboost")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "echo":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/echo")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.echo = dback.echo + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/echo")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "flanger":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/flanger")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.flanger = dback.flanger + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/flanger")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "nightcore":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/nightcore")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nightcore = dback.nightcore + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/nightcore")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "phaser":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/phaser")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.phaser = dback.phaser + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/phaser")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "reverse":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/reverse")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.reverse = dback.reverse + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/reverse")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "slow":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/slow")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.slow = dback.slow + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/slow")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "speed":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/speed")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.speed = dback.speed + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/speed")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "subboost":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/subboost")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.subboost = dback.subboost + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/subboost")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "superslow":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superslow")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.superslow = dback.superslow + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superslow")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "superspeed":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superspeed")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.superspeed = dback.superspeed + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/superspeed")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "surround":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/surround")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.surround = dback.surround + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/surround")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "vaporwave":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vaporwave")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vaporwave = dback.vaporwave + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vaporwave")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "vibrato":
-      require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vibrato")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.vibrato = dback.vibrato + 1;
+        require("../Modular/𝘍𝘪𝘭𝘵𝘦𝘳📢𝘑𝘴/vibrato")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
-    case "yt8d":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/yt8d")(νℓкуяє, vcнaт);
-      break;
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "ytbassboost":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytbassboost")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytbassboost = dback.ytbassboost + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytbassboost")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytecho":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytecho")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytecho = dback.ytecho + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytecho")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytflanger":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytflanger")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytflanger = dback.ytflanger + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytflanger")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytnightcore":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytnightcore")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytnightcore = dback.ytnightcore + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytnightcore")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytphaser":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytphaser")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytphaser = dback.ytphaser + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytphaser")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytreverse":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytreverse")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytreverse = dback.ytreverse + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytreverse")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytslow":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytslow")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytslow = dback.ytslow + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytslow")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytspeed":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytspeed")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytspeed = dback.ytspeed + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytspeed")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytsubboost":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsubboost")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytsubboost = dback.ytsubboost + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsubboost")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytsuperslow":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperslow")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytsuperslow = dback.ytsuperslow + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperslow")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytsuperspeed":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperspeed")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytsuperspeed = dback.ytsuperspeed + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsuperspeed")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytsurround":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsurround")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytsurround = dback.ytsurround + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytsurround")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytvaporwave":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvaporwave")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytvaporwave = dback.ytvaporwave + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvaporwave")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "ytvibrato":
-      require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvibrato")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytvibrato = dback.ytvibrato + 1;
+        require("../Modular/𝘠𝘰𝘶𝘛𝘶𝘣𝘦⭕𝘑𝘴/ytvibrato")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "s":
     case "sgif":
     case "sticker":
     case "stickergif":
-      require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/sticker")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.sticker = dback.sticker + 1;
+        require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/sticker")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "tinyurl":
-      require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tinyurl")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.tinyurl = dback.tinyurl + 1;
+        require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tinyurl")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "toimg":
-      require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/toimg")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.toimg = dback.toimg + 1;
+        require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/toimg")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "tourl":
-      require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tourl")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.tourl = dback.tourl + 1;
+        require("../Modular/𝘊𝘰𝘯𝘷𝘦𝘳𝘵🗄️𝘫𝘴/tourl")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "bal":
     case "gold":
     case "money":
     case "balance":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/balance")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.balance = dback.balance + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/balance")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "buy":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/buy")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.buy = dback.buy + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/buy")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "dly":
     case "daily":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/daily")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.daily = dback.daily + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/daily")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "fish":
     case "pond":
     case "fishes":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/fish")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.fish = dback.fish + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/fish")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "bet":
     case "gamble":
     case "betting":
     case "roulette":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.gamble = dback.gamble + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/gamble")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "pay":
     case "loan":
     case "borrow":
     case "payment":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/pay")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.pay = dback.pay + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/pay")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "rob":
     case "thief":
     case "robbery":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/rob")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.rob = dback.rob + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/rob")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "bag":
     case "inv":
     case "loot":
     case "inventory":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/inv")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.inv = dback.inv + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/inv")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "mall":
     case "shop":
     case "store":
     case "shopping":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/store")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.store = dback.store + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/store")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "job":
     case "work":
     case "earn":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/work")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.work = dback.work + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/work")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "zoo":
     case "forest":
     case "animals":
-      require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/zoo")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.zoo = dback.zoo + 1;
+        require("../Modular/𝘎𝘢𝘮𝘦💰𝘑𝘴/zoo")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "gimage":
     case "image":
-      require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.image = dback.image + 1;
+        require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/image")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "neko":
-      require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.neko = dback.neko + 1;
+        require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/neko")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "pin":
     case "pinterest":
-      require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.pinterest = dback.pinterest + 1;
+        require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/pinterest")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "waifu":
-      require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.waifu = dback.waifu + 1;
+        require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/waifu")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "wallpaper":
-      require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.wallpaper = dback.wallpaper + 1;
+        require("../Modular/𝘐𝘮𝘢𝘨𝘦🖼️𝘫𝘴/wallpaper")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "advice":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.advice = dback.advice + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/advice")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "fact":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(νℓкуяє, vcнaт);
-      break;
-    case "joke":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.fact = dback.fact + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/fact")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "meme":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.meme = dback.meme + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/meme")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "quote":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.quote = dback.quote + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/quote")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
     case "sr":
     case "reddit":
     case "subreddit":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.joke = dback.joke + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/joke")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "anime":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.anime = dback.anime + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/anime")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "manga":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.manga = dback.manga + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/manga")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "google":
-      require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(νℓкуяє, vcнaт);
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.google = dback.google + 1;
+        require("../Modular/𝘚𝘦𝘢𝘳𝘤𝘩🔎𝘫𝘴/google")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
-
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "demote":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.demote = dback.demote + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/demote")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "group":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.group = dback.group + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/group")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "promote":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.promote = dback.promote + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/promote")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "kick":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/kick")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.kick = dback.kick + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/kick")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "setdesc":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.setdesc = dback.setdesc + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/setdesc")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "seticon":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.seticon = dback.seticon + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/seticon")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "tagall":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.tagall = dback.tagall + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/tagall")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "antilink":
     case "stoplink":
     case "nolink":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/antilink")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.antilink = dback.antilink + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/antilink")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
     case "bcg":
     case "bcgroup":
     case "broadcast":
-      require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/broadcast")(
-        νℓкуяє,
-        vcнaт,
-        gmeta,
-        isAdmin,
-        groupName,
-        isBotAdmin,
-        groupAdmins,
-        participants
-      );
+      require("../Enforcers/dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.broadcast = dback.broadcast + 1;
+        require("../Modular/𝘎𝘳𝘰𝘶𝘱🔰𝘫𝘴/broadcast")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
       break;
 
     default:

@@ -30,7 +30,6 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
 
 ┌『 *⭕YT-FILTER HUB⭕* 』
-│║⦁ ${νℓкуяє.prefix}yt8d
 │║⦁ ${νℓкуяє.prefix}ytbassboost
 │║⦁ ${νℓкуяє.prefix}ytecho
 │║⦁ ${νℓкуяє.prefix}ytflanger

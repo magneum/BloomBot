@@ -13,7 +13,7 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
 database = require("../mongBase/dashboard");
-module.exports = async (νℓкуяє, vcнaт, pathFile, dback) => {
+module.exports = async (νℓкуяє, vcнaт, dback) => {
   await database.findOne(
     {
       ID: vcнaт.sender,
@@ -105,7 +105,6 @@ module.exports = async (νℓкуяє, vcнaт, pathFile, dback) => {
           meme: 0,
           quote: 0,
           reddit: 0,
-          yt8d: 0,
           ytbassboost: 0,
           ytecho: 0,
           ytflanger: 0,
@@ -133,13 +132,9 @@ module.exports = async (νℓкуяє, vcнaт, pathFile, dback) => {
         })
           .save()
           .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-        vcнaт.reply(
-          `${νℓкуяє.pushname}, your dashboard is building itself.Please retype the command!`
-        );
-        return (dback = udBase);
-      } else {
-        return (dback = udBase);
+        return dback(udBase);
       }
+      return dback(udBase);
     }
   );
 };
