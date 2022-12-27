@@ -21,7 +21,8 @@ await νℓкуяє.imgB(
 vcнaт,
 `*🤖Hello, I am Vlkyre User-Bot🤖*
 > Please Login To Your Dashboard:
-> https://7g036e-5000.preview.csb.app/login`,
+> https://7g036e-5000.preview.csb.app/login
+> Must Include country code in phone number`,
 "./Gallery/νℓкуяє_dark.png"
 );
 };
