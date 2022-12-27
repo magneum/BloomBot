@@ -12,50 +12,51 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 (async () => {
-var dboard = require("./mongBase/dashboard");
-var bodyParser = require("body-parser");
-var monGoose = require("mongoose");
-var express = require("express");
-require("./global.js");
-var νℓpage = express();
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
-await monGoose
-.connect(MONGO_URL, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-useCreateIndex: true,
-useFindAndModify: false,
-})
-.catch((error) => {
-console.log("🦋Info:", "Unable to Connected with Mongoose.");
-})
-.then(console.log("🦋Info:", "Connected with Mongoose."));
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-νℓpage.get("/login", (req, res) => {
-res.sendFile(__dirname + "/views/login.html");
-});
-νℓpage.engine("html", require("ejs").renderFile);
-νℓpage.use(express.static(__dirname + "/views"));
-νℓpage.set("view engine", "html");
-νℓpage.set("views", __dirname);
-νℓpage.post("/login", urlencodedParser, (req, res) => {
-dboard.findOne(
-{
-ID: req.body.phone + "@s.whatsapp.net",
-},
-async (error, uBoard) => {
-if (error) return console.log(error);
-if (!uBoard) {
-res.sendFile(__dirname + "/views/dError.html");
-} else {
-res.render(__dirname + "/views/dboard.html", {
-uBoard: uBoard,
-});
-}
-}
-);
-});
-νℓpage.listen(3000, console.log("🦋Info:", "http://localhost:3000/login"));
+  var dboard = require("./mongBase/dashboard");
+  var bodyParser = require("body-parser");
+  var monGoose = require("mongoose");
+  var express = require("express");
+  require("./global.js");
+  var νℓpage = express();
+  var urlencodedParser = bodyParser.urlencoded({ extended: false });
+  await monGoose
+    .connect(MONGO_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+    })
+    .catch((error) => {
+      console.log("🦋Info:", "Unable to Connected with Mongoose.");
+    })
+    .then(console.log("🦋Info:", "Connected with Mongoose."));
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  νℓpage.get("/login", (req, res) => {
+    res.sendFile(__dirname + "/views/login.html");
+  });
+  νℓpage.engine("html", require("ejs").renderFile);
+  νℓpage.use(express.static(__dirname + "/views"));
+  νℓpage.set("view engine", "html");
+  νℓpage.set("views", __dirname);
+  νℓpage.post("/login", urlencodedParser, (req, res) => {
+    dboard.findOne(
+      {
+        ID: req.body.phone + "@s.whatsapp.net",
+      },
+      async (error, uBoard) => {
+        if (error) return console.log(error);
+        if (!uBoard) {
+          res.sendFile(__dirname + "/views/dError.html");
+        } else {
+          res.render(__dirname + "/views/dboard.html", {
+            uBoard: uBoard,
+            groupProfile: "https://i.postimg.cc/zGFSxHNG/dashBlur.png",
+          });
+        }
+      }
+    );
+  });
+  νℓpage.listen(3000, console.log("🦋Info:", "http://localhost:3000/login"));
 })().catch((error) => console.log("🦋Info:", error));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
