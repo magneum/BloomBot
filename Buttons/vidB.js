@@ -33,11 +33,6 @@ buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
 type: 1,
 },
 {
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
-{
 buttonId: `${νℓкуяє.prefix}Vlkyre`,
 buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
 type: 1,
@@ -73,11 +68,6 @@ buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
 type: 1,
 },
 {
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
-{
 buttonId: `${νℓкуяє.prefix}Vlkyre`,
 buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
 type: 1,
@@ -102,11 +92,6 @@ caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
 buttons: [
-{
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
 {
 buttonId: `${νℓкуяє.prefix}Dashboard`,
 buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
