@@ -95,6 +95,5 @@
     "vlkyre": "^6.5.2",
     "wa-sticker-formatter": "^4.3.2",
     "xfarr-api": "^1.0.3"
-  },
-  "packageManager": "yarn@3.3.1"
+  }
 }
