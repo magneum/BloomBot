@@ -270,7 +270,7 @@ vcнaт,
 │║⦁ ${νℓкуяє.prefix}ytvaporwave: ${uBoard.ytvaporwave}
 │║⦁ ${νℓкуяє.prefix}ytvibrato: ${uBoard.ytvibrato}
 ┕╚═══════⋑`,
-"./Gallery/KryPage.png"
+"./Gallery/νℓкуяє_dashboard.jpg"
 );
 }
 }
