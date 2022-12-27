@@ -62,7 +62,7 @@ console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
 }
 if (MONGO_URL === undefined || null) {
 ShowRed(
-"🦋Info: ",
+"🦋Info:",
 "No MONGO_URL Found.\nIf using SELF-HOST method, make sure .env file is present."
 );
 process.exit(0);
@@ -90,7 +90,7 @@ var msgRetryCounterMap = MessageRetryMap;
 νℓpage.listen(PORT, () => {
 if (fs.existsSync(".env")) {
 ShowGreen(
-"🦋Info: ",
+"🦋Info:",
 "Vlkyre Router Running Locally in: http://localhost:" + PORT
 );
 } else {
@@ -112,11 +112,11 @@ useCreateIndex: true,
 useFindAndModify: false,
 })
 .catch((error) => {
-ShowRed("🦋Info: ", "Unable to Connected with Mongoose.");
+ShowRed("🦋Info:", "Unable to Connected with Mongoose.");
 console.log(error);
 })
-.then(ShowGreen("🦋Info: ", "Connected with Mongoose."));
-})().catch((error) => ShowRed("🦋Info: ", error));
+.then(ShowGreen("🦋Info:", "Connected with Mongoose."));
+})().catch((error) => ShowRed("🦋Info:", error));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var νℓкуяє = кяуνℓ({
 auth: state,
@@ -155,7 +155,7 @@ if (reason === DisconnectReason.badSession) {
 console.log("🦋Info:", "Bad Session File.Please Scan Again...");
 process.exit(0);
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log("🦋Info: ", "Connection closed.Reconnecting....");
+console.log("🦋Info:", "Connection closed.Reconnecting....");
 await кяукєηz();
 } else if (reason === DisconnectReason.connectionLost) {
 console.log("🦋Info:", "Connection Lost from Server.Reconnecting...");
@@ -170,10 +170,10 @@ await кяукєηz();
 console.log("🦋Info:", "Device Logged Out.Please Scan Again...");
 await кяукєηz();
 } else if (reason === DisconnectReason.restartRequired) {
-console.log("🦋Info: ", "Restart Required.Restarting...");
+console.log("🦋Info:", "Restart Required.Restarting...");
 await кяукєηz();
 } else if (reason === DisconnectReason.timedOut) {
-console.log("🦋Info: ", "Connection Timedout.Reconnecting...");
+console.log("🦋Info:", "Connection Timedout.Reconnecting...");
 await кяукєηz();
 } else {
 νℓкуяє.end(

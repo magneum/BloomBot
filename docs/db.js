@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+global.dHTML = `<!DOCTYPE html>
 <html>
 <title>𝐖𝐞𝐥𝐜𝐨𝐦𝐞🎊𝐛𝐲❣️𝐊𝐫𝐲𝐊𝐞𝐧𝐳</title>
 
@@ -22,6 +22,8 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
 <style>
+@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+
 body {
 font-size: 18px;
 color: #ffffff;
@@ -57,6 +59,19 @@ font-size: 18px;
 color: #ffffff;
 font-family: "Times New Roman", Times, serif;
 }
+
+.zoomBox {
+padding: 50px;
+transition: transform .3s;
+width: 400px;
+height: 250px;
+margin: 0 auto;
+}
+
+.zoomBox:hover {
+transform: scale(1.1);
+}
+
 
 .zoomIn {
 width: 400px;
@@ -161,32 +176,32 @@ document.querySelector("body").style.visibility = "visible";
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
 <div id="ten"></div>
 <script src="./script.js"></script>
-<header class="text-orange-100 body-font">
+<header class="text-teal-100 body-font">
 <div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
 <div
 class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-<svg class="absolute left-0 hidden h-full text-orange-700 transform -translate-x-1/2 lg:block"
+<svg class="absolute left-0 hidden h-full text-teal-700 transform -translate-x-1/2 lg:block"
 viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
 <path d="M50 0H100L50 100H0L50 0Z"></path>
 </svg>
 <img class="object-cover w-full h-56 rounded shadow-lg lg:shadow-none md:h-96 lg:h-full rounded-lg "
-src="https://i.postimg.cc/tgBxPtBm/KryPage.jpg" alt="" />
+src="https://i.postimg.cc/cCDnDGgJ/dashboard.jpg" alt="" />
 </div>
 
 <div
 class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
 <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
 <p
-class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-orange-500 uppercase rounded-full bg-teal-accent-400">
+class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-500 uppercase rounded-full bg-teal-accent-400">
 Hello!
 </p>
 <h2
-class="mb-5 font-sans text-3xl font-bold tracking-tight text-orange-100 sm:text-4xl sm:leading-none">
+class="mb-5 font-sans text-3xl font-bold tracking-tight text-teal-100 sm:text-4xl sm:leading-none">
 Everything you<br class="hidden md:block" />
 can imagine is
-<span class="inline-block text-orange-500"><i> real </i></span>
+<span class="inline-block text-teal-500"><i> real </i></span>
 </h2>
-<p class="lg:w-2/3 text-orange-100">My name is <span class="inline-block text-orange-500">KryKenz(
+<p class="lg:w-2/3 text-teal-100">My name is <span class="inline-block text-teal-500">KryKenz(
 ▀͜͞ʖ▀) ▄︻̷̿┻̿═━━</span><br>I am a bot developer.<br>Below you can surf all the works I have
 done
 including Vlkyre.
@@ -194,8 +209,8 @@ including Vlkyre.
 </div>
 </div>
 </div>
-<hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
-<hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
+<hr style="height: 0.5px; border-top: 8px solid #086164" />
+<hr style="height: 0.5px; border-top: 2px solid #feab69" />
 </header>
 <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
@@ -210,74 +225,235 @@ including Vlkyre.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
-<section class="text-orange-600 body-font">
-<div class="container px-5 py-24 mx-auto">
-<div class="flex flex-col">
 
-<div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-<h1 class="sm:w-2/5 text-orange-500 font-bold title-font text-2xl mb-2 sm:mb-0">
-Let's head over to different places:
-</h1>
-<p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"></p>
-<div class="h-1 bg-orange-100 rounded overflow-hidden">
-<div class="w-24 h-full bg-orange-600"></div>
+<section class="text-teal-400 body-font " style="background-color: #031a28">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+<div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+<div>
 </div>
+<h2
+class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-teal-300 sm:text-4xl md:mx-auto">
+<span class="relative inline-block">
+<svg viewBox="0 0 52 24" fill="currentColor"
+class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-teal-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+<defs>
+<pattern id="db164e35-2a0e-4c0f-ab05-f14edc6d4d30" x="0" y="0" width=".135"
+height=".30">
+<circle cx="1" cy="1" r=".7"></circle>
+</pattern>
+</defs>
+<rect fill="url(#db164e35-2a0e-4c0f-ab05-f14edc6d4d30)" width="52" height="24"></rect>
+</svg>
+<span class="relative">.</span>
+</span>
+VLKYRE USER DASHBOARD.
+</h2>
+<p class="text-base text-teal-50 md:text-lg">
+<i>Take Your Time To Know How You Have Been Spending Your Lovely Time With Vlkyre</i>
+</p>
 </div>
-
+<div class="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-<div class="rounded-lg h-64 overflow-hidden zoomIn">
-<img alt="content" class="object-cover object-center h-full w-full"
-src="https://i.postimg.cc/76JTYpPz/KryKenz.png">
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<h2 class="text-xl font-medium title-font text-orange-500 mt-5">🛵Github.com/KryKenz</h2>
-<p class="text-base leading-relaxed mt-2 text-orange-100 hover:text-orange-300">GitHub, Inc. is an
-Internet hosting
-service for software
-development and version control using Git.
-It provides the distributed version control of Git plus access control, bug tracking,
-software feature requests, task management, continuous integration, and wikis for every
-project.</p>
-<div class="flex justify-start">
-<button onclick="window.location.href='https://github.com/KryKenz'"
-class="inline-flex text-orange-200 bg-orange-900 border-0 py-2 px-6 focus:outline-none hover:bg-orange-900 rounded-lg text-lg hover:bg-orange-100 hover:text-orange-500">🤟🏻
-Press Me To Visit 🤟🏻</button>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-<div class="rounded-lg h-64 overflow-hidden zoomIn">
-<img alt="content" class="object-cover object-center h-full w-full"
-src="https://i.postimg.cc/JhhWQVGB/NPM-removebg-preview.png">
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<h2 class="text-xl font-medium title-font text-orange-500 mt-5">🛰️ My Node-pkg Page</h2>
-<p class="text-base leading-relaxed mt-2 text-orange-100 hover:text-orange-300">NPM is the world's
-largest software
-registry.<br>
-Open source developers from every continent use npm to share and borrow packages,and
-many organizations use npm to manage private development as well.</p>
-<div class="flex justify-start">
-<button onclick="window.location.href='https://www.npmjs.com/~krykenz'"
-class="inline-flex text-orange-200 bg-orange-900 border-0 py-2 px-6 focus:outline-none hover:bg-orange-900 rounded-lg text-lg hover:bg-orange-100 hover:text-orange-500">🤟🏻
-Press Me To Visit 🤟🏻</button>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-<div class="rounded-lg h-64 overflow-hidden zoomIn">
-<img alt="content" class="object-cover object-center h-full w-full"
-src="https://i.postimg.cc/s2jWv04h/vlkyre-rm.png">
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
-<h2 class="text-xl font-medium title-font text-orange-500 mt-5">🦇 Vlkyre Home Page</h2>
-<p class="text-base leading-relaxed mt-2 text-orange-100 hover:text-orange-300">Vlkyre is a whatsapp
-bot with automation,
-moderation, music, games and 200+ commands! You can easily deploy your own vlkyre by using npm.
-To Find Out What Vlkyre Offers, Join Any Vlkyre Official Groups in vlkyre-home-page.</p>
-<div class="flex justify-start">
-<button onclick="window.location.href='./νℓкуяє.html'"
-class="inline-flex text-orange-200 bg-orange-900 border-0 py-2 px-6 focus:outline-none hover:bg-orange-900 rounded-lg text-lg hover:bg-orange-100 hover:text-orange-500">🤟🏻
-Press Me To Visit 🤟🏻</button>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
 </div>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
+</div>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
+</div>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
+</div>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
+</div>
+<div
+class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20 hover:bg-stone-900 zoomBox">
+<p class="mb-2 text-xs font-semibold tracking-wide text-orange-100 uppercase">
+<i>20 Nov 2020</i>
+</p>
+<a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+aria-label="Read article" title="Category">
+Category
+</a>
+<p class="max-w-xs mx-auto mb-2 text-teal-100">
+Item Storage
+</p>
+</div>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
 </div>
 </div>
 </section>
@@ -295,25 +471,25 @@ Press Me To Visit 🤟🏻</button>
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
 <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"></nav>
-<hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
-<hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
+<hr style="height: 0.5px; border-top: 8px solid #086164" />
+<hr style="height: 0.5px; border-top: 2px solid #feab69" />
 
-<footer class="text-orange-400 body-font">
+<footer class="text-teal-400 body-font">
 <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-<a class="flex title-font font-medium items-center md:justify-start justify-center text-orange-500">
-<span class="ml-3 text-xl hover:text-orange-500"><b>❝ Coded By KryKenz ❞</b></span>
+<a class="flex title-font font-medium items-center md:justify-start justify-center text-teal-500">
+<span class="ml-3 text-xl hover:text-teal-500"><b>❝ Coded By KryKenz ❞</b></span>
 </a>
-<p class="text-sm text-orange-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-orange-800 sm:py-2 sm:mt-0 mt-4">
+<p class="text-sm text-teal-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-teal-800 sm:py-2 sm:mt-0 mt-4">
 <b>Since 2021 and Forever </b>
 </p>
 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-<a class="text-orange-400">
+<a class="text-teal-400">
 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 class="w-5 h-5" viewBox="0 0 24 24">
 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
 </svg>
 </a>
-<a class="ml-3 text-orange-400">
+<a class="ml-3 text-teal-400">
 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 class="w-5 h-5" viewBox="0 0 24 24">
 <path
@@ -321,14 +497,14 @@ d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4
 </path>
 </svg>
 </a>
-<a class="ml-3 text-orange-400">
+<a class="ml-3 text-teal-400">
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
 </svg>
 </a>
-<a class="ml-3 text-orange-400">
+<a class="ml-3 text-teal-400">
 <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
 <path stroke="none"
@@ -342,17 +518,4 @@ d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h
 </footer>
 </body>
 
-</html>
-<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
-// ║ We won't be responsible for any kind of ban due to this bot.
-// ║ νℓкуяє was made for fun purpose and to make group management easier.
-// ║ It's your concern if you spam and gets your account banned.
-// ║ Also, Forks won't be entertained.
-// ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
-// ║ In short, Fork At Your Own Risk.
-// ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+</html>`;
