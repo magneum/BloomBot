@@ -37,10 +37,10 @@ vcнaт.text
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.budy = typeof vcнaт.text == "string" ? vcнaт.text : "";
 νℓкуяє.icmd = νℓкуяє.body.startsWith(prefix);
-νℓкуяє.isCmd =
+νℓкуяє.isCommand =
 prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
 νℓкуяє.body.slice(1) != "";
-νℓкуяє.command = νℓкуяє.isCmd
+νℓкуяє.command = νℓкуяє.isCommand
 ? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase()
 : "";
 νℓкуяє.args = νℓкуяє.body.trim().split(/ +/).slice(1);
