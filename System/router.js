@@ -34,14 +34,19 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
-      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "help":
     case "menu":
-    case "command":
-    case "dashboard":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
         dback.help = dback.help + 1;
         require("../Modular/help")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "db":
+    case "dashboard":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.help = dback.help + 1;
+        require("../Modular/dashboard")(νℓкуяє, vcнaт);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;

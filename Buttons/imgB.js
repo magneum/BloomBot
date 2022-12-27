@@ -28,8 +28,8 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
 buttons: [
 {
-buttonId: `${νℓкуяє.prefix}Commands`,
-buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+buttonId: `${νℓкуяє.prefix}Dashboard`,
+buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
 type: 1,
 },
 {
@@ -68,8 +68,8 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
 buttons: [
 {
-buttonId: `${νℓкуяє.prefix}Commands`,
-buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+buttonId: `${νℓкуяє.prefix}Dashboard`,
+buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
 type: 1,
 },
 {
@@ -103,8 +103,8 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
 buttons: [
 {
-buttonId: `${νℓкуяє.prefix}Commands`,
-buttonText: { displayText: `${νℓкуяє.prefix}Commands` },
+buttonId: `${νℓкуяє.prefix}Dashboard`,
+buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
 type: 1,
 },
 {
