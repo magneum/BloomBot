@@ -22,4 +22,4 @@ RUN git init --initial-branch=krytek
 RUN git fetch origin krytek
 RUN git reset --hard origin/krytek
 RUN pip install -r requirements.txt && npm install --force
-CMD [ "python", "Operator.py" ]
+CMD python Operator.py

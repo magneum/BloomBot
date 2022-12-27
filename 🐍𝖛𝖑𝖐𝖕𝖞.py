@@ -38,7 +38,6 @@ except Exception as Error:
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!","yellow")
 try:
     subprocess.run(["npm","install","--force","--save"],check=True,stdout=subprocess.PIPE).stdout 
-    cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: npm install done using python subprocess!")
 except Exception as Error:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
