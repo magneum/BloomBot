@@ -45,6 +45,7 @@
     "discord-phub": "^1.0.7",
     "discord-xp": "^1.1.16",
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "ffmpeg": "^0.0.4",
     "ffmpeg-static": "^5.1.0",

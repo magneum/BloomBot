@@ -17,7 +17,6 @@ var bodyParser = require("body-parser");
 var monGoose = require("mongoose");
 var express = require("express");
 require("./global.js");
-require("./docs/db");
 var νℓpage = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 await monGoose
@@ -26,25 +25,32 @@ useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,
-}).catch((error) => {
+})
+.catch((error) => {
 console.log("🦋Info:", "Unable to Connected with Mongoose.");
-}).then(console.log("🦋Info:", "Connected with Mongoose."));
+})
+.then(console.log("🦋Info:", "Connected with Mongoose."));
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓpage.get("/login", (req, res) => {
-res.sendFile(__dirname + "/docs/login.html");
+res.sendFile(__dirname + "/views/login.html");
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓpage.engine("html", require("ejs").renderFile);
+νℓpage.use(express.static(__dirname + "/views"));
+νℓpage.set("view engine", "html");
+νℓpage.set("views", __dirname);
 νℓpage.post("/login", urlencodedParser, (req, res) => {
 dboard.findOne(
 {
 ID: req.body.phone + "@s.whatsapp.net",
 },
-async (error, udBase) => {
+async (error, uBoard) => {
 if (error) return console.log(error);
-if (!udBase) {
-res.sendFile(__dirname + "/docs/dError.html");
+if (!uBoard) {
+res.sendFile(__dirname + "/views/dError.html");
 } else {
-return res.send(dHTML);
+res.render(__dirname + "/views/dboard.html", {
+uBoard: uBoard,
+});
 }
 }
 );
