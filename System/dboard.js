@@ -159,7 +159,6 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
       }
       udBase.uname = νℓкуяє.pushname;
       udBase.pfp = 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
-      udBase.save();
       return dback(udBase);
     }
   );
