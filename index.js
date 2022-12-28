@@ -233,31 +233,59 @@ async function кяукєηz() {
     await require("./System/νc໐rē.js")(νℓкуяє, vcнaт, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  // νℓкуяє.ev.on("group-participants.update", async (update) => {
-  //   return console.log(update);
-  //   let metadata = await νℓкуяє.groupMetadata(update.id);
-  //   let participants = update.participants;
-  //   for (let personJoined of participants) {
-  //     var ppuser;
-  //     try {
-  //       ppuser = await νℓкуяє.profilePictureUrl(personJoined, "image");
-  //     } catch {
-  //       ppuser = "./Gallery/νℓкуяє.png";
-  //     }
+  νℓкуяє.ev.on("group-participants.update", async (update) => {
+    let metadata = await νℓкуяє.groupMetadata(update.id);
+    let participants = update.participants;
+    console.log(update);
+    for (let sperson of participants) {
+      var imåge;
+      try {
+        imåge = await νℓкуяє.profilePictureUrl(sperson, "image");
+      } catch {
+        imåge = "./Gallery/νℓкуяє.png";
+      }
 
-  //     if (update.action == "add") {
-  //       let buttonMessage = {
-  //         image: { url: ppuser },
-  //         caption: `welcome_messages.trim().replace(/@pp/g, "")`,
-  //         footer: "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
-  //         mentions: [personJoined],
-  //         headerType: 4,
-  //       };
-  //       return await νℓкуяє.sendMessage(update.id, buttonMessage);
-  //     } else if (update.action == "remove") {
-  //     }
-  //   }
-  // });
+      if (update.action == "add") {
+        return await νℓкуяє
+          .sendMessage(
+            update.id,
+            {
+              image: { url: imåge },
+              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+*📢ID:* ${update.id}
+
+> Firstly Welcome.
+> I am Vlkyre Whatsapp Bot.
+> To Start using type .help or press below buttons.`,
+              footer:
+                "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
+              buttons: [
+                {
+                  buttonId: `${νℓкуяє.prefix}Dashboard`,
+                  buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${νℓкуяє.prefix}Vlkyre`,
+                  buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              mentions: [sperson],
+            },
+            {
+              contextInfo: { mentionedJid: [sperson] },
+            }
+          )
+          .catch((error) => console.log(error));
+      } else if (update.action == "remove") {
+        return;
+      } else {
+        return;
+      }
+    }
+  });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.decodeJid = (jid) => {
     if (!jid) return jid;
