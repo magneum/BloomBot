@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 var dBoardSchema = new mongoose.Schema({
   ID: String,
+  pfp: String,
   bite: Number,
   blus: Number,
   bonk: Number,
@@ -13,7 +14,6 @@ var dBoardSchema = new mongoose.Schema({
   happy: Number,
   highfive: Number,
   hug: Number,
-
   kill: Number,
   kiss: Number,
   nervous: Number,
@@ -99,10 +99,8 @@ var dBoardSchema = new mongoose.Schema({
   ytsurround: Number,
   ytvaporwave: Number,
   ytvibrato: Number,
-
   help: Number,
   vlkyre: Number,
-
   _anime: Number,
   _download: Number,
   _filter: Number,
