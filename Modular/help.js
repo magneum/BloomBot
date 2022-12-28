@@ -24,7 +24,7 @@ vcнaт,
 > My developers are working on my code.
 
 
-┌『 *📥DOWNLOAD HUB📥* 』
+┌『 *📥MENU HUB📥* 』
 │║⦁ ${νℓкуяє.prefix}h.anime
 │║⦁ ${νℓкуяє.prefix}h.download
 │║⦁ ${νℓкуяє.prefix}h.filter
