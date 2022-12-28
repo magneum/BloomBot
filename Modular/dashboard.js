@@ -31,7 +31,7 @@ caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *❗Problem?*
 > Doesn't show dashboard?
 > type .help in vlkyre official group
-> head back to it.ly/krykenz
+> head back to bit.ly/krykenz
 > try to login`,
 mentions: [vcнaт.sender],
 },

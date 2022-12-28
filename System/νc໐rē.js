@@ -74,8 +74,7 @@ caption: `*📢Verification Needed*
 *😥Sorry:* _${νℓкуяє.pushname}_
 
 > You need to be verified to use bot...
-
-*⚙️Group:*
+> join official group
 > chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
 
 *⚙️Webpage:*
