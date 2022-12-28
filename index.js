@@ -233,6 +233,32 @@ async function кяукєηz() {
     await require("./System/νc໐rē.js")(νℓкуяє, vcнaт, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  // νℓкуяє.ev.on("group-participants.update", async (update) => {
+  //   return console.log(update);
+  //   let metadata = await νℓкуяє.groupMetadata(update.id);
+  //   let participants = update.participants;
+  //   for (let personJoined of participants) {
+  //     var ppuser;
+  //     try {
+  //       ppuser = await νℓкуяє.profilePictureUrl(personJoined, "image");
+  //     } catch {
+  //       ppuser = "./Gallery/νℓкуяє.png";
+  //     }
+
+  //     if (update.action == "add") {
+  //       let buttonMessage = {
+  //         image: { url: ppuser },
+  //         caption: `welcome_messages.trim().replace(/@pp/g, "")`,
+  //         footer: "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
+  //         mentions: [personJoined],
+  //         headerType: 4,
+  //       };
+  //       return await νℓкуяє.sendMessage(update.id, buttonMessage);
+  //     } else if (update.action == "remove") {
+  //     }
+  //   }
+  // });
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
