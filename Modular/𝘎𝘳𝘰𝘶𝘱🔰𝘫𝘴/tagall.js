@@ -35,6 +35,13 @@ module.exports = async (
 > _It's a group command!_`
       );
     }
+    if (!νℓкуяє.frome) {
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname}_
+*❌Error* 
+> _This is an Admin only Command!_`
+      );
+    }
     if (!isAdmin) {
       return vcнaт.reply(
         `*😥Sorry:* _${νℓкуяє.pushname}_
