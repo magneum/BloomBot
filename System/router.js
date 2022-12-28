@@ -902,7 +902,7 @@ default:
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*😥Sorry:* _${νℓкуяє.pushname}_
+`*😥Sorry:* @${νℓкуяє.Tname}
 *❌Error* 
 > _No Such Command Found_
 > Visit To Know Commands: _bit.ly/krykenz_`,

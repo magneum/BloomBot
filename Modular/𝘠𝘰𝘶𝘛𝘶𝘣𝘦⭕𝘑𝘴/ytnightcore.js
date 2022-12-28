@@ -21,7 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     if (!νℓкуяє.args.join(" ")) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
@@ -34,7 +34,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     if (gotArgument.includes("yout")) {
       if (!νℓкуяє.TubeRegex.test(gotArgument)) {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
@@ -49,12 +49,12 @@ module.exports = async (νℓкуяє, vcнaт) => {
     var vFound = Found.videos.slice(0, 1);
     vFound.forEach(async function (vData) {
       if (!vData.url) {
-        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 
 *❌Error*
 > _No Music Found!_`);
       } else if (vData.seconds > 600) {
-        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 
 *❌Error*
 > _Cannot Download More Then 10m audio!_`);
@@ -63,7 +63,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         await νℓкуяє.imgB(
           νℓкуяє,
           vcнaт,
-          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+          `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 *⭕Filter:* ${pfname}
 *🍻Title:* ${vData.title || "null"}
 *🙈Views:* ${vData.views || "null"}

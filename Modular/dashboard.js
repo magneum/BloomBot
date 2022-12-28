@@ -21,7 +21,7 @@ vcнaт.chat,
 {
 gifPlayback: true,
 video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
-caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+caption: `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 > First watch the video.
 
 *⚙️Webpage:*

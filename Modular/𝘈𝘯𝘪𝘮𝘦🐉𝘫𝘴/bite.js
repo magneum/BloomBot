@@ -44,9 +44,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    caption: `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 *🎋Feeling:* ${pfname}
-*📢From:* ${νℓкуяє.pushname}
+*📢From:* @${νℓкуяє.Tname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
                     mentions: [dataFor, vcнaт.sender],
                   },
@@ -70,9 +70,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    caption: `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 *🎋Feeling:* ${pfname}
-*📢From:* ${νℓкуяє.pushname}
+*📢From:* @${νℓкуяє.Tname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
                     mentions: [dataFor, vcнaт.sender],
                   },
@@ -90,8 +90,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*⚡For:* ${νℓкуяє.pushname}
+                    caption: `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
+*⚡For:* @${νℓкуяє.Tname}
 *🎋Feeling:* ${pfname}`,
                   },
                   { quoted: vcнaт }
