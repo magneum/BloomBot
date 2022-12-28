@@ -88,13 +88,7 @@ var getVersionWaweb = () => {
   return version;
 };
 var msgRetryCounterMap = MessageRetryMap;
-νℓpage.listen(PORT, () => {
-  if (fs.existsSync(".env")) {
-    ShowGreen("🦋Info:", "Vlkyre Router Running Locally in port" + PORT);
-  } else {
-    ShowGreen("🦋Info: Vlkyre Router Running in Docker/Node");
-  }
-});
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 
 νℓpage.engine("html", require("ejs").renderFile);
 νℓpage.use(express.static(__dirname + "/views"));
@@ -133,10 +127,14 @@ var msgRetryCounterMap = MessageRetryMap;
     }
   );
 });
-νℓpage.listen(
-  process.env.PORT || 5000,
-  console.log("🦋Info:", "http://localhost:5000")
-);
+νℓpage.listen(PORT, () => {
+  if (fs.existsSync(".env")) {
+    ShowGreen("🦋Info:", "Vlkyre Router Running Locally in port" + PORT);
+    ShowGreen("🦋Info:", "http://localhost:5000");
+  } else {
+    ShowGreen("🦋Info: Vlkyre Router Running in Docker/Node");
+  }
+});
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function кяукєηz() {
   await sequelize.sync();
