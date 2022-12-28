@@ -25,6 +25,7 @@ global.ShowLogger = process.env.ShowLogger;
 global.ShowInfo = process.env.ShowInfo;
 global.mods = mod.split(",");
 global.MONGO_URL = process.env.MONGO_URL;
+global.PORT = process.env.PORT || 5000;
 global.pgdb = process.env.pgdb;
 global.prefix = process.env.prefix || "!";
 global.sessionName = process.env.sessionName;
