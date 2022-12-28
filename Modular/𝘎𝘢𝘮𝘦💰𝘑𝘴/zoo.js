@@ -45,7 +45,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             "./Gallery/vlkyre.png"
@@ -71,7 +71,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   "./Gallery/vlkyre.png"
@@ -85,7 +85,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                     "./Gallery/vlkyre.png"
@@ -112,7 +112,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_`,

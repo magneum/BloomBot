@@ -21,7 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     if (!νℓкуяє.args.join(" ")) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No Reddit Topic Given!_
 
@@ -35,7 +35,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     await νℓкуяє.imgB(
       νℓкуяє,
       vcнaт,
-      `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
+      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > *🖌️Title:* ${response.data.title}
 > *👨‍🎨Author:* ${response.data.author}
 > *🎏Subreddit:* ${response.data.subreddit}

@@ -19,8 +19,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
-*⧪Press:* https://bit.ly/krykenz`,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+*⚙️Webpage:*
+> bit.ly/krykenz`,
 "./Gallery/νℓкуяє_atlas.png"
 );
 };

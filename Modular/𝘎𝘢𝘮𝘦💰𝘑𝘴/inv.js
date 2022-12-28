@@ -39,7 +39,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             "./Gallery/vlkyre.png"
@@ -48,7 +48,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         return await νℓкуяє.imgB(
           νℓкуяє,
           vcнaт,
-          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,

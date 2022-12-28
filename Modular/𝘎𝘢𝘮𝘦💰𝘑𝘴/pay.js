@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
   if (!νℓкуяє.mentionByReply) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -28,7 +28,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (νℓкуяє.args.length === 0) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -37,7 +37,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(νℓкуяє.args[0])) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (νℓкуяє.args[0].match(/[a-z]/i)) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -63,7 +63,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         : "";
     receiverName = await νℓкуяє.getName(receiver);
     if (receiver === vcнaт.sender) {
-      return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+      return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -93,7 +93,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             .catch((error) => {
               return νℓкуяє.grab(νℓкуяє, vcнaт, error);
             });
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+          return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -103,7 +103,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (parseInt(νℓкуяє.args[0]) > uPayer.money) {
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+          return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -142,11 +142,11 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${νℓкуяє.pushname}
+│║⦁ *🦚Account Holder:* @${νℓкуяє.Tname || νℓкуяє.pushname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -168,11 +168,11 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${νℓкуяє.pushname}
+│║⦁ *🦚Account Holder:* @${νℓкуяє.Tname || νℓкуяє.pushname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -189,7 +189,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_ 
+    return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
 
 *❌Error* 
 > _No query provided!_

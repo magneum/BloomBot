@@ -23,7 +23,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     let FormatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!νℓкуяє.args[0] && !νℓкуяє.args[1]) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -38,7 +38,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (FormatColor.test(νℓкуяє.args[0])) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -53,7 +53,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (FormatAmount.test(νℓкуяє.args[1])) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -72,7 +72,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       !νℓкуяє.args[0].includes("purple")
     ) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -91,7 +91,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       return await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
         "./Gallery/vlkyre.png"
@@ -102,7 +102,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       return await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
         "./Gallery/vlkyre.png"
@@ -113,7 +113,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       return await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
         "./Gallery/vlkyre.png"
@@ -124,7 +124,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       return await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
         "./Gallery/vlkyre.png"
@@ -135,7 +135,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       return await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
         "./Gallery/vlkyre.png"
@@ -168,7 +168,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *💰Balance:* Just Opened Your Account!`,
             "./Gallery/vlkyre.png"
           );
@@ -196,7 +196,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
                 "./Gallery/vlkyre.png"
@@ -213,7 +213,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                 "./Gallery/vlkyre.png"
@@ -234,7 +234,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (!Color) {
               return vcнaт.reply(
-                `*😥Sorry:* _${νℓкуяє.pushname}_
+                `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Argument Needed!_
 
@@ -250,7 +250,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             Color = Color.toLowerCase();
             if (!money) {
               return vcнaт.reply(
-                `*😥Sorry:* _${νℓкуяє.pushname}_
+                `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -265,7 +265,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (money > CurrentMoney) {
               return vcнaт.reply(
-                `*😥Sorry:* _${νℓкуяє.pushname}_
+                `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -286,7 +286,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               Color = 2;
             } else {
               return vcнaт.reply(
-                `*😥Sorry:* _${νℓкуяє.pushname}_
+                `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -312,7 +312,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
                 "./Gallery/vlkyre.png"
@@ -332,7 +332,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
                 "./Gallery/vlkyre.png"
@@ -352,7 +352,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               return await νℓкуяє.imgB(
                 νℓкуяє,
                 vcнaт,
-                `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
                 "./Gallery/vlkyre.png"
@@ -370,7 +370,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
               "./Gallery/vlkyre.png"

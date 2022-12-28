@@ -21,7 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     if (!νℓкуяє.args) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -38,7 +38,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     });
     if (!wallpaper) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > Couldn't find any results on ${νℓкуяє.args.join(" ")}_`
       );
@@ -47,7 +47,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     await νℓкуяє.imgB(
       νℓкуяє,
       vcнaт,
-      `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
+      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*`,
       wallpaper[Math.floor(Math.random() * wallpaper.length)].image
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

@@ -47,7 +47,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             "./Gallery/vlkyre.png"
@@ -61,7 +61,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
               "./Gallery/vlkyre.png"
@@ -78,7 +78,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
               "./Gallery/vlkyre.png"

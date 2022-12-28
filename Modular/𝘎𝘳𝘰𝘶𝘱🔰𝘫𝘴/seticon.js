@@ -30,28 +30,28 @@ module.exports = async (
   try {
     if (!vcнaт.isGroup) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
       );
     }
     if (!/image/.test(νℓкуяє.mime)) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
 
@@ -61,7 +61,7 @@ module.exports = async (
     }
     if (/webp/.test(νℓкуяє.mime)) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
 
@@ -77,14 +77,14 @@ module.exports = async (
         νℓкуяє.imgB(
           νℓкуяє,
           vcнaт,
-          `> *Group icone has been changed: ${νℓкуяє.pushname}*`,
+          `> *Group icone has been changed: @${νℓкуяє.Tname || νℓкуяє.pushname}*`,
           media
         )
       )
       .catch((error) => {
         νℓкуяє.fs.unlinkSync(media);
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not change group image!_
 

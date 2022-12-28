@@ -30,21 +30,21 @@ module.exports = async (
   try {
     if (!vcнaт.isGroup) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
       );
@@ -55,7 +55,7 @@ module.exports = async (
       let users = (await mention[0]) || vcнaт.msg.contextInfo.participant;
       if (!users) {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_
 
@@ -67,7 +67,7 @@ module.exports = async (
         await νℓкуяє.groupParticipantsUpdate(vcнaт.chat, [users], "demote");
       } catch {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Check if the person already not an admin!_`
         );
@@ -92,7 +92,7 @@ module.exports = async (
           : "";
       if (!users) {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_
 
@@ -104,7 +104,7 @@ module.exports = async (
         await νℓкуяє.groupParticipantsUpdate(vcнaт.chat, [users], "demote");
       } catch {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Check if the person already not an admin!_`
         );
@@ -123,7 +123,7 @@ module.exports = async (
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Couldn't find any userID in context!_
 

@@ -34,7 +34,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
@@ -44,7 +44,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,

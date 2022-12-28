@@ -34,7 +34,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.slip.advice}`,
         bsoni.url_image
       );
@@ -42,7 +42,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       await νℓкуяє.imgB(
         νℓкуяє,
         vcнaт,
-        `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:* 
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.slip.advice}`,
         "./Gallery/νℓкуяє_beta.png"
       );

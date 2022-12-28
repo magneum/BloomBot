@@ -22,7 +22,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     await νℓкуяє.imgB(
       νℓкуяє,
       vcнaт,
-      `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
 │║⦁ 💻 *laptop:* _4000gold/robbery_

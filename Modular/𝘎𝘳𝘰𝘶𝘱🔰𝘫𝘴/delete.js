@@ -30,7 +30,7 @@ module.exports = async (
   try {
     if (!νℓкуяє.quoted) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image/Video/Text in context!_
 
@@ -42,7 +42,7 @@ module.exports = async (
     let { isBaileys } = νℓкуяє.quoted;
     if (!isBaileys) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Can not delete massage from another userID except mine!_
 

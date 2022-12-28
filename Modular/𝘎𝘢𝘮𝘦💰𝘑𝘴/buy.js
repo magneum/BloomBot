@@ -98,7 +98,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (!νℓкуяє.args) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -110,7 +110,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (νℓкуяє.args.length === 0) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
@@ -147,7 +147,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./Gallery/vlkyre.png"
             );
@@ -176,7 +176,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./Gallery/vlkyre.png"
                 );
@@ -186,7 +186,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -208,7 +208,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
@@ -228,7 +228,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
@@ -248,7 +248,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
                     vcнaт,
-                    `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
@@ -258,7 +258,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./Gallery/vlkyre.png"
@@ -306,7 +306,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -331,7 +331,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -345,7 +345,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -359,7 +359,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./Gallery/vlkyre.png"
@@ -383,7 +383,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
                   vcнaт,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                  `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -398,7 +398,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 

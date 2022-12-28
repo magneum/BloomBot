@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           return await νℓкуяє.imgB(
             νℓкуяє,
             vcнaт,
-            `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             "./Gallery/vlkyre.png"
@@ -60,7 +60,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
               "./Gallery/vlkyre.png"
@@ -87,7 +87,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+              `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,

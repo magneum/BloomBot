@@ -30,21 +30,21 @@ module.exports = async (
   try {
     if (!vcнaт.isGroup) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Bot not Admin!_`
       );
@@ -64,13 +64,13 @@ module.exports = async (
             await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `> *Group have been Opened by: ${νℓкуяє.pushname}*`,
+              `> *Group have been Opened by: @${νℓкуяє.Tname || νℓкуяє.pushname}*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
           vcнaт.reply(
-            `*😥Sorry:* _${νℓкуяє.pushname}_
+            `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
@@ -84,13 +84,13 @@ module.exports = async (
             await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              `> *Group have been Closed by: ${νℓкуяє.pushname}*`,
+              `> *Group have been Closed by: @${νℓкуяє.Tname || νℓкуяє.pushname}*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
           vcнaт.reply(
-            `*😥Sorry:* _${νℓкуяє.pushname}_
+            `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
@@ -112,7 +112,7 @@ module.exports = async (
                 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _${νℓкуяє.pushname}_
+*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -158,7 +158,7 @@ module.exports = async (
                 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _${νℓкуяє.pushname}_
+*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -187,7 +187,7 @@ module.exports = async (
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
       } else {
         return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname}_
+          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Argument Missing!_
 
@@ -199,7 +199,7 @@ module.exports = async (
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Argument Missing!_
 
