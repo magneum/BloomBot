@@ -23,7 +23,7 @@ module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, νid
         vcнaт.chat,
         {
           image: { url: νidē໐ },
-          caption: `*🕊️You:* @${νℓкуяє.Tname}\n*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
           buttons: [
@@ -59,7 +59,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         vcнaт.chat,
         {
           image: { url: νidē໐ },
-          caption: `*🕊️You:* @${νℓкуяє.Tname}\n*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
           buttons: [
@@ -90,7 +90,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         vcнaт.chat,
         {
           image: { url: νidē໐ },
-          caption: `*🕊️You:* @${νℓкуяє.Tname}\n*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz",
           buttons: [
