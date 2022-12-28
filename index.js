@@ -36,6 +36,8 @@ var chalk = require("chalk");
 var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
+var bodyParser = require("body-parser");
+var dboard = require("./mongBase/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
@@ -93,8 +95,48 @@ var msgRetryCounterMap = MessageRetryMap;
     ShowGreen("🦋Info: Vlkyre Router Running in Docker/Node");
   }
 });
-νℓpage.get("/", (req, res) => res.redirect("https://krykenz.github.io/Vlkyre"));
-νℓpage.get("/health", (req, res) => res.send(res));
+
+νℓpage.engine("html", require("ejs").renderFile);
+νℓpage.use(express.static(__dirname + "/views"));
+νℓpage.set("view engine", "html");
+νℓpage.set("views", __dirname);
+
+νℓpage.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+});
+
+νℓpage.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/views/login.html");
+});
+νℓpage.get("/vlkyre", (req, res) => {
+  res.sendFile(__dirname + "/views/vlkyre.html");
+});
+
+νℓpage.post("/login", urlencodedParser, (req, res) => {
+  var phoneNum = req.body.phone.replace(
+    /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
+    ""
+  );
+  dboard.findOne(
+    {
+      ID: phoneNum + "@s.whatsapp.net",
+    },
+    async (error, uBoard) => {
+      if (error) return console.log(error);
+      if (!uBoard) return res.sendFile(__dirname + "/views/dError.html");
+      console.log(uBoard.username);
+      console.log(uBoard.profile);
+      console.log(uBoard);
+      res.render(__dirname + "/views/dboard.html", {
+        uBoard: uBoard,
+      });
+    }
+  );
+});
+νℓpage.listen(
+  process.env.PORT || 5000,
+  console.log("🦋Info:", "http://localhost:5000")
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function кяукєηz() {
   await sequelize.sync();

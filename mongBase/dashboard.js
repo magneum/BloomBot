@@ -1,6 +1,8 @@
 var mongoose = require("mongoose");
 var dBoardSchema = new mongoose.Schema({
   ID: String,
+  profile: String,
+  username: String,
   bite: Number,
   blush: Number,
   bonk: Number,
