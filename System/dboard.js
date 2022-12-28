@@ -143,7 +143,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           {
             gifPlayback: true,
             video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
-            caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+            caption: `*🔖Here, For ${νℓкуяє.pushname}:*
 > Your Dashboard has been made.
 > First watch the video.
 
