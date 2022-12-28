@@ -27,8 +27,8 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
       if (!udBase) {
         new νℓкуяє.dashboard({
           ID: vcнaт.sender,
-          pfp: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          uname: νℓкуяє.pushname,
+          profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
+          username: νℓкуяє.pushname,
           bite: 0,
           blus: 0,
           bonk: 0,
@@ -154,11 +154,10 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           },
           { quoted: vcнaт }
         );
-
         return dback(udBase);
       }
-      udBase.uname = νℓкуяє.pushname;
-      udBase.pfp = 𝕯𝖎𝖘𝖕𝖑𝖆𝖞;
+      udBase.username = `${νℓкуяє.pushname}`;
+      udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return dback(udBase);
     }
   );
