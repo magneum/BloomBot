@@ -9,6 +9,10 @@
 - I am a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 - As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
 
+
+<p align="centre"><img  width="80%" height="80%" img src="https://www.veed.io/view/a9ce17f9-776d-4fce-b7e4-b2d52c8fda75?panel=share" /></p>
+
+
 <h1 align="left">🐧Node Package </h1>
 
 [![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
