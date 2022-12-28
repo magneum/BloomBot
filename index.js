@@ -89,25 +89,23 @@ var getVersionWaweb = () => {
 };
 var msgRetryCounterMap = MessageRetryMap;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-
 νℓpage.engine("html", require("ejs").renderFile);
 νℓpage.use(express.static(__dirname + "/views"));
 νℓpage.set("view engine", "html");
 νℓpage.set("views", __dirname);
 
-νℓpage.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+νℓpage.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
+νℓpage.get("/vlkyre", (request, response) => {
+  response.sendFile(__dirname + "/views/vlkyre.html");
+});
+νℓpage.get("/login", (request, response) => {
+  response.sendFile(__dirname + "/views/login.html");
 });
 
-νℓpage.get("/login", (req, res) => {
-  res.sendFile(__dirname + "/views/login.html");
-});
-νℓpage.get("/vlkyre", (req, res) => {
-  res.sendFile(__dirname + "/views/vlkyre.html");
-});
-
-νℓpage.post("/login", urlencodedParser, (req, res) => {
-  var phoneNum = req.body.phone.replace(
+νℓpage.post("/login", urlencodedParser, (request, response) => {
+  var phoneNum = request.body.phone.replace(
     /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
     ""
   );
@@ -116,12 +114,9 @@ var msgRetryCounterMap = MessageRetryMap;
       ID: phoneNum + "@s.whatsapp.net",
     },
     async (error, uBoard) => {
-      if (error) return console.log(error);
-      if (!uBoard) return res.sendFile(__dirname + "/views/dError.html");
-      console.log(uBoard.username);
-      console.log(uBoard.profile);
-      console.log(uBoard);
-      res.render(__dirname + "/views/dboard.html", {
+      if (error) return ShowRed("🦋Info:", error);
+      if (!uBoard) return response.sendFile(__dirname + "/views/dError.html");
+      response.render(__dirname + "/views/dboard.html", {
         uBoard: uBoard,
       });
     }
@@ -527,8 +522,8 @@ async function кяукєηz() {
     options = {}
   ) => {
     let types = await νℓкуяє.getFile(path, true);
-    let { mime, ext, res, data, filename } = types;
-    if ((res && res.status !== 200) || file.length <= 65536) {
+    let { mime, ext, response, data, filename } = types;
+    if ((response && response.status !== 200) || file.length <= 65536) {
       try {
         throw { json: JSON.parse(file.toString()) };
       } catch (e) {
@@ -658,13 +653,13 @@ async function кяукєηz() {
   };
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.getFile = async (PATH, save) => {
-    let res;
+    let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
       : /^data:.*?\/.*?;base64,/i.test(PATH)
       ? Buffer.from(PATH.split`,`[1], "base64")
       : /^https?:\/\//.test(PATH)
-      ? await (res = await getBuffer(PATH))
+      ? await (response = await getBuffer(PATH))
       : fs.existsSync(PATH)
       ? ((filename = PATH), fs.readFileSync(PATH))
       : typeof PATH === "string"
@@ -680,7 +675,7 @@ async function кяукєηz() {
     );
     if (data && save) fs.promises.writeFile(filename, data);
     return {
-      res,
+      response,
       filename,
       size: await getSizeMedia(data),
       ...type,
