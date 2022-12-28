@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var dBoardSchema = new mongoose.Schema({
   ID: String,
   bite: Number,
-  blus: Number,
+  blush: Number,
   bonk: Number,
   bored: Number,
   confused: Number,
