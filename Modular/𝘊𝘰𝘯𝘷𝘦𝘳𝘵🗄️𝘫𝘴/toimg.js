@@ -21,7 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     if (!νℓкуяє.quoted) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
 
@@ -41,7 +41,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
               νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
             }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _${νℓкуяє.pushname}_
+*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -59,7 +59,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             Found = random + ".webp";
           } else {
             return vcнaт.reply(
-              `*😥Sorry:* _${νℓкуяє.pushname}_
+              `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
 
@@ -79,7 +79,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*`,
+*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*`,
                 footer: `*VLKYRE™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${νℓкуяє.ShowInfo}_
@@ -112,7 +112,7 @@ _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Image in context!_
 

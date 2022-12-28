@@ -21,7 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     if (!νℓкуяє.quoted) {
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Audio in context!_
 
@@ -40,7 +40,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
             νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
           }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _${νℓкуяє.pushname}_
+*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -73,7 +73,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
     } else {
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
       return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname}_
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any Audio in context!_
 
