@@ -103,7 +103,7 @@ var msgRetryCounterMap = MessageRetryMap;
 νℓpage.get("/login", (request, response) => {
   response.sendFile(__dirname + "/views/login.html");
 });
-
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 νℓpage.post("/login", urlencodedParser, (request, response) => {
   var phoneNum = request.body.phone.replace(
     /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
