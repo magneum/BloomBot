@@ -23,7 +23,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
         new νℓкуяє.dashboard({
           ID: vcнaт.sender,
           bite: 0,
-          blus: 0,
+          blush: 0,
           bonk: 0,
           bored: 0,
           confused: 0,
