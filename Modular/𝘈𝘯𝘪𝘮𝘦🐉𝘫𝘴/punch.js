@@ -44,7 +44,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${pfname}
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
@@ -70,7 +70,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${pfname}
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}`,
@@ -90,7 +90,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(animeNew),
-                    caption: `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+                    caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *⚡For:* ${νℓкуяє.pushname}
 *🎋Feeling:* ${pfname}`,
                   },
