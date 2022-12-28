@@ -44,6 +44,7 @@
     "crypto": "^1.0.1",
     "discord-phub": "^1.0.7",
     "discord-xp": "^1.1.16",
+    "djs-chatbot": "^1.0.1",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
