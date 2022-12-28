@@ -28,7 +28,6 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
         new νℓкуяє.dashboard({
           ID: vcнaт.sender,
           pfp: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          passkey: vcнaт.chat,
           bite: 0,
           blus: 0,
           bonk: 0,
