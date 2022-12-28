@@ -71,15 +71,19 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   gifPlayback: true,
                   video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
                   caption: `*📢Verification Needed*
-*😥Sorry:* _${νℓкуяє.pushname}_
+                  *😥Sorry:* _${νℓкуяє.pushname}_
 
-
-> Your Dashboard has been made.
-> First watch the video.
+> You need to be verified to use bot...
 
 *⚙️Webpage:*
-> bit.ly/krykenz
-> Login To Your Dashboard`,
+> Visit: bit.ly/krykenz
+> Head Over To _vlkyre home_
+> Join Vlkyre official Group
+> Get Auto Verified
+          
+          *⚙️Webpage:*
+          > bit.ly/krykenz
+          > Login To Your Dashboard`,
                   mentions: [vcнaт.sender],
                 },
                 { quoted: vcнaт }
