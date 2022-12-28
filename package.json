@@ -89,6 +89,7 @@
     "sequelize": "^6.7.0",
     "shentai": "^2.0.0",
     "simple-git": "^3.14.1",
+    "smart-botto": "^1.1.1",
     "spinnies": "^0.5.1",
     "sqlite3": "^5.1.2",
     "tesseract.js": "^2.1.5",
