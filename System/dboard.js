@@ -13,11 +13,6 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
 module.exports = async (νℓкуяє, vcнaт, dback) => {
-  try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
-  } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
-  }
   await νℓкуяє.dashboard.findOne(
     {
       ID: vcнaт.sender,
@@ -27,8 +22,6 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
       if (!udBase) {
         new νℓкуяє.dashboard({
           ID: vcнaт.sender,
-          profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: νℓкуяє.pushname,
           bite: 0,
           blus: 0,
           bonk: 0,
@@ -156,8 +149,6 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
         );
         return dback(udBase);
       }
-      udBase.username = `${νℓкуяє.pushname}`;
-      udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return dback(udBase);
     }
   );
