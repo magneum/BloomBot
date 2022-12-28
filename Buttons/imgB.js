@@ -12,106 +12,109 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
-if (νℓкуяє.isReply) {
-var receiver =
-νℓкуяє.mtype == "extendedTextMessage" &&
-νℓкуяє.message.extendedTextMessage.contextInfo != null
-? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
-: "";
-await νℓкуяє
-.sendMessage(
-vcнaт.chat,
-{
-image: { url: imåge },
-caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
+  if (νℓкуяє.isReply) {
+    var receiver =
+      νℓкуяє.mtype == "extendedTextMessage" &&
+      νℓкуяє.message.extendedTextMessage.contextInfo != null
+        ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
+        : "";
+    await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: imåge },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
-buttons: [
-{
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
-{
-buttonId: `${νℓкуяє.prefix}Vlkyre`,
-buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
-quoted: vcнaт,
-}
-)
-.catch((e) => console.log(e));
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else if (νℓкуяє.mentionByTag) {
-var receiver =
-νℓкуяє.mtype == "extendedTextMessage" &&
-νℓкуяє.message.extendedTextMessage.contextInfo != null
-? νℓкуяє.message.extendedTextMessage.contextInfo.mentionedJid
-: [];
-await νℓкуяє
-.sendMessage(
-vcнaт.chat,
-{
-image: { url: imåge },
-caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Dashboard`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [νℓкуяє.sender, receiver],
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else if (νℓкуяє.mentionByTag) {
+    var receiver =
+      νℓкуяє.mtype == "extendedTextMessage" &&
+      νℓкуяє.message.extendedTextMessage.contextInfo != null
+        ? νℓкуяє.message.extendedTextMessage.contextInfo.mentionedJid
+        : [];
+    await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: imåge },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
-buttons: [
-{
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
-{
-buttonId: `${νℓкуяє.prefix}Vlkyre`,
-buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
-quoted: vcнaт,
-}
-)
-.catch((e) => console.log(e));
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} else {
-return await νℓкуяє
-.sendMessage(
-vcнaт.chat,
-{
-image: { url: imåge },
-caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Dashboard`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [νℓкуяє.sender, receiver],
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else {
+    return await νℓкуяє
+      .sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: imåge },
+          caption: `*🕊️You:* ${νℓкуяє.pushname || "null"}\n*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
-buttons: [
-{
-buttonId: `${νℓкуяє.prefix}Dashboard`,
-buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-type: 1,
-},
-{
-buttonId: `${νℓкуяє.prefix}Vlkyre`,
-buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
-type: 1,
-},
-],
-headerType: 4,
-},
-{
-contextInfo: { mentionedJid: [νℓкуяє.sender, receiver] },
-quoted: vcнaт,
-}
-)
-.catch((e) => console.log(e));
-}
+          footer: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz`,
+          buttons: [
+            {
+              buttonId: `${νℓкуяє.prefix}Dashboard`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${νℓкуяє.prefix}Vlkyre`,
+              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [νℓкуяє.sender],
+        },
+        {
+          contextInfo: { mentionedJid: [νℓкуяє.sender] },
+          quoted: vcнaт,
+        }
+      )
+      .catch((e) => console.log(e));
+  }
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
