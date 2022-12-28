@@ -10,7 +10,7 @@
 - As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
 
 
-<p align="centre"><img  width="80%" height="80%" img src="https://www.veed.io/view/a9ce17f9-776d-4fce-b7e4-b2d52c8fda75?panel=share" /></p>
+<iframe src="https://www.veed.io/embed/a9ce17f9-776d-4fce-b7e4-b2d52c8fda75" width="744" height="504" frameborder="0" title="2022-12-28 09-24-23" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 <h1 align="left">🐧Node Package </h1>
