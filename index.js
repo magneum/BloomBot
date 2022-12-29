@@ -178,33 +178,33 @@ store.bind(νℓкуяє.ev);
 νℓкуяє.ev.on("connection.update", async (update) => {
 var { lastDisconnect, connection, qr } = update;
 if (connection == "open")
-console.log("🦋Info:", "Successfully connected to whatsapp...");
+ShowGreen("🦋Info:", "Successfully connected to whatsapp...");
 if (connection === "close") {
-console.log("🦋Info:", "Connection terminated...");
+ShowRed("🦋Info:", "Connection terminated...");
 var reason = new Boom(lastDisconnect.error).output.statusCode;
 if (reason === DisconnectReason.badSession) {
-console.log("🦋Info:", "Bad Session File.Please Scan Again...");
+ShowRed("🦋Info:", "Bad Session File.Please Scan Again...");
 process.exit(0);
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log("🦋Info:", "Connection closed.Reconnecting....");
+ShowYellow("🦋Info:", "Connection closed.Reconnecting....");
 await кяукєηz();
 } else if (reason === DisconnectReason.connectionLost) {
-console.log("🦋Info:", "Connection Lost from Server.Reconnecting...");
+ShowYellow("🦋Info:", "Connection Lost from Server.Reconnecting...");
 await кяукєηz();
 } else if (reason === DisconnectReason.connectionReplaced) {
-console.log(
+ShowRed(
 "🦋Info:",
 "Connection Replaced, Another New Session Opened.Please Close Current Session First..."
 );
 await кяукєηz();
 } else if (reason === DisconnectReason.loggedOut) {
-console.log("🦋Info:", "Device Logged Out.Please Scan Again...");
+ShowBlue("🦋Info:", "Device Logged Out.Please Scan Again...");
 await кяукєηz();
 } else if (reason === DisconnectReason.restartRequired) {
-console.log("🦋Info:", "Restart Required.Restarting...");
+ShowBlue("🦋Info:", "Restart Required.Restarting...");
 await кяукєηz();
 } else if (reason === DisconnectReason.timedOut) {
-console.log("🦋Info:", "Connection Timedout.Reconnecting...");
+ShowYellow("🦋Info:", "Connection Timedout.Reconnecting...");
 await кяукєηz();
 } else {
 νℓкуяє.end(
@@ -214,8 +214,7 @@ await кяукєηz();
 }
 if (qr) {
 console.clear();
-console.log(qr);
-console.log("🦋Info:", "New QR generated.Please Scan...");
+ShowBlue("🦋Info:", "New QR generated.Please Scan...");
 }
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
