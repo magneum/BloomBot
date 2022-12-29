@@ -161,12 +161,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.randomMC = require("random-material-color");
   νℓкуяє.yClient = require("krytek-ytdl");
   νℓкуяє.ySearch = require("krytek-yts");
-
   νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
-  νℓкуяє.First_Try_Lyrics = require("genius-lyrics");
-  νℓкуяє.Third_Try_Lyrics = require("music-lyrics");
-  νℓкуяє.Second_Try_Lyrics = require("songlyrics").default;
-  νℓкуяє.GeniusClient = new νℓкуяє.First_Try_Lyrics.First_Try_Lyrics.Client();
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
