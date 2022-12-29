@@ -96,6 +96,7 @@
     "railway-yts": "^0.0.1",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
+    "redis": "^4.5.1",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
     "sequelize": "^6.7.0",
