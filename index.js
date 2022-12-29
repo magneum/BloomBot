@@ -38,9 +38,6 @@ var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 const { createClient } = require("redis");
-const redisClient = createClient({
-  url: process.env.REDIS_URL,
-});
 var dboard = require("./mongBase/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
@@ -152,6 +149,13 @@ async function кяукєηz() {
       })
       .then(ShowGreen("🦋Info:", "Connected with Mongoose."));
   })().catch((error) => ShowRed("🦋Info:", error));
+  const redisClient = createClient({
+    url: REDIS_URL,
+    socket: {
+      tls: true,
+      servername: REDISHOST,
+    },
+  });
   (async () => {
     await redisClient.connect();
   })();
