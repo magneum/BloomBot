@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "version": "7.1.4",
+  "version": "7.1.5",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "build": "npm install --force --silent"
+    "build": "npm install vlkyre@latest --force --silent"
   },
   "depecrated": false,
   "directories": {
@@ -109,7 +109,7 @@
     "tinyurl-api": "^1.0.1",
     "unofficial-carbon-now": "^1.0.6",
     "util": "^0.12.4",
-    "vlkyre": "*",
+    "vlkyre": "^7.1.5",
     "wa-sticker-formatter": "^4.3.2",
     "xfarr-api": "^1.0.3"
   }
