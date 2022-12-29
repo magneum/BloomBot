@@ -148,16 +148,15 @@ ShowRed("🦋Info:", "Unable to Connected with Mongoose.");
 console.log(error);
 })
 .then(ShowGreen("🦋Info:", "Connected with Mongoose."));
-await redisClient.connect();
+// await redisClient.connect();
 })().catch((error) => ShowRed("🦋Info:", error));
-redisClient.on("ready", () => {
-ShowGreen("🦋Info:", "Connected with Redis.");
-});
-redisClient.on("error", (error) => {
-ShowRed("🦋Info:", error);
-ShowRed("Error in the Connection with Redis.");
-});
-
+// redisClient.on("ready", () => {
+// ShowGreen("🦋Info:", "Connected with Redis.");
+// });
+// redisClient.on("error", (error) => {
+// ShowRed("🦋Info:", error);
+// ShowRed("Error in the Connection with Redis.");
+// });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
