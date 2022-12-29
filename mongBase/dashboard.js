@@ -3,6 +3,7 @@ var dBoardSchema = new mongoose.Schema({
   ID: String,
   profile: String,
   username: String,
+
   bite: Number,
   blush: Number,
   bonk: Number,
@@ -31,6 +32,7 @@ var dBoardSchema = new mongoose.Schema({
   wink: Number,
   yeet: Number,
   yes: Number,
+
   sticker: Number,
   tinyurl: Number,
   toimg: Number,
@@ -38,7 +40,10 @@ var dBoardSchema = new mongoose.Schema({
   carbon: Number,
   ship: Number,
   tts: Number,
+
   youtube: Number,
+
+  panning: Number,
   bassbost: Number,
   echo: Number,
   flanger: Number,
@@ -53,6 +58,7 @@ var dBoardSchema = new mongoose.Schema({
   surround: Number,
   vaporwave: Number,
   vibrato: Number,
+
   balance: Number,
   buy: Number,
   daily: Number,
@@ -64,6 +70,7 @@ var dBoardSchema = new mongoose.Schema({
   store: Number,
   work: Number,
   zoo: Number,
+
   antilink: Number,
   delete: Number,
   demote: Number,
@@ -73,11 +80,13 @@ var dBoardSchema = new mongoose.Schema({
   setdesc: Number,
   seticon: Number,
   tagall: Number,
+
   image: Number,
   neko: Number,
   pinterest: Number,
   waifu: Number,
   wallpaper: Number,
+
   advice: Number,
   anime: Number,
   fact: Number,
@@ -94,7 +103,8 @@ var dBoardSchema = new mongoose.Schema({
   meme: Number,
   quote: Number,
   reddit: Number,
-  yt8d: Number,
+
+  ytpanning: Number,
   ytbassboost: Number,
   ytecho: Number,
   ytflanger: Number,
@@ -126,6 +136,31 @@ var dBoardSchema = new mongoose.Schema({
   rules: Number,
   unban: Number,
   verify: Number,
+
+  ass: Number,
+  bdsm: Number,
+  blowjob: Number,
+  cum: Number,
+  doujin: Number,
+  feet: Number,
+  femdom: Number,
+  foxgirl: Number,
+  glasses: Number,
+  hentai: Number,
+  maid: Number,
+  masturbation: Number,
+  netorare: Number,
+  orgy: Number,
+  panties: Number,
+  pussy: Number,
+  school: Number,
+  succubus: Number,
+  tentacles: Number,
+  thighs: Number,
+  uglyBastard: Number,
+  uniform: Number,
+  yuri: Number,
+  zettaiRyouiki: Number,
 
   help: Number,
   vlkyre: Number,

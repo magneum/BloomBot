@@ -69,6 +69,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
 
           youtube: 0,
 
+          panning: 0,
           bassbost: 0,
           echo: 0,
           flanger: 0,
@@ -97,7 +98,6 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           zoo: 0,
 
           antilink: 0,
-          broadcast: 0,
           delete: 0,
           demote: 0,
           group: 0,
@@ -130,6 +130,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           quote: 0,
           reddit: 0,
 
+          ytpanning: 0,
           ytbassboost: 0,
           ytecho: 0,
           ytflanger: 0,
@@ -162,6 +163,31 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           unban: 0,
           verify: 0,
 
+          ass: 0,
+          bdsm: 0,
+          blowjob: 0,
+          cum: 0,
+          doujin: 0,
+          feet: 0,
+          femdom: 0,
+          foxgirl: 0,
+          glasses: 0,
+          hentai: 0,
+          maid: 0,
+          masturbation: 0,
+          netorare: 0,
+          orgy: 0,
+          panties: 0,
+          pussy: 0,
+          school: 0,
+          succubus: 0,
+          tentacles: 0,
+          thighs: 0,
+          uglyBastard: 0,
+          uniform: 0,
+          yuri: 0,
+          zettaiRyouiki: 0,
+
           help: 0,
           vlkyre: 0,
           dashboard: 0,
@@ -188,7 +214,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
             video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
             caption: `*🔖Here, For ${νℓкуяє.pushname}:*
 > Your Dashboard has been made.
-> First watch the video.
+> Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
 > bit.ly/krykenz

@@ -47,7 +47,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-          "./Gallery/vlkyre.png"
+          "./Gallery/vlkyre.jpg"
         );
       } else {
         return await νℓкуяє.imgB(
@@ -55,7 +55,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
           vcнaт,
           `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *💰Balance:* ${data.money}`,
-          "./Gallery/vlkyre.png"
+          "./Gallery/vlkyre.jpg"
         );
       }
     }
