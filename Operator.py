@@ -12,5 +12,5 @@
 # ╚════════════╝
 # ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 import os
-os.system("python3 🐍𝖛𝖑𝖐𝖕𝖞.py")
+os.system("python3 🐍Update.py")
 os.system("forever --minUptime 1000 --spinSleepTime 1000 index.js --color")
