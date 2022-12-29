@@ -62,6 +62,7 @@
     "human-readable": "^0.2.1",
     "hxz-api": "^1.0.1",
     "image-to-pdf": "^1.0.0",
+    "ioredis": "^5.2.4",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
     "krytek-ytdl": "^1.0.0",
