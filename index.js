@@ -34,10 +34,8 @@ var path = require("path");
 var pino = require("pino");
 var chalk = require("chalk");
 var express = require("express");
-var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
-const { createClient } = require("redis");
 var dboard = require("./mongBase/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
@@ -62,13 +60,6 @@ function ShowYellow(Topic, Text) {
   var TShow = chalk.hex("#8B8000").bold(Topic);
   var Show = chalk.hex("#ECCF8D").italic.bold(Text);
   console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-}
-if (MONGO_URL === undefined || null) {
-  ShowRed(
-    "🦋Info:",
-    "No MONGO_URL Found.\nIf using SELF-HOST method, make sure .env file is present."
-  );
-  process.exit(0);
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var νℓpage = express();
@@ -135,38 +126,6 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 async function кяукєηz() {
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
-  (async () => {
-    await monGoose
-      .connect(MONGO_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-      })
-      .catch((error) => {
-        ShowRed("🦋Info:", "Unable to Connected with Mongoose.");
-        console.log(error);
-      })
-      .then(ShowGreen("🦋Info:", "Connected with Mongoose."));
-  })().catch((error) => ShowRed("🦋Info:", error));
-  const redisClient = createClient({
-    url: REDIS_URL,
-    socket: {
-      tls: true,
-      servername: REDISHOST,
-    },
-  });
-  (async () => {
-    await redisClient.connect();
-  })();
-  redisClient.on("ready", () => {
-    ShowGreen("🦋Info:", "Connected with Redis.");
-  });
-  redisClient.on("error", (error) => {
-    ShowRed("🦋Info:", error);
-    ShowRed("Error in the Connection with Redis.");
-  });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   var νℓкуяє = кяуνℓ({
     auth: state,
     msgRetryCounterMap,
