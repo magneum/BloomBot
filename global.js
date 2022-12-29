@@ -15,7 +15,6 @@ require("dotenv");
 var fs = require("fs");
 var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
-console.log("🦋Info:", "Found dotenv.");
 require("dotenv").config({ path: ".env" });
 }
 var mod = process.env.mods;
