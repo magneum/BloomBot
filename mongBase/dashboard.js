@@ -162,7 +162,7 @@ var dBoardSchema = new mongoose.Schema({
   yuri: Number,
   zettaiRyouiki: Number,
 
-  help: Number,
+  menu: Number,
   vlkyre: Number,
   dashboard: Number,
 

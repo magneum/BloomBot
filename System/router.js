@@ -59,7 +59,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "help":
     case "menu":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.help = dback.help + 1;
+        dback.menu = dback.menu + 1;
         require("../Modular/help")(νℓкуяє, vcнaт);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });

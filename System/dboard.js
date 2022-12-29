@@ -11,6 +11,7 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 require("../global.js");
 module.exports = async (νℓкуяє, vcнaт, dback) => {
   try {
@@ -188,7 +189,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           yuri: 0,
           zettaiRyouiki: 0,
 
-          help: 0,
+          menu: 0,
           vlkyre: 0,
           dashboard: 0,
 
@@ -240,7 +241,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ Forking Repo is fine. But if you edit something we will not provide any menu.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
