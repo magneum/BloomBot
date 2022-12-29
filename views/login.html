@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<title>Vlkyre Whatsapp User Bot By KryKenz</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    p {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h1 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .zoomIn {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .zoomIn img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .zoomIn:hover img {
+        transform: scale(1.5);
+    }
+
+    #loader {
+        border: 20px solid #f3f3f3;
+        border-radius: 200%;
+        border-top: 20px solid #833025;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+
+<body style="background-color: #010717">
+    <div id="loader" class="center"></div>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+    <div id="ten"></div>
+    <script src="./script.js"></script>
+    <header class="text-amber-100 body-font">
+        <div class="relative">
+            <img src="https://i.postimg.cc/Mp8vwG7Q/cartoon-cat-and-chickens-0ichlucmjchzc7bp.jpg"
+                class="absolute inset-0 object-cover w-full h-full" alt="" />
+            <div class="relative bg-stone-900 bg-opacity-75">
+                <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div class="flex flex-col items-center justify-between xl:flex-row">
+                        <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                            <h2
+                                class="mb-5 text-xl font-bold tracking-tight text-amber-100 sm:text-4xl sm:leading-none justify-center">
+                                Everything you<br class="hidden md:block" />can imagine is
+                                <span class="inline-block text-amber-500"><i> real </i></span>
+                            </h2>
+                            <p class="lg:w-2/3 text-amber-100">My name is <span
+                                    class="inline-block text-amber-500">KryKenz(▀͜͞ʖ▀) ▄︻̷̿┻̿═━━</span>
+                                <br>I am a bot developer.<br>In Here you can surf all the works I have done including
+                                Vlkyre, Npm Packages and many more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 0.5px; border-top: 2px solid #ffd96fc0" />
+        <hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
+    </header>
+    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║ 
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.  
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+    <section style="background-color: #010611">
+        <div class="flex min-h-full items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div class="w-full max-w-md space-y-8">
+                <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                    <p class="title-font sm:text-3xl text-3xl mb-4 font-medium text-amber-200">! Country Code Needed !
+                    </p>
+                    <div class="text-center lg:w-2/3 w-full">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-amber-400">Sign in to your
+                            Dashboard</h1>
+
+
+
+                        <form class="mt-8 space-y-6" action="#" method="POST">
+                            <input type="hidden" name="remember" value="true">
+                            <div class="-space-y-px rounded-md shadow-sm">
+                                <div>
+                                    <label for="phone" class="sr-only">phone</label>
+                                    <input id="phone" name="phone" type="phone" autocomplete="phone" required
+                                        class="relative block w-full appearance-none rounded-none rounded-l border border-amber-300 px-3 py-2 text-amber-200 placeholder-amber-400 focus:z-10 focus:border-amber-500 focus:outline-none focus:ring-amber-900 sm:text-sm"
+                                        placeholder="phone">
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="group relative flex w-full justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                        <svg class="h-5 w-5 text-stone-900 group-hover:text-amber-400"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                    Sign in
+                                </button>
+                            </div>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"></nav>
+    <hr style="height: 0.5px; border-top: 2px solid #ffd96fc0" />
+    <hr style="height: 0.5px; border-top: 2px solid #ff4727c0" />
+
+    <footer class="text-amber-400 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-amber-500">
+                <span class="ml-3 text-xl hover:text-amber-500"><b>❝ Coded By KryKenz ❞</b></span>
+            </a>
+            <p class="text-sm text-amber-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-amber-800 sm:py-2 sm:mt-0 mt-4">
+                <b>Since 2021 and Forever </b>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-amber-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-amber-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-amber-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-amber-400">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
