@@ -64,10 +64,9 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
-    case "db":
     case "dashboard":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.help = dback.help + 1;
+        dback.dashboard = dback.dashboard + 1;
         require("../Modular/dashboard")(νℓкуяє, vcнaт);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
