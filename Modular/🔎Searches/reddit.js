@@ -17,30 +17,21 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
+module.exports = async (
+  νℓкуяє,
+  vcнaт,
+  gmeta,
+  isAdmin,
+  groupName,
+  isBotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
-    if (!νℓкуяє.args.join(" ")) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+    return vcнaт.reply(
+      `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
-> _No Reddit Topic Given!_
-
-*⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} topic_`
-      );
-    }
-    var кяуяєs = await νℓкуяє.axios.get(
-      "https://meme-api.herokuapp.com/gimme/" + νℓкуяє.args.join(" ") + "/"
-    );
-    await νℓкуяє.imgB(
-      νℓкуяє,
-      vcнaт,
-      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
-> *🖌️Title:* ${response.data.title}
-> *👨‍🎨Author:* ${response.data.author}
-> *🎏Subreddit:* ${response.data.subreddit}
-> *🌐Post:* ${response.data.postLink}`,
-      кяуяєs.data.url
+> _This Command is not yet ready for public usage!_`
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {

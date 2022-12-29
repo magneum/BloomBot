@@ -31,16 +31,21 @@
 You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
 Just Follow These Setps.
 
-> rm -rf node_modules && npm i vlkyre --force
+{
+> npm install vlkyre --force
 or
-> rm -rf node_modules && yarn add vlkyre --ignore-engines
+> yarn add vlkyre --ignore-engines
+}
 
 📍 SET ENVIRONMENT VARIABLES:
-> export ATLAS_URL= your mongodb url string
+> export MONGO_URL= your mongodb url string
 > (optional) export DATABASE_URL= your postgres url string
 
 📍 RUN VLKYRE
-> node node_modules/vlkyre
+> git clone --branch krytek https://github.com/KryKenz/Vlkyre
+> git init --initial-branch=krytek && git fetch origin krytek && git reset --hard origin/krytek
+> pip install -r requirements.txt && npm install vlkyre --force
+> python Operator.py
 > follow the on-screen prompts and have fun!
 ```
 
