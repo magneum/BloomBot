@@ -21,7 +21,10 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     var animeOld = vcнaт.chat + ".gif";
     var animeNew = Math.random() + ".mp4";
-    var animeLink = await νℓкуяє.Anime.nervous();
+    var response = await νℓкуяє.fetch(
+      "https://krykenz-krykenz.koyeb.app/animation/" + `${pfname}`
+    );
+    var animeLink = await response.text();
     νℓкуяє
       .request(animeLink)
       .pipe(νℓкуяє.fs.createWriteStream(animeOld))
