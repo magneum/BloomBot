@@ -48,9 +48,14 @@ var { Manga } = require("@shineiichijo/marika");
 var { AnimeWallpaper } = require("anime-wallpaper");
 var { Doujin } = require("@shineiichijo/nhentai-pdf");
 var { exec, spawn, execSync } = require("child_process");
-let { DownloaderHelper } = require("node-downloader-helper");
+var { DownloaderHelper } = require("node-downloader-helper");
 var { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
 var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+var ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
+var ffprobe = require("@ffprobe-installer/ffprobe");
+var ffmpeg = require("fluent-ffmpeg")()
+  .setFfprobePath(ffprobe.path)
+  .setFfmpegPath(ffmpegInstaller.path);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.performance = performance;
@@ -139,7 +144,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.axios = require("axios");
   νℓкуяє.chalk = require("chalk");
   νℓкуяє.playdl = require("play-dl");
-  νℓкуяє.FFmpeg = require("fluent-ffmpeg");
   νℓкуяє.request = require("request");
   νℓкуяє.xfar = require("xfarr-api");
   νℓкуяє.cron = require("node-cron");
@@ -154,7 +158,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.FastHub = require("simple-git")();
   νℓкуяє.speed = require("performance-now");
   νℓкуяє.moment = require("moment-timezone");
-  νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   νℓкуяє.Carbon = require("unofficial-carbon-now");
   νℓкуяє.Levels = require("discord-xp");
   νℓкуяє.canvacord = require("canvacord");
@@ -162,6 +165,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.yClient = require("krytek-ytdl");
   νℓкуяє.ySearch = require("krytek-yts");
   νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
+  νℓкуяє.ffmpeg = ffmpeg;
+
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
@@ -178,32 +183,32 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   ];
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   function ShowGreen(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#2D5A27").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#849871").italic.bold(Text);
+    var TShow = νℓкуяє.chalk.hex("#2D5A27").bold(Topic);
+    var Show = νℓкуяє.chalk.hex("#849871").italic.bold(Text);
     console.log(
       νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
       νℓкуяє.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#008B8B").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#818d94").italic.bold(Text);
+    var TShow = νℓкуяє.chalk.hex("#008B8B").bold(Topic);
+    var Show = νℓкуяє.chalk.hex("#818d94").italic.bold(Text);
     console.log(
       νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
       νℓкуяє.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
+    var TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
+    var Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
       νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
       νℓкуяє.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#8B8000").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#ECCF8D").italic.bold(Text);
+    var TShow = νℓкуяє.chalk.hex("#8B8000").bold(Topic);
+    var Show = νℓкуяє.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
       νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
       νℓкуяє.chalk.black(Show)
@@ -213,7 +218,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     return Math.floor(Math.random() * (max - min) + min);
   }
   function clearStorage(files) {
-    for (const file of files) {
+    for (var file of files) {
       νℓкуяє.fs.unlink(file, (err) => {
         if (err) throw err;
       });
