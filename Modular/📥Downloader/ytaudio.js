@@ -44,9 +44,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   νℓкуяє
     .axios({
       method: "get",
-      url:
-        "https://03t04t-5000.preview.csb.app/ytdownload/" +
-        gotArgument.replace(" ", ""),
+      url: `${KryTek_URL}/ytdownload/` + gotArgument.replace(" ", ""),
       headers: {},
     })
     .then(async function (response) {
@@ -82,7 +80,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
         νℓкуяє
           .FFmpeg(response.data.DL_AUDIO)
-          .audioBitrate(320)
+          // .audioBitrate(320)
           .toFormat("ipod")
           .saveToFile(`${response.data.ID}.mp3`)
           .on("end", async () => {

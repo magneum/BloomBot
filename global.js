@@ -53,6 +53,7 @@ global.prefix = process.env.prefix || "!";
 global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
 global.upbranch = process.env.upbranch;
+global.KryTek_URL = process.env.KryTek_URL || "https://ipjon1-5000.preview.csb.app";
 global.nameApi = {
   nrtm: "https://nurutomo.herokuapp.com",
   dzx: "https://api.dhamzxploit.my.id",

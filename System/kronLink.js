@@ -242,6 +242,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.pgdb = DATABASE_URL;
   νℓкуяє.ShowInfo = ShowInfo;
   νℓкуяє.MONGO_URL = MONGO_URL;
+  νℓкуяє.KryTek_URL = KryTek_URL;
   νℓкуяє.author = author;
   νℓкуяє.prefix = prefix;
   νℓкуяє.mods = mods;

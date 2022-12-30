@@ -21,9 +21,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   try {
     var animeOld = vcнaт.chat + ".gif";
     var animeNew = Math.random() + ".mp4";
-    var response = await νℓкуяє.fetch(
-      "https://krykenz-krykenz.koyeb.app/animation/" + `${pfname}`
-    );
+    var response = await νℓкуяє.fetch(`${KryTek_URL}` + `${pfname}`);
     var animeLink = await response.text();
     νℓкуяє
       .request(animeLink)
