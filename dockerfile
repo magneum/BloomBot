@@ -7,7 +7,6 @@ jq \
 git \
 curl \
 wget \
-ffmpeg \
 bpm-tools \
 opus-tools \
 python3-pip \
