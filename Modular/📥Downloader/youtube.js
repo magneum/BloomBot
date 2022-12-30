@@ -100,7 +100,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
                       renderLargerThumbnail: true,
                       thumbnailUrl: response.data.THUMB,
                       mediaUrl: response.data.LINK,
-                      mediaType: 2,
+                      mediaType: 1,
                       thumbnail: await νℓкуяє.getBuffer(response.data.THUMB),
                       sourceUrl: "https://bit.ly/krykenz",
                     },
