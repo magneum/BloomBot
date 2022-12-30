@@ -22,5 +22,5 @@ RUN git init --initial-branch=krytek
 RUN git fetch origin krytek
 RUN git reset --hard origin/krytek
 RUN pip install -r requirements.txt 
-RUN yarn install vlkyre@latest --ignore-engines
+RUN yarn add vlkyre@latest --ignore-engines
 CMD python Operator.py
