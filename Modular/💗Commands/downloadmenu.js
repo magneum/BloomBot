@@ -36,8 +36,16 @@ vcнaт,
 │║⦁ ${νℓкуяє.prefix}ytplay
 │║⦁ ${νℓкуяє.prefix}ytaudio
 │║⦁ ${νℓкуяє.prefix}ytmusic
-│║⦁ ${νℓкуяє.prefix}youtube
 │║⦁ ${νℓкуяє.prefix}youtubemusic
+│║⦁ 
+│║⦁ ${νℓкуяє.prefix}ytv
+│║⦁ ${νℓкуяє.prefix}watch
+│║⦁ ${νℓкуяє.prefix}stream
+│║⦁ ${νℓкуяє.prefix}ytmp4
+│║⦁ ${νℓкуяє.prefix}video
+│║⦁ ${νℓкуяє.prefix}ytwatch
+│║⦁ ${νℓкуяє.prefix}ytvideo
+│║⦁ ${νℓкуяє.prefix}youtubevideo
 ┕╚═══════⋑`,
 "./Gallery/νℓкуяє_dark.jpg"
 );

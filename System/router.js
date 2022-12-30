@@ -81,11 +81,24 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
     case "ytplay":
     case "ytaudio":
     case "ytmusic":
-    case "youtube":
     case "youtubemusic":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.youtube = dback.youtube + 1;
-        require("../Modular/📥Downloader/youtube")(νℓкуяє, vcнaт);
+        dback.ytaudio = dback.ytaudio + 1;
+        require("../Modular/📥Downloader/ytaudio")(νℓкуяє, vcнaт);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "ytv":
+    case "watch":
+    case "stream":
+    case "ytmp4":
+    case "video":
+    case "ytwatch":
+    case "ytvideo":
+    case "youtubevideo":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.ytvideo = dback.ytvideo + 1;
+        require("../Modular/📥Downloader/ytvideo")(νℓкуяє, vcнaт);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;

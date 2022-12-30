@@ -68,7 +68,8 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           ship: 0,
           tts: 0,
 
-          youtube: 0,
+          ytaudio: 0,
+          ytvideo: 0,
 
           panning: 0,
           bassbost: 0,

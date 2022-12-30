@@ -41,7 +41,8 @@ var dBoardSchema = new mongoose.Schema({
   ship: Number,
   tts: Number,
 
-  youtube: Number,
+  ytaudio: Number,
+  ytvideo: Number,
 
   panning: Number,
   bassbost: Number,
