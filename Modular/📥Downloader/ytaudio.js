@@ -79,28 +79,36 @@ module.exports = async (νℓкуяє, vcнaт) => {
 *📜Description:* ${response.data.DESCRIPTION}`,
           response.data.THUMB
         );
-        await νℓкуяє.sendMessage(
-          vcнaт.chat,
-          {
-            audio: { url: response.data.DL_AUDIO },
-            mimetype: "audio/mpeg",
-            fileName: response.data.TITLE + ".mp3",
-            headerType: 4,
-            contextInfo: {
-              externalAdReply: {
-                title: response.data.TITLE,
-                body: "❣️Made by KryKenz.",
-                renderLargerThumbnail: true,
-                thumbnailUrl: response.data.THUMB,
-                mediaUrl: response.data.LINK,
-                mediaType: 1,
-                thumbnail: await νℓкуяє.getBuffer(response.data.THUMB),
-                sourceUrl: "https://bit.ly/krykenz",
+
+        νℓкуяє
+          .FFmpeg(response.data.DL_AUDIO)
+          .audioBitrate(320)
+          .toFormat("ipod")
+          .saveToFile(`${response.data.ID}.mp3`)
+          .on("end", async () => {
+            await νℓкуяє.sendMessage(
+              vcнaт.chat,
+              {
+                audio: νℓкуяє.fs.readFileSync(`${response.data.ID}.mp3`),
+                mimetype: "audio/mpeg",
+                fileName: response.data.TITLE + ".mp3",
+                headerType: 4,
+                contextInfo: {
+                  externalAdReply: {
+                    title: response.data.TITLE,
+                    body: "❣️Made by KryKenz.",
+                    renderLargerThumbnail: true,
+                    thumbnailUrl: response.data.THUMB,
+                    mediaUrl: response.data.LINK,
+                    mediaType: 2,
+                    thumbnail: await νℓкуяє.getBuffer(response.data.THUMB),
+                    sourceUrl: "https://bit.ly/krykenz",
+                  },
+                },
               },
-            },
-          },
-          { quoted: vcнaт }
-        );
+              { quoted: vcнaт }
+            );
+          });
       }
     })
     .catch(function (error) {
