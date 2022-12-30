@@ -166,7 +166,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.ySearch = require("krytek-yts");
   νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
   νℓкуяє.ffmpeg = ffmpeg;
-
+  νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
