@@ -18,103 +18,103 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
-  if (!νℓкуяє.args.join(" ")) {
-    return vcнaт.reply(
-      `*😥Sorry:* _@${νℓкуяє.Tname}_
+if (!νℓкуяє.args.join(" ")) {
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage*   
 > _${νℓкуяє.prefix}${pfname} video-name_`
-    );
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  var gotArgument = νℓкуяє.args.join(" ");
-  if (gotArgument.includes("yout")) {
-    return vcнaт.reply(
-      `*😥Sorry:* _@${νℓкуяє.Tname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var gotArgument = νℓкуяє.args.join(" ");
+if (gotArgument.includes("yout")) {
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} video-name_`
-    );
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  νℓкуяє
-    .axios({
-      method: "get",
-      url: `${KryTek_URL}/ytdownload/` + gotArgument.replace(" ", "+"),
-      headers: {
-        accept: "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      },
-    })
-    .then(async function (response) {
-      if (!response) {
-        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє
+.axios({
+method: "get",
+url: `${KryTek_URL}/ytdownload/${gotArgument.replace(" ", "+")}`,
+headers: {
+accept: "*/*",
+"accept-language": "en-US,en;q=0.9",
+"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+},
+})
+.then(async function (response) {
+if (!response) {
+return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 
 *❌Error*
 > _No Music Found!_`);
-      } else if (!response.data.LINK) {
-        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
+} else if (!response.data.LINK) {
+return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 
 *❌Error*
 > _No Music Found!_`);
-      } else if (response.data.DURATION_SECONDS > 600) {
-        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
+} else if (response.data.DURATION_SECONDS > 600) {
+return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 
 *❌Error*
 > _Cannot Download More Then 10m audio!_`);
-      } else {
-        console.log(response.data);
-        await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
+} else {
+console.log(response.data);
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 *🍻Title:* ${response.data.TITLE}
 *🙈Views:* ${response.data.VIEWS}
 *⏰Duration:* ${response.data.TIMESTAMP} | ${response.data.UPLOADED}
 *🔗Link:* ${response.data.LINK}
 *🖊️Author:* ${response.data.AUTHOR_NAME}
 *📜Description:* ${response.data.DESCRIPTION}`,
-          response.data.THUMB
-        );
-        FFmpeg = require("fluent-ffmpeg");
-        FFmpeg(response.data.DL_AUDIO)
-          .audioBitrate(320)
-          .toFormat("ipod")
-          .saveToFile(response.data.req_id + ".mp3")
-          .on("end", async () => {
-            await νℓкуяє.sendMessage(
-              vcнaт.chat,
-              {
-                audio: νℓкуяє.fs.readFileSync(response.data.req_id + ".mp3"),
-                mimetype: "audio/mpeg",
-                fileName: response.data.TITLE + ".mp3",
-                headerType: 4,
-                contextInfo: {
-                  externalAdReply: {
-                    title: response.data.TITLE,
-                    body: "❣️Made by KryKenz.",
-                    renderLargerThumbnail: true,
-                    thumbnailUrl: response.data.THUMB,
-                    mediaUrl: response.data.LINK,
-                    mediaType: 2,
-                    thumbnail: await νℓкуяє.getBuffer(response.data.THUMB),
-                    sourceUrl: "https://bit.ly/krykenz",
-                  },
-                },
-              },
-              { quoted: vcнaт }
-            );
-          });
-      }
-    })
-    .catch(function (error) {
-      return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-    });
+response.data.THUMB
+);
+νℓкуяє.ffmpeg
+.input(response.data.DIRECT_AUDIO)
+.output(response.data._id + ".mp3")
+.on("end", async () => {
+await νℓкуяє.sendMessage(
+vcнaт.chat,
+{
+audio: νℓкуяє.fs.readFileSync(response.data._id + ".mp3"),
+mimetype: "audio/mpeg",
+fileName: response.data.TITLE + ".mp3",
+headerType: 4,
+contextInfo: {
+externalAdReply: {
+title: response.data.TITLE,
+body: "❣️Made by KryKenz.",
+renderLargerThumbnail: true,
+thumbnailUrl: response.data.THUMB,
+mediaUrl: response.data.LINK,
+mediaType: 2,
+thumbnail: await νℓкуяє.getBuffer(response.data.THUMB),
+sourceUrl: "https://bit.ly/krykenz",
+},
+},
+},
+{ quoted: vcнaт }
+);
+})
+.on("error", (error) => νℓкуяє.grab(νℓкуяє, vcнaт, error))
+.run();
+}
+})
+.catch(function (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+});
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
