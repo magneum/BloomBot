@@ -30,43 +30,53 @@ module.exports = async (νℓкуяє, vcнaт) => {
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    var { data: jap } = await νℓкуяє.axios.get(
-      `https://api.jikan.moe/v3/search/anime?q=${νℓкуяє.args.join(" ")}`
-    );
-    if (!jap.results[0].title) {
-      return vcнaт.reply(`*❌Error*
-> Couldn't find any results on the term *${νℓкуяє.args.join(" ")}*`);
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    var { data } = (
-      await νℓкуяє.axios.get(
-        `https://api.jikan.moe/v4/anime?q=${jap.results[0].title}`
-      )
-    ).data;
-    let Found =
-      `*Result:* ${0 + 1} of ${data.length}
-
-*📕Title:* ${data[0].title}/${data[0].title_english}/${data[0].title_japanese}
-*🔖Trailer:* ${data[0].trailer.url}\n` +
-      `*🔍MAL_ID:* ${data[0].mal_id}
-*✴️Type:* ${data[0].type}
-*🎬Episode(s):* ${data[0].episodes}
-*📢Airing:* ${data[0].status}
-*🔔Date:* ${data[0].aired.string}
-` +
-      `*🔱Rating:* ${data[0].rating}
-*⚜️Duration:* ${data[0].duration}
-*♨️Score:* ${data[0].score}
-*📦Studio(s):* ${data[0].studios.map((val) => `${val.name}`).join(", ")}\n` +
-      `*🎞️Genre(s):* ${data[0].genres.map((val) => `${val.name}`).join(", ")}
-*📚Synopsis:* ${data[0].synopsis}`;
-    await νℓкуяє.imgB(
-      νℓкуяє,
-      vcнaт,
-      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
-> ${Found}`,
-      data[0].images.jpg.image_url
-    );
+    νℓкуяє
+      .axios({
+        method: "get",
+        url: `${KryTek_URL}/animation/${pfname}`,
+        headers: {
+          accept: "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+      })
+      .then((response) => {
+        var viper = response.data;
+        νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+MAL_ID: ${viper.id}
+TITLE: ${viper.title}
+EN_TITLE: ${viper.englishTitle}
+JP_TITLE: ${viper.japaneseTitle}
+IMAGE: ${viper.picture}
+PREMIERED: ${viper.premiered}
+WEBPAGE: ${viper.url}
+BROADCAST: ${viper.broadcast}
+GENRES: ${viper.genres}
+TYPE: ${viper.type}
+EPISODES: ${viper.episodes}
+RATING: ${viper.rating}
+AIRED: ${viper.aired}
+SCORE: ${viper.score}
+FAVORITES: ${viper.favorites}
+RANK: ${viper.ranked}
+DURATION: ${viper.duration}
+STUDIOS: ${viper.studios}
+PRODUCERS: ${viper.producers}
+POPULARITY: ${viper.popularity}
+TOTAL_MEMBERS: ${viper.members}
+SCORE_STATUS: ${viper.scoreStats}
+SOURCE: ${viper.source}
+SYNONYMS: ${viper.synonyms}
+STATUS: ${viper.status}
+SYNOPSIS: ${viper.synopsis}
+CHARACTERS: ${viper.charaters}
+STAFF: ${viper.staff}`,
+          response.data.IMAGE
+        );
+      });
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяукєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
     return νℓкуяє.grab(νℓкуяє, vcнaт, error);
