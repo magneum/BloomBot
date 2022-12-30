@@ -83,8 +83,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
           vcнaт.chat,
           {
             video: { url: response.data.DL_AUDIO },
-            mimetype: "video/mp4",
-            fileName: response.data.TITLE + ".mp4",
+            mimetype: "audio/mpeg",
+            fileName: response.data.TITLE + ".mp3",
             headerType: 4,
             contextInfo: {
               externalAdReply: {
