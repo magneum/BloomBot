@@ -82,7 +82,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
         await νℓкуяє.sendMessage(
           vcнaт.chat,
           {
-            video: { url: response.data.DL_AUDIO },
+            audio: { url: response.data.DL_AUDIO },
             mimetype: "audio/mpeg",
             fileName: response.data.TITLE + ".mp3",
             headerType: 4,
