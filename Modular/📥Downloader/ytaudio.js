@@ -44,8 +44,12 @@ module.exports = async (νℓкуяє, vcнaт) => {
   νℓкуяє
     .axios({
       method: "get",
-      url: `${KryTek_URL}/ytdownload/` + gotArgument.replace(" ", ""),
-      headers: {},
+      url: `${KryTek_URL}/ytdownload/` + gotArgument.replace(" ", "+"),
+      headers: {
+        accept: "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+      },
     })
     .then(async function (response) {
       if (!response) {
@@ -77,17 +81,16 @@ module.exports = async (νℓкуяє, vcнaт) => {
 *📜Description:* ${response.data.DESCRIPTION}`,
           response.data.THUMB
         );
-
-        νℓкуяє
-          .FFmpeg(response.data.DL_AUDIO)
-          // .audioBitrate(320)
+        FFmpeg = require("fluent-ffmpeg");
+        FFmpeg(response.data.DL_AUDIO)
+          .audioBitrate(320)
           .toFormat("ipod")
-          .saveToFile(`${response.data.ID}.mp3`)
+          .saveToFile(response.data.req_id + ".mp3")
           .on("end", async () => {
             await νℓкуяє.sendMessage(
               vcнaт.chat,
               {
-                audio: νℓкуяє.fs.readFileSync(`${response.data.ID}.mp3`),
+                audio: νℓкуяє.fs.readFileSync(response.data.req_id + ".mp3"),
                 mimetype: "audio/mpeg",
                 fileName: response.data.TITLE + ".mp3",
                 headerType: 4,
