@@ -139,7 +139,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.util = require("util");
   νℓкуяє.primbon = new Primbon();
   νℓкуяє.ms = require("parse-ms");
-  νℓкуяє.db = require("quick.db");
   νℓкуяє.hxz = require("hxz-api");
   νℓкуяє.axios = require("axios");
   νℓкуяє.chalk = require("chalk");
