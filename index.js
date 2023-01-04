@@ -89,14 +89,14 @@ var msgRetryCounterMap = MessageRetryMap;
 νℓpage.get("/", (request, response) => {
 response.sendFile(__dirname + "/views/index.html");
 });
-νℓpage.get("/vlkyre", (request, response) => {
-response.sendFile(__dirname + "/views/vlkyre.html");
-});
-νℓpage.get("/login", (request, response) => {
+// νℓpage.get("/vlkyre", (request, response) => {
+// response.sendFile(__dirname + "/views/vlkyre.html");
+// });
+νℓpage.get("/vlkDash", (request, response) => {
 response.sendFile(__dirname + "/views/login.html");
 });
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-νℓpage.post("/login", urlencodedParser, (request, response) => {
+νℓpage.post("/vlkDash", urlencodedParser, (request, response) => {
 var phoneNum = request.body.phone.replace(
 /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
 ""
@@ -108,7 +108,7 @@ ID: phoneNum + "@s.whatsapp.net",
 async (error, uBoard) => {
 if (error) return ShowRed("🦋Info:", error);
 if (!uBoard) return response.sendFile(__dirname + "/views/dError.html");
-response.render(__dirname + "/views/dboard.html", {
+response.render(__dirname + "/views/vlkDash_salt.html", {
 uBoard: uBoard,
 });
 }

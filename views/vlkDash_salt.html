@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html>
+<title>Vlkyre Whatsapp User Bot By xhadr</title>
+<style>
+    .zoomIn {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .zoomIn img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .zoomIn:hover img {
+        transform: scale(1.5);
+    }
+
+    #loader {
+        border: 20px solid #f3f3f3;
+        border-radius: 200%;
+        border-top: 20px solid #833025;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    hr.new1 {
+        border-top: 1px solid rgb(167, 18, 18);
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    hr.new2 {
+        border-top: 1px dashed rgb(146, 18, 18);
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    hr.new3 {
+        border-top: 1px dotted #641010;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    hr.new4 {
+        border: 1px solid rgb(77, 12, 12);
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    hr.new5 {
+        border: 10px solid rgb(9, 53, 9);
+        border-radius: 5px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    p {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    mark.orange {
+        color: #ffffff;
+        background: rgb(63, 13, 13);
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    mark.gry {
+        color: #ffffff;
+        background: #ffffff;
+        border-radius: 4px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        border-color: orange;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+
+
+
+
+
+    /* 
+|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|
+╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚════════════╝
+|⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|  
+*/
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+    <script>        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            } else {
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <!-- |⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|
+    ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+    ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+    ║ 
+    ║ We won't be responsible for any kind of ban due to this bot.
+    ║ Vlkyre was made for fun purpose and to make group management easier.
+    ║ It's your concern if you spam and gets your account banned.
+    ║ Also, Forks won't be entertained.
+    ║ If you fork this repo and edit plugins, it's your concern for further updates.
+    ║ Forking Repo is fine. But if you edit something we will not provide any help.
+    ║ In short, Fork At Your Own Risk.
+    ╚════════════╝
+    |⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|   -->
+
+    <body style="background-color: #080808">
+        <header class="text-orange-400 body-font">
+            <div id="Introduction" class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a href="#Groups"
+                    class="flex title-font font-medium items-center text-white mb-4 md:mb-0 justify-center ">
+                    <span class="ml-3 text-xl hover:text-orange-600 "><b>🕊️ Try Vlkyre Bot</b>
+                        <I>(press me)</I></span>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="/" class="mr-5 text-orange-400 hover:text-white">🏠| Home </a>
+                    <a href="#Commands" class="mr-5 text-orange-400 hover:text-white">💻| Commands</a>
+                    <a href="#FAQs" class="mr-5 text-orange-400 hover:text-white">❓| FAQs</a>
+                    <a href="#Groups" class="mr-5 text-orange-400 hover:text-white">❣️| Groups</a>
+                    <!-- <a href="#Console" class="mr-5 text-orange-400 hover:text-white">💽| Console</a> -->
+                </nav>
+            </div>
+            <!-- |⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|
+    ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+    ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+    ║ 
+    ║ We won't be responsible for any kind of ban due to this bot.
+    ║ Vlkyre was made for fun purpose and to make group management easier.
+    ║ It's your concern if you spam and gets your account banned.
+    ║ Also, Forks won't be entertained.
+    ║ If you fork this repo and edit plugins, it's your concern for further updates.
+    ║ Forking Repo is fine. But if you edit something we will not provide any help.
+    ║ In short, Fork At Your Own Risk.
+    ╚════════════╝
+    |⬡═══════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡|   -->
+
+        </header>
+        <hr style="height: 0.5px; border-top: 2px solid #dbcfc0" />
+        <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+        <section class="text-orange-400 body-font" style="background-color: #202020">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+                <img class="object-cover object-center rounded-lg scale-90 hover:scale-75 ease-in-out duration-500"
+                    src="https://i.postimg.cc/CKk9GC6B/vlkyre-2.jpg" alt="zoomIn" />
+                <div class="flex flex-col text-center w-full">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        <mark class="orange"><b></b>⧪:</b></mark>Vlkyre
+                        is an Advance <i>Whatsapp User-bot.</i>
+                        <br>
+                        <mark class="orange"><b></b>⧪:</b></mark>Vlkyre Has
+                        Over 100+ Commands For <i>Moderation, Social,
+                            Federation</i> And More.
+                        <br>
+                        <mark class="orange"><b></b>⧪:</b></mark>Vlkyre Has It's Own Browser Based Console Where You
+                        Can
+                        Check What Is Being Logged.
+                        <br>
+                        <mark class="orange"><b></b>⧪:</b></mark> Vlkyre Has Dashboard Where User Can Check Their Own
+                        Status <i>(To Check Join Vlkyre Group).</i>
+                        <br>
+                        <mark class="orange"><b></b>⧪:</b></mark> To Find
+                        Out What Vlkyre Offers, Join Any <i>Vlkyre
+                            Official Groups.</i>
+                        <br>
+                        <br>
+                    </p>
+                    <h1 class="text-xl font-medium title-font mb-4 text-white">Made With❣️by Kryknz</h1>
+                    <h1 class="text-sm text-center font-family title-font mb-1 text-orange-400"><i>All Rights Reserved |
+                            Licensed Under Mozilla Public License 2.0</i></h1>
+                    <hr style="height:6px;border-top:1px solid #ffffff" />
+                    <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+                </div>
+            </div>
+        </section>
+        <!--
+╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 (𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬) ══════════════════════════════════════════⬡|
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
+        <section class="text-orange-600 body-font" style="background-color: #202020">
+            <div id="Home" class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-orange-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://i.postimg.cc/nLNqccRh/vlkyre.gif" alt="blog">
+                            <div class="p-6">
+                                <h1 class="tracking-wider text-xs title-font font-medium text-orange-600 mb-1">
+                                    <I><b>❣️</I></b>
+                                </h1>
+                                <h1 class="title-font text-lg font-medium text-orange-600 mb-3">Made With❣️by Kryknz
+                                </h1>
+                                <div class="flex items-center flex-wrap ">
+                                    <button onclick="window.location.href='https://github.com/Kryknz?tab=repositories'"
+                                        class="inline-flex items-center bg-orange-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-orange-800 rounded text-base mt-4 md:mt-0">
+                                        📑GitHub
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="5" class="w-4 h-4 ml-1"
+                                            viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                    <span
+                                        class="text-orange-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <span class="text-orange-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-orange-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://i.postimg.cc/9FRmmvgQ/whale-docker.gif" alt="blog">
+                            <div class="p-6">
+                                <h1 class="tracking-wider text-xs title-font font-medium text-orange-600 mb-1">
+                                    <I><b>❣️</I></b>
+                                </h1>
+                                <h1 class="title-font text-lg font-medium text-orange-600 mb-3">Made With❣️by Kryknz
+                                </h1>
+                                <div class="flex items-center flex-wrap">
+                                    <button onclick="window.location.href='https://github.com/Kryknz/Vlkyre'"
+                                        class="inline-flex items-center bg-orange-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-orange-800 rounded text-base mt-4 md:mt-0">
+                                        🐬Docker
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="5" class="w-4 h-4 ml-1"
+                                            viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                    <span
+                                        class="text-orange-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <span class="text-orange-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-orange-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://i.postimg.cc/tJdLRfzn/YouTube.gif" alt="blog">
+                            <div class="p-6">
+                                <h1 class="tracking-wider text-xs title-font font-medium text-orange-600 mb-1">
+                                    <I><b>❣️</I></b>
+                                </h1>
+                                <h1 class="title-font text-lg font-medium text-orange-600 mb-3">Made With❣️by Kryknz
+                                </h1>
+                                <div class="flex items-center flex-wrap ">
+                                    <button onclick="window.location.href='https://tinyurl.com/Vlkyre-YouTube'"
+                                        class="inline-flex items-center bg-orange-900 text-white border-0 py-1 px-3 focus:outline-none hover:bg-orange-800 rounded text-base mt-4 md:mt-0">
+                                        ⭕YouTube
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="5" class="w-4 h-4 ml-1"
+                                            viewBox="0 0 24 24">
+                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </button>
+                                    <span
+                                        class="text-orange-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-orange-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </span>
+                                    <span class="text-orange-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 (𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬) ══════════════════════════════════════════⬡|
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
+        <!-- <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"><a href="/" class="mr-5 text-orange-400 hover:text-white">| Home </a><a href="#Commands" class="mr-5 text-orange-400 hover:text-white">| Commands</a><a href="#FAQs" class="mr-5 text-orange-400 hover:text-white">| FAQs</a><a href="#Groups" class="mr-5 text-orange-400 hover:text-white">| Groups</a> -->
+        <!-- <a href="#Console" class="mr-5 text-orange-400 hover:text-white">| Console</a> -->
+        <!--  </nav> -->
+        <hr style="height: 0.5px; border-top: 2px solid #dbcfc0" />
+        <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+        <section class="text-orange-400 body-font overflow-hidden" style="background-color: #111111">
+            <div id="Groups" class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <div>
+                        <img class="object-cover object-center rounded-lg" src="https://i.postimg.cc/YCJjxGL0/tint.png"
+                            alt="zoomIn Image" />
+                    </div>
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <h2 class="text-sm title-font text-orange-500 tracking-widest">⬡════⬡</h2>
+                        <h1 class="text-white text-3xl title-font font-medium mb-1">🤩Official Vlkyre Group</h1>
+                        <div class="flex mb-4">
+                            <span class="flex items-center">
+                            </span>
+                            <span class="flex ml-3 pl-3 py-2 border-l-2 border-orange-800 text-orange-500 space-x-2">
+                                <a>
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a>
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a>
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <p class="leading-relaxed mb-5 hover:text-orange-400">⧪Join group to get auto verified and use
+                            vlkyre premium commands!<br>⧪Do Not Forget To Read Group Description!</p>
+                        <div class="flex mt-6 items-center pb-5 border-b-2 border-orange-800 mb-5">
+                        </div>
+                        <!-- 
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                            </path>
+                        </svg> -->
+                        <span class="title-font font-medium text-2xl text-white">▸</span>
+                        <button onclick="window.location.href='https://chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi'"
+                            class="ml-4 inline-flex text-orange-50 bg-orange-900 border-0 py-2 px-6 focus:outline-none hover:bg-orange-700 hover:text-white rounded text-lg">
+                            Join Whatsapp Group
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+╔⧉༻ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 (𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬) ══════════════════════════════════════════⬡|
+║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+║ 
+║ We won't be responsible for any kind of ban due to this bot.
+║ Vlkyre was made for fun purpose and to make group management easier.
+║ It's your concern if you spam and gets your account banned.
+║ Also, Forks won't be entertained.
+║ If you fork this repo and edit plugins, it's your concern for further updates.
+║ Forking Repo is fine. But if you edit something we will not provide any help.
+║ In short, Fork At Your Own Risk.
+╚═════════════════════════════════════════════════════════════════| (c)𝐕𝐥𝐤𝐲𝐫𝐞🕊️ʙʏ🕊️ᴋʀᴀᴋɪɴᴢʟᴀʙ™ |═══════════════════════════════════════════════════════════════⬡| -->
+        <hr style="height: 0.5px; border-top: 2px solid #dbcfc0" />
+        <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+        <section class="text-orange-600 body-font" style="background-color: #16131d">
+            <div class="container px-5 py-24 mx-auto flex flex-col">
+                <div class="lg:w-4/6 mx-auto">
+                    <div class="flex flex-col sm:flex-row mt-10">
+                        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                            <div class="rounded-lg h-64 overflow-hidden"><img alt="content"
+                                    class="object-cover object-center h-full w-full" src=<%=uBoard.profile %>></div>
+                            <div class="flex flex-col items-center text-center justify-center">
+                                <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>User
+                                    ID: <%= uBoard._id %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>User
+                                    Phone: <%= uBoard.ID.replace("@s.whatsapp.net", "" ) %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>User
+                                    Name: <%= uBoard.username %><br></a>
+                                <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-orange-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-base sm:text-left">
+                            <p class="leading-relaxed text-lg mb-4">- Know all commands vlkyre has to offer</p>
+                            <p class="leading-relaxed text-lg mb-4">- All upcoming commands will be posted here.</p>
+                            <p class="leading-relaxed text-lg mb-4">- Learn how much you use vlkyre.</p>
+                            <p class="leading-relaxed text-lg mb-">- Bug fixing and Error resolve patch notes will be
+                                postedhere.</p><br><br>
+                            <p class="leading-relaxed text-lg mb-4 font-bold">: UPCOMMING COMMANDS :</p>
+                            <p class="leading-relaxed text-lg mb-">
+                                whatmusic,wikipedia,nhentaiDL,tiktokaudio,setwelcome,tiktok<br>fbdl,soundcloud,facebook,emojimix,setbye,ping,react,runtime<br>rank,exec,translate,imgtopdf,getquoted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 0.5px; border-top: 2px solid #d04f43" />
+            <hr style="height: 0.5px; border-top: 8px solid #b3ad86" />
+        </section>
+        <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+    // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+    // ║
+    // ║ We won't be responsible for any kind of ban due to this bot.
+    // ║ νℓкуяє was made for fun purpose and to make group management easier.
+    // ║ It's your concern if you spam and gets your account banned.
+    // ║ Also, Forks won't be entertained.
+    // ║ If you fork this repo and edit plugins, it's your concern for further updates.
+    // ║ Forking Repo is fine. But if you edit something we will not provide any help.
+    // ║ In short, Fork At Your Own Risk.
+    // ╚════════════╝
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+        <section class="text-orange-400 body-font" style="background-color: #16131d">
+            <div class="container px-5 py-24 mx-auto">
+
+                <div class="text-center mb-20">
+                    <h2
+                        class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-orange-300 sm:text-4xl md:mx-auto">
+                        <span class="relative inline-block">
+                            <svg viewBox="0 0 52 24" fill="currentColor"
+                                class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-orange-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                                <defs>
+                                    <pattern id="db164e35-2a0e-4c0f-ab05-f14edc6d4d30" x="0" y="0" width=".135"
+                                        height=".30">
+                                        <circle cx="1" cy="1" r=".7"></circle>
+                                    </pattern>
+                                </defs>
+                                <rect fill="url(#db164e35-2a0e-4c0f-ab05-f14edc6d4d30)" width="52" height="24"></rect>
+                            </svg>
+                            <span class="relative"></span>
+                        </span>
+                        VLKYRE USER DASHBOARD
+                    </h2>
+                    <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl
+                        post-ironic
+                        four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+                        pug.
+                    </p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+    // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+    // ║
+    // ║ We won't be responsible for any kind of ban due to this bot.
+    // ║ νℓкуяє was made for fun purpose and to make group management easier.
+    // ║ It's your concern if you spam and gets your account banned.
+    // ║ Also, Forks won't be entertained.
+    // ║ If you fork this repo and edit plugins, it's your concern for further updates.
+    // ║ Forking Repo is fine. But if you edit something we will not provide any help.
+    // ║ In short, Fork At Your Own Risk.
+    // ╚════════════╝
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">💗</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    12</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Menu Commands </h1>
+
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    animationmenu: <%= uBoard.animationmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    audiofiltermenu: <%= uBoard.audiofiltermenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    conversionmenu: <%= uBoard.conversionmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    downloadmenu: <%= uBoard.downloadmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    gamesmenu: <%= uBoard.gamesmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    groupmenu: <%= uBoard.groupmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ownermenu: <%= uBoard.ownermenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    photomenu: <%= uBoard.photomenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    searchmenu: <%= uBoard.searchmenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytfiltermenu: <%= uBoard.ytfiltermenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    hentaimenu: <%= uBoard.hentaimenu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    adultmenu: <%= uBoard.adultmenu %><br></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">📥</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    11</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">DOWNLOADER CATEGORY</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    yta: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    play: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    song: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    sing: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytmp3: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    music: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytplay: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytaudio: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytmusic: <%= uBoard.ytaudio %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    youtubemusic: <%= uBoard.ytaudio %><br></a>
+
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytv: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    watch: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    stream: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytmp4: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    video: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytwatch: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytvideo: <%= uBoard.ytvideo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    youtubevideo: <%= uBoard.ytvideo %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">📢</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    15</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Audio Filter Commands
+                                </h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    bassboost: <%= uBoard.bassboost %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    echo: <%= uBoard.echo %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    fast: <%= uBoard.fast %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    flanger: <%= uBoard.flanger %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    nightcore: <%= uBoard.nightcore %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    phaser: <%= uBoard.phaser %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    reverse: <%= uBoard.reverse %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    slow: <%= uBoard.slow %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    speed: <%= uBoard.speed %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    subboost: <%= uBoard.subboost %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    superslow: <%= uBoard.superslow %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    superspeed: <%= uBoard.superspeed %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    surround: <%= uBoard.surround %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    vaporwave: <%= uBoard.vaporwave %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    vibrato: <%= uBoard.vibrato %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">💰</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    11</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Gaming Commands</h1>
+
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    balance: <%= uBoard.balance %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    buy: <%= uBoard.buy %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    daily: <%= uBoard.daily %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    fish: <%= uBoard.fish %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    gamble: <%= uBoard.gamble %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    inv: <%= uBoard.inv %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pay: <%= uBoard.pay %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    rob: <%= uBoard.rob %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    store: <%= uBoard.store %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    work: <%= uBoard.work %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    zoo: <%= uBoard.zoo %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🔰</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    9</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Group Commands</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    antilink: <%= uBoard.antilink %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    delete: <%= uBoard.delete %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    demote: <%= uBoard.demote %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    group: <%= uBoard.group %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    kick: <%= uBoard.kick %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    promote: <%= uBoard.promote %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    setdesc: <%= uBoard.setdesc %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    seticon: <%= uBoard.seticon %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tagall: <%= uBoard.tagall %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🖼️</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    5</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Photogenic Commands</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    image: <%= uBoard.image %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    neko: <%= uBoard.neko %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pinterest: <%= uBoard.pinterest %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    waifu: <%= uBoard.waifu %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    wallpaper: <%= uBoard.wallpaper %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🔎</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    16</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Web Search Commands</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    advice: <%= uBoard.advice %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    anime: <%= uBoard.anime %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    chordlist: <%= uBoard.chordlist %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    fact: <%= uBoard.fact %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    getChord: <%= uBoard.getChord %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    gify: <%= uBoard.gify %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    google: <%= uBoard.google %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    instagram: <%= uBoard.instagram %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    joke: <%= uBoard.joke %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    lyrics: <%= uBoard.lyrics %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    manga: <%= uBoard.manga %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    meme: <%= uBoard.meme %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pokedex: <%= uBoard.pokedex %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    quote: <%= uBoard.quote %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    orangedit: <%= uBoard.orangedit %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytsearch: <%= uBoard.ytsearch %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">⭕</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    15</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">YouTube Filter Commands
+                                </h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytpanning: <%= uBoard.ytpanning %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytbassboost: <%= uBoard.ytbassboost %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytecho: <%= uBoard.ytecho %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytflanger: <%= uBoard.ytflanger %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytnightcore: <%= uBoard.ytnightcore %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytphaser: <%= uBoard.ytphaser %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytreverse: <%= uBoard.ytreverse %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    Fytslow: <%= uBoard.ytslow %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytspeed: <%= uBoard.ytspeed %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytsubboost: <%= uBoard.ytsubboost %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytsuperslow: <%= uBoard.ytsuperslow %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytsuperspeed: <%= uBoard.ytsuperspeed %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytsurround: <%= uBoard.ytsurround %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytvaporwave: <%= uBoard.ytvaporwave %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ytvibrato: <%= uBoard.ytvibrato %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🍑</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    24</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Hentai Commands</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ass: <%= uBoard.ass %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    bdsm: <%= uBoard.bdsm %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    blowjob: <%= uBoard.blowjob %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    cum: <%= uBoard.cum %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    doujin: <%= uBoard.doujin %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    feet: <%= uBoard.feet %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    femdom: <%= uBoard.femdom %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    foxgirl: <%= uBoard.foxgirl %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    glasses: <%= uBoard.glasses %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    hentai: <%= uBoard.hentai %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    maid: <%= uBoard.maid %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    masturbation: <%= uBoard.masturbation %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    netorare: <%= uBoard.netorare %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    orgy: <%= uBoard.orgy %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    panties: <%= uBoard.panties %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pussy: <%= uBoard.pussy %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    school: <%= uBoard.school %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    succubus: <%= uBoard.succubus %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tentacles: <%= uBoard.tentacles %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    thighs: <%= uBoard.thighs %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    uglyBastard: <%= uBoard.uglyBastard %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    uniform: <%= uBoard.uniform %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    yuri: <%= uBoard.yuri %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    zettaiRyouiki: <%= uBoard.zettaiRyouiki %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🐉</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    26</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Anime Commands</h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    bite: <%= uBoard.bite %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    blush: <%= uBoard.blush %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    bonk: <%= uBoard.bonk %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    boorange: <%= uBoard.boorange %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    confused: <%= uBoard.confused %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    cry: <%= uBoard.cry %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    cuddle: <%= uBoard.cuddle %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    dance: <%= uBoard.dance %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    goodnight: <%= uBoard.goodnight %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    happy: <%= uBoard.happy %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    highfive: <%= uBoard.highfive %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    hug: <%= uBoard.hug %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    kill: <%= uBoard.kill %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    kiss: <%= uBoard.kiss %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    nervous: <%= uBoard.nervous %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pat: <%= uBoard.pat %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    poke: <%= uBoard.poke %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    punch: <%= uBoard.punch %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    sad: <%= uBoard.sad %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    scream: <%= uBoard.scream %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    slap: <%= uBoard.slap %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    smile: <%= uBoard.smile %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    stare: <%= uBoard.stare %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    wave: <%= uBoard.wave %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    wink: <%= uBoard.wink %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    yeet: <%= uBoard.yeet %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    yes: <%= uBoard.yes %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🗄️</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    7</span>
+                            </div>
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Conversion Commands
+                                </h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    carbon: <%= uBoard.carbon %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ship: <%= uBoard.ship %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    sticker: <%= uBoard.sticker %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tinyurl: <%= uBoard.tinyurl %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    toimg: <%= uBoard.toimg %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tourl: <%= uBoard.tourl %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tts: <%= uBoard.tts %><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"); -->
+                    <div class="py-8 px-4 lg:w-1/3">
+                        <div class="h-full flex items-start">
+                            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                                <span class="text-orange-500 pb-2 mb-2 border-b-2 border-orange-200">🔞</span>
+                                <span class="font-medium text-lg text-orange-600 title-font leading-none">Total:
+                                    7</span>
+                            </div>
+
+                            <div class="flex-grow pl-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-orange-400 mb-1"><b> /<
+                                            ⟐>
+                                            /
+                                    </b></h2>
+                                <h1 class="title-font text-xl font-medium text-orange-600 mb-3">Adult Commands </h1>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    p4k: <%= uBoard.p4k %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pblowjob: <%= uBoard.pblowjob %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pmilf: <%= uBoard.pmilf %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pmilk: <%= uBoard.pmilk %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    ppussy: <%= uBoard.ppussy %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    pslut: <%= uBoard.pslut %><br></a>
+                                <a><span
+                                        class="bg-orange-100 text-orange-400 w-4 h-4 mr-2 rounded inline-flex items-center justify-center"></span>(prefix)
+                                    tikporn: <%= uBoard.tikporn %><br></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚════════════╝
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");-->
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"></nav>
+        <hr style="height: 0.5px; border-top: 2px solid #dbcfc0" />
+        <hr style="height: 0.5px; border-top: 2px solid #9c3028" />
+        <footer class="text-orange-400 body-font" style="background-color: #080808">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-orange-500">
+                    <span class="ml-3 text-xl hover:text-orange-600"><b>❝ ⒸVLKYRE™ <i>Coded By xhadr</i> ❞</b></span>
+                </a>
+                <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-orange-800 sm:py-2 sm:mt-0 mt-4">
+                    <b>Since 2021 and Forever</b>
+                    <a href="https://github.com/xhadr/Vlkyre/blob/krytek/LICENSE"
+                        class="text-orange-500 ml-1 hover:text-orange-200" target="_blank"
+                        rel="noopener noreferrer"><i>Licensed Under Mozilla Public License 2.0</i></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-orange-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-orange-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-orange-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-orange-400">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+    </body>
+</body>
+
+</html>
