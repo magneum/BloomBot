@@ -1,7 +1,7 @@
 FROM python:latest
-ENV кєηz_ "/venv"
-RUN python -m venv $кєηz_
-ENV PATH "$кєηz_/bin:$PATH"
+ENV xhåÐr "/venv"
+RUN python -m venv $xhåÐr
+ENV PATH "$xhåÐr/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 git \
@@ -14,12 +14,12 @@ python-is-python3
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
-RUN git clone --branch krytek https://github.com/KryKenz/Vlkyre
+RUN git clone --branch xhadr-x https://github.com/xhadr/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git init --initial-branch=krytek
-RUN git fetch origin krytek
-RUN git reset --hard origin/krytek
+RUN git init --initial-branch=xhadr-x
+RUN git fetch origin xhadr-x
+RUN git reset --hard origin/xhadr-x
 RUN pip install -r requirements.txt 
 RUN yarn add vlkyre@latest --ignore-engines
 CMD python Operator.py

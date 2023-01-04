@@ -1,8 +1,8 @@
-# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/krykenz)
+# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/xhadr)
 
-<p align="centre"><img  width="40%" height="80%" img src="https://github.com/KryKenz/Vlkyre/blob/krytek/Gallery/%CE%BD%E2%84%93%D0%BA%D1%83%D1%8F%D1%94.png" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/xhadr/Vlkyre/blob/krytek/Gallery/%CE%BD%E2%84%93%D0%BA%D1%83%D1%8F%D1%94.png" /></p>
 
-<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="KryKenz"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
+<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="xhadr"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 ## 🤖Hello, I am Vlkyre
 
@@ -42,7 +42,7 @@ or
 > (optional) export DATABASE_URL= your postgres url string
 
 📍 RUN VLKYRE
-> git clone --branch krytek https://github.com/KryKenz/Vlkyre
+> git clone --branch krytek https://github.com/xhadr/Vlkyre
 > git init --initial-branch=krytek && git fetch origin krytek && git reset --hard origin/krytek
 > pip install -r requirements.txt && npm install vlkyre --force
 > python Operator.py
@@ -53,7 +53,7 @@ or
 
 - To Deploy in Koyeb watch this [video](https://youtube.com)
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=krykenz/vlkyre:koyeb&name=vlkyre)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=xhadr/vlkyre:koyeb&name=vlkyre)
 
 <h1 align="left">🚄Deploy in Railway.app using Nix Builder</h1>
 
