@@ -3,7 +3,6 @@ var dBoardSchema = new mongoose.Schema({
   ID: String,
   profile: String,
   username: String,
-
   bite: Number,
   blush: Number,
   bonk: Number,
@@ -32,7 +31,6 @@ var dBoardSchema = new mongoose.Schema({
   wink: Number,
   yeet: Number,
   yes: Number,
-
   sticker: Number,
   tinyurl: Number,
   toimg: Number,
@@ -40,10 +38,8 @@ var dBoardSchema = new mongoose.Schema({
   carbon: Number,
   ship: Number,
   tts: Number,
-
   ytaudio: Number,
   ytvideo: Number,
-
   panning: Number,
   bassbost: Number,
   echo: Number,
@@ -59,7 +55,6 @@ var dBoardSchema = new mongoose.Schema({
   surround: Number,
   vaporwave: Number,
   vibrato: Number,
-
   balance: Number,
   buy: Number,
   daily: Number,
@@ -71,7 +66,6 @@ var dBoardSchema = new mongoose.Schema({
   store: Number,
   work: Number,
   zoo: Number,
-
   antilink: Number,
   delete: Number,
   demote: Number,
@@ -81,13 +75,11 @@ var dBoardSchema = new mongoose.Schema({
   setdesc: Number,
   seticon: Number,
   tagall: Number,
-
   image: Number,
   neko: Number,
   pinterest: Number,
   waifu: Number,
   wallpaper: Number,
-
   advice: Number,
   anime: Number,
   fact: Number,
@@ -104,7 +96,6 @@ var dBoardSchema = new mongoose.Schema({
   meme: Number,
   quote: Number,
   reddit: Number,
-
   ytpanning: Number,
   ytbassboost: Number,
   ytecho: Number,
@@ -120,7 +111,6 @@ var dBoardSchema = new mongoose.Schema({
   ytsurround: Number,
   ytvaporwave: Number,
   ytvibrato: Number,
-
   p4k: Number,
   pblowjob: Number,
   pmilf: Number,
@@ -128,7 +118,6 @@ var dBoardSchema = new mongoose.Schema({
   ppussy: Number,
   pslut: Number,
   tikporn: Number,
-
   ban: Number,
   broadcast: Number,
   join: Number,
@@ -137,7 +126,6 @@ var dBoardSchema = new mongoose.Schema({
   rules: Number,
   unban: Number,
   verify: Number,
-
   ass: Number,
   bdsm: Number,
   blowjob: Number,
@@ -162,11 +150,9 @@ var dBoardSchema = new mongoose.Schema({
   uniform: Number,
   yuri: Number,
   zettaiRyouiki: Number,
-
   menu: Number,
   vlkyre: Number,
   dashboard: Number,
-
   animationmenu: Number,
   audiofiltermenu: Number,
   conversionmenu: Number,
