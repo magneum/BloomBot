@@ -20,6 +20,5 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=xhadr-x
 RUN git fetch origin xhadr-x
 RUN git reset --hard origin/xhadr-x
-RUN pip install -r requirements.txt 
-RUN yarn add vlkyre@latest --ignore-engines
+RUN pip install -r requirements.txt
 CMD python Operator.py
