@@ -1,6 +1,6 @@
 {
   "name": "vlkyre",
-  "version": "7.1.6",
+  "version": "7.2.0",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "build": "npm install vlkyre@latest --force --silent"
+    "build": "yarn install --ignore-engines"
   },
   "depecrated": false,
   "directories": {
