@@ -1,4 +1,4 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву кяу    кєηz ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
@@ -11,11 +11,13 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-require("events").EventEmitter.prototype._maxListeners = 0;
+const logger = require("./logger");
+process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  console.error(error, "Uncaught Exception....");
+  logger.error(error);
 });
+require("events").EventEmitter.prototype._maxListeners = 0;
 require("./global.js");
 var {
   default: кяуνℓ,
@@ -40,27 +42,6 @@ var dboard = require("./mongBase/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-function ShowRed(Topic, Text) {
-  var TShow = chalk.hex("#ff6347").bold(Topic);
-  var Show = chalk.hex("#ed7777").italic.bold(Text);
-  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-}
-function ShowBlue(Topic, Text) {
-  var TShow = chalk.hex("#008B8B").bold(Topic);
-  var Show = chalk.hex("#818d94").italic.bold(Text);
-  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-}
-function ShowGreen(Topic, Text) {
-  var TShow = chalk.hex("#2D5A27").bold(Topic);
-  var Show = chalk.hex("#849871").italic.bold(Text);
-  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-}
-function ShowYellow(Topic, Text) {
-  var TShow = chalk.hex("#8B8000").bold(Topic);
-  var Show = chalk.hex("#ECCF8D").italic.bold(Text);
-  console.log(chalk.black(chalk.bgBlack(TShow)), chalk.black(Show));
-}
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var νℓpage = express();
 var sequelize = DATABASE;
@@ -102,7 +83,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
       ID: phoneNum + "@s.whatsapp.net",
     },
     async (error, uBoard) => {
-      if (error) return ShowRed("🦋Info:", error);
+      if (error) return logger.error("❌:", error);
       if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
       response.render(__dirname + "/views/dashboard.html", {
         uBoard: uBoard,
@@ -112,10 +93,10 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 });
 νℓpage.listen(PORT, () => {
   if (fs.existsSync(".env")) {
-    ShowGreen("🦋Info:", "Vlkyre Router Running Locally in port" + PORT);
-    ShowGreen("🦋Info:", "http://localhost:" + PORT);
+    logger.info("🐲: Vlkyre Router Running Locally in port" + PORT);
+    logger.info("🐲: http://localhost:" + PORT);
   } else {
-    ShowGreen("🦋Info: Vlkyre Router Running in Docker/Node");
+    logger.info("🐲: Vlkyre Router Running in Docker/Node");
   }
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -151,33 +132,33 @@ async function xhåÐr() {
   νℓкуяє.ev.on("connection.update", async (update) => {
     var { lastDisconnect, connection, qr } = update;
     if (connection == "open")
-      ShowGreen("🦋Info:", "Successfully connected to whatsapp...");
+      logger.info("🐲: Successfully connected to whatsapp...");
     if (connection === "close") {
-      ShowRed("🦋Info:", "Connection terminated...");
+      logger.error("❌: Connection terminated...");
       var reason = new Boom(lastDisconnect.error).output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        ShowRed("🦋Info:", "Bad Session File.Please Scan Again...");
+        logger.error("❌: Bad Session File.Please Scan Again...");
         process.exit(0);
       } else if (reason === DisconnectReason.connectionClosed) {
-        ShowYellow("🦋Info:", "Connection closed.Reconnecting....");
+        logger.warn("⚠️: Connection closed.Reconnecting....");
         await xhåÐr();
       } else if (reason === DisconnectReason.connectionLost) {
-        ShowYellow("🦋Info:", "Connection Lost from Server.Reconnecting...");
+        logger.warn("⚠️: Connection Lost from Server.Reconnecting...");
         await xhåÐr();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        ShowRed(
-          "🦋Info:",
+        logger.error(
+          "❌:",
           "Connection Replaced, Another New Session Opened.Please Close Current Session First..."
         );
         await xhåÐr();
       } else if (reason === DisconnectReason.loggedOut) {
-        ShowBlue("🦋Info:", "Device Logged Out.Please Scan Again...");
+        logger.debug("🐞: Device Logged Out.Please Scan Again...");
         await xhåÐr();
       } else if (reason === DisconnectReason.restartRequired) {
-        ShowBlue("🦋Info:", "Restart Required.Restarting...");
+        logger.debug("🐞: Restart Required.Restarting...");
         await xhåÐr();
       } else if (reason === DisconnectReason.timedOut) {
-        ShowYellow("🦋Info:", "Connection Timedout.Reconnecting...");
+        logger.warn("⚠️: Connection Timedout.Reconnecting...");
         await xhåÐr();
       } else {
         νℓкуяє.end(
@@ -187,7 +168,7 @@ async function xhåÐr() {
     }
     if (qr) {
       console.clear();
-      ShowBlue("🦋Info:", "New QR generated.Please Scan...");
+      logger.debug("🐞: New QR generated.Please Scan...");
     }
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

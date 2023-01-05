@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
+    "dev": "node NODE_OPTIONS=--no-warnings index.js",
     "build": "yarn install --ignore-engines"
   },
   "depecrated": false,
@@ -62,7 +63,6 @@
     "human-readable": "^0.2.1",
     "hxz-api": "^1.0.1",
     "image-to-pdf": "^1.0.0",
-    "ioredis": "^5.2.4",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
     "mailist": "^1.0.3",
@@ -92,7 +92,6 @@
     "qrcode-terminal": "^0.12.0",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
-    "redis": "^4.5.1",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
     "sequelize": "^6.7.0",
