@@ -15,12 +15,15 @@
   "directories": {
     "Authenticator": "Authenticator",
     "Bin": "Bin",
+    "docs": "docs",
+    "Enforcers": "Enforcers",
     "Buttons": "Buttons",
     "Gallery": "Gallery",
+    "logger": "logger",
     "Modular": "Modular",
     "mongBase": "mongBase",
-    "SandBox": "SandBox",
-    "System": "System"
+    "System": "System",
+    "views": "views"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
