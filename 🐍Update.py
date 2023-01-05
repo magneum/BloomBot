@@ -24,11 +24,11 @@ from dotenv import load_dotenv
 load_dotenv("./.env")
 subprocess.run(["node","contents.js"],check=True,stdout=subprocess.PIPE).stdout 
 try:
-    os.system("git init --initial-branch=krytek")
+    os.system("git init --initial-branch=xhadr-x")
     os.system("git remote add origin https://github.com/xhadr/Vlkyre")
     os.system("git config pull.rebase false")
-    os.system("git fetch origin krytek")
-    os.system("git reset --hard origin/krytek")
+    os.system("git fetch origin xhadr-x")
+    os.system("git reset --hard origin/xhadr-x")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: git sync done!","green")
 except Exception as Error:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}","red")
