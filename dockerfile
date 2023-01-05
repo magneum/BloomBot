@@ -1,7 +1,7 @@
 FROM python:latest
-ENV xhåÐr "/venv"
-RUN python -m venv $xhåÐr
-ENV PATH "$xhåÐr/bin:$PATH"
+ENV xhadr_ "/venv"
+RUN python -m venv $xhadr_
+ENV PATH "$xhadr_/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 git \
