@@ -64,14 +64,14 @@ var msgRetryCounterMap = MessageRetryMap;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 νℓpage.engine("html", require("ejs").renderFile);
-νℓpage.use(express.static(__dirname + "/views"));
+νℓpage.use(express.static("./views"));
 νℓpage.set("view engine", "html");
 νℓpage.set("views", __dirname);
 νℓpage.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+  response.sendFile("./views/index.html");
 });
 νℓpage.get("/vlkyre", (request, response) => {
-  response.sendFile(__dirname + "/views/vlkyre.html");
+  response.sendFile("./views/vlkyre.html");
 });
 νℓpage.post("/vlkyre", urlencodedParser, (request, response) => {
   var phoneNum = request.body.phone.replace(
