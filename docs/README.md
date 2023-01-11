@@ -1,6 +1,6 @@
 # [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/xhadr)
 
-<p align="centre"><img  width="40%" height="80%" img src="https://github.com/xhadr/Vlkyre/blob/krytek/Gallery/%CE%BD%E2%84%93%D0%BA%D1%83%D1%8F%D1%94.png" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Vlkyre/blob/magneum/Gallery/vlkyre.jpg" /></p>
 
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="xhadr"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
