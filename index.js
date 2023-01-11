@@ -67,9 +67,6 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 νℓpage.use(express.static("./views"));
 νℓpage.set("view engine", "html");
 νℓpage.set("views", __dirname);
-νℓpage.get("/", (request, response) => {
-  response.sendFile("./views/index.html");
-});
 νℓpage.get("/vlkyre", (request, response) => {
   response.sendFile("./views/vlkyre.html");
 });
