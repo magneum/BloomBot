@@ -1,4 +1,4 @@
-# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/xhadr)
+# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/magneum)
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Vlkyre/blob/magneum/Gallery/vlkyre.jpg" /></p>
 

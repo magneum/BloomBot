@@ -1376,7 +1376,7 @@ module.exports = async (νℓкуяє, vcнaт, update) => {
         `*😥Sorry:* @${νℓкуяє.Tname}
 *❌Error* 
 > _No Such Command Found_
-> Visit To Know Commands: _bit.ly/xhadr_`,
+> Visit To Know Commands: _bit.ly/magneum_`,
         "./Gallery/KryPage.jpg"
       );
       break;

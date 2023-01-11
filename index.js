@@ -207,7 +207,8 @@ async function xhåÐr() {
 > Firstly Welcome.
 > I am Vlkyre Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
-              footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr",
+              footer:
+                "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
               buttons: [
                 {
                   buttonId: `${νℓкуяє.prefix}Dashboard`,

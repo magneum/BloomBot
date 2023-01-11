@@ -26,13 +26,13 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
-> bit.ly/xhadr
+> bit.ly/magneum
 > Login To Your Dashboard
 
 *❗Problem?*
 > Doesn't show dashboard?
 > type .help in vlkyre official group
-> head back to bit.ly/xhadr
+> head back to bit.ly/magneum
 > try to login`,
       mentions: [vcнaт.sender],
     },

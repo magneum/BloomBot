@@ -25,7 +25,7 @@ module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imå
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr",
+          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,
@@ -66,7 +66,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr",
+          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,
@@ -102,7 +102,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr",
+          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,

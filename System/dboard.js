@@ -219,7 +219,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
-> bit.ly/xhadr
+> bit.ly/magneum
 > Login To Your Dashboard`,
             mentions: [vcнaт.sender],
           },
