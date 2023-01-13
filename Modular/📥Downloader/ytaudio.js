@@ -24,7 +24,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 *❌Error* 
 > _No query provided!_
 *⚡Usage*   
-> _${νℓкуяє.prefix}${pfname} song/link_`
+> _${νℓкуяє.prefix}${pfname} song name_`
     );
   }
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -35,14 +35,14 @@ module.exports = async (νℓкуяє, vcнaт) => {
 *❌Error* 
 > _No query provided!_
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} song/link_`
+> _${νℓкуяє.prefix}${pfname} song name_`
     );
   }
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє
     .axios({
       method: "get",
-      LINK: `${KryTek_URL}/animation/${pfname}`,
+      LINK: "https://magneum.vercel.app/api/youtube?q=" + νℓкуяє.args.join(" "),
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
@@ -51,31 +51,29 @@ module.exports = async (νℓкуяє, vcнaт) => {
     })
     .then(async (response) => {
       var vData = response.data;
-      if (!vData.LINK) {
+      if (!vData._youtube_search[0].LINK) {
         return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error*
 > _No Music Found!_`);
-      } else if (vData.seconds > 600) {
+      } else if (vData._youtube_search[0].seconds > 600) {
         return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
 *❌Error*
 > _Cannot Download More Then 10m audio!_`);
       } else {
-        console.log(vData);
         await νℓкуяє.imgB(
           νℓкуяє,
           vcнaт,
           `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
 *⚠️IOS-FIX:*
-> press on this link
-> ${vData.TINY_DIRECT_AUDIO}
+> pcoming soon
 
-*🍻TITLE:* ${vData.TITLE}
-*🙈VIEWS:* ${vData.VIEWS}
-*⏰DURATION:* ${vData.TIMESTAMP} | ${vData.UPLOADED}
-*🔗LINK:* ${vData.LINK}
-*🖊️AUTHOR:* ${vData.AUTHOR_NAME}
-*📜DESCRIPTION:* ${vData.DESCRIPTION}`,
-          vData.THUMB
+*🍻TITLE:* ${vData._youtube_search[0].TITLE}
+*🙈VIEWS:* ${vData._youtube_search[0].VIEWS}
+*⏰DURATION:* ${vData._youtube_search[0].DURATION_FULL} | ${vData._youtube_search[0].UPLOADED}
+*🔗LINK:* ${vData._youtube_search[0].LINK}
+*🖊️AUTHOR:* ${vData._youtube_search[0].AUTHOR_NAME}
+*📜DESCRIPTION:* ${vData._youtube_search[0].DESCRIPTION}`,
+          vData._youtube_search[0].THUMB
         );
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         let audiOut = vData._id + ".mp3";
@@ -99,13 +97,13 @@ module.exports = async (νℓкуяє, vcнaт) => {
             contextInfo: {
               externalAdReply: {
                 TITLE: vData.TITLE,
-                body: "❣️Made by xhadr.",
+                body: "❣️Made by magneum.",
                 renderLargerThumbnail: true,
                 thumbnailUrl: vData.THUMB,
                 mediaUrl: vData.LINK,
                 mediaType: 1,
                 thumbnail: await νℓкуяє.getBuffer(vData.THUMB),
-                sourceUrl: "https://bit.ly/xhadr",
+                sourceUrl: "https://bit.ly/magneum",
               },
             },
           },
