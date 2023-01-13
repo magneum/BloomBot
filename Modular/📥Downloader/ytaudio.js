@@ -42,7 +42,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   νℓкуяє
     .axios({
       method: "get",
-      LINK: "https://magneum.vercel.app/api/youtube?q=" + νℓкуяє.args.join(" "),
+      url: "https://magneum.vercel.app/api/youtube?q=" + νℓкуяє.args.join(" "),
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
