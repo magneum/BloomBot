@@ -90,17 +90,17 @@ module.exports = async (νℓкуяє, vcнaт) => {
         await νℓкуяє.sendMessage(
           vcнaт.chat,
           {
-            audio: νℓкуяє.fs.readFileSync(`./${audiOut}`),
+            audio: { url: vData._youtube_downloader[0].AUDIO_DOWNLOAD_LINK },
             mimetype: "audio/mpeg",
-            fileName: vData.TITLE + ".mp3",
+            fileName: vData._youtube_search[0].TITLE + ".mp3",
             headerType: 4,
             contextInfo: {
               externalAdReply: {
-                TITLE: vData.TITLE,
+                TITLE: vData._youtube_search[0].TITLE,
                 body: "❣️Made by magneum.",
                 renderLargerThumbnail: true,
-                thumbnailUrl: vData.THUMB,
-                mediaUrl: vData.LINK,
+                thumbnailUrl: vData._youtube_search[0].THUMB,
+                mediaUrl: vData._youtube_search[0].LINK,
                 mediaType: 1,
                 thumbnail: await νℓкуяє.getBuffer(vData.THUMB),
                 sourceUrl: "https://bit.ly/magneum",
