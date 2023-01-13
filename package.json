@@ -67,6 +67,7 @@
     "image-to-pdf": "^1.0.0",
     "ioredis": "^5.2.4",
     "jimp": "^0.16.1",
+    "js-to-ts-converter": "^0.18.2",
     "jsdom": "^16.4.0",
     "mailist": "^1.0.3",
     "moment-timezone": "^0.5.34",
