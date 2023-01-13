@@ -180,7 +180,7 @@ async function xhåÐr() {
     if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
-    await require("./System/νc໐rē.js")(νℓкуяє, vcнaт, update, store);
+    await require("./System/router.js")(νℓкуяє, vcнaт, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("group-participants.update", async (update) => {
