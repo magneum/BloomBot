@@ -54,11 +54,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
   // "./Gallery/νℓкуяє_rm.jpg"
   // );
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  const datane = νℓкуяє.fs.readFileSync("./Modular/random.js");
-  const jsonData = JSON.parse(datane);
-  const randIndex = Math.floor(Math.random() * jsonData.length);
-  const randKey = jsonData[randIndex];
-  const buffer = await νℓкуяє.getBuffer(randKey.result);
+  const buffer = await νℓкуяє.getBuffer(
+    "https://i.postimg.cc/R0BcNmHn/anime-orange.jpg"
+  );
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
