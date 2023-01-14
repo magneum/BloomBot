@@ -15,33 +15,161 @@ ppath = require("path");
 require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
+const { prepareWAMessageMedia, proto } = require("@adiwajshing/baileys");
 module.exports = async (νℓкуяє, vcнaт) => {
-  await νℓкуяє.imgB(
-    νℓкуяє,
-    vcнaт,
-    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+  // await νℓкуяє.imgB(
+  // νℓкуяє,
+  // vcнaт,
+  // `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+  // *🤖Hello, I am Vlkyre User-Bot🤖*
+  // > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+  // > My developers are working on my code.
+  // ┌───〔 *❕Console❗* 〕
+  // ┊⦁ *⏰Uptime :* ${runtime(process.uptime())}
+  // ┊⦁ *❗OS Release:* ${νℓкуяє.os.release()}
+  // ┊⦁ *❕OS Type:*   ${νℓкуяє.os.type()}
+  // ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+  // ┊⦁ *❕Speed :* ${latensie.toFixed(4)} Second
+  // ┊⦁ *🎞️Ram Usage :* ${ramUsage}
+  // ┊⦁ *💻Platform :* ${νℓкуяє.os.platform()}
+  // ┊⦁ *❗Free memory:* ${νℓкуяє.os.freemem()}
+  // ┊⦁ *❕Total memory:* ${νℓкуяє.os.totalmem()}
+  // ┊⦁ *❕OS Version:* ${νℓкуяє.os.version()}
+  // ┊⦁ *❗Host device :* ${νℓкуяє.os.hostname()}
+  // └───────────●
+  // ┌───〔 *🤖HELP MENU🤖* 』
+  // ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+  // ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+  // ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+  // ┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+  // ┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+  // ┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+  // ┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+  // ┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+  // ┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+  // ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+  // ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+  // ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+  // ┕└───────────●`,
+  // "./Gallery/νℓкуяє_rm.jpg"
+  // );
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  const datane = νℓкуяє.fs.readFileSync("./Modular/random.js");
+  const jsonData = JSON.parse(datane);
+  const randIndex = Math.floor(Math.random() * jsonData.length);
+  const randKey = jsonData[randIndex];
+  const buffer = await νℓкуяє.getBuffer(randKey.result);
+  ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
+    2
+  )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
+  timestampe = speed();
+  latensie = νℓкуяє.speed() - timestampe;
+  const runtime = function (seconds) {
+    seconds = Number(seconds);
+    d = Math.floor(seconds / (3600 * 24));
+    h = Math.floor((seconds % (3600 * 24)) / 3600);
+    m = Math.floor((seconds % 3600) / 60);
+    s = Math.floor(seconds % 60);
+    dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+    hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+    mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
+    sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+    return dDisplay + hDisplay + mDisplay + sDisplay;
+  };
+  const message = await prepareWAMessageMedia(
+    { image: buffer, jpegThumbnail: buffer },
+    { upload: νℓкуяє.waUploadToServer }
+  );
+  const template = generateWAMessageFromContent(
+    vcнaт.chat,
+    proto.Message.fromObject({
+      templateMessage: {
+        hydratedTemplate: {
+          imageMessage: message.imageMessage,
+          hydratedContentText: `*🔖Here, ${pfname} For @${
+            νℓкуяє.Tname || νℓкуяє.pushname
+          }:*
 *🤖Hello, I am Vlkyre User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
+┌───〔 *❕Console❗* 〕
+┊⦁ *⏰Uptime :* ${runtime(process.uptime())}
+┊⦁ *❗OS Release:* ${νℓкуяє.os.release()}
+┊⦁ *❕OS Type:*   ${νℓкуяє.os.type()}
+┊⦁ *💻Directory:*  ${νℓкуяє.os.homedir()}
+┊⦁ *❕Speed :* ${latensie.toFixed(4)} Second
+┊⦁ *🎞️Ram Usage :* ${ramUsage}
+┊⦁ *💻Platform :* ${νℓкуяє.os.platform()} 
+┊⦁ *❗Free memory:* ${νℓкуяє.os.freemem()}
+┊⦁ *❕Total memory:* ${νℓкуяє.os.totalmem()}
+┊⦁ *❕OS Version:* ${νℓкуяє.os.version()}
+┊⦁ *❗Host device :* ${νℓкуяє.os.hostname()}
+└───────────●
 
 
-┌『 *🤖HELP MENU🤖* 』
-│║⦁🐉 ${νℓкуяє.prefix}animationmenu
-│║⦁📢 ${νℓкуяє.prefix}audiofiltermenu
-│║⦁📼 ${νℓкуяє.prefix}conversionmenu
-│║⦁📥 ${νℓкуяє.prefix}downloadmenu
-│║⦁💰 ${νℓкуяє.prefix}gamesmenu
-│║⦁🔰 ${νℓкуяє.prefix}groupmenu
-│║⦁🍁 ${νℓкуяє.prefix}ownermenu
-│║⦁🖼️ ${νℓкуяє.prefix}photomenu
-│║⦁🔎 ${νℓкуяє.prefix}searchmenu
-│║⦁⭕ ${νℓкуяє.prefix}ytfiltermenu
-│║⦁🍑 ${νℓкуяє.prefix}hentaimenu
-│║⦁👅 ${νℓкуяє.prefix}adultmenu
-┕╚═══════⋑`,
-    "./Gallery/νℓкуяє_rm.jpg"
+┌───〔 *🤖HELP MENU🤖* 〕
+┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+└───────────●`,
+          hydratedFooterText:
+            "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+          hydratedButtons: [
+            {
+              urlButton: {
+                displayText: "YouTube",
+                url: "https://www.youtube.com/",
+              },
+            },
+            {
+              urlButton: {
+                displayText: "Webpage",
+                url: "https://bit.ly/magneum",
+              },
+            },
+            {
+              urlButton: {
+                displayText: "Github",
+                url: "https://github.com/magneum/Vlkyre/fork",
+              },
+            },
+            {
+              quickReplyButton: {
+                displayText: `${νℓкуяє.prefix}Vlkyre`,
+                id: `${νℓкуяє.prefix}Vlkyre`,
+              },
+            },
+            {
+              quickReplyButton: {
+                displayText: `${νℓкуяє.prefix}Help`,
+                id: `${νℓкуяє.prefix}Help`,
+              },
+            },
+            {
+              quickReplyButton: {
+                displayText: `${νℓкуяє.prefix}Dashboard`,
+                id: `${νℓкуяє.prefix}Dashboard`,
+              },
+            },
+          ],
+        },
+      },
+    }),
+    { userJid: vcнaт.chat, quoted: vcнaт }
   );
+  νℓкуяє.relayMessage(vcнaт.chat, template.message, {
+    messageId: template.key.id,
+  });
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
