@@ -41,17 +41,17 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 ┌───〔 *❕Console❗* 〕
-┊⦁ *⏰Uptime :* ${runtime(process.uptime())}
-┊⦁ *❗OS Release:* ${νℓкуяє.os.release()}
-┊⦁ *❕OS Type:*   ${νℓкуяє.os.type()}
+┊⦁ *Uptime :* ${runtime(process.uptime())}
+┊⦁ *OS Release:* ${νℓкуяє.os.release()}
+┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
 ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
-┊⦁ *❕Speed :* ${latensie.toFixed(4)} Second
-┊⦁ *🎞️Ram Usage :* ${ramUsage}
-┊⦁ *💻Platform :* ${νℓкуяє.os.platform()}
-┊⦁ *❗Free memory:* ${νℓкуяє.os.freemem()}
-┊⦁ *❕Total memory:* ${νℓкуяє.os.totalmem()}
-┊⦁ *❕OS Version:* ${νℓкуяє.os.version()}
-┊⦁ *❗Host device :* ${νℓкуяє.os.hostname()}
+┊⦁ *Speed :* ${latensie.toFixed(4)} Second
+┊⦁ *Ram Usage :* ${ramUsage}
+┊⦁ *Platform :* ${νℓкуяє.os.platform()}
+┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+┊⦁ *OS Version:* ${νℓкуяє.os.version()}
+┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
 └───────────●
 ┌───〔 *🤖HELP MENU🤖* 』
 ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
