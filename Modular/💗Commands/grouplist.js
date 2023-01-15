@@ -28,6 +28,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 
 ┌『 *🔰${pfname.toUpperCase()}🔰* 』
 │║⦁ ${νℓкуяє.prefix}antilink
+│║⦁ ${νℓкуяє.prefix}antinsfw
 │║⦁ ${νℓкуяє.prefix}delete
 │║⦁ ${νℓкуяє.prefix}group
 │║⦁ ${νℓкуяє.prefix}kick
