@@ -1,0 +1,11 @@
+.codesandbox
+node_modules
+json.sqlite
+.yarnrc.yml
+process.js
+νℓкуяє.db
+.vscode
+Test.js
+.next
+.yarn
+.env
