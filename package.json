@@ -4,13 +4,14 @@
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
-    "npm": "please-use-yarn",
-    "yarn": ">= 1.19.1"
+    "npm": "[ ONLY YARN IS ALLOWED FOR THIS PROJECT ]",
+    "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "start": "yarn dlx forever --minUptime=1000ms --spinSleepTime=1000ms νℓкуяє.js --color",
-    "local": "node νℓкуяє.js --no-warnings",
-    "build": "next build && yarn install",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
+    "prep": "yarn install --ignore-engines && yarn global forever",
+    "glob": "node --no-warnings index.js",
+    "build": "next build",
     "lint": "next lint",
     "dev": "next dev"
   },
@@ -106,6 +107,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "redis": "^4.5.1",
+    "rimraf": "^4.0.5",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
     "sequelize": "^6.7.0",

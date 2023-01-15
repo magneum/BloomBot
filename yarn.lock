@@ -8839,6 +8839,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rimraf@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "rimraf@npm:4.0.5"
+  bin:
+    rimraf: dist/cjs/src/bin.js
+  checksum: e99139d6460d4460125288565698ff43f5cb8734feda83694187a029b21bdd6e63c063a1cb899ae8deaccc4345fbb69fa45e655329b2fb93f21ad809da1948eb
+  languageName: node
+  linkType: hard
+
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -10523,6 +10532,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     redis: ^4.5.1
+    rimraf: ^4.0.5
     scrape-primbon: ^1.1.0
     secktor-pack: ^0.0.1-development
     sequelize: ^6.7.0
