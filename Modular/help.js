@@ -139,50 +139,49 @@ module.exports = async (νℓкуяє, vcнaт) => {
     }),
     { userJid: vcнaт.chat, quoted: vcнaт }
   );
-  νℓкуяє.relayMessage(vcнaт.chat, template.message, {
+  await νℓкуяє.relayMessage(vcнaт.chat, template.message, {
     messageId: template.key.id,
   });
 
-  // await νℓкуяє.imgB(
-  // νℓкуяє,
-  // vcнaт,
-  // `*🔖Here, ${pfname} For @${
-  // νℓкуяє.Tname || νℓкуяє.pushname
-  // }:*
-  // *🤖Hello, I am Vlkyre User-Bot🤖*
-  // > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
-  // > My developers are working on my code.
+  await νℓкуяє.imgB(
+    νℓкуяє,
+    vcнaт,
+    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+*🤖Hello, I am Vlkyre User-Bot🤖*
+> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> My developers are working on my code.
 
-  // ┌───〔 *❗Console❗* 〕
-  // ┊⦁ *Uptime :* ${runtime(process.uptime())}
-  // ┊⦁ *OS Release:* ${νℓкуяє.os.release()}
-  // ┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
-  // ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
-  // ┊⦁ *Speed :* ${latensie.toFixed(4)} Second
-  // ┊⦁ *Ram Usage :* ${ramUsage}
-  // ┊⦁ *Platform :* ${νℓкуяє.os.platform()}
-  // ┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
-  // ┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
-  // ┊⦁ *OS Version:* ${νℓкуяє.os.version()}
-  // ┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
-  // └───────────●
+┌───〔 *❗Console❗* 〕
+┊⦁ *Uptime :* ${runtime(process.uptime())}
+┊⦁ *OS Release:* ${νℓкуяє.os.release()}
+┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
+┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+┊⦁ *Speed :* ${latensie.toFixed(4)} Second
+┊⦁ *Ram Usage :* ${ramUsage}
+┊⦁ *Platform :* ${νℓкуяє.os.platform()}
+┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+┊⦁ *OS Version:* ${νℓкуяє.os.version()}
+┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
+└───────────●
 
-  // ┌───〔 *❕Commands❕* 』
-  // ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
-  // ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
-  // ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
-  // ┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
-  // ┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
-  // ┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
-  // ┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
-  // ┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
-  // ┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
-  // ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
-  // ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
-  // ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
-  // └───────────●`,
-  // "./Gallery/νℓкуяє_rm.jpg"
-  // );
+┌───〔 *❕Commands❕* 』
+┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+└───────────●`,
+    "https://i.postimg.cc/k4xVVPx3/vlkyre.png"
+  );
+  return;
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
