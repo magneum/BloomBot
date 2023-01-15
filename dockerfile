@@ -22,5 +22,5 @@ RUN git init --initial-branch=magneum
 RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
 RUN pip install -r requirements.txt
-RUN yarn install --ignore-engines
+RUN yarn install
 CMD python Operator.py
