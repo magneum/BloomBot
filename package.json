@@ -8,12 +8,9 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "prep": "yarn install --ignore-engines && yarn global forever",
-    "glob": "node --no-warnings index.js",
-    "build": "next build",
-    "lint": "next lint",
-    "dev": "next dev"
+    "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
+    "build": "yarn install --ignore-engines && yarn global forever",
+    "glob": "node --no-warnings index.js"
   },
   "depecrated": false,
   "directories": {
@@ -57,8 +54,6 @@
     "djs-chatbot": "^1.0.1",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.2",
     "express": "^4.18.2",
     "ffmpeg-static": "^5.1.0",
     "fluent-ffmpeg": "^2.1.2",
@@ -80,7 +75,6 @@
     "moment-timezone": "^0.5.34",
     "mongoose": "^5.10.7",
     "music-lyrics": "^2.0.2",
-    "next": "13.1.2",
     "nhentai-api": "^3.4.3",
     "nhentai-ikyy": "^2.0.1",
     "nhentai-js": "^4.0.0",
@@ -104,8 +98,6 @@
     "qrcode-terminal": "^0.12.0",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "redis": "^4.5.1",
     "rimraf": "^4.0.5",
     "scrape-primbon": "^1.1.0",
