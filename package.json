@@ -1,6 +1,6 @@
 {
   "name": "vlkyre-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
@@ -115,7 +115,8 @@
     "util": "^0.12.4",
     "wa-sticker-formatter": "^4.3.2",
     "winston": "^3.8.2",
-    "xfarr-api": "^1.0.3"
+    "xfarr-api": "^1.0.3",
+    "youtube-avdl": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

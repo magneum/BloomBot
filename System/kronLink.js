@@ -161,8 +161,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.Levels = require("discord-xp");
   νℓкуяє.canvacord = require("canvacord");
   νℓкуяє.randomMC = require("random-material-color");
-  // νℓкуяє.yClient = require("xhadr-ytdownload");
-  // νℓкуяє.ySearch = require("xhadr-ytsearch");
+  νℓкуяє.yClient = require("youtube-avdl");
   νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
   νℓкуяє.ffmpeg = ffmpeg;
   νℓкуяє.pathFFmpeg = require("ffmpeg-static");
@@ -174,7 +173,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     "m",
     "c",
     "help",
-    "menu",
+    "list",
     "command",
     "commands",
     "Vlkyre",

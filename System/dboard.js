@@ -190,22 +190,22 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           yuri: 0,
           zettaiRyouiki: 0,
 
-          menu: 0,
+          list: 0,
           vlkyre: 0,
           dashboard: 0,
 
-          animationmenu: 0,
-          audiofiltermenu: 0,
-          conversionmenu: 0,
-          downloadmenu: 0,
-          gamesmenu: 0,
-          groupmenu: 0,
-          ownermenu: 0,
-          photomenu: 0,
-          searchmenu: 0,
-          ytfiltermenu: 0,
-          hentaimenu: 0,
-          adultmenu: 0,
+          animationlist: 0,
+          audiofilterlist: 0,
+          conversionlist: 0,
+          downloadlist: 0,
+          gameslist: 0,
+          grouplist: 0,
+          ownerlist: 0,
+          photolist: 0,
+          searchlist: 0,
+          ytfilterlist: 0,
+          hentailist: 0,
+          adultlist: 0,
         })
           .save()
           .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
@@ -242,7 +242,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any menu.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
