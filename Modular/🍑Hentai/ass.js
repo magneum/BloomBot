@@ -19,12 +19,49 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
   try {
-    await νℓкуяє.imgB(
-      νℓкуяє,
-      vcнaт,
-      `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-> I know you like anime ass~ uwu`,
-      await νℓкуяє.akaneko.nsfw.ass()
+    return await νℓкуяє.nsfwCheck.findOne(
+      {
+        serverID: vcнaт.chat,
+      },
+      async (error, server) => {
+        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (!server) {
+          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌ Error* 
+> NSFW Commands have been turned off for this group.
+> You may ask the admins to turn it on.`);
+        } else {
+          return νℓкуяє
+            .axios({
+              method: "get",
+              url: "https://magneum.vercel.app/api/hentai?q=" + pfname,
+              headers: {
+                accept: "*/*",
+                "accept-language": "en-US,en;q=0.9",
+                "content-type":
+                  "application/x-www-form-urlencoded; charset=UTF-8",
+              },
+            })
+            .then(async (response) => {
+              var mData = response.data;
+              if (mData[0].URL) {
+                return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌ Error* 
+> There has been an API Error. Please try again later.`);
+              } else {
+                await νℓкуяє.imgB(
+                  νℓкуяє,
+                  vcнaт,
+                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+
+> *Description:* ${mData[0].DESCRIPTION}
+> *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
+                  mData[0].URL
+                );
+              }
+            });
+        }
+      }
     );
   } catch (error) {
     return νℓкуяє.grab(νℓкуяє, vcнaт, error);

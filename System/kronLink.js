@@ -88,7 +88,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.runtime = runtime;
   νℓкуяє.fetchJson = fetchJson;
   νℓкуяє.getBuffer = getBuffer;
-  νℓкуяєonformat = jsonformat;
+  νℓкуяє.jsonformat = jsonformat;
   νℓкуяє.format = format;
   νℓкуяє.parseMention = parseMention;
   νℓкуяє.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
