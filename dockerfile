@@ -1,7 +1,7 @@
 FROM python:latest
-ENV xhadr_ "/venv"
-RUN python -m venv $xhadr_
-ENV PATH "$xhadr_/bin:$PATH"
+ENV magneum_ "/venv"
+RUN python -m venv $magneum_
+ENV PATH "$magneum_/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 git \
@@ -15,7 +15,7 @@ RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
 RUN yarn set version berry
-RUN git clone --branch magneum https://github.com/xhadr/Vlkyre
+RUN git clone --branch magneum https://github.com/magneum/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=magneum
