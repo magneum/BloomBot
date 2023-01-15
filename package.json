@@ -9,7 +9,7 @@
   },
   "scripts": {
     "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "build": "yarn install --ignore-engines && yarn global forever",
+    "build": "yarn install && yarn global forever",
     "glob": "node --no-warnings index.js"
   },
   "depecrated": false,
