@@ -36,7 +36,7 @@ except Exception as Error:
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: Error In git sync!", "red")
     cprint("🐍𝐩𝐲𝐋𝐨𝐠: Trying TO Stash and ReTry!", "yellow")
 try:
-    subprocess.run(["npm", "install", "--force", "--save"],
+    subprocess.run(["yarn", "install"],
                    check=True, stdout=subprocess.PIPE).stdout
 except Exception as Error:
     cprint(f"🐍𝐩𝐲𝐋𝐨𝐠: {Error}")
