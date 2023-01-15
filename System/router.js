@@ -126,7 +126,13 @@ isAdmin = vcнaт.isGroup
 ? groupAdmins.includes(vcнaт.sender)
 : false;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-switch (νℓкуяє.command) {
+const vcommand = νℓкуяє.body
+      .replace(νℓкуяє.prefix, "")
+      .trim()
+      .split(/ +/)
+      .shift()
+      .toLowerCase();
+switch (vcommand) {
 case "vlkyre":
 require("./dboard")(νℓкуяє, vcнaт, (dback) => {
 dback.vlkyre = dback.vlkyre + 1;
