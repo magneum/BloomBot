@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@adiwajshing/baileys@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@adiwajshing/baileys/-/baileys-4.1.0.tgz#7dbcc788b28a7d69a95e6f5f97cf4db3178d6e96"
-  integrity sha512-365E0lkHa9brjJRgKwhNpmUT/lNpzopBsBjCXYgvdSiJ/c3b8yyIoW7+AOyuwR1CQ1CW86IiPpdaqfb+wiDg7w==
+"@adiwajshing/baileys@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@adiwajshing/baileys/-/baileys-4.4.0.tgz#6c39c74a29324d22aec67ddbfda890a8e5d85e37"
+  integrity sha512-5gEnkJBgraLL0USzndxto8ofYhWyMFZVkpZ4rD1nPqrjBjGMt+k+YDpllpFpOfA0yxWZb6nPrr04ikQv++dz2Q==
   dependencies:
     "@hapi/boom" "^9.1.3"
     axios "^0.24.0"
-    curve25519-js "^0.0.4"
+    futoin-hkdf "^1.5.0"
     libsignal "git+https://github.com/adiwajshing/libsignal-node"
-    music-metadata "^7.4.1"
+    music-metadata "^7.12.3"
     node-cache "^5.1.2"
     pino "^7.0.0"
-    protobufjs "^6.10.1"
+    protobufjs "^6.11.3"
     ws "^8.0.0"
 
 "@adiwajshing/keyed-db@^0.2.4":
@@ -2732,6 +2732,11 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
+futoin-hkdf@^1.5.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/futoin-hkdf/-/futoin-hkdf-1.5.1.tgz#141f00427bc9950b38a42aa786b99c318b9b688d"
+  integrity sha512-g5d0Qp7ks55hYmYmfqn4Nz18XH49lcCR+vvIvHT92xXnsJaGZmY1EtWQWilJ6BQp57heCIXM/rRo+AFep8hGgg==
+
 g-i-s@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/g-i-s/-/g-i-s-2.1.6.tgz#6faf7f208a7d293d06ed2ad3091e15e099637282"
@@ -4118,7 +4123,7 @@ music-lyrics@^2.0.2:
     cheerio "^1.0.0-rc.6"
     superagent "^6.1.0"
 
-music-metadata@^7.4.1:
+music-metadata@^7.12.3:
   version "7.13.3"
   resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.13.3.tgz#6b32f4ca930ba44b1ff3890ecb995cd5b36d0f47"
   integrity sha512-qxh+Xgy1qHhrgW4XnXu5JUxMmRNdQXDEeIZLGXpapOi96rRCocXn498L+y2P7t6NJXFK8e3Shv2tu0dC/HF/3g==
@@ -4996,7 +5001,7 @@ protobufjs@6.8.8:
     "@types/node" "^10.1.0"
     long "^4.0.0"
 
-protobufjs@^6.10.1:
+protobufjs@^6.11.3:
   version "6.11.3"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.3.tgz#637a527205a35caa4f3e2a9a4a13ddffe0e7af74"
   integrity sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==
