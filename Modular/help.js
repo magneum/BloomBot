@@ -57,10 +57,11 @@ module.exports = async (νℓкуяє, vcнaт) => {
     }
   };
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  buffer = await getBuffer("https://i.postimg.cc/k4xVVPx3/vlkyre.png");
-  console.log(buffer);
   let message = await prepareWAMessageMedia(
-    { image: buffer, jpegThumbnail: buffer },
+    {
+      image: "https://i.postimg.cc/k4xVVPx3/vlkyre.png",
+      jpegThumbnail: "https://i.postimg.cc/k4xVVPx3/vlkyre.png",
+    },
     { upload: νℓкуяє.waUploadToServer }
   );
   const template = generateWAMessageFromContent(
