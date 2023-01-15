@@ -41,8 +41,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
-            if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isModerator) return;
+            if (banCheck && !νℓкуяє.frome && !νℓкуяє.isSudoWorker) return;
+            if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isSudoWorker) return;
             await νℓкуяє.LinkList.findOne(
               {
                 serverID: vcнaт.chat,
@@ -61,7 +61,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               νℓкуяє.memberRespA[i] = respA.participants[i].id;
             if (
               !νℓкуяє.fromme &&
-              !νℓкуяє.isModerator &&
+              !νℓкуяє.isSudoWorker &&
               !νℓкуяє.letResp.includes(νℓкуяє.command) &&
               !νℓкуяє.memberRespA.includes(vcнaт.sender)
             ) {

@@ -35,7 +35,7 @@ module.exports = async (
 > _It's a group command!_`
       );
     }
-    if (!isAdmin && !νℓкуяє.isModerator) {
+    if (!isAdmin && !νℓкуяє.isSudoWorker) {
       return vcнaт.reply(
         `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 

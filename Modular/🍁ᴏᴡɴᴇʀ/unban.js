@@ -28,7 +28,7 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкуяє.frome && !νℓкуяє.isModerator) {
+    if (!νℓкуяє.frome && !νℓкуяє.isSudoWorker) {
       return vcнaт.reply(
         `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 

@@ -70,7 +70,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  νℓкуяє.isModerator = sudotring.includes(
+  νℓкуяє.isSudoWorker = sudotring.includes(
     vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
   );
   return νℓкуяє;
