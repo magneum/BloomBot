@@ -4,16 +4,16 @@ let request = require("request");
 let fs = require("fs-extra");
 
 // module
-const FormData = require("form-data");
-const { default: Axios } = require("axios");
-const filetype = require("file-type");
+let FormData = require("form-data");
+let { default: Axios } = require("axios");
+let filetype = require("file-type");
 //end module
 
 //function upload file
-const uploadFile = (path) =>
+let uploadFile = (path) =>
   new Promise((resolve, reject) => {
-    const fs = require("fs");
-    const fd = new FormData();
+    let fs = require("fs");
+    let fd = new FormData();
     fd.append("file", fs.createReadStream(path));
     Axios({
       method: "POST",

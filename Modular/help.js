@@ -1,4 +1,4 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
@@ -10,11 +10,16 @@
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 ppath = require("path");
 require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
+const {
+  generateWAMessageFromContent,
+  prepareWAMessageMedia,
+  proto,
+} = require("@adiwajshing/baileys");
 module.exports = async (νℓкуяє, vcнaт) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
@@ -33,44 +38,147 @@ module.exports = async (νℓкуяє, vcнaт) => {
     sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
     return dDisplay + hDisplay + mDisplay + sDisplay;
   };
-  await νℓкуяє.imgB(
-    νℓкуяє,
-    vcнaт,
-    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
-*🤖Hello, I am Vlkyre User-Bot🤖*
-> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
-> My developers are working on my code.
-┌───〔 *❕Console❗* 〕
-┊⦁ *Uptime :* ${runtime(process.uptime())}
-┊⦁ *OS Release:* ${νℓкуяє.os.release()}
-┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
-┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
-┊⦁ *Speed :* ${latensie.toFixed(4)} Second
-┊⦁ *Ram Usage :* ${ramUsage}
-┊⦁ *Platform :* ${νℓкуяє.os.platform()}
-┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
-┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
-┊⦁ *OS Version:* ${νℓкуяє.os.version()}
-┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
-└───────────●
-┌───〔 *🤖HELP MENU🤖* 』
-┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
-┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
-┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
-┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
-┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
-┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
-┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
-┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
-┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
-┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
-┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
-┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
-┕└───────────●`,
-    "./Gallery/νℓкуяє_rm.jpg"
+  const getBuffer = async (url, options) => {
+    try {
+      options ? options : {};
+      const res = await νℓкуяє.axios({
+        method: "get",
+        url,
+        headers: {
+          DNT: 1,
+          "Upgrade-Insecure-Request": 1,
+        },
+        ...options,
+        responseType: "arraybuffer",
+      });
+      return res.data;
+    } catch (err) {
+      return err;
+    }
+  };
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  buffer = await getBuffer("https://i.postimg.cc/k4xVVPx3/vlkyre.png");
+  console.log(buffer);
+  let message = await prepareWAMessageMedia(
+    { image: buffer, jpegThumbnail: buffer },
+    { upload: νℓкуяє.waUploadToServer }
   );
+  const template = generateWAMessageFromContent(
+    vcнaт.chat,
+    proto.Message.fromObject({
+      templateMessage: {
+        hydratedTemplate: {
+          imageMessage: message.imageMessage,
+          hydratedContentText: `*🔖Here, ${pfname} For @${
+            νℓкуяє.Tname || νℓкуяє.pushname
+          }:*
+          *🤖Hello, I am Vlkyre User-Bot🤖*
+          > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+          > My developers are working on my code.
+          ┌───〔 *❕Console❗* 〕
+          ┊⦁ *Uptime :* ${runtime(process.uptime())}
+          ┊⦁ *OS Release:* ${νℓкуяє.os.release()}
+          ┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
+          ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+          ┊⦁ *Speed :* ${latensie.toFixed(4)} Second
+          ┊⦁ *Ram Usage :* ${ramUsage}
+          ┊⦁ *Platform :* ${νℓкуяє.os.platform()}
+          ┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+          ┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+          ┊⦁ *OS Version:* ${νℓкуяє.os.version()}
+          ┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
+          └───────────●
+          
+          ┌───〔 *🤖HELP MENU🤖* 』
+          ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+          ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+          ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+          ┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+          ┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+          ┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+          ┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+          ┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+          ┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+          ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+          ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+          ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+          ┕└───────────●`,
+          hydratedFooterText:
+            "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          hydratedButtons: [
+            {
+              urlButton: {
+                displayText: "SUBSCRIBE",
+                url: "https://www.youtube.com",
+              },
+            },
+            {
+              urlButton: {
+                displayText: "GITHUB",
+                url: "https://github.com/zim-bot/zimbot-v4/fork",
+              },
+            },
+            {
+              quickReplyButton: {
+                displayText: `${νℓкуяє.prefix}Dashboard`,
+                id: `${νℓкуяє.prefix}Dashboard`,
+              },
+            },
+            {
+              quickReplyButton: {
+                displayText: `${νℓкуяє.prefix}Help`,
+                id: `${νℓкуяє.prefix}Help`,
+              },
+            },
+          ],
+        },
+      },
+    }),
+    { userJid: vcнaт.chat, quoted: vcнaт }
+  );
+  νℓкуяє.relayMessage(vcнaт.chat, template.message, {
+    messageId: template.key.id,
+  });
+
+  // await νℓкуяє.imgB(
+  // νℓкуяє,
+  // vcнaт,
+  // `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+  // *🤖Hello, I am Vlkyre User-Bot🤖*
+  // > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+  // > My developers are working on my code.
+  // ┌───〔 *❕Console❗* 〕
+  // ┊⦁ *Uptime :* ${runtime(process.uptime())}
+  // ┊⦁ *OS Release:* ${νℓкуяє.os.release()}
+  // ┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
+  // ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+  // ┊⦁ *Speed :* ${latensie.toFixed(4)} Second
+  // ┊⦁ *Ram Usage :* ${ramUsage}
+  // ┊⦁ *Platform :* ${νℓкуяє.os.platform()}
+  // ┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+  // ┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+  // ┊⦁ *OS Version:* ${νℓкуяє.os.version()}
+  // ┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
+  // └───────────●
+  //
+  // ┌───〔 *🤖HELP MENU🤖* 』
+  // ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+  // ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+  // ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+  // ┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+  // ┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+  // ┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+  // ┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+  // ┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+  // ┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+  // ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+  // ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+  // ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+  // ┕└───────────●`,
+  // "./Gallery/νℓкуяє_rm.jpg"
+  // );
 };
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
@@ -82,4 +190,4 @@ module.exports = async (νℓкуяє, vcнaт) => {
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

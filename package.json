@@ -4,12 +4,15 @@
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "engines": {
-    "npm": ">=9.0.0",
-    "node": ">=16.0.0 <17.0.0"
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
   },
   "scripts": {
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "build": "yarn install --ignore-engines"
+    "start": "yarn dlx forever --minUptime=1000ms --spinSleepTime=1000ms νℓкуяє.js --color",
+    "local": "node νℓкуяє.js --no-warnings",
+    "build": "next build && yarn install",
+    "lint": "next lint",
+    "dev": "next dev"
   },
   "depecrated": false,
   "directories": {
@@ -31,6 +34,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^1.4.1",
     "@hapi/boom": "^10.0.0",
+    "@next/font": "13.1.2",
     "@shineiichijo/canvas-chan": "^1.0.0",
     "@shineiichijo/marika": "^2.0.2",
     "@shineiichijo/nhentai-pdf": "^1.0.5",
@@ -52,6 +56,8 @@
     "djs-chatbot": "^1.0.1",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
     "express": "^4.18.2",
     "ffmpeg-static": "^5.1.0",
     "fluent-ffmpeg": "^2.1.2",
@@ -73,6 +79,7 @@
     "moment-timezone": "^0.5.34",
     "mongoose": "^5.10.7",
     "music-lyrics": "^2.0.2",
+    "next": "13.1.2",
     "nhentai-api": "^3.4.3",
     "nhentai-ikyy": "^2.0.1",
     "nhentai-js": "^4.0.0",
@@ -96,6 +103,8 @@
     "qrcode-terminal": "^0.12.0",
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "redis": "^4.5.1",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
@@ -113,5 +122,11 @@
     "wa-sticker-formatter": "^4.3.2",
     "winston": "^3.8.2",
     "xfarr-api": "^1.0.3"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  },
+  "packageManager": "yarn@3.3.1"
 }

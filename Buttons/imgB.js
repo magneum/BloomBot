@@ -1,4 +1,4 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
@@ -10,7 +10,7 @@
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (νℓкуяє.isReply) {
     var receiver =
@@ -25,16 +25,11 @@ module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imå
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,
               buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${νℓкуяє.prefix}Vlkyre`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
               type: 1,
             },
             {
@@ -52,7 +47,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         }
       )
       .catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (νℓкуяє.mentionByTag) {
     var receiver =
       νℓкуяє.mtype == "extendedTextMessage" &&
@@ -66,16 +61,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,
               buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${νℓкуяє.prefix}Vlkyre`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
               type: 1,
             },
             {
@@ -93,7 +83,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         }
       )
       .catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await νℓкуяє
       .sendMessage(
@@ -102,16 +92,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${vcнaт.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${νℓкуяє.prefix}Dashboard`,
               buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${νℓкуяє.prefix}Vlkyre`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
               type: 1,
             },
             {
@@ -131,7 +116,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
       .catch((e) => console.log(e));
   }
 };
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
@@ -143,4 +128,4 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
