@@ -72,37 +72,40 @@ module.exports = async (νℓкуяє, vcнaт) => {
           hydratedContentText: `*🔖Here, ${pfname} For @${
             νℓкуяє.Tname || νℓкуяє.pushname
           }:*
-          *🤖Hello, I am Vlkyre User-Bot🤖*
-          > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
-          > My developers are working on my code.
-          ┌───〔 *❕Console❗* 〕
-          ┊⦁ *Uptime :* ${runtime(process.uptime())}
-          ┊⦁ *OS Release:* ${νℓкуяє.os.release()}
-          ┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
-          ┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
-          ┊⦁ *Speed :* ${latensie.toFixed(4)} Second
-          ┊⦁ *Ram Usage :* ${ramUsage}
-          ┊⦁ *Platform :* ${νℓкуяє.os.platform()}
-          ┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
-          ┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
-          ┊⦁ *OS Version:* ${νℓкуяє.os.version()}
-          ┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
-          └───────────●
-          
-          ┌───〔 *🤖HELP MENU🤖* 』
-          ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
-          ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
-          ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
-          ┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
-          ┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
-          ┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
-          ┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
-          ┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
-          ┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
-          ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
-          ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
-          ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
-          ┕└───────────●`,
+*🤖Hello, I am Vlkyre User-Bot🤖*
+> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> My developers are working on my code.
+
+
+┌───〔 *❗Console❗* 〕
+┊⦁ *Uptime :* ${runtime(process.uptime())}
+┊⦁ *OS Release:* ${νℓкуяє.os.release()}
+┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
+┊⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+┊⦁ *Speed :* ${latensie.toFixed(4)} Second
+┊⦁ *Ram Usage :* ${ramUsage}
+┊⦁ *Platform :* ${νℓкуяє.os.platform()}
+┊⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+┊⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+┊⦁ *OS Version:* ${νℓкуяє.os.version()}
+┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
+└───────────●
+
+
+┌───〔 *❕Commands❕* 』
+┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
+┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
+┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
+┊⦁ 📥 ${νℓкуяє.prefix}downloadmenu
+┊⦁ 💰 ${νℓкуяє.prefix}gamesmenu
+┊⦁ 🔰 ${νℓкуяє.prefix}groupmenu
+┊⦁ 🍁 ${νℓкуяє.prefix}ownermenu
+┊⦁ 🖼️ ${νℓкуяє.prefix}photomenu
+┊⦁ 🔎 ${νℓкуяє.prefix}searchmenu
+┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
+┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
+┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
+└───────────●`,
           hydratedFooterText:
             "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           hydratedButtons: [
@@ -143,11 +146,14 @@ module.exports = async (νℓкуяє, vcнaт) => {
   // await νℓкуяє.imgB(
   // νℓкуяє,
   // vcнaт,
-  // `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+  // `*🔖Here, ${pfname} For @${
+  // νℓкуяє.Tname || νℓкуяє.pushname
+  // }:*
   // *🤖Hello, I am Vlkyre User-Bot🤖*
   // > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
   // > My developers are working on my code.
-  // ┌───〔 *❕Console❗* 〕
+
+  // ┌───〔 *❗Console❗* 〕
   // ┊⦁ *Uptime :* ${runtime(process.uptime())}
   // ┊⦁ *OS Release:* ${νℓкуяє.os.release()}
   // ┊⦁ *OS Type:*   ${νℓкуяє.os.type()}
@@ -160,8 +166,8 @@ module.exports = async (νℓкуяє, vcнaт) => {
   // ┊⦁ *OS Version:* ${νℓкуяє.os.version()}
   // ┊⦁ *Host device :* ${νℓкуяє.os.hostname()}
   // └───────────●
-  //
-  // ┌───〔 *🤖HELP MENU🤖* 』
+
+  // ┌───〔 *❕Commands❕* 』
   // ┊⦁ 🐉 ${νℓкуяє.prefix}animationmenu
   // ┊⦁ 📢 ${νℓкуяє.prefix}audiofiltermenu
   // ┊⦁ 📼 ${νℓкуяє.prefix}conversionmenu
@@ -174,7 +180,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
   // ┊⦁ ⭕ ${νℓкуяє.prefix}ytfiltermenu
   // ┊⦁ 🍑 ${νℓкуяє.prefix}hentaimenu
   // ┊⦁ 👅 ${νℓкуяє.prefix}adultmenu
-  // ┕└───────────●`,
+  // └───────────●`,
   // "./Gallery/νℓкуяє_rm.jpg"
   // );
 };
