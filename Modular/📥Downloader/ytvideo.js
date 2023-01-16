@@ -17,26 +17,36 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (
-  νℓкуяє,
-  vcнaт,
-  gmeta,
-  isAdmin,
-  groupName,
-  isBotAdmin,
-  groupAdmins,
-  participants
-) => {
-  try {
-    return vcнaт.reply(
-      `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+module.exports = async (νℓкуяє, vcнaт) => {
+  return vcнaт.reply(
+    `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
-    );
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+  );
+  await νℓкуяє.sendMessage(
+    vcнaт.chat,
+    {
+      audio: {
+        url: video["240p"].download(),
+      },
+      mimetype: "audio/mpeg",
+      fileName: vData._youtube_search[0].TITLE + ".mp3",
+      headerType: 4,
+      contextInfo: {
+        externalAdReply: {
+          TITLE: vData._youtube_search[0].TITLE,
+          body: "❣️Made by magneum.",
+          renderLargerThumbnail: true,
+          thumbnailUrl: vData._youtube_search[0].THUMB,
+          mediaUrl: vData._youtube_search[0].LINK,
+          mediaType: 1,
+          thumbnail: await νℓкуяє.getBuffer(vData._youtube_search[0].THUMB),
+          sourceUrl: "https://bit.ly/magneum",
+        },
+      },
+    },
+    { quoted: vcнaт }
+  );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*

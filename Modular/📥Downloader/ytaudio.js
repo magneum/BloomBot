@@ -18,100 +18,35 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт) => {
-  if (!νℓкуяє.args.join(" ")) {
-    return vcнaт.reply(
-      `*😥Sorry:* _@${νℓкуяє.Tname}_
+  return vcнaт.reply(
+    `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
-> _No query provided!_
-*⚡Usage*   
-> _${νℓкуяє.prefix}${pfname} song name_`
-    );
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  var gotArgument = νℓкуяє.args.join(" ");
-  if (gotArgument.includes("yout")) {
-    return vcнaт.reply(
-      `*😥Sorry:* _@${νℓкуяє.Tname}_
-*❌Error* 
-> _No query provided!_
-*⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} song name_`
-    );
-  }
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  νℓкуяє
-    .axios({
-      method: "get",
-      url: "https://magneum.vercel.app/api/youtube?q=" + νℓкуяє.args.join(" "),
-      headers: {
-        accept: "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+> _This Command is not yet ready for public usage!_`
+  );
+  await νℓкуяє.sendMessage(
+    vcнaт.chat,
+    {
+      audio: {
+        url: video["240p"].download(),
       },
-    })
-    .then(async (response) => {
-      var vData = response.data;
-      if (!vData._youtube_search[0].LINK) {
-        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
-*❌Error*
-> _No Music Found!_`);
-      } else if (vData._youtube_search[0].seconds > 600) {
-        return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname}_
-*❌Error*
-> _Cannot Download More Then 10m audio!_`);
-      } else {
-        await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
-*⚠️IOS-FIX:*
-> pcoming soon
-
-*🍻TITLE:* ${vData._youtube_search[0].TITLE}
-*🙈VIEWS:* ${vData._youtube_search[0].VIEWS}
-*⏰DURATION:* ${vData._youtube_search[0].DURATION_FULL} | ${vData._youtube_search[0].UPLOADED}
-*🔗LINK:* ${vData._youtube_search[0].LINK}
-*🖊️AUTHOR:* ${vData._youtube_search[0].AUTHOR_NAME}
-*📜DESCRIPTION:* ${vData._youtube_search[0].DESCRIPTION}`,
-          vData._youtube_search[0].THUMB
-        );
-        ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-        let audiOut = vData._id + ".mp3";
-        var audio = νℓкуяє
-          .yClient(vData.LINK, {
-            filter: (info) =>
-              info.audioBitrate == 160 || info.audioBitrate == 128,
-          })
-          .pipe(νℓкуяє.fs.createWriteStream(`./${audiOut}`));
-        await new Promise((resolve, reject) => {
-          audio.on("error", reject);
-          audio.on("finish", resolve);
-        });
-        await νℓкуяє.sendMessage(
-          vcнaт.chat,
-          {
-            audio: { url: vData._youtube_downloader[0].AUDIO_DOWNLOAD_LINK },
-            mimetype: "audio/mpeg",
-            fileName: vData._youtube_search[0].TITLE + ".mp3",
-            headerType: 4,
-            contextInfo: {
-              externalAdReply: {
-                TITLE: vData._youtube_search[0].TITLE,
-                body: "❣️Made by magneum.",
-                renderLargerThumbnail: true,
-                thumbnailUrl: vData._youtube_search[0].THUMB,
-                mediaUrl: vData._youtube_search[0].LINK,
-                mediaType: 1,
-                thumbnail: await νℓкуяє.getBuffer(vData.THUMB),
-                sourceUrl: "https://bit.ly/magneum",
-              },
-            },
-          },
-          { quoted: vcнaт }
-        );
-        return νℓкуяє.fs.unlinkSync(`./${audiOut}`);
-      }
-    });
+      mimetype: "audio/mpeg",
+      fileName: vData._youtube_search[0].TITLE + ".mp3",
+      headerType: 4,
+      contextInfo: {
+        externalAdReply: {
+          TITLE: vData._youtube_search[0].TITLE,
+          body: "❣️Made by magneum.",
+          renderLargerThumbnail: true,
+          thumbnailUrl: vData._youtube_search[0].THUMB,
+          mediaUrl: vData._youtube_search[0].LINK,
+          mediaType: 1,
+          thumbnail: await νℓкуяє.getBuffer(vData._youtube_search[0].THUMB),
+          sourceUrl: "https://bit.ly/magneum",
+        },
+      },
+    },
+    { quoted: vcнaт }
+  );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
