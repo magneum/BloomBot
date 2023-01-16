@@ -33,32 +33,12 @@ module.exports = async (νℓкуяє, vcнaт) => {
     sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
     return dDisplay + hDisplay + mDisplay + sDisplay;
   };
-  const getBuffer = async (url, options) => {
-    try {
-      options ? options : {};
-      const res = await νℓкуяє.axios({
-        method: "get",
-        url,
-        headers: {
-          DNT: 1,
-          "Upgrade-Insecure-Request": 1,
-        },
-        ...options,
-        responseType: "arraybuffer",
-      });
-      return res.data;
-    } catch (err) {
-      return err;
-    }
-  };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  await νℓкуяє.imgB(
+  return await νℓкуяє.imgB(
     νℓкуяє,
     vcнaт,
     `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
-*🤖Hello, I am Vlkyre User-Bot🤖*
-> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
-> My developers are working on my code.
+> ⒸVlkyre: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> You can visit your dashboard at _bit.ly/magneum_
 
 
 ┌───〔 *❗Console❗* 〕

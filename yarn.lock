@@ -217,6 +217,21 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@bochilteam/scraper@^4.0.22-alpha.0":
+  version "4.0.22-alpha.0"
+  resolved "https://registry.yarnpkg.com/@bochilteam/scraper/-/scraper-4.0.22-alpha.0.tgz#4d94f805d47ee5a2ce6036c0c72a87190a9cdaf3"
+  integrity sha512-Y+TvEkbNIVpt4tuT/nXg+5RcPNIMiesI+yiF8zNlsUjLkDFGPto8vHCMSccLbTNwUSyd3DARiBB5dTR6TYXB1Q==
+  dependencies:
+    cheerio "1.0.0-rc.12"
+    form-data "^4.0.0"
+    got "^11.8.3"
+    human-readable "^0.2.1"
+    rimraf "^3.0.2"
+    similarity "^1.2.1"
+    zod "^3.20.2"
+  optionalDependencies:
+    ws "^8.4.2"
+
 "@colors/colors@1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
@@ -2035,7 +2050,7 @@ cheerio-select@^2.1.0:
     domhandler "^5.0.3"
     domutils "^3.0.1"
 
-cheerio@^1.0.0-rc.10, cheerio@^1.0.0-rc.11, cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3, cheerio@^1.0.0-rc.5, cheerio@^1.0.0-rc.6, cheerio@^1.0.0-rc.9:
+cheerio@1.0.0-rc.12, cheerio@^1.0.0-rc.10, cheerio@^1.0.0-rc.11, cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3, cheerio@^1.0.0-rc.5, cheerio@^1.0.0-rc.6, cheerio@^1.0.0-rc.9:
   version "1.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.12.tgz#788bf7466506b1c6bf5fae51d24a2c4d62e47683"
   integrity sha512-VqR8m68vM46BNnuZ5NtnGBKIE/DfN0cRIzg9n40EIq9NOv90ayxLBXA8fXC5gquFRGJSTRqBq25Jt2ECLR431Q==
@@ -4911,6 +4926,11 @@ ky@^0.19.1:
   resolved "https://registry.yarnpkg.com/ky/-/ky-0.19.1.tgz#c533884028c83f78167d12905dfecaf6dd760bec"
   integrity sha512-ZwciYrfaWpDI72U2HAruuGYGFW3PCfGNdWWSANGGssg9BGm4rRJ9s/sApiiRpj+8Y245/hlZW9c60zudLr6iwA==
 
+levenshtein-edit-distance@^2.0.0:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/levenshtein-edit-distance/-/levenshtein-edit-distance-2.0.5.tgz#a066eca8afb350e4d9054aed9ffeef66e78ffc83"
+  integrity sha512-Yuraz7QnMX/JENJU1HA6UtdsbhRzoSFnGpVGVryjQgHtl2s/YmVgmNYkVs5yzVZ9aAvQR9wPBUH3lG755ylxGA==
+
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
@@ -7272,6 +7292,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.7:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
+similarity@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/similarity/-/similarity-1.2.1.tgz#58eed40bc90742434abcf1b8e0b9af63241fb3dd"
+  integrity sha512-lMOpWVaWrTnyL+tkvDs8oGV/KAUBQ3wfbZtdiwDcC+KYGlwO8kgtiyag1B6akAjALDMwn5rN5YHHei1hr4X7nw==
+  dependencies:
+    levenshtein-edit-distance "^2.0.0"
+
 simple-concat@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/simple-concat/-/simple-concat-1.0.1.tgz#f46976082ba35c2263f1c8ab5edfe26c41c9552f"
@@ -8605,7 +8632,7 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-ws@^8.0.0:
+ws@^8.0.0, ws@^8.4.2:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.12.0.tgz#485074cc392689da78e1828a9ff23585e06cddd8"
   integrity sha512-kU62emKIdKVeEIOIKVegvqpXMSTAMLJozpHZaJNDYqBjzlSYXQGviYwN1osDLJ9av68qHd4a2oSjd7yD4pacig==
@@ -8769,3 +8796,8 @@ zlibjs@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/zlibjs/-/zlibjs-0.3.1.tgz#50197edb28a1c42ca659cc8b4e6a9ddd6d444554"
   integrity sha512-+J9RrgTKOmlxFSDHo0pI1xM6BLVUv+o0ZT9ANtCxGkjIVCCUdx9alUF8Gm+dGLKbkkkidWIHFDZHDMpfITt4+w==
+
+zod@^3.20.2:
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.20.2.tgz#068606642c8f51b3333981f91c0a8ab37dfc2807"
+  integrity sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==
