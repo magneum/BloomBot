@@ -260,7 +260,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}pslut
 ║> ${νℓкуяє.prefix}tikporn
 ╚═══════⋑`,
-    "./Gallery/νℓкуяє_rm.jpg"
+    "./Gallery/magneum.png"
   );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

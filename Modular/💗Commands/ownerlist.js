@@ -36,7 +36,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}unban
 │║⦁ ${νℓкуяє.prefix}verify
 ┕╚═══════⋑`,
-    "./Gallery/νℓкуяє_dark.jpg"
+    "./Gallery/magneum.png"
   );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

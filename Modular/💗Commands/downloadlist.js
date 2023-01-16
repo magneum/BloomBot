@@ -47,7 +47,7 @@ module.exports = async (νℓкуяє, vcнaт) => {
 │║⦁ ${νℓкуяє.prefix}ytvideo
 │║⦁ ${νℓкуяє.prefix}youtubevideo
 ┕╚═══════⋑`,
-    "./Gallery/νℓкуяє_dark.jpg"
+    "./Gallery/magneum.png"
   );
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
