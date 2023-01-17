@@ -3,10 +3,6 @@
   "version": "0.0.2",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
-  "engines": {
-    "npm": "[ ONLY YARN IS ALLOWED FOR THIS PROJECT ]",
-    "yarn": ">= 1.22.19"
-  },
   "scripts": {
     "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "build": "yarn install && yarn global forever",
