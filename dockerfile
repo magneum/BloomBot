@@ -15,6 +15,7 @@ python-is-python3
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
+RUN yarn set version classic
 RUN git clone --branch magneum https://github.com/magneum/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre

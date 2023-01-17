@@ -121,5 +121,5 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@1.22.19"
 }
