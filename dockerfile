@@ -1,7 +1,8 @@
-FROM python:latest
-ENV magneum_ "/venv"
-RUN python -m venv $magneum_
-ENV PATH "$magneum_/bin:$PATH"
+FROM ubuntu:latest
+# FROM python:latest
+# ENV magneum_ "/venv"
+# RUN python -m venv $magneum_
+# ENV PATH "$magneum_/bin:$PATH"
 RUN apt-get update && apt-get install -y \
 jq \
 git \
