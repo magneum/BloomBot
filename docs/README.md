@@ -11,9 +11,9 @@
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre)
+[![NPM](https://nodei.co/npm/vlkyre.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vlkyre-bot)
 
-[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre/)
+[![npm version](https://badge.fury.io/js/vlkyre.svg)](https://badge.fury.io/js/vlkyre-bot/)
 
 <h1 align="left">🍂Deployment </h1>
 
