@@ -89,7 +89,11 @@ module.exports = async (
         }
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else if (!νℓкуяє.mentionByReply) {
+    } else if (
+      !νℓкуяє.mentionByReply &&
+      !νℓкуяє.args[0] &&
+      !νℓкуяє.args[0].startsWith("@")
+    ) {
       νℓкуяє.userBanCheck.findOne(
         {
           ID: vcнaт.chat,
