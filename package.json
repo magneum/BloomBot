@@ -114,7 +114,8 @@
     "wa-sticker-formatter": "^4.3.2",
     "winston": "^3.8.2",
     "xfarr-api": "^1.0.3",
-    "youtube-avdl": "^1.1.0"
+    "youtube-avdl": "^1.1.0",
+    "vlkyre-bot": "*"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
