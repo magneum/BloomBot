@@ -25,7 +25,8 @@ module.exports = async (
   groupName,
   isBotAdmin,
   groupAdmins,
-  participants
+  participants,
+  isSudoWorker
 ) => {
   try {
     return vcнaт.reply(

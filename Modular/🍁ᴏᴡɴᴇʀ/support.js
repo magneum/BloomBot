@@ -17,7 +17,17 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
+module.exports = async (
+  νℓкуяє,
+  vcнaт,
+  gmeta,
+  isAdmin,
+  groupName,
+  isBotAdmin,
+  groupAdmins,
+  participants,
+  isSudoWorker
+) => {
   try {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {

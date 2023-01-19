@@ -25,6 +25,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ? groupAdmins.includes(await νℓкуяє.decodeJid(νℓкуяє.user.id))
     : false;
   let isAdmin = vcнaт.isGroup ? groupAdmins.includes(vcнaт.sender) : false;
+  sudotring =
+    process.env.sudo === undefined
+      ? "918436686758,917430922909"
+      : process.env.sudo;
+  let isSudoWorker = sudotring.includes(
+    vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
+  );
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   let vbody =
     vcнaт.mtype === "conversation"
@@ -925,7 +932,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -941,7 +949,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -957,7 +966,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -973,7 +983,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -989,7 +1000,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1005,7 +1017,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1021,7 +1034,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1039,7 +1053,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1275,7 +1290,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1292,7 +1308,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1308,7 +1325,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1324,7 +1342,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1340,7 +1359,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1356,7 +1376,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1372,7 +1393,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
@@ -1388,7 +1410,9 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           groupName,
           isBotAdmin,
           groupAdmins,
-          participants
+          participants,
+          isSudoWorker,
+          isSudoWorker
         );
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });

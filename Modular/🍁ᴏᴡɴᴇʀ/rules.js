@@ -23,7 +23,8 @@ module.exports = async (
   groupName,
   isBotAdmin,
   groupAdmins,
-  participants
+  participants,
+  isSudoWorker
 ) => {
   await νℓкуяє.imgB(
     νℓкуяє,

@@ -25,10 +25,11 @@ module.exports = async (
   groupName,
   isBotAdmin,
   groupAdmins,
-  participants
+  participants,
+  isSudoWorker
 ) => {
   try {
-    if (!νℓкуяє.frome && !νℓкуяє.isSudoWorker) {
+    if (!νℓкуяє.frome && !isSudoWorker) {
       return vcнaт.reply(
         `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
