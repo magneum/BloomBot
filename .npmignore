@@ -1,12 +1,15 @@
-.pnp.loader.mjs
 .codesandbox
 node_modules
 json.sqlite
-.yarnrc.yml
 process.js
 νℓкуяє.db
+scraper
 .vscode
 .pnp.cjs
 .next
-.yarn
 .env
+
+# Yarn Berry
+.yarn
+yarn.lock
+.yarnrc.yml
