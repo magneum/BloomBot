@@ -12,6 +12,7 @@
 // ╚════════════╝
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+const moment = require("moment-timezone");
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.body =
     vcнaт.mtype === "conversation"
@@ -50,7 +51,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.quoted = vcнaт.quoted ? vcнaт.quoted : vcнaт;
   νℓкуяє.mime = (νℓкуяє.quoted.msg || νℓкуяє.quoted).mimetype || "";
   νℓкуяє.isMedia = /image|video|sticker|audio/.test(νℓкуяє.mime);
-  νℓкуяє.time = νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  νℓкуяє.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
     .includes(vcнaт.sender);
