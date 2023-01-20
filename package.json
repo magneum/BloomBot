@@ -96,7 +96,7 @@
     "random-jokes": "^2.0.3",
     "random-material-color": "^1.0.5",
     "redis": "^4.5.1",
-    "rimraf": "^4.0.5",
+    "rimraf": "^4.1.1",
     "scrape-primbon": "^1.1.0",
     "secktor-pack": "^0.0.1-development",
     "sequelize": "^6.7.0",
@@ -111,11 +111,11 @@
     "tinyurl-api": "^1.0.1",
     "unofficial-carbon-now": "^1.0.6",
     "util": "^0.12.4",
+    "vlkyre-bot": "*",
     "wa-sticker-formatter": "^4.3.2",
     "winston": "^3.8.2",
     "xfarr-api": "^1.0.3",
-    "youtube-avdl": "^1.1.0",
-    "vlkyre-bot": "*"
+    "youtube-avdl": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
