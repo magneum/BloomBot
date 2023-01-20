@@ -12,9 +12,9 @@
   "directories": {
     "Authenticator": "Authenticator",
     "Bin": "Bin",
+    "Buttons": "Buttons",
     "docs": "docs",
     "Enforcers": "Enforcers",
-    "Buttons": "Buttons",
     "Gallery": "Gallery",
     "logger": "logger",
     "Modular": "Modular",
