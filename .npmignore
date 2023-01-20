@@ -11,5 +11,4 @@ scraper
 
 # Yarn Berry
 .yarn
-yarn.lock
 .yarnrc.yml
