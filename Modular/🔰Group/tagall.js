@@ -25,7 +25,8 @@ module.exports = async (
   groupName,
   isBotAdmin,
   groupAdmins,
-  participants
+  participants,
+  isSudoWorker
 ) => {
   try {
     if (!vcнaт.isGroup) {
@@ -35,7 +36,7 @@ module.exports = async (
 > _It's a group command!_`
       );
     }
-    if (!isAdmin && !νℓкуяє.isSudoWorker) {
+    if (!isAdmin && !isSudoWorker) {
       return vcнaт.reply(
         `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
