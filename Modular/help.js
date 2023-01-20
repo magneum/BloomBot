@@ -41,39 +41,36 @@ module.exports = async (νℓкуяє, vcнaт) => {
 > You can visit your dashboard at _bit.ly/magneum_
 
 
-┌───〔 *❗Console❗* 〕
-│⦁ *Uptime :* ${runtime(process.uptime())}
-│⦁ *OS Release:* ${νℓкуяє.os.release()}
-│⦁ *OS Type:*   ${νℓкуяє.os.type()}
-│⦁ *Directory:*  ${νℓкуяє.os.homedir()}
-│⦁ *Speed :* ${latensie.toFixed(4)} sec
-│⦁ *Ram Usage :* ${ramUsage}
-│⦁ *Platform :* ${νℓкуяє.os.platform()}
-│⦁ *Free memory:* ${νℓкуяє.os.freemem()}
-│⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
-│⦁ *Host device :* ${νℓкуяє.os.hostname()}
-│⦁ *OS Version:* ${νℓкуяє.os.version()}
-└───────────●
-
-
-┌───〔 *❕Commands❕* 』
-│⦁ 🐉 ${νℓкуяє.prefix}animationlist
-│⦁ 📢 ${νℓкуяє.prefix}audiofilterlist
-│⦁ 📼 ${νℓкуяє.prefix}conversionlist
-│⦁ 📥 ${νℓкуяє.prefix}downloadlist
-│⦁ 💰 ${νℓкуяє.prefix}gameslist
-│⦁ 🔰 ${νℓкуяє.prefix}grouplist
-│⦁ 🍁 ${νℓкуяє.prefix}ownerlist
-│⦁ 🖼️ ${νℓкуяє.prefix}photolist
-│⦁ 🔎 ${νℓкуяє.prefix}searchlist
-│⦁ ⭕ ${νℓкуяє.prefix}ytfilterlist
-│⦁ 🍑 ${νℓкуяє.prefix}hentailist
-│⦁ 👅 ${νℓкуяє.prefix}adultlist
-└───────────●
-
-
-
-『 *🐉animationlist🐉* 』
+╔══☰ *❗Console❗* 〕
+║⦁ *Uptime :* ${runtime(process.uptime())}
+║⦁ *OS Release:* ${νℓкуяє.os.release()}
+║⦁ *OS Type:*   ${νℓкуяє.os.type()}
+║⦁ *Directory:*  ${νℓкуяє.os.homedir()}
+║⦁ *Speed :* ${latensie.toFixed(4)} sec
+║⦁ *Ram Usage :* ${ramUsage}
+║⦁ *Platform :* ${νℓкуяє.os.platform()}
+║⦁ *Free memory:* ${νℓкуяє.os.freemem()}
+║⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
+║⦁ *Host device :* ${νℓкуяє.os.hostname()}
+║⦁ *OS Version:* ${νℓкуяє.os.version()}
+╚══☰
+╔══☰
+║>  *❕Commands❕*
+║⦁ 🐉 ${νℓкуяє.prefix}animationlist
+║⦁ 📢 ${νℓкуяє.prefix}audiofilterlist
+║⦁ 📼 ${νℓкуяє.prefix}conversionlist
+║⦁ 📥 ${νℓкуяє.prefix}downloadlist
+║⦁ 💰 ${νℓкуяє.prefix}gameslist
+║⦁ 🔰 ${νℓкуяє.prefix}grouplist
+║⦁ 🍁 ${νℓкуяє.prefix}ownerlist
+║⦁ 🖼️ ${νℓкуяє.prefix}photolist
+║⦁ 🔎 ${νℓкуяє.prefix}searchlist
+║⦁ ⭕ ${νℓкуяє.prefix}ytfilterlist
+║⦁ 🍑 ${νℓкуяє.prefix}hentailist
+║⦁ 👅 ${νℓкуяє.prefix}adultlist
+╚══☰
+╔══☰
+║> *🐉animationlist🐉*
 ║> ${νℓкуяє.prefix}bite
 ║> ${νℓкуяє.prefix}blush
 ║> ${νℓкуяє.prefix}bonk
@@ -101,8 +98,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}wink
 ║> ${νℓкуяє.prefix}yeet
 ║> ${νℓкуяє.prefix}yes
-╚═══════⋑
-『 *📢audiofilterlist📢* 』
+╚══☰
+╔══☰
+║> *📢audiofilterlist📢*
 ║> ${νℓкуяє.prefix}panning
 ║> ${νℓкуяє.prefix}bassboost
 ║> ${νℓкуяє.prefix}echo
@@ -119,16 +117,18 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}surround
 ║> ${νℓкуяє.prefix}vaporwave
 ║> ${νℓкуяє.prefix}vibrato
-╚═══════⋑
-『 *📼conversionlist📼* 』
+╚══☰
+╔══☰
+║> *📼conversionlist📼*
 ║> ${νℓкуяє.prefix}carbon
 ║> ${νℓкуяє.prefix}ship
 ║> ${νℓкуяє.prefix}sticker
 ║> ${νℓкуяє.prefix}tinyurl
 ║> ${νℓкуяє.prefix}tourl
 ║> ${νℓкуяє.prefix}tts
-╚═══════⋑
-『 *📥downloadlist📥* 』
+╚══☰
+╔══☰
+║> *📥downloadlist📥*
 ║> ${νℓкуяє.prefix}yta
 ║> ${νℓкуяє.prefix}play
 ║> ${νℓкуяє.prefix}song
@@ -148,8 +148,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}ytwatch
 ║> ${νℓкуяє.prefix}ytvideo
 ║> ${νℓкуяє.prefix}youtubevideo
-╚═══════⋑
-『 *💰gameslist💰* 』
+╚══☰
+╔══☰
+║> *💰gameslist💰*
 ║> ${νℓкуяє.prefix}balance
 ║> ${νℓкуяє.prefix}buy
 ║> ${νℓкуяє.prefix}daily
@@ -161,8 +162,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}store
 ║> ${νℓкуяє.prefix}work
 ║> ${νℓкуяє.prefix}zoo
-╚═══════⋑
-『 *🔰grouplist🔰* 』
+╚══☰
+╔══☰
+║> *🔰grouplist🔰*
 ║> ${νℓкуяє.prefix}antilink
 ║> ${νℓкуяє.prefix}antinsfw
 ║> ${νℓкуяє.prefix}delete
@@ -172,8 +174,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}setdesc
 ║> ${νℓкуяє.prefix}seticon
 ║> ${νℓкуяє.prefix}tagall
-╚═══════⋑
-『 *🍁ownerlist🍁* 』
+╚══☰
+╔══☰
+║> *🍁ownerlist🍁*
 ║> ${νℓкуяє.prefix}ban
 ║> ${νℓкуяє.prefix}broadcast
 ║> ${νℓкуяє.prefix}join
@@ -182,15 +185,17 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}rules
 ║> ${νℓкуяє.prefix}unban
 ║> ${νℓкуяє.prefix}verify
-╚═══════⋑
-『 *🖼️photolist🖼️* 』
+╚══☰
+╔══☰
+║> *🖼️photolist🖼️*
 ║> ${νℓкуяє.prefix}image
 ║> ${νℓкуяє.prefix}neko
 ║> ${νℓкуяє.prefix}pinterest
 ║> ${νℓкуяє.prefix}waifu
 ║> ${νℓкуяє.prefix}wallpaper
-╚═══════⋑
-『 *🔎searchlist🔎* 』
+╚══☰
+╔══☰
+║> *🔎searchlist🔎*
 ║> ${νℓкуяє.prefix}advice
 ║> ${νℓкуяє.prefix}anime
 ║> ${νℓкуяє.prefix}chordlist
@@ -207,8 +212,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}quote
 ║> ${νℓкуяє.prefix}reddit
 ║> ${νℓкуяє.prefix}ytsearch
-╚═══════⋑
-『 *⭕ytfilterlist⭕* 』
+╚══☰
+╔══☰
+║> *⭕ytfilterlist⭕*
 ║> ${νℓкуяє.prefix}ytpanning
 ║> ${νℓкуяє.prefix}ytbassboost
 ║> ${νℓкуяє.prefix}ytecho
@@ -224,8 +230,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}ytsurround
 ║> ${νℓкуяє.prefix}ytvaporwave
 ║> ${νℓкуяє.prefix}ytvibrato
-╚═══════⋑
-『 *🍑hentailist🍑* 』
+╚══☰
+╔══☰
+║> *🍑hentailist🍑*
 ║> ${νℓкуяє.prefix}ass
 ║> ${νℓкуяє.prefix}bdsm
 ║> ${νℓкуяє.prefix}blowjob
@@ -250,8 +257,9 @@ module.exports = async (νℓкуяє, vcнaт) => {
 ║> ${νℓкуяє.prefix}uniform
 ║> ${νℓкуяє.prefix}yuri
 ║> ${νℓкуяє.prefix}zettaiRyouiki
-╚═══════⋑
-『 *👅adultlist👅* 』
+╚══☰
+╔══☰
+║> *👅adultlist👅*
 ║> ${νℓкуяє.prefix}p4k
 ║> ${νℓкуяє.prefix}pblowjob
 ║> ${νℓкуяє.prefix}pmilf
