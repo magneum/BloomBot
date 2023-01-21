@@ -119,15 +119,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 await git.pull("origin", "magneum", (err, update) => {
                   if (update && update.summary.changes) {
                     if (update.files.includes("package.json")) {
-                      exec("npm install").stderr.pipe(process.stderr);
+                      exec("yarn install").stderr.pipe(process.stderr);
                     }
                     logger.info("[INFO] Updated the bot with latest changes.");
                   } else if (err) {
-                    logger.info(
-                      chalk.redBright.bold(
-                        "[ERROR] Could not pull latest changes!"
-                      )
-                    );
+                    logger.info("[ERROR] Could not pull latest changes!");
                     logger.info(err);
                   }
                 });
