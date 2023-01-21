@@ -12,6 +12,7 @@
 // ╚════════════╝
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+const { exec } = require("node:child_process");
 const moment = require("moment-timezone");
 const logger = require("../logger");
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
