@@ -12,7 +12,9 @@
 // ╚════════════╝
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+const { exec } = require("node:child_process");
 const moment = require("moment-timezone");
+const logger = require("../logger");
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.body =
     vcнaт.mtype === "conversation"
@@ -107,7 +109,29 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 return noLink(νℓкуяє, vcнaт);
               }
             );
-
+            ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+            const git = require("simple-git")();
+            const gitPull = async () => {
+              logger.info("[INFO] Checking for updates...");
+              await git.fetch();
+              let newCommits = await git.log(["magneum..origin/magneum"]);
+              if (newCommits.total) {
+                logger.info("[INFO] New Update pending, updating...");
+                await git.pull("origin", "magneum", (err, update) => {
+                  if (update && update.summary.changes) {
+                    if (update.files.includes("package.json")) {
+                      exec("yarn install").stderr.pipe(process.stderr);
+                    }
+                    logger.info("[INFO] Updated the bot with latest changes.");
+                  } else if (err) {
+                    logger.info("[ERROR] Could not pull latest changes!");
+                    logger.info(err);
+                  }
+                });
+              } else {
+                logger.info("[INFO] Bot is already working on latest version.");
+              }
+            };
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             respA = await νℓкуяє.groupMetadata("120363020792949649@g.us");
             for (let i = 0; i < respA.participants.length; i++)
@@ -138,6 +162,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 { quoted: vcнaт }
               );
             }
+            await gitPull();
             await require("./library")(νℓкуяє, vcнaт, update, store);
           }
         );
