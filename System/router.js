@@ -13,7 +13,7 @@
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 const moment = require("moment-timezone");
-const logger = requir("../logger");
+const logger = require("../logger");
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.body =
     vcнaт.mtype === "conversation"
