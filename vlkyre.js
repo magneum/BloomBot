@@ -79,7 +79,7 @@ const gitPull = async () => {
         );
         process.exit(0);
       } else if (err) {
-        logger.error("❌:: Could not pull latest changes!");
+        logger.error("❌: Could not pull latest changes!");
         logger.info(err);
       }
     });

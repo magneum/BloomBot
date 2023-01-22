@@ -1,4 +1,4 @@
-const mågneum = require("../vlkyre");
-exports.vlkyre = () => {
-  return mågneum;
+var vlkyre = (str, char, replacer) => {
+  return require("../vlkyre");
 };
+module.exports = { vlkyre };
