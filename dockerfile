@@ -24,4 +24,4 @@ RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
 RUN pip install -r requirements.txt
 RUN yarn install && yarn global add forever
-CMD [ "yarn", "run", "glob" ]
+CMD [ "yarn", "run", "start" ]
