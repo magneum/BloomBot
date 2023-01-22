@@ -12,3 +12,6 @@ scraper
 # Yarn Berry
 .yarn
 .yarnrc.yml
+
+# test files
+Test
