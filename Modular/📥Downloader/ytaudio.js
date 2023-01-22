@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       .axios({
         method: "get",
         url:
-          "http://localhost:3000/api/youtube_dl?q=" +
+          "https://magneum.vercel.app/api/youtube_dl?q=" +
           νℓкуяє.args.join(" ") +
           "&quality=128kbps",
         headers: {
