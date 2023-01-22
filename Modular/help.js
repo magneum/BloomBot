@@ -15,7 +15,13 @@ ppath = require("path");
 require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;

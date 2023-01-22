@@ -18,109 +18,127 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  νℓкуяє,
-  vcнaт,
-  gmeta,
-  isAdmin,
-  groupName,
-  isBotAdmin,
-  groupAdmins,
-  participants,
-  isSudoWorker
+νℓкуяє,
+vcнaт,
+gmeta,
+isAdmin,
+groupName,
+isBotAdmin,
+groupAdmins,
+participants,
+isSudoWorker
 ) => {
-  try {
-    if (!νℓкуяє.frome && !isSudoWorker) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.frome && !isSudoWorker) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Owner Only Command!_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    if (νℓкуяє.mentionByReply) {
-      let repliedPerson =
-        νℓкуяє.mtype == "extendedTextMessage" &&
-        νℓкуяє.message.extendedTextMessage.contextInfo != null
-          ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
-          : "";
-      let repliedPersonNum = repliedPerson.substring(
-        0,
-        repliedPerson.length - 15
-      );
-      νℓкуяє.userBanCheck.findOne(
-        {
-          ID: repliedPerson,
-        },
-        async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          if (!userBan) {
-            return vcнaт.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
-            );
-          } else {
-            userBan.delete();
-            return vcнaт.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
-            );
-          }
-        }
-      );
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
-      let mention = νℓкуяє.mentionByTag;
-      let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || νℓкуяє.msg.contextInfo.participant;
-      νℓкуяє.userBanCheck.findOne(
-        {
-          ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
-        },
-        async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          if (!userBan) {
-            return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
-          } else {
-            userBan.delete();
-            return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
-          }
-        }
-      );
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else if (
-      !νℓкуяє.mentionByReply &&
-      !νℓкуяє.args[0] &&
-      !νℓкуяє.args[0].startsWith("@")
-    ) {
-      νℓкуяє.userBanCheck.findOne(
-        {
-          ID: vcнaт.chat,
-        },
-        async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          if (!userBan) {
-            return vcнaт.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
-            );
-          } else {
-            userBan.delete();
-            return vcнaт.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
-            );
-          }
-        }
-      );
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (νℓкуяє.mentionByReply) {
+let repliedPerson =
+νℓкуяє.mtype == "extendedTextMessage" &&
+νℓкуяє.message.extendedTextMessage.contextInfo != null
+? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
+: "";
+let repliedPersonNum = repliedPerson.substring(
+0,
+repliedPerson.length - 15
+);
+νℓкуяє.userBanCheck.findOne(
+{
+ID: repliedPerson,
+},
+async (error, userBan) => {
+if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+if (!userBan) {
+return vcнaт.reply(
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
+);
+} else {
+userBan.delete();
+return vcнaт.reply(
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
+);
+}
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
+let mention = νℓкуяє.mentionByTag;
+let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || νℓкуяє.msg.contextInfo.participant;
+νℓкуяє.userBanCheck.findOne(
+{
+ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
+},
+async (error, userBan) => {
+if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+if (!userBan) {
+return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+} else {
+userBan.delete();
+return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+}
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else if (
+!νℓкуяє.mentionByReply &&
+!νℓкуяє.args[0] &&
+!νℓкуяє.args[0].startsWith("@")
+) {
+νℓкуяє.userBanCheck.findOne(
+{
+ID: vcнaт.chat,
+},
+async (error, userBan) => {
+if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+if (!userBan) {
+return vcнaт.reply(
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
+);
+} else {
+userBan.delete();
+return vcнaт.reply(
+`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
+);
+}
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Could not find any context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to person to ban_
 > _${νℓкуяє.prefix}${pfname} don't reply to anyone and group will be un-banned_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

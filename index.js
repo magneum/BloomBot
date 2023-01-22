@@ -34,7 +34,6 @@ var {
 var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
-var chalk = require("chalk");
 var express = require("express");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
@@ -127,46 +126,58 @@ async function mågneum() {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("creds.update", async (update) => await saveCreds());
   νℓкуяє.ev.on("connection.update", async (update) => {
-    var { lastDisconnect, connection, qr } = update;
-    if (connection == "open")
-      logger.info("🐲: Successfully connected to whatsapp...");
-    if (connection === "close") {
-      logger.error("❌: Connection terminated...");
-      var reason = new Boom(lastDisconnect.error).output.statusCode;
+    const {
+      lastDisconnect,
+      connection,
+      isNewLogin,
+      isOnline,
+      qr,
+      receivedPendingNotifications,
+    } = update;
+    if (connection == "connecting")
+      logger.info("🐲: Connecting to WhatsApp...▶");
+    else if (connection == "open") logger.info("🐲: Login successful! ▶");
+    else if (connection == "close") {
+      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        logger.error("❌: Bad Session File.Please Scan Again...");
-        process.exit(0);
+        logger.error(
+          `💥 Bad Session File, Please Delete Session and Scan Again`
+        );
+        νℓкуяє.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.warn("⚠️: Connection closed.Reconnecting....");
-        await mågneum();
+        logger.error("💥 Connection closed, reconnecting....");
+        mågneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.warn("⚠️: Connection Lost from Server.Reconnecting...");
-        await mågneum();
+        logger.error("💥 Connection Lost from Server, reconnecting...");
+        mågneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
         logger.error(
-          "❌:",
-          "Connection Replaced, Another New Session Opened.Please Close Current Session First..."
+          "💥 Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
-        await mågneum();
+        νℓкуяє.logout();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.debug("🐞: Device Logged Out.Please Scan Again...");
-        await mågneum();
+        logger.error(`💥 Device Logged Out, Please Scan Again And Run.`);
+        process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logger.debug("🐞: Restart Required.Restarting...");
-        await mågneum();
+        logger.error("💥 Restart Required, Restarting...");
+        mågneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.warn("⚠️: Connection Timedout.Reconnecting...");
-        await mågneum();
-      } else {
+        logger.error("💥 Connection TimedOut, Reconnecting...");
+        mågneum();
+      } else
         νℓкуяє.end(
-          `Unknown DisconnectReason: ${reason}|${lastDisconnect.error}`
+          logger.error(`💥 Unknown DisconnectReason: ${reason}|${connection}`)
         );
-      }
-    }
-    if (qr) {
-      console.clear();
-      logger.debug("🐞: New QR generated.Please Scan...");
-    }
+    } else if (isOnline === true) logger.debug("🐲: Online.");
+    else if (isOnline === false) logger.error("🐲: Offine.");
+    else if (receivedPendingNotifications === true)
+      logger.debug("🐲: Received Pending Notifications.");
+    else if (receivedPendingNotifications === false)
+      logger.error("🐲: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logger.debug("🐲: New Login.");
+    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+    else if (qr) logger.info("Qr: "), console.log(qr);
+    else console.log("🐲: Connection...", update);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("messages.upsert", async (update) => {
@@ -182,6 +193,25 @@ async function mågneum() {
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
     await require("./System/router.js")(νℓкуяє, vcнaт, update, store);
   });
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  setInterval(async () => {
+    var utch = new Date().toLocaleDateString("EN", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    var ov_time = new Date()
+      .toLocaleString("LK", { timeZone: "Asia/Kolkata" })
+      .split(" ")[1];
+    await νℓкуяє.updateProfileStatus(
+      "📅 " +
+        utch +
+        "\n⌚ " +
+        ov_time +
+        "\n\n💗Powered by Vlkyre\n\n👨🏼‍💻https://bit.ly/magneum"
+    );
+  }, 1000 * 10);
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("group-participants.update", async (update) => {
     let metadata = await νℓкуяє.groupMetadata(update.id);

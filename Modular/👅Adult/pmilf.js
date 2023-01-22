@@ -4,7 +4,7 @@
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 ║ 
 ║ We won't be responsible for any kind of ban due to this bot.
-║ νℓкуяє was made for fun purpose and to make group management easier.
+║ Vlkyre was made for fun purpose and to make group management easier.
 ║ It's your concern if you spam and gets your account banned.
 ║ Also, Forks won't be entertained.
 ║ If you fork this repo and edit plugins, it's your concern for further updates.
@@ -17,93 +17,28 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
-  try {
-    await νℓкуяє
-      .got("https://www.reddit.com/r/milf/random.json")
-      .then(async (Form) => {
-        let FormFile = JSON.parse(Form.body);
-        let FormTitle = FormFile[0].data.children[0].data.FormTitle;
-        let FormFinalLink = FormFile[0].data.children[0].data.url;
-        if (
-          !FormFinalLink.endsWith(".png") &&
-          !FormFinalLink.endsWith(".jpg") &&
-          !FormFinalLink.endsWith(".jpeg")
-        ) {
-          let FormFinalLink = await got(
-            "https://www.reddit.com/r/milf/random.json"
-          ).then(async (Form) => {
-            let FormFile = JSON.parse(Form.body);
-            let FormTitle = FormFile[0].data.children[0].data.FormTitle;
-            let FormFinalLink = FormFile[0].data.children[0].data.url;
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 
-            await νℓкуяє.imgB(
-              νℓкуяє,
-              vcнaт,
-              `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
-☣️𝐅𝐫𝐨𝐦: www.reddit.com
-👅𝐓𝐨𝐩𝐢𝐜: ${FormTitle}`,
-              FormFinalLink
-            );
-          });
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-        } else if (FormFinalLink.endsWith(".gif")) {
-          let FormGotLink = `./Bin/${νℓкуяє.key.id}.gif`;
-          let FormGiveLink = `./Bin/${νℓкуяє.key.id}.mp4`;
-          let FormLoader = new νℓкуяє.DownloaderHelper(FormFinalLink, "./Bin", {
-            fileName: `${νℓкуяє.key.id}.gif`,
-            retry: true,
-          });
-          await FormLoader.on("end", async () => {
-            ffmpeg(FormGotLink)
-              .outputOptions([
-                "-pix_fmt yuv420p",
-                "-c:v libx264",
-                "-movflags +faststart",
-                "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-              ])
-              .save(FormGiveLink)
-              .on("end", async () => {
-                return await νℓкуяє
-                  .sendMessage(
-                    vcнaт.chat,
-                    {
-                      gifPlayback: true,
-                      video: fs.readFileSync(FormGiveLink),
-                      caption: `*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr\n\n
-⚰️𝐅𝐨𝐫: @${νℓкуяє.sender.split("@")[0] || ""}
-☣️𝐅𝐫𝐨𝐦: www.reddit.com
-👅𝐓𝐨𝐩𝐢𝐜: ${FormTitle}`,
-                    },
-                    { quoted: vcнaт }
-                  )
-                  .then(
-                    νℓкуяє.fs.unlinkSync(FormGiveLink),
-                    νℓкуяє.fs.unlinkSync(FormGotLink)
-                  );
-              });
-          });
-          await FormLoader.on("error", async (error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          });
-          await FormLoader.start().catch(async (error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          });
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-        } else {
-          await νℓкуяє.imgB(
-            νℓкуяє,
-            vcнaт,
-            `*🔖Here, ${pfname} For @${νℓкуяє.Tname}:*
-☣️𝐅𝐫𝐨𝐦: www.reddit.com
-👅𝐓𝐨𝐩𝐢𝐜: ${FormTitle}`,
-            FormFinalLink
-          );
-        }
-      });
-
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+*❌Error* 
+> _This Command is not yet ready for public usage!_`
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

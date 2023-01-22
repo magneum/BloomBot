@@ -17,47 +17,53 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
-  await νℓкуяє.Economy.findOne(
-    {
-      ID: vcнaт.sender,
-    },
-    async (error, data) => {
-      if (error) {
-        return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-      }
-      if (!data) {
-        new νℓкуяє.Economy({
-          ID: vcнaт.sender,
-          money: 0,
-          daily: 0,
-          timeout: 86400000,
-          fishdone: 0,
-          fishtimeout: 1800000,
-          workdone: 0,
-          worktimeout: 900000,
-        })
-          .save()
-          .catch((error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-          });
-        return await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+await νℓкуяє.Economy.findOne(
+{
+ID: vcнaт.sender,
+},
+async (error, data) => {
+if (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
+if (!data) {
+new νℓкуяє.Economy({
+ID: vcнaт.sender,
+money: 0,
+daily: 0,
+timeout: 86400000,
+fishdone: 0,
+fishtimeout: 1800000,
+workdone: 0,
+worktimeout: 900000,
+})
+.save()
+.catch((error) => {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+});
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-          "./Gallery/vlkyre.jpg"
-        );
-      } else {
-        return await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+"./Gallery/vlkyre.jpg"
+);
+} else {
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *💰Balance:* ${data.money}`,
-          "./Gallery/vlkyre.jpg"
-        );
-      }
-    }
-  );
+"./Gallery/vlkyre.jpg"
+);
+}
+}
+);
 };

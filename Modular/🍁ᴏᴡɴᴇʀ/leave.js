@@ -18,27 +18,39 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  νℓкуяє,
-  vcнaт,
-  gmeta,
-  isAdmin,
-  groupName,
-  isBotAdmin,
-  groupAdmins,
-  participants,
-  isSudoWorker
+νℓкуяє,
+vcнaт,
+gmeta,
+isAdmin,
+groupName,
+isBotAdmin,
+groupAdmins,
+participants,
+isSudoWorker
 ) => {
-  try {
-    if (!νℓкуяє.frome && !isSudoWorker) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.frome && !isSudoWorker) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Owner Only Command!_`
-      );
-    }
-    await νℓкуяє.groupLeave(vcнaт.chat).then((res) => console.log(res));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+);
+}
+await νℓкуяє.groupLeave(vcнaт.chat).then((res) => console.log(res));
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

@@ -17,47 +17,53 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
-  try {
-    νℓкуяє.Robbery.findOne(
-      {
-        ID: vcнaт.sender,
-      },
-      async (error, userRob) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-        if (!userRob) {
-          new νℓкуяє.Robbery({
-            ID: vcнaт.sender,
-            sword: 0,
-            laptop: 0,
-            charm: 0,
-            CurrentRobberyTime: 0,
-            PermanentRobberyTime: 900000,
-          })
-            .save()
-            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-          return await νℓкуяє.imgB(
-            νℓкуяє,
-            vcнaт,
-            `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+νℓкуяє.Robbery.findOne(
+{
+ID: vcнaт.sender,
+},
+async (error, userRob) => {
+if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+if (!userRob) {
+new νℓкуяє.Robbery({
+ID: vcнaт.sender,
+sword: 0,
+laptop: 0,
+charm: 0,
+CurrentRobberyTime: 0,
+PermanentRobberyTime: 900000,
+})
+.save()
+.catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./Gallery/vlkyre.jpg"
-          );
-        }
-        return await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+"./Gallery/vlkyre.jpg"
+);
+}
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
-          "./Gallery/vlkyre.jpg"
-        );
-      }
-    );
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+"./Gallery/vlkyre.jpg"
+);
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

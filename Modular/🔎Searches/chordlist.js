@@ -17,69 +17,75 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
-try {
-if (!νℓкуяє.args.join(" ")) {
-return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  try {
+    if (!νℓкуяє.args.join(" ")) {
+      return vcнaт.reply(
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} song-name_`
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-let data = await νℓкуяє.axios.get(
-"http://app.chordindonesia.com/?json=get_search_results&search=" +
-νℓкуяє.args.join(" ")
-);
-let result = data.data;
-if (result.count < 0) {
-return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+      );
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    let data = await νℓкуяє.axios.get(
+      "http://app.chordindonesia.com/?json=get_search_results&search=" +
+        νℓкуяє.args.join(" ")
+    );
+    let result = data.data;
+    if (result.count < 0) {
+      return vcнaт.reply(
+        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _no chords for this song were found_`
-);
-}
-no = 1;
-chord = "*•Chord Search Engine*\n\n";
-for (let i of result.posts) {
-chord += `*📚Name:*  ${no++}\n`;
-chord += `*🔖ID:* ${i.id}\n`;
-chord += `*📕Title:* ${i.title.replace(/[0-9]|[#&;]/gi, "")}\n`;
-chord += `*🔔Date:* ${i.date}\n`;
-chord += `*👨‍🎨Author:* ${i.categories[0].title}\n\n`;
-}
-try {
-var кяуяєsi = await νℓкуяє.fetch(
-global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
-auth: "3e7756c85df54b78f934a284c11abe4e",
-method: "search",
-term: "random",
-})
-);
-var bson = await кяуяєsi.json();
-var bsoni =
-bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+      );
+    }
+    no = 1;
+    chord = "*•Chord Search Engine*\n\n";
+    for (let i of result.posts) {
+      chord += `*📚Name:*  ${no++}\n`;
+      chord += `*🔖ID:* ${i.id}\n`;
+      chord += `*📕Title:* ${i.title.replace(/[0-9]|[#&;]/gi, "")}\n`;
+      chord += `*🔔Date:* ${i.date}\n`;
+      chord += `*👨‍🎨Author:* ${i.categories[0].title}\n\n`;
+    }
+    try {
+      var кяуяєsi = await νℓкуяє.fetch(
+        global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
+          auth: "3e7756c85df54b78f934a284c11abe4e",
+          method: "search",
+          term: "random",
+        })
+      );
+      var bson = await кяуяєsi.json();
+      var bsoni =
+        bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
+      await νℓкуяє.imgB(
+        νℓкуяє,
+        vcнaт,
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${chord}`,
-bsoni.url_image
-);
-} catch {
-await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+        bsoni.url_image
+      );
+    } catch {
+      await νℓкуяє.imgB(
+        νℓкуяє,
+        vcнaт,
+        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${chord}`,
-"./Gallery/νℓкуяє_beta.jpg"
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
+        "./Gallery/νℓкуяє_beta.jpg"
+      );
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+  }
 };

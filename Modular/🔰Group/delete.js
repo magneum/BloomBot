@@ -28,6 +28,12 @@ module.exports = async (
   participants,
   isSudoWorker
 ) => {
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
   try {
     if (!νℓкуяє.quoted) {
       return vcнaт.reply(

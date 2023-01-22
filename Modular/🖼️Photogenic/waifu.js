@@ -17,7 +17,13 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт) => {
+module.exports = async (νℓкуяє, vcнaт, update, store) => {
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
   try {
     var data = await νℓкуяє.axios.get("https://waifu.pics/api/sfw/waifu");
     await νℓкуяє.imgB(

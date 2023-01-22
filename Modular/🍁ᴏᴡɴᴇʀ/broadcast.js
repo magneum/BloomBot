@@ -18,65 +18,83 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  νℓкуяє,
-  vcнaт,
-  gmeta,
-  isAdmin,
-  groupName,
-  isBotAdmin,
-  groupAdmins,
-  participants,
-  isSudoWorker
+νℓкуяє,
+vcнaт,
+gmeta,
+isAdmin,
+groupName,
+isBotAdmin,
+groupAdmins,
+participants,
+isSudoWorker
 ) => {
-  try {
-    if (!νℓкуяє.frome && !isSudoWorker) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.frome && !isSudoWorker) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _Owner Only Command!_`
-      );
-    }
-    if (!νℓкуяє.args.join(" ")) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+}
+if (!νℓкуяє.args.join(" ")) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage*   
 > _${νℓкуяє.prefix}${pfname} message_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    let νℓкуяєGroups = await νℓкуяє.groupFetchAllParticipating();
-    let vGroup = Object.entries(νℓкуяєGroups)
-      .slice(0)
-      .map((entry) => entry[1]);
-    let places = vGroup.map((v) => v.id);
-    vcнaт.reply(
-      `Broadcasting in ${places.length} Group Chat, in ${
-        places.length * 1.5
-      } seconds`
-    );
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    for (let cron of places) {
-      await νℓкуяє.sendMessage(cron, {
-        video: {
-          url: "./Gallery/Notice.mp4",
-        },
-        mimetype: "video/mp4",
-        fileName: "Vlkyre-Notice.mp4",
-        caption: `┌『*VLKYRE📢BROADCAST* 』
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+let νℓкуяєGroups = await νℓкуяє.groupFetchAllParticipating();
+let vGroup = Object.entries(νℓкуяєGroups)
+.slice(0)
+.map((entry) => entry[1]);
+let places = vGroup.map((v) => v.id);
+vcнaт.reply(
+`Broadcasting in ${places.length} Group Chat, in ${
+places.length * 1.5
+} seconds`
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+for (let cron of places) {
+await νℓкуяє.sendMessage(cron, {
+video: {
+url: "./Gallery/Notice.mp4",
+},
+mimetype: "video/mp4",
+fileName: "Vlkyre-Notice.mp4",
+caption: `┌『*VLKYRE📢BROADCAST* 』
 │║⦁ *💫By:*  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🕛Time:*  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 ┕╚═══════⋑
 
 *🔖Message:*
 ${νℓкуяє.args.join(" ")}`,
-      });
-    }
+});
+}
 
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
-  }
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт);
+}
 };
