@@ -108,6 +108,10 @@ global.DATABASE =
       });
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (!process.env.MONGO_URL) {
+  logger.error("❌: Please specify a MONGO_URL.");
+  process.exit(0);
+}
 global.MONGO_URL = process.env.MONGO_URL;
 (async () => {
   await monGoose

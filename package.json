@@ -2,13 +2,13 @@
   "name": "vlkyre-bot",
   "version": "0.0.7",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
-  "main": "vlkyre.js",
+  "main": "src",
   "scripts": {
     "prestart": "git config --global user.email 'krakinzkon@gmail.com' && git config --global user.name 'magneum'",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms vlkyre.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms src --color",
     "build": "yarn install && yarn global add forever",
-    "dev": "supervisor -w Modular vlkyre.js",
-    "glob": "node --no-warnings vlkyre.js"
+    "dev": "supervisor -w Modular src",
+    "glob": "node --no-warnings src"
   },
   "depecrated": false,
   "directories": {

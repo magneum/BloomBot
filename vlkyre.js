@@ -62,18 +62,24 @@ var getVersionWaweb = () => {
 };
 var msgRetryCounterMap = MessageRetryMap;
 const gitPull = async () => {
-  logger.info("🐲: Checking for updates...");
   await git.fetch();
   let newCommits = await git.log(["magneum..origin/magneum"]);
   if (newCommits.total) {
-    logger.info("🐲: New Update pending, updating...");
+    logger.info("🐲: Auto Updating...");
     await git.pull("origin", "magneum", (err, update) => {
       if (update && update.summary.changes) {
         if (update.files.includes("package.json"))
-          exec("yarn install --ignore-engines").stderr.pipe(process.stderr);
+          require("child_process")
+            .exec("yarn install --ignore-engines")
+            .stderr.pipe(process.stderr);
+        console.clear();
         logger.info("🐲: Updated the bot with latest changes.");
+        logger.info(
+          "🐲: Please restart the bot manually if it doesn't auto-restart."
+        );
+        process.exit(0);
       } else if (err) {
-        logger.error("💥: Could not pull latest changes!");
+        logger.error("❌:: Could not pull latest changes!");
         logger.info(err);
       }
     });
@@ -160,32 +166,32 @@ async function mågneum() {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
         logger.error(
-          `💥 Bad Session File, Please Delete Session and Scan Again`
+          `❌: Bad Session File, Please Delete Session and Scan Again`
         );
         νℓкуяє.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("💥 Connection closed, reconnecting....");
+        logger.error("❌: Connection closed, reconnecting....");
         mågneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("💥 Connection Lost from Server, reconnecting...");
+        logger.error("❌: Connection Lost from Server, reconnecting...");
         mågneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
         logger.error(
-          "💥 Connection Replaced, Another New Session Opened, Please Close Current Session First"
+          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
         νℓкуяє.logout();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`💥 Device Logged Out, Please Scan Again And Run.`);
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("💥 Restart Required, Restarting...");
+        logger.error("❌: Restart Required, Restarting...");
         mågneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.error("💥 Connection TimedOut, Reconnecting...");
+        logger.error("❌: Connection TimedOut, Reconnecting...");
         mågneum();
       } else
         νℓкуяє.end(
-          logger.error(`💥 Unknown DisconnectReason: ${reason}|${connection}`)
+          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
     } else if (isOnline === true) logger.debug("🐲: Online.");
     else if (isOnline === false) logger.error("🐲: Offine.");
@@ -763,3 +769,4 @@ async function mågneum() {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 }
 mågneum().catch((error) => console.log(error));
+module.exports = mågneum;
