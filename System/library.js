@@ -1426,6 +1426,318 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
+    case "bimbofetish":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.bimbofetish = dback.bimbofetish + 1;
+        require("../Modular/👅Adult/bimbofetish")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "blowjobs":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.blowjobs = dback.blowjobs + 1;
+        require("../Modular/👅Adult/blowjobs")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "bonermaterial":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.bonermaterial = dback.bonermaterial + 1;
+        require("../Modular/👅Adult/bonermaterial")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "breedingmaterial":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.breedingmaterial = dback.breedingmaterial + 1;
+        require("../Modular/👅Adult/breedingmaterial")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "canthold":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.canthold = dback.canthold + 1;
+        require("../Modular/👅Adult/canthold")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "christiangirls":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.christiangirls = dback.christiangirls + 1;
+        require("../Modular/👅Adult/christiangirls")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "cum":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.cum = dback.cum + 1;
+        require("../Modular/👅Adult/cum")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "cumslut":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.cumslut = dback.cumslut + 1;
+        require("../Modular/👅Adult/cumslut")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "dirtygaming":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.dirtygaming = dback.dirtygaming + 1;
+        require("../Modular/👅Adult/dirtygaming")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "distension":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.distension = dback.distension + 1;
+        require("../Modular/👅Adult/distension")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "exxxtras":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.exxxtras = dback.exxxtras + 1;
+        require("../Modular/👅Adult/exxxtras")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "femalepov":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.femalepov = dback.femalepov + 1;
+        require("../Modular/👅Adult/femalepov")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "gifsofremoval":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.gifsofremoval = dback.gifsofremoval + 1;
+        require("../Modular/👅Adult/gifsofremoval")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "hotstuffnsfw":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.hotstuffnsfw = dback.hotstuffnsfw + 1;
+        require("../Modular/👅Adult/hotstuffnsfw")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "iwanttofuckher":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.iwanttofuckher = dback.iwanttofuckher + 1;
+        require("../Modular/👅Adult/iwanttofuckher")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "justhotwomen":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.justhotwomen = dback.justhotwomen + 1;
+        require("../Modular/👅Adult/justhotwomen")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "lactating":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.lactating = dback.lactating + 1;
+        require("../Modular/👅Adult/lactating")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "milf":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.milf = dback.milf + 1;
+        require("../Modular/👅Adult/milf")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "milk":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.milk = dback.milk + 1;
+        require("../Modular/👅Adult/milk")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "milking":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.milking = dback.milking + 1;
+        require("../Modular/👅Adult/milking")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "nostalgiafapping":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nostalgiafapping = dback.nostalgiafapping + 1;
+        require("../Modular/👅Adult/nostalgiafapping")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "nsfw":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nsfw = dback.nsfw + 1;
+        require("../Modular/👅Adult/nsfw")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "nsfw2":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nsfw2 = dback.nsfw2 + 1;
+        require("../Modular/👅Adult/nsfw2")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "nsfw411":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nsfw411 = dback.nsfw411 + 1;
+        require("../Modular/👅Adult/nsfw411")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "nudes":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.nudes = dback.nudes + 1;
+        require("../Modular/👅Adult/nudes")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "omgbeckylookathiscock":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.omgbeckylookathiscock = dback.omgbeckylookathiscock + 1;
+        require("../Modular/👅Adult/omgbeckylookathiscock")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "pslut":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.pslut = dback.pslut + 1;
+        require("../Modular/👅Adult/pslut")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "pussy":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.pussy = dback.pussy + 1;
+        require("../Modular/👅Adult/pussy")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "realgirls":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.realgirls = dback.realgirls + 1;
+        require("../Modular/👅Adult/realgirls")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "sexybutnotporn":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.sexybutnotporn = dback.sexybutnotporn + 1;
+        require("../Modular/👅Adult/sexybutnotporn")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "sexygirls":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.sexygirls = dback.sexygirls + 1;
+        require("../Modular/👅Adult/sexygirls")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "slut":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.slut = dback.slut + 1;
+        require("../Modular/👅Adult/slut")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "stripgirls":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.stripgirls = dback.stripgirls + 1;
+        require("../Modular/👅Adult/stripgirls")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "toocuteforporn":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.toocuteforporn = dback.toocuteforporn + 1;
+        require("../Modular/👅Adult/toocuteforporn")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "truefmk":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.truefmk = dback.truefmk + 1;
+        require("../Modular/👅Adult/truefmk")(νℓкуяє, vcнaт, update, store);
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
+    case "uncommonposes":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.uncommonposes = dback.uncommonposes + 1;
+        require("../Modular/👅Adult/uncommonposes")(
+          νℓкуяє,
+          vcнaт,
+          update,
+          store
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "ban":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
