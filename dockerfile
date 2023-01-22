@@ -12,7 +12,7 @@ RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
 RUN yarn set version berry
-RUN mkdir Vlkyre && cd Vlkyre
-WORKDIR /Vlkyre
-RUN yarn install
-CMD [ "npm", "run", "start"]
+RUN mkdir mågneum && cd mågneum
+WORKDIR /mågneum
+RUN yarn install vlkyre-bot
+CMD [ "yarn", "run", "start"]
