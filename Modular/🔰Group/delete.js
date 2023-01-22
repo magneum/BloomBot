@@ -18,56 +18,70 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  νℓкуяє,
-  vcнaт,
-  gmeta,
-  isAdmin,
-  groupName,
-  isBotAdmin,
-  groupAdmins,
-  participants,
-  isSudoWorker
+νℓкуяє,
+vcнaт,
+gmeta,
+isAdmin,
+groupName,
+isBotAdmin,
+groupAdmins,
+participants,
+isSudoWorker
 ) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.quoted) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.quoted) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image/Video/Text in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image/Video/Text_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    let { isBaileys } = νℓкуяє.quoted;
-    if (!isBaileys) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+let { isBaileys } = νℓкуяє.quoted;
+if (!isBaileys) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Can not delete massage from another userID except mine!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image/Video/Text_`
-      );
-    } else {
-      return await νℓкуяє.sendMessage(vcнaт.chat, {
-        delete: {
-          remoteJid: vcнaт.chat,
-          fromMe: true,
-          id: vcнaт.quoted.id,
-          participant: vcнaт.quoted.sender,
-        },
-      });
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
-  }
+);
+} else {
+return await νℓкуяє.sendMessage(vcнaт.chat, {
+delete: {
+remoteJid: vcнaт.chat,
+fromMe: true,
+id: vcнaт.quoted.id,
+participant: vcнaт.quoted.sender,
+},
+});
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт);
+}
 };

@@ -18,34 +18,41 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.quoted) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.quoted) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    if (/image/.test(νℓкуяє.mime)) {
-      random = Math.floor(Math.random() * 10000);
-      media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, random);
-      νℓкуяє.exec(
-        νℓкуяє.pathFFmpeg + ` -i ${media} ${random}.png`,
-        async (error) => {
-          if (error) {
-            return νℓкуяє.reply(`*🕊️You:* ${
-              νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢ID:* ${vcнaт.chat}
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (/image/.test(νℓкуяє.mime)) {
+random = Math.floor(Math.random() * 10000);
+media = await νℓкуяє.downloadAndSaveMediaMessage(νℓкуяє.quoted, random);
+νℓкуяє.exec(
+νℓкуяє.pathFFmpeg + ` -i ${media} ${random}.png`,
+async (error) => {
+if (error) {
+return νℓкуяє.reply(`*🕊️You:* ${
+νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+}\n*📢ID:* ${vcнaт.chat}
 
 *😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
 *❌ Error* 
@@ -53,81 +60,95 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 
 *🐞 Bug* 
 > ${error}`);
-          }
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          if (νℓкуяє.fs.existsSync(random + ".png")) {
-            Found = random + ".png";
-          } else if (νℓкуяє.fs.existsSync(random + ".jpg")) {
-            Found = random + ".jpg";
-          } else if (νℓкуяє.fs.existsSync(random + ".jpeg")) {
-            Found = random + ".jpeg";
-          } else if (νℓкуяє.fs.existsSync(random + ".webp")) {
-            Found = random + ".webp";
-          } else {
-            return vcнaт.reply(
-              `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (νℓкуяє.fs.existsSync(random + ".png")) {
+Found = random + ".png";
+} else if (νℓкуяє.fs.existsSync(random + ".jpg")) {
+Found = random + ".jpg";
+} else if (νℓкуяє.fs.existsSync(random + ".jpeg")) {
+Found = random + ".jpeg";
+} else if (νℓкуяє.fs.existsSync(random + ".webp")) {
+Found = random + ".webp";
+} else {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image_`
-            );
-          }
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          return await νℓкуяє
-            .sendMessage(
-              vcнaт.chat,
-              {
-                image: νℓкуяє.fs.readFileSync(Found),
-                caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+return await νℓкуяє
+.sendMessage(
+vcнaт.chat,
+{
+image: νℓкуяє.fs.readFileSync(Found),
+caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${vcнaт.chat.split("@")[0]}
 │║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
 *🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*`,
-                footer: `*VLKYRE™ Bot By KRYKNZ*
+footer: `*VLKYRE™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${νℓкуяє.ShowInfo}_
 _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
-                mentions: [vcнaт.sender],
-                buttons: [
-                  {
-                    buttonId: `${νℓкуяє.prefix}Commands`,
-                    buttonText: { displayText: `${νℓкуяє.prefix}✈️Commands` },
-                    type: 1,
-                  },
-                  {
-                    buttonId: `${νℓкуяє.prefix}Vlkyre`,
-                    buttonText: { displayText: `${νℓкуяє.prefix}🛰️Vlkyre` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-              },
-              {
-                quoted: vcнaт,
-              }
-            )
-            .then(
-              νℓкуяє.fs.unlinkSync(Found),
-              νℓкуяє.fs.unlinkSync(random + ".png")
-            );
-        }
-      );
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+mentions: [vcнaт.sender],
+buttons: [
+{
+  buttonId: `${νℓкуяє.prefix}Commands`,
+  buttonText: { displayText: `${νℓкуяє.prefix}✈️Commands` },
+  type: 1,
+},
+{
+  buttonId: `${νℓкуяє.prefix}Vlkyre`,
+  buttonText: { displayText: `${νℓкуяє.prefix}🛰️Vlkyre` },
+  type: 1,
+},
+],
+headerType: 4,
+},
+{
+quoted: vcнaт,
+}
+)
+.then(
+νℓкуяє.fs.unlinkSync(Found),
+νℓкуяє.fs.unlinkSync(random + ".png")
+);
+}
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

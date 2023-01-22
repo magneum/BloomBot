@@ -18,43 +18,43 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    var кяуяєs = await νℓкуяє.axios.get("https://nekos.life/api/v2/fact");
-    try {
-      var кяуяєsi = await νℓкуяє.fetch(
-        global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
-          auth: "3e7756c85df54b78f934a284c11abe4e",
-          method: "search",
-          term: "random",
-        })
-      );
-      var bson = await кяуяєsi.json();
-      var bsoni =
-        bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await νℓкуяє.imgB(
-        νℓкуяє,
-        vcнaт,
-        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+var кяуяєs = await νℓкуяє.axios.get("https://nekos.life/api/v2/fact");
+try {
+var кяуяєsi = await νℓкуяє.fetch(
+global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "random",
+})
+);
+var bson = await кяуяєsi.json();
+var bsoni =
+bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}`,
-        bsoni.url_image
-      );
-    } catch {
-      await νℓкуяє.imgB(
-        νℓкуяє,
-        vcнaт,
-        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+bsoni.url_image
+);
+} catch {
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${кяуяєs.data.fact}`,
-        "./Gallery/νℓкуяє_beta.jpg"
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+"./Gallery/νℓкуяє_beta.jpg"
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

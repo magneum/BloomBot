@@ -18,85 +18,106 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.quoted) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.quoted) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image/Video_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    if (/image/.test(νℓкуяє.mime)) {
-      let media = await νℓкуяє.quoted.download();
-      let sticker = new νℓкуяє.Sticker(media, {
-        pack: "mågneum",
-        author: "ву νℓкуяє",
-        type: νℓкуяє.StickerTypes.FULL,
-        categories: ["🤩", "🎉"],
-        id: "12345",
-        quality: 100,
-        background: "transparent",
-      });
-      const buffer = await sticker.toBuffer();
-      return await νℓкуяє.sendMessage(
-        vcнaт.chat,
-        {
-          sticker: buffer,
-        },
-        { quoted: vcнaт }
-      );
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else if (/video/.test(νℓкуяє.mime)) {
-      if ((νℓкуяє.quoted.msg || νℓкуяє.quoted).seconds > 20) {
-        return vcнaт.reply(
-          `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+if (/image/.test(νℓкуяє.mime)) {
+let media = await νℓкуяє.quoted.download();
+let sticker = new νℓкуяє.Sticker(media, {
+pack: "mågneum",
+author: "ву νℓкуяє",
+type: νℓкуяє.StickerTypes.FULL,
+categories: ["🤩", "🎉"],
+id: "12345",
+quality: 100,
+background: "transparent",
+});
+const buffer = await sticker.toBuffer();
+return await νℓкуяє.sendMessage(
+vcнaт.chat,
+{
+sticker: buffer,
+},
+{ quoted: vcнaт }
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else if (/video/.test(νℓкуяє.mime)) {
+if ((νℓкуяє.quoted.msg || νℓкуяє.quoted).seconds > 20) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Cannot convert videos longer than 21 Seconds!_`
-        );
-      } else {
-        let media = await νℓкуяє.quoted.download();
-        let sticker = new νℓкуяє.Sticker(media, {
-          pack: "mågneum",
-          author: "ву νℓкуяє",
-          type: νℓкуяє.StickerTypes.FULL,
-          categories: ["🤩", "🎉"],
-          id: "12345",
-          quality: 100,
-          background: "transparent",
-        });
-        const buffer = await sticker.toBuffer();
-        return await νℓкуяє.sendMessage(
-          vcнaт.chat,
-          {
-            sticker: buffer,
-          },
-          { quoted: vcнaт }
-        );
-      }
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    } else {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+} else {
+let media = await νℓкуяє.quoted.download();
+let sticker = new νℓкуяє.Sticker(media, {
+pack: "mågneum",
+author: "ву νℓкуяє",
+type: νℓкуяє.StickerTypes.FULL,
+categories: ["🤩", "🎉"],
+id: "12345",
+quality: 100,
+background: "transparent",
+});
+const buffer = await sticker.toBuffer();
+return await νℓкуяє.sendMessage(
+vcнaт.chat,
+{
+sticker: buffer,
+},
+{ quoted: vcнaт }
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} else {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} reply to Image/Video_`
-      );
-    }
+);
+}
 
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

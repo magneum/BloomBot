@@ -18,58 +18,65 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.args.join(" ")) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.args.join(" ")) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} manga-name_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    var manga = new νℓкуяє.Manga();
-    var response = await manga.searchManga(νℓкуяє.args.join(" "));
-    var Found = `*🎀Title:* ${response.data[0].title}`;
-    Found += `*📈Status:* ${response.data[0].status}`;
-    Found += `*🌸Total Volumes:* ${response.data[0].volumes}`;
-    Found += `*🎗Total Chapters:* ${response.data[0].chapters}`;
-    Found += `*🧧Genres:*`;
-    for (var i = 0; i < response.data[0].genres.length; i++) {
-      Found += `\t\t\t\t\t\t\t\t*${response.data[0].genres[i].name}*`;
-    }
-    Found += `*✨Published on:* ${response.data[0].published.from}`;
-    Found += `*🌟Score:* ${response.data[0].scored}`;
-    Found += `*🎐Popularity:* ${response.data[0].popularity}`;
-    Found += `*🎏Favorites:* ${response.data[0].favorites}`;
-    Found += `*✍Authors:*`;
-    for (var i = 0; i < response.data[0].authors.length; i++) {
-      Found += `\t\t\t\t\t\t\t\t\t*${response.data[0].authors[i].name}* *(${response.data[0].authors[0].type})*`;
-    }
-    Found += `*🌐URL:* ${response.data[0].url}`;
-    if (response.data[0].background !== null)
-      Found += `*🎆Background:* ${response.data[0].background}`;
-    Found += `*❄️Description:* ${response.data[0].synopsis.replace(
-      /\[Written by MAL Rewrite]/g,
-      ``
-    )}`;
-    await νℓкуяє.imgB(
-      νℓкуяє,
-      vcнaт,
-      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var manga = new νℓкуяє.Manga();
+var response = await manga.searchManga(νℓкуяє.args.join(" "));
+var Found = `*🎀Title:* ${response.data[0].title}`;
+Found += `*📈Status:* ${response.data[0].status}`;
+Found += `*🌸Total Volumes:* ${response.data[0].volumes}`;
+Found += `*🎗Total Chapters:* ${response.data[0].chapters}`;
+Found += `*🧧Genres:*`;
+for (var i = 0; i < response.data[0].genres.length; i++) {
+Found += `\t\t\t\t\t\t\t\t*${response.data[0].genres[i].name}*`;
+}
+Found += `*✨Published on:* ${response.data[0].published.from}`;
+Found += `*🌟Score:* ${response.data[0].scored}`;
+Found += `*🎐Popularity:* ${response.data[0].popularity}`;
+Found += `*🎏Favorites:* ${response.data[0].favorites}`;
+Found += `*✍Authors:*`;
+for (var i = 0; i < response.data[0].authors.length; i++) {
+Found += `\t\t\t\t\t\t\t\t\t*${response.data[0].authors[i].name}* *(${response.data[0].authors[0].type})*`;
+}
+Found += `*🌐URL:* ${response.data[0].url}`;
+if (response.data[0].background !== null)
+Found += `*🎆Background:* ${response.data[0].background}`;
+Found += `*❄️Description:* ${response.data[0].synopsis.replace(
+/\[Written by MAL Rewrite]/g,
+``
+)}`;
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${Found}`,
-      response.data[0].images.jpg.large_image_url
-    );
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+response.data[0].images.jpg.large_image_url
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

@@ -33,13 +33,42 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 
 
 ┌『 *👅${pfname.toUpperCase()}👅* 』
-│║⦁ ${νℓкуяє.prefix}p4k
-│║⦁ ${νℓкуяє.prefix}pblowjob
-│║⦁ ${νℓкуяє.prefix}pmilf
-│║⦁ ${νℓкуяє.prefix}pmilk
-│║⦁ ${νℓкуяє.prefix}ppussy
-│║⦁ ${νℓкуяє.prefix}pslut
-│║⦁ ${νℓкуяє.prefix}tikporn
+│║⦁ ${νℓкуяє.prefix}nsfw
+│║⦁ ${νℓкуяє.prefix}nsfw2
+│║⦁ ${νℓкуяє.prefix}bonermaterial
+│║⦁ ${νℓкуяє.prefix}nsfw411
+│║⦁ ${νℓкуяє.prefix}iwanttofuckher
+│║⦁ ${νℓкуяє.prefix}exxxtras
+│║⦁ ${νℓкуяє.prefix}distension
+│║⦁ ${νℓкуяє.prefix}bimbofetish
+│║⦁ ${νℓкуяє.prefix}christiangirls
+│║⦁ ${νℓкуяє.prefix}dirtygaming
+│║⦁ ${νℓкуяє.prefix}sexybutnotporn
+│║⦁ ${νℓкуяє.prefix}femalepov
+│║⦁ ${νℓкуяє.prefix}omgbeckylookathiscock
+│║⦁ ${νℓкуяє.prefix}sexygirls
+│║⦁ ${νℓкуяє.prefix}breedingmaterial
+│║⦁ ${νℓкуяє.prefix}canthold
+│║⦁ ${νℓкуяє.prefix}toocuteforporn
+│║⦁ ${νℓкуяє.prefix}justhotwomen
+│║⦁ ${νℓкуяє.prefix}stripgirls
+│║⦁ ${νℓкуяє.prefix}hotstuffnsfw
+│║⦁ ${νℓкуяє.prefix}uncommonposes
+│║⦁ ${νℓкуяє.prefix}gifsofremoval
+│║⦁ ${νℓкуяє.prefix}nostalgiafapping
+│║⦁ ${νℓкуяє.prefix}truefmk
+│║⦁ ${νℓкуяє.prefix}nudes
+│║⦁ ${νℓкуяє.prefix}4k
+│║⦁ ${νℓкуяє.prefix}realgirls
+│║⦁ ${νℓкуяє.prefix}blowjobs
+│║⦁ ${νℓкуяє.prefix}milf
+│║⦁ ${νℓкуяє.prefix}milk
+│║⦁ ${νℓкуяє.prefix}milking
+│║⦁ ${νℓкуяє.prefix}lactating
+│║⦁ ${νℓкуяє.prefix}pussy
+│║⦁ ${νℓкуяє.prefix}cum
+│║⦁ ${νℓкуяє.prefix}slut
+│║⦁ ${νℓкуяє.prefix}cumslut
 ┕╚═══════⋑`,
     "./Gallery/magneum.png"
   );

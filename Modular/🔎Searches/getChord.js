@@ -18,69 +18,76 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.args[0] && isNaN(νℓкуяє.args[0])) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.args[0] && isNaN(νℓкуяє.args[0])) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} ID_
 > _get the ID from ${νℓкуяє.prefix}${pfname}chordlist command!_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    let data = await νℓкуяє.axios.get(
-      "http://app.chordindonesia.com/?json=get_post&id=" + νℓкуяє.args[0]
-    );
-    var clean = (data) => {
-      let regex = /(<([^>]+)>)/gi;
-      data = data.replace(/(<br?\s?\/>)/gi, " \n");
-      return data.replace(regex, "");
-    };
-    let result = data.data;
-    chordFound = "*• Chord Music Found*\n";
-    chordFound += `*- Title:* ${result.post.title.replace(
-      /[0-9]|[#&;]/gi,
-      ""
-    )}\n\n`;
-    chordFound += clean(result.post.content);
-    try {
-      var кяуяєsi = await νℓкуяє.fetch(
-        global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
-          auth: "3e7756c85df54b78f934a284c11abe4e",
-          method: "search",
-          term: "random",
-        })
-      );
-      var bson = await кяуяєsi.json();
-      var bsoni =
-        bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await νℓкуяє.imgB(
-        νℓкуяє,
-        vcнaт,
-        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+let data = await νℓкуяє.axios.get(
+"http://app.chordindonesia.com/?json=get_post&id=" + νℓкуяє.args[0]
+);
+var clean = (data) => {
+let regex = /(<([^>]+)>)/gi;
+data = data.replace(/(<br?\s?\/>)/gi, " \n");
+return data.replace(regex, "");
+};
+let result = data.data;
+chordFound = "*• Chord Music Found*\n";
+chordFound += `*- Title:* ${result.post.title.replace(
+/[0-9]|[#&;]/gi,
+""
+)}\n\n`;
+chordFound += clean(result.post.content);
+try {
+var кяуяєsi = await νℓкуяє.fetch(
+global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
+auth: "3e7756c85df54b78f934a284c11abe4e",
+method: "search",
+term: "random",
+})
+);
+var bson = await кяуяєsi.json();
+var bsoni =
+bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${chordFound}`,
-        bsoni.url_image
-      );
-    } catch {
-      await νℓкуяє.imgB(
-        νℓкуяє,
-        vcнaт,
-        `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+bsoni.url_image
+);
+} catch {
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > ${chordFound}`,
-        "./Gallery/νℓкуяє_beta.jpg"
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+"./Gallery/νℓкуяє_beta.jpg"
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

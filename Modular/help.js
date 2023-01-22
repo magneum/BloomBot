@@ -16,33 +16,33 @@ require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
-    2
-  )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
-  timestampe = νℓкуяє.speed();
-  latensie = νℓкуяє.speed() - timestampe;
-  const runtime = function (seconds) {
-    seconds = Number(seconds);
-    d = Math.floor(seconds / (3600 * 24));
-    h = Math.floor((seconds % (3600 * 24)) / 3600);
-    m = Math.floor((seconds % 3600) / 60);
-    s = Math.floor(seconds % 60);
-    dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-    hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-    mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-    sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
-    return dDisplay + hDisplay + mDisplay + sDisplay;
-  };
-  return await νℓкуяє.imgB(
-    νℓкуяє,
-    vcнaт,
-    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
+2
+)}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
+timestampe = νℓкуяє.speed();
+latensie = νℓкуяє.speed() - timestampe;
+const runtime = function (seconds) {
+seconds = Number(seconds);
+d = Math.floor(seconds / (3600 * 24));
+h = Math.floor((seconds % (3600 * 24)) / 3600);
+m = Math.floor((seconds % 3600) / 60);
+s = Math.floor(seconds % 60);
+dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
+sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+return dDisplay + hDisplay + mDisplay + sDisplay;
+};
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 > ⒸVlkyre: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 
@@ -266,14 +266,43 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 ╚══☰
 ╔══☰
 ║> *👅adultlist👅*
-║> ${νℓкуяє.prefix}p4k
-║> ${νℓкуяє.prefix}pblowjob
-║> ${νℓкуяє.prefix}pmilf
-║> ${νℓкуяє.prefix}pmilk
-║> ${νℓкуяє.prefix}ppussy
-║> ${νℓкуяє.prefix}pslut
-║> ${νℓкуяє.prefix}tikporn
+║> ${νℓкуяє.prefix}nsfw
+║> ${νℓкуяє.prefix}nsfw2
+║> ${νℓкуяє.prefix}bonermaterial
+║> ${νℓкуяє.prefix}nsfw411
+║> ${νℓкуяє.prefix}iwanttofuckher
+║> ${νℓкуяє.prefix}exxxtras
+║> ${νℓкуяє.prefix}distension
+║> ${νℓкуяє.prefix}bimbofetish
+║> ${νℓкуяє.prefix}christiangirls
+║> ${νℓкуяє.prefix}dirtygaming
+║> ${νℓкуяє.prefix}sexybutnotporn
+║> ${νℓкуяє.prefix}femalepov
+║> ${νℓкуяє.prefix}omgbeckylookathiscock
+║> ${νℓкуяє.prefix}sexygirls
+║> ${νℓкуяє.prefix}breedingmaterial
+║> ${νℓкуяє.prefix}canthold
+║> ${νℓкуяє.prefix}toocuteforporn
+║> ${νℓкуяє.prefix}justhotwomen
+║> ${νℓкуяє.prefix}stripgirls
+║> ${νℓкуяє.prefix}hotstuffnsfw
+║> ${νℓкуяє.prefix}uncommonposes
+║> ${νℓкуяє.prefix}gifsofremoval
+║> ${νℓкуяє.prefix}nostalgiafapping
+║> ${νℓкуяє.prefix}truefmk
+║> ${νℓкуяє.prefix}nudes
+║> ${νℓкуяє.prefix}4k
+║> ${νℓкуяє.prefix}realgirls
+║> ${νℓкуяє.prefix}blowjobs
+║> ${νℓкуяє.prefix}milf
+║> ${νℓкуяє.prefix}milk
+║> ${νℓкуяє.prefix}milking
+║> ${νℓкуяє.prefix}lactating
+║> ${νℓкуяє.prefix}pussy
+║> ${νℓкуяє.prefix}cum
+║> ${νℓкуяє.prefix}slut
+║> ${νℓкуяє.prefix}cumslut
 ╚═══════⋑`,
-    "./Gallery/magneum.png"
-  );
+"./Gallery/magneum.png"
+);
 };

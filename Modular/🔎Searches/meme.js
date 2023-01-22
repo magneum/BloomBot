@@ -18,33 +18,33 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
-    var Rads = Reds[Math.floor(Math.random() * Reds.length)];
-    var res = await νℓкуяє.fetch(
-      `https://www.reddit.com/r/${Rads}/random/.json`
-    );
-    var json = await res.json();
-    var data = json[0].data.children[0].data;
-    await νℓкуяє.imgB(
-      νℓкуяє,
-      vcнaт,
-      `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
+var Rads = Reds[Math.floor(Math.random() * Reds.length)];
+var res = await νℓкуяє.fetch(
+`https://www.reddit.com/r/${Rads}/random/.json`
+);
+var json = await res.json();
+var data = json[0].data.children[0].data;
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
 > *👍🏽‍Ups:* ${data.ups || 0} 👍
 > *👎🏽‍Downs:* ${data.downs || 0} 👎
 > *💬Comments:* ${data.num_comments || 0} 💬`,
-      data.url
-    );
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+data.url
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };

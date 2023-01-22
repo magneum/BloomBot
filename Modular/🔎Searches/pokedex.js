@@ -18,48 +18,62 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
-    react: {
-      text: "🔖",
-      key: vcнaт.key,
-    },
-  });
-  try {
-    if (!νℓкуяє.args.join(" ")) {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "🔖",
+key: vcнaт.key,
+},
+});
+try {
+if (!νℓкуяє.args.join(" ")) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} manga-name_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    let json;
-    try {
-      let res = await νℓкуяє.fetch(
-        API(`https://some-random-api.ml`, `/pokedex`, {
-          pokemon: νℓкуяє.args.join(" "),
-        })
-      );
-      json = await res.json();
-    } catch {
-      return vcнaт.reply(
-        `*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+let json;
+try {
+let res = await νℓкуяє.fetch(
+API(`https://some-random-api.ml`, `/pokedex`, {
+pokemon: νℓкуяє.args.join(" "),
+})
+);
+json = await res.json();
+} catch {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+
 *❌Error* 
 > _No Such Pokemon available!_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    pokemon.configure({ apiKey: "123abc" });
-    await pokemon.card
-      .all({ q: `name:${νℓкуяє.args.join(" ")}` })
-      .then(async (card) => {
-        return await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `💫 *Name:* ${json.name}
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+pokemon.configure({ apiKey: "123abc" });
+await pokemon.card
+.all({ q: `name:${νℓкуяє.args.join(" ")}` })
+.then(async (card) => {
+return await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`💫 *Name:* ${json.name}
 〽️ *Pokedex ID:* ${json.id}
 🎀 *Type:* ${json.type}
 🐞 *Species*: ${json.species}
@@ -89,10 +103,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 🛍️ *Card Market:* ${card[0].cardmarket.url}
 🧀 *TGC Player:* ${card[0].tcgplayer.url}
 `.trim(),
-          card[0].images.large
-        );
-      });
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+card[0].images.large
+);
+});
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };
