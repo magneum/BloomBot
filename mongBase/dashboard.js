@@ -1,7 +1,7 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
+// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
-// ║ 
+// ║
 // ║ We won't be responsible for any kind of ban due to this bot.
 // ║ νℓкуяє was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
@@ -124,13 +124,42 @@ var dBoardSchema = new mongoose.Schema({
   ytsurround: Number,
   ytvaporwave: Number,
   ytvibrato: Number,
+  nsfw: Number,
+  nsfw2: Number,
+  bonermaterial: Number,
+  nsfw411: Number,
+  iwanttofuckher: Number,
+  exxxtras: Number,
+  distension: Number,
+  bimbofetish: Number,
+  christiangirls: Number,
+  dirtygaming: Number,
+  sexybutnotporn: Number,
+  femalepov: Number,
+  omgbeckylookathiscock: Number,
+  sexygirls: Number,
+  breedingmaterial: Number,
+  canthold: Number,
+  toocuteforporn: Number,
+  justhotwomen: Number,
+  stripgirls: Number,
+  hotstuffnsfw: Number,
+  uncommonposes: Number,
+  gifsofremoval: Number,
+  nostalgiafapping: Number,
+  truefmk: Number,
+  nudes: Number,
   p4k: Number,
-  pblowjob: Number,
-  pmilf: Number,
-  pmilk: Number,
-  ppussy: Number,
-  pslut: Number,
-  tikporn: Number,
+  realgirls: Number,
+  blowjobs: Number,
+  milf: Number,
+  milk: Number,
+  milking: Number,
+  lactating: Number,
+  pussy: Number,
+  cum: Number,
+  slut: Number,
+  cumslut: Number,
   ban: Number,
   broadcast: Number,
   join: Number,
