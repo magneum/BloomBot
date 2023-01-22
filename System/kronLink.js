@@ -111,6 +111,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.LinkList = require("../mongBase/antilink");
   νℓкуяє.Ranker = require("../mongBase/autorank");
   νℓкуяє.Bagde = require("../mongBase/badge");
+  νℓкуяє.vimium = require("../mongBase/vimium");
   νℓкуяє.userBanCheck = require("../mongBase/ban");
   νℓкуяє.Cooldown = require("../mongBase/cooldown");
   νℓкуяє.DebugMode = require("../mongBase/debug");
@@ -251,4 +252,4 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.sudo = sudo;
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   return νℓкуяє;
-}
+};
