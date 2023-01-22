@@ -1234,6 +1234,23 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
+    case "antinsfw":
+      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
+        dback.antinsfw = dback.antinsfw + 1;
+        require("../Modular/🔰Group/antinsfw")(
+          νℓкуяє,
+          vcнaт,
+          gmeta,
+          isAdmin,
+          groupName,
+          isBotAdmin,
+          groupAdmins,
+          participants,
+          isSudoWorker
+        );
+        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+      });
+      break;
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "ass":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {

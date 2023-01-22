@@ -100,6 +100,7 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           zoo: 0,
 
           antilink: 0,
+          antinsfw: 0,
           delete: 0,
           demote: 0,
           group: 0,
