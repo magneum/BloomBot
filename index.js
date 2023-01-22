@@ -35,6 +35,7 @@ var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
 var express = require("express");
+const git = require("simple-git")();
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("./mongBase/dashboard");
@@ -60,6 +61,24 @@ var getVersionWaweb = () => {
   return version;
 };
 var msgRetryCounterMap = MessageRetryMap;
+const gitPull = async () => {
+  logger.info("🐲: Checking for updates...");
+  await git.fetch();
+  let newCommits = await git.log(["magneum..origin/magneum"]);
+  if (newCommits.total) {
+    logger.info("🐲: New Update pending, updating...");
+    await git.pull("origin", "magneum", (err, update) => {
+      if (update && update.summary.changes) {
+        if (update.files.includes("package.json"))
+          exec("yarn install --ignore-engines").stderr.pipe(process.stderr);
+        logger.info("🐲: Updated the bot with latest changes.");
+      } else if (err) {
+        logger.error("💥: Could not pull latest changes!");
+        logger.info(err);
+      }
+    });
+  }
+};
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 νℓpage.engine("html", require("ejs").renderFile);
@@ -193,25 +212,6 @@ async function mågneum() {
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
     await require("./System/router.js")(νℓкуяє, vcнaт, update, store);
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  setInterval(async () => {
-    var utch = new Date().toLocaleDateString("EN", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    var ov_time = new Date()
-      .toLocaleString("LK", { timeZone: "Asia/Kolkata" })
-      .split(" ")[1];
-    await νℓкуяє.updateProfileStatus(
-      "📅 " +
-        utch +
-        "\n⌚ " +
-        ov_time +
-        "\n\n💗Powered by Vlkyre\n\n👨🏼‍💻https://bit.ly/magneum"
-    );
-  }, 1000 * 10);
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("group-participants.update", async (update) => {
     let metadata = await νℓкуяє.groupMetadata(update.id);
@@ -740,5 +740,26 @@ async function mågneum() {
         store.contacts[jid] = { jid, name: contact.notify };
     }
   });
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  setInterval(async () => {
+    var utch = new Date().toLocaleDateString("EN", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    var ov_time = new Date()
+      .toLocaleString("LK", { timeZone: "Asia/Kolkata" })
+      .split(" ")[1];
+    await νℓкуяє.updateProfileStatus(
+      "📅 " +
+        utch +
+        "\n⌚ " +
+        ov_time +
+        "\n\n💗Powered by Vlkyre\n\n👨🏼‍💻https://bit.ly/magneum"
+    );
+    await gitPull();
+  }, 1000 * 40);
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 }
 mågneum().catch((error) => console.log(error));
