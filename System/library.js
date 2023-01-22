@@ -1419,52 +1419,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       });
       break;
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-    case "p4k":
+    case "4k":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
         dback.p4k = dback.p4k + 1;
-        require("../Modular/👅Adult/p4k")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "pblowjob":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.pblowjob = dback.pblowjob + 1;
-        require("../Modular/👅Adult/pblowjob")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "pmilf":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.pmilf = dback.pmilf + 1;
-        require("../Modular/👅Adult/pmilf")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "pmilk":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.pmilk = dback.pmilk + 1;
-        require("../Modular/👅Adult/pmilk")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "ppussy":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.ppussy = dback.ppussy + 1;
-        require("../Modular/👅Adult/ppussy")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "pslut":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.pslut = dback.pslut + 1;
-        require("../Modular/👅Adult/pslut")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
-    case "tikporn":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.tikporn = dback.tikporn + 1;
-        require("../Modular/👅Adult/tikporn")(νℓкуяє, vcнaт, update, store);
+        require("../Modular/👅Adult/4k")(νℓкуяє, vcнaт, update, store);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
