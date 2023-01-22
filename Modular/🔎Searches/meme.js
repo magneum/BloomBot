@@ -35,7 +35,7 @@ var data = json[0].data.children[0].data;
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
 > *👍🏽‍Ups:* ${data.ups || 0} 👍

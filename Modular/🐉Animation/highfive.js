@@ -43,7 +43,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌ Error* 
 > There has been an API Error. Please try again later.`

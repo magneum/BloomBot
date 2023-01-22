@@ -110,7 +110,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -129,7 +129,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -167,7 +167,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
 "./Gallery/vlkyre.jpg"
 );
@@ -196,7 +196,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
 "./Gallery/vlkyre.jpg"
 );
@@ -286,7 +286,7 @@ vcнaт,
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
 "./Gallery/vlkyre.jpg"
@@ -334,7 +334,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -359,7 +359,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -373,7 +373,7 @@ if (userEco.money < ItemPrice) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -387,7 +387,7 @@ if (userBadge.Badge === Item) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
 "./Gallery/vlkyre.jpg"
@@ -411,7 +411,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -432,7 +432,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_

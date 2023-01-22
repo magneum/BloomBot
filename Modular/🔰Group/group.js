@@ -43,7 +43,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
@@ -57,7 +57,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
@@ -71,7 +71,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Bot not Admin!_`
@@ -92,13 +92,13 @@ async (res) =>
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`> *Group have been Opened by: @${νℓкуяє.Tname || νℓкуяє.pushname}*`,
+`> *Group have been Opened by: ${νℓкуяє.pushname || νℓкуяє.Tname}*`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 )
 )
 .catch((error) =>
 vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
 )
@@ -112,13 +112,13 @@ async (res) =>
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`> *Group have been Closed by: @${νℓкуяє.Tname || νℓкуяє.pushname}*`,
+`> *Group have been Closed by: ${νℓкуяє.pushname || νℓкуяє.Tname}*`,
 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
 )
 )
 .catch((error) =>
 vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
 )
@@ -140,7 +140,7 @@ return νℓкуяє.reply(`*🕊️You:* ${
 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
 }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -186,7 +186,7 @@ return νℓкуяє.reply(`*🕊️You:* ${
 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
 }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -221,7 +221,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Argument Missing!_
@@ -240,7 +240,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Argument Missing!_

@@ -43,7 +43,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
@@ -57,7 +57,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`

@@ -35,7 +35,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -57,7 +57,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -79,7 +79,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -105,7 +105,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -125,7 +125,7 @@ if (AmountRoom < 50) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
 "./Gallery/vlkyre.jpg"
@@ -136,7 +136,7 @@ if (AmountRoom > 800) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
 "./Gallery/vlkyre.jpg"
@@ -147,7 +147,7 @@ if (ColorRoom === "red" && AmountRoom > 200) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
 "./Gallery/vlkyre.jpg"
@@ -158,7 +158,7 @@ if (ColorRoom === "black" && AmountRoom > 500) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
 "./Gallery/vlkyre.jpg"
@@ -169,7 +169,7 @@ if (ColorRoom === "purple" && AmountRoom > 800) {
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
 "./Gallery/vlkyre.jpg"
@@ -202,7 +202,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
 "./Gallery/vlkyre.jpg"
 );
@@ -230,7 +230,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
 "./Gallery/vlkyre.jpg"
@@ -247,7 +247,7 @@ userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone)
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
 "./Gallery/vlkyre.jpg"
@@ -274,7 +274,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
@@ -297,7 +297,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -319,7 +319,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -347,7 +347,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -374,7 +374,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
 "./Gallery/vlkyre.jpg"
@@ -394,7 +394,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
 "./Gallery/vlkyre.jpg"
@@ -414,7 +414,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
 "./Gallery/vlkyre.jpg"
@@ -432,7 +432,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
 "./Gallery/vlkyre.jpg"

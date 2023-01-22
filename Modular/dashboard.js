@@ -25,7 +25,7 @@ key: vcнaт.key,
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*

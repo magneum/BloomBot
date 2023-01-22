@@ -52,7 +52,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
 "./Gallery/vlkyre.jpg"
@@ -66,7 +66,7 @@ userEco.fishtimeout - (Date.now() - userEco.fishdone)
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
 "./Gallery/vlkyre.jpg"
@@ -93,7 +93,7 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,

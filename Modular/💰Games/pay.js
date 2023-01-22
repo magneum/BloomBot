@@ -25,7 +25,7 @@ key: vcнaт.key,
 },
 });
 if (!νℓкуяє.mentionByReply) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -34,7 +34,7 @@ return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.push
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
 }
 if (νℓкуяє.args.length === 0) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -43,7 +43,7 @@ return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.push
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
 }
 if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(νℓкуяє.args[0])) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -52,7 +52,7 @@ return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.push
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
 }
 if (νℓкуяє.args[0].match(/[a-z]/i)) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -69,7 +69,7 @@ receiver =
 : "";
 receiverName = await νℓкуяє.getName(receiver);
 if (receiver === vcнaт.sender) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -99,7 +99,7 @@ worktimeout: 900000,
 .catch((error) => {
 return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 });
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -109,7 +109,7 @@ return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.push
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 if (parseInt(νℓкуяє.args[0]) > uPayer.money) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -148,11 +148,11 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* @${νℓкуяє.Tname || νℓкуяє.pushname}
+│║⦁ *🦚Account Holder:* ${νℓкуяє.pushname || νℓкуяє.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -174,11 +174,11 @@ return νℓкуяє.grab(νℓкуяє, vcнaт, error);
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* @${νℓкуяє.Tname || νℓкуяє.pushname}
+│║⦁ *🦚Account Holder:* ${νℓкуяє.pushname || νℓкуяє.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -195,7 +195,7 @@ vcнaт,
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 } else {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_ 
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

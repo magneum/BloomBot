@@ -1653,13 +1653,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
-    case "pslut":
-      require("./dboard")(νℓкуяє, vcнaт, (dback) => {
-        dback.pslut = dback.pslut + 1;
-        require("../Modular/👅Adult/pslut")(νℓкуяє, vcнaт, update, store);
-        dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-      });
-      break;
     case "pussy":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
         dback.pussy = dback.pussy + 1;

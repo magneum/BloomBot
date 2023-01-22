@@ -43,7 +43,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
@@ -57,7 +57,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
@@ -71,7 +71,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Bot not Admin!_`
@@ -85,7 +85,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
@@ -104,7 +104,7 @@ await νℓкуяє.groupUpdateDescription(vcнaт.chat, νℓкуяє.args.join
 return await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`> *Group Description Changed successfuly by: @${νℓкуяє.Tname || νℓкуяє.pushname}*
+`> *Group Description Changed successfuly by: ${νℓкуяє.pushname || νℓкуяє.Tname}*
 
 *📜New Description:*
 ${νℓкуяє.args.join(" ")}`,

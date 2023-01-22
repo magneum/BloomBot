@@ -37,11 +37,12 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌ Error* 
 > NSFW Commands have been turned off for this group.
-> You may ask the admins to turn it on.`);
+> You may ask the admins to turn it on.`
+);
 } else {
 return νℓкуяє
 .axios({
@@ -64,10 +65,11 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌ Error* 
-> There has been an API Error. Please try again later.`);
+> There has been an API Error. Please try again later.`
+);
 } else {
 await νℓкуяє.imgB(
 νℓкуяє,

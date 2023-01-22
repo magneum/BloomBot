@@ -39,7 +39,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
@@ -58,7 +58,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
@@ -73,12 +73,12 @@ var Found = await νℓкуяє.ySearch(gotArgument);
 var vFound = Found.videos.slice(0, 1);
 vFound.forEach(async function (vData) {
 if (!vData.url) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error*
 > _No Music Found!_`);
 } else if (vData.seconds > 600) {
-return vcнaт.reply(`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error*
 > _Cannot Download More Then 10m audio!_`);

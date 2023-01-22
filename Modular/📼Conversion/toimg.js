@@ -33,7 +33,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
@@ -54,7 +54,7 @@ return νℓкуяє.reply(`*🕊️You:* ${
 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
 }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -78,7 +78,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
@@ -99,7 +99,7 @@ caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*`,
+*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*`,
 footer: `*VLKYRE™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${νℓкуяє.ShowInfo}_
@@ -138,7 +138,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_

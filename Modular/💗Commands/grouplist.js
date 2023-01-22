@@ -25,7 +25,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   await νℓкуяє.imgB(
     νℓкуяє,
     vcнaт,
-    `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
+    `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🤖Hello, I am Vlkyre User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.

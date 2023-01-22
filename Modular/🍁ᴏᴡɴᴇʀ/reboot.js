@@ -36,7 +36,7 @@ key: vcнaт.key,
 });
 try {
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
 );

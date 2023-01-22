@@ -33,7 +33,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_
@@ -53,7 +53,7 @@ return vcнaт.reply(`*🕊️You:* ${
 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
 }\n*📢ID:* ${vcнaт.chat}
 
-*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -92,7 +92,7 @@ key: vcнaт.key,
 },
 });
 return vcнaт.reply(
-`*😥Sorry:* _@${νℓкуяє.Tname || νℓкуяє.pushname}_
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_

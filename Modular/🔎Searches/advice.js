@@ -40,7 +40,7 @@ bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
 bsoni.url_image
 );
@@ -48,7 +48,7 @@ bsoni.url_image
 await νℓкуяє.imgB(
 νℓкуяє,
 vcнaт,
-`*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:* 
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
 "./Gallery/νℓкуяє_beta.jpg"
 );
