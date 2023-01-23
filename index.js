@@ -18,7 +18,7 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 const git = require("simple-git")();
-const { vlkyre } = require("vlkyre-bot");
+const { vlkyre } = require("vlkyre-bot/index");
 setInterval(async () => {
   await git.fetch();
   let newCommits = await git.log(["magneum..origin/magneum"]);
