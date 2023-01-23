@@ -54,7 +54,7 @@ useFindAndModify: false,
 })
 .catch((error) => {
 logger.error("❌: Unable to Connect with Mongoose.");
-console.log(error);
+logger.error(error);
 })
 .then(logger.info("🐲: Connected with Mongoose."));
 var νℓpage = express();
@@ -215,7 +215,7 @@ logger.error("🐲: Not Received Pending Notifications.");
 else if (isNewLogin === true) logger.debug("🐲: New Login.");
 else if (isNewLogin === false) logger.error("🐲: Not New Login.");
 else if (qr) logger.info("Qr: "), console.log(qr);
-else console.log("🐲: Connection...", update);
+else logger.info("🐲: Connection...", update);
 });
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 νℓкуяє.ev.on("messages.upsert", async (update) => {
@@ -235,7 +235,7 @@ await require("./System/router.js")(νℓкуяє, vcнaт, update, store);
 νℓкуяє.ev.on("group-participants.update", async (update) => {
 let metadata = await νℓкуяє.groupMetadata(update.id);
 let participants = update.participants;
-console.log(update);
+logger.info(update);
 for (let sperson of participants) {
 var imåge;
 try {
@@ -277,7 +277,7 @@ mentions: [sperson],
 contextInfo: { mentionedJid: [sperson] },
 }
 )
-.catch((error) => console.log(error));
+.catch((error) => logger.error(error));
 } else if (update.action == "remove") {
 return;
 } else {
@@ -782,4 +782,4 @@ ov_time +
 await gitPull();
 }, 1000 * 40);
 }
-mågneum().catch((error) => console.log(error));
+mågneum().catch((error) => logger.error(error));
