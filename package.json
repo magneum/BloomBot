@@ -11,6 +11,6 @@
   "dependencies": {
     "forever": "^4.0.3",
     "supervisor": "^0.12.0",
-    "vlkyre-bot": "*"
+    "vlkyre-bot": "^0.0.8-a"
   }
 }

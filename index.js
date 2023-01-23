@@ -11,5 +11,14 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const { Vlkyre } = require("vlkyre-bot");
-Vlkyre();
+process.removeAllListeners("warning");
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+process.on("uncaughtException", (error) => {
+  logger.error(error);
+});
+require("events").EventEmitter.prototype._maxListeners = 0;
+const { vlkyre } = require("vlkyre-bot");
+vlkyre().catch((error) => {
+  console.log(error);
+  process.exit(0);
+});

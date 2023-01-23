@@ -9282,10 +9282,10 @@ vlkyre-bot@*:
     xfarr-api "^1.0.3"
     youtube-avdl "^1.1.0"
 
-vlkyre-bot@^0.0.7-a:
-  version "0.0.7-a"
-  resolved "https://registry.yarnpkg.com/vlkyre-bot/-/vlkyre-bot-0.0.7-a.tgz#52b08fe96c1fad84dae1fb1a2b4225763f303080"
-  integrity sha512-8M9ydWbI4gT8R+QzThnXDc7Q7Jo1UYCbTr4P5ecFomLwkcJ0VgGCs4Ea1rqCz5ViUPkT6Ob2rbbuMgTOokeIng==
+vlkyre-bot@^0.0.8-a:
+  version "0.0.8-a"
+  resolved "https://registry.yarnpkg.com/vlkyre-bot/-/vlkyre-bot-0.0.8-a.tgz#439b182a28faf5bd5784762378eeab4bebfb3379"
+  integrity sha512-SGx7HrS7DZVgTlZl683rUhNmQcBKzgHVbC4GWPVaakAZNnxoAZrs4bBD+ImqNIEfDGJzwt6Hxa4+wUrsOjM9Pg==
   dependencies:
     "@adiwajshing/baileys" "^4.4.0"
     "@adiwajshing/keyed-db" "^0.2.4"
