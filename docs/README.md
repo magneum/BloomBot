@@ -27,11 +27,10 @@
 <h1 align="left">🔥Self Hosting Using Linux</h1>
 
 ```
-📍 FIRSTLY:
-You Can Deploy Vlkyre in your own system without any prior knowledge of coding.
-Just Follow These Setps.
-
-> 'npm install vlkyre-bot' or 'yarn add vlkyre-bot'
+📍 NODE_MODULE
+> 'npm install vlkyre-bot' 
+or 
+> 'yarn add vlkyre-bot'
 
 
 📍 SET ENVIRONMENT VARIABLES:
@@ -40,9 +39,12 @@ Just Follow These Setps.
 > (optional) export DATABASE_URL= your postgres url string
 
 📍 RUN VLKYRE
-> pip install -r requirements.txt && npm install vlkyre-bot
-> python Operator.py
-> follow the on-screen prompts and have fun!
+> create a new index.js file and add below code.
+const { vlkyre } = require("vlkyre-bot");
+vlkyre().catch((error) => {
+  console.log(error);
+  process.exit(0);
+});
 ```
 
 <h1 align="left">🍀Deploy in Koyeb Using Docker Image</h1>

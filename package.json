@@ -7,10 +7,9 @@
     "prestart": "yarn global add forever"
   },
   "depecrated": false,
-  "packageManager": "yarn@1.22.19",
   "dependencies": {
     "forever": "^4.0.3",
     "supervisor": "^0.12.0",
-    "vlkyre-bot": "^0.0.8-a"
+    "vlkyre-bot": "^0.0.8-b"
   }
 }
