@@ -7,7 +7,6 @@
     "prestart": "yarn add dlx forever"
   },
   "depecrated": false,
-  "packageManager": "yarn@3.3.1",
   "dependencies": {
     "forever": "^4.0.3",
     "supervisor": "^0.12.0",
