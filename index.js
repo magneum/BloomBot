@@ -14,11 +14,36 @@
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  console.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
+const git = require("simple-git")();
 const { vlkyre } = require("vlkyre-bot");
+setInterval(async () => {
+  await git.fetch();
+  let newCommits = await git.log(["magneum..origin/magneum"]);
+  if (newCommits.total) {
+    console.info("🐲: Auto Updating...");
+    await git.pull("origin", "magneum", (err, update) => {
+      if (update && update.summary.changes) {
+        if (update.files.includes("package.json"))
+          require("child_process")
+            .exec("yarn install --ignore-engines")
+            .stderr.pipe(process.stderr);
+        console.clear();
+        console.info("🐲: Updated the bot with latest changes.");
+        console.info(
+          "🐲: Please restart the bot manually if it doesn't auto-restart."
+        );
+        process.exit(0);
+      } else if (err) {
+        console.error("❌: Could not pull latest changes!");
+        console.info(err);
+      }
+    });
+  }
+}, 1000 * 40);
 vlkyre().catch((error) => {
-  console.log(error);
+  console.error(error);
   process.exit(0);
 });
