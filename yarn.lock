@@ -9283,9 +9283,9 @@ vlkyre-bot@*:
     youtube-avdl "^1.1.0"
 
 vlkyre-bot@^0.0.8-b:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/vlkyre-bot/-/vlkyre-bot-0.0.8.tgz#d0ef055ebc8736992de3fa04278ae90eb8bca3be"
-  integrity sha512-O49SetOQfbkgMTp3e9OgjT9St5b4fmuvBjUzDG7qmCbyKdeUlO4Xc812VzWwiag2rCzwfFda3Cfc9P//2RPCCA==
+  version "0.0.8-b"
+  resolved "https://registry.yarnpkg.com/vlkyre-bot/-/vlkyre-bot-0.0.8-b.tgz#041e82ca0fc341a62f27f9d29024a89d34fc6263"
+  integrity sha512-ypIk7IMFOz8BtfqG2TACLPd8IF8ktdBThoP9wbizcMgEF6QgF5knCv2KTSNKt7/P3WXq78RsPkUwAWCzq3X9wQ==
   dependencies:
     "@adiwajshing/baileys" "^4.4.0"
     "@adiwajshing/keyed-db" "^0.2.4"
