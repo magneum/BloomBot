@@ -4,13 +4,13 @@
   "main": "index.js",
   "scripts": {
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "prestart": "yarn add dlx forever"
+    "prestart": "yarn global add forever"
   },
   "depecrated": false,
   "packageManager": "yarn@1.22.19",
   "dependencies": {
     "forever": "^4.0.3",
     "supervisor": "^0.12.0",
-    "vlkyre-bot": "^0.0.7-a"
+    "vlkyre-bot": "*"
   }
 }
