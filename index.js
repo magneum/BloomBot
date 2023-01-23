@@ -12,4 +12,46 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 const { Vlkyre } = require("vlkyre-bot");
-Vlkyre();
+const miniget = require("miniget");
+
+// using update method from ytdl-core module
+// const pkg = require("./package.json");
+// const UPDATE_INTERVAL = 1000 * 60 * 60 * 12;
+// lastUpdateCheck = 0;
+// checkForUpdates = () => {
+// if (
+// !process.env.YTDL_NO_UPDATE &&
+// !pkg.version.startsWith("0.0.0-") &&
+// Date.now() - lastUpdateCheck >= UPDATE_INTERVAL
+// ) {
+// lastUpdateCheck = Date.now();
+// return miniget(
+// "https://api.github.com/repos/fent/node-ytdl-core/releases/latest",
+// {
+// headers: { "User-Agent": "ytdl-core" },
+// }
+// )
+// .text()
+// .then(
+// (response) => {
+// if (JSON.parse(response).tag_name !== `v${pkg.version}`) {
+// console.warn(
+//     '\x1b[33mWARNING:\x1B[0m ytdl-core is out of date! Update with "npm install ytdl-core@latest".'
+// );
+// }
+// },
+// (err) => {
+// console.warn("Error checking for updates:", err.message);
+// console.warn(
+// "You can disable this check by setting the `YTDL_NO_UPDATE` env variable."
+// );
+// }
+// );
+// }
+// return null;
+// };
+
+(async () => {
+  // await checkForUpdates();
+  await Vlkyre();
+})();

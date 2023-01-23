@@ -13,5 +13,5 @@ RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
 RUN mkdir mågneum && cd mågneum
 WORKDIR /mågneum
-RUN yarn install vlkyre-bot
+RUN yarn add vlkyre-bot
 CMD [ "yarn", "run", "start"]
