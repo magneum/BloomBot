@@ -16,5 +16,5 @@ RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN yarn set version classic
 RUN git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum
-RUN pip install -r requirements.txt && yarn install && yarn global add forever
+RUN rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever
 CMD [ "yarn", "run", "start" ]
