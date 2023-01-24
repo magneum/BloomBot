@@ -4,14 +4,18 @@
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "scripts": {
-    "prestart": "git config --global user.email 'krakinzkon@gmail.com' && git config --global user.name 'magneum'",
-    "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever",
+    "build": "pip install -r requirements.txt && yarn install && yarn global add forever",
     "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "dev": "supervisor -w Modular index.js",
     "start": "node --no-warnings index.js",
-    "test": "supervisor Test/index.js"
+    "test": "supervisor Test/index.js",
+    "prestart": "rm -f yarn.lock"
   },
   "depecrated": false,
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.19"
+  },
   "directories": {
     "Authenticator": "Authenticator",
     "Bin": "Bin",
@@ -126,5 +130,5 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@3.3.1"
 }
