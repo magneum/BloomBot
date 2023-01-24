@@ -933,10 +933,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       break;
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     case "image":
-    case "gimage":
+    case "unsplash":
       require("./dboard")(νℓкуяє, vcнaт, (dback) => {
         dback.image = dback.image + 1;
-        require("../Modular/🖼️Photogenic/image")(νℓкуяє, vcнaт, update, store);
+        require("../Modular/🖼️Photogenic/unsplash")(νℓкуяє, vcнaт, update, store);
         dback.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
       });
       break;
