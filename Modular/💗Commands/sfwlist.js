@@ -43,6 +43,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 │║⦁ ${νℓкуяє.prefix}smegumin
 │║⦁ ${νℓкуяє.prefix}awoo
 │║⦁ ${νℓкуяє.prefix}sawoo
+│║⦁ ${νℓкуяє.prefix}glomp
+│║⦁ ${νℓкуяє.prefix}sglomp
+│║⦁ ${νℓкуяє.prefix}handhold
+│║⦁ ${νℓкуяє.prefix}shandhold
 │║⦁
 │║⦁ ${νℓкуяє.prefix}sbully
 │║⦁ ${νℓкуяє.prefix}scuddle
@@ -58,10 +62,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 │║⦁ ${νℓкуяє.prefix}ssmile
 │║⦁ ${νℓкуяє.prefix}swave
 │║⦁ ${νℓкуяє.prefix}shighfive
-│║⦁ ${νℓкуяє.prefix}shandhold
 │║⦁ ${νℓкуяє.prefix}snom
 │║⦁ ${νℓкуяє.prefix}sbite
-│║⦁ ${νℓкуяє.prefix}sglomp
 │║⦁ ${νℓкуяє.prefix}sslap
 │║⦁ ${νℓкуяє.prefix}skill
 │║⦁ ${νℓкуяє.prefix}skick
