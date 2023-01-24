@@ -782,7 +782,7 @@ utch +
 ov_time +
 "\n\n💗Powered by Vlkyre\n\n👨🏼‍💻https://bit.ly/magneum"
 );
-await gitPull();
+// await gitPull();
 }, 1000 * 40);
 }
 mågneum().catch((error) => logger.error(error));
