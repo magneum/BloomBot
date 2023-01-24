@@ -239,9 +239,7 @@ vcнaт,
 ║> *🖼️photolist🖼️*
 ║> ${νℓкуяє.prefix}image
 ║> ${νℓкуяє.prefix}unsplash
-║> ${νℓкуяє.prefix}neko
 ║> ${νℓкуяє.prefix}pinterest
-║> ${νℓкуяє.prefix}waifu
 ║> ${νℓкуяє.prefix}wallpaper
 ╚══☰
 ╔══☰

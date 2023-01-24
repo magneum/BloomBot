@@ -13,7 +13,7 @@
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 
 require("../global.js");
-module.exports = async (νℓкуяє, vcнaт, dback) => {
+module.exports = async (νℓкуяє, vcнaт, updatedb) => {
   try {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
   } catch {
@@ -289,11 +289,11 @@ module.exports = async (νℓкуяє, vcнaт, dback) => {
           },
           { quoted: vcнaт }
         );
-        return dback(udBase);
+        return updatedb(udBase);
       }
       udBase.username = `${νℓкуяє.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
-      return dback(udBase);
+      return updatedb(udBase);
     }
   );
 };

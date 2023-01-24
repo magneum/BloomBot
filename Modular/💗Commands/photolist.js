@@ -35,9 +35,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 ┌『 *🖼️${pfname.toUpperCase()}🖼️* 』
 ║> ${νℓкуяє.prefix}image
 ║> ${νℓкуяє.prefix}unsplash
-│║⦁ ${νℓкуяє.prefix}neko
 │║⦁ ${νℓкуяє.prefix}pinterest
-│║⦁ ${νℓкуяє.prefix}waifu
 │║⦁ ${νℓкуяє.prefix}wallpaper
 ┕╚═══════⋑`,
     "./Gallery/magneum.png"
