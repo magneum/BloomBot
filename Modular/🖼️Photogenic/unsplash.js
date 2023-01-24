@@ -55,10 +55,24 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         },
       })
       .then(async (response) => {
-        var mData = response.data[0];
+        const mData = response.data[0];
         console.log(mData);
-      });
+        return await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+*_topic*: ${mData._topic}
+*_query*: ${mData._query}
+*_width*: ${mData._width}
+*_height*: ${mData._height}
+*_color*: ${mData._color}
+*_description*: ${mData._description || null}
+*_alt_description*: ${mData._alt_description || null}
 
+*_download*: ${mData._links[0]._download}`,
+          mData._images[0]._raw
+        );
+      });
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
     return νℓкуяє.grab(νℓкуяє, vcнaт, error);

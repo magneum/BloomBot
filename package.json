@@ -8,7 +8,8 @@
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "build": "yarn install && yarn global add forever",
     "dev": "supervisor -w Modular index.js",
-    "glob": "node --no-warnings index.js"
+    "glob": "node --no-warnings index.js",
+    "test": "supervisor Test/index.js"
   },
   "depecrated": false,
   "directories": {

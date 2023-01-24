@@ -72,8 +72,9 @@ vcнaт,
 ║⦁ 🖼️ ${νℓкуяє.prefix}photolist
 ║⦁ 🔎 ${νℓкуяє.prefix}searchlist
 ║⦁ ⭕ ${νℓкуяє.prefix}ytfilterlist
+║⦁ 🦄 ${νℓкуяє.prefix}sfwlist
 ║⦁ 🍑 ${νℓкуяє.prefix}hentailist
-║⦁ 👅 ${νℓкуяє.prefix}adultlist
+║⦁ 👅 ${νℓкуяє.prefix}nsfwlist
 ╚══☰
 ╔══☰
 ║> *🐉animationlist🐉*
@@ -266,7 +267,7 @@ vcнaт,
 ║> ${νℓкуяє.prefix}zettaiRyouiki
 ╚══☰
 ╔══☰
-║> *👅adultlist👅*
+║> *👅nsfwlist👅*
 ║> ${νℓкуяє.prefix}nsfw
 ║> ${νℓкуяє.prefix}nsfw2
 ║> ${νℓкуяє.prefix}bonermaterial
