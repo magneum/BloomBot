@@ -11,6 +11,7 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+const logger = require("./logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
@@ -34,7 +35,6 @@ var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
 var express = require("express");
-const logger = require("./logger");
 var monGoose = require("mongoose");
 const git = require("simple-git")();
 var { Boom } = require("@hapi/boom");

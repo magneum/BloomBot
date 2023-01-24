@@ -18,42 +18,49 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "🔖",
-key: vcнaт.key,
-},
-});
-try {
-if (!νℓкуяє.args) {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "❌",
-key: vcнaт.key,
-},
-});
-return vcнaт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  try {
+    if (!νℓкуяє.args) {
+      await νℓкуяє.sendMessage(vcнaт.chat, {
+        react: {
+          text: "❌",
+          key: vcнaт.key,
+        },
+      });
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} manga-name_`
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-νℓкуяє.gis(νℓкуяє.args.join(" "), async (error, result) => {
-var Image = result[Math.floor(Math.random() * result.length)].url;
-await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*`,
-Image
-);
-});
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
+> _${νℓкуяє.prefix}${pfname} image-name_`
+      );
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    νℓкуяє
+      .axios({
+        method: "get",
+        url:
+          "https://magneum.vercel.app/api/unsplash?q=" + νℓкуяє.args.join(" "),
+        headers: {
+          accept: "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+      })
+      .then(async (response) => {
+        var mData = response.data[0];
+        console.log(mData);
+      });
+
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+  }
 };
