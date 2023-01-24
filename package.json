@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prestart": "git config --global user.email 'krakinzkon@gmail.com' && git config --global user.name 'magneum'",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "build": "yarn install && yarn global add forever",
+    "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever",
+    "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "dev": "supervisor -w Modular index.js",
-    "glob": "node --no-warnings index.js",
+    "start": "node --no-warnings index.js",
     "test": "supervisor Test/index.js"
   },
   "depecrated": false,
