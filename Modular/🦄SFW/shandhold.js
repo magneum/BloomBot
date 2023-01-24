@@ -18,39 +18,39 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "🔖",
-key: vcнaт.key,
-},
-});
-try {
-νℓкуяє
-.axios({
-method: "get",
-url: "https://magneum.vercel.app/api/sfw?q=" + pfname,
-headers: {
-accept: "*/*",
-"accept-language": "en-US,en;q=0.9",
-"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-},
-})
-.then(async (response) => {
-const mData = response.data[0];
-console.log(mData);
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  try {
+    νℓкуяє
+      .axios({
+        method: "get",
+        url: "https://magneum.vercel.app/api/sfw?q=handhold",
+        headers: {
+          accept: "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+      })
+      .then(async (response) => {
+        const mData = response.data[0];
+        console.log(mData);
+        return await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *_topic*: ${mData._topic}
 *_query*: ${mData._query}
 
 *_download*: ${mData._url}`,
-mData._url
-);
-});
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
+          mData._url
+        );
+      });
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+  }
 };

@@ -107,6 +107,48 @@ vcнaт,
 ║> ${νℓкуяє.prefix}yes
 ╚══☰
 ╔══☰
+║> *🦄sfwlist🦄*
+║> ${νℓкуяє.prefix}waifu
+║> ${νℓкуяє.prefix}swaifu
+║> ${νℓкуяє.prefix}neko
+║> ${νℓкуяє.prefix}sneko
+║> ${νℓкуяє.prefix}shinobu
+║> ${νℓкуяє.prefix}sshinobu
+║> ${νℓкуяє.prefix}megumin
+║> ${νℓкуяє.prefix}smegumin
+║> ${νℓкуяє.prefix}awoo
+║> ${νℓкуяє.prefix}sawoo
+║> ${νℓкуяє.prefix}glomp
+║> ${νℓкуяє.prefix}sglomp
+║> ${νℓкуяє.prefix}handhold
+║> ${νℓкуяє.prefix}shandhold
+║> 
+║> ${νℓкуяє.prefix}sbully
+║> ${νℓкуяє.prefix}scuddle
+║> ${νℓкуяє.prefix}scry
+║> ${νℓкуяє.prefix}shug
+║> ${νℓкуяє.prefix}skiss
+║> ${νℓкуяє.prefix}slick
+║> ${νℓкуяє.prefix}spat
+║> ${νℓкуяє.prefix}ssmug
+║> ${νℓкуяє.prefix}sbonk
+║> ${νℓкуяє.prefix}syeet
+║> ${νℓкуяє.prefix}sblush
+║> ${νℓкуяє.prefix}ssmile
+║> ${νℓкуяє.prefix}swave
+║> ${νℓкуяє.prefix}shighfive
+║> ${νℓкуяє.prefix}snom
+║> ${νℓкуяє.prefix}sbite
+║> ${νℓкуяє.prefix}sslap
+║> ${νℓкуяє.prefix}skill
+║> ${νℓкуяє.prefix}skick
+║> ${νℓкуяє.prefix}shappy
+║> ${νℓкуяє.prefix}swink
+║> ${νℓкуяє.prefix}spoke
+║> ${νℓкуяє.prefix}sdance
+║> ${νℓкуяє.prefix}scringe
+╚══☰
+╔══☰
 ║> *📢audiofilterlist📢*
 ║> ${νℓкуяє.prefix}panning
 ║> ${νℓкуяє.prefix}bassboost
