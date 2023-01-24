@@ -1,0 +1,18 @@
+.codesandbox
+node_modules
+json.sqlite
+process.js
+νℓкуяє.db
+scraper
+.vscode
+.pnp.cjs
+.next
+.env
+
+# Yarn Berry
+.yarn
+.yarnrc.yml
+
+# test files
+Test
+test-folder
