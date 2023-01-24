@@ -273,21 +273,18 @@ module.exports = async (νℓкуяє, vcнaт, updatedb) => {
         })
           .save()
           .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-        νℓкуяє.sendMessage(
-          vcнaт.chat,
-          {
-            gifPlayback: true,
-            video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
-            caption: `*🔖Here, For ${νℓкуяє.pushname}:*
+        await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, For ${νℓкуяє.pushname}:*
 > Your Dashboard has been made.
+> Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-            mentions: [vcнaт.sender],
-          },
-          { quoted: vcнaт }
+          "./Gallery/login.png"
         );
         return updatedb(udBase);
       }

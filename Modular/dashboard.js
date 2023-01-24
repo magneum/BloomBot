@@ -16,16 +16,16 @@ require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "🔖",
-key: vcнaт.key,
-},
-});
-return await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  return await νℓкуяє.imgB(
+    νℓкуяє,
+    vcнaт,
+    `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
@@ -34,9 +34,9 @@ vcнaт,
 
 *❗Problem?*
 > Doesn't show dashboard?
-> type .help in vlkyre official group
+> type ${νℓкуяє.prefix}help in vlkyre official group
 > head back to bit.ly/magneum
 > try to login`,
-"./Gallery/magneum.png"
-);
+    "./Gallery/login.png"
+  );
 };

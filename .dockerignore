@@ -9,8 +9,9 @@ scraper
 .next
 .env
 
-# Yarn Berry
+# Yarn Berry/Classic
 .yarn
+yarn.lock
 .yarnrc.yml
 
 # test files
