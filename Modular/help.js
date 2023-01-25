@@ -40,17 +40,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     return dDisplay + hDisplay + mDisplay + sDisplay;
   };
   const countFiles = (dir) =>
-    fs.readdirSync(dir).reduce((acc, file) => {
+    νℓкуяє.fs.readdirSync(dir).reduce((acc, file) => {
       const fileDir = `${dir}/${file}`;
-
-      if (fs.lstatSync(fileDir).isDirectory()) {
+      if (νℓкуяє.fs.lstatSync(fileDir).isDirectory()) {
         return (acc += countFiles(fileDir));
       }
-
-      if (fs.lstatSync(fileDir).isFile()) {
+      if (νℓкуяє.fs.lstatSync(fileDir).isFile()) {
         return ++acc;
       }
-
       return acc;
     }, 0);
   return await νℓкуяє.imgB(
