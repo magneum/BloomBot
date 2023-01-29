@@ -149,8 +149,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             let noLimit = sudotring.includes(
               vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
             );
-            let { vimium } = require("../Enforcers/vimium");
-            return vimium(νℓкуяє, vcнaт, update, store, noLimit);
+            return await require("../System/library")(
+              νℓкуяє,
+              vcнaт,
+              update,
+              store
+            );
+            // let { vimium } = require("../Enforcers/vimium");
+            // return vimium(νℓкуяє, vcнaт, update, store, noLimit);
           }
         );
       }
