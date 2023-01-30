@@ -18,99 +18,96 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "🔖",
-key: vcнaт.key,
-},
-});
-try {
-if (!νℓкуяє.args) {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "❌",
-key: vcнaт.key,
-},
-});
-return vcнaт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  try {
+    if (!νℓкуяє.args) {
+      await νℓкуяє.sendMessage(vcнaт.chat, {
+        react: {
+          text: "❌",
+          key: vcнaт.key,
+        },
+      });
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} manga-name_`
-);
-}
-νℓкуяє
-.axios({
-method: "get",
-url:
-"https://magneum.vercel.app/api/youtube_sr?q=" +
-νℓкуяє.args.join(" "),
-headers: {
-accept: "*/*",
-"accept-language": "en-US,en;q=0.9",
-"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-},
-})
-.then(async (response) => {
-var mData = response.data;
-console.log(mData);
-await νℓкуяє.imgB(
-νℓкуяє,
-vcнaт,
-`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+      );
+    }
+    νℓкуяє
+      .axios({
+        method: "get",
+        url:
+          "https://magneum.vercel.app/api/youtube_sr?q=" +
+          νℓкуяє.args.join(" "),
+        headers: {
+          accept: "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+          "user-agent": [
+            "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 YaBrowser/19.10.3.281 Yowser/2.5 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+          ],
+        },
+      })
+      .then(async (response) => {
+        var mData = response.data;
+        console.log(mData);
+        await νℓкуяє.imgB(
+          νℓкуяє,
+          vcнaт,
+          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 *🍻Title:* ${mData._youtube_search[0].TITLE}
 *🙈Views:* ${mData._youtube_search[0].VIEWS}
 *⏰Duration:* ${mData._youtube_search[0].DURATION_FULL}
 *📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
-mData._youtube_search[0].HQ_IMAGE
-);
-νℓкуяє
-.axios({
-method: "get",
-url:
-"https://magneum.vercel.app/api/youtube_dl?q=" +
-mData._youtube_search[0].TITLE +
-"&quality=128kbps",
-headers: {
-accept: "*/*",
-"accept-language": "en-US,en;q=0.9",
-"content-type":
-"application/x-www-form-urlencoded; charset=UTF-8",
-},
-})
-.then(async (response) => {
-var mData = response.data[0];
-console.log(mData);
-await νℓкуяє.sendMessage(
-vcнaт.chat,
-{
-audio: {
-url: mData.quick_dl,
-},
-mimetype: "audio/mpeg",
-fileName: mData.TITLE + ".mp3",
-headerType: 4,
-contextInfo: {
-externalAdReply: {
-TITLE: mData.TITLE,
-body: "❣️Made by magneum.",
-renderLargerThumbnail: true,
-thumbnailUrl: mData.THUMB,
-mediaUrl: mData.LINK,
-mediaType: 1,
-thumbnail: await νℓкуяє.getBuffer(mData.HQ_IMAGE),
-sourceUrl: "https://bit.ly/magneum",
-},
-},
-},
-{ quoted: vcнaт }
-);
-});
-});
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-}
+          mData._youtube_search[0].HQ_IMAGE
+        );
+        const singer = require("play-dl");
+        let stream = await singer.stream(mData._youtube_search[0].LINK);
+        await νℓкуяє.sendMessage(
+          vcнaт.chat,
+          {
+            audio: {
+              url: stream.stream,
+            },
+            mimetype: "audio/mpeg",
+            fileName: mData.TITLE + ".mp3",
+            headerType: 4,
+            contextInfo: {
+              externalAdReply: {
+                TITLE: mData.TITLE,
+                body: "❣️Made by magneum.",
+                renderLargerThumbnail: true,
+                thumbnailUrl: mData.THUMB,
+                mediaUrl: mData.LINK,
+                mediaType: 1,
+                thumbnail: await νℓкуяє.getBuffer(mData.HQ_IMAGE),
+                sourceUrl: "https://bit.ly/magneum",
+              },
+            },
+          },
+          { quoted: vcнaт }
+        );
+      });
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+  }
 };

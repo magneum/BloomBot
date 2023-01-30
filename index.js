@@ -44,7 +44,9 @@ let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
 require("child_process").exec("git config --global user.name 'magneum'");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
-require("child_process").exec("git config --global user.email 'krakinzkon@gmail.com'");
+require("child_process").exec(
+  "git config --global user.email 'krakinzkon@gmail.com'"
+);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function mågneum() {
   await monGoose
@@ -131,14 +133,7 @@ async function mågneum() {
       }
     );
   });
-  νℓpage.listen(PORT, () => {
-    if (fs.existsSync(".env")) {
-      logger.info("🐲: Vlkyre Router Running Locally in port" + PORT);
-      logger.info("🐲: http://localhost:" + PORT);
-    } else {
-      logger.info("🐲: Vlkyre Router Running in Docker/Node");
-    }
-  });
+  νℓpage.listen(PORT);
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
@@ -148,7 +143,7 @@ async function mågneum() {
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.Client || "νℓкуяє.js", "Chrome", "4.0.0"],
+    browser: [process.env.deployer || "vlkyre-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,

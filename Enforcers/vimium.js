@@ -12,8 +12,13 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-exports.vimium = async (νℓкуяє, vcнaт, update, store, noLimit) => {
-  if (!noLimit) {
+exports.vimium = async (νℓкуяє, vcнaт, update, store) => {
+  let noLimit = sudotring.includes(
+    vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
+  );
+  if (noLimit)
+    return await require("../System/library")(νℓкуяє, vcнaт, update, store);
+  else
     await νℓкуяє.vimium.findOne(
       {
         ID: vcнaт.sender,
@@ -35,45 +40,33 @@ exports.vimium = async (νℓкуяє, vcнaт, update, store, noLimit) => {
             update,
             store
           );
-        } else {
+        }
+        if (userVium.Limits < 1) {
           if (userVium.permTime - (Date.now() - userVium.currTime) > 0) {
             let clock = νℓкуяє.ms(
               userVium.permTime - (Date.now() - userVium.currTime)
             );
-            if (userVium.Limits < 1) {
-              return await νℓкуяє.imgB(
-                νℓкуяє,
-                vcнaт,
-                `*Dear* _${νℓкуяє.pushname || νℓкуяє.Tname}_
-*💵Limit:* ${userVium.Limits - 1}/30
-*💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,
-                "./Gallery/vlkyre.jpg"
-              );
-            } else {
-              return await νℓкуяє.imgB(
-                νℓкуяє,
-                vcнaт,
-                `*Dear* _${νℓкуяє.pushname || νℓкуяє.Tname}_
-*💵Limit:* ${userVium.Limits - 1}/30
-*💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,
-                "./Gallery/vlkyre.jpg"
-              );
-            }
-          } else {
-            userVium.currTime = Date.now();
-            userVium.Limits = userVium.Limits - 1;
-            userVium.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-            return await require("../System/library")(
+            return await νℓкуяє.imgB(
               νℓкуяє,
               vcнaт,
-              update,
-              store
+              `*Dear* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+> You have used up all your free commands for the day.
+*💵Limit:* ${userVium.Limits - 1}/30
+*💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,
+              "./Gallery/vlkyre.jpg"
             );
           }
+        } else {
+          userVium.currTime = Date.now();
+          userVium.Limits = userVium.Limits - 1;
+          userVium.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+          return await require("../System/library")(
+            νℓкуяє,
+            vcнaт,
+            update,
+            store
+          );
         }
       }
     );
-  } else {
-    return await require("../System/library")(νℓкуяє, vcнaт, update, store);
-  }
 };

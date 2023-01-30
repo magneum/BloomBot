@@ -146,17 +146,15 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               process.env.sudo === undefined
                 ? "918436686758,917430922909"
                 : process.env.sudo;
-            let noLimit = sudotring.includes(
-              vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
-            );
-            return await require("../System/library")(
-              νℓкуяє,
-              vcнaт,
-              update,
-              store
-            );
-            // let { vimium } = require("../Enforcers/vimium");
-            // return vimium(νℓкуяє, vcнaт, update, store, noLimit);
+
+            // return await require("../System/library")(
+            // νℓкуяє,
+            // vcнaт,
+            // update,
+            // store
+            // );
+            let { vimium } = require("../Enforcers/vimium");
+            return vimium(νℓкуяє, vcнaт, update, store);
           }
         );
       }
