@@ -39,7 +39,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} manga-name_`
+> _${νℓкуяє.prefix}${pfname} song-name_`
       );
     }
     νℓкуяє
@@ -86,7 +86,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             url:
               "https://magneum.vercel.app/api/youtube_dl?q=" +
               mData._youtube_search[0].TITLE +
-              "&quality=128kbps",
+              "&quality=music",
             headers: {
               accept: "*/*",
               "accept-language": "en-US,en;q=0.9",
