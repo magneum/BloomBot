@@ -18,86 +18,98 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-νℓкуяє,
-vcнaт,
-gmeta,
-isAdmin,
-groupName,
-isBotAdmin,
-groupAdmins,
-participants,
-isSudoWorker
+  νℓкуяє,
+  vcнaт,
+  gmeta,
+  isAdmin,
+  groupName,
+  isBotAdmin,
+  groupAdmins,
+  participants,
+  isSudoWorker
 ) => {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "🔖",
-key: vcнaт.key,
-},
-});
-try {
-if (!vcнaт.isGroup) {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "❌",
-key: vcнaт.key,
-},
-});
-return vcнaт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+  await νℓкуяє.sendMessage(vcнaт.chat, {
+    react: {
+      text: "🔖",
+      key: vcнaт.key,
+    },
+  });
+  try {
+    await νℓкуяє.sendMessage(vcнaт.chat, {
+      react: {
+        text: "❌",
+        key: vcнaт.key,
+      },
+    });
+    return vcнaт.reply(
+      `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+    
+    *❌Error* 
+    > _This Command is not yet ready for public usage!_`
+    );
+    if (!vcнaт.isGroup) {
+      await νℓкуяє.sendMessage(vcнaт.chat, {
+        react: {
+          text: "❌",
+          key: vcнaт.key,
+        },
+      });
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
-);
-}
-if (!isAdmin && !isSudoWorker) {
-await νℓкуяє.sendMessage(vcнaт.chat, {
-react: {
-text: "❌",
-key: vcнaт.key,
-},
-});
-return vcнaт.reply(
-`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+      );
+    }
+    if (!isAdmin && !isSudoWorker) {
+      await νℓкуяє.sendMessage(vcнaт.chat, {
+        react: {
+          text: "❌",
+          key: vcнaт.key,
+        },
+      });
+      return vcнaт.reply(
+        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-try {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
-} catch {
-𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє.jpg";
-}
-if (νℓкуяє.args) {
-return await νℓкуяє.sendMessage(
-vcнaт.chat,
-{
-image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-caption: `*📢ID:* ${vcнaт.chat}
+      );
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    try {
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
+    } catch {
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє.jpg";
+    }
+    if (νℓкуяє.args) {
+      return await νℓкуяє.sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
+          caption: `*📢ID:* ${vcнaт.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${νℓкуяє.args.join(" ")}`,
-mentions: await participants.map((a) => a.id),
-},
-{ quoted: vcнaт }
-);
-} else {
-return await νℓкуяє.sendMessage(
-vcнaт.chat,
-{
-image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-caption: `*📢ID:* ${vcнaт.chat}
+          mentions: await participants.map((a) => a.id),
+        },
+        { quoted: vcнaт }
+      );
+    } else {
+      return await νℓкуяє.sendMessage(
+        vcнaт.chat,
+        {
+          image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
+          caption: `*📢ID:* ${vcнaт.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
-mentions: await participants.map((a) => a.id),
-},
-{ quoted: vcнaт }
-);
-}
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-} catch (error) {
-return νℓкуяє.grab(νℓкуяє, vcнaт);
-}
+          mentions: await participants.map((a) => a.id),
+        },
+        { quoted: vcнaт }
+      );
+    }
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } catch (error) {
+    return νℓкуяє.grab(νℓкуяє, vcнaт);
+  }
 };
