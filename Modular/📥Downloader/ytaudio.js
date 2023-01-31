@@ -113,20 +113,20 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               vcнaт.chat,
               {
                 audio: {
-                  url: mData.quick_dl,
+                  url: mData[0].quick_dl,
                 },
                 mimetype: "audio/mpeg",
-                fileName: mData.TITLE + ".mp3",
+                fileName: mData[0].TITLE + ".mp3",
                 headerType: 4,
                 contextInfo: {
                   externalAdReply: {
-                    TITLE: mData.TITLE,
+                    TITLE: mData[0].TITLE,
                     body: "❣️Made by magneum.",
                     renderLargerThumbnail: true,
-                    thumbnailUrl: mData.THUMB,
-                    mediaUrl: mData.LINK,
+                    thumbnailUrl: mData[0].THUMB,
+                    mediaUrl: mData[0].LINK,
                     mediaType: 1,
-                    thumbnail: await νℓкуяє.getBuffer(mData.HQ_IMAGE),
+                    thumbnail: await νℓкуяє.getBuffer(mData[0].HQ_IMAGE),
                     sourceUrl: "https://bit.ly/magneum",
                   },
                 },
