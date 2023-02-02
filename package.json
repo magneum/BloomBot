@@ -1,6 +1,6 @@
 {
   "name": "vlkyre-bot",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
     "dev": "supervisor -w models index.js",
     "start": "node --no-warnings index.js",
-    "test": "supervisor Test/index.js"
+    "test": "supervisor test/index.js"
   },
   "depecrated": false,
   "engines": {
