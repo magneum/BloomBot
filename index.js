@@ -41,7 +41,7 @@ var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("./mongodb/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("./Authenticator/Database");
+var { useRemoteFileAuthState } = require("./auth/Database");
 require("child_process").exec("git config --global user.name 'magneum'");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./server/myfunc");
 require("child_process").exec(
@@ -241,7 +241,7 @@ async function mågneum() {
       try {
         imåge = await νℓкуяє.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./Gallery/νℓкуяє.jpg";
+        imåge = "./src/νℓкуяє.jpg";
       }
 
       if (update.action == "add") {

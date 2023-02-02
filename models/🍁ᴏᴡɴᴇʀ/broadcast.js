@@ -78,7 +78,7 @@ module.exports = async (
     for (let cron of places) {
       await νℓкуяє.sendMessage(cron, {
         video: {
-          url: "./Gallery/Notice.mp4",
+          url: "./src/Notice.mp4",
         },
         mimetype: "video/mp4",
         fileName: "Vlkyre-Notice.mp4",

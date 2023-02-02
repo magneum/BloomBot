@@ -34,6 +34,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 │║⦁ ${νℓкуяє.prefix}tourl
 │║⦁ ${νℓкуяє.prefix}tts
 ┕╚═══════⋑`,
-    "./Gallery/magneum.png"
+    "./src/magneum.png"
   );
 };

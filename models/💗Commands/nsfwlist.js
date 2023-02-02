@@ -64,6 +64,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 │║⦁ ${νℓкуяє.prefix}slut
 │║⦁ ${νℓкуяє.prefix}cumslut
 ┕╚═══════⋑`,
-    "./Gallery/magneum.png"
+    "./src/magneum.png"
   );
 };

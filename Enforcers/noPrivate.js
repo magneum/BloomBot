@@ -37,7 +37,7 @@ exports.noPrivate = async (νℓкуяє, vcнaт, update) => {
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 • You Will be Auto-Blocked After 4 warnings!`,
-            "./Gallery/magneum.png"
+            "./src/magneum.png"
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
@@ -52,7 +52,7 @@ exports.noPrivate = async (νℓкуяє, vcнaт, update) => {
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
 • You Will be Auto-Blocked After 4 warnings!`,
-            "./Gallery/magneum.png"
+            "./src/magneum.png"
           );
         } else {
           await user

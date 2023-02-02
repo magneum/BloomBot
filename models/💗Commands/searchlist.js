@@ -44,6 +44,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 │║⦁ ${νℓкуяє.prefix}reddit
 │║⦁ ${νℓкуяє.prefix}ytsearch
 ┕╚═══════⋑`,
-    "./Gallery/magneum.png"
+    "./src/magneum.png"
   );
 };

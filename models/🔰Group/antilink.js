@@ -74,7 +74,7 @@ module.exports = async (
     try {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./Gallery/νℓкуяє.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/νℓкуяє.jpg";
     }
     if (!νℓкуяє.args) {
       await νℓкуяє.sendMessage(vcнaт.chat, {

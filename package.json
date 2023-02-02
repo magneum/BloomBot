@@ -16,12 +16,12 @@
     "yarn": ">= 1.22.19"
   },
   "directories": {
-    "Authenticator": "Authenticator",
+    "auth": "auth",
     "Bin": "Bin",
     "Buttons": "Buttons",
     "docs": "docs",
     "Enforcers": "Enforcers",
-    "Gallery": "Gallery",
+    "src": "src",
     "logger": "logger",
     "models": "models",
     "mongodb": "mongodb",

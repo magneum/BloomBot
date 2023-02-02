@@ -31,6 +31,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 > type ${νℓкуяє.prefix}help in vlkyre official group
 > head back to bit.ly/magneum
 > try to login`,
-    "./Gallery/login.png"
+    "./src/login.png"
   );
 };

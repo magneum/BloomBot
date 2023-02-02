@@ -125,7 +125,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 vcнaт.chat,
                 {
                   gifPlayback: true,
-                  video: νℓкуяє.fs.readFileSync("./Gallery/how.mp4"),
+                  video: νℓкуяє.fs.readFileSync("./src/how.mp4"),
                   caption: `*📢Verification Needed*
 *😥Sorry:* _${νℓкуяє.pushname}_
 

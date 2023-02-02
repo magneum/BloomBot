@@ -284,7 +284,7 @@ module.exports = async (νℓкуяє, vcнaт, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          "./Gallery/login.png"
+          "./src/login.png"
         );
         return updatedb(udBase);
       }

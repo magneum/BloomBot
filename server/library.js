@@ -2096,9 +2096,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         vcнaт,
         `*😥Sorry:* @${νℓкуяє.Tname}
 *❌Error* 
-> _No Such Command Found_
-> Visit To Know Commands: _bit.ly/magneum_`,
-        "./Gallery/KryPage.jpg"
+> No Such Command Found
+> Visit To Know Commands: 
+> _bit.ly/magneum_`,
+        "./src/404.jpg"
       );
       break;
   }
