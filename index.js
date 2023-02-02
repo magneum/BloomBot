@@ -162,62 +162,15 @@ async function mågneum() {
   });
   store.bind(νℓкуяє.ev);
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  νℓкуяє.ev.on("creds.update", async (update) => await saveCreds());
-  νℓкуяє.ev.on("connection.update", async (update) => {
-    const {
-      lastDisconnect,
-      connection,
-      isNewLogin,
-      isOnline,
-      qr,
-      receivedPendingNotifications,
-    } = update;
-    if (connection == "connecting")
-      logger.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logger.info("🐲: Login successful! ▶");
-    else if (connection == "close") {
-      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-      if (reason === DisconnectReason.badSession) {
-        logger.error(
-          `❌: Bad Session File, Please Delete Session and Scan Again`
-        );
-        νℓкуяє.logout();
-      } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
-        await mågneum();
-      } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
-        await mågneum();
-      } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
-          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-        );
-        νℓкуяє.logout();
-      } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
-        process.exit(0);
-      } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
-        await mågneum();
-      } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
-        await mågneum();
-      } else
-        νℓкуяє.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
-        );
-    } else if (isOnline === true) logger.debug("🐲: Online.");
-    else if (isOnline === false) logger.error("🐲: Offine.");
-    else if (receivedPendingNotifications === true)
-      logger.debug("🐲: Received Pending Notifications.");
-    else if (receivedPendingNotifications === false)
-      logger.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logger.debug("🐲: New Login.");
-    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
-    else logger.info("🐲: Connection...", update);
+  νℓкуяє.ev.on("creds.update", async (update) => {
+    return require("./events/creds.update")(νℓкуяє, update, store);
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  νℓкуяє.ev.on("connection.update", async (update) => {
+    return require("./events/connection.update")(νℓкуяє, update, store);
+  });
+  νℓкуяє.ev.on("group-participants.update", async (update) => {
+    return require("./events/group-participants.update")(νℓкуяє, update, store);
+  });
   νℓкуяє.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
@@ -230,60 +183,6 @@ async function mågneum() {
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
     await require("./server/router.js")(νℓкуяє, vcнaт, update, store);
-  });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  νℓкуяє.ev.on("group-participants.update", async (update) => {
-    let metadata = await νℓкуяє.groupMetadata(update.id);
-    let participants = update.participants;
-    logger.info(update);
-    for (let sperson of participants) {
-      var imåge;
-      try {
-        imåge = await νℓкуяє.profilePictureUrl(sperson, "image");
-      } catch {
-        imåge = "./src/νℓкуяє.jpg";
-      }
-
-      if (update.action == "add") {
-        return await νℓкуяє
-          .sendMessage(
-            update.id,
-            {
-              image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-*📢ID:* ${update.id}
-
-> Firstly Welcome.
-> I am Vlkyre Whatsapp Bot.
-> To Start using type .help or press below buttons.`,
-              footer:
-                "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
-              buttons: [
-                {
-                  buttonId: `${νℓкуяє.prefix}Dashboard`,
-                  buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${νℓкуяє.prefix}Vlkyre`,
-                  buttonText: { displayText: `${νℓкуяє.prefix}Vlkyre` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              mentions: [sperson],
-            },
-            {
-              contextInfo: { mentionedJid: [sperson] },
-            }
-          )
-          .catch((error) => logger.error(error));
-      } else if (update.action == "remove") {
-        return;
-      } else {
-        return;
-      }
-    }
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.decodeJid = (jid) => {
@@ -739,27 +638,10 @@ async function mågneum() {
   };
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ws.on("CB:call", async (update) => {
-    var callerId = json.content[0].attrs["call-creator"];
-    if (json.content[0].tag == "offer") {
-      let person = await νℓкуяє.sendContact(callerId, global.owner);
-      νℓкуяє.sendMessage(
-        callerId,
-        {
-          text: `Automatic system block!\nDon't call bot!\nPlease contact owner to open it !`,
-        },
-        { quoted: person }
-      );
-      await sleep(8000);
-      await νℓкуяє.updateBlockStatus(callerId, "block");
-    }
+    return require("./events/CB:call")(νℓкуяє, update, store);
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("contacts.update", async (update) => {
-    for (let contact of update) {
-      let jid = νℓкуяє.decodeJid(contact.id);
-      if (store && store.contacts)
-        store.contacts[jid] = { jid, name: contact.notify };
-    }
+    return require("./events/contacts.update")(νℓкуяє, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   setInterval(async () => {
