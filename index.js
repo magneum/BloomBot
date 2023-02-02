@@ -43,7 +43,7 @@ var dboard = require("./mongBase/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./Authenticator/Database");
 require("child_process").exec("git config --global user.name 'magneum'");
-var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./System/myfunc");
+var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./server/myfunc");
 require("child_process").exec(
   "git config --global user.email 'krakinzkon@gmail.com'"
 );
@@ -229,7 +229,7 @@ async function mågneum() {
     if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     vcнaт = await νkmake(νℓкуяє, νTēxt, store);
-    await require("./System/router.js")(νℓкуяє, vcнaт, update, store);
+    await require("./server/router.js")(νℓкуяє, vcнaт, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("group-participants.update", async (update) => {
@@ -590,7 +590,7 @@ async function mågneum() {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("./System/exif");
+      let { writeExif } = require("./server/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,

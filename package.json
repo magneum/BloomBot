@@ -1,12 +1,12 @@
 {
   "name": "vlkyre-bot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "main": "index.js",
   "scripts": {
     "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever",
     "server": "forever --minUptime=1000ms --spinSleepTime=1000ms index.js --color",
-    "dev": "supervisor -w Modular index.js",
+    "dev": "supervisor -w models index.js",
     "start": "node --no-warnings index.js",
     "test": "supervisor Test/index.js"
   },
@@ -23,9 +23,9 @@
     "Enforcers": "Enforcers",
     "Gallery": "Gallery",
     "logger": "logger",
-    "Modular": "Modular",
+    "models": "models",
     "mongBase": "mongBase",
-    "System": "System",
+    "server": "server",
     "views": "views"
   },
   "dependencies": {
