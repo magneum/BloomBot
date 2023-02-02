@@ -126,11 +126,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.Welcome = require("../mongodb/setwelcome");
   νℓкуяє.Warning = require("../mongodb/warning");
   νℓкуяє.Zoology = require("../mongodb/zoo");
-  νℓкуяє.Fishes = require("../Bin/fishes.json");
-  νℓкуяє.animals = require("../Bin/animals.json");
-  νℓкуяє.Jwork = require("../Bin/works.json");
-  νℓкуяє.dare = require("../Bin/dare.json");
-  νℓкуяє.truth = require("../Bin/truth.json");
+  νℓкуяє.Fishes = require("../src/fishes.json");
+  νℓкуяє.animals = require("../src/animals.json");
+  νℓкуяє.Jwork = require("../src/works.json");
+  νℓкуяє.dare = require("../src/dare.json");
+  νℓкуяє.truth = require("../src/truth.json");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.os = require("os");
   νℓкуяє.fs = require("fs");
