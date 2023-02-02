@@ -166,7 +166,7 @@ async function mågneum() {
     return require("./events/creds.update")(νℓкуяє, update, store);
   });
   νℓкуяє.ev.on("connection.update", async (update) => {
-    return require("./events/connection.update")(νℓкуяє, update, store);
+    return require("./events/connection.update")(νℓкуяє, update, store, mågneum);
   });
   νℓкуяє.ev.on("group-participants.update", async (update) => {
     return require("./events/group-participants.update")(νℓкуяє, update, store);

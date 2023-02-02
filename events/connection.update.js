@@ -21,7 +21,7 @@ require("events").EventEmitter.prototype._maxListeners = 0;
 require("../global.js");
 var { Boom } = require("@hapi/boom");
 var { DisconnectReason } = require("@adiwajshing/baileys");
-module.exports = async (νℓкуяє, update, store) => {
+module.exports = async (νℓкуяє, update, store, mågneum) => {
   const {
     lastDisconnect,
     connection,

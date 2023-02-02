@@ -1,3 +1,5 @@
+const { request } = require("http");
+
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 /*
 ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬! 
@@ -18,124 +20,157 @@ require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (νℓкуяє, vcнaт, update, store) => {
-  try {
-    if (!νℓкуяє.args.join(" ")) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
-        react: {
-          text: "❌",
-          key: vcнaт.key,
-        },
-      });
-      return vcнaт.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+try {
+if (!νℓкуяє.args.join(" ")) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage*   
 > _${νℓкуяє.prefix}${pfname} song/link_`
-      );
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    var gotArgument = νℓкуяє.args.join(" ");
-    if (gotArgument.includes("yout")) {
-      if (!νℓкуяє.TubeRegex.test(gotArgument)) {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
-          react: {
-            text: "❌",
-            key: vcнaт.key,
-          },
-        });
-        return vcнaт.reply(
-          `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+);
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var gotArgument = νℓкуяє.args.join(" ");
+if (gotArgument.includes("yout")) {
+if (!νℓкуяє.TubeRegex.test(gotArgument)) {
+await νℓкуяє.sendMessage(vcнaт.chat, {
+react: {
+text: "❌",
+key: vcнaт.key,
+},
+});
+return vcнaт.reply(
+`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
 > _${νℓкуяє.prefix}${pfname} song/link_`
-        );
-      }
-    }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+);
+}
+}
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє
+.axios({
+method: "get",
+url:
+"https://magneum.vercel.app/api/youtube_sr?q=" +
+νℓкуяє.args.join(" "),
+headers: {
+accept: "*/*",
+"accept-language": "en-US,en;q=0.9",
+"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+"user-agent": [
+"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 YaBrowser/19.10.3.281 Yowser/2.5 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+],
+},
+})
+.then(async (response) => {
+var mData = response.data;
+console.log(mData);
+await νℓкуяє.imgB(
+νℓкуяє,
+vcнaт,
+`*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+*🍻Title:* ${mData._youtube_search[0].TITLE}
+*🙈Views:* ${mData._youtube_search[0].VIEWS}  
+*⏰Duration:* ${mData._youtube_search[0].DURATION_FULL}
+*🔗Link:* ${mData._youtube_search[0].LINK || "null"}
+*🖊️Author:* ${mData._youtube_search[0].AUTHOR_NAME || "null"}
 
-    var Found = await νℓкуяє.ySearch(gotArgument);
-    var vFound = Found.videos.slice(0, 1);
-    vFound.forEach(async function (vData) {
-      if (!vData.url) {
-        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
-
-*❌Error*
-> _No Music Found!_`);
-      } else if (vData.seconds > 600) {
-        return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
-
-*❌Error*
-> _Cannot Download More Then 10m audio!_`);
-      } else {
-        console.log(vData);
-        await νℓкуяє.imgB(
-          νℓкуяє,
-          vcнaт,
-          `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
-*⭕Filter:* ${pfname}
-*🍻Title:* ${vData.title || "null"}
-*🙈Views:* ${vData.views || "null"}
-*⏰Duration:* ${vData.timestamp || "null"} | ${vData.ago || "null"}
-*🔗Link:* ${vData.url || "null"}
-*🖊️Author:* ${vData.author.name || "null"}
-
-
-*📜Description:*
-${vData.description || "null"}`,
-          vData.thumbnail
-        );
-        ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-        let audiOut = νℓкуяє.between(1000, 2000) + vData.videoId + ".mp3";
-        var audio = νℓкуяє
-          .yClient(vData.url, {
-            filter: (info) =>
-              info.audioBitrate == 160 || info.audioBitrate == 128,
-          })
-          .pipe(νℓкуяє.fs.createWriteStream(`./${audiOut}`));
-        await new Promise((resolve, reject) => {
-          audio.on("error", reject);
-          audio.on("finish", resolve);
-        });
-        let audioConv = νℓкуяє.between(3000, 4000) + vData.videoId + ".mp3";
-        νℓкуяє.exec(
-          `${νℓкуяє.pathFFmpeg} -i ${audiOut} -af "surround" ${audioConv}`,
-          async (error) => {
-            if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-            else {
-              await νℓкуяє.sendMessage(
-                vcнaт.chat,
-                {
-                  audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
-                  mimetype: "audio/mpeg",
-                  fileName: vData.title + ".mp3",
-                  headerType: 4,
-                  contextInfo: {
-                    externalAdReply: {
-                      title: vData.title,
-                      body: "YT-Filter⭕Made by xhadr.",
-                      renderLargerThumbnail: true,
-                      thumbnailUrl: vData.thumbnail,
-                      mediaUrl: vData.url,
-                      mediaType: 1,
-                      thumbnail: await νℓкуяє.getBuffer(vData.thumbnail),
-                      sourceUrl: "https://bit.ly/xhadr",
-                    },
-                  },
-                },
-                { quoted: vcнaт }
-              );
-              await νℓкуяє.fs.unlinkSync(`./${audiOut}`);
-              return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
-            }
-          }
-        );
-      }
-    });
-  } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
-  }
+*📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
+mData._youtube_search[0].HQ_IMAGE
+);
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+νℓкуяє
+.axios({
+method: "get",
+url:
+"https://magneum.vercel.app/api/youtube_dl?q=" +
+mData._youtube_search[0].TITLE +
+"&quality=music",
+headers: {
+accept: "*/*",
+"accept-language": "en-US,en;q=0.9",
+"content-type":
+"application/x-www-form-urlencoded; charset=UTF-8",
+"user-agent": [
+"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 YaBrowser/19.10.3.281 Yowser/2.5 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36",
+"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+],
+},
+})
+.then(async (response) => {
+var mData = response.data;
+let audioConv =
+νℓкуяє.between(3000, 4000) +
+mData._youtube_search[0].videoId +
+".mp3";
+νℓкуяє.exec(
+`${νℓкуяє.pathFFmpeg} -i ${mData[0].quick_dl} -af 'surround' ${audioConv}`,
+async (error) => {
+if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+else
+await νℓкуяє.sendMessage(
+vcнaт.chat,
+{
+audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
+mimetype: "audio/mpeg",
+fileName: mData._youtube_search[0].title + ".mp3",
+headerType: 4,
+contextInfo: {
+externalAdReply: {
+title: mData._youtube_search[0].title,
+body: "YT-Filter⭕Made by magneum.",
+renderLargerThumbnail: true,
+thumbnailUrl: mData._youtube_search[0].thumbnail,
+mediaUrl: mData._youtube_search[0].url,
+mediaType: 1,
+thumbnail: await νℓкуяє.getBuffer(
+mData._youtube_search[0].thumbnail
+),
+sourceUrl: "https://bit.ly/magneum",
+},
+},
+},
+{ quoted: vcнaт }
+);
+return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
+}
+);
+});
+});
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+} catch (error) {
+return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+}
 };
+
+
