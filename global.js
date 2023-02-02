@@ -18,7 +18,7 @@ var sequelize = require("sequelize");
 var { createClient } = require("redis");
 const { QuickDB, MySQLDriver } = require("quick.db");
 if (fs.existsSync(".env")) {
-require("dotenv").config({ path: ".env" });
+  require("dotenv").config({ path: ".env" });
 }
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var sudo = process.env.sudo;
@@ -34,73 +34,73 @@ global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
 global.upbranch = process.env.upbranch;
 global.nameApi = {
-nrtm: "https://nurutomo.herokuapp.com",
-dzx: "https://api.dhamzxploit.my.id",
-xteam: "https://api.xteam.xyz",
-zahir: "https://zahirr-web.herokuapp.com",
-zeks: "https://api.zeks.xyz",
-pencarikode: "https://pencarikode.xyz",
-LeysCoder: "https://leyscoders-api.herokuapp.com",
+  nrtm: "https://nurutomo.herokuapp.com",
+  dzx: "https://api.dhamzxploit.my.id",
+  xteam: "https://api.xteam.xyz",
+  zahir: "https://zahirr-web.herokuapp.com",
+  zeks: "https://api.zeks.xyz",
+  pencarikode: "https://pencarikode.xyz",
+  LeysCoder: "https://leyscoders-api.herokuapp.com",
 };
 global.keyApi = {
-"https://api.xteam.xyz": "d90a9e986e18778b",
-"https://zahirr-web.herokuapp.com": "zahirgans",
-"https://api.zeks.xyz": "apivinz",
-"https://pencarikode.xyz": "pais",
-"https://leyscoders-api.herokuapp.com": "dappakntlll",
+  "https://api.xteam.xyz": "d90a9e986e18778b",
+  "https://zahirr-web.herokuapp.com": "zahirgans",
+  "https://api.zeks.xyz": "apivinz",
+  "https://pencarikode.xyz": "pais",
+  "https://leyscoders-api.herokuapp.com": "dappakntlll",
 };
 global.packname = "Vlkyre:v5";
 global.author = "magneum";
 global.name = "Vlkyre-Bot";
 var Log = (value) => {
-var log = false;
-if (typeof value === "string") {
-if (value.toLowerCase() === "true") {
-log = console.log;
-}
-}
-return log;
+  var log = false;
+  if (typeof value === "string") {
+    if (value.toLowerCase() === "true") {
+      log = console.log;
+    }
+  }
+  return log;
 };
 global.apiGet = (name, path = "/", query = {}, queryname) =>
-(name in global.nameApi ? global.nameApi[name] : name) +
-path +
-(query || queryname
-? "?" +
-new URLSearchParams(
-Object.entries({
-...query,
-...(queryname
-? {
-[queryname]:
-global.keyApi[
-name in global.nameApi ? global.nameApi[name] : name
-],
-}
-: {}),
-})
-)
-: "");
+  (name in global.nameApi ? global.nameApi[name] : name) +
+  path +
+  (query || queryname
+    ? "?" +
+      new URLSearchParams(
+        Object.entries({
+          ...query,
+          ...(queryname
+            ? {
+                [queryname]:
+                  global.keyApi[
+                    name in global.nameApi ? global.nameApi[name] : name
+                  ],
+              }
+            : {}),
+        })
+      )
+    : "");
 process.env.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./νℓкуяє.db"
-: process.env.DATABASE_URL;
+  process.env.DATABASE_URL === undefined
+    ? "./νℓкуяє.db"
+    : process.env.DATABASE_URL;
 global.DATABASE_URL =
-process.env.DATABASE_URL === undefined
-? "./νℓкуяє.db"
-: process.env.DATABASE_URL;
+  process.env.DATABASE_URL === undefined
+    ? "./νℓкуяє.db"
+    : process.env.DATABASE_URL;
 global.DATABASE =
-process.env.DATABASE_URL === "./νℓкуяє.db"
-? new sequelize.Sequelize({
-dialect: "sqlite",
-storage: process.env.DATABASE_URL,
-logging: Log("false"),
-})
-: new sequelize.Sequelize(process.env.DATABASE_URL, {
-dialect: "postgres",
-protocol: "postgres",
-logging: Log("false"),
-dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-});
+  process.env.DATABASE_URL === "./νℓкуяє.db"
+    ? new sequelize.Sequelize({
+        dialect: "sqlite",
+        storage: process.env.DATABASE_URL,
+        logging: Log("false"),
+      })
+    : new sequelize.Sequelize(process.env.DATABASE_URL, {
+        dialect: "postgres",
+        protocol: "postgres",
+        logging: Log("false"),
+        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+      });
 // (async () => {
 // const mysqlDriver = new MySQLDriver({
 // host: process.env.MYSQLHOST,

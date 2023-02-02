@@ -24,7 +24,7 @@
     "Gallery": "Gallery",
     "logger": "logger",
     "models": "models",
-    "mongBase": "mongBase",
+    "mongodb": "mongodb",
     "server": "server",
     "views": "views"
   },
