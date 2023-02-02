@@ -17,8 +17,7 @@
   },
   "directories": {
     "auth": "auth",
-    "Bin": "Bin",
-    "Buttons": "Buttons",
+    "bin": "bin",
     "docs": "docs",
     "src": "src",
     "logger": "logger",

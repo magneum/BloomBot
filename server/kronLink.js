@@ -102,9 +102,9 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.Tname = vcнaт.sender.replace(/['@s whatsapp.net']/g, "");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.msgFilter = require("./msgFilter");
-  νℓкуяє.imgB = require("../Buttons/imgB");
-  νℓкуяє.vidB = require("../Buttons/vidB");
-  νℓкуяє.grab = require("../Buttons/grab");
+  νℓкуяє.imgB = require("../bin/buttons/imgB");
+  νℓкуяє.vidB = require("../bin/buttons/vidB");
+  νℓкуяє.grab = require("../bin/buttons/grab");
   νℓкуяє.TTS = require("google-tts-api");
   // νℓкуяє.nhentaidl = require("./nhentaidl");
   νℓкуяє.dashboard = require("../mongodb/dashboard");

@@ -782,4 +782,4 @@ async function mågneum() {
     // await gitPull();
   }, 1000 * 40);
 }
-mågneum().catch((error) => logger.error(error));
+mågneum().catch((error) => logger.error(error + error.message));
