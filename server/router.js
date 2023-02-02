@@ -70,7 +70,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   require("./kronLink")(νℓкуяє, vcнaт, update, store);
   if (!vcнaт.isGroup && νℓкуяє.command)
-    return require("../Enforcers/noPrivate")(νℓкуяє, vcнaт, update);
+    return require("../auth/noPrivate")(νℓкуяє, vcнaт, update);
   if (vcнaт.isGroup && νℓкуяє.command)
     νℓкуяє.userBanCheck.findOne(
       {
@@ -107,7 +107,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               async (error, server) => {
                 if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
                 if (!server) return;
-                let { noLink } = require("../Enforcers/antilink");
+                let { noLink } = require("../auth/antilink");
                 return noLink(νℓкуяє, vcнaт);
               }
             );
@@ -141,7 +141,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 { quoted: vcнaт }
               );
             }
-            // let { vimium } = require("../Enforcers/vimium");
+            // let { vimium } = require("../auth/vimium");
             // return vimium(νℓкуяє, vcнaт, update, store);
             return await require("../System/library")(
               νℓкуяє,
