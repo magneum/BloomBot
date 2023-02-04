@@ -128,28 +128,29 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             },
           })
           .then(async (response) => {
-            var mData = response.data;
-            console.log(mData);
-            let audioConv = νℓкуяє.between(3000, 4000) + ".mp3";
+            var musicData = response.data;
+            console.log(musicData);
+            let audioConv =
+              νℓкуяє.between(3000, 4000) + musicData[0].YT_ID + ".mp3";
             νℓкуяє.exec(
-              `${νℓкуяє.pathFFmpeg} -i ${mData[0].quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioConv}`,
+              `${νℓкуяє.pathFFmpeg} -i ${musicData[0].quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioConv}`,
               async (error) => {
                 if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
-                else
+                else {
                   await νℓкуяє.sendMessage(
                     νℓкhat.chat,
                     {
                       audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
                       mimetype: "audio/mpeg",
-                      fileName: audioConv,
+                      fileName: mData._youtube_search[0].TITLE + ".mp3",
                       headerType: 4,
                       contextInfo: {
                         externalAdReply: {
                           title: mData._youtube_search[0].TITLE,
                           body: "YT-Filter⭕Made by magneum.",
                           renderLargerThumbnail: true,
-                          thumbnailUrl: mData._youtube_search[0].THUMB,
-                          mediaUrl: mData._youtube_search[0].url,
+                          thumbnailUrl: mData._youtube_search[0].HQ_IMAGE,
+                          mediaUrl: mData._youtube_search[0].LINK,
                           mediaType: 1,
                           thumbnail: await νℓкуяє.getBuffer(
                             mData._youtube_search[0].HQ_IMAGE
@@ -160,7 +161,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                     },
                     { quoted: νℓкhat }
                   );
-                return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
+                  return await νℓкуяє.fs.unlinkSync(`./${audioConv}`);
+                }
               }
             );
           });
