@@ -12,7 +12,3 @@ scraper
 # Yarn Berry/Classic
 .yarn
 .yarnrc.yml
-
-# test files
-test
-temp
