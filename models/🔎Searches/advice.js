@@ -17,7 +17,7 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     var кяуяєs = await νℓкуяє.axios.get("https://api.adviceslip.com/advice");
     try {
@@ -33,7 +33,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
         bsoni.url_image
@@ -41,7 +41,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     } catch {
       await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
         "./src/νℓкуяє_beta.jpg"
@@ -49,6 +49,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

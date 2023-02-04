@@ -17,20 +17,20 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     await νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (!userEco) {
           let newUser = new νℓкуяє.Economy({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -40,11 +40,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           });
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -54,23 +54,23 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         } else {
           await νℓкуяє.Zoology.findOne(
             {
-              ID: vcнaт.sender,
+              ID: νℓкhat.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, Vlkyre, error);
               if (!userZoo) {
                 new νℓкуяє.Zoology({
-                  ID: vcнaт.sender,
+                  ID: νℓкhat.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
@@ -84,7 +84,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   );
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -109,11 +109,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -131,6 +131,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

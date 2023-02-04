@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -28,14 +28,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!vcнaт.isGroup) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+    if (!νℓкhat.isGroup) {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -43,13 +43,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -57,13 +57,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -73,15 +73,15 @@ module.exports = async (
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
       let mention = νℓкуяє.mentionByTag;
-      let users = (await mention[0]) || vcнaт.msg.contextInfo.participant;
+      let users = (await mention[0]) || νℓкhat.msg.contextInfo.participant;
       if (!users) {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
+        await νℓкуяє.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: νℓкhat.key,
           },
         });
-        return vcнaт.reply(
+        return νℓкhat.reply(
           `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -92,15 +92,15 @@ module.exports = async (
         );
       }
       try {
-        await νℓкуяє.groupParticipantsUpdate(vcнaт.chat, [users], "promote");
+        await νℓкуяє.groupParticipantsUpdate(νℓкhat.chat, [users], "promote");
       } catch {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
+        await νℓкуяє.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: νℓкhat.key,
           },
         });
-        return vcнaт.reply(
+        return νℓкhat.reply(
           `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -114,25 +114,25 @@ module.exports = async (
       }
       await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `OOPs!! looks like someone promoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else if (νℓкуяє.mentionByReply) {
       let users =
-        vcнaт.mtype == "extendedTextMessage" &&
-        vcнaт.message.extendedTextMessage.contextInfo != null
-          ? vcнaт.message.extendedTextMessage.contextInfo.participant || ""
+        νℓкhat.mtype == "extendedTextMessage" &&
+        νℓкhat.message.extendedTextMessage.contextInfo != null
+          ? νℓкhat.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
+        await νℓкуяє.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: νℓкhat.key,
           },
         });
-        return vcнaт.reply(
+        return νℓкhat.reply(
           `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -143,15 +143,15 @@ module.exports = async (
         );
       }
       try {
-        await νℓкуяє.groupParticipantsUpdate(vcнaт.chat, [users], "promote");
+        await νℓкуяє.groupParticipantsUpdate(νℓкhat.chat, [users], "promote");
       } catch {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
+        await νℓкуяє.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: νℓкhat.key,
           },
         });
-        return vcнaт.reply(
+        return νℓкhat.reply(
           `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -165,19 +165,19 @@ module.exports = async (
       }
       await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `OOPs!! looks like someone promoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -189,6 +189,6 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

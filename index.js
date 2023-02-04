@@ -228,8 +228,8 @@ async function mågneum() {
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
     if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    vcнaт = await νkmake(νℓкуяє, νTēxt, store);
-    await require("./server/router.js")(νℓкуяє, vcнaт, update, store);
+    νℓкhat = await νkmake(νℓкуяє, νTēxt, store);
+    await require("./server/router.js")(νℓкуяє, νℓкhat, update, store);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("group-participants.update", async (update) => {
@@ -355,7 +355,7 @@ async function mågneum() {
   };
 
   νℓкуяє.public = true;
-  νℓкуяє.serializeM = (vcнaт) => νkmake(νℓкуяє, vcнaт, store);
+  νℓкуяє.serializeM = (νℓкhat) => νkmake(νℓкуяє, νℓкhat, store);
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.send5ButImg = async (
     jid,
@@ -370,7 +370,7 @@ async function mågneum() {
       { upload: νℓкуяє.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      vcнaт.chat,
+      νℓкhat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

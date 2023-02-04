@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -27,34 +27,34 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
+  await νℓкуяє.sendMessage(νℓкhat.chat, {
     react: {
       text: "🔖",
-      key: vcнaт.key,
+      key: νℓкhat.key,
     },
   });
   try {
     if (!νℓкуяє.frome && !νℓкуяє.isSudoWorker) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!νℓкуяє.args.join(" ")) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -69,7 +69,7 @@ module.exports = async (
       .slice(0)
       .map((entry) => entry[1]);
     let places = vGroup.map((v) => v.id);
-    vcнaт.reply(
+    νℓкhat.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -94,6 +94,6 @@ ${νℓкуяє.args.join(" ")}`,
 
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

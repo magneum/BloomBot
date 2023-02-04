@@ -17,26 +17,26 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   let ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   let MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   let MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   let MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (νℓкуяє.mentionByReply) {
     let receiver =
-      vcнaт.mtype == "extendedTextMessage" &&
-      vcнaт.message.extendedTextMessage.contextInfo != null
-        ? vcнaт.message.extendedTextMessage.contextInfo.participant || ""
+      νℓкhat.mtype == "extendedTextMessage" &&
+      νℓкhat.message.extendedTextMessage.contextInfo != null
+        ? νℓкhat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     let receiverName = await νℓкуяє.getName(receiver);
-    if (receiver === vcнaт.sender) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+    if (receiver === νℓкhat.sender) {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -46,16 +46,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         νℓкуяє.Economy.findOne(
           {
             ID: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             if (!ᴠᴇᴄᴏ) {
               let newUser = new νℓкуяє.Economy({
                 ID: receiver,
@@ -69,10 +69,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               });
               await newUser
                 .save()
-                .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -87,7 +87,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
             if (!ᴄᴇᴄᴏ) {
               let newUser = new νℓкуяє.Economy({
-                ID: vcнaт.sender,
+                ID: νℓкhat.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -98,10 +98,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               });
               await newUser
                 .save()
-                .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -118,7 +118,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             if (ᴄᴇᴄᴏ.money < 1000) {
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -134,7 +134,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             if (ᴠᴇᴄᴏ.money < 1000) {
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -150,16 +150,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
             Robbery.findOne(
               {
-                ID: vcнaт.sender,
+                ID: νℓкhat.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 Robbery.findOne(
                   {
                     ID: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       let newUser = new Robbery({
                         ID: receiver,
@@ -171,14 +171,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       });
                       await newUser
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -197,7 +197,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                     ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       let newUser = new Robbery({
-                        ID: vcнaт.sender,
+                        ID: νℓкhat.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -206,14 +206,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       });
                       await newUser
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -240,7 +240,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       );
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -266,19 +266,19 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -308,19 +308,19 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -350,19 +350,19 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -387,13 +387,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -423,13 +423,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+                        .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
                       return await νℓкуяє.imgB(
                         νℓкуяє,
-                        vcнaт,
+                        νℓкhat,
                         `*🔖Here, ${pfname} For ${
                           νℓкуяє.pushname || νℓкуяє.Tname
                         }:*
@@ -463,7 +463,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   } else {
     return await νℓкуяє.imgB(
       νℓкуяє,
-      vcнaт,
+      νℓкhat,
       `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲

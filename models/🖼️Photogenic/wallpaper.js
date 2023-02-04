@@ -17,16 +17,16 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     if (!νℓкуяє.args) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -44,13 +44,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       page: [1, 2, 3, 4],
     });
     if (!wallpaper) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -60,12 +60,12 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     await νℓкуяє.imgB(
       νℓкуяє,
-      vcнaт,
+      νℓкhat,
       `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*`,
       wallpaper[Math.floor(Math.random() * wallpaper.length)].image
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

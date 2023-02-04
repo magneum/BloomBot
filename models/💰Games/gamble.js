@@ -17,18 +17,18 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     let FormatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     let FormatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!νℓкуяє.args[0] && !νℓкуяє.args[1]) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -44,13 +44,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (FormatColor.test(νℓкуяє.args[0])) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -66,13 +66,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (FormatAmount.test(νℓкуяє.args[1])) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -92,13 +92,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       !νℓкуяє.args[0].includes("black") &&
       !νℓкуяє.args[0].includes("purple")
     ) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -118,7 +118,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (AmountRoom < 50) {
       return await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
@@ -129,7 +129,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (AmountRoom > 800) {
       return await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
@@ -140,7 +140,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (ColorRoom === "red" && AmountRoom > 200) {
       return await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
@@ -151,7 +151,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (ColorRoom === "black" && AmountRoom > 500) {
       return await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
@@ -162,7 +162,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (ColorRoom === "purple" && AmountRoom > 800) {
       return await νℓкуяє.imgB(
         νℓкуяє,
-        vcнaт,
+        νℓкhat,
         `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
@@ -172,16 +172,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (!userEco) {
           let newUser = new νℓкуяє.Economy({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -191,11 +191,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           });
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
             "./src/vlkyre.jpg"
@@ -204,26 +204,26 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         νℓкуяє.Gamble.findOne(
           {
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             }
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (!userGamble) {
               let newUser = new νℓкуяє.Gamble({
-                ID: vcнaт.sender,
-                serverID: vcнaт.chat,
+                ID: νℓкhat.sender,
+                serverID: νℓкhat.chat,
                 Gambledone: 0,
                 Gambletimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
@@ -240,7 +240,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               );
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -261,13 +261,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             let Amount = Math.floor(Math.random() * 10);
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (!Color) {
-              await νℓкуяє.sendMessage(vcнaт.chat, {
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
                 react: {
                   text: "❌",
-                  key: vcнaт.key,
+                  key: νℓкhat.key,
                 },
               });
-              return vcнaт.reply(
+              return νℓкhat.reply(
                 `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -284,13 +284,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             Color = Color.toLowerCase();
             if (!money) {
-              await νℓкуяє.sendMessage(vcнaт.chat, {
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
                 react: {
                   text: "❌",
-                  key: vcнaт.key,
+                  key: νℓкhat.key,
                 },
               });
-              return vcнaт.reply(
+              return νℓкhat.reply(
                 `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -306,13 +306,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             }
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (money > CurrentMoney) {
-              await νℓкуяє.sendMessage(vcнaт.chat, {
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
                 react: {
                   text: "❌",
-                  key: vcнaт.key,
+                  key: νℓкhat.key,
                 },
               });
-              return vcнaт.reply(
+              return νℓкhat.reply(
                 `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -334,13 +334,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await νℓкуяє.sendMessage(vcнaт.chat, {
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
                 react: {
                   text: "❌",
-                  key: vcнaт.key,
+                  key: νℓкhat.key,
                 },
               });
-              return vcнaт.reply(
+              return νℓкhat.reply(
                 `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -360,14 +360,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               await userEco.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
@@ -380,14 +380,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               await userEco.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
@@ -400,14 +400,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               await userEco.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
@@ -418,14 +418,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
             await userEco.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
@@ -437,6 +437,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

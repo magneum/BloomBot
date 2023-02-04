@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -28,26 +28,26 @@ module.exports = async (
   participants
 ) => {
   try {
-    await νℓкуяє.sendMessage(vcнaт.chat, {
+    await νℓкуяє.sendMessage(νℓкhat.chat, {
       react: {
         text: "❌",
-        key: vcнaт.key,
+        key: νℓкhat.key,
       },
     });
-    return vcнaт.reply(
+    return νℓкhat.reply(
       `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
     
     *❌Error* 
     > _This Command is not yet ready for public usage!_`
     );
-    if (!vcнaт.isGroup) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+    if (!νℓкhat.isGroup) {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -55,13 +55,13 @@ module.exports = async (
       );
     }
     if (!isAdmin && !νℓкуяє.isSudoWorker) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -70,39 +70,39 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓкhat.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/νℓкуяє.jpg";
     }
     if (νℓкуяє.args) {
       return await νℓкуяє.sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${νℓкhat.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${νℓкуяє.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: vcнaт }
+        { quoted: νℓкhat }
       );
     } else {
       return await νℓкуяє.sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${νℓкhat.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${νℓкуяє.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: vcнaт }
+        { quoted: νℓкhat }
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

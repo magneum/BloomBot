@@ -11,7 +11,7 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
+module.exports = async (νℓкуяє, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (νℓкуяє.isReply) {
     var receiver =
       νℓкуяє.mtype == "extendedTextMessage" &&
@@ -20,10 +20,10 @@ module.exports = async (νℓкуяє, vcнaт, 𝚌𝚘𝚗𝚝є𝚡𝚝, imå
         : "";
     await νℓкуяє
       .sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           image: { url: imåge },
-          caption: `*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -39,11 +39,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 4,
-          mentions: [vcнaт.sender, receiver],
+          mentions: [νℓкhat.sender, receiver],
         },
         {
-          contextInfo: { mentionedJid: [vcнaт.sender, receiver] },
-          quoted: vcнaт,
+          contextInfo: { mentionedJid: [νℓкhat.sender, receiver] },
+          quoted: νℓкhat,
         }
       )
       .catch((e) => console.log(e));
@@ -56,10 +56,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         : [];
     await νℓкуяє
       .sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           image: { url: imåge },
-          caption: `*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -75,11 +75,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 4,
-          mentions: [vcнaт.sender, receiver],
+          mentions: [νℓкhat.sender, receiver],
         },
         {
-          contextInfo: { mentionedJid: [vcнaт.sender, receiver] },
-          quoted: vcнaт,
+          contextInfo: { mentionedJid: [νℓкhat.sender, receiver] },
+          quoted: νℓкhat,
         }
       )
       .catch((e) => console.log(e));
@@ -87,10 +87,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
   } else {
     return await νℓкуяє
       .sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           image: { url: imåge },
-          caption: `*📢ID:* ${vcнaт.chat}
+          caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -106,11 +106,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 4,
-          mentions: [vcнaт.sender],
+          mentions: [νℓкhat.sender],
         },
         {
-          contextInfo: { mentionedJid: [vcнaт.sender] },
-          quoted: vcнaт,
+          contextInfo: { mentionedJid: [νℓкhat.sender] },
+          quoted: νℓкhat,
         }
       )
       .catch((e) => console.log(e));

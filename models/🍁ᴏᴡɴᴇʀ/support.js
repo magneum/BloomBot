@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -27,15 +27,15 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
+  await νℓкуяє.sendMessage(νℓкhat.chat, {
     react: {
       text: "🔖",
-      key: vcнaт.key,
+      key: νℓкhat.key,
     },
   });
   try {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

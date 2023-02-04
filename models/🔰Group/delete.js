@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,13 +29,13 @@ module.exports = async (
 ) => {
   try {
     if (!νℓкуяє.quoted) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -48,13 +48,13 @@ module.exports = async (
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     let { isBaileys } = νℓкуяє.quoted;
     if (!isBaileys) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -64,17 +64,17 @@ module.exports = async (
 > _${νℓкуяє.prefix}${pfname} reply to Image/Video/Text_`
       );
     } else {
-      return await νℓкуяє.sendMessage(vcнaт.chat, {
+      return await νℓкуяє.sendMessage(νℓкhat.chat, {
         delete: {
-          remoteJid: vcнaт.chat,
+          remoteJid: νℓкhat.chat,
           fromMe: true,
-          id: vcнaт.quoted.id,
-          participant: vcнaт.quoted.sender,
+          id: νℓкhat.quoted.id,
+          participant: νℓкhat.quoted.sender,
         },
       });
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

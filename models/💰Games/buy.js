@@ -17,7 +17,7 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     let Item;
     let NewLimit;
@@ -97,13 +97,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (!νℓкуяє.args) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -116,13 +116,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (νℓкуяє.args.length === 0) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -137,16 +137,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     if (RobCatelog.includes(νℓкуяє.args[0])) {
       νℓкуяє.Economy.findOne(
         {
-          ID: vcнaт.sender,
+          ID: νℓкhat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           }
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           if (!userEco) {
             let newUser = new νℓкуяє.Economy({
-              ID: vcнaт.sender,
+              ID: νℓкhat.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -156,11 +156,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./src/vlkyre.jpg"
@@ -168,15 +168,15 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           }
           νℓкуяє.Robbery.findOne(
             {
-              ID: vcнaт.sender,
+              ID: νℓкhat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               }
               if (!userRob) {
                 new νℓкуяє.Robbery({
-                  ID: vcнaт.sender,
+                  ID: νℓкhat.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -185,11 +185,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./src/vlkyre.jpg"
@@ -199,7 +199,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 if (userEco.money < ItemPrice) {
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -216,14 +216,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -238,14 +238,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -260,14 +260,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                   return await νℓкуяє.imgB(
                     νℓкуяє,
-                    vcнaт,
+                    νℓкhat,
                     `*🔖Here, ${pfname} For @${
                       νℓкуяє.Tname || νℓкуяє.pushname
                     }:*
@@ -279,7 +279,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 }
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -294,25 +294,25 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     } else if (BadCatelog.includes(νℓкуяє.args[0])) {
       await νℓкуяє.Economy.findOne(
         {
-          ID: vcнaт.sender,
+          ID: νℓкhat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           }
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           await νℓкуяє.Bagde.findOne(
             {
-              ID: vcнaт.sender,
+              ID: νℓкhat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               }
               ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
               if (!userEco) {
                 new νℓкуяє.Economy({
-                  ID: vcнaт.sender,
+                  ID: νℓкhat.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -323,11 +323,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -340,7 +340,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               ("|⬡═══════════════════════════════════════════════════════════════|▷ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋʀᴀᴋɪɴᴢʟᴀʙ™ ◁|═══════════════════════════════════════════════════════════════⬡|");
               if (!userBadge) {
                 let newBagdeUser = new νℓкуяє.Bagde({
-                  ID: vcнaт.sender,
+                  ID: νℓкhat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -348,11 +348,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -366,7 +366,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               if (userEco.money < ItemPrice) {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -380,7 +380,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               if (userBadge.Badge === Item) {
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -397,14 +397,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -419,13 +419,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -438,6 +438,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

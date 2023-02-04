@@ -17,17 +17,17 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     νℓкуяє.Robbery.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, userRob) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         if (!userRob) {
           new νℓкуяє.Robbery({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -35,10 +35,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+            .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -47,7 +47,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         }
         return await νℓкуяє.imgB(
           νℓкуяє,
-          vcнaт,
+          νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -58,6 +58,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

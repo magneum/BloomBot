@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -27,21 +27,21 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
+  await νℓкуяє.sendMessage(νℓкhat.chat, {
     react: {
       text: "🔖",
-      key: vcнaт.key,
+      key: νℓкhat.key,
     },
   });
   try {
     if (!νℓкуяє.frome && !νℓкуяє.isSudoWorker) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -63,14 +63,14 @@ module.exports = async (
           ID: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           if (!userBan) {
-            return vcнaт.reply(
+            return νℓкhat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return vcнaт.reply(
+            return νℓкhat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
           }
@@ -85,12 +85,12 @@ module.exports = async (
           ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           if (!userBan) {
-            return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+            return νℓкhat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
           } else {
             userBan.delete();
-            return vcнaт.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return νℓкhat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -102,17 +102,17 @@ module.exports = async (
     ) {
       νℓкуяє.userBanCheck.findOne(
         {
-          ID: vcнaт.chat,
+          ID: νℓкhat.chat,
         },
         async (error, userBan) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           if (!userBan) {
-            return vcнaт.reply(
+            return νℓкhat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
-            return vcнaт.reply(
+            return νℓкhat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
@@ -120,13 +120,13 @@ module.exports = async (
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -138,6 +138,6 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

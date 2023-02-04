@@ -17,16 +17,16 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     if (!νℓкуяє.args.join(" ")) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -44,7 +44,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         )}&key=LIVDSRZULELA&limit=8`
       );
       return await νℓкуяє.sendMessage(
-        vcнaт.chat,
+        νℓкhat.chat,
         {
           gifPlayback: true,
           video: {
@@ -53,19 +53,19 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           },
           caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${pfname}
-*⚡For:* @${vcнaт.sender.split("@")[0] || ""}`,
-          mentions: [vcнaт.sender],
+*⚡For:* @${νℓкhat.sender.split("@")[0] || ""}`,
+          mentions: [νℓкhat.sender],
         },
-        { quoted: vcнaт }
+        { quoted: νℓкhat }
       );
     } catch (Èrrðr) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -74,6 +74,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

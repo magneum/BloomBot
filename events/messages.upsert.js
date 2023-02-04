@@ -29,6 +29,6 @@ module.exports = async (νℓкуяє, update, store) => {
   if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
   if (!νℓкуяє.public && !νTēxt.key.fromMe && update.type === "notify") return;
   if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-  vcнaт = await νkmake(νℓкуяє, νTēxt, store);
-  await require("../server/router.js")(νℓкуяє, vcнaт, update, store);
+  νℓкhat = await νkmake(νℓкуяє, νTēxt, store);
+  await require("../server/router.js")(νℓкуяє, νℓкhat, update, store);
 };

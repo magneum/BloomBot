@@ -17,18 +17,18 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   await νℓкуяє.Economy.findOne(
     {
-      ID: vcнaт.sender,
+      ID: νℓкhat.sender,
     },
     async (error, data) => {
       if (error) {
-        return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
       }
       if (!data) {
         new νℓкуяє.Economy({
-          ID: vcнaт.sender,
+          ID: νℓкhat.sender,
           money: 0,
           daily: 0,
           timeout: 86400000,
@@ -39,11 +39,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         })
           .save()
           .catch((error) => {
-            return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           });
         return await νℓкуяє.imgB(
           νℓкуяє,
-          vcнaт,
+          νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -52,7 +52,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       } else {
         return await νℓкуяє.imgB(
           νℓкуяє,
-          vcнaт,
+          νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *💰Balance:* ${data.money}`,
           "./src/vlkyre.jpg"

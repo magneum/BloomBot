@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -28,14 +28,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!vcнaт.isGroup) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+    if (!νℓкhat.isGroup) {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -43,13 +43,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -57,13 +57,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -72,18 +72,18 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓкhat.chat, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/νℓкуяє.jpg";
     }
     if (!νℓкуяє.args) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -101,18 +101,18 @@ module.exports = async (
     ) {
       return await νℓкуяє.nsfwCheck.findOne(
         {
-          serverID: vcнaт.chat,
+          serverID: νℓкhat.chat,
         },
         async (error, server) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           if (!server) {
             new νℓкуяє.nsfwCheck({
-              serverID: vcнaт.chat,
+              serverID: νℓкhat.chat,
               value: "ON",
             }).save();
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
@@ -121,7 +121,7 @@ module.exports = async (
           } else {
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
@@ -138,14 +138,14 @@ module.exports = async (
     ) {
       return await νℓкуяє.nsfwCheck.findOne(
         {
-          serverID: vcнaт.chat,
+          serverID: νℓкhat.chat,
         },
         async (error, server) => {
-          if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
           if (!server) {
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
@@ -155,7 +155,7 @@ module.exports = async (
             await server.delete();
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
@@ -166,13 +166,13 @@ module.exports = async (
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -185,6 +185,6 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

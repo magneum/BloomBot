@@ -17,21 +17,21 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     var JworkR = νℓкуяє.Jwork[Math.floor(Math.random() * νℓкуяє.Jwork.length)];
     νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (!userEco) {
           new νℓкуяє.Economy({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,11 +42,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           })
             .save()
             .catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -60,7 +60,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             );
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
@@ -89,6 +89,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

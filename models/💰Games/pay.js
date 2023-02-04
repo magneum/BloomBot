@@ -17,9 +17,9 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   if (!νℓкуяє.mentionByReply) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -28,7 +28,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (νℓкуяє.args.length === 0) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -37,7 +37,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(νℓкуяє.args[0])) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 > Reply-Person: _${νℓкуяє.prefix}${pfname} amount_`);
   }
   if (νℓкуяє.args[0].match(/[a-z]/i)) {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -62,8 +62,8 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await νℓкуяє.getName(receiver);
-    if (receiver === vcнaт.sender) {
-      return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    if (receiver === νℓкhat.sender) {
+      return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -74,13 +74,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     await νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, uPayer) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         if (!uPayer) {
           new νℓкуяє.Economy({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -91,9 +91,9 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           })
             .save()
             .catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+          return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -103,7 +103,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (parseInt(νℓкуяє.args[0]) > uPayer.money) {
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+          return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -119,7 +119,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               ID: receiver,
             },
             async (error, uBonus) => {
-              if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               if (!uBonus) {
                 new νℓкуяє.Economy({
                   ID: receiver,
@@ -133,15 +133,15 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                   });
                 uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
                 uPayer.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 });
                 return await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -159,15 +159,15 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
               uPayer.money = uPayer.money - parseInt(νℓкуяє.args[0]);
               uPayer.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               uBonus.money = uBonus.money + parseInt(νℓкуяє.args[0]);
               uBonus.save().catch((error) => {
-                return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
               });
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -189,7 +189,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
+    return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

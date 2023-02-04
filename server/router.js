@@ -15,28 +15,28 @@
 const { exec } = require("node:child_process");
 const moment = require("moment-timezone");
 const logger = require("../logger");
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   νℓкуяє.body =
-    vcнaт.mtype === "conversation"
-      ? vcнaт.message.conversation
-      : vcнaт.mtype == "imageMessage"
-      ? vcнaт.message.imageMessage.caption
-      : vcнaт.mtype == "videoMessage"
-      ? vcнaт.message.videoMessage.caption
-      : vcнaт.mtype == "extendedTextMessage"
-      ? vcнaт.message.extendedTextMessage.text
-      : vcнaт.mtype == "buttonsResponseMessage"
-      ? vcнaт.message.buttonsResponseMessage.selectedButtonId
-      : vcнaт.mtype == "listResponseMessage"
-      ? vcнaт.message.listResponseMessage.singleSelectReply.selectedRowId
-      : vcнaт.mtype == "templateButtonReplyMessage"
-      ? vcнaт.message.templateButtonReplyMessage.selectedId
-      : vcнaт.mtype === "messageContextInfo"
-      ? vcнaт.message.buttonsResponseMessage?.selectedButtonId ||
-        vcнaт.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        vcнaт.text
+    νℓкhat.mtype === "conversation"
+      ? νℓкhat.message.conversation
+      : νℓкhat.mtype == "imageMessage"
+      ? νℓкhat.message.imageMessage.caption
+      : νℓкhat.mtype == "videoMessage"
+      ? νℓкhat.message.videoMessage.caption
+      : νℓкhat.mtype == "extendedTextMessage"
+      ? νℓкhat.message.extendedTextMessage.text
+      : νℓкhat.mtype == "buttonsResponseMessage"
+      ? νℓкhat.message.buttonsResponseMessage.selectedButtonId
+      : νℓкhat.mtype == "listResponseMessage"
+      ? νℓкhat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : νℓкhat.mtype == "templateButtonReplyMessage"
+      ? νℓкhat.message.templateButtonReplyMessage.selectedId
+      : νℓкhat.mtype === "messageContextInfo"
+      ? νℓкhat.message.buttonsResponseMessage?.selectedButtonId ||
+        νℓкhat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        νℓкhat.text
       : "";
-  νℓкуяє.budy = typeof vcнaт.text == "string" ? vcнaт.text : "";
+  νℓкуяє.budy = typeof νℓкhat.text == "string" ? νℓкhat.text : "";
   νℓкуяє.icmd = νℓкуяє.body.startsWith(prefix);
   νℓкуяє.isCommand =
     prefix.includes(νℓкуяє.body != "" && νℓкуяє.body.slice(0, 1)) &&
@@ -45,40 +45,40 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     ? νℓкуяє.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
   νℓкуяє.args = νℓкуяє.body.trim().split(/ +/).slice(1);
-  νℓкуяє.pushname = vcнaт.pushName || "No Name";
+  νℓкуяє.pushname = νℓкhat.pushName || "No Name";
   νℓкуяє.botNumber = await νℓкуяє.decodeJid(νℓкуяє.user.id);
-  νℓкуяє.frome = vcнaт.sender == νℓкуяє.botNumber ? true : false;
+  νℓкуяє.frome = νℓкhat.sender == νℓкуяє.botNumber ? true : false;
   νℓкуяє.Fullarg = νℓкуяє.args.join(" ");
   νℓкуяє.contant = q = νℓкуяє.args.join(" ");
-  νℓкуяє.quoted = vcнaт.quoted ? vcнaт.quoted : vcнaт;
+  νℓкуяє.quoted = νℓкhat.quoted ? νℓкhat.quoted : νℓкhat;
   νℓкуяє.mime = (νℓкуяє.quoted.msg || νℓкуяє.quoted).mimetype || "";
   νℓкуяє.isMedia = /image|video|sticker|audio/.test(νℓкуяє.mime);
   νℓкуяє.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   νℓкуяє.isCreator = [νℓкуяє.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(vcнaт.sender);
+    .includes(νℓкhat.sender);
   νℓкуяє.mentionByTag =
-    vcнaт.mtype == "extendedTextMessage" &&
-    vcнaт.message.extendedTextMessage.contextInfo != null
-      ? vcнaт.message.extendedTextMessage.contextInfo.mentionedJid
+    νℓкhat.mtype == "extendedTextMessage" &&
+    νℓкhat.message.extendedTextMessage.contextInfo != null
+      ? νℓкhat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
   νℓкуяє.mentionByReply =
-    vcнaт.mtype == "extendedTextMessage" &&
-    vcнaт.message.extendedTextMessage.contextInfo != null
-      ? vcнaт.message.extendedTextMessage.contextInfo.participant || ""
+    νℓкhat.mtype == "extendedTextMessage" &&
+    νℓкhat.message.extendedTextMessage.contextInfo != null
+      ? νℓкhat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  require("./kronLink")(νℓкуяє, vcнaт, update, store);
-  if (!vcнaт.isGroup && νℓкуяє.command)
-    return require("../auth/noPrivate")(νℓкуяє, vcнaт, update);
-  if (vcнaт.isGroup && νℓкуяє.command)
+  require("./kronLink")(νℓкуяє, νℓкhat, update, store);
+  if (!νℓкhat.isGroup && νℓкуяє.command)
+    return require("../auth/noPrivate")(νℓкуяє, νℓкhat, update);
+  if (νℓкhat.isGroup && νℓкуяє.command)
     νℓкуяє.userBanCheck.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+          return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -87,11 +87,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
         }
         νℓкуяє.userBanCheck.findOne(
           {
-            ID: vcнaт.chat,
+            ID: νℓкhat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+              return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -102,13 +102,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             if (groupCheck && !νℓкуяє.frome && !νℓкуяє.isSudoWorker) return;
             await νℓкуяє.LinkList.findOne(
               {
-                serverID: vcнaт.chat,
+                serverID: νℓкhat.chat,
               },
               async (error, server) => {
-                if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+                if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
                 if (!server) return;
                 let { noLink } = require("../auth/antilink");
-                return noLink(νℓкуяє, vcнaт);
+                return noLink(νℓкуяє, νℓкhat);
               }
             );
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -119,10 +119,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               !νℓкуяє.fromme &&
               !νℓкуяє.isSudoWorker &&
               !νℓкуяє.letResp.includes(νℓкуяє.command) &&
-              !νℓкуяє.memberRespA.includes(vcнaт.sender)
+              !νℓкуяє.memberRespA.includes(νℓкhat.sender)
             ) {
               return await νℓкуяє.sendMessage(
-                vcнaт.chat,
+                νℓкhat.chat,
                 {
                   gifPlayback: true,
                   video: νℓкуяє.fs.readFileSync("./src/how.mp4"),
@@ -136,16 +136,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [vcнaт.sender],
+                  mentions: [νℓкhat.sender],
                 },
-                { quoted: vcнaт }
+                { quoted: νℓкhat }
               );
             }
             // let { vimium } = require("../auth/vimium");
-            // return vimium(νℓкуяє, vcнaт, update, store);
+            // return vimium(νℓкуяє, νℓкhat, update, store);
             return await require("../server/library")(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               update,
               store
             );

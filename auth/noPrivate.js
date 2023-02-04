@@ -12,24 +12,24 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-exports.noPrivate = async (νℓкуяє, vcнaт, update) => {
+exports.noPrivate = async (νℓкуяє, νℓкhat, update) => {
   if (!νℓкуяє.isSudoWorker)
     await νℓкуяє.UserPrivate.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, user) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         if (!user) {
           new νℓкуяє.UserPrivate({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+            .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*Dear* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 • This Private Is Being Guarded By Vlkyre Ai!
 • Do Not Spam The Chat Box!
@@ -41,10 +41,10 @@ exports.noPrivate = async (νℓкуяє, vcнaт, update) => {
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
-          await user.save().catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+          await user.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*Dear* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 • This Private Is Being Guarded By Vlkyre Ai!
 • Do Not Spam The Chat Box!
@@ -57,10 +57,10 @@ exports.noPrivate = async (νℓкуяє, vcнaт, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+            .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
           return await νℓкуяє
-            .updateBlockStatus(vcнaт.sender, "block")
-            .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+            .updateBlockStatus(νℓкhat.sender, "block")
+            .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
         }
       }
     );

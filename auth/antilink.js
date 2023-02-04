@@ -12,8 +12,8 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-exports.noLink = async (νℓкуяє, vcнaт) => {
-  let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(vcнaт.chat);
+exports.noLink = async (νℓкуяє, νℓкhat) => {
+  let FetchCurrentGroupLink = await νℓкуяє.groupInviteCode(νℓкhat.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   let isGroupLink = GroupLinkRegex.exec(νℓкуяє.budy);
   let PresentGroupLink = new RegExp(
@@ -23,16 +23,16 @@ exports.noLink = async (νℓкуяє, vcнaт) => {
   let isCurrentGroupLink = PresentGroupLink.test(νℓкуяє.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await νℓкуяє
-      .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
-      .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-    await vcнaт.reply(
+      .groupParticipantsUpdate(νℓкhat.chat, [νℓкуяє.sender], "remove")
+      .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
+    await νℓкhat.reply(
       `*😥Sorry:* _${νℓкуяє.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await νℓкуяє.sendMessage(vcнaт.chat, {
+    return await νℓкуяє.sendMessage(νℓкhat.chat, {
       delete: {
-        remoteJid: vcнaт.chat,
+        remoteJid: νℓкhat.chat,
         fromMe: false,
         id: νℓкуяє.quoted.id,
         participant: νℓкуяє.quoted.sender,
@@ -48,16 +48,16 @@ exports.noLink = async (νℓкуяє, vcнaт) => {
     νℓкуяє.budy.includes("www.")
   ) {
     await νℓкуяє
-      .groupParticipantsUpdate(vcнaт.chat, [νℓкуяє.sender], "remove")
-      .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
-    await vcнaт.reply(
+      .groupParticipantsUpdate(νℓкhat.chat, [νℓкуяє.sender], "remove")
+      .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
+    await νℓкhat.reply(
       `*😥Sorry:* _${νℓкуяє.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await νℓкуяє.sendMessage(vcнaт.chat, {
+    return await νℓкуяє.sendMessage(νℓкhat.chat, {
       delete: {
-        remoteJid: vcнaт.chat,
+        remoteJid: νℓкhat.chat,
         fromMe: false,
         id: νℓкуяє.quoted.id,
         participant: νℓкуяє.quoted.sender,

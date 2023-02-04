@@ -17,7 +17,7 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     var Rads = Reds[Math.floor(Math.random() * Reds.length)];
@@ -28,7 +28,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     var data = json[0].data.children[0].data;
     await νℓкуяє.imgB(
       νℓкуяє,
-      vcнaт,
+      νℓкhat,
       `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
@@ -39,6 +39,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

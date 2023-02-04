@@ -15,7 +15,7 @@ ppath = require("path");
 require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }, 0);
   return await νℓкуяє.imgB(
     νℓкуяє,
-    vcнaт,
+    νℓкhat,
     `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 > ⒸVlkyre: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_

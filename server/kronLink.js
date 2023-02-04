@@ -57,7 +57,7 @@ let ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   νℓкуяє.performance = performance;
   νℓкуяє.createWorker = createWorker;
   νℓкуяє.JSDOM = JSDOM;
@@ -99,7 +99,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
   νℓкуяє.TelegraPh = TelegraPh;
   νℓкуяє.UploadFileUgu = UploadFileUgu;
   νℓкуяє.webp2mp4File = webp2mp4File;
-  νℓкуяє.Tname = vcнaт.sender.replace(/['@s whatsapp.net']/g, "");
+  νℓкуяє.Tname = νℓкhat.sender.replace(/['@s whatsapp.net']/g, "");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.msgFilter = require("./msgFilter");
   νℓкуяє.imgB = require("../bin/buttons/imgB");
@@ -254,7 +254,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   νℓкуяє.isSudoWorker = sudotring.includes(
-    vcнaт.sender.substring(0, vcнaт.sender.indexOf("@"))
+    νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
   );
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   return νℓкуяє;

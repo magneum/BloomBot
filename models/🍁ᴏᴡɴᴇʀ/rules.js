@@ -17,7 +17,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -25,15 +25,15 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await νℓкуяє.sendMessage(vcнaт.chat, {
+  await νℓкуяє.sendMessage(νℓкhat.chat, {
     react: {
       text: "🔖",
-      key: vcнaт.key,
+      key: νℓкhat.key,
     },
   });
   await νℓкуяє.imgB(
     νℓкуяє,
-    vcнaт,
+    νℓкhat,
     `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 *🤖Hello, I am Vlkyre User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!

@@ -19,7 +19,7 @@ psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   νℓкуяє,
-  vcнaт,
+  νℓкhat,
   gmeta,
   isAdmin,
   groupName,
@@ -28,14 +28,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!vcнaт.isGroup) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+    if (!νℓкhat.isGroup) {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -43,13 +43,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -57,13 +57,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -72,19 +72,19 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓкhat.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/νℓкуяє.jpg";
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (νℓкуяє.args[0] === "open") {
       await νℓкуяє
-        .groupSettingUpdate(vcнaт.chat, "not_announcement")
+        .groupSettingUpdate(νℓкhat.chat, "not_announcement")
         .then(
           async (res) =>
             await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `> *Group have been Opened by: ${
                 νℓкуяє.pushname || νℓкуяє.Tname
               }*`,
@@ -92,7 +92,7 @@ module.exports = async (
             )
         )
         .catch((error) =>
-          vcнaт.reply(
+          νℓкhat.reply(
             `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -101,12 +101,12 @@ module.exports = async (
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else if (νℓкуяє.args[0] === "close") {
       await νℓкуяє
-        .groupSettingUpdate(vcнaт.chat, "announcement")
+        .groupSettingUpdate(νℓкhat.chat, "announcement")
         .then(
           async (res) =>
             await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `> *Group have been Closed by: ${
                 νℓкуяє.pushname || νℓкуяє.Tname
               }*`,
@@ -114,7 +114,7 @@ module.exports = async (
             )
         )
         .catch((error) =>
-          vcнaт.reply(
+          νℓкhat.reply(
             `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -129,13 +129,13 @@ module.exports = async (
       ) {
         return await νℓкуяє.LinkList.findOne(
           {
-            serverID: vcнaт.chat,
+            serverID: νℓкhat.chat,
           },
           async (error, server) => {
             if (error) {
               return νℓкуяє.reply(`*🕊️You:* ${
                 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢ID:* ${vcнaт.chat}
+              }\n*📢ID:* ${νℓкhat.chat}
 
 *😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
@@ -147,20 +147,20 @@ module.exports = async (
             ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             if (!server) {
               let newServer = new νℓкуяє.LinkList({
-                serverID: vcнaт.chat,
+                serverID: νℓкhat.chat,
                 value: "ON",
               });
               await newServer.save();
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -175,13 +175,13 @@ module.exports = async (
       ) {
         return await νℓкуяє.LinkList.findOne(
           {
-            serverID: vcнaт.chat,
+            serverID: νℓкhat.chat,
           },
           async (error, server) => {
             if (error) {
               return νℓкуяє.reply(`*🕊️You:* ${
                 νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢ID:* ${vcнaт.chat}
+              }\n*📢ID:* ${νℓкhat.chat}
 
 *😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
@@ -194,7 +194,7 @@ module.exports = async (
             if (!server) {
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -202,7 +202,7 @@ module.exports = async (
               await server.delete();
               return await νℓкуяє.imgB(
                 νℓкуяє,
-                vcнaт,
+                νℓкhat,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -211,13 +211,13 @@ module.exports = async (
         );
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
       } else {
-        await νℓкуяє.sendMessage(vcнaт.chat, {
+        await νℓкуяє.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: νℓкhat.key,
           },
         });
-        return vcнaт.reply(
+        return νℓкhat.reply(
           `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -230,13 +230,13 @@ module.exports = async (
       }
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -249,6 +249,6 @@ module.exports = async (
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat);
   }
 };

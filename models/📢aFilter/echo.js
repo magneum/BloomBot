@@ -17,16 +17,16 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     if (!νℓкуяє.quoted) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -43,9 +43,9 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       νℓкуяє.exec(
         `${νℓкуяє.pathFFmpeg} -i ${media} -af "aecho=0.8:0.9:1000:0.3" ${random}.mp3`,
         async (error) => {
-          return vcнaт.reply(`*🕊️You:* ${
+          return νℓкhat.reply(`*🕊️You:* ${
             νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-          }\n*📢ID:* ${vcнaт.chat}
+          }\n*📢ID:* ${νℓкhat.chat}
 
 *😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
@@ -57,7 +57,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           var Thumb = await νℓкуяє.getBuffer("./src/νℓкуяє.jpg");
           return await νℓкуяє
             .sendMessage(
-              vcнaт.chat,
+              νℓкhat.chat,
               {
                 audio: νℓкуяє.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
@@ -72,20 +72,20 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                 mimetype: "audio/mpeg",
                 fileName: `${one.title}.mp3`,
               },
-              { quoted: vcнaт }
+              { quoted: νℓкhat }
             )
             .then(νℓкуяє.fs.unlinkSync(`${random}.mp3`));
         }
       );
     } else {
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -97,6 +97,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

@@ -15,7 +15,7 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     νℓкуяє
       .axios({
@@ -30,13 +30,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
       .then(async (response) => {
         var mData = response.data;
         if (!mData.URL) {
-          await νℓкуяє.sendMessage(vcнaт.chat, {
+          await νℓкуяє.sendMessage(νℓкhat.chat, {
             react: {
               text: "❌",
-              key: vcнaт.key,
+              key: νℓкhat.key,
             },
           });
-          return vcнaт.reply(
+          return νℓкhat.reply(
             `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌ Error* 
@@ -57,10 +57,10 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             if (νℓкуяє.args[0] && νℓкуяє.args[0].startsWith("@")) {
               let mention = νℓкуяє.mentionByTag;
               let dataFor =
-                (await mention[0]) || vcнaт.msg.contextInfo.participant;
+                (await mention[0]) || νℓкhat.msg.contextInfo.participant;
               return await νℓкуяє
                 .sendMessage(
-                  vcнaт.chat,
+                  νℓкhat.chat,
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(resp),
@@ -69,22 +69,22 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}
 > *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
-                    mentions: [dataFor, vcнaт.sender],
+                    mentions: [dataFor, νℓкhat.sender],
                   },
-                  { quoted: vcнaт }
+                  { quoted: νℓкhat }
                 )
                 .then(νℓкуяє.fs.unlinkSync(resp));
               ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             } else if (νℓкуяє.mentionByReply) {
               let dataFor =
-                vcнaт.mtype == "extendedTextMessage" &&
-                vcнaт.message.extendedTextMessage.contextInfo != null
-                  ? vcнaт.message.extendedTextMessage.contextInfo.participant ||
+                νℓкhat.mtype == "extendedTextMessage" &&
+                νℓкhat.message.extendedTextMessage.contextInfo != null
+                  ? νℓкhat.message.extendedTextMessage.contextInfo.participant ||
                     ""
                   : "";
               return await νℓкуяє
                 .sendMessage(
-                  vcнaт.chat,
+                  νℓкhat.chat,
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(resp),
@@ -93,16 +93,16 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 *📢From:* ${νℓкуяє.pushname}
 *⚡For:* @${dataFor.split("@")[0] || ""}
 > *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
-                    mentions: [dataFor, vcнaт.sender],
+                    mentions: [dataFor, νℓкhat.sender],
                   },
-                  { quoted: vcнaт }
+                  { quoted: νℓкhat }
                 )
                 .then(νℓкуяє.fs.unlinkSync(resp));
               ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
             } else {
               return await νℓкуяє
                 .sendMessage(
-                  vcнaт.chat,
+                  νℓкhat.chat,
                   {
                     gifPlayback: true,
                     video: νℓкуяє.fs.readFileSync(resp),
@@ -111,7 +111,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 *🎋Feeling:* ${pfname}
 > *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
                   },
-                  { quoted: vcнaт }
+                  { quoted: νℓкhat }
                 )
                 .then(νℓкуяє.fs.unlinkSync(resp));
             }
@@ -120,6 +120,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           .run();
       });
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

@@ -89,21 +89,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   let d = Math.floor(seconds / (3600 * 24));
   let h = Math.floor((seconds % (3600 * 24)) / 3600);
-  let vcнaт = Math.floor((seconds % 3600) / 60);
+  let νℓкhat = Math.floor((seconds % 3600) / 60);
   let s = Math.floor(seconds % 60);
   let dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   let hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   let mDisplay =
-    vcнaт > 0 ? vcнaт + (vcнaт == 1 ? " minute, " : " minutes, ") : "";
+    νℓкhat > 0 ? νℓкhat + (νℓкhat == 1 ? " minute, " : " minutes, ") : "";
   let sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  let vcнaт = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  let νℓкhat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, vcнaт, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, νℓкhat, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -227,121 +227,121 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-exports.νkmake = async (νℓкуяє, vcнaт, store) => {
-  if (!vcнaт) return vcнaт;
+exports.νkmake = async (νℓкуяє, νℓкhat, store) => {
+  if (!νℓкhat) return νℓкhat;
   let νproto = proto.WebMessageInfo;
-  if (vcнaт.key) {
-    vcнaт.id = vcнaт.key.id;
-    vcнaт.isBaileys = vcнaт.id.startsWith("BAE5") && vcнaт.id.length === 16;
-    vcнaт.chat = vcнaт.key.remoteJid;
-    vcнaт.fromMe = vcнaт.key.fromMe;
-    vcнaт.isGroup = vcнaт.chat.endsWith("@g.us");
-    vcнaт.sender = νℓкуяє.decodeJid(
-      (vcнaт.fromMe && νℓкуяє.user.id) ||
-        vcнaт.participant ||
-        vcнaт.key.participant ||
-        vcнaт.chat ||
+  if (νℓкhat.key) {
+    νℓкhat.id = νℓкhat.key.id;
+    νℓкhat.isBaileys = νℓкhat.id.startsWith("BAE5") && νℓкhat.id.length === 16;
+    νℓкhat.chat = νℓкhat.key.remoteJid;
+    νℓкhat.fromMe = νℓкhat.key.fromMe;
+    νℓкhat.isGroup = νℓкhat.chat.endsWith("@g.us");
+    νℓкhat.sender = νℓкуяє.decodeJid(
+      (νℓкhat.fromMe && νℓкуяє.user.id) ||
+        νℓкhat.participant ||
+        νℓкhat.key.participant ||
+        νℓкhat.chat ||
         ""
     );
-    if (vcнaт.isGroup)
-      vcнaт.participant = νℓкуяє.decodeJid(vcнaт.key.participant) || "";
+    if (νℓкhat.isGroup)
+      νℓкhat.participant = νℓкуяє.decodeJid(νℓкhat.key.participant) || "";
   }
-  if (vcнaт.message) {
-    vcнaт.mtype = getContentType(vcнaт.message);
-    vcнaт.msg =
-      vcнaт.mtype == "viewOnceMessage"
-        ? vcнaт.message[vcнaт.mtype].message[
-            getContentType(vcнaт.message[vcнaт.mtype].message)
+  if (νℓкhat.message) {
+    νℓкhat.mtype = getContentType(νℓкhat.message);
+    νℓкhat.msg =
+      νℓкhat.mtype == "viewOnceMessage"
+        ? νℓкhat.message[νℓкhat.mtype].message[
+            getContentType(νℓкhat.message[νℓкhat.mtype].message)
           ]
-        : vcнaт.message[vcнaт.mtype];
-    vcнaт.body =
-      vcнaт.message.conversation ||
-      vcнaт.msg.caption ||
-      vcнaт.msg.text ||
-      (vcнaт.mtype == "listResponseMessage" &&
-        vcнaт.msg.singleSelectReply.selectedRowId) ||
-      (vcнaт.mtype == "buttonsResponseMessage" && vcнaт.msg.selectedButtonId) ||
-      (vcнaт.mtype == "viewOnceMessage" && vcнaт.msg.caption) ||
-      vcнaт.text;
-    let quoted = (vcнaт.quoted = vcнaт.msg.contextInfo
-      ? vcнaт.msg.contextInfo.quotedMessage
+        : νℓкhat.message[νℓкhat.mtype];
+    νℓкhat.body =
+      νℓкhat.message.conversation ||
+      νℓкhat.msg.caption ||
+      νℓкhat.msg.text ||
+      (νℓкhat.mtype == "listResponseMessage" &&
+        νℓкhat.msg.singleSelectReply.selectedRowId) ||
+      (νℓкhat.mtype == "buttonsResponseMessage" && νℓкhat.msg.selectedButtonId) ||
+      (νℓкhat.mtype == "viewOnceMessage" && νℓкhat.msg.caption) ||
+      νℓкhat.text;
+    let quoted = (νℓкhat.quoted = νℓкhat.msg.contextInfo
+      ? νℓкhat.msg.contextInfo.quotedMessage
       : null);
-    vcнaт.mentionedJid = vcнaт.msg.contextInfo
-      ? vcнaт.msg.contextInfo.mentionedJid
+    νℓкhat.mentionedJid = νℓкhat.msg.contextInfo
+      ? νℓкhat.msg.contextInfo.mentionedJid
       : [];
-    if (vcнaт.quoted) {
+    if (νℓкhat.quoted) {
       let type = getContentType(quoted);
-      vcнaт.quoted = vcнaт.quoted[type];
+      νℓкhat.quoted = νℓкhat.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(vcнaт.quoted);
-        vcнaт.quoted = vcнaт.quoted[type];
+        type = getContentType(νℓкhat.quoted);
+        νℓкhat.quoted = νℓкhat.quoted[type];
       }
-      if (typeof vcнaт.quoted === "string")
-        vcнaт.quoted = {
-          text: vcнaт.quoted,
+      if (typeof νℓкhat.quoted === "string")
+        νℓкhat.quoted = {
+          text: νℓкhat.quoted,
         };
-      vcнaт.quoted.mtype = type;
-      vcнaт.quoted.id = vcнaт.msg.contextInfo.stanzaId;
-      vcнaт.quoted.chat = vcнaт.msg.contextInfo.remoteJid || vcнaт.chat;
-      vcнaт.quoted.isBaileys = vcнaт.quoted.id
-        ? vcнaт.quoted.id.startsWith("BAE5") && vcнaт.quoted.id.length === 16
+      νℓкhat.quoted.mtype = type;
+      νℓкhat.quoted.id = νℓкhat.msg.contextInfo.stanzaId;
+      νℓкhat.quoted.chat = νℓкhat.msg.contextInfo.remoteJid || νℓкhat.chat;
+      νℓкhat.quoted.isBaileys = νℓкhat.quoted.id
+        ? νℓкhat.quoted.id.startsWith("BAE5") && νℓкhat.quoted.id.length === 16
         : false;
-      vcнaт.quoted.sender = νℓкуяє.decodeJid(vcнaт.msg.contextInfo.participant);
-      vcнaт.quoted.fromMe =
-        vcнaт.quoted.sender === (νℓкуяє.user && νℓкуяє.user.id);
-      vcнaт.quoted.text =
-        vcнaт.quoted.text ||
-        vcнaт.quoted.caption ||
-        vcнaт.quoted.conversation ||
-        vcнaт.quoted.contentText ||
-        vcнaт.quoted.selectedDisplayText ||
-        vcнaт.quoted.title ||
+      νℓкhat.quoted.sender = νℓкуяє.decodeJid(νℓкhat.msg.contextInfo.participant);
+      νℓкhat.quoted.fromMe =
+        νℓкhat.quoted.sender === (νℓкуяє.user && νℓкуяє.user.id);
+      νℓкhat.quoted.text =
+        νℓкhat.quoted.text ||
+        νℓкhat.quoted.caption ||
+        νℓкhat.quoted.conversation ||
+        νℓкhat.quoted.contentText ||
+        νℓкhat.quoted.selectedDisplayText ||
+        νℓкhat.quoted.title ||
         "";
-      vcнaт.quoted.mentionedJid = vcнaт.msg.contextInfo
-        ? vcнaт.msg.contextInfo.mentionedJid
+      νℓкhat.quoted.mentionedJid = νℓкhat.msg.contextInfo
+        ? νℓкhat.msg.contextInfo.mentionedJid
         : [];
-      vcнaт.getQuotedObj = vcнaт.getQuotedMessage = async () => {
-        if (!vcнaт.quoted.id) return false;
-        let q = await store.loadMessage(vcнaт.chat, vcнaт.quoted.id, νℓкуяє);
+      νℓкhat.getQuotedObj = νℓкhat.getQuotedMessage = async () => {
+        if (!νℓкhat.quoted.id) return false;
+        let q = await store.loadMessage(νℓкhat.chat, νℓкhat.quoted.id, νℓкуяє);
         return exports.νkmake(νℓкуяє, q, store);
       };
-      let vM = (vcнaт.quoted.fakeObj = νproto.fromObject({
+      let vM = (νℓкhat.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: vcнaт.quoted.chat,
-          fromMe: vcнaт.quoted.fromMe,
-          id: vcнaт.quoted.id,
+          remoteJid: νℓкhat.quoted.chat,
+          fromMe: νℓкhat.quoted.fromMe,
+          id: νℓкhat.quoted.id,
         },
         message: quoted,
-        ...(vcнaт.isGroup ? { participant: vcнaт.quoted.sender } : {}),
+        ...(νℓкhat.isGroup ? { participant: νℓкhat.quoted.sender } : {}),
       }));
-      vcнaт.quoted.delete = () =>
-        νℓкуяє.sendMessage(vcнaт.quoted.chat, { delete: vM.key });
-      vcнaт.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      νℓкhat.quoted.delete = () =>
+        νℓкуяє.sendMessage(νℓкhat.quoted.chat, { delete: vM.key });
+      νℓкhat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         νℓкуяє.copyNForward(jid, vM, forceForward, options);
-      vcнaт.quoted.download = () => νℓкуяє.downloadMediaMessage(vcнaт.quoted);
+      νℓкhat.quoted.download = () => νℓкуяє.downloadMediaMessage(νℓкhat.quoted);
     }
   }
 
-  if (vcнaт.msg.url)
-    vcнaт.download = () => νℓкуяє.downloadMediaMessage(vcнaт.msg);
-  vcнaт.text =
-    vcнaт.msg.text ||
-    vcнaт.msg.caption ||
-    vcнaт.message.conversation ||
-    vcнaт.msg.contentText ||
-    vcнaт.msg.selectedDisplayText ||
-    vcнaт.msg.title ||
+  if (νℓкhat.msg.url)
+    νℓкhat.download = () => νℓкуяє.downloadMediaMessage(νℓкhat.msg);
+  νℓкhat.text =
+    νℓкhat.msg.text ||
+    νℓкhat.msg.caption ||
+    νℓкhat.message.conversation ||
+    νℓкhat.msg.contentText ||
+    νℓкhat.msg.selectedDisplayText ||
+    νℓкhat.msg.title ||
     "";
-  vcнaт.reply = (text, chatId = vcнaт.chat, options = {}) =>
+  νℓкhat.reply = (text, chatId = νℓкhat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? νℓкуяє.sendMedia(chatId, text, "file", "", vcнaт, { ...options })
-      : νℓкуяє.sendText(chatId, text, vcнaт, { ...options });
-  vcнaт.copy = () =>
-    exports.νkmake(νℓкуяє, νproto.fromObject(νproto.toObject(vcнaт)));
-  vcнaт.copyNForward = (jid = vcнaт.chat, forceForward = false, options = {}) =>
-    νℓкуяє.copyNForward(jid, vcнaт, forceForward, options);
+      ? νℓкуяє.sendMedia(chatId, text, "file", "", νℓкhat, { ...options })
+      : νℓкуяє.sendText(chatId, text, νℓкhat, { ...options });
+  νℓкhat.copy = () =>
+    exports.νkmake(νℓкуяє, νproto.fromObject(νproto.toObject(νℓкhat)));
+  νℓкhat.copyNForward = (jid = νℓкhat.chat, forceForward = false, options = {}) =>
+    νℓкуяє.copyNForward(jid, νℓкhat, forceForward, options);
 
-  return vcнaт;
+  return νℓкhat;
 };
 
 let file = require.resolve(__filename);

@@ -17,20 +17,20 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     await νℓкуяє.Economy.findOne(
       {
-        ID: vcнaт.sender,
+        ID: νℓкhat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+          return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         }
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         if (!userEco) {
           new νℓкуяє.Economy({
-            ID: vcнaт.sender,
+            ID: νℓкhat.sender,
             money: 0,
             daily: 0,
             timeout: 0,
@@ -41,11 +41,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           })
             .save()
             .catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
           return await νℓкуяє.imgB(
             νℓкуяє,
-            vcнaт,
+            νℓкhat,
             `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -59,7 +59,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             );
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -82,11 +82,11 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             userEco.fishdone = Date.now();
             userEco.fishtimeout = 1800000;
             userEco.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
             });
             return await νℓкуяє.imgB(
               νℓкуяє,
-              vcнaт,
+              νℓкhat,
               `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
@@ -99,6 +99,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

@@ -12,21 +12,21 @@
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
-module.exports = async (νℓкуяє, vcнaт, updatedb) => {
+module.exports = async (νℓкуяє, νℓкhat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(vcнaт.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await νℓкуяє.profilePictureUrl(νℓкhat.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
   await νℓкуяє.dashboard.findOne(
     {
-      ID: vcнaт.sender,
+      ID: νℓкhat.sender,
     },
     async (error, udBase) => {
-      if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+      if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
       if (!udBase) {
         new νℓкуяє.dashboard({
-          ID: vcнaт.sender,
+          ID: νℓкhat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: νℓкуяє.pushname,
 
@@ -271,10 +271,10 @@ module.exports = async (νℓкуяє, vcнaт, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => νℓкуяє.grab(νℓкуяє, vcнaт, error));
+          .catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
         await νℓкуяє.imgB(
           νℓкуяє,
-          vcнaт,
+          νℓкhat,
           `*🔖Here, For ${νℓкуяє.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

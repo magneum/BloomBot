@@ -15,10 +15,10 @@ ppath = require("path");
 require("../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   return await νℓкуяє.imgB(
     νℓкуяє,
-    vcнaт,
+    νℓкhat,
     `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 

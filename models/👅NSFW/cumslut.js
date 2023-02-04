@@ -15,22 +15,22 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     return await νℓкуяє.nsfwCheck.findOne(
       {
-        serverID: vcнaт.chat,
+        serverID: νℓкhat.chat,
       },
       async (error, server) => {
-        if (error) return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+        if (error) return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
         if (!server) {
-          await νℓкуяє.sendMessage(vcнaт.chat, {
+          await νℓкуяє.sendMessage(νℓкhat.chat, {
             react: {
               text: "❌",
-              key: vcнaт.key,
+              key: νℓкhat.key,
             },
           });
-          return vcнaт.reply(
+          return νℓкhat.reply(
             `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌ Error* 
@@ -59,7 +59,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
               ) {
                 await νℓкуяє.imgB(
                   νℓкуяє,
-                  vcнaт,
+                  νℓкhat,
                   `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 
 ╔══☰ *❗ADULT❗*
@@ -81,13 +81,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                   mData._thumbnail
                 );
               } else {
-                await νℓкуяє.sendMessage(vcнaт.chat, {
+                await νℓкуяє.sendMessage(νℓкhat.chat, {
                   react: {
                     text: "❌",
-                    key: vcнaт.key,
+                    key: νℓкhat.key,
                   },
                 });
-                return vcнaт.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+                return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.`);
               }
@@ -97,6 +97,6 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
     );
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };

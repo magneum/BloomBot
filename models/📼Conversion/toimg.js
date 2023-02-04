@@ -17,16 +17,16 @@ ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
 pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, vcнaт, update, store) => {
+module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   try {
     if (!νℓкуяє.quoted) {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           if (error) {
             return νℓкуяє.reply(`*🕊️You:* ${
               νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢ID:* ${vcнaт.chat}
+            }\n*📢ID:* ${νℓкhat.chat}
 
 *😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 *❌ Error* 
@@ -65,13 +65,13 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           } else if (νℓкуяє.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await νℓкуяє.sendMessage(vcнaт.chat, {
+            await νℓкуяє.sendMessage(νℓкhat.chat, {
               react: {
                 text: "❌",
-                key: vcнaт.key,
+                key: νℓкhat.key,
               },
             });
-            return vcнaт.reply(
+            return νℓкhat.reply(
               `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -84,12 +84,12 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           return await νℓкуяє
             .sendMessage(
-              vcнaт.chat,
+              νℓкhat.chat,
               {
                 image: νℓкуяє.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${νℓкуяє.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${vcнaт.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${νℓкhat.chat.split("@")[0]}
 │║⦁ *📢Console:* ${νℓкуяє.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -98,7 +98,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
 
 _*💻HomePage:* ${νℓкуяє.ShowInfo}_
 _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
-                mentions: [vcнaт.sender],
+                mentions: [νℓкhat.sender],
                 buttons: [
                   {
                     buttonId: `${νℓкуяє.prefix}Commands`,
@@ -114,7 +114,7 @@ _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
                 headerType: 4,
               },
               {
-                quoted: vcнaт,
+                quoted: νℓкhat,
               }
             )
             .then(
@@ -125,13 +125,13 @@ _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      await νℓкуяє.sendMessage(vcнaт.chat, {
+      await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: νℓкhat.key,
         },
       });
-      return vcнaт.reply(
+      return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
 *❌Error* 
@@ -143,6 +143,6 @@ _*⛺HomeLog:* ${νℓкуяє.ShowLogger}_`,
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, vcнaт, error);
+    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
   }
 };
