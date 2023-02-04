@@ -164,6 +164,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   νℓкуяє.randomMC = require("random-material-color");
   νℓкуяє.yClient = require("youtube-avdl");
   νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
+  νℓкуяє.singer = require("play-dl");
   νℓкуяє.ffmpeg = ffmpeg;
   νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
