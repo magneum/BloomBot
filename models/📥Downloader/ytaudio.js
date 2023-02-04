@@ -75,25 +75,28 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 *📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
           mData._youtube_search[0].HQ_IMAGE
         );
-        let stream = await νℓкhat.singer.stream(mData._youtube_search[0].LINK);
+        let stream = await νℓкуяє.singer.stream(mData._youtube_search[0].LINK);
+        console.log(stream.url);
         await νℓкуяє.sendMessage(
           νℓкhat.chat,
           {
             audio: {
-              url: stream,
+              url: stream.url,
             },
             mimetype: "audio/mpeg",
-            fileName: musicData[0].TITLE + ".mp3",
+            fileName: mData._youtube_search[0].TITLE + ".mp3",
             headerType: 4,
             contextInfo: {
               externalAdReply: {
-                TITLE: musicData[0].TITLE,
+                TITLE: mData._youtube_search[0].TITLE,
                 body: "❣️Made by magneum.",
                 renderLargerThumbnail: true,
-                thumbnailUrl: musicData[0].THUMB,
-                mediaUrl: musicData[0].LINK,
+                thumbnailUrl: mData._youtube_search[0].HQ_IMAGE,
+                mediaUrl: mData._youtube_search[0].LINK,
                 mediaType: 1,
-                thumbnail: await νℓкуяє.getBuffer(musicData[0].HQ_IMAGE),
+                thumbnail: await νℓкуяє.getBuffer(
+                  mData._youtube_search[0].HQ_IMAGE
+                ),
                 sourceUrl: "https://bit.ly/magneum",
               },
             },
