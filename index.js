@@ -42,11 +42,7 @@ var bodyParser = require("body-parser");
 var dboard = require("./mongodb/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("./auth/Database");
-require("child_process").exec("git config --global user.name 'magneum'");
 var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./server/myfunc");
-require("child_process").exec(
-  "git config --global user.email 'krakinzkon@gmail.com'"
-);
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 async function mågneum() {
   await monGoose
@@ -766,23 +762,21 @@ async function mågneum() {
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   setInterval(async () => {
-    var utch = new Date().toLocaleDateString("EN", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    var ov_time = new Date()
-      .toLocaleString("LK", { timeZone: "Asia/Kolkata" })
-      .split(" ")[1];
+    var _Type = [
+      "🎭designer",
+      "🌏inventor",
+      "🎨creator",
+      "🎉founder",
+      "🐞innovator",
+      "🏗️builder",
+      "🖊️author",
+      "💡maker",
+    ];
+    var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await νℓкуяє.updateProfileStatus(
-      "📅 " +
-        utch +
-        "\n⌚ " +
-        ov_time +
-        "\n\n💗Powered by Vlkyre\n\n👨🏼‍💻https://bit.ly/magneum"
+      "Feeling: " + __Feeling + "  :vlkyre by magneum"
     );
-    // await gitPull();
-  }, 1000 * 40);
+    await gitPull();
+  }, 1000 * 10);
 }
 mågneum().catch((error) => logger.error(error));
