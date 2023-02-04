@@ -50,7 +50,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
 > ⒸVlkyre: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
-> Total Commands: ${countFiles("./Modular")}
+> Total Commands: ${countFiles("./models")}
 
 
 ╔══☰ *❗Console❗* 〕
