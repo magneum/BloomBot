@@ -141,10 +141,10 @@ async function mågneum() {
     logger: pino({ level: "silent" }),
     browser: [process.env.deployer || "vlkyre-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
-    fireInitQueries: true,
-    downloadHistory: true,
-    syncFullHistory: true,
-    shouldSyncHistoryMessage: true,
+    fireInitQueries: false,
+    downloadHistory: false,
+    syncFullHistory: false,
+    shouldSyncHistoryMessage: false,
     generateHighQualityLinkPreview: true,
     getMessage: async (key) => {
       if (store) {
