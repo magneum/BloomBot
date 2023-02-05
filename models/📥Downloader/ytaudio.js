@@ -76,7 +76,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           mData._youtube_search[0].HQ_IMAGE
         );
         let stream = await νℓкуяє.singer.stream(mData._youtube_search[0].LINK);
-        console.log(stream.url);
         await νℓкуяє.sendMessage(
           νℓкhat.chat,
           {
