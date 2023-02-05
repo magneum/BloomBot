@@ -143,6 +143,12 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             }
             // let { vimium } = require("../auth/vimium");
             // return vimium(νℓкуяє, νℓкhat, update, store);
+            await νℓкуяє.sendMessage(vcнaт.chat, {
+              react: {
+                text: "🔖",
+                key: vcнaт.key,
+              },
+            });
             return await require("../server/library")(
               νℓкуяє,
               νℓкhat,
