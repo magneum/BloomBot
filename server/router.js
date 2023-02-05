@@ -12,7 +12,6 @@
 // ╚════════════╝
 
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const { exec } = require("node:child_process");
 const moment = require("moment-timezone");
 const logger = require("../logger");
 module.exports = async (νℓкуяє, νℓкhat, update, store) => {
@@ -143,10 +142,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             }
             // let { vimium } = require("../auth/vimium");
             // return vimium(νℓкуяє, νℓкhat, update, store);
-            await νℓкуяє.sendMessage(vcнaт.chat, {
+            await νℓкуяє.sendMessage(νℓкhat.chat, {
               react: {
                 text: "🔖",
-                key: vcнaт.key,
+                key: νℓкhat.key,
               },
             });
             return await require("../server/library")(
