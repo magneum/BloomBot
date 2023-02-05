@@ -18,7 +18,6 @@ process.on("uncaughtException", (error) => {
 logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-console.clear();
 require("./global.js");
 var {
 default: νℓкуяє_вσт,

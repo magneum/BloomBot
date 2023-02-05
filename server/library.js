@@ -85,7 +85,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "Help":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.list = updatedb.list + 1;
-        require("../models/help")(νℓкуяє, νℓкhat, update, store);
+        require("../models/⚙️System/help")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
@@ -93,7 +93,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "Dashboard":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.dashboard = updatedb.dashboard + 1;
-        require("../models/dashboard")(νℓкуяє, νℓкhat, update, store);
+        require("../models/⚙️System/dashboard")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
