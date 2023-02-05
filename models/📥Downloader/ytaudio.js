@@ -84,7 +84,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             },
             mimetype: "audio/mpeg",
             fileName: mData._youtube_search[0].TITLE + ".mp3",
-            headerType: 4,
+            headerType: 5,
             contextInfo: {
               externalAdReply: {
                 TITLE: mData._youtube_search[0].TITLE,
@@ -92,7 +92,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                 renderLargerThumbnail: true,
                 thumbnailUrl: mData._youtube_search[0].HQ_IMAGE,
                 mediaUrl: mData._youtube_search[0].LINK,
-                mediaType: 1,
+                mediaType: 2,
                 thumbnail: await νℓкуяє.getBuffer(
                   mData._youtube_search[0].HQ_IMAGE
                 ),

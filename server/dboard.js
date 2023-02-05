@@ -68,7 +68,6 @@ module.exports = async (νℓкуяє, νℓкhat, updatedb) => {
           tts: 0,
 
           ytaudio: 0,
-          ytvideo: 0,
 
           panning: 0,
           bassbost: 0,

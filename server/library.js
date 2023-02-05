@@ -108,17 +108,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "ytaudio":
     case "ytmusic":
     case "youtubemusic":
-      require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
-        updatedb.ytaudio = updatedb.ytaudio + 1;
-        require("../models/📥Downloader/ytaudio")(
-          νℓкуяє,
-          νℓкhat,
-          update,
-          store
-        );
-        updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
-      });
-      break;
     case "ytv":
     case "watch":
     case "stream":
@@ -128,8 +117,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "ytvideo":
     case "youtubevideo":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
-        updatedb.ytvideo = updatedb.ytvideo + 1;
-        require("../models/📥Downloader/ytvideo")(
+        updatedb.ytaudio = updatedb.ytaudio + 1;
+        require("../models/📥Downloader/ytaudio")(
           νℓкуяє,
           νℓкhat,
           update,
