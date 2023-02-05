@@ -20,7 +20,7 @@ process.on("uncaughtException", (error) => {
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("./global.js");
 var {
-  default: кяуνℓ,
+  default: νℓкуяє_вσт,
   DisconnectReason,
   generateForwardMessageContent,
   prepareWAMessageMedia,
@@ -133,7 +133,7 @@ async function mågneum() {
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
-  var νℓкуяє = кяуνℓ({
+  var νℓкуяє = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
