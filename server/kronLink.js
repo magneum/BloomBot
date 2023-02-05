@@ -257,6 +257,15 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   νℓкуяє.isSudoWorker = sudotring.includes(
     νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
   );
+  var LOGOS = [
+    "vlkyre_ (1).png",
+    "vlkyre_ (2).png",
+    "vlkyre_ (3).png",
+    "vlkyre_ (4).png",
+    "vlkyre_ (5).png",
+  ];
+  var i = Math.floor(Math.random() * LOGOS.length);
+  νℓкуяє.logo = "./src/logo/" + LOGOS[i];
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   return νℓкуяє;
 };

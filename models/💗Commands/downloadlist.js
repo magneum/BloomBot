@@ -47,6 +47,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 │║⦁ ${νℓкуяє.prefix}ytvideo
 │║⦁ ${νℓкуяє.prefix}youtubevideo
 ┕╚═══════⋑`,
-    "./src/magneum.png"
+    νℓкуяє.logo
   );
 };

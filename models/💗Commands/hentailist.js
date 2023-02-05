@@ -52,6 +52,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 │║⦁ ${νℓкуяє.prefix}yuri
 │║⦁ ${νℓкуяє.prefix}zettaiRyouiki
 ┕╚═══════⋑`,
-    "./src/magneum.png"
+    νℓкуяє.logo
   );
 };

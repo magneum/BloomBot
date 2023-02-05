@@ -82,6 +82,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 ║⦁ 🍑 ${νℓкуяє.prefix}hentailist
 ║⦁ 👅 ${νℓкуяє.prefix}nsfwlist
 ╚═══════⋑`,
-    "./src/magneum.png"
+    νℓкуяє.logo
   );
 };

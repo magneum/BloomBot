@@ -43,6 +43,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 │║⦁ ${νℓкуяє.prefix}ytvaporwave
 │║⦁ ${νℓкуяє.prefix}ytvibrato
 ┕╚═══════⋑`,
-    "./src/magneum.png"
+    νℓкуяє.logo
   );
 };
