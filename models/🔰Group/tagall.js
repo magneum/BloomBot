@@ -28,18 +28,6 @@ module.exports = async (
   participants
 ) => {
   try {
-    await νℓкуяє.sendMessage(νℓкhat.chat, {
-      react: {
-        text: "❌",
-        key: νℓкhat.key,
-      },
-    });
-    return νℓкhat.reply(
-      `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
-    
-    *❌Error* 
-    > _This Command is not yet ready for public usage!_`
-    );
     if (!νℓкhat.isGroup) {
       await νℓкуяє.sendMessage(νℓкhat.chat, {
         react: {
@@ -50,7 +38,7 @@ module.exports = async (
       return νℓкhat.reply(
         `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
 
-*❌Error* 
+*❌Error*  
 > _It's a group command!_`
       );
     }
