@@ -1,5 +1,6 @@
+console.clear();
 const fs = require("fs");
-const chalk = require("chalk");
+const cL = require("chalk");
 const yargs = require("yargs");
 const { join } = require("path");
 const { say } = require("cfonts");
@@ -8,139 +9,134 @@ const { createInterface } = require("readline");
 const { setupMaster, fork } = require("cluster");
 const { watchFile, unwatchFile } = require("fs");
 const rl = createInterface(process.stdin, process.stdout);
-const Table = new ascii().setHeading("✭COMMANDS✭", "✭CATEGORY✭");
-
+const Table = new ascii().setHeading("✭CATEGORY✭", "✭COMMANDS✭");
 const mFolders = fs.readdirSync("./models");
-function mCommands() {
-  // say("Adjust the screen to scan the QR code", {
-  // font: "console",
-  // align: "center",
-  // gradient: ["red", "magenta"],
-  // });
+
+say("VLKYRE BOT\nWhatsApp Multi Device", {
+  font: "chrome",
+  align: "center",
+  gradient: ["red", "yellow"],
+});
+say(`~ by magneum`, {
+  font: "console",
+  align: "center",
+  gradient: ["green", "red"],
+});
+
+function showCommands(path) {
   say("✭ Loading Commands From Folders ✭", {
     font: "console",
     align: "left",
-    gradient: ["red", "green"],
+    gradient: ["red", "blue"],
   });
-  for (const folder of mFolders) {
-    const commandFiles = fs
-      .readdirSync(`./models/${folder}`)
-      .filter((file) => file.endsWith(".js"));
+  for (const cFolders of mFolders) {
+    const cFiles = fs
+      .readdirSync(`./${path}/${cFolders}`)
+      .filter((cFile) => cFile.endsWith(".js"));
 
     // return;
-    // Table.addRow(`> `, folder);
+    // Table.addRow(`> `, cFolders);
     // console.log(Table.toString());
-    // console.log(commandFiles);
+    // console.log(cFiles);
 
-    if (folder === "⚙️System") {
+    if (cFolders === "⚙️System") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "⭕YTFilter") {
+      Table.addRow("> " + cFolders, cFiles);
+      console.log(Table.toString());
+    } else if (cFolders === "⭕YTFilter") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🍁ᴏᴡɴᴇʀ") {
+    } else if (cFolders === "🍁ᴏᴡɴᴇʀ") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🍑Hentai") {
+    } else if (cFolders === "🍑Hentai") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🐉Emotions") {
+    } else if (cFolders === "🐉Emotions") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "👅NSFW") {
+    } else if (cFolders === "👅NSFW") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "💗Commands") {
+    } else if (cFolders === "💗Commands") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "💰Games") {
+    } else if (cFolders === "💰Games") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "📢aFilter") {
+    } else if (cFolders === "📢aFilter") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "📥Downloader") {
+    } else if (cFolders === "📥Downloader") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "📼Conversion") {
+    } else if (cFolders === "📼Conversion") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🔎Searches") {
+    } else if (cFolders === "🔎Searches") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🔰Group") {
+    } else if (cFolders === "🔰Group") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🖼️Photogenic") {
+    } else if (cFolders === "🖼️Photogenic") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
-    } else if (folder === "🦄SFW") {
+    } else if (cFolders === "🦄SFW") {
       console.log(
-        chalk.bgGreen(chalk.black("> " + folder)),
-        chalk.yellow("  | " + commandFiles)
+        cL.bgGreen(cL.black("> " + cFolders)),
+        cL.yellow("  | " + cFiles)
       );
     }
   }
 }
 
-say("VLKYRE BOT\nWhatsApp Multi Device", {
-  font: "chrome",
-  align: "center",
-  gradient: ["red", "magenta"],
-});
-say(`~ by magneum`, {
-  font: "console",
-  align: "center",
-  gradient: ["red", "magenta"],
-});
-
 var isRunning = false;
-
-function start(file) {
+function ignite(cFile) {
   if (isRunning) return;
   isRunning = true;
-  let args = [join(__dirname, file), ...process.argv.slice(2)];
-
+  let args = [join(__dirname, cFile), ...process.argv.slice(2)];
   setupMaster({
     exec: args[0],
     args: args.slice(1),
   });
   let p = fork();
   p.on("message", (data) => {
-    console.log("[RECEIVED]", data);
+    console.log(cL.bgGreen(cL.black("[RECEIVED]")), cL.yellow(data));
     switch (data) {
       case "reset":
         p.process.kill();
         isRunning = false;
-        start.apply(this, arguments);
+        ignite.apply(this, arguments);
         break;
       case "uptime":
         p.send(process.uptime());
@@ -149,16 +145,14 @@ function start(file) {
   });
   p.on("exit", (_, code) => {
     isRunning = false;
-    console.error("❌ An unexpected error occurred:", code);
-
+    console.log(cL.bgRed("❌ An unexpected error occurred:"), cL.red(error));
     p.process.kill();
     isRunning = false;
-    start.apply(this, arguments);
-
+    ignite.apply(this, arguments);
     if (code === 0) return;
     watchFile(args[0], () => {
       unwatchFile(args[0]);
-      start(file);
+      ignite(cFile);
     });
   });
   let opts = new Object(
@@ -170,5 +164,5 @@ function start(file) {
         p.emit("message", line.trim());
       });
 }
-mCommands();
-start("index.js");
+
+showCommands("models").then(ignite("index.js", "uptime"));

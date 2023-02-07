@@ -22,7 +22,7 @@
     "src": "src",
     "logger": "logger",
     "models": "models",
-    "mongodb": "mongodb",
+    "database": "database",
     "server": "server",
     "views": "views"
   },
