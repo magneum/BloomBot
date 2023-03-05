@@ -15,8 +15,13 @@ RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
 RUN git clone https://github.com/magneum/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
-RUN git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum
-RUN pip install -r requirements.txt && npm i && npm i -g forever
+RUN git init --initial-branch=magneum 
+RUN git fetch origin magneum 
+RUN python -m pip install --upgrade pip
+RUN git reset --hard origin/magneum
+RUN pip install -r requirements.txt 
+RUN npm i -g forever
+RUN npm i 
 # EXPOSE 3000
 # EXPOSE 5000
 # EXPOSE 8000
