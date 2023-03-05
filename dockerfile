@@ -21,7 +21,7 @@ RUN python -m pip install --upgrade pip
 RUN git reset --hard origin/magneum
 RUN pip install -r requirements.txt 
 RUN npm i -g forever
-RUN npm i 
+RUN yarn install
 # EXPOSE 3000
 # EXPOSE 5000
 # EXPOSE 8000
