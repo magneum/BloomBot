@@ -13,156 +13,157 @@ const Table = new ascii().setHeading("✭CATEGORY✭", "✭COMMANDS✭");
 const mFolders = fs.readdirSync("./models");
 
 say("VLKYRE BOT\nWhatsApp Multi Device", {
-  font: "chrome",
-  align: "center",
-  gradient: ["red", "yellow"],
+font: "chrome",
+align: "center",
+gradient: ["red", "yellow"],
 });
 say(`~ by magneum`, {
-  font: "console",
-  align: "center",
-  gradient: ["green", "red"],
+font: "console",
+align: "center",
+gradient: ["green", "red"],
 });
 
 function showCommands(path) {
-  say("✭ Loading Commands From Folders ✭", {
-    font: "console",
-    align: "left",
-    gradient: ["red", "blue"],
-  });
-  for (const cFolders of mFolders) {
-    const cFiles = fs
-      .readdirSync(`./${path}/${cFolders}`)
-      .filter((cFile) => cFile.endsWith(".js"));
+say("✭ Loading Commands From Folders ✭", {
+font: "console",
+align: "left",
+gradient: ["red", "blue"],
+});
+for (const cFolders of mFolders) {
+const cFiles = fs
+.readdirSync(`./${path}/${cFolders}`)
+.filter((cFile) => cFile.endsWith(".js"));
 
-    // return;
-    // Table.addRow(`> `, cFolders);
-    // console.log(Table.toString());
-    // console.log(cFiles);
+// return;
+// Table.addRow(`> `, cFolders);
+// console.log(Table.toString());
+// console.log(cFiles);
 
-    if (cFolders === "⚙️System") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-      Table.addRow("> " + cFolders, cFiles);
-      console.log(Table.toString());
-    } else if (cFolders === "⭕YTFilter") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🍁ᴏᴡɴᴇʀ") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🍑Hentai") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🐉Emotions") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "👅NSFW") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "💗Commands") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "💰Games") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "📢aFilter") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "📥Downloader") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "📼Conversion") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🔎Searches") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🔰Group") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🖼️Photogenic") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    } else if (cFolders === "🦄SFW") {
-      console.log(
-        cL.bgGreen(cL.black("> " + cFolders)),
-        cL.yellow("  | " + cFiles)
-      );
-    }
-  }
+if (cFolders === "⚙️System") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+Table.addRow("> " + cFolders, cFiles);
+console.log(Table.toString());
+} else if (cFolders === "⭕YTFilter") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🍁ᴏᴡɴᴇʀ") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🍑Hentai") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🐉Emotions") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "👅NSFW") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "💗Commands") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "💰Games") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "📢aFilter") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "📥Downloader") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "📼Conversion") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🔎Searches") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🔰Group") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🖼️Photogenic") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+} else if (cFolders === "🦄SFW") {
+console.log(
+cL.bgGreen(cL.black("> " + cFolders)),
+cL.yellow("  | " + cFiles)
+);
+}
+}
 }
 
 var isRunning = false;
 function ignite(cFile) {
-  if (isRunning) return;
-  isRunning = true;
-  let args = [join(__dirname, cFile), ...process.argv.slice(2)];
-  setupMaster({
-    exec: args[0],
-    args: args.slice(1),
-  });
-  let p = fork();
-  p.on("message", (data) => {
-    console.log(cL.bgGreen(cL.black("[RECEIVED]")), cL.yellow(data));
-    switch (data) {
-      case "reset":
-        p.process.kill();
-        isRunning = false;
-        ignite.apply(this, arguments);
-        break;
-      case "uptime":
-        p.send(process.uptime());
-        break;
-    }
-  });
-  p.on("exit", (_, code) => {
-    isRunning = false;
-    console.log(cL.bgRed("❌ An unexpected error occurred:"), cL.red(error));
-    p.process.kill();
-    isRunning = false;
-    ignite.apply(this, arguments);
-    if (code === 0) return;
-    watchFile(args[0], () => {
-      unwatchFile(args[0]);
-      ignite(cFile);
-    });
-  });
-  let opts = new Object(
-    yargs(process.argv.slice(2)).exitProcess(false).parse()
-  );
-  if (!opts["test"])
-    if (!rl.listenerCount())
-      rl.on("line", (line) => {
-        p.emit("message", line.trim());
-      });
+if (isRunning) return;
+isRunning = true;
+let args = [join(__dirname, cFile), ...process.argv.slice(2)];
+setupMaster({
+exec: args[0],
+args: args.slice(1),
+});
+let p = fork();
+p.on("message", (data) => {
+console.log(cL.bgGreen(cL.black("[RECEIVED]")), cL.yellow(data));
+switch (data) {
+case "reset":
+p.process.kill();
+isRunning = false;
+ignite.apply(this, arguments);
+break;
+case "uptime":
+p.send(process.uptime());
+break;
+}
+});
+p.on("exit", (_, code) => {
+isRunning = false;
+console.log(cL.bgRed("❌ An unexpected error occurred:"), cL.red(error));
+p.process.kill();
+isRunning = false;
+ignite.apply(this, arguments);
+if (code === 0) return;
+watchFile(args[0], () => {
+unwatchFile(args[0]);
+ignite(cFile);
+});
+});
+let opts = new Object(
+yargs(process.argv.slice(2)).exitProcess(false).parse()
+);
+if (!opts["test"])
+if (!rl.listenerCount())
+rl.on("line", (line) => {
+p.emit("message", line.trim());
+});
 }
 
-showCommands("models").then(ignite("index.js", "uptime"));
+showCommands("models");
+ignite("index.js", "uptime");
