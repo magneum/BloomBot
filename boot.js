@@ -145,7 +145,7 @@ break;
 });
 p.on("exit", (_, code) => {
 isRunning = false;
-console.log(cL.bgRed("❌ An unexpected error occurred:"), cL.red(error));
+console.error(cL.bgRed("❌ An unexpected error occurred:" + _));
 p.process.kill();
 isRunning = false;
 ignite.apply(this, arguments);

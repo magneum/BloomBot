@@ -109,7 +109,7 @@ async function mågneum() {
   νℓpage.set("view engine", "html");
   νℓpage.set("views", __dirname);
   νℓpage.get("/vlkyre", (request, response) => {
-    response.sendFile("./views/vlkyre.html");
+    response.sendFile("views/vlkyre.html", { root: __dirname });
   });
   νℓpage.post("/vlkyre", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
@@ -129,7 +129,7 @@ async function mågneum() {
       }
     );
   });
-  νℓpage.listen(PORT);
+  νℓpage.listen(PORT, logger.info("VLKYRE: started at port: " + PORT));
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
