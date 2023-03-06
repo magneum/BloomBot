@@ -11,8 +11,6 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-var progress = require("progress-estimator")();
-var youtubedl = require("youtube-dl-exec");
 ppath = require("path");
 require("../../global.js");
 psname = ppath.basename(__filename);
@@ -75,52 +73,12 @@ await νℓкуяє.imgB(
 *📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
 mData._youtube_search[0].HQ_IMAGE
 );
-// =========================================================
-let _ALINK;
-let _DROP = youtubedl(mData._youtube_search[0].LINK, {
-noWarnings: true,
-dumpSingleJson: true,
-preferFreeFormats: true,
-noCheckCertificates: true,
-addHeader: ["referer:youtube.com", "user-agent:googlebot"],
-});
-var YouGhost = await progress(_DROP, "Obtaining: " + " ");
-var a_ultralow = YouGhost.formats.filter(
-(v) => v.format_id === "599" || v.format_id === "600"
-);
-var db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
-var a_low = YouGhost.formats.filter(
-(v) =>
-v.format_id === "139" ||
-v.format_id === "249" ||
-v.format_id === "250"
-);
-var db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
-var a_medium = YouGhost.formats.filter(
-(v) => v.format_id === "140" || v.format_id === "251"
-);
-var db_medium = a_medium[0] || a_medium[1] || a_medium;
-
-if (db_medium.width !== undefined) {
-_ALINK = db_medium.url;
-} else if (
-db_medium.width === undefined &&
-db_low.width !== undefined
-) {
-_ALINK = db_low.url;
-} else if (
-db_medium.width === undefined &&
-db_low.width === undefined &&
-db_ultralow.width !== undefined
-) {
-_ALINK = db_ultralow.url;
-}
-// =========================================================
+let stream = await νℓкуяє.singer.stream(mData._youtube_search[0].LINK);
 await νℓкуяє.sendMessage(
 νℓкhat.chat,
 {
 audio: {
-url: _ALINK,
+url: stream.url,
 },
 mimetype: "audio/mpeg",
 fileName: mData._youtube_search[0].TITLE + ".mp3",

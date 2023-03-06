@@ -93,6 +93,7 @@
         "pino": "^8.8.0",
         "play-dl": "^1.9.6",
         "pokemontcgsdk": "^2.0.0",
+        "progress-estimator": "^0.3.0",
         "promise-mysql": "^5.2.0",
         "qrcode-reader": "^1.0.4",
         "qrcode-terminal": "^0.12.0",
@@ -122,7 +123,8 @@
         "winston": "^3.8.2",
         "xfarr-api": "^1.0.3",
         "yargs": "^17.6.2",
-        "youtube-avdl": "^1.1.0"
+        "youtube-avdl": "^1.1.0",
+        "youtube-dl-exec": "^2.4.0"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",
