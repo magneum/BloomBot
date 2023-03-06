@@ -11,10 +11,6 @@
         "test": "supervisor test"
     },
     "depecrated": false,
-    "engines": {
-        "npm": "please-use-yarn",
-        "yarn": ">= 1.22.19"
-    },
     "directories": {
         "src": "src",
         "bin": "bin",

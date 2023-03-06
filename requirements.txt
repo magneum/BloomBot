@@ -7,3 +7,8 @@ pyAesCrypt
 GitPython
 termcolor
 python-dotenv 
+
+# "engines": {
+# "npm": "please-use-yarn",
+# "yarn": ">= 1.22.19"
+# },
