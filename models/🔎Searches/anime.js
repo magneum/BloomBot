@@ -46,40 +46,39 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         },
       })
       .then((response) => {
-        var viper = response.data;
+        var viper = response.data[0];
         νℓкуяє.imgB(
           νℓкуяє,
           νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:* 
-MAL_ID: ${viper.id}
-TITLE: ${viper.title}
-EN_TITLE: ${viper.englishTitle}
-JP_TITLE: ${viper.japaneseTitle}
-IMAGE: ${viper.picture}
-PREMIERED: ${viper.premiered}
-WEBPAGE: ${viper.url}
-BROADCAST: ${viper.broadcast}
-GENRES: ${viper.genres}
-TYPE: ${viper.type}
-EPISODES: ${viper.episodes}
-RATING: ${viper.rating}
-AIRED: ${viper.aired}
-SCORE: ${viper.score}
-FAVORITES: ${viper.favorites}
-RANK: ${viper.ranked}
-DURATION: ${viper.duration}
-STUDIOS: ${viper.studios}
-PRODUCERS: ${viper.producers}
-POPULARITY: ${viper.popularity}
-TOTAL_MEMBERS: ${viper.members}
-SCORE_STATUS: ${viper.scoreStats}
-SOURCE: ${viper.source}
-SYNONYMS: ${viper.synonyms}
-STATUS: ${viper.status}
-SYNOPSIS: ${viper.synopsis}
-CHARACTERS: ${viper.charaters}
-STAFF: ${viper.staff}`,
-          response.data.IMAGE
+MAL_ID: ${viper.meta.id_mal}
+TITLE: ${viper.meta.title}
+EN_TITLE: ${viper.meta.en_title}
+JP_TITLE: ${viper.meta.jp_title}
+IMAGE: ${viper.meta.image}
+PREMIERED: ${viper.meta.premiered}
+WEBPAGE: ${viper.meta.webpage}
+BROADCAST: ${viper.meta.broadcast}
+GENRES: ${viper.meta.genres}
+TYPE: ${viper.meta.type}
+EPISODES: ${viper.meta.episodes}
+RATING: ${viper.meta.rating}
+AIRED: ${viper.meta.aired}
+SCORE: ${viper.meta.score}
+FAVORITES: ${viper.meta.favorites}
+RANK: ${viper.meta.rank}
+DURATION: ${viper.meta.duration}
+STUDIOS: ${viper.meta.studios}
+PRODUCERS: ${viper.meta.producers}
+POPULARITY: ${viper.meta.popularity}
+TOTAL_MEMBERS: ${viper.meta.members}
+SCORE_STATUS: ${viper.meta.scores}
+SOURCE: ${viper.meta.source}
+SYNONYMS: ${viper.meta.synonyms}
+SYNOPSIS: ${viper.meta.synopsis}
+CHARACTERS: ${viper.meta.charaters}
+STAFF: ${viper.meta.staffs}`,
+          viper.meta.image
         );
       });
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

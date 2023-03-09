@@ -33,11 +33,9 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           νℓкуяє,
           νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
-*_topic*: ${mData._topic}
-*_query*: ${mData._query}
-
-> *Api Fetch Url:* https://magneum.vercel.app/api/sfw`,
-          mData._url
+*Topic*: ${mData.meta.topic}
+*Query*: ${mData.meta.query}`,
+          mData.meta.url
         );
       });
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");

@@ -53,9 +53,9 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             .then(async (response) => {
               var mData = response.data[0];
               if (
-                mData._thumbnail.endsWith(".png") &&
-                mData._thumbnail.endsWith(".jpg") &&
-                mData._thumbnail.endsWith(".jpeg")
+                mData.meta.thumbnail.endsWith(".png") &&
+                mData.meta.thumbnail.endsWith(".jpg") &&
+                mData.meta.thumbnail.endsWith(".jpeg")
               ) {
                 await νℓкуяє.imgB(
                   νℓкуяє,
@@ -63,21 +63,21 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   `*🔖Here, ${pfname} For @${νℓкуяє.Tname || νℓкуяє.pushname}:*
 
 ╔══☰ *❗ADULT❗*
-║⦁ 💡Title: ${mData._title || null}
-║⦁ 🖊️Author: ${mData._author || null}
-║⦁ ❣️Topic: ${mData._topic || null}
+║⦁ 💡Title: ${mData.meta.title || null}
+║⦁ 🖊️Author: ${mData.meta.author || null}
+║⦁ ❣️Topic: ${mData.meta.topic || null}
 ╚══☰
 ╔══☰
 ║>  *❓META INFO❓*
-║⦁ 🎊Status: ${mData._status || null}
-║⦁ 🔐Uuid: ${mData._uuid || null}
-║⦁ 🗓️Date_create: ${mData._date_create || null}
-║⦁ 🧀Query: ${mData._query || null}
-║⦁ 📢Domain: ${mData._domain || null}
-║⦁ 💯Sub_reddit_id: ${mData._sub_reddit_id || null}
-║⦁ 🌐Link: ${mData._web_link || null}
+║⦁ 🎊Status: ${mData.meta.status || null}
+║⦁ 🔐Uuid: ${mData.meta.uuid || null}
+║⦁ 🗓️Date_create: ${mData.meta.date_create || null}
+║⦁ 🧀Query: ${mData.meta.query || null}
+║⦁ 📢Domain: ${mData.meta.domain || null}
+║⦁ 💯Sub_reddit_id: ${mData.meta.sub_reddit_id || null}
+║⦁ 🌐Link: ${mData.meta.url || null}
 ╚═══════⋑`,
-                  mData._thumbnail
+                  mData.meta.thumbnail
                 );
               } else {
                 await νℓкуяє.sendMessage(νℓкhat.chat, {

@@ -43,9 +43,9 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 > There has been an API Error. Please try again later.`
           );
         }
-        resp = mData._id + ".mp4";
+        resp = mData.resp.id + ".mp4";
         νℓкуяє.ffmpeg
-          .input(mData[0].URL)
+          .input(mData.meta.url)
           .outputOptions([
             "-pix_fmt yuv420p",
             "-c:v libx264",
@@ -79,8 +79,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               let dataFor =
                 νℓкhat.mtype == "extendedTextMessage" &&
                 νℓкhat.message.extendedTextMessage.contextInfo != null
-                  ? νℓкhat.message.extendedTextMessage.contextInfo.participant ||
-                    ""
+                  ? νℓкhat.message.extendedTextMessage.contextInfo
+                      .participant || ""
                   : "";
               return await νℓкуяє
                 .sendMessage(

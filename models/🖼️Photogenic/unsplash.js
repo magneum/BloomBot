@@ -53,16 +53,14 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           νℓкуяє,
           νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
-*_topic*: ${mData._topic}
-*_query*: ${mData._query}
-*_width*: ${mData._width}
-*_height*: ${mData._height}
-*_color*: ${mData._color}
-*_description*: ${mData._description || null}
-*_alt_description*: ${mData._alt_description || null}
-
-*_download*: ${mData._links[0]._download}`,
-          mData._images[0]._raw
+*Topic*: ${mData.meta.topic}
+*Query*: ${mData.meta.query}
+*Width*: ${mData.meta.width}
+*Height*: ${mData.meta.height}
+*Color*: ${mData.meta.color}
+*Description*: ${mData.meta.description || null}
+*Alt-Desc*: ${mData.meta.alt_description || null}`,
+          mData.meta.images[0]._raw
         );
       });
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
