@@ -429,7 +429,3 @@ app.get("/metadata", async (request, response) => {
   }
 });
 // ==============================================================================================
-// http://localhost:9786/metadata?q=emptiness
-// http://localhost:9786/audio?audio=https://tinyurl.com/2fzw596d&title=Hello
-// http://localhost:9786/video?video=https://tinyurl.com/2dracs26&audio=https://tinyurl.com/2fzw596d&title=premiumdl
-// ==============================================================================================
