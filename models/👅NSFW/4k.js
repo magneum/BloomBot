@@ -52,6 +52,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             })
             .then(async (response) => {
               var mData = response.data[0];
+              console.log(mData);
               if (
                 mData._thumbnail.endsWith(".png") &&
                 mData._thumbnail.endsWith(".jpg") &&
@@ -73,10 +74,9 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 ║⦁ 🔐Uuid: ${mData._uuid || null}
 ║⦁ 🗓️Date_create: ${mData._date_create || null}
 ║⦁ 🧀Query: ${mData._query || null}
-║⦁ 🔗Url: ${mData._url || null}
 ║⦁ 📢Domain: ${mData._domain || null}
 ║⦁ 💯Sub_reddit_id: ${mData._sub_reddit_id || null}
-║⦁ 🌐Web_link: ${mData._web_link || null}
+║⦁ 🌐Link: ${mData._web_link || null}
 ╚═══════⋑`,
                   mData._thumbnail
                 );
