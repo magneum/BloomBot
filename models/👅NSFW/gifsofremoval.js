@@ -42,7 +42,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           νℓкуяє
             .axios({
               method: "get",
-              url: "https://magneum.vercel.app/api/youtube_sr?q=" + pfname,
+              url: "https://magneum.vercel.app/api/nsfw?q=" + pfname,
               headers: {
                 accept: "*/*",
                 "accept-language": "en-US,en;q=0.9",
