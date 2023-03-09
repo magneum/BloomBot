@@ -5,12 +5,12 @@ const yargs = require("yargs");
 const { join } = require("path");
 const { say } = require("cfonts");
 const ascii = require("ascii-table");
+const mFolders = fs.readdirSync("./models");
 const { createInterface } = require("readline");
-const { setupMaster, fork } = require("cluster");
 const { watchFile, unwatchFile } = require("fs");
+const { setupMaster, fork } = require("cluster");
 const rl = createInterface(process.stdin, process.stdout);
 const Table = new ascii().setHeading("✭CATEGORY✭", "✭COMMANDS✭");
-const mFolders = fs.readdirSync("./models");
 
 say("VLKYRE BOT\nWhatsApp Multi Device", {
   font: "chrome",
