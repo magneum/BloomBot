@@ -1,18 +1,18 @@
 {
-    "name": "vlkyre-bot",
-    "version": "0.2.3",
-    "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
     "main": "index.js",
+    "version": "0.2.3",
+    "name": "vlkyre-bot",
+    "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
     "scripts": {
         "test": "supervisor test",
-        "pfmpegdev": "nodemon pfmpeg.js",
+        "ffdev": "nodemon pfmpeg.js",
+        "ffstart": "forever pfmpeg.js",
         "dev": "supervisor -w . index.js",
-        "pfmpegstart": "forever pfmpeg.js",
         "start": "node --no-warnings boot.js",
-        "magdev": "concurrently --kill-others \"yarn dev\" \"yarn pfmpegdev\"",
-        "magstart": "concurrently --kill-others \"yarn start\" \"yarn pfmpegstart\"",
+        "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
+        "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
         "server": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
-        "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever"
+        "build": "rm -f yarn.lock && pip3 install -r requirements.txt && yarn install"
     },
     "depecrated": false,
     "directories": {
