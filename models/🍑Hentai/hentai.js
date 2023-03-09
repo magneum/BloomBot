@@ -70,9 +70,9 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   νℓкhat,
                   `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
 
-> *Description:* ${mData[0].DESCRIPTION}
+> *Description:* ${mData[0]._description}
 > *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
-                  mData[0].URL
+                  mData[0]._url
                 );
               }
             });
