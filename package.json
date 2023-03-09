@@ -4,11 +4,15 @@
     "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
     "main": "index.js",
     "scripts": {
-        "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever",
-        "server": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
-        "start": "node --no-warnings boot.js",
+        "test": "supervisor test",
+        "pfmpegdev": "nodemon pfmpeg.js",
         "dev": "supervisor -w . index.js",
-        "test": "supervisor test"
+        "pfmpegstart": "forever pfmpeg.js",
+        "start": "node --no-warnings boot.js",
+        "magdev": "concurrently --kill-others \"yarn dev\" \"yarn pfmpegdev\"",
+        "magstart": "concurrently --kill-others \"yarn start\" \"yarn pfmpegstart\"",
+        "server": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
+        "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install && yarn global add forever"
     },
     "depecrated": false,
     "directories": {
@@ -128,8 +132,11 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",
+        "concurrently": "*",
+        "forever": "^4.0.3",
+        "nodemon": "^2.0.20",
         "postcss": "^8.4.21",
-        "tailwindcss": "^3.2.4"
+        "tailwindcss": "^3.2.6"
     },
     "packageManager": "yarn@3.3.1"
 }

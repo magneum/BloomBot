@@ -128,6 +128,33 @@ app.get("/spotify", async (request, response) => {
   }
 });
 // ==============================================================================================
+app.get("/video", async (request, response) => {
+  try {
+    console.log(request.query);
+    response.setHeader(
+      "Content-disposition",
+      contentDisposition("premiumdl -video-" + request.query.title + ".mp4")
+    );
+    FFmpeg()
+      .setFfmpegPath(FFmpegPath)
+      .setFfprobePath(FFmpegProbe)
+      .addInput(request.query.video)
+      .addInput(request.query.audio)
+      .outputOptions(["-map 0:v", "-map 1:a", "-shortest", "-c:v copy"])
+      .videoCodec("libx264")
+      .withAudioCodec("aac")
+      .format("mp4")
+      .outputOptions(["-movflags", "frag_keyframe + empty_moov"])
+      .on("error", (e) => console.error("ERROR: " + e.message))
+      .on("end", () => console.log("INFO: stream sent to client successfully."))
+      .output(response, { end: true })
+      .run();
+  } catch (error) {
+    console.log(error);
+    return response.status(400).json({ success: false, error: error.message });
+  }
+});
+// ==============================================================================================
 app.get("/audio", async (request, response) => {
   try {
     console.log(request.query);
@@ -151,6 +178,7 @@ app.get("/audio", async (request, response) => {
 // ==============================================================================================
 app.get("/metadata", async (request, response) => {
   try {
+    let _ALINK;
     YouTube_Sr(request.query.q).then(async (_sdata) => {
       let QueryFound = _sdata.videos.slice(0, 1);
       QueryFound.forEach(async function (Qresponse) {
@@ -170,13 +198,24 @@ app.get("/metadata", async (request, response) => {
             DESCRIPTION: Qresponse.description,
           },
         ];
-        let _DROP = youtubedl(_FOUND[0].LINK, {
-          noWarnings: true,
-          dumpSingleJson: true,
-          preferFreeFormats: true,
-          noCheckCertificates: true,
-          addHeader: ["referer:youtube.com", "user-agent:googlebot"],
-        });
+        let _DROP;
+        try {
+          _DROP = youtubedl(_FOUND[0].LINK, {
+            noWarnings: true,
+            dumpSingleJson: true,
+            preferFreeFormats: true,
+            noCheckCertificates: true,
+            addHeader: ["referer:youtube.com", "user-agent:googlebot"],
+          });
+        } catch (error) {
+          _DROP = Tube(_FOUND[0].LINK, {
+            noWarnings: true,
+            dumpSingleJson: true,
+            preferFreeFormats: true,
+            noCheckCertificates: true,
+            addHeader: ["referer:youtube.com", "user-agent:googlebot"],
+          });
+        }
         var YouGhost = await progress(_DROP, "Obtaining: " + " ");
         // =========================================================
         var a_ultralow = YouGhost.formats.filter(
@@ -196,29 +235,190 @@ app.get("/metadata", async (request, response) => {
         var db_medium = a_medium[0] || a_medium[1] || a_medium;
 
         if (db_medium.width !== undefined) {
-          return response.send({
-            success: true,
-            _search: _FOUND[0],
-            _audio: db_medium.url,
-          });
+          _ALINK = db_medium.url;
         } else if (
           db_medium.width === undefined &&
           db_low.width !== undefined
         ) {
-          return response.send({
-            success: true,
-            _search: _FOUND[0],
-            _audio: db_low.url,
-          });
+          _ALINK = db_low.url;
         } else if (
           db_medium.width === undefined &&
           db_low.width === undefined &&
           db_ultralow.width !== undefined
         ) {
+          _ALINK = db_ultralow.url;
+        }
+        // =========================================================
+        var v_1080p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "399" ||
+            v.format_id === "137" ||
+            v.format_id === "248"
+        );
+        var tuub_1080p = v_1080p[2] || v_1080p[1] || v_1080p[0] || v_1080p;
+        var v_720p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "247" ||
+            v.format_id === "398" ||
+            v.format_id === "136" ||
+            v.format_id === "22"
+        );
+        var tuub_720p =
+          v_720p[3] || v_720p[2] || v_720p[1] || v_720p[0] || v_720p;
+        var v_480p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "397" ||
+            v.format_id === "135" ||
+            v.format_id === "244"
+        );
+        var tuub_480p = v_480p[0] || v_480p[1] || v_480p[2] || v_480p;
+        var v_360p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "396" ||
+            v.format_id === "134" ||
+            v.format_id === "18" ||
+            v.format_id === "243"
+        );
+        var tuub_360p =
+          v_360p[0] || v_360p[1] || v_360p[2] || v_360p[3] || v_360p;
+        var v_240p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "395" ||
+            v.format_id === "133" ||
+            v.format_id === "242"
+        );
+        var tuub_240p = v_240p[0] || v_240p[1] || v_240p[2] || v_240p;
+        var v_144p = YouGhost.formats.filter(
+          (v) =>
+            v.format_id === "17" ||
+            v.format_id === "597" ||
+            v.format_id === "598" ||
+            v.format_id === "394" ||
+            v.format_id === "160" ||
+            v.format_id === "278"
+        );
+        var tuub_144p =
+          v_144p[0] ||
+          v_144p[1] ||
+          v_144p[2] ||
+          v_144p[3] ||
+          v_144p[4] ||
+          v_144p[5] ||
+          v_144p;
+        // =========================================================
+        if (tuub_1080p.width !== undefined) {
           return response.send({
             success: true,
             _search: _FOUND[0],
-            _audio: db_ultralow.url,
+            _audio: await shrink(_ALINK),
+            _video: {
+              _1080p: await shrink(tuub_1080p.url),
+              _720p: await shrink(tuub_720p.url),
+              _480p: await shrink(tuub_480p.url),
+              _360p: await shrink(tuub_360p.url),
+              _240p: await shrink(tuub_240p.url),
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else if (
+          tuub_1080p.width === undefined &&
+          tuub_720p.width !== undefined
+        ) {
+          return response.send({
+            success: true,
+            _search: _FOUND[0],
+            _audio: _ALINK,
+            _video: {
+              _1080p: undefined,
+              _720p: await shrink(tuub_720p.url),
+              _480p: await shrink(tuub_480p.url),
+              _360p: await shrink(tuub_360p.url),
+              _240p: await shrink(tuub_240p.url),
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else if (
+          tuub_1080p.width === undefined &&
+          tuub_720p.width === undefined &&
+          tuub_480p.width !== undefined
+        ) {
+          return response.send({
+            success: true,
+            _search: _FOUND[0],
+            _audio: _ALINK,
+            _video: {
+              _1080p: undefined,
+              _720p: undefined,
+              _480p: await shrink(tuub_480p.url),
+              _360p: await shrink(tuub_360p.url),
+              _240p: await shrink(tuub_240p.url),
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else if (
+          tuub_1080p.width === undefined &&
+          tuub_720p.width === undefined &&
+          tuub_480p.width === undefined &&
+          tuub_360p.width !== undefined
+        ) {
+          return response.send({
+            success: true,
+            _search: _FOUND[0],
+            _audio: _ALINK,
+            _video: {
+              _1080p: undefined,
+              _720p: undefined,
+              _480p: undefined,
+              _360p: await shrink(tuub_360p.url),
+              _240p: await shrink(tuub_240p.url),
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else if (
+          tuub_1080p.width === undefined &&
+          tuub_720p.width === undefined &&
+          tuub_480p.width === undefined &&
+          tuub_360p.width === undefined &&
+          tuub_240p.width !== undefined
+        ) {
+          return response.send({
+            success: true,
+            _search: _FOUND[0],
+            _audio: _ALINK,
+            _video: {
+              _1080p: undefined,
+              _720p: undefined,
+              _480p: undefined,
+              _360p: undefined,
+              _240p: await shrink(tuub_240p.url),
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else if (
+          tuub_1080p.width === undefined &&
+          tuub_720p.width === undefined &&
+          tuub_480p.width === undefined &&
+          tuub_360p.width === undefined &&
+          tuub_240p.width === undefined &&
+          tuub_144p.width !== undefined
+        ) {
+          return response.send({
+            success: true,
+            _search: _FOUND[0],
+            _audio: _ALINK,
+            _video: {
+              _1080p: undefined,
+              _720p: undefined,
+              _480p: undefined,
+              _360p: undefined,
+              _240p: undefined,
+              _144p: await shrink(tuub_144p.url),
+            },
+          });
+        } else {
+          return response.status(400).json({
+            success: false,
+            error: "ERROR: no downloadable video link found.",
           });
         }
       });
