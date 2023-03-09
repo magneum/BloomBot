@@ -19,8 +19,7 @@ RUN git init --initial-branch=magneum
 RUN git fetch origin magneum 
 RUN python -m pip install --upgrade pip
 RUN git reset --hard origin/magneum
-RUN pip install -r requirements.txt 
-RUN npm i -g forever
+RUN npm i -g forever && yarn build
 RUN yarn install
 # EXPOSE 3000
 # EXPOSE 5000

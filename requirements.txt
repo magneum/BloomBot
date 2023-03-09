@@ -1,3 +1,4 @@
+yt-dlp
 cprint
 loguru
 psutil
@@ -6,9 +7,4 @@ requests
 pyAesCrypt
 GitPython
 termcolor
-python-dotenv 
-
-# "engines": {
-# "npm": "please-use-yarn",
-# "yarn": ">= 1.22.19"
-# },
+python-dotenv

@@ -3,6 +3,10 @@
     "version": "0.2.3",
     "name": "vlkyre-bot",
     "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+    "engines": {
+        "npm": "please-use-yarn",
+        "yarn": ">= 1.22.19"
+    },
     "scripts": {
         "test": "supervisor test",
         "ffdev": "nodemon pfmpeg.js",
