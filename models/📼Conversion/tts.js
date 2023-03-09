@@ -62,34 +62,44 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
       );
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     } else {
-      const Media = googleTTS.getAudioUrl(text, {
-        lang: langCode,
-        slow: false,
-        host: `https://translate.google.com`,
-      });
-      return await νℓкуяє.sendMessage(
-        νℓкhat.chat,
-        {
-          audio: { url: Media },
-          mimetype: "audio/mpeg",
-          fileName: "TalkToSpeech" + ".mp3",
-          headerType: 4,
-          contextInfo: {
-            externalAdReply: {
-              title: "📢Talk To Speech",
-              body: "❣️Made by xhadr.",
-              renderLargerThumbnail: true,
-              mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
-              mediaType: 1,
-              thumbnail: await νℓкуяє.getBuffer(
-                "https://i.postimg.cc/qBSnwdzq/White.png"
-              ),
-              sourceUrl: "https://bit.ly/xhadr",
-            },
+      νℓкуяє
+        .axios({
+          method: "get",
+          url:
+            "https://magneum.vercel.app/api/text2speech?q=" +
+            νℓкуяє.args.join(" "),
+          headers: {
+            accept: "*/*",
+            "accept-language": "en-US,en;q=0.9",
+            "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
           },
-        },
-        { quoted: νℓкhat }
-      );
+        })
+        .then(async (response) => {
+          var mData = response.data[0];
+          return await νℓкуяє.sendMessage(
+            νℓкhat.chat,
+            {
+              audio: { url: mData.meta.url },
+              mimetype: "audio/mpeg",
+              fileName: "TalkToSpeech" + ".mp3",
+              headerType: 4,
+              contextInfo: {
+                externalAdReply: {
+                  title: "📢Talk To Speech",
+                  body: "❣️Made by xhadr.",
+                  renderLargerThumbnail: true,
+                  mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
+                  mediaType: 1,
+                  thumbnail: await νℓкуяє.getBuffer(
+                    "https://i.postimg.cc/qBSnwdzq/White.png"
+                  ),
+                  sourceUrl: "https://bit.ly/xhadr",
+                },
+              },
+            },
+            { quoted: νℓкhat }
+          );
+        });
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {

@@ -38,7 +38,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     νℓкуяє
       .axios({
         method: "get",
-        url: `${KryTek_URL}/animation/${pfname}`,
+        url: `https://magneum.vercel.app/api/animation/${pfname}`,
         headers: {
           accept: "*/*",
           "accept-language": "en-US,en;q=0.9",
