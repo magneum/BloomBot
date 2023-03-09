@@ -8,10 +8,10 @@
         "ffdev": "nodemon pfmpeg.js",
         "ffstart": "forever pfmpeg.js",
         "dev": "supervisor -w . index.js",
-        "start": "node --no-warnings boot.js",
+        "local": "node --no-warnings boot.js",
         "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
         "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-        "server": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
+        "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
         "build": "rm -f yarn.lock && pip3 install -r requirements.txt && yarn install"
     },
     "depecrated": false,
