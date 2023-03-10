@@ -131,68 +131,63 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "bite":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.bite = updatedb.bite + 1;
-        require("../models/🐉Animation/bite")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/bite")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "blush":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.blush = updatedb.blush + 1;
-        require("../models/🐉Animation/blush")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/blush")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "bonk":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.bonk = updatedb.bonk + 1;
-        require("../models/🐉Animation/bonk")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/bonk")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "bored":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.bored = updatedb.bored + 1;
-        require("../models/🐉Animation/bored")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/bored")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "confused":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.confused = updatedb.confused + 1;
-        require("../models/🐉Animation/confused")(
-          νℓкуяє,
-          νℓкhat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/confused")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "cry":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.cry = updatedb.cry + 1;
-        require("../models/🐉Animation/cry")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/cry")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "cuddle":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.cuddle = updatedb.cuddle + 1;
-        require("../models/🐉Animation/cuddle")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/cuddle")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "dance":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.dance = updatedb.dance + 1;
-        require("../models/🐉Animation/dance")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/dance")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "goodnight":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.goodnight = updatedb.goodnight + 1;
-        require("../models/🐉Animation/goodnight")(
+        require("../models/🐉Emotions/goodnight")(
           νℓкуяє,
           νℓкhat,
           update,
@@ -204,131 +199,126 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     case "happy":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.happy = updatedb.happy + 1;
-        require("../models/🐉Animation/happy")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/happy")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "highfive":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.highfive = updatedb.highfive + 1;
-        require("../models/🐉Animation/highfive")(
-          νℓкуяє,
-          νℓкhat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/highfive")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "hug":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.hug = updatedb.hug + 1;
-        require("../models/🐉Animation/hug")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/hug")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "kill":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.kill = updatedb.kill + 1;
-        require("../models/🐉Animation/kill")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/kill")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "kiss":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.kiss = updatedb.kiss + 1;
-        require("../models/🐉Animation/kiss")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/kiss")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "nervous":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.nervous = updatedb.nervous + 1;
-        require("../models/🐉Animation/nervous")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/nervous")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "pat":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.pat = updatedb.pat + 1;
-        require("../models/🐉Animation/pat")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/pat")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "poke":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.poke = updatedb.poke + 1;
-        require("../models/🐉Animation/poke")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/poke")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "punch":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.punch = updatedb.punch + 1;
-        require("../models/🐉Animation/punch")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/punch")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "sad":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.sad = updatedb.sad + 1;
-        require("../models/🐉Animation/sad")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/sad")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "scream":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.scream = updatedb.scream + 1;
-        require("../models/🐉Animation/scream")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/scream")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "slap":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.slap = updatedb.slap + 1;
-        require("../models/🐉Animation/slap")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/slap")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "smile":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.smile = updatedb.smile + 1;
-        require("../models/🐉Animation/smile")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/smile")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "stare":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.stare = updatedb.stare + 1;
-        require("../models/🐉Animation/stare")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/stare")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "wave":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.wave = updatedb.wave + 1;
-        require("../models/🐉Animation/wave")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/wave")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "wink":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.wink = updatedb.wink + 1;
-        require("../models/🐉Animation/wink")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/wink")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "yeet":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.yeet = updatedb.yeet + 1;
-        require("../models/🐉Animation/yeet")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/yeet")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;
     case "yes":
       require("./dboard")(νℓкуяє, νℓкhat, (updatedb) => {
         updatedb.yes = updatedb.yes + 1;
-        require("../models/🐉Animation/yes")(νℓкуяє, νℓкhat, update, store);
+        require("../models/🐉Emotions/yes")(νℓкуяє, νℓкhat, update, store);
         updatedb.save().catch((error) => νℓкуяє.grab(νℓкуяє, νℓкhat, error));
       });
       break;

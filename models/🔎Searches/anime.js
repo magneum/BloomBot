@@ -38,7 +38,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     νℓкуяє
       .axios({
         method: "get",
-        url: `https://magneum.vercel.app/api/animation/${pfname}`,
+        url: `https://magneum.vercel.app/api/anime?q=${pfname}`,
         headers: {
           accept: "*/*",
           "accept-language": "en-US,en;q=0.9",
@@ -47,6 +47,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
       })
       .then((response) => {
         var viper = response.data[0];
+        console.log(viper);
         νℓкуяє.imgB(
           νℓкуяє,
           νℓкhat,

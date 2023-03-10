@@ -29,7 +29,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
       })
       .then(async (response) => {
         var mData = response.data;
-        if (!mData.URL) {
+        if (!mData.meta.url) {
           await νℓкуяє.sendMessage(νℓкhat.chat, {
             react: {
               text: "❌",
