@@ -53,11 +53,17 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             .then(async (response) => {
               var mData = response.data;
               console.log(mData);
-              if (
-                mData.meta.thumbnail.endsWith(".png") &&
-                mData.meta.thumbnail.endsWith(".jpg") &&
-                mData.meta.thumbnail.endsWith(".jpeg")
-              ) {
+              if (!mData.meta.thumbnail) {
+                await νℓкуяє.sendMessage(νℓкhat.chat, {
+                  react: {
+                    text: "❌",
+                    key: νℓкhat.key,
+                  },
+                });
+                return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
+*❌ Error* 
+> There has been an API Error. Please try again later.`);
+              } else
                 await νℓкуяє.imgB(
                   νℓкуяє,
                   νℓкhat,
@@ -76,21 +82,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 ║⦁ 🧀Query: ${mData.meta.query || null}
 ║⦁ 📢Domain: ${mData.meta.domain || null}
 ║⦁ 💯Sub_reddit_id: ${mData.meta.sub_reddit_id || null}
-║⦁ 🌐Link: ${mData.meta.url || null}
+║⦁ 🌐Link: ${mData.meta.web_link || null}
 ╚═══════⋑`,
                   mData.meta.thumbnail
                 );
-              } else {
-                await νℓкуяє.sendMessage(νℓкhat.chat, {
-                  react: {
-                    text: "❌",
-                    key: νℓкhat.key,
-                  },
-                });
-                return νℓкhat.reply(`*😥Sorry:* _${νℓкуяє.pushname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.`);
-              }
             });
         }
       }
