@@ -46,7 +46,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         },
       })
       .then((response) => {
-        var viper = response.data[0];
+        var viper = response.data;
         console.log(viper);
         νℓкуяє.imgB(
           νℓкуяє,

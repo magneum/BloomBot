@@ -47,7 +47,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         },
       })
       .then(async (response) => {
-        const mData = response.data[0];
+        var mData = response.data;
+        console.log(mData);
         console.log(mData);
         return await νℓкуяє.imgB(
           νℓкуяє,

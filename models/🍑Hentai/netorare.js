@@ -64,6 +64,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             })
             .then(async (response) => {
               var mData = response.data;
+              console.log(mData);
               if (!mData[0].meta.url) {
                 await νℓкуяє.sendMessage(νℓкhat.chat, {
                   react: {

@@ -47,7 +47,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         },
       })
       .then(async (response) => {
-        const mData = response.data[0];
+        var mData = response.data;
+        console.log(mData);
         var download =
           mData.meta.links[Math.floor(Math.random() * mData.meta.links.length)];
         return await νℓкуяє.imgB(
