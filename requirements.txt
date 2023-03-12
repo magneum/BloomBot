@@ -1,4 +1,3 @@
-yt-dlp
 cprint
 loguru
 psutil
