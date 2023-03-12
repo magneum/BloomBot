@@ -16,10 +16,9 @@ RUN git clone https://github.com/magneum/Vlkyre
 RUN cd Vlkyre
 WORKDIR /Vlkyre
 RUN git init --initial-branch=magneum 
-RUN git fetch origin magneum 
-RUN python -m pip install --upgrade pip
+RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
-RUN npm i -g forever && yarn build
+RUN npm i -g forever && yarn install --ignore-engines
 RUN yarn install
 # EXPOSE 3000
 # EXPOSE 5000
