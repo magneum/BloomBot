@@ -18,7 +18,6 @@ WORKDIR /Vlkyre
 RUN git init --initial-branch=magneum 
 RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
-RUN npm i -g forever && yarn install --ignore-engines
 RUN yarn install
 # EXPOSE 3000
 # EXPOSE 5000
