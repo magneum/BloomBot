@@ -133,7 +133,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 > chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
 
 *⚙️Webpage:*
-> bit.ly/magneum
+> https://bit.ly/magneum
 > Login To Your Dashboard`,
                   mentions: [νℓкhat.sender],
                 },
@@ -142,18 +142,39 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             }
             // let { vimium } = require("../auth/vimium");
             // return vimium(νℓкуяє, νℓкhat, update, store);
-            await νℓкуяє.sendMessage(νℓкhat.chat, {
-              react: {
-                text: "🔖",
-                key: νℓкhat.key,
-              },
-            });
-            return await require("../server/library")(
-              νℓкуяє,
-              νℓкhat,
-              update,
-              store
-            );
+
+            if (!process.env.Rruntype === "devar") {
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
+                react: {
+                  text: "🔖",
+                  key: νℓкhat.key,
+                },
+              });
+              return await require("../server/library")(
+                νℓкуяє,
+                νℓкhat,
+                update,
+                store
+              );
+            } else
+              return await νℓкуяє.sendMessage(
+                νℓкhat.chat,
+                {
+                  gifPlayback: true,
+                  video: νℓкуяє.fs.readFileSync("./src/νℓкуяє_white.jpg"),
+                  caption: `*📢Verification Needed*
+*😥Sorry:* _${νℓкуяє.pushname}_
+
+> bot is now under development mode
+> come back another time
+
+*⚙️Webpage:*
+> https://bit.ly/magneum
+> Login To Your Dashboard`,
+                  mentions: [νℓкhat.sender],
+                },
+                { quoted: νℓкhat }
+              );
           }
         );
       }
