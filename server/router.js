@@ -143,20 +143,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             // let { vimium } = require("../auth/vimium");
             // return vimium(νℓкуяє, νℓкhat, update, store);
 
-            if (!process.env.Rruntype === "devar") {
-              await νℓкуяє.sendMessage(νℓкhat.chat, {
-                react: {
-                  text: "🔖",
-                  key: νℓкhat.key,
-                },
-              });
-              return await require("../server/library")(
-                νℓкуяє,
-                νℓкhat,
-                update,
-                store
-              );
-            } else
+            if (process.env.runtype === "devar" && !νℓкуяє.isSudoWorker) {
               return await νℓкуяє.sendMessage(
                 νℓкhat.chat,
                 {
@@ -175,6 +162,19 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                 },
                 { quoted: νℓкhat }
               );
+            } else
+              await νℓкуяє.sendMessage(νℓкhat.chat, {
+                react: {
+                  text: "🔖",
+                  key: νℓкhat.key,
+                },
+              });
+            return await require("../server/library")(
+              νℓкуяє,
+              νℓкhat,
+              update,
+              store
+            );
           }
         );
       }

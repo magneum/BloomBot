@@ -11,8 +11,11 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
+var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var progress = require("progress-estimator")();
 var youtubedl = require("youtube-dl-exec");
+var FFmpeg = require("fluent-ffmpeg");
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
@@ -76,7 +79,42 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           mData.youtube_search[0].HQ_IMAGE
         );
         // =========================================================
-        let _ALINK;
+        const ytdl = require("ytdl-secktor");
+        const stream = ytdl(mData.youtube_search[0].LINK, {
+          filter: (info) =>
+            info.audioBitrate == 160 || info.audioBitrate == 128,
+        }).pipe(νℓкуяє.fs.createWriteStream(`./${mData.uuid}`));
+        await new Promise((resolve, reject) => {
+          stream.on("error", reject);
+          stream.on("finish", resolve);
+        });
+        await νℓкуяє
+          .sendMessage(
+            νℓкhat.chat,
+            {
+              audio: νℓкуяє.fs.readFileSync(`./${mData.uuid}`),
+              mimetype: "audio/mpeg",
+              fileName: mData.youtube_search[0].TITLE + ".mp3",
+              headerType: 4,
+              contextInfo: {
+                externalAdReply: {
+                  title: mData.youtube_search[0].TITLE,
+                  body: "⭕made by vlkyre",
+                  renderLargerThumbnail: true,
+                  thumbnailUrl: mData.youtube_search[0].THUMB,
+                  mediaUrl: mData.youtube_search[0].LINK,
+                  mediaType: 1,
+                  thumbnail: await νℓкуяє.getBuffer(
+                    mData.youtube_search[0].HQ_IMAGE
+                  ),
+                  sourceUrl: "https://bit.ly/magneum",
+                },
+              },
+            },
+            { quoted: νℓкhat }
+          )
+          .then(νℓкуяє.fs.unlinkSync(`./${mData.uuid}`));
+        return;
         let _DROP = youtubedl(mData.youtube_search[0].LINK, {
           noWarnings: true,
           dumpSingleJson: true,
@@ -102,46 +140,139 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         var db_medium = a_medium[0] || a_medium[1] || a_medium;
 
         if (db_medium.width !== undefined) {
-          _ALINK = db_medium.url;
+          console.log(db_medium.url);
+          FFmpeg(db_medium.url)
+            .setFfmpegPath(FFmpegPath)
+            .setFfprobePath(FFmpegProbe)
+            .format("mp3")
+            .output(
+              async (data) => {
+                await νℓкуяє.sendMessage(
+                  νℓкhat.chat,
+                  {
+                    audio: {
+                      url: data,
+                    },
+                    mimetype: "audio/mpeg",
+                    fileName: mData.youtube_search[0].TITLE + ".mp3",
+                    headerType: 4,
+                    contextInfo: {
+                      externalAdReply: {
+                        title: mData.youtube_search[0].TITLE,
+                        body: "⭕made by vlkyre",
+                        renderLargerThumbnail: true,
+                        thumbnailUrl: mData.youtube_search[0].THUMB,
+                        mediaUrl: mData.youtube_search[0].LINK,
+                        mediaType: 1,
+                        thumbnail: await νℓкуяє.getBuffer(
+                          mData.youtube_search[0].HQ_IMAGE
+                        ),
+                        sourceUrl: "https://bit.ly/magneum",
+                      },
+                    },
+                  },
+                  { quoted: νℓкhat }
+                );
+              },
+              { end: true }
+            )
+            .on("error", (e) => console.error("ERROR: " + e.message))
+            .on("end", () =>
+              console.log("INFO: stream sent to client successfully.")
+            )
+            .run();
         } else if (
           db_medium.width === undefined &&
           db_low.width !== undefined
         ) {
-          _ALINK = db_low.url;
+          console.log(db_low.url);
+          FFmpeg(db_low.url)
+            .setFfmpegPath(FFmpegPath)
+            .setFfprobePath(FFmpegProbe)
+            .format("mp3")
+            .output(
+              async (data) => {
+                await νℓкуяє.sendMessage(
+                  νℓкhat.chat,
+                  {
+                    audio: {
+                      url: data,
+                    },
+                    mimetype: "audio/mpeg",
+                    fileName: mData.youtube_search[0].TITLE + ".mp3",
+                    headerType: 4,
+                    contextInfo: {
+                      externalAdReply: {
+                        title: mData.youtube_search[0].TITLE,
+                        body: "⭕made by vlkyre",
+                        renderLargerThumbnail: true,
+                        thumbnailUrl: mData.youtube_search[0].THUMB,
+                        mediaUrl: mData.youtube_search[0].LINK,
+                        mediaType: 1,
+                        thumbnail: await νℓкуяє.getBuffer(
+                          mData.youtube_search[0].HQ_IMAGE
+                        ),
+                        sourceUrl: "https://bit.ly/magneum",
+                      },
+                    },
+                  },
+                  { quoted: νℓкhat }
+                );
+              },
+              { end: true }
+            )
+            .on("error", (e) => console.error("ERROR: " + e.message))
+            .on("end", () =>
+              console.log("INFO: stream sent to client successfully.")
+            )
+            .run();
         } else if (
           db_medium.width === undefined &&
           db_low.width === undefined &&
           db_ultralow.width !== undefined
         ) {
-          _ALINK = db_ultralow.url;
-        }
-        // =========================================================
-        await νℓкуяє.sendMessage(
-          νℓкhat.chat,
-          {
-            audio: {
-              url: _ALINK,
-            },
-            mimetype: "audio/mpeg",
-            fileName: mData.youtube_search[0].TITLE + ".mp3",
-            headerType: 5,
-            contextInfo: {
-              externalAdReply: {
-                TITLE: mData.youtube_search[0].TITLE,
-                body: "❣️Made by magneum.",
-                renderLargerThumbnail: true,
-                thumbnailUrl: mData.youtube_search[0].HQ_IMAGE,
-                mediaUrl: mData.youtube_search[0].LINK,
-                mediaType: 2,
-                thumbnail: await νℓкуяє.getBuffer(
-                  mData.youtube_search[0].HQ_IMAGE
-                ),
-                sourceUrl: "https://bit.ly/magneum",
+          console.log(db_ultralow.url);
+          FFmpeg(db_ultralow.url)
+            .setFfmpegPath(FFmpegPath)
+            .setFfprobePath(FFmpegProbe)
+            .format("mp3")
+            .output(
+              async (data) => {
+                await νℓкуяє.sendMessage(
+                  νℓкhat.chat,
+                  {
+                    audio: {
+                      url: data,
+                    },
+                    mimetype: "audio/mpeg",
+                    fileName: mData.youtube_search[0].TITLE + ".mp3",
+                    headerType: 4,
+                    contextInfo: {
+                      externalAdReply: {
+                        title: mData.youtube_search[0].TITLE,
+                        body: "⭕made by vlkyre",
+                        renderLargerThumbnail: true,
+                        thumbnailUrl: mData.youtube_search[0].THUMB,
+                        mediaUrl: mData.youtube_search[0].LINK,
+                        mediaType: 1,
+                        thumbnail: await νℓкуяє.getBuffer(
+                          mData.youtube_search[0].HQ_IMAGE
+                        ),
+                        sourceUrl: "https://bit.ly/magneum",
+                      },
+                    },
+                  },
+                  { quoted: νℓкhat }
+                );
               },
-            },
-          },
-          { quoted: νℓкhat }
-        );
+              { end: true }
+            )
+            .on("error", (e) => console.error("ERROR: " + e.message))
+            .on("end", () =>
+              console.log("INFO: stream sent to client successfully.")
+            )
+            .run();
+        }
       });
   } catch (error) {
     return νℓкуяє.grab(νℓкуяє, νℓкhat, error);

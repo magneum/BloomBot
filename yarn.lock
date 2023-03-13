@@ -10462,6 +10462,15 @@ youtube-dl-exec@^2.4.0:
     is-unix "~2.0.1"
     simple-get "~4.0.1"
 
+ytdl-secktor@^0.0.1-development:
+  version "0.0.1-development"
+  resolved "https://registry.yarnpkg.com/ytdl-secktor/-/ytdl-secktor-0.0.1-development.tgz#25171673c24c25b0fd118ebdb15c26c026b8524a"
+  integrity sha512-MBDoKcue1G5vYS7MZBIcR7GbQwP68eHyAV1r9/F2Eno4SsHpNaYzL0+lUORb06Q+2NHJKWZEmCI+zNVJz5NKpQ==
+  dependencies:
+    m3u8stream "^0.8.6"
+    miniget "^4.2.2"
+    sax "^1.1.3"
+
 zlibjs@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/zlibjs/-/zlibjs-0.3.1.tgz#50197edb28a1c42ca659cc8b4e6a9ddd6d444554"

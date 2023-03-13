@@ -138,7 +138,8 @@
         "xfarr-api": "^1.0.3",
         "yargs": "^17.6.2",
         "youtube-avdl": "^1.1.0",
-        "youtube-dl-exec": "^2.4.0"
+        "youtube-dl-exec": "^2.4.0",
+        "ytdl-secktor": "^0.0.1-development"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",

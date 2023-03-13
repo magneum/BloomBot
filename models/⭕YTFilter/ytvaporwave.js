@@ -86,14 +86,14 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
           νℓкуяє,
           vcнaт,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*🍻Title:* ${mData._youtube_search[0].TITLE}
-*🙈Views:* ${mData._youtube_search[0].VIEWS}  
-*⏰Duration:* ${mData._youtube_search[0].DURATION_FULL}
-*🔗Link:* ${mData._youtube_search[0].LINK || "null"}
-*🖊️Author:* ${mData._youtube_search[0].AUTHOR_NAME || "null"}
+*🍻Title:* ${mData.youtube_search[0].TITLE}
+*🙈Views:* ${mData.youtube_search[0].VIEWS}  
+*⏰Duration:* ${mData.youtube_search[0].DURATION_FULL}
+*🔗Link:* ${mData.youtube_search[0].LINK || "null"}
+*🖊️Author:* ${mData.youtube_search[0].AUTHOR_NAME || "null"}
 
-*📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
-          mData._youtube_search[0].HQ_IMAGE
+*📜Description:* ${mData.youtube_search[0].DESCRIPTION}`,
+          mData.youtube_search[0].HQ_IMAGE
         );
         ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
         νℓкуяє
@@ -101,7 +101,7 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
             method: "get",
             url:
               "https://magneum.vercel.app/api/youtube_dl?q=" +
-              mData._youtube_search[0].TITLE +
+              mData.youtube_search[0].TITLE +
               "&quality=music",
             headers: {
               accept: "*/*",
@@ -138,18 +138,18 @@ module.exports = async (νℓкуяє, vcнaт, update, store) => {
                     {
                       audio: νℓкуяє.fs.readFileSync(`./${audioConv}`),
                       mimetype: "audio/mpeg",
-                      fileName: mData._youtube_search[0].TITLE + ".mp3",
+                      fileName: mData.youtube_search[0].TITLE + ".mp3",
                       headerType: 4,
                       contextInfo: {
                         externalAdReply: {
-                          title: mData._youtube_search[0].title,
+                          title: mData.youtube_search[0].title,
                           body: "YT-Filter⭕Made by magneum.",
                           renderLargerThumbnail: true,
-                          thumbnailUrl: mData._youtube_search[0].thumbnail,
-                          mediaUrl: mData._youtube_search[0].url,
+                          thumbnailUrl: mData.youtube_search[0].thumbnail,
+                          mediaUrl: mData.youtube_search[0].url,
                           mediaType: 1,
                           thumbnail: await νℓкуяє.getBuffer(
-                            mData._youtube_search[0].thumbnail
+                            mData.youtube_search[0].thumbnail
                           ),
                           sourceUrl: "https://bit.ly/magneum",
                         },
