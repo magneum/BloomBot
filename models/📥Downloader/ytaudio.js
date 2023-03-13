@@ -68,16 +68,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           νℓкуяє,
           νℓкhat,
           `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
-*🍻Title:* ${mData._youtube_search[0].TITLE}
-*🙈Views:* ${mData._youtube_search[0].VIEWS}
-*🔗Link:* ${mData._youtube_search[0].LINK || "null"}
-*⏰Duration:* ${mData._youtube_search[0].DURATION_FULL}
-*📜Description:* ${mData._youtube_search[0].DESCRIPTION}`,
-          mData._youtube_search[0].HQ_IMAGE
+*🍻Title:* ${mData._youtube_search.TITLE}
+*🙈Views:* ${mData._youtube_search.VIEWS}
+*🔗Link:* ${mData._youtube_search.LINK || "null"}
+*⏰Duration:* ${mData._youtube_search.DURATION_FULL}
+*📜Description:* ${mData._youtube_search.DESCRIPTION}`,
+          mData._youtube_search.HQ_IMAGE
         );
         // =========================================================
         let _ALINK;
-        let _DROP = youtubedl(mData._youtube_search[0].LINK, {
+        let _DROP = youtubedl(mData._youtube_search.LINK, {
           noWarnings: true,
           dumpSingleJson: true,
           preferFreeFormats: true,
@@ -123,18 +123,18 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               url: _ALINK,
             },
             mimetype: "audio/mpeg",
-            fileName: mData._youtube_search[0].TITLE + ".mp3",
+            fileName: mData._youtube_search.TITLE + ".mp3",
             headerType: 5,
             contextInfo: {
               externalAdReply: {
-                TITLE: mData._youtube_search[0].TITLE,
+                TITLE: mData._youtube_search.TITLE,
                 body: "❣️Made by magneum.",
                 renderLargerThumbnail: true,
-                thumbnailUrl: mData._youtube_search[0].HQ_IMAGE,
-                mediaUrl: mData._youtube_search[0].LINK,
+                thumbnailUrl: mData._youtube_search.HQ_IMAGE,
+                mediaUrl: mData._youtube_search.LINK,
                 mediaType: 2,
                 thumbnail: await νℓкуяє.getBuffer(
-                  mData._youtube_search[0].HQ_IMAGE
+                  mData._youtube_search.HQ_IMAGE
                 ),
                 sourceUrl: "https://bit.ly/magneum",
               },
