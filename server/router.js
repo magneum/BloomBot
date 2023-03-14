@@ -114,11 +114,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             respA = await νℓкуяє.groupMetadata("120363020792949649@g.us");
             for (let i = 0; i < respA.participants.length; i++)
               νℓкуяє.memberRespA[i] = respA.participants[i].id;
+
+            respB = await νℓкуяє.groupMetadata("120363089188116481@g.us");
+            for (let i = 0; i < respB.participants.length; i++)
+              νℓкуяє.memberRespB[i] = respB.participants[i].id;
             if (
               !νℓкуяє.fromme &&
               !νℓкуяє.isSudoWorker &&
               !νℓкуяє.letResp.includes(νℓкуяє.command) &&
-              !νℓкуяє.memberRespA.includes(νℓкhat.sender)
+              !νℓкуяє.memberRespA.includes(νℓкhat.sender) &&
+              !νℓкуяє.memberRespB.includes(νℓкhat.sender)
             ) {
               return await νℓкуяє.sendMessage(
                 νℓкhat.chat,

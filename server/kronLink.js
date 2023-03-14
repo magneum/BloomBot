@@ -169,6 +169,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   νℓкуяє.pathFFmpeg = require("ffmpeg-static");
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.memberRespA = [];
+  νℓкуяє.memberRespB = [];
   νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
   νℓкуяє.letResp = [
     "h",
