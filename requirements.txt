@@ -1,9 +1,4 @@
-cprint
-loguru
-psutil
-autopep8
-requests
-pyAesCrypt
-GitPython
-termcolor
-python-dotenv
+GitPython==3.1.31
+loguru==0.7.0
+python-dotenv==1.0.0
+termcolor==2.3.0
