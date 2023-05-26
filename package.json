@@ -21,7 +21,6 @@
   "depecrated": false,
   "directories": {
     "src": "src",
-    "bin": "bin",
     "auth": "auth",
     "logs": "logs",
     "docs": "docs",
