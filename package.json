@@ -22,9 +22,9 @@
   "directories": {
     "src": "src",
     "auth": "auth",
-    "logs": "logs",
     "docs": "docs",
     "views": "views",
+    "logger": "logger",
     "routes": "routes",
     "server": "server",
     "buttons": "buttons",
