@@ -12,10 +12,7 @@
 // ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("dotenv");
 var fs = require("fs");
-var chalk = require("chalk");
 var sequelize = require("sequelize");
-var { createClient } = require("redis");
-const { QuickDB, MySQLDriver } = require("quick.db");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
@@ -100,16 +97,5 @@ global.DATABASE =
         logging: Log("false"),
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
-// (async () => {
-// const mysqlDriver = new MySQLDriver({
-// host: process.env.MYSQLHOST,
-// user: process.env.MYSQLUSER,
-// password: process.env.MYSQLPASSWORD,
-// database: process.env.MYSQLDATABASE,
-// });
-
-// await mysqlDriver.connect();
-// global.db = new QuickDB({ driver: mysqlDriver });
-// })();
 global.MONGO_URL = process.env.MONGO_URL;
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
