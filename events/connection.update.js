@@ -37,7 +37,7 @@ module.exports = async (ѕуηтнσяiα, update, store, mågneum) => {
       logs.error(`❌: Bad Session File, Please Delete Session and Scan Again`);
       // ѕуηтнσяiα.logout();
     } else if (reason === DisconnectReason.connectionClosed) {
-      logs.error("❌: Connection closed, reconnecting....");
+      // logs.error("❌: Connection closed, reconnecting....");
       await mågneum();
     } else if (reason === DisconnectReason.connectionLost) {
       logs.error("❌: Connection Lost from Server, reconnecting...");
