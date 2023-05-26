@@ -27,6 +27,7 @@
     "views": "views",
     "routes": "routes",
     "server": "server",
+    "buttons": "buttons",
     "database": "database"
   },
   "dependencies": {
