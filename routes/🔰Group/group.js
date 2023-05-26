@@ -1,4 +1,4 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 // ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║ 
@@ -9,13 +9,13 @@
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  ѕуηтнiα,
+  ѕуηтнσяiα,
   νℓкhat,
   gmeta,
   isAdmin,
@@ -26,42 +26,42 @@ module.exports = async (
 ) => {
   try {
     if (!νℓкhat.isGroup) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > _Bot not Admin!_`
@@ -69,70 +69,70 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнiα.profilePictureUrl(νℓкhat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнσяiα.profilePictureUrl(νℓкhat.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ѕуηтнiα.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ѕуηтнσяiα.jpg";
     }
 
-    if (ѕуηтнiα.args[0] === "open") {
-      await ѕуηтнiα
+    if (ѕуηтнσяiα.args[0] === "open") {
+      await ѕуηтнσяiα
         .groupSettingUpdate(νℓкhat.chat, "not_announcement")
         .then(
           async (res) =>
-            await ѕуηтнiα.imgB(
-              ѕуηтнiα,
+            await ѕуηтнσяiα.imgB(
+              ѕуηтнσяiα,
               νℓкhat,
               `> *Group have been Opened by: ${
-                ѕуηтнiα.pushname || ѕуηтнiα.Tname
+                ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname
               }*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
           νℓкhat.reply(
-            `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+            `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
-    } else if (ѕуηтнiα.args[0] === "close") {
-      await ѕуηтнiα
+    } else if (ѕуηтнσяiα.args[0] === "close") {
+      await ѕуηтнσяiα
         .groupSettingUpdate(νℓкhat.chat, "announcement")
         .then(
           async (res) =>
-            await ѕуηтнiα.imgB(
-              ѕуηтнiα,
+            await ѕуηтнσяiα.imgB(
+              ѕуηтнσяiα,
               νℓкhat,
               `> *Group have been Closed by: ${
-                ѕуηтнiα.pushname || ѕуηтнiα.Tname
+                ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname
               }*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
           νℓкhat.reply(
-            `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+            `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
-    } else if (ѕуηтнiα.args[0] === "antilink") {
+    } else if (ѕуηтнσяiα.args[0] === "antilink") {
       if (
-        ѕуηтнiα.args[1] === "ON" ||
-        ѕуηтнiα.args[1] === "on" ||
-        ѕуηтнiα.args[1] === "On"
+        ѕуηтнσяiα.args[1] === "ON" ||
+        ѕуηтнσяiα.args[1] === "on" ||
+        ѕуηтнσяiα.args[1] === "On"
       ) {
-        return await ѕуηтнiα.LinkList.findOne(
+        return await ѕуηтнσяiα.LinkList.findOne(
           {
             serverID: νℓкhat.chat,
           },
           async (error, server) => {
             if (error) {
-              return ѕуηтнiα.reply(`*🕊️You:* ${
-                ѕуηтнiα.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+              return ѕуηтнσяiα.reply(`*🕊️You:* ${
+                ѕуηтнσяiα.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ID:* ${νℓкhat.chat}
 
-*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -141,20 +141,20 @@ module.exports = async (
             }
 
             if (!server) {
-              let newServer = new ѕуηтнiα.LinkList({
+              let newServer = new ѕуηтнσяiα.LinkList({
                 serverID: νℓкhat.chat,
                 value: "ON",
               });
               await newServer.save();
-              return await ѕуηтнiα.imgB(
-                ѕуηтнiα,
+              return await ѕуηтнσяiα.imgB(
+                ѕуηтнσяiα,
                 νℓкhat,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
-              return await ѕуηтнiα.imgB(
-                ѕуηтнiα,
+              return await ѕуηтнσяiα.imgB(
+                ѕуηтнσяiα,
                 νℓкhat,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -163,21 +163,21 @@ module.exports = async (
           }
         );
       } else if (
-        ѕуηтнiα.args[1] === "OFF" ||
-        ѕуηтнiα.args[1] === "off" ||
-        ѕуηтнiα.args[1] === "Off"
+        ѕуηтнσяiα.args[1] === "OFF" ||
+        ѕуηтнσяiα.args[1] === "off" ||
+        ѕуηтнσяiα.args[1] === "Off"
       ) {
-        return await ѕуηтнiα.LinkList.findOne(
+        return await ѕуηтнσяiα.LinkList.findOne(
           {
             serverID: νℓкhat.chat,
           },
           async (error, server) => {
             if (error) {
-              return ѕуηтнiα.reply(`*🕊️You:* ${
-                ѕуηтнiα.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+              return ѕуηтнσяiα.reply(`*🕊️You:* ${
+                ѕуηтнσяiα.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ID:* ${νℓкhat.chat}
 
-*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -186,16 +186,16 @@ module.exports = async (
             }
 
             if (!server) {
-              return await ѕуηтнiα.imgB(
-                ѕуηтнiα,
+              return await ѕуηтнσяiα.imgB(
+                ѕуηтнσяiα,
                 νℓкhat,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
               await server.delete();
-              return await ѕуηтнiα.imgB(
-                ѕуηтнiα,
+              return await ѕуηтнσяiα.imgB(
+                ѕуηтнσяiα,
                 νℓкhat,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -204,42 +204,42 @@ module.exports = async (
           }
         );
       } else {
-        await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+        await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
           react: {
             text: "❌",
             key: νℓкhat.key,
           },
         });
         return νℓкhat.reply(
-          `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+          `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${ѕуηтнiα.prefix}${pfname} close/open
-> _${ѕуηтнiα.prefix}${pfname} antilink on/off`
+> _${ѕуηтнσяiα.prefix}${pfname} close/open
+> _${ѕуηтнσяiα.prefix}${pfname} antilink on/off`
         );
       }
     } else {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${ѕуηтнiα.prefix}${pfname} close/open
-> _${ѕуηтнiα.prefix}${pfname} antilink on/off`
+> _${ѕуηтнσяiα.prefix}${pfname} close/open
+> _${ѕуηтнσяiα.prefix}${pfname} antilink on/off`
       );
     }
   } catch (error) {
-    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat);
+    return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat);
   }
 };

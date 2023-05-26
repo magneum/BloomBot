@@ -1,4 +1,4 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 // ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║ 
@@ -9,13 +9,13 @@
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  ѕуηтнiα,
+  ѕуηтнσяiα,
   νℓкhat,
   gmeta,
   isAdmin,
@@ -26,97 +26,97 @@ module.exports = async (
 ) => {
   try {
     if (!νℓкhat.isGroup) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > It's a group command!`
       );
     } else if (!isAdmin) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > This is an Admin only Command!`
       );
     } else if (!isBotAdmin) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > Bot not Admin!`
       );
     } else
-      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнiα.profilePictureUrl(νℓкhat.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнσяiα.profilePictureUrl(νℓкhat.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ѕуηтнiα.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ѕуηтнσяiα.jpg";
     }
-    if (!ѕуηтнiα.args) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+    if (!ѕуηтнσяiα.args) {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > No query provided!
 
 *⚡Usage*   
-> ${ѕуηтнiα.prefix}${pfname} on
-> ${ѕуηтнiα.prefix}${pfname} off`
+> ${ѕуηтнσяiα.prefix}${pfname} on
+> ${ѕуηтнσяiα.prefix}${pfname} off`
       );
     } else if (
-      ѕуηтнiα.args[0] === "ON" ||
-      ѕуηтнiα.args[0] === "on" ||
-      ѕуηтнiα.args[0] === "On"
+      ѕуηтнσяiα.args[0] === "ON" ||
+      ѕуηтнσяiα.args[0] === "on" ||
+      ѕуηтнσяiα.args[0] === "On"
     ) {
-      return await ѕуηтнiα.nsfwCheck.findOne(
+      return await ѕуηтнσяiα.nsfwCheck.findOne(
         {
           serverID: νℓкhat.chat,
         },
         async (error, server) => {
-          if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+          if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
           if (!server) {
-            new ѕуηтнiα.nsfwCheck({
+            new ѕуηтнσяiα.nsfwCheck({
               serverID: νℓкhat.chat,
               value: "ON",
             }).save();
-            return await ѕуηтнiα.imgB(
-              ѕуηтнiα,
+            return await ѕуηтнσяiα.imgB(
+              ѕуηтнσяiα,
               νℓкhat,
-              `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
+              `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else
-            return await ѕуηтнiα.imgB(
-              ѕуηтнiα,
+            return await ѕуηтнσяiα.imgB(
+              ѕуηтнσяiα,
               νℓкhat,
-              `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
+              `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -124,30 +124,30 @@ module.exports = async (
         }
       );
     } else if (
-      ѕуηтнiα.args[0] === "OFF" ||
-      ѕуηтнiα.args[0] === "off" ||
-      ѕуηтнiα.args[0] === "Off"
+      ѕуηтнσяiα.args[0] === "OFF" ||
+      ѕуηтнσяiα.args[0] === "off" ||
+      ѕуηтнσяiα.args[0] === "Off"
     ) {
-      return await ѕуηтнiα.nsfwCheck.findOne(
+      return await ѕуηтнσяiα.nsfwCheck.findOne(
         {
           serverID: νℓкhat.chat,
         },
         async (error, server) => {
-          if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+          if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
           if (!server) {
-            return await ѕуηтнiα.imgB(
-              ѕуηтнiα,
+            return await ѕуηтнσяiα.imgB(
+              ѕуηтнσяiα,
               νℓкhat,
-              `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
+              `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else await server.delete();
-          return await ѕуηтнiα.imgB(
-            ѕуηтнiα,
+          return await ѕуηтнσяiα.imgB(
+            ѕуηтнσяiα,
             νℓкhat,
-            `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
+            `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
             𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -155,23 +155,23 @@ module.exports = async (
         }
       );
     } else
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
     return νℓкhat.reply(
-      `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+      `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 
 *❌Error* 
 > No query provided!
 
 *⚡Usage*   
-> ${ѕуηтнiα.prefix}${pfname} on
-> ${ѕуηтнiα.prefix}${pfname} off`
+> ${ѕуηтнσяiα.prefix}${pfname} on
+> ${ѕуηтнσяiα.prefix}${pfname} off`
     );
   } catch (error) {
-    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat);
+    return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat);
   }
 };
