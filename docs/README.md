@@ -1,6 +1,6 @@
 # [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Synthia/blob/magneum/src/magneum.png" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Synthia/blob/magneum/src/synthia.jpg" /></p>
 
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="magneum"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
