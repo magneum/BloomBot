@@ -78,7 +78,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                "./src/synthia.jpg"
+                "./src/synthoria.jpg"
               );
             }
 
@@ -108,7 +108,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                "./src/synthia.jpg"
+                "./src/synthoria.jpg"
               );
             }
 
@@ -124,7 +124,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                "./src/synthia.jpg"
+                "./src/synthoria.jpg"
               );
             }
 
@@ -141,7 +141,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                "./src/synthia.jpg"
+                "./src/synthoria.jpg"
               );
             }
 
@@ -188,7 +188,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     }
 
@@ -222,7 +222,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     }
 
@@ -247,7 +247,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     }
 
@@ -290,7 +290,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -331,7 +331,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -372,7 +372,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     }
 
@@ -410,7 +410,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -444,7 +444,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        "./src/synthia.jpg"
+                        "./src/synthoria.jpg"
                       );
                     }
                   }
@@ -485,7 +485,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      "./src/synthia.jpg"
+      "./src/synthoria.jpg"
     );
   }
 };

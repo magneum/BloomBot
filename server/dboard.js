@@ -1,33 +1,33 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐨𝐫𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthia was made for fun purpose and to make group management easier.
+// ║ Synthoria was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
+module.exports = async (ѕуηтнσяiα, νℓкhat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнiα.profilePictureUrl(νℓкhat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнσяiα.profilePictureUrl(νℓкhat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/synthia.jpg";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/synthoria.jpg";
   }
-  await ѕуηтнiα.dashboard.findOne(
+  await ѕуηтнσяiα.dashboard.findOne(
     {
       ID: νℓкhat.sender,
     },
     async (error, udBase) => {
-      if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+      if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
       if (!udBase) {
-        new ѕуηтнiα.dashboard({
+        new ѕуηтнσяiα.dashboard({
           ID: νℓкhat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: ѕуηтнiα.pushname,
+          username: ѕуηтнσяiα.pushname,
 
           bite: 0,
           blush: 0,
@@ -218,7 +218,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
           zettaiRyouiki: 0,
 
           list: 0,
-          synthia: 0,
+          synthoria: 0,
           dashboard: 0,
 
           waifu: 0,
@@ -269,11 +269,11 @@ module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error));
-        await ѕуηтнiα.imgB(
-          ѕуηтнiα,
+          .catch((error) => ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error));
+        await ѕуηтнσяiα.imgB(
+          ѕуηтнσяiα,
           νℓкhat,
-          `*🔖Here, For ${ѕуηтнiα.pushname}:*
+          `*🔖Here, For ${ѕуηтнσяiα.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -285,7 +285,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
         );
         return updatedb(udBase);
       }
-      udBase.username = `${ѕуηтнiα.pushname}`;
+      udBase.username = `${ѕуηтнσяiα.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }

@@ -98,7 +98,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               contextInfo: {
                 externalAdReply: {
                   title: mData.youtube_search[0].TITLE,
-                  body: "⭕made by synthia",
+                  body: "⭕made by synthoria",
                   renderLargerThumbnail: true,
                   thumbnailUrl: mData.youtube_search[0].THUMB,
                   mediaUrl: mData.youtube_search[0].LINK,
@@ -158,7 +158,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                     contextInfo: {
                       externalAdReply: {
                         title: mData.youtube_search[0].TITLE,
-                        body: "⭕made by synthia",
+                        body: "⭕made by synthoria",
                         renderLargerThumbnail: true,
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,
@@ -203,7 +203,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                     contextInfo: {
                       externalAdReply: {
                         title: mData.youtube_search[0].TITLE,
-                        body: "⭕made by synthia",
+                        body: "⭕made by synthoria",
                         renderLargerThumbnail: true,
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,
@@ -249,7 +249,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                     contextInfo: {
                       externalAdReply: {
                         title: mData.youtube_search[0].TITLE,
-                        body: "⭕made by synthia",
+                        body: "⭕made by synthoria",
                         renderLargerThumbnail: true,
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,

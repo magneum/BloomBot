@@ -1,15 +1,15 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐨𝐫𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthia was made for fun purpose and to make group management easier.
+// ║ Synthoria was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const logger = require("./logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -101,7 +101,7 @@ async function mågneum() {
       });
     }
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   var urlencodedParser = bodyParser.urlencoded({ extended: false });
   νℓpage.engine("html", require("ejs").renderFile);
   νℓpage.use(express.static("./views"));
@@ -110,10 +110,10 @@ async function mågneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/synthia", (request, response) => {
-    response.sendFile("views/synthia.html", { root: __dirname });
+  νℓpage.get("/synthoria", (request, response) => {
+    response.sendFile("views/synthoria.html", { root: __dirname });
   });
-  νℓpage.post("/synthia", urlencodedParser, (request, response) => {
+  νℓpage.post("/synthoria", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -132,16 +132,20 @@ async function mågneum() {
     );
   });
   νℓpage.listen(PORT, logger.info("VLKYRE: started at port: " + PORT));
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
-  var ѕуηтнiα = νℓкуяє_вσт({
+  var ѕуηтнσяiα = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "synthia-by-magneum", "Chrome", "4.0.0"],
+    browser: [
+      process.env.deployer || "synthoria-by-magneum",
+      "Chrome",
+      "4.0.0",
+    ],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -158,10 +162,10 @@ async function mågneum() {
       };
     },
   });
-  store.bind(ѕуηтнiα.ev);
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.ev.on("creds.update", async (update) => await saveCreds());
-  ѕуηтнiα.ev.on("connection.update", async (update) => {
+  store.bind(ѕуηтнσяiα.ev);
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.ev.on("creds.update", async (update) => await saveCreds());
+  ѕуηтнσяiα.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,
       connection,
@@ -179,7 +183,7 @@ async function mågneum() {
         logger.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
-        ѕуηтнiα.logout();
+        ѕуηтнσяiα.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
         logger.error("❌: Connection closed, reconnecting....");
         await mågneum();
@@ -190,7 +194,7 @@ async function mågneum() {
         logger.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
-        ѕуηтнiα.logout();
+        ѕуηтнσяiα.logout();
       } else if (reason === DisconnectReason.loggedOut) {
         logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
@@ -201,7 +205,7 @@ async function mågneum() {
         logger.error("❌: Connection TimedOut, Reconnecting...");
         await mågneum();
       } else
-        ѕуηтнiα.end(
+        ѕуηтнσяiα.end(
           logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
     } else if (isOnline === true) logger.debug("🐲: Online.");
@@ -215,8 +219,8 @@ async function mågneum() {
     else if (qr) logger.info("Qr: "), console.log(qr);
     else logger.info("🐲: Connection...", update);
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.ev.on("messages.upsert", async (update) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
     νTēxt.message =
@@ -224,27 +228,27 @@ async function mågneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!ѕуηтнiα.public && !νTēxt.key.fromMe && update.type === "notify")
+    if (!ѕуηтнσяiα.public && !νTēxt.key.fromMe && update.type === "notify")
       return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    νℓкhat = await νkmake(ѕуηтнiα, νTēxt, store);
-    await require("./server/router.js")(ѕуηтнiα, νℓкhat, update, store);
+    νℓкhat = await νkmake(ѕуηтнσяiα, νTēxt, store);
+    await require("./server/router.js")(ѕуηтнσяiα, νℓкhat, update, store);
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.ev.on("group-participants.update", async (update) => {
-    let metadata = await ѕуηтнiα.groupMetadata(update.id);
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.ev.on("group-participants.update", async (update) => {
+    let metadata = await ѕуηтнσяiα.groupMetadata(update.id);
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await ѕуηтнiα.profilePictureUrl(sperson, "image");
+        imåge = await ѕуηтнσяiα.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./src/ѕуηтнiα.jpg";
+        imåge = "./src/ѕуηтнσяiα.jpg";
       }
 
       if (update.action == "add") {
-        return await ѕуηтнiα
+        return await ѕуηтнσяiα
           .sendMessage(
             update.id,
             {
@@ -259,13 +263,13 @@ async function mågneum() {
                 "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
               buttons: [
                 {
-                  buttonId: `${ѕуηтнiα.prefix}Dashboard`,
-                  buttonText: { displayText: `${ѕуηтнiα.prefix}Dashboard` },
+                  buttonId: `${ѕуηтнσяiα.prefix}Dashboard`,
+                  buttonText: { displayText: `${ѕуηтнσяiα.prefix}Dashboard` },
                   type: 1,
                 },
                 {
-                  buttonId: `${ѕуηтнiα.prefix}Synthia`,
-                  buttonText: { displayText: `${ѕуηтнiα.prefix}Synthia` },
+                  buttonId: `${ѕуηтнσяiα.prefix}Synthia`,
+                  buttonText: { displayText: `${ѕуηтнσяiα.prefix}Synthia` },
                   type: 1,
                 },
               ],
@@ -284,8 +288,8 @@ async function mågneum() {
       }
     }
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.decodeJid = (jid) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -295,14 +299,14 @@ async function mågneum() {
       );
     } else return jid;
   };
-  ѕуηтнiα.getName = (jid, withoutContact = false) => {
-    id = ѕуηтнiα.decodeJid(jid);
-    withoutContact = ѕуηтнiα.withoutContact || withoutContact;
+  ѕуηтнσяiα.getName = (jid, withoutContact = false) => {
+    id = ѕуηтнσяiα.decodeJid(jid);
+    withoutContact = ѕуηтнσяiα.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = ѕуηтнiα.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = ѕуηтнσяiα.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -318,8 +322,8 @@ async function mågneum() {
               id,
               name: "WhatsApp",
             }
-          : id === ѕуηтнiα.decodeJid(ѕуηтнiα.user.id)
-          ? ѕуηтнiα.user
+          : id === ѕуηтнσяiα.decodeJid(ѕуηтнσяiα.user.id)
+          ? ѕуηтнσяiα.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
@@ -330,20 +334,20 @@ async function mågneum() {
       )
     );
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await ѕуηтнiα.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ѕуηтнiα.getName(
+        displayName: await ѕуηтнσяiα.getName(i + "@s.whatsapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ѕуηтнσяiα.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${await ѕуηтнiα.getName(
+        )}\nFN:${await ѕуηтнσяiα.getName(
           i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    ѕуηтнiα.sendMessage(
+    ѕуηтнσяiα.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -353,10 +357,10 @@ async function mågneum() {
     );
   };
 
-  ѕуηтнiα.public = true;
-  ѕуηтнiα.serializeM = (νℓкhat) => νkmake(ѕуηтнiα, νℓкhat, store);
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.send5ButImg = async (
+  ѕуηтнσяiα.public = true;
+  ѕуηтнσяiα.serializeM = (νℓкhat) => νkmake(ѕуηтнσяiα, νℓкhat, store);
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -366,7 +370,7 @@ async function mågneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: ѕуηтнiα.waUploadToServer }
+      { upload: ѕуηтнσяiα.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
       νℓкhat.chat,
@@ -382,12 +386,12 @@ async function mågneum() {
       }),
       options
     );
-    ѕуηтнiα.relayMessage(jid, template.message, {
+    ѕуηтнσяiα.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendButtonText = (
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -402,13 +406,13 @@ async function mågneum() {
       headerType: 2,
       ...options,
     };
-    ѕуηтнiα.sendMessage(jid, buttonMessage, { quoted, ...options });
+    ѕуηтнσяiα.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendText = (jid, text, quoted = "", options) =>
-    ѕуηтнiα.sendMessage(jid, { text: text, ...options }, { quoted });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendText = (jid, text, quoted = "", options) =>
+    ѕуηтнσяiα.sendMessage(jid, { text: text, ...options }, { quoted });
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -418,14 +422,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнiα.sendMessage(
+    return await ѕуηтнσяiα.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendVideo = async (
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -442,14 +446,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнiα.sendMessage(
+    return await ѕуηтнσяiα.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -459,15 +463,15 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнiα.sendMessage(
+    return await ѕуηтнσяiα.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    ѕуηтнiα.sendMessage(
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    ѕуηтнσяiα.sendMessage(
       jid,
       {
         text: text,
@@ -480,8 +484,8 @@ async function mågneum() {
       },
       { quoted }
     );
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -498,15 +502,15 @@ async function mågneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await ѕуηтнiα.sendMessage(
+    await ѕуηтнσяiα.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
     );
     return buffer;
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -523,15 +527,15 @@ async function mågneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await ѕуηтнiα.sendMessage(
+    await ѕуηтнσяiα.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
     );
     return buffer;
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.downloadAndSaveMediaMessage = async (
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -553,7 +557,7 @@ async function mågneum() {
     return trueFileName;
   };
 
-  ѕуηтнiα.downloadMediaMessage = async (message) => {
+  ѕуηтнσяiα.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -566,8 +570,8 @@ async function mågneum() {
 
     return buffer;
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.sendMedia = async (
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -575,7 +579,7 @@ async function mågneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await ѕуηтнiα.getFile(path, true);
+    let types = await ѕуηтнσяiα.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -603,15 +607,15 @@ async function mågneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await ѕуηтнiα.sendMessage(
+    await ѕуηтнσяiα.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
     );
     return fs.promises.unlink(pathFile);
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.copyNForward = async (
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.copyNForward = async (
     jid,
     message,
     forceForward = false,
@@ -662,17 +666,17 @@ async function mågneum() {
           }
         : {}
     );
-    await ѕуηтнiα.relayMessage(jid, waMessage.message, {
+    await ѕуηтнσяiα.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  ѕуηтнiα.cMod = (
+  ѕуηтнσяiα.cMod = (
     jid,
     copy,
     text = "",
-    sender = ѕуηтнiα.user.id,
+    sender = ѕуηтнσяiα.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -701,12 +705,12 @@ async function mågneum() {
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === ѕуηтнiα.user.id;
+    copy.key.fromMe = sender === ѕуηтнσяiα.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.getFile = async (PATH, save) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -736,14 +740,14 @@ async function mågneum() {
       data,
     };
   };
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.ws.on("CB:call", async (update) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.ws.on("CB:call", async (update) => {
     const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    // let person = await ѕуηтнiα.sendContact(callerId, global.owner);
-    ѕуηтнiα.sendMessage(
+    // let person = await ѕуηтнσяiα.sendContact(callerId, global.owner);
+    ѕуηтнσяiα.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -751,17 +755,17 @@ async function mågneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await ѕуηтнiα.updateBlockStatus(callerId, "block");
+    await ѕуηтнσяiα.updateBlockStatus(callerId, "block");
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  ѕуηтнiα.ev.on("contacts.update", async (update) => {
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ѕуηтнσяiα.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = ѕуηтнiα.decodeJid(contact.id);
+      let jid = ѕуηтнσяiα.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
   });
-  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   setInterval(async () => {
     var _Type = [
       "🎭designer",
@@ -774,8 +778,8 @@ async function mågneum() {
       "💡maker",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await ѕуηтнiα.updateProfileStatus(
-      "Feeling: " + __Feeling + "  :synthia by magneum"
+    await ѕуηтнσяiα.updateProfileStatus(
+      "Feeling: " + __Feeling + "  :synthoria by magneum"
     );
     await gitPull();
   }, 1000 * 10);

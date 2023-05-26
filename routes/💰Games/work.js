@@ -47,7 +47,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
             `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./src/synthia.jpg"
+            "./src/synthoria.jpg"
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
@@ -60,7 +60,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              "./src/synthia.jpg"
+              "./src/synthoria.jpg"
             );
           } else {
             let amount = Math.floor(Math.random() * 80) + 1;
@@ -76,7 +76,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
-              "./src/synthia.jpg"
+              "./src/synthoria.jpg"
             );
           }
         }

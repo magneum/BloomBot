@@ -160,7 +160,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               νℓкhat,
               `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-              "./src/synthia.jpg"
+              "./src/synthoria.jpg"
             );
           }
           ѕуηтнiα.Robbery.findOne(
@@ -189,7 +189,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                   νℓкhat,
                   `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               } else {
                 if (userEco.money < ItemPrice) {
@@ -204,7 +204,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./src/synthia.jpg"
+                    "./src/synthoria.jpg"
                   );
                 }
 
@@ -226,7 +226,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./src/synthia.jpg"
+                    "./src/synthoria.jpg"
                   );
                 }
 
@@ -248,7 +248,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./src/synthia.jpg"
+                    "./src/synthoria.jpg"
                   );
                 }
 
@@ -270,7 +270,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./src/synthia.jpg"
+                    "./src/synthoria.jpg"
                   );
                 }
                 return await ѕуηтнiα.imgB(
@@ -279,7 +279,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                   `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
             }
@@ -329,7 +329,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
 
@@ -354,7 +354,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
 
@@ -368,7 +368,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
 
@@ -379,7 +379,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                   `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
 
@@ -405,7 +405,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./src/synthia.jpg"
+                  "./src/synthoria.jpg"
                 );
               }
             }
