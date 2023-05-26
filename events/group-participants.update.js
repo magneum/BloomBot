@@ -39,7 +39,7 @@ module.exports = async (VօxB໐t, update, store) => {
 *📢ID:* ${update.id}
 
 > Firstly Welcome.
-> I am Synthoria Whatsapp Bot.
+> I am VօxB໐t Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
           footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -49,8 +49,8 @@ module.exports = async (VօxB໐t, update, store) => {
               type: 1,
             },
             {
-              buttonId: `${VօxB໐t.prefix}Synthoria`,
-              buttonText: { displayText: `${VօxB໐t.prefix}Synthoria` },
+              buttonId: `${VօxB໐t.prefix}VօxB໐t`,
+              buttonText: { displayText: `${VօxB໐t.prefix}VօxB໐t` },
               type: 1,
             },
           ],

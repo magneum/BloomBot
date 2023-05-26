@@ -168,9 +168,9 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
   ѕуηтнiα.ffmpeg = ffmpeg;
   ѕуηтнiα.pathFFmpeg = require("ffmpeg-static");
 
-  ѕуηтнiα.memberRespA = [];
-  ѕуηтнiα.memberRespB = [];
-  ѕуηтнiα.resp1 = await ѕуηтнiα.groupInviteCode("120363020792949649@g.us");
+  // ѕуηтнiα.memberRespA = [];
+  // ѕуηтнiα.memberRespB = [];
+  // ѕуηтнiα.resp1 = await ѕуηтнiα.groupInviteCode("120363020792949649@g.us");
   ѕуηтнiα.letResp = [
     "h",
     "m",
@@ -179,7 +179,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     "list",
     "command",
     "commands",
-    "Synthoria",
+    "VօxB໐t",
     "Commands",
   ];
 

@@ -1,6 +1,6 @@
 {
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "name": "voxbot",
   "description": "voxbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
