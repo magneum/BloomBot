@@ -30,7 +30,7 @@ exports.noPrivate = async (ѕуηтнiα, νℓкhat, update) => {
             ѕуηтнiα,
             νℓкhat,
             `*Dear* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
-• This Private Is Being Guarded By Vlkyre Ai!
+• This Private Is Being Guarded By Synthia Ai!
 • Do Not Spam The Chat Box!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
@@ -47,7 +47,7 @@ exports.noPrivate = async (ѕуηтнiα, νℓкhat, update) => {
             ѕуηтнiα,
             νℓкhat,
             `*Dear* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
-• This Private Is Being Guarded By Vlkyre Ai!
+• This Private Is Being Guarded By Synthia Ai!
 • Do Not Spam The Chat Box!
 
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭

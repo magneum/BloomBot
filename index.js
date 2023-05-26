@@ -110,10 +110,10 @@ async function mågneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/vlkyre", (request, response) => {
-    response.sendFile("views/vlkyre.html", { root: __dirname });
+  νℓpage.get("/synthia", (request, response) => {
+    response.sendFile("views/synthia.html", { root: __dirname });
   });
-  νℓpage.post("/vlkyre", urlencodedParser, (request, response) => {
+  νℓpage.post("/synthia", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -141,7 +141,7 @@ async function mågneum() {
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "vlkyre-by-magneum", "Chrome", "4.0.0"],
+    browser: [process.env.deployer || "synthia-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -775,7 +775,7 @@ async function mågneum() {
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await ѕуηтнiα.updateProfileStatus(
-      "Feeling: " + __Feeling + "  :vlkyre by magneum"
+      "Feeling: " + __Feeling + "  :synthia by magneum"
     );
     await gitPull();
   }, 1000 * 10);

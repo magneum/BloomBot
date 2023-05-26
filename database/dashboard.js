@@ -225,7 +225,7 @@ var dBoardSchema = new mongoose.Schema({
   scringe: Number,
 
   list: Number,
-  vlkyre: Number,
+  synthia: Number,
   dashboard: Number,
   animationlist: Number,
   audiofilterlist: Number,

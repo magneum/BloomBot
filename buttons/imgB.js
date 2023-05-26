@@ -24,7 +24,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, i
           image: { url: imåge },
           caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Synthia™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ѕуηтнiα.prefix}Dashboard`,
@@ -60,7 +60,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Synthia™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ѕуηтнiα.prefix}Dashboard`,
@@ -91,7 +91,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: imåge },
           caption: `*📢ID:* ${νℓкhat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*Synthia™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ѕуηтнiα.prefix}Dashboard`,

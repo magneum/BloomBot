@@ -259,11 +259,11 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
   );
   var LOGOS = [
-    "vlkyre_ (1).png",
-    "vlkyre_ (2).png",
-    "vlkyre_ (3).png",
-    "vlkyre_ (4).png",
-    "vlkyre_ (5).png",
+    "synthia_ (1).png",
+    "synthia_ (2).png",
+    "synthia_ (3).png",
+    "synthia_ (4).png",
+    "synthia_ (5).png",
   ];
   var i = Math.floor(Math.random() * LOGOS.length);
   ѕуηтнiα.logo = "./src/logo/" + LOGOS[i];

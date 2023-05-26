@@ -26,7 +26,7 @@ subprocess.run(["node", "contents.js"], check=True,
                stdout=subprocess.PIPE).stdout
 try:
     os.system("git init --initial-branch=magneum")
-    os.system("git remote add origin https://github.com/Magneum/Vlkyre")
+    os.system("git remote add origin https://github.com/Magneum/synthia")
     os.system("git config pull.rebase false")
     os.system("git fetch origin magneum")
     os.system("git reset --hard origin/magneum")

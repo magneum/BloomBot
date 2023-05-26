@@ -34,7 +34,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 │║⦁ 💍 *Platinum:* 80 Commands
 │║⦁ 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
-      "./src/vlkyre.jpg"
+      "./src/synthia.jpg"
     );
   } catch (error) {
     return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);

@@ -15,7 +15,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
   try {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ѕуηтнiα.profilePictureUrl(νℓкhat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/synthia.jpg";
   }
   await ѕуηтнiα.dashboard.findOne(
     {
@@ -218,7 +218,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, updatedb) => {
           zettaiRyouiki: 0,
 
           list: 0,
-          vlkyre: 0,
+          synthia: 0,
           dashboard: 0,
 
           waifu: 0,

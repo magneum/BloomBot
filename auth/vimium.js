@@ -55,7 +55,7 @@ exports.vimium = async (ѕуηтнiα, νℓкhat, update, store) => {
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
 *💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,
-              "./src/vlkyre.jpg"
+              "./src/synthia.jpg"
             );
           }
         } else {

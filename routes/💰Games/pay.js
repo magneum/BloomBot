@@ -150,7 +150,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  "./src/vlkyre.jpg"
+                  "./src/synthia.jpg"
                 );
               }
 
@@ -176,7 +176,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                "./src/vlkyre.jpg"
+                "./src/synthia.jpg"
               );
             }
           );

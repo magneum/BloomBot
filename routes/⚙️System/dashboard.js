@@ -27,7 +27,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 
 *❗Problem?*
 > Doesn't show dashboard?
-> type ${ѕуηтнiα.prefix}help in vlkyre official group
+> type ${ѕуηтнiα.prefix}help in synthia official group
 > head back to bit.ly/magneum
 > try to login`,
     "./src/login.png"

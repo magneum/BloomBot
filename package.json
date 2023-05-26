@@ -1,8 +1,8 @@
 {
+  "name": "synthia",
   "main": "index.js",
   "version": "0.3.1",
-  "name": "vlkyre-bot",
-  "description": "Vlkyre is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+  "description": "synthia is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"

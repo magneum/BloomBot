@@ -46,7 +46,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
             `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./src/vlkyre.jpg"
+            "./src/synthia.jpg"
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
@@ -59,7 +59,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              "./src/vlkyre.jpg"
+              "./src/synthia.jpg"
             );
           } else {
             let fishID = Math.floor(Math.random() * 10) + 1;
@@ -86,7 +86,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,
-              "./src/vlkyre.jpg"
+              "./src/synthia.jpg"
             );
           }
         }
