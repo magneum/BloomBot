@@ -11,11 +11,11 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const logger = require("../logger");
+const logs = require("../logs");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  logs.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("../global.js");
@@ -30,47 +30,47 @@ module.exports = async (νℓкуяє, update, store, mågneum) => {
     qr,
     receivedPendingNotifications,
   } = update;
-  if (connection == "connecting") logger.info("🐲: Connecting to WhatsApp...▶");
-  else if (connection == "open") logger.info("🐲: Login successful! ▶");
+  if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
+  else if (connection == "open") logs.info("🐲: Login successful! ▶");
   else if (connection == "close") {
     let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
     if (reason === DisconnectReason.badSession) {
-      logger.error(
+      logs.error(
         `❌: Bad Session File, Please Delete Session and Scan Again`
       );
       // νℓкуяє.logout();
     } else if (reason === DisconnectReason.connectionClosed) {
-      logger.error("❌: Connection closed, reconnecting....");
+      logs.error("❌: Connection closed, reconnecting....");
       await mågneum();
     } else if (reason === DisconnectReason.connectionLost) {
-      logger.error("❌: Connection Lost from Server, reconnecting...");
+      logs.error("❌: Connection Lost from Server, reconnecting...");
       await mågneum();
     } else if (reason === DisconnectReason.connectionReplaced) {
-      logger.error(
+      logs.error(
         "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
       );
       // νℓкуяє.logout();
     } else if (reason === DisconnectReason.loggedOut) {
-      logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+      logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
       process.exit(0);
     } else if (reason === DisconnectReason.restartRequired) {
-      logger.error("❌: Restart Required, Restarting...");
+      logs.error("❌: Restart Required, Restarting...");
       await mågneum();
     } else if (reason === DisconnectReason.timedOut) {
-      logger.error("❌: Connection TimedOut, Reconnecting...");
+      logs.error("❌: Connection TimedOut, Reconnecting...");
       await mågneum();
     } else
       νℓкуяє.end(
-        logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+        logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
       );
-  } else if (isOnline === true) logger.debug("🐲: Online.");
-  else if (isOnline === false) logger.error("🐲: Offine.");
+  } else if (isOnline === true) logs.debug("🐲: Online.");
+  else if (isOnline === false) logs.error("🐲: Offine.");
   else if (receivedPendingNotifications === true)
-    logger.debug("🐲: Received Pending Notifications.");
+    logs.debug("🐲: Received Pending Notifications.");
   else if (receivedPendingNotifications === false)
-    logger.error("🐲: Not Received Pending Notifications.");
-  else if (isNewLogin === true) logger.debug("🐲: New Login.");
-  else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-  else if (qr) logger.info("Qr: "), console.log(qr);
-  else logger.info("🐲: Connection...", update);
+    logs.error("🐲: Not Received Pending Notifications.");
+  else if (isNewLogin === true) logs.debug("🐲: New Login.");
+  else if (isNewLogin === false) logs.error("🐲: Not New Login.");
+  else if (qr) logs.info("Qr: "), console.log(qr);
+  else logs.info("🐲: Connection...", update);
 };

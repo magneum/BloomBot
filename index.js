@@ -11,11 +11,11 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const logger = require("./logger");
+const logs = require("./logs");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  logs.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("./global.js");
@@ -53,14 +53,14 @@ async function mågneum() {
       useFindAndModify: false,
     })
     .catch((error) => {
-      logger.error("❌: Unable to Connect with Mongoose.");
-      logger.error(error);
+      logs.error("❌: Unable to Connect with Mongoose.");
+      logs.error(error);
     })
-    .then(logger.info("🐲: Connected with Mongoose."));
+    .then(logs.info("🐲: Connected with Mongoose."));
   var νℓpage = express();
   var sequelize = DATABASE;
   var store = makeInMemoryStore({
-    logger: pino().child({ level: "silent", stream: "store" }),
+    logs: pino().child({ level: "silent", stream: "store" }),
   });
   var getVersionWaweb = () => {
     var version;
@@ -79,7 +79,7 @@ async function mågneum() {
     await git.fetch();
     let newCommits = await git.log(["magneum..origin/magneum"]);
     if (newCommits.total) {
-      logger.info("🐲: Auto Updating...");
+      logs.info("🐲: Auto Updating...");
       require("child_process").exec(
         "git stash push --include-untracked && git stash drop"
       );
@@ -90,14 +90,14 @@ async function mågneum() {
               .exec("yarn install --ignore-engines")
               .stderr.pipe(process.stderr);
           console.clear();
-          logger.info("🐲: Updated the bot with latest changes.");
-          logger.info(
+          logs.info("🐲: Updated the bot with latest changes.");
+          logs.info(
             "🐲: Please restart the bot manually if it doesn't auto-restart."
           );
           process.exit(0);
         } else if (err) {
-          logger.error("❌: Could not pull latest changes!");
-          logger.info(err);
+          logs.error("❌: Could not pull latest changes!");
+          logs.info(err);
         }
       });
     }
@@ -124,7 +124,7 @@ async function mågneum() {
         ID: phoneNum + "@s.whatsapp.net",
       },
       async (error, uBoard) => {
-        if (error) return logger.error("❌:", error);
+        if (error) return logs.error("❌:", error);
         if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
         response.render(__dirname + "/views/dashboard.html", {
           uBoard: uBoard,
@@ -132,7 +132,7 @@ async function mågneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("VLKYRE: started at port: " + PORT));
+  νℓpage.listen(PORT, logs.info("VLKYRE: started at port: " + PORT));
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
@@ -141,7 +141,7 @@ async function mågneum() {
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
-    logger: pino({ level: "silent" }),
+    logs: pino({ level: "silent" }),
     browser: [process.env.deployer || "vlkyre-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
@@ -171,50 +171,49 @@ async function mågneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting")
-      logger.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logger.info("🐲: Login successful! ▶");
+    if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
+    else if (connection == "open") logs.info("🐲: Login successful! ▶");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        logger.error(
+        logs.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
         νℓкуяє.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
+        logs.error("❌: Connection closed, reconnecting....");
         await mågneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
+        logs.error("❌: Connection Lost from Server, reconnecting...");
         await mågneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
+        logs.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
         νℓкуяє.logout();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
+        logs.error("❌: Restart Required, Restarting...");
         await mågneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
+        logs.error("❌: Connection TimedOut, Reconnecting...");
         await mågneum();
       } else
         νℓкуяє.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+          logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
-    } else if (isOnline === true) logger.debug("🐲: Online.");
-    else if (isOnline === false) logger.error("🐲: Offine.");
+    } else if (isOnline === true) logs.debug("🐲: Online.");
+    else if (isOnline === false) logs.error("🐲: Offine.");
     else if (receivedPendingNotifications === true)
-      logger.debug("🐲: Received Pending Notifications.");
+      logs.debug("🐲: Received Pending Notifications.");
     else if (receivedPendingNotifications === false)
-      logger.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logger.debug("🐲: New Login.");
-    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
-    else logger.info("🐲: Connection...", update);
+      logs.error("🐲: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logs.debug("🐲: New Login.");
+    else if (isNewLogin === false) logs.error("🐲: Not New Login.");
+    else if (qr) logs.info("Qr: "), console.log(qr);
+    else logs.info("🐲: Connection...", update);
   });
   ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   νℓкуяє.ev.on("messages.upsert", async (update) => {
@@ -234,7 +233,7 @@ async function mågneum() {
   νℓкуяє.ev.on("group-participants.update", async (update) => {
     let metadata = await νℓкуяє.groupMetadata(update.id);
     let participants = update.participants;
-    logger.info(update);
+    logs.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
@@ -276,7 +275,7 @@ async function mågneum() {
               contextInfo: { mentionedJid: [sperson] },
             }
           )
-          .catch((error) => logger.error(error));
+          .catch((error) => logs.error(error));
       } else if (update.action == "remove") {
         return;
       } else {
@@ -780,4 +779,4 @@ async function mågneum() {
     await gitPull();
   }, 1000 * 10);
 }
-mågneum().catch((error) => logger.error(error));
+mågneum().catch((error) => logs.error(error));

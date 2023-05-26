@@ -11,11 +11,11 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const logger = require("../logger");
+const logs = require("../logs");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  logs.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("../global.js");

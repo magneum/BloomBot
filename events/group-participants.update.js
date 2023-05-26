@@ -11,18 +11,18 @@
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-const logger = require("../logger");
+const logs = require("../logs");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  logs.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("../global.js");
 module.exports = async (νℓкуяє, update, store) => {
   let metadata = await νℓкуяє.groupMetadata(update.id);
   let participants = update.participants;
-  logger.info(update);
+  logs.info(update);
   for (let sperson of participants) {
     var imåge;
     try {
@@ -63,7 +63,7 @@ module.exports = async (νℓкуяє, update, store) => {
             contextInfo: { mentionedJid: [sperson] },
           }
         )
-        .catch((error) => logger.error(error));
+        .catch((error) => logs.error(error));
     } else if (update.action == "remove") {
       return;
     } else {
