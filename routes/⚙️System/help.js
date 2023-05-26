@@ -1,25 +1,25 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐨𝐫𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-// ║ 
+// ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthia was made for fun purpose and to make group management easier.
+// ║ Synthoria was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
+module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
-  timestampe = ѕуηтнiα.speed();
-  latensie = ѕуηтнiα.speed() - timestampe;
+  timestampe = ѕуηтнσяiα.speed();
+  latensie = ѕуηтнσяiα.speed() - timestampe;
   const runtime = function (seconds) {
     seconds = Number(seconds);
     d = Math.floor(seconds / (3600 * 24));
@@ -33,312 +33,312 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     return dDisplay + hDisplay + mDisplay + sDisplay;
   };
   const countFiles = (dir) =>
-    ѕуηтнiα.fs.readdirSync(dir).reduce((acc, file) => {
+    ѕуηтнσяiα.fs.readdirSync(dir).reduce((acc, file) => {
       const fileDir = `${dir}/${file}`;
-      if (ѕуηтнiα.fs.lstatSync(fileDir).isDirectory()) {
+      if (ѕуηтнσяiα.fs.lstatSync(fileDir).isDirectory()) {
         return (acc += countFiles(fileDir));
       }
-      if (ѕуηтнiα.fs.lstatSync(fileDir).isFile()) {
+      if (ѕуηтнσяiα.fs.lstatSync(fileDir).isFile()) {
         return ++acc;
       }
       return acc;
     }, 0);
-  return await ѕуηтнiα.imgB(
-    ѕуηтнiα,
+  return await ѕуηтнσяiα.imgB(
+    ѕуηтнσяiα,
     νℓкhat,
-    `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
-> ⒸSynthia: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+    `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
+> ⒸSynthoria: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./routes")}
 
 
 ╔══☰ *❗ CONSOLE*
 ║⦁ *Uptime :* ${runtime(process.uptime())}
-║⦁ *OS Release:* ${ѕуηтнiα.os.release()}
-║⦁ *OS Type:*   ${ѕуηтнiα.os.type()}
-║⦁ *Directory:*  ${ѕуηтнiα.os.homedir()}
+║⦁ *OS Release:* ${ѕуηтнσяiα.os.release()}
+║⦁ *OS Type:*   ${ѕуηтнσяiα.os.type()}
+║⦁ *Directory:*  ${ѕуηтнσяiα.os.homedir()}
 ║⦁ *Speed :* ${latensie.toFixed(4)} sec
 ║⦁ *Ram Usage :* ${ramUsage}
-║⦁ *Platform :* ${ѕуηтнiα.os.platform()}
-║⦁ *Free memory:* ${ѕуηтнiα.os.freemem()}
-║⦁ *Total memory:* ${ѕуηтнiα.os.totalmem()}
-║⦁ *Host device :* ${ѕуηтнiα.os.hostname()}
-║⦁ *OS Version:* ${ѕуηтнiα.os.version()}
+║⦁ *Platform :* ${ѕуηтнσяiα.os.platform()}
+║⦁ *Free memory:* ${ѕуηтнσяiα.os.freemem()}
+║⦁ *Total memory:* ${ѕуηтнσяiα.os.totalmem()}
+║⦁ *Host device :* ${ѕуηтнσяiα.os.hostname()}
+║⦁ *OS Version:* ${ѕуηтнσяiα.os.version()}
 ┕╚═☰
 ╔══☰ *❕ COMMANDS*
-║⦁ 🐉 ${ѕуηтнiα.prefix}emotionslist
-║⦁ 📢 ${ѕуηтнiα.prefix}audiofilterlist
-║⦁ 📼 ${ѕуηтнiα.prefix}conversionlist
-║⦁ 📥 ${ѕуηтнiα.prefix}downloadlist
-║⦁ 💰 ${ѕуηтнiα.prefix}gameslist
-║⦁ 🔰 ${ѕуηтнiα.prefix}grouplist
-║⦁ 🍁 ${ѕуηтнiα.prefix}ownerlist
-║⦁ 🖼️ ${ѕуηтнiα.prefix}photolist
-║⦁ 🔎 ${ѕуηтнiα.prefix}searchlist
-║⦁ ⭕ ${ѕуηтнiα.prefix}ytfilterlist
-║⦁ 🦄 ${ѕуηтнiα.prefix}sfwlist
-║⦁ 🍑 ${ѕуηтнiα.prefix}hentailist
-║⦁ 👅 ${ѕуηтнiα.prefix}nsfwlist
+║⦁ 🐉 ${ѕуηтнσяiα.prefix}emotionslist
+║⦁ 📢 ${ѕуηтнσяiα.prefix}audiofilterlist
+║⦁ 📼 ${ѕуηтнσяiα.prefix}conversionlist
+║⦁ 📥 ${ѕуηтнσяiα.prefix}downloadlist
+║⦁ 💰 ${ѕуηтнσяiα.prefix}gameslist
+║⦁ 🔰 ${ѕуηтнσяiα.prefix}grouplist
+║⦁ 🍁 ${ѕуηтнσяiα.prefix}ownerlist
+║⦁ 🖼️ ${ѕуηтнσяiα.prefix}photolist
+║⦁ 🔎 ${ѕуηтнσяiα.prefix}searchlist
+║⦁ ⭕ ${ѕуηтнσяiα.prefix}ytfilterlist
+║⦁ 🦄 ${ѕуηтнσяiα.prefix}sfwlist
+║⦁ 🍑 ${ѕуηтнσяiα.prefix}hentailist
+║⦁ 👅 ${ѕуηтнσяiα.prefix}nsfwlist
 ╚══════⋑
 
 
 
 ┌╔══☰ *🍁${pfname.toUpperCase()}🍁*
-│║⦁ ${ѕуηтнiα.prefix}ban
-│║⦁ ${ѕуηтнiα.prefix}broadcast
-│║⦁ ${ѕуηтнiα.prefix}join
-│║⦁ ${ѕуηтнiα.prefix}leave
-│║⦁ ${ѕуηтнiα.prefix}reboot
-│║⦁ ${ѕуηтнiα.prefix}rules
-│║⦁ ${ѕуηтнiα.prefix}unban
-│║⦁ ${ѕуηтнiα.prefix}verify
+│║⦁ ${ѕуηтнσяiα.prefix}ban
+│║⦁ ${ѕуηтнσяiα.prefix}broadcast
+│║⦁ ${ѕуηтнσяiα.prefix}join
+│║⦁ ${ѕуηтнσяiα.prefix}leave
+│║⦁ ${ѕуηтнσяiα.prefix}reboot
+│║⦁ ${ѕуηтнσяiα.prefix}rules
+│║⦁ ${ѕуηтнσяiα.prefix}unban
+│║⦁ ${ѕуηтнσяiα.prefix}verify
 ┕╚═☰
 ╔══☰ *📢${pfname.toUpperCase()}📢*
-│║⦁ ${ѕуηтнiα.prefix}panning
-│║⦁ ${ѕуηтнiα.prefix}bassboost
-│║⦁ ${ѕуηтнiα.prefix}echo
-│║⦁ ${ѕуηтнiα.prefix}fast
-│║⦁ ${ѕуηтнiα.prefix}flanger
-│║⦁ ${ѕуηтнiα.prefix}nightcore
-│║⦁ ${ѕуηтнiα.prefix}phaser
-│║⦁ ${ѕуηтнiα.prefix}reverse
-│║⦁ ${ѕуηтнiα.prefix}slow
-│║⦁ ${ѕуηтнiα.prefix}speed
-│║⦁ ${ѕуηтнiα.prefix}subboost
-│║⦁ ${ѕуηтнiα.prefix}superslow
-│║⦁ ${ѕуηтнiα.prefix}superspeed
-│║⦁ ${ѕуηтнiα.prefix}surround
-│║⦁ ${ѕуηтнiα.prefix}vaporwave
-│║⦁ ${ѕуηтнiα.prefix}vibrato
+│║⦁ ${ѕуηтнσяiα.prefix}panning
+│║⦁ ${ѕуηтнσяiα.prefix}bassboost
+│║⦁ ${ѕуηтнσяiα.prefix}echo
+│║⦁ ${ѕуηтнσяiα.prefix}fast
+│║⦁ ${ѕуηтнσяiα.prefix}flanger
+│║⦁ ${ѕуηтнσяiα.prefix}nightcore
+│║⦁ ${ѕуηтнσяiα.prefix}phaser
+│║⦁ ${ѕуηтнσяiα.prefix}reverse
+│║⦁ ${ѕуηтнσяiα.prefix}slow
+│║⦁ ${ѕуηтнσяiα.prefix}speed
+│║⦁ ${ѕуηтнσяiα.prefix}subboost
+│║⦁ ${ѕуηтнσяiα.prefix}superslow
+│║⦁ ${ѕуηтнσяiα.prefix}superspeed
+│║⦁ ${ѕуηтнσяiα.prefix}surround
+│║⦁ ${ѕуηтнσяiα.prefix}vaporwave
+│║⦁ ${ѕуηтнσяiα.prefix}vibrato
 ┕╚═☰
 ╔══☰ *📼${pfname.toUpperCase()}📼*
-│║⦁ ${ѕуηтнiα.prefix}carbon
-│║⦁ ${ѕуηтнiα.prefix}ship
-│║⦁ ${ѕуηтнiα.prefix}sticker
-│║⦁ ${ѕуηтнiα.prefix}tinyurl
-│║⦁ ${ѕуηтнiα.prefix}tourl
-│║⦁ ${ѕуηтнiα.prefix}tts
+│║⦁ ${ѕуηтнσяiα.prefix}carbon
+│║⦁ ${ѕуηтнσяiα.prefix}ship
+│║⦁ ${ѕуηтнσяiα.prefix}sticker
+│║⦁ ${ѕуηтнσяiα.prefix}tinyurl
+│║⦁ ${ѕуηтнσяiα.prefix}tourl
+│║⦁ ${ѕуηтнσяiα.prefix}tts
 ┕╚═☰
 ╔══☰ *📥${pfname.toUpperCase()}📥* 
-│║⦁ ${ѕуηтнiα.prefix}yta
-│║⦁ ${ѕуηтнiα.prefix}play
-│║⦁ ${ѕуηтнiα.prefix}song
-│║⦁ ${ѕуηтнiα.prefix}sing
-│║⦁ ${ѕуηтнiα.prefix}ytmp3
-│║⦁ ${ѕуηтнiα.prefix}music
-│║⦁ ${ѕуηтнiα.prefix}ytplay
-│║⦁ ${ѕуηтнiα.prefix}ytaudio
-│║⦁ ${ѕуηтнiα.prefix}ytmusic
-│║⦁ ${ѕуηтнiα.prefix}youtubemusic
+│║⦁ ${ѕуηтнσяiα.prefix}yta
+│║⦁ ${ѕуηтнσяiα.prefix}play
+│║⦁ ${ѕуηтнσяiα.prefix}song
+│║⦁ ${ѕуηтнσяiα.prefix}sing
+│║⦁ ${ѕуηтнσяiα.prefix}ytmp3
+│║⦁ ${ѕуηтнσяiα.prefix}music
+│║⦁ ${ѕуηтнσяiα.prefix}ytplay
+│║⦁ ${ѕуηтнσяiα.prefix}ytaudio
+│║⦁ ${ѕуηтнσяiα.prefix}ytmusic
+│║⦁ ${ѕуηтнσяiα.prefix}youtubemusic
 │║⦁ 
-│║⦁ ${ѕуηтнiα.prefix}ytv
-│║⦁ ${ѕуηтнiα.prefix}watch
-│║⦁ ${ѕуηтнiα.prefix}stream
-│║⦁ ${ѕуηтнiα.prefix}ytmp4
-│║⦁ ${ѕуηтнiα.prefix}video
-│║⦁ ${ѕуηтнiα.prefix}ytwatch
-│║⦁ ${ѕуηтнiα.prefix}ytvideo
-│║⦁ ${ѕуηтнiα.prefix}youtubevideo
+│║⦁ ${ѕуηтнσяiα.prefix}ytv
+│║⦁ ${ѕуηтнσяiα.prefix}watch
+│║⦁ ${ѕуηтнσяiα.prefix}stream
+│║⦁ ${ѕуηтнσяiα.prefix}ytmp4
+│║⦁ ${ѕуηтнσяiα.prefix}video
+│║⦁ ${ѕуηтнσяiα.prefix}ytwatch
+│║⦁ ${ѕуηтнσяiα.prefix}ytvideo
+│║⦁ ${ѕуηтнσяiα.prefix}youtubevideo
 ┕╚═☰
 ╔══☰ *🐉${pfname.toUpperCase()}🐉* 
-│║⦁ ${ѕуηтнiα.prefix}bite
-│║⦁ ${ѕуηтнiα.prefix}blush
-│║⦁ ${ѕуηтнiα.prefix}bonk
-│║⦁ ${ѕуηтнiα.prefix}bored
-│║⦁ ${ѕуηтнiα.prefix}confused
-│║⦁ ${ѕуηтнiα.prefix}cry
-│║⦁ ${ѕуηтнiα.prefix}cuddle
-│║⦁ ${ѕуηтнiα.prefix}dance
-│║⦁ ${ѕуηтнiα.prefix}goodnight
-│║⦁ ${ѕуηтнiα.prefix}happy
-│║⦁ ${ѕуηтнiα.prefix}highfive
-│║⦁ ${ѕуηтнiα.prefix}hug
-│║⦁ ${ѕуηтнiα.prefix}kill
-│║⦁ ${ѕуηтнiα.prefix}kiss
-│║⦁ ${ѕуηтнiα.prefix}nervous
-│║⦁ ${ѕуηтнiα.prefix}pat
-│║⦁ ${ѕуηтнiα.prefix}poke
-│║⦁ ${ѕуηтнiα.prefix}punch
-│║⦁ ${ѕуηтнiα.prefix}sad
-│║⦁ ${ѕуηтнiα.prefix}scream
-│║⦁ ${ѕуηтнiα.prefix}slap
-│║⦁ ${ѕуηтнiα.prefix}smile
-│║⦁ ${ѕуηтнiα.prefix}stare
-│║⦁ ${ѕуηтнiα.prefix}wave
-│║⦁ ${ѕуηтнiα.prefix}wink
-│║⦁ ${ѕуηтнiα.prefix}yeet
-│║⦁ ${ѕуηтнiα.prefix}yes
+│║⦁ ${ѕуηтнσяiα.prefix}bite
+│║⦁ ${ѕуηтнσяiα.prefix}blush
+│║⦁ ${ѕуηтнσяiα.prefix}bonk
+│║⦁ ${ѕуηтнσяiα.prefix}bored
+│║⦁ ${ѕуηтнσяiα.prefix}confused
+│║⦁ ${ѕуηтнσяiα.prefix}cry
+│║⦁ ${ѕуηтнσяiα.prefix}cuddle
+│║⦁ ${ѕуηтнσяiα.prefix}dance
+│║⦁ ${ѕуηтнσяiα.prefix}goodnight
+│║⦁ ${ѕуηтнσяiα.prefix}happy
+│║⦁ ${ѕуηтнσяiα.prefix}highfive
+│║⦁ ${ѕуηтнσяiα.prefix}hug
+│║⦁ ${ѕуηтнσяiα.prefix}kill
+│║⦁ ${ѕуηтнσяiα.prefix}kiss
+│║⦁ ${ѕуηтнσяiα.prefix}nervous
+│║⦁ ${ѕуηтнσяiα.prefix}pat
+│║⦁ ${ѕуηтнσяiα.prefix}poke
+│║⦁ ${ѕуηтнσяiα.prefix}punch
+│║⦁ ${ѕуηтнσяiα.prefix}sad
+│║⦁ ${ѕуηтнσяiα.prefix}scream
+│║⦁ ${ѕуηтнσяiα.prefix}slap
+│║⦁ ${ѕуηтнσяiα.prefix}smile
+│║⦁ ${ѕуηтнσяiα.prefix}stare
+│║⦁ ${ѕуηтнσяiα.prefix}wave
+│║⦁ ${ѕуηтнσяiα.prefix}wink
+│║⦁ ${ѕуηтнσяiα.prefix}yeet
+│║⦁ ${ѕуηтнσяiα.prefix}yes
 ┕╚═☰
 ╔══☰ *💰${pfname.toUpperCase()}💰* 
-│║⦁ ${ѕуηтнiα.prefix}balance
-│║⦁ ${ѕуηтнiα.prefix}buy
-│║⦁ ${ѕуηтнiα.prefix}daily
-│║⦁ ${ѕуηтнiα.prefix}fish
-│║⦁ ${ѕуηтнiα.prefix}gamble
-│║⦁ ${ѕуηтнiα.prefix}inv
-│║⦁ ${ѕуηтнiα.prefix}pay
-│║⦁ ${ѕуηтнiα.prefix}rob
-│║⦁ ${ѕуηтнiα.prefix}store
-│║⦁ ${ѕуηтнiα.prefix}work
-│║⦁ ${ѕуηтнiα.prefix}zoo
+│║⦁ ${ѕуηтнσяiα.prefix}balance
+│║⦁ ${ѕуηтнσяiα.prefix}buy
+│║⦁ ${ѕуηтнσяiα.prefix}daily
+│║⦁ ${ѕуηтнσяiα.prefix}fish
+│║⦁ ${ѕуηтнσяiα.prefix}gamble
+│║⦁ ${ѕуηтнσяiα.prefix}inv
+│║⦁ ${ѕуηтнσяiα.prefix}pay
+│║⦁ ${ѕуηтнσяiα.prefix}rob
+│║⦁ ${ѕуηтнσяiα.prefix}store
+│║⦁ ${ѕуηтнσяiα.prefix}work
+│║⦁ ${ѕуηтнσяiα.prefix}zoo
 ┕╚═☰
 ╔══☰ *🔰${pfname.toUpperCase()}🔰* 
-│║⦁ ${ѕуηтнiα.prefix}antilink
-│║⦁ ${ѕуηтнiα.prefix}antinsfw
-│║⦁ ${ѕуηтнiα.prefix}delete
-│║⦁ ${ѕуηтнiα.prefix}group
-│║⦁ ${ѕуηтнiα.prefix}kick
-│║⦁ ${ѕуηтнiα.prefix}promote
-│║⦁ ${ѕуηтнiα.prefix}setdesc
-│║⦁ ${ѕуηтнiα.prefix}seticon
-│║⦁ ${ѕуηтнiα.prefix}tagall
+│║⦁ ${ѕуηтнσяiα.prefix}antilink
+│║⦁ ${ѕуηтнσяiα.prefix}antinsfw
+│║⦁ ${ѕуηтнσяiα.prefix}delete
+│║⦁ ${ѕуηтнσяiα.prefix}group
+│║⦁ ${ѕуηтнσяiα.prefix}kick
+│║⦁ ${ѕуηтнσяiα.prefix}promote
+│║⦁ ${ѕуηтнσяiα.prefix}setdesc
+│║⦁ ${ѕуηтнσяiα.prefix}seticon
+│║⦁ ${ѕуηтнσяiα.prefix}tagall
 ┕╚═☰
 ╔══☰ *🖼️${pfname.toUpperCase()}🖼️* 
-║> ${ѕуηтнiα.prefix}image
-║> ${ѕуηтнiα.prefix}unsplash
-│║⦁ ${ѕуηтнiα.prefix}pinterest
-│║⦁ ${ѕуηтнiα.prefix}wallpaper
+║> ${ѕуηтнσяiα.prefix}image
+║> ${ѕуηтнσяiα.prefix}unsplash
+│║⦁ ${ѕуηтнσяiα.prefix}pinterest
+│║⦁ ${ѕуηтнσяiα.prefix}wallpaper
 ┕╚═☰
 ╔══☰ *🔎${pfname.toUpperCase()}🔎* 
-│║⦁ ${ѕуηтнiα.prefix}advice
-│║⦁ ${ѕуηтнiα.prefix}anime
-│║⦁ ${ѕуηтнiα.prefix}chordlist
-│║⦁ ${ѕуηтнiα.prefix}fact
-│║⦁ ${ѕуηтнiα.prefix}getchord
-│║⦁ ${ѕуηтнiα.prefix}gify
-│║⦁ ${ѕуηтнiα.prefix}google
-│║⦁ ${ѕуηтнiα.prefix}instagram
-│║⦁ ${ѕуηтнiα.prefix}joke
-│║⦁ ${ѕуηтнiα.prefix}lyrics
-│║⦁ ${ѕуηтнiα.prefix}manga
-│║⦁ ${ѕуηтнiα.prefix}meme
-│║⦁ ${ѕуηтнiα.prefix}pokedex
-│║⦁ ${ѕуηтнiα.prefix}quote
-│║⦁ ${ѕуηтнiα.prefix}reddit
-│║⦁ ${ѕуηтнiα.prefix}ytsearch
+│║⦁ ${ѕуηтнσяiα.prefix}advice
+│║⦁ ${ѕуηтнσяiα.prefix}anime
+│║⦁ ${ѕуηтнσяiα.prefix}chordlist
+│║⦁ ${ѕуηтнσяiα.prefix}fact
+│║⦁ ${ѕуηтнσяiα.prefix}getchord
+│║⦁ ${ѕуηтнσяiα.prefix}gify
+│║⦁ ${ѕуηтнσяiα.prefix}google
+│║⦁ ${ѕуηтнσяiα.prefix}instagram
+│║⦁ ${ѕуηтнσяiα.prefix}joke
+│║⦁ ${ѕуηтнσяiα.prefix}lyrics
+│║⦁ ${ѕуηтнσяiα.prefix}manga
+│║⦁ ${ѕуηтнσяiα.prefix}meme
+│║⦁ ${ѕуηтнσяiα.prefix}pokedex
+│║⦁ ${ѕуηтнσяiα.prefix}quote
+│║⦁ ${ѕуηтнσяiα.prefix}reddit
+│║⦁ ${ѕуηтнσяiα.prefix}ytsearch
 ┕╚═☰
 ╔══☰ *🍑${pfname.toUpperCase()}🍑* 
-│║⦁ ${ѕуηтнiα.prefix}ass
-│║⦁ ${ѕуηтнiα.prefix}bdsm
-│║⦁ ${ѕуηтнiα.prefix}blowjob
-│║⦁ ${ѕуηтнiα.prefix}cum
-│║⦁ ${ѕуηтнiα.prefix}doujin
-│║⦁ ${ѕуηтнiα.prefix}feet
-│║⦁ ${ѕуηтнiα.prefix}femdom  
-│║⦁ ${ѕуηтнiα.prefix}foxgirl  
-│║⦁ ${ѕуηтнiα.prefix}glasses  
-│║⦁ ${ѕуηтнiα.prefix}hentai
-│║⦁ ${ѕуηтнiα.prefix}maid
-│║⦁ ${ѕуηтнiα.prefix}masturbation
-│║⦁ ${ѕуηтнiα.prefix}netorare
-│║⦁ ${ѕуηтнiα.prefix}orgy
-│║⦁ ${ѕуηтнiα.prefix}panties
-│║⦁ ${ѕуηтнiα.prefix}pussy
-│║⦁ ${ѕуηтнiα.prefix}school
-│║⦁ ${ѕуηтнiα.prefix}succubus
-│║⦁ ${ѕуηтнiα.prefix}tentacles
-│║⦁ ${ѕуηтнiα.prefix}thighs
-│║⦁ ${ѕуηтнiα.prefix}uglyBastard
-│║⦁ ${ѕуηтнiα.prefix}uniform
-│║⦁ ${ѕуηтнiα.prefix}yuri
-│║⦁ ${ѕуηтнiα.prefix}zettaiRyouiki
+│║⦁ ${ѕуηтнσяiα.prefix}ass
+│║⦁ ${ѕуηтнσяiα.prefix}bdsm
+│║⦁ ${ѕуηтнσяiα.prefix}blowjob
+│║⦁ ${ѕуηтнσяiα.prefix}cum
+│║⦁ ${ѕуηтнσяiα.prefix}doujin
+│║⦁ ${ѕуηтнσяiα.prefix}feet
+│║⦁ ${ѕуηтнσяiα.prefix}femdom  
+│║⦁ ${ѕуηтнσяiα.prefix}foxgirl  
+│║⦁ ${ѕуηтнσяiα.prefix}glasses  
+│║⦁ ${ѕуηтнσяiα.prefix}hentai
+│║⦁ ${ѕуηтнσяiα.prefix}maid
+│║⦁ ${ѕуηтнσяiα.prefix}masturbation
+│║⦁ ${ѕуηтнσяiα.prefix}netorare
+│║⦁ ${ѕуηтнσяiα.prefix}orgy
+│║⦁ ${ѕуηтнσяiα.prefix}panties
+│║⦁ ${ѕуηтнσяiα.prefix}pussy
+│║⦁ ${ѕуηтнσяiα.prefix}school
+│║⦁ ${ѕуηтнσяiα.prefix}succubus
+│║⦁ ${ѕуηтнσяiα.prefix}tentacles
+│║⦁ ${ѕуηтнσяiα.prefix}thighs
+│║⦁ ${ѕуηтнσяiα.prefix}uglyBastard
+│║⦁ ${ѕуηтнσяiα.prefix}uniform
+│║⦁ ${ѕуηтнσяiα.prefix}yuri
+│║⦁ ${ѕуηтнσяiα.prefix}zettaiRyouiki
 ┕╚═☰
 ╔══☰ *👅${pfname.toUpperCase()}👅* 
-│║⦁ ${ѕуηтнiα.prefix}nsfw
-│║⦁ ${ѕуηтнiα.prefix}nsfw2
-│║⦁ ${ѕуηтнiα.prefix}bonermaterial
-│║⦁ ${ѕуηтнiα.prefix}nsfw411
-│║⦁ ${ѕуηтнiα.prefix}iwanttofuckher
-│║⦁ ${ѕуηтнiα.prefix}exxxtras
-│║⦁ ${ѕуηтнiα.prefix}distension
-│║⦁ ${ѕуηтнiα.prefix}bimbofetish
-│║⦁ ${ѕуηтнiα.prefix}christiangirls
-│║⦁ ${ѕуηтнiα.prefix}dirtygaming
-│║⦁ ${ѕуηтнiα.prefix}sexybutnotporn
-│║⦁ ${ѕуηтнiα.prefix}femalepov
-│║⦁ ${ѕуηтнiα.prefix}omgbeckylookathiscock
-│║⦁ ${ѕуηтнiα.prefix}sexygirls
-│║⦁ ${ѕуηтнiα.prefix}breedingmaterial
-│║⦁ ${ѕуηтнiα.prefix}canthold
-│║⦁ ${ѕуηтнiα.prefix}toocuteforporn
-│║⦁ ${ѕуηтнiα.prefix}justhotwomen
-│║⦁ ${ѕуηтнiα.prefix}stripgirls
-│║⦁ ${ѕуηтнiα.prefix}hotstuffnsfw
-│║⦁ ${ѕуηтнiα.prefix}uncommonposes
-│║⦁ ${ѕуηтнiα.prefix}gifsofremoval
-│║⦁ ${ѕуηтнiα.prefix}nostalgiafapping
-│║⦁ ${ѕуηтнiα.prefix}truefmk
-│║⦁ ${ѕуηтнiα.prefix}nudes
-│║⦁ ${ѕуηтнiα.prefix}4k
-│║⦁ ${ѕуηтнiα.prefix}realgirls
-│║⦁ ${ѕуηтнiα.prefix}blowjobs
-│║⦁ ${ѕуηтнiα.prefix}milf
-│║⦁ ${ѕуηтнiα.prefix}milk
-│║⦁ ${ѕуηтнiα.prefix}milking
-│║⦁ ${ѕуηтнiα.prefix}lactating
-│║⦁ ${ѕуηтнiα.prefix}pussy
-│║⦁ ${ѕуηтнiα.prefix}cum
-│║⦁ ${ѕуηтнiα.prefix}slut
-│║⦁ ${ѕуηтнiα.prefix}cumslut
+│║⦁ ${ѕуηтнσяiα.prefix}nsfw
+│║⦁ ${ѕуηтнσяiα.prefix}nsfw2
+│║⦁ ${ѕуηтнσяiα.prefix}bonermaterial
+│║⦁ ${ѕуηтнσяiα.prefix}nsfw411
+│║⦁ ${ѕуηтнσяiα.prefix}iwanttofuckher
+│║⦁ ${ѕуηтнσяiα.prefix}exxxtras
+│║⦁ ${ѕуηтнσяiα.prefix}distension
+│║⦁ ${ѕуηтнσяiα.prefix}bimbofetish
+│║⦁ ${ѕуηтнσяiα.prefix}christiangirls
+│║⦁ ${ѕуηтнσяiα.prefix}dirtygaming
+│║⦁ ${ѕуηтнσяiα.prefix}sexybutnotporn
+│║⦁ ${ѕуηтнσяiα.prefix}femalepov
+│║⦁ ${ѕуηтнσяiα.prefix}omgbeckylookathiscock
+│║⦁ ${ѕуηтнσяiα.prefix}sexygirls
+│║⦁ ${ѕуηтнσяiα.prefix}breedingmaterial
+│║⦁ ${ѕуηтнσяiα.prefix}canthold
+│║⦁ ${ѕуηтнσяiα.prefix}toocuteforporn
+│║⦁ ${ѕуηтнσяiα.prefix}justhotwomen
+│║⦁ ${ѕуηтнσяiα.prefix}stripgirls
+│║⦁ ${ѕуηтнσяiα.prefix}hotstuffnsfw
+│║⦁ ${ѕуηтнσяiα.prefix}uncommonposes
+│║⦁ ${ѕуηтнσяiα.prefix}gifsofremoval
+│║⦁ ${ѕуηтнσяiα.prefix}nostalgiafapping
+│║⦁ ${ѕуηтнσяiα.prefix}truefmk
+│║⦁ ${ѕуηтнσяiα.prefix}nudes
+│║⦁ ${ѕуηтнσяiα.prefix}4k
+│║⦁ ${ѕуηтнσяiα.prefix}realgirls
+│║⦁ ${ѕуηтнσяiα.prefix}blowjobs
+│║⦁ ${ѕуηтнσяiα.prefix}milf
+│║⦁ ${ѕуηтнσяiα.prefix}milk
+│║⦁ ${ѕуηтнσяiα.prefix}milking
+│║⦁ ${ѕуηтнσяiα.prefix}lactating
+│║⦁ ${ѕуηтнσяiα.prefix}pussy
+│║⦁ ${ѕуηтнσяiα.prefix}cum
+│║⦁ ${ѕуηтнσяiα.prefix}slut
+│║⦁ ${ѕуηтнσяiα.prefix}cumslut
 ┕╚═☰
 ╔══☰ *🦄${pfname.toUpperCase()}🦄* 
-│║⦁ ${ѕуηтнiα.prefix}waifu
-│║⦁ ${ѕуηтнiα.prefix}swaifu
-│║⦁ ${ѕуηтнiα.prefix}neko
-│║⦁ ${ѕуηтнiα.prefix}sneko
-│║⦁ ${ѕуηтнiα.prefix}shinobu
-│║⦁ ${ѕуηтнiα.prefix}sshinobu
-│║⦁ ${ѕуηтнiα.prefix}megumin
-│║⦁ ${ѕуηтнiα.prefix}smegumin
-│║⦁ ${ѕуηтнiα.prefix}awoo
-│║⦁ ${ѕуηтнiα.prefix}sawoo
-│║⦁ ${ѕуηтнiα.prefix}glomp
-│║⦁ ${ѕуηтнiα.prefix}sglomp
-│║⦁ ${ѕуηтнiα.prefix}handhold
-│║⦁ ${ѕуηтнiα.prefix}shandhold
+│║⦁ ${ѕуηтнσяiα.prefix}waifu
+│║⦁ ${ѕуηтнσяiα.prefix}swaifu
+│║⦁ ${ѕуηтнσяiα.prefix}neko
+│║⦁ ${ѕуηтнσяiα.prefix}sneko
+│║⦁ ${ѕуηтнσяiα.prefix}shinobu
+│║⦁ ${ѕуηтнσяiα.prefix}sshinobu
+│║⦁ ${ѕуηтнσяiα.prefix}megumin
+│║⦁ ${ѕуηтнσяiα.prefix}smegumin
+│║⦁ ${ѕуηтнσяiα.prefix}awoo
+│║⦁ ${ѕуηтнσяiα.prefix}sawoo
+│║⦁ ${ѕуηтнσяiα.prefix}glomp
+│║⦁ ${ѕуηтнσяiα.prefix}sglomp
+│║⦁ ${ѕуηтнσяiα.prefix}handhold
+│║⦁ ${ѕуηтнσяiα.prefix}shandhold
 │║⦁
-│║⦁ ${ѕуηтнiα.prefix}sbully
-│║⦁ ${ѕуηтнiα.prefix}scuddle
-│║⦁ ${ѕуηтнiα.prefix}scry
-│║⦁ ${ѕуηтнiα.prefix}shug
-│║⦁ ${ѕуηтнiα.prefix}skiss
-│║⦁ ${ѕуηтнiα.prefix}slick
-│║⦁ ${ѕуηтнiα.prefix}spat
-│║⦁ ${ѕуηтнiα.prefix}ssmug
-│║⦁ ${ѕуηтнiα.prefix}sbonk
-│║⦁ ${ѕуηтнiα.prefix}syeet
-│║⦁ ${ѕуηтнiα.prefix}sblush
-│║⦁ ${ѕуηтнiα.prefix}ssmile
-│║⦁ ${ѕуηтнiα.prefix}swave
-│║⦁ ${ѕуηтнiα.prefix}shighfive
-│║⦁ ${ѕуηтнiα.prefix}snom
-│║⦁ ${ѕуηтнiα.prefix}sbite
-│║⦁ ${ѕуηтнiα.prefix}sslap
-│║⦁ ${ѕуηтнiα.prefix}skill
-│║⦁ ${ѕуηтнiα.prefix}skick
-│║⦁ ${ѕуηтнiα.prefix}shappy
-│║⦁ ${ѕуηтнiα.prefix}swink
-│║⦁ ${ѕуηтнiα.prefix}spoke
-│║⦁ ${ѕуηтнiα.prefix}sdance
-│║⦁ ${ѕуηтнiα.prefix}scringe
+│║⦁ ${ѕуηтнσяiα.prefix}sbully
+│║⦁ ${ѕуηтнσяiα.prefix}scuddle
+│║⦁ ${ѕуηтнσяiα.prefix}scry
+│║⦁ ${ѕуηтнσяiα.prefix}shug
+│║⦁ ${ѕуηтнσяiα.prefix}skiss
+│║⦁ ${ѕуηтнσяiα.prefix}slick
+│║⦁ ${ѕуηтнσяiα.prefix}spat
+│║⦁ ${ѕуηтнσяiα.prefix}ssmug
+│║⦁ ${ѕуηтнσяiα.prefix}sbonk
+│║⦁ ${ѕуηтнσяiα.prefix}syeet
+│║⦁ ${ѕуηтнσяiα.prefix}sblush
+│║⦁ ${ѕуηтнσяiα.prefix}ssmile
+│║⦁ ${ѕуηтнσяiα.prefix}swave
+│║⦁ ${ѕуηтнσяiα.prefix}shighfive
+│║⦁ ${ѕуηтнσяiα.prefix}snom
+│║⦁ ${ѕуηтнσяiα.prefix}sbite
+│║⦁ ${ѕуηтнσяiα.prefix}sslap
+│║⦁ ${ѕуηтнσяiα.prefix}skill
+│║⦁ ${ѕуηтнσяiα.prefix}skick
+│║⦁ ${ѕуηтнσяiα.prefix}shappy
+│║⦁ ${ѕуηтнσяiα.prefix}swink
+│║⦁ ${ѕуηтнσяiα.prefix}spoke
+│║⦁ ${ѕуηтнσяiα.prefix}sdance
+│║⦁ ${ѕуηтнσяiα.prefix}scringe
 ┕╚═☰
 ╔══☰ *⭕${pfname.toUpperCase()}⭕* 
-│║⦁ ${ѕуηтнiα.prefix}ytpanning
-│║⦁ ${ѕуηтнiα.prefix}ytbassboost
-│║⦁ ${ѕуηтнiα.prefix}ytecho
-│║⦁ ${ѕуηтнiα.prefix}ytflanger
-│║⦁ ${ѕуηтнiα.prefix}ytnightcore
-│║⦁ ${ѕуηтнiα.prefix}ytphaser
-│║⦁ ${ѕуηтнiα.prefix}ytreverse
-│║⦁ ${ѕуηтнiα.prefix}ytslow
-│║⦁ ${ѕуηтнiα.prefix}ytspeed
-│║⦁ ${ѕуηтнiα.prefix}ytsubboost
-│║⦁ ${ѕуηтнiα.prefix}ytsuperslow
-│║⦁ ${ѕуηтнiα.prefix}ytsuperspeed
-│║⦁ ${ѕуηтнiα.prefix}ytsurround
-│║⦁ ${ѕуηтнiα.prefix}ytvaporwave
-│║⦁ ${ѕуηтнiα.prefix}ytvibrato
+│║⦁ ${ѕуηтнσяiα.prefix}ytpanning
+│║⦁ ${ѕуηтнσяiα.prefix}ytbassboost
+│║⦁ ${ѕуηтнσяiα.prefix}ytecho
+│║⦁ ${ѕуηтнσяiα.prefix}ytflanger
+│║⦁ ${ѕуηтнσяiα.prefix}ytnightcore
+│║⦁ ${ѕуηтнσяiα.prefix}ytphaser
+│║⦁ ${ѕуηтнσяiα.prefix}ytreverse
+│║⦁ ${ѕуηтнσяiα.prefix}ytslow
+│║⦁ ${ѕуηтнσяiα.prefix}ytspeed
+│║⦁ ${ѕуηтнσяiα.prefix}ytsubboost
+│║⦁ ${ѕуηтнσяiα.prefix}ytsuperslow
+│║⦁ ${ѕуηтнσяiα.prefix}ytsuperspeed
+│║⦁ ${ѕуηтнσяiα.prefix}ytsurround
+│║⦁ ${ѕуηтнσяiα.prefix}ytvaporwave
+│║⦁ ${ѕуηтнσяiα.prefix}ytvibrato
 ┕╚═════⋑`,
-    ѕуηтнiα.logo
+    ѕуηтнσяiα.logo
   );
 };

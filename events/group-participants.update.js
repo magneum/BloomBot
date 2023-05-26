@@ -40,7 +40,7 @@ module.exports = async (ѕуηтнσяiα, update, store) => {
 *📢ID:* ${update.id}
 
 > Firstly Welcome.
-> I am Synthia Whatsapp Bot.
+> I am Synthoria Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
             footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
@@ -50,8 +50,8 @@ module.exports = async (ѕуηтнσяiα, update, store) => {
                 type: 1,
               },
               {
-                buttonId: `${ѕуηтнσяiα.prefix}Synthia`,
-                buttonText: { displayText: `${ѕуηтнσяiα.prefix}Synthia` },
+                buttonId: `${ѕуηтнσяiα.prefix}Synthoria`,
+                buttonText: { displayText: `${ѕуηтнσяiα.prefix}Synthoria` },
                 type: 1,
               },
             ],

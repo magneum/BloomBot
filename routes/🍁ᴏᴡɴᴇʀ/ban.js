@@ -1,4 +1,4 @@
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 // ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║ 
@@ -9,13 +9,13 @@
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  ѕуηтнiα,
+  ѕуηтнσяiα,
   νℓкhat,
   gmeta,
   isAdmin,
@@ -24,45 +24,45 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+  await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
     react: {
       text: "🔖",
       key: νℓкhat.key,
     },
   });
   try {
-    if (!ѕуηтнiα.frome && !ѕуηтнiα.isSudoWorker) {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+    if (!ѕуηтнσяiα.frome && !ѕуηтнσяiα.isSudoWorker) {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
 
-    if (ѕуηтнiα.mentionByReply) {
+    if (ѕуηтнσяiα.mentionByReply) {
       let repliedPerson =
-        ѕуηтнiα.mtype == "extendedTextMessage" &&
-        ѕуηтнiα.message.extendedTextMessage.contextInfo != null
-          ? ѕуηтнiα.message.extendedTextMessage.contextInfo.participant || ""
+        ѕуηтнσяiα.mtype == "extendedTextMessage" &&
+        ѕуηтнσяiα.message.extendedTextMessage.contextInfo != null
+          ? ѕуηтнσяiα.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       let repliedPersonNum = repliedPerson.substring(
         0,
         repliedPerson.length - 15
       );
-      ѕуηтнiα.userBanCheck.findOne(
+      ѕуηтнσяiα.userBanCheck.findOne(
         {
           ID: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+          if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
           if (!userBan) {
-            new ѕуηтнiα.userBanCheck({
+            new ѕуηтнσяiα.userBanCheck({
               ID: repliedPerson,
             }).save();
             return νℓкhat.reply(
@@ -75,17 +75,17 @@ module.exports = async (
           }
         }
       );
-    } else if (ѕуηтнiα.args[0] && ѕуηтнiα.args[0].startsWith("@")) {
-      let mention = ѕуηтнiα.mentionByTag;
-      let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || ѕуηтнiα.msg.contextInfo.participant;
-      ѕуηтнiα.userBanCheck.findOne(
+    } else if (ѕуηтнσяiα.args[0] && ѕуηтнσяiα.args[0].startsWith("@")) {
+      let mention = ѕуηтнσяiα.mentionByTag;
+      let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || ѕуηтнσяiα.msg.contextInfo.participant;
+      ѕуηтнσяiα.userBanCheck.findOne(
         {
           ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+          if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
           if (!userBan) {
-            new ѕуηтнiα.userBanCheck({
+            new ѕуηтнσяiα.userBanCheck({
               ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
             }).save();
             return νℓкhat.reply(
@@ -97,18 +97,18 @@ module.exports = async (
         }
       );
     } else if (
-      !ѕуηтнiα.mentionByReply &&
-      !ѕуηтнiα.args[0] &&
-      !ѕуηтнiα.args[0].startsWith("@")
+      !ѕуηтнσяiα.mentionByReply &&
+      !ѕуηтнσяiα.args[0] &&
+      !ѕуηтнσяiα.args[0].startsWith("@")
     ) {
-      ѕуηтнiα.userBanCheck.findOne(
+      ѕуηтнσяiα.userBanCheck.findOne(
         {
           ID: νℓкhat.chat,
         },
         async (error, userBan) => {
-          if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+          if (error) return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
           if (!userBan) {
-            new ѕуηтнiα.userBanCheck({
+            new ѕуηтнσяiα.userBanCheck({
               ID: νℓкhat.chat,
             }).save();
             return νℓкhat.reply(
@@ -122,23 +122,23 @@ module.exports = async (
         }
       );
     } else {
-      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+      await ѕуηтнσяiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
+        `*😥Sorry:* _${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}_
 *❌Error* 
 > _Could not find any context!_
 
 *⚡Usage* 
-> _${ѕуηтнiα.prefix}${pfname} reply to person to ban_
-> _${ѕуηтнiα.prefix}${pfname} don't reply to anyone and group will be banned_`
+> _${ѕуηтнσяiα.prefix}${pfname} reply to person to ban_
+> _${ѕуηтнσяiα.prefix}${pfname} don't reply to anyone and group will be banned_`
       );
     }
   } catch (error) {
-    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+    return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);
   }
 };

@@ -3,7 +3,7 @@
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║ 
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthia was made for fun purpose and to make group management easier.
+// ║ Synthoria was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
@@ -179,7 +179,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     "list",
     "command",
     "commands",
-    "Synthia",
+    "Synthoria",
     "Commands",
   ];
 
