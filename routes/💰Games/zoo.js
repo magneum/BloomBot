@@ -45,7 +45,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
             `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
-            "./src/synthoria.jpg"
+            "./src/voxbot.jpg"
           );
         } else {
           await ѕуηтнσяiα.Zoology.findOne(
@@ -70,7 +70,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
                   `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
-                  "./src/synthoria.jpg"
+                  "./src/voxbot.jpg"
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
@@ -85,7 +85,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                    "./src/synthoria.jpg"
+                    "./src/voxbot.jpg"
                   );
                 } else {
                   let zooID = Math.floor(Math.random() * 10) + 1;
@@ -114,7 +114,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_`,
-                    "./src/synthoria.jpg"
+                    "./src/voxbot.jpg"
                   );
                 }
               }

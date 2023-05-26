@@ -27,7 +27,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
 
 *❗Problem?*
 > Doesn't show dashboard?
-> type ${ѕуηтнσяiα.prefix}help in synthoria official group
+> type ${ѕуηтнσяiα.prefix}help in Synthoria official group
 > head back to bit.ly/magneum
 > try to login`,
     "./src/login.png"

@@ -1,15 +1,15 @@
-// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐨𝐫𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-// ║
-// ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthoria was made for fun purpose and to make group management easier.
-// ║ It's your concern if you spam and gets your account banned.
-// ║ Also, Forks won't be entertained.
-// ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
-// ║ In short, Fork At Your Own Risk.
-// ║
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔⧉༻ [ 𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ║
+//  ║ We won't be responsible for any kind of ban due to this bot.
+//  ║ VoxBot was made for fun purpose and to make group management easier.
+//  ║ It's your concern if you spam and gets your account banned.
+//  ║ Also, Forks won't be entertained.
+//  ║ If you fork this repo and edit plugins, it's your concern for further updates.
+//  ║ Forking Repo is fine. But if you edit something we will not provide any help.
+//  ║ In short, Fork At Your Own Risk.
+//  ║
+//  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 let { proto, getContentType } = require("@adiwajshing/baileys");
 let { sizeFormatter } = require("human-readable");
 let child_process = require("child_process");
@@ -222,7 +222,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
+exports.νkmake = async (VօxB໐t, νℓкhat, store) => {
   if (!νℓкhat) return νℓкhat;
   let νproto = proto.WebMessageInfo;
   if (νℓкhat.key) {
@@ -231,15 +231,15 @@ exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
     νℓкhat.chat = νℓкhat.key.remoteJid;
     νℓкhat.fromMe = νℓкhat.key.fromMe;
     νℓкhat.isGroup = νℓкhat.chat.endsWith("@g.us");
-    νℓкhat.sender = ѕуηтнσяiα.decodeJid(
-      (νℓкhat.fromMe && ѕуηтнσяiα.user.id) ||
+    νℓкhat.sender = VօxB໐t.decodeJid(
+      (νℓкhat.fromMe && VօxB໐t.user.id) ||
         νℓкhat.participant ||
         νℓкhat.key.participant ||
         νℓкhat.chat ||
         ""
     );
     if (νℓкhat.isGroup)
-      νℓкhat.participant = ѕуηтнσяiα.decodeJid(νℓкhat.key.participant) || "";
+      νℓкhat.participant = VօxB໐t.decodeJid(νℓкhat.key.participant) || "";
   }
   if (νℓкhat.message) {
     νℓкhat.mtype = getContentType(νℓкhat.message);
@@ -282,11 +282,11 @@ exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
       νℓкhat.quoted.isBaileys = νℓкhat.quoted.id
         ? νℓкhat.quoted.id.startsWith("BAE5") && νℓкhat.quoted.id.length === 16
         : false;
-      νℓкhat.quoted.sender = ѕуηтнσяiα.decodeJid(
+      νℓкhat.quoted.sender = VօxB໐t.decodeJid(
         νℓкhat.msg.contextInfo.participant
       );
       νℓкhat.quoted.fromMe =
-        νℓкhat.quoted.sender === (ѕуηтнσяiα.user && ѕуηтнσяiα.user.id);
+        νℓкhat.quoted.sender === (VօxB໐t.user && VօxB໐t.user.id);
       νℓкhat.quoted.text =
         νℓкhat.quoted.text ||
         νℓкhat.quoted.caption ||
@@ -300,12 +300,8 @@ exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
         : [];
       νℓкhat.getQuotedObj = νℓкhat.getQuotedMessage = async () => {
         if (!νℓкhat.quoted.id) return false;
-        let q = await store.loadMessage(
-          νℓкhat.chat,
-          νℓкhat.quoted.id,
-          ѕуηтнσяiα
-        );
-        return exports.νkmake(ѕуηтнσяiα, q, store);
+        let q = await store.loadMessage(νℓкhat.chat, νℓкhat.quoted.id, VօxB໐t);
+        return exports.νkmake(VօxB໐t, q, store);
       };
       let vM = (νℓкhat.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -317,16 +313,15 @@ exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
         ...(νℓкhat.isGroup ? { participant: νℓкhat.quoted.sender } : {}),
       }));
       νℓкhat.quoted.delete = () =>
-        ѕуηтнσяiα.sendMessage(νℓкhat.quoted.chat, { delete: vM.key });
+        VօxB໐t.sendMessage(νℓкhat.quoted.chat, { delete: vM.key });
       νℓкhat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-        ѕуηтнσяiα.copyNForward(jid, vM, forceForward, options);
-      νℓкhat.quoted.download = () =>
-        ѕуηтнσяiα.downloadMediaMessage(νℓкhat.quoted);
+        VօxB໐t.copyNForward(jid, vM, forceForward, options);
+      νℓкhat.quoted.download = () => VօxB໐t.downloadMediaMessage(νℓкhat.quoted);
     }
   }
 
   if (νℓкhat.msg.url)
-    νℓкhat.download = () => ѕуηтнσяiα.downloadMediaMessage(νℓкhat.msg);
+    νℓкhat.download = () => VօxB໐t.downloadMediaMessage(νℓкhat.msg);
   νℓкhat.text =
     νℓкhat.msg.text ||
     νℓкhat.msg.caption ||
@@ -337,15 +332,15 @@ exports.νkmake = async (ѕуηтнσяiα, νℓкhat, store) => {
     "";
   νℓкhat.reply = (text, chatId = νℓкhat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? ѕуηтнσяiα.sendMedia(chatId, text, "file", "", νℓкhat, { ...options })
-      : ѕуηтнσяiα.sendText(chatId, text, νℓкhat, { ...options });
+      ? VօxB໐t.sendMedia(chatId, text, "file", "", νℓкhat, { ...options })
+      : VօxB໐t.sendText(chatId, text, νℓкhat, { ...options });
   νℓкhat.copy = () =>
-    exports.νkmake(ѕуηтнσяiα, νproto.fromObject(νproto.toObject(νℓкhat)));
+    exports.νkmake(VօxB໐t, νproto.fromObject(νproto.toObject(νℓкhat)));
   νℓкhat.copyNForward = (
     jid = νℓкhat.chat,
     forceForward = false,
     options = {}
-  ) => ѕуηтнσяiα.copyNForward(jid, νℓкhat, forceForward, options);
+  ) => VօxB໐t.copyNForward(jid, νℓкhat, forceForward, options);
 
   return νℓкhat;
 };

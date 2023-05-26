@@ -1,8 +1,8 @@
 {
   "main": "index.js",
   "version": "1.0.0",
-  "name": "synthoria",
-  "description": "synthoria is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+  "name": "voxbot",
+  "description": "voxbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"

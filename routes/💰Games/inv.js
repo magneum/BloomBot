@@ -39,7 +39,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
             `*🔖Here, ${pfname} For ${ѕуηтнσяiα.pushname || ѕуηтнσяiα.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./src/synthoria.jpg"
+            "./src/voxbot.jpg"
           );
         }
         return await ѕуηтнσяiα.imgB(
@@ -49,7 +49,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
-          "./src/synthoria.jpg"
+          "./src/voxbot.jpg"
         );
       }
     );

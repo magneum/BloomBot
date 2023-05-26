@@ -34,7 +34,7 @@ module.exports = async (ѕуηтнσяiα, νℓкhat, update, store) => {
 │║⦁ 💍 *Platinum:* 80 Commands
 │║⦁ 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
-      "./src/synthoria.jpg"
+      "./src/voxbot.jpg"
     );
   } catch (error) {
     return ѕуηтнσяiα.grab(ѕуηтнσяiα, νℓкhat, error);

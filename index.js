@@ -1,15 +1,15 @@
-// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐨𝐫𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-// ║
-// ║ We won't be responsible for any kind of ban due to this bot.
-// ║ Synthoria was made for fun purpose and to make group management easier.
-// ║ It's your concern if you spam and gets your account banned.
-// ║ Also, Forks won't be entertained.
-// ║ If you fork this repo and edit plugins, it's your concern for further updates.
-// ║ Forking Repo is fine. But if you edit something we will not provide any help.
-// ║ In short, Fork At Your Own Risk.
-// ║
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнσяiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔⧉༻ [ 𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ║
+//  ║ We won't be responsible for any kind of ban due to this bot.
+//  ║ VoxBot was made for fun purpose and to make group management easier.
+//  ║ It's your concern if you spam and gets your account banned.
+//  ║ Also, Forks won't be entertained.
+//  ║ If you fork this repo and edit plugins, it's your concern for further updates.
+//  ║ Forking Repo is fine. But if you edit something we will not provide any help.
+//  ║ In short, Fork At Your Own Risk.
+//  ║
+//  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const logger = require("./logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -110,10 +110,10 @@ async function mågneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/synthoria", (request, response) => {
-    response.sendFile("views/synthoria.html", { root: __dirname });
+  νℓpage.get("/voxbot", (request, response) => {
+    response.sendFile("views/voxbot.html", { root: __dirname });
   });
-  νℓpage.post("/synthoria", urlencodedParser, (request, response) => {
+  νℓpage.post("/voxbot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -135,17 +135,13 @@ async function mågneum() {
 
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
-  var ѕуηтнσяiα = νℓкуяє_вσт({
+  var VօxB໐t = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [
-      process.env.deployer || "synthoria-by-magneum",
-      "Chrome",
-      "4.0.0",
-    ],
+    browser: [process.env.deployer || "voxbot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -162,10 +158,10 @@ async function mågneum() {
       };
     },
   });
-  store.bind(ѕуηтнσяiα.ev);
+  store.bind(VօxB໐t.ev);
 
-  ѕуηтнσяiα.ev.on("creds.update", async (update) => await saveCreds());
-  ѕуηтнσяiα.ev.on("connection.update", async (update) => {
+  VօxB໐t.ev.on("creds.update", async (update) => await saveCreds());
+  VօxB໐t.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,
       connection,
@@ -183,7 +179,7 @@ async function mågneum() {
         logger.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
-        ѕуηтнσяiα.logout();
+        VօxB໐t.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
         logger.error("❌: Connection closed, reconnecting....");
         await mågneum();
@@ -194,7 +190,7 @@ async function mågneum() {
         logger.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
-        ѕуηтнσяiα.logout();
+        VօxB໐t.logout();
       } else if (reason === DisconnectReason.loggedOut) {
         logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
@@ -205,7 +201,7 @@ async function mågneum() {
         logger.error("❌: Connection TimedOut, Reconnecting...");
         await mågneum();
       } else
-        ѕуηтнσяiα.end(
+        VօxB໐t.end(
           logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
     } else if (isOnline === true) logger.debug("🐲: Online.");
@@ -220,7 +216,7 @@ async function mågneum() {
     else logger.info("🐲: Connection...", update);
   });
 
-  ѕуηтнσяiα.ev.on("messages.upsert", async (update) => {
+  VօxB໐t.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
     νTēxt.message =
@@ -228,59 +224,55 @@ async function mågneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!ѕуηтнσяiα.public && !νTēxt.key.fromMe && update.type === "notify")
-      return;
+    if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    νℓкhat = await νkmake(ѕуηтнσяiα, νTēxt, store);
-    await require("./server/router.js")(ѕуηтнσяiα, νℓкhat, update, store);
+    νℓкhat = await νkmake(VօxB໐t, νTēxt, store);
+    await require("./server/router.js")(VօxB໐t, νℓкhat, update, store);
   });
 
-  ѕуηтнσяiα.ev.on("group-participants.update", async (update) => {
-    let metadata = await ѕуηтнσяiα.groupMetadata(update.id);
+  VօxB໐t.ev.on("group-participants.update", async (update) => {
+    let metadata = await VօxB໐t.groupMetadata(update.id);
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await ѕуηтнσяiα.profilePictureUrl(sperson, "image");
+        imåge = await VօxB໐t.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./src/ѕуηтнσяiα.jpg";
+        imåge = "./src/VօxB໐t.jpg";
       }
 
       if (update.action == "add") {
-        return await ѕуηтнσяiα
-          .sendMessage(
-            update.id,
-            {
-              image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+        return await VօxB໐t.sendMessage(
+          update.id,
+          {
+            image: { url: imåge },
+            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
 *📢ID:* ${update.id}
 
 > Firstly Welcome.
 > I am Synthia Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
-              footer:
-                "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
-              buttons: [
-                {
-                  buttonId: `${ѕуηтнσяiα.prefix}Dashboard`,
-                  buttonText: { displayText: `${ѕуηтнσяiα.prefix}Dashboard` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ѕуηтнσяiα.prefix}Synthia`,
-                  buttonText: { displayText: `${ѕуηтнσяiα.prefix}Synthia` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              mentions: [sperson],
-            },
-            {
-              contextInfo: { mentionedJid: [sperson] },
-            }
-          )
-          .catch((error) => logger.error(error));
+            footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+            buttons: [
+              {
+                buttonId: `${VօxB໐t.prefix}Dashboard`,
+                buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+                type: 1,
+              },
+              {
+                buttonId: `${VօxB໐t.prefix}Synthia`,
+                buttonText: { displayText: `${VօxB໐t.prefix}Synthia` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            mentions: [sperson],
+          },
+          {
+            contextInfo: { mentionedJid: [sperson] },
+          }
+        ).catch((error) => logger.error(error));
       } else if (update.action == "remove") {
         return;
       } else {
@@ -289,7 +281,7 @@ async function mågneum() {
     }
   });
 
-  ѕуηтнσяiα.decodeJid = (jid) => {
+  VօxB໐t.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -299,14 +291,14 @@ async function mågneum() {
       );
     } else return jid;
   };
-  ѕуηтнσяiα.getName = (jid, withoutContact = false) => {
-    id = ѕуηтнσяiα.decodeJid(jid);
-    withoutContact = ѕуηтнσяiα.withoutContact || withoutContact;
+  VօxB໐t.getName = (jid, withoutContact = false) => {
+    id = VօxB໐t.decodeJid(jid);
+    withoutContact = VօxB໐t.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = ѕуηтнσяiα.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = VօxB໐t.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -322,8 +314,8 @@ async function mågneum() {
               id,
               name: "WhatsApp",
             }
-          : id === ѕуηтнσяiα.decodeJid(ѕуηтнσяiα.user.id)
-          ? ѕуηтнσяiα.user
+          : id === VօxB໐t.decodeJid(VօxB໐t.user.id)
+          ? VօxB໐t.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
@@ -335,19 +327,19 @@ async function mågneum() {
     );
   };
 
-  ѕуηтнσяiα.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  VօxB໐t.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await ѕуηтнσяiα.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ѕуηтнσяiα.getName(
+        displayName: await VօxB໐t.getName(i + "@s.whatsapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await VօxB໐t.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${await ѕуηтнσяiα.getName(
+        )}\nFN:${await VօxB໐t.getName(
           i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    ѕуηтнσяiα.sendMessage(
+    VօxB໐t.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -357,10 +349,10 @@ async function mågneum() {
     );
   };
 
-  ѕуηтнσяiα.public = true;
-  ѕуηтнσяiα.serializeM = (νℓкhat) => νkmake(ѕуηтнσяiα, νℓкhat, store);
+  VօxB໐t.public = true;
+  VօxB໐t.serializeM = (νℓкhat) => νkmake(VօxB໐t, νℓкhat, store);
 
-  ѕуηтнσяiα.send5ButImg = async (
+  VօxB໐t.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -370,7 +362,7 @@ async function mågneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: ѕуηтнσяiα.waUploadToServer }
+      { upload: VօxB໐t.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
       νℓкhat.chat,
@@ -386,12 +378,12 @@ async function mågneum() {
       }),
       options
     );
-    ѕуηтнσяiα.relayMessage(jid, template.message, {
+    VօxB໐t.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  ѕуηтнσяiα.sendButtonText = (
+  VօxB໐t.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -406,19 +398,13 @@ async function mågneum() {
       headerType: 2,
       ...options,
     };
-    ѕуηтнσяiα.sendMessage(jid, buttonMessage, { quoted, ...options });
+    VօxB໐t.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  ѕуηтнσяiα.sendText = (jid, text, quoted = "", options) =>
-    ѕуηтнσяiα.sendMessage(jid, { text: text, ...options }, { quoted });
+  VօxB໐t.sendText = (jid, text, quoted = "", options) =>
+    VօxB໐t.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  ѕуηтнσяiα.sendImage = async (
-    jid,
-    path,
-    caption = "",
-    quoted = "",
-    options
-  ) => {
+  VօxB໐t.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -428,14 +414,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнσяiα.sendMessage(
+    return await VօxB໐t.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  ѕуηтнσяiα.sendVideo = async (
+  VօxB໐t.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -452,20 +438,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнσяiα.sendMessage(
+    return await VօxB໐t.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  ѕуηтнσяiα.sendAudio = async (
-    jid,
-    path,
-    quoted = "",
-    ptt = false,
-    options
-  ) => {
+  VօxB໐t.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -475,15 +455,15 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ѕуηтнσяiα.sendMessage(
+    return await VօxB໐t.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  ѕуηтнσяiα.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    ѕуηтнσяiα.sendMessage(
+  VօxB໐t.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    VօxB໐t.sendMessage(
       jid,
       {
         text: text,
@@ -497,7 +477,7 @@ async function mågneum() {
       { quoted }
     );
 
-  ѕуηтнσяiα.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  VօxB໐t.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -514,7 +494,7 @@ async function mågneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await ѕуηтнσяiα.sendMessage(
+    await VօxB໐t.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -522,7 +502,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ѕуηтнσяiα.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  VօxB໐t.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -539,7 +519,7 @@ async function mågneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await ѕуηтнσяiα.sendMessage(
+    await VօxB໐t.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -547,7 +527,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ѕуηтнσяiα.downloadAndSaveMediaMessage = async (
+  VօxB໐t.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -569,7 +549,7 @@ async function mågneum() {
     return trueFileName;
   };
 
-  ѕуηтнσяiα.downloadMediaMessage = async (message) => {
+  VօxB໐t.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -583,7 +563,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ѕуηтнσяiα.sendMedia = async (
+  VօxB໐t.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -591,7 +571,7 @@ async function mågneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await ѕуηтнσяiα.getFile(path, true);
+    let types = await VօxB໐t.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -619,7 +599,7 @@ async function mågneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await ѕуηтнσяiα.sendMessage(
+    await VօxB໐t.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -627,7 +607,7 @@ async function mågneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  ѕуηтнσяiα.copyNForward = async (
+  VօxB໐t.copyNForward = async (
     jid,
     message,
     forceForward = false,
@@ -678,17 +658,17 @@ async function mågneum() {
           }
         : {}
     );
-    await ѕуηтнσяiα.relayMessage(jid, waMessage.message, {
+    await VօxB໐t.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  ѕуηтнσяiα.cMod = (
+  VօxB໐t.cMod = (
     jid,
     copy,
     text = "",
-    sender = ѕуηтнσяiα.user.id,
+    sender = VօxB໐t.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -717,12 +697,12 @@ async function mågneum() {
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === ѕуηтнσяiα.user.id;
+    copy.key.fromMe = sender === VօxB໐t.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  ѕуηтнσяiα.getFile = async (PATH, save) => {
+  VօxB໐t.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -753,13 +733,13 @@ async function mågneum() {
     };
   };
 
-  ѕуηтнσяiα.ws.on("CB:call", async (update) => {
+  VօxB໐t.ws.on("CB:call", async (update) => {
     const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    let person = await ѕуηтнσяiα.sendContact(callerId, global.owner);
-    ѕуηтнσяiα.sendMessage(
+    let person = await VօxB໐t.sendContact(callerId, global.owner);
+    VօxB໐t.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -767,12 +747,12 @@ async function mågneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await ѕуηтнσяiα.updateBlockStatus(callerId, "block");
+    await VօxB໐t.updateBlockStatus(callerId, "block");
   });
 
-  ѕуηтнσяiα.ev.on("contacts.update", async (update) => {
+  VօxB໐t.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = ѕуηтнσяiα.decodeJid(contact.id);
+      let jid = VօxB໐t.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
@@ -790,8 +770,8 @@ async function mågneum() {
       "💡maker",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await ѕуηтнσяiα.updateProfileStatus(
-      "Feeling: " + __Feeling + "  :synthoria by magneum"
+    await VօxB໐t.updateProfileStatus(
+      "Feeling: " + __Feeling + "  :voxbot by magneum"
     );
     await gitPull();
   }, 1000 * 10);

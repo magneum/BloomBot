@@ -1,6 +1,6 @@
 # [🕊️Ⓒ𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: Advance Javascript + Python Whatsapp User-Bot](https://bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Synthoria/blob/magneum/src/synthoria.jpg" /></p>
+<p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Synthoria/blob/magneum/src/voxbot.jpg" /></p>
 
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="magneum"/> <img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
@@ -11,9 +11,9 @@
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/synthoria.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/synthoria)
+[![NPM](https://nodei.co/npm/voxbot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/voxbot)
 
-[![npm version](https://badge.fury.io/js/synthoria.svg)](https://badge.fury.io/js/synthoria/)
+[![npm version](https://badge.fury.io/js/voxbot.svg)](https://badge.fury.io/js/voxbot/)
 
 
 
