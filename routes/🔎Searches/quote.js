@@ -45,7 +45,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
-        "./src/νℓкуяє_beta.jpg"
+        "./src/ѕуηтнiα_beta.jpg"
       );
     }
   } catch (error) {

@@ -86,7 +86,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
         νℓкhat,
         `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:* 
 > ${chord}`,
-        "./src/νℓкуяє_beta.jpg"
+        "./src/ѕуηтнiα_beta.jpg"
       );
     }
   } catch (error) {
