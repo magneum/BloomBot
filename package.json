@@ -1,7 +1,7 @@
 {
-  "name": "synthia",
   "main": "index.js",
   "version": "1.0.0",
+  "name": "synthia-bot",
   "description": "synthia is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
