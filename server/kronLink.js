@@ -1,16 +1,16 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ ѕуηтнiα was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../global.js");
 let {
   Simp,
@@ -57,122 +57,122 @@ let ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
-module.exports = async (νℓкуяє, νℓкhat, update, store) => {
-  νℓкуяє.performance = performance;
-  νℓкуяє.createWorker = createWorker;
-  νℓкуяє.JSDOM = JSDOM;
-  νℓкуяє.Character = Character;
-  νℓкуяє.execSync = execSync;
-  νℓкуяє.spawn = spawn;
-  νℓкуяє.exec = exec;
-  νℓкуяє.Primbon = Primbon;
-  νℓкуяє.IShipOptions = IShipOptions;
-  νℓкуяє.Ship = Ship;
-  νℓкуяє.Pokemon = Pokemon;
-  νℓкуяє.Simp = Simp;
-  νℓкуяє.readFile = readFile;
-  νℓкуяє.tmpdir = tmpdir;
-  νℓкуяє.Doujin = Doujin;
-  νℓкуяє.DownloaderHelper = DownloaderHelper;
-  νℓкуяє.Chalk = Chalk;
-  νℓкуяє.Sticker = Sticker;
-  νℓкуяє.createSticker = createSticker;
-  νℓкуяє.StickerTypes = StickerTypes;
-  νℓкуяє.νkmake = νkmake;
-  νℓкуяє.formatp = formatp;
-  νℓкуяє.formatDate = formatDate;
-  νℓкуяє.getTime = getTime;
-  νℓкуяє.isUrl = isUrl;
-  νℓкуяє.sleep = sleep;
-  νℓкуяє.clockString = clockString;
-  νℓкуяє.runtime = runtime;
-  νℓкуяє.fetchJson = fetchJson;
-  νℓкуяє.getBuffer = getBuffer;
-  νℓкуяє.jsonformat = jsonformat;
-  νℓкуяє.format = format;
-  νℓкуяє.parseMention = parseMention;
-  νℓкуяє.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
-  νℓкуяє.getRandom = getRandom;
-  νℓкуяє.getDadjoke = getDadjoke;
-  νℓкуяє.Manga = Manga;
-  νℓкуяє.AnimeWallpaper = AnimeWallpaper;
-  νℓкуяє.TelegraPh = TelegraPh;
-  νℓкуяє.UploadFileUgu = UploadFileUgu;
-  νℓкуяє.webp2mp4File = webp2mp4File;
-  νℓкуяє.Tname = νℓкhat.sender.replace(/['@s whatsapp.net']/g, "");
+module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
+  ѕуηтнiα.performance = performance;
+  ѕуηтнiα.createWorker = createWorker;
+  ѕуηтнiα.JSDOM = JSDOM;
+  ѕуηтнiα.Character = Character;
+  ѕуηтнiα.execSync = execSync;
+  ѕуηтнiα.spawn = spawn;
+  ѕуηтнiα.exec = exec;
+  ѕуηтнiα.Primbon = Primbon;
+  ѕуηтнiα.IShipOptions = IShipOptions;
+  ѕуηтнiα.Ship = Ship;
+  ѕуηтнiα.Pokemon = Pokemon;
+  ѕуηтнiα.Simp = Simp;
+  ѕуηтнiα.readFile = readFile;
+  ѕуηтнiα.tmpdir = tmpdir;
+  ѕуηтнiα.Doujin = Doujin;
+  ѕуηтнiα.DownloaderHelper = DownloaderHelper;
+  ѕуηтнiα.Chalk = Chalk;
+  ѕуηтнiα.Sticker = Sticker;
+  ѕуηтнiα.createSticker = createSticker;
+  ѕуηтнiα.StickerTypes = StickerTypes;
+  ѕуηтнiα.νkmake = νkmake;
+  ѕуηтнiα.formatp = formatp;
+  ѕуηтнiα.formatDate = formatDate;
+  ѕуηтнiα.getTime = getTime;
+  ѕуηтнiα.isUrl = isUrl;
+  ѕуηтнiα.sleep = sleep;
+  ѕуηтнiα.clockString = clockString;
+  ѕуηтнiα.runtime = runtime;
+  ѕуηтнiα.fetchJson = fetchJson;
+  ѕуηтнiα.getBuffer = getBuffer;
+  ѕуηтнiα.jsonformat = jsonformat;
+  ѕуηтнiα.format = format;
+  ѕуηтнiα.parseMention = parseMention;
+  ѕуηтнiα.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+  ѕуηтнiα.getRandom = getRandom;
+  ѕуηтнiα.getDadjoke = getDadjoke;
+  ѕуηтнiα.Manga = Manga;
+  ѕуηтнiα.AnimeWallpaper = AnimeWallpaper;
+  ѕуηтнiα.TelegraPh = TelegraPh;
+  ѕуηтнiα.UploadFileUgu = UploadFileUgu;
+  ѕуηтнiα.webp2mp4File = webp2mp4File;
+  ѕуηтнiα.Tname = νℓкhat.sender.replace(/['@s whatsapp.net']/g, "");
 
-  νℓкуяє.msgFilter = require("./msgFilter");
-  νℓкуяє.imgB = require("../buttons/imgB");
-  νℓкуяє.vidB = require("../buttons/vidB");
-  νℓкуяє.grab = require("../buttons/grab");
-  νℓкуяє.TTS = require("google-tts-api");
-  // νℓкуяє.nhentaidl = require("./nhentaidl");
-  νℓкуяє.dashboard = require("../database/dashboard");
-  νℓкуяє.LinkList = require("../database/antilink");
-  νℓкуяє.Ranker = require("../database/autorank");
-  νℓкуяє.Bagde = require("../database/badge");
-  νℓкуяє.vimium = require("../database/vimium");
-  νℓкуяє.userBanCheck = require("../database/ban");
-  νℓкуяє.Cooldown = require("../database/cooldown");
-  νℓкуяє.DebugMode = require("../database/debug");
-  νℓкуяє.Economy = require("../database/economy");
-  νℓкуяє.Gamble = require("../database/gamble");
-  νℓкуяє.Halt = require("../database/halt");
-  νℓкуяє.nsfwCheck = require("../database/nsfw");
-  νℓкуяє.Pokemon = require("../database/pokemon");
-  νℓкуяє.UserPrivate = require("../database/private");
-  νℓкуяє.Robbery = require("../database/robbery");
-  νℓкуяє.ServerDB = require("../database/ServerDB");
-  νℓкуяє.Welcome = require("../database/setwelcome");
-  νℓкуяє.Warning = require("../database/warning");
-  νℓкуяє.Zoology = require("../database/zoo");
-  νℓкуяє.Fishes = require("../src/fishes.json");
-  νℓкуяє.animals = require("../src/animals.json");
-  νℓкуяє.Jwork = require("../src/works.json");
-  νℓкуяє.dare = require("../src/dare.json");
-  νℓкуяє.truth = require("../src/truth.json");
-  νℓкуяє.magfetch = require("../server/magfetch");
+  ѕуηтнiα.msgFilter = require("./msgFilter");
+  ѕуηтнiα.imgB = require("../buttons/imgB");
+  ѕуηтнiα.vidB = require("../buttons/vidB");
+  ѕуηтнiα.grab = require("../buttons/grab");
+  ѕуηтнiα.TTS = require("google-tts-api");
+  // ѕуηтнiα.nhentaidl = require("./nhentaidl");
+  ѕуηтнiα.dashboard = require("../database/dashboard");
+  ѕуηтнiα.LinkList = require("../database/antilink");
+  ѕуηтнiα.Ranker = require("../database/autorank");
+  ѕуηтнiα.Bagde = require("../database/badge");
+  ѕуηтнiα.vimium = require("../database/vimium");
+  ѕуηтнiα.userBanCheck = require("../database/ban");
+  ѕуηтнiα.Cooldown = require("../database/cooldown");
+  ѕуηтнiα.DebugMode = require("../database/debug");
+  ѕуηтнiα.Economy = require("../database/economy");
+  ѕуηтнiα.Gamble = require("../database/gamble");
+  ѕуηтнiα.Halt = require("../database/halt");
+  ѕуηтнiα.nsfwCheck = require("../database/nsfw");
+  ѕуηтнiα.Pokemon = require("../database/pokemon");
+  ѕуηтнiα.UserPrivate = require("../database/private");
+  ѕуηтнiα.Robbery = require("../database/robbery");
+  ѕуηтнiα.ServerDB = require("../database/ServerDB");
+  ѕуηтнiα.Welcome = require("../database/setwelcome");
+  ѕуηтнiα.Warning = require("../database/warning");
+  ѕуηтнiα.Zoology = require("../database/zoo");
+  ѕуηтнiα.Fishes = require("../src/fishes.json");
+  ѕуηтнiα.animals = require("../src/animals.json");
+  ѕуηтнiα.Jwork = require("../src/works.json");
+  ѕуηтнiα.dare = require("../src/dare.json");
+  ѕуηтнiα.truth = require("../src/truth.json");
+  ѕуηтнiα.magfetch = require("../server/magfetch");
 
-  νℓкуяє.os = require("os");
-  νℓкуяє.fs = require("fs");
-  νℓкуяє.got = require("got");
-  νℓкуяє.gis = require("g-i-s");
-  νℓкуяє.path = require("path");
-  νℓкуяє.util = require("util");
-  νℓкуяє.primbon = new Primbon();
-  νℓкуяє.ms = require("parse-ms");
-  νℓкуяє.hxz = require("hxz-api");
-  νℓкуяє.axios = require("axios");
-  νℓкуяє.chalk = require("chalk");
-  νℓкуяє.playdl = require("play-dl");
-  νℓкуяє.request = require("request");
-  νℓкуяє.xfar = require("xfarr-api");
-  νℓкуяє.cron = require("node-cron");
-  νℓкуяє.nHentai = require("shentai");
-  νℓкуяє.cheerio = require("cheerio");
-  νℓкуяє.akaneko = require("akaneko");
-  νℓкуяє.fetch = require("node-fetch");
-  νℓкуяє.google = require("google-it");
-  νℓкуяє.Spinnies = require("spinnies");
-  νℓкуяє.Anime = require("anime-actions");
-  νℓкуяє.Tinyurl = require("tinyurl-api");
-  νℓкуяє.FastHub = require("simple-git")();
-  νℓкуяє.speed = require("performance-now");
-  νℓкуяє.moment = require("moment-timezone");
-  νℓкуяє.Carbon = require("unofficial-carbon-now");
-  νℓкуяє.Levels = require("discord-xp");
-  νℓкуяє.canvacord = require("canvacord");
-  νℓкуяє.randomMC = require("random-material-color");
-  νℓкуяє.yClient = require("youtube-avdl");
-  νℓкуяє.pokemontcgsdk = require("pokemontcgsdk");
-  νℓкуяє.singer = require("play-dl");
-  νℓкуяє.ffmpeg = ffmpeg;
-  νℓкуяє.pathFFmpeg = require("ffmpeg-static");
+  ѕуηтнiα.os = require("os");
+  ѕуηтнiα.fs = require("fs");
+  ѕуηтнiα.got = require("got");
+  ѕуηтнiα.gis = require("g-i-s");
+  ѕуηтнiα.path = require("path");
+  ѕуηтнiα.util = require("util");
+  ѕуηтнiα.primbon = new Primbon();
+  ѕуηтнiα.ms = require("parse-ms");
+  ѕуηтнiα.hxz = require("hxz-api");
+  ѕуηтнiα.axios = require("axios");
+  ѕуηтнiα.chalk = require("chalk");
+  ѕуηтнiα.playdl = require("play-dl");
+  ѕуηтнiα.request = require("request");
+  ѕуηтнiα.xfar = require("xfarr-api");
+  ѕуηтнiα.cron = require("node-cron");
+  ѕуηтнiα.nHentai = require("shentai");
+  ѕуηтнiα.cheerio = require("cheerio");
+  ѕуηтнiα.akaneko = require("akaneko");
+  ѕуηтнiα.fetch = require("node-fetch");
+  ѕуηтнiα.google = require("google-it");
+  ѕуηтнiα.Spinnies = require("spinnies");
+  ѕуηтнiα.Anime = require("anime-actions");
+  ѕуηтнiα.Tinyurl = require("tinyurl-api");
+  ѕуηтнiα.FastHub = require("simple-git")();
+  ѕуηтнiα.speed = require("performance-now");
+  ѕуηтнiα.moment = require("moment-timezone");
+  ѕуηтнiα.Carbon = require("unofficial-carbon-now");
+  ѕуηтнiα.Levels = require("discord-xp");
+  ѕуηтнiα.canvacord = require("canvacord");
+  ѕуηтнiα.randomMC = require("random-material-color");
+  ѕуηтнiα.yClient = require("youtube-avdl");
+  ѕуηтнiα.pokemontcgsdk = require("pokemontcgsdk");
+  ѕуηтнiα.singer = require("play-dl");
+  ѕуηтнiα.ffmpeg = ffmpeg;
+  ѕуηтнiα.pathFFmpeg = require("ffmpeg-static");
 
-  νℓкуяє.memberRespA = [];
-  νℓкуяє.memberRespB = [];
-  νℓкуяє.resp1 = await νℓкуяє.groupInviteCode("120363020792949649@g.us");
-  νℓкуяє.letResp = [
+  ѕуηтнiα.memberRespA = [];
+  ѕуηтнiα.memberRespB = [];
+  ѕуηтнiα.resp1 = await ѕуηтнiα.groupInviteCode("120363020792949649@g.us");
+  ѕуηтнiα.letResp = [
     "h",
     "m",
     "c",
@@ -185,35 +185,35 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   ];
 
   function ShowGreen(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#2D5A27").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#849871").italic.bold(Text);
+    let TShow = ѕуηтнiα.chalk.hex("#2D5A27").bold(Topic);
+    let Show = ѕуηтнiα.chalk.hex("#849871").italic.bold(Text);
     console.log(
-      νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-      νℓкуяє.chalk.black(Show)
+      ѕуηтнiα.chalk.black(ѕуηтнiα.chalk.bgBlack(TShow)),
+      ѕуηтнiα.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#008B8B").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#818d94").italic.bold(Text);
+    let TShow = ѕуηтнiα.chalk.hex("#008B8B").bold(Topic);
+    let Show = ѕуηтнiα.chalk.hex("#818d94").italic.bold(Text);
     console.log(
-      νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-      νℓкуяє.chalk.black(Show)
+      ѕуηтнiα.chalk.black(ѕуηтнiα.chalk.bgBlack(TShow)),
+      ѕуηтнiα.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#ff6347").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#ed7777").italic.bold(Text);
+    let TShow = ѕуηтнiα.chalk.hex("#ff6347").bold(Topic);
+    let Show = ѕуηтнiα.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
-      νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-      νℓкуяє.chalk.black(Show)
+      ѕуηтнiα.chalk.black(ѕуηтнiα.chalk.bgBlack(TShow)),
+      ѕуηтнiα.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    let TShow = νℓкуяє.chalk.hex("#8B8000").bold(Topic);
-    let Show = νℓкуяє.chalk.hex("#ECCF8D").italic.bold(Text);
+    let TShow = ѕуηтнiα.chalk.hex("#8B8000").bold(Topic);
+    let Show = ѕуηтнiα.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
-      νℓкуяє.chalk.black(νℓкуяє.chalk.bgBlack(TShow)),
-      νℓкуяє.chalk.black(Show)
+      ѕуηтнiα.chalk.black(ѕуηтнiα.chalk.bgBlack(TShow)),
+      ѕуηтнiα.chalk.black(Show)
     );
   }
   function between(min, max) {
@@ -221,42 +221,42 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
   }
   function clearStorage(files) {
     for (let file of files) {
-      νℓкуяє.fs.unlink(file, (err) => {
+      ѕуηтнiα.fs.unlink(file, (err) => {
         if (err) throw err;
       });
     }
   }
 
-  νℓкуяє.ShowGreen = ShowGreen;
-  νℓкуяє.ShowBlue = ShowBlue;
-  νℓкуяє.ShowRed = ShowRed;
-  νℓкуяє.ShowYellow = ShowYellow;
-  νℓкуяє.between = between;
-  νℓкуяє.clearStorage = clearStorage;
-  νℓкуяє.spinner = {
+  ѕуηтнiα.ShowGreen = ShowGreen;
+  ѕуηтнiα.ShowBlue = ShowBlue;
+  ѕуηтнiα.ShowRed = ShowRed;
+  ѕуηтнiα.ShowYellow = ShowYellow;
+  ѕуηтнiα.between = between;
+  ѕуηтнiα.clearStorage = clearStorage;
+  ѕуηтнiα.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
   };
-  νℓкуяє.spinnies = new νℓкуяє.Spinnies({
+  ѕуηтнiα.spinnies = new ѕуηтнiα.Spinnies({
     color: "cyan",
     succeedColor: "green",
-    spinner: νℓкуяє.spinner,
+    spinner: ѕуηтнiα.spinner,
   });
-  νℓкуяє.TubeRegex =
+  ѕуηтнiα.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  νℓкуяє.ShowLogger = ShowLogger;
-  νℓкуяє.packname = packname;
-  νℓкуяє.pgdb = DATABASE_URL;
-  νℓкуяє.ShowInfo = ShowInfo;
-  νℓкуяє.MONGO_URL = MONGO_URL;
-  νℓкуяє.author = author;
-  νℓкуяє.prefix = prefix;
-  νℓкуяє.sudo = sudo;
+  ѕуηтнiα.ShowLogger = ShowLogger;
+  ѕуηтнiα.packname = packname;
+  ѕуηтнiα.pgdb = DATABASE_URL;
+  ѕуηтнiα.ShowInfo = ShowInfo;
+  ѕуηтнiα.MONGO_URL = MONGO_URL;
+  ѕуηтнiα.author = author;
+  ѕуηтнiα.prefix = prefix;
+  ѕуηтнiα.sudo = sudo;
   sudotring =
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  νℓкуяє.isSudoWorker = sudotring.includes(
+  ѕуηтнiα.isSudoWorker = sudotring.includes(
     νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
   );
   var LOGOS = [
@@ -267,7 +267,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     "vlkyre_ (5).png",
   ];
   var i = Math.floor(Math.random() * LOGOS.length);
-  νℓкуяє.logo = "./src/logo/" + LOGOS[i];
+  ѕуηтнiα.logo = "./src/logo/" + LOGOS[i];
 
-  return νℓкуяє;
+  return ѕуηтнiα;
 };

@@ -1,5 +1,5 @@
-function feed(νℓкуяє, url) {
-  return νℓкуяє.axios({
+function feed(ѕуηтнiα, url) {
+  return ѕуηтнiα.axios({
     method: "get",
     url: url,
     headers: {

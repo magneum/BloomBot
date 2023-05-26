@@ -1,21 +1,21 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ ѕуηтнiα was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, νℓкhat, update, store) => {
+module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
   try {
     let Item;
     let NewLimit;
@@ -30,120 +30,120 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
     const BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
     const RobCatelog = ["sword", "laptop", "charm"];
 
-    if (νℓкуяє.args[0] === "bronze") {
+    if (ѕуηтнiα.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (νℓкуяє.args[0] === "silver") {
+    if (ѕуηтнiα.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (νℓкуяє.args[0] === "gold") {
+    if (ѕуηтнiα.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (νℓкуяє.args[0] === "platinum") {
+    if (ѕуηтнiα.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (νℓкуяє.args[0] === "diamond") {
+    if (ѕуηтнiα.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
-    if (νℓкуяє.args[0] === "charm") {
+    if (ѕуηтнiα.args[0] === "charm") {
       Item = "charm";
       ItemPrice = 6000;
     }
-    if (νℓкуяє.args[0] === "sword") {
+    if (ѕуηтнiα.args[0] === "sword") {
       Item = "sword";
       ItemPrice = 1000;
     }
-    if (νℓкуяє.args[0] === "laptop") {
+    if (ѕуηтнiα.args[0] === "laptop") {
       Item = "laptop";
       ItemPrice = 4000;
     }
 
-    if (νℓкуяє.args[0] === "bronze") {
+    if (ѕуηтнiα.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (νℓкуяє.args[0] === "silver") {
+    if (ѕуηтнiα.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (νℓкуяє.args[0] === "gold") {
+    if (ѕуηтнiα.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (νℓкуяє.args[0] === "platinum") {
+    if (ѕуηтнiα.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (νℓкуяє.args[0] === "diamond") {
+    if (ѕуηтнiα.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
 
-    if (!νℓкуяє.args) {
-      await νℓкуяє.sendMessage(νℓкhat.chat, {
+    if (!ѕуηтнiα.args) {
+      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} item_
-> _You may use ${νℓкуяє.prefix}shop to look for items..._`
+> _${ѕуηтнiα.prefix}${pfname} item_
+> _You may use ${ѕуηтнiα.prefix}shop to look for items..._`
       );
     }
 
-    if (νℓкуяє.args.length === 0) {
-      await νℓкуяє.sendMessage(νℓкhat.chat, {
+    if (ѕуηтнiα.args.length === 0) {
+      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} item_
-> _You may use ${νℓкуяє.prefix}shop to look for items..._`
+> _${ѕуηтнiα.prefix}${pfname} item_
+> _You may use ${ѕуηтнiα.prefix}shop to look for items..._`
       );
     }
 
-    if (RobCatelog.includes(νℓкуяє.args[0])) {
-      νℓкуяє.Economy.findOne(
+    if (RobCatelog.includes(ѕуηтнiα.args[0])) {
+      ѕуηтнiα.Economy.findOne(
         {
           ID: νℓкhat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+            return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
           }
 
           if (!userEco) {
-            let newUser = new νℓкуяє.Economy({
+            let newUser = new ѕуηтнiα.Economy({
               ID: νℓкhat.sender,
               money: 0,
               daily: 0,
@@ -154,26 +154,26 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+              return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
             });
-            return await νℓкуяє.imgB(
-              νℓкуяє,
+            return await ѕуηтнiα.imgB(
+              ѕуηтнiα,
               νℓкhat,
-              `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+              `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./src/vlkyre.jpg"
             );
           }
-          νℓкуяє.Robbery.findOne(
+          ѕуηтнiα.Robbery.findOne(
             {
               ID: νℓкhat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
               }
               if (!userRob) {
-                new νℓкуяє.Robbery({
+                new ѕуηтнiα.Robbery({
                   ID: νℓкhat.sender,
                   sword: 0,
                   laptop: 0,
@@ -183,22 +183,22 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./src/vlkyre.jpg"
                 );
               } else {
                 if (userEco.money < ItemPrice) {
-                  return await νℓкуяє.imgB(
-                    νℓкуяє,
+                  return await ѕуηтнiα.imgB(
+                    ѕуηтнiα,
                     νℓкhat,
                     `*🔖Here, ${pfname} For @${
-                      νℓкуяє.Tname || νℓкуяє.pushname
+                      ѕуηтнiα.Tname || ѕуηтнiα.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -213,16 +213,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
-                  return await νℓкуяє.imgB(
-                    νℓкуяє,
+                  return await ѕуηтнiα.imgB(
+                    ѕуηтнiα,
                     νℓкhat,
                     `*🔖Here, ${pfname} For @${
-                      νℓкуяє.Tname || νℓкуяє.pushname
+                      ѕуηтнiα.Tname || ѕуηтнiα.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -235,16 +235,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
-                  return await νℓкуяє.imgB(
-                    νℓкуяє,
+                  return await ѕуηтнiα.imgB(
+                    ѕуηтнiα,
                     νℓкhat,
                     `*🔖Here, ${pfname} For @${
-                      νℓкуяє.Tname || νℓкуяє.pushname
+                      ѕуηтнiα.Tname || ѕуηтнiα.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -257,16 +257,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
-                  return await νℓкуяє.imgB(
-                    νℓкуяє,
+                  return await ѕуηтнiα.imgB(
+                    ѕуηтнiα,
                     νℓкhat,
                     `*🔖Here, ${pfname} For @${
-                      νℓкуяє.Tname || νℓкуяє.pushname
+                      ѕуηтнiα.Tname || ѕуηтнiα.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -274,10 +274,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                     "./src/vlkyre.jpg"
                   );
                 }
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./src/vlkyre.jpg"
@@ -287,27 +287,27 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
           );
         }
       );
-    } else if (BadCatelog.includes(νℓкуяє.args[0])) {
-      await νℓкуяє.Economy.findOne(
+    } else if (BadCatelog.includes(ѕуηтнiα.args[0])) {
+      await ѕуηтнiα.Economy.findOne(
         {
           ID: νℓкhat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+            return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
           }
 
-          await νℓкуяє.Bagde.findOne(
+          await ѕуηтнiα.Bagde.findOne(
             {
               ID: νℓкhat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
               }
 
               if (!userEco) {
-                new νℓкуяє.Economy({
+                new ѕуηтнiα.Economy({
                   ID: νℓкhat.sender,
                   money: 0,
                   daily: 0,
@@ -319,12 +319,12 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                   });
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -335,7 +335,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               }
 
               if (!userBadge) {
-                let newBagdeUser = new νℓкуяє.Bagde({
+                let newBagdeUser = new ѕуηтнiα.Bagde({
                   ID: νℓкhat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -344,12 +344,12 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                  return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                 });
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -360,10 +360,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               }
 
               if (userEco.money < ItemPrice) {
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -374,10 +374,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
               }
 
               if (userBadge.Badge === Item) {
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./src/vlkyre.jpg"
@@ -393,15 +393,15 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                  return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+                  return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
                 });
-                return await νℓкуяє.imgB(
-                  νℓкуяє,
+                return await ѕуηтнiα.imgB(
+                  ѕуηтнiα,
                   νℓкhat,
-                  `*🔖Here, ${pfname} For ${νℓкуяє.pushname || νℓкуяє.Tname}:*
+                  `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -414,24 +414,24 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         }
       );
     } else {
-      await νℓкуяє.sendMessage(νℓкhat.chat, {
+      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} item_
-> _You may use ${νℓкуяє.prefix}shop to look for items..._`
+> _${ѕуηтнiα.prefix}${pfname} item_
+> _You may use ${ѕуηтнiα.prefix}shop to look for items..._`
       );
     }
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
   }
 };
