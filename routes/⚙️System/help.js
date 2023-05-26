@@ -9,7 +9,7 @@
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚════════════╝
+// ┕╚═══════════╝
 ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 require("../../global.js");
 const ppath = require("path");
@@ -53,7 +53,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 > Total Commands: ${countFiles("./routes")}
 
 
-╔══☰ *❗Console❗* 〕
+╔══☰ *❗ CONSOLE*
 ║⦁ *Uptime :* ${runtime(process.uptime())}
 ║⦁ *OS Release:* ${νℓкуяє.os.release()}
 ║⦁ *OS Type:*   ${νℓкуяє.os.type()}
@@ -65,9 +65,8 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 ║⦁ *Total memory:* ${νℓкуяє.os.totalmem()}
 ║⦁ *Host device :* ${νℓкуяє.os.hostname()}
 ║⦁ *OS Version:* ${νℓкуяє.os.version()}
-╚══☰
-╔══☰
-║>  *❕Commands❕*
+┕╚═☰
+╔══☰ *❕ COMMANDS*
 ║⦁ 🐉 ${νℓкуяє.prefix}emotionslist
 ║⦁ 📢 ${νℓкуяє.prefix}audiofilterlist
 ║⦁ 📼 ${νℓкуяє.prefix}conversionlist
@@ -81,7 +80,266 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
 ║⦁ 🦄 ${νℓкуяє.prefix}sfwlist
 ║⦁ 🍑 ${νℓкуяє.prefix}hentailist
 ║⦁ 👅 ${νℓкуяє.prefix}nsfwlist
-╚═══════⋑`,
+╚══════⋑
+
+
+
+┌╔══☰ *🍁${pfname.toUpperCase()}🍁*
+│║⦁ ${νℓкуяє.prefix}ban
+│║⦁ ${νℓкуяє.prefix}broadcast
+│║⦁ ${νℓкуяє.prefix}join
+│║⦁ ${νℓкуяє.prefix}leave
+│║⦁ ${νℓкуяє.prefix}reboot
+│║⦁ ${νℓкуяє.prefix}rules
+│║⦁ ${νℓкуяє.prefix}unban
+│║⦁ ${νℓкуяє.prefix}verify
+┕╚═☰
+╔══☰ *📢${pfname.toUpperCase()}📢*
+│║⦁ ${νℓкуяє.prefix}panning
+│║⦁ ${νℓкуяє.prefix}bassboost
+│║⦁ ${νℓкуяє.prefix}echo
+│║⦁ ${νℓкуяє.prefix}fast
+│║⦁ ${νℓкуяє.prefix}flanger
+│║⦁ ${νℓкуяє.prefix}nightcore
+│║⦁ ${νℓкуяє.prefix}phaser
+│║⦁ ${νℓкуяє.prefix}reverse
+│║⦁ ${νℓкуяє.prefix}slow
+│║⦁ ${νℓкуяє.prefix}speed
+│║⦁ ${νℓкуяє.prefix}subboost
+│║⦁ ${νℓкуяє.prefix}superslow
+│║⦁ ${νℓкуяє.prefix}superspeed
+│║⦁ ${νℓкуяє.prefix}surround
+│║⦁ ${νℓкуяє.prefix}vaporwave
+│║⦁ ${νℓкуяє.prefix}vibrato
+┕╚═☰
+╔══☰ *📼${pfname.toUpperCase()}📼*
+│║⦁ ${νℓкуяє.prefix}carbon
+│║⦁ ${νℓкуяє.prefix}ship
+│║⦁ ${νℓкуяє.prefix}sticker
+│║⦁ ${νℓкуяє.prefix}tinyurl
+│║⦁ ${νℓкуяє.prefix}tourl
+│║⦁ ${νℓкуяє.prefix}tts
+┕╚═☰
+╔══☰ *📥${pfname.toUpperCase()}📥* 
+│║⦁ ${νℓкуяє.prefix}yta
+│║⦁ ${νℓкуяє.prefix}play
+│║⦁ ${νℓкуяє.prefix}song
+│║⦁ ${νℓкуяє.prefix}sing
+│║⦁ ${νℓкуяє.prefix}ytmp3
+│║⦁ ${νℓкуяє.prefix}music
+│║⦁ ${νℓкуяє.prefix}ytplay
+│║⦁ ${νℓкуяє.prefix}ytaudio
+│║⦁ ${νℓкуяє.prefix}ytmusic
+│║⦁ ${νℓкуяє.prefix}youtubemusic
+│║⦁ 
+│║⦁ ${νℓкуяє.prefix}ytv
+│║⦁ ${νℓкуяє.prefix}watch
+│║⦁ ${νℓкуяє.prefix}stream
+│║⦁ ${νℓкуяє.prefix}ytmp4
+│║⦁ ${νℓкуяє.prefix}video
+│║⦁ ${νℓкуяє.prefix}ytwatch
+│║⦁ ${νℓкуяє.prefix}ytvideo
+│║⦁ ${νℓкуяє.prefix}youtubevideo
+┕╚═☰
+╔══☰ *🐉${pfname.toUpperCase()}🐉* 
+│║⦁ ${νℓкуяє.prefix}bite
+│║⦁ ${νℓкуяє.prefix}blush
+│║⦁ ${νℓкуяє.prefix}bonk
+│║⦁ ${νℓкуяє.prefix}bored
+│║⦁ ${νℓкуяє.prefix}confused
+│║⦁ ${νℓкуяє.prefix}cry
+│║⦁ ${νℓкуяє.prefix}cuddle
+│║⦁ ${νℓкуяє.prefix}dance
+│║⦁ ${νℓкуяє.prefix}goodnight
+│║⦁ ${νℓкуяє.prefix}happy
+│║⦁ ${νℓкуяє.prefix}highfive
+│║⦁ ${νℓкуяє.prefix}hug
+│║⦁ ${νℓкуяє.prefix}kill
+│║⦁ ${νℓкуяє.prefix}kiss
+│║⦁ ${νℓкуяє.prefix}nervous
+│║⦁ ${νℓкуяє.prefix}pat
+│║⦁ ${νℓкуяє.prefix}poke
+│║⦁ ${νℓкуяє.prefix}punch
+│║⦁ ${νℓкуяє.prefix}sad
+│║⦁ ${νℓкуяє.prefix}scream
+│║⦁ ${νℓкуяє.prefix}slap
+│║⦁ ${νℓкуяє.prefix}smile
+│║⦁ ${νℓкуяє.prefix}stare
+│║⦁ ${νℓкуяє.prefix}wave
+│║⦁ ${νℓкуяє.prefix}wink
+│║⦁ ${νℓкуяє.prefix}yeet
+│║⦁ ${νℓкуяє.prefix}yes
+┕╚═☰
+╔══☰ *💰${pfname.toUpperCase()}💰* 
+│║⦁ ${νℓкуяє.prefix}balance
+│║⦁ ${νℓкуяє.prefix}buy
+│║⦁ ${νℓкуяє.prefix}daily
+│║⦁ ${νℓкуяє.prefix}fish
+│║⦁ ${νℓкуяє.prefix}gamble
+│║⦁ ${νℓкуяє.prefix}inv
+│║⦁ ${νℓкуяє.prefix}pay
+│║⦁ ${νℓкуяє.prefix}rob
+│║⦁ ${νℓкуяє.prefix}store
+│║⦁ ${νℓкуяє.prefix}work
+│║⦁ ${νℓкуяє.prefix}zoo
+┕╚═☰
+╔══☰ *🔰${pfname.toUpperCase()}🔰* 
+│║⦁ ${νℓкуяє.prefix}antilink
+│║⦁ ${νℓкуяє.prefix}antinsfw
+│║⦁ ${νℓкуяє.prefix}delete
+│║⦁ ${νℓкуяє.prefix}group
+│║⦁ ${νℓкуяє.prefix}kick
+│║⦁ ${νℓкуяє.prefix}promote
+│║⦁ ${νℓкуяє.prefix}setdesc
+│║⦁ ${νℓкуяє.prefix}seticon
+│║⦁ ${νℓкуяє.prefix}tagall
+┕╚═☰
+╔══☰ *🖼️${pfname.toUpperCase()}🖼️* 
+║> ${νℓкуяє.prefix}image
+║> ${νℓкуяє.prefix}unsplash
+│║⦁ ${νℓкуяє.prefix}pinterest
+│║⦁ ${νℓкуяє.prefix}wallpaper
+┕╚═☰
+╔══☰ *🔎${pfname.toUpperCase()}🔎* 
+│║⦁ ${νℓкуяє.prefix}advice
+│║⦁ ${νℓкуяє.prefix}anime
+│║⦁ ${νℓкуяє.prefix}chordlist
+│║⦁ ${νℓкуяє.prefix}fact
+│║⦁ ${νℓкуяє.prefix}getchord
+│║⦁ ${νℓкуяє.prefix}gify
+│║⦁ ${νℓкуяє.prefix}google
+│║⦁ ${νℓкуяє.prefix}instagram
+│║⦁ ${νℓкуяє.prefix}joke
+│║⦁ ${νℓкуяє.prefix}lyrics
+│║⦁ ${νℓкуяє.prefix}manga
+│║⦁ ${νℓкуяє.prefix}meme
+│║⦁ ${νℓкуяє.prefix}pokedex
+│║⦁ ${νℓкуяє.prefix}quote
+│║⦁ ${νℓкуяє.prefix}reddit
+│║⦁ ${νℓкуяє.prefix}ytsearch
+┕╚═☰
+╔══☰ *🍑${pfname.toUpperCase()}🍑* 
+│║⦁ ${νℓкуяє.prefix}ass
+│║⦁ ${νℓкуяє.prefix}bdsm
+│║⦁ ${νℓкуяє.prefix}blowjob
+│║⦁ ${νℓкуяє.prefix}cum
+│║⦁ ${νℓкуяє.prefix}doujin
+│║⦁ ${νℓкуяє.prefix}feet
+│║⦁ ${νℓкуяє.prefix}femdom  
+│║⦁ ${νℓкуяє.prefix}foxgirl  
+│║⦁ ${νℓкуяє.prefix}glasses  
+│║⦁ ${νℓкуяє.prefix}hentai
+│║⦁ ${νℓкуяє.prefix}maid
+│║⦁ ${νℓкуяє.prefix}masturbation
+│║⦁ ${νℓкуяє.prefix}netorare
+│║⦁ ${νℓкуяє.prefix}orgy
+│║⦁ ${νℓкуяє.prefix}panties
+│║⦁ ${νℓкуяє.prefix}pussy
+│║⦁ ${νℓкуяє.prefix}school
+│║⦁ ${νℓкуяє.prefix}succubus
+│║⦁ ${νℓкуяє.prefix}tentacles
+│║⦁ ${νℓкуяє.prefix}thighs
+│║⦁ ${νℓкуяє.prefix}uglyBastard
+│║⦁ ${νℓкуяє.prefix}uniform
+│║⦁ ${νℓкуяє.prefix}yuri
+│║⦁ ${νℓкуяє.prefix}zettaiRyouiki
+┕╚═☰
+╔══☰ *👅${pfname.toUpperCase()}👅* 
+│║⦁ ${νℓкуяє.prefix}nsfw
+│║⦁ ${νℓкуяє.prefix}nsfw2
+│║⦁ ${νℓкуяє.prefix}bonermaterial
+│║⦁ ${νℓкуяє.prefix}nsfw411
+│║⦁ ${νℓкуяє.prefix}iwanttofuckher
+│║⦁ ${νℓкуяє.prefix}exxxtras
+│║⦁ ${νℓкуяє.prefix}distension
+│║⦁ ${νℓкуяє.prefix}bimbofetish
+│║⦁ ${νℓкуяє.prefix}christiangirls
+│║⦁ ${νℓкуяє.prefix}dirtygaming
+│║⦁ ${νℓкуяє.prefix}sexybutnotporn
+│║⦁ ${νℓкуяє.prefix}femalepov
+│║⦁ ${νℓкуяє.prefix}omgbeckylookathiscock
+│║⦁ ${νℓкуяє.prefix}sexygirls
+│║⦁ ${νℓкуяє.prefix}breedingmaterial
+│║⦁ ${νℓкуяє.prefix}canthold
+│║⦁ ${νℓкуяє.prefix}toocuteforporn
+│║⦁ ${νℓкуяє.prefix}justhotwomen
+│║⦁ ${νℓкуяє.prefix}stripgirls
+│║⦁ ${νℓкуяє.prefix}hotstuffnsfw
+│║⦁ ${νℓкуяє.prefix}uncommonposes
+│║⦁ ${νℓкуяє.prefix}gifsofremoval
+│║⦁ ${νℓкуяє.prefix}nostalgiafapping
+│║⦁ ${νℓкуяє.prefix}truefmk
+│║⦁ ${νℓкуяє.prefix}nudes
+│║⦁ ${νℓкуяє.prefix}4k
+│║⦁ ${νℓкуяє.prefix}realgirls
+│║⦁ ${νℓкуяє.prefix}blowjobs
+│║⦁ ${νℓкуяє.prefix}milf
+│║⦁ ${νℓкуяє.prefix}milk
+│║⦁ ${νℓкуяє.prefix}milking
+│║⦁ ${νℓкуяє.prefix}lactating
+│║⦁ ${νℓкуяє.prefix}pussy
+│║⦁ ${νℓкуяє.prefix}cum
+│║⦁ ${νℓкуяє.prefix}slut
+│║⦁ ${νℓкуяє.prefix}cumslut
+┕╚═☰
+╔══☰ *🦄${pfname.toUpperCase()}🦄* 
+│║⦁ ${νℓкуяє.prefix}waifu
+│║⦁ ${νℓкуяє.prefix}swaifu
+│║⦁ ${νℓкуяє.prefix}neko
+│║⦁ ${νℓкуяє.prefix}sneko
+│║⦁ ${νℓкуяє.prefix}shinobu
+│║⦁ ${νℓкуяє.prefix}sshinobu
+│║⦁ ${νℓкуяє.prefix}megumin
+│║⦁ ${νℓкуяє.prefix}smegumin
+│║⦁ ${νℓкуяє.prefix}awoo
+│║⦁ ${νℓкуяє.prefix}sawoo
+│║⦁ ${νℓкуяє.prefix}glomp
+│║⦁ ${νℓкуяє.prefix}sglomp
+│║⦁ ${νℓкуяє.prefix}handhold
+│║⦁ ${νℓкуяє.prefix}shandhold
+│║⦁
+│║⦁ ${νℓкуяє.prefix}sbully
+│║⦁ ${νℓкуяє.prefix}scuddle
+│║⦁ ${νℓкуяє.prefix}scry
+│║⦁ ${νℓкуяє.prefix}shug
+│║⦁ ${νℓкуяє.prefix}skiss
+│║⦁ ${νℓкуяє.prefix}slick
+│║⦁ ${νℓкуяє.prefix}spat
+│║⦁ ${νℓкуяє.prefix}ssmug
+│║⦁ ${νℓкуяє.prefix}sbonk
+│║⦁ ${νℓкуяє.prefix}syeet
+│║⦁ ${νℓкуяє.prefix}sblush
+│║⦁ ${νℓкуяє.prefix}ssmile
+│║⦁ ${νℓкуяє.prefix}swave
+│║⦁ ${νℓкуяє.prefix}shighfive
+│║⦁ ${νℓкуяє.prefix}snom
+│║⦁ ${νℓкуяє.prefix}sbite
+│║⦁ ${νℓкуяє.prefix}sslap
+│║⦁ ${νℓкуяє.prefix}skill
+│║⦁ ${νℓкуяє.prefix}skick
+│║⦁ ${νℓкуяє.prefix}shappy
+│║⦁ ${νℓкуяє.prefix}swink
+│║⦁ ${νℓкуяє.prefix}spoke
+│║⦁ ${νℓкуяє.prefix}sdance
+│║⦁ ${νℓкуяє.prefix}scringe
+┕╚═☰
+╔══☰ *⭕${pfname.toUpperCase()}⭕* 
+│║⦁ ${νℓкуяє.prefix}ytpanning
+│║⦁ ${νℓкуяє.prefix}ytbassboost
+│║⦁ ${νℓкуяє.prefix}ytecho
+│║⦁ ${νℓкуяє.prefix}ytflanger
+│║⦁ ${νℓкуяє.prefix}ytnightcore
+│║⦁ ${νℓкуяє.prefix}ytphaser
+│║⦁ ${νℓкуяє.prefix}ytreverse
+│║⦁ ${νℓкуяє.prefix}ytslow
+│║⦁ ${νℓкуяє.prefix}ytspeed
+│║⦁ ${νℓкуяє.prefix}ytsubboost
+│║⦁ ${νℓкуяє.prefix}ytsuperslow
+│║⦁ ${νℓкуяє.prefix}ytsuperspeed
+│║⦁ ${νℓкуяє.prefix}ytsurround
+│║⦁ ${νℓкуяє.prefix}ytvaporwave
+│║⦁ ${νℓкуяє.prefix}ytvibrato
+┕╚═════⋑`,
     νℓкуяє.logo
   );
 };
