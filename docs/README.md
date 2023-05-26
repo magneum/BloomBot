@@ -1,4 +1,4 @@
-# [🕊️Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: Advance Javascript + Python Whatsapp UserBot](https://bit.ly/magneum)
+# [🕊️Ⓒ𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: Advance Javascript + Python Whatsapp User-Bot](https://bit.ly/magneum)
 
 <p align="centre"><img  width="40%" height="80%" img src="https://github.com/magneum/Synthia/blob/magneum/src/synthia.jpg" /></p>
 
@@ -11,55 +11,11 @@
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/synthia-bot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/synthia-bot)
+[![NPM](https://nodei.co/npm/synthia.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/synthia)
 
-[![npm version](https://badge.fury.io/js/synthia-bot.svg)](https://badge.fury.io/js/synthia-bot/)
-
-<h1 align="left">🍂Deployment </h1>
-
-```
-<\> Three methods Available!
-- 🔥Self Hosting
-- 🍀Koyeb
-- 🚄Railway
-```
-
-<h1 align="left">🔥Self Hosting Using Linux</h1>
-
-```
-📍 NODE_MODULE
-> 'npm install synthia-bot' 
-or 
-> 'yarn add synthia-bot'
+[![npm version](https://badge.fury.io/js/synthia.svg)](https://badge.fury.io/js/synthia/)
 
 
-📍 SET ENVIRONMENT VARIABLES:
-> export MONGO_URL= your mongodb url string
-> (optional) export PORT = available port number
-> (optional) export DATABASE_URL= your postgres url string
-
-📍 RUN VLKYRE
-> create a new index.js file and add below code.
-const { synthia } = require("synthia-bot");
-synthia().catch((error) => {
-  console.log(error);
-  process.exit(0);
-});
-```
-
-<h1 align="left">🍀Deploy in Koyeb Using Docker Image</h1>
-
-- To Deploy in Koyeb watch this [video](https://youtube.com)
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=magneum/synthia-bot:koyeb&name=synthia-bot)
-
-<h1 align="left">🚄Deploy in Railway.app using Nix Builder</h1>
-
-- To Deploy in Railway watch this [video](https://youtube.com)
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/GN97ec?referralCode=B6ZmKf)
-
-<h1 align="left">⚠️Disclaimer</h1>
 
 ```
 ╔⧉༻ ❝ Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 ❞
