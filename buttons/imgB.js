@@ -1,24 +1,23 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-// ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
-// ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ Synthia was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
-// ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-module.exports = async (νℓкуяє, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
-  if (νℓкуяє.isReply) {
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+module.exports = async (ѕуηтнiα, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
+  if (ѕуηтнiα.isReply) {
     var receiver =
-      νℓкуяє.mtype == "extendedTextMessage" &&
-      νℓкуяє.message.extendedTextMessage.contextInfo != null
-        ? νℓкуяє.message.extendedTextMessage.contextInfo.participant || ""
+      ѕуηтнiα.mtype == "extendedTextMessage" &&
+      ѕуηтнiα.message.extendedTextMessage.contextInfo != null
+        ? ѕуηтнiα.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    await νℓкуяє
+    await ѕуηтнiα
       .sendMessage(
         νℓкhat.chat,
         {
@@ -28,13 +27,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
-              buttonId: `${νℓкуяє.prefix}Dashboard`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              buttonId: `${ѕуηтнiα.prefix}Dashboard`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Dashboard` },
               type: 1,
             },
             {
-              buttonId: `${νℓкуяє.prefix}Help`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Help` },
+              buttonId: `${ѕуηтнiα.prefix}Help`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Help` },
               type: 1,
             },
           ],
@@ -47,14 +46,14 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         }
       )
       .catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } else if (νℓкуяє.mentionByTag) {
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else if (ѕуηтнiα.mentionByTag) {
     var receiver =
-      νℓкуяє.mtype == "extendedTextMessage" &&
-      νℓкуяє.message.extendedTextMessage.contextInfo != null
-        ? νℓкуяє.message.extendedTextMessage.contextInfo.mentionedJid
+      ѕуηтнiα.mtype == "extendedTextMessage" &&
+      ѕуηтнiα.message.extendedTextMessage.contextInfo != null
+        ? ѕуηтнiα.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
-    await νℓкуяє
+    await ѕуηтнiα
       .sendMessage(
         νℓкhat.chat,
         {
@@ -64,13 +63,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
-              buttonId: `${νℓкуяє.prefix}Dashboard`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              buttonId: `${ѕуηтнiα.prefix}Dashboard`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Dashboard` },
               type: 1,
             },
             {
-              buttonId: `${νℓкуяє.prefix}Help`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Help` },
+              buttonId: `${ѕуηтнiα.prefix}Help`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Help` },
               type: 1,
             },
           ],
@@ -83,9 +82,9 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         }
       )
       .catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return await νℓкуяє
+    return await ѕуηтнiα
       .sendMessage(
         νℓкhat.chat,
         {
@@ -95,13 +94,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*Vlkyre™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
-              buttonId: `${νℓкуяє.prefix}Dashboard`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Dashboard` },
+              buttonId: `${ѕуηтнiα.prefix}Dashboard`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Dashboard` },
               type: 1,
             },
             {
-              buttonId: `${νℓкуяє.prefix}Help`,
-              buttonText: { displayText: `${νℓкуяє.prefix}Help` },
+              buttonId: `${ѕуηтнiα.prefix}Help`,
+              buttonText: { displayText: `${ѕуηтнiα.prefix}Help` },
               type: 1,
             },
           ],

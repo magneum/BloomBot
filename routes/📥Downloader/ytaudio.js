@@ -1,16 +1,16 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 // ╔⧉༻ [ 𝐕𝐥𝐤𝐲𝐫𝐞🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬 +918436686758,917430922909
 // ║
 // ║ We won't be responsible for any kind of ban due to this bot.
-// ║ νℓкуяє was made for fun purpose and to make group management easier.
+// ║ ѕуηтнiα was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
 // ║ Also, Forks won't be entertained.
 // ║ If you fork this repo and edit plugins, it's your concern for further updates.
 // ║ Forking Repo is fine. But if you edit something we will not provide any help.
 // ║ In short, Fork At Your Own Risk.
 // ╚════════════╝
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ νℓкуяє вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
 var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var progress = require("progress-estimator")();
@@ -20,31 +20,31 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (νℓкуяє, νℓкhat, update, store) => {
+module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
   try {
-    if (!νℓкуяє.args) {
-      await νℓкуяє.sendMessage(νℓкhat.chat, {
+    if (!ѕуηтнiα.args) {
+      await ѕуηтнiα.sendMessage(νℓкhat.chat, {
         react: {
           text: "❌",
           key: νℓкhat.key,
         },
       });
       return νℓкhat.reply(
-        `*😥Sorry:* _${νℓкуяє.pushname || νℓкуяє.Tname}_
+        `*😥Sorry:* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${νℓкуяє.prefix}${pfname} song-name_`
+> _${ѕуηтнiα.prefix}${pfname} song-name_`
       );
     }
-    νℓкуяє
+    ѕуηтнiα
       .axios({
         method: "get",
         url:
           "https://magneum.vercel.app/api/youtube_sr?q=" +
-          νℓкуяє.args.join(" "),
+          ѕуηтнiα.args.join(" "),
         headers: {
           accept: "*/*",
           "accept-language": "en-US,en;q=0.9",
@@ -67,10 +67,10 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
       .then(async (response) => {
         var mData = response.data;
         console.log(mData);
-        await νℓкуяє.imgB(
-          νℓкуяє,
+        await ѕуηтнiα.imgB(
+          ѕуηтнiα,
           νℓкhat,
-          `*🔖Here, ${pfname} For ${νℓкуяє.pushname}:*
+          `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname}:*
 *🍻Title:* ${mData.youtube_search[0].TITLE}
 *🙈Views:* ${mData.youtube_search[0].VIEWS}
 *🔗Link:* ${mData.youtube_search[0].LINK || "null"}
@@ -83,16 +83,16 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         const stream = ytdl(mData.youtube_search[0].LINK, {
           filter: (info) =>
             info.audioBitrate == 160 || info.audioBitrate == 128,
-        }).pipe(νℓкуяє.fs.createWriteStream(`./${mData.uuid}`));
+        }).pipe(ѕуηтнiα.fs.createWriteStream(`./${mData.uuid}`));
         await new Promise((resolve, reject) => {
           stream.on("error", reject);
           stream.on("finish", resolve);
         });
-        await νℓкуяє
+        await ѕуηтнiα
           .sendMessage(
             νℓкhat.chat,
             {
-              audio: νℓкуяє.fs.readFileSync(`./${mData.uuid}`),
+              audio: ѕуηтнiα.fs.readFileSync(`./${mData.uuid}`),
               mimetype: "audio/mpeg",
               fileName: mData.youtube_search[0].TITLE + ".mp3",
               headerType: 4,
@@ -104,7 +104,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                   thumbnailUrl: mData.youtube_search[0].THUMB,
                   mediaUrl: mData.youtube_search[0].LINK,
                   mediaType: 1,
-                  thumbnail: await νℓкуяє.getBuffer(
+                  thumbnail: await ѕуηтнiα.getBuffer(
                     mData.youtube_search[0].HQ_IMAGE
                   ),
                   sourceUrl: "https://bit.ly/magneum",
@@ -113,7 +113,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             },
             { quoted: νℓкhat }
           )
-          .then(νℓкуяє.fs.unlinkSync(`./${mData.uuid}`));
+          .then(ѕуηтнiα.fs.unlinkSync(`./${mData.uuid}`));
         return;
         let _DROP = youtubedl(mData.youtube_search[0].LINK, {
           noWarnings: true,
@@ -147,7 +147,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             .format("mp3")
             .output(
               async (data) => {
-                await νℓкуяє.sendMessage(
+                await ѕуηтнiα.sendMessage(
                   νℓкhat.chat,
                   {
                     audio: {
@@ -164,7 +164,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,
                         mediaType: 1,
-                        thumbnail: await νℓкуяє.getBuffer(
+                        thumbnail: await ѕуηтнiα.getBuffer(
                           mData.youtube_search[0].HQ_IMAGE
                         ),
                         sourceUrl: "https://bit.ly/magneum",
@@ -192,7 +192,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             .format("mp3")
             .output(
               async (data) => {
-                await νℓкуяє.sendMessage(
+                await ѕуηтнiα.sendMessage(
                   νℓкhat.chat,
                   {
                     audio: {
@@ -209,7 +209,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,
                         mediaType: 1,
-                        thumbnail: await νℓкуяє.getBuffer(
+                        thumbnail: await ѕуηтнiα.getBuffer(
                           mData.youtube_search[0].HQ_IMAGE
                         ),
                         sourceUrl: "https://bit.ly/magneum",
@@ -238,7 +238,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
             .format("mp3")
             .output(
               async (data) => {
-                await νℓкуяє.sendMessage(
+                await ѕуηтнiα.sendMessage(
                   νℓкhat.chat,
                   {
                     audio: {
@@ -255,7 +255,7 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
                         thumbnailUrl: mData.youtube_search[0].THUMB,
                         mediaUrl: mData.youtube_search[0].LINK,
                         mediaType: 1,
-                        thumbnail: await νℓкуяє.getBuffer(
+                        thumbnail: await ѕуηтнiα.getBuffer(
                           mData.youtube_search[0].HQ_IMAGE
                         ),
                         sourceUrl: "https://bit.ly/magneum",
@@ -275,6 +275,6 @@ module.exports = async (νℓкуяє, νℓкhat, update, store) => {
         }
       });
   } catch (error) {
-    return νℓкуяє.grab(νℓкуяє, νℓкhat, error);
+    return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
   }
 };

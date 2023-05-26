@@ -1,4 +1,15 @@
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+// ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+// ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
+// ║
+// ║ We won't be responsible for any kind of ban due to this bot.
+// ║ Synthia was made for fun purpose and to make group management easier.
+// ║ It's your concern if you spam and gets your account banned.
+// ║ Also, Forks won't be entertained.
+// ║ If you fork this repo and edit plugins, it's your concern for further updates.
+// ║ Forking Repo is fine. But if you edit something we will not provide any help.
+// ║ In short, Fork At Your Own Risk.
+// ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("dotenv").config();
 var cors = require("cors");
 var https = require("https");
@@ -14,7 +25,7 @@ var contentDisposition = require("content-disposition");
 var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
 var PFPORT = process.env.PFPORT || process.env.pfport || 3003;
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 function shrink(url) {
   return new Promise((resolve, reject) => {
     https
@@ -31,7 +42,7 @@ function shrink(url) {
       });
   });
 }
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 var express = require("express");
 var app = express();
 var spin = new Spinnies();
@@ -42,7 +53,7 @@ app.listen(PFPORT, () => console.log("bit.ly/premiumdl :: " + PFPORT));
 app.get("/", (request, response) => {
   return response.send("bit.ly/premiumdl");
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 app.get("/spotify", async (request, response) => {
   try {
     let _ALINK;
@@ -139,7 +150,7 @@ app.get("/spotify", async (request, response) => {
     return response.status(400).json({ success: false, error: error.message });
   }
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 app.get("/video", async (request, response) => {
   try {
     console.log(request.query);
@@ -166,7 +177,7 @@ app.get("/video", async (request, response) => {
     return response.status(400).json({ success: false, error: error.message });
   }
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 app.get("/audio", async (request, response) => {
   try {
     console.log(request.query);
@@ -187,7 +198,7 @@ app.get("/audio", async (request, response) => {
     return response.status(400).json({ success: false, error: error.message });
   }
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 app.get("/metadata", async (request, response) => {
   try {
     let _ALINK;
