@@ -1,7 +1,7 @@
 // "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ѕуηтнiα вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 // ╔⧉༻ [ 𝐒𝐲𝐧𝐭𝐡𝐢𝐚🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧,𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 // ║      🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-// ║ 
+// ║
 // ║ We won't be responsible for any kind of ban due to this bot.
 // ║ Synthia was made for fun purpose and to make group management easier.
 // ║ It's your concern if you spam and gets your account banned.
@@ -33,7 +33,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 > _${ѕуηтнiα.prefix}${pfname} reply to Image_`
       );
     }
-    
+
     if (/image/.test(ѕуηтнiα.mime)) {
       random = Math.floor(Math.random() * 10000);
       media = await ѕуηтнiα.downloadAndSaveMediaMessage(ѕуηтнiα.quoted, random);
@@ -52,7 +52,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 *🐞 Bug* 
 > ${error}`);
           }
-          
+
           if (ѕуηтнiα.fs.existsSync(random + ".png")) {
             Found = random + ".png";
           } else if (ѕуηтнiα.fs.existsSync(random + ".jpg")) {
@@ -78,7 +78,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
 > _${ѕуηтнiα.prefix}${pfname} reply to Image_`
             );
           }
-          
+
           return await ѕуηтнiα
             .sendMessage(
               νℓкhat.chat,
@@ -103,8 +103,8 @@ _*⛺HomeLog:* ${ѕуηтнiα.ShowLogger}_`,
                     type: 1,
                   },
                   {
-                    buttonId: `${ѕуηтнiα.prefix}Vlkyre`,
-                    buttonText: { displayText: `${ѕуηтнiα.prefix}🛰️Vlkyre` },
+                    buttonId: `${ѕуηтнiα.prefix}Synthia`,
+                    buttonText: { displayText: `${ѕуηтнiα.prefix}🛰️Synthia` },
                     type: 1,
                   },
                 ],
@@ -120,7 +120,6 @@ _*⛺HomeLog:* ${ѕуηтнiα.ShowLogger}_`,
             );
         }
       );
-      
     } else {
       await ѕуηтнiα.sendMessage(νℓкhat.chat, {
         react: {
@@ -138,7 +137,6 @@ _*⛺HomeLog:* ${ѕуηтнiα.ShowLogger}_`,
 > _${ѕуηтнiα.prefix}${pfname} reply to Image_`
       );
     }
-    
   } catch (error) {
     return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
   }

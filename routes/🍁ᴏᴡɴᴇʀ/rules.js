@@ -34,7 +34,7 @@ module.exports = async (
     ѕуηтнiα,
     νℓкhat,
     `*🔖Here, ${pfname} For @${ѕуηтнiα.Tname || ѕуηтнiα.pushname}:*
-*🤖Hello, I am Vlkyre User-Bot🤖*
+*🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
@@ -45,6 +45,6 @@ module.exports = async (
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`,
-    "./src/νℓкуяє_dark.jpg"
+    "./src/ѕуηтнiα_dark.jpg"
   );
 };

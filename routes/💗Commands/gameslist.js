@@ -19,7 +19,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     ѕуηтнiα,
     νℓкhat,
     `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
-*🤖Hello, I am Vlkyre User-Bot🤖*
+*🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 

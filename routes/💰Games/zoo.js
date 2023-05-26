@@ -53,7 +53,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
               ID: νℓкhat.sender,
             },
             async (error, userZoo) => {
-              if (error) return Caught(ӄryӄnz, Vlkyre, error);
+              if (error) return Caught(ӄryӄnz, Synthia, error);
               if (!userZoo) {
                 new ѕуηтнiα.Zoology({
                   ID: νℓкhat.sender,

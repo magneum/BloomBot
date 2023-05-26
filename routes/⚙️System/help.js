@@ -47,7 +47,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     ѕуηтнiα,
     νℓкhat,
     `*🔖Here, ${pfname} For ${ѕуηтнiα.pushname || ѕуηтнiα.Tname}:*
-> ⒸVlkyre: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> ⒸSynthia: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./routes")}
 

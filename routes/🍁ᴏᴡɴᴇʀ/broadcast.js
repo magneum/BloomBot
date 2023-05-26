@@ -61,8 +61,8 @@ module.exports = async (
       );
     }
 
-    let νℓкуяєGroups = await ѕуηтнiα.groupFetchAllParticipating();
-    let vGroup = Object.entries(νℓкуяєGroups)
+    let ѕуηтнiαGroups = await ѕуηтнiα.groupFetchAllParticipating();
+    let vGroup = Object.entries(ѕуηтнiαGroups)
       .slice(0)
       .map((entry) => entry[1]);
     let places = vGroup.map((v) => v.id);
@@ -78,7 +78,7 @@ module.exports = async (
           url: "./src/Notice.mp4",
         },
         mimetype: "video/mp4",
-        fileName: "Vlkyre-Notice.mp4",
+        fileName: "Synthia-Notice.mp4",
         caption: `┌『*VLKYRE📢BROADCAST* 』
 │║⦁ *💫By:*  ${ѕуηтнiα.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🕛Time:*  ${ѕуηтнiα.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}

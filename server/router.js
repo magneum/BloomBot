@@ -148,7 +148,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
                 νℓкhat.chat,
                 {
                   gifPlayback: true,
-                  video: ѕуηтнiα.fs.readFileSync("./src/νℓкуяє_white.jpg"),
+                  video: ѕуηтнiα.fs.readFileSync("./src/ѕуηтнiα_white.jpg"),
                   caption: `*📢Verification Needed*
 *😥Sorry:* _${ѕуηтнiα.pushname}_
 

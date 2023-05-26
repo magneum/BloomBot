@@ -179,7 +179,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
     "list",
     "command",
     "commands",
-    "Vlkyre",
+    "Synthia",
     "Commands",
   ];
 

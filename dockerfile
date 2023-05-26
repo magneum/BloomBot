@@ -12,9 +12,9 @@ RUN apt-get update && apt-get install -y \
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
-RUN git clone https://github.com/magneum/Vlkyre
-RUN cd Vlkyre
-WORKDIR /Vlkyre
+RUN git clone https://github.com/magneum/Synthia
+RUN cd Synthia
+WORKDIR /Synthia
 RUN git init --initial-branch=magneum 
 RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
