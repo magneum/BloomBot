@@ -11,9 +11,9 @@
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/synthoria-bot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/synthoria-bot)
+[![NPM](https://nodei.co/npm/synthoria.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/synthoria)
 
-[![npm version](https://badge.fury.io/js/synthoria-bot.svg)](https://badge.fury.io/js/synthoria-bot/)
+[![npm version](https://badge.fury.io/js/synthoria.svg)](https://badge.fury.io/js/synthoria/)
 
 
 
