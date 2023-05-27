@@ -34,18 +34,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       );
     }
 
-    VօxB໐t.axios({
-      method: "get",
-      url:
-        "https://magneum.vercel.app/api/pinterest?q=" + VօxB໐t.args.join(" "),
-      headers: {
-        accept: "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      },
-    }).then(async (response) => {
+    VօxB໐t.magfetch(
+      VօxB໐t,
+      "https://magneum.vercel.app/api/pinterest?q=" + VօxB໐t.args.join(" ")
+    ).then(async (response) => {
       var mData = response.data;
       console.log(mData);
+
       var download =
         mData.meta.links[Math.floor(Math.random() * mData.meta.links.length)];
       return await VօxB໐t.imgB(

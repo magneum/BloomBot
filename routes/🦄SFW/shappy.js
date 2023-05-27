@@ -16,6 +16,11 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (VօxB໐t, νℓкhat, update, store) => {
   try {
+          VօxB໐t.magfetch(
+            VօxB໐t,
+            "https://magneum.vercel.app/api/sfw?q=yeet",
+          ).then(async (response) => {
+            
     VօxB໐t.axios({
       method: "get",
       url: "https://magneum.vercel.app/api/sfw?q=happy",

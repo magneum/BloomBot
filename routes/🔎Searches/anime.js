@@ -34,15 +34,10 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       );
     }
 
-    VօxB໐t.axios({
-      method: "get",
-      url: `https://magneum.vercel.app/api/anime?q=${pfname}`,
-      headers: {
-        accept: "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      },
-    }).then((response) => {
+    VօxB໐t.magfetch(
+      VօxB໐t,
+      `https://magneum.vercel.app/api/anime?q=${pfname}`
+    ).then(async (response) => {
       var viper = response.data;
       console.log(viper);
       VօxB໐t.imgB(
