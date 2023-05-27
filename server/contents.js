@@ -10,7 +10,7 @@
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-let folders = [".", ...Object.keys(require("./package.json").directories)];
+let folders = [".", ...Object.keys(require("../package.json").directories)];
 let rimraf = require("rimraf");
 for (let folder of folders) {
   rimraf(folder, function (Error) {
