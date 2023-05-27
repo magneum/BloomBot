@@ -226,8 +226,8 @@ async function mågneum() {
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
     if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    νℓкhat = await νkmake(VօxB໐t, νTēxt, store);
-    await require("./server/router.js")(VօxB໐t, νℓкhat, update, store);
+    ᴠᴏxᴄ = await νkmake(VօxB໐t, νTēxt, store);
+    await require("./server/router.js")(VօxB໐t, ᴠᴏxᴄ, update, store);
   });
 
   VօxB໐t.ev.on("group-participants.update", async (update) => {
@@ -350,7 +350,7 @@ async function mågneum() {
   };
 
   VօxB໐t.public = true;
-  VօxB໐t.serializeM = (νℓкhat) => νkmake(VօxB໐t, νℓкhat, store);
+  VօxB໐t.serializeM = (ᴠᴏxᴄ) => νkmake(VօxB໐t, ᴠᴏxᴄ, store);
 
   VօxB໐t.send5ButImg = async (
     jid,
@@ -365,7 +365,7 @@ async function mågneum() {
       { upload: VօxB໐t.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

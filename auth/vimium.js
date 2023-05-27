@@ -11,34 +11,34 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-exports.vimium = async (ѕуηтнiα, νℓкhat, update, store) => {
+exports.vimium = async (ѕуηтнiα, ᴠᴏxᴄ, update, store) => {
   if (ѕуηтнiα.isSudoWorker) {
-    await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+    await ѕуηтнiα.sendMessage(ᴠᴏxᴄ.chat, {
       react: {
         text: "🔖",
-        key: νℓкhat.key,
+        key: ᴠᴏxᴄ.key,
       },
     });
-    return await require("../System/library")(ѕуηтнiα, νℓкhat, update, store);
+    return await require("../System/library")(ѕуηтнiα, ᴠᴏxᴄ, update, store);
   } else
     await ѕуηтнiα.vimium.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       async (error, userVium) => {
-        if (error) return ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error);
+        if (error) return ѕуηтнiα.grab(ѕуηтнiα, ᴠᴏxᴄ, error);
         if (!userVium) {
           new ѕуηтнiα.vimium({
-            ID: νℓкhat.sender,
+            ID: ᴠᴏxᴄ.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch((error) => ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error));
+            .catch((error) => ѕуηтнiα.grab(ѕуηтнiα, ᴠᴏxᴄ, error));
           return await require("../System/library")(
             ѕуηтнiα,
-            νℓкhat,
+            ᴠᴏxᴄ,
             update,
             store
           );
@@ -50,7 +50,7 @@ exports.vimium = async (ѕуηтнiα, νℓкhat, update, store) => {
             );
             return await ѕуηтнiα.imgB(
               ѕуηтнiα,
-              νℓкhat,
+              ᴠᴏxᴄ,
               `*Dear* _${ѕуηтнiα.pushname || ѕуηтнiα.Tname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -59,20 +59,18 @@ exports.vimium = async (ѕуηтнiα, νℓкhat, update, store) => {
             );
           }
         } else {
-          await ѕуηтнiα.sendMessage(νℓкhat.chat, {
+          await ѕуηтнiα.sendMessage(ᴠᴏxᴄ.chat, {
             react: {
               text: "🔖",
-              key: νℓкhat.key,
+              key: ᴠᴏxᴄ.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
-          userVium
-            .save()
-            .catch((error) => ѕуηтнiα.grab(ѕуηтнiα, νℓкhat, error));
+          userVium.save().catch((error) => ѕуηтнiα.grab(ѕуηтнiα, ᴠᴏxᴄ, error));
           return await require("../System/library")(
             ѕуηтнiα,
-            νℓкhat,
+            ᴠᴏxᴄ,
             update,
             store
           );

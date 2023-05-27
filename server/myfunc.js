@@ -84,21 +84,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   let d = Math.floor(seconds / (3600 * 24));
   let h = Math.floor((seconds % (3600 * 24)) / 3600);
-  let νℓкhat = Math.floor((seconds % 3600) / 60);
+  let ᴠᴏxᴄ = Math.floor((seconds % 3600) / 60);
   let s = Math.floor(seconds % 60);
   let dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   let hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   let mDisplay =
-    νℓкhat > 0 ? νℓкhat + (νℓкhat == 1 ? " minute, " : " minutes, ") : "";
+    ᴠᴏxᴄ > 0 ? ᴠᴏxᴄ + (ᴠᴏxᴄ == 1 ? " minute, " : " minutes, ") : "";
   let sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  let νℓкhat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  let ᴠᴏxᴄ = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, νℓкhat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, ᴠᴏxᴄ, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -222,127 +222,120 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (VօxB໐t, νℓкhat, store) => {
-  if (!νℓкhat) return νℓкhat;
+exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
+  if (!ᴠᴏxᴄ) return ᴠᴏxᴄ;
   let νproto = proto.WebMessageInfo;
-  if (νℓкhat.key) {
-    νℓкhat.id = νℓкhat.key.id;
-    νℓкhat.isBaileys = νℓкhat.id.startsWith("BAE5") && νℓкhat.id.length === 16;
-    νℓкhat.chat = νℓкhat.key.remoteJid;
-    νℓкhat.fromMe = νℓкhat.key.fromMe;
-    νℓкhat.isGroup = νℓкhat.chat.endsWith("@g.us");
-    νℓкhat.sender = VօxB໐t.decodeJid(
-      (νℓкhat.fromMe && VօxB໐t.user.id) ||
-        νℓкhat.participant ||
-        νℓкhat.key.participant ||
-        νℓкhat.chat ||
+  if (ᴠᴏxᴄ.key) {
+    ᴠᴏxᴄ.id = ᴠᴏxᴄ.key.id;
+    ᴠᴏxᴄ.isBaileys = ᴠᴏxᴄ.id.startsWith("BAE5") && ᴠᴏxᴄ.id.length === 16;
+    ᴠᴏxᴄ.chat = ᴠᴏxᴄ.key.remoteJid;
+    ᴠᴏxᴄ.fromMe = ᴠᴏxᴄ.key.fromMe;
+    ᴠᴏxᴄ.isGroup = ᴠᴏxᴄ.chat.endsWith("@g.us");
+    ᴠᴏxᴄ.sender = VօxB໐t.decodeJid(
+      (ᴠᴏxᴄ.fromMe && VօxB໐t.user.id) ||
+        ᴠᴏxᴄ.participant ||
+        ᴠᴏxᴄ.key.participant ||
+        ᴠᴏxᴄ.chat ||
         ""
     );
-    if (νℓкhat.isGroup)
-      νℓкhat.participant = VօxB໐t.decodeJid(νℓкhat.key.participant) || "";
+    if (ᴠᴏxᴄ.isGroup)
+      ᴠᴏxᴄ.participant = VօxB໐t.decodeJid(ᴠᴏxᴄ.key.participant) || "";
   }
-  if (νℓкhat.message) {
-    νℓкhat.mtype = getContentType(νℓкhat.message);
-    νℓкhat.msg =
-      νℓкhat.mtype == "viewOnceMessage"
-        ? νℓкhat.message[νℓкhat.mtype].message[
-            getContentType(νℓкhat.message[νℓкhat.mtype].message)
+  if (ᴠᴏxᴄ.message) {
+    ᴠᴏxᴄ.mtype = getContentType(ᴠᴏxᴄ.message);
+    ᴠᴏxᴄ.msg =
+      ᴠᴏxᴄ.mtype == "viewOnceMessage"
+        ? ᴠᴏxᴄ.message[ᴠᴏxᴄ.mtype].message[
+            getContentType(ᴠᴏxᴄ.message[ᴠᴏxᴄ.mtype].message)
           ]
-        : νℓкhat.message[νℓкhat.mtype];
-    νℓкhat.body =
-      νℓкhat.message.conversation ||
-      νℓкhat.msg.caption ||
-      νℓкhat.msg.text ||
-      (νℓкhat.mtype == "listResponseMessage" &&
-        νℓкhat.msg.singleSelectReply.selectedRowId) ||
-      (νℓкhat.mtype == "buttonsResponseMessage" &&
-        νℓкhat.msg.selectedButtonId) ||
-      (νℓкhat.mtype == "viewOnceMessage" && νℓкhat.msg.caption) ||
-      νℓкhat.text;
-    let quoted = (νℓкhat.quoted = νℓкhat.msg.contextInfo
-      ? νℓкhat.msg.contextInfo.quotedMessage
+        : ᴠᴏxᴄ.message[ᴠᴏxᴄ.mtype];
+    ᴠᴏxᴄ.body =
+      ᴠᴏxᴄ.message.conversation ||
+      ᴠᴏxᴄ.msg.caption ||
+      ᴠᴏxᴄ.msg.text ||
+      (ᴠᴏxᴄ.mtype == "listResponseMessage" &&
+        ᴠᴏxᴄ.msg.singleSelectReply.selectedRowId) ||
+      (ᴠᴏxᴄ.mtype == "buttonsResponseMessage" && ᴠᴏxᴄ.msg.selectedButtonId) ||
+      (ᴠᴏxᴄ.mtype == "viewOnceMessage" && ᴠᴏxᴄ.msg.caption) ||
+      ᴠᴏxᴄ.text;
+    let quoted = (ᴠᴏxᴄ.quoted = ᴠᴏxᴄ.msg.contextInfo
+      ? ᴠᴏxᴄ.msg.contextInfo.quotedMessage
       : null);
-    νℓкhat.mentionedJid = νℓкhat.msg.contextInfo
-      ? νℓкhat.msg.contextInfo.mentionedJid
+    ᴠᴏxᴄ.mentionedJid = ᴠᴏxᴄ.msg.contextInfo
+      ? ᴠᴏxᴄ.msg.contextInfo.mentionedJid
       : [];
-    if (νℓкhat.quoted) {
+    if (ᴠᴏxᴄ.quoted) {
       let type = getContentType(quoted);
-      νℓкhat.quoted = νℓкhat.quoted[type];
+      ᴠᴏxᴄ.quoted = ᴠᴏxᴄ.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(νℓкhat.quoted);
-        νℓкhat.quoted = νℓкhat.quoted[type];
+        type = getContentType(ᴠᴏxᴄ.quoted);
+        ᴠᴏxᴄ.quoted = ᴠᴏxᴄ.quoted[type];
       }
-      if (typeof νℓкhat.quoted === "string")
-        νℓкhat.quoted = {
-          text: νℓкhat.quoted,
+      if (typeof ᴠᴏxᴄ.quoted === "string")
+        ᴠᴏxᴄ.quoted = {
+          text: ᴠᴏxᴄ.quoted,
         };
-      νℓкhat.quoted.mtype = type;
-      νℓкhat.quoted.id = νℓкhat.msg.contextInfo.stanzaId;
-      νℓкhat.quoted.chat = νℓкhat.msg.contextInfo.remoteJid || νℓкhat.chat;
-      νℓкhat.quoted.isBaileys = νℓкhat.quoted.id
-        ? νℓкhat.quoted.id.startsWith("BAE5") && νℓкhat.quoted.id.length === 16
+      ᴠᴏxᴄ.quoted.mtype = type;
+      ᴠᴏxᴄ.quoted.id = ᴠᴏxᴄ.msg.contextInfo.stanzaId;
+      ᴠᴏxᴄ.quoted.chat = ᴠᴏxᴄ.msg.contextInfo.remoteJid || ᴠᴏxᴄ.chat;
+      ᴠᴏxᴄ.quoted.isBaileys = ᴠᴏxᴄ.quoted.id
+        ? ᴠᴏxᴄ.quoted.id.startsWith("BAE5") && ᴠᴏxᴄ.quoted.id.length === 16
         : false;
-      νℓкhat.quoted.sender = VօxB໐t.decodeJid(
-        νℓкhat.msg.contextInfo.participant
-      );
-      νℓкhat.quoted.fromMe =
-        νℓкhat.quoted.sender === (VօxB໐t.user && VօxB໐t.user.id);
-      νℓкhat.quoted.text =
-        νℓкhat.quoted.text ||
-        νℓкhat.quoted.caption ||
-        νℓкhat.quoted.conversation ||
-        νℓкhat.quoted.contentText ||
-        νℓкhat.quoted.selectedDisplayText ||
-        νℓкhat.quoted.title ||
+      ᴠᴏxᴄ.quoted.sender = VօxB໐t.decodeJid(ᴠᴏxᴄ.msg.contextInfo.participant);
+      ᴠᴏxᴄ.quoted.fromMe =
+        ᴠᴏxᴄ.quoted.sender === (VօxB໐t.user && VօxB໐t.user.id);
+      ᴠᴏxᴄ.quoted.text =
+        ᴠᴏxᴄ.quoted.text ||
+        ᴠᴏxᴄ.quoted.caption ||
+        ᴠᴏxᴄ.quoted.conversation ||
+        ᴠᴏxᴄ.quoted.contentText ||
+        ᴠᴏxᴄ.quoted.selectedDisplayText ||
+        ᴠᴏxᴄ.quoted.title ||
         "";
-      νℓкhat.quoted.mentionedJid = νℓкhat.msg.contextInfo
-        ? νℓкhat.msg.contextInfo.mentionedJid
+      ᴠᴏxᴄ.quoted.mentionedJid = ᴠᴏxᴄ.msg.contextInfo
+        ? ᴠᴏxᴄ.msg.contextInfo.mentionedJid
         : [];
-      νℓкhat.getQuotedObj = νℓкhat.getQuotedMessage = async () => {
-        if (!νℓкhat.quoted.id) return false;
-        let q = await store.loadMessage(νℓкhat.chat, νℓкhat.quoted.id, VօxB໐t);
+      ᴠᴏxᴄ.getQuotedObj = ᴠᴏxᴄ.getQuotedMessage = async () => {
+        if (!ᴠᴏxᴄ.quoted.id) return false;
+        let q = await store.loadMessage(ᴠᴏxᴄ.chat, ᴠᴏxᴄ.quoted.id, VօxB໐t);
         return exports.νkmake(VօxB໐t, q, store);
       };
-      let vM = (νℓкhat.quoted.fakeObj = νproto.fromObject({
+      let vM = (ᴠᴏxᴄ.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: νℓкhat.quoted.chat,
-          fromMe: νℓкhat.quoted.fromMe,
-          id: νℓкhat.quoted.id,
+          remoteJid: ᴠᴏxᴄ.quoted.chat,
+          fromMe: ᴠᴏxᴄ.quoted.fromMe,
+          id: ᴠᴏxᴄ.quoted.id,
         },
         message: quoted,
-        ...(νℓкhat.isGroup ? { participant: νℓкhat.quoted.sender } : {}),
+        ...(ᴠᴏxᴄ.isGroup ? { participant: ᴠᴏxᴄ.quoted.sender } : {}),
       }));
-      νℓкhat.quoted.delete = () =>
-        VօxB໐t.sendMessage(νℓкhat.quoted.chat, { delete: vM.key });
-      νℓкhat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      ᴠᴏxᴄ.quoted.delete = () =>
+        VօxB໐t.sendMessage(ᴠᴏxᴄ.quoted.chat, { delete: vM.key });
+      ᴠᴏxᴄ.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         VօxB໐t.copyNForward(jid, vM, forceForward, options);
-      νℓкhat.quoted.download = () => VօxB໐t.downloadMediaMessage(νℓкhat.quoted);
+      ᴠᴏxᴄ.quoted.download = () => VօxB໐t.downloadMediaMessage(ᴠᴏxᴄ.quoted);
     }
   }
 
-  if (νℓкhat.msg.url)
-    νℓкhat.download = () => VօxB໐t.downloadMediaMessage(νℓкhat.msg);
-  νℓкhat.text =
-    νℓкhat.msg.text ||
-    νℓкhat.msg.caption ||
-    νℓкhat.message.conversation ||
-    νℓкhat.msg.contentText ||
-    νℓкhat.msg.selectedDisplayText ||
-    νℓкhat.msg.title ||
+  if (ᴠᴏxᴄ.msg.url) ᴠᴏxᴄ.download = () => VօxB໐t.downloadMediaMessage(ᴠᴏxᴄ.msg);
+  ᴠᴏxᴄ.text =
+    ᴠᴏxᴄ.msg.text ||
+    ᴠᴏxᴄ.msg.caption ||
+    ᴠᴏxᴄ.message.conversation ||
+    ᴠᴏxᴄ.msg.contentText ||
+    ᴠᴏxᴄ.msg.selectedDisplayText ||
+    ᴠᴏxᴄ.msg.title ||
     "";
-  νℓкhat.reply = (text, chatId = νℓкhat.chat, options = {}) =>
+  ᴠᴏxᴄ.reply = (text, chatId = ᴠᴏxᴄ.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? VօxB໐t.sendMedia(chatId, text, "file", "", νℓкhat, { ...options })
-      : VօxB໐t.sendText(chatId, text, νℓкhat, { ...options });
-  νℓкhat.copy = () =>
-    exports.νkmake(VօxB໐t, νproto.fromObject(νproto.toObject(νℓкhat)));
-  νℓкhat.copyNForward = (
-    jid = νℓкhat.chat,
-    forceForward = false,
-    options = {}
-  ) => VօxB໐t.copyNForward(jid, νℓкhat, forceForward, options);
+      ? VօxB໐t.sendMedia(chatId, text, "file", "", ᴠᴏxᴄ, { ...options })
+      : VօxB໐t.sendText(chatId, text, ᴠᴏxᴄ, { ...options });
+  ᴠᴏxᴄ.copy = () =>
+    exports.νkmake(VօxB໐t, νproto.fromObject(νproto.toObject(ᴠᴏxᴄ)));
+  ᴠᴏxᴄ.copyNForward = (jid = ᴠᴏxᴄ.chat, forceForward = false, options = {}) =>
+    VօxB໐t.copyNForward(jid, ᴠᴏxᴄ, forceForward, options);
 
-  return νℓкhat;
+  return ᴠᴏxᴄ;
 };
 
 let file = require.resolve(__filename);

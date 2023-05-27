@@ -11,24 +11,24 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-exports.noPrivate = async (VօxB໐t, νℓкhat, update) => {
+exports.noPrivate = async (VօxB໐t, ᴠᴏxᴄ, update) => {
   if (!VօxB໐t.isSudoWorker)
     await VօxB໐t.UserPrivate.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       async (error, user) => {
-        if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+        if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
         if (!user) {
           new VօxB໐t.UserPrivate({
-            ID: νℓкhat.sender,
+            ID: ᴠᴏxᴄ.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
+            .catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*Dear* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 • This Private Is Being Guarded By Synthoria Ai!
 • Do Not Spam The Chat Box!
@@ -40,12 +40,10 @@ exports.noPrivate = async (VօxB໐t, νℓкhat, update) => {
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
-          await user
-            .save()
-            .catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
+          await user.save().catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*Dear* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 • This Private Is Being Guarded By Synthoria Ai!
 • Do Not Spam The Chat Box!
@@ -58,9 +56,9 @@ exports.noPrivate = async (VօxB໐t, νℓкhat, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
-          return await VօxB໐t.updateBlockStatus(νℓкhat.sender, "block").catch(
-            (error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error)
+            .catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
+          return await VօxB໐t.updateBlockStatus(ᴠᴏxᴄ.sender, "block").catch(
+            (error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error)
           );
         }
       }

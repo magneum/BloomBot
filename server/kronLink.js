@@ -56,7 +56,7 @@ let ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
-module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
+module.exports = async (ѕуηтнiα, ᴠᴏxᴄ, update, store) => {
   ѕуηтнiα.performance = performance;
   ѕуηтнiα.createWorker = createWorker;
   ѕуηтнiα.JSDOM = JSDOM;
@@ -98,7 +98,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
   ѕуηтнiα.TelegraPh = TelegraPh;
   ѕуηтнiα.UploadFileUgu = UploadFileUgu;
   ѕуηтнiα.webp2mp4File = webp2mp4File;
-  ѕуηтнiα.Tname = νℓкhat.sender.replace(/['@s whatsapp.net']/g, "");
+  ѕуηтнiα.Tname = ᴠᴏxᴄ.sender.replace(/['@s whatsapp.net']/g, "");
 
   ѕуηтнiα.msgFilter = require("./msgFilter");
   ѕуηтнiα.imgB = require("../buttons/imgB");
@@ -256,7 +256,7 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   ѕуηтнiα.isSudoWorker = sudotring.includes(
-    νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
+    ᴠᴏxᴄ.sender.substring(0, ᴠᴏxᴄ.sender.indexOf("@"))
   );
   return ѕуηтнiα;
 };

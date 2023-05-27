@@ -11,8 +11,8 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-exports.noLink = async (VօxB໐t, νℓкhat) => {
-  let FetchCurrentGroupLink = await VօxB໐t.groupInviteCode(νℓкhat.chat);
+exports.noLink = async (VօxB໐t, ᴠᴏxᴄ) => {
+  let FetchCurrentGroupLink = await VօxB໐t.groupInviteCode(ᴠᴏxᴄ.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   let isGroupLink = GroupLinkRegex.exec(VօxB໐t.budy);
   let PresentGroupLink = new RegExp(
@@ -22,18 +22,18 @@ exports.noLink = async (VօxB໐t, νℓкhat) => {
   let isCurrentGroupLink = PresentGroupLink.test(VօxB໐t.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await VօxB໐t.groupParticipantsUpdate(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       [VօxB໐t.sender],
       "remove"
-    ).catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
-    await νℓкhat.reply(
+    ).catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
+    await ᴠᴏxᴄ.reply(
       `*😥Sorry:* _${VօxB໐t.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await VօxB໐t.sendMessage(νℓкhat.chat, {
+    return await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
       delete: {
-        remoteJid: νℓкhat.chat,
+        remoteJid: ᴠᴏxᴄ.chat,
         fromMe: false,
         id: VօxB໐t.quoted.id,
         participant: VօxB໐t.quoted.sender,
@@ -49,18 +49,18 @@ exports.noLink = async (VօxB໐t, νℓкhat) => {
     VօxB໐t.budy.includes("www.")
   ) {
     await VօxB໐t.groupParticipantsUpdate(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       [VօxB໐t.sender],
       "remove"
-    ).catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
-    await νℓкhat.reply(
+    ).catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
+    await ᴠᴏxᴄ.reply(
       `*😥Sorry:* _${VօxB໐t.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await VօxB໐t.sendMessage(νℓкhat.chat, {
+    return await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
       delete: {
-        remoteJid: νℓкhat.chat,
+        remoteJid: ᴠᴏxᴄ.chat,
         fromMe: false,
         id: VօxB໐t.quoted.id,
         participant: VօxB໐t.quoted.sender,

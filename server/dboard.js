@@ -11,21 +11,21 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-module.exports = async (VօxB໐t, νℓкhat, updatedb) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(νℓкhat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
   await VօxB໐t.dashboard.findOne(
     {
-      ID: νℓкhat.sender,
+      ID: ᴠᴏxᴄ.sender,
     },
     async (error, udBase) => {
-      if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+      if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
       if (!udBase) {
         new VօxB໐t.dashboard({
-          ID: νℓкhat.sender,
+          ID: ᴠᴏxᴄ.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: VօxB໐t.pushname,
 
@@ -269,10 +269,10 @@ module.exports = async (VօxB໐t, νℓкhat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
+          .catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
         await VօxB໐t.imgB(
           VօxB໐t,
-          νℓкhat,
+          ᴠᴏxᴄ,
           `*🔖Here, For ${VօxB໐t.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

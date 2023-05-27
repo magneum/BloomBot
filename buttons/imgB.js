@@ -10,7 +10,7 @@
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (VօxB໐t, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (VօxB໐t.isReply) {
     var receiver =
       VօxB໐t.mtype == "extendedTextMessage" &&
@@ -18,10 +18,10 @@ module.exports = async (VօxB໐t, νℓкhat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåg
         ? VօxB໐t.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     await VօxB໐t.sendMessage(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       {
         image: { url: imåge },
-        caption: `*📢ID:* ${νℓкhat.chat}
+        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -37,11 +37,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [νℓкhat.sender, receiver],
+        mentions: [ᴠᴏxᴄ.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [νℓкhat.sender, receiver] },
-        quoted: νℓкhat,
+        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
+        quoted: ᴠᴏxᴄ,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -52,10 +52,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         ? VօxB໐t.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
     await VօxB໐t.sendMessage(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       {
         image: { url: imåge },
-        caption: `*📢ID:* ${νℓкhat.chat}
+        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -71,20 +71,20 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [νℓкhat.sender, receiver],
+        mentions: [ᴠᴏxᴄ.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [νℓкhat.sender, receiver] },
-        quoted: νℓкhat,
+        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
+        quoted: ᴠᴏxᴄ,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await VօxB໐t.sendMessage(
-      νℓкhat.chat,
+      ᴠᴏxᴄ.chat,
       {
         image: { url: imåge },
-        caption: `*📢ID:* ${νℓкhat.chat}
+        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -100,11 +100,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [νℓкhat.sender],
+        mentions: [ᴠᴏxᴄ.sender],
       },
       {
-        contextInfo: { mentionedJid: [νℓкhat.sender] },
-        quoted: νℓкhat,
+        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender] },
+        quoted: ᴠᴏxᴄ,
       }
     ).catch((e) => console.log(e));
   }

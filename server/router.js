@@ -11,28 +11,28 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const moment = require("moment-timezone");
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   VօxB໐t.body =
-    νℓкhat.mtype === "conversation"
-      ? νℓкhat.message.conversation
-      : νℓкhat.mtype == "imageMessage"
-      ? νℓкhat.message.imageMessage.caption
-      : νℓкhat.mtype == "videoMessage"
-      ? νℓкhat.message.videoMessage.caption
-      : νℓкhat.mtype == "extendedTextMessage"
-      ? νℓкhat.message.extendedTextMessage.text
-      : νℓкhat.mtype == "buttonsResponseMessage"
-      ? νℓкhat.message.buttonsResponseMessage.selectedButtonId
-      : νℓкhat.mtype == "listResponseMessage"
-      ? νℓкhat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : νℓкhat.mtype == "templateButtonReplyMessage"
-      ? νℓкhat.message.templateButtonReplyMessage.selectedId
-      : νℓкhat.mtype === "messageContextInfo"
-      ? νℓкhat.message.buttonsResponseMessage?.selectedButtonId ||
-        νℓкhat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        νℓкhat.text
+    ᴠᴏxᴄ.mtype === "conversation"
+      ? ᴠᴏxᴄ.message.conversation
+      : ᴠᴏxᴄ.mtype == "imageMessage"
+      ? ᴠᴏxᴄ.message.imageMessage.caption
+      : ᴠᴏxᴄ.mtype == "videoMessage"
+      ? ᴠᴏxᴄ.message.videoMessage.caption
+      : ᴠᴏxᴄ.mtype == "extendedTextMessage"
+      ? ᴠᴏxᴄ.message.extendedTextMessage.text
+      : ᴠᴏxᴄ.mtype == "buttonsResponseMessage"
+      ? ᴠᴏxᴄ.message.buttonsResponseMessage.selectedButtonId
+      : ᴠᴏxᴄ.mtype == "listResponseMessage"
+      ? ᴠᴏxᴄ.message.listResponseMessage.singleSelectReply.selectedRowId
+      : ᴠᴏxᴄ.mtype == "templateButtonReplyMessage"
+      ? ᴠᴏxᴄ.message.templateButtonReplyMessage.selectedId
+      : ᴠᴏxᴄ.mtype === "messageContextInfo"
+      ? ᴠᴏxᴄ.message.buttonsResponseMessage?.selectedButtonId ||
+        ᴠᴏxᴄ.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        ᴠᴏxᴄ.text
       : "";
-  VօxB໐t.budy = typeof νℓкhat.text == "string" ? νℓкhat.text : "";
+  VօxB໐t.budy = typeof ᴠᴏxᴄ.text == "string" ? ᴠᴏxᴄ.text : "";
   VօxB໐t.icmd = VօxB໐t.body.startsWith(prefix);
   VօxB໐t.isCommand =
     prefix.includes(VօxB໐t.body != "" && VօxB໐t.body.slice(0, 1)) &&
@@ -41,40 +41,40 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     ? VօxB໐t.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
   VօxB໐t.args = VօxB໐t.body.trim().split(/ +/).slice(1);
-  VօxB໐t.pushname = νℓкhat.pushName || "No Name";
+  VօxB໐t.pushname = ᴠᴏxᴄ.pushName || "No Name";
   VօxB໐t.botNumber = await VօxB໐t.decodeJid(VօxB໐t.user.id);
-  VօxB໐t.frome = νℓкhat.sender == VօxB໐t.botNumber ? true : false;
+  VօxB໐t.frome = ᴠᴏxᴄ.sender == VօxB໐t.botNumber ? true : false;
   VօxB໐t.Fullarg = VօxB໐t.args.join(" ");
   VօxB໐t.contant = q = VօxB໐t.args.join(" ");
-  VօxB໐t.quoted = νℓкhat.quoted ? νℓкhat.quoted : νℓкhat;
+  VօxB໐t.quoted = ᴠᴏxᴄ.quoted ? ᴠᴏxᴄ.quoted : ᴠᴏxᴄ;
   VօxB໐t.mime = (VօxB໐t.quoted.msg || VօxB໐t.quoted).mimetype || "";
   VօxB໐t.isMedia = /image|video|sticker|audio/.test(VօxB໐t.mime);
   VօxB໐t.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   VօxB໐t.isCreator = [VօxB໐t.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(νℓкhat.sender);
+    .includes(ᴠᴏxᴄ.sender);
   VօxB໐t.mentionByTag =
-    νℓкhat.mtype == "extendedTextMessage" &&
-    νℓкhat.message.extendedTextMessage.contextInfo != null
-      ? νℓкhat.message.extendedTextMessage.contextInfo.mentionedJid
+    ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
+    ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
+      ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
   VօxB໐t.mentionByReply =
-    νℓкhat.mtype == "extendedTextMessage" &&
-    νℓкhat.message.extendedTextMessage.contextInfo != null
-      ? νℓкhat.message.extendedTextMessage.contextInfo.participant || ""
+    ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
+    ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
+      ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./kronLink")(VօxB໐t, νℓкhat, update, store);
-  if (!νℓкhat.isGroup && VօxB໐t.command)
-    return require("../auth/noPrivate")(VօxB໐t, νℓкhat, update);
-  if (νℓкhat.isGroup && VօxB໐t.command)
+  require("./kronLink")(VօxB໐t, ᴠᴏxᴄ, update, store);
+  if (!ᴠᴏxᴄ.isGroup && VօxB໐t.command)
+    return require("../auth/noPrivate")(VօxB໐t, ᴠᴏxᴄ, update);
+  if (ᴠᴏxᴄ.isGroup && VօxB໐t.command)
     VօxB໐t.userBanCheck.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return νℓкhat.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
+          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -83,11 +83,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         }
         VօxB໐t.userBanCheck.findOne(
           {
-            ID: νℓкhat.chat,
+            ID: ᴠᴏxᴄ.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return νℓкhat.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
+              return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -98,13 +98,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             if (groupCheck && !VօxB໐t.frome && !VօxB໐t.isSudoWorker) return;
             await VօxB໐t.LinkList.findOne(
               {
-                serverID: νℓкhat.chat,
+                serverID: ᴠᴏxᴄ.chat,
               },
               async (error, server) => {
-                if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                 if (!server) return;
                 let { noLink } = require("../auth/antilink");
-                return noLink(VօxB໐t, νℓкhat);
+                return noLink(VօxB໐t, ᴠᴏxᴄ);
               }
             );
 
@@ -119,11 +119,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             // !VօxB໐t.fromme &&
             // !VօxB໐t.isSudoWorker &&
             // !VօxB໐t.letResp.includes(VօxB໐t.command) &&
-            // !VօxB໐t.memberRespA.includes(νℓкhat.sender) &&
-            // !VօxB໐t.memberRespB.includes(νℓкhat.sender)
+            // !VօxB໐t.memberRespA.includes(ᴠᴏxᴄ.sender) &&
+            // !VօxB໐t.memberRespB.includes(ᴠᴏxᴄ.sender)
             // ) {
             // return await VօxB໐t.sendMessage(
-            // νℓкhat.chat,
+            // ᴠᴏxᴄ.chat,
             // {
             // gifPlayback: true,
             // video: VօxB໐t.fs.readFileSync("./src/how.mp4"),
@@ -137,15 +137,15 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [νℓкhat.sender],
+            // mentions: [ᴠᴏxᴄ.sender],
             // },
-            // { quoted: νℓкhat }
+            // { quoted: ᴠᴏxᴄ }
             // );
             // }
 
             if (process.env.runtype === "devar" && !VօxB໐t.isSudoWorker) {
               return await VօxB໐t.sendMessage(
-                νℓкhat.chat,
+                ᴠᴏxᴄ.chat,
                 {
                   gifPlayback: true,
                   video: VօxB໐t.fs.readFileSync("./src/VօxB໐t_white.jpg"),
@@ -158,20 +158,20 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [νℓкhat.sender],
+                  mentions: [ᴠᴏxᴄ.sender],
                 },
-                { quoted: νℓкhat }
+                { quoted: ᴠᴏxᴄ }
               );
             } else
-              await VօxB໐t.sendMessage(νℓкhat.chat, {
+              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "🔖",
-                  key: νℓкhat.key,
+                  key: ᴠᴏxᴄ.key,
                 },
               });
             return await require("../server/library")(
               VօxB໐t,
-              νℓкhat,
+              ᴠᴏxᴄ,
               update,
               store
             );
