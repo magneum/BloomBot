@@ -37,16 +37,10 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 > You may ask the admins to turn it on.`
           );
         } else {
-          VօxB໐t.axios({
-            method: "get",
-            url: "https://magneum.vercel.app/api/nsfw?q=" + pfname,
-            headers: {
-              accept: "*/*",
-              "accept-language": "en-US,en;q=0.9",
-              "content-type":
-                "application/x-www-form-urlencoded; charset=UTF-8",
-            },
-          }).then(async (response) => {
+          VօxB໐t.magfetch(
+            VօxB໐t,
+            "https://magneum.vercel.app/api/nsfw?q=" + pfname
+          ).then(async (response) => {
             var mData = response.data;
             console.log(mData);
             if (!mData.meta.thumbnail) {

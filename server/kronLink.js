@@ -258,15 +258,5 @@ module.exports = async (ѕуηтнiα, νℓкhat, update, store) => {
   ѕуηтнiα.isSudoWorker = sudotring.includes(
     νℓкhat.sender.substring(0, νℓкhat.sender.indexOf("@"))
   );
-  var LOGOS = [
-    "voxbot_ (1).png",
-    "voxbot_ (2).png",
-    "voxbot_ (3).png",
-    "voxbot_ (4).png",
-    "voxbot_ (5).png",
-  ];
-  var i = Math.floor(Math.random() * LOGOS.length);
-  ѕуηтнiα.logo = "./src/logo/" + LOGOS[i];
-
   return ѕуηтнiα;
 };

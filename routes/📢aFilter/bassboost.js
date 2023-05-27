@@ -40,9 +40,10 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       VօxB໐t.exec(
         `${VօxB໐t.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
-          return νℓкhat.reply(`*🕊️You:* ${
-            VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-          }\n*📢ID:* ${νℓкhat.chat}
+          if (error) {
+            return νℓкhat.reply(`*🕊️You:* ${
+              VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+            }\n*📢ID:* ${νℓкhat.chat}
 
 *😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌ Error* 
@@ -50,26 +51,27 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 
 *🐞 Bug* 
 > ${error}`);
-
-          var Thumb = await VօxB໐t.getBuffer("./src/VօxB໐t.jpg");
-          return await VօxB໐t.sendMessage(
-            νℓкhat.chat,
-            {
-              audio: VօxB໐t.fs.readFileSync(`${random}.mp3`),
-              contextInfo: {
-                externalAdReply: {
-                  title: `*🎙️Filter:* _${pfname}_`,
-                  body: "VօxB໐t вσт ву mågneum™",
-                  mediaType: 2,
-                  thumbnail: Thumb,
-                  mediaUrl: one.url,
+          } else {
+            var Thumb = await VօxB໐t.getBuffer("./src/VօxB໐t.jpg");
+            return await VօxB໐t.sendMessage(
+              νℓкhat.chat,
+              {
+                audio: VօxB໐t.fs.readFileSync(`${random}.mp3`),
+                contextInfo: {
+                  externalAdReply: {
+                    title: `*🎙️Filter:* _${pfname}_`,
+                    body: "VօxB໐t вσт ву mågneum™",
+                    mediaType: 2,
+                    thumbnail: Thumb,
+                    mediaUrl: one.url,
+                  },
                 },
+                mimetype: "audio/mpeg",
+                fileName: `${one.title}.mp3`,
               },
-              mimetype: "audio/mpeg",
-              fileName: `${one.title}.mp3`,
-            },
-            { quoted: νℓкhat }
-          ).then(VօxB໐t.fs.unlinkSync(`${random}.mp3`));
+              { quoted: νℓкhat }
+            ).then(VօxB໐t.fs.unlinkSync(`${random}.mp3`));
+          }
         }
       );
     } else {

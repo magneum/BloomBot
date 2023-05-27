@@ -43,6 +43,16 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
       return acc;
     }, 0);
+
+  var LOGOS = [
+    "voxbot(1).png",
+    "voxbot(2).png",
+    "voxbot(3).png",
+    "voxbot(4).png",
+    "voxbot(5).png",
+  ];
+  var i = Math.floor(Math.random() * LOGOS.length);
+
   return await VօxB໐t.imgB(
     VօxB໐t,
     νℓкhat,
@@ -339,6 +349,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 │║⦁ ${VօxB໐t.prefix}ytvaporwave
 │║⦁ ${VօxB໐t.prefix}ytvibrato
 ┕╚═════⋑`,
-    VօxB໐t.logo
+    "./src/logo/" + LOGOS[i]
   );
 };
