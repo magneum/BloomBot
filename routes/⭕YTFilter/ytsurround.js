@@ -1,123 +1,112 @@
-//  ╔⧉༻ [ 𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║ We won't be responsible for any kind of ban due to this bot.
-//  ║ VoxBot was made for fun purpose and to make group management easier.
-//  ║ It's your concern if you spam and gets your account banned.
-//  ║ Also, Forks won't be entertained.
-//  ║ If you fork this repo and edit plugins, it's your concern for further updates.
-//  ║ Forking Repo is fine. But if you edit something we will not provide any help.
-//  ║ In short, Fork At Your Own Risk.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║🐞 DEVELOPERS: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../global.js");
-const ppath = require("path");
-const psname = ppath.basename(__filename);
-const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+const path = require("path");
+const fileName = path.basename(__filename);
+const functionName = fileName.slice(0, -3).toLowerCase();
+
+module.exports = async (voxbot, voxc, update, store) => {
   try {
-    if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
-        react: {
-          text: "❌",
-          key: ᴠᴏxᴄ.key,
-        },
+    const query = voxbot.args.join(" ");
+    if (
+      !query ||
+      (query.includes("youtube") && !voxbot.TubeRegex.test(query))
+    ) {
+      await voxbot.sendMessage(voxc.chat, {
+        react: { text: "❌", key: voxc.key },
       });
-      return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
-*❌Error* 
+      return voxc.reply(
+        `*😥 Sorry:* ${voxbot.pushname || voxbot.Tname}
+*❌ Error* 
 > _No query provided!_
 
-*⚡Usage*   
-> _${VօxB໐t.prefix}${pfname} song/link_`
+*⚡ Usage* 
+> _${voxbot.prefix}${functionName} song/link_`
       );
     }
+    const response = await voxbot.magfetch(
+      voxbot,
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+    );
+    const searchData = response.data.youtube_search[0];
+    const musicResponse = await voxbot.magfetch(
+      voxbot,
+      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
+    );
+    const musicData = musicResponse.data[0];
+    const audioFilename = `${voxbot.between(3000, 4000)}${musicData.YT_ID}.mp3`;
+    await voxbot.exec(
+      `${voxbot.pathFFmpeg} -i ${musicData.quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioFilename}`
+    );
+    const audioFile = voxbot.fs.readFileSync(`./${audioFilename}`);
+    const thumbnail = await voxbot.getBuffer(searchData.HQ_IMAGE);
+    const mediaUrl = searchData.LINK || "Not available";
+    const authorName = searchData.AUTHOR_NAME || "Not available";
+    const description = searchData.DESCRIPTION || "No description available";
+    const message = `
+*🔖 Here's the information for ${functionName} requested by ${
+      voxbot.pushname || voxbot.Tname
+    }:*
+*🎵 Title:* ${searchData.TITLE}
+*👁️ Views:* ${searchData.VIEWS}  
+*⏱️ Duration:* ${searchData.DURATION_FULL}
+*🔗 Link:* ${mediaUrl}
+*✍️ Author:* ${authorName}
 
-    var gotArgument = VօxB໐t.args.join(" ");
-    if (gotArgument.includes("yout")) {
-      if (!VօxB໐t.TubeRegex.test(gotArgument)) {
-        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
-          react: {
-            text: "❌",
-            key: ᴠᴏxᴄ.key,
+*📜 Description:*
+${description}`;
+    await voxbot.sendMessage(voxc.chat, {
+      text: message,
+      options: {
+        contextInfo: {
+          externalAdReply: {
+            title: searchData.TITLE,
+            body: "This result is powered by Magneum's YT-Filter.",
+            renderLargerThumbnail: true,
+            thumbnailUrl: searchData.HQ_IMAGE,
+            mediaUrl,
+            mediaType: 1,
+            thumbnail,
+            sourceUrl: "https://bit.ly/magneum",
           },
-        });
-        return ᴠᴏxᴄ.reply(
-          `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
-*❌Error* 
-> _No query provided!_
-
-*⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} song/link_`
-        );
-      }
-    }
-
-    VօxB໐t.magfetch(
-      VօxB໐t,
-      "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")
-    ).then(async (response) => {
-      var mData = response.data;
-      console.log(mData);
-      await VօxB໐t.imgB(
-        VօxB໐t,
-        ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
-*🍻Title:* ${mData.youtube_search[0].TITLE}
-*🙈Views:* ${mData.youtube_search[0].VIEWS}  
-*⏰Duration:* ${mData.youtube_search[0].DURATION_FULL}
-*🔗Link:* ${mData.youtube_search[0].LINK || "null"}
-*🖊️Author:* ${mData.youtube_search[0].AUTHOR_NAME || "null"}
-
-*📜Description:* ${mData.youtube_search[0].DESCRIPTION}`,
-        mData.youtube_search[0].HQ_IMAGE
-      );
-
-      VօxB໐t.magfetch(
-        VօxB໐t,
-        "https://magneum.vercel.app/api/youtube_dl?q=" +
-          mData.youtube_search[0].TITLE +
-          "&quality=music"
-      ).then(async (response) => {
-        var musicData = response.data;
-        console.log(musicData);
-        let audioConv =
-          VօxB໐t.between(3000, 4000) + musicData[0].YT_ID + ".mp3";
-        VօxB໐t.exec(
-          `${VօxB໐t.pathFFmpeg} -i ${musicData[0].quick_dl} -af 'surround' ${audioConv}`,
-          async (error) => {
-            if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
-            else
-              await VօxB໐t.sendMessage(
-                ᴠᴏxᴄ.chat,
-                {
-                  audio: VօxB໐t.fs.readFileSync(`./${audioConv}`),
-                  mimetype: "audio/mpeg",
-                  fileName: mData.youtube_search[0].TITLE + ".mp3",
-                  headerType: 4,
-                  contextInfo: {
-                    externalAdReply: {
-                      title: mData.youtube_search[0].title,
-                      body: "YT-Filter⭕Made by magneum.",
-                      renderLargerThumbnail: true,
-                      thumbnailUrl: mData.youtube_search[0].thumbnail,
-                      mediaUrl: mData.youtube_search[0].url,
-                      mediaType: 1,
-                      thumbnail: await VօxB໐t.getBuffer(
-                        mData.youtube_search[0].thumbnail
-                      ),
-                      sourceUrl: "https://bit.ly/magneum",
-                    },
-                  },
-                },
-                { quoted: ᴠᴏxᴄ }
-              );
-            return await VօxB໐t.fs.unlinkSync(`./${audioConv}`);
-          }
-        );
-      });
+        },
+      },
     });
+    await voxbot.sendMessage(voxc.chat, {
+      audio: audioFile,
+      mimetype: "audio/mpeg",
+      fileName: `${searchData.TITLE}.mp3`,
+      headerType: 4,
+      contextInfo: {
+        externalAdReply: {
+          title: searchData.TITLE,
+          body: "This result is powered by Magneum's YT-Filter.",
+          renderLargerThumbnail: true,
+          thumbnailUrl: searchData.HQ_IMAGE,
+          mediaUrl,
+          mediaType: 1,
+          thumbnail,
+          sourceUrl: "https://bit.ly/magneum",
+        },
+      },
+    });
+    voxbot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return voxbot.grab(voxbot, voxc, error);
   }
 };
