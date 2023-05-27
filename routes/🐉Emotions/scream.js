@@ -34,9 +34,9 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
         react: { text: "❌", key: ᴠᴏxᴄ.key },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥 Apologies:* _${
-          ᴠᴏxʙᴏᴛ.pushname || ᴠᴏxʙᴏᴛ.Tname
-        }_\n*❌ Error*\n> An API error has occurred. Please try again later.`
+        `*😥 Apologies:* _${ᴠᴏxʙᴏᴛ.pushname || ᴠᴏxʙᴏᴛ.Tname}_
+*❌ Error*
+> An API error has occurred. Please try again later.`
       );
     }
 
@@ -67,11 +67,13 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
               : "";
         }
 
-        const message = `*VoxBot by magneum*\n*💻HomePage:* https://bit.ly/xhadr\n\n*🎋Feeling:* ${feeling}\n*📢From:* ${
-          ᴠᴏxʙᴏᴛ.pushname
-        }\n*⚡For:* @${
-          mentionedUser.split("@")[0] || ""
-        }\n> *Api Fetch Url:* https://magneum.vercel.app/api/emotions`;
+        const message = `*VoxBot by Magneum*
+*💻HomePage:* https://bit.ly/magneum
+
+*🎋Feeling:* ${feeling}
+*📢From:* ${ᴠᴏxʙᴏᴛ.pushname}
+*⚡For:* @${mentionedUser.split("@")[0] || ""}
+*🐞Api Url:* https://magneum.vercel.app/api/emotions`;
 
         // Send the generated video and caption to the chat
         await ᴠᴏxʙᴏᴛ.sendMessage(
