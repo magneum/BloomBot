@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -25,14 +25,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкhat.isGroup) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+    if (!ᴠᴏxᴄ.isGroup) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -40,13 +40,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -54,13 +54,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -70,15 +70,15 @@ module.exports = async (
 
     if (VօxB໐t.args[0] && VօxB໐t.args[0].startsWith("@")) {
       let mention = VօxB໐t.mentionByTag;
-      let users = (await mention[0]) || νℓкhat.msg.contextInfo.participant;
+      let users = (await mention[0]) || ᴠᴏxᴄ.msg.contextInfo.participant;
       if (!users) {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -89,15 +89,15 @@ module.exports = async (
         );
       }
       try {
-        await VօxB໐t.groupParticipantsUpdate(νℓкhat.chat, [users], "demote");
+        await VօxB໐t.groupParticipantsUpdate(ᴠᴏxᴄ.chat, [users], "demote");
       } catch {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -111,24 +111,24 @@ module.exports = async (
       }
       await VօxB໐t.imgB(
         VօxB໐t,
-        νℓкhat,
+        ᴠᴏxᴄ,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (VօxB໐t.mentionByReply) {
       let users =
-        νℓкhat.mtype == "extendedTextMessage" &&
-        νℓкhat.message.extendedTextMessage.contextInfo != null
-          ? νℓкhat.message.extendedTextMessage.contextInfo.participant || ""
+        ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
+        ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
+          ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -139,15 +139,15 @@ module.exports = async (
         );
       }
       try {
-        await VօxB໐t.groupParticipantsUpdate(νℓкhat.chat, [users], "demote");
+        await VօxB໐t.groupParticipantsUpdate(ᴠᴏxᴄ.chat, [users], "demote");
       } catch {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -161,18 +161,18 @@ module.exports = async (
       }
       await VօxB໐t.imgB(
         VօxB໐t,
-        νℓкhat,
+        ᴠᴏxᴄ,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -183,6 +183,6 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

@@ -14,16 +14,16 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -43,7 +43,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           if (error) {
             return VօxB໐t.reply(`*🕊️You:* ${
               VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢ID:* ${νℓкhat.chat}
+            }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
 *😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌ Error* 
@@ -62,13 +62,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           } else if (VօxB໐t.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await VօxB໐t.sendMessage(νℓкhat.chat, {
+            await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
               react: {
                 text: "❌",
-                key: νℓкhat.key,
+                key: ᴠᴏxᴄ.key,
               },
             });
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -80,12 +80,12 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           }
 
           return await VօxB໐t.sendMessage(
-            νℓкhat.chat,
+            ᴠᴏxᴄ.chat,
             {
               image: VօxB໐t.fs.readFileSync(Found),
               caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${νℓкhat.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${ᴠᴏxᴄ.chat.split("@")[0]}
 │║⦁ *📢Console:* ${VօxB໐t.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -94,7 +94,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 
 _*💻HomePage:* ${VօxB໐t.ShowInfo}_
 _*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
-              mentions: [νℓкhat.sender],
+              mentions: [ᴠᴏxᴄ.sender],
               buttons: [
                 {
                   buttonId: `${VօxB໐t.prefix}Commands`,
@@ -112,7 +112,7 @@ _*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
               headerType: 4,
             },
             {
-              quoted: νℓкhat,
+              quoted: ᴠᴏxᴄ,
             }
           ).then(
             VօxB໐t.fs.unlinkSync(Found),
@@ -121,13 +121,13 @@ _*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
         }
       );
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -138,6 +138,6 @@ _*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

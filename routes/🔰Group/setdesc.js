@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -25,14 +25,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкhat.isGroup) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+    if (!ᴠᴏxᴄ.isGroup) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -40,13 +40,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -54,13 +54,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -68,13 +68,13 @@ module.exports = async (
       );
     }
     if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -86,14 +86,14 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(νℓкhat.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.chat, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
     }
-    await VօxB໐t.groupUpdateDescription(νℓкhat.chat, VօxB໐t.args.join(" "));
+    await VօxB໐t.groupUpdateDescription(ᴠᴏxᴄ.chat, VօxB໐t.args.join(" "));
     return await VօxB໐t.imgB(
       VօxB໐t,
-      νℓкhat,
+      ᴠᴏxᴄ,
       `> *Group Description Changed successfuly by: ${
         VօxB໐t.pushname || VօxB໐t.Tname
       }*
@@ -103,6 +103,6 @@ ${VօxB໐t.args.join(" ")}`,
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -25,14 +25,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкhat.isGroup) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+    if (!ᴠᴏxᴄ.isGroup) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -40,13 +40,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -54,13 +54,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -68,13 +68,13 @@ module.exports = async (
       );
     }
     if (!/image/.test(VօxB໐t.mime)) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -85,13 +85,13 @@ module.exports = async (
       );
     }
     if (/webp/.test(VօxB໐t.mime)) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -103,11 +103,11 @@ module.exports = async (
     }
 
     let media = await VօxB໐t.downloadAndSaveMediaMessage(VօxB໐t.quoted);
-    await VօxB໐t.updateProfilePicture(νℓкhat.chat, { url: media })
+    await VօxB໐t.updateProfilePicture(ᴠᴏxᴄ.chat, { url: media })
       .then(
         VօxB໐t.imgB(
           VօxB໐t,
-          νℓкhat,
+          ᴠᴏxᴄ,
           `> *Group icone has been changed: ${
             VօxB໐t.pushname || VօxB໐t.Tname
           }*`,
@@ -116,13 +116,13 @@ module.exports = async (
       )
       .catch(async (error) => {
         VօxB໐t.fs.unlinkSync(media);
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -133,6 +133,6 @@ module.exports = async (
         );
       });
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

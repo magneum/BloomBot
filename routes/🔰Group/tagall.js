@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -25,14 +25,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкhat.isGroup) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+    if (!ᴠᴏxᴄ.isGroup) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error*  
@@ -40,13 +40,13 @@ module.exports = async (
       );
     }
     if (!isAdmin && !VօxB໐t.isSudoWorker) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -55,38 +55,38 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(νℓкhat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
     }
     if (VօxB໐t.args) {
       return await VօxB໐t.sendMessage(
-        νℓкhat.chat,
+        ᴠᴏxᴄ.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ID:* ${νℓкhat.chat}
+          caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${VօxB໐t.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${VօxB໐t.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: νℓкhat }
+        { quoted: ᴠᴏxᴄ }
       );
     } else {
       return await VօxB໐t.sendMessage(
-        νℓкhat.chat,
+        ᴠᴏxᴄ.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ID:* ${νℓкhat.chat}
+          caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${VօxB໐t.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: νℓкhat }
+        { quoted: ᴠᴏxᴄ }
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

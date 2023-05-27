@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -25,14 +25,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!νℓкhat.isGroup) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+    if (!ᴠᴏxᴄ.isGroup) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -40,13 +40,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -54,13 +54,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -69,18 +69,18 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(νℓкhat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
     }
 
     if (VօxB໐t.args[0] === "open") {
-      await VօxB໐t.groupSettingUpdate(νℓкhat.chat, "not_announcement")
+      await VօxB໐t.groupSettingUpdate(ᴠᴏxᴄ.chat, "not_announcement")
         .then(
           async (res) =>
             await VօxB໐t.imgB(
               VօxB໐t,
-              νℓкhat,
+              ᴠᴏxᴄ,
               `> *Group have been Opened by: ${
                 VօxB໐t.pushname || VօxB໐t.Tname
               }*`,
@@ -88,19 +88,19 @@ module.exports = async (
             )
         )
         .catch((error) =>
-          νℓкhat.reply(
+          ᴠᴏxᴄ.reply(
             `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
     } else if (VօxB໐t.args[0] === "close") {
-      await VօxB໐t.groupSettingUpdate(νℓкhat.chat, "announcement")
+      await VօxB໐t.groupSettingUpdate(ᴠᴏxᴄ.chat, "announcement")
         .then(
           async (res) =>
             await VօxB໐t.imgB(
               VօxB໐t,
-              νℓкhat,
+              ᴠᴏxᴄ,
               `> *Group have been Closed by: ${
                 VօxB໐t.pushname || VօxB໐t.Tname
               }*`,
@@ -108,7 +108,7 @@ module.exports = async (
             )
         )
         .catch((error) =>
-          νℓкhat.reply(
+          ᴠᴏxᴄ.reply(
             `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -122,13 +122,13 @@ module.exports = async (
       ) {
         return await VօxB໐t.LinkList.findOne(
           {
-            serverID: νℓкhat.chat,
+            serverID: ᴠᴏxᴄ.chat,
           },
           async (error, server) => {
             if (error) {
               return VօxB໐t.reply(`*🕊️You:* ${
                 VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢ID:* ${νℓкhat.chat}
+              }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
 *😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌ Error* 
@@ -140,20 +140,20 @@ module.exports = async (
 
             if (!server) {
               let newServer = new VօxB໐t.LinkList({
-                serverID: νℓкhat.chat,
+                serverID: ᴠᴏxᴄ.chat,
                 value: "ON",
               });
               await newServer.save();
               return await VօxB໐t.imgB(
                 VօxB໐t,
-                νℓкhat,
+                ᴠᴏxᴄ,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
               return await VօxB໐t.imgB(
                 VօxB໐t,
-                νℓкhat,
+                ᴠᴏxᴄ,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -167,13 +167,13 @@ module.exports = async (
       ) {
         return await VօxB໐t.LinkList.findOne(
           {
-            serverID: νℓкhat.chat,
+            serverID: ᴠᴏxᴄ.chat,
           },
           async (error, server) => {
             if (error) {
               return VօxB໐t.reply(`*🕊️You:* ${
                 VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢ID:* ${νℓкhat.chat}
+              }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
 *😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌ Error* 
@@ -186,7 +186,7 @@ module.exports = async (
             if (!server) {
               return await VօxB໐t.imgB(
                 VօxB໐t,
-                νℓкhat,
+                ᴠᴏxᴄ,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -194,7 +194,7 @@ module.exports = async (
               await server.delete();
               return await VօxB໐t.imgB(
                 VօxB໐t,
-                νℓкhat,
+                ᴠᴏxᴄ,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -202,13 +202,13 @@ module.exports = async (
           }
         );
       } else {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -220,13 +220,13 @@ module.exports = async (
         );
       }
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -238,6 +238,6 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

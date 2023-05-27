@@ -14,7 +14,7 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     VօxB໐t.magfetch(VօxB໐t, "https://magneum.vercel.app/api/sfw?q=pat").then(
       async (response) => {
@@ -22,7 +22,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         console.log(mData);
         return await VօxB໐t.imgB(
           VօxB໐t,
-          νℓкhat,
+          ᴠᴏxᴄ,
           `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *Topic*: ${mData.meta.topic}
 *Query*: ${mData.meta.query}`,
@@ -31,6 +31,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

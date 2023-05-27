@@ -14,16 +14,16 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -47,21 +47,21 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       });
       const buffer = await sticker.toBuffer();
       return await VօxB໐t.sendMessage(
-        νℓкhat.chat,
+        ᴠᴏxᴄ.chat,
         {
           sticker: buffer,
         },
-        { quoted: νℓкhat }
+        { quoted: ᴠᴏxᴄ }
       );
     } else if (/video/.test(VօxB໐t.mime)) {
       if ((VօxB໐t.quoted.msg || VօxB໐t.quoted).seconds > 20) {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -80,21 +80,21 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         });
         const buffer = await sticker.toBuffer();
         return await VօxB໐t.sendMessage(
-          νℓкhat.chat,
+          ᴠᴏxᴄ.chat,
           {
             sticker: buffer,
           },
-          { quoted: νℓкhat }
+          { quoted: ᴠᴏxᴄ }
         );
       }
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -105,6 +105,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };
