@@ -11,75 +11,56 @@
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
-const ppath = require("path");
-const psname = ppath.basename(__filename);
-const pfname = psname.slice(0, -3).toLowerCase();
+const path = require("path");
+const pfname = path.basename(__filename, ".js").toLowerCase();
+
 module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
-    return await VօxB໐t.nsfwCheck.findOne(
-      {
-        serverID: ᴠᴏxᴄ.chat,
-      },
-      async (error, server) => {
-        if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
-        if (!server) {
-          await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
-            react: {
-              text: "❌",
-              key: ᴠᴏxᴄ.key,
-            },
-          });
-          return ᴠᴏxᴄ.reply(
-            `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+    const server = await VօxB໐t.nsfwCheck.findOne({ serverID: ᴠᴏxᴄ.chat });
+    if (!server) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+        react: { text: "❌", key: ᴠᴏxᴄ.key },
+      });
+      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌ Error* 
-> NSFW Commands have been turned off for this group.
-> You may ask the admins to turn it on.`
-          );
-        } else {
-          VօxB໐t.magfetch(
-            VօxB໐t,
-            "https://magneum.vercel.app/api/nsfw?q=" + pfname
-          ).then(async (response) => {
-            var mData = response.data;
-            console.log(mData);
-            if (!mData.meta.thumbnail) {
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
-                react: {
-                  text: "❌",
-                  key: ᴠᴏxᴄ.key,
-                },
-              });
-              return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.`);
-            } else
-              await VօxB໐t.imgB(
-                VօxB໐t,
-                ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For @${VօxB໐t.Tname || VօxB໐t.pushname}:*
+> NSFW commands have been disabled for this group.
+> You can ask the administrators to enable them.`);
+    }
 
-╔══☰ *❗ADULT❗*
-║⦁ 💡Title: ${mData.meta.title || null}
-║⦁ 🖊️Author: ${mData.meta.author || null}
-║⦁ ❣️Topic: ${mData.meta.topic || null}
+    const response = await VօxB໐t.magfetch(
+      VօxB໐t,
+      `https://magneum.vercel.app/api/nsfw?q=${pfname}`
+    );
+    const mData = response.data;
+    if (!mData.meta.thumbnail) {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+        react: { text: "❌", key: ᴠᴏxᴄ.key },
+      });
+      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${VօxB໐t.pushname}_
+*❌ Error* 
+> An API error has occurred. Please try again later.`);
+    }
+
+    const message = `
+*🔖 Here is ${pfname} for @${VօxB໐t.Tname || VօxB໐t.pushname}:*
+
+╔══☰ *❗ ADULT CONTENT ❗*
+║⦁ 💡 Title: ${mData.meta.title || "Not available"}
+║⦁ 🖊️ Author: ${mData.meta.author || "Not available"}
+║⦁ ❣️ Topic: ${mData.meta.topic || "Not available"}
 ╚══☰
 ╔══☰
-║>  *❓META INFO❓*
-║⦁ 🎊Status: ${mData.meta.status || null}
-║⦁ 🔐Uuid: ${mData.meta.uuid || null}
-║⦁ 🗓️Date_create: ${mData.meta.date_create || null}
-║⦁ 🧀Query: ${mData.meta.query || null}
-║⦁ 📢Domain: ${mData.meta.domain || null}
-║⦁ 💯Sub_reddit_id: ${mData.meta.sub_reddit_id || null}
-║⦁ 🌐Link: ${mData.meta.web_link || null}
-╚═══════⋑`,
-                mData.meta.thumbnail
-              );
-          });
-        }
-      }
-    );
+║>  *❓ META INFO ❓*
+║⦁ 🎊 Status: ${mData.meta.status || "Not available"}
+║⦁ 🔐 UUID: ${mData.meta.uuid || "Not available"}
+║⦁ 🗓️ Date Created: ${mData.meta.date_create || "Not available"}
+║⦁ 🧀 Query: ${mData.meta.query || "Not available"}
+║⦁ 📢 Domain: ${mData.meta.domain || "Not available"}
+║⦁ 💯 Subreddit ID: ${mData.meta.sub_reddit_id || "Not available"}
+║⦁ 🌐 Link: ${mData.meta.web_link || "Not available"}
+╚═══════⋑`;
+    await VօxB໐t.imgB(VօxB໐t, ᴠᴏxᴄ, message, mData.meta.thumbnail);
   } catch (error) {
     return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
