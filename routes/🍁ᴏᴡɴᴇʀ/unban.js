@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -24,21 +24,21 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await VօxB໐t.sendMessage(νℓкhat.chat, {
+  await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
     react: {
       text: "🔖",
-      key: νℓкhat.key,
+      key: ᴠᴏxᴄ.key,
     },
   });
   try {
     if (!VօxB໐t.frome && !VօxB໐t.isSudoWorker) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -60,14 +60,14 @@ module.exports = async (
           ID: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+          if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           if (!userBan) {
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
           }
@@ -81,14 +81,14 @@ module.exports = async (
           ID: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+          if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           if (!userBan) {
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return νℓкhat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return ᴠᴏxᴄ.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -99,30 +99,30 @@ module.exports = async (
     ) {
       VօxB໐t.userBanCheck.findOne(
         {
-          ID: νℓкhat.chat,
+          ID: ᴠᴏxᴄ.chat,
         },
         async (error, userBan) => {
-          if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+          if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           if (!userBan) {
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
-            return νℓкhat.reply(
+            return ᴠᴏxᴄ.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
         }
       );
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -133,6 +133,6 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

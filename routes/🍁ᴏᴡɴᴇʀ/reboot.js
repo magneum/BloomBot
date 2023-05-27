@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -24,19 +24,19 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await VօxB໐t.sendMessage(νℓкhat.chat, {
+  await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
     react: {
       text: "🔖",
-      key: νℓкhat.key,
+      key: ᴠᴏxᴄ.key,
     },
   });
   try {
-    return νℓкhat.reply(
+    return ᴠᴏxᴄ.reply(
       `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

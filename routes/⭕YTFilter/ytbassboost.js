@@ -14,16 +14,16 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -36,13 +36,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     var gotArgument = VօxB໐t.args.join(" ");
     if (gotArgument.includes("yout")) {
       if (!VօxB໐t.TubeRegex.test(gotArgument)) {
-        await VօxB໐t.sendMessage(νℓкhat.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: νℓкhat.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return νℓкhat.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -53,12 +53,15 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     }
 
-    VօxB໐t.magfetch(VօxB໐t, "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")).then(async (response) => {
+    VօxB໐t.magfetch(
+      VօxB໐t,
+      "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")
+    ).then(async (response) => {
       var mData = response.data;
       console.log(mData);
       await VօxB໐t.imgB(
         VօxB໐t,
-        νℓкhat,
+        ᴠᴏxᴄ,
         `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
 *🍻Title:* ${mData.youtube_search[0].TITLE}
 *🙈Views:* ${mData.youtube_search[0].VIEWS}  
@@ -83,10 +86,10 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         VօxB໐t.exec(
           `${VօxB໐t.pathFFmpeg} -i ${musicData[0].quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioConv}`,
           async (error) => {
-            if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+            if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
             else {
               await VօxB໐t.sendMessage(
-                νℓкhat.chat,
+                ᴠᴏxᴄ.chat,
                 {
                   audio: VօxB໐t.fs.readFileSync(`./${audioConv}`),
                   mimetype: "audio/mpeg",
@@ -107,7 +110,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                     },
                   },
                 },
-                { quoted: νℓкhat }
+                { quoted: ᴠᴏxᴄ }
               );
               return await VօxB໐t.fs.unlinkSync(`./${audioConv}`);
             }
@@ -116,6 +119,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       });
     });
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

@@ -16,7 +16,7 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
   VօxB໐t,
-  νℓкhat,
+  ᴠᴏxᴄ,
   gmeta,
   isAdmin,
   groupName,
@@ -24,34 +24,34 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await VօxB໐t.sendMessage(νℓкhat.chat, {
+  await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
     react: {
       text: "🔖",
-      key: νℓкhat.key,
+      key: ᴠᴏxᴄ.key,
     },
   });
   try {
     if (!VօxB໐t.frome && !VօxB໐t.isSudoWorker) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -66,7 +66,7 @@ module.exports = async (
       .slice(0)
       .map((entry) => entry[1]);
     let places = vGroup.map((v) => v.id);
-    νℓкhat.reply(
+    ᴠᴏxᴄ.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -89,6 +89,6 @@ ${VօxB໐t.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
   }
 };

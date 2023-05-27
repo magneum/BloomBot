@@ -14,16 +14,16 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, vcнaт, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(vcнaт.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return vcнaт.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -36,13 +36,13 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
     var gotArgument = VօxB໐t.args.join(" ");
     if (gotArgument.includes("yout")) {
       if (!VօxB໐t.TubeRegex.test(gotArgument)) {
-        await VօxB໐t.sendMessage(vcнaт.chat, {
+        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
-            key: vcнaт.key,
+            key: ᴠᴏxᴄ.key,
           },
         });
-        return vcнaт.reply(
+        return ᴠᴏxᴄ.reply(
           `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -61,7 +61,7 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
       console.log(mData);
       await VօxB໐t.imgB(
         VօxB໐t,
-        νℓкhat,
+        ᴠᴏxᴄ,
         `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
 *🍻Title:* ${mData.youtube_search[0].TITLE}
 *🙈Views:* ${mData.youtube_search[0].VIEWS}  
@@ -86,10 +86,10 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
         VօxB໐t.exec(
           `${VօxB໐t.pathFFmpeg} -i ${musicData[0].quick_dl} -af 'atempo=0.5' ${audioConv}`,
           async (error) => {
-            if (error) return VօxB໐t.grab(VօxB໐t, vcнaт, error);
+            if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
             else
               await VօxB໐t.sendMessage(
-                vcнaт.chat,
+                ᴠᴏxᴄ.chat,
                 {
                   audio: VօxB໐t.fs.readFileSync(`./${audioConv}`),
                   mimetype: "audio/mpeg",
@@ -110,7 +110,7 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
                     },
                   },
                 },
-                { quoted: vcнaт }
+                { quoted: ᴠᴏxᴄ }
               );
             return await VօxB໐t.fs.unlinkSync(`./${audioConv}`);
           }
@@ -118,6 +118,6 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
       });
     });
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, vcнaт, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };
