@@ -27,7 +27,7 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     const magData = response.data;
-
+    console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
       await ᴠᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
@@ -39,7 +39,6 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 > An API error has occurred. Please try again later.`
       );
     }
-
     const resultFilename = magData.resp.id + ".mp4";
     await ᴠᴏxʙᴏᴛ.ffmpeg
       .input(magData.meta.url)
@@ -52,7 +51,6 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       .output(resultFilename)
       .on("end", async () => {
         let mentionedUser = "";
-
         if (ᴠᴏxʙᴏᴛ.args[0] && ᴠᴏxʙᴏᴛ.args[0].startsWith("@")) {
           // Check if a user is mentioned in the command arguments
           const mention = ᴠᴏxʙᴏᴛ.mentionByTag;
@@ -66,15 +64,13 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
               ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
-
         const message = `*VoxBot by Magneum*
 *💻HomePage:* https://bit.ly/magneum
 
-*🎋Feeling:* ${feeling}
+*🎋Emo:* ${feeling}
 *📢From:* ${ᴠᴏxʙᴏᴛ.pushname}
 *⚡For:* @${mentionedUser.split("@")[0] || ""}
-*🐞Api Url:* https://magneum.vercel.app/api/emotions`;
-
+*🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await ᴠᴏxʙᴏᴛ.sendMessage(
           ᴠᴏxᴄ.chat,
@@ -86,7 +82,6 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
           },
           { quoted: ᴠᴏxᴄ }
         );
-
         // Remove the generated video file
         ᴠᴏxʙᴏᴛ.fs.unlinkSync(resultFilename);
       })

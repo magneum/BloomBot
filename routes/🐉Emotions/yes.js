@@ -1,110 +1,94 @@
-//  ╔⧉༻ [ 𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 𝐀𝐏𝐈 ] 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║ We won't be responsible for any kind of ban due to this bot.
-//  ║ VoxBot was made for fun purpose and to make group management easier.
-//  ║ It's your concern if you spam and gets your account banned.
-//  ║ Also, Forks won't be entertained.
-//  ║ If you fork this repo and edit plugins, it's your concern for further updates.
-//  ║ Forking Repo is fine. But if you edit something we will not provide any help.
-//  ║ In short, Fork At Your Own Risk.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║🐞 DEVELOPERS: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../global.js");
-const ppath = require("path");
-const psname = ppath.basename(__filename);
-const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+const path = require("path");
+const fileName = path.basename(__filename);
+const feeling = fileName.slice(0, -3).toLowerCase();
+module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    VօxB໐t.magfetch(
-      VօxB໐t,
-      "https://magneum.vercel.app/api/emotions?q=" + pfname
-    ).then(async (response) => {
-      var mData = response.data;
-      console.log(mData);
-      if (!mData.meta.url) {
-        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
-          react: {
-            text: "❌",
-            key: ᴠᴏxᴄ.key,
-          },
-        });
-        return ᴠᴏxᴄ.reply(
-          `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+    // Fetch emotion data from the API
+    const response = await ᴠᴏxʙᴏᴛ.magfetch(
+      ᴠᴏxʙᴏᴛ,
+      `https://magneum.vercel.app/api/emotions?q=${feeling}`
+    );
+    const magData = response.data;
+    console.log(magData);
+    if (!magData.meta.url) {
+      // Handle API error
+      await ᴠᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
+        react: { text: "❌", key: ᴠᴏxᴄ.key },
+      });
+      return ᴠᴏxᴄ.reply(
+        `*😥 Apologies:* _${ᴠᴏxʙᴏᴛ.pushname || ᴠᴏxʙᴏᴛ.Tname}_
+*❌ Error*
+> An API error has occurred. Please try again later.`
+      );
+    }
+    const resultFilename = magData.resp.id + ".mp4";
+    await ᴠᴏxʙᴏᴛ.ffmpeg
+      .input(magData.meta.url)
+      .outputOptions([
+        "-pix_fmt yuv420p",
+        "-c:v libx264",
+        "-movflags +faststart",
+        "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
+      ])
+      .output(resultFilename)
+      .on("end", async () => {
+        let mentionedUser = "";
+        if (ᴠᴏxʙᴏᴛ.args[0] && ᴠᴏxʙᴏᴛ.args[0].startsWith("@")) {
+          // Check if a user is mentioned in the command arguments
+          const mention = ᴠᴏxʙᴏᴛ.mentionByTag;
+          mentionedUser =
+            (await mention[0]) || ᴠᴏxᴄ.msg.contextInfo.participant;
+        } else if (ᴠᴏxʙᴏᴛ.mentionByReply) {
+          // Check if a user is mentioned by replying to their message
+          mentionedUser =
+            ᴠᴏxᴄ.mtype === "extendedTextMessage" &&
+            ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
+              ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant || ""
+              : "";
+        }
+        const message = `*VoxBot by Magneum*
+*💻HomePage:* https://bit.ly/magneum
 
-*❌ Error* 
-> There has been an API Error. Please try again later.`
+*🎋Emo:* ${feeling}
+*📢From:* ${ᴠᴏxʙᴏᴛ.pushname}
+*⚡For:* @${mentionedUser.split("@")[0] || ""}
+*🐞Api:* https://magneum.vercel.app/api/emotions`;
+        // Send the generated video and caption to the chat
+        await ᴠᴏxʙᴏᴛ.sendMessage(
+          ᴠᴏxᴄ.chat,
+          {
+            gifPlayback: true,
+            video: ᴠᴏxʙᴏᴛ.fs.readFileSync(resultFilename),
+            caption: message,
+            mentions: [mentionedUser, ᴠᴏxᴄ.sender],
+          },
+          { quoted: ᴠᴏxᴄ }
         );
-      }
-      resp = mData.resp.id + ".mp4";
-      VօxB໐t.ffmpeg
-        .input(mData.meta.url)
-        .outputOptions([
-          "-pix_fmt yuv420p",
-          "-c:v libx264",
-          "-movflags +faststart",
-          "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-        ])
-        .output(resp)
-        .on("end", async () => {
-          if (VօxB໐t.args[0] && VօxB໐t.args[0].startsWith("@")) {
-            let mention = VօxB໐t.mentionByTag;
-            let dataFor =
-              (await mention[0]) || ᴠᴏxᴄ.msg.contextInfo.participant;
-            return await VօxB໐t.sendMessage(
-              ᴠᴏxᴄ.chat,
-              {
-                gifPlayback: true,
-                video: VօxB໐t.fs.readFileSync(resp),
-                caption: `*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr\n\n
-*🎋Feeling:* ${pfname}
-*📢From:* ${VօxB໐t.pushname}
-*⚡For:* @${dataFor.split("@")[0] || ""}
-> *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
-                mentions: [dataFor, ᴠᴏxᴄ.sender],
-              },
-              { quoted: ᴠᴏxᴄ }
-            ).then(VօxB໐t.fs.unlinkSync(resp));
-          } else if (VօxB໐t.mentionByReply) {
-            let dataFor =
-              ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
-              ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
-                ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant ||
-                  ""
-                : "";
-            return await VօxB໐t.sendMessage(
-              ᴠᴏxᴄ.chat,
-              {
-                gifPlayback: true,
-                video: VօxB໐t.fs.readFileSync(resp),
-                caption: `*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr\n\n
-*🎋Feeling:* ${pfname}
-*📢From:* ${VօxB໐t.pushname}
-*⚡For:* @${dataFor.split("@")[0] || ""}
-> *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
-                mentions: [dataFor, ᴠᴏxᴄ.sender],
-              },
-              { quoted: ᴠᴏxᴄ }
-            ).then(VօxB໐t.fs.unlinkSync(resp));
-          } else {
-            return await VօxB໐t.sendMessage(
-              ᴠᴏxᴄ.chat,
-              {
-                gifPlayback: true,
-                video: VօxB໐t.fs.readFileSync(resp),
-                caption: `*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/xhadr\n\n
-*⚡For:* ${VօxB໐t.pushname}
-*🎋Feeling:* ${pfname}
-> *Api Fetch Url:* https://magneum.vercel.app/api/emotions`,
-              },
-              { quoted: ᴠᴏxᴄ }
-            ).then(VօxB໐t.fs.unlinkSync(resp));
-          }
-        })
-        .on("error", (error) => console.log(error))
-        .run();
-    });
+        // Remove the generated video file
+        ᴠᴏxʙᴏᴛ.fs.unlinkSync(resultFilename);
+      })
+      .on("error", (error) => console.log(error))
+      .run();
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    // Handle any errors that occur during the process
+    return ᴠᴏxʙᴏᴛ.grab(ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };
