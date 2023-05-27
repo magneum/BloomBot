@@ -10,13 +10,9 @@
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
-var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
-var progress = require("progress-estimator")();
-var youtubedl = require("youtube-dl-exec");
-var FFmpeg = require("fluent-ffmpeg");
 require("../../global.js");
 const ppath = require("path");
+const ytdl = require("ytdl-secktor");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
@@ -44,6 +40,40 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     ).then(async (response) => {
       var mData = response.data;
       console.log(mData);
+
+      return await VօxB໐t.sendMessage(
+        ᴠᴏxᴄ.chat,
+        {
+          image: { url: mData.youtube_search[0].HQ_IMAGE },
+          caption: `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
+*🍻Title:* ${mData.youtube_search[0].TITLE}
+*🙈Views:* ${mData.youtube_search[0].VIEWS}
+*🔗Link:* ${mData.youtube_search[0].LINK || "null"}
+*⏰Duration:* ${mData.youtube_search[0].DURATION_FULL}
+*📜Description:* ${mData.youtube_search[0].DESCRIPTION}`,
+          footer:
+            "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          buttons: [
+            {
+              buttonId: `${VօxB໐t.prefix}Dashboard`,
+              buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${VօxB໐t.prefix}Help`,
+              buttonText: { displayText: `${VօxB໐t.prefix}Help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [ᴠᴏxᴄ.sender],
+        },
+        {
+          contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender] },
+          quoted: ᴠᴏxᴄ,
+        }
+      );
+
       await VօxB໐t.imgB(
         VօxB໐t,
         ᴠᴏxᴄ,
@@ -55,8 +85,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 *📜Description:* ${mData.youtube_search[0].DESCRIPTION}`,
         mData.youtube_search[0].HQ_IMAGE
       );
-      // =========================================================
-      const ytdl = require("ytdl-secktor");
+      return;
       const stream = ytdl(mData.youtube_search[0].LINK, {
         filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
       }).pipe(VօxB໐t.fs.createWriteStream(`./${mData.uuid}`));
@@ -88,162 +117,6 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         },
         { quoted: ᴠᴏxᴄ }
       ).then(VօxB໐t.fs.unlinkSync(`./${mData.uuid}`));
-      return;
-      let _DROP = youtubedl(mData.youtube_search[0].LINK, {
-        noWarnings: true,
-        dumpSingleJson: true,
-        preferFreeFormats: true,
-        noCheckCertificates: true,
-        addHeader: ["referer:youtube.com", "user-agent:googlebot"],
-      });
-      var YouGhost = await progress(_DROP, "Obtaining: " + " ");
-      var a_ultralow = YouGhost.formats.filter(
-        (v) => v.format_id === "599" || v.format_id === "600"
-      );
-      var db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
-      var a_low = YouGhost.formats.filter(
-        (v) =>
-          v.format_id === "139" ||
-          v.format_id === "249" ||
-          v.format_id === "250"
-      );
-      var db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
-      var a_medium = YouGhost.formats.filter(
-        (v) => v.format_id === "140" || v.format_id === "251"
-      );
-      var db_medium = a_medium[0] || a_medium[1] || a_medium;
-
-      if (db_medium.width !== undefined) {
-        console.log(db_medium.url);
-        FFmpeg(db_medium.url)
-          .setFfmpegPath(FFmpegPath)
-          .setFfprobePath(FFmpegProbe)
-          .format("mp3")
-          .output(
-            async (data) => {
-              await VօxB໐t.sendMessage(
-                ᴠᴏxᴄ.chat,
-                {
-                  audio: {
-                    url: data,
-                  },
-                  mimetype: "audio/mpeg",
-                  fileName: mData.youtube_search[0].TITLE + ".mp3",
-                  headerType: 4,
-                  contextInfo: {
-                    externalAdReply: {
-                      title: mData.youtube_search[0].TITLE,
-                      body: "⭕made by voxbot",
-                      renderLargerThumbnail: true,
-                      thumbnailUrl: mData.youtube_search[0].THUMB,
-                      mediaUrl: mData.youtube_search[0].LINK,
-                      mediaType: 1,
-                      thumbnail: await VօxB໐t.getBuffer(
-                        mData.youtube_search[0].HQ_IMAGE
-                      ),
-                      sourceUrl: "https://bit.ly/magneum",
-                    },
-                  },
-                },
-                { quoted: ᴠᴏxᴄ }
-              );
-            },
-            { end: true }
-          )
-          .on("error", (e) => console.error("ERROR: " + e.message))
-          .on("end", () =>
-            console.log("INFO: stream sent to client successfully.")
-          )
-          .run();
-      } else if (db_medium.width === undefined && db_low.width !== undefined) {
-        console.log(db_low.url);
-        FFmpeg(db_low.url)
-          .setFfmpegPath(FFmpegPath)
-          .setFfprobePath(FFmpegProbe)
-          .format("mp3")
-          .output(
-            async (data) => {
-              await VօxB໐t.sendMessage(
-                ᴠᴏxᴄ.chat,
-                {
-                  audio: {
-                    url: data,
-                  },
-                  mimetype: "audio/mpeg",
-                  fileName: mData.youtube_search[0].TITLE + ".mp3",
-                  headerType: 4,
-                  contextInfo: {
-                    externalAdReply: {
-                      title: mData.youtube_search[0].TITLE,
-                      body: "⭕made by voxbot",
-                      renderLargerThumbnail: true,
-                      thumbnailUrl: mData.youtube_search[0].THUMB,
-                      mediaUrl: mData.youtube_search[0].LINK,
-                      mediaType: 1,
-                      thumbnail: await VօxB໐t.getBuffer(
-                        mData.youtube_search[0].HQ_IMAGE
-                      ),
-                      sourceUrl: "https://bit.ly/magneum",
-                    },
-                  },
-                },
-                { quoted: ᴠᴏxᴄ }
-              );
-            },
-            { end: true }
-          )
-          .on("error", (e) => console.error("ERROR: " + e.message))
-          .on("end", () =>
-            console.log("INFO: stream sent to client successfully.")
-          )
-          .run();
-      } else if (
-        db_medium.width === undefined &&
-        db_low.width === undefined &&
-        db_ultralow.width !== undefined
-      ) {
-        console.log(db_ultralow.url);
-        FFmpeg(db_ultralow.url)
-          .setFfmpegPath(FFmpegPath)
-          .setFfprobePath(FFmpegProbe)
-          .format("mp3")
-          .output(
-            async (data) => {
-              await VօxB໐t.sendMessage(
-                ᴠᴏxᴄ.chat,
-                {
-                  audio: {
-                    url: data,
-                  },
-                  mimetype: "audio/mpeg",
-                  fileName: mData.youtube_search[0].TITLE + ".mp3",
-                  headerType: 4,
-                  contextInfo: {
-                    externalAdReply: {
-                      title: mData.youtube_search[0].TITLE,
-                      body: "⭕made by voxbot",
-                      renderLargerThumbnail: true,
-                      thumbnailUrl: mData.youtube_search[0].THUMB,
-                      mediaUrl: mData.youtube_search[0].LINK,
-                      mediaType: 1,
-                      thumbnail: await VօxB໐t.getBuffer(
-                        mData.youtube_search[0].HQ_IMAGE
-                      ),
-                      sourceUrl: "https://bit.ly/magneum",
-                    },
-                  },
-                },
-                { quoted: ᴠᴏxᴄ }
-              );
-            },
-            { end: true }
-          )
-          .on("error", (e) => console.error("ERROR: " + e.message))
-          .on("end", () =>
-            console.log("INFO: stream sent to client successfully.")
-          )
-          .run();
-      }
     });
   } catch (error) {
     return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);

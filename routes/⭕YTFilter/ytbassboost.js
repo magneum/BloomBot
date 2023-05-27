@@ -43,6 +43,7 @@ module.exports = async (voxbot, voxc, update, store) => {
       voxbot,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
+    console.log(response.response);
     const searchData = response.data.youtube_search[0];
     const musicResponse = await voxbot.magfetch(
       voxbot,
