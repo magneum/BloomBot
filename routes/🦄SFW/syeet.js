@@ -16,31 +16,20 @@ const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (VօxB໐t, νℓкhat, update, store) => {
   try {
-          VօxB໐t.magfetch(
-            VօxB໐t,
-            "https://magneum.vercel.app/api/sfw?q=yeet",
-          ).then(async (response) => {
-            
-    VօxB໐t.axios({
-      method: "get",
-      url: "https://magneum.vercel.app/api/sfw?q=yeet",
-      headers: {
-        accept: "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      },
-    }).then(async (response) => {
-      var mData = response.data;
-      console.log(mData);
-      return await VօxB໐t.imgB(
-        VօxB໐t,
-        νℓкhat,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    VօxB໐t.magfetch(VօxB໐t, "https://magneum.vercel.app/api/sfw?q=yeet").then(
+      async (response) => {
+        var mData = response.data;
+        console.log(mData);
+        return await VօxB໐t.imgB(
+          VօxB໐t,
+          νℓкhat,
+          `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *Topic*: ${mData.meta.topic}
 *Query*: ${mData.meta.query}`,
-        mData.meta.url
-      );
-    });
+          mData.meta.url
+        );
+      }
+    );
   } catch (error) {
     return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
   }
