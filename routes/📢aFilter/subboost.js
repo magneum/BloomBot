@@ -14,16 +14,16 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, vcнaт, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(vcнaт.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return vcнaт.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -40,9 +40,9 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
       VօxB໐t.exec(
         `${VօxB໐t.pathFFmpeg} -i ${media} -af "asubboost" ${random}.mp3`,
         async (error) => {
-          return vcнaт.reply(`*🕊️You:* ${
+          return ᴠᴏxᴄ.reply(`*🕊️You:* ${
             VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-          }\n*📢ID:* ${vcнaт.chat}
+          }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
 *😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 *❌ Error* 
@@ -53,7 +53,7 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           var Thumb = await VօxB໐t.getBuffer("./src/VօxB໐t.jpg");
           return await VօxB໐t.sendMessage(
-            vcнaт.chat,
+            ᴠᴏxᴄ.chat,
             {
               audio: VօxB໐t.fs.readFileSync(`${random}.mp3`),
               contextInfo: {
@@ -68,19 +68,19 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
               mimetype: "audio/mpeg",
               fileName: `${one.title}.mp3`,
             },
-            { quoted: vcнaт }
+            { quoted: ᴠᴏxᴄ }
           ).then(VօxB໐t.fs.unlinkSync(`${random}.mp3`));
         }
       );
     } else {
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-      await VօxB໐t.sendMessage(vcнaт.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: vcнaт.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return vcнaт.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -92,6 +92,6 @@ module.exports = async (VօxB໐t, vcнaт, update, store) => {
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, vcнaт, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

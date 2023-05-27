@@ -14,22 +14,22 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     return await VօxB໐t.nsfwCheck.findOne(
       {
-        serverID: νℓкhat.chat,
+        serverID: ᴠᴏxᴄ.chat,
       },
       async (error, server) => {
-        if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+        if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
         if (!server) {
-          await VօxB໐t.sendMessage(νℓкhat.chat, {
+          await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
             react: {
               text: "❌",
-              key: νℓкhat.key,
+              key: ᴠᴏxᴄ.key,
             },
           });
-          return νℓкhat.reply(
+          return ᴠᴏxᴄ.reply(
             `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌ Error* 
@@ -44,19 +44,19 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             var mData = response.data;
             console.log(mData);
             if (!mData.meta.thumbnail) {
-              await VօxB໐t.sendMessage(νℓкhat.chat, {
+              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "❌",
-                  key: νℓкhat.key,
+                  key: ᴠᴏxᴄ.key,
                 },
               });
-              return νℓкhat.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
+              return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.`);
             } else
               await VօxB໐t.imgB(
                 VօxB໐t,
-                νℓкhat,
+                ᴠᴏxᴄ,
                 `*🔖Here, ${pfname} For @${VօxB໐t.Tname || VօxB໐t.pushname}:*
 
 ╔══☰ *❗ADULT❗*
@@ -81,6 +81,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

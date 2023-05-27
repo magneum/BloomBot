@@ -14,20 +14,20 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     VօxB໐t.Economy.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+          return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
         }
 
         if (!userEco) {
           new VօxB໐t.Economy({
-            ID: νℓкhat.sender,
+            ID: ᴠᴏxᴄ.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -38,11 +38,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           })
             .save()
             .catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
             });
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -57,7 +57,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             );
             return await VօxB໐t.imgB(
               VօxB໐t,
-              νℓкhat,
+              ᴠᴏxᴄ,
               `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
@@ -68,11 +68,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           });
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -83,6 +83,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

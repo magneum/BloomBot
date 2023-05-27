@@ -14,17 +14,17 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     VօxB໐t.Robbery.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       async (error, userRob) => {
-        if (error) return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+        if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
         if (!userRob) {
           new VօxB໐t.Robbery({
-            ID: νℓкhat.sender,
+            ID: ᴠᴏxᴄ.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -32,10 +32,10 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => VօxB໐t.grab(VօxB໐t, νℓкhat, error));
+            .catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -44,7 +44,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         }
         return await VօxB໐t.imgB(
           VօxB໐t,
-          νℓкhat,
+          ᴠᴏxᴄ,
           `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -54,6 +54,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

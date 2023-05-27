@@ -14,20 +14,20 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     await VօxB໐t.Economy.findOne(
       {
-        ID: νℓкhat.sender,
+        ID: ᴠᴏxᴄ.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+          return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
         }
 
         if (!userEco) {
           let newUser = new VօxB໐t.Economy({
-            ID: νℓкhat.sender,
+            ID: ᴠᴏxᴄ.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -37,11 +37,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           });
           return await VօxB໐t.imgB(
             VօxB໐t,
-            νℓкhat,
+            ᴠᴏxᴄ,
             `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -50,23 +50,23 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         } else {
           await VօxB໐t.Zoology.findOne(
             {
-              ID: νℓкhat.sender,
+              ID: ᴠᴏxᴄ.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, Synthia, error);
               if (!userZoo) {
                 new VօxB໐t.Zoology({
-                  ID: νℓкhat.sender,
+                  ID: ᴠᴏxᴄ.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
@@ -79,7 +79,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   );
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -103,11 +103,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -124,6 +124,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };

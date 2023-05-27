@@ -14,7 +14,7 @@ require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, νℓкhat, update, store) => {
+module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
   try {
     let Item;
     let NewLimit;
@@ -94,13 +94,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     }
 
     if (!VօxB໐t.args) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -113,13 +113,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     }
 
     if (VօxB໐t.args.length === 0) {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -134,16 +134,16 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     if (RobCatelog.includes(VօxB໐t.args[0])) {
       VօxB໐t.Economy.findOne(
         {
-          ID: νℓкhat.sender,
+          ID: ᴠᴏxᴄ.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           }
 
           if (!userEco) {
             let newUser = new VօxB໐t.Economy({
-              ID: νℓкhat.sender,
+              ID: ᴠᴏxᴄ.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -153,11 +153,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
             });
             return await VօxB໐t.imgB(
               VօxB໐t,
-              νℓкhat,
+              ᴠᴏxᴄ,
               `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./src/voxbot.jpg"
@@ -165,15 +165,15 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
           }
           VօxB໐t.Robbery.findOne(
             {
-              ID: νℓкhat.sender,
+              ID: ᴠᴏxᴄ.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
               }
               if (!userRob) {
                 new VօxB໐t.Robbery({
-                  ID: νℓкhat.sender,
+                  ID: ᴠᴏxᴄ.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -182,11 +182,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./src/voxbot.jpg"
@@ -195,7 +195,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                 if (userEco.money < ItemPrice) {
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -212,14 +212,14 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -234,14 +234,14 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -256,14 +256,14 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                   return await VօxB໐t.imgB(
                     VօxB໐t,
-                    νℓкhat,
+                    ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
                       VօxB໐t.Tname || VօxB໐t.pushname
                     }:*
@@ -275,7 +275,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                 }
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -289,25 +289,25 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
     } else if (BadCatelog.includes(VօxB໐t.args[0])) {
       await VօxB໐t.Economy.findOne(
         {
-          ID: νℓкhat.sender,
+          ID: ᴠᴏxᴄ.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
           }
 
           await VօxB໐t.Bagde.findOne(
             {
-              ID: νℓкhat.sender,
+              ID: ᴠᴏxᴄ.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
               }
 
               if (!userEco) {
                 new VօxB໐t.Economy({
-                  ID: νℓкhat.sender,
+                  ID: ᴠᴏxᴄ.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -318,11 +318,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                   });
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -335,7 +335,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
 
               if (!userBadge) {
                 let newBagdeUser = new VօxB໐t.Bagde({
-                  ID: νℓкhat.sender,
+                  ID: ᴠᴏxᴄ.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -343,11 +343,11 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                 });
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -361,7 +361,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
               if (userEco.money < ItemPrice) {
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -375,7 +375,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
               if (userBadge.Badge === Item) {
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -392,14 +392,14 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
                 });
                 return await VօxB໐t.imgB(
                   VօxB໐t,
-                  νℓкhat,
+                  ᴠᴏxᴄ,
                   `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -413,13 +413,13 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
         }
       );
     } else {
-      await VօxB໐t.sendMessage(νℓкhat.chat, {
+      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
-          key: νℓкhat.key,
+          key: ᴠᴏxᴄ.key,
         },
       });
-      return νℓкhat.reply(
+      return ᴠᴏxᴄ.reply(
         `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
 
 *❌Error* 
@@ -431,6 +431,6 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, νℓкhat, error);
+    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
   }
 };
