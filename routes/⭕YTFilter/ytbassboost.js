@@ -53,10 +53,7 @@ module.exports = async (VօxB໐t, νℓкhat, update, store) => {
       }
     }
 
-    VօxB໐t.magfetch(
-      VօxB໐t,
-      "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")
-    ).then(async (response) => {
+    VօxB໐t.magfetch(VօxB໐t, "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")).then(async (response) => {
       var mData = response.data;
       console.log(mData);
       await VօxB໐t.imgB(

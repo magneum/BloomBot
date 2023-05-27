@@ -40,21 +40,19 @@ module.exports = async (VօxB໐t, update, store, mågneum) => {
       // logs.error("❌: Connection closed, reconnecting....");
       await mågneum();
     } else if (reason === DisconnectReason.connectionLost) {
-      logs.error("❌: Connection Lost from Server, reconnecting...");
+      // logs.error("❌: Connection Lost from Server, reconnecting...");
       await mågneum();
     } else if (reason === DisconnectReason.connectionReplaced) {
-      logs.error(
-        "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-      );
+      // logs.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
       // VօxB໐t.logout();
     } else if (reason === DisconnectReason.loggedOut) {
-      logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+      // logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
       process.exit(0);
     } else if (reason === DisconnectReason.restartRequired) {
-      logs.error("❌: Restart Required, Restarting...");
+      // logs.error("❌: Restart Required, Restarting...");
       await mågneum();
     } else if (reason === DisconnectReason.timedOut) {
-      logs.error("❌: Connection TimedOut, Reconnecting...");
+      // logs.error("❌: Connection TimedOut, Reconnecting...");
       await mågneum();
     } else
       VօxB໐t.end(

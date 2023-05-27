@@ -15,7 +15,7 @@ module.exports = async (VօxB໐t, νℓкhat, updatedb) => {
   try {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(νℓкhat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/voxbot.jpg";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
   await VօxB໐t.dashboard.findOne(
     {
