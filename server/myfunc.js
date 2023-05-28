@@ -20,7 +20,6 @@ let { sizeFormatter } = require("human-readable");
 let child_process = require("child_process");
 let moment = require("moment-timezone");
 let { unlink } = require("fs").promises;
-let chalk = require("chalk");
 let axios = require("axios");
 let util = require("util");
 let fs = require("fs");
@@ -367,7 +366,6 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
   fs.unwatchFile(file);
-  console.log(chalk.redBright(`Update ${__filename}`));
   delete require.cache[file];
   require(file);
 });

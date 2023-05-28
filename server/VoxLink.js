@@ -40,10 +40,10 @@ let {
   getRandom,
 } = require("./myfunc");
 let { tmpdir } = require("os");
+let chalk = require("chalk");
 let { JSDOM } = require("jsdom");
 let { Character } = require("mailist");
 let { readFile } = require("fs/promises");
-let { Chalk } = require("cfonts/lib/Chalk");
 let { performance } = require("perf_hooks");
 let { Primbon } = require("scrape-primbon");
 let { getDadjoke } = require("random-jokes");
