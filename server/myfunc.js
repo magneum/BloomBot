@@ -9,7 +9,7 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 let { proto, getContentType } = require("@adiwajshing/baileys");
 let { sizeFormatter } = require("human-readable");
 let child_process = require("child_process");
@@ -222,7 +222,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
+exports.νkmake = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, store) => {
   if (!ᴠᴏxᴄ) return ᴠᴏxᴄ;
   let νproto = proto.WebMessageInfo;
   if (ᴠᴏxᴄ.key) {
@@ -231,15 +231,15 @@ exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
     ᴠᴏxᴄ.chat = ᴠᴏxᴄ.key.remoteJid;
     ᴠᴏxᴄ.fromMe = ᴠᴏxᴄ.key.fromMe;
     ᴠᴏxᴄ.isGroup = ᴠᴏxᴄ.chat.endsWith("@g.us");
-    ᴠᴏxᴄ.sender = VօxB໐t.decodeJid(
-      (ᴠᴏxᴄ.fromMe && VօxB໐t.user.id) ||
+    ᴠᴏxᴄ.sender = ꪜᴏxʙᴏᴛ.decodeJid(
+      (ᴠᴏxᴄ.fromMe && ꪜᴏxʙᴏᴛ.user.id) ||
         ᴠᴏxᴄ.participant ||
         ᴠᴏxᴄ.key.participant ||
         ᴠᴏxᴄ.chat ||
         ""
     );
     if (ᴠᴏxᴄ.isGroup)
-      ᴠᴏxᴄ.participant = VօxB໐t.decodeJid(ᴠᴏxᴄ.key.participant) || "";
+      ᴠᴏxᴄ.participant = ꪜᴏxʙᴏᴛ.decodeJid(ᴠᴏxᴄ.key.participant) || "";
   }
   if (ᴠᴏxᴄ.message) {
     ᴠᴏxᴄ.mtype = getContentType(ᴠᴏxᴄ.message);
@@ -281,9 +281,9 @@ exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
       ᴠᴏxᴄ.quoted.isBaileys = ᴠᴏxᴄ.quoted.id
         ? ᴠᴏxᴄ.quoted.id.startsWith("BAE5") && ᴠᴏxᴄ.quoted.id.length === 16
         : false;
-      ᴠᴏxᴄ.quoted.sender = VօxB໐t.decodeJid(ᴠᴏxᴄ.msg.contextInfo.participant);
+      ᴠᴏxᴄ.quoted.sender = ꪜᴏxʙᴏᴛ.decodeJid(ᴠᴏxᴄ.msg.contextInfo.participant);
       ᴠᴏxᴄ.quoted.fromMe =
-        ᴠᴏxᴄ.quoted.sender === (VօxB໐t.user && VօxB໐t.user.id);
+        ᴠᴏxᴄ.quoted.sender === (ꪜᴏxʙᴏᴛ.user && ꪜᴏxʙᴏᴛ.user.id);
       ᴠᴏxᴄ.quoted.text =
         ᴠᴏxᴄ.quoted.text ||
         ᴠᴏxᴄ.quoted.caption ||
@@ -297,8 +297,8 @@ exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
         : [];
       ᴠᴏxᴄ.getQuotedObj = ᴠᴏxᴄ.getQuotedMessage = async () => {
         if (!ᴠᴏxᴄ.quoted.id) return false;
-        let q = await store.loadMessage(ᴠᴏxᴄ.chat, ᴠᴏxᴄ.quoted.id, VօxB໐t);
-        return exports.νkmake(VօxB໐t, q, store);
+        let q = await store.loadMessage(ᴠᴏxᴄ.chat, ᴠᴏxᴄ.quoted.id, ꪜᴏxʙᴏᴛ);
+        return exports.νkmake(ꪜᴏxʙᴏᴛ, q, store);
       };
       let vM = (ᴠᴏxᴄ.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -310,14 +310,14 @@ exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
         ...(ᴠᴏxᴄ.isGroup ? { participant: ᴠᴏxᴄ.quoted.sender } : {}),
       }));
       ᴠᴏxᴄ.quoted.delete = () =>
-        VօxB໐t.sendMessage(ᴠᴏxᴄ.quoted.chat, { delete: vM.key });
+        ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.quoted.chat, { delete: vM.key });
       ᴠᴏxᴄ.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-        VօxB໐t.copyNForward(jid, vM, forceForward, options);
-      ᴠᴏxᴄ.quoted.download = () => VօxB໐t.downloadMediaMessage(ᴠᴏxᴄ.quoted);
+        ꪜᴏxʙᴏᴛ.copyNForward(jid, vM, forceForward, options);
+      ᴠᴏxᴄ.quoted.download = () => ꪜᴏxʙᴏᴛ.downloadMediaMessage(ᴠᴏxᴄ.quoted);
     }
   }
 
-  if (ᴠᴏxᴄ.msg.url) ᴠᴏxᴄ.download = () => VօxB໐t.downloadMediaMessage(ᴠᴏxᴄ.msg);
+  if (ᴠᴏxᴄ.msg.url) ᴠᴏxᴄ.download = () => ꪜᴏxʙᴏᴛ.downloadMediaMessage(ᴠᴏxᴄ.msg);
   ᴠᴏxᴄ.text =
     ᴠᴏxᴄ.msg.text ||
     ᴠᴏxᴄ.msg.caption ||
@@ -328,12 +328,12 @@ exports.νkmake = async (VօxB໐t, ᴠᴏxᴄ, store) => {
     "";
   ᴠᴏxᴄ.reply = (text, chatId = ᴠᴏxᴄ.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? VօxB໐t.sendMedia(chatId, text, "file", "", ᴠᴏxᴄ, { ...options })
-      : VօxB໐t.sendText(chatId, text, ᴠᴏxᴄ, { ...options });
+      ? ꪜᴏxʙᴏᴛ.sendMedia(chatId, text, "file", "", ᴠᴏxᴄ, { ...options })
+      : ꪜᴏxʙᴏᴛ.sendText(chatId, text, ᴠᴏxᴄ, { ...options });
   ᴠᴏxᴄ.copy = () =>
-    exports.νkmake(VօxB໐t, νproto.fromObject(νproto.toObject(ᴠᴏxᴄ)));
+    exports.νkmake(ꪜᴏxʙᴏᴛ, νproto.fromObject(νproto.toObject(ᴠᴏxᴄ)));
   ᴠᴏxᴄ.copyNForward = (jid = ᴠᴏxᴄ.chat, forceForward = false, options = {}) =>
-    VօxB໐t.copyNForward(jid, ᴠᴏxᴄ, forceForward, options);
+    ꪜᴏxʙᴏᴛ.copyNForward(jid, ᴠᴏxᴄ, forceForward, options);
 
   return ᴠᴏxᴄ;
 };

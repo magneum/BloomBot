@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test": "supervisor test",
+    "dev": "supervisor -w . index.js",
     "ffdev": "nodemon server/pfmpeg.js",
     "ffstart": "forever server/pfmpeg.js",
-    "dev": "supervisor -w . index.js",
     "local": "node --no-warnings boot.js",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",

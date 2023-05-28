@@ -12,7 +12,7 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║ It's your concern if you spam and gets your account banned.
 //  ║ Also, Forks won't be entertained.
 //  ║ If you fork this repo and edit plugins, it's your concern for further updates.
@@ -20,15 +20,15 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
-  if (VօxB໐t.isReply) {
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
+  if (ꪜᴏxʙᴏᴛ.isReply) {
     var receiver =
-      VօxB໐t.mtype == "extendedTextMessage" &&
-      VօxB໐t.message.extendedTextMessage.contextInfo != null
-        ? VօxB໐t.message.extendedTextMessage.contextInfo.participant || ""
+      ꪜᴏxʙᴏᴛ.mtype == "extendedTextMessage" &&
+      ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo != null
+        ? ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    await VօxB໐t.sendMessage(
+    await ꪜᴏxʙᴏᴛ.sendMessage(
       ᴠᴏxᴄ.chat,
       {
         image: { url: νidē໐ },
@@ -37,13 +37,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${VօxB໐t.prefix}Dashboard`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
             type: 1,
           },
           {
-            buttonId: `${VօxB໐t.prefix}Help`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Help` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
             type: 1,
           },
         ],
@@ -55,14 +55,14 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         quoted: ᴠᴏxᴄ,
       }
     ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } else if (VօxB໐t.mentionByTag) {
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+  } else if (ꪜᴏxʙᴏᴛ.mentionByTag) {
     var receiver =
-      VօxB໐t.mtype == "extendedTextMessage" &&
-      VօxB໐t.message.extendedTextMessage.contextInfo != null
-        ? VօxB໐t.message.extendedTextMessage.contextInfo.mentionedJid
+      ꪜᴏxʙᴏᴛ.mtype == "extendedTextMessage" &&
+      ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo != null
+        ? ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
-    await VօxB໐t.sendMessage(
+    await ꪜᴏxʙᴏᴛ.sendMessage(
       ᴠᴏxᴄ.chat,
       {
         image: { url: νidē໐ },
@@ -71,13 +71,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${VօxB໐t.prefix}Dashboard`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
             type: 1,
           },
           {
-            buttonId: `${VօxB໐t.prefix}Help`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Help` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
             type: 1,
           },
         ],
@@ -89,9 +89,9 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         quoted: ᴠᴏxᴄ,
       }
     ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return await VօxB໐t.sendMessage(
+    return await ꪜᴏxʙᴏᴛ.sendMessage(
       ᴠᴏxᴄ.chat,
       {
         image: { url: νidē໐ },
@@ -100,13 +100,13 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${VօxB໐t.prefix}Dashboard`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
             type: 1,
           },
           {
-            buttonId: `${VօxB໐t.prefix}Help`,
-            buttonText: { displayText: `${VօxB໐t.prefix}Help` },
+            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
             type: 1,
           },
         ],

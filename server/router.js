@@ -9,10 +9,10 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const moment = require("moment-timezone");
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  VօxB໐t.body =
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  ꪜᴏxʙᴏᴛ.body =
     ᴠᴏxᴄ.mtype === "conversation"
       ? ᴠᴏxᴄ.message.conversation
       : ᴠᴏxᴄ.mtype == "imageMessage"
@@ -32,103 +32,103 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         ᴠᴏxᴄ.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         ᴠᴏxᴄ.text
       : "";
-  VօxB໐t.budy = typeof ᴠᴏxᴄ.text == "string" ? ᴠᴏxᴄ.text : "";
-  VօxB໐t.icmd = VօxB໐t.body.startsWith(prefix);
-  VօxB໐t.isCommand =
-    prefix.includes(VօxB໐t.body != "" && VօxB໐t.body.slice(0, 1)) &&
-    VօxB໐t.body.slice(1) != "";
-  VօxB໐t.command = VօxB໐t.isCommand
-    ? VօxB໐t.body.slice(1).trim().split(" ")[0].toLowerCase()
+  ꪜᴏxʙᴏᴛ.budy = typeof ᴠᴏxᴄ.text == "string" ? ᴠᴏxᴄ.text : "";
+  ꪜᴏxʙᴏᴛ.icmd = ꪜᴏxʙᴏᴛ.body.startsWith(prefix);
+  ꪜᴏxʙᴏᴛ.isCommand =
+    prefix.includes(ꪜᴏxʙᴏᴛ.body != "" && ꪜᴏxʙᴏᴛ.body.slice(0, 1)) &&
+    ꪜᴏxʙᴏᴛ.body.slice(1) != "";
+  ꪜᴏxʙᴏᴛ.command = ꪜᴏxʙᴏᴛ.isCommand
+    ? ꪜᴏxʙᴏᴛ.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  VօxB໐t.args = VօxB໐t.body.trim().split(/ +/).slice(1);
-  VօxB໐t.pushname = ᴠᴏxᴄ.pushName || "No Name";
-  VօxB໐t.botNumber = await VօxB໐t.decodeJid(VօxB໐t.user.id);
-  VօxB໐t.frome = ᴠᴏxᴄ.sender == VօxB໐t.botNumber ? true : false;
-  VօxB໐t.Fullarg = VօxB໐t.args.join(" ");
-  VօxB໐t.contant = q = VօxB໐t.args.join(" ");
-  VօxB໐t.quoted = ᴠᴏxᴄ.quoted ? ᴠᴏxᴄ.quoted : ᴠᴏxᴄ;
-  VօxB໐t.mime = (VօxB໐t.quoted.msg || VօxB໐t.quoted).mimetype || "";
-  VօxB໐t.isMedia = /image|video|sticker|audio/.test(VօxB໐t.mime);
-  VօxB໐t.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  VօxB໐t.isCreator = [VօxB໐t.botNumber, ...global.sudo]
+  ꪜᴏxʙᴏᴛ.args = ꪜᴏxʙᴏᴛ.body.trim().split(/ +/).slice(1);
+  ꪜᴏxʙᴏᴛ.pushname = ᴠᴏxᴄ.pushName || "No Name";
+  ꪜᴏxʙᴏᴛ.botNumber = await ꪜᴏxʙᴏᴛ.decodeJid(ꪜᴏxʙᴏᴛ.user.id);
+  ꪜᴏxʙᴏᴛ.frome = ᴠᴏxᴄ.sender == ꪜᴏxʙᴏᴛ.botNumber ? true : false;
+  ꪜᴏxʙᴏᴛ.Fullarg = ꪜᴏxʙᴏᴛ.args.join(" ");
+  ꪜᴏxʙᴏᴛ.contant = q = ꪜᴏxʙᴏᴛ.args.join(" ");
+  ꪜᴏxʙᴏᴛ.quoted = ᴠᴏxᴄ.quoted ? ᴠᴏxᴄ.quoted : ᴠᴏxᴄ;
+  ꪜᴏxʙᴏᴛ.mime = (ꪜᴏxʙᴏᴛ.quoted.msg || ꪜᴏxʙᴏᴛ.quoted).mimetype || "";
+  ꪜᴏxʙᴏᴛ.isMedia = /image|video|sticker|audio/.test(ꪜᴏxʙᴏᴛ.mime);
+  ꪜᴏxʙᴏᴛ.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  ꪜᴏxʙᴏᴛ.isCreator = [ꪜᴏxʙᴏᴛ.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
     .includes(ᴠᴏxᴄ.sender);
-  VօxB໐t.mentionByTag =
+  ꪜᴏxʙᴏᴛ.mentionByTag =
     ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
     ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
       ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  VօxB໐t.mentionByReply =
+  ꪜᴏxʙᴏᴛ.mentionByReply =
     ᴠᴏxᴄ.mtype == "extendedTextMessage" &&
     ᴠᴏxᴄ.message.extendedTextMessage.contextInfo != null
       ? ᴠᴏxᴄ.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./kronLink")(VօxB໐t, ᴠᴏxᴄ, update, store);
-  if (!ᴠᴏxᴄ.isGroup && VօxB໐t.command)
-    return require("../auth/noPrivate")(VօxB໐t, ᴠᴏxᴄ, update);
-  if (ᴠᴏxᴄ.isGroup && VօxB໐t.command)
-    VօxB໐t.userBanCheck.findOne(
+  require("./kronLink")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
+  if (!ᴠᴏxᴄ.isGroup && ꪜᴏxʙᴏᴛ.command)
+    return require("../auth/noPrivate")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update);
+  if (ᴠᴏxᴄ.isGroup && ꪜᴏxʙᴏᴛ.command)
+    ꪜᴏxʙᴏᴛ.userBanCheck.findOne(
       {
         ID: ᴠᴏxᴄ.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
+          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        VօxB໐t.userBanCheck.findOne(
+        ꪜᴏxʙᴏᴛ.userBanCheck.findOne(
           {
             ID: ᴠᴏxᴄ.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname}_
+              return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !VօxB໐t.frome && !VօxB໐t.isSudoWorker) return;
-            if (groupCheck && !VօxB໐t.frome && !VօxB໐t.isSudoWorker) return;
-            await VօxB໐t.LinkList.findOne(
+            if (banCheck && !ꪜᴏxʙᴏᴛ.frome && !ꪜᴏxʙᴏᴛ.isSudoWorker) return;
+            if (groupCheck && !ꪜᴏxʙᴏᴛ.frome && !ꪜᴏxʙᴏᴛ.isSudoWorker) return;
+            await ꪜᴏxʙᴏᴛ.LinkList.findOne(
               {
                 serverID: ᴠᴏxᴄ.chat,
               },
               async (error, server) => {
-                if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                 if (!server) return;
                 let { noLink } = require("../auth/antilink");
-                return noLink(VօxB໐t, ᴠᴏxᴄ);
+                return noLink(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ);
               }
             );
 
-            // respA = await VօxB໐t.groupMetadata("120363020792949649@g.us");
+            // respA = await ꪜᴏxʙᴏᴛ.groupMetadata("120363020792949649@g.us");
             // for (let i = 0; i < respA.participants.length; i++)
-            // VօxB໐t.memberRespA[i] = respA.participants[i].id;
+            // ꪜᴏxʙᴏᴛ.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await VօxB໐t.groupMetadata("120363089188116481@g.us");
+            // respB = await ꪜᴏxʙᴏᴛ.groupMetadata("120363089188116481@g.us");
             // for (let i = 0; i < respB.participants.length; i++)
-            // VօxB໐t.memberRespB[i] = respB.participants[i].id;
+            // ꪜᴏxʙᴏᴛ.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !VօxB໐t.fromme &&
-            // !VօxB໐t.isSudoWorker &&
-            // !VօxB໐t.letResp.includes(VօxB໐t.command) &&
-            // !VօxB໐t.memberRespA.includes(ᴠᴏxᴄ.sender) &&
-            // !VօxB໐t.memberRespB.includes(ᴠᴏxᴄ.sender)
+            // !ꪜᴏxʙᴏᴛ.fromme &&
+            // !ꪜᴏxʙᴏᴛ.isSudoWorker &&
+            // !ꪜᴏxʙᴏᴛ.letResp.includes(ꪜᴏxʙᴏᴛ.command) &&
+            // !ꪜᴏxʙᴏᴛ.memberRespA.includes(ᴠᴏxᴄ.sender) &&
+            // !ꪜᴏxʙᴏᴛ.memberRespB.includes(ᴠᴏxᴄ.sender)
             // ) {
-            // return await VօxB໐t.sendMessage(
+            // return await ꪜᴏxʙᴏᴛ.sendMessage(
             // ᴠᴏxᴄ.chat,
             // {
             // gifPlayback: true,
-            // video: VօxB໐t.fs.readFileSync("./src/how.mp4"),
+            // video: ꪜᴏxʙᴏᴛ.fs.readFileSync("./src/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Sorry:* _${VօxB໐t.pushname}_
+            // *😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -143,14 +143,14 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             // );
             // }
 
-            if (process.env.runtype === "devar" && !VօxB໐t.isSudoWorker) {
-              return await VօxB໐t.sendMessage(
+            if (process.env.runtype === "devar" && !ꪜᴏxʙᴏᴛ.isSudoWorker) {
+              return await ꪜᴏxʙᴏᴛ.sendMessage(
                 ᴠᴏxᴄ.chat,
                 {
                   gifPlayback: true,
-                  video: VօxB໐t.fs.readFileSync("./src/VօxB໐t_white.jpg"),
+                  video: ꪜᴏxʙᴏᴛ.fs.readFileSync("./src/VօxB໐t_white.jpg"),
                   caption: `*📢Verification Needed*
-*😥Sorry:* _${VօxB໐t.pushname}_
+*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -163,14 +163,14 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 { quoted: ᴠᴏxᴄ }
               );
             } else
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "🔖",
                   key: ᴠᴏxᴄ.key,
                 },
               });
             return await require("../server/library")(
-              VօxB໐t,
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
               update,
               store
@@ -179,5 +179,5 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         );
       }
     );
-  return VօxB໐t;
+  return ꪜᴏxʙᴏᴛ;
 };

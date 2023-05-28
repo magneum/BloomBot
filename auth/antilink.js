@@ -9,61 +9,61 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-exports.noLink = async (VօxB໐t, ᴠᴏxᴄ) => {
-  let FetchCurrentGroupLink = await VօxB໐t.groupInviteCode(ᴠᴏxᴄ.chat);
+exports.noLink = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ) => {
+  let FetchCurrentGroupLink = await ꪜᴏxʙᴏᴛ.groupInviteCode(ᴠᴏxᴄ.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-  let isGroupLink = GroupLinkRegex.exec(VօxB໐t.budy);
+  let isGroupLink = GroupLinkRegex.exec(ꪜᴏxʙᴏᴛ.budy);
   let PresentGroupLink = new RegExp(
     `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
     "i"
   );
-  let isCurrentGroupLink = PresentGroupLink.test(VօxB໐t.budy);
+  let isCurrentGroupLink = PresentGroupLink.test(ꪜᴏxʙᴏᴛ.budy);
   if (isGroupLink && !isCurrentGroupLink) {
-    await VօxB໐t.groupParticipantsUpdate(
+    await ꪜᴏxʙᴏᴛ.groupParticipantsUpdate(
       ᴠᴏxᴄ.chat,
-      [VօxB໐t.sender],
+      [ꪜᴏxʙᴏᴛ.sender],
       "remove"
-    ).catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
+    ).catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
     await ᴠᴏxᴄ.reply(
-      `*😥Sorry:* _${VօxB໐t.pushname}_
+      `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    return await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
       delete: {
         remoteJid: ᴠᴏxᴄ.chat,
         fromMe: false,
-        id: VօxB໐t.quoted.id,
-        participant: VօxB໐t.quoted.sender,
+        id: ꪜᴏxʙᴏᴛ.quoted.id,
+        participant: ꪜᴏxʙᴏᴛ.quoted.sender,
       },
     });
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (
-    VօxB໐t.budy.includes("https://t.me/") &&
-    VօxB໐t.budy.includes("discord.gg") &&
-    VօxB໐t.budy.includes("discord.com") &&
-    VօxB໐t.budy.includes("/t.me/") &&
-    VօxB໐t.budy.includes("wa.me/") &&
-    VօxB໐t.budy.includes("www.")
+    ꪜᴏxʙᴏᴛ.budy.includes("https://t.me/") &&
+    ꪜᴏxʙᴏᴛ.budy.includes("discord.gg") &&
+    ꪜᴏxʙᴏᴛ.budy.includes("discord.com") &&
+    ꪜᴏxʙᴏᴛ.budy.includes("/t.me/") &&
+    ꪜᴏxʙᴏᴛ.budy.includes("wa.me/") &&
+    ꪜᴏxʙᴏᴛ.budy.includes("www.")
   ) {
-    await VօxB໐t.groupParticipantsUpdate(
+    await ꪜᴏxʙᴏᴛ.groupParticipantsUpdate(
       ᴠᴏxᴄ.chat,
-      [VօxB໐t.sender],
+      [ꪜᴏxʙᴏᴛ.sender],
       "remove"
-    ).catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
+    ).catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
     await ᴠᴏxᴄ.reply(
-      `*😥Sorry:* _${VօxB໐t.pushname}_
+      `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    return await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
       delete: {
         remoteJid: ᴠᴏxᴄ.chat,
         fromMe: false,
-        id: VօxB໐t.quoted.id,
-        participant: VօxB໐t.quoted.sender,
+        id: ꪜᴏxʙᴏᴛ.quoted.id,
+        participant: ꪜᴏxʙᴏᴛ.quoted.sender,
       },
     });
   } else {

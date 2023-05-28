@@ -20,48 +20,48 @@ const path = require("path");
 const fileName = path.basename(__filename);
 const functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (voxbot, voxc, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, voxc, update, store) => {
   try {
-    const query = voxbot.args.join(" ");
+    const query = ꪜᴏxʙᴏᴛ.args.join(" ");
     if (
       !query ||
-      (query.includes("youtube") && !voxbot.TubeRegex.test(query))
+      (query.includes("youtube") && !ꪜᴏxʙᴏᴛ.TubeRegex.test(query))
     ) {
-      await voxbot.sendMessage(voxc.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(voxc.chat, {
         react: { text: "❌", key: voxc.key },
       });
       return voxc.reply(
-        `*😥 Sorry:* ${voxbot.pushname || voxbot.Tname}
+        `*😥 Sorry:* ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}
 *❌ Error* 
 > _No query provided!_
 
 *⚡ Usage* 
-> _${voxbot.prefix}${functionName} song/link_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${functionName} song/link_`
       );
     }
-    const response = await voxbot.magfetch(
-      voxbot,
+    const response = await ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
     console.log(response.response);
     const searchData = response.data.youtube_search[0];
-    const musicResponse = await voxbot.magfetch(
-      voxbot,
+    const musicResponse = await ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
       `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
     const musicData = musicResponse.data[0];
-    const audioFilename = `${voxbot.between(3000, 4000)}${musicData.YT_ID}.mp3`;
-    await voxbot.exec(
-      `${voxbot.pathFFmpeg} -i ${musicData.quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioFilename}`
+    const audioFilename = `${ꪜᴏxʙᴏᴛ.between(3000, 4000)}${musicData.YT_ID}.mp3`;
+    await ꪜᴏxʙᴏᴛ.exec(
+      `${ꪜᴏxʙᴏᴛ.pathFFmpeg} -i ${musicData.quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioFilename}`
     );
-    const audioFile = voxbot.fs.readFileSync(`./${audioFilename}`);
-    const thumbnail = await voxbot.getBuffer(searchData.HQ_IMAGE);
+    const audioFile = ꪜᴏxʙᴏᴛ.fs.readFileSync(`./${audioFilename}`);
+    const thumbnail = await ꪜᴏxʙᴏᴛ.getBuffer(searchData.HQ_IMAGE);
     const mediaUrl = searchData.LINK || "Not available";
     const authorName = searchData.AUTHOR_NAME || "Not available";
     const description = searchData.DESCRIPTION || "No description available";
     const message = `
 *🔖 Here's the information for ${functionName} requested by ${
-      voxbot.pushname || voxbot.Tname
+      ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname
     }:*
 *🎵 Title:* ${searchData.TITLE}
 *👁️ Views:* ${searchData.VIEWS}  
@@ -71,7 +71,7 @@ module.exports = async (voxbot, voxc, update, store) => {
 
 *📜 Description:*
 ${description}`;
-    await voxbot.sendMessage(voxc.chat, {
+    await ꪜᴏxʙᴏᴛ.sendMessage(voxc.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await voxbot.sendMessage(voxc.chat, {
+    await ꪜᴏxʙᴏᴛ.sendMessage(voxc.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -106,8 +106,8 @@ ${description}`;
         },
       },
     });
-    voxbot.fs.unlinkSync(`./${audioFilename}`);
+    ꪜᴏxʙᴏᴛ.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return voxbot.grab(voxbot, voxc, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, voxc, error);
   }
 };

@@ -9,7 +9,7 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const logger = require("./logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -135,7 +135,7 @@ async function mågneum() {
 
   await sequelize.sync();
   const { state, saveCreds } = await useRemoteFileAuthState();
-  var VօxB໐t = νℓкуяє_вσт({
+  var ꪜᴏxʙᴏᴛ = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
@@ -158,174 +158,177 @@ async function mågneum() {
       };
     },
   });
-  store.bind(VօxB໐t.ev);
+  store.bind(ꪜᴏxʙᴏᴛ.ev);
 
-  VօxB໐t.ev.on("creds.update", (update) =>
-    require("./events/creds.update")(update)
-  );
-  VօxB໐t.ev.on("connection.update", (update) =>
-    require("./events/connection.update")(VօxB໐t, update, store, mågneum)
-  );
-  VօxB໐t.ev.on("messages.upsert", (update) =>
-    require("./events/messages.upsert")(VօxB໐t, update, store)
-  );
-  VօxB໐t.ev.on("group-participants.update", (update) =>
-    require("./events/group-participants.update")(VօxB໐t, update, store)
-  );
-  VօxB໐t.ev.on("contacts.update", (update) =>
-    require("./events/contacts.update")(VօxB໐t, update, store)
-  );
-  VօxB໐t.ws.on("CB:call", (update) =>
-    require("./events/cb_call")(VօxB໐t, update, store)
-  );
-
-  // VօxB໐t.ev.on("creds.update", async (update) => await saveCreds());
-  // VօxB໐t.ev.on("connection.update", async (update) => {
-  // const {
-  // lastDisconnect,
-  // connection,
-  // isNewLogin,
-  // isOnline,
-  // qr,
-  // receivedPendingNotifications,
-  // } = update;
-  // if (connection == "connecting")
-  // logger.info("🐲: Connecting to WhatsApp...▶");
-  // else if (connection == "open") logger.info("🐲: Login successful! ▶");
-  // else if (connection == "close") {
-  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-  // if (reason === DisconnectReason.badSession) {
-  // logger.error(
-  // `❌: Bad Session File, Please Delete Session and Scan Again`
+  // ꪜᴏxʙᴏᴛ.ev.on("creds.update", (update) =>
+  // require("./events/creds.update")(update)
   // );
-  // VօxB໐t.logout();
-  // } else if (reason === DisconnectReason.connectionClosed) {
-  // logger.error("❌: Connection closed, reconnecting....");
-  // await mågneum();
-  // } else if (reason === DisconnectReason.connectionLost) {
-  // logger.error("❌: Connection Lost from Server, reconnecting...");
-  // await mågneum();
-  // } else if (reason === DisconnectReason.connectionReplaced) {
-  // logger.error(
-  // "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+  // ꪜᴏxʙᴏᴛ.ev.on("connection.update", (update) =>
+  // require("./events/connection.update")(ꪜᴏxʙᴏᴛ, update, store, mågneum)
   // );
-  // VօxB໐t.logout();
-  // } else if (reason === DisconnectReason.loggedOut) {
-  // logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
-  // process.exit(0);
-  // } else if (reason === DisconnectReason.restartRequired) {
-  // logger.error("❌: Restart Required, Restarting...");
-  // await mågneum();
-  // } else if (reason === DisconnectReason.timedOut) {
-  // logger.error("❌: Connection TimedOut, Reconnecting...");
-  // await mågneum();
-  // } else
-  // VօxB໐t.end(
-  // logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+  // ꪜᴏxʙᴏᴛ.ev.on("messages.upsert", (update) =>
+  // require("./events/messages.upsert")(ꪜᴏxʙᴏᴛ, update, store)
   // );
-  // } else if (isOnline === true) logger.debug("🐲: Online.");
-  // else if (isOnline === false) logger.error("🐲: Offine.");
-  // else if (receivedPendingNotifications === true)
-  // logger.debug("🐲: Received Pending Notifications.");
-  // else if (receivedPendingNotifications === false)
-  // logger.error("🐲: Not Received Pending Notifications.");
-  // else if (isNewLogin === true) logger.debug("🐲: New Login.");
-  // else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-  // else if (qr) logger.info("Qr: "), console.log(qr);
-  // else logger.info("🐲: Connection...", update);
-  // });
-
-  // VօxB໐t.ev.on("messages.upsert", async (update) => {
-  // νTēxt = update.messages[0];
-  // if (!νTēxt.message) return;
-  // νTēxt.message =
-  // Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-  // ? νTēxt.message.ephemeralMessage.message
-  // : νTēxt.message;
-  // if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-  // if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
-  // if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-  // ᴠᴏxᴄ = await νkmake(VօxB໐t, νTēxt, store);
-  // await require("./server/router.js")(VօxB໐t, ᴠᴏxᴄ, update, store);
-  // });
-
-  // VօxB໐t.ev.on("group-participants.update", async (update) => {
-  // let metadata = await VօxB໐t.groupMetadata(update.id);
-  // let participants = update.participants;
-  // logger.info(update);
-  // for (let sperson of participants) {
-  // var imåge;
-  // try {
-  // imåge = await VօxB໐t.profilePictureUrl(sperson, "image");
-  // } catch {
-  // imåge = "./src/VօxB໐t.jpg";
-  // }
-
-  // if (update.action == "add") {
-  // return await VօxB໐t.sendMessage(
-  // update.id,
-  // {
-  // image: { url: imåge },
-  // caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-  // *📢ID:* ${update.id}
-
-  // > Firstly Welcome.
-  // > I am Synthia Whatsapp Bot.
-  // > To Start using type .help or press below buttons.`,
-  // footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
-  // buttons: [
-  //   {
-  //     buttonId: `${VօxB໐t.prefix}Dashboard`,
-  //     buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
-  //     type: 1,
-  //   },
-  //   {
-  //     buttonId: `${VօxB໐t.prefix}Synthia`,
-  //     buttonText: { displayText: `${VօxB໐t.prefix}Synthia` },
-  //     type: 1,
-  //   },
-  // ],
-  // headerType: 4,
-  // mentions: [sperson],
-  // },
-  // {
-  // contextInfo: { mentionedJid: [sperson] },
-  // }
-  // ).catch((error) => logger.error(error));
-  // } else if (update.action == "remove") {
-  // return;
-  // } else {
-  // return;
-  // }
-  // }
-  // });
-
-  // VօxB໐t.ws.on("CB:call", async (update) => {
-  // const sleep = async (ms) => {
-  // return new Promise((resolve) => setTimeout(resolve, ms));
-  // };
-  // var callerId = update.content[0].attrs["call-creator"];
-  // let person = await VօxB໐t.sendContact(callerId, global.owner);
-  // VօxB໐t.sendMessage(
-  // callerId,
-  // {
-  // text: "Automatic system block!",
-  // },
-  // { quoted: person }
+  // ꪜᴏxʙᴏᴛ.ev.on("group-participants.update", (update) =>
+  // require("./events/group-participants.update")(ꪜᴏxʙᴏᴛ, update, store)
   // );
-  // await sleep(8000);
-  // await VօxB໐t.updateBlockStatus(callerId, "block");
-  // });
+  // ꪜᴏxʙᴏᴛ.ev.on("contacts.update", (update) =>
+  // require("./events/contacts.update")(ꪜᴏxʙᴏᴛ, update, store)
+  // );
+  // ꪜᴏxʙᴏᴛ.ws.on("CB:call", (update) =>
+  // require("./events/cb_call")(ꪜᴏxʙᴏᴛ, update, store)
+  // );
 
-  // VօxB໐t.ev.on("contacts.update", async (update) => {
-  // for (let contact of update) {
-  // let jid = VօxB໐t.decodeJid(contact.id);
-  // if (store && store.contacts)
-  // store.contacts[jid] = { jid, name: contact.notify };
-  // }
-  // });
+  ꪜᴏxʙᴏᴛ.ev.on("creds.update", async (update) => await saveCreds());
+  ꪜᴏxʙᴏᴛ.ev.on("connection.update", async (update) => {
+    const {
+      lastDisconnect,
+      connection,
+      isNewLogin,
+      isOnline,
+      qr,
+      receivedPendingNotifications,
+    } = update;
+    if (connection == "connecting")
+      logger.info("🐲: Connecting to WhatsApp...▶");
+    else if (connection == "open") logger.info("🐲: Login successful! ▶");
+    else if (connection == "close") {
+      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+      if (reason === DisconnectReason.badSession) {
+        logger.error(
+          `❌: Bad Session File, Please Delete Session and Scan Again`
+        );
+        ꪜᴏxʙᴏᴛ.logout();
+      } else if (reason === DisconnectReason.connectionClosed) {
+        logger.error("❌: Connection closed, reconnecting....");
+        await mågneum();
+      } else if (reason === DisconnectReason.connectionLost) {
+        logger.error("❌: Connection Lost from Server, reconnecting...");
+        await mågneum();
+      } else if (reason === DisconnectReason.connectionReplaced) {
+        logger.error(
+          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+        );
+        ꪜᴏxʙᴏᴛ.logout();
+      } else if (reason === DisconnectReason.loggedOut) {
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        process.exit(0);
+      } else if (reason === DisconnectReason.restartRequired) {
+        logger.error("❌: Restart Required, Restarting...");
+        await mågneum();
+      } else if (reason === DisconnectReason.timedOut) {
+        logger.error("❌: Connection TimedOut, Reconnecting...");
+        await mågneum();
+      } else
+        ꪜᴏxʙᴏᴛ.end(
+          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+        );
+    } else if (isOnline === true) logger.debug("🐲: Online.");
+    else if (isOnline === false) logger.error("🐲: Offine.");
+    else if (receivedPendingNotifications === true)
+      logger.debug("🐲: Received Pending Notifications.");
+    else if (receivedPendingNotifications === false)
+      logger.error("🐲: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logger.debug("🐲: New Login.");
+    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+    else if (qr) logger.info("Qr: "), console.log(qr);
+    else logger.info("🐲: Connection...", update);
+  });
 
-  VօxB໐t.decodeJid = (jid) => {
+  ꪜᴏxʙᴏᴛ.ev.on("messages.upsert", async (update) => {
+    νTēxt = update.messages[0];
+    if (!νTēxt.message) return;
+    νTēxt.message =
+      Object.keys(νTēxt.message)[0] === "ephemeralMessage"
+        ? νTēxt.message.ephemeralMessage.message
+        : νTēxt.message;
+    if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
+    if (!ꪜᴏxʙᴏᴛ.public && !νTēxt.key.fromMe && update.type === "notify") return;
+    if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
+    ᴠᴏxᴄ = await νkmake(ꪜᴏxʙᴏᴛ, νTēxt, store);
+    await require("./server/router.js")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
+  });
+
+  ꪜᴏxʙᴏᴛ.ev.on("group-participants.update", async (update) => {
+    let metadata = await ꪜᴏxʙᴏᴛ.groupMetadata(update.id);
+    let participants = update.participants;
+    logger.info(update);
+    for (let sperson of participants) {
+      var imåge;
+      try {
+        imåge = await ꪜᴏxʙᴏᴛ.profilePictureUrl(sperson, "image");
+      } catch {
+        imåge = "./src/ꪜᴏxʙᴏᴛ.jpg";
+      }
+
+      if (update.action == "add") {
+        return await ꪜᴏxʙᴏᴛ
+          .sendMessage(
+            update.id,
+            {
+              image: { url: imåge },
+              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+  *📢ID:* ${update.id}
+
+  > Firstly Welcome.
+  > I am Synthia Whatsapp Bot.
+  > To Start using type .help or press below buttons.`,
+              footer:
+                "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+              buttons: [
+                {
+                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+                  type: 1,
+                },
+                {
+                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Synthia`,
+                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Synthia` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+              mentions: [sperson],
+            },
+            {
+              contextInfo: { mentionedJid: [sperson] },
+            }
+          )
+          .catch((error) => logger.error(error));
+      } else if (update.action == "remove") {
+        return;
+      } else {
+        return;
+      }
+    }
+  });
+
+  ꪜᴏxʙᴏᴛ.ws.on("CB:call", async (update) => {
+    const sleep = async (ms) => {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    };
+    var callerId = update.content[0].attrs["call-creator"];
+    let person = await ꪜᴏxʙᴏᴛ.sendContact(callerId, global.owner);
+    ꪜᴏxʙᴏᴛ.sendMessage(
+      callerId,
+      {
+        text: "Automatic system block!",
+      },
+      { quoted: person }
+    );
+    await sleep(8000);
+    await ꪜᴏxʙᴏᴛ.updateBlockStatus(callerId, "block");
+  });
+
+  ꪜᴏxʙᴏᴛ.ev.on("contacts.update", async (update) => {
+    for (let contact of update) {
+      let jid = ꪜᴏxʙᴏᴛ.decodeJid(contact.id);
+      if (store && store.contacts)
+        store.contacts[jid] = { jid, name: contact.notify };
+    }
+  });
+
+  ꪜᴏxʙᴏᴛ.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -335,14 +338,14 @@ async function mågneum() {
       );
     } else return jid;
   };
-  VօxB໐t.getName = (jid, withoutContact = false) => {
-    id = VօxB໐t.decodeJid(jid);
-    withoutContact = VօxB໐t.withoutContact || withoutContact;
+  ꪜᴏxʙᴏᴛ.getName = (jid, withoutContact = false) => {
+    id = ꪜᴏxʙᴏᴛ.decodeJid(jid);
+    withoutContact = ꪜᴏxʙᴏᴛ.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = VօxB໐t.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = ꪜᴏxʙᴏᴛ.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -358,8 +361,8 @@ async function mågneum() {
               id,
               name: "WhatsApp",
             }
-          : id === VօxB໐t.decodeJid(VօxB໐t.user.id)
-          ? VօxB໐t.user
+          : id === ꪜᴏxʙᴏᴛ.decodeJid(ꪜᴏxʙᴏᴛ.user.id)
+          ? ꪜᴏxʙᴏᴛ.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
@@ -371,19 +374,19 @@ async function mågneum() {
     );
   };
 
-  VօxB໐t.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  ꪜᴏxʙᴏᴛ.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await VօxB໐t.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await VօxB໐t.getName(
+        displayName: await ꪜᴏxʙᴏᴛ.getName(i + "@s.whatsapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ꪜᴏxʙᴏᴛ.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${await VօxB໐t.getName(
+        )}\nFN:${await ꪜᴏxʙᴏᴛ.getName(
           i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    VօxB໐t.sendMessage(
+    ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -393,10 +396,10 @@ async function mågneum() {
     );
   };
 
-  VօxB໐t.public = true;
-  VօxB໐t.serializeM = (ᴠᴏxᴄ) => νkmake(VօxB໐t, ᴠᴏxᴄ, store);
+  ꪜᴏxʙᴏᴛ.public = true;
+  ꪜᴏxʙᴏᴛ.serializeM = (ᴠᴏxᴄ) => νkmake(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, store);
 
-  VօxB໐t.send5ButImg = async (
+  ꪜᴏxʙᴏᴛ.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -406,7 +409,7 @@ async function mågneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: VօxB໐t.waUploadToServer }
+      { upload: ꪜᴏxʙᴏᴛ.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
       ᴠᴏxᴄ.chat,
@@ -422,12 +425,12 @@ async function mågneum() {
       }),
       options
     );
-    VօxB໐t.relayMessage(jid, template.message, {
+    ꪜᴏxʙᴏᴛ.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  VօxB໐t.sendButtonText = (
+  ꪜᴏxʙᴏᴛ.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -442,13 +445,13 @@ async function mågneum() {
       headerType: 2,
       ...options,
     };
-    VօxB໐t.sendMessage(jid, buttonMessage, { quoted, ...options });
+    ꪜᴏxʙᴏᴛ.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  VօxB໐t.sendText = (jid, text, quoted = "", options) =>
-    VօxB໐t.sendMessage(jid, { text: text, ...options }, { quoted });
+  ꪜᴏxʙᴏᴛ.sendText = (jid, text, quoted = "", options) =>
+    ꪜᴏxʙᴏᴛ.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  VօxB໐t.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  ꪜᴏxʙᴏᴛ.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -458,14 +461,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await VօxB໐t.sendMessage(
+    return await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  VօxB໐t.sendVideo = async (
+  ꪜᴏxʙᴏᴛ.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -482,14 +485,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await VօxB໐t.sendMessage(
+    return await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  VօxB໐t.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  ꪜᴏxʙᴏᴛ.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -499,15 +502,15 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await VօxB໐t.sendMessage(
+    return await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  VօxB໐t.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    VօxB໐t.sendMessage(
+  ꪜᴏxʙᴏᴛ.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       {
         text: text,
@@ -521,7 +524,7 @@ async function mågneum() {
       { quoted }
     );
 
-  VօxB໐t.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  ꪜᴏxʙᴏᴛ.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -538,7 +541,7 @@ async function mågneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await VօxB໐t.sendMessage(
+    await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -546,7 +549,7 @@ async function mågneum() {
     return buffer;
   };
 
-  VօxB໐t.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  ꪜᴏxʙᴏᴛ.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -563,7 +566,7 @@ async function mågneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await VօxB໐t.sendMessage(
+    await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -571,7 +574,7 @@ async function mågneum() {
     return buffer;
   };
 
-  VօxB໐t.downloadAndSaveMediaMessage = async (
+  ꪜᴏxʙᴏᴛ.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -593,7 +596,7 @@ async function mågneum() {
     return trueFileName;
   };
 
-  VօxB໐t.downloadMediaMessage = async (message) => {
+  ꪜᴏxʙᴏᴛ.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -607,7 +610,7 @@ async function mågneum() {
     return buffer;
   };
 
-  VօxB໐t.sendMedia = async (
+  ꪜᴏxʙᴏᴛ.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -615,7 +618,7 @@ async function mågneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await VօxB໐t.getFile(path, true);
+    let types = await ꪜᴏxʙᴏᴛ.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -643,7 +646,7 @@ async function mågneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await VօxB໐t.sendMessage(
+    await ꪜᴏxʙᴏᴛ.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -651,7 +654,7 @@ async function mågneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  VօxB໐t.copyNForward = async (
+  ꪜᴏxʙᴏᴛ.copyNForward = async (
     jid,
     message,
     forceForward = false,
@@ -702,17 +705,17 @@ async function mågneum() {
           }
         : {}
     );
-    await VօxB໐t.relayMessage(jid, waMessage.message, {
+    await ꪜᴏxʙᴏᴛ.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  VօxB໐t.cMod = (
+  ꪜᴏxʙᴏᴛ.cMod = (
     jid,
     copy,
     text = "",
-    sender = VօxB໐t.user.id,
+    sender = ꪜᴏxʙᴏᴛ.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -741,12 +744,12 @@ async function mågneum() {
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === VօxB໐t.user.id;
+    copy.key.fromMe = sender === ꪜᴏxʙᴏᴛ.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  VօxB໐t.getFile = async (PATH, save) => {
+  ꪜᴏxʙᴏᴛ.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -789,7 +792,7 @@ async function mågneum() {
       "💡maker",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await VօxB໐t.updateProfileStatus(
+    await ꪜᴏxʙᴏᴛ.updateProfileStatus(
       "Feeling: " + __Feeling + "  :voxbot by magneum"
     );
     await gitPull();

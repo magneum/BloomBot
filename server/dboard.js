@@ -9,25 +9,25 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../global.js");
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, updatedb) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ꪜᴏxʙᴏᴛ.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
-  await VօxB໐t.dashboard.findOne(
+  await ꪜᴏxʙᴏᴛ.dashboard.findOne(
     {
       ID: ᴠᴏxᴄ.sender,
     },
     async (error, udBase) => {
-      if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+      if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
       if (!udBase) {
-        new VօxB໐t.dashboard({
+        new ꪜᴏxʙᴏᴛ.dashboard({
           ID: ᴠᴏxᴄ.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: VօxB໐t.pushname,
+          username: ꪜᴏxʙᴏᴛ.pushname,
 
           bite: 0,
           blush: 0,
@@ -269,11 +269,11 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error));
-        await VօxB໐t.imgB(
-          VօxB໐t,
+          .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
+        await ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
           ᴠᴏxᴄ,
-          `*🔖Here, For ${VօxB໐t.pushname}:*
+          `*🔖Here, For ${ꪜᴏxʙᴏᴛ.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -285,7 +285,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, updatedb) => {
         );
         return updatedb(udBase);
       }
-      udBase.username = `${VօxB໐t.pushname}`;
+      udBase.username = `${ꪜᴏxʙᴏᴛ.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }

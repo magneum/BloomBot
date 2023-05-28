@@ -9,41 +9,41 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const path = require("path");
 const pfname = path.basename(__filename, ".js").toLowerCase();
 
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    const server = await VօxB໐t.nsfwCheck.findOne({ serverID: ᴠᴏxᴄ.chat });
+    const server = await ꪜᴏxʙᴏᴛ.nsfwCheck.findOne({ serverID: ᴠᴏxᴄ.chat });
     if (!server) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: { text: "❌", key: ᴠᴏxᴄ.key },
       });
-      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
 > You can ask the administrators to enable them.`);
     }
 
-    const response = await VօxB໐t.magfetch(
-      VօxB໐t,
+    const response = await ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
       `https://magneum.vercel.app/api/nsfw?q=${pfname}`
     );
     const mData = response.data;
     if (!mData.meta.thumbnail) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: { text: "❌", key: ᴠᴏxᴄ.key },
       });
-      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${VօxB໐t.pushname}_
+      return ᴠᴏxᴄ.reply(`*😥 Apologies:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
 
     const message = `
-*🔖 Here is ${pfname} for @${VօxB໐t.Tname || VօxB໐t.pushname}:*
+*🔖 Here is ${pfname} for @${ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname}:*
 
 ╔══☰ *❗ ADULT CONTENT ❗*
 ║⦁ 💡 Title: ${mData.meta.title || "Not available"}
@@ -60,8 +60,8 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 ║⦁ 💯 Subreddit ID: ${mData.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${mData.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await VօxB໐t.imgB(VօxB໐t, ᴠᴏxᴄ, message, mData.meta.thumbnail);
+    await ꪜᴏxʙᴏᴛ.imgB(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, message, mData.meta.thumbnail);
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

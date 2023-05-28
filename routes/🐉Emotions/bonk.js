@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,33 +14,33 @@
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../global.js");
 const path = require("path");
 const fileName = path.basename(__filename);
 const feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
     // Fetch emotion data from the API
-    const response = await ᴠᴏxʙᴏᴛ.magfetch(
-      ᴠᴏxʙᴏᴛ,
+    const response = await ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
       `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     const magData = response.data;
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await ᴠᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: { text: "❌", key: ᴠᴏxᴄ.key },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥 Apologies:* _${ᴠᴏxʙᴏᴛ.pushname || ᴠᴏxʙᴏᴛ.Tname}_
+        `*😥 Apologies:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
       );
     }
     const resultFilename = magData.resp.id + ".mp4";
-    await ᴠᴏxʙᴏᴛ.ffmpeg
+    await ꪜᴏxʙᴏᴛ.ffmpeg
       .input(magData.meta.url)
       .outputOptions([
         "-pix_fmt yuv420p",
@@ -51,12 +51,12 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       .output(resultFilename)
       .on("end", async () => {
         let mentionedUser = "";
-        if (ᴠᴏxʙᴏᴛ.args[0] && ᴠᴏxʙᴏᴛ.args[0].startsWith("@")) {
+        if (ꪜᴏxʙᴏᴛ.args[0] && ꪜᴏxʙᴏᴛ.args[0].startsWith("@")) {
           // Check if a user is mentioned in the command arguments
-          const mention = ᴠᴏxʙᴏᴛ.mentionByTag;
+          const mention = ꪜᴏxʙᴏᴛ.mentionByTag;
           mentionedUser =
             (await mention[0]) || ᴠᴏxᴄ.msg.contextInfo.participant;
-        } else if (ᴠᴏxʙᴏᴛ.mentionByReply) {
+        } else if (ꪜᴏxʙᴏᴛ.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
             ᴠᴏxᴄ.mtype === "extendedTextMessage" &&
@@ -68,27 +68,27 @@ module.exports = async (ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 *💻HomePage:* https://bit.ly/magneum
 
 *🎋Emo:* ${feeling}
-*📢From:* ${ᴠᴏxʙᴏᴛ.pushname}
+*📢From:* ${ꪜᴏxʙᴏᴛ.pushname}
 *⚡For:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
-        await ᴠᴏxʙᴏᴛ.sendMessage(
+        await ꪜᴏxʙᴏᴛ.sendMessage(
           ᴠᴏxᴄ.chat,
           {
             gifPlayback: true,
-            video: ᴠᴏxʙᴏᴛ.fs.readFileSync(resultFilename),
+            video: ꪜᴏxʙᴏᴛ.fs.readFileSync(resultFilename),
             caption: message,
             mentions: [mentionedUser, ᴠᴏxᴄ.sender],
           },
           { quoted: ᴠᴏxᴄ }
         );
         // Remove the generated video file
-        ᴠᴏxʙᴏᴛ.fs.unlinkSync(resultFilename);
+        ꪜᴏxʙᴏᴛ.fs.unlinkSync(resultFilename);
       })
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
     // Handle any errors that occur during the process
-    return ᴠᴏxʙᴏᴛ.grab(ᴠᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };
