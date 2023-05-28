@@ -16,7 +16,7 @@
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
-    "build": "rm -f yarn.lock && pip install -r requirements.txt && yarn install"
+    "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
   },
   "depecrated": false,
   "directories": {
