@@ -16,12 +16,8 @@
 # ║🐞 DEVELOPERS: +918436686758, +918250889325
 # ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 import os
-import logging
-import pathlib
-import git as 𝖛
 import subprocess
 from loguru import *
-from os import getenv
 from datetime import *
 from termcolor import *
 from dotenv import load_dotenv

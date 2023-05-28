@@ -1,4 +1,4 @@
-GitPython==3.1.31
-loguru==0.7.0
-python-dotenv==1.0.0
-termcolor==2.3.0
+GitPython
+loguru
+python-dotenv
+termcolor
