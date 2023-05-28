@@ -165,7 +165,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-              "./public/whatsbot.jpg"
+              "./public/whatsbot.png"
             );
           }
           whatsbot.Robbery.findOne(
@@ -194,7 +194,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               } else {
                 if (userEco.money < ItemPrice) {
@@ -209,7 +209,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 }
 
@@ -231,7 +231,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 }
 
@@ -253,7 +253,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 }
 
@@ -275,7 +275,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 }
                 return await whatsbot.imagebutton(
@@ -284,7 +284,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
             }
@@ -334,7 +334,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
 
@@ -359,7 +359,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
 
@@ -373,7 +373,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
 
@@ -384,7 +384,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
 
@@ -410,7 +410,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
             }

@@ -46,7 +46,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
         whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${await whatsbot.getDadjoke()}`,
-        "./public/whatsbot_beta.jpg"
+        "./public/whatsbot.png"
       );
     }
   } catch (error) {

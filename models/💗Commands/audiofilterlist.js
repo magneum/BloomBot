@@ -48,6 +48,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ ${whatsbot.prefix}vaporwave
 │║⦁ ${whatsbot.prefix}vibrato
 ┕╚═══════⋑`,
-    whatsbot.logo
+    "./public/whatsbot.png"
   );
 };

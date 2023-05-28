@@ -43,7 +43,7 @@ module.exports = async (whatsbot, update, store, magneum) => {
       logs.error(
         `❌: Bad Session File, Please Delete Session and Scan Again`
       );
-      // whatsbot.logout();
+      // "./public/whatsbot.png"ut();
     } else if (reason === DisconnectReason.connectionClosed) {
       // logs.error("❌: Connection closed, reconnecting....");
       await magneum();
@@ -52,7 +52,7 @@ module.exports = async (whatsbot, update, store, magneum) => {
       await magneum();
     } else if (reason === DisconnectReason.connectionReplaced) {
       // logs.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
-      // whatsbot.logout();
+      // "./public/whatsbot.png"ut();
     } else if (reason === DisconnectReason.loggedOut) {
       // logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
       process.exit(0);

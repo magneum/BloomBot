@@ -36,6 +36,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ ${whatsbot.prefix}pinterest
 │║⦁ ${whatsbot.prefix}wallpaper
 ┕╚═══════⋑`,
-    whatsbot.logo
+    "./public/whatsbot.png"
   );
 };

@@ -65,7 +65,7 @@ exports.NhentaiDL = async (msg, args, conn) => {
   await conn.sendFile(
     msg.from,
     array_page[0],
-    Date.now() + ".jpg",
+    Date.now() + ".png",
     `*${title}*\n_${doujin.title.native || ""}_\n• Language: ${
       doujin.language
     }\n• Parodies: ${parodies.join(", ")}\n• Groups: ${groups.join(
@@ -81,7 +81,7 @@ exports.NhentaiDL = async (msg, args, conn) => {
     return msg.reply("terlalu banyak halaman, Maks Page 50!");
   for (let i = 0; i < array_page.length; i++) {
     if (!fs.existsSync("./nhentai")) fs.mkdirSync("./nhentai");
-    let image_name = "./nhentai/" + title + i + ".jpg";
+    let image_name = "./nhentai/" + title + i + ".png";
     await new Promise((resolve) =>
       request(array_page[i])
         .pipe(fs.createWriteStream(image_name))
@@ -99,7 +99,7 @@ exports.NhentaiDL = async (msg, args, conn) => {
   );
 
   for (let i = 0; i < array_page.length; i++) {
-    fs.unlink("./nhentai/" + title + i + ".jpg");
+    fs.unlink("./nhentai/" + title + i + ".png");
   }
 
   let size = await fs.statSync(`./nhentai/${title}.pdf`).size;

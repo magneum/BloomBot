@@ -51,7 +51,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       whatschat,
       `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${Gxt}`,
-      "./public/whatsbot_beta.jpg"
+      "./public/whatsbot.png"
     );
   } catch (error) {
     return whatsbot.handlerror(whatsbot, whatschat, error);

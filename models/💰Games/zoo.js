@@ -50,7 +50,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
-            "./public/whatsbot.jpg"
+            "./public/whatsbot.png"
           );
         } else {
           await whatsbot.Zoology.findOne(
@@ -75,7 +75,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
@@ -90,7 +90,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 } else {
                   let zooId = Math.floor(Math.random() * 10) + 1;
@@ -119,7 +119,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_`,
-                    "./public/whatsbot.jpg"
+                    "./public/whatsbot.png"
                   );
                 }
               }

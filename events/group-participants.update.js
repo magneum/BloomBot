@@ -33,7 +33,7 @@ module.exports = async (whatsbot, update, store) => {
     try {
       imåge = await whatsbot.profilePictureUrl(sperson, "image");
     } catch {
-      imåge = "./public/whatsbot.jpg";
+      imåge = "./public/whatsbot.png";
     }
 
     if (update.action == "add") {

@@ -35,6 +35,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 > type ${whatsbot.prefix}help in whatsbot official group
 > head back to bit.ly/magneum
 > try to login`,
-    "./public/login.png"
+    "./public/whatsbot.png"
   );
 };

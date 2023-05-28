@@ -112,7 +112,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/whatsbot.jpg";
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/whatsbot.png";
       }
       await whatsbot.imagebutton(
         whatsbot,
@@ -162,7 +162,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/whatsbot.jpg";
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/whatsbot.png";
       }
       await whatsbot.imagebutton(
         whatsbot,

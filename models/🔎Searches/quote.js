@@ -50,7 +50,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
-        "./public/whatsbot_beta.jpg"
+        "./public/whatsbot.png"
       );
     }
   } catch (error) {

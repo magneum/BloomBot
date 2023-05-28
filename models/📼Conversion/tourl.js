@@ -48,7 +48,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
         whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🎊Link: * _${whatsbot.util.format(upload)}_`,
-        "./public/whatsbot.jpg"
+        "./public/whatsbot.png"
       );
     } else if (/video/.test(whatsbot.mime)) {
       media = await whatsbot.quoted.download();
@@ -58,7 +58,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
         whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🎊Link: * _${whatsbot.util.format(upload)}_`,
-        "./public/whatsbot.jpg"
+        "./public/whatsbot.png"
       );
     } else {
       await whatsbot.sendMessage(whatschat.chat, {

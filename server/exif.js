@@ -29,7 +29,7 @@ async function imageToWebp(media) {
   );
   let tmpFileIn = path.join(
     tmpdir(),
-    `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.jpg`
+    `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.png`
   );
 
   fs.writeFileSync(tmpFileIn, media);

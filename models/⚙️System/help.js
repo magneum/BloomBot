@@ -48,16 +48,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       }
       return acc;
     }, 0);
-
-  var LOGOS = [
-    "whatsbot(1).png",
-    "whatsbot(2).png",
-    "whatsbot(3).png",
-    "whatsbot(4).png",
-    "whatsbot(5).png",
-  ];
-  var i = Math.floor(Math.random() * LOGOS.length);
-
   return await whatsbot.imagebutton(
     whatsbot,
     whatschat,
@@ -354,6 +344,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ ${whatsbot.prefix}ytvaporwave
 │║⦁ ${whatsbot.prefix}ytvibrato
 ┕╚═════⋑`,
-    "./public/logo/" + LOGOS[i]
+    "./public/logo/whatsbot.png"
   );
 };

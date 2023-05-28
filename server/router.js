@@ -153,7 +153,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                 whatschat.chat,
                 {
                   gifPlayback: true,
-                  video: whatsbot.fs.readFileSync("./public/whatsbot_white.jpg"),
+                  video: whatsbot.fs.readFileSync("./public/whatsbot_white.png"),
                   caption: `*📢Verification Needed*
 *😥Apologies:* _${whatsbot.pushname}_
 

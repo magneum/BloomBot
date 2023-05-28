@@ -51,6 +51,6 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ ${whatsbot.prefix}ytvideo
 │║⦁ ${whatsbot.prefix}youtubevideo
 ┕╚═══════⋑`,
-    whatsbot.logo
+    "./public/whatsbot.png"
   );
 };

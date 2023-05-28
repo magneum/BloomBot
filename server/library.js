@@ -1937,7 +1937,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 > No Such Command Found
 > Visit To Know Commands: 
 > _bit.ly/magneum_`,
-        "./public/404.jpg"
+        "./public/404.png"
       );
       break;
   }

@@ -44,7 +44,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./public/whatsbot.jpg"
+            "./public/whatsbot.png"
           );
         }
         return await whatsbot.imagebutton(
@@ -54,7 +54,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
-          "./public/whatsbot.jpg"
+          "./public/whatsbot.png"
         );
       }
     );

@@ -56,7 +56,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *🐞 Bug* 
 > ${error}`);
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          var Thumb = await whatsbot.getBuffer("./public/whatsbot.jpg");
+          var Thumb = await whatsbot.getBuffer("./public/whatsbot.png");
           return await whatsbot
             .sendMessage(
               whatschat.chat,

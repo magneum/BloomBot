@@ -60,8 +60,8 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 
           if (whatsbot.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (whatsbot.fs.existsSync(random + ".jpg")) {
-            Found = random + ".jpg";
+          } else if (whatsbot.fs.existsSync(random + ".png")) {
+            Found = random + ".png";
           } else if (whatsbot.fs.existsSync(random + ".jpeg")) {
             Found = random + ".jpeg";
           } else if (whatsbot.fs.existsSync(random + ".webp")) {

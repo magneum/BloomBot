@@ -155,7 +155,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  "./public/whatsbot.jpg"
+                  "./public/whatsbot.png"
                 );
               }
 
@@ -181,7 +181,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                "./public/whatsbot.jpg"
+                "./public/whatsbot.png"
               );
             }
           );

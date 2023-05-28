@@ -52,7 +52,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./public/whatsbot.jpg"
+            "./public/whatsbot.png"
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
@@ -65,7 +65,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              "./public/whatsbot.jpg"
+              "./public/whatsbot.png"
             );
           } else {
             let amount = Math.floor(Math.random() * 80) + 1;
@@ -81,7 +81,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
-              "./public/whatsbot.jpg"
+              "./public/whatsbot.png"
             );
           }
         }

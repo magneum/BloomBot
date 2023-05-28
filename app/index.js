@@ -166,7 +166,7 @@ async function magneum() {
         logs.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
-        whatsbot.logout();
+        await magneum();
       } else if (reason === DisconnectReason.connectionClosed) {
         logs.error("❌: Connection closed, reconnecting....");
         await magneum();
@@ -177,7 +177,7 @@ async function magneum() {
         logs.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
-        whatsbot.logout();
+        await magneum();
       } else if (reason === DisconnectReason.loggedOut) {
         logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
@@ -211,7 +211,8 @@ async function magneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!whatsbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
+    if (!whatsbot.public && !νTēxt.key.fromMe && update.type === "notify")
+      return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     whatschat = await νkmake(whatsbot, νTēxt, store);
     await require("../server/router.js")(whatsbot, whatschat, update, store);
@@ -226,7 +227,7 @@ async function magneum() {
       try {
         imåge = await whatsbot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./public/whatsbot.jpg";
+        imåge = "./public/whatsbot.png";
       }
 
       if (update.action == "add") {
@@ -419,7 +420,13 @@ async function magneum() {
   whatsbot.sendText = (jid, text, quoted = "", options) =>
     whatsbot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  whatsbot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  whatsbot.sendImage = async (
+    jid,
+    path,
+    caption = "",
+    quoted = "",
+    options
+  ) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)

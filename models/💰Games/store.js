@@ -39,7 +39,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ 💍 *Platinum:* 80 Commands
 │║⦁ 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
-      "./public/whatsbot.jpg"
+      "./public/whatsbot.png"
     );
   } catch (error) {
     return whatsbot.handlerror(whatsbot, whatschat, error);
