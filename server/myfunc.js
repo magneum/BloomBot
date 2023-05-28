@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 let { proto, getContentType } = require("@adiwajshing/baileys");
-let { sizeformatter } = require("human-readable");
+// let { sizeformatter } = require("human-readable");
 let child_process = require("child_process");
 let moment = require("moment-timezone");
 let { unlink } = require("fs").promises;
@@ -140,12 +140,12 @@ exports.formatDate = (n, locale = "id") => {
   });
 };
 
-exports.formatp = sizeformatter({
-  std: "JEDEC",
-  decimalPlaces: 2,
-  keepTrailingZeroes: false,
-  render: (literal, symbol) => `${literal} ${symbol}B`,
-});
+// exports.formatp = sizeformatter({
+//   std: "JEDEC",
+//   decimalPlaces: 2,
+//   keepTrailingZeroes: false,
+//   render: (literal, symbol) => `${literal} ${symbol}B`,
+// });
 
 exports.jsonformat = (string) => {
   return JSON.stringify(string, null, 2);
@@ -232,7 +232,8 @@ exports.νkmake = async (voxbot, voxchat, store) => {
   let νproto = proto.WebMessageInfo;
   if (voxchat.key) {
     voxchat.id = voxchat.key.id;
-    voxchat.isBaileys = voxchat.id.startsWith("BAE5") && voxchat.id.length === 16;
+    voxchat.isBaileys =
+      voxchat.id.startsWith("BAE5") && voxchat.id.length === 16;
     voxchat.chat = voxchat.key.remoteJid;
     voxchat.fromMe = voxchat.key.fromMe;
     voxchat.isGroup = voxchat.chat.endsWith("@g.us");
@@ -260,7 +261,8 @@ exports.νkmake = async (voxbot, voxchat, store) => {
       voxchat.msg.text ||
       (voxchat.mtype == "listResponseMessage" &&
         voxchat.msg.singleSelectReply.selectedRowId) ||
-      (voxchat.mtype == "buttonsResponseMessage" && voxchat.msg.selectedButtonId) ||
+      (voxchat.mtype == "buttonsResponseMessage" &&
+        voxchat.msg.selectedButtonId) ||
       (voxchat.mtype == "viewOnceMessage" && voxchat.msg.caption) ||
       voxchat.text;
     let quoted = (voxchat.quoted = voxchat.msg.contextInfo
@@ -284,9 +286,12 @@ exports.νkmake = async (voxbot, voxchat, store) => {
       voxchat.quoted.id = voxchat.msg.contextInfo.stanzaId;
       voxchat.quoted.chat = voxchat.msg.contextInfo.remoteJid || voxchat.chat;
       voxchat.quoted.isBaileys = voxchat.quoted.id
-        ? voxchat.quoted.id.startsWith("BAE5") && voxchat.quoted.id.length === 16
+        ? voxchat.quoted.id.startsWith("BAE5") &&
+          voxchat.quoted.id.length === 16
         : false;
-      voxchat.quoted.sender = voxbot.decodeJid(voxchat.msg.contextInfo.participant);
+      voxchat.quoted.sender = voxbot.decodeJid(
+        voxchat.msg.contextInfo.participant
+      );
       voxchat.quoted.fromMe =
         voxchat.quoted.sender === (voxbot.user && voxbot.user.id);
       voxchat.quoted.text =
@@ -302,7 +307,11 @@ exports.νkmake = async (voxbot, voxchat, store) => {
         : [];
       voxchat.getQuotedObj = voxchat.getQuotedMessage = async () => {
         if (!voxchat.quoted.id) return false;
-        let q = await store.loadMessage(voxchat.chat, voxchat.quoted.id, voxbot);
+        let q = await store.loadMessage(
+          voxchat.chat,
+          voxchat.quoted.id,
+          voxbot
+        );
         return exports.νkmake(voxbot, q, store);
       };
       let vM = (voxchat.quoted.fakeObj = νproto.fromObject({
@@ -318,11 +327,13 @@ exports.νkmake = async (voxbot, voxchat, store) => {
         voxbot.sendMessage(voxchat.quoted.chat, { delete: vM.key });
       voxchat.quoted.copyNforward = (jid, forceforward = false, options = {}) =>
         voxbot.copyNforward(jid, vM, forceforward, options);
-      voxchat.quoted.download = () => voxbot.downloadMediaMessage(voxchat.quoted);
+      voxchat.quoted.download = () =>
+        voxbot.downloadMediaMessage(voxchat.quoted);
     }
   }
 
-  if (voxchat.msg.url) voxchat.download = () => voxbot.downloadMediaMessage(voxchat.msg);
+  if (voxchat.msg.url)
+    voxchat.download = () => voxbot.downloadMediaMessage(voxchat.msg);
   voxchat.text =
     voxchat.msg.text ||
     voxchat.msg.caption ||
@@ -337,8 +348,11 @@ exports.νkmake = async (voxbot, voxchat, store) => {
       : voxbot.sendText(chatId, text, voxchat, { ...options });
   voxchat.copy = () =>
     exports.νkmake(voxbot, νproto.fromObject(νproto.toObject(voxchat)));
-  voxchat.copyNforward = (jid = voxchat.chat, forceforward = false, options = {}) =>
-    voxbot.copyNforward(jid, voxchat, forceforward, options);
+  voxchat.copyNforward = (
+    jid = voxchat.chat,
+    forceforward = false,
+    options = {}
+  ) => voxbot.copyNforward(jid, voxchat, forceforward, options);
 
   return voxchat;
 };
