@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 let { proto, getContentType } = require("@adiwajshing/baileys");
-// let { sizeformatter } = require("human-readable");
+let { sizeFormatter } = require("human-readable");
 let child_process = require("child_process");
 let moment = require("moment-timezone");
 let { unlink } = require("fs").promises;
@@ -94,7 +94,9 @@ exports.runtime = function (seconds) {
   let dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   let hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   let mDisplay =
-    whatschat > 0 ? whatschat + (whatschat == 1 ? " minute, " : " minutes, ") : "";
+    whatschat > 0
+      ? whatschat + (whatschat == 1 ? " minute, " : " minutes, ")
+      : "";
   let sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
@@ -140,12 +142,12 @@ exports.formatDate = (n, locale = "id") => {
   });
 };
 
-// exports.formatp = sizeformatter({
-//   std: "JEDEC",
-//   decimalPlaces: 2,
-//   keepTrailingZeroes: false,
-//   render: (literal, symbol) => `${literal} ${symbol}B`,
-// });
+exports.formatp = sizeFormatter({
+  std: "JEDEC",
+  decimalPlaces: 2,
+  keepTrailingZeroes: false,
+  render: (literal, symbol) => `${literal} ${symbol}B`,
+});
 
 exports.jsonformat = (string) => {
   return JSON.stringify(string, null, 2);
@@ -245,7 +247,8 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
         ""
     );
     if (whatschat.isGroup)
-      whatschat.participant = whatsbot.decodeJid(whatschat.key.participant) || "";
+      whatschat.participant =
+        whatsbot.decodeJid(whatschat.key.participant) || "";
   }
   if (whatschat.message) {
     whatschat.mtype = getContentType(whatschat.message);
@@ -284,7 +287,8 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
         };
       whatschat.quoted.mtype = type;
       whatschat.quoted.id = whatschat.msg.contextInfo.stanzaId;
-      whatschat.quoted.chat = whatschat.msg.contextInfo.remoteJid || whatschat.chat;
+      whatschat.quoted.chat =
+        whatschat.msg.contextInfo.remoteJid || whatschat.chat;
       whatschat.quoted.isBaileys = whatschat.quoted.id
         ? whatschat.quoted.id.startsWith("BAE5") &&
           whatschat.quoted.id.length === 16
@@ -325,8 +329,11 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
       }));
       whatschat.quoted.delete = () =>
         whatsbot.sendMessage(whatschat.quoted.chat, { delete: vM.key });
-      whatschat.quoted.copyNforward = (jid, forceforward = false, options = {}) =>
-        whatsbot.copyNforward(jid, vM, forceforward, options);
+      whatschat.quoted.copyNForward = (
+        jid,
+        forceForward = false,
+        options = {}
+      ) => whatsbot.copyNForward(jid, vM, forceForward, options);
       whatschat.quoted.download = () =>
         whatsbot.downloadMediaMessage(whatschat.quoted);
     }
@@ -348,11 +355,11 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
       : whatsbot.sendText(chatId, text, whatschat, { ...options });
   whatschat.copy = () =>
     exports.νkmake(whatsbot, νproto.fromObject(νproto.toObject(whatschat)));
-  whatschat.copyNforward = (
+  whatschat.copyNForward = (
     jid = whatschat.chat,
-    forceforward = false,
+    forceForward = false,
     options = {}
-  ) => whatsbot.copyNforward(jid, whatschat, forceforward, options);
+  ) => whatsbot.copyNForward(jid, whatschat, forceForward, options);
 
   return whatschat;
 };
