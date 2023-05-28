@@ -82,33 +82,6 @@ async function magneum() {
     return version;
   };
   var msgRetryCounterMap = MessageRetryMap;
-  var gitPull = async () => {
-    await git.fetch();
-    let newCommits = await git.log(["magneum..origin/magneum"]);
-    if (newCommits.total) {
-      logs.info("🐲: Auto Updating...");
-      require("child_process").exec(
-        "git stash push --include-untracked && git stash drop"
-      );
-      await git.pull("origin", "magneum", (err, update) => {
-        if (update && update.summary.changes) {
-          if (update.files.includes("package.json"))
-            require("child_process")
-              .exec("yarn install --ignore-engines")
-              .stderr.pipe(process.stderr);
-          console.clear();
-          logs.info("🐲: Updated the bot with latest changes.");
-          logs.info(
-            "🐲: Please restart the bot manually if it doesn't auto-restart."
-          );
-          process.exit(0);
-        } else if (err) {
-          logs.error("❌: Could not pull latest changes!");
-          logs.info(err);
-        }
-      });
-    }
-  };
 
   var urlencodedParser = bodyParser.urlencoded({ extended: false });
   νℓpage.engine("html", require("ejs").renderFile);
@@ -802,7 +775,6 @@ async function magneum() {
     await voxbot.updateProfileStatus(
       "Feeling: " + __Feeling + "  :voxbot by magneum"
     );
-    await gitPull();
   }, 1000 * 10);
 }
 magneum().catch((error) => logs.error(error));
