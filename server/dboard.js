@@ -1,38 +1,38 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
-//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../logger/global.js");
-module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, updatedb) => {
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+require("../logs/global.js");
+module.exports = async (voxbot, voxchat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ꪜᴏxʙᴏᴛ.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await voxbot.profilePictureUrl(voxchat.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
-  await ꪜᴏxʙᴏᴛ.dashboard.findOne(
+  await voxbot.dashboard.findOne(
     {
-      ID: ᴠᴏxᴄ.sender,
+      Id: voxchat.sender,
     },
     async (error, udBase) => {
-      if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
+      if (error) return voxbot.handlerror(voxbot, voxchat, error);
       if (!udBase) {
-        new ꪜᴏxʙᴏᴛ.dashboard({
-          ID: ᴠᴏxᴄ.sender,
+        new voxbot.dashboard({
+          Id: voxchat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: ꪜᴏxʙᴏᴛ.pushname,
+          username: voxbot.pushname,
 
           bite: 0,
           blush: 0,
@@ -274,11 +274,11 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
-        await ꪜᴏxʙᴏᴛ.imgB(
-          ꪜᴏxʙᴏᴛ,
-          ᴠᴏxᴄ,
-          `*🔖Here, For ${ꪜᴏxʙᴏᴛ.pushname}:*
+          .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+        await voxbot.imagebutton(
+          voxbot,
+          voxchat,
+          `*🔖Here, for ${voxbot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -286,11 +286,11 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          "./src/login.png"
+          "./public/login.png"
         );
         return updatedb(udBase);
       }
-      udBase.username = `${ꪜᴏxʙᴏᴛ.pushname}`;
+      udBase.username = `${voxbot.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }

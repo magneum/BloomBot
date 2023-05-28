@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
-//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("dotenv").config();
 var cors = require("cors");
 var https = require("https");
@@ -86,20 +86,20 @@ app.get("/spotify", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var mData = response.data;
+      var fetchedata = response.data;
       try {
-        _DROP = youtubedl(mData.meta.url, {
+        _DROP = youtubedl(fetchedata.meta.url, {
           noWarnings: true,
           dumpSingleJson: true,
-          preferFreeFormats: true,
+          preferFreeformats: true,
           noCheckCertificates: true,
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
       } catch (error) {
-        _DROP = Tube(mData.meta.url, {
+        _DROP = Tube(fetchedata.meta.url, {
           noWarnings: true,
           dumpSingleJson: true,
-          preferFreeFormats: true,
+          preferFreeformats: true,
           noCheckCertificates: true,
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
@@ -229,21 +229,21 @@ app.get("/metadata", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var mData = response.data;
+      var fetchedata = response.data;
       _FOUND = [
         {
-          YT_ID: mData.youtube_search.YT_ID,
-          TITLE: mData.youtube_search.TITLE,
-          UPLOADED: mData.youtube_search.UPLOADED,
-          VIEWS: mData.youtube_search.VIEWS,
-          DURATION_FULL: mData.youtube_search.DURATION_FULL,
-          DURATION_SECONDS: mData.youtube_search.DURATION_SECONDS,
-          AUTHOR_NAME: mData.youtube_search.AUTHOR_NAME,
-          AUTHOR_CHANNEL: mData.youtube_search.AUTHOR_CHANNEL,
-          LINK: mData.youtube_search.LINK,
-          THUMB: mData.youtube_search.THUMB,
-          HQ_IMAGE: mData.youtube_search.HQ_IMAGE,
-          DESCRIPTION: mData.youtube_search.DESCRIPTION,
+          YT_Id: fetchedata.youtube_search.YT_Id,
+          TITLE: fetchedata.youtube_search.TITLE,
+          UPLOADED: fetchedata.youtube_search.UPLOADED,
+          VIEWS: fetchedata.youtube_search.VIEWS,
+          DURATION_FULL: fetchedata.youtube_search.DURATION_FULL,
+          DURATION_SECONDS: fetchedata.youtube_search.DURATION_SECONDS,
+          AUTHOR_NAME: fetchedata.youtube_search.AUTHOR_NAME,
+          AUTHOR_CHANNEL: fetchedata.youtube_search.AUTHOR_CHANNEL,
+          LINK: fetchedata.youtube_search.LINK,
+          THUMB: fetchedata.youtube_search.THUMB,
+          HQ_IMAGE: fetchedata.youtube_search.HQ_IMAGE,
+          DESCRIPTION: fetchedata.youtube_search.DESCRIPTION,
         },
       ];
       let _DROP;
@@ -251,7 +251,7 @@ app.get("/metadata", async (request, response) => {
         _DROP = youtubedl(_FOUND[0].LINK, {
           noWarnings: true,
           dumpSingleJson: true,
-          preferFreeFormats: true,
+          preferFreeformats: true,
           noCheckCertificates: true,
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
@@ -259,7 +259,7 @@ app.get("/metadata", async (request, response) => {
         _DROP = Tube(_FOUND[0].LINK, {
           noWarnings: true,
           dumpSingleJson: true,
-          preferFreeFormats: true,
+          preferFreeformats: true,
           noCheckCertificates: true,
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
@@ -472,4 +472,4 @@ app.get("/metadata", async (request, response) => {
     return response.status(400).json({ success: false, error: error.message });
   }
 });
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
