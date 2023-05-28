@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
@@ -15,6 +16,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+=======
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
 var fs = require("fs");
 var path = require("path");
 var readline = require("readline");
@@ -31,7 +34,11 @@ function readFiles(dir, oldWord, newWord) {
     var filePath = path.join(dir, file);
     var stats = fs.statSync(filePath);
 
+<<<<<<< HEAD
     if (stats.isDirectory() && file !== "node_modules" && file !== ".git") {
+=======
+    if (stats.isDirectory() && file !== "node_modules") {
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
       var newDirName = file.replace(new RegExp(oldWord, "g"), newWord);
       var newDirPath = path.join(dir, newDirName);
       fs.renameSync(filePath, newDirPath);

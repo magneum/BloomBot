@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "WhatsBot",
   "version": "0.0.1",
   "main": "app/index.js",
   "description": "WhatsBot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+=======
+  "name": "voxbot",
+  "version": "0.0.1",
+  "main": "app/index.js",
+  "description": "voxbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"

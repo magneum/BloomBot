@@ -1,20 +1,37 @@
+<<<<<<< HEAD
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+=======
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐕𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+<<<<<<< HEAD
 //  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+=======
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
+<<<<<<< HEAD
 //  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+=======
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
+//  ║   WhatsApp group management experience! 🎉
+//  ║
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
 require("../global.js");
 var logs = require("../logs");
 process.removeAllListeners("warning");
@@ -26,7 +43,11 @@ require("events").EventEmitter.prototype._maxListeners = 0;
 var { Boom } = require("@hapi/boom");
 var { DisconnectReason } = require("@adiwajshing/baileys");
 
+<<<<<<< HEAD
 module.exports = async (WhatsBot, update, store, magneum) => {
+=======
+module.exports = async (voxbot, update, store, magneum) => {
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
   var {
     lastDisconnect,
     connection,
@@ -43,7 +64,11 @@ module.exports = async (WhatsBot, update, store, magneum) => {
       logs.error(
         `❌: Bad Session File, Please Delete Session and Scan Again`
       );
+<<<<<<< HEAD
       // WhatsBot.logout();
+=======
+      // voxbot.logout();
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
     } else if (reason === DisconnectReason.connectionClosed) {
       // logs.error("❌: Connection closed, reconnecting....");
       await magneum();
@@ -52,7 +77,11 @@ module.exports = async (WhatsBot, update, store, magneum) => {
       await magneum();
     } else if (reason === DisconnectReason.connectionReplaced) {
       // logs.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
+<<<<<<< HEAD
       // WhatsBot.logout();
+=======
+      // voxbot.logout();
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
     } else if (reason === DisconnectReason.loggedOut) {
       // logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
       process.exit(0);
@@ -63,7 +92,11 @@ module.exports = async (WhatsBot, update, store, magneum) => {
       // logs.error("❌: Connection TimedOut, Reconnecting...");
       await magneum();
     } else
+<<<<<<< HEAD
       WhatsBot.end(
+=======
+      voxbot.end(
+>>>>>>> 17f52fe472c04e519779246ebe3026ed85ef536a
         logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
       );
   } else if (isOnline === true) logs.debug("🐲: Online.");
