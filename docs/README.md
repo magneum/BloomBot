@@ -1,19 +1,19 @@
 # [Ⓒ𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!](https://bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum/WhatsBot/blob/magneum/public/WhatsBot.jpg" /></p>
+<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum/whatsbot/blob/magneum/public/whatsbot.jpg" /></p>
 
 <img align="centre" public="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="magneum"/> <img align="centre" public="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-## 🤖Hello, I am WhatsBot
+## 🤖Hello, I am whatsbot
 
 - I am a voxapp userbot with automation,moderation,music,games and 200+ commands!
 - As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/WhatsBot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/WhatsBot)
+[![NPM](https://nodei.co/npm/whatsbot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/whatsbot)
 
-[![npm version](https://badge.fury.io/js/WhatsBot.svg)](https://badge.fury.io/js/WhatsBot/)
+[![npm version](https://badge.fury.io/js/whatsbot.svg)](https://badge.fury.io/js/whatsbot/)
 
 
 
@@ -24,7 +24,7 @@
 ╚════════════╝
 
 We won't be responsible for any kind of ban due to this bot.
-WhatsBot was made for fun purpose and to make group management easier.
+whatsbot was made for fun purpose and to make group management easier.
 It's your concern if you spam and gets your account banned.
 Also, forks won't be entertained.
 If you fork this repo and edit plugins, it's your concern for further updates.
@@ -35,7 +35,7 @@ In short, fork At Your Own Risk.
 <h1 align="left">🚨Legal</h1>
 
 ```
-WhatsBot is in no way affiliated with, authorized, maintained,
+whatsbot is in no way affiliated with, authorized, maintained,
 sponsored or endorsed by WhatsApp or any of its affiliates or
 subsidiaries. This is an independent and unofficial software.
 Use at your own risk.

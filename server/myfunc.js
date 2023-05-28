@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 let { proto, getContentType } = require("@adiwajshing/baileys");
 // let { sizeformatter } = require("human-readable");
 let child_process = require("child_process");
@@ -227,7 +227,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (WhatsBot, voxchat, store) => {
+exports.νkmake = async (whatsbot, voxchat, store) => {
   if (!voxchat) return voxchat;
   let νproto = proto.WebMessageInfo;
   if (voxchat.key) {
@@ -237,15 +237,15 @@ exports.νkmake = async (WhatsBot, voxchat, store) => {
     voxchat.chat = voxchat.key.remoteJid;
     voxchat.fromMe = voxchat.key.fromMe;
     voxchat.isGroup = voxchat.chat.endsWith("@g.us");
-    voxchat.sender = WhatsBot.decodeJid(
-      (voxchat.fromMe && WhatsBot.user.id) ||
+    voxchat.sender = whatsbot.decodeJid(
+      (voxchat.fromMe && whatsbot.user.id) ||
         voxchat.participant ||
         voxchat.key.participant ||
         voxchat.chat ||
         ""
     );
     if (voxchat.isGroup)
-      voxchat.participant = WhatsBot.decodeJid(voxchat.key.participant) || "";
+      voxchat.participant = whatsbot.decodeJid(voxchat.key.participant) || "";
   }
   if (voxchat.message) {
     voxchat.mtype = getContentType(voxchat.message);
@@ -289,11 +289,11 @@ exports.νkmake = async (WhatsBot, voxchat, store) => {
         ? voxchat.quoted.id.startsWith("BAE5") &&
           voxchat.quoted.id.length === 16
         : false;
-      voxchat.quoted.sender = WhatsBot.decodeJid(
+      voxchat.quoted.sender = whatsbot.decodeJid(
         voxchat.msg.contextInfo.participant
       );
       voxchat.quoted.fromMe =
-        voxchat.quoted.sender === (WhatsBot.user && WhatsBot.user.id);
+        voxchat.quoted.sender === (whatsbot.user && whatsbot.user.id);
       voxchat.quoted.text =
         voxchat.quoted.text ||
         voxchat.quoted.caption ||
@@ -310,9 +310,9 @@ exports.νkmake = async (WhatsBot, voxchat, store) => {
         let q = await store.loadMessage(
           voxchat.chat,
           voxchat.quoted.id,
-          WhatsBot
+          whatsbot
         );
-        return exports.νkmake(WhatsBot, q, store);
+        return exports.νkmake(whatsbot, q, store);
       };
       let vM = (voxchat.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -324,16 +324,16 @@ exports.νkmake = async (WhatsBot, voxchat, store) => {
         ...(voxchat.isGroup ? { participant: voxchat.quoted.sender } : {}),
       }));
       voxchat.quoted.delete = () =>
-        WhatsBot.sendMessage(voxchat.quoted.chat, { delete: vM.key });
+        whatsbot.sendMessage(voxchat.quoted.chat, { delete: vM.key });
       voxchat.quoted.copyNforward = (jid, forceforward = false, options = {}) =>
-        WhatsBot.copyNforward(jid, vM, forceforward, options);
+        whatsbot.copyNforward(jid, vM, forceforward, options);
       voxchat.quoted.download = () =>
-        WhatsBot.downloadMediaMessage(voxchat.quoted);
+        whatsbot.downloadMediaMessage(voxchat.quoted);
     }
   }
 
   if (voxchat.msg.url)
-    voxchat.download = () => WhatsBot.downloadMediaMessage(voxchat.msg);
+    voxchat.download = () => whatsbot.downloadMediaMessage(voxchat.msg);
   voxchat.text =
     voxchat.msg.text ||
     voxchat.msg.caption ||
@@ -344,15 +344,15 @@ exports.νkmake = async (WhatsBot, voxchat, store) => {
     "";
   voxchat.reply = (text, chatId = voxchat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? WhatsBot.sendMedia(chatId, text, "file", "", voxchat, { ...options })
-      : WhatsBot.sendText(chatId, text, voxchat, { ...options });
+      ? whatsbot.sendMedia(chatId, text, "file", "", voxchat, { ...options })
+      : whatsbot.sendText(chatId, text, voxchat, { ...options });
   voxchat.copy = () =>
-    exports.νkmake(WhatsBot, νproto.fromObject(νproto.toObject(voxchat)));
+    exports.νkmake(whatsbot, νproto.fromObject(νproto.toObject(voxchat)));
   voxchat.copyNforward = (
     jid = voxchat.chat,
     forceforward = false,
     options = {}
-  ) => WhatsBot.copyNforward(jid, voxchat, forceforward, options);
+  ) => whatsbot.copyNforward(jid, voxchat, forceforward, options);
 
   return voxchat;
 };

@@ -1,23 +1,23 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 var moment = require("moment-timezone");
-module.exports = async (WhatsBot, voxchat, update, store) => {
-  WhatsBot.body =
+module.exports = async (whatsbot, voxchat, update, store) => {
+  whatsbot.body =
     voxchat.mtype === "conversation"
       ? voxchat.message.conversation
       : voxchat.mtype == "imageMessage"
@@ -37,103 +37,103 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
         voxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         voxchat.text
       : "";
-  WhatsBot.budy = typeof voxchat.text == "string" ? voxchat.text : "";
-  WhatsBot.icmd = WhatsBot.body.startsWith(prefix);
-  WhatsBot.isCommand =
-    prefix.includes(WhatsBot.body != "" && WhatsBot.body.slice(0, 1)) &&
-    WhatsBot.body.slice(1) != "";
-  WhatsBot.command = WhatsBot.isCommand
-    ? WhatsBot.body.slice(1).trim().split(" ")[0].toLowerCase()
+  whatsbot.budy = typeof voxchat.text == "string" ? voxchat.text : "";
+  whatsbot.icmd = whatsbot.body.startsWith(prefix);
+  whatsbot.isCommand =
+    prefix.includes(whatsbot.body != "" && whatsbot.body.slice(0, 1)) &&
+    whatsbot.body.slice(1) != "";
+  whatsbot.command = whatsbot.isCommand
+    ? whatsbot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  WhatsBot.args = WhatsBot.body.trim().split(/ +/).slice(1);
-  WhatsBot.pushname = voxchat.pushName || "No Name";
-  WhatsBot.botNumber = await WhatsBot.decodeJid(WhatsBot.user.id);
-  WhatsBot.frome = voxchat.sender == WhatsBot.botNumber ? true : false;
-  WhatsBot.Fullarg = WhatsBot.args.join(" ");
-  WhatsBot.contant = q = WhatsBot.args.join(" ");
-  WhatsBot.quoted = voxchat.quoted ? voxchat.quoted : voxchat;
-  WhatsBot.mime = (WhatsBot.quoted.msg || WhatsBot.quoted).mimetype || "";
-  WhatsBot.isMedia = /image|video|sticker|audio/.test(WhatsBot.mime);
-  WhatsBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  WhatsBot.isCreator = [WhatsBot.botNumber, ...global.sudo]
+  whatsbot.args = whatsbot.body.trim().split(/ +/).slice(1);
+  whatsbot.pushname = voxchat.pushName || "No Name";
+  whatsbot.botNumber = await whatsbot.decodeJid(whatsbot.user.id);
+  whatsbot.frome = voxchat.sender == whatsbot.botNumber ? true : false;
+  whatsbot.Fullarg = whatsbot.args.join(" ");
+  whatsbot.contant = q = whatsbot.args.join(" ");
+  whatsbot.quoted = voxchat.quoted ? voxchat.quoted : voxchat;
+  whatsbot.mime = (whatsbot.quoted.msg || whatsbot.quoted).mimetype || "";
+  whatsbot.isMedia = /image|video|sticker|audio/.test(whatsbot.mime);
+  whatsbot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  whatsbot.isCreator = [whatsbot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.voxapp.net")
     .includes(voxchat.sender);
-  WhatsBot.mentionByTag =
+  whatsbot.mentionByTag =
     voxchat.mtype == "extendedTextMessage" &&
     voxchat.message.extendedTextMessage.contextInfo != null
       ? voxchat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  WhatsBot.mentionByReply =
+  whatsbot.mentionByReply =
     voxchat.mtype == "extendedTextMessage" &&
     voxchat.message.extendedTextMessage.contextInfo != null
       ? voxchat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./voxLink")(WhatsBot, voxchat, update, store);
-  if (!voxchat.isGroup && WhatsBot.command)
-    return require("../auth/noPrivate")(WhatsBot, voxchat, update);
-  if (voxchat.isGroup && WhatsBot.command)
-    WhatsBot.userBanCheck.findOne(
+  require("./voxLink")(whatsbot, voxchat, update, store);
+  if (!voxchat.isGroup && whatsbot.command)
+    return require("../auth/noPrivate")(whatsbot, voxchat, update);
+  if (voxchat.isGroup && whatsbot.command)
+    whatsbot.userBanCheck.findOne(
       {
         Id: voxchat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return voxchat.reply(`*😥Apologies:* _${WhatsBot.pushname}_
+          return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        WhatsBot.userBanCheck.findOne(
+        whatsbot.userBanCheck.findOne(
           {
             Id: voxchat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return voxchat.reply(`*😥Apologies:* _${WhatsBot.pushname}_
+              return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !WhatsBot.frome && !WhatsBot.isSudo) return;
-            if (groupCheck && !WhatsBot.frome && !WhatsBot.isSudo) return;
-            await WhatsBot.LinkList.findOne(
+            if (banCheck && !whatsbot.frome && !whatsbot.isSudo) return;
+            if (groupCheck && !whatsbot.frome && !whatsbot.isSudo) return;
+            await whatsbot.LinkList.findOne(
               {
                 serverId: voxchat.chat,
               },
               async (error, server) => {
-                if (error) return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
                 if (!server) return;
                 let { noLink } = require("../auth/antilink");
-                return noLink(WhatsBot, voxchat);
+                return noLink(whatsbot, voxchat);
               }
             );
 
-            // respA = await WhatsBot.groupMetadata("120363020792949649@g.us");
+            // respA = await whatsbot.groupMetadata("120363020792949649@g.us");
             // for (let i = 0; i < respA.participants.length; i++)
-            // WhatsBot.memberRespA[i] = respA.participants[i].id;
+            // whatsbot.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await WhatsBot.groupMetadata("120363089188116481@g.us");
+            // respB = await whatsbot.groupMetadata("120363089188116481@g.us");
             // for (let i = 0; i < respB.participants.length; i++)
-            // WhatsBot.memberRespB[i] = respB.participants[i].id;
+            // whatsbot.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !WhatsBot.fromme &&
-            // !WhatsBot.isSudo &&
-            // !WhatsBot.letResp.includes(WhatsBot.command) &&
-            // !WhatsBot.memberRespA.includes(voxchat.sender) &&
-            // !WhatsBot.memberRespB.includes(voxchat.sender)
+            // !whatsbot.fromme &&
+            // !whatsbot.isSudo &&
+            // !whatsbot.letResp.includes(whatsbot.command) &&
+            // !whatsbot.memberRespA.includes(voxchat.sender) &&
+            // !whatsbot.memberRespB.includes(voxchat.sender)
             // ) {
-            // return await WhatsBot.sendMessage(
+            // return await whatsbot.sendMessage(
             // voxchat.chat,
             // {
             // gifPlayback: true,
-            // video: WhatsBot.fs.readFileSync("./public/how.mp4"),
+            // video: whatsbot.fs.readFileSync("./public/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Apologies:* _${WhatsBot.pushname}_
+            // *😥Apologies:* _${whatsbot.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -148,14 +148,14 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
             // );
             // }
 
-            if (process.env.runtype === "devar" && !WhatsBot.isSudo) {
-              return await WhatsBot.sendMessage(
+            if (process.env.runtype === "devar" && !whatsbot.isSudo) {
+              return await whatsbot.sendMessage(
                 voxchat.chat,
                 {
                   gifPlayback: true,
-                  video: WhatsBot.fs.readFileSync("./public/WhatsBot_white.jpg"),
+                  video: whatsbot.fs.readFileSync("./public/whatsbot_white.jpg"),
                   caption: `*📢Verification Needed*
-*😥Apologies:* _${WhatsBot.pushname}_
+*😥Apologies:* _${whatsbot.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -168,14 +168,14 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
                 { quoted: voxchat }
               );
             } else
-              await WhatsBot.sendMessage(voxchat.chat, {
+              await whatsbot.sendMessage(voxchat.chat, {
                 react: {
                   text: "🔖",
                   key: voxchat.key,
                 },
               });
             return await require("../server/library")(
-              WhatsBot,
+              whatsbot,
               voxchat,
               update,
               store
@@ -184,5 +184,5 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
         );
       }
     );
-  return WhatsBot;
+  return whatsbot;
 };

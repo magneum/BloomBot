@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logs/global.js");
 let {
   Simp,
@@ -61,122 +61,122 @@ let ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
-module.exports = async (WhatsBot, voxchat, update, store) => {
-  WhatsBot.performance = performance;
-  WhatsBot.createWorker = createWorker;
-  WhatsBot.JSDOM = JSDOM;
-  WhatsBot.Character = Character;
-  WhatsBot.execSync = execSync;
-  WhatsBot.spawn = spawn;
-  WhatsBot.exec = exec;
-  WhatsBot.Primbon = Primbon;
-  WhatsBot.IShipOptions = IShipOptions;
-  WhatsBot.Ship = Ship;
-  WhatsBot.Pokemon = Pokemon;
-  WhatsBot.Simp = Simp;
-  WhatsBot.readFile = readFile;
-  WhatsBot.tmpdir = tmpdir;
-  WhatsBot.Doujin = Doujin;
-  WhatsBot.DownloaderHelper = DownloaderHelper;
-  WhatsBot.Chalk = Chalk;
-  WhatsBot.Sticker = Sticker;
-  WhatsBot.createSticker = createSticker;
-  WhatsBot.StickerTypes = StickerTypes;
-  WhatsBot.νkmake = νkmake;
-  WhatsBot.formatp = formatp;
-  WhatsBot.formatDate = formatDate;
-  WhatsBot.getTime = getTime;
-  WhatsBot.isUrl = isUrl;
-  WhatsBot.sleep = sleep;
-  WhatsBot.clockString = clockString;
-  WhatsBot.runtime = runtime;
-  WhatsBot.fetchJson = fetchJson;
-  WhatsBot.getBuffer = getBuffer;
-  WhatsBot.jsonformat = jsonformat;
-  WhatsBot.format = format;
-  WhatsBot.parseMention = parseMention;
-  WhatsBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
-  WhatsBot.getRandom = getRandom;
-  WhatsBot.getDadjoke = getDadjoke;
-  WhatsBot.Manga = Manga;
-  WhatsBot.AnimeWallpaper = AnimeWallpaper;
-  WhatsBot.TelegraPh = TelegraPh;
-  WhatsBot.UploadFileUgu = UploadFileUgu;
-  WhatsBot.webp2mp4File = webp2mp4File;
-  WhatsBot.Tname = voxchat.sender.replace(/['@s voxapp.net']/g, "");
+module.exports = async (whatsbot, voxchat, update, store) => {
+  whatsbot.performance = performance;
+  whatsbot.createWorker = createWorker;
+  whatsbot.JSDOM = JSDOM;
+  whatsbot.Character = Character;
+  whatsbot.execSync = execSync;
+  whatsbot.spawn = spawn;
+  whatsbot.exec = exec;
+  whatsbot.Primbon = Primbon;
+  whatsbot.IShipOptions = IShipOptions;
+  whatsbot.Ship = Ship;
+  whatsbot.Pokemon = Pokemon;
+  whatsbot.Simp = Simp;
+  whatsbot.readFile = readFile;
+  whatsbot.tmpdir = tmpdir;
+  whatsbot.Doujin = Doujin;
+  whatsbot.DownloaderHelper = DownloaderHelper;
+  whatsbot.Chalk = Chalk;
+  whatsbot.Sticker = Sticker;
+  whatsbot.createSticker = createSticker;
+  whatsbot.StickerTypes = StickerTypes;
+  whatsbot.νkmake = νkmake;
+  whatsbot.formatp = formatp;
+  whatsbot.formatDate = formatDate;
+  whatsbot.getTime = getTime;
+  whatsbot.isUrl = isUrl;
+  whatsbot.sleep = sleep;
+  whatsbot.clockString = clockString;
+  whatsbot.runtime = runtime;
+  whatsbot.fetchJson = fetchJson;
+  whatsbot.getBuffer = getBuffer;
+  whatsbot.jsonformat = jsonformat;
+  whatsbot.format = format;
+  whatsbot.parseMention = parseMention;
+  whatsbot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+  whatsbot.getRandom = getRandom;
+  whatsbot.getDadjoke = getDadjoke;
+  whatsbot.Manga = Manga;
+  whatsbot.AnimeWallpaper = AnimeWallpaper;
+  whatsbot.TelegraPh = TelegraPh;
+  whatsbot.UploadFileUgu = UploadFileUgu;
+  whatsbot.webp2mp4File = webp2mp4File;
+  whatsbot.Tname = voxchat.sender.replace(/['@s voxapp.net']/g, "");
 
-  WhatsBot.msgFilter = require("./msgFilter");
-  WhatsBot.imagebutton = require("../buttons/imagebutton");
-  WhatsBot.videobutton = require("../buttons/videobutton");
-  WhatsBot.handlerror = require("../buttons/handlerror");
-  WhatsBot.TTS = require("google-tts-api");
-  // WhatsBot.nhentaidl = require("./nhentaidl");
-  WhatsBot.dashboard = require("../database/dashboard");
-  WhatsBot.LinkList = require("../database/antilink");
-  WhatsBot.Ranker = require("../database/autorank");
-  WhatsBot.Bagde = require("../database/badge");
-  WhatsBot.premium = require("../database/premium");
-  WhatsBot.userBanCheck = require("../database/ban");
-  WhatsBot.Cooldown = require("../database/cooldown");
-  WhatsBot.DebugMode = require("../database/debug");
-  WhatsBot.Economy = require("../database/economy");
-  WhatsBot.Gamble = require("../database/gamble");
-  WhatsBot.Halt = require("../database/halt");
-  WhatsBot.nsfwCheck = require("../database/nsfw");
-  WhatsBot.Pokemon = require("../database/pokemon");
-  WhatsBot.UserPrivate = require("../database/private");
-  WhatsBot.Robbery = require("../database/robbery");
-  WhatsBot.ServerDB = require("../database/ServerDB");
-  WhatsBot.Welcome = require("../database/setwelcome");
-  WhatsBot.Warning = require("../database/warning");
-  WhatsBot.Zoology = require("../database/zoo");
-  WhatsBot.Fishes = require("../public/fishes.json");
-  WhatsBot.animals = require("../public/animals.json");
-  WhatsBot.Jwork = require("../public/works.json");
-  WhatsBot.dare = require("../public/dare.json");
-  WhatsBot.truth = require("../public/truth.json");
-  WhatsBot.magfetch = require("../server/magfetch");
+  whatsbot.msgFilter = require("./msgFilter");
+  whatsbot.imagebutton = require("../buttons/imagebutton");
+  whatsbot.videobutton = require("../buttons/videobutton");
+  whatsbot.handlerror = require("../buttons/handlerror");
+  whatsbot.TTS = require("google-tts-api");
+  // whatsbot.nhentaidl = require("./nhentaidl");
+  whatsbot.dashboard = require("../database/dashboard");
+  whatsbot.LinkList = require("../database/antilink");
+  whatsbot.Ranker = require("../database/autorank");
+  whatsbot.Bagde = require("../database/badge");
+  whatsbot.premium = require("../database/premium");
+  whatsbot.userBanCheck = require("../database/ban");
+  whatsbot.Cooldown = require("../database/cooldown");
+  whatsbot.DebugMode = require("../database/debug");
+  whatsbot.Economy = require("../database/economy");
+  whatsbot.Gamble = require("../database/gamble");
+  whatsbot.Halt = require("../database/halt");
+  whatsbot.nsfwCheck = require("../database/nsfw");
+  whatsbot.Pokemon = require("../database/pokemon");
+  whatsbot.UserPrivate = require("../database/private");
+  whatsbot.Robbery = require("../database/robbery");
+  whatsbot.ServerDB = require("../database/ServerDB");
+  whatsbot.Welcome = require("../database/setwelcome");
+  whatsbot.Warning = require("../database/warning");
+  whatsbot.Zoology = require("../database/zoo");
+  whatsbot.Fishes = require("../public/fishes.json");
+  whatsbot.animals = require("../public/animals.json");
+  whatsbot.Jwork = require("../public/works.json");
+  whatsbot.dare = require("../public/dare.json");
+  whatsbot.truth = require("../public/truth.json");
+  whatsbot.magfetch = require("../server/magfetch");
 
-  WhatsBot.os = require("os");
-  WhatsBot.fs = require("fs");
-  WhatsBot.got = require("got");
-  WhatsBot.gis = require("g-i-s");
-  WhatsBot.path = require("path");
-  WhatsBot.util = require("util");
-  WhatsBot.primbon = new Primbon();
-  WhatsBot.ms = require("parse-ms");
-  WhatsBot.hxz = require("hxz-api");
-  WhatsBot.axios = require("axios");
-  WhatsBot.chalk = require("chalk");
-  WhatsBot.playdl = require("play-dl");
-  WhatsBot.request = require("request");
-  WhatsBot.xfar = require("xfarr-api");
-  WhatsBot.cron = require("node-cron");
-  WhatsBot.nHentai = require("shentai");
-  WhatsBot.cheerio = require("cheerio");
-  WhatsBot.akaneko = require("akaneko");
-  WhatsBot.fetch = require("node-fetch");
-  WhatsBot.google = require("google-it");
-  WhatsBot.Spinnies = require("spinnies");
-  WhatsBot.Anime = require("anime-actions");
-  WhatsBot.Tinyurl = require("tinyurl-api");
-  WhatsBot.FastHub = require("simple-git")();
-  WhatsBot.speed = require("performance-now");
-  WhatsBot.moment = require("moment-timezone");
-  WhatsBot.Carbon = require("unofficial-carbon-now");
-  WhatsBot.Levels = require("discord-xp");
-  WhatsBot.canvacord = require("canvacord");
-  WhatsBot.randomMC = require("random-material-color");
-  WhatsBot.yClient = require("youtube-avdl");
-  WhatsBot.pokemontcgsdk = require("pokemontcgsdk");
-  WhatsBot.singer = require("play-dl");
-  WhatsBot.ffmpeg = ffmpeg;
-  WhatsBot.pathFFmpeg = require("ffmpeg-static");
+  whatsbot.os = require("os");
+  whatsbot.fs = require("fs");
+  whatsbot.got = require("got");
+  whatsbot.gis = require("g-i-s");
+  whatsbot.path = require("path");
+  whatsbot.util = require("util");
+  whatsbot.primbon = new Primbon();
+  whatsbot.ms = require("parse-ms");
+  whatsbot.hxz = require("hxz-api");
+  whatsbot.axios = require("axios");
+  whatsbot.chalk = require("chalk");
+  whatsbot.playdl = require("play-dl");
+  whatsbot.request = require("request");
+  whatsbot.xfar = require("xfarr-api");
+  whatsbot.cron = require("node-cron");
+  whatsbot.nHentai = require("shentai");
+  whatsbot.cheerio = require("cheerio");
+  whatsbot.akaneko = require("akaneko");
+  whatsbot.fetch = require("node-fetch");
+  whatsbot.google = require("google-it");
+  whatsbot.Spinnies = require("spinnies");
+  whatsbot.Anime = require("anime-actions");
+  whatsbot.Tinyurl = require("tinyurl-api");
+  whatsbot.FastHub = require("simple-git")();
+  whatsbot.speed = require("performance-now");
+  whatsbot.moment = require("moment-timezone");
+  whatsbot.Carbon = require("unofficial-carbon-now");
+  whatsbot.Levels = require("discord-xp");
+  whatsbot.canvacord = require("canvacord");
+  whatsbot.randomMC = require("random-material-color");
+  whatsbot.yClient = require("youtube-avdl");
+  whatsbot.pokemontcgsdk = require("pokemontcgsdk");
+  whatsbot.singer = require("play-dl");
+  whatsbot.ffmpeg = ffmpeg;
+  whatsbot.pathFFmpeg = require("ffmpeg-static");
 
-  // WhatsBot.memberRespA = [];
-  // WhatsBot.memberRespB = [];
-  // WhatsBot.resp1 = await WhatsBot.groupInviteCode("120363020792949649@g.us");
-  WhatsBot.letResp = [
+  // whatsbot.memberRespA = [];
+  // whatsbot.memberRespB = [];
+  // whatsbot.resp1 = await whatsbot.groupInviteCode("120363020792949649@g.us");
+  whatsbot.letResp = [
     "h",
     "m",
     "c",
@@ -184,40 +184,40 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
     "list",
     "command",
     "commands",
-    "WhatsBot",
+    "whatsbot",
     "Commands",
   ];
 
   function ShowGreen(Topic, Text) {
-    let TShow = WhatsBot.chalk.hex("#2D5A27").bold(Topic);
-    let Show = WhatsBot.chalk.hex("#849871").italic.bold(Text);
+    let TShow = whatsbot.chalk.hex("#2D5A27").bold(Topic);
+    let Show = whatsbot.chalk.hex("#849871").italic.bold(Text);
     console.log(
-      WhatsBot.chalk.black(WhatsBot.chalk.bgBlack(TShow)),
-      WhatsBot.chalk.black(Show)
+      whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
+      whatsbot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    let TShow = WhatsBot.chalk.hex("#008B8B").bold(Topic);
-    let Show = WhatsBot.chalk.hex("#818d94").italic.bold(Text);
+    let TShow = whatsbot.chalk.hex("#008B8B").bold(Topic);
+    let Show = whatsbot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
-      WhatsBot.chalk.black(WhatsBot.chalk.bgBlack(TShow)),
-      WhatsBot.chalk.black(Show)
+      whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
+      whatsbot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    let TShow = WhatsBot.chalk.hex("#ff6347").bold(Topic);
-    let Show = WhatsBot.chalk.hex("#ed7777").italic.bold(Text);
+    let TShow = whatsbot.chalk.hex("#ff6347").bold(Topic);
+    let Show = whatsbot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
-      WhatsBot.chalk.black(WhatsBot.chalk.bgBlack(TShow)),
-      WhatsBot.chalk.black(Show)
+      whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
+      whatsbot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    let TShow = WhatsBot.chalk.hex("#8B8000").bold(Topic);
-    let Show = WhatsBot.chalk.hex("#ECCF8D").italic.bold(Text);
+    let TShow = whatsbot.chalk.hex("#8B8000").bold(Topic);
+    let Show = whatsbot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
-      WhatsBot.chalk.black(WhatsBot.chalk.bgBlack(TShow)),
-      WhatsBot.chalk.black(Show)
+      whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
+      whatsbot.chalk.black(Show)
     );
   }
   function between(min, max) {
@@ -225,43 +225,43 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
   }
   function clearStorage(files) {
     for (let file of files) {
-      WhatsBot.fs.unlink(file, (err) => {
+      whatsbot.fs.unlink(file, (err) => {
         if (err) throw err;
       });
     }
   }
 
-  WhatsBot.ShowGreen = ShowGreen;
-  WhatsBot.ShowBlue = ShowBlue;
-  WhatsBot.ShowRed = ShowRed;
-  WhatsBot.ShowYellow = ShowYellow;
-  WhatsBot.between = between;
-  WhatsBot.clearStorage = clearStorage;
-  WhatsBot.spinner = {
+  whatsbot.ShowGreen = ShowGreen;
+  whatsbot.ShowBlue = ShowBlue;
+  whatsbot.ShowRed = ShowRed;
+  whatsbot.ShowYellow = ShowYellow;
+  whatsbot.between = between;
+  whatsbot.clearStorage = clearStorage;
+  whatsbot.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
   };
-  WhatsBot.spinnies = new WhatsBot.Spinnies({
+  whatsbot.spinnies = new whatsbot.Spinnies({
     color: "cyan",
     succeedColor: "green",
-    spinner: WhatsBot.spinner,
+    spinner: whatsbot.spinner,
   });
-  WhatsBot.TubeRegex =
+  whatsbot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  WhatsBot.Showlogs = Showlogs;
-  WhatsBot.packname = packname;
-  WhatsBot.pgdb = DATABASE_URL;
-  WhatsBot.ShowInfo = ShowInfo;
-  WhatsBot.MONGO_URL = MONGO_URL;
-  WhatsBot.author = author;
-  WhatsBot.prefix = prefix;
-  WhatsBot.sudo = sudo;
+  whatsbot.Showlogs = Showlogs;
+  whatsbot.packname = packname;
+  whatsbot.pgdb = DATABASE_URL;
+  whatsbot.ShowInfo = ShowInfo;
+  whatsbot.MONGO_URL = MONGO_URL;
+  whatsbot.author = author;
+  whatsbot.prefix = prefix;
+  whatsbot.sudo = sudo;
   sudotring =
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  WhatsBot.isSudo = sudotring.includes(
+  whatsbot.isSudo = sudotring.includes(
     voxchat.sender.substring(0, voxchat.sender.indexOf("@"))
   );
-  return WhatsBot;
+  return whatsbot;
 };

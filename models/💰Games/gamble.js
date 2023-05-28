@@ -1,43 +1,43 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (WhatsBot, voxchat, update, store) => {
+module.exports = async (whatsbot, voxchat, update, store) => {
   try {
     let formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     let formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-    if (!WhatsBot.args[0] && !WhatsBot.args[1]) {
-      await WhatsBot.sendMessage(voxchat.chat, {
+    if (!whatsbot.args[0] && !whatsbot.args[1]) {
+      await whatsbot.sendMessage(voxchat.chat, {
         react: {
           text: "❌",
           key: voxchat.key,
         },
       });
       return voxchat.reply(
-        `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -45,21 +45,21 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
       );
     }
 
-    if (formatColor.test(WhatsBot.args[0])) {
-      await WhatsBot.sendMessage(voxchat.chat, {
+    if (formatColor.test(whatsbot.args[0])) {
+      await whatsbot.sendMessage(voxchat.chat, {
         react: {
           text: "❌",
           key: voxchat.key,
         },
       });
       return voxchat.reply(
-        `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -67,21 +67,21 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
       );
     }
 
-    if (formatAmount.test(WhatsBot.args[1])) {
-      await WhatsBot.sendMessage(voxchat.chat, {
+    if (formatAmount.test(whatsbot.args[1])) {
+      await whatsbot.sendMessage(voxchat.chat, {
         react: {
           text: "❌",
           key: voxchat.key,
         },
       });
       return voxchat.reply(
-        `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -90,24 +90,24 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
     }
 
     if (
-      !WhatsBot.args[0].includes("red") &&
-      !WhatsBot.args[0].includes("black") &&
-      !WhatsBot.args[0].includes("purple")
+      !whatsbot.args[0].includes("red") &&
+      !whatsbot.args[0].includes("black") &&
+      !whatsbot.args[0].includes("purple")
     ) {
-      await WhatsBot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(voxchat.chat, {
         react: {
           text: "❌",
           key: voxchat.key,
         },
       });
       return voxchat.reply(
-        `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -115,74 +115,74 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
       );
     }
 
-    let ColorRoom = WhatsBot.args[0];
-    let AmountRoom = parseInt(WhatsBot.args[1]);
+    let ColorRoom = whatsbot.args[0];
+    let AmountRoom = parseInt(whatsbot.args[1]);
     if (AmountRoom < 50) {
-      return await WhatsBot.imagebutton(
-        WhatsBot,
+      return await whatsbot.imagebutton(
+        whatsbot,
         voxchat,
-        `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+        `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        "./public/WhatsBot.jpg"
+        "./public/whatsbot.jpg"
       );
     }
 
     if (AmountRoom > 800) {
-      return await WhatsBot.imagebutton(
-        WhatsBot,
+      return await whatsbot.imagebutton(
+        whatsbot,
         voxchat,
-        `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+        `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        "./public/WhatsBot.jpg"
+        "./public/whatsbot.jpg"
       );
     }
 
     if (ColorRoom === "red" && AmountRoom > 200) {
-      return await WhatsBot.imagebutton(
-        WhatsBot,
+      return await whatsbot.imagebutton(
+        whatsbot,
         voxchat,
-        `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+        `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        "./public/WhatsBot.jpg"
+        "./public/whatsbot.jpg"
       );
     }
 
     if (ColorRoom === "black" && AmountRoom > 500) {
-      return await WhatsBot.imagebutton(
-        WhatsBot,
+      return await whatsbot.imagebutton(
+        whatsbot,
         voxchat,
-        `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+        `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        "./public/WhatsBot.jpg"
+        "./public/whatsbot.jpg"
       );
     }
 
     if (ColorRoom === "purple" && AmountRoom > 800) {
-      return await WhatsBot.imagebutton(
-        WhatsBot,
+      return await whatsbot.imagebutton(
+        whatsbot,
         voxchat,
-        `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+        `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        "./public/WhatsBot.jpg"
+        "./public/whatsbot.jpg"
       );
     }
 
-    WhatsBot.Economy.findOne(
+    whatsbot.Economy.findOne(
       {
         Id: voxchat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return WhatsBot.handlerror(WhatsBot, voxchat, error);
+          return whatsbot.handlerror(whatsbot, voxchat, error);
         }
 
         if (!userEco) {
-          let newUser = new WhatsBot.Economy({
+          let newUser = new whatsbot.Economy({
             Id: voxchat.sender,
             money: 0,
             daily: 0,
@@ -193,43 +193,43 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return WhatsBot.handlerror(WhatsBot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, voxchat, error);
           });
-          return await WhatsBot.imagebutton(
-            WhatsBot,
+          return await whatsbot.imagebutton(
+            whatsbot,
             voxchat,
-            `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+            `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
-            "./public/WhatsBot.jpg"
+            "./public/whatsbot.jpg"
           );
         }
 
-        WhatsBot.Gamble.findOne(
+        whatsbot.Gamble.findOne(
           {
             Id: voxchat.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return WhatsBot.handlerror(WhatsBot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, voxchat, error);
             }
 
             if (!userGamble) {
-              let newUser = new WhatsBot.Gamble({
+              let newUser = new whatsbot.Gamble({
                 Id: voxchat.sender,
                 serverId: voxchat.chat,
                 Gambledone: 0,
                 Gambletimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
-              return await WhatsBot.imagebutton(
-                WhatsBot,
+              return await whatsbot.imagebutton(
+                whatsbot,
                 voxchat,
-                `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                "./public/WhatsBot.jpg"
+                "./public/whatsbot.jpg"
               );
             }
 
@@ -237,16 +237,16 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
               userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              let time = WhatsBot.ms(
+              let time = whatsbot.ms(
                 userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone)
               );
-              return await WhatsBot.imagebutton(
-                WhatsBot,
+              return await whatsbot.imagebutton(
+                whatsbot,
                 voxchat,
-                `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                "./public/WhatsBot.jpg"
+                "./public/whatsbot.jpg"
               );
             }
 
@@ -263,20 +263,20 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
             let Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await WhatsBot.sendMessage(voxchat.chat, {
+              await whatsbot.sendMessage(voxchat.chat, {
                 react: {
                   text: "❌",
                   key: voxchat.key,
                 },
               });
               return voxchat.reply(
-                `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+                `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} _color money_
+> _${whatsbot.prefix}${finalname} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -286,20 +286,20 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
 
             Color = Color.toLowerCase();
             if (!money) {
-              await WhatsBot.sendMessage(voxchat.chat, {
+              await whatsbot.sendMessage(voxchat.chat, {
                 react: {
                   text: "❌",
                   key: voxchat.key,
                 },
               });
               return voxchat.reply(
-                `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+                `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -308,20 +308,20 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
             }
 
             if (money > CurrentMoney) {
-              await WhatsBot.sendMessage(voxchat.chat, {
+              await whatsbot.sendMessage(voxchat.chat, {
                 react: {
                   text: "❌",
                   key: voxchat.key,
                 },
               });
               return voxchat.reply(
-                `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+                `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -336,20 +336,20 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await WhatsBot.sendMessage(voxchat.chat, {
+              await whatsbot.sendMessage(voxchat.chat, {
                 react: {
                   text: "❌",
                   key: voxchat.key,
                 },
               });
               return voxchat.reply(
-                `*😥Apologies:* _${WhatsBot.pushname || WhatsBot.Tname}_
+                `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${WhatsBot.prefix}${finalname} color money_
+> _${whatsbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -362,18 +362,18 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
               await userEco.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
-              return await WhatsBot.imagebutton(
-                WhatsBot,
+              return await whatsbot.imagebutton(
+                whatsbot,
                 voxchat,
-                `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                "./public/WhatsBot.jpg"
+                "./public/whatsbot.jpg"
               );
             }
 
@@ -382,18 +382,18 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
               await userEco.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
-              return await WhatsBot.imagebutton(
-                WhatsBot,
+              return await whatsbot.imagebutton(
+                whatsbot,
                 voxchat,
-                `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                "./public/WhatsBot.jpg"
+                "./public/whatsbot.jpg"
               );
             }
 
@@ -402,42 +402,42 @@ module.exports = async (WhatsBot, voxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
               await userEco.save().catch((error) => {
-                return WhatsBot.handlerror(WhatsBot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, voxchat, error);
               });
-              return await WhatsBot.imagebutton(
-                WhatsBot,
+              return await whatsbot.imagebutton(
+                whatsbot,
                 voxchat,
-                `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                "./public/WhatsBot.jpg"
+                "./public/whatsbot.jpg"
               );
             }
 
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return WhatsBot.handlerror(WhatsBot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, voxchat, error);
             });
             await userEco.save().catch((error) => {
-              return WhatsBot.handlerror(WhatsBot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, voxchat, error);
             });
-            return await WhatsBot.imagebutton(
-              WhatsBot,
+            return await whatsbot.imagebutton(
+              whatsbot,
               voxchat,
-              `*🔖Here, ${finalname} for ${WhatsBot.pushname || WhatsBot.Tname}:*
+              `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              "./public/WhatsBot.jpg"
+              "./public/whatsbot.jpg"
             );
           }
         );
       }
     );
   } catch (error) {
-    return WhatsBot.handlerror(WhatsBot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, voxchat, error);
   }
 };

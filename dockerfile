@@ -12,9 +12,9 @@ RUN apt-get update && apt-get install -y \
 RUN curl -s https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
-RUN git clone https://github.com/magneum/WhatsBot
-RUN cd WhatsBot
-WORKDIR /WhatsBot
+RUN git clone https://github.com/magneum/whatsbot
+RUN cd whatsbot
+WORKDIR /whatsbot
 RUN git init --initial-branch=magneum 
 RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
