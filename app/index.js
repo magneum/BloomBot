@@ -23,6 +23,7 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 require("../logger/global.js");
+var cleanDatabase = require("./elephant");
 var {
   default: νℓкуяє_вσт,
   DisconnectReason,
@@ -43,7 +44,7 @@ var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("../database/dashboard");
-var PhoneNumber = require("awesome-phonenumber");
+let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("../auth/Database");
 var {
   νkmake,
@@ -161,27 +162,35 @@ async function magneum() {
       logger.info("🐲: Connecting to WhatsApp...▶");
     else if (connection == "open") logger.info("🐲: Login successful! ▶");
     else if (connection == "close") {
-      var reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        // logger.error(`❌: Bad Session File, Please Devare Session and Scan Again`);
+        logger.error(
+          `❌: Bad Session File, Please Delete Session and Scan Again`
+        );
+        await cleanDatabase();
         await magneum();
       } else if (reason === DisconnectReason.connectionClosed) {
-        // logger.error("❌: Connection closed, reconnecting....");
+        logger.error("❌: Connection closed, reconnecting....");
+        await cleanDatabase();
         await magneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        // logger.error("❌: Connection Lost from Server, reconnecting...");
+        logger.error("❌: Connection Lost from Server, reconnecting...");
         await magneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        // logger.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
+        logger.error(
+          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+        );
+        await cleanDatabase();
         await magneum();
       } else if (reason === DisconnectReason.loggedOut) {
-        // logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
-        process.exit(0);
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        await cleanDatabase();
+        await magneum();
       } else if (reason === DisconnectReason.restartRequired) {
-        // logger.error("❌: Restart Required, Restarting...");
+        logger.error("❌: Restart Required, Restarting...");
         await magneum();
       } else if (reason === DisconnectReason.timedOut) {
-        // logger.error("❌: Connection TimedOut, Reconnecting...");
+        logger.error("❌: Connection TimedOut, Reconnecting...");
         await magneum();
       } else
         whatsbot.end(
@@ -195,7 +204,7 @@ async function magneum() {
       logger.error("🐲: Not Received Pending Notifications.");
     else if (isNewLogin === true) logger.debug("🐲: New Login.");
     else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
+    else if (qr) logger.info("Qr: "), logger.error(qr);
     else logger.info("🐲: Connection...", update);
   });
 
@@ -215,10 +224,10 @@ async function magneum() {
   });
 
   whatsbot.ev.on("group-participants.update", async (update) => {
-    var metadata = await whatsbot.groupMetadata(update.id);
-    var participants = update.participants;
+    let metadata = await whatsbot.groupMetadata(update.id);
+    let participants = update.participants;
     logger.info(update);
-    for (var sperson of participants) {
+    for (let sperson of participants) {
       var imåge;
       try {
         imåge = await whatsbot.profilePictureUrl(sperson, "image");
@@ -233,11 +242,11 @@ async function magneum() {
             {
               image: { url: imåge },
               caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-  *📢Id:* ${update.id}
+*📢Id:* ${update.id}
 
-  > Firstly Welcome.
-  > I am whatsbot Whatsapp Bot.
-  > To Start using type .help or press below buttons.`,
+> Firstly Welcome.
+> I am whatsbot Whatsapp Bot.
+> To Start using type .help or press below buttons.`,
               footer:
                 "*VLkyre™ By whatsbot*\n*💻HomePage:* https://bit.ly/magneum",
               buttons: [
@@ -271,7 +280,7 @@ async function magneum() {
   whatsbot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
-      var decode = jidDecode(jid) || {};
+      let decode = jidDecode(jid) || {};
       return (
         (decode.user && decode.server && decode.user + "@" + decode.server) ||
         jid
@@ -281,7 +290,7 @@ async function magneum() {
   whatsbot.getName = (jid, withoutContact = false) => {
     id = whatsbot.decodeJid(jid);
     withoutContact = whatsbot.withoutContact || withoutContact;
-    var v;
+    let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
@@ -315,8 +324,8 @@ async function magneum() {
   };
 
   whatsbot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
-    var list = [];
-    for (var i of kon) {
+    let list = [];
+    for (let i of kon) {
       list.push({
         displayName: await whatsbot.getName(i + "@s.whatsapp.net"),
         vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await whatsbot.getName(
@@ -347,7 +356,7 @@ async function magneum() {
     but = [],
     options = {}
   ) => {
-    var message = await prepareWAMessageMedia(
+    let message = await prepareWAMessageMedia(
       { image: img },
       { upload: whatsbot.waUploadToServer }
     );
@@ -378,7 +387,7 @@ async function magneum() {
     quoted = "",
     options = {}
   ) => {
-    var buttonMessage = {
+    let buttonMessage = {
       text,
       footer,
       buttons,
@@ -398,7 +407,7 @@ async function magneum() {
     quoted = "",
     options
   ) => {
-    var buffer = Buffer.isBuffer(path)
+    let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
       ? Buffer.from(path.split`,`[1], "base64")
@@ -422,7 +431,7 @@ async function magneum() {
     gif = false,
     options
   ) => {
-    var buffer = Buffer.isBuffer(path)
+    let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
       ? Buffer.from(path.split`,`[1], "base64")
@@ -439,7 +448,7 @@ async function magneum() {
   };
 
   whatsbot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
-    var buffer = Buffer.isBuffer(path)
+    let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
       ? Buffer.from(path.split`,`[1], "base64")
@@ -471,7 +480,7 @@ async function magneum() {
     );
 
   whatsbot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
-    var buff = Buffer.isBuffer(path)
+    let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
       ? Buffer.from(path.split`,`[1], "base64")
@@ -480,7 +489,7 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    var buffer;
+    let buffer;
     if (options && (options.packname || options.author)) {
       buffer = await writeExifImg(buff, options);
     } else {
@@ -496,7 +505,7 @@ async function magneum() {
   };
 
   whatsbot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
-    var buff = Buffer.isBuffer(path)
+    let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
       ? Buffer.from(path.split`,`[1], "base64")
@@ -505,7 +514,7 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    var buffer;
+    let buffer;
     if (options && (options.packname || options.author)) {
       buffer = await writeExifVid(buff, options);
     } else {
@@ -525,17 +534,17 @@ async function magneum() {
     filename,
     attachExtension = true
   ) => {
-    var quoted = message.msg ? message.msg : message;
-    var mime = (message.msg || message).mimetype || "";
-    var messageType = message.mtype
+    let quoted = message.msg ? message.msg : message;
+    let mime = (message.msg || message).mimetype || "";
+    let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
     var stream = await downloadContentFromMessage(quoted, messageType);
-    var buffer = Buffer.from([]);
+    let buffer = Buffer.from([]);
     for await (var chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
-    var type = await FileType.fromBuffer(buffer);
+    let type = await FileType.fromBuffer(buffer);
     trueFileName = attachExtension ? filename + "." + type.ext : filename;
     // save to file
     await fs.writeFileSync(trueFileName, buffer);
@@ -543,12 +552,12 @@ async function magneum() {
   };
 
   whatsbot.downloadMediaMessage = async (message) => {
-    var mime = (message.msg || message).mimetype || "";
-    var messageType = message.mtype
+    let mime = (message.msg || message).mimetype || "";
+    let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
     var stream = await downloadContentFromMessage(message, messageType);
-    var buffer = Buffer.from([]);
+    let buffer = Buffer.from([]);
     for await (var chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
@@ -564,8 +573,8 @@ async function magneum() {
     quoted = "",
     options = {}
   ) => {
-    var types = await whatsbot.getFile(path, true);
-    var { mime, ext, response, data, filename } = types;
+    let types = await whatsbot.getFile(path, true);
+    let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
         throw { json: JSON.parse(file.toString()) };
@@ -573,13 +582,13 @@ async function magneum() {
         if (e.json) throw e.json;
       }
     }
-    var type = "",
+    let type = "",
       mimetype = mime,
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      var { writeExif } = require("../server/exif");
-      var media = { mimetype: mime, data };
+      let { writeExif } = require("../server/exif");
+      let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,
         author: options.author ? options.author : global.author,
@@ -606,7 +615,7 @@ async function magneum() {
     forceforward = false,
     options = {}
   ) => {
-    var vtype;
+    let vtype;
     if (options.readViewOnce) {
       message.message =
         message.message &&
@@ -615,19 +624,19 @@ async function magneum() {
           ? message.message.ephemeralMessage.message
           : message.message || undefined;
       vtype = Object.keys(message.message.viewOnceMessage.message)[0];
-      devare (message.message && message.message.ignore
+      delete (message.message && message.message.ignore
         ? message.message.ignore
         : message.message || undefined);
-      devare message.message.viewOnceMessage.message[vtype].viewOnce;
+      delete message.message.viewOnceMessage.message[vtype].viewOnce;
       message.message = {
         ...message.message.viewOnceMessage.message,
       };
     }
 
-    var mtype = Object.keys(message.message)[0];
-    var content = await generateforwardMessageContent(message, forceforward);
-    var ctype = Object.keys(content)[0];
-    var context = {};
+    let mtype = Object.keys(message.message)[0];
+    let content = await generateforwardMessageContent(message, forceforward);
+    let ctype = Object.keys(content)[0];
+    let context = {};
     if (mtype != "conversation") context = message.message[mtype].contextInfo;
     content[ctype].contextInfo = {
       ...context,
@@ -664,15 +673,15 @@ async function magneum() {
     sender = whatsbot.user.id,
     options = {}
   ) => {
-    var mtype = Object.keys(copy.message)[0];
-    var isEphemeral = mtype === "ephemeralMessage";
+    let mtype = Object.keys(copy.message)[0];
+    let isEphemeral = mtype === "ephemeralMessage";
     if (isEphemeral) {
       mtype = Object.keys(copy.message.ephemeralMessage.message)[0];
     }
-    var msg = isEphemeral
+    let msg = isEphemeral
       ? copy.message.ephemeralMessage.message
       : copy.message;
-    var content = msg[mtype];
+    let content = msg[mtype];
     if (typeof content === "string") msg[mtype] = text || content;
     else if (content.caption) content.caption = text || content.caption;
     else if (content.text) content.text = text || content.text;
@@ -696,8 +705,8 @@ async function magneum() {
   };
 
   whatsbot.getFile = async (PATH, save) => {
-    var response;
-    var data = Buffer.isBuffer(PATH)
+    let response;
+    let data = Buffer.isBuffer(PATH)
       ? PATH
       : /^data:.*?\/.*?;base64,/i.test(PATH)
       ? Buffer.from(PATH.split`,`[1], "base64")
@@ -708,7 +717,7 @@ async function magneum() {
       : typeof PATH === "string"
       ? PATH
       : Buffer.alloc(0);
-    var type = (await FileType.fromBuffer(data)) || {
+    let type = (await FileType.fromBuffer(data)) || {
       mime: "application/octet-stream",
       ext: ".Bin",
     };
@@ -731,7 +740,7 @@ async function magneum() {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    var person = await whatsbot.sendContact(callerId, global.owner);
+    let person = await whatsbot.sendContact(callerId, global.owner);
     whatsbot.sendMessage(
       callerId,
       {
@@ -744,8 +753,8 @@ async function magneum() {
   });
 
   whatsbot.ev.on("contacts.update", async (update) => {
-    for (var contact of update) {
-      var jid = whatsbot.decodeJid(contact.id);
+    for (let contact of update) {
+      let jid = whatsbot.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }

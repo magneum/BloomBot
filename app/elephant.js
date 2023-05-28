@@ -15,13 +15,47 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-var usedCommandRecently = new Set();
-var isFiltered = (from) => !!usedCommandRecently.has(from);
-var addFilter = (from, cl) => {
-  usedCommandRecently.add(from);
-  setTimeout(() => usedCommandRecently.delete(from), cl);
-};
-module.exports = {
-  isFiltered,
-  addFilter,
-};
+var logger = require("../logger");
+process.removeAllListeners("warning");
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+process.on("uncaughtException", (error) => {
+  logger.error(error);
+});
+require("events").EventEmitter.prototype._maxListeners = 0;
+require("../logger/global.js");
+const MongoClient = require("mongodb").MongoClient;
+const chalk = require("chalk");
+async function cleanDatabase() {
+  const client = new MongoClient(DATABASE_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  try {
+    await client.connect();
+    const db = client.db("magneum");
+    const collections = await db.listCollections().toArray();
+    for (const collection of collections) {
+      const collectionName = collection.name;
+      const collectionData = await db
+        .collection(collectionName)
+        .find()
+        .toArray();
+      console.log(chalk.yellow(`Contents of collection ${collectionName}:`));
+      console.log(collectionData);
+      await db.collection(collectionName).drop();
+      console.log(chalk.green(`Dropped collection: ${collectionName}`));
+    }
+
+    console.log(chalk.green("Database cleaned successfully."));
+  } catch (err) {
+    console.error(
+      chalk.red("An error occurred while cleaning the database:"),
+      err
+    );
+  } finally {
+    await client.close();
+  }
+}
+
+module.exports = cleanDatabase;

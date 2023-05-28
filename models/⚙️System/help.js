@@ -190,7 +190,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 ┌╔═☰ *🔰${finalname.toUpperCase()}🔰* 
 │║⦁ ${whatsbot.prefix}antilink
 │║⦁ ${whatsbot.prefix}antinsfw
-│║⦁ ${whatsbot.prefix}devare
+│║⦁ ${whatsbot.prefix}delete
 │║⦁ ${whatsbot.prefix}group
 │║⦁ ${whatsbot.prefix}kick
 │║⦁ ${whatsbot.prefix}promote

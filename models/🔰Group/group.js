@@ -198,7 +198,7 @@ module.exports = async (
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
-              await server.devare();
+              await server.delete();
               return await whatsbot.imagebutton(
                 whatsbot,
                 whatschat,

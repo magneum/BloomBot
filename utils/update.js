@@ -55,10 +55,10 @@ const stopMainCode = () => {
   isRunning = false;
 };
 
-const devareFiles = () => {
+const deleteFiles = () => {
   console.log(chalk.green("Devaring files and folders..."));
   rimraf.sync(`${workdir}/*`);
-  console.log(chalk.gray("All files and folders devared"));
+  console.log(chalk.gray("All files and folders deleted"));
 };
 
 const gitFetch = async () => {
@@ -76,7 +76,7 @@ const gitFetch = async () => {
     }
 
     stopMainCode();
-    devareFiles();
+    deleteFiles();
     startMainCode();
   } catch (error) {
     console.error(chalk.red(`Error executing git fetch: ${error.message}`));

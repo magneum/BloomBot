@@ -71,7 +71,7 @@ module.exports = async (
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
-            userBan.devare();
+            userBan.delete();
             return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
@@ -90,7 +90,7 @@ module.exports = async (
           if (!userBan) {
             return whatschat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
           } else {
-            userBan.devare();
+            userBan.delete();
             return whatschat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
@@ -111,7 +111,7 @@ module.exports = async (
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
-            userBan.devare();
+            userBan.delete();
             return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );

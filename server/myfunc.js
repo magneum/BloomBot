@@ -326,8 +326,8 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
         message: quoted,
         ...(whatschat.isGroup ? { participant: whatschat.quoted.sender } : {}),
       }));
-      whatschat.quoted.devare = () =>
-        whatsbot.sendMessage(whatschat.quoted.chat, { devare: vM.key });
+      whatschat.quoted.delete = () =>
+        whatsbot.sendMessage(whatschat.quoted.chat, { delete: vM.key });
       whatschat.quoted.copyNForward = (
         jid,
         forceForward = false,
@@ -366,6 +366,6 @@ exports.νkmake = async (whatsbot, whatschat, store) => {
 var file = require.resolve(__filename);
 fs.watchFile(file, () => {
   fs.unwatchFile(file);
-  devare require.cache[file];
+  delete require.cache[file];
   require(file);
 });

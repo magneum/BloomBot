@@ -35,7 +35,7 @@ exports.noLink = async (whatsbot, whatschat) => {
 > _Kicked! One Less MoFo!_`
     );
     return await whatsbot.sendMessage(whatschat.chat, {
-      devare: {
+      delete: {
         remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,
@@ -60,7 +60,7 @@ exports.noLink = async (whatsbot, whatschat) => {
 > _Kicked! One Less MoFo!_`
     );
     return await whatsbot.sendMessage(whatschat.chat, {
-      devare: {
+      delete: {
         remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,

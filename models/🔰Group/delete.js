@@ -48,7 +48,7 @@ module.exports = async (
       );
     }
 
-    let { isBaileys } = whatsbot.quoted;
+    var { isBaileys } = whatsbot.quoted;
     if (!isBaileys) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {

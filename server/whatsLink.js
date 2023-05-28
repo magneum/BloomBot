@@ -39,11 +39,11 @@ var {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require("./myfunc");
+var chalk = require("chalk");
 var { tmpdir } = require("os");
 var { JSDOM } = require("jsdom");
 var { Character } = require("mailist");
 var { readFile } = require("fs/promises");
-var { Chalk } = require("cfonts/lib/Chalk");
 var { performance } = require("perf_hooks");
 var { Primbon } = require("scrape-primbon");
 var { getDadjoke } = require("random-jokes");
