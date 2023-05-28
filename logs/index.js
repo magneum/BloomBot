@@ -15,15 +15,14 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-var { createlogs, format, transports } = require("winston");
-var { combine, timestamp, printf } = format;
-var winston = require("winston");
+const winston = require("winston");
+const { combine, timestamp, printf } = winston.format;
 
-var logs = () => {
-  return winston.createlogs({
+const logs = () => {
+  return winston.createLogger({
     level: "silly",
     format: combine(
-      format.colorize(),
+      winston.format.colorize(),
       timestamp({ format: "HH:mm:ss" }),
       printf(({ level, message, timestamp }) => {
         return `${timestamp} ${level}: ${message}`;
@@ -32,5 +31,6 @@ var logs = () => {
     transports: [new winston.transports.Console()],
   });
 };
-logs = logs();
-module.exports = logs;
+
+const logger = logs();
+module.exports = logger;
