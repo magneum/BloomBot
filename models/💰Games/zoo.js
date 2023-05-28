@@ -58,7 +58,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               Id: whatschat.sender,
             },
             async (error, userZoo) => {
-              if (error) return Caught(ӄryӄnz, Synthia, error);
+              if (error) return Caught(ӄryӄnz, whatsbot, error);
               if (!userZoo) {
                 new whatsbot.Zoology({
                   Id: whatschat.sender,

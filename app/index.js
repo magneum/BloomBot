@@ -239,7 +239,7 @@ async function magneum() {
   *📢Id:* ${update.id}
 
   > Firstly Welcome.
-  > I am Synthia Whatsapp Bot.
+  > I am whatsbot Whatsapp Bot.
   > To Start using type .help or press below buttons.`,
               footer:
                 "*VLkyre™ By whatsbot*\n*💻HomePage:* https://bit.ly/magneum",
@@ -250,8 +250,8 @@ async function magneum() {
                   type: 1,
                 },
                 {
-                  buttonId: `${whatsbot.prefix}Synthia`,
-                  buttonText: { displayText: `${whatsbot.prefix}Synthia` },
+                  buttonId: `${whatsbot.prefix}whatsbot`,
+                  buttonText: { displayText: `${whatsbot.prefix}whatsbot` },
                   type: 1,
                 },
               ],

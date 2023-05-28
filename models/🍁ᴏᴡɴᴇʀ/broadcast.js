@@ -80,10 +80,10 @@ module.exports = async (
     for (let cron of places) {
       await whatsbot.sendMessage(cron, {
         video: {
-          url: "./public/Notice.mp4",
+          url: "./public/whatsbot.mp4",
         },
         mimetype: "video/mp4",
-        fileName: "Synthia-Notice.mp4",
+        fileName: "whatsbot.mp4",
         caption: `┌『*whatsbot📢BROADCAST* 』
 │║⦁ *💫By:*  ${whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🕛Time:*  ${whatsbot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}

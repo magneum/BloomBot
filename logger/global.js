@@ -74,9 +74,9 @@ global.keyApi = {
   "https://pencarikode.xyz": "pais",
   "https://leyscoders-api.herokuapp.com": "dappakntlll",
 };
-global.packname = "Synthia:v5";
+global.packname = "whatsbot";
 global.author = "magneum";
-global.name = "Synthia-Bot";
+global.name = "whatsbot";
 var Log = (value) => {
   var log = false;
   if (typeof value === "string") {

@@ -39,8 +39,8 @@ module.exports = async (
     whatsbot,
     whatschat,
     `*🔖Here, ${finalname} for @${whatsbot.Tname || whatsbot.pushname}:*
-*🤖Hello, I am Synthia User-Bot🤖*
-> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+*🤖Hello, I am whatsbot User-Bot🤖*
+> Ⓒ𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
 
