@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,34 +29,34 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await whatsbot.sendMessage(voxchat.chat, {
+  await whatsbot.sendMessage(whatschat.chat, {
     react: {
       text: "🔖",
-      key: voxchat.key,
+      key: whatschat.key,
     },
   });
   try {
     if (!whatsbot.frome && !whatsbot.isSudo) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!whatsbot.args.join(" ")) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -71,7 +71,7 @@ module.exports = async (
       .slice(0)
       .map((entry) => entry[1]);
     let places = vGroup.map((v) => v.id);
-    voxchat.reply(
+    whatschat.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -94,6 +94,6 @@ ${whatsbot.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat);
+    return whatsbot.handlerror(whatsbot, whatschat);
   }
 };

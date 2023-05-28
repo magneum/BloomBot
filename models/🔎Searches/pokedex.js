@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.args.join(" ")) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -48,13 +48,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       );
       json = await res.json();
     } catch {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -68,7 +68,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       .then(async (card) => {
         return await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `💫 *Name:* ${json.name}
 〽️ *Pokedex Id:* ${json.id}
 🎀 *Type:* ${json.type}
@@ -103,6 +103,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         );
       });
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

@@ -19,7 +19,7 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     let Item;
     let NewLimit;
@@ -99,13 +99,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     }
 
     if (!whatsbot.args) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -118,13 +118,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     }
 
     if (whatsbot.args.length === 0) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -139,16 +139,16 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     if (RobCatelog.includes(whatsbot.args[0])) {
       whatsbot.Economy.findOne(
         {
-          Id: voxchat.sender,
+          Id: whatschat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return whatsbot.handlerror(whatsbot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, whatschat, error);
           }
 
           if (!userEco) {
             let newUser = new whatsbot.Economy({
-              Id: voxchat.sender,
+              Id: whatschat.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -158,11 +158,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./public/whatsbot.jpg"
@@ -170,15 +170,15 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           }
           whatsbot.Robbery.findOne(
             {
-              Id: voxchat.sender,
+              Id: whatschat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return whatsbot.handlerror(whatsbot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, whatschat, error);
               }
               if (!userRob) {
                 new whatsbot.Robbery({
-                  Id: voxchat.sender,
+                  Id: whatschat.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -187,11 +187,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./public/whatsbot.jpg"
@@ -200,7 +200,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 if (userEco.money < ItemPrice) {
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -217,14 +217,14 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -239,14 +239,14 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -261,14 +261,14 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -280,7 +280,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 }
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -294,25 +294,25 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     } else if (BadCatelog.includes(whatsbot.args[0])) {
       await whatsbot.Economy.findOne(
         {
-          Id: voxchat.sender,
+          Id: whatschat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return whatsbot.handlerror(whatsbot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, whatschat, error);
           }
 
           await whatsbot.Bagde.findOne(
             {
-              Id: voxchat.sender,
+              Id: whatschat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return whatsbot.handlerror(whatsbot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, whatschat, error);
               }
 
               if (!userEco) {
                 new whatsbot.Economy({
-                  Id: voxchat.sender,
+                  Id: whatschat.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -323,11 +323,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -340,7 +340,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
               if (!userBadge) {
                 let newBagdeUser = new whatsbot.Bagde({
-                  Id: voxchat.sender,
+                  Id: whatschat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -348,11 +348,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return whatsbot.handlerror(whatsbot, voxchat, error);
+                  return whatsbot.handlerror(whatsbot, whatschat, error);
                 });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -366,7 +366,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               if (userEco.money < ItemPrice) {
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -380,7 +380,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               if (userBadge.Badge === Item) {
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -397,14 +397,14 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return whatsbot.handlerror(whatsbot, voxchat, error);
+                  return whatsbot.handlerror(whatsbot, whatschat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return whatsbot.handlerror(whatsbot, voxchat, error);
+                  return whatsbot.handlerror(whatsbot, whatschat, error);
                 });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -418,13 +418,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         }
       );
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -436,6 +436,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

@@ -16,34 +16,34 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../global.js");
-exports.premium = async (whatsbot, voxchat, update, store) => {
+exports.premium = async (whatsbot, whatschat, update, store) => {
   if (whatsbot.isSudo) {
-    await whatsbot.sendMessage(voxchat.chat, {
+    await whatsbot.sendMessage(whatschat.chat, {
       react: {
         text: "🔖",
-        key: voxchat.key,
+        key: whatschat.key,
       },
     });
-    return await require("../System/library")(whatsbot, voxchat, update, store);
+    return await require("../System/library")(whatsbot, whatschat, update, store);
   } else
     await whatsbot.premium.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userVium) => {
-        if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
         if (!userVium) {
           new whatsbot.premium({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+            .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await require("../System/library")(
             whatsbot,
-            voxchat,
+            whatschat,
             update,
             store
           );
@@ -55,7 +55,7 @@ exports.premium = async (whatsbot, voxchat, update, store) => {
             );
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*Dear* _${whatsbot.pushname || whatsbot.Tname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -64,18 +64,18 @@ exports.premium = async (whatsbot, voxchat, update, store) => {
             );
           }
         } else {
-          await whatsbot.sendMessage(voxchat.chat, {
+          await whatsbot.sendMessage(whatschat.chat, {
             react: {
               text: "🔖",
-              key: voxchat.key,
+              key: whatschat.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
-          userVium.save().catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+          userVium.save().catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await require("../System/library")(
             whatsbot,
-            voxchat,
+            whatschat,
             update,
             store
           );

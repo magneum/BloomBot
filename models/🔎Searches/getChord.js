@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.args[0] && isNaN(whatsbot.args[0])) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -68,7 +68,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${chordFound}`,
         bsoni.url_image
@@ -76,13 +76,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     } catch {
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${chordFound}`,
         "./public/whatsbot_beta.jpg"
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

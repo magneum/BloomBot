@@ -19,11 +19,11 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     await whatsbot.imagebutton(
       whatsbot,
-      voxchat,
+      whatschat,
       `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
@@ -42,6 +42,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       "./public/whatsbot.jpg"
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

@@ -19,17 +19,17 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     whatsbot.Robbery.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userRob) => {
-        if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
         if (!userRob) {
           new whatsbot.Robbery({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -37,10 +37,10 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+            .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -49,7 +49,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         }
         return await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -59,6 +59,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

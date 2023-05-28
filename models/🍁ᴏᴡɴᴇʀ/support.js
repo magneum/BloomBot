@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,14 +29,14 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await whatsbot.sendMessage(voxchat.chat, {
+  await whatsbot.sendMessage(whatschat.chat, {
     react: {
       text: "🔖",
-      key: voxchat.key,
+      key: whatschat.key,
     },
   });
   try {
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

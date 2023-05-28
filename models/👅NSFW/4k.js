@@ -19,14 +19,14 @@ require("../../logs/global.js");
 var path = require("path");
 var finalname = path.basename(__filename, ".js").toLowerCase();
 
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
-    var server = await whatsbot.nsfwCheck.findOne({ serverId: voxchat.chat });
+    var server = await whatsbot.nsfwCheck.findOne({ serverId: whatschat.chat });
     if (!server) {
-      await whatsbot.sendMessage(voxchat.chat, {
-        react: { text: "❌", key: voxchat.key },
+      await whatsbot.sendMessage(whatschat.chat, {
+        react: { text: "❌", key: whatschat.key },
       });
-      return voxchat.reply(`*😥 Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
+      return whatschat.reply(`*😥 Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -39,10 +39,10 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
-      await whatsbot.sendMessage(voxchat.chat, {
-        react: { text: "❌", key: voxchat.key },
+      await whatsbot.sendMessage(whatschat.chat, {
+        react: { text: "❌", key: whatschat.key },
       });
-      return voxchat.reply(`*😥 Apologies:* _${whatsbot.pushname}_
+      return whatschat.reply(`*😥 Apologies:* _${whatsbot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
@@ -65,8 +65,8 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 ║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await whatsbot.imagebutton(whatsbot, voxchat, message, fetchedata.meta.thumbnail);
+    await whatsbot.imagebutton(whatsbot, whatschat, message, fetchedata.meta.thumbnail);
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

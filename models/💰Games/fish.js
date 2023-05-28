@@ -19,20 +19,20 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     await whatsbot.Economy.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return whatsbot.handlerror(whatsbot, voxchat, error);
+          return whatsbot.handlerror(whatsbot, whatschat, error);
         }
 
         if (!userEco) {
           new whatsbot.Economy({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             money: 0,
             daily: 0,
             timeout: 0,
@@ -43,11 +43,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           })
             .save()
             .catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -60,7 +60,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             );
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -82,11 +82,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             userEco.fishdone = Date.now();
             userEco.fishtimeout = 1800000;
             userEco.save().catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell for Around *${worth}*!
@@ -98,6 +98,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

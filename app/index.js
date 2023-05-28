@@ -73,7 +73,7 @@ async function magneum() {
     var version;
     try {
       var a = fetchJson(
-        "https://web.voxapp.com/check-update?version=1&platform=web"
+        "https://web.whatsapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
     } catch {
@@ -101,7 +101,7 @@ async function magneum() {
     );
     dboard.findOne(
       {
-        Id: phoneNum + "@s.voxapp.net",
+        Id: phoneNum + "@s.whatsapp.net",
       },
       async (error, uBoard) => {
         if (error) return logs.error("❌:", error);
@@ -213,8 +213,8 @@ async function magneum() {
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
     if (!whatsbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    voxchat = await νkmake(whatsbot, νTēxt, store);
-    await require("../server/router.js")(whatsbot, voxchat, update, store);
+    whatschat = await νkmake(whatsbot, νTēxt, store);
+    await require("../server/router.js")(whatsbot, whatschat, update, store);
   });
 
   whatsbot.ev.on("group-participants.update", async (update) => {
@@ -235,7 +235,7 @@ async function magneum() {
             update.id,
             {
               image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s voxapp.net']/g, "")}
+              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
   *📢Id:* ${update.id}
 
   > Firstly Welcome.
@@ -317,14 +317,14 @@ async function magneum() {
         resolve(
           v.name ||
             v.subject ||
-            PhoneNumber("+" + id.replace("@s.voxapp.net", "")).getNumber(
+            PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
               "international"
             )
         );
       });
     else
       v =
-        id === "0@s.voxapp.net"
+        id === "0@s.whatsapp.net"
           ? {
               id,
               name: "WhatsApp",
@@ -336,7 +336,7 @@ async function magneum() {
       (withoutContact ? "" : v.name) ||
       v.subject ||
       v.verifiedName ||
-      PhoneNumber("+" + jid.replace("@s.voxapp.net", "")).getNumber(
+      PhoneNumber("+" + jid.replace("@s.whatsapp.net", "")).getNumber(
         "international"
       )
     );
@@ -346,11 +346,11 @@ async function magneum() {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await whatsbot.getName(i + "@s.voxapp.net"),
+        displayName: await whatsbot.getName(i + "@s.whatsapp.net"),
         vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await whatsbot.getName(
-          i + "@s.voxapp.net"
+          i + "@s.whatsapp.net"
         )}\nFN:${await whatsbot.getName(
-          i + "@s.voxapp.net"
+          i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
@@ -365,7 +365,7 @@ async function magneum() {
   };
 
   whatsbot.public = true;
-  whatsbot.serializeM = (voxchat) => νkmake(whatsbot, voxchat, store);
+  whatsbot.serializeM = (whatschat) => νkmake(whatsbot, whatschat, store);
 
   whatsbot.send5ButImg = async (
     jid,
@@ -380,7 +380,7 @@ async function magneum() {
       { upload: whatsbot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      voxchat.chat,
+      whatschat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
@@ -484,7 +484,7 @@ async function magneum() {
         text: text,
         contextInfo: {
           mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
-            (v) => v[1] + "@s.voxapp.net"
+            (v) => v[1] + "@s.whatsapp.net"
           ),
         },
         ...options,
@@ -707,7 +707,7 @@ async function magneum() {
       sender = copy.key.participant = sender || copy.key.participant;
     else if (copy.key.participant)
       sender = copy.key.participant = sender || copy.key.participant;
-    if (copy.key.remoteJid.includes("@s.voxapp.net"))
+    if (copy.key.remoteJid.includes("@s.whatsapp.net"))
       sender = sender || copy.key.remoteJid;
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;

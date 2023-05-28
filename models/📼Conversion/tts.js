@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.args) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -49,13 +49,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       text += whatsbot.args[i] + " ";
     }
     if (text.length > 200) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -81,7 +81,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           var fetchedata = response.data;
           console.log(fetchedata);
           return await whatsbot.sendMessage(
-            voxchat.chat,
+            whatschat.chat,
             {
               audio: { url: fetchedata.meta.url },
               mimetype: "audio/mpeg",
@@ -101,11 +101,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 },
               },
             },
-            { quoted: voxchat }
+            { quoted: whatschat }
           );
         });
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

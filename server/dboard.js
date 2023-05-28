@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logs/global.js");
-module.exports = async (whatsbot, voxchat, updatedb) => {
+module.exports = async (whatsbot, whatschat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(voxchat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(whatschat.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vlkyre.jpg";
   }
   await whatsbot.dashboard.findOne(
     {
-      Id: voxchat.sender,
+      Id: whatschat.sender,
     },
     async (error, udBase) => {
-      if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+      if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
       if (!udBase) {
         new whatsbot.dashboard({
-          Id: voxchat.sender,
+          Id: whatschat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: whatsbot.pushname,
 
@@ -274,10 +274,10 @@ module.exports = async (whatsbot, voxchat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+          .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
         await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `*🔖Here, for ${whatsbot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

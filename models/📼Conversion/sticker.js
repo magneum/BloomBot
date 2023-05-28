@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.quoted) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -52,21 +52,21 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       });
       var buffer = await sticker.toBuffer();
       return await whatsbot.sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           sticker: buffer,
         },
-        { quoted: voxchat }
+        { quoted: whatschat }
       );
     } else if (/video/.test(whatsbot.mime)) {
       if ((whatsbot.quoted.msg || whatsbot.quoted).seconds > 20) {
-        await whatsbot.sendMessage(voxchat.chat, {
+        await whatsbot.sendMessage(whatschat.chat, {
           react: {
             text: "❌",
-            key: voxchat.key,
+            key: whatschat.key,
           },
         });
-        return voxchat.reply(
+        return whatschat.reply(
           `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -85,21 +85,21 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         });
         var buffer = await sticker.toBuffer();
         return await whatsbot.sendMessage(
-          voxchat.chat,
+          whatschat.chat,
           {
             sticker: buffer,
           },
-          { quoted: voxchat }
+          { quoted: whatschat }
         );
       }
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -110,6 +110,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

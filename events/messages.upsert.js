@@ -34,6 +34,6 @@ module.exports = async (whatsbot, update, store) => {
   if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
   if (!whatsbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
   if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-  voxchat = await νkmake(whatsbot, νTēxt, store);
-  await require("../server/router.js")(whatsbot, voxchat, update, store);
+  whatschat = await νkmake(whatsbot, νTēxt, store);
+  await require("../server/router.js")(whatsbot, whatschat, update, store);
 };

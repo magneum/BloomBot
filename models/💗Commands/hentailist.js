@@ -19,13 +19,13 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   await whatsbot.imagebutton(
     whatsbot,
-    voxchat,
+    whatschat,
     `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
-> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a voxapp userbot with automation,moderation,music,games and 100+ commands!
+> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
 

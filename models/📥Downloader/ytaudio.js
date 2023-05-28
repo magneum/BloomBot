@@ -20,16 +20,16 @@ var presentpath = require("path");
 var ytdl = require("ytdl-secktor");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.args) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -49,7 +49,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         console.log(fetchedata);
 
         return await whatsbot.sendMessage(
-          voxchat.chat,
+          whatschat.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
             caption: `*🔖Here, ${finalname} for ${whatsbot.pushname}:*
@@ -73,17 +73,17 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               },
             ],
             headerType: 4,
-            mentions: [voxchat.sender],
+            mentions: [whatschat.sender],
           },
           {
-            contextInfo: { mentionedJid: [voxchat.sender] },
-            quoted: voxchat,
+            contextInfo: { mentionedJid: [whatschat.sender] },
+            quoted: whatschat,
           }
         );
 
         await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `*🔖Here, ${finalname} for ${whatsbot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
@@ -103,7 +103,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         });
         await whatsbot
           .sendMessage(
-            voxchat.chat,
+            whatschat.chat,
             {
               audio: whatsbot.fs.readFileSync(`./${fetchedata.uuid}`),
               mimetype: "audio/mpeg",
@@ -124,11 +124,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 },
               },
             },
-            { quoted: voxchat }
+            { quoted: whatschat }
           )
           .then(whatsbot.fs.unlinkSync(`./${fetchedata.uuid}`));
       });
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-module.exports = async (whatsbot, voxchat, error) => {
+module.exports = async (whatsbot, whatschat, error) => {
   console.log("❗Error: " + whatsbot.command.toUpperCase() + " :" + error);
-  return voxchat.reply(
+  return whatschat.reply(
     `*😥Apologies:* _${whatsbot.pushname}_
 *❌Error* 
 > _Please try again later._

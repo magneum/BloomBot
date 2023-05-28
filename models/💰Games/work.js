@@ -19,21 +19,21 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     var JworkR = whatsbot.Jwork[Math.floor(Math.random() * whatsbot.Jwork.length)];
     whatsbot.Economy.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return whatsbot.handlerror(whatsbot, voxchat, error);
+          return whatsbot.handlerror(whatsbot, whatschat, error);
         }
 
         if (!userEco) {
           new whatsbot.Economy({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -44,11 +44,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           })
             .save()
             .catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -61,7 +61,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             );
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
@@ -88,6 +88,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

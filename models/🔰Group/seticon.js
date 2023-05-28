@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -30,14 +30,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!voxchat.isGroup) {
-      await whatsbot.sendMessage(voxchat.chat, {
+    if (!whatschat.isGroup) {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -45,13 +45,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -59,13 +59,13 @@ module.exports = async (
       );
     }
     if (!isBotAdmin) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -73,13 +73,13 @@ module.exports = async (
       );
     }
     if (!/image/.test(whatsbot.mime)) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -90,13 +90,13 @@ module.exports = async (
       );
     }
     if (/webp/.test(whatsbot.mime)) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -109,11 +109,11 @@ module.exports = async (
 
     let media = await whatsbot.downloadAndSaveMediaMessage(whatsbot.quoted);
     await whatsbot
-      .updateProfilePicture(voxchat.chat, { url: media })
+      .updateProfilePicture(whatschat.chat, { url: media })
       .then(
         whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `> *Group icone has been changed: ${
             whatsbot.pushname || whatsbot.Tname
           }*`,
@@ -122,13 +122,13 @@ module.exports = async (
       )
       .catch(async (error) => {
         whatsbot.fs.unlinkSync(media);
-        await whatsbot.sendMessage(voxchat.chat, {
+        await whatsbot.sendMessage(whatschat.chat, {
           react: {
             text: "❌",
-            key: voxchat.key,
+            key: whatschat.key,
           },
         });
-        return voxchat.reply(
+        return whatschat.reply(
           `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -139,6 +139,6 @@ module.exports = async (
         );
       });
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat);
+    return whatsbot.handlerror(whatsbot, whatschat);
   }
 };

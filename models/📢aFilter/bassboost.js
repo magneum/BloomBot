@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.quoted) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -46,9 +46,9 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         `${whatsbot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
           if (error) {
-            return voxchat.reply(`*🕊️You:* ${
+            return whatschat.reply(`*🕊️You:* ${
               whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${voxchat.chat}
+            }\n*📢Id:* ${whatschat.chat}
 
 *😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌ Error* 
@@ -60,7 +60,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             var Thumb = await whatsbot.getBuffer("./public/whatsbot.jpg");
             return await whatsbot
               .sendMessage(
-                voxchat.chat,
+                whatschat.chat,
                 {
                   audio: whatsbot.fs.readFileSync(`${random}.mp3`),
                   contextInfo: {
@@ -75,20 +75,20 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   mimetype: "audio/mpeg",
                   fileName: `${one.title}.mp3`,
                 },
-                { quoted: voxchat }
+                { quoted: whatschat }
               )
               .then(whatsbot.fs.unlinkSync(`${random}.mp3`));
           }
         }
       );
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -99,6 +99,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

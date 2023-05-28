@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.quoted) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -48,7 +48,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           if (error) {
             return whatsbot.reply(`*🕊️You:* ${
               whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${voxchat.chat}
+            }\n*📢Id:* ${whatschat.chat}
 
 *😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌ Error* 
@@ -67,13 +67,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           } else if (whatsbot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await whatsbot.sendMessage(voxchat.chat, {
+            await whatsbot.sendMessage(whatschat.chat, {
               react: {
                 text: "❌",
-                key: voxchat.key,
+                key: whatschat.key,
               },
             });
-            return voxchat.reply(
+            return whatschat.reply(
               `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -86,12 +86,12 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
           return await whatsbot
             .sendMessage(
-              voxchat.chat,
+              whatschat.chat,
               {
                 image: whatsbot.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${voxchat.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${whatschat.chat.split("@")[0]}
 │║⦁ *📢Console:* ${whatsbot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -100,7 +100,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
 _*💻HomePage:* ${whatsbot.ShowInfo}_
 _*⛺HomeLog:* ${whatsbot.Showlogs}_`,
-                mentions: [voxchat.sender],
+                mentions: [whatschat.sender],
                 buttons: [
                   {
                     buttonId: `${whatsbot.prefix}Commands`,
@@ -118,7 +118,7 @@ _*⛺HomeLog:* ${whatsbot.Showlogs}_`,
                 headerType: 4,
               },
               {
-                quoted: voxchat,
+                quoted: whatschat,
               }
             )
             .then(
@@ -128,13 +128,13 @@ _*⛺HomeLog:* ${whatsbot.Showlogs}_`,
         }
       );
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -145,6 +145,6 @@ _*⛺HomeLog:* ${whatsbot.Showlogs}_`,
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

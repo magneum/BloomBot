@@ -16,4 +16,4 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../global.js");
-exports.dBoard = async (whatsbot, voxchat) => {};
+exports.dBoard = async (whatsbot, whatschat) => {};

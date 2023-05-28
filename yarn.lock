@@ -1777,7 +1777,7 @@ async.util.onlyonce@0.5.2:
 async.util.parallel@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/async.util.parallel/-/async.util.parallel-0.5.2.tgz#233524e3d6faffd5e995d75476b8d924f96808cd"
-  integrity sha512-0bEvwmQ8fxsTYNwacw5iq0i3PvGryRkXxZ01Rvox21izdMdls9IH2rAZjfunbgI8j6nFRyIdCmMINQ9kka99ow==
+  integrity sha512-0bEvwmQ8fxsTYNwacw5iq0i3PvGryRkXxZ01Rwhats21izdMdls9IH2rAZjfunbgI8j6nFRyIdCmMINQ9kka99ow==
   dependencies:
     async.util.isarraylike "0.5.2"
     async.util.noop "0.5.2"

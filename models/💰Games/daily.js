@@ -19,20 +19,20 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     whatsbot.Economy.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return whatsbot.handlerror(whatsbot, voxchat, error);
+          return whatsbot.handlerror(whatsbot, whatschat, error);
         }
 
         if (!userEco) {
           new whatsbot.Economy({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -43,11 +43,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           })
             .save()
             .catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -62,7 +62,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             );
             return await whatsbot.imagebutton(
               whatsbot,
-              voxchat,
+              whatschat,
               `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return whatsbot.handlerror(whatsbot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, whatschat, error);
           });
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -88,6 +88,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

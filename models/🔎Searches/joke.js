@@ -19,7 +19,7 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     var кяуяєs = await whatsbot.axios.get("https://nekos.life/api/v2/fact");
     try {
@@ -35,7 +35,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${await whatsbot.getDadjoke()}`,
         bsoni.url_image
@@ -43,13 +43,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     } catch {
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:* 
 > ${await whatsbot.getDadjoke()}`,
         "./public/whatsbot_beta.jpg"
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

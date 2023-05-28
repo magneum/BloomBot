@@ -6,7 +6,7 @@
 
 ## 🤖Hello, I am whatsbot
 
-- I am a voxapp userbot with automation,moderation,music,games and 200+ commands!
+- I am a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 - As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
 
 <h1 align="left">🐧Node Package </h1>
@@ -19,7 +19,7 @@
 
 ```
 ╔⧉༻ ❝ Ⓒ𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭 𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞 ❞
-║ is a voxapp userbot with automation,moderation,music,games and 200+ commands!
+║ is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +918436686758, +917430922909
 ╚════════════╝
 

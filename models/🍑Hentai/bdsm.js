@@ -19,22 +19,22 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     return await whatsbot.nsfwCheck.findOne(
       {
-        serverId: voxchat.chat,
+        serverId: whatschat.chat,
       },
       async (error, server) => {
-        if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
         if (!server) {
-          await whatsbot.sendMessage(voxchat.chat, {
+          await whatsbot.sendMessage(whatschat.chat, {
             react: {
               text: "❌",
-              key: voxchat.key,
+              key: whatschat.key,
             },
           });
-          return voxchat.reply(
+          return whatschat.reply(
             `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌ Error* 
@@ -51,13 +51,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               var fetchedata = response.data;
               console.log(fetchedata);
               if (!fetchedata[0].meta.url) {
-                await whatsbot.sendMessage(voxchat.chat, {
+                await whatsbot.sendMessage(whatschat.chat, {
                   react: {
                     text: "❌",
-                    key: voxchat.key,
+                    key: whatschat.key,
                   },
                 });
-                return voxchat.reply(
+                return whatschat.reply(
                   `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌ Error* 
@@ -66,7 +66,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               } else
                 await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname}:*
 
 > *Description:* ${fetchedata[0].meta.description}
@@ -78,6 +78,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

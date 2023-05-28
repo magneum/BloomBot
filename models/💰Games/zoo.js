@@ -19,20 +19,20 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     await whatsbot.Economy.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return whatsbot.handlerror(whatsbot, voxchat, error);
+          return whatsbot.handlerror(whatsbot, whatschat, error);
         }
 
         if (!userEco) {
           let newUser = new whatsbot.Economy({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,11 +42,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return whatsbot.handlerror(whatsbot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, whatschat, error);
           });
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -55,23 +55,23 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         } else {
           await whatsbot.Zoology.findOne(
             {
-              Id: voxchat.sender,
+              Id: whatschat.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, Synthia, error);
               if (!userZoo) {
                 new whatsbot.Zoology({
-                  Id: voxchat.sender,
+                  Id: whatschat.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
@@ -84,7 +84,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   );
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -108,11 +108,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                   return await whatsbot.imagebutton(
                     whatsbot,
-                    voxchat,
+                    whatschat,
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
@@ -129,6 +129,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

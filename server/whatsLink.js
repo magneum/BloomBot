@@ -61,7 +61,7 @@ let ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   whatsbot.performance = performance;
   whatsbot.createWorker = createWorker;
   whatsbot.JSDOM = JSDOM;
@@ -103,7 +103,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
   whatsbot.TelegraPh = TelegraPh;
   whatsbot.UploadFileUgu = UploadFileUgu;
   whatsbot.webp2mp4File = webp2mp4File;
-  whatsbot.Tname = voxchat.sender.replace(/['@s voxapp.net']/g, "");
+  whatsbot.Tname = whatschat.sender.replace(/['@s whatsapp.net']/g, "");
 
   whatsbot.msgFilter = require("./msgFilter");
   whatsbot.imagebutton = require("../buttons/imagebutton");
@@ -261,7 +261,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   whatsbot.isSudo = sudotring.includes(
-    voxchat.sender.substring(0, voxchat.sender.indexOf("@"))
+    whatschat.sender.substring(0, whatschat.sender.indexOf("@"))
   );
   return whatsbot;
 };

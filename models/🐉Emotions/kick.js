@@ -19,7 +19,7 @@ require("../../global.js");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     // Fetch emotion data from the API
     var response = await whatsbot.magfetch(
@@ -30,10 +30,10 @@ module.exports = async (whatsbot, voxchat, update, store) => {
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await whatsbot.sendMessage(voxchat.chat, {
-        react: { text: "❌", key: voxchat.key },
+      await whatsbot.sendMessage(whatschat.chat, {
+        react: { text: "❌", key: whatschat.key },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥 Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
@@ -55,13 +55,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           // Check if a user is mentioned in the command arguments
           var mention = whatsbot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || voxchat.msg.contextInfo.participant;
+            (await mention[0]) || whatschat.msg.contextInfo.participant;
         } else if (whatsbot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
-            voxchat.mtype === "extendedTextMessage" &&
-            voxchat.message.extendedTextMessage.contextInfo != null
-              ? voxchat.message.extendedTextMessage.contextInfo.participant || ""
+            whatschat.mtype === "extendedTextMessage" &&
+            whatschat.message.extendedTextMessage.contextInfo != null
+              ? whatschat.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
         var message = `*whatsbot by magneum*
@@ -73,14 +73,14 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await whatsbot.sendMessage(
-          voxchat.chat,
+          whatschat.chat,
           {
             gifPlayback: true,
             video: whatsbot.fs.readFileSync(resultFilename),
             caption: message,
-            mentions: [mentionedUser, voxchat.sender],
+            mentions: [mentionedUser, whatschat.sender],
           },
-          { quoted: voxchat }
+          { quoted: whatschat }
         );
         // Remove the generated video file
         whatsbot.fs.unlinkSync(resultFilename);
@@ -89,6 +89,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       .run();
   } catch (error) {
     // Handle any errors that occur during the process
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

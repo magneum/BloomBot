@@ -20,17 +20,17 @@ var path = require("path");
 var fileName = path.basename(__filename);
 var functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     var query = whatsbot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !whatsbot.TubeRegex.test(query))
     ) {
-      await whatsbot.sendMessage(voxchat.chat, {
-        react: { text: "❌", key: voxchat.key },
+      await whatsbot.sendMessage(whatschat.chat, {
+        react: { text: "❌", key: whatschat.key },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥 Apologies:* ${whatsbot.pushname || whatsbot.Tname}
 *❌ Error* 
 > _No query provided!_
@@ -71,7 +71,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
 *📜 Description:*
 ${description}`;
-    await whatsbot.sendMessage(voxchat.chat, {
+    await whatsbot.sendMessage(whatschat.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await whatsbot.sendMessage(voxchat.chat, {
+    await whatsbot.sendMessage(whatschat.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -108,6 +108,6 @@ ${description}`;
     });
     whatsbot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

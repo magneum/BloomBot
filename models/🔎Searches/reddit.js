@@ -19,21 +19,21 @@ require("../../global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
-    await whatsbot.sendMessage(voxchat.chat, {
+    await whatsbot.sendMessage(whatschat.chat, {
       react: {
         text: "❌",
-        key: voxchat.key,
+        key: whatschat.key,
       },
     });
-    return voxchat.reply(
+    return whatschat.reply(
       `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

@@ -16,24 +16,24 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logs/global.js");
-exports.noPrivate = async (whatsbot, voxchat, update) => {
+exports.noPrivate = async (whatsbot, whatschat, update) => {
   if (!whatsbot.isSudo)
     await whatsbot.UserPrivate.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, user) => {
-        if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
         if (!user) {
           new whatsbot.UserPrivate({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+            .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*Dear* _${whatsbot.pushname || whatsbot.Tname}_
 • This Private Is Being Guarded By whatsbot Ai!
 • Do Not Spam The Chat Box!
@@ -45,10 +45,10 @@ exports.noPrivate = async (whatsbot, voxchat, update) => {
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
-          await user.save().catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+          await user.save().catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await whatsbot.imagebutton(
             whatsbot,
-            voxchat,
+            whatschat,
             `*Dear* _${whatsbot.pushname || whatsbot.Tname}_
 • This Private Is Being Guarded By whatsbot Ai!
 • Do Not Spam The Chat Box!
@@ -61,10 +61,10 @@ exports.noPrivate = async (whatsbot, voxchat, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+            .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await whatsbot
-            .updateBlockStatus(voxchat.sender, "block")
-            .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
+            .updateBlockStatus(whatschat.sender, "block")
+            .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
         }
       }
     );

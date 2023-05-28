@@ -16,27 +16,27 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logs/global.js");
-exports.noLink = async (whatsbot, voxchat) => {
-  let FetchCurrentGroupLink = await whatsbot.groupInviteCode(voxchat.chat);
-  let GroupLinkRegex = /chat.voxapp.com\/([0-9A-Za-z]{20,24})/i;
+exports.noLink = async (whatsbot, whatschat) => {
+  let FetchCurrentGroupLink = await whatsbot.groupInviteCode(whatschat.chat);
+  let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   let isGroupLink = GroupLinkRegex.exec(whatsbot.budy);
   let PresentGroupLink = new RegExp(
-    `https://chat.voxapp.com/${FetchCurrentGroupLink}`,
+    `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
     "i"
   );
   let isCurrentGroupLink = PresentGroupLink.test(whatsbot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await whatsbot
-      .groupParticipantsUpdate(voxchat.chat, [whatsbot.sender], "remove")
-      .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
-    await voxchat.reply(
+      .groupParticipantsUpdate(whatschat.chat, [whatsbot.sender], "remove")
+      .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+    await whatschat.reply(
       `*😥Apologies:* _${whatsbot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await whatsbot.sendMessage(voxchat.chat, {
+    return await whatsbot.sendMessage(whatschat.chat, {
       delete: {
-        remoteJid: voxchat.chat,
+        remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,
         participant: whatsbot.quoted.sender,
@@ -52,16 +52,16 @@ exports.noLink = async (whatsbot, voxchat) => {
     whatsbot.budy.includes("www.")
   ) {
     await whatsbot
-      .groupParticipantsUpdate(voxchat.chat, [whatsbot.sender], "remove")
-      .catch((error) => whatsbot.handlerror(whatsbot, voxchat, error));
-    await voxchat.reply(
+      .groupParticipantsUpdate(whatschat.chat, [whatsbot.sender], "remove")
+      .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+    await whatschat.reply(
       `*😥Apologies:* _${whatsbot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await whatsbot.sendMessage(voxchat.chat, {
+    return await whatsbot.sendMessage(whatschat.chat, {
       delete: {
-        remoteJid: voxchat.chat,
+        remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,
         participant: whatsbot.quoted.sender,

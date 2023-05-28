@@ -19,18 +19,18 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   await whatsbot.Economy.findOne(
     {
-      Id: voxchat.sender,
+      Id: whatschat.sender,
     },
     async (error, data) => {
       if (error) {
-        return whatsbot.handlerror(whatsbot, voxchat, error);
+        return whatsbot.handlerror(whatsbot, whatschat, error);
       }
       if (!data) {
         new whatsbot.Economy({
-          Id: voxchat.sender,
+          Id: whatschat.sender,
           money: 0,
           daily: 0,
           timeout: 86400000,
@@ -41,11 +41,11 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         })
           .save()
           .catch((error) => {
-            return whatsbot.handlerror(whatsbot, voxchat, error);
+            return whatsbot.handlerror(whatsbot, whatschat, error);
           });
         return await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -54,7 +54,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       } else {
         return await whatsbot.imagebutton(
           whatsbot,
-          voxchat,
+          whatschat,
           `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *💰Balance:* ${data.money}`,
           "./public/whatsbot.jpg"

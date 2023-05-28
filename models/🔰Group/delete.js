@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -31,13 +31,13 @@ module.exports = async (
 ) => {
   try {
     if (!whatsbot.quoted) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (
 
     let { isBaileys } = whatsbot.quoted;
     if (!isBaileys) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -66,16 +66,16 @@ module.exports = async (
 > _${whatsbot.prefix}${finalname} reply to Image/Video/Text_`
       );
     } else {
-      return await whatsbot.sendMessage(voxchat.chat, {
+      return await whatsbot.sendMessage(whatschat.chat, {
         delete: {
-          remoteJid: voxchat.chat,
+          remoteJid: whatschat.chat,
           fromMe: true,
-          id: voxchat.quoted.id,
-          participant: voxchat.quoted.sender,
+          id: whatschat.quoted.id,
+          participant: whatschat.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat);
+    return whatsbot.handlerror(whatsbot, whatschat);
   }
 };

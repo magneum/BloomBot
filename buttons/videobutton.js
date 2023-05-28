@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-module.exports = async (whatsbot, voxchat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
+module.exports = async (whatsbot, whatschat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
   if (whatsbot.isReply) {
     var receiver =
       whatsbot.mtype == "extendedTextMessage" &&
@@ -24,10 +24,10 @@ module.exports = async (whatsbot, voxchat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐
         : "";
     await whatsbot
       .sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           image: { url: νidē໐ },
-          caption: `*📢Id:* ${voxchat.chat}
+          caption: `*📢Id:* ${whatschat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*whatsbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -43,11 +43,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 5,
-          mentions: [voxchat.sender, receiver],
+          mentions: [whatschat.sender, receiver],
         },
         {
-          contextInfo: { mentionedJid: [voxchat.sender, receiver] },
-          quoted: voxchat,
+          contextInfo: { mentionedJid: [whatschat.sender, receiver] },
+          quoted: whatschat,
         }
       )
       .catch((e) => console.log(e));
@@ -60,10 +60,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         : [];
     await whatsbot
       .sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           image: { url: νidē໐ },
-          caption: `*📢Id:* ${voxchat.chat}
+          caption: `*📢Id:* ${whatschat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*whatsbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -79,11 +79,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 5,
-          mentions: [voxchat.sender, receiver],
+          mentions: [whatschat.sender, receiver],
         },
         {
-          contextInfo: { mentionedJid: [voxchat.sender, receiver] },
-          quoted: voxchat,
+          contextInfo: { mentionedJid: [whatschat.sender, receiver] },
+          quoted: whatschat,
         }
       )
       .catch((e) => console.log(e));
@@ -91,10 +91,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
   } else {
     return await whatsbot
       .sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           image: { url: νidē໐ },
-          caption: `*📢Id:* ${voxchat.chat}
+          caption: `*📢Id:* ${whatschat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           footer: "*whatsbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
@@ -110,11 +110,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
             },
           ],
           headerType: 5,
-          mentions: [voxchat.sender],
+          mentions: [whatschat.sender],
         },
         {
-          contextInfo: { mentionedJid: [voxchat.sender] },
-          quoted: voxchat,
+          contextInfo: { mentionedJid: [whatschat.sender] },
+          quoted: whatschat,
         }
       )
       .catch((e) => console.log(e));

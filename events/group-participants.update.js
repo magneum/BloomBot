@@ -42,7 +42,7 @@ module.exports = async (whatsbot, update, store) => {
           update.id,
           {
             image: { url: imåge },
-            caption: `*🕊️You:* @${sperson.replace(/['@s voxapp.net']/g, "")}
+            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
 *📢Id:* ${update.id}
 
 > Firstly Welcome.

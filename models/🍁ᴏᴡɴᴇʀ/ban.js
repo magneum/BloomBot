@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,21 +29,21 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await whatsbot.sendMessage(voxchat.chat, {
+  await whatsbot.sendMessage(whatschat.chat, {
     react: {
       text: "🔖",
-      key: voxchat.key,
+      key: whatschat.key,
     },
   });
   try {
     if (!whatsbot.frome && !whatsbot.isSudo) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -65,16 +65,16 @@ module.exports = async (
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+          if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
           if (!userBan) {
             new whatsbot.userBanCheck({
               Id: repliedPerson,
             }).save();
-            return voxchat.reply(
+            return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return voxchat.reply(
+            return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already banned!`
             );
           }
@@ -88,16 +88,16 @@ module.exports = async (
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+          if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
           if (!userBan) {
             new whatsbot.userBanCheck({
               Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
             }).save();
-            return voxchat.reply(
+            return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return voxchat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
+            return whatschat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
           }
         }
       );
@@ -108,32 +108,32 @@ module.exports = async (
     ) {
       whatsbot.userBanCheck.findOne(
         {
-          Id: voxchat.chat,
+          Id: whatschat.chat,
         },
         async (error, userBan) => {
-          if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+          if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
           if (!userBan) {
             new whatsbot.userBanCheck({
-              Id: voxchat.chat,
+              Id: whatschat.chat,
             }).save();
-            return voxchat.reply(
+            return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been Banned!`
             );
           } else {
-            return voxchat.reply(
+            return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already banned!`
             );
           }
         }
       );
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -144,6 +144,6 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

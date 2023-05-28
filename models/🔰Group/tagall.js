@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -30,14 +30,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!voxchat.isGroup) {
-      await whatsbot.sendMessage(voxchat.chat, {
+    if (!whatschat.isGroup) {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error*  
@@ -45,13 +45,13 @@ module.exports = async (
       );
     }
     if (!isAdmin && !whatsbot.isSudo) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -60,38 +60,38 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(voxchat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await whatsbot.profilePictureUrl(whatschat.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/whatsbot.jpg";
     }
     if (whatsbot.args) {
       return await whatsbot.sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${voxchat.chat}
+          caption: `*📢Id:* ${whatschat.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${whatsbot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${whatsbot.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: voxchat }
+        { quoted: whatschat }
       );
     } else {
       return await whatsbot.sendMessage(
-        voxchat.chat,
+        whatschat.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${voxchat.chat}
+          caption: `*📢Id:* ${whatschat.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${whatsbot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: voxchat }
+        { quoted: whatschat }
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat);
+    return whatsbot.handlerror(whatsbot, whatschat);
   }
 };

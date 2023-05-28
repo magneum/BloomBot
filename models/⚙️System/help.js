@@ -19,7 +19,7 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
@@ -60,9 +60,9 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
   return await whatsbot.imagebutton(
     whatsbot,
-    voxchat,
+    whatschat,
     `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
-> Ⓒwhatsbot: is a voxapp userbot with automation,moderation,music,games and 100+ commands!
+> Ⓒwhatsbot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./models")}
 

@@ -89,21 +89,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   let d = Math.floor(seconds / (3600 * 24));
   let h = Math.floor((seconds % (3600 * 24)) / 3600);
-  let voxchat = Math.floor((seconds % 3600) / 60);
+  let whatschat = Math.floor((seconds % 3600) / 60);
   let s = Math.floor(seconds % 60);
   let dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   let hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   let mDisplay =
-    voxchat > 0 ? voxchat + (voxchat == 1 ? " minute, " : " minutes, ") : "";
+    whatschat > 0 ? whatschat + (whatschat == 1 ? " minute, " : " minutes, ") : "";
   let sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   let h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  let voxchat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  let whatschat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   let s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, voxchat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, whatschat, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -207,7 +207,7 @@ exports.getSizeMedia = (path) => {
 
 exports.parseMention = (text = "") => {
   return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
-    (v) => v[1] + "@s.voxapp.net"
+    (v) => v[1] + "@s.whatsapp.net"
   );
 };
 
@@ -227,134 +227,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (whatsbot, voxchat, store) => {
-  if (!voxchat) return voxchat;
+exports.νkmake = async (whatsbot, whatschat, store) => {
+  if (!whatschat) return whatschat;
   let νproto = proto.WebMessageInfo;
-  if (voxchat.key) {
-    voxchat.id = voxchat.key.id;
-    voxchat.isBaileys =
-      voxchat.id.startsWith("BAE5") && voxchat.id.length === 16;
-    voxchat.chat = voxchat.key.remoteJid;
-    voxchat.fromMe = voxchat.key.fromMe;
-    voxchat.isGroup = voxchat.chat.endsWith("@g.us");
-    voxchat.sender = whatsbot.decodeJid(
-      (voxchat.fromMe && whatsbot.user.id) ||
-        voxchat.participant ||
-        voxchat.key.participant ||
-        voxchat.chat ||
+  if (whatschat.key) {
+    whatschat.id = whatschat.key.id;
+    whatschat.isBaileys =
+      whatschat.id.startsWith("BAE5") && whatschat.id.length === 16;
+    whatschat.chat = whatschat.key.remoteJid;
+    whatschat.fromMe = whatschat.key.fromMe;
+    whatschat.isGroup = whatschat.chat.endsWith("@g.us");
+    whatschat.sender = whatsbot.decodeJid(
+      (whatschat.fromMe && whatsbot.user.id) ||
+        whatschat.participant ||
+        whatschat.key.participant ||
+        whatschat.chat ||
         ""
     );
-    if (voxchat.isGroup)
-      voxchat.participant = whatsbot.decodeJid(voxchat.key.participant) || "";
+    if (whatschat.isGroup)
+      whatschat.participant = whatsbot.decodeJid(whatschat.key.participant) || "";
   }
-  if (voxchat.message) {
-    voxchat.mtype = getContentType(voxchat.message);
-    voxchat.msg =
-      voxchat.mtype == "viewOnceMessage"
-        ? voxchat.message[voxchat.mtype].message[
-            getContentType(voxchat.message[voxchat.mtype].message)
+  if (whatschat.message) {
+    whatschat.mtype = getContentType(whatschat.message);
+    whatschat.msg =
+      whatschat.mtype == "viewOnceMessage"
+        ? whatschat.message[whatschat.mtype].message[
+            getContentType(whatschat.message[whatschat.mtype].message)
           ]
-        : voxchat.message[voxchat.mtype];
-    voxchat.body =
-      voxchat.message.conversation ||
-      voxchat.msg.caption ||
-      voxchat.msg.text ||
-      (voxchat.mtype == "listResponseMessage" &&
-        voxchat.msg.singleSelectReply.selectedRowId) ||
-      (voxchat.mtype == "buttonsResponseMessage" &&
-        voxchat.msg.selectedButtonId) ||
-      (voxchat.mtype == "viewOnceMessage" && voxchat.msg.caption) ||
-      voxchat.text;
-    let quoted = (voxchat.quoted = voxchat.msg.contextInfo
-      ? voxchat.msg.contextInfo.quotedMessage
+        : whatschat.message[whatschat.mtype];
+    whatschat.body =
+      whatschat.message.conversation ||
+      whatschat.msg.caption ||
+      whatschat.msg.text ||
+      (whatschat.mtype == "listResponseMessage" &&
+        whatschat.msg.singleSelectReply.selectedRowId) ||
+      (whatschat.mtype == "buttonsResponseMessage" &&
+        whatschat.msg.selectedButtonId) ||
+      (whatschat.mtype == "viewOnceMessage" && whatschat.msg.caption) ||
+      whatschat.text;
+    let quoted = (whatschat.quoted = whatschat.msg.contextInfo
+      ? whatschat.msg.contextInfo.quotedMessage
       : null);
-    voxchat.mentionedJid = voxchat.msg.contextInfo
-      ? voxchat.msg.contextInfo.mentionedJid
+    whatschat.mentionedJid = whatschat.msg.contextInfo
+      ? whatschat.msg.contextInfo.mentionedJid
       : [];
-    if (voxchat.quoted) {
+    if (whatschat.quoted) {
       let type = getContentType(quoted);
-      voxchat.quoted = voxchat.quoted[type];
+      whatschat.quoted = whatschat.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(voxchat.quoted);
-        voxchat.quoted = voxchat.quoted[type];
+        type = getContentType(whatschat.quoted);
+        whatschat.quoted = whatschat.quoted[type];
       }
-      if (typeof voxchat.quoted === "string")
-        voxchat.quoted = {
-          text: voxchat.quoted,
+      if (typeof whatschat.quoted === "string")
+        whatschat.quoted = {
+          text: whatschat.quoted,
         };
-      voxchat.quoted.mtype = type;
-      voxchat.quoted.id = voxchat.msg.contextInfo.stanzaId;
-      voxchat.quoted.chat = voxchat.msg.contextInfo.remoteJid || voxchat.chat;
-      voxchat.quoted.isBaileys = voxchat.quoted.id
-        ? voxchat.quoted.id.startsWith("BAE5") &&
-          voxchat.quoted.id.length === 16
+      whatschat.quoted.mtype = type;
+      whatschat.quoted.id = whatschat.msg.contextInfo.stanzaId;
+      whatschat.quoted.chat = whatschat.msg.contextInfo.remoteJid || whatschat.chat;
+      whatschat.quoted.isBaileys = whatschat.quoted.id
+        ? whatschat.quoted.id.startsWith("BAE5") &&
+          whatschat.quoted.id.length === 16
         : false;
-      voxchat.quoted.sender = whatsbot.decodeJid(
-        voxchat.msg.contextInfo.participant
+      whatschat.quoted.sender = whatsbot.decodeJid(
+        whatschat.msg.contextInfo.participant
       );
-      voxchat.quoted.fromMe =
-        voxchat.quoted.sender === (whatsbot.user && whatsbot.user.id);
-      voxchat.quoted.text =
-        voxchat.quoted.text ||
-        voxchat.quoted.caption ||
-        voxchat.quoted.conversation ||
-        voxchat.quoted.contentText ||
-        voxchat.quoted.selectedDisplayText ||
-        voxchat.quoted.title ||
+      whatschat.quoted.fromMe =
+        whatschat.quoted.sender === (whatsbot.user && whatsbot.user.id);
+      whatschat.quoted.text =
+        whatschat.quoted.text ||
+        whatschat.quoted.caption ||
+        whatschat.quoted.conversation ||
+        whatschat.quoted.contentText ||
+        whatschat.quoted.selectedDisplayText ||
+        whatschat.quoted.title ||
         "";
-      voxchat.quoted.mentionedJid = voxchat.msg.contextInfo
-        ? voxchat.msg.contextInfo.mentionedJid
+      whatschat.quoted.mentionedJid = whatschat.msg.contextInfo
+        ? whatschat.msg.contextInfo.mentionedJid
         : [];
-      voxchat.getQuotedObj = voxchat.getQuotedMessage = async () => {
-        if (!voxchat.quoted.id) return false;
+      whatschat.getQuotedObj = whatschat.getQuotedMessage = async () => {
+        if (!whatschat.quoted.id) return false;
         let q = await store.loadMessage(
-          voxchat.chat,
-          voxchat.quoted.id,
+          whatschat.chat,
+          whatschat.quoted.id,
           whatsbot
         );
         return exports.νkmake(whatsbot, q, store);
       };
-      let vM = (voxchat.quoted.fakeObj = νproto.fromObject({
+      let vM = (whatschat.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: voxchat.quoted.chat,
-          fromMe: voxchat.quoted.fromMe,
-          id: voxchat.quoted.id,
+          remoteJid: whatschat.quoted.chat,
+          fromMe: whatschat.quoted.fromMe,
+          id: whatschat.quoted.id,
         },
         message: quoted,
-        ...(voxchat.isGroup ? { participant: voxchat.quoted.sender } : {}),
+        ...(whatschat.isGroup ? { participant: whatschat.quoted.sender } : {}),
       }));
-      voxchat.quoted.delete = () =>
-        whatsbot.sendMessage(voxchat.quoted.chat, { delete: vM.key });
-      voxchat.quoted.copyNforward = (jid, forceforward = false, options = {}) =>
+      whatschat.quoted.delete = () =>
+        whatsbot.sendMessage(whatschat.quoted.chat, { delete: vM.key });
+      whatschat.quoted.copyNforward = (jid, forceforward = false, options = {}) =>
         whatsbot.copyNforward(jid, vM, forceforward, options);
-      voxchat.quoted.download = () =>
-        whatsbot.downloadMediaMessage(voxchat.quoted);
+      whatschat.quoted.download = () =>
+        whatsbot.downloadMediaMessage(whatschat.quoted);
     }
   }
 
-  if (voxchat.msg.url)
-    voxchat.download = () => whatsbot.downloadMediaMessage(voxchat.msg);
-  voxchat.text =
-    voxchat.msg.text ||
-    voxchat.msg.caption ||
-    voxchat.message.conversation ||
-    voxchat.msg.contentText ||
-    voxchat.msg.selectedDisplayText ||
-    voxchat.msg.title ||
+  if (whatschat.msg.url)
+    whatschat.download = () => whatsbot.downloadMediaMessage(whatschat.msg);
+  whatschat.text =
+    whatschat.msg.text ||
+    whatschat.msg.caption ||
+    whatschat.message.conversation ||
+    whatschat.msg.contentText ||
+    whatschat.msg.selectedDisplayText ||
+    whatschat.msg.title ||
     "";
-  voxchat.reply = (text, chatId = voxchat.chat, options = {}) =>
+  whatschat.reply = (text, chatId = whatschat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? whatsbot.sendMedia(chatId, text, "file", "", voxchat, { ...options })
-      : whatsbot.sendText(chatId, text, voxchat, { ...options });
-  voxchat.copy = () =>
-    exports.νkmake(whatsbot, νproto.fromObject(νproto.toObject(voxchat)));
-  voxchat.copyNforward = (
-    jid = voxchat.chat,
+      ? whatsbot.sendMedia(chatId, text, "file", "", whatschat, { ...options })
+      : whatsbot.sendText(chatId, text, whatschat, { ...options });
+  whatschat.copy = () =>
+    exports.νkmake(whatsbot, νproto.fromObject(νproto.toObject(whatschat)));
+  whatschat.copyNforward = (
+    jid = whatschat.chat,
     forceforward = false,
     options = {}
-  ) => whatsbot.copyNforward(jid, voxchat, forceforward, options);
+  ) => whatsbot.copyNforward(jid, whatschat, forceforward, options);
 
-  return voxchat;
+  return whatschat;
 };
 
 let file = require.resolve(__filename);

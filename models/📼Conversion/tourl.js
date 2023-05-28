@@ -19,16 +19,16 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   try {
     if (!whatsbot.quoted) {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -45,7 +45,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       console.log(media, upload);
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🎊Link: * _${whatsbot.util.format(upload)}_`,
         "./public/whatsbot.jpg"
@@ -55,19 +55,19 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       upload = await whatsbot.TelegraPh(media);
       await whatsbot.imagebutton(
         whatsbot,
-        voxchat,
+        whatschat,
         `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 *🎊Link: * _${whatsbot.util.format(upload)}_`,
         "./public/whatsbot.jpg"
       );
     } else {
-      await whatsbot.sendMessage(voxchat.chat, {
+      await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: whatschat.key,
         },
       });
-      return voxchat.reply(
+      return whatschat.reply(
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
@@ -78,6 +78,6 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       );
     }
   } catch (error) {
-    return whatsbot.handlerror(whatsbot, voxchat, error);
+    return whatsbot.handlerror(whatsbot, whatschat, error);
   }
 };

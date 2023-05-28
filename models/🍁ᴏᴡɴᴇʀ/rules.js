@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   whatsbot,
-  voxchat,
+  whatschat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,18 +29,18 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await whatsbot.sendMessage(voxchat.chat, {
+  await whatsbot.sendMessage(whatschat.chat, {
     react: {
       text: "🔖",
-      key: voxchat.key,
+      key: whatschat.key,
     },
   });
   await whatsbot.imagebutton(
     whatsbot,
-    voxchat,
+    whatschat,
     `*🔖Here, ${finalname} for @${whatsbot.Tname || whatsbot.pushname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
-> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a voxapp userbot with automation,moderation,music,games and 100+ commands!
+> Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
 

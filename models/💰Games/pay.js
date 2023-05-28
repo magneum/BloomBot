@@ -19,9 +19,9 @@ require("../../logs/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, voxchat, update, store) => {
+module.exports = async (whatsbot, whatschat, update, store) => {
   if (!whatsbot.mentionByReply) {
-    return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -30,7 +30,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 > Reply-Person: _${whatsbot.prefix}${finalname} amount_`);
   }
   if (whatsbot.args.length === 0) {
-    return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -39,7 +39,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 > Reply-Person: _${whatsbot.prefix}${finalname} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(whatsbot.args[0])) {
-    return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -48,7 +48,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 > Reply-Person: _${whatsbot.prefix}${finalname} amount_`);
   }
   if (whatsbot.args[0].match(/[a-z]/i)) {
-    return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -64,8 +64,8 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         ? whatsbot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await whatsbot.getName(receiver);
-    if (receiver === voxchat.sender) {
-      return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    if (receiver === whatschat.sender) {
+      return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -76,13 +76,13 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
     await whatsbot.Economy.findOne(
       {
-        Id: voxchat.sender,
+        Id: whatschat.sender,
       },
       async (error, uPayer) => {
-        if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
         if (!uPayer) {
           new whatsbot.Economy({
-            Id: voxchat.sender,
+            Id: whatschat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,9 +93,9 @@ module.exports = async (whatsbot, voxchat, update, store) => {
           })
             .save()
             .catch((error) => {
-              return whatsbot.handlerror(whatsbot, voxchat, error);
+              return whatsbot.handlerror(whatsbot, whatschat, error);
             });
-          return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+          return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -105,7 +105,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
         }
 
         if (parseInt(whatsbot.args[0]) > uPayer.money) {
-          return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+          return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -121,7 +121,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return whatsbot.handlerror(whatsbot, voxchat, error);
+              if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
               if (!uBonus) {
                 new whatsbot.Economy({
                   Id: receiver,
@@ -135,15 +135,15 @@ module.exports = async (whatsbot, voxchat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return whatsbot.handlerror(whatsbot, voxchat, error);
+                    return whatsbot.handlerror(whatsbot, whatschat, error);
                   });
                 uPayer.money = uPayer.money - parseInt(whatsbot.args[0]);
                 uPayer.save().catch((error) => {
-                  return whatsbot.handlerror(whatsbot, voxchat, error);
+                  return whatsbot.handlerror(whatsbot, whatschat, error);
                 });
                 return await whatsbot.imagebutton(
                   whatsbot,
-                  voxchat,
+                  whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -161,15 +161,15 @@ module.exports = async (whatsbot, voxchat, update, store) => {
 
               uPayer.money = uPayer.money - parseInt(whatsbot.args[0]);
               uPayer.save().catch((error) => {
-                return whatsbot.handlerror(whatsbot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, whatschat, error);
               });
               uBonus.money = uBonus.money + parseInt(whatsbot.args[0]);
               uBonus.save().catch((error) => {
-                return whatsbot.handlerror(whatsbot, voxchat, error);
+                return whatsbot.handlerror(whatsbot, whatschat, error);
               });
               return await whatsbot.imagebutton(
                 whatsbot,
-                voxchat,
+                whatschat,
                 `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -189,7 +189,7 @@ module.exports = async (whatsbot, voxchat, update, store) => {
       }
     );
   } else {
-    return voxchat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
+    return whatschat.reply(`*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
