@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,15 +14,15 @@
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-const logger = require("./logger");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+const logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("./global.js");
+require("../logger/global.js");
 var {
   default: νℓкуяє_вσт,
   DisconnectReason,
@@ -43,10 +43,15 @@ var monGoose = require("mongoose");
 const git = require("simple-git")();
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
-var dboard = require("./database/dashboard");
+var dboard = require("../database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("./auth/Database");
-var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("./server/myfunc");
+var { useRemoteFileAuthState } = require("../auth/Database");
+var {
+  νkmake,
+  fetchJson,
+  getBuffer,
+  getSizeMedia,
+} = require("../server/myfunc");
 
 async function mågneum() {
   await monGoose
@@ -251,7 +256,7 @@ async function mågneum() {
     if (!ꪜᴏxʙᴏᴛ.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     ᴠᴏxᴄ = await νkmake(ꪜᴏxʙᴏᴛ, νTēxt, store);
-    await require("./server/router.js")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
+    await require("../server/router.js")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
   });
 
   ꪜᴏxʙᴏᴛ.ev.on("group-participants.update", async (update) => {
@@ -637,7 +642,7 @@ async function mågneum() {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("./server/exif");
+      let { writeExif } = require("../server/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,

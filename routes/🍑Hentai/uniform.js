@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -42,36 +42,38 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 > You may ask the admins to turn it on.`
           );
         } else {
-          ꪜᴏxʙᴏᴛ.magfetch(
-            ꪜᴏxʙᴏᴛ,
-            "https://magneum.vercel.app/api/hentai?q=" + pfname
-          ).then(async (response) => {
-            var mData = response.data;
-            console.log(mData);
-            if (!mData[0].meta.url) {
-              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
-                react: {
-                  text: "❌",
-                  key: ᴠᴏxᴄ.key,
-                },
-              });
-              return ᴠᴏxᴄ.reply(
-                `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
+          ꪜᴏxʙᴏᴛ
+            .magfetch(
+              ꪜᴏxʙᴏᴛ,
+              "https://magneum.vercel.app/api/hentai?q=" + pfname
+            )
+            .then(async (response) => {
+              var mData = response.data;
+              console.log(mData);
+              if (!mData[0].meta.url) {
+                await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
+                  react: {
+                    text: "❌",
+                    key: ᴠᴏxᴄ.key,
+                  },
+                });
+                return ᴠᴏxᴄ.reply(
+                  `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌ Error* 
 > There has been an API Error. Please try again later.`
-              );
-            } else
-              await ꪜᴏxʙᴏᴛ.imgB(
-                ꪜᴏxʙᴏᴛ,
-                ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname}:*
+                );
+              } else
+                await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
+                  ᴠᴏxᴄ,
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname}:*
 
 > *Description:* ${mData[0].meta.description}
 > *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
-                mData[0].meta.url
-              );
-          });
+                  mData[0].meta.url
+                );
+            });
         }
       }
     );

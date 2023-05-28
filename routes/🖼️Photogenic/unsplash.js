@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -39,16 +39,18 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    ꪜᴏxʙᴏᴛ.magfetch(
-      ꪜᴏxʙᴏᴛ,
-      "https://magneum.vercel.app/api/unsplash?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
-    ).then(async (response) => {
-      var mData = response.data;
-      console.log(mData);
-      return await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ
+      .magfetch(
         ꪜᴏxʙᴏᴛ,
-        ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
+        "https://magneum.vercel.app/api/unsplash?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
+      )
+      .then(async (response) => {
+        var mData = response.data;
+        console.log(mData);
+        return await ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
+          ᴠᴏxᴄ,
+          `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *Topic*: ${mData.meta.topic}
 *Query*: ${mData.meta.query}
 *Width*: ${mData.meta.width}
@@ -56,9 +58,9 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 *Color*: ${mData.meta.color}
 *Description*: ${mData.meta.description || null}
 *Alt-Desc*: ${mData.meta.alt_description || null}`,
-        mData.meta.images[0]._raw
-      );
-    });
+          mData.meta.images[0]._raw
+        );
+      });
   } catch (error) {
     return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }

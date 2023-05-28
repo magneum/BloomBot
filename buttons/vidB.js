@@ -29,8 +29,7 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, 𝚌𝚘𝚗𝚝є𝚡𝚝,
           image: { url: νidē໐ },
           caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer:
-            "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
@@ -66,8 +65,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: νidē໐ },
           caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer:
-            "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
@@ -98,8 +96,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           image: { url: νidē໐ },
           caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer:
-            "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
               buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,

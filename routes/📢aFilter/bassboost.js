@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -58,24 +58,26 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 > ${error}`);
           } else {
             var Thumb = await ꪜᴏxʙᴏᴛ.getBuffer("./src/ꪜᴏxʙᴏᴛ.jpg");
-            return await ꪜᴏxʙᴏᴛ.sendMessage(
-              ᴠᴏxᴄ.chat,
-              {
-                audio: ꪜᴏxʙᴏᴛ.fs.readFileSync(`${random}.mp3`),
-                contextInfo: {
-                  externalAdReply: {
-                    title: `*🎙️Filter:* _${pfname}_`,
-                    body: "ꪜᴏxʙᴏᴛ вσт ву mågneum™",
-                    mediaType: 2,
-                    thumbnail: Thumb,
-                    mediaUrl: one.url,
+            return await ꪜᴏxʙᴏᴛ
+              .sendMessage(
+                ᴠᴏxᴄ.chat,
+                {
+                  audio: ꪜᴏxʙᴏᴛ.fs.readFileSync(`${random}.mp3`),
+                  contextInfo: {
+                    externalAdReply: {
+                      title: `*🎙️Filter:* _${pfname}_`,
+                      body: "ꪜᴏxʙᴏᴛ вσт ву mågneum™",
+                      mediaType: 2,
+                      thumbnail: Thumb,
+                      mediaUrl: one.url,
+                    },
                   },
+                  mimetype: "audio/mpeg",
+                  fileName: `${one.title}.mp3`,
                 },
-                mimetype: "audio/mpeg",
-                fileName: `${one.title}.mp3`,
-              },
-              { quoted: ᴠᴏxᴄ }
-            ).then(ꪜᴏxʙᴏᴛ.fs.unlinkSync(`${random}.mp3`));
+                { quoted: ᴠᴏxᴄ }
+              )
+              .then(ꪜᴏxʙᴏᴛ.fs.unlinkSync(`${random}.mp3`));
           }
         }
       );

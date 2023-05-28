@@ -127,7 +127,7 @@ function showCommands(path) {
     }
   }
 }
-("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+
 var isRunning = false;
 function ignite(cFile) {
   if (isRunning) return;
@@ -174,4 +174,4 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
-ignite("index.js", "uptime");
+ignite("app/index.js", "uptime");

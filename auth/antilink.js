@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../global.js");
+require("../logger/global.js");
 exports.noLink = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ) => {
   let FetchCurrentGroupLink = await ꪜᴏxʙᴏᴛ.groupInviteCode(ᴠᴏxᴄ.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
@@ -26,11 +26,9 @@ exports.noLink = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ) => {
   );
   let isCurrentGroupLink = PresentGroupLink.test(ꪜᴏxʙᴏᴛ.budy);
   if (isGroupLink && !isCurrentGroupLink) {
-    await ꪜᴏxʙᴏᴛ.groupParticipantsUpdate(
-      ᴠᴏxᴄ.chat,
-      [ꪜᴏxʙᴏᴛ.sender],
-      "remove"
-    ).catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
+    await ꪜᴏxʙᴏᴛ
+      .groupParticipantsUpdate(ᴠᴏxᴄ.chat, [ꪜᴏxʙᴏᴛ.sender], "remove")
+      .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
     await ᴠᴏxᴄ.reply(
       `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *KryZen❌Anti-Link*
@@ -53,11 +51,9 @@ exports.noLink = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ) => {
     ꪜᴏxʙᴏᴛ.budy.includes("wa.me/") &&
     ꪜᴏxʙᴏᴛ.budy.includes("www.")
   ) {
-    await ꪜᴏxʙᴏᴛ.groupParticipantsUpdate(
-      ᴠᴏxᴄ.chat,
-      [ꪜᴏxʙᴏᴛ.sender],
-      "remove"
-    ).catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
+    await ꪜᴏxʙᴏᴛ
+      .groupParticipantsUpdate(ᴠᴏxᴄ.chat, [ꪜᴏxʙᴏᴛ.sender], "remove")
+      .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
     await ᴠᴏxᴄ.reply(
       `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname}_
 *KryZen❌Anti-Link*

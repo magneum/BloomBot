@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -39,16 +39,15 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    ꪜᴏxʙᴏᴛ.magfetch(
-      ꪜᴏxʙᴏᴛ,
-      `https://magneum.vercel.app/api/anime?q=${pfname}`
-    ).then(async (response) => {
-      var viper = response.data;
-      console.log(viper);
-      ꪜᴏxʙᴏᴛ.imgB(
-        ꪜᴏxʙᴏᴛ,
-        ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:* 
+    ꪜᴏxʙᴏᴛ
+      .magfetch(ꪜᴏxʙᴏᴛ, `https://magneum.vercel.app/api/anime?q=${pfname}`)
+      .then(async (response) => {
+        var viper = response.data;
+        console.log(viper);
+        ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
+          ᴠᴏxᴄ,
+          `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:* 
 MAL_ID: ${viper.meta.id_mal}
 TITLE: ${viper.meta.title}
 EN_TITLE: ${viper.meta.en_title}
@@ -76,9 +75,9 @@ SYNONYMS: ${viper.meta.synonyms}
 SYNOPSIS: ${viper.meta.synopsis}
 CHARACTERS: ${viper.meta.charaters}
 STAFF: ${viper.meta.staffs}`,
-        viper.meta.image
-      );
-    });
+          viper.meta.image
+        );
+      });
   } catch (error) {
     return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }

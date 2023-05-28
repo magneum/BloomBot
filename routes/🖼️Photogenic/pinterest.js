@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -39,24 +39,26 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    ꪜᴏxʙᴏᴛ.magfetch(
-      ꪜᴏxʙᴏᴛ,
-      "https://magneum.vercel.app/api/pinterest?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
-    ).then(async (response) => {
-      var mData = response.data;
-      console.log(mData);
-
-      var download =
-        mData.meta.links[Math.floor(Math.random() * mData.meta.links.length)];
-      return await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ
+      .magfetch(
         ꪜᴏxʙᴏᴛ,
-        ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
+        "https://magneum.vercel.app/api/pinterest?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
+      )
+      .then(async (response) => {
+        var mData = response.data;
+        console.log(mData);
+
+        var download =
+          mData.meta.links[Math.floor(Math.random() * mData.meta.links.length)];
+        return await ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
+          ᴠᴏxᴄ,
+          `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *Topic*: ${mData.meta.topic}
 *Query*: ${mData.meta.query}`,
-        download
-      );
-    });
+          download
+        );
+      });
   } catch (error) {
     return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }

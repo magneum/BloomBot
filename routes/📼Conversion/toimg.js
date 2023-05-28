@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -84,45 +84,47 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
             );
           }
 
-          return await ꪜᴏxʙᴏᴛ.sendMessage(
-            ᴠᴏxᴄ.chat,
-            {
-              image: ꪜᴏxʙᴏᴛ.fs.readFileSync(Found),
-              caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
+          return await ꪜᴏxʙᴏᴛ
+            .sendMessage(
+              ᴠᴏxᴄ.chat,
+              {
+                image: ꪜᴏxʙᴏᴛ.fs.readFileSync(Found),
+                caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${ᴠᴏxᴄ.chat.split("@")[0]}
 │║⦁ *📢Console:* ${ꪜᴏxʙᴏᴛ.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
 *🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*`,
-              footer: `*VLKYRE™ Bot By KRYKNZ*
+                footer: `*VLKYRE™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${ꪜᴏxʙᴏᴛ.ShowInfo}_
 _*⛺HomeLog:* ${ꪜᴏxʙᴏᴛ.ShowLogger}_`,
-              mentions: [ᴠᴏxᴄ.sender],
-              buttons: [
-                {
-                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Commands`,
-                  buttonText: {
-                    displayText: `${ꪜᴏxʙᴏᴛ.prefix}✈️Commands`,
+                mentions: [ᴠᴏxᴄ.sender],
+                buttons: [
+                  {
+                    buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Commands`,
+                    buttonText: {
+                      displayText: `${ꪜᴏxʙᴏᴛ.prefix}✈️Commands`,
+                    },
+                    type: 1,
                   },
-                  type: 1,
-                },
-                {
-                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Synthia`,
-                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}🛰️Synthia` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-            },
-            {
-              quoted: ᴠᴏxᴄ,
-            }
-          ).then(
-            ꪜᴏxʙᴏᴛ.fs.unlinkSync(Found),
-            ꪜᴏxʙᴏᴛ.fs.unlinkSync(random + ".png")
-          );
+                  {
+                    buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Synthia`,
+                    buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}🛰️Synthia` },
+                    type: 1,
+                  },
+                ],
+                headerType: 4,
+              },
+              {
+                quoted: ᴠᴏxᴄ,
+              }
+            )
+            .then(
+              ꪜᴏxʙᴏᴛ.fs.unlinkSync(Found),
+              ꪜᴏxʙᴏᴛ.fs.unlinkSync(random + ".png")
+            );
         }
       );
     } else {

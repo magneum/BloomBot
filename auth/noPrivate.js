@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../global.js");
+require("../logger/global.js");
 exports.noPrivate = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update) => {
   if (!ꪜᴏxʙᴏᴛ.isSudoWorker)
     await ꪜᴏxʙᴏᴛ.UserPrivate.findOne(
@@ -62,9 +62,9 @@ exports.noPrivate = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update) => {
           await user
             .delete()
             .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
-          return await ꪜᴏxʙᴏᴛ.updateBlockStatus(ᴠᴏxᴄ.sender, "block").catch(
-            (error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error)
-          );
+          return await ꪜᴏxʙᴏᴛ
+            .updateBlockStatus(ᴠᴏxᴄ.sender, "block")
+            .catch((error) => ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error));
         }
       }
     );

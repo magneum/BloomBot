@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -80,7 +80,8 @@ module.exports = async (
     }
 
     if (ꪜᴏxʙᴏᴛ.args[0] === "open") {
-      await ꪜᴏxʙᴏᴛ.groupSettingUpdate(ᴠᴏxᴄ.chat, "not_announcement")
+      await ꪜᴏxʙᴏᴛ
+        .groupSettingUpdate(ᴠᴏxᴄ.chat, "not_announcement")
         .then(
           async (res) =>
             await ꪜᴏxʙᴏᴛ.imgB(
@@ -100,7 +101,8 @@ module.exports = async (
           )
         );
     } else if (ꪜᴏxʙᴏᴛ.args[0] === "close") {
-      await ꪜᴏxʙᴏᴛ.groupSettingUpdate(ᴠᴏxᴄ.chat, "announcement")
+      await ꪜᴏxʙᴏᴛ
+        .groupSettingUpdate(ᴠᴏxᴄ.chat, "announcement")
         .then(
           async (res) =>
             await ꪜᴏxʙᴏᴛ.imgB(

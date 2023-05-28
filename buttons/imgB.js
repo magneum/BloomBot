@@ -22,33 +22,35 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, 𝚌𝚘𝚗𝚝є𝚡𝚝,
       ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo != null
         ? ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    await ꪜᴏxʙᴏᴛ.sendMessage(
-      ᴠᴏxᴄ.chat,
-      {
-        image: { url: imåge },
-        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
+    await ꪜᴏxʙᴏᴛ
+      .sendMessage(
+        ᴠᴏxᴄ.chat,
+        {
+          image: { url: imåge },
+          caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
-        buttons: [
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        mentions: [ᴠᴏxᴄ.sender, receiver],
-      },
-      {
-        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
-        quoted: ᴠᴏxᴄ,
-      }
-    ).catch((e) => console.log(e));
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          buttons: [
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [ᴠᴏxᴄ.sender, receiver],
+        },
+        {
+          contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
+          quoted: ᴠᴏxᴄ,
+        }
+      )
+      .catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (ꪜᴏxʙᴏᴛ.mentionByTag) {
     var receiver =
@@ -56,61 +58,65 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
       ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo != null
         ? ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
-    await ꪜᴏxʙᴏᴛ.sendMessage(
-      ᴠᴏxᴄ.chat,
-      {
-        image: { url: imåge },
-        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
+    await ꪜᴏxʙᴏᴛ
+      .sendMessage(
+        ᴠᴏxᴄ.chat,
+        {
+          image: { url: imåge },
+          caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
-        buttons: [
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        mentions: [ᴠᴏxᴄ.sender, receiver],
-      },
-      {
-        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
-        quoted: ᴠᴏxᴄ,
-      }
-    ).catch((e) => console.log(e));
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          buttons: [
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [ᴠᴏxᴄ.sender, receiver],
+        },
+        {
+          contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender, receiver] },
+          quoted: ᴠᴏxᴄ,
+        }
+      )
+      .catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return await ꪜᴏxʙᴏᴛ.sendMessage(
-      ᴠᴏxᴄ.chat,
-      {
-        image: { url: imåge },
-        caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
+    return await ꪜᴏxʙᴏᴛ
+      .sendMessage(
+        ᴠᴏxᴄ.chat,
+        {
+          image: { url: imåge },
+          caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
-        buttons: [
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
-            buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        mentions: [ᴠᴏxᴄ.sender],
-      },
-      {
-        contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender] },
-        quoted: ᴠᴏxᴄ,
-      }
-    ).catch((e) => console.log(e));
+          footer: "*ꪜoxbot by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
+          buttons: [
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [ᴠᴏxᴄ.sender],
+        },
+        {
+          contextInfo: { mentionedJid: [ᴠᴏxᴄ.sender] },
+          quoted: ᴠᴏxᴄ,
+        }
+      )
+      .catch((e) => console.log(e));
   }
 };

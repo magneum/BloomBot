@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -65,43 +65,45 @@ module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
 > _${ꪜᴏxʙᴏᴛ.prefix}${pfname} text | language-code_`
       );
     } else {
-      ꪜᴏxʙᴏᴛ.axios({
-        method: "get",
-        url:
-          "https://magneum.vercel.app/api/text2speech?q=" +
-          ꪜᴏxʙᴏᴛ.args.join(" "),
-        headers: {
-          accept: "*/*",
-          "accept-language": "en-US,en;q=0.9",
-          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        },
-      }).then(async (response) => {
-        var mData = response.data;
-        console.log(mData);
-        return await ꪜᴏxʙᴏᴛ.sendMessage(
-          ᴠᴏxᴄ.chat,
-          {
-            audio: { url: mData.meta.url },
-            mimetype: "audio/mpeg",
-            fileName: "TalkToSpeech" + ".mp3",
-            headerType: 4,
-            contextInfo: {
-              externalAdReply: {
-                title: "📢Talk To Speech",
-                body: "❣️Made by xhadr.",
-                renderLargerThumbnail: true,
-                mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
-                mediaType: 1,
-                thumbnail: await ꪜᴏxʙᴏᴛ.getBuffer(
-                  "https://i.postimg.cc/qBSnwdzq/White.png"
-                ),
-                sourceUrl: "https://bit.ly/xhadr",
+      ꪜᴏxʙᴏᴛ
+        .axios({
+          method: "get",
+          url:
+            "https://magneum.vercel.app/api/text2speech?q=" +
+            ꪜᴏxʙᴏᴛ.args.join(" "),
+          headers: {
+            accept: "*/*",
+            "accept-language": "en-US,en;q=0.9",
+            "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+          },
+        })
+        .then(async (response) => {
+          var mData = response.data;
+          console.log(mData);
+          return await ꪜᴏxʙᴏᴛ.sendMessage(
+            ᴠᴏxᴄ.chat,
+            {
+              audio: { url: mData.meta.url },
+              mimetype: "audio/mpeg",
+              fileName: "TalkToSpeech" + ".mp3",
+              headerType: 4,
+              contextInfo: {
+                externalAdReply: {
+                  title: "📢Talk To Speech",
+                  body: "❣️Made by xhadr.",
+                  renderLargerThumbnail: true,
+                  mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
+                  mediaType: 1,
+                  thumbnail: await ꪜᴏxʙᴏᴛ.getBuffer(
+                    "https://i.postimg.cc/qBSnwdzq/White.png"
+                  ),
+                  sourceUrl: "https://bit.ly/xhadr",
+                },
               },
             },
-          },
-          { quoted: ᴠᴏxᴄ }
-        );
-      });
+            { quoted: ᴠᴏxᴄ }
+          );
+        });
     }
   } catch (error) {
     return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);

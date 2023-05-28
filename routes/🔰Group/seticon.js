@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 DEVELOPERS: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../global.js");
+require("../../logger/global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
@@ -108,7 +108,8 @@ module.exports = async (
     }
 
     let media = await ꪜᴏxʙᴏᴛ.downloadAndSaveMediaMessage(ꪜᴏxʙᴏᴛ.quoted);
-    await ꪜᴏxʙᴏᴛ.updateProfilePicture(ᴠᴏxᴄ.chat, { url: media })
+    await ꪜᴏxʙᴏᴛ
+      .updateProfilePicture(ᴠᴏxᴄ.chat, { url: media })
       .then(
         ꪜᴏxʙᴏᴛ.imgB(
           ꪜᴏxʙᴏᴛ,
