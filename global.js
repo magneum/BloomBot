@@ -18,6 +18,7 @@ if (fs.existsSync(".env")) {
 }
 
 var sudo = process.env.sudo;
+global.NODE_ENV = process.env.NODE_ENV;
 if (!sudo) sudo = "918436686758,917430922909";
 global.upVersion = process.env.upVersion;
 global.ShowLogger = process.env.ShowLogger;
@@ -98,3 +99,4 @@ global.DATABASE =
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
 global.MONGO_URL = process.env.MONGO_URL;
+global.REDIS_URL = process.env.REDIS_URL;
