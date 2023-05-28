@@ -44,7 +44,7 @@ var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("../database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("../auth/db");
+var { useRemoteFileAuthState } = require("../auth/Database");
 var {
   νkmake,
   fetchJson,
@@ -157,7 +157,8 @@ async function magneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting") logger.info("🐲: Connecting to WhatsApp...▶");
+    if (connection == "connecting")
+      logger.info("🐲: Connecting to WhatsApp...▶");
     else if (connection == "open") logger.info("🐲: Login successful! ▶");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
