@@ -40,7 +40,6 @@ var path = require("path");
 var pino = require("pino");
 var express = require("express");
 var monGoose = require("mongoose");
-var git = require("simple-git")();
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("../database/dashboard");
