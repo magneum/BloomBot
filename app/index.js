@@ -1,32 +1,32 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
-//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-const logger = require("../logger");
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+var logs = require("../logs");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  logs.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../logger/global.js");
+require("../logs/global.js");
 var {
   default: νℓкуяє_вσт,
   DisconnectReason,
-  generateForwardMessageContent,
+  generateforwardMessageContent,
   prepareWAMessageMedia,
   generateWAMessageFromContent,
   downloadContentFromMessage,
@@ -40,12 +40,12 @@ var path = require("path");
 var pino = require("pino");
 var express = require("express");
 var monGoose = require("mongoose");
-const git = require("simple-git")();
+var git = require("simple-git")();
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var dboard = require("../database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("../auth/Database");
+var { useRemoteFileAuthState } = require("../auth/db");
 var {
   νkmake,
   fetchJson,
@@ -53,29 +53,27 @@ var {
   getSizeMedia,
 } = require("../server/myfunc");
 
-async function mågneum() {
+async function magneum() {
   await monGoose
     .connect(MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
     })
     .catch((error) => {
-      logger.error("❌: Unable to Connect with Mongoose.");
-      logger.error(error);
+      logs.error("❌: Unable to Connect with Mongoose.");
+      logs.error(error);
     })
-    .then(logger.info("🐲: Connected with Mongoose."));
+    .then(logs.info("🐲: Connected with Mongoose."));
   var νℓpage = express();
   var sequelize = DATABASE;
   var store = makeInMemoryStore({
-    logger: pino().child({ level: "silent", stream: "store" }),
+    logs: pino().child({ level: "silent", stream: "store" }),
   });
   var getVersionWaweb = () => {
     var version;
     try {
       var a = fetchJson(
-        "https://web.whatsapp.com/check-update?version=1&platform=web"
+        "https://web.voxapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
     } catch {
@@ -84,33 +82,6 @@ async function mågneum() {
     return version;
   };
   var msgRetryCounterMap = MessageRetryMap;
-  const gitPull = async () => {
-    await git.fetch();
-    let newCommits = await git.log(["magneum..origin/magneum"]);
-    if (newCommits.total) {
-      logger.info("🐲: Auto Updating...");
-      require("child_process").exec(
-        "git stash push --include-untracked && git stash drop"
-      );
-      await git.pull("origin", "magneum", (err, update) => {
-        if (update && update.summary.changes) {
-          if (update.files.includes("package.json"))
-            require("child_process")
-              .exec("yarn install --ignore-engines")
-              .stderr.pipe(process.stderr);
-          console.clear();
-          logger.info("🐲: Updated the bot with latest changes.");
-          logger.info(
-            "🐲: Please restart the bot manually if it doesn't auto-restart."
-          );
-          process.exit(0);
-        } else if (err) {
-          logger.error("❌: Could not pull latest changes!");
-          logger.info(err);
-        }
-      });
-    }
-  };
 
   var urlencodedParser = bodyParser.urlencoded({ extended: false });
   νℓpage.engine("html", require("ejs").renderFile);
@@ -120,20 +91,20 @@ async function mågneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/voxbot", (request, response) => {
-    response.sendFile("views/voxbot.html", { root: __dirname });
+  νℓpage.get("/WhatsBot", (request, response) => {
+    response.sendFile("views/WhatsBot.html", { root: __dirname });
   });
-  νℓpage.post("/voxbot", urlencodedParser, (request, response) => {
+  νℓpage.post("/WhatsBot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
     );
     dboard.findOne(
       {
-        ID: phoneNum + "@s.whatsapp.net",
+        Id: phoneNum + "@s.voxapp.net",
       },
       async (error, uBoard) => {
-        if (error) return logger.error("❌:", error);
+        if (error) return logs.error("❌:", error);
         if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
         response.render(__dirname + "/views/dashboard.html", {
           uBoard: uBoard,
@@ -141,17 +112,17 @@ async function mågneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("VLKYRE: started at port: " + PORT));
+  νℓpage.listen(PORT, logs.info("VLKYRE: started at port: " + PORT));
 
   await sequelize.sync();
-  const { state, saveCreds } = await useRemoteFileAuthState();
-  var ꪜᴏxʙᴏᴛ = νℓкуяє_вσт({
+  var { state, saveCreds } = await useRemoteFileAuthState();
+  var WhatsBot = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
-    logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "voxbot-by-magneum", "Chrome", "4.0.0"],
+    logs: pino({ level: "silent" }),
+    browser: [process.env.deployer || "WhatsBot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -160,7 +131,7 @@ async function mågneum() {
     generateHighQualityLinkPreview: true,
     getMessage: async (key) => {
       if (store) {
-        const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
+        var msg = await store.loadMessage(key.remoteJid, key.id, undefined);
         return msg.message || undefined;
       }
       return {
@@ -168,30 +139,18 @@ async function mågneum() {
       };
     },
   });
-  store.bind(ꪜᴏxʙᴏᴛ.ev);
+  store.bind(WhatsBot.ev);
 
-  // ꪜᴏxʙᴏᴛ.ev.on("creds.update", (update) =>
-  // require("./events/creds.update")(update)
-  // );
-  // ꪜᴏxʙᴏᴛ.ev.on("connection.update", (update) =>
-  // require("./events/connection.update")(ꪜᴏxʙᴏᴛ, update, store, mågneum)
-  // );
-  // ꪜᴏxʙᴏᴛ.ev.on("messages.upsert", (update) =>
-  // require("./events/messages.upsert")(ꪜᴏxʙᴏᴛ, update, store)
-  // );
-  // ꪜᴏxʙᴏᴛ.ev.on("group-participants.update", (update) =>
-  // require("./events/group-participants.update")(ꪜᴏxʙᴏᴛ, update, store)
-  // );
-  // ꪜᴏxʙᴏᴛ.ev.on("contacts.update", (update) =>
-  // require("./events/contacts.update")(ꪜᴏxʙᴏᴛ, update, store)
-  // );
-  // ꪜᴏxʙᴏᴛ.ws.on("CB:call", (update) =>
-  // require("./events/cb_call")(ꪜᴏxʙᴏᴛ, update, store)
-  // );
+  // WhatsBot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
+  // WhatsBot.ws.on("CB:call", (update) => require("./events/cb_call")(WhatsBot, update, store));
+  // WhatsBot.ev.on("contacts.update", (update) => require("./events/contacts.update")(WhatsBot, update, store));
+  // WhatsBot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(WhatsBot, update, store));
+  // WhatsBot.ev.on("connection.update", (update) => require("./events/connection.update")(WhatsBot, update, store, magneum));
+  // WhatsBot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(WhatsBot, update, store));
 
-  ꪜᴏxʙᴏᴛ.ev.on("creds.update", async (update) => await saveCreds());
-  ꪜᴏxʙᴏᴛ.ev.on("connection.update", async (update) => {
-    const {
+  WhatsBot.ev.on("creds.update", async (update) => await saveCreds());
+  WhatsBot.ev.on("connection.update", async (update) => {
+    var {
       lastDisconnect,
       connection,
       isNewLogin,
@@ -199,53 +158,52 @@ async function mågneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting")
-      logger.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logger.info("🐲: Login successful! ▶");
+    if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
+    else if (connection == "open") logs.info("🐲: Login successful! ▶");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        logger.error(
+        logs.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
-        ꪜᴏxʙᴏᴛ.logout();
+        WhatsBot.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
-        await mågneum();
+        logs.error("❌: Connection closed, reconnecting....");
+        await magneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
-        await mågneum();
+        logs.error("❌: Connection Lost from Server, reconnecting...");
+        await magneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
+        logs.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
-        ꪜᴏxʙᴏᴛ.logout();
+        WhatsBot.logout();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
-        await mågneum();
+        logs.error("❌: Restart Required, Restarting...");
+        await magneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
-        await mågneum();
+        logs.error("❌: Connection TimedOut, Reconnecting...");
+        await magneum();
       } else
-        ꪜᴏxʙᴏᴛ.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+        WhatsBot.end(
+          logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
-    } else if (isOnline === true) logger.debug("🐲: Online.");
-    else if (isOnline === false) logger.error("🐲: Offine.");
+    } else if (isOnline === true) logs.debug("🐲: Online.");
+    else if (isOnline === false) logs.error("🐲: Offine.");
     else if (receivedPendingNotifications === true)
-      logger.debug("🐲: Received Pending Notifications.");
+      logs.debug("🐲: Received Pending Notifications.");
     else if (receivedPendingNotifications === false)
-      logger.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logger.debug("🐲: New Login.");
-    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
-    else logger.info("🐲: Connection...", update);
+      logs.error("🐲: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logs.debug("🐲: New Login.");
+    else if (isNewLogin === false) logs.error("🐲: Not New Login.");
+    else if (qr) logs.info("Qr: "), console.log(qr);
+    else logs.info("🐲: Connection...", update);
   });
 
-  ꪜᴏxʙᴏᴛ.ev.on("messages.upsert", async (update) => {
+  WhatsBot.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
     νTēxt.message =
@@ -253,47 +211,47 @@ async function mågneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!ꪜᴏxʙᴏᴛ.public && !νTēxt.key.fromMe && update.type === "notify") return;
+    if (!WhatsBot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    ᴠᴏxᴄ = await νkmake(ꪜᴏxʙᴏᴛ, νTēxt, store);
-    await require("../server/router.js")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
+    voxchat = await νkmake(WhatsBot, νTēxt, store);
+    await require("../server/router.js")(WhatsBot, voxchat, update, store);
   });
 
-  ꪜᴏxʙᴏᴛ.ev.on("group-participants.update", async (update) => {
-    let metadata = await ꪜᴏxʙᴏᴛ.groupMetadata(update.id);
+  WhatsBot.ev.on("group-participants.update", async (update) => {
+    let metadata = await WhatsBot.groupMetadata(update.id);
     let participants = update.participants;
-    logger.info(update);
+    logs.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await ꪜᴏxʙᴏᴛ.profilePictureUrl(sperson, "image");
+        imåge = await WhatsBot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./src/ꪜᴏxʙᴏᴛ.jpg";
+        imåge = "./public/WhatsBot.jpg";
       }
 
       if (update.action == "add") {
-        return await ꪜᴏxʙᴏᴛ
+        return await WhatsBot
           .sendMessage(
             update.id,
             {
               image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-  *📢ID:* ${update.id}
+              caption: `*🕊️You:* @${sperson.replace(/['@s voxapp.net']/g, "")}
+  *📢Id:* ${update.id}
 
   > Firstly Welcome.
   > I am Synthia Whatsapp Bot.
   > To Start using type .help or press below buttons.`,
               footer:
-                "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+                "*VLkyre™ By WhatsBot*\n*💻HomePage:* https://bit.ly/magneum",
               buttons: [
                 {
-                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
-                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+                  buttonId: `${WhatsBot.prefix}Dashboard`,
+                  buttonText: { displayText: `${WhatsBot.prefix}Dashboard` },
                   type: 1,
                 },
                 {
-                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Synthia`,
-                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Synthia` },
+                  buttonId: `${WhatsBot.prefix}Synthia`,
+                  buttonText: { displayText: `${WhatsBot.prefix}Synthia` },
                   type: 1,
                 },
               ],
@@ -304,7 +262,7 @@ async function mågneum() {
               contextInfo: { mentionedJid: [sperson] },
             }
           )
-          .catch((error) => logger.error(error));
+          .catch((error) => logs.error(error));
       } else if (update.action == "remove") {
         return;
       } else {
@@ -313,13 +271,13 @@ async function mågneum() {
     }
   });
 
-  ꪜᴏxʙᴏᴛ.ws.on("CB:call", async (update) => {
-    const sleep = async (ms) => {
+  WhatsBot.ws.on("CB:call", async (update) => {
+    var sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    let person = await ꪜᴏxʙᴏᴛ.sendContact(callerId, global.owner);
-    ꪜᴏxʙᴏᴛ.sendMessage(
+    let person = await WhatsBot.sendContact(callerId, global.owner);
+    WhatsBot.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -327,18 +285,18 @@ async function mågneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await ꪜᴏxʙᴏᴛ.updateBlockStatus(callerId, "block");
+    await WhatsBot.updateBlockStatus(callerId, "block");
   });
 
-  ꪜᴏxʙᴏᴛ.ev.on("contacts.update", async (update) => {
+  WhatsBot.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = ꪜᴏxʙᴏᴛ.decodeJid(contact.id);
+      let jid = WhatsBot.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
   });
 
-  ꪜᴏxʙᴏᴛ.decodeJid = (jid) => {
+  WhatsBot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -348,55 +306,55 @@ async function mågneum() {
       );
     } else return jid;
   };
-  ꪜᴏxʙᴏᴛ.getName = (jid, withoutContact = false) => {
-    id = ꪜᴏxʙᴏᴛ.decodeJid(jid);
-    withoutContact = ꪜᴏxʙᴏᴛ.withoutContact || withoutContact;
+  WhatsBot.getName = (jid, withoutContact = false) => {
+    id = WhatsBot.decodeJid(jid);
+    withoutContact = WhatsBot.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = ꪜᴏxʙᴏᴛ.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = WhatsBot.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
-            PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
+            PhoneNumber("+" + id.replace("@s.voxapp.net", "")).getNumber(
               "international"
             )
         );
       });
     else
       v =
-        id === "0@s.whatsapp.net"
+        id === "0@s.voxapp.net"
           ? {
               id,
               name: "WhatsApp",
             }
-          : id === ꪜᴏxʙᴏᴛ.decodeJid(ꪜᴏxʙᴏᴛ.user.id)
-          ? ꪜᴏxʙᴏᴛ.user
+          : id === WhatsBot.decodeJid(WhatsBot.user.id)
+          ? WhatsBot.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
       v.subject ||
       v.verifiedName ||
-      PhoneNumber("+" + jid.replace("@s.whatsapp.net", "")).getNumber(
+      PhoneNumber("+" + jid.replace("@s.voxapp.net", "")).getNumber(
         "international"
       )
     );
   };
 
-  ꪜᴏxʙᴏᴛ.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  WhatsBot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await ꪜᴏxʙᴏᴛ.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await ꪜᴏxʙᴏᴛ.getName(
-          i + "@s.whatsapp.net"
-        )}\nFN:${await ꪜᴏxʙᴏᴛ.getName(
-          i + "@s.whatsapp.net"
+        displayName: await WhatsBot.getName(i + "@s.voxapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await WhatsBot.getName(
+          i + "@s.voxapp.net"
+        )}\nFN:${await WhatsBot.getName(
+          i + "@s.voxapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    ꪜᴏxʙᴏᴛ.sendMessage(
+    WhatsBot.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -406,10 +364,10 @@ async function mågneum() {
     );
   };
 
-  ꪜᴏxʙᴏᴛ.public = true;
-  ꪜᴏxʙᴏᴛ.serializeM = (ᴠᴏxᴄ) => νkmake(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, store);
+  WhatsBot.public = true;
+  WhatsBot.serializeM = (voxchat) => νkmake(WhatsBot, voxchat, store);
 
-  ꪜᴏxʙᴏᴛ.send5ButImg = async (
+  WhatsBot.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -419,10 +377,10 @@ async function mågneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: ꪜᴏxʙᴏᴛ.waUploadToServer }
+      { upload: WhatsBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      ᴠᴏxᴄ.chat,
+      voxchat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
@@ -435,12 +393,12 @@ async function mågneum() {
       }),
       options
     );
-    ꪜᴏxʙᴏᴛ.relayMessage(jid, template.message, {
+    WhatsBot.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  ꪜᴏxʙᴏᴛ.sendButtonText = (
+  WhatsBot.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -455,13 +413,13 @@ async function mågneum() {
       headerType: 2,
       ...options,
     };
-    ꪜᴏxʙᴏᴛ.sendMessage(jid, buttonMessage, { quoted, ...options });
+    WhatsBot.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  ꪜᴏxʙᴏᴛ.sendText = (jid, text, quoted = "", options) =>
-    ꪜᴏxʙᴏᴛ.sendMessage(jid, { text: text, ...options }, { quoted });
+  WhatsBot.sendText = (jid, text, quoted = "", options) =>
+    WhatsBot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  ꪜᴏxʙᴏᴛ.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  WhatsBot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -471,14 +429,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ꪜᴏxʙᴏᴛ.sendMessage(
+    return await WhatsBot.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  ꪜᴏxʙᴏᴛ.sendVideo = async (
+  WhatsBot.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -495,14 +453,14 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ꪜᴏxʙᴏᴛ.sendMessage(
+    return await WhatsBot.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  ꪜᴏxʙᴏᴛ.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  WhatsBot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -512,21 +470,21 @@ async function mågneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await ꪜᴏxʙᴏᴛ.sendMessage(
+    return await WhatsBot.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  ꪜᴏxʙᴏᴛ.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    ꪜᴏxʙᴏᴛ.sendMessage(
+  WhatsBot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    WhatsBot.sendMessage(
       jid,
       {
         text: text,
         contextInfo: {
           mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
-            (v) => v[1] + "@s.whatsapp.net"
+            (v) => v[1] + "@s.voxapp.net"
           ),
         },
         ...options,
@@ -534,7 +492,7 @@ async function mågneum() {
       { quoted }
     );
 
-  ꪜᴏxʙᴏᴛ.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  WhatsBot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -551,7 +509,7 @@ async function mågneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await ꪜᴏxʙᴏᴛ.sendMessage(
+    await WhatsBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -559,7 +517,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ꪜᴏxʙᴏᴛ.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  WhatsBot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -576,7 +534,7 @@ async function mågneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await ꪜᴏxʙᴏᴛ.sendMessage(
+    await WhatsBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -584,7 +542,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ꪜᴏxʙᴏᴛ.downloadAndSaveMediaMessage = async (
+  WhatsBot.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -606,7 +564,7 @@ async function mågneum() {
     return trueFileName;
   };
 
-  ꪜᴏxʙᴏᴛ.downloadMediaMessage = async (message) => {
+  WhatsBot.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -620,7 +578,7 @@ async function mågneum() {
     return buffer;
   };
 
-  ꪜᴏxʙᴏᴛ.sendMedia = async (
+  WhatsBot.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -628,7 +586,7 @@ async function mågneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await ꪜᴏxʙᴏᴛ.getFile(path, true);
+    let types = await WhatsBot.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -656,7 +614,7 @@ async function mågneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await ꪜᴏxʙᴏᴛ.sendMessage(
+    await WhatsBot.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -664,10 +622,10 @@ async function mågneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  ꪜᴏxʙᴏᴛ.copyNForward = async (
+  WhatsBot.copyNforward = async (
     jid,
     message,
-    forceForward = false,
+    forceforward = false,
     options = {}
   ) => {
     let vtype;
@@ -689,7 +647,7 @@ async function mågneum() {
     }
 
     let mtype = Object.keys(message.message)[0];
-    let content = await generateForwardMessageContent(message, forceForward);
+    let content = await generateforwardMessageContent(message, forceforward);
     let ctype = Object.keys(content)[0];
     let context = {};
     if (mtype != "conversation") context = message.message[mtype].contextInfo;
@@ -715,17 +673,17 @@ async function mågneum() {
           }
         : {}
     );
-    await ꪜᴏxʙᴏᴛ.relayMessage(jid, waMessage.message, {
+    await WhatsBot.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  ꪜᴏxʙᴏᴛ.cMod = (
+  WhatsBot.cMod = (
     jid,
     copy,
     text = "",
-    sender = ꪜᴏxʙᴏᴛ.user.id,
+    sender = WhatsBot.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -749,17 +707,17 @@ async function mågneum() {
       sender = copy.key.participant = sender || copy.key.participant;
     else if (copy.key.participant)
       sender = copy.key.participant = sender || copy.key.participant;
-    if (copy.key.remoteJid.includes("@s.whatsapp.net"))
+    if (copy.key.remoteJid.includes("@s.voxapp.net"))
       sender = sender || copy.key.remoteJid;
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === ꪜᴏxʙᴏᴛ.user.id;
+    copy.key.fromMe = sender === WhatsBot.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  ꪜᴏxʙᴏᴛ.getFile = async (PATH, save) => {
+  WhatsBot.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -802,10 +760,9 @@ async function mågneum() {
       "💡maker",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await ꪜᴏxʙᴏᴛ.updateProfileStatus(
-      "Feeling: " + __Feeling + "  :voxbot by magneum"
+    await WhatsBot.updateProfileStatus(
+      "Feeling: " + __Feeling + "  :WhatsBot by magneum"
     );
-    await gitPull();
   }, 1000 * 10);
 }
-mågneum().catch((error) => logger.error(error));
+magneum().catch((error) => logs.error(error));

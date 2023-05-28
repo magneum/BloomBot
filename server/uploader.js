@@ -1,30 +1,30 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
-//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 let fs = require("fs");
 let axios = require("axios");
 let cheerio = require("cheerio");
-let BodyForm = require("form-data");
+let Bodyform = require("form-data");
 
 function TelegraPh(Path) {
   return new Promise(async (resolve, reject) => {
     if (!fs.existsSync(Path)) return reject(new Error("File not Found"));
     try {
-      let form = new BodyForm();
+      let form = new Bodyform();
       form.append("file", fs.createReadStream(Path));
       let data = await axios({
         url: "https://telegra.ph/upload",
@@ -34,7 +34,7 @@ function TelegraPh(Path) {
         },
         data: form,
       });
-      return resolve("https://telegra.ph" + data.data[0].src);
+      return resolve("https://telegra.ph" + data.data[0].public);
     } catch (err) {
       return reject(new Error(String(err)));
     }
@@ -43,7 +43,7 @@ function TelegraPh(Path) {
 
 async function UploadFileUgu(input) {
   return new Promise(async (resolve, reject) => {
-    let form = new BodyForm();
+    let form = new Bodyform();
     form.append("files[]", fs.createReadStream(input));
     await axios({
       url: "https://uguu.se/upload.php",
@@ -64,7 +64,7 @@ async function UploadFileUgu(input) {
 
 function webp2mp4File(path) {
   return new Promise((resolve, reject) => {
-    let form = new BodyForm();
+    let form = new Bodyform();
     form.append("new-image-url", "");
     form.append("new-image", fs.createReadStream(path));
     axios({
@@ -76,24 +76,24 @@ function webp2mp4File(path) {
       },
     })
       .then(({ data }) => {
-        let bodyFormThen = new BodyForm();
+        let bodyformThen = new Bodyform();
         let $ = cheerio.load(data);
         let file = $('input[name="file"]').attr("value");
-        bodyFormThen.append("file", file);
-        bodyFormThen.append("convert", "Convert WebP to MP4!");
+        bodyformThen.append("file", file);
+        bodyformThen.append("convert", "Convert WebP to MP4!");
         axios({
           method: "post",
           url: "https://ezgif.com/webp-to-mp4/" + file,
-          data: bodyFormThen,
+          data: bodyformThen,
           headers: {
-            "Content-Type": `multipart/form-data; boundary=${bodyFormThen._boundary}`,
+            "Content-Type": `multipart/form-data; boundary=${bodyformThen._boundary}`,
           },
         })
           .then(({ data }) => {
             let $ = cheerio.load(data);
             let result =
               "https:" +
-              $("div#output > p.outfile > video > source").attr("src");
+              $("div#output > p.outfile > video > source").attr("public");
             resolve({
               status: true,
               message: "Created By MRHRTZ",
