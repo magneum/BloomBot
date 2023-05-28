@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../logs/global.js");
+require("../logger/global.js");
 exports.noLink = async (whatsbot, whatschat) => {
   let FetchCurrentGroupLink = await whatsbot.groupInviteCode(whatschat.chat);
   let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;

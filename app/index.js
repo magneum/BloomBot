@@ -15,14 +15,14 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-var logs = require("../logs");
+var logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logs.error(error);
+  logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../logs/global.js");
+require("../logger/global.js");
 var {
   default: νℓкуяє_вσт,
   DisconnectReason,
@@ -59,14 +59,14 @@ async function magneum() {
       useUnifiedTopology: true,
     })
     .catch((error) => {
-      logs.error("❌: Unable to Connect with Mongoose.");
-      logs.error(error);
+      logger.error("❌: Unable to Connect with Mongoose.");
+      logger.error(error);
     })
-    .then(logs.info("🐲: Connected with Mongoose."));
+    .then(logger.info("🐲: Connected with Mongoose."));
   var νℓpage = express();
   var sequelize = DATABASE;
   var store = makeInMemoryStore({
-    logs: pino().child({ level: "silent", stream: "store" }),
+    logger: pino().child({ level: "silent", stream: "store" }),
   });
   var getVersionWaweb = () => {
     var version;
@@ -103,7 +103,7 @@ async function magneum() {
         Id: phoneNum + "@s.whatsapp.net",
       },
       async (error, uBoard) => {
-        if (error) return logs.error("❌:", error);
+        if (error) return logger.error("❌:", error);
         if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
         response.render(__dirname + "/views/dashboard.html", {
           uBoard: uBoard,
@@ -111,7 +111,7 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logs.info("whatsbot: started at port: " + PORT));
+  νℓpage.listen(PORT, logger.info("whatsbot: started at port: " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
@@ -120,7 +120,7 @@ async function magneum() {
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
-    logs: pino({ level: "silent" }),
+    logger: pino({ level: "silent" }),
     browser: [process.env.deployer || "whatsbot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
@@ -157,49 +157,49 @@ async function magneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logs.info("🐲: Login successful! ▶");
+    if (connection == "connecting") logger.info("🐲: Connecting to WhatsApp...▶");
+    else if (connection == "open") logger.info("🐲: Login successful! ▶");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        logs.error(
+        logger.error(
           `❌: Bad Session File, Please Delete Session and Scan Again`
         );
         await magneum();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logs.error("❌: Connection closed, reconnecting....");
+        logger.error("❌: Connection closed, reconnecting....");
         await magneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logs.error("❌: Connection Lost from Server, reconnecting...");
+        logger.error("❌: Connection Lost from Server, reconnecting...");
         await magneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        logs.error(
+        logger.error(
           "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
         await magneum();
       } else if (reason === DisconnectReason.loggedOut) {
-        logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logs.error("❌: Restart Required, Restarting...");
+        logger.error("❌: Restart Required, Restarting...");
         await magneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logs.error("❌: Connection TimedOut, Reconnecting...");
+        logger.error("❌: Connection TimedOut, Reconnecting...");
         await magneum();
       } else
         whatsbot.end(
-          logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
         );
-    } else if (isOnline === true) logs.debug("🐲: Online.");
-    else if (isOnline === false) logs.error("🐲: Offine.");
+    } else if (isOnline === true) logger.debug("🐲: Online.");
+    else if (isOnline === false) logger.error("🐲: Offine.");
     else if (receivedPendingNotifications === true)
-      logs.debug("🐲: Received Pending Notifications.");
+      logger.debug("🐲: Received Pending Notifications.");
     else if (receivedPendingNotifications === false)
-      logs.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logs.debug("🐲: New Login.");
-    else if (isNewLogin === false) logs.error("🐲: Not New Login.");
-    else if (qr) logs.info("Qr: "), console.log(qr);
-    else logs.info("🐲: Connection...", update);
+      logger.error("🐲: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logger.debug("🐲: New Login.");
+    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+    else if (qr) logger.info("Qr: "), console.log(qr);
+    else logger.info("🐲: Connection...", update);
   });
 
   whatsbot.ev.on("messages.upsert", async (update) => {
@@ -220,7 +220,7 @@ async function magneum() {
   whatsbot.ev.on("group-participants.update", async (update) => {
     let metadata = await whatsbot.groupMetadata(update.id);
     let participants = update.participants;
-    logs.info(update);
+    logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
@@ -262,7 +262,7 @@ async function magneum() {
               contextInfo: { mentionedJid: [sperson] },
             }
           )
-          .catch((error) => logs.error(error));
+          .catch((error) => logger.error(error));
       } else if (update.action == "remove") {
         return;
       } else {
@@ -770,4 +770,4 @@ async function magneum() {
     );
   }, 1000 * 10);
 }
-magneum().catch((error) => logs.error(error));
+magneum().catch((error) => logger.error(error));

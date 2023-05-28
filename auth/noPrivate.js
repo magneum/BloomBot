@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../logs/global.js");
+require("../logger/global.js");
 exports.noPrivate = async (whatsbot, whatschat, update) => {
   if (!whatsbot.isSudo)
     await whatsbot.UserPrivate.findOne(

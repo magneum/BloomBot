@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../logs/global.js");
+require("../logger/global.js");
 let {
   Simp,
   Pokemon,
@@ -248,7 +248,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
   });
   whatsbot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  whatsbot.Showlogs = Showlogs;
+  whatsbot.Showlogger = Showlogger;
   whatsbot.packname = packname;
   whatsbot.pgdb = DATABASE_URL;
   whatsbot.ShowInfo = ShowInfo;

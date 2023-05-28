@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../logs/global.js");
+require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
@@ -99,7 +99,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                 footer: `*whatsbot™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${whatsbot.ShowInfo}_
-_*⛺HomeLog:* ${whatsbot.Showlogs}_`,
+_*⛺HomeLog:* ${whatsbot.Showlogger}_`,
                 mentions: [whatschat.sender],
                 buttons: [
                   {

@@ -18,7 +18,7 @@
 const winston = require("winston");
 const { combine, timestamp, printf } = winston.format;
 
-const logs = () => {
+const logger = () => {
   return winston.createLogger({
     level: "silly",
     format: combine(
@@ -32,5 +32,5 @@ const logs = () => {
   });
 };
 
-const logger = logs();
+const logger = logger();
 module.exports = logger;
