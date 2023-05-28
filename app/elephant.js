@@ -54,5 +54,4 @@ async function cleanDatabase() {
   }
 }
 
-cleanDatabase();
 module.exports = cleanDatabase;
