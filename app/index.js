@@ -163,29 +163,25 @@ async function magneum() {
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
-        logger.error(
-          `❌: Bad Session File, Please Delete Session and Scan Again`
-        );
+        // logger.error(`❌: Bad Session File, Please Delete Session and Scan Again`);
         await magneum();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
+        // logger.error("❌: Connection closed, reconnecting....");
         await magneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
+        // logger.error("❌: Connection Lost from Server, reconnecting...");
         await magneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
-          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-        );
+        // logger.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
         await magneum();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        // logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
+        // logger.error("❌: Restart Required, Restarting...");
         await magneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
+        // logger.error("❌: Connection TimedOut, Reconnecting...");
         await magneum();
       } else
         whatsbot.end(
