@@ -22,8 +22,31 @@ if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
 
+process.env.DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./whatsbot.db"
+    : process.env.DATABASE_URL;
+global.DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./whatsbot.db"
+    : process.env.DATABASE_URL;
+global.DATABASE =
+  process.env.DATABASE_URL === "./whatsbot.db"
+    ? new sequelize.Sequelize({
+        dialect: "sqlite",
+        storage: process.env.DATABASE_URL,
+        logging: Log("false"),
+      })
+    : new sequelize.Sequelize(process.env.DATABASE_URL, {
+        dialect: "postgres",
+        protocol: "postgres",
+        logging: Log("false"),
+        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+      });
+global.MONGO_URL = process.env.MONGO_URL;
+global.REDIS_URL = process.env.REDIS_URL;
+
 var sudo = process.env.sudo;
-global.NODE_ENV = process.env.NODE_ENV;
 if (!sudo) sudo = "918436686758,917430922909";
 global.upVersion = process.env.upVersion;
 global.Showlogs = process.env.Showlogs;
@@ -82,26 +105,3 @@ global.apiGet = (name, path = "/", query = {}, queryname) =>
         })
       )
     : "");
-process.env.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./whatsbot.db"
-    : process.env.DATABASE_URL;
-global.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./whatsbot.db"
-    : process.env.DATABASE_URL;
-global.DATABASE =
-  process.env.DATABASE_URL === "./whatsbot.db"
-    ? new sequelize.Sequelize({
-        dialect: "sqlite",
-        storage: process.env.DATABASE_URL,
-        logging: Log("false"),
-      })
-    : new sequelize.Sequelize(process.env.DATABASE_URL, {
-        dialect: "postgres",
-        protocol: "postgres",
-        logging: Log("false"),
-        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-      });
-global.MONGO_URL = process.env.MONGO_URL;
-global.REDIS_URL = process.env.REDIS_URL;
