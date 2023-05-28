@@ -40,15 +40,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let data = await whatsbot.axios.get(
+    var data = await whatsbot.axios.get(
       "http://app.chordindonesia.com/?json=get_post&id=" + whatsbot.args[0]
     );
     var clean = (data) => {
-      let regex = /(<([^>]+)>)/gi;
+      var regex = /(<([^>]+)>)/gi;
       data = data.replace(/(<br?\s?\/>)/gi, " \n");
       return data.replace(regex, "");
     };
-    let result = data.data;
+    var result = data.data;
     chordFound = "*• Chord Music Found*\n";
     chordFound += `*- Title:* ${result.post.title.replace(
       /[0-9]|[#&;]/gi,

@@ -20,6 +20,6 @@ var GambleSchema = new mongoose.Schema({
   Id: String,
   serverId: String,
   Gambledone: Number,
-  Gambletimeout: Number,
+  Gambvarimeout: Number,
 });
 module.exports = mongoose.model("Gamble", GambleSchema);

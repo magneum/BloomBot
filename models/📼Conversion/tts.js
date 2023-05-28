@@ -39,8 +39,8 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let text = "";
-    let langCode = "en";
+    var text = "";
+    var langCode = "en";
     for (var i = 0; i < whatsbot.args.length; i++) {
       if (whatsbot.args[i] == `=`) {
         langCode = whatsbot.args[i + 1];

@@ -21,8 +21,8 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (whatsbot, whatschat, update, store) => {
   try {
-    let formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-    let formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
+    var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!whatsbot.args[0] && !whatsbot.args[1]) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {
@@ -115,8 +115,8 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let ColorRoom = whatsbot.args[0];
-    let AmountRoom = parseInt(whatsbot.args[1]);
+    var ColorRoom = whatsbot.args[0];
+    var AmountRoom = parseInt(whatsbot.args[1]);
     if (AmountRoom < 50) {
       return await whatsbot.imagebutton(
         whatsbot,
@@ -182,7 +182,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
         }
 
         if (!userEco) {
-          let newUser = new whatsbot.Economy({
+          var newUser = new whatsbot.Economy({
             Id: whatschat.sender,
             money: 0,
             daily: 0,
@@ -214,11 +214,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             }
 
             if (!userGamble) {
-              let newUser = new whatsbot.Gamble({
+              var newUser = new whatsbot.Gamble({
                 Id: whatschat.sender,
                 serverId: whatschat.chat,
                 Gambledone: 0,
-                Gambletimeout: 480000,
+                Gambvarimeout: 480000,
               });
               await newUser.save().catch((error) => {
                 return whatsbot.handlerror(whatsbot, whatschat, error);
@@ -234,11 +234,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             }
 
             if (
-              userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone) >
+              userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              let time = whatsbot.ms(
-                userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone)
+              var time = whatsbot.ms(
+                userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone)
               );
               return await whatsbot.imagebutton(
                 whatsbot,
@@ -257,10 +257,10 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               else if (num % 4 == 1) return true;
               else return false;
             }
-            let Color = ColorRoom;
-            let money = parseInt(AmountRoom);
-            let CurrentMoney = userEco.money;
-            let Amount = Math.floor(Math.random() * 10);
+            var Color = ColorRoom;
+            var money = parseInt(AmountRoom);
+            var CurrentMoney = userEco.money;
+            var Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
               await whatsbot.sendMessage(whatschat.chat, {

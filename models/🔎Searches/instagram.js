@@ -43,7 +43,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       fids = await whatsbot.axios.get(
         `https://api.popcat.xyz/instagram?user=${whatsbot.args.join(" ")}`
       );
-      let reply = `
+      var reply = `
 *🀄Username:* ${fids.data.username}
 *📃Name:* ${fids.data.full_name}
 *🗣Private:* ${fids.data.private}

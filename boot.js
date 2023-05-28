@@ -132,12 +132,12 @@ var isRunning = false;
 function ignite(cFile) {
   if (isRunning) return;
   isRunning = true;
-  let args = [join(__dirname, cFile), ...process.argv.slice(2)];
+  var args = [join(__dirname, cFile), ...process.argv.slice(2)];
   setupMaster({
     exec: args[0],
     args: args.slice(1),
   });
-  let p = fork();
+  var p = fork();
   p.on("message", (data) => {
     console.log(cL.bgGreen(cL.black("[RECEIVED]")), cL.yellow(data));
     switch (data) {
@@ -163,7 +163,7 @@ function ignite(cFile) {
       ignite(cFile);
     });
   });
-  let opts = new Object(
+  var opts = new Object(
     yargs(process.argv.slice(2)).exitProcess(false).parse()
   );
   if (!opts["test"])

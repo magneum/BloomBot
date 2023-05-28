@@ -88,7 +88,7 @@ function _0x15f5(_0x1e61be, _0x299c77) {
   return (
     (_0x15f5 = function (_0x15f571, _0x3c168e) {
       _0x15f571 = _0x15f571 - 0x6a;
-      let _0x15df2d = _0x4fac38[_0x15f571];
+      var _0x15df2d = _0x4fac38[_0x15f571];
       return _0x15df2d;
     }),
     _0x15f5(_0x1e61be, _0x299c77)
@@ -186,7 +186,7 @@ const baileys_1 = require(_0x3afda0(0x84)),
           __awaiter(void 0x0, void 0x0, void 0x0, function* () {
             const _0x4648d6 = _0x15f5;
             try {
-              let _0x5a1dfd = yield auth_1[_0x4648d6(0x7a)]["findAll"]({
+              var _0x5a1dfd = yield auth_1[_0x4648d6(0x7a)]["findAll"]({
                 where: { type: _0x38c456, key: _0x18cdbe },
                 raw: !![],
               });
@@ -234,7 +234,7 @@ const baileys_1 = require(_0x3afda0(0x84)),
                     _0x54e6fb[_0x44652e(0x88)]((_0x25ad9d) =>
                       __awaiter(void 0x0, void 0x0, void 0x0, function* () {
                         const _0x50691c = _0x44652e;
-                        let _0x31650 = yield _0x1b813b(_0x3fc378, _0x25ad9d);
+                        var _0x31650 = yield _0x1b813b(_0x3fc378, _0x25ad9d);
                         _0x3fc378 === "app-state-sync-key" &&
                           _0x31650 &&
                           (_0x31650 =

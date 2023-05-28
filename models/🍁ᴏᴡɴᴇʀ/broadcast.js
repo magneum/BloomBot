@@ -66,18 +66,18 @@ module.exports = async (
       );
     }
 
-    let whatsbotGroups = await whatsbot.groupFetchAllParticipating();
-    let vGroup = Object.entries(whatsbotGroups)
+    var whatsbotGroups = await whatsbot.groupFetchAllParticipating();
+    var vGroup = Object.entries(whatsbotGroups)
       .slice(0)
       .map((entry) => entry[1]);
-    let places = vGroup.map((v) => v.id);
+    var places = vGroup.map((v) => v.id);
     whatschat.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
     );
 
-    for (let cron of places) {
+    for (var cron of places) {
       await whatsbot.sendMessage(cron, {
         video: {
           url: "./public/whatsbot.mp4",

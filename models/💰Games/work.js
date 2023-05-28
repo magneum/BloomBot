@@ -56,7 +56,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
-            let time = whatsbot.ms(
+            var time = whatsbot.ms(
               userEco.worktimeout - (Date.now() - userEco.workdone)
             );
             return await whatsbot.imagebutton(
@@ -68,7 +68,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               "./public/whatsbot.png"
             );
           } else {
-            let amount = Math.floor(Math.random() * 80) + 1;
+            var amount = Math.floor(Math.random() * 80) + 1;
             userEco.money = userEco.money + amount;
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;

@@ -103,7 +103,7 @@ module.exports = async (whatsbot, whatschat, updatedb) => {
 
           antilink: 0,
           antinsfw: 0,
-          delete: 0,
+          devare: 0,
           demote: 0,
           group: 0,
           promote: 0,

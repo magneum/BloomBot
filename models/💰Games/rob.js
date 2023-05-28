@@ -20,17 +20,17 @@ var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (whatsbot, whatschat, update, store) => {
-  let ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-  let MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
-  let MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-  let MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+  var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+  var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+  var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
+  var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (whatsbot.mentionByReply) {
-    let receiver =
+    var receiver =
       whatschat.mtype == "extendedTextMessage" &&
       whatschat.message.extendedTextMessage.contextInfo != null
         ? whatschat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    let receiverName = await whatsbot.getName(receiver);
+    var receiverName = await whatsbot.getName(receiver);
     if (receiver === whatschat.sender) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {
@@ -59,7 +59,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
           async (error, ᴠᴇᴄᴏ) => {
             if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
             if (!ᴠᴇᴄᴏ) {
-              let newUser = new whatsbot.Economy({
+              var newUser = new whatsbot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -88,7 +88,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
             }
 
             if (!ᴄᴇᴄᴏ) {
-              let newUser = new whatsbot.Economy({
+              var newUser = new whatsbot.Economy({
                 Id: whatschat.sender,
                 money: 0,
                 daily: 0,
@@ -163,7 +163,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   async (error, ᴠɪᴄᴛɪᴍ) => {
                     if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
-                      let newUser = new Robbery({
+                      var newUser = new Robbery({
                         Id: receiver,
                         sword: 0,
                         laptop: 0,
@@ -198,7 +198,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     }
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
-                      let newUser = new Robbery({
+                      var newUser = new Robbery({
                         Id: whatschat.sender,
                         sword: 0,
                         laptop: 0,
@@ -236,7 +236,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                         (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime) >
                       0
                     ) {
-                      let Time = ms(
+                      var Time = ms(
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );

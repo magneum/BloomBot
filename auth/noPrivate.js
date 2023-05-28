@@ -60,7 +60,7 @@ exports.noPrivate = async (whatsbot, whatschat, update) => {
           );
         } else {
           await user
-            .delete()
+            .devare()
             .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
           return await whatsbot
             .updateBlockStatus(whatschat.sender, "block")

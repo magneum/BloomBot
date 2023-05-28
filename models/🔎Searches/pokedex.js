@@ -39,9 +39,9 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let json;
+    var json;
     try {
-      let res = await whatsbot.fetch(
+      var res = await whatsbot.fetch(
         API(`https://some-random-api.ml`, `/pokedex`, {
           pokemon: whatsbot.args.join(" "),
         })

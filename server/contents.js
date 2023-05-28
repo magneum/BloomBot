@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-let folders = [".", ...Object.keys(require("../package.json").directories)];
-let rimraf = require("rimraf");
-for (let folder of folders) {
+var folders = [".", ...Object.keys(require("../package.json").directories)];
+var rimraf = require("rimraf");
+for (var folder of folders) {
   rimraf(folder, function (Error) {
     if (Error) console.log(Error);
   });

@@ -61,8 +61,8 @@ app.get("/", (request, response) => {
 
 app.get("/spotify", async (request, response) => {
   try {
-    let _ALINK;
-    let _DROP;
+    var _ALINK;
+    var _DROP;
     console.log(request.query);
     axios({
       method: "get",
@@ -206,7 +206,7 @@ app.get("/audio", async (request, response) => {
 
 app.get("/metadata", async (request, response) => {
   try {
-    let _ALINK;
+    var _ALINK;
     axios({
       method: "get",
       url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
@@ -246,7 +246,7 @@ app.get("/metadata", async (request, response) => {
           DESCRIPTION: fetchedata.youtube_search.DESCRIPTION,
         },
       ];
-      let _DROP;
+      var _DROP;
       try {
         _DROP = youtubedl(_FOUND[0].LINK, {
           noWarnings: true,

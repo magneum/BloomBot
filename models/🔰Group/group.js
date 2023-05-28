@@ -146,7 +146,7 @@ module.exports = async (
             }
 
             if (!server) {
-              let newServer = new whatsbot.LinkList({
+              var newServer = new whatsbot.LinkList({
                 serverId: whatschat.chat,
                 value: "ON",
               });
@@ -198,7 +198,7 @@ module.exports = async (
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
-              await server.delete();
+              await server.devare();
               return await whatsbot.imagebutton(
                 whatsbot,
                 whatschat,

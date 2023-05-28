@@ -16,13 +16,13 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logger/global.js");
-let {
+var {
   Simp,
   Pokemon,
   Ship,
   IShipOptions,
 } = require("@shineiichijo/canvas-chan");
-let {
+var {
   νkmake,
   formatp,
   formatDate,
@@ -39,25 +39,25 @@ let {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require("./myfunc");
-let { tmpdir } = require("os");
-let { JSDOM } = require("jsdom");
-let { Character } = require("mailist");
-let { readFile } = require("fs/promises");
-let { Chalk } = require("cfonts/lib/Chalk");
-let { performance } = require("perf_hooks");
-let { Primbon } = require("scrape-primbon");
-let { getDadjoke } = require("random-jokes");
-let { createWorker } = require("tesseract.js");
-let { Manga } = require("@shineiichijo/marika");
-let { AnimeWallpaper } = require("anime-wallpaper");
-let { Doujin } = require("@shineiichijo/nhentai-pdf");
-let { exec, spawn, execSync } = require("child_process");
-let { DownloaderHelper } = require("node-downloader-helper");
-let { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
-let { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
-let ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
-let ffprobe = require("@ffprobe-installer/ffprobe");
-let ffmpeg = require("fluent-ffmpeg")()
+var { tmpdir } = require("os");
+var { JSDOM } = require("jsdom");
+var { Character } = require("mailist");
+var { readFile } = require("fs/promises");
+var { Chalk } = require("cfonts/lib/Chalk");
+var { performance } = require("perf_hooks");
+var { Primbon } = require("scrape-primbon");
+var { getDadjoke } = require("random-jokes");
+var { createWorker } = require("tesseract.js");
+var { Manga } = require("@shineiichijo/marika");
+var { AnimeWallpaper } = require("anime-wallpaper");
+var { Doujin } = require("@shineiichijo/nhentai-pdf");
+var { exec, spawn, execSync } = require("child_process");
+var { DownloaderHelper } = require("node-downloader-helper");
+var { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
+var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+var ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
+var ffprobe = require("@ffprobe-installer/ffprobe");
+var ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
@@ -176,7 +176,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
   // whatsbot.memberRespA = [];
   // whatsbot.memberRespB = [];
   // whatsbot.resp1 = await whatsbot.groupInviteCode("120363020792949649@g.us");
-  whatsbot.letResp = [
+  whatsbot.varResp = [
     "h",
     "m",
     "c",
@@ -189,32 +189,32 @@ module.exports = async (whatsbot, whatschat, update, store) => {
   ];
 
   function ShowGreen(Topic, Text) {
-    let TShow = whatsbot.chalk.hex("#2D5A27").bold(Topic);
-    let Show = whatsbot.chalk.hex("#849871").italic.bold(Text);
+    var TShow = whatsbot.chalk.hex("#2D5A27").bold(Topic);
+    var Show = whatsbot.chalk.hex("#849871").italic.bold(Text);
     console.log(
       whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
       whatsbot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    let TShow = whatsbot.chalk.hex("#008B8B").bold(Topic);
-    let Show = whatsbot.chalk.hex("#818d94").italic.bold(Text);
+    var TShow = whatsbot.chalk.hex("#008B8B").bold(Topic);
+    var Show = whatsbot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
       whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
       whatsbot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    let TShow = whatsbot.chalk.hex("#ff6347").bold(Topic);
-    let Show = whatsbot.chalk.hex("#ed7777").italic.bold(Text);
+    var TShow = whatsbot.chalk.hex("#ff6347").bold(Topic);
+    var Show = whatsbot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
       whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
       whatsbot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    let TShow = whatsbot.chalk.hex("#8B8000").bold(Topic);
-    let Show = whatsbot.chalk.hex("#ECCF8D").italic.bold(Text);
+    var TShow = whatsbot.chalk.hex("#8B8000").bold(Topic);
+    var Show = whatsbot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
       whatsbot.chalk.black(whatsbot.chalk.bgBlack(TShow)),
       whatsbot.chalk.black(Show)
@@ -224,7 +224,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     return Math.floor(Math.random() * (max - min) + min);
   }
   function clearStorage(files) {
-    for (let file of files) {
+    for (var file of files) {
       whatsbot.fs.unlink(file, (err) => {
         if (err) throw err;
       });

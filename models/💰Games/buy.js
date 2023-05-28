@@ -21,9 +21,9 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (whatsbot, whatschat, update, store) => {
   try {
-    let Item;
-    let NewLimit;
-    let ItemPrice;
+    var Item;
+    var NewLimit;
+    var ItemPrice;
     var BadgeCatelog = [
       "🥉Bronze 20 Commands",
       "🥈Silver 40 Commands",
@@ -147,7 +147,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
           }
 
           if (!userEco) {
-            let newUser = new whatsbot.Economy({
+            var newUser = new whatsbot.Economy({
               Id: whatschat.sender,
               money: 0,
               daily: 0,
@@ -228,7 +228,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     "./public/whatsbot.png"
@@ -250,7 +250,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     "./public/whatsbot.png"
@@ -272,7 +272,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     `*🔖Here, ${finalname} for @${
                       whatsbot.Tname || whatsbot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     "./public/whatsbot.png"
@@ -339,7 +339,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               }
 
               if (!userBadge) {
-                let newBagdeUser = new whatsbot.Bagde({
+                var newBagdeUser = new whatsbot.Bagde({
                   Id: whatschat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -406,7 +406,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                   whatsbot,
                   whatschat,
                   `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,

@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../../logger/global.js");
+require("../../global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
@@ -30,7 +30,7 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!whatschat.isGroup) {
+    if (!whatsbot.quoted) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
@@ -41,55 +41,15 @@ module.exports = async (
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
-> _It's a group command!_`
-      );
-    }
-    if (!isAdmin) {
-      await whatsbot.sendMessage(whatschat.chat, {
-        react: {
-          text: "❌",
-          key: whatschat.key,
-        },
-      });
-      return whatschat.reply(
-        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
-
-*❌Error* 
-> _This is an Admin only Command!_`
-      );
-    }
-    if (!isBotAdmin) {
-      await whatsbot.sendMessage(whatschat.chat, {
-        react: {
-          text: "❌",
-          key: whatschat.key,
-        },
-      });
-      return whatschat.reply(
-        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
-
-*❌Error* 
-> _Bot not Admin!_`
-      );
-    }
-    if (!/image/.test(whatsbot.mime)) {
-      await whatsbot.sendMessage(whatschat.chat, {
-        react: {
-          text: "❌",
-          key: whatschat.key,
-        },
-      });
-      return whatschat.reply(
-        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
-
-*❌Error* 
-> _Could not find any Image in context!_
+> _Could not find any Image/Video/Text in context!_
 
 *⚡Usage* 
-> _${whatsbot.prefix}${finalname} reply/send image_`
+> _${whatsbot.prefix}${finalname} reply to Image/Video/Text_`
       );
     }
-    if (/webp/.test(whatsbot.mime)) {
+
+    var { isBaileys } = whatsbot.quoted;
+    if (!isBaileys) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {
           text: "❌",
@@ -100,44 +60,21 @@ module.exports = async (
         `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
 
 *❌Error* 
-> _Could not find any Image in context!_
+> _Can not devare massage from another userId except mine!_
 
 *⚡Usage* 
-> _${whatsbot.prefix}${finalname} reply/send image_`
+> _${whatsbot.prefix}${finalname} reply to Image/Video/Text_`
       );
-    }
-
-    var media = await whatsbot.downloadAndSaveMediaMessage(whatsbot.quoted);
-    await whatsbot
-      .updateProfilePicture(whatschat.chat, { url: media })
-      .then(
-        whatsbot.imagebutton(
-          whatsbot,
-          whatschat,
-          `> *Group icone has been changed: ${
-            whatsbot.pushname || whatsbot.Tname
-          }*`,
-          media
-        )
-      )
-      .catch(async (error) => {
-        whatsbot.fs.unlinkSync(media);
-        await whatsbot.sendMessage(whatschat.chat, {
-          react: {
-            text: "❌",
-            key: whatschat.key,
-          },
-        });
-        return whatschat.reply(
-          `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
-
-*❌Error* 
-> _Could not change group image!_
-
-*🐞Bug* 
-> ${error}`
-        );
+    } else {
+      return await whatsbot.sendMessage(whatschat.chat, {
+        devare: {
+          remoteJid: whatschat.chat,
+          fromMe: true,
+          id: whatschat.quoted.id,
+          participant: whatschat.quoted.sender,
+        },
       });
+    }
   } catch (error) {
     return whatsbot.handlerror(whatsbot, whatschat);
   }

@@ -15,11 +15,11 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-let usedCommandRecently = new Set();
-let isFiltered = (from) => !!usedCommandRecently.has(from);
-let addFilter = (from, cl) => {
+var usedCommandRecently = new Set();
+var isFiltered = (from) => !!usedCommandRecently.has(from);
+var addFilter = (from, cl) => {
   usedCommandRecently.add(from);
-  setTimeout(() => usedCommandRecently.delete(from), cl);
+  setTimeout(() => usedCommandRecently.devare(from), cl);
 };
 module.exports = {
   isFiltered,

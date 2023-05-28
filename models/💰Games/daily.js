@@ -57,7 +57,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
           );
         } else {
           if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-            let ᴄʟᴏᴄᴋ = whatsbot.ms(
+            var ᴄʟᴏᴄᴋ = whatsbot.ms(
               userEco.timeout - (Date.now() - userEco.daily)
             );
             return await whatsbot.imagebutton(

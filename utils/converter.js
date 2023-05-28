@@ -30,8 +30,8 @@ rl.question("Enter the working directory: ", (workDir) => {
 });
 
 function convertFilesToES6(directory) {
-  let totalFiles = 0;
-  let convertedFiles = 0;
+  var totalFiles = 0;
+  var convertedFiles = 0;
 
   fs.readdir(directory, { withFileTypes: true }, (err, files) => {
     if (err) {
@@ -50,7 +50,7 @@ function convertFilesToES6(directory) {
           .then(() => {
             convertedFiles++;
             if (convertedFiles === totalFiles) {
-              console.log(chalk.green("\nConversion completed successfully!"));
+              console.log(chalk.green("\nConversion compvared successfully!"));
               console.log(chalk.green("Total files processed:", totalFiles));
               console.log(chalk.green("Files converted:", convertedFiles));
             }
@@ -73,7 +73,7 @@ function convertToES6(filePath) {
         return;
       }
 
-      let es6Code = data;
+      var es6Code = data;
 
       es6Code = es6Code.replace(
         /module\.exports\s*=\s*(.*);/g,
@@ -89,17 +89,17 @@ function convertToES6(filePath) {
         'import { $1 } from "$2";'
       );
       es6Code = es6Code.replace(
-        /let\s*(\w+)\s*=\s*require\(['"](.+?)['"]\);/g,
+        /var\s*(\w+)\s*=\s*require\(['"](.+?)['"]\);/g,
         'import $1 from "$2";'
       );
       es6Code = es6Code.replace(
-        /let\s*\{(.+?)\}\s*=\s*require\(['"](.+?)['"]\);/g,
+        /var\s*\{(.+?)\}\s*=\s*require\(['"](.+?)['"]\);/g,
         'import { $1 } from "$2";'
       );
 
       es6Code = es6Code.replace(
         /exports\.(\w+)\s*=\s*(.*);/g,
-        "export let $1 = $2;"
+        "export var $1 = $2;"
       );
       es6Code = es6Code.replace(
         /exports\.(\w+)\s*=\s*function\((.*)\)\s*{/g,

@@ -17,14 +17,14 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logger/global.js");
 exports.noLink = async (whatsbot, whatschat) => {
-  let FetchCurrentGroupLink = await whatsbot.groupInviteCode(whatschat.chat);
-  let GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-  let isGroupLink = GroupLinkRegex.exec(whatsbot.budy);
-  let PresentGroupLink = new RegExp(
+  var FetchCurrentGroupLink = await whatsbot.groupInviteCode(whatschat.chat);
+  var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+  var isGroupLink = GroupLinkRegex.exec(whatsbot.budy);
+  var PresentGroupLink = new RegExp(
     `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
     "i"
   );
-  let isCurrentGroupLink = PresentGroupLink.test(whatsbot.budy);
+  var isCurrentGroupLink = PresentGroupLink.test(whatsbot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await whatsbot
       .groupParticipantsUpdate(whatschat.chat, [whatsbot.sender], "remove")
@@ -35,7 +35,7 @@ exports.noLink = async (whatsbot, whatschat) => {
 > _Kicked! One Less MoFo!_`
     );
     return await whatsbot.sendMessage(whatschat.chat, {
-      delete: {
+      devare: {
         remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,
@@ -60,7 +60,7 @@ exports.noLink = async (whatsbot, whatschat) => {
 > _Kicked! One Less MoFo!_`
     );
     return await whatsbot.sendMessage(whatschat.chat, {
-      delete: {
+      devare: {
         remoteJid: whatschat.chat,
         fromMe: false,
         id: whatsbot.quoted.id,

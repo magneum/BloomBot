@@ -51,12 +51,12 @@ module.exports = async (
     }
 
     if (whatsbot.mentionByReply) {
-      let repliedPerson =
+      var repliedPerson =
         whatsbot.mtype == "extendedTextMessage" &&
         whatsbot.message.extendedTextMessage.contextInfo != null
           ? whatsbot.message.extendedTextMessage.contextInfo.participant || ""
           : "";
-      let repliedPersonNum = repliedPerson.substring(
+      var repliedPersonNum = repliedPerson.substring(
         0,
         repliedPerson.length - 15
       );
@@ -71,7 +71,7 @@ module.exports = async (
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
-            userBan.delete();
+            userBan.devare();
             return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
@@ -79,8 +79,8 @@ module.exports = async (
         }
       );
     } else if (whatsbot.args[0] && whatsbot.args[0].startsWith("@")) {
-      let mention = whatsbot.mentionByTag;
-      let 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || whatsbot.msg.contextInfo.participant;
+      var mention = whatsbot.mentionByTag;
+      var 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || whatsbot.msg.contextInfo.participant;
       whatsbot.userBanCheck.findOne(
         {
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
@@ -90,7 +90,7 @@ module.exports = async (
           if (!userBan) {
             return whatschat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
           } else {
-            userBan.delete();
+            userBan.devare();
             return whatschat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
@@ -111,7 +111,7 @@ module.exports = async (
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
-            userBan.delete();
+            userBan.devare();
             return whatschat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );

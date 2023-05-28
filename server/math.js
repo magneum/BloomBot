@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-let modes = {
+var modes = {
   noob: [-3, 3, -3, 3, "+-", 15000, 10],
   easy: [-10, 10, -10, 10, "*/+-", 20000, 40],
   medium: [-40, 40, -20, 20, "*/+-", 40000, 150],
@@ -41,7 +41,7 @@ let modes = {
   ],
 };
 
-let operators = {
+var operators = {
   "+": "+",
   "-": "-",
   "*": "×",
@@ -61,11 +61,11 @@ function pickRandom(list) {
 
 function genMath(mode) {
   return new Promise((resolve, reject) => {
-    let [a1, a2, b1, b2, ops, time, bonus] = modes[mode];
-    let a = randomInt(a1, a2);
-    let b = randomInt(b1, b2);
-    let op = pickRandom([...ops]);
-    let result = new Function(
+    var [a1, a2, b1, b2, ops, time, bonus] = modes[mode];
+    var a = randomInt(a1, a2);
+    var b = randomInt(b1, b2);
+    var op = pickRandom([...ops]);
+    var result = new Function(
       `return ${a} ${op.replace("/", "*")} ${b < 0 ? `(${b})` : b}`
     )();
     if (op == "/") [a, result] = [result, a];

@@ -50,7 +50,7 @@ exports.premium = async (whatsbot, whatschat, update, store) => {
         }
         if (userVium.Limits < 1) {
           if (userVium.permTime - (Date.now() - userVium.currTime) > 0) {
-            let clock = whatsbot.ms(
+            var clock = whatsbot.ms(
               userVium.permTime - (Date.now() - userVium.currTime)
             );
             return await whatsbot.imagebutton(

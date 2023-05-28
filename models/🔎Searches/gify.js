@@ -40,7 +40,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     }
 
     try {
-      let { data: gi } = await whatsbot.axios.get(
+      var { data: gi } = await whatsbot.axios.get(
         `https://g.tenor.com/v1/search?q=${whatsbot.args.join(
           " "
         )}&key=LIVDSRZULELA&limit=8`

@@ -40,8 +40,8 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     }
 
     if (/image/.test(whatsbot.mime)) {
-      let media = await whatsbot.quoted.download();
-      let sticker = new whatsbot.Sticker(media, {
+      var media = await whatsbot.quoted.download();
+      var sticker = new whatsbot.Sticker(media, {
         pack: "magneum",
         author: "by whatsbot",
         type: whatsbot.StickerTypes.FULL,
@@ -73,8 +73,8 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 > _Cannot convert videos longer than 21 Seconds!_`
         );
       } else {
-        let media = await whatsbot.quoted.download();
-        let sticker = new whatsbot.Sticker(media, {
+        var media = await whatsbot.quoted.download();
+        var sticker = new whatsbot.Sticker(media, {
           pack: "magneum",
           author: "by whatsbot",
           type: whatsbot.StickerTypes.FULL,

@@ -74,8 +74,8 @@ module.exports = async (
     }
 
     if (whatsbot.args[0] && whatsbot.args[0].startsWith("@")) {
-      let mention = whatsbot.mentionByTag;
-      let users = (await mention[0]) || whatschat.msg.contextInfo.participant;
+      var mention = whatsbot.mentionByTag;
+      var users = (await mention[0]) || whatschat.msg.contextInfo.participant;
       if (!users) {
         await whatsbot.sendMessage(whatschat.chat, {
           react: {
@@ -121,7 +121,7 @@ module.exports = async (
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (whatsbot.mentionByReply) {
-      let users =
+      var users =
         whatschat.mtype == "extendedTextMessage" &&
         whatschat.message.extendedTextMessage.contextInfo != null
           ? whatschat.message.extendedTextMessage.contextInfo.participant || ""

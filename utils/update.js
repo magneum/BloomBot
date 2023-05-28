@@ -20,8 +20,8 @@ const simpleGit = require("simple-git");
 const cron = require("node-cron");
 const rimraf = require("rimraf");
 const chalk = require("chalk");
-let childProcess = null;
-let isRunning = false;
+var childProcess = null;
+var isRunning = false;
 
 const workdir = ".";
 const git = simpleGit(workdir);
@@ -55,10 +55,10 @@ const stopMainCode = () => {
   isRunning = false;
 };
 
-const deleteFiles = () => {
-  console.log(chalk.green("Deleting files and folders..."));
+const devareFiles = () => {
+  console.log(chalk.green("Devaring files and folders..."));
   rimraf.sync(`${workdir}/*`);
-  console.log(chalk.gray("All files and folders deleted"));
+  console.log(chalk.gray("All files and folders devared"));
 };
 
 const gitFetch = async () => {
@@ -76,7 +76,7 @@ const gitFetch = async () => {
     }
 
     stopMainCode();
-    deleteFiles();
+    devareFiles();
     startMainCode();
   } catch (error) {
     console.error(chalk.red(`Error executing git fetch: ${error.message}`));

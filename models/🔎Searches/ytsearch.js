@@ -39,15 +39,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let no = 1;
-    let search = await whatsbot.ySearch(whatsbot.args.join(" "));
-    let Fetched =
+    var no = 1;
+    var search = await whatsbot.ySearch(whatsbot.args.join(" "));
+    var Fetched =
       `*🔖Here, ${finalname} for @${
         whatsbot.Tname || whatsbot.pushname
       }:\n\n Result for ` +
       whatsbot.args.join(" ") +
       "\n\n";
-    for (let i of search.all) {
+    for (var i of search.all) {
       Fetched += `#${no++}> *🏜️Title*: ${i.title}
 *🌸Duration*: ${i.timestamp}
 *🌐Url*: ${i.url}

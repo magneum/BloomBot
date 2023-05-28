@@ -50,7 +50,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       ])
       .output(resultFilename)
       .on("end", async () => {
-        let mentionedUser = "";
+        var mentionedUser = "";
         if (whatsbot.args[0] && whatsbot.args[0].startsWith("@")) {
           // Check if a user is mentioned in the command arguments
           var mention = whatsbot.mentionByTag;

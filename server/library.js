@@ -16,23 +16,23 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 module.exports = async (whatsbot, whatschat, update, store) => {
-  let gmeta = whatschat.isGroup
+  var gmeta = whatschat.isGroup
     ? await whatsbot.groupMetadata(whatschat.chat).catch((error) => {})
     : "";
-  let groupName = whatschat.isGroup ? gmeta.subject : "";
-  let participants = whatschat.isGroup ? await gmeta.participants : "";
-  let groupAdmins = whatschat.isGroup
+  var groupName = whatschat.isGroup ? gmeta.subject : "";
+  var participants = whatschat.isGroup ? await gmeta.participants : "";
+  var groupAdmins = whatschat.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  let groupOwner = whatschat.isGroup ? gmeta.owner : "";
-  let isBotAdmin = whatschat.isGroup
+  var groupOwner = whatschat.isGroup ? gmeta.owner : "";
+  var isBotAdmin = whatschat.isGroup
     ? groupAdmins.includes(await whatsbot.decodeJid(whatsbot.user.id))
     : false;
-  let isAdmin = whatschat.isGroup
+  var isAdmin = whatschat.isGroup
     ? groupAdmins.includes(whatschat.sender)
     : false;
 
-  let vbody =
+  var vbody =
     whatschat.mtype === "conversation"
       ? whatschat.message.conversation
       : whatschat.mtype == "imageMessage"
@@ -1543,7 +1543,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     case "bet":
     case "gamble":
     case "betting":
-    case "roulette":
+    case "rouvarte":
       require("./dboard")(whatsbot, whatschat, (updatedb) => {
         updatedb.gamble = updatedb.gamble + 1;
         require("../models/💰Games/gamble")(whatsbot, whatschat, update, store);

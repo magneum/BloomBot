@@ -31,7 +31,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
         }
 
         if (!userEco) {
-          let newUser = new whatsbot.Economy({
+          var newUser = new whatsbot.Economy({
             Id: whatschat.sender,
             money: 0,
             daily: 0,
@@ -79,7 +79,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
-                  let time = whatsbot.ms(
+                  var time = whatsbot.ms(
                     userZoo.zootimeout - (Date.now() - userZoo.zoodone)
                   );
                   return await whatsbot.imagebutton(
@@ -93,15 +93,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                     "./public/whatsbot.png"
                   );
                 } else {
-                  let zooId = Math.floor(Math.random() * 10) + 1;
-                  let rarity;
+                  var zooId = Math.floor(Math.random() * 10) + 1;
+                  var rarity;
                   if (zooId < 5) rarity = `small`;
                   else if (zooId < 8) rarity = `medium`;
                   else if (zooId < 9) rarity = `big`;
                   else if (zooId < 10) rarity = `large`;
                   else rarity = `legendary`;
-                  let anim = whatsbot.animals[rarity];
-                  let worth =
+                  var anim = whatsbot.animals[rarity];
+                  var worth =
                     Math.floor(Math.random() * (anim.max - anim.min + 1)) +
                     anim.min;
                   userEco.money = userEco.money + worth;

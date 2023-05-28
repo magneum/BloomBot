@@ -39,11 +39,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       );
     }
 
-    let data = await whatsbot.axios.get(
+    var data = await whatsbot.axios.get(
       "http://app.chordindonesia.com/?json=get_search_results&search=" +
         whatsbot.args.join(" ")
     );
-    let result = data.data;
+    var result = data.data;
     if (result.count < 0) {
       await whatsbot.sendMessage(whatschat.chat, {
         react: {
@@ -60,7 +60,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     }
     no = 1;
     chord = "*•Chord Search Engine*\n\n";
-    for (let i of result.posts) {
+    for (var i of result.posts) {
       chord += `*📚Name:*  ${no++}\n`;
       chord += `*🔖Id:* ${i.id}\n`;
       chord += `*📕Title:* ${i.title.replace(/[0-9]|[#&;]/gi, "")}\n`;

@@ -108,22 +108,22 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               async (error, server) => {
                 if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
                 if (!server) return;
-                let { noLink } = require("../auth/antilink");
+                var { noLink } = require("../auth/antilink");
                 return noLink(whatsbot, whatschat);
               }
             );
 
             // respA = await whatsbot.groupMetadata("120363020792949649@g.us");
-            // for (let i = 0; i < respA.participants.length; i++)
+            // for (var i = 0; i < respA.participants.length; i++)
             // whatsbot.memberRespA[i] = respA.participants[i].id;
 
             // respB = await whatsbot.groupMetadata("120363089188116481@g.us");
-            // for (let i = 0; i < respB.participants.length; i++)
+            // for (var i = 0; i < respB.participants.length; i++)
             // whatsbot.memberRespB[i] = respB.participants[i].id;
             // if (
             // !whatsbot.fromme &&
             // !whatsbot.isSudo &&
-            // !whatsbot.letResp.includes(whatsbot.command) &&
+            // !whatsbot.varResp.includes(whatsbot.command) &&
             // !whatsbot.memberRespA.includes(whatschat.sender) &&
             // !whatsbot.memberRespB.includes(whatschat.sender)
             // ) {

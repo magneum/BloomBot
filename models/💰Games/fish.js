@@ -55,7 +55,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-            let time = whatsbot.ms(
+            var time = whatsbot.ms(
               userEco.fishtimeout - (Date.now() - userEco.fishdone)
             );
             return await whatsbot.imagebutton(
@@ -67,15 +67,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               "./public/whatsbot.png"
             );
           } else {
-            let fishId = Math.floor(Math.random() * 10) + 1;
-            let rarity;
+            var fishId = Math.floor(Math.random() * 10) + 1;
+            var rarity;
             if (fishId < 5) rarity = `junk`;
             else if (fishId < 8) rarity = `common`;
             else if (fishId < 9) rarity = `uncommon`;
             else if (fishId < 10) rarity = `rare`;
             else rarity = `legendary`;
-            let fishh = whatsbot.Fishes[rarity];
-            let worth =
+            var fishh = whatsbot.Fishes[rarity];
+            var worth =
               Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
               fishh.min;
             userEco.money = userEco.money + worth;
