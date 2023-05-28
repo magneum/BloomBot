@@ -272,31 +272,6 @@ async function magneum() {
     }
   });
 
-  whatsbot.ws.on("CB:call", async (update) => {
-    var sleep = async (ms) => {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    };
-    var callerId = update.content[0].attrs["call-creator"];
-    let person = await whatsbot.sendContact(callerId, global.owner);
-    whatsbot.sendMessage(
-      callerId,
-      {
-        text: "Automatic system block!",
-      },
-      { quoted: person }
-    );
-    await sleep(8000);
-    await whatsbot.updateBlockStatus(callerId, "block");
-  });
-
-  whatsbot.ev.on("contacts.update", async (update) => {
-    for (let contact of update) {
-      let jid = whatsbot.decodeJid(contact.id);
-      if (store && store.contacts)
-        store.contacts[jid] = { jid, name: contact.notify };
-    }
-  });
-
   whatsbot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
@@ -755,6 +730,30 @@ async function magneum() {
     };
   };
 
+  whatsbot.ws.on("CB:call", async (update) => {
+    var sleep = async (ms) => {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    };
+    var callerId = update.content[0].attrs["call-creator"];
+    let person = await whatsbot.sendContact(callerId, global.owner);
+    whatsbot.sendMessage(
+      callerId,
+      {
+        text: "Automatic system block!",
+      },
+      { quoted: person }
+    );
+    await sleep(8000);
+    await whatsbot.updateBlockStatus(callerId, "block");
+  });
+
+  whatsbot.ev.on("contacts.update", async (update) => {
+    for (let contact of update) {
+      let jid = whatsbot.decodeJid(contact.id);
+      if (store && store.contacts)
+        store.contacts[jid] = { jid, name: contact.notify };
+    }
+  });
   setInterval(async () => {
     var _Type = [
       "🎭designer",
