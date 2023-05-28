@@ -1,20 +1,12 @@
-.codesandbox
 node_modules
 json.sqlite
+*.yarnrc.yml
 process.js
-voxbot.db
+*.pnp.cjs
+*.vscode
 scraper
-.vscode
-.pnp.cjs
-.next
-.env
-
-# Yarn Berry/Classic
-.yarn
-.yarnrc.yml
-yarn-error.log
-
-# test files
-test
-temp
+*.next
+*.yarn
+*.env
+*.log
 *.db
