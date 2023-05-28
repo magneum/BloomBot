@@ -21,7 +21,15 @@ var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
-
+var sqlLog = (value) => {
+  var log = false;
+  if (typeof value === "string") {
+    if (value.toLowerCase() === "true") {
+      log = console.log;
+    }
+  }
+  return log;
+};
 process.env.DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./whatsbot.db"
@@ -35,12 +43,12 @@ global.DATABASE =
     ? new sequelize.Sequelize({
         dialect: "sqlite",
         storage: process.env.DATABASE_URL,
-        logging: Log("false"),
+        logging: sqlLog("false"),
       })
     : new sequelize.Sequelize(process.env.DATABASE_URL, {
         dialect: "postgres",
         protocol: "postgres",
-        logging: Log("false"),
+        logging: sqlLog("false"),
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
 global.MONGO_URL = process.env.MONGO_URL;
@@ -77,15 +85,7 @@ global.keyApi = {
 global.packname = "whatsbot";
 global.author = "magneum";
 global.name = "whatsbot";
-var Log = (value) => {
-  var log = false;
-  if (typeof value === "string") {
-    if (value.toLowerCase() === "true") {
-      log = console.log;
-    }
-  }
-  return log;
-};
+
 global.apiGet = (name, path = "/", query = {}, queryname) =>
   (name in global.nameApi ? global.nameApi[name] : name) +
   path +
