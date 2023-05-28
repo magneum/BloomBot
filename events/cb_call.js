@@ -9,23 +9,24 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const logs = require("../logs");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("../global.js");
+const logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logs.error(error);
+  logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../global.js");
-module.exports = async (VօxB໐t, update, store) => {
+("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+module.exports = async (ꪜᴏxʙᴏᴛ, update, store) => {
   const sleep = async (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
   var callerId = update.content[0].attrs["call-creator"];
   if (json.content[0].tag == "offer") {
-    let person = await VօxB໐t.sendContact(callerId, global.owner);
-    VօxB໐t.sendMessage(
+    let person = await ꪜᴏxʙᴏᴛ.sendContact(callerId, global.owner);
+    ꪜᴏxʙᴏᴛ.sendMessage(
       callerId,
       {
         text: `Automatic system block!\nDon't call bot!\nPlease contact owner to open it !`,
@@ -33,6 +34,6 @@ module.exports = async (VօxB໐t, update, store) => {
       { quoted: person }
     );
     await sleep(8000);
-    await VօxB໐t.updateBlockStatus(callerId, "block");
+    await ꪜᴏxʙᴏᴛ.updateBlockStatus(callerId, "block");
   }
 };

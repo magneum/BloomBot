@@ -160,126 +160,170 @@ async function mågneum() {
   });
   store.bind(VօxB໐t.ev);
 
-  VօxB໐t.ev.on("creds.update", async (update) => await saveCreds());
-  VօxB໐t.ev.on("connection.update", async (update) => {
-    const {
-      lastDisconnect,
-      connection,
-      isNewLogin,
-      isOnline,
-      qr,
-      receivedPendingNotifications,
-    } = update;
-    if (connection == "connecting")
-      logger.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logger.info("🐲: Login successful! ▶");
-    else if (connection == "close") {
-      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-      if (reason === DisconnectReason.badSession) {
-        logger.error(
-          `❌: Bad Session File, Please Delete Session and Scan Again`
-        );
-        VօxB໐t.logout();
-      } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
-        await mågneum();
-      } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
-        await mågneum();
-      } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
-          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-        );
-        VօxB໐t.logout();
-      } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
-        process.exit(0);
-      } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
-        await mågneum();
-      } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
-        await mågneum();
-      } else
-        VօxB໐t.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
-        );
-    } else if (isOnline === true) logger.debug("🐲: Online.");
-    else if (isOnline === false) logger.error("🐲: Offine.");
-    else if (receivedPendingNotifications === true)
-      logger.debug("🐲: Received Pending Notifications.");
-    else if (receivedPendingNotifications === false)
-      logger.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logger.debug("🐲: New Login.");
-    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
-    else logger.info("🐲: Connection...", update);
-  });
+  VօxB໐t.ev.on("creds.update", (update) =>
+    require("./events/creds.update")(update)
+  );
+  VօxB໐t.ev.on("connection.update", (update) =>
+    require("./events/connection.update")(VօxB໐t, update, store, mågneum)
+  );
+  VօxB໐t.ev.on("messages.upsert", (update) =>
+    require("./events/messages.upsert")(VօxB໐t, update, store)
+  );
+  VօxB໐t.ev.on("group-participants.update", (update) =>
+    require("./events/group-participants.update")(VօxB໐t, update, store)
+  );
+  VօxB໐t.ev.on("contacts.update", (update) =>
+    require("./events/contacts.update")(VօxB໐t, update, store)
+  );
+  VօxB໐t.ws.on("CB:call", (update) =>
+    require("./events/cb_call")(VօxB໐t, update, store)
+  );
 
-  VօxB໐t.ev.on("messages.upsert", async (update) => {
-    νTēxt = update.messages[0];
-    if (!νTēxt.message) return;
-    νTēxt.message =
-      Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-        ? νTēxt.message.ephemeralMessage.message
-        : νTēxt.message;
-    if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
-    if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    ᴠᴏxᴄ = await νkmake(VօxB໐t, νTēxt, store);
-    await require("./server/router.js")(VօxB໐t, ᴠᴏxᴄ, update, store);
-  });
+  // VօxB໐t.ev.on("creds.update", async (update) => await saveCreds());
+  // VօxB໐t.ev.on("connection.update", async (update) => {
+  // const {
+  // lastDisconnect,
+  // connection,
+  // isNewLogin,
+  // isOnline,
+  // qr,
+  // receivedPendingNotifications,
+  // } = update;
+  // if (connection == "connecting")
+  // logger.info("🐲: Connecting to WhatsApp...▶");
+  // else if (connection == "open") logger.info("🐲: Login successful! ▶");
+  // else if (connection == "close") {
+  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+  // if (reason === DisconnectReason.badSession) {
+  // logger.error(
+  // `❌: Bad Session File, Please Delete Session and Scan Again`
+  // );
+  // VօxB໐t.logout();
+  // } else if (reason === DisconnectReason.connectionClosed) {
+  // logger.error("❌: Connection closed, reconnecting....");
+  // await mågneum();
+  // } else if (reason === DisconnectReason.connectionLost) {
+  // logger.error("❌: Connection Lost from Server, reconnecting...");
+  // await mågneum();
+  // } else if (reason === DisconnectReason.connectionReplaced) {
+  // logger.error(
+  // "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+  // );
+  // VօxB໐t.logout();
+  // } else if (reason === DisconnectReason.loggedOut) {
+  // logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+  // process.exit(0);
+  // } else if (reason === DisconnectReason.restartRequired) {
+  // logger.error("❌: Restart Required, Restarting...");
+  // await mågneum();
+  // } else if (reason === DisconnectReason.timedOut) {
+  // logger.error("❌: Connection TimedOut, Reconnecting...");
+  // await mågneum();
+  // } else
+  // VօxB໐t.end(
+  // logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+  // );
+  // } else if (isOnline === true) logger.debug("🐲: Online.");
+  // else if (isOnline === false) logger.error("🐲: Offine.");
+  // else if (receivedPendingNotifications === true)
+  // logger.debug("🐲: Received Pending Notifications.");
+  // else if (receivedPendingNotifications === false)
+  // logger.error("🐲: Not Received Pending Notifications.");
+  // else if (isNewLogin === true) logger.debug("🐲: New Login.");
+  // else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+  // else if (qr) logger.info("Qr: "), console.log(qr);
+  // else logger.info("🐲: Connection...", update);
+  // });
 
-  VօxB໐t.ev.on("group-participants.update", async (update) => {
-    let metadata = await VօxB໐t.groupMetadata(update.id);
-    let participants = update.participants;
-    logger.info(update);
-    for (let sperson of participants) {
-      var imåge;
-      try {
-        imåge = await VօxB໐t.profilePictureUrl(sperson, "image");
-      } catch {
-        imåge = "./src/VօxB໐t.jpg";
-      }
+  // VօxB໐t.ev.on("messages.upsert", async (update) => {
+  // νTēxt = update.messages[0];
+  // if (!νTēxt.message) return;
+  // νTēxt.message =
+  // Object.keys(νTēxt.message)[0] === "ephemeralMessage"
+  // ? νTēxt.message.ephemeralMessage.message
+  // : νTēxt.message;
+  // if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
+  // if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
+  // if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
+  // ᴠᴏxᴄ = await νkmake(VօxB໐t, νTēxt, store);
+  // await require("./server/router.js")(VօxB໐t, ᴠᴏxᴄ, update, store);
+  // });
 
-      if (update.action == "add") {
-        return await VօxB໐t.sendMessage(
-          update.id,
-          {
-            image: { url: imåge },
-            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-*📢ID:* ${update.id}
+  // VօxB໐t.ev.on("group-participants.update", async (update) => {
+  // let metadata = await VօxB໐t.groupMetadata(update.id);
+  // let participants = update.participants;
+  // logger.info(update);
+  // for (let sperson of participants) {
+  // var imåge;
+  // try {
+  // imåge = await VօxB໐t.profilePictureUrl(sperson, "image");
+  // } catch {
+  // imåge = "./src/VօxB໐t.jpg";
+  // }
 
-> Firstly Welcome.
-> I am Synthia Whatsapp Bot.
-> To Start using type .help or press below buttons.`,
-            footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${VօxB໐t.prefix}Dashboard`,
-                buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
-                type: 1,
-              },
-              {
-                buttonId: `${VօxB໐t.prefix}Synthia`,
-                buttonText: { displayText: `${VօxB໐t.prefix}Synthia` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [sperson],
-          },
-          {
-            contextInfo: { mentionedJid: [sperson] },
-          }
-        ).catch((error) => logger.error(error));
-      } else if (update.action == "remove") {
-        return;
-      } else {
-        return;
-      }
-    }
-  });
+  // if (update.action == "add") {
+  // return await VօxB໐t.sendMessage(
+  // update.id,
+  // {
+  // image: { url: imåge },
+  // caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+  // *📢ID:* ${update.id}
+
+  // > Firstly Welcome.
+  // > I am Synthia Whatsapp Bot.
+  // > To Start using type .help or press below buttons.`,
+  // footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+  // buttons: [
+  //   {
+  //     buttonId: `${VօxB໐t.prefix}Dashboard`,
+  //     buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+  //     type: 1,
+  //   },
+  //   {
+  //     buttonId: `${VօxB໐t.prefix}Synthia`,
+  //     buttonText: { displayText: `${VօxB໐t.prefix}Synthia` },
+  //     type: 1,
+  //   },
+  // ],
+  // headerType: 4,
+  // mentions: [sperson],
+  // },
+  // {
+  // contextInfo: { mentionedJid: [sperson] },
+  // }
+  // ).catch((error) => logger.error(error));
+  // } else if (update.action == "remove") {
+  // return;
+  // } else {
+  // return;
+  // }
+  // }
+  // });
+
+  // VօxB໐t.ws.on("CB:call", async (update) => {
+  // const sleep = async (ms) => {
+  // return new Promise((resolve) => setTimeout(resolve, ms));
+  // };
+  // var callerId = update.content[0].attrs["call-creator"];
+  // let person = await VօxB໐t.sendContact(callerId, global.owner);
+  // VօxB໐t.sendMessage(
+  // callerId,
+  // {
+  // text: "Automatic system block!",
+  // },
+  // { quoted: person }
+  // );
+  // await sleep(8000);
+  // await VօxB໐t.updateBlockStatus(callerId, "block");
+  // });
+
+  // VօxB໐t.ev.on("contacts.update", async (update) => {
+  // for (let contact of update) {
+  // let jid = VօxB໐t.decodeJid(contact.id);
+  // if (store && store.contacts)
+  // store.contacts[jid] = { jid, name: contact.notify };
+  // }
+  // });
 
   VօxB໐t.decodeJid = (jid) => {
     if (!jid) return jid;
@@ -732,31 +776,6 @@ async function mågneum() {
       data,
     };
   };
-
-  VօxB໐t.ws.on("CB:call", async (update) => {
-    const sleep = async (ms) => {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    };
-    var callerId = update.content[0].attrs["call-creator"];
-    let person = await VօxB໐t.sendContact(callerId, global.owner);
-    VօxB໐t.sendMessage(
-      callerId,
-      {
-        text: "Automatic system block!",
-      },
-      { quoted: person }
-    );
-    await sleep(8000);
-    await VօxB໐t.updateBlockStatus(callerId, "block");
-  });
-
-  VօxB໐t.ev.on("contacts.update", async (update) => {
-    for (let contact of update) {
-      let jid = VօxB໐t.decodeJid(contact.id);
-      if (store && store.contacts)
-        store.contacts[jid] = { jid, name: contact.notify };
-    }
-  });
 
   setInterval(async () => {
     var _Type = [

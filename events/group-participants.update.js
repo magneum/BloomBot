@@ -9,58 +9,61 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const logs = require("../logs");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("../global.js");
+const logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logs.error(error);
+  logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../global.js");
-module.exports = async (VօxB໐t, update, store) => {
-  let metadata = await VօxB໐t.groupMetadata(update.id);
+
+module.exports = async (ꪜᴏxʙᴏᴛ, update, store) => {
+  let metadata = await ꪜᴏxʙᴏᴛ.groupMetadata(update.id);
   let participants = update.participants;
-  logs.info(update);
+  logger.info(update);
   for (let sperson of participants) {
     var imåge;
     try {
-      imåge = await VօxB໐t.profilePictureUrl(sperson, "image");
+      imåge = await ꪜᴏxʙᴏᴛ.profilePictureUrl(sperson, "image");
     } catch {
-      imåge = "./src/VօxB໐t.jpg";
+      imåge = "./src/ꪜᴏxʙᴏᴛ.jpg";
     }
 
     if (update.action == "add") {
-      return await VօxB໐t.sendMessage(
-        update.id,
-        {
-          image: { url: imåge },
-          caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+      return await ꪜᴏxʙᴏᴛ
+        .sendMessage(
+          update.id,
+          {
+            image: { url: imåge },
+            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
 *📢ID:* ${update.id}
 
 > Firstly Welcome.
-> I am VօxB໐t Whatsapp Bot.
+> I am ꪜᴏxʙᴏᴛ Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
-          footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${VօxB໐t.prefix}Dashboard`,
-              buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${VօxB໐t.prefix}VօxB໐t`,
-              buttonText: { displayText: `${VօxB໐t.prefix}VօxB໐t` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          mentions: [sperson],
-        },
-        {
-          contextInfo: { mentionedJid: [sperson] },
-        }
-      ).catch((error) => logs.error(error));
+            footer: "*VLkyre™ By xhadr*\n*💻HomePage:* https://bit.ly/magneum",
+            buttons: [
+              {
+                buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+                buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
+                type: 1,
+              },
+              {
+                buttonId: `${ꪜᴏxʙᴏᴛ.prefix}ꪜᴏxʙᴏᴛ`,
+                buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}ꪜᴏxʙᴏᴛ` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            mentions: [sperson],
+          },
+          {
+            contextInfo: { mentionedJid: [sperson] },
+          }
+        )
+        .catch((error) => logger.error(error));
     } else if (update.action == "remove") {
       return;
     } else {

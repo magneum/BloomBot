@@ -9,16 +9,17 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const logs = require("../logs");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("../global.js");
+const logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logs.error(error);
+  logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../global.js");
-module.exports = async (VօxB໐t, update, store) => {
+
+module.exports = async (ꪜᴏxʙᴏᴛ, update, store) => {
   νTēxt = update.messages[0];
   if (!νTēxt.message) return;
   νTēxt.message =
@@ -26,8 +27,8 @@ module.exports = async (VօxB໐t, update, store) => {
       ? νTēxt.message.ephemeralMessage.message
       : νTēxt.message;
   if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-  if (!VօxB໐t.public && !νTēxt.key.fromMe && update.type === "notify") return;
+  if (!ꪜᴏxʙᴏᴛ.public && !νTēxt.key.fromMe && update.type === "notify") return;
   if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-  ᴠᴏxᴄ = await νkmake(VօxB໐t, νTēxt, store);
-  await require("../server/router.js")(VօxB໐t, ᴠᴏxᴄ, update, store);
+  ᴠᴏxᴄ = await νkmake(ꪜᴏxʙᴏᴛ, νTēxt, store);
+  await require("../server/router.js")(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store);
 };

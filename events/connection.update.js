@@ -9,18 +9,19 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const logs = require("../logs");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("../global.js");
+const logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logs.error(error);
+  logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../global.js");
 var { Boom } = require("@hapi/boom");
 var { DisconnectReason } = require("@adiwajshing/baileys");
-module.exports = async (VօxB໐t, update, store, mågneum) => {
+
+module.exports = async (ꪜᴏxʙᴏᴛ, update, store, mågneum) => {
   const {
     lastDisconnect,
     connection,
@@ -29,43 +30,45 @@ module.exports = async (VօxB໐t, update, store, mågneum) => {
     qr,
     receivedPendingNotifications,
   } = update;
-  if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
-  else if (connection == "open") logs.info("🐲: Login successful! ▶");
+  if (connection == "connecting") logger.info("🐲: Connecting to WhatsApp...▶");
+  else if (connection == "open") logger.info("🐲: Login successful! ▶");
   else if (connection == "close") {
     let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
     if (reason === DisconnectReason.badSession) {
-      logs.error(`❌: Bad Session File, Please Delete Session and Scan Again`);
-      // VօxB໐t.logout();
+      logger.error(
+        `❌: Bad Session File, Please Delete Session and Scan Again`
+      );
+      // ꪜᴏxʙᴏᴛ.logout();
     } else if (reason === DisconnectReason.connectionClosed) {
-      // logs.error("❌: Connection closed, reconnecting....");
+      // logger.error("❌: Connection closed, reconnecting....");
       await mågneum();
     } else if (reason === DisconnectReason.connectionLost) {
-      // logs.error("❌: Connection Lost from Server, reconnecting...");
+      // logger.error("❌: Connection Lost from Server, reconnecting...");
       await mågneum();
     } else if (reason === DisconnectReason.connectionReplaced) {
-      // logs.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
-      // VօxB໐t.logout();
+      // logger.error("❌: Connection Replaced, Another New Session Opened, Please Close Current Session First");
+      // ꪜᴏxʙᴏᴛ.logout();
     } else if (reason === DisconnectReason.loggedOut) {
-      // logs.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+      // logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
       process.exit(0);
     } else if (reason === DisconnectReason.restartRequired) {
-      // logs.error("❌: Restart Required, Restarting...");
+      // logger.error("❌: Restart Required, Restarting...");
       await mågneum();
     } else if (reason === DisconnectReason.timedOut) {
-      // logs.error("❌: Connection TimedOut, Reconnecting...");
+      // logger.error("❌: Connection TimedOut, Reconnecting...");
       await mågneum();
     } else
-      VօxB໐t.end(
-        logs.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+      ꪜᴏxʙᴏᴛ.end(
+        logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
       );
-  } else if (isOnline === true) logs.debug("🐲: Online.");
-  else if (isOnline === false) logs.error("🐲: Offine.");
+  } else if (isOnline === true) logger.debug("🐲: Online.");
+  else if (isOnline === false) logger.error("🐲: Offine.");
   else if (receivedPendingNotifications === true)
-    logs.debug("🐲: Received Pending Notifications.");
+    logger.debug("🐲: Received Pending Notifications.");
   else if (receivedPendingNotifications === false)
-    logs.error("🐲: Not Received Pending Notifications.");
-  else if (isNewLogin === true) logs.debug("🐲: New Login.");
-  else if (isNewLogin === false) logs.error("🐲: Not New Login.");
-  else if (qr) logs.info("Qr: "), console.log(qr);
-  else logs.info("🐲: Connection...", update);
+    logger.error("🐲: Not Received Pending Notifications.");
+  else if (isNewLogin === true) logger.debug("🐲: New Login.");
+  else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+  else if (qr) logger.info("Qr: "), console.log(qr);
+  else logger.info("🐲: Connection...", update);
 };
