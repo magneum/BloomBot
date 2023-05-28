@@ -16,12 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logger/global.js");
-var {
-  Simp,
-  Pokemon,
-  Ship,
-  IShipOptions,
-} = require("@shineiichijo/canvas-chan");
+var { Simp, Ship, Pokemon } = require("@shineiichijo/canvas-chan");
 var {
   νkmake,
   formatp,
