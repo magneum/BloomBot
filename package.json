@@ -94,7 +94,7 @@
     "nhentai-node-api": "1.1.2",
     "node-cron": "3.0.0",
     "node-downloader-helper": "2.1.1",
-    "node-fetch": "2.6.1",
+    "node-fetch": "2.6.7",
     "node-webpmux": "3.1.0",
     "nodemon": "2.0.20",
     "os": "0.1.2",
