@@ -112,7 +112,7 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logs.info("VLKYRE: started at port: " + PORT));
+  νℓpage.listen(PORT, logs.info("whatsbot: started at port: " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();

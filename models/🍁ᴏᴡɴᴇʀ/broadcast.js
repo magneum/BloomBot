@@ -84,7 +84,7 @@ module.exports = async (
         },
         mimetype: "video/mp4",
         fileName: "Synthia-Notice.mp4",
-        caption: `┌『*VLKYRE📢BROADCAST* 』
+        caption: `┌『*whatsbot📢BROADCAST* 』
 │║⦁ *💫By:*  ${whatsbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🕛Time:*  ${whatsbot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 ┕╚═══════⋑

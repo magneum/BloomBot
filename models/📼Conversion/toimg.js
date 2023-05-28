@@ -96,7 +96,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 ╰╚═══════⋑
 
 *🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*`,
-                footer: `*VLKYRE™ Bot By KRYKNZ*
+                footer: `*whatsbot™ Bot By KRYKNZ*
 
 _*💻HomePage:* ${whatsbot.ShowInfo}_
 _*⛺HomeLog:* ${whatsbot.Showlogs}_`,
