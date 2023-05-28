@@ -1,4 +1,4 @@
-GitPython
-loguru
 python-dotenv
+GitPython
 termcolor
+loguru

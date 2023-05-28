@@ -16,9 +16,9 @@ by a Contributor and that particular Contributor's Contribution.
 means Covered Software of a particular Contributor.
 
 1.4. "Covered Software"
-means Source Code Form to which the initial Contributor has attached
-the notice in Exhibit A, the Executable Form of such Source Code
-Form, and Modifications of such Source Code Form, in each case
+means Source Code form to which the initial Contributor has attached
+the notice in Exhibit A, the Executable form of such Source Code
+form, and Modifications of such Source Code form, in each case
 including portions thereof.
 
 1.5. "Incompatible With Secondary Licenses"
@@ -31,8 +31,8 @@ means
         version 1.1 or earlier of the License, but not also under the
         terms of a Secondary License.
 
-1.6. "Executable Form"
-means any form of the work other than Source Code Form.
+1.6. "Executable form"
+means any form of the work other than Source Code form.
 
 1.7. "Larger Work"
 means a work that combines Covered Software with other material, in
@@ -49,11 +49,11 @@ all of the rights conveyed by this License.
 1.10. "Modifications"
 means any of the following:
 
-    (a) any file in Source Code Form that results from an addition to,
+    (a) any file in Source Code form that results from an addition to,
         deletion from, or modification of the contents of Covered
         Software; or
 
-    (b) any new file in Source Code Form that contains any Covered
+    (b) any new file in Source Code form that contains any Covered
         Software.
 
 1.11. "Patent Claims" of a Contributor
@@ -70,13 +70,13 @@ Lesser General Public License, Version 2.1, the GNU Affero General
 Public License, Version 3.0, or any later versions of those
 licenses.
 
-1.13. "Source Code Form"
+1.13. "Source Code form"
 means the form of the work preferred for making modifications.
 
 1.14. "You" (or "Your")
 means an individual or a legal entity exercising rights under this
-License. For legal entities, "You" includes any entity that
-controls, is controlled by, or is under common control with You. For
+License. for legal entities, "You" includes any entity that
+controls, is controlled by, or is under common control with You. for
 purposes of this definition, "control" means (a) the power, direct
 or indirect, to cause the direction or management of such entity,
 whether by contract or otherwise, or (b) ownership of more than
@@ -159,30 +159,30 @@ in Section 2.1.
 
 ---
 
-3.1. Distribution of Source Form
+3.1. Distribution of Source form
 
-All distribution of Covered Software in Source Code Form, including any
+All distribution of Covered Software in Source Code form, including any
 Modifications that You create or to which You contribute, must be under
 the terms of this License. You must inform recipients that the Source
-Code Form of the Covered Software is governed by the terms of this
+Code form of the Covered Software is governed by the terms of this
 License, and how they can obtain a copy of this License. You may not
 attempt to alter or restrict the recipients' rights in the Source Code
-Form.
+form.
 
-3.2. Distribution of Executable Form
+3.2. Distribution of Executable form
 
-If You distribute Covered Software in Executable Form then:
+If You distribute Covered Software in Executable form then:
 
 (a) such Covered Software must also be made available in Source Code
-Form, as described in Section 3.1, and You must inform recipients of
-the Executable Form how they can obtain a copy of such Source Code
-Form by reasonable means in a timely manner, at a charge no more
+form, as described in Section 3.1, and You must inform recipients of
+the Executable form how they can obtain a copy of such Source Code
+form by reasonable means in a timely manner, at a charge no more
 than the cost of distribution to the recipient; and
 
-(b) You may distribute such Executable Form under the terms of this
+(b) You may distribute such Executable form under the terms of this
 License, or sublicense it under different terms, provided that the
-license for the Executable Form does not attempt to limit or alter
-the recipients' rights in the Source Code Form under this License.
+license for the Executable form does not attempt to limit or alter
+the recipients' rights in the Source Code form under this License.
 
 3.3. Distribution of a Larger Work
 
@@ -201,7 +201,7 @@ License(s).
 
 You may not remove or alter the substance of any license notices
 (including copyright notices, patent notices, disclaimers of warranty,
-or limitations of liability) contained within the Source Code Form of
+or limitations of liability) contained within the Source Code form of
 the Covered Software, except that You may alter any license notices to
 the extent required to remedy known factual inaccuracies.
 
@@ -276,7 +276,7 @@ prior to termination shall survive termination.
 - quality and performance of the Covered Software is with You. \*
 - Should any Covered Software prove defective in any respect, You \*
 - (not any Contributor) assume the cost of any necessary servicing, \*
-- repair, or correction. This disclaimer of warranty constitutes an \*
+- repair, or correction. This disclaimer of warranty varitutes an \*
 - essential part of this License. No use of any Covered Software is \*
 - authorized under this License except under this disclaimer. \*
 -                                                                      *
@@ -327,8 +327,8 @@ This License represents the complete agreement concerning the subject
 matter hereof. If any provision of this License is held to be
 unenforceable, such provision shall be reformed only to the extent
 necessary to make it enforceable. Any law or regulation which provides
-that the language of a contract shall be construed against the drafter
-shall not be used to construe this License against a Contributor.
+that the language of a contract shall be varrued against the drafter
+shall not be used to varrue this License against a Contributor.
 
 10. Versions of the License
 
@@ -356,16 +356,16 @@ modified version of this License if you rename the license and remove
 any references to the name of the license steward (except to note that
 such modified license differs from this License).
 
-10.4. Distributing Source Code Form that is Incompatible With Secondary
+10.4. Distributing Source Code form that is Incompatible With Secondary
 Licenses
 
-If You choose to distribute Source Code Form that is Incompatible With
+If You choose to distribute Source Code form that is Incompatible With
 Secondary Licenses under the terms of this version of the License, the
 notice described in Exhibit B of this License must be attached.
 
-## Exhibit A - Source Code Form License Notice
+## Exhibit A - Source Code form License Notice
 
-This Source Code Form is subject to the terms of the Mozilla Public
+This Source Code form is subject to the terms of the Mozilla Public
 License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
@@ -378,5 +378,5 @@ You may add additional accurate notices of copyright ownership.
 
 ## Exhibit B - "Incompatible With Secondary Licenses" Notice
 
-This Source Code Form is "Incompatible With Secondary Licenses", as
+This Source Code form is "Incompatible With Secondary Licenses", as
 defined by the Mozilla Public License, v. 2.0.

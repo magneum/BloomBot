@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖 𝐕𝐨𝐱𝐁𝐨𝐭🕊️ 𝐌𝐮𝐥𝐭𝐢 𝐃𝐞𝐯𝐢𝐜𝐞 🤖
-//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟏𝟎𝟎+ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 VoxBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 Forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║🎉 WhatsBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of VoxBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of WhatsBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
-//  ║🐞 DEVELOPERS: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ WhatsBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 let axios = require("axios");
 let cheerio = require("cheerio");
 
@@ -34,7 +34,7 @@ function pinterest(querry) {
         $("div > a")
           .get()
           .map((b) => {
-            let link = $(b).find("img").attr("src");
+            let link = $(b).find("img").attr("public");
             result.push(link);
           });
         result.forEach((v) => {
@@ -64,10 +64,10 @@ function wallpaper(title, page = "1") {
               "https://www.besthdwallpaper.com/" +
               $(b).find("div > a:nth-child(3)").attr("href"),
             image: [
-              $(b).find("picture > img").attr("data-src") ||
-                $(b).find("picture > img").attr("src"),
-              $(b).find("picture > source:nth-child(1)").attr("srcset"),
-              $(b).find("picture > source:nth-child(2)").attr("srcset"),
+              $(b).find("picture > img").attr("data-public") ||
+                $(b).find("picture > img").attr("public"),
+              $(b).find("picture > source:nth-child(1)").attr("publicset"),
+              $(b).find("picture > source:nth-child(2)").attr("publicset"),
             ],
           });
         });
@@ -90,7 +90,7 @@ function wikimedia(title) {
             title: $(b).find("img").attr("alt"),
             source: $(b).attr("href"),
             image:
-              $(b).find("img").attr("data-src") || $(b).find("img").attr("src"),
+              $(b).find("img").attr("data-public") || $(b).find("img").attr("public"),
           });
         });
         resolve(results);
@@ -109,7 +109,7 @@ function quotesAnime() {
         $("div.kotodama-list").each(function (l, h) {
           results.push({
             link: $(h).find("a").attr("href"),
-            gambar: $(h).find("img").attr("data-src"),
+            gambar: $(h).find("img").attr("data-public"),
             karakter: $(h).find("div.char-name").text().trim(),
             anime: $(h).find("div.anime-title").text().trim(),
             episode: $(h).find("div.meta").text(),
@@ -134,7 +134,7 @@ function ringtone(title) {
         results.push({
           title: $(b).find("h4").text(),
           source: "https://meloboom.com/" + $(b).find("a").attr("href"),
-          audio: $(b).find("audio").attr("src"),
+          audio: $(b).find("audio").attr("public"),
         });
       });
       resolve(results);
