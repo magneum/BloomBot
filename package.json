@@ -25,7 +25,7 @@
     "views": "views",
     "public": "public",
     "logger": "logger",
-    "routes": "routes",
+    "models": "models",
     "server": "server",
     "buttons": "buttons",
     "database": "database"
