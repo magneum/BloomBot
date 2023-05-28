@@ -58,8 +58,6 @@ async function magneum() {
     .connect(MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
     })
     .catch((error) => {
       logs.error("❌: Unable to Connect with Mongoose.");
@@ -199,8 +197,7 @@ async function magneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting")
-      logs.info("🐲: Connecting to WhatsApp...▶");
+    if (connection == "connecting") logs.info("🐲: Connecting to WhatsApp...▶");
     else if (connection == "open") logs.info("🐲: Login successful! ▶");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
