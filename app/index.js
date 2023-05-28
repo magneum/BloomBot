@@ -165,7 +165,7 @@ async function magneum() {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
         logger.error(
-          `❌: Bad Session File, Please Delete Session and Scan Again`
+          "❌: Bad Session File, Please Delete Session and Scan Again"
         );
         await cleanDatabase();
         await magneum();
@@ -183,7 +183,7 @@ async function magneum() {
         await cleanDatabase();
         await magneum();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        logger.error("❌: Device Logged Out, Please Scan Again And Run.");
         await cleanDatabase();
         await magneum();
       } else if (reason === DisconnectReason.restartRequired) {

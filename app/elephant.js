@@ -22,31 +22,27 @@ process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-require("../logger/global.js");
-const MongoClient = require("mongodb").MongoClient;
+const { Client } = require("pg");
+const dotenv = require("dotenv");
 const chalk = require("chalk");
+
+dotenv.config();
+
 async function cleanDatabase() {
-  const client = new MongoClient(DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  const connectionString = process.env.DATABASE_URL;
+  const client = new Client({ connectionString });
 
   try {
     await client.connect();
-    const db = client.db("magneum");
-    const collections = await db.listCollections().toArray();
-    for (const collection of collections) {
-      const collectionName = collection.name;
-      const collectionData = await db
-        .collection(collectionName)
-        .find()
-        .toArray();
-      console.log(chalk.yellow(`Contents of collection ${collectionName}:`));
-      console.log(collectionData);
-      await db.collection(collectionName).drop();
-      console.log(chalk.green(`Dropped collection: ${collectionName}`));
+    const res = await client.query(
+      "SELECT tablename FROM pg_tables WHERE schemaname = $1",
+      ["public"]
+    );
+    for (const row of res.rows) {
+      const tableName = row.tablename;
+      await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
+      console.log(chalk.green(`Dropped table: ${tableName}`));
     }
-
     console.log(chalk.green("Database cleaned successfully."));
   } catch (err) {
     console.error(
@@ -54,8 +50,9 @@ async function cleanDatabase() {
       err
     );
   } finally {
-    await client.close();
+    await client.end();
   }
 }
 
+cleanDatabase();
 module.exports = cleanDatabase;
