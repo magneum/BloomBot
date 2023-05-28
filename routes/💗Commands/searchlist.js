@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,23 +26,23 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *🔎${pfname.toUpperCase()}🔎* 』
-│║⦁ ${VօxB໐t.prefix}advice
-│║⦁ ${VօxB໐t.prefix}anime
-│║⦁ ${VօxB໐t.prefix}chordlist
-│║⦁ ${VօxB໐t.prefix}fact
-│║⦁ ${VօxB໐t.prefix}getchord
-│║⦁ ${VօxB໐t.prefix}gify
-│║⦁ ${VօxB໐t.prefix}google
-│║⦁ ${VօxB໐t.prefix}instagram
-│║⦁ ${VօxB໐t.prefix}joke
-│║⦁ ${VօxB໐t.prefix}lyrics
-│║⦁ ${VօxB໐t.prefix}manga
-│║⦁ ${VօxB໐t.prefix}meme
-│║⦁ ${VօxB໐t.prefix}pokedex
-│║⦁ ${VօxB໐t.prefix}quote
-│║⦁ ${VօxB໐t.prefix}reddit
-│║⦁ ${VօxB໐t.prefix}ytsearch
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}advice
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}anime
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}chordlist
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}fact
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}getchord
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}gify
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}google
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}instagram
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}joke
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}lyrics
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}manga
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}meme
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}pokedex
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}quote
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}reddit
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytsearch
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

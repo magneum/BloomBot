@@ -9,43 +9,43 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.quoted) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image_`
       );
     }
 
-    if (/image/.test(VօxB໐t.mime)) {
+    if (/image/.test(ꪜᴏxʙᴏᴛ.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await VօxB໐t.downloadAndSaveMediaMessage(VօxB໐t.quoted, random);
-      VօxB໐t.exec(
-        VօxB໐t.pathFFmpeg + ` -i ${media} ${random}.png`,
+      media = await ꪜᴏxʙᴏᴛ.downloadAndSaveMediaMessage(ꪜᴏxʙᴏᴛ.quoted, random);
+      ꪜᴏxʙᴏᴛ.exec(
+        ꪜᴏxʙᴏᴛ.pathFFmpeg + ` -i ${media} ${random}.png`,
         async (error) => {
           if (error) {
-            return VօxB໐t.reply(`*🕊️You:* ${
-              VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+            return ꪜᴏxʙᴏᴛ.reply(`*🕊️You:* ${
+              ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"
             }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
-*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -53,59 +53,59 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 > ${error}`);
           }
 
-          if (VօxB໐t.fs.existsSync(random + ".png")) {
+          if (ꪜᴏxʙᴏᴛ.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (VօxB໐t.fs.existsSync(random + ".jpg")) {
+          } else if (ꪜᴏxʙᴏᴛ.fs.existsSync(random + ".jpg")) {
             Found = random + ".jpg";
-          } else if (VօxB໐t.fs.existsSync(random + ".jpeg")) {
+          } else if (ꪜᴏxʙᴏᴛ.fs.existsSync(random + ".jpeg")) {
             Found = random + ".jpeg";
-          } else if (VօxB໐t.fs.existsSync(random + ".webp")) {
+          } else if (ꪜᴏxʙᴏᴛ.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+            await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
               react: {
                 text: "❌",
                 key: ᴠᴏxᴄ.key,
               },
             });
             return ᴠᴏxᴄ.reply(
-              `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+              `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image_`
             );
           }
 
-          return await VօxB໐t.sendMessage(
+          return await ꪜᴏxʙᴏᴛ.sendMessage(
             ᴠᴏxᴄ.chat,
             {
-              image: VօxB໐t.fs.readFileSync(Found),
+              image: ꪜᴏxʙᴏᴛ.fs.readFileSync(Found),
               caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
-│║⦁ *🕊️You:* ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ *🕊️You:* ${ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${ᴠᴏxᴄ.chat.split("@")[0]}
-│║⦁ *📢Console:* ${VօxB໐t.ShowInfo.replace("http://", "")}
+│║⦁ *📢Console:* ${ꪜᴏxʙᴏᴛ.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*`,
+*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*`,
               footer: `*VLKYRE™ Bot By KRYKNZ*
 
-_*💻HomePage:* ${VօxB໐t.ShowInfo}_
-_*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
+_*💻HomePage:* ${ꪜᴏxʙᴏᴛ.ShowInfo}_
+_*⛺HomeLog:* ${ꪜᴏxʙᴏᴛ.ShowLogger}_`,
               mentions: [ᴠᴏxᴄ.sender],
               buttons: [
                 {
-                  buttonId: `${VօxB໐t.prefix}Commands`,
+                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Commands`,
                   buttonText: {
-                    displayText: `${VօxB໐t.prefix}✈️Commands`,
+                    displayText: `${ꪜᴏxʙᴏᴛ.prefix}✈️Commands`,
                   },
                   type: 1,
                 },
                 {
-                  buttonId: `${VօxB໐t.prefix}Synthia`,
-                  buttonText: { displayText: `${VօxB໐t.prefix}🛰️Synthia` },
+                  buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Synthia`,
+                  buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}🛰️Synthia` },
                   type: 1,
                 },
               ],
@@ -115,29 +115,29 @@ _*⛺HomeLog:* ${VօxB໐t.ShowLogger}_`,
               quoted: ᴠᴏxᴄ,
             }
           ).then(
-            VօxB໐t.fs.unlinkSync(Found),
-            VօxB໐t.fs.unlinkSync(random + ".png")
+            ꪜᴏxʙᴏᴛ.fs.unlinkSync(Found),
+            ꪜᴏxʙᴏᴛ.fs.unlinkSync(random + ".png")
           );
         }
       );
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

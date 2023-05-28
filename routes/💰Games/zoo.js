@@ -9,24 +9,24 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    await VօxB໐t.Economy.findOne(
+    await ꪜᴏxʙᴏᴛ.Economy.findOne(
       {
         ID: ᴠᴏxᴄ.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+          return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
         }
 
         if (!userEco) {
-          let newUser = new VօxB໐t.Economy({
+          let newUser = new ꪜᴏxʙᴏᴛ.Economy({
             ID: ᴠᴏxᴄ.sender,
             money: 0,
             daily: 0,
@@ -37,51 +37,51 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+            return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           });
-          return await VօxB໐t.imgB(
-            VօxB໐t,
+          return await ꪜᴏxʙᴏᴛ.imgB(
+            ꪜᴏxʙᴏᴛ,
             ᴠᴏxᴄ,
-            `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+            `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             "./src/voxbot.jpg"
           );
         } else {
-          await VօxB໐t.Zoology.findOne(
+          await ꪜᴏxʙᴏᴛ.Zoology.findOne(
             {
               ID: ᴠᴏxᴄ.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, Synthia, error);
               if (!userZoo) {
-                new VօxB໐t.Zoology({
+                new ꪜᴏxʙᴏᴛ.Zoology({
                   ID: ᴠᴏxᴄ.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   "./src/voxbot.jpg"
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
-                  let time = VօxB໐t.ms(
+                  let time = ꪜᴏxʙᴏᴛ.ms(
                     userZoo.zootimeout - (Date.now() - userZoo.zoodone)
                   );
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -95,7 +95,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   else if (zooID < 9) rarity = `big`;
                   else if (zooID < 10) rarity = `large`;
                   else rarity = `legendary`;
-                  let anim = VօxB໐t.animals[rarity];
+                  let anim = ꪜᴏxʙᴏᴛ.animals[rarity];
                   let worth =
                     Math.floor(Math.random() * (anim.max - anim.min + 1)) +
                     anim.min;
@@ -103,13 +103,13 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
@@ -124,6 +124,6 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

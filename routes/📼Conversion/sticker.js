@@ -9,77 +9,77 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.quoted) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video_`
       );
     }
 
-    if (/image/.test(VօxB໐t.mime)) {
-      let media = await VօxB໐t.quoted.download();
-      let sticker = new VօxB໐t.Sticker(media, {
+    if (/image/.test(ꪜᴏxʙᴏᴛ.mime)) {
+      let media = await ꪜᴏxʙᴏᴛ.quoted.download();
+      let sticker = new ꪜᴏxʙᴏᴛ.Sticker(media, {
         pack: "mågneum",
-        author: "ву VօxB໐t",
-        type: VօxB໐t.StickerTypes.FULL,
+        author: "ву ꪜᴏxʙᴏᴛ",
+        type: ꪜᴏxʙᴏᴛ.StickerTypes.FULL,
         categories: ["🤩", "🎉"],
         id: "12345",
         quality: 100,
         background: "transparent",
       });
       const buffer = await sticker.toBuffer();
-      return await VօxB໐t.sendMessage(
+      return await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
           sticker: buffer,
         },
         { quoted: ᴠᴏxᴄ }
       );
-    } else if (/video/.test(VօxB໐t.mime)) {
-      if ((VօxB໐t.quoted.msg || VօxB໐t.quoted).seconds > 20) {
-        await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    } else if (/video/.test(ꪜᴏxʙᴏᴛ.mime)) {
+      if ((ꪜᴏxʙᴏᴛ.quoted.msg || ꪜᴏxʙᴏᴛ.quoted).seconds > 20) {
+        await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
           react: {
             text: "❌",
             key: ᴠᴏxᴄ.key,
           },
         });
         return ᴠᴏxᴄ.reply(
-          `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+          `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Cannot convert videos longer than 21 Seconds!_`
         );
       } else {
-        let media = await VօxB໐t.quoted.download();
-        let sticker = new VօxB໐t.Sticker(media, {
+        let media = await ꪜᴏxʙᴏᴛ.quoted.download();
+        let sticker = new ꪜᴏxʙᴏᴛ.Sticker(media, {
           pack: "mågneum",
-          author: "ву VօxB໐t",
-          type: VօxB໐t.StickerTypes.FULL,
+          author: "ву ꪜᴏxʙᴏᴛ",
+          type: ꪜᴏxʙᴏᴛ.StickerTypes.FULL,
           categories: ["🤩", "🎉"],
           id: "12345",
           quality: 100,
           background: "transparent",
         });
         const buffer = await sticker.toBuffer();
-        return await VօxB໐t.sendMessage(
+        return await ꪜᴏxʙᴏᴛ.sendMessage(
           ᴠᴏxᴄ.chat,
           {
             sticker: buffer,
@@ -88,23 +88,23 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         );
       }
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

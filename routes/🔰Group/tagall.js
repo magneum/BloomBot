@@ -9,13 +9,13 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  VօxB໐t,
+  ꪜᴏxʙᴏᴛ,
   ᴠᴏxᴄ,
   gmeta,
   isAdmin,
@@ -26,28 +26,28 @@ module.exports = async (
 ) => {
   try {
     if (!ᴠᴏxᴄ.isGroup) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error*  
 > _It's a group command!_`
       );
     }
-    if (!isAdmin && !VօxB໐t.isSudoWorker) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!isAdmin && !ꪜᴏxʙᴏᴛ.isSudoWorker) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
@@ -55,31 +55,31 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ꪜᴏxʙᴏᴛ.profilePictureUrl(ᴠᴏxᴄ.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ꪜᴏxʙᴏᴛ.jpg";
     }
-    if (VօxB໐t.args) {
-      return await VօxB໐t.sendMessage(
+    if (ꪜᴏxʙᴏᴛ.args) {
+      return await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
           caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
-Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-Ῠ 🕛𝐓𝐢𝐦𝐞:  ${VօxB໐t.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
-📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${VօxB໐t.args.join(" ")}`,
+Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+Ῠ 🕛𝐓𝐢𝐦𝐞:  ${ꪜᴏxʙᴏᴛ.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${ꪜᴏxʙᴏᴛ.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
         { quoted: ᴠᴏxᴄ }
       );
     } else {
-      return await VօxB໐t.sendMessage(
+      return await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
           caption: `*📢ID:* ${ᴠᴏxᴄ.chat}
-Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-Ῠ 🕛𝐓𝐢𝐦𝐞:  ${VօxB໐t.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+Ῠ 🕛𝐓𝐢𝐦𝐞:  ${ꪜᴏxʙᴏᴛ.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
@@ -87,6 +87,6 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ);
   }
 };

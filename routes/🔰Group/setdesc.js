@@ -9,13 +9,13 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  VօxB໐t,
+  ꪜᴏxʙᴏᴛ,
   ᴠᴏxᴄ,
   gmeta,
   isAdmin,
@@ -26,83 +26,83 @@ module.exports = async (
 ) => {
   try {
     if (!ᴠᴏxᴄ.isGroup) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Bot not Admin!_`
       );
     }
-    if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args.join(" ")) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} manga-name_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} manga-name_`
       );
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ꪜᴏxʙᴏᴛ.profilePictureUrl(ᴠᴏxᴄ.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ꪜᴏxʙᴏᴛ.jpg";
     }
-    await VօxB໐t.groupUpdateDescription(ᴠᴏxᴄ.chat, VօxB໐t.args.join(" "));
-    return await VօxB໐t.imgB(
-      VօxB໐t,
+    await ꪜᴏxʙᴏᴛ.groupUpdateDescription(ᴠᴏxᴄ.chat, ꪜᴏxʙᴏᴛ.args.join(" "));
+    return await ꪜᴏxʙᴏᴛ.imgB(
+      ꪜᴏxʙᴏᴛ,
       ᴠᴏxᴄ,
       `> *Group Description Changed successfuly by: ${
-        VօxB໐t.pushname || VօxB໐t.Tname
+        ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname
       }*
 
 *📜New Description:*
-${VօxB໐t.args.join(" ")}`,
+${ꪜᴏxʙᴏᴛ.args.join(" ")}`,
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ);
   }
 };

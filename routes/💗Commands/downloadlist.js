@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,26 +26,26 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *📥${pfname.toUpperCase()}📥* 』
-│║⦁ ${VօxB໐t.prefix}yta
-│║⦁ ${VօxB໐t.prefix}play
-│║⦁ ${VօxB໐t.prefix}song
-│║⦁ ${VօxB໐t.prefix}sing
-│║⦁ ${VօxB໐t.prefix}ytmp3
-│║⦁ ${VօxB໐t.prefix}music
-│║⦁ ${VօxB໐t.prefix}ytplay
-│║⦁ ${VօxB໐t.prefix}ytaudio
-│║⦁ ${VօxB໐t.prefix}ytmusic
-│║⦁ ${VօxB໐t.prefix}youtubemusic
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}yta
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}play
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}song
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sing
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytmp3
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}music
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytplay
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytaudio
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytmusic
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}youtubemusic
 │║⦁ 
-│║⦁ ${VօxB໐t.prefix}ytv
-│║⦁ ${VօxB໐t.prefix}watch
-│║⦁ ${VօxB໐t.prefix}stream
-│║⦁ ${VօxB໐t.prefix}ytmp4
-│║⦁ ${VօxB໐t.prefix}video
-│║⦁ ${VօxB໐t.prefix}ytwatch
-│║⦁ ${VօxB໐t.prefix}ytvideo
-│║⦁ ${VօxB໐t.prefix}youtubevideo
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytv
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}watch
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}stream
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytmp4
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}video
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytwatch
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytvideo
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}youtubevideo
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

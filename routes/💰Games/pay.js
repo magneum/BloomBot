@@ -9,74 +9,74 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  if (!VօxB໐t.mentionByReply) {
-    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  if (!ꪜᴏxʙᴏᴛ.mentionByReply) {
+    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
   }
-  if (VօxB໐t.args.length === 0) {
-    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+  if (ꪜᴏxʙᴏᴛ.args.length === 0) {
+    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
   }
-  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(VօxB໐t.args[0])) {
-    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(ꪜᴏxʙᴏᴛ.args[0])) {
+    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
   }
-  if (VօxB໐t.args[0].match(/[a-z]/i)) {
-    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+  if (ꪜᴏxʙᴏᴛ.args[0].match(/[a-z]/i)) {
+    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
   }
 
-  if (VօxB໐t.mentionByReply) {
+  if (ꪜᴏxʙᴏᴛ.mentionByReply) {
     receiver =
-      VօxB໐t.mtype == "extendedTextMessage" &&
-      VօxB໐t.message.extendedTextMessage.contextInfo != null
-        ? VօxB໐t.message.extendedTextMessage.contextInfo.participant || ""
+      ꪜᴏxʙᴏᴛ.mtype == "extendedTextMessage" &&
+      ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo != null
+        ? ꪜᴏxʙᴏᴛ.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    receiverName = await VօxB໐t.getName(receiver);
+    receiverName = await ꪜᴏxʙᴏᴛ.getName(receiver);
     if (receiver === ᴠᴏxᴄ.sender) {
-      return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+      return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
     }
 
-    await VօxB໐t.Economy.findOne(
+    await ꪜᴏxʙᴏᴛ.Economy.findOne(
       {
         ID: ᴠᴏxᴄ.sender,
       },
       async (error, uPayer) => {
-        if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+        if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
         if (!uPayer) {
-          new VօxB໐t.Economy({
+          new ꪜᴏxʙᴏᴛ.Economy({
             ID: ᴠᴏxᴄ.sender,
             money: 0,
             daily: 0,
@@ -88,19 +88,19 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
           })
             .save()
             .catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
-          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
         }
 
-        if (parseInt(VօxB໐t.args[0]) > uPayer.money) {
-          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+        if (parseInt(ꪜᴏxʙᴏᴛ.args[0]) > uPayer.money) {
+          return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -109,18 +109,18 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 >${uPayer.money}
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
         } else {
-          await VօxB໐t.Economy.findOne(
+          await ꪜᴏxʙᴏᴛ.Economy.findOne(
             {
               ID: receiver,
             },
             async (error, uBonus) => {
-              if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               if (!uBonus) {
-                new VօxB໐t.Economy({
+                new ꪜᴏxʙᴏᴛ.Economy({
                   ID: receiver,
-                  money: parseInt(VօxB໐t.args[0]),
+                  money: parseInt(ꪜᴏxʙᴏᴛ.args[0]),
                   daily: 0,
                   timeout: 86400000,
                   fishdone: 0,
@@ -130,20 +130,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                uPayer.money = uPayer.money - parseInt(VօxB໐t.args[0]);
+                uPayer.money = uPayer.money - parseInt(ꪜᴏxʙᴏᴛ.args[0]);
                 uPayer.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                  return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                 });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${VօxB໐t.pushname || VօxB໐t.Tname}
+│║⦁ *🦚Account Holder:* ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -154,22 +154,22 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 );
               }
 
-              uPayer.money = uPayer.money - parseInt(VօxB໐t.args[0]);
+              uPayer.money = uPayer.money - parseInt(ꪜᴏxʙᴏᴛ.args[0]);
               uPayer.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              uBonus.money = uBonus.money + parseInt(VօxB໐t.args[0]);
+              uBonus.money = uBonus.money + parseInt(ꪜᴏxʙᴏᴛ.args[0]);
               uBonus.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${VօxB໐t.pushname || VօxB໐t.Tname}
+│║⦁ *🦚Account Holder:* ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -184,12 +184,12 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       }
     );
   } else {
-    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_ 
+    return ᴠᴏxᴄ.reply(`*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${VօxB໐t.prefix}${pfname} amount_`);
+> Reply-Person: _${ꪜᴏxʙᴏᴛ.prefix}${pfname} amount_`);
   }
 };

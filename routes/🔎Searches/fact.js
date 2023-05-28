@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    var кяуяєs = await VօxB໐t.axios.get("https://nekos.life/api/v2/fact");
+    var кяуяєs = await ꪜᴏxʙᴏᴛ.axios.get("https://nekos.life/api/v2/fact");
     try {
-      var кяуяєsi = await VօxB໐t.fetch(
+      var кяуяєsi = await ꪜᴏxʙᴏᴛ.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
@@ -28,23 +28,23 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       var bson = await кяуяєsi.json();
       var bsoni =
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await VօxB໐t.imgB(
-        VօxB໐t,
+      await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:* 
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:* 
 > ${кяуяєs.data.fact}`,
         bsoni.url_image
       );
     } catch {
-      await VօxB໐t.imgB(
-        VօxB໐t,
+      await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:* 
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:* 
 > ${кяуяєs.data.fact}`,
         "./src/VօxB໐t_beta.jpg"
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

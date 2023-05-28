@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,46 +26,46 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *🦄${pfname.toUpperCase()}🦄* 』
-│║⦁ ${VօxB໐t.prefix}waifu
-│║⦁ ${VօxB໐t.prefix}swaifu
-│║⦁ ${VօxB໐t.prefix}neko
-│║⦁ ${VօxB໐t.prefix}sneko
-│║⦁ ${VօxB໐t.prefix}shinobu
-│║⦁ ${VօxB໐t.prefix}sshinobu
-│║⦁ ${VօxB໐t.prefix}megumin
-│║⦁ ${VօxB໐t.prefix}smegumin
-│║⦁ ${VօxB໐t.prefix}awoo
-│║⦁ ${VօxB໐t.prefix}sawoo
-│║⦁ ${VօxB໐t.prefix}glomp
-│║⦁ ${VօxB໐t.prefix}sglomp
-│║⦁ ${VօxB໐t.prefix}handhold
-│║⦁ ${VօxB໐t.prefix}shandhold
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}waifu
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}swaifu
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}neko
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sneko
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}shinobu
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sshinobu
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}megumin
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}smegumin
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}awoo
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sawoo
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}glomp
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sglomp
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}handhold
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}shandhold
 │║⦁
-│║⦁ ${VօxB໐t.prefix}sbully
-│║⦁ ${VօxB໐t.prefix}scuddle
-│║⦁ ${VօxB໐t.prefix}scry
-│║⦁ ${VօxB໐t.prefix}shug
-│║⦁ ${VօxB໐t.prefix}skiss
-│║⦁ ${VօxB໐t.prefix}slick
-│║⦁ ${VօxB໐t.prefix}spat
-│║⦁ ${VօxB໐t.prefix}ssmug
-│║⦁ ${VօxB໐t.prefix}sbonk
-│║⦁ ${VօxB໐t.prefix}syeet
-│║⦁ ${VօxB໐t.prefix}sblush
-│║⦁ ${VօxB໐t.prefix}ssmile
-│║⦁ ${VօxB໐t.prefix}swave
-│║⦁ ${VօxB໐t.prefix}shighfive
-│║⦁ ${VօxB໐t.prefix}snom
-│║⦁ ${VօxB໐t.prefix}sbite
-│║⦁ ${VօxB໐t.prefix}sslap
-│║⦁ ${VօxB໐t.prefix}skill
-│║⦁ ${VօxB໐t.prefix}skick
-│║⦁ ${VօxB໐t.prefix}shappy
-│║⦁ ${VօxB໐t.prefix}swink
-│║⦁ ${VօxB໐t.prefix}spoke
-│║⦁ ${VօxB໐t.prefix}sdance
-│║⦁ ${VօxB໐t.prefix}scringe
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sbully
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}scuddle
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}scry
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}shug
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}skiss
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}slick
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}spat
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ssmug
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sbonk
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}syeet
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sblush
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ssmile
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}swave
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}shighfive
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}snom
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sbite
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sslap
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}skill
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}skick
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}shappy
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}swink
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}spoke
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sdance
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}scringe
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

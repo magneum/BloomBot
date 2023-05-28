@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,34 +26,34 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *🐉${pfname.toUpperCase()}🐉* 』
-│║⦁ ${VօxB໐t.prefix}bite
-│║⦁ ${VօxB໐t.prefix}blush
-│║⦁ ${VօxB໐t.prefix}bonk
-│║⦁ ${VօxB໐t.prefix}bored
-│║⦁ ${VօxB໐t.prefix}confused
-│║⦁ ${VօxB໐t.prefix}cry
-│║⦁ ${VօxB໐t.prefix}cuddle
-│║⦁ ${VօxB໐t.prefix}dance
-│║⦁ ${VօxB໐t.prefix}goodnight
-│║⦁ ${VօxB໐t.prefix}happy
-│║⦁ ${VօxB໐t.prefix}highfive
-│║⦁ ${VօxB໐t.prefix}hug
-│║⦁ ${VօxB໐t.prefix}kill
-│║⦁ ${VօxB໐t.prefix}kiss
-│║⦁ ${VօxB໐t.prefix}nervous
-│║⦁ ${VօxB໐t.prefix}pat
-│║⦁ ${VօxB໐t.prefix}poke
-│║⦁ ${VօxB໐t.prefix}punch
-│║⦁ ${VօxB໐t.prefix}sad
-│║⦁ ${VօxB໐t.prefix}scream
-│║⦁ ${VօxB໐t.prefix}slap
-│║⦁ ${VօxB໐t.prefix}smile
-│║⦁ ${VօxB໐t.prefix}stare
-│║⦁ ${VօxB໐t.prefix}wave
-│║⦁ ${VօxB໐t.prefix}wink
-│║⦁ ${VօxB໐t.prefix}yeet
-│║⦁ ${VօxB໐t.prefix}yes
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}bite
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}blush
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}bonk
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}bored
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}confused
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}cry
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}cuddle
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}dance
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}goodnight
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}happy
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}highfive
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}hug
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}kill
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}kiss
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}nervous
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}pat
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}poke
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}punch
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sad
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}scream
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}slap
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}smile
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}stare
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}wave
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}wink
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}yeet
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}yes
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

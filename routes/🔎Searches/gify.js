@@ -9,38 +9,38 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.args.join(" ")) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args.join(" ")) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} gif-name_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} gif-name_`
       );
     }
 
     try {
-      let { data: gi } = await VօxB໐t.axios.get(
-        `https://g.tenor.com/v1/search?q=${VօxB໐t.args.join(
+      let { data: gi } = await ꪜᴏxʙᴏᴛ.axios.get(
+        `https://g.tenor.com/v1/search?q=${ꪜᴏxʙᴏᴛ.args.join(
           " "
         )}&key=LIVDSRZULELA&limit=8`
       );
-      return await VօxB໐t.sendMessage(
+      return await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
           gifPlayback: true,
@@ -56,20 +56,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         { quoted: ᴠᴏxᴄ }
       );
     } catch (Èrrðr) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No such gif found!_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

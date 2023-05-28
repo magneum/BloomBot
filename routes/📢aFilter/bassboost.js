@@ -9,58 +9,58 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.quoted) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Audio_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Audio_`
       );
     }
 
-    if (/audio/.test(VօxB໐t.mime)) {
+    if (/audio/.test(ꪜᴏxʙᴏᴛ.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await VօxB໐t.downloadAndSaveMediaMessage(VօxB໐t.quoted, random);
-      VօxB໐t.exec(
-        `${VօxB໐t.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
+      media = await ꪜᴏxʙᴏᴛ.downloadAndSaveMediaMessage(ꪜᴏxʙᴏᴛ.quoted, random);
+      ꪜᴏxʙᴏᴛ.exec(
+        `${ꪜᴏxʙᴏᴛ.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
           if (error) {
             return ᴠᴏxᴄ.reply(`*🕊️You:* ${
-              VօxB໐t.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+              ꪜᴏxʙᴏᴛ.pushname || "ɴᴏ_ɴᴀᴍᴇ"
             }\n*📢ID:* ${ᴠᴏxᴄ.chat}
 
-*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
           } else {
-            var Thumb = await VօxB໐t.getBuffer("./src/VօxB໐t.jpg");
-            return await VօxB໐t.sendMessage(
+            var Thumb = await ꪜᴏxʙᴏᴛ.getBuffer("./src/ꪜᴏxʙᴏᴛ.jpg");
+            return await ꪜᴏxʙᴏᴛ.sendMessage(
               ᴠᴏxᴄ.chat,
               {
-                audio: VօxB໐t.fs.readFileSync(`${random}.mp3`),
+                audio: ꪜᴏxʙᴏᴛ.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
                   externalAdReply: {
                     title: `*🎙️Filter:* _${pfname}_`,
-                    body: "VօxB໐t вσт ву mågneum™",
+                    body: "ꪜᴏxʙᴏᴛ вσт ву mågneum™",
                     mediaType: 2,
                     thumbnail: Thumb,
                     mediaUrl: one.url,
@@ -70,28 +70,28 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 fileName: `${one.title}.mp3`,
               },
               { quoted: ᴠᴏxᴄ }
-            ).then(VօxB໐t.fs.unlinkSync(`${random}.mp3`));
+            ).then(ꪜᴏxʙᴏᴛ.fs.unlinkSync(`${random}.mp3`));
           }
         }
       );
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Audio_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Audio_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

@@ -9,41 +9,41 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.args) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} image-name_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} image-name_`
       );
     }
 
-    VօxB໐t.magfetch(
-      VօxB໐t,
-      "https://magneum.vercel.app/api/unsplash?q=" + VօxB໐t.args.join(" ")
+    ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
+      "https://magneum.vercel.app/api/unsplash?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
     ).then(async (response) => {
       var mData = response.data;
       console.log(mData);
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *Topic*: ${mData.meta.topic}
 *Query*: ${mData.meta.query}
 *Width*: ${mData.meta.width}
@@ -55,6 +55,6 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       );
     });
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

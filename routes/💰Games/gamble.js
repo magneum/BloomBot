@@ -9,30 +9,30 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
     let FormatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     let FormatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-    if (!VօxB໐t.args[0] && !VօxB໐t.args[1]) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args[0] && !ꪜᴏxʙᴏᴛ.args[1]) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -40,21 +40,21 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    if (FormatColor.test(VօxB໐t.args[0])) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (FormatColor.test(ꪜᴏxʙᴏᴛ.args[0])) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -62,21 +62,21 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    if (FormatAmount.test(VօxB໐t.args[1])) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (FormatAmount.test(ꪜᴏxʙᴏᴛ.args[1])) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -85,24 +85,24 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     }
 
     if (
-      !VօxB໐t.args[0].includes("red") &&
-      !VօxB໐t.args[0].includes("black") &&
-      !VօxB໐t.args[0].includes("purple")
+      !ꪜᴏxʙᴏᴛ.args[0].includes("red") &&
+      !ꪜᴏxʙᴏᴛ.args[0].includes("black") &&
+      !ꪜᴏxʙᴏᴛ.args[0].includes("purple")
     ) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -110,13 +110,13 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       );
     }
 
-    let ColorRoom = VօxB໐t.args[0];
-    let AmountRoom = parseInt(VօxB໐t.args[1]);
+    let ColorRoom = ꪜᴏxʙᴏᴛ.args[0];
+    let AmountRoom = parseInt(ꪜᴏxʙᴏᴛ.args[1]);
     if (AmountRoom < 50) {
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
         "./src/voxbot.jpg"
@@ -124,10 +124,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     }
 
     if (AmountRoom > 800) {
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
         "./src/voxbot.jpg"
@@ -135,10 +135,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     }
 
     if (ColorRoom === "red" && AmountRoom > 200) {
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
         "./src/voxbot.jpg"
@@ -146,10 +146,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     }
 
     if (ColorRoom === "black" && AmountRoom > 500) {
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
         "./src/voxbot.jpg"
@@ -157,27 +157,27 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     }
 
     if (ColorRoom === "purple" && AmountRoom > 800) {
-      return await VօxB໐t.imgB(
-        VօxB໐t,
+      return await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money For Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
         "./src/voxbot.jpg"
       );
     }
 
-    VօxB໐t.Economy.findOne(
+    ꪜᴏxʙᴏᴛ.Economy.findOne(
       {
         ID: ᴠᴏxᴄ.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+          return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
         }
 
         if (!userEco) {
-          let newUser = new VօxB໐t.Economy({
+          let newUser = new ꪜᴏxʙᴏᴛ.Economy({
             ID: ᴠᴏxᴄ.sender,
             money: 0,
             daily: 0,
@@ -188,40 +188,40 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+            return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           });
-          return await VօxB໐t.imgB(
-            VօxB໐t,
+          return await ꪜᴏxʙᴏᴛ.imgB(
+            ꪜᴏxʙᴏᴛ,
             ᴠᴏxᴄ,
-            `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+            `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
             "./src/voxbot.jpg"
           );
         }
 
-        VօxB໐t.Gamble.findOne(
+        ꪜᴏxʙᴏᴛ.Gamble.findOne(
           {
             ID: ᴠᴏxᴄ.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             }
 
             if (!userGamble) {
-              let newUser = new VօxB໐t.Gamble({
+              let newUser = new ꪜᴏxʙᴏᴛ.Gamble({
                 ID: ᴠᴏxᴄ.sender,
                 serverID: ᴠᴏxᴄ.chat,
                 Gambledone: 0,
                 Gambletimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
                 "./src/voxbot.jpg"
@@ -232,13 +232,13 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              let time = VօxB໐t.ms(
+              let time = ꪜᴏxʙᴏᴛ.ms(
                 userGamble.Gambletimeout - (Date.now() - userGamble.Gambledone)
               );
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                 "./src/voxbot.jpg"
@@ -258,20 +258,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             let Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "❌",
                   key: ᴠᴏxᴄ.key,
                 },
               });
               return ᴠᴏxᴄ.reply(
-                `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+                `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} _color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -281,20 +281,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
             Color = Color.toLowerCase();
             if (!money) {
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "❌",
                   key: ᴠᴏxᴄ.key,
                 },
               });
               return ᴠᴏxᴄ.reply(
-                `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+                `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -303,20 +303,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             }
 
             if (money > CurrentMoney) {
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "❌",
                   key: ᴠᴏxᴄ.key,
                 },
               });
               return ᴠᴏxᴄ.reply(
-                `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+                `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -331,20 +331,20 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+              await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
                 react: {
                   text: "❌",
                   key: ᴠᴏxᴄ.key,
                 },
               });
               return ᴠᴏxᴄ.reply(
-                `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+                `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} color money_
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -357,15 +357,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
               await userEco.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
                 "./src/voxbot.jpg"
@@ -377,15 +377,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
               await userEco.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
                 "./src/voxbot.jpg"
@@ -397,15 +397,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
               await userEco.save().catch((error) => {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               });
-              return await VօxB໐t.imgB(
-                VօxB໐t,
+              return await ꪜᴏxʙᴏᴛ.imgB(
+                ꪜᴏxʙᴏᴛ,
                 ᴠᴏxᴄ,
-                `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
                 "./src/voxbot.jpg"
@@ -415,15 +415,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
             await userEco.save().catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
               "./src/voxbot.jpg"
@@ -433,6 +433,6 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

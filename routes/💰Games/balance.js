@@ -9,22 +9,22 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.Economy.findOne(
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.Economy.findOne(
     {
       ID: ᴠᴏxᴄ.sender,
     },
     async (error, data) => {
       if (error) {
-        return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+        return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
       }
       if (!data) {
-        new VօxB໐t.Economy({
+        new ꪜᴏxʙᴏᴛ.Economy({
           ID: ᴠᴏxᴄ.sender,
           money: 0,
           daily: 0,
@@ -36,21 +36,21 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         })
           .save()
           .catch((error) => {
-            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+            return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           });
-        return await VօxB໐t.imgB(
-          VօxB໐t,
+        return await ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
           ᴠᴏxᴄ,
-          `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+          `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
           "./src/voxbot.jpg"
         );
       } else {
-        return await VօxB໐t.imgB(
-          VօxB໐t,
+        return await ꪜᴏxʙᴏᴛ.imgB(
+          ꪜᴏxʙᴏᴛ,
           ᴠᴏxᴄ,
-          `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+          `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *💰Balance:* ${data.money}`,
           "./src/voxbot.jpg"
         );

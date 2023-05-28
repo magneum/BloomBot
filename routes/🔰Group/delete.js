@@ -9,13 +9,13 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  VօxB໐t,
+  ꪜᴏxʙᴏᴛ,
   ᴠᴏxᴄ,
   gmeta,
   isAdmin,
@@ -25,43 +25,43 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.quoted) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image/Video/Text in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video/Text_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video/Text_`
       );
     }
 
-    let { isBaileys } = VօxB໐t.quoted;
+    let { isBaileys } = ꪜᴏxʙᴏᴛ.quoted;
     if (!isBaileys) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Can not delete massage from another userID except mine!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video/Text_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video/Text_`
       );
     } else {
-      return await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      return await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         delete: {
           remoteJid: ᴠᴏxᴄ.chat,
           fromMe: true,
@@ -71,6 +71,6 @@ module.exports = async (
       });
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ);
   }
 };

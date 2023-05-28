@@ -9,24 +9,24 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    await VօxB໐t.Economy.findOne(
+    await ꪜᴏxʙᴏᴛ.Economy.findOne(
       {
         ID: ᴠᴏxᴄ.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+          return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
         }
 
         if (!userEco) {
-          new VօxB໐t.Economy({
+          new ꪜᴏxʙᴏᴛ.Economy({
             ID: ᴠᴏxᴄ.sender,
             money: 0,
             daily: 0,
@@ -38,25 +38,25 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
           })
             .save()
             .catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
-          return await VօxB໐t.imgB(
-            VօxB໐t,
+          return await ꪜᴏxʙᴏᴛ.imgB(
+            ꪜᴏxʙᴏᴛ,
             ᴠᴏxᴄ,
-            `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+            `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             "./src/voxbot.jpg"
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-            let time = VօxB໐t.ms(
+            let time = ꪜᴏxʙᴏᴛ.ms(
               userEco.fishtimeout - (Date.now() - userEco.fishdone)
             );
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
               "./src/voxbot.jpg"
@@ -69,7 +69,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             else if (fishID < 9) rarity = `uncommon`;
             else if (fishID < 10) rarity = `rare`;
             else rarity = `legendary`;
-            let fishh = VօxB໐t.Fishes[rarity];
+            let fishh = ꪜᴏxʙᴏᴛ.Fishes[rarity];
             let worth =
               Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
               fishh.min;
@@ -77,12 +77,12 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             userEco.fishdone = Date.now();
             userEco.fishtimeout = 1800000;
             userEco.save().catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell For Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,
@@ -93,6 +93,6 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       }
     );
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

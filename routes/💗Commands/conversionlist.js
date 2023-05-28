@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,13 +26,13 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *📼${pfname.toUpperCase()}📼* 』
-│║⦁ ${VօxB໐t.prefix}carbon
-│║⦁ ${VօxB໐t.prefix}ship
-│║⦁ ${VօxB໐t.prefix}sticker
-│║⦁ ${VօxB໐t.prefix}tinyurl
-│║⦁ ${VօxB໐t.prefix}tourl
-│║⦁ ${VօxB໐t.prefix}tts
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}carbon
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ship
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}sticker
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}tinyurl
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}tourl
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}tts
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

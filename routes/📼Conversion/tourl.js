@@ -9,70 +9,70 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.quoted) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.quoted) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video_`
       );
     }
 
-    if (/image/.test(VօxB໐t.mime)) {
-      media = await VօxB໐t.quoted.download();
-      upload = await VօxB໐t.TelegraPh(media);
+    if (/image/.test(ꪜᴏxʙᴏᴛ.mime)) {
+      media = await ꪜᴏxʙᴏᴛ.quoted.download();
+      upload = await ꪜᴏxʙᴏᴛ.TelegraPh(media);
       console.log(media, upload);
-      await VօxB໐t.imgB(
-        VօxB໐t,
+      await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
-*🎊Link: * _${VօxB໐t.util.format(upload)}_`,
-        "./src/VօxB໐t.jpg"
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
+*🎊Link: * _${ꪜᴏxʙᴏᴛ.util.format(upload)}_`,
+        "./src/ꪜᴏxʙᴏᴛ.jpg"
       );
-    } else if (/video/.test(VօxB໐t.mime)) {
-      media = await VօxB໐t.quoted.download();
-      upload = await VօxB໐t.TelegraPh(media);
-      await VօxB໐t.imgB(
-        VօxB໐t,
+    } else if (/video/.test(ꪜᴏxʙᴏᴛ.mime)) {
+      media = await ꪜᴏxʙᴏᴛ.quoted.download();
+      upload = await ꪜᴏxʙᴏᴛ.TelegraPh(media);
+      await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
-*🎊Link: * _${VօxB໐t.util.format(upload)}_`,
-        "./src/VօxB໐t.jpg"
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
+*🎊Link: * _${ꪜᴏxʙᴏᴛ.util.format(upload)}_`,
+        "./src/ꪜᴏxʙᴏᴛ.jpg"
       );
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Could not find any Image/Video in context!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} reply to Image/Video_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} reply to Image/Video_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

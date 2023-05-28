@@ -9,12 +9,12 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
     let Item;
     let NewLimit;
@@ -29,120 +29,120 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
     const BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
     const RobCatelog = ["sword", "laptop", "charm"];
 
-    if (VօxB໐t.args[0] === "bronze") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (VօxB໐t.args[0] === "silver") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (VօxB໐t.args[0] === "gold") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (VօxB໐t.args[0] === "platinum") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (VօxB໐t.args[0] === "diamond") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
-    if (VօxB໐t.args[0] === "charm") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "charm") {
       Item = "charm";
       ItemPrice = 6000;
     }
-    if (VօxB໐t.args[0] === "sword") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "sword") {
       Item = "sword";
       ItemPrice = 1000;
     }
-    if (VօxB໐t.args[0] === "laptop") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "laptop") {
       Item = "laptop";
       ItemPrice = 4000;
     }
 
-    if (VօxB໐t.args[0] === "bronze") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (VօxB໐t.args[0] === "silver") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (VօxB໐t.args[0] === "gold") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (VօxB໐t.args[0] === "platinum") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (VօxB໐t.args[0] === "diamond") {
+    if (ꪜᴏxʙᴏᴛ.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
 
-    if (!VօxB໐t.args) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} item_
-> _You may use ${VօxB໐t.prefix}shop to look for items..._`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} item_
+> _You may use ${ꪜᴏxʙᴏᴛ.prefix}shop to look for items..._`
       );
     }
 
-    if (VօxB໐t.args.length === 0) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (ꪜᴏxʙᴏᴛ.args.length === 0) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} item_
-> _You may use ${VօxB໐t.prefix}shop to look for items..._`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} item_
+> _You may use ${ꪜᴏxʙᴏᴛ.prefix}shop to look for items..._`
       );
     }
 
-    if (RobCatelog.includes(VօxB໐t.args[0])) {
-      VօxB໐t.Economy.findOne(
+    if (RobCatelog.includes(ꪜᴏxʙᴏᴛ.args[0])) {
+      ꪜᴏxʙᴏᴛ.Economy.findOne(
         {
           ID: ᴠᴏxᴄ.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+            return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           }
 
           if (!userEco) {
-            let newUser = new VօxB໐t.Economy({
+            let newUser = new ꪜᴏxʙᴏᴛ.Economy({
               ID: ᴠᴏxᴄ.sender,
               money: 0,
               daily: 0,
@@ -153,26 +153,26 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+              return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
             });
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               "./src/voxbot.jpg"
             );
           }
-          VօxB໐t.Robbery.findOne(
+          ꪜᴏxʙᴏᴛ.Robbery.findOne(
             {
               ID: ᴠᴏxᴄ.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               }
               if (!userRob) {
-                new VօxB໐t.Robbery({
+                new ꪜᴏxʙᴏᴛ.Robbery({
                   ID: ᴠᴏxᴄ.sender,
                   sword: 0,
                   laptop: 0,
@@ -182,22 +182,22 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   "./src/voxbot.jpg"
                 );
               } else {
                 if (userEco.money < ItemPrice) {
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -212,16 +212,16 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -234,16 +234,16 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -256,16 +256,16 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
                   await userRob.save().catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                  return await VօxB໐t.imgB(
-                    VօxB໐t,
+                  return await ꪜᴏxʙᴏᴛ.imgB(
+                    ꪜᴏxʙᴏᴛ,
                     ᴠᴏxᴄ,
                     `*🔖Here, ${pfname} For @${
-                      VօxB໐t.Tname || VօxB໐t.pushname
+                      ꪜᴏxʙᴏᴛ.Tname || ꪜᴏxʙᴏᴛ.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -273,10 +273,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                     "./src/voxbot.jpg"
                   );
                 }
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./src/voxbot.jpg"
@@ -286,27 +286,27 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
           );
         }
       );
-    } else if (BadCatelog.includes(VօxB໐t.args[0])) {
-      await VօxB໐t.Economy.findOne(
+    } else if (BadCatelog.includes(ꪜᴏxʙᴏᴛ.args[0])) {
+      await ꪜᴏxʙᴏᴛ.Economy.findOne(
         {
           ID: ᴠᴏxᴄ.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+            return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           }
 
-          await VօxB໐t.Bagde.findOne(
+          await ꪜᴏxʙᴏᴛ.Bagde.findOne(
             {
               ID: ᴠᴏxᴄ.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
               }
 
               if (!userEco) {
-                new VօxB໐t.Economy({
+                new ꪜᴏxʙᴏᴛ.Economy({
                   ID: ᴠᴏxᴄ.sender,
                   money: 0,
                   daily: 0,
@@ -318,12 +318,12 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                   });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -334,7 +334,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               }
 
               if (!userBadge) {
-                let newBagdeUser = new VօxB໐t.Bagde({
+                let newBagdeUser = new ꪜᴏxʙᴏᴛ.Bagde({
                   ID: ᴠᴏxᴄ.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -343,12 +343,12 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                  return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                 });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -359,10 +359,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               }
 
               if (userEco.money < ItemPrice) {
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -373,10 +373,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               }
 
               if (userBadge.Badge === Item) {
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   "./src/voxbot.jpg"
@@ -392,15 +392,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                  return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+                  return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
                 });
-                return await VօxB໐t.imgB(
-                  VօxB໐t,
+                return await ꪜᴏxʙᴏᴛ.imgB(
+                  ꪜᴏxʙᴏᴛ,
                   ᴠᴏxᴄ,
-                  `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+                  `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Complete!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -413,24 +413,24 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         }
       );
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} item_
-> _You may use ${VօxB໐t.prefix}shop to look for items..._`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} item_
+> _You may use ${ꪜᴏxʙᴏᴛ.prefix}shop to look for items..._`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,31 +26,31 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *🍑${pfname.toUpperCase()}🍑* 』
-│║⦁ ${VօxB໐t.prefix}ass
-│║⦁ ${VօxB໐t.prefix}bdsm
-│║⦁ ${VօxB໐t.prefix}blowjob
-│║⦁ ${VօxB໐t.prefix}cum
-│║⦁ ${VօxB໐t.prefix}doujin
-│║⦁ ${VօxB໐t.prefix}feet
-│║⦁ ${VօxB໐t.prefix}femdom  
-│║⦁ ${VօxB໐t.prefix}foxgirl  
-│║⦁ ${VօxB໐t.prefix}glasses  
-│║⦁ ${VօxB໐t.prefix}hentai
-│║⦁ ${VօxB໐t.prefix}maid
-│║⦁ ${VօxB໐t.prefix}masturbation
-│║⦁ ${VօxB໐t.prefix}netorare
-│║⦁ ${VօxB໐t.prefix}orgy
-│║⦁ ${VօxB໐t.prefix}panties
-│║⦁ ${VօxB໐t.prefix}pussy
-│║⦁ ${VօxB໐t.prefix}school
-│║⦁ ${VօxB໐t.prefix}succubus
-│║⦁ ${VօxB໐t.prefix}tentacles
-│║⦁ ${VօxB໐t.prefix}thighs
-│║⦁ ${VօxB໐t.prefix}uglyBastard
-│║⦁ ${VօxB໐t.prefix}uniform
-│║⦁ ${VօxB໐t.prefix}yuri
-│║⦁ ${VօxB໐t.prefix}zettaiRyouiki
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ass
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}bdsm
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}blowjob
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}cum
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}doujin
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}feet
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}femdom  
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}foxgirl  
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}glasses  
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}hentai
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}maid
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}masturbation
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}netorare
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}orgy
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}panties
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}pussy
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}school
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}succubus
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}tentacles
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}thighs
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}uglyBastard
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}uniform
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}yuri
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}zettaiRyouiki
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };

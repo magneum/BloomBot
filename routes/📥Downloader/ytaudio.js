@@ -9,43 +9,43 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const ytdl = require("ytdl-secktor");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
   try {
-    if (!VօxB໐t.args) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${VօxB໐t.prefix}${pfname} song-name_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} song-name_`
       );
     }
-    VօxB໐t.magfetch(
-      VօxB໐t,
-      "https://magneum.vercel.app/api/youtube_sr?q=" + VօxB໐t.args.join(" ")
+    ꪜᴏxʙᴏᴛ.magfetch(
+      ꪜᴏxʙᴏᴛ,
+      "https://magneum.vercel.app/api/youtube_sr?q=" + ꪜᴏxʙᴏᴛ.args.join(" ")
     ).then(async (response) => {
       var mData = response.data;
       console.log(mData);
 
-      return await VօxB໐t.sendMessage(
+      return await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
           image: { url: mData.youtube_search[0].HQ_IMAGE },
-          caption: `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
+          caption: `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname}:*
 *🍻Title:* ${mData.youtube_search[0].TITLE}
 *🙈Views:* ${mData.youtube_search[0].VIEWS}
 *🔗Link:* ${mData.youtube_search[0].LINK || "null"}
@@ -55,13 +55,13 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
             "*Synthoria™ by Mågneum*\n*💻HomePage:* https://bit.ly/magneum",
           buttons: [
             {
-              buttonId: `${VօxB໐t.prefix}Dashboard`,
-              buttonText: { displayText: `${VօxB໐t.prefix}Dashboard` },
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Dashboard` },
               type: 1,
             },
             {
-              buttonId: `${VօxB໐t.prefix}Help`,
-              buttonText: { displayText: `${VօxB໐t.prefix}Help` },
+              buttonId: `${ꪜᴏxʙᴏᴛ.prefix}Help`,
+              buttonText: { displayText: `${ꪜᴏxʙᴏᴛ.prefix}Help` },
               type: 1,
             },
           ],
@@ -74,10 +74,10 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
         }
       );
 
-      await VօxB໐t.imgB(
-        VօxB໐t,
+      await ꪜᴏxʙᴏᴛ.imgB(
+        ꪜᴏxʙᴏᴛ,
         ᴠᴏxᴄ,
-        `*🔖Here, ${pfname} For ${VօxB໐t.pushname}:*
+        `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname}:*
 *🍻Title:* ${mData.youtube_search[0].TITLE}
 *🙈Views:* ${mData.youtube_search[0].VIEWS}
 *🔗Link:* ${mData.youtube_search[0].LINK || "null"}
@@ -88,15 +88,15 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
       return;
       const stream = ytdl(mData.youtube_search[0].LINK, {
         filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-      }).pipe(VօxB໐t.fs.createWriteStream(`./${mData.uuid}`));
+      }).pipe(ꪜᴏxʙᴏᴛ.fs.createWriteStream(`./${mData.uuid}`));
       await new Promise((resolve, reject) => {
         stream.on("error", reject);
         stream.on("finish", resolve);
       });
-      await VօxB໐t.sendMessage(
+      await ꪜᴏxʙᴏᴛ.sendMessage(
         ᴠᴏxᴄ.chat,
         {
-          audio: VօxB໐t.fs.readFileSync(`./${mData.uuid}`),
+          audio: ꪜᴏxʙᴏᴛ.fs.readFileSync(`./${mData.uuid}`),
           mimetype: "audio/mpeg",
           fileName: mData.youtube_search[0].TITLE + ".mp3",
           headerType: 4,
@@ -108,7 +108,7 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
               thumbnailUrl: mData.youtube_search[0].THUMB,
               mediaUrl: mData.youtube_search[0].LINK,
               mediaType: 1,
-              thumbnail: await VօxB໐t.getBuffer(
+              thumbnail: await ꪜᴏxʙᴏᴛ.getBuffer(
                 mData.youtube_search[0].HQ_IMAGE
               ),
               sourceUrl: "https://bit.ly/magneum",
@@ -116,9 +116,9 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
           },
         },
         { quoted: ᴠᴏxᴄ }
-      ).then(VօxB໐t.fs.unlinkSync(`./${mData.uuid}`));
+      ).then(ꪜᴏxʙᴏᴛ.fs.unlinkSync(`./${mData.uuid}`));
     });
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
   }
 };

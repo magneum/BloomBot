@@ -9,13 +9,13 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
 module.exports = async (
-  VօxB໐t,
+  ꪜᴏxʙᴏᴛ,
   ᴠᴏxᴄ,
   gmeta,
   isAdmin,
@@ -26,42 +26,42 @@ module.exports = async (
 ) => {
   try {
     if (!ᴠᴏxᴄ.isGroup) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isBotAdmin) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _Bot not Admin!_`
@@ -69,56 +69,56 @@ module.exports = async (
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await VօxB໐t.profilePictureUrl(ᴠᴏxᴄ.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await ꪜᴏxʙᴏᴛ.profilePictureUrl(ᴠᴏxᴄ.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/VօxB໐t.jpg";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./src/ꪜᴏxʙᴏᴛ.jpg";
     }
-    if (!VօxB໐t.args) {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+    if (!ꪜᴏxʙᴏᴛ.args) {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage*   
-> _${VօxB໐t.prefix}${pfname} on
-> _${VօxB໐t.prefix}${pfname} off_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} on
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} off_`
       );
     } else if (
-      VօxB໐t.args[0] === "ON" ||
-      VօxB໐t.args[0] === "on" ||
-      VօxB໐t.args[0] === "On"
+      ꪜᴏxʙᴏᴛ.args[0] === "ON" ||
+      ꪜᴏxʙᴏᴛ.args[0] === "on" ||
+      ꪜᴏxʙᴏᴛ.args[0] === "On"
     ) {
-      return await VօxB໐t.LinkList.findOne(
+      return await ꪜᴏxʙᴏᴛ.LinkList.findOne(
         {
           serverID: ᴠᴏxᴄ.chat,
         },
         async (error, server) => {
-          if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+          if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           if (!server) {
-            new VօxB໐t.LinkList({
+            new ꪜᴏxʙᴏᴛ.LinkList({
               serverID: ᴠᴏxᴄ.chat,
               value: "ON",
             }).save();
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else {
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -127,31 +127,31 @@ module.exports = async (
         }
       );
     } else if (
-      VօxB໐t.args[0] === "OFF" ||
-      VօxB໐t.args[0] === "off" ||
-      VօxB໐t.args[0] === "Off"
+      ꪜᴏxʙᴏᴛ.args[0] === "OFF" ||
+      ꪜᴏxʙᴏᴛ.args[0] === "off" ||
+      ꪜᴏxʙᴏᴛ.args[0] === "Off"
     ) {
-      return await VօxB໐t.LinkList.findOne(
+      return await ꪜᴏxʙᴏᴛ.LinkList.findOne(
         {
           serverID: ᴠᴏxᴄ.chat,
         },
         async (error, server) => {
-          if (error) return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ, error);
+          if (error) return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, error);
           if (!server) {
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else {
             await server.delete();
-            return await VօxB໐t.imgB(
-              VօxB໐t,
+            return await ꪜᴏxʙᴏᴛ.imgB(
+              ꪜᴏxʙᴏᴛ,
               ᴠᴏxᴄ,
-              `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+              `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -160,24 +160,24 @@ module.exports = async (
         }
       );
     } else {
-      await VօxB໐t.sendMessage(ᴠᴏxᴄ.chat, {
+      await ꪜᴏxʙᴏᴛ.sendMessage(ᴠᴏxᴄ.chat, {
         react: {
           text: "❌",
           key: ᴠᴏxᴄ.key,
         },
       });
       return ᴠᴏxᴄ.reply(
-        `*😥Sorry:* _${VօxB໐t.pushname || VօxB໐t.Tname}_
+        `*😥Sorry:* _${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage*   
-> _${VօxB໐t.prefix}${pfname} on
-> _${VօxB໐t.prefix}${pfname} off_`
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} on
+> _${ꪜᴏxʙᴏᴛ.prefix}${pfname} off_`
       );
     }
   } catch (error) {
-    return VօxB໐t.grab(VօxB໐t, ᴠᴏxᴄ);
+    return ꪜᴏxʙᴏᴛ.grab(ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ);
   }
 };

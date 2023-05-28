@@ -9,16 +9,16 @@
 //  ║ In short, Fork At Your Own Risk.
 //  ║
 //  ║ 🐞𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ VօxB໐t вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ꪜᴏxʙᴏᴛ вσт ву mågneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../../global.js");
 const ppath = require("path");
 const psname = ppath.basename(__filename);
 const pfname = psname.slice(0, -3).toLowerCase();
-module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
-  await VօxB໐t.imgB(
-    VօxB໐t,
+module.exports = async (ꪜᴏxʙᴏᴛ, ᴠᴏxᴄ, update, store) => {
+  await ꪜᴏxʙᴏᴛ.imgB(
+    ꪜᴏxʙᴏᴛ,
     ᴠᴏxᴄ,
-    `*🔖Here, ${pfname} For ${VօxB໐t.pushname || VօxB໐t.Tname}:*
+    `*🔖Here, ${pfname} For ${ꪜᴏxʙᴏᴛ.pushname || ꪜᴏxʙᴏᴛ.Tname}:*
 *🤖Hello, I am Synthia User-Bot🤖*
 > Ⓒ𝐕𝐥𝐤𝐲𝐫𝐞: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -26,22 +26,22 @@ module.exports = async (VօxB໐t, ᴠᴏxᴄ, update, store) => {
 
 
 ┌『 *⭕${pfname.toUpperCase()}⭕* 』
-│║⦁ ${VօxB໐t.prefix}ytpanning
-│║⦁ ${VօxB໐t.prefix}ytbassboost
-│║⦁ ${VօxB໐t.prefix}ytecho
-│║⦁ ${VօxB໐t.prefix}ytflanger
-│║⦁ ${VօxB໐t.prefix}ytnightcore
-│║⦁ ${VօxB໐t.prefix}ytphaser
-│║⦁ ${VօxB໐t.prefix}ytreverse
-│║⦁ ${VօxB໐t.prefix}ytslow
-│║⦁ ${VօxB໐t.prefix}ytspeed
-│║⦁ ${VօxB໐t.prefix}ytsubboost
-│║⦁ ${VօxB໐t.prefix}ytsuperslow
-│║⦁ ${VօxB໐t.prefix}ytsuperspeed
-│║⦁ ${VօxB໐t.prefix}ytsurround
-│║⦁ ${VօxB໐t.prefix}ytvaporwave
-│║⦁ ${VօxB໐t.prefix}ytvibrato
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytpanning
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytbassboost
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytecho
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytflanger
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytnightcore
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytphaser
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytreverse
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytslow
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytspeed
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytsubboost
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytsuperslow
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytsuperspeed
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytsurround
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytvaporwave
+│║⦁ ${ꪜᴏxʙᴏᴛ.prefix}ytvibrato
 ┕╚═══════⋑`,
-    VօxB໐t.logo
+    ꪜᴏxʙᴏᴛ.logo
   );
 };
