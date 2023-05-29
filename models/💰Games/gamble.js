@@ -1,43 +1,43 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
-//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (FoxBot, Foxchat, update, store) => {
+module.exports = async (Foxbot, Foxchat, update, store) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-    if (!FoxBot.args[0] && !FoxBot.args[1]) {
-      await FoxBot.sendMessage(Foxchat.chat, {
+    if (!Foxbot.args[0] && !Foxbot.args[1]) {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -45,21 +45,21 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
       );
     }
 
-    if (formatColor.test(FoxBot.args[0])) {
-      await FoxBot.sendMessage(Foxchat.chat, {
+    if (formatColor.test(Foxbot.args[0])) {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -67,21 +67,21 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
       );
     }
 
-    if (formatAmount.test(FoxBot.args[1])) {
-      await FoxBot.sendMessage(Foxchat.chat, {
+    if (formatAmount.test(Foxbot.args[1])) {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -90,24 +90,24 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
     }
 
     if (
-      !FoxBot.args[0].includes("red") &&
-      !FoxBot.args[0].includes("black") &&
-      !FoxBot.args[0].includes("purple")
+      !Foxbot.args[0].includes("red") &&
+      !Foxbot.args[0].includes("black") &&
+      !Foxbot.args[0].includes("purple")
     ) {
-      await FoxBot.sendMessage(Foxchat.chat, {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -115,74 +115,74 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
       );
     }
 
-    var ColorRoom = FoxBot.args[0];
-    var AmountRoom = parseInt(FoxBot.args[1]);
+    var ColorRoom = Foxbot.args[0];
+    var AmountRoom = parseInt(Foxbot.args[1]);
     if (AmountRoom < 50) {
-      return await FoxBot.imagebutton(
-        FoxBot,
+      return await Foxbot.imagebutton(
+        Foxbot,
         Foxchat,
-        `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        "./public/FoxBot.png"
+        "./public/Foxbot.png"
       );
     }
 
     if (AmountRoom > 800) {
-      return await FoxBot.imagebutton(
-        FoxBot,
+      return await Foxbot.imagebutton(
+        Foxbot,
         Foxchat,
-        `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        "./public/FoxBot.png"
+        "./public/Foxbot.png"
       );
     }
 
     if (ColorRoom === "red" && AmountRoom > 200) {
-      return await FoxBot.imagebutton(
-        FoxBot,
+      return await Foxbot.imagebutton(
+        Foxbot,
         Foxchat,
-        `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        "./public/FoxBot.png"
+        "./public/Foxbot.png"
       );
     }
 
     if (ColorRoom === "black" && AmountRoom > 500) {
-      return await FoxBot.imagebutton(
-        FoxBot,
+      return await Foxbot.imagebutton(
+        Foxbot,
         Foxchat,
-        `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        "./public/FoxBot.png"
+        "./public/Foxbot.png"
       );
     }
 
     if (ColorRoom === "purple" && AmountRoom > 800) {
-      return await FoxBot.imagebutton(
-        FoxBot,
+      return await Foxbot.imagebutton(
+        Foxbot,
         Foxchat,
-        `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        "./public/FoxBot.png"
+        "./public/Foxbot.png"
       );
     }
 
-    FoxBot.Economy.findOne(
+    Foxbot.Economy.findOne(
       {
         Id: Foxchat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return FoxBot.handlerror(FoxBot, Foxchat, error);
+          return Foxbot.handlerror(Foxbot, Foxchat, error);
         }
 
         if (!userEco) {
-          var newUser = new FoxBot.Economy({
+          var newUser = new Foxbot.Economy({
             Id: Foxchat.sender,
             money: 0,
             daily: 0,
@@ -193,43 +193,43 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return FoxBot.handlerror(FoxBot, Foxchat, error);
+            return Foxbot.handlerror(Foxbot, Foxchat, error);
           });
-          return await FoxBot.imagebutton(
-            FoxBot,
+          return await Foxbot.imagebutton(
+            Foxbot,
             Foxchat,
-            `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+            `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
-            "./public/FoxBot.png"
+            "./public/Foxbot.png"
           );
         }
 
-        FoxBot.Gamble.findOne(
+        Foxbot.Gamble.findOne(
           {
             Id: Foxchat.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return FoxBot.handlerror(FoxBot, Foxchat, error);
+              return Foxbot.handlerror(Foxbot, Foxchat, error);
             }
 
             if (!userGamble) {
-              var newUser = new FoxBot.Gamble({
+              var newUser = new Foxbot.Gamble({
                 Id: Foxchat.sender,
                 serverId: Foxchat.chat,
                 Gambledone: 0,
                 Gambvarimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
-              return await FoxBot.imagebutton(
-                FoxBot,
+              return await Foxbot.imagebutton(
+                Foxbot,
                 Foxchat,
-                `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                "./public/FoxBot.png"
+                "./public/Foxbot.png"
               );
             }
 
@@ -237,16 +237,16 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
               userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              var time = FoxBot.ms(
+              var time = Foxbot.ms(
                 userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone)
               );
-              return await FoxBot.imagebutton(
-                FoxBot,
+              return await Foxbot.imagebutton(
+                Foxbot,
                 Foxchat,
-                `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                "./public/FoxBot.png"
+                "./public/Foxbot.png"
               );
             }
 
@@ -263,20 +263,20 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
             var Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await FoxBot.sendMessage(Foxchat.chat, {
+              await Foxbot.sendMessage(Foxchat.chat, {
                 react: {
                   text: "❌",
                   key: Foxchat.key,
                 },
               });
               return Foxchat.reply(
-                `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} _color money_
+> _${Foxbot.prefix}${finalname} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -286,20 +286,20 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
 
             Color = Color.toLowerCase();
             if (!money) {
-              await FoxBot.sendMessage(Foxchat.chat, {
+              await Foxbot.sendMessage(Foxchat.chat, {
                 react: {
                   text: "❌",
                   key: Foxchat.key,
                 },
               });
               return Foxchat.reply(
-                `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -308,20 +308,20 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
             }
 
             if (money > CurrentMoney) {
-              await FoxBot.sendMessage(Foxchat.chat, {
+              await Foxbot.sendMessage(Foxchat.chat, {
                 react: {
                   text: "❌",
                   key: Foxchat.key,
                 },
               });
               return Foxchat.reply(
-                `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -336,20 +336,20 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await FoxBot.sendMessage(Foxchat.chat, {
+              await Foxbot.sendMessage(Foxchat.chat, {
                 react: {
                   text: "❌",
                   key: Foxchat.key,
                 },
               });
               return Foxchat.reply(
-                `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} color money_
+> _${Foxbot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -362,18 +362,18 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
               await userEco.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
-              return await FoxBot.imagebutton(
-                FoxBot,
+              return await Foxbot.imagebutton(
+                Foxbot,
                 Foxchat,
-                `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                "./public/FoxBot.png"
+                "./public/Foxbot.png"
               );
             }
 
@@ -382,18 +382,18 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
               await userEco.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
-              return await FoxBot.imagebutton(
-                FoxBot,
+              return await Foxbot.imagebutton(
+                Foxbot,
                 Foxchat,
-                `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                "./public/FoxBot.png"
+                "./public/Foxbot.png"
               );
             }
 
@@ -402,42 +402,42 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
               await userEco.save().catch((error) => {
-                return FoxBot.handlerror(FoxBot, Foxchat, error);
+                return Foxbot.handlerror(Foxbot, Foxchat, error);
               });
-              return await FoxBot.imagebutton(
-                FoxBot,
+              return await Foxbot.imagebutton(
+                Foxbot,
                 Foxchat,
-                `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                "./public/FoxBot.png"
+                "./public/Foxbot.png"
               );
             }
 
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return FoxBot.handlerror(FoxBot, Foxchat, error);
+              return Foxbot.handlerror(Foxbot, Foxchat, error);
             });
             await userEco.save().catch((error) => {
-              return FoxBot.handlerror(FoxBot, Foxchat, error);
+              return Foxbot.handlerror(Foxbot, Foxchat, error);
             });
-            return await FoxBot.imagebutton(
-              FoxBot,
+            return await Foxbot.imagebutton(
+              Foxbot,
               Foxchat,
-              `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
+              `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              "./public/FoxBot.png"
+              "./public/Foxbot.png"
             );
           }
         );
       }
     );
   } catch (error) {
-    return FoxBot.handlerror(FoxBot, Foxchat, error);
+    return Foxbot.handlerror(Foxbot, Foxchat, error);
   }
 };

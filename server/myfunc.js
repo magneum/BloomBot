@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
-//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 var { proto, getContentType } = require("@adiwajshing/baileys");
 var { sizeFormatter } = require("human-readable");
 var child_process = require("child_process");
@@ -208,7 +208,7 @@ exports.getSizeMedia = (path) => {
 
 exports.parseMention = (text = "") => {
   return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
-    (v) => v[1] + "@s.Foxapp.net"
+    (v) => v[1] + "@s.whatsapp.net"
   );
 };
 
@@ -228,7 +228,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (FoxBot, Foxchat, store) => {
+exports.νkmake = async (Foxbot, Foxchat, store) => {
   if (!Foxchat) return Foxchat;
   var νproto = proto.WebMessageInfo;
   if (Foxchat.key) {
@@ -238,8 +238,8 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
     Foxchat.chat = Foxchat.key.remoteJid;
     Foxchat.fromMe = Foxchat.key.fromMe;
     Foxchat.isGroup = Foxchat.chat.endsWith("@g.us");
-    Foxchat.sender = FoxBot.decodeJid(
-      (Foxchat.fromMe && FoxBot.user.id) ||
+    Foxchat.sender = Foxbot.decodeJid(
+      (Foxchat.fromMe && Foxbot.user.id) ||
         Foxchat.participant ||
         Foxchat.key.participant ||
         Foxchat.chat ||
@@ -247,7 +247,7 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
     );
     if (Foxchat.isGroup)
       Foxchat.participant =
-        FoxBot.decodeJid(Foxchat.key.participant) || "";
+        Foxbot.decodeJid(Foxchat.key.participant) || "";
   }
   if (Foxchat.message) {
     Foxchat.mtype = getContentType(Foxchat.message);
@@ -292,11 +292,11 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
         ? Foxchat.quoted.id.startsWith("BAE5") &&
           Foxchat.quoted.id.length === 16
         : false;
-      Foxchat.quoted.sender = FoxBot.decodeJid(
+      Foxchat.quoted.sender = Foxbot.decodeJid(
         Foxchat.msg.contextInfo.participant
       );
       Foxchat.quoted.fromMe =
-        Foxchat.quoted.sender === (FoxBot.user && FoxBot.user.id);
+        Foxchat.quoted.sender === (Foxbot.user && Foxbot.user.id);
       Foxchat.quoted.text =
         Foxchat.quoted.text ||
         Foxchat.quoted.caption ||
@@ -313,9 +313,9 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
         var q = await store.loadMessage(
           Foxchat.chat,
           Foxchat.quoted.id,
-          FoxBot
+          Foxbot
         );
-        return exports.νkmake(FoxBot, q, store);
+        return exports.νkmake(Foxbot, q, store);
       };
       var vM = (Foxchat.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -327,19 +327,19 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
         ...(Foxchat.isGroup ? { participant: Foxchat.quoted.sender } : {}),
       }));
       Foxchat.quoted.delete = () =>
-        FoxBot.sendMessage(Foxchat.quoted.chat, { delete: vM.key });
+        Foxbot.sendMessage(Foxchat.quoted.chat, { delete: vM.key });
       Foxchat.quoted.copyNForward = (
         jid,
         forceForward = false,
         options = {}
-      ) => FoxBot.copyNForward(jid, vM, forceForward, options);
+      ) => Foxbot.copyNForward(jid, vM, forceForward, options);
       Foxchat.quoted.download = () =>
-        FoxBot.downloadMediaMessage(Foxchat.quoted);
+        Foxbot.downloadMediaMessage(Foxchat.quoted);
     }
   }
 
   if (Foxchat.msg.url)
-    Foxchat.download = () => FoxBot.downloadMediaMessage(Foxchat.msg);
+    Foxchat.download = () => Foxbot.downloadMediaMessage(Foxchat.msg);
   Foxchat.text =
     Foxchat.msg.text ||
     Foxchat.msg.caption ||
@@ -350,15 +350,15 @@ exports.νkmake = async (FoxBot, Foxchat, store) => {
     "";
   Foxchat.reply = (text, chatId = Foxchat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? FoxBot.sendMedia(chatId, text, "file", "", Foxchat, { ...options })
-      : FoxBot.sendText(chatId, text, Foxchat, { ...options });
+      ? Foxbot.sendMedia(chatId, text, "file", "", Foxchat, { ...options })
+      : Foxbot.sendText(chatId, text, Foxchat, { ...options });
   Foxchat.copy = () =>
-    exports.νkmake(FoxBot, νproto.fromObject(νproto.toObject(Foxchat)));
+    exports.νkmake(Foxbot, νproto.fromObject(νproto.toObject(Foxchat)));
   Foxchat.copyNForward = (
     jid = Foxchat.chat,
     forceForward = false,
     options = {}
-  ) => FoxBot.copyNForward(jid, Foxchat, forceForward, options);
+  ) => Foxbot.copyNForward(jid, Foxchat, forceForward, options);
 
   return Foxchat;
 };

@@ -1,56 +1,56 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
-//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (FoxBot, Foxchat, update, store) => {
+module.exports = async (Foxbot, Foxchat, update, store) => {
   try {
-    if (!FoxBot.quoted) {
-      await FoxBot.sendMessage(Foxchat.chat, {
+    if (!Foxbot.quoted) {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} reply to Image_`
+> _${Foxbot.prefix}${finalname} reply to Image_`
       );
     }
 
-    if (/image/.test(FoxBot.mime)) {
+    if (/image/.test(Foxbot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await FoxBot.downloadAndSaveMediaMessage(FoxBot.quoted, random);
-      FoxBot.exec(
-        FoxBot.pathFFmpeg + ` -i ${media} ${random}.png`,
+      media = await Foxbot.downloadAndSaveMediaMessage(Foxbot.quoted, random);
+      Foxbot.exec(
+        Foxbot.pathFFmpeg + ` -i ${media} ${random}.png`,
         async (error) => {
           if (error) {
-            return FoxBot.reply(`*🕊️You:* ${
-              FoxBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+            return Foxbot.reply(`*🕊️You:* ${
+              Foxbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
             }\n*📢Id:* ${Foxchat.chat}
 
-*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -58,60 +58,60 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
 > ${error}`);
           }
 
-          if (FoxBot.fs.existsSync(random + ".png")) {
+          if (Foxbot.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (FoxBot.fs.existsSync(random + ".png")) {
+          } else if (Foxbot.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (FoxBot.fs.existsSync(random + ".jpeg")) {
+          } else if (Foxbot.fs.existsSync(random + ".jpeg")) {
             Found = random + ".jpeg";
-          } else if (FoxBot.fs.existsSync(random + ".webp")) {
+          } else if (Foxbot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await FoxBot.sendMessage(Foxchat.chat, {
+            await Foxbot.sendMessage(Foxchat.chat, {
               react: {
                 text: "❌",
                 key: Foxchat.key,
               },
             });
             return Foxchat.reply(
-              `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+              `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} reply to Image_`
+> _${Foxbot.prefix}${finalname} reply to Image_`
             );
           }
 
-          return await FoxBot
+          return await Foxbot
             .sendMessage(
               Foxchat.chat,
               {
-                image: FoxBot.fs.readFileSync(Found),
+                image: Foxbot.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
-│║⦁ *🕊️You:* ${FoxBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ *🕊️You:* ${Foxbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${Foxchat.chat.split("@")[0]}
-│║⦁ *📢Console:* ${FoxBot.ShowInfo.replace("http://", "")}
+│║⦁ *📢Console:* ${Foxbot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*`,
-                footer: `*FoxBot™ Bot By KRYKNZ*
+*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*`,
+                footer: `*Foxbot™ bot By KRYKNZ*
 
-_*💻HomePage:* ${FoxBot.ShowInfo}_
-_*⛺HomeLog:* ${FoxBot.Showlogger}_`,
+_*💻HomePage:* ${Foxbot.ShowInfo}_
+_*⛺HomeLog:* ${Foxbot.Showlogger}_`,
                 mentions: [Foxchat.sender],
                 buttons: [
                   {
-                    buttonId: `${FoxBot.prefix}Commands`,
+                    buttonId: `${Foxbot.prefix}Commands`,
                     buttonText: {
-                      displayText: `${FoxBot.prefix}✈️Commands`,
+                      displayText: `${Foxbot.prefix}✈️Commands`,
                     },
                     type: 1,
                   },
                   {
-                    buttonId: `${FoxBot.prefix}FoxBot`,
-                    buttonText: { displayText: `${FoxBot.prefix}🛰️FoxBot` },
+                    buttonId: `${Foxbot.prefix}Foxbot`,
+                    buttonText: { displayText: `${Foxbot.prefix}🛰️Foxbot` },
                     type: 1,
                   },
                 ],
@@ -122,29 +122,29 @@ _*⛺HomeLog:* ${FoxBot.Showlogger}_`,
               }
             )
             .then(
-              FoxBot.fs.unlinkSync(Found),
-              FoxBot.fs.unlinkSync(random + ".png")
+              Foxbot.fs.unlinkSync(Found),
+              Foxbot.fs.unlinkSync(random + ".png")
             );
         }
       );
     } else {
-      await FoxBot.sendMessage(Foxchat.chat, {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
           key: Foxchat.key,
         },
       });
       return Foxchat.reply(
-        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${FoxBot.prefix}${finalname} reply to Image_`
+> _${Foxbot.prefix}${finalname} reply to Image_`
       );
     }
   } catch (error) {
-    return FoxBot.handlerror(FoxBot, Foxchat, error);
+    return Foxbot.handlerror(Foxbot, Foxchat, error);
   }
 };

@@ -1,46 +1,46 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
-//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logger/global.js");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (FoxBot, Foxchat, update, store) => {
+module.exports = async (Foxbot, Foxchat, update, store) => {
   try {
     // Fetch emotion data from the API
-    var response = await FoxBot.magfetch(
-      FoxBot,
+    var response = await Foxbot.magfetch(
+      Foxbot,
       `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     var magData = response.data;
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await FoxBot.sendMessage(Foxchat.chat, {
+      await Foxbot.sendMessage(Foxchat.chat, {
         react: { text: "❌", key: Foxchat.key },
       });
       return Foxchat.reply(
-        `*😥 Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
+        `*😥 Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
       );
     }
     var resultFilename = magData.resp.id + ".mp4";
-    await FoxBot.ffmpeg
+    await Foxbot.ffmpeg
       .input(magData.meta.url)
       .outputOptions([
         "-pix_fmt yuv420p",
@@ -51,12 +51,12 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
       .output(resultFilename)
       .on("end", async () => {
         var mentionedUser = "";
-        if (FoxBot.args[0] && FoxBot.args[0].startsWith("@")) {
+        if (Foxbot.args[0] && Foxbot.args[0].startsWith("@")) {
           // Check if a user is mentioned in the command arguments
-          var mention = FoxBot.mentionByTag;
+          var mention = Foxbot.mentionByTag;
           mentionedUser =
             (await mention[0]) || Foxchat.msg.contextInfo.participant;
-        } else if (FoxBot.mentionByReply) {
+        } else if (Foxbot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
             Foxchat.mtype === "extendedTextMessage" &&
@@ -64,31 +64,31 @@ module.exports = async (FoxBot, Foxchat, update, store) => {
               ? Foxchat.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
-        var message = `*FoxBot by magneum*
+        var message = `*Foxbot by magneum*
 *💻HomePage:* https://bit.ly/magneum
 
 *🎋Emo:* ${feeling}
-*📢From:* ${FoxBot.pushname}
+*📢From:* ${Foxbot.pushname}
 *⚡for:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
-        await FoxBot.sendMessage(
+        await Foxbot.sendMessage(
           Foxchat.chat,
           {
             gifPlayback: true,
-            video: FoxBot.fs.readFileSync(resultFilename),
+            video: Foxbot.fs.readFileSync(resultFilename),
             caption: message,
             mentions: [mentionedUser, Foxchat.sender],
           },
           { quoted: Foxchat }
         );
         // Remove the generated video file
-        FoxBot.fs.unlinkSync(resultFilename);
+        Foxbot.fs.unlinkSync(resultFilename);
       })
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
     // Handle any errors that occur during the process
-    return FoxBot.handlerror(FoxBot, Foxchat, error);
+    return Foxbot.handlerror(Foxbot, Foxchat, error);
   }
 };
