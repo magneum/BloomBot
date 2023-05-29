@@ -165,7 +165,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
               Foxchat,
               `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-              Foxbot.dp
+              Foxbot.display
             );
           }
           Foxbot.Robbery.findOne(
@@ -196,7 +196,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                     Foxbot.pushname || Foxbot.Tname
                   }:*
 *💰Balance:* _Just Opened Your Account!_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               } else {
                 if (userEco.money < ItemPrice) {
@@ -211,7 +211,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 }
 
@@ -233,7 +233,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 }
 
@@ -255,7 +255,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 }
 
@@ -277,7 +277,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 }
                 return await Foxbot.imagebutton(
@@ -288,7 +288,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                   }:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
             }
@@ -340,7 +340,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
 
@@ -367,7 +367,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
 
@@ -383,7 +383,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
 
@@ -396,7 +396,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
 
@@ -424,7 +424,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
             }

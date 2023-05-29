@@ -57,7 +57,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 *🐞 Bug* 
 > ${error}`);
           } else {
-            var Thumb = await Foxbot.getBuffer(Foxbot.dp);
+            var Thumb = await Foxbot.getBuffer(Foxbot.display);
             return await Foxbot.sendMessage(
               Foxchat.chat,
               {

@@ -49,7 +49,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
           `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-          Foxbot.dp
+          Foxbot.display
         );
       } else {
         return await Foxbot.imagebutton(
@@ -57,7 +57,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
           Foxchat,
           `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *💰Balance:* ${data.money}`,
-          Foxbot.dp
+          Foxbot.display
         );
       }
     }

@@ -47,6 +47,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}ytvaporwave
 │║⦁ ${Foxbot.prefix}ytvibrato
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

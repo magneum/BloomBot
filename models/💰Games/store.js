@@ -39,7 +39,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ 💍 *Platinum:* 80 Commands
 │║⦁ 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
-      Foxbot.dp
+      Foxbot.display
     );
   } catch (error) {
     return Foxbot.handlerror(Foxbot, Foxchat, error);

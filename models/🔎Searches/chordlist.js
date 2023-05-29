@@ -91,7 +91,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         Foxchat,
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:* 
 > ${chord}`,
-        Foxbot.dp
+        Foxbot.display
       );
     }
   } catch (error) {

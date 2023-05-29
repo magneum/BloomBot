@@ -93,7 +93,7 @@ module.exports = async (
     try {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(Foxchat.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.dp;
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.display;
     }
     await Foxbot.groupUpdateDescription(Foxchat.chat, Foxbot.args.join(" "));
     return await Foxbot.imagebutton(

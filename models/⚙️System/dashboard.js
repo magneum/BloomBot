@@ -35,6 +35,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 > type ${Foxbot.prefix}help in Foxbot official group
 > head back to bit.ly/magneum
 > try to login`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

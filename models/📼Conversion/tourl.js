@@ -48,7 +48,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         Foxchat,
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🎊Link: * _${Foxbot.util.format(upload)}_`,
-        Foxbot.dp
+        Foxbot.display
       );
     } else if (/video/.test(Foxbot.mime)) {
       media = await Foxbot.quoted.download();
@@ -58,7 +58,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         Foxchat,
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🎊Link: * _${Foxbot.util.format(upload)}_`,
-        Foxbot.dp
+        Foxbot.display
       );
     } else {
       await Foxbot.sendMessage(Foxchat.chat, {

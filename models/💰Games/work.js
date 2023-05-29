@@ -52,7 +52,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            Foxbot.dp
+            Foxbot.display
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
@@ -65,7 +65,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
               `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              Foxbot.dp
+              Foxbot.display
             );
           } else {
             var amount = Math.floor(Math.random() * 80) + 1;
@@ -81,7 +81,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
               `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
-              Foxbot.dp
+              Foxbot.display
             );
           }
         }

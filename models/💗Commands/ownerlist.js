@@ -40,6 +40,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}unban
 │║⦁ ${Foxbot.prefix}verify
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

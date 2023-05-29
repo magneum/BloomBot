@@ -2581,7 +2581,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 > No Such Command Found
 > Visit To Know Commands: 
 > _bit.ly/magneum_`,
-        Foxbot.dp
+        Foxbot.display
       );
       break;
   }

@@ -48,6 +48,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}reddit
 │║⦁ ${Foxbot.prefix}ytsearch
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

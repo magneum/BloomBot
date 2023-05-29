@@ -51,7 +51,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            Foxbot.dp
+            Foxbot.display
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
@@ -64,7 +64,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
               `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              Foxbot.dp
+              Foxbot.display
             );
           } else {
             var fishId = Math.floor(Math.random() * 10) + 1;
@@ -91,7 +91,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell for Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,
-              Foxbot.dp
+              Foxbot.display
             );
           }
         }

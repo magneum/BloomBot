@@ -71,6 +71,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}sdance
 │║⦁ ${Foxbot.prefix}scringe
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

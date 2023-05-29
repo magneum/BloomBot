@@ -50,7 +50,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
-            Foxbot.dp
+            Foxbot.display
           );
         } else {
           await Foxbot.Zoology.findOne(
@@ -77,7 +77,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                   }:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
@@ -92,7 +92,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 } else {
                   var zooId = Math.floor(Math.random() * 10) + 1;
@@ -121,7 +121,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: _${rarity}_`,
-                    Foxbot.dp
+                    Foxbot.display
                   );
                 }
               }

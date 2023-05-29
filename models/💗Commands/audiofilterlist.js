@@ -48,6 +48,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}vaporwave
 │║⦁ ${Foxbot.prefix}vibrato
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

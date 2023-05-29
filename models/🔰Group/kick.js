@@ -112,7 +112,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.dp;
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.display;
       }
       await Foxbot.imagebutton(
         Foxbot,
@@ -162,7 +162,7 @@ module.exports = async (
       try {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.dp;
+        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.display;
       }
       await Foxbot.imagebutton(
         Foxbot,

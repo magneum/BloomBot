@@ -140,7 +140,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   Foxbot.dare = require("../public/dare.json");
   Foxbot.truth = require("../public/truth.json");
   Foxbot.magfetch = require("../server/magfetch");
-  Foxbot.dp = folderPath + randomImage;
+  Foxbot.display = folderPath + randomImage;
 
   Foxbot.os = require("os");
   Foxbot.fs = require("fs");

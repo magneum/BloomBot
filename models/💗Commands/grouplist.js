@@ -41,6 +41,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}seticon
 │║⦁ ${Foxbot.prefix}tagall
 ┕╚═══════⋑`,
-    Foxbot.dp
+    Foxbot.display
   );
 };

@@ -161,7 +161,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  Foxbot.dp
+                  Foxbot.display
                 );
               }
 
@@ -187,7 +187,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                Foxbot.dp
+                Foxbot.display
               );
             }
           );
