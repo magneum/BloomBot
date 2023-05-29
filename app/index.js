@@ -32,11 +32,9 @@ var {
   generateWAMessageFromContent,
   downloadContentFromMessage,
   makeInMemoryStore,
-  MessageRetryMap,
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
-var os = require("os");
 var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
