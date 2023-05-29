@@ -798,7 +798,12 @@ async function magneum() {
     await Foxbot.updateProfileStatus(
       "Feeling: " + __Feeling + " (Foxbot by magneum)"
     );
-    // await Foxbot.updateProfilePicture("120363020792949649@g.us", {  url: Foxbot.display });
   }, 1000 * 10);
+
+  setInterval(async () => {
+    await Foxbot.updateProfilePicture("120363020792949649@g.us", {
+      url: Foxbot.display,
+    });
+  }, 30000 * 10);
 }
 magneum().catch((error) => logger.error(error));
