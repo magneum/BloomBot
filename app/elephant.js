@@ -53,5 +53,5 @@ async function cleanDatabase() {
     await client.end();
   }
 }
-
+// cleanDatabase();
 module.exports = cleanDatabase;
