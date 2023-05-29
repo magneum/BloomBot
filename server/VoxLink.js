@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
+//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../logger/global.js");
 var {
   Simp,
@@ -61,122 +61,122 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 
-module.exports = async (voxbot, voxchat, update, store) => {
-  voxbot.performance = performance;
-  voxbot.createWorker = createWorker;
-  voxbot.JSDOM = JSDOM;
-  voxbot.Character = Character;
-  voxbot.execSync = execSync;
-  voxbot.spawn = spawn;
-  voxbot.exec = exec;
-  voxbot.Primbon = Primbon;
-  voxbot.IShipOptions = IShipOptions;
-  voxbot.Ship = Ship;
-  voxbot.Pokemon = Pokemon;
-  voxbot.Simp = Simp;
-  voxbot.readFile = readFile;
-  voxbot.tmpdir = tmpdir;
-  voxbot.Doujin = Doujin;
-  voxbot.DownloaderHelper = DownloaderHelper;
-  voxbot.chalk = chalk;
-  voxbot.Sticker = Sticker;
-  voxbot.createSticker = createSticker;
-  voxbot.StickerTypes = StickerTypes;
-  voxbot.νkmake = νkmake;
-  voxbot.formatp = formatp;
-  voxbot.formatDate = formatDate;
-  voxbot.getTime = getTime;
-  voxbot.isUrl = isUrl;
-  voxbot.sleep = sleep;
-  voxbot.clockString = clockString;
-  voxbot.runtime = runtime;
-  voxbot.fetchJson = fetchJson;
-  voxbot.getBuffer = getBuffer;
-  voxbot.jsonformat = jsonformat;
-  voxbot.format = format;
-  voxbot.parseMention = parseMention;
-  voxbot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
-  voxbot.getRandom = getRandom;
-  voxbot.getDadjoke = getDadjoke;
-  voxbot.Manga = Manga;
-  voxbot.AnimeWallpaper = AnimeWallpaper;
-  voxbot.TelegraPh = TelegraPh;
-  voxbot.UploadFileUgu = UploadFileUgu;
-  voxbot.webp2mp4File = webp2mp4File;
-  voxbot.Tname = voxchat.sender.replace(/['@s voxapp.net']/g, "");
+module.exports = async (FoxBot, Foxchat, update, store) => {
+  FoxBot.performance = performance;
+  FoxBot.createWorker = createWorker;
+  FoxBot.JSDOM = JSDOM;
+  FoxBot.Character = Character;
+  FoxBot.execSync = execSync;
+  FoxBot.spawn = spawn;
+  FoxBot.exec = exec;
+  FoxBot.Primbon = Primbon;
+  FoxBot.IShipOptions = IShipOptions;
+  FoxBot.Ship = Ship;
+  FoxBot.Pokemon = Pokemon;
+  FoxBot.Simp = Simp;
+  FoxBot.readFile = readFile;
+  FoxBot.tmpdir = tmpdir;
+  FoxBot.Doujin = Doujin;
+  FoxBot.DownloaderHelper = DownloaderHelper;
+  FoxBot.chalk = chalk;
+  FoxBot.Sticker = Sticker;
+  FoxBot.createSticker = createSticker;
+  FoxBot.StickerTypes = StickerTypes;
+  FoxBot.νkmake = νkmake;
+  FoxBot.formatp = formatp;
+  FoxBot.formatDate = formatDate;
+  FoxBot.getTime = getTime;
+  FoxBot.isUrl = isUrl;
+  FoxBot.sleep = sleep;
+  FoxBot.clockString = clockString;
+  FoxBot.runtime = runtime;
+  FoxBot.fetchJson = fetchJson;
+  FoxBot.getBuffer = getBuffer;
+  FoxBot.jsonformat = jsonformat;
+  FoxBot.format = format;
+  FoxBot.parseMention = parseMention;
+  FoxBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+  FoxBot.getRandom = getRandom;
+  FoxBot.getDadjoke = getDadjoke;
+  FoxBot.Manga = Manga;
+  FoxBot.AnimeWallpaper = AnimeWallpaper;
+  FoxBot.TelegraPh = TelegraPh;
+  FoxBot.UploadFileUgu = UploadFileUgu;
+  FoxBot.webp2mp4File = webp2mp4File;
+  FoxBot.Tname = Foxchat.sender.replace(/['@s Foxapp.net']/g, "");
 
-  voxbot.msgFilter = require("./msgFilter");
-  voxbot.imagebutton = require("../buttons/imagebutton");
-  voxbot.videobutton = require("../buttons/videobutton");
-  voxbot.handlerror = require("../buttons/handlerror");
-  voxbot.TTS = require("google-tts-api");
-  // voxbot.nhentaidl = require("./nhentaidl");
-  voxbot.dashboard = require("../database/dashboard");
-  voxbot.LinkList = require("../database/antilink");
-  voxbot.Ranker = require("../database/autorank");
-  voxbot.Bagde = require("../database/badge");
-  voxbot.premium = require("../database/premium");
-  voxbot.userBanCheck = require("../database/ban");
-  voxbot.Cooldown = require("../database/cooldown");
-  voxbot.DebugMode = require("../database/debug");
-  voxbot.Economy = require("../database/economy");
-  voxbot.Gamble = require("../database/gamble");
-  voxbot.Halt = require("../database/halt");
-  voxbot.nsfwCheck = require("../database/nsfw");
-  voxbot.Pokemon = require("../database/pokemon");
-  voxbot.UserPrivate = require("../database/private");
-  voxbot.Robbery = require("../database/robbery");
-  voxbot.ServerDB = require("../database/ServerDB");
-  voxbot.Welcome = require("../database/setwelcome");
-  voxbot.Warning = require("../database/warning");
-  voxbot.Zoology = require("../database/zoo");
-  voxbot.Fishes = require("../public/fishes.json");
-  voxbot.animals = require("../public/animals.json");
-  voxbot.Jwork = require("../public/works.json");
-  voxbot.dare = require("../public/dare.json");
-  voxbot.truth = require("../public/truth.json");
-  voxbot.magfetch = require("../server/magfetch");
+  FoxBot.msgFilter = require("./msgFilter");
+  FoxBot.imagebutton = require("../buttons/imagebutton");
+  FoxBot.videobutton = require("../buttons/videobutton");
+  FoxBot.handlerror = require("../buttons/handlerror");
+  FoxBot.TTS = require("google-tts-api");
+  // FoxBot.nhentaidl = require("./nhentaidl");
+  FoxBot.dashboard = require("../database/dashboard");
+  FoxBot.LinkList = require("../database/antilink");
+  FoxBot.Ranker = require("../database/autorank");
+  FoxBot.Bagde = require("../database/badge");
+  FoxBot.premium = require("../database/premium");
+  FoxBot.userBanCheck = require("../database/ban");
+  FoxBot.Cooldown = require("../database/cooldown");
+  FoxBot.DebugMode = require("../database/debug");
+  FoxBot.Economy = require("../database/economy");
+  FoxBot.Gamble = require("../database/gamble");
+  FoxBot.Halt = require("../database/halt");
+  FoxBot.nsfwCheck = require("../database/nsfw");
+  FoxBot.Pokemon = require("../database/pokemon");
+  FoxBot.UserPrivate = require("../database/private");
+  FoxBot.Robbery = require("../database/robbery");
+  FoxBot.ServerDB = require("../database/ServerDB");
+  FoxBot.Welcome = require("../database/setwelcome");
+  FoxBot.Warning = require("../database/warning");
+  FoxBot.Zoology = require("../database/zoo");
+  FoxBot.Fishes = require("../public/fishes.json");
+  FoxBot.animals = require("../public/animals.json");
+  FoxBot.Jwork = require("../public/works.json");
+  FoxBot.dare = require("../public/dare.json");
+  FoxBot.truth = require("../public/truth.json");
+  FoxBot.magfetch = require("../server/magfetch");
 
-  voxbot.os = require("os");
-  voxbot.fs = require("fs");
-  voxbot.got = require("got");
-  voxbot.gis = require("g-i-s");
-  voxbot.path = require("path");
-  voxbot.util = require("util");
-  voxbot.primbon = new Primbon();
-  voxbot.ms = require("parse-ms");
-  voxbot.hxz = require("hxz-api");
-  voxbot.axios = require("axios");
-  voxbot.chalk = require("chalk");
-  voxbot.playdl = require("play-dl");
-  voxbot.request = require("request");
-  voxbot.xfar = require("xfarr-api");
-  voxbot.cron = require("node-cron");
-  voxbot.nHentai = require("shentai");
-  voxbot.cheerio = require("cheerio");
-  voxbot.akaneko = require("akaneko");
-  voxbot.fetch = require("node-fetch");
-  voxbot.google = require("google-it");
-  voxbot.Spinnies = require("spinnies");
-  voxbot.Anime = require("anime-actions");
-  voxbot.Tinyurl = require("tinyurl-api");
-  voxbot.FastHub = require("simple-git")();
-  voxbot.speed = require("performance-now");
-  voxbot.moment = require("moment-timezone");
-  voxbot.Carbon = require("unofficial-carbon-now");
-  voxbot.Levels = require("discord-xp");
-  voxbot.canvacord = require("canvacord");
-  voxbot.randomMC = require("random-material-color");
-  voxbot.yClient = require("youtube-avdl");
-  voxbot.pokemontcgsdk = require("pokemontcgsdk");
-  voxbot.singer = require("play-dl");
-  voxbot.ffmpeg = ffmpeg;
-  voxbot.pathFFmpeg = require("ffmpeg-static");
+  FoxBot.os = require("os");
+  FoxBot.fs = require("fs");
+  FoxBot.got = require("got");
+  FoxBot.gis = require("g-i-s");
+  FoxBot.path = require("path");
+  FoxBot.util = require("util");
+  FoxBot.primbon = new Primbon();
+  FoxBot.ms = require("parse-ms");
+  FoxBot.hxz = require("hxz-api");
+  FoxBot.axios = require("axios");
+  FoxBot.chalk = require("chalk");
+  FoxBot.playdl = require("play-dl");
+  FoxBot.request = require("request");
+  FoxBot.xfar = require("xfarr-api");
+  FoxBot.cron = require("node-cron");
+  FoxBot.nHentai = require("shentai");
+  FoxBot.cheerio = require("cheerio");
+  FoxBot.akaneko = require("akaneko");
+  FoxBot.fetch = require("node-fetch");
+  FoxBot.google = require("google-it");
+  FoxBot.Spinnies = require("spinnies");
+  FoxBot.Anime = require("anime-actions");
+  FoxBot.Tinyurl = require("tinyurl-api");
+  FoxBot.FastHub = require("simple-git")();
+  FoxBot.speed = require("performance-now");
+  FoxBot.moment = require("moment-timezone");
+  FoxBot.Carbon = require("unofficial-carbon-now");
+  FoxBot.Levels = require("discord-xp");
+  FoxBot.canvacord = require("canvacord");
+  FoxBot.randomMC = require("random-material-color");
+  FoxBot.yClient = require("youtube-avdl");
+  FoxBot.pokemontcgsdk = require("pokemontcgsdk");
+  FoxBot.singer = require("play-dl");
+  FoxBot.ffmpeg = ffmpeg;
+  FoxBot.pathFFmpeg = require("ffmpeg-static");
 
-  // voxbot.memberRespA = [];
-  // voxbot.memberRespB = [];
-  // voxbot.resp1 = await voxbot.groupInviteCode("120363020792949649@g.us");
-  voxbot.varResp = [
+  // FoxBot.memberRespA = [];
+  // FoxBot.memberRespB = [];
+  // FoxBot.resp1 = await FoxBot.groupInviteCode("120363020792949649@g.us");
+  FoxBot.varResp = [
     "h",
     "m",
     "c",
@@ -184,40 +184,40 @@ module.exports = async (voxbot, voxchat, update, store) => {
     "list",
     "command",
     "commands",
-    "voxbot",
+    "FoxBot",
     "Commands",
   ];
 
   function ShowGreen(Topic, Text) {
-    var TShow = voxbot.chalk.hex("#2D5A27").bold(Topic);
-    var Show = voxbot.chalk.hex("#849871").italic.bold(Text);
+    var TShow = FoxBot.chalk.hex("#2D5A27").bold(Topic);
+    var Show = FoxBot.chalk.hex("#849871").italic.bold(Text);
     console.log(
-      voxbot.chalk.black(voxbot.chalk.bgBlack(TShow)),
-      voxbot.chalk.black(Show)
+      FoxBot.chalk.black(FoxBot.chalk.bgBlack(TShow)),
+      FoxBot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    var TShow = voxbot.chalk.hex("#008B8B").bold(Topic);
-    var Show = voxbot.chalk.hex("#818d94").italic.bold(Text);
+    var TShow = FoxBot.chalk.hex("#008B8B").bold(Topic);
+    var Show = FoxBot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
-      voxbot.chalk.black(voxbot.chalk.bgBlack(TShow)),
-      voxbot.chalk.black(Show)
+      FoxBot.chalk.black(FoxBot.chalk.bgBlack(TShow)),
+      FoxBot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    var TShow = voxbot.chalk.hex("#ff6347").bold(Topic);
-    var Show = voxbot.chalk.hex("#ed7777").italic.bold(Text);
+    var TShow = FoxBot.chalk.hex("#ff6347").bold(Topic);
+    var Show = FoxBot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
-      voxbot.chalk.black(voxbot.chalk.bgBlack(TShow)),
-      voxbot.chalk.black(Show)
+      FoxBot.chalk.black(FoxBot.chalk.bgBlack(TShow)),
+      FoxBot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    var TShow = voxbot.chalk.hex("#8B8000").bold(Topic);
-    var Show = voxbot.chalk.hex("#ECCF8D").italic.bold(Text);
+    var TShow = FoxBot.chalk.hex("#8B8000").bold(Topic);
+    var Show = FoxBot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
-      voxbot.chalk.black(voxbot.chalk.bgBlack(TShow)),
-      voxbot.chalk.black(Show)
+      FoxBot.chalk.black(FoxBot.chalk.bgBlack(TShow)),
+      FoxBot.chalk.black(Show)
     );
   }
   function between(min, max) {
@@ -225,43 +225,43 @@ module.exports = async (voxbot, voxchat, update, store) => {
   }
   function clearStorage(files) {
     for (var file of files) {
-      voxbot.fs.unlink(file, (err) => {
+      FoxBot.fs.unlink(file, (err) => {
         if (err) throw err;
       });
     }
   }
 
-  voxbot.ShowGreen = ShowGreen;
-  voxbot.ShowBlue = ShowBlue;
-  voxbot.ShowRed = ShowRed;
-  voxbot.ShowYellow = ShowYellow;
-  voxbot.between = between;
-  voxbot.clearStorage = clearStorage;
-  voxbot.spinner = {
+  FoxBot.ShowGreen = ShowGreen;
+  FoxBot.ShowBlue = ShowBlue;
+  FoxBot.ShowRed = ShowRed;
+  FoxBot.ShowYellow = ShowYellow;
+  FoxBot.between = between;
+  FoxBot.clearStorage = clearStorage;
+  FoxBot.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
   };
-  voxbot.spinnies = new voxbot.Spinnies({
+  FoxBot.spinnies = new FoxBot.Spinnies({
     color: "cyan",
     succeedColor: "green",
-    spinner: voxbot.spinner,
+    spinner: FoxBot.spinner,
   });
-  voxbot.TubeRegex =
+  FoxBot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  voxbot.Showlogger = Showlogger;
-  voxbot.packname = packname;
-  voxbot.pgdb = DATABASE_URL;
-  voxbot.ShowInfo = ShowInfo;
-  voxbot.MONGODB_URL = MONGODB_URL;
-  voxbot.author = author;
-  voxbot.prefix = prefix;
-  voxbot.sudo = sudo;
+  FoxBot.Showlogger = Showlogger;
+  FoxBot.packname = packname;
+  FoxBot.pgdb = DATABASE_URL;
+  FoxBot.ShowInfo = ShowInfo;
+  FoxBot.MONGODB_URL = MONGODB_URL;
+  FoxBot.author = author;
+  FoxBot.prefix = prefix;
+  FoxBot.sudo = sudo;
   sudotring =
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  voxbot.isSudo = sudotring.includes(
-    voxchat.sender.substring(0, voxchat.sender.indexOf("@"))
+  FoxBot.isSudo = sudotring.includes(
+    Foxchat.sender.substring(0, Foxchat.sender.indexOf("@"))
   );
-  return voxbot;
+  return FoxBot;
 };

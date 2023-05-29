@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
+//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 var { proto, getContentType } = require("@adiwajshing/baileys");
 var { sizeFormatter } = require("human-readable");
 var child_process = require("child_process");
@@ -88,13 +88,13 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var voxchat = Math.floor((seconds % 3600) / 60);
+  var Foxchat = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    voxchat > 0
-      ? voxchat + (voxchat == 1 ? " minute, " : " minutes, ")
+    Foxchat > 0
+      ? Foxchat + (Foxchat == 1 ? " minute, " : " minutes, ")
       : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
@@ -102,9 +102,9 @@ exports.runtime = function (seconds) {
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var voxchat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var Foxchat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, voxchat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, Foxchat, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -208,7 +208,7 @@ exports.getSizeMedia = (path) => {
 
 exports.parseMention = (text = "") => {
   return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(
-    (v) => v[1] + "@s.voxapp.net"
+    (v) => v[1] + "@s.Foxapp.net"
   );
 };
 
@@ -228,139 +228,139 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (voxbot, voxchat, store) => {
-  if (!voxchat) return voxchat;
+exports.νkmake = async (FoxBot, Foxchat, store) => {
+  if (!Foxchat) return Foxchat;
   var νproto = proto.WebMessageInfo;
-  if (voxchat.key) {
-    voxchat.id = voxchat.key.id;
-    voxchat.isBaileys =
-      voxchat.id.startsWith("BAE5") && voxchat.id.length === 16;
-    voxchat.chat = voxchat.key.remoteJid;
-    voxchat.fromMe = voxchat.key.fromMe;
-    voxchat.isGroup = voxchat.chat.endsWith("@g.us");
-    voxchat.sender = voxbot.decodeJid(
-      (voxchat.fromMe && voxbot.user.id) ||
-        voxchat.participant ||
-        voxchat.key.participant ||
-        voxchat.chat ||
+  if (Foxchat.key) {
+    Foxchat.id = Foxchat.key.id;
+    Foxchat.isBaileys =
+      Foxchat.id.startsWith("BAE5") && Foxchat.id.length === 16;
+    Foxchat.chat = Foxchat.key.remoteJid;
+    Foxchat.fromMe = Foxchat.key.fromMe;
+    Foxchat.isGroup = Foxchat.chat.endsWith("@g.us");
+    Foxchat.sender = FoxBot.decodeJid(
+      (Foxchat.fromMe && FoxBot.user.id) ||
+        Foxchat.participant ||
+        Foxchat.key.participant ||
+        Foxchat.chat ||
         ""
     );
-    if (voxchat.isGroup)
-      voxchat.participant =
-        voxbot.decodeJid(voxchat.key.participant) || "";
+    if (Foxchat.isGroup)
+      Foxchat.participant =
+        FoxBot.decodeJid(Foxchat.key.participant) || "";
   }
-  if (voxchat.message) {
-    voxchat.mtype = getContentType(voxchat.message);
-    voxchat.msg =
-      voxchat.mtype == "viewOnceMessage"
-        ? voxchat.message[voxchat.mtype].message[
-            getContentType(voxchat.message[voxchat.mtype].message)
+  if (Foxchat.message) {
+    Foxchat.mtype = getContentType(Foxchat.message);
+    Foxchat.msg =
+      Foxchat.mtype == "viewOnceMessage"
+        ? Foxchat.message[Foxchat.mtype].message[
+            getContentType(Foxchat.message[Foxchat.mtype].message)
           ]
-        : voxchat.message[voxchat.mtype];
-    voxchat.body =
-      voxchat.message.conversation ||
-      voxchat.msg.caption ||
-      voxchat.msg.text ||
-      (voxchat.mtype == "listResponseMessage" &&
-        voxchat.msg.singleSelectReply.selectedRowId) ||
-      (voxchat.mtype == "buttonsResponseMessage" &&
-        voxchat.msg.selectedButtonId) ||
-      (voxchat.mtype == "viewOnceMessage" && voxchat.msg.caption) ||
-      voxchat.text;
-    var quoted = (voxchat.quoted = voxchat.msg.contextInfo
-      ? voxchat.msg.contextInfo.quotedMessage
+        : Foxchat.message[Foxchat.mtype];
+    Foxchat.body =
+      Foxchat.message.conversation ||
+      Foxchat.msg.caption ||
+      Foxchat.msg.text ||
+      (Foxchat.mtype == "listResponseMessage" &&
+        Foxchat.msg.singleSelectReply.selectedRowId) ||
+      (Foxchat.mtype == "buttonsResponseMessage" &&
+        Foxchat.msg.selectedButtonId) ||
+      (Foxchat.mtype == "viewOnceMessage" && Foxchat.msg.caption) ||
+      Foxchat.text;
+    var quoted = (Foxchat.quoted = Foxchat.msg.contextInfo
+      ? Foxchat.msg.contextInfo.quotedMessage
       : null);
-    voxchat.mentionedJid = voxchat.msg.contextInfo
-      ? voxchat.msg.contextInfo.mentionedJid
+    Foxchat.mentionedJid = Foxchat.msg.contextInfo
+      ? Foxchat.msg.contextInfo.mentionedJid
       : [];
-    if (voxchat.quoted) {
+    if (Foxchat.quoted) {
       var type = getContentType(quoted);
-      voxchat.quoted = voxchat.quoted[type];
+      Foxchat.quoted = Foxchat.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(voxchat.quoted);
-        voxchat.quoted = voxchat.quoted[type];
+        type = getContentType(Foxchat.quoted);
+        Foxchat.quoted = Foxchat.quoted[type];
       }
-      if (typeof voxchat.quoted === "string")
-        voxchat.quoted = {
-          text: voxchat.quoted,
+      if (typeof Foxchat.quoted === "string")
+        Foxchat.quoted = {
+          text: Foxchat.quoted,
         };
-      voxchat.quoted.mtype = type;
-      voxchat.quoted.id = voxchat.msg.contextInfo.stanzaId;
-      voxchat.quoted.chat =
-        voxchat.msg.contextInfo.remoteJid || voxchat.chat;
-      voxchat.quoted.isBaileys = voxchat.quoted.id
-        ? voxchat.quoted.id.startsWith("BAE5") &&
-          voxchat.quoted.id.length === 16
+      Foxchat.quoted.mtype = type;
+      Foxchat.quoted.id = Foxchat.msg.contextInfo.stanzaId;
+      Foxchat.quoted.chat =
+        Foxchat.msg.contextInfo.remoteJid || Foxchat.chat;
+      Foxchat.quoted.isBaileys = Foxchat.quoted.id
+        ? Foxchat.quoted.id.startsWith("BAE5") &&
+          Foxchat.quoted.id.length === 16
         : false;
-      voxchat.quoted.sender = voxbot.decodeJid(
-        voxchat.msg.contextInfo.participant
+      Foxchat.quoted.sender = FoxBot.decodeJid(
+        Foxchat.msg.contextInfo.participant
       );
-      voxchat.quoted.fromMe =
-        voxchat.quoted.sender === (voxbot.user && voxbot.user.id);
-      voxchat.quoted.text =
-        voxchat.quoted.text ||
-        voxchat.quoted.caption ||
-        voxchat.quoted.conversation ||
-        voxchat.quoted.contentText ||
-        voxchat.quoted.selectedDisplayText ||
-        voxchat.quoted.title ||
+      Foxchat.quoted.fromMe =
+        Foxchat.quoted.sender === (FoxBot.user && FoxBot.user.id);
+      Foxchat.quoted.text =
+        Foxchat.quoted.text ||
+        Foxchat.quoted.caption ||
+        Foxchat.quoted.conversation ||
+        Foxchat.quoted.contentText ||
+        Foxchat.quoted.selectedDisplayText ||
+        Foxchat.quoted.title ||
         "";
-      voxchat.quoted.mentionedJid = voxchat.msg.contextInfo
-        ? voxchat.msg.contextInfo.mentionedJid
+      Foxchat.quoted.mentionedJid = Foxchat.msg.contextInfo
+        ? Foxchat.msg.contextInfo.mentionedJid
         : [];
-      voxchat.getQuotedObj = voxchat.getQuotedMessage = async () => {
-        if (!voxchat.quoted.id) return false;
+      Foxchat.getQuotedObj = Foxchat.getQuotedMessage = async () => {
+        if (!Foxchat.quoted.id) return false;
         var q = await store.loadMessage(
-          voxchat.chat,
-          voxchat.quoted.id,
-          voxbot
+          Foxchat.chat,
+          Foxchat.quoted.id,
+          FoxBot
         );
-        return exports.νkmake(voxbot, q, store);
+        return exports.νkmake(FoxBot, q, store);
       };
-      var vM = (voxchat.quoted.fakeObj = νproto.fromObject({
+      var vM = (Foxchat.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: voxchat.quoted.chat,
-          fromMe: voxchat.quoted.fromMe,
-          id: voxchat.quoted.id,
+          remoteJid: Foxchat.quoted.chat,
+          fromMe: Foxchat.quoted.fromMe,
+          id: Foxchat.quoted.id,
         },
         message: quoted,
-        ...(voxchat.isGroup ? { participant: voxchat.quoted.sender } : {}),
+        ...(Foxchat.isGroup ? { participant: Foxchat.quoted.sender } : {}),
       }));
-      voxchat.quoted.delete = () =>
-        voxbot.sendMessage(voxchat.quoted.chat, { delete: vM.key });
-      voxchat.quoted.copyNForward = (
+      Foxchat.quoted.delete = () =>
+        FoxBot.sendMessage(Foxchat.quoted.chat, { delete: vM.key });
+      Foxchat.quoted.copyNForward = (
         jid,
         forceForward = false,
         options = {}
-      ) => voxbot.copyNForward(jid, vM, forceForward, options);
-      voxchat.quoted.download = () =>
-        voxbot.downloadMediaMessage(voxchat.quoted);
+      ) => FoxBot.copyNForward(jid, vM, forceForward, options);
+      Foxchat.quoted.download = () =>
+        FoxBot.downloadMediaMessage(Foxchat.quoted);
     }
   }
 
-  if (voxchat.msg.url)
-    voxchat.download = () => voxbot.downloadMediaMessage(voxchat.msg);
-  voxchat.text =
-    voxchat.msg.text ||
-    voxchat.msg.caption ||
-    voxchat.message.conversation ||
-    voxchat.msg.contentText ||
-    voxchat.msg.selectedDisplayText ||
-    voxchat.msg.title ||
+  if (Foxchat.msg.url)
+    Foxchat.download = () => FoxBot.downloadMediaMessage(Foxchat.msg);
+  Foxchat.text =
+    Foxchat.msg.text ||
+    Foxchat.msg.caption ||
+    Foxchat.message.conversation ||
+    Foxchat.msg.contentText ||
+    Foxchat.msg.selectedDisplayText ||
+    Foxchat.msg.title ||
     "";
-  voxchat.reply = (text, chatId = voxchat.chat, options = {}) =>
+  Foxchat.reply = (text, chatId = Foxchat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? voxbot.sendMedia(chatId, text, "file", "", voxchat, { ...options })
-      : voxbot.sendText(chatId, text, voxchat, { ...options });
-  voxchat.copy = () =>
-    exports.νkmake(voxbot, νproto.fromObject(νproto.toObject(voxchat)));
-  voxchat.copyNForward = (
-    jid = voxchat.chat,
+      ? FoxBot.sendMedia(chatId, text, "file", "", Foxchat, { ...options })
+      : FoxBot.sendText(chatId, text, Foxchat, { ...options });
+  Foxchat.copy = () =>
+    exports.νkmake(FoxBot, νproto.fromObject(νproto.toObject(Foxchat)));
+  Foxchat.copyNForward = (
+    jid = Foxchat.chat,
     forceForward = false,
     options = {}
-  ) => voxbot.copyNForward(jid, voxchat, forceForward, options);
+  ) => FoxBot.copyNForward(jid, Foxchat, forceForward, options);
 
-  return voxchat;
+  return Foxchat;
 };
 
 var file = require.resolve(__filename);

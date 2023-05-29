@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile WhatsApp multi-purpose Bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 FoxBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the Bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
+//  ║🔄 We'll continue providing updates and support for the original version of the Bot.
+//  ║👉 Enjoy the features and functionality of FoxBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ FoxBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (voxbot, voxchat, update, store) => {
+module.exports = async (FoxBot, Foxchat, update, store) => {
   try {
     var Item;
     var NewLimit;
@@ -34,121 +34,121 @@ module.exports = async (voxbot, voxchat, update, store) => {
     var BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
     var RobCatelog = ["sword", "laptop", "charm"];
 
-    if (voxbot.args[0] === "bronze") {
+    if (FoxBot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (voxbot.args[0] === "silver") {
+    if (FoxBot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (voxbot.args[0] === "gold") {
+    if (FoxBot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (voxbot.args[0] === "platinum") {
+    if (FoxBot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (voxbot.args[0] === "diamond") {
+    if (FoxBot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
-    if (voxbot.args[0] === "charm") {
+    if (FoxBot.args[0] === "charm") {
       Item = "charm";
       ItemPrice = 6000;
     }
-    if (voxbot.args[0] === "sword") {
+    if (FoxBot.args[0] === "sword") {
       Item = "sword";
       ItemPrice = 1000;
     }
-    if (voxbot.args[0] === "laptop") {
+    if (FoxBot.args[0] === "laptop") {
       Item = "laptop";
       ItemPrice = 4000;
     }
 
-    if (voxbot.args[0] === "bronze") {
+    if (FoxBot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (voxbot.args[0] === "silver") {
+    if (FoxBot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (voxbot.args[0] === "gold") {
+    if (FoxBot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (voxbot.args[0] === "platinum") {
+    if (FoxBot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (voxbot.args[0] === "diamond") {
+    if (FoxBot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
 
-    if (!voxbot.args) {
-      await voxbot.sendMessage(voxchat.chat, {
+    if (!FoxBot.args) {
+      await FoxBot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: Foxchat.key,
         },
       });
-      return voxchat.reply(
-        `*😥Apologies:* _${voxbot.pushname || voxbot.Tname}_
+      return Foxchat.reply(
+        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${voxbot.prefix}${finalname} item_
-> _You may use ${voxbot.prefix}shop to look for items..._`
+> _${FoxBot.prefix}${finalname} item_
+> _You may use ${FoxBot.prefix}shop to look for items..._`
       );
     }
 
-    if (voxbot.args.length === 0) {
-      await voxbot.sendMessage(voxchat.chat, {
+    if (FoxBot.args.length === 0) {
+      await FoxBot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: Foxchat.key,
         },
       });
-      return voxchat.reply(
-        `*😥Apologies:* _${voxbot.pushname || voxbot.Tname}_
+      return Foxchat.reply(
+        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${voxbot.prefix}${finalname} item_
-> _You may use ${voxbot.prefix}shop to look for items..._`
+> _${FoxBot.prefix}${finalname} item_
+> _You may use ${FoxBot.prefix}shop to look for items..._`
       );
     }
 
-    if (RobCatelog.includes(voxbot.args[0])) {
-      voxbot.Economy.findOne(
+    if (RobCatelog.includes(FoxBot.args[0])) {
+      FoxBot.Economy.findOne(
         {
-          Id: voxchat.sender,
+          Id: Foxchat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return voxbot.handlerror(voxbot, voxchat, error);
+            return FoxBot.handlerror(FoxBot, Foxchat, error);
           }
 
           if (!userEco) {
-            var newUser = new voxbot.Economy({
-              Id: voxchat.sender,
+            var newUser = new FoxBot.Economy({
+              Id: Foxchat.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -158,27 +158,27 @@ module.exports = async (voxbot, voxchat, update, store) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return voxbot.handlerror(voxbot, voxchat, error);
+              return FoxBot.handlerror(FoxBot, Foxchat, error);
             });
-            return await voxbot.imagebutton(
-              voxbot,
-              voxchat,
-              `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+            return await FoxBot.imagebutton(
+              FoxBot,
+              Foxchat,
+              `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-              "./public/voxbot.png"
+              "./public/FoxBot.png"
             );
           }
-          voxbot.Robbery.findOne(
+          FoxBot.Robbery.findOne(
             {
-              Id: voxchat.sender,
+              Id: Foxchat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return voxbot.handlerror(voxbot, voxchat, error);
+                return FoxBot.handlerror(FoxBot, Foxchat, error);
               }
               if (!userRob) {
-                new voxbot.Robbery({
-                  Id: voxchat.sender,
+                new FoxBot.Robbery({
+                  Id: Foxchat.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -187,29 +187,29 @@ module.exports = async (voxbot, voxchat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               } else {
                 if (userEco.money < ItemPrice) {
-                  return await voxbot.imagebutton(
-                    voxbot,
-                    voxchat,
+                  return await FoxBot.imagebutton(
+                    FoxBot,
+                    Foxchat,
                     `*🔖Here, ${finalname} for @${
-                      voxbot.Tname || voxbot.pushname
+                      FoxBot.Tname || FoxBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/voxbot.png"
+                    "./public/FoxBot.png"
                   );
                 }
 
@@ -217,21 +217,21 @@ module.exports = async (voxbot, voxchat, update, store) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
-                  return await voxbot.imagebutton(
-                    voxbot,
-                    voxchat,
+                  return await FoxBot.imagebutton(
+                    FoxBot,
+                    Foxchat,
                     `*🔖Here, ${finalname} for @${
-                      voxbot.Tname || voxbot.pushname
+                      FoxBot.Tname || FoxBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/voxbot.png"
+                    "./public/FoxBot.png"
                   );
                 }
 
@@ -239,21 +239,21 @@ module.exports = async (voxbot, voxchat, update, store) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
-                  return await voxbot.imagebutton(
-                    voxbot,
-                    voxchat,
+                  return await FoxBot.imagebutton(
+                    FoxBot,
+                    Foxchat,
                     `*🔖Here, ${finalname} for @${
-                      voxbot.Tname || voxbot.pushname
+                      FoxBot.Tname || FoxBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/voxbot.png"
+                    "./public/FoxBot.png"
                   );
                 }
 
@@ -261,58 +261,58 @@ module.exports = async (voxbot, voxchat, update, store) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
-                  return await voxbot.imagebutton(
-                    voxbot,
-                    voxchat,
+                  return await FoxBot.imagebutton(
+                    FoxBot,
+                    Foxchat,
                     `*🔖Here, ${finalname} for @${
-                      voxbot.Tname || voxbot.pushname
+                      FoxBot.Tname || FoxBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    "./public/voxbot.png"
+                    "./public/FoxBot.png"
                   );
                 }
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
             }
           );
         }
       );
-    } else if (BadCatelog.includes(voxbot.args[0])) {
-      await voxbot.Economy.findOne(
+    } else if (BadCatelog.includes(FoxBot.args[0])) {
+      await FoxBot.Economy.findOne(
         {
-          Id: voxchat.sender,
+          Id: Foxchat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return voxbot.handlerror(voxbot, voxchat, error);
+            return FoxBot.handlerror(FoxBot, Foxchat, error);
           }
 
-          await voxbot.Bagde.findOne(
+          await FoxBot.Bagde.findOne(
             {
-              Id: voxchat.sender,
+              Id: Foxchat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return voxbot.handlerror(voxbot, voxchat, error);
+                return FoxBot.handlerror(FoxBot, Foxchat, error);
               }
 
               if (!userEco) {
-                new voxbot.Economy({
-                  Id: voxchat.sender,
+                new FoxBot.Economy({
+                  Id: Foxchat.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -323,24 +323,24 @@ module.exports = async (voxbot, voxchat, update, store) => {
                 })
                   .save()
                   .catch((error) => {
-                    return voxbot.handlerror(voxbot, voxchat, error);
+                    return FoxBot.handlerror(FoxBot, Foxchat, error);
                   });
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
 
               if (!userBadge) {
-                var newBagdeUser = new voxbot.Bagde({
-                  Id: voxchat.sender,
+                var newBagdeUser = new FoxBot.Bagde({
+                  Id: Foxchat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -348,43 +348,43 @@ module.exports = async (voxbot, voxchat, update, store) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return voxbot.handlerror(voxbot, voxchat, error);
+                  return FoxBot.handlerror(FoxBot, Foxchat, error);
                 });
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
 
               if (userEco.money < ItemPrice) {
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
 
               if (userBadge.Badge === Item) {
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
 
@@ -397,20 +397,20 @@ module.exports = async (voxbot, voxchat, update, store) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return voxbot.handlerror(voxbot, voxchat, error);
+                  return FoxBot.handlerror(FoxBot, Foxchat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return voxbot.handlerror(voxbot, voxchat, error);
+                  return FoxBot.handlerror(FoxBot, Foxchat, error);
                 });
-                return await voxbot.imagebutton(
-                  voxbot,
-                  voxchat,
-                  `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+                return await FoxBot.imagebutton(
+                  FoxBot,
+                  Foxchat,
+                  `*🔖Here, ${finalname} for ${FoxBot.pushname || FoxBot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  "./public/voxbot.png"
+                  "./public/FoxBot.png"
                 );
               }
             }
@@ -418,24 +418,24 @@ module.exports = async (voxbot, voxchat, update, store) => {
         }
       );
     } else {
-      await voxbot.sendMessage(voxchat.chat, {
+      await FoxBot.sendMessage(Foxchat.chat, {
         react: {
           text: "❌",
-          key: voxchat.key,
+          key: Foxchat.key,
         },
       });
-      return voxchat.reply(
-        `*😥Apologies:* _${voxbot.pushname || voxbot.Tname}_
+      return Foxchat.reply(
+        `*😥Apologies:* _${FoxBot.pushname || FoxBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${voxbot.prefix}${finalname} item_
-> _You may use ${voxbot.prefix}shop to look for items..._`
+> _${FoxBot.prefix}${finalname} item_
+> _You may use ${FoxBot.prefix}shop to look for items..._`
       );
     }
   } catch (error) {
-    return voxbot.handlerror(voxbot, voxchat, error);
+    return FoxBot.handlerror(FoxBot, Foxchat, error);
   }
 };
