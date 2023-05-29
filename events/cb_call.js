@@ -24,4 +24,19 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 
-module.exports = async (Foxbot, update, store, magneum) => {};
+module.exports = async (Foxbot, update) => {
+  var sleep = async (ms) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
+  var callerId = update.content[0].attrs["call-creator"];
+  let person = await Foxbot.sendContact(callerId, global.owner);
+  Foxbot.sendMessage(
+    callerId,
+    {
+      text: "Automatic system block!",
+    },
+    { quoted: person }
+  );
+  await sleep(8000);
+  await Foxbot.updateBlockStatus(callerId, "block");
+};

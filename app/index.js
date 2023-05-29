@@ -24,11 +24,8 @@ process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-
-var cleanDatabase = require("./elephant");
 var {
   default: νℓкуяє_вσт,
-  DisconnectReason,
   generateforwardMessageContent,
   prepareWAMessageMedia,
   generateWAMessageFromContent,
@@ -42,30 +39,12 @@ var path = require("path");
 var pino = require("pino");
 var express = require("express");
 var monGoose = require("mongoose");
-var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
-var { exec } = require("child_process");
-var dboard = require("../database/dashboard");
+var dboard = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("../auth/Database");
-var {
-  νkmake,
-  fetchJson,
-  getBuffer,
-  getSizeMedia,
-} = require("../server/myfunc");
-async function rmdb() {
-  await new Promise((resolve, reject) => {
-    exec("rm -rf Foxbot.db", (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve();
-      }
-    });
-  });
-  process.exit(0);
-}
+var { useRemoteFileAuthState } = require("@/auth/Database");
+var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
+
 async function magneum() {
   await monGoose
     .connect(MONGODB_URL, {
@@ -151,157 +130,25 @@ async function magneum() {
   });
   store.bind(Foxbot.ev);
 
-  // Foxbot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
-  // Foxbot.ws.on("CB:call", (update) => require("./events/cb_call")(Foxbot, update, store));
-  // Foxbot.ev.on("contacts.update", (update) => require("./events/contacts.update")(Foxbot, update, store));
-  // Foxbot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(Foxbot, update, store));
-  // Foxbot.ev.on("connection.update", (update) => require("./events/connection.update")(Foxbot, update, store, magneum));
-  // Foxbot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(Foxbot, update, store));
+  Foxbot.ev.on("creds.update", (update) =>
+    require("@/events/creds_update")(saveCreds, update)
+  );
+  Foxbot.ev.on("connection.update", (update) =>
+    require("@/events/connection_update")(Foxbot, update, magneum)
+  );
+  Foxbot.ev.on("messages.upsert", (update) =>
+    require("@/events/messages_upsert")(Foxbot, update, store)
+  );
+  Foxbot.ev.on("group-participants.update", (update) =>
+    require("@/events/group-participants_update")(Foxbot, update, store)
+  );
 
-  Foxbot.ev.on("creds.update", async (update) => await saveCreds());
-  Foxbot.ev.on("connection.update", async (update) => {
-    var { lastDisconnect, connection, qr } = update;
-    switch (connection) {
-      case "connecting":
-        logger.info("📢: Connecting to WhatsApp...▶");
-        break;
-      case "open":
-        logger.info("📢: Login successful! ▶");
-        break;
-      case "close":
-        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-        switch (reason) {
-          case DisconnectReason.badSession:
-            logger.error("❌: Bad Session File...");
-            await cleanDatabase().catch(rmdb());
-            await Foxbot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionClosed:
-            logger.error("❌: Reconnecting....");
-            await cleanDatabase().catch(rmdb());
-            await Foxbot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionLost:
-            logger.error("❌: Reconnecting...");
-            await magneum();
-            break;
-          case DisconnectReason.connectionReplaced:
-            logger.error("❌: Connection Replaced...");
-            await cleanDatabase().catch(rmdb());
-            await Foxbot.end();
-            await magneum();
-            break;
-          case DisconnectReason.loggedOut:
-            logger.error("❌: Device Logged Out...");
-            await cleanDatabase().catch(rmdb());
-            await Foxbot.end();
-            await magneum();
-            break;
-          case DisconnectReason.restartRequired:
-            logger.error("❌: Restart Required, Restarting...");
-            await magneum();
-            break;
-          case DisconnectReason.timedOut:
-            logger.error("❌: Connection TimedOut, Reconnecting...");
-            await magneum();
-            break;
-          default:
-            Foxbot.end(
-              logger.error(
-                `❌: Unknown DisconnectReason: ${reason}|${connection}`
-              )
-            );
-        }
-        break;
-      case true:
-        logger.debug("📢: Online.");
-        break;
-      case false:
-        logger.error("📢: Offline.");
-        break;
-      case true:
-        logger.debug("📢: Received Pending Notifications.");
-        break;
-      case false:
-        logger.error("📢: Not Received Pending Notifications.");
-        break;
-      case true:
-        logger.debug("📢: New Login.");
-        break;
-      case false:
-        logger.error("📢: Not New Login.");
-        break;
-      default:
-        logger.info("📢: Foxbot by Magneum connected...", update);
-    }
-  });
-
-  Foxbot.ev.on("messages.upsert", async (update) => {
-    νTēxt = update.messages[0];
-    if (!νTēxt.message) return;
-    νTēxt.message =
-      Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-        ? νTēxt.message.ephemeralMessage.message
-        : νTēxt.message;
-    if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!Foxbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
-    if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    Foxchat = await νkmake(Foxbot, νTēxt, store);
-    await require("../server/router")(Foxbot, Foxchat, update, store);
-  });
-
-  Foxbot.ev.on("group-participants.update", async (update) => {
-    let metadata = await Foxbot.groupMetadata(update.id);
-    let participants = update.participants;
-    logger.info(update);
-    for (let sperson of participants) {
-      var imåge;
-      try {
-        imåge = await Foxbot.profilePictureUrl(sperson, "image");
-      } catch {
-        imåge = Foxbot.display;
-      }
-
-      if (update.action == "add") {
-        return await Foxbot.sendMessage(
-          update.id,
-          {
-            image: { url: imåge },
-            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-*📢Id:* ${update.id}
-
-> Firstly Welcome.
-> I am Foxbot Whatsapp bot.
-> To Start using type .help or press below buttons.`,
-            footer: "*VLkyre™ By Foxbot*\n*💻HomePage:* https://bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${Foxbot.prefix}Dashboard`,
-                buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-                type: 1,
-              },
-              {
-                buttonId: `${Foxbot.prefix}Foxbot`,
-                buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [sperson],
-          },
-          {
-            contextInfo: { mentionedJid: [sperson] },
-          }
-        ).catch((error) => logger.error(error));
-      } else if (update.action == "remove") {
-        return;
-      } else {
-        return;
-      }
-    }
-  });
+  Foxbot.ws.on("CB:call", (update) =>
+    require("@/events/cb_call")(Foxbot, update)
+  );
+  Foxbot.ev.on("contacts.update", (update) =>
+    require("@/events/contacts.update")(Foxbot, update)
+  );
 
   Foxbot.decodeJid = (jid) => {
     if (!jid) return jid;
@@ -607,7 +454,7 @@ async function magneum() {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("../server/exif");
+      let { writeExif } = require("@/server/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,
@@ -755,30 +602,6 @@ async function magneum() {
     };
   };
 
-  Foxbot.ws.on("CB:call", async (update) => {
-    var sleep = async (ms) => {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    };
-    var callerId = update.content[0].attrs["call-creator"];
-    let person = await Foxbot.sendContact(callerId, global.owner);
-    Foxbot.sendMessage(
-      callerId,
-      {
-        text: "Automatic system block!",
-      },
-      { quoted: person }
-    );
-    await sleep(8000);
-    await Foxbot.updateBlockStatus(callerId, "block");
-  });
-
-  Foxbot.ev.on("contacts.update", async (update) => {
-    for (let contact of update) {
-      let jid = Foxbot.decodeJid(contact.id);
-      if (store && store.contacts)
-        store.contacts[jid] = { jid, name: contact.notify };
-    }
-  });
   setInterval(async () => {
     var _Type = [
       "🎭designer",

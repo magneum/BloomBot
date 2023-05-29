@@ -24,4 +24,53 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 
-module.exports = async (Foxbot, update, store, magneum) => {};
+module.exports = async (Foxbot, update, store) => {
+  let metadata = await Foxbot.groupMetadata(update.id);
+  let participants = update.participants;
+  logger.info(update);
+  for (let sperson of participants) {
+    var imåge;
+    try {
+      imåge = await Foxbot.profilePictureUrl(sperson, "image");
+    } catch {
+      imåge = Foxbot.display;
+    }
+
+    if (update.action == "add") {
+      return await Foxbot.sendMessage(
+        update.id,
+        {
+          image: { url: imåge },
+          caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+*📢Id:* ${update.id}
+
+> Firstly Welcome.
+> I am Foxbot Whatsapp bot.
+> To Start using type .help or press below buttons.`,
+          footer: "*VLkyre™ By Foxbot*\n*💻HomePage:* https://bit.ly/magneum",
+          buttons: [
+            {
+              buttonId: `${Foxbot.prefix}Dashboard`,
+              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+              type: 1,
+            },
+            {
+              buttonId: `${Foxbot.prefix}Foxbot`,
+              buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
+              type: 1,
+            },
+          ],
+          headerType: 4,
+          mentions: [sperson],
+        },
+        {
+          contextInfo: { mentionedJid: [sperson] },
+        }
+      ).catch((error) => logger.error(error));
+    } else if (update.action == "remove") {
+      return;
+    } else {
+      return;
+    }
+  }
+};

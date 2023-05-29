@@ -24,4 +24,10 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 
-module.exports = async (Foxbot, update, store, magneum) => {};
+module.exports = async (Foxbot, update) => {
+  for (let contact of update) {
+    let jid = Foxbot.decodeJid(contact.id);
+    if (store && store.contacts)
+      store.contacts[jid] = { jid, name: contact.notify };
+  }
+};

@@ -24,4 +24,6 @@ process.on("uncaughtException", (error) => {
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 
-module.exports = async (Foxbot, update, store, magneum) => {};
+module.exports = async (saveCreds, update) => {
+  await saveCreds();
+};

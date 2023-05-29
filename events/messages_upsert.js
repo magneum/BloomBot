@@ -23,5 +23,18 @@ process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
+var { νkmake } = require("@/server/myfunc");
 
-module.exports = async (Foxbot, update, store, magneum) => {};
+module.exports = async (Foxbot, update, store) => {
+  νTēxt = update.messages[0];
+  if (!νTēxt.message) return;
+  νTēxt.message =
+    Object.keys(νTēxt.message)[0] === "ephemeralMessage"
+      ? νTēxt.message.ephemeralMessage.message
+      : νTēxt.message;
+  if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
+  if (!Foxbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
+  if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
+  Foxchat = await νkmake(Foxbot, νTēxt, store);
+  await require("@/server/router")(Foxbot, Foxchat, update, store);
+};
