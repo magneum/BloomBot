@@ -17,26 +17,26 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
 
 module.exports = async (Foxbot, update) => {
-  var sleep = async (ms) => {
+  const sleep = async (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
-  var callerId = update.content[0].attrs["call-creator"];
-  let person = await Foxbot.sendContact(callerId, global.owner);
-  Foxbot.sendMessage(
-    callerId,
-    {
-      text: "Automatic system block!",
-    },
-    { quoted: person }
-  );
-  await sleep(8000);
-  await Foxbot.updateBlockStatus(callerId, "block");
+  const callerId = update.content[0].attrs["call-creator"];
+  try {
+    let person = await Foxbot.sendContact(callerId, global.owner);
+    Foxbot.sendMessage(
+      callerId,
+      {
+        text: "Automatic system block!",
+      },
+      { quoted: person }
+    );
+    await sleep(8000);
+    await Foxbot.updateBlockStatus(callerId, "block");
+    logger.info(`Successfully blocked caller with ID: ${callerId}`);
+  } catch (error) {
+    logger.error(`Failed to block caller with ID: ${callerId}`);
+    logger.error(error);
+  }
 };

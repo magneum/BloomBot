@@ -18,12 +18,6 @@
 require("../module-alias");
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
 var {
   default: νℓкуяє_вσт,
   generateforwardMessageContent,

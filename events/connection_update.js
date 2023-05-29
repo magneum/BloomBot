@@ -17,12 +17,6 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
 var { Boom } = require("@hapi/boom");
 var { exec } = require("child_process");
 var cleanDatabase = require("@/app/elephant");
@@ -45,80 +39,86 @@ module.exports = async (Foxbot, update, magneum) => {
   var { lastDisconnect, connection, qr } = update;
   switch (connection) {
     case "connecting":
-      logger.info("📢: Connecting to WhatsApp...▶");
+      logger.info("📢 Connecting to WhatsApp...");
       break;
     case "open":
-      logger.info("📢: Login successful! ▶");
+      logger.info("📢 Login successful!");
       break;
     case "close":
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       switch (reason) {
         case DisconnectReason.badSession:
-          logger.error("❌: Bad Session File...");
+          logger.error(
+            "❌ Bad Session File. Cleaning database and reconnecting..."
+          );
           await cleanDatabase().catch(rmdb());
           await Foxbot.end();
           await magneum();
           break;
         case DisconnectReason.connectionClosed:
-          logger.error("❌: Reconnecting....");
+          logger.error(
+            "❌ Connection closed. Cleaning database and reconnecting..."
+          );
           await cleanDatabase().catch(rmdb());
           await Foxbot.end();
           await magneum();
           break;
         case DisconnectReason.connectionLost:
-          logger.error("❌: Reconnecting...");
+          logger.error("❌ Connection lost. Reconnecting...");
           await magneum();
           break;
         case DisconnectReason.connectionReplaced:
-          logger.error("❌: Connection Replaced...");
+          logger.error(
+            "❌ Connection replaced. Cleaning database and reconnecting..."
+          );
           await cleanDatabase().catch(rmdb());
           await Foxbot.end();
           await magneum();
           break;
         case DisconnectReason.loggedOut:
-          logger.error("❌: Device Logged Out...");
+          logger.error(
+            "❌ Device logged out. Cleaning database and reconnecting..."
+          );
           await cleanDatabase().catch(rmdb());
           await Foxbot.end();
           await magneum();
           break;
         case DisconnectReason.restartRequired:
-          logger.error("❌: Restart Required, Restarting...");
+          logger.error("❌ Restart required. Restarting...");
           await magneum();
           break;
         case DisconnectReason.timedOut:
-          logger.error("❌: Connection TimedOut, Reconnecting...");
+          logger.error("❌ Connection timed out. Reconnecting...");
           await magneum();
           break;
         default:
           Foxbot.end(
-            logger.error(
-              `❌: Unknown DisconnectReason: ${reason}|${connection}`
-            )
+            logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`)
           );
       }
       break;
     case true:
-      logger.debug("📢: Online.");
+      logger.debug("📢 Online.");
       break;
     case false:
-      logger.error("📢: Offline.");
+      logger.error("📢 Offline.");
       break;
     case true:
-      logger.debug("📢: Received Pending Notifications.");
+      logger.debug("📢 Received pending notifications.");
       break;
     case false:
-      logger.error("📢: Not Received Pending Notifications.");
+      logger.error("📢 Not received pending notifications.");
       break;
     case true:
-      logger.debug("📢: New Login.");
+      logger.debug("📢 New login.");
       break;
     case false:
-      logger.error("📢: Not New Login.");
+      logger.error("📢 Not new login.");
       break;
     case qr:
-      if (qr != undefined) console.log(qr);
+      if (qr != undefined) logger.info("📢 QR Code received:", qr);
       break;
     default:
-      logger.info("📢: Foxbot by Magneum connected...", update);
+      logger.info("📢 Foxbot by Magneum connected:", update);
   }
 };

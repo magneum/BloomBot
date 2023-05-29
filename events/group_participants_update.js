@@ -17,12 +17,6 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
 
 module.exports = async (Foxbot, update, store) => {
   let metadata = await Foxbot.groupMetadata(update.id);
@@ -37,40 +31,45 @@ module.exports = async (Foxbot, update, store) => {
     }
 
     if (update.action == "add") {
-      return await Foxbot.sendMessage(
-        update.id,
-        {
-          image: { url: imåge },
-          caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+      try {
+        await Foxbot.sendMessage(
+          update.id,
+          {
+            image: { url: imåge },
+            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
 *📢Id:* ${update.id}
 
 > Firstly Welcome.
 > I am Foxbot Whatsapp bot.
 > To Start using type .help or press below buttons.`,
-          footer: "*VLkyre™ By Foxbot*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${Foxbot.prefix}Dashboard`,
-              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${Foxbot.prefix}Foxbot`,
-              buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          mentions: [sperson],
-        },
-        {
-          contextInfo: { mentionedJid: [sperson] },
-        }
-      ).catch((error) => logger.error(error));
+            footer:
+              "*Foxbot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+            buttons: [
+              {
+                buttonId: `${Foxbot.prefix}Dashboard`,
+                buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+                type: 1,
+              },
+              {
+                buttonId: `${Foxbot.prefix}Foxbot`,
+                buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            mentions: [sperson],
+          },
+          {
+            contextInfo: { mentionedJid: [sperson] },
+          }
+        );
+      } catch (error) {
+        logger.error(error);
+      }
     } else if (update.action == "remove") {
-      return;
+      // Handle remove action if needed
     } else {
-      return;
+      // Handle other actions if needed
     }
   }
 };

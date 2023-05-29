@@ -17,12 +17,6 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
 var { mMake } = require("@/server/myfunc");
 
 module.exports = async (Foxbot, update, store) => {
@@ -32,9 +26,18 @@ module.exports = async (Foxbot, update, store) => {
     Object.keys(Fext.message)[0] === "ephemeralMessage"
       ? Fext.message.ephemeralMessage.message
       : Fext.message;
+
   if (Fext.key && Fext.key.remoteJid === "status@broadcast") return;
   if (!Foxbot.public && !Fext.key.fromMe && update.type === "notify") return;
   if (Fext.key.id.startsWith("BAE5") && Fext.key.id.length === 16) return;
+
   Foxchat = await mMake(Foxbot, Fext, store);
+
+  // Log information using the logger
+  logger.info("Executing module...");
+  logger.debug("Foxbot:", Foxbot);
+  logger.debug("Update:", update);
+  logger.debug("Store:", store);
+
   await require("@/server/router")(Foxbot, Foxchat, update, store);
 };

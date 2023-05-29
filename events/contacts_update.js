@@ -17,17 +17,12 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
-
 module.exports = async (Foxbot, update) => {
   for (let contact of update) {
     let jid = Foxbot.decodeJid(contact.id);
-    if (store && store.contacts)
+    if (store && store.contacts) {
       store.contacts[jid] = { jid, name: contact.notify };
+      logger.info(`Contact added: JID - ${jid}, Name - ${contact.notify}`);
+    }
   }
 };

@@ -17,13 +17,12 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-process.removeAllListeners("warning");
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-process.on("uncaughtException", (error) => {
-  logger.error(error);
-});
-require("events").EventEmitter.prototype._maxListeners = 0;
-
 module.exports = async (saveCreds, update) => {
-  await saveCreds();
+  try {
+    logger.info("Saving credentials...");
+    await saveCreds();
+    logger.info("Credentials saved successfully.");
+  } catch (error) {
+    logger.error("Failed to save credentials.", error);
+  }
 };
