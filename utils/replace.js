@@ -48,11 +48,18 @@ async function renameFiles(workdir, searchString, replaceString) {
       const stats = await fs.promises.stat(filePath);
 
       if (stats.isFile()) {
-        if (!file.startsWith(".") && file !== "node_modules") {
+        if (
+          !file.startsWith(".") &&
+          !file.startsWith("node_modules") &&
+          file !== "yarn.lock" &&
+          file !== "package-lock.json"
+        ) {
           await renameFile(filePath, searchString, replaceString);
         }
       }
     }
+
+    console.log(chalk.green("Renaming and deletion complete."));
   } catch (err) {
     console.error(chalk.red(`Error reading directory: ${workdir}`, err));
   }
