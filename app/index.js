@@ -43,7 +43,7 @@ var bodyParser = require("body-parser");
 var dboard = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("@/auth/Database");
-var { νkmake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
+var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
 
 async function magneum() {
   await monGoose
@@ -219,7 +219,7 @@ async function magneum() {
   };
 
   Foxbot.public = true;
-  Foxbot.serializeM = (Foxchat) => νkmake(Foxbot, Foxchat, store);
+  Foxbot.serializeM = (Foxchat) => mMake(Foxbot, Foxchat, store);
 
   Foxbot.send5ButImg = async (
     jid,

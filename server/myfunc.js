@@ -226,7 +226,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.νkmake = async (Foxbot, Foxchat, store) => {
+exports.mMake = async (Foxbot, Foxchat, store) => {
   if (!Foxchat) return Foxchat;
   var νproto = proto.WebMessageInfo;
   if (Foxchat.key) {
@@ -311,7 +311,7 @@ exports.νkmake = async (Foxbot, Foxchat, store) => {
           Foxchat.quoted.id,
           Foxbot
         );
-        return exports.νkmake(Foxbot, q, store);
+        return exports.mMake(Foxbot, q, store);
       };
       var vM = (Foxchat.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -346,7 +346,7 @@ exports.νkmake = async (Foxbot, Foxchat, store) => {
       ? Foxbot.sendMedia(chatId, text, "file", "", Foxchat, { ...options })
       : Foxbot.sendText(chatId, text, Foxchat, { ...options });
   Foxchat.copy = () =>
-    exports.νkmake(Foxbot, νproto.fromObject(νproto.toObject(Foxchat)));
+    exports.mMake(Foxbot, νproto.fromObject(νproto.toObject(Foxchat)));
   Foxchat.copyNForward = (
     jid = Foxchat.chat,
     forceForward = false,

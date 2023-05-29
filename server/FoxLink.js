@@ -23,7 +23,7 @@ var {
   IShipOptions,
 } = require("@shineiichijo/canvas-chan");
 var {
-  νkmake,
+  mMake,
   formatp,
   formatDate,
   getTime,
@@ -126,7 +126,7 @@ module.exports = async (
   Foxbot.Sticker = Sticker;
   Foxbot.createSticker = createSticker;
   Foxbot.StickerTypes = StickerTypes;
-  Foxbot.νkmake = νkmake;
+  Foxbot.mMake = mMake;
   Foxbot.formatp = formatp;
   Foxbot.formatDate = formatDate;
   Foxbot.getTime = getTime;

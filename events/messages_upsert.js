@@ -23,18 +23,18 @@ process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-var { νkmake } = require("@/server/myfunc");
+var { mMake } = require("@/server/myfunc");
 
 module.exports = async (Foxbot, update, store) => {
-  νTēxt = update.messages[0];
-  if (!νTēxt.message) return;
-  νTēxt.message =
-    Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-      ? νTēxt.message.ephemeralMessage.message
-      : νTēxt.message;
-  if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-  if (!Foxbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
-  if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-  Foxchat = await νkmake(Foxbot, νTēxt, store);
+  Fext = update.messages[0];
+  if (!Fext.message) return;
+  Fext.message =
+    Object.keys(Fext.message)[0] === "ephemeralMessage"
+      ? Fext.message.ephemeralMessage.message
+      : Fext.message;
+  if (Fext.key && Fext.key.remoteJid === "status@broadcast") return;
+  if (!Foxbot.public && !Fext.key.fromMe && update.type === "notify") return;
+  if (Fext.key.id.startsWith("BAE5") && Fext.key.id.length === 16) return;
+  Foxchat = await mMake(Foxbot, Fext, store);
   await require("@/server/router")(Foxbot, Foxchat, update, store);
 };
