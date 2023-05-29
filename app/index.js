@@ -77,7 +77,7 @@ async function magneum() {
       logger.error("❌: Unable to Connect with Mongoose.");
       logger.error(error);
     })
-    .then(logger.info("🐲: Connected with Mongoose."));
+    .then(logger.info("📢: Connected with Mongoose."));
   var νℓpage = express();
   var sequelize = DATABASE;
   var store = makeInMemoryStore({
@@ -126,7 +126,7 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("Foxbot started at port " + PORT));
+  νℓpage.listen(PORT, logger.info("📢: Foxbot started at port " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
@@ -167,10 +167,10 @@ async function magneum() {
     var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
-        logger.info("🐲: Connecting to WhatsApp...▶");
+        logger.info("📢: Connecting to WhatsApp...▶");
         break;
       case "open":
-        logger.info("🐲: Login successful! ▶");
+        logger.info("📢: Login successful! ▶");
         break;
       case "close":
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
@@ -220,25 +220,25 @@ async function magneum() {
         }
         break;
       case true:
-        logger.debug("🐲: Online.");
+        logger.debug("📢: Online.");
         break;
       case false:
-        logger.error("🐲: Offline.");
+        logger.error("📢: Offline.");
         break;
       case true:
-        logger.debug("🐲: Received Pending Notifications.");
+        logger.debug("📢: Received Pending Notifications.");
         break;
       case false:
-        logger.error("🐲: Not Received Pending Notifications.");
+        logger.error("📢: Not Received Pending Notifications.");
         break;
       case true:
-        logger.debug("🐲: New Login.");
+        logger.debug("📢: New Login.");
         break;
       case false:
-        logger.error("🐲: Not New Login.");
+        logger.error("📢: Not New Login.");
         break;
       default:
-        logger.info("🐲: Foxbot by Magneum connected...", update);
+        logger.info("📢: Foxbot by Magneum connected...", update);
     }
   });
 
