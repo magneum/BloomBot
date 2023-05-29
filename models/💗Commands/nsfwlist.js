@@ -68,6 +68,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}slut
 │║⦁ ${Foxbot.prefix}cumslut
 ┕╚═══════⋑`,
-    "./public/Foxbot.png"
+    Foxbot.dp
   );
 };

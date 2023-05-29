@@ -90,7 +90,8 @@ function wikimedia(title) {
             title: $(b).find("img").attr("alt"),
             source: $(b).attr("href"),
             image:
-              $(b).find("img").attr("data-public") || $(b).find("img").attr("public"),
+              $(b).find("img").attr("data-public") ||
+              $(b).find("img").attr("public"),
           });
         });
         resolve(results);

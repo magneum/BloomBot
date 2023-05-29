@@ -28,9 +28,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   var isbotAdmin = Foxchat.isGroup
     ? groupAdmins.includes(await Foxbot.decodeJid(Foxbot.user.id))
     : false;
-  var isAdmin = Foxchat.isGroup
-    ? groupAdmins.includes(Foxchat.sender)
-    : false;
+  var isAdmin = Foxchat.isGroup ? groupAdmins.includes(Foxchat.sender) : false;
 
   var vbody =
     Foxchat.mtype === "conversation"
@@ -49,8 +47,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
       ? Foxchat.message.templateButtonReplyMessage.selectedId
       : Foxchat.mtype === "messageContextInfo"
       ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
-        Foxchat.message.listResponseMessage?.singleSelectReply
-          .selectedRowId ||
+        Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         Foxchat.text
       : "";
   var vcommand = vbody
@@ -102,12 +99,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "Dashboard":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.dashboard = updatedb.dashboard + 1;
-        require("../models/⚙️System/dashboard")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/⚙️System/dashboard")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -149,12 +141,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "bite":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.bite = updatedb.bite + 1;
-        require("../models/🐉Emotions/bite")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/bite")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -163,12 +150,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "blush":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.blush = updatedb.blush + 1;
-        require("../models/🐉Emotions/blush")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/blush")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -177,12 +159,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "bonk":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.bonk = updatedb.bonk + 1;
-        require("../models/🐉Emotions/bonk")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/bonk")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -191,12 +168,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "bored":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.bored = updatedb.bored + 1;
-        require("../models/🐉Emotions/bored")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/bored")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -228,12 +200,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "cuddle":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.cuddle = updatedb.cuddle + 1;
-        require("../models/🐉Emotions/cuddle")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/cuddle")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -242,12 +209,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "dance":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.dance = updatedb.dance + 1;
-        require("../models/🐉Emotions/dance")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/dance")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -270,12 +232,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "happy":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.happy = updatedb.happy + 1;
-        require("../models/🐉Emotions/happy")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/happy")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -307,12 +264,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "kill":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.kill = updatedb.kill + 1;
-        require("../models/🐉Emotions/kill")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/kill")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -321,12 +273,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "kiss":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.kiss = updatedb.kiss + 1;
-        require("../models/🐉Emotions/kiss")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/kiss")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -335,12 +282,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "nervous":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.nervous = updatedb.nervous + 1;
-        require("../models/🐉Emotions/nervous")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/nervous")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -358,12 +300,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "poke":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.poke = updatedb.poke + 1;
-        require("../models/🐉Emotions/poke")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/poke")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -372,12 +309,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "punch":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.punch = updatedb.punch + 1;
-        require("../models/🐉Emotions/punch")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/punch")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -395,12 +327,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "scream":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.scream = updatedb.scream + 1;
-        require("../models/🐉Emotions/scream")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/scream")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -409,12 +336,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "slap":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.slap = updatedb.slap + 1;
-        require("../models/🐉Emotions/slap")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/slap")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -423,12 +345,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "smile":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.smile = updatedb.smile + 1;
-        require("../models/🐉Emotions/smile")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/smile")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -437,12 +354,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "stare":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.stare = updatedb.stare + 1;
-        require("../models/🐉Emotions/stare")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/stare")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -451,12 +363,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "wave":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.wave = updatedb.wave + 1;
-        require("../models/🐉Emotions/wave")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/wave")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -465,12 +372,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "wink":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.wink = updatedb.wink + 1;
-        require("../models/🐉Emotions/wink")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/wink")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -479,12 +381,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "yeet":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.yeet = updatedb.yeet + 1;
-        require("../models/🐉Emotions/yeet")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🐉Emotions/yeet")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -517,12 +414,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "sfwlist":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.sfwlist = updatedb.sfwlist + 1;
-        require("../models/💗Commands/sfwlist")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/💗Commands/sfwlist")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -709,12 +601,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "flanger":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.flanger = updatedb.flanger + 1;
-        require("../models/📢aFilter/flanger")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/flanger")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -737,12 +624,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "phaser":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.phaser = updatedb.phaser + 1;
-        require("../models/📢aFilter/phaser")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/phaser")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -751,12 +633,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "reverse":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.reverse = updatedb.reverse + 1;
-        require("../models/📢aFilter/reverse")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/reverse")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -774,12 +651,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "speed":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.speed = updatedb.speed + 1;
-        require("../models/📢aFilter/speed")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/speed")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -788,12 +660,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "subboost":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.subboost = updatedb.subboost + 1;
-        require("../models/📢aFilter/subboost")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/subboost")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -830,12 +697,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "surround":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.surround = updatedb.surround + 1;
-        require("../models/📢aFilter/surround")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/surround")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -858,12 +720,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "vibrato":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.vibrato = updatedb.vibrato + 1;
-        require("../models/📢aFilter/vibrato")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/vibrato")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -872,12 +729,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "panning":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.panning = updatedb.panning + 1;
-        require("../models/📢aFilter/panning")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📢aFilter/panning")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -901,12 +753,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "ytecho":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ytecho = updatedb.ytecho + 1;
-        require("../models/⭕YTFilter/ytecho")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/⭕YTFilter/ytecho")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -971,12 +818,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "ytslow":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ytslow = updatedb.ytslow + 1;
-        require("../models/⭕YTFilter/ytslow")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/⭕YTFilter/ytslow")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -985,12 +827,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "ytspeed":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ytspeed = updatedb.ytspeed + 1;
-        require("../models/⭕YTFilter/ytspeed")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/⭕YTFilter/ytspeed")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1159,12 +996,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "handhold":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.shandhold = updatedb.shandhold + 1;
-        require("../models/🦄SFW/shandhold")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🦄SFW/shandhold")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1255,12 +1087,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "shighfive":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.shighfive = updatedb.shighfive + 1;
-        require("../models/🦄SFW/shighfive")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🦄SFW/shighfive")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1424,12 +1251,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "toimg":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.toimg = updatedb.toimg + 1;
-        require("../models/📼Conversion/toimg")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📼Conversion/toimg")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1438,12 +1260,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "tourl":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.tourl = updatedb.tourl + 1;
-        require("../models/📼Conversion/tourl")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📼Conversion/tourl")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1466,12 +1283,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "ship":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ship = updatedb.ship + 1;
-        require("../models/📼Conversion/ship")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📼Conversion/ship")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1481,12 +1293,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "talktospeech":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.tts = updatedb.tts + 1;
-        require("../models/📼Conversion/tts")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/📼Conversion/tts")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1499,12 +1306,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "balance":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.balance = updatedb.balance + 1;
-        require("../models/💰Games/balance")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/💰Games/balance")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1670,12 +1472,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "advice":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.advice = updatedb.advice + 1;
-        require("../models/🔎Searches/advice")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/advice")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1684,12 +1481,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "fact":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.fact = updatedb.fact + 1;
-        require("../models/🔎Searches/fact")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/fact")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1698,12 +1490,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "meme":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.meme = updatedb.meme + 1;
-        require("../models/🔎Searches/meme")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/meme")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1712,12 +1499,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "quote":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.quote = updatedb.quote + 1;
-        require("../models/🔎Searches/quote")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/quote")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1727,12 +1509,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "subreddit":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.joke = updatedb.joke + 1;
-        require("../models/🔎Searches/joke")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/joke")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1741,12 +1518,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "anime":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.anime = updatedb.anime + 1;
-        require("../models/🔎Searches/anime")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/anime")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1755,12 +1527,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "manga":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.manga = updatedb.manga + 1;
-        require("../models/🔎Searches/manga")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/manga")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1769,12 +1536,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "google":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.google = updatedb.google + 1;
-        require("../models/🔎Searches/google")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/google")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1811,12 +1573,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "pokedex":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.pokedex = updatedb.pokedex + 1;
-        require("../models/🔎Searches/pokedex")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/pokedex")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1825,12 +1582,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "gify":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.gify = updatedb.gify + 1;
-        require("../models/🔎Searches/gify")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/gify")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1839,12 +1591,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "lyrics":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.lyrics = updatedb.lyrics + 1;
-        require("../models/🔎Searches/lyrics")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🔎Searches/lyrics")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2074,12 +1821,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "blowjob":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.blowjob = updatedb.blowjob + 1;
-        require("../models/🍑Hentai/blowjob")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/blowjob")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2097,12 +1839,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "doujin":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.doujin = updatedb.doujin + 1;
-        require("../models/🍑Hentai/doujin")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/doujin")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2120,12 +1857,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "femdom":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.femdom = updatedb.femdom + 1;
-        require("../models/🍑Hentai/femdom")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/femdom")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2134,12 +1866,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "Foxgirl":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.Foxgirl = updatedb.Foxgirl + 1;
-        require("../models/🍑Hentai/Foxgirl")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/Foxgirl")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2148,12 +1875,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "glasses":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.glasses = updatedb.glasses + 1;
-        require("../models/🍑Hentai/glasses")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/glasses")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2162,12 +1884,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "hentai":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.hentai = updatedb.hentai + 1;
-        require("../models/🍑Hentai/hentai")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/hentai")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2199,12 +1916,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "netorare":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.netorare = updatedb.netorare + 1;
-        require("../models/🍑Hentai/netorare")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/netorare")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2222,12 +1934,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "panties":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.panties = updatedb.panties + 1;
-        require("../models/🍑Hentai/panties")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/panties")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2245,12 +1952,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "school":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.school = updatedb.school + 1;
-        require("../models/🍑Hentai/school")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/school")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2259,12 +1961,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "succubus":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.succubus = updatedb.succubus + 1;
-        require("../models/🍑Hentai/succubus")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/succubus")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2273,12 +1970,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "tentacles":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.tentacles = updatedb.tentacles + 1;
-        require("../models/🍑Hentai/tentacles")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/tentacles")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2287,12 +1979,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "thighs":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.thighs = updatedb.thighs + 1;
-        require("../models/🍑Hentai/thighs")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/thighs")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2315,12 +2002,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "uniform":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.uniform = updatedb.uniform + 1;
-        require("../models/🍑Hentai/uniform")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/🍑Hentai/uniform")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2362,12 +2044,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "bimbofetish":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.bimbofetish = updatedb.bimbofetish + 1;
-        require("../models/👅NSFW/bimbofetish")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/bimbofetish")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2376,12 +2053,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "blowjobs":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.blowjobs = updatedb.blowjobs + 1;
-        require("../models/👅NSFW/blowjobs")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/blowjobs")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2418,12 +2090,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "canthold":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.canthold = updatedb.canthold + 1;
-        require("../models/👅NSFW/canthold")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/canthold")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2464,12 +2131,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "dirtygaming":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.dirtygaming = updatedb.dirtygaming + 1;
-        require("../models/👅NSFW/dirtygaming")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/dirtygaming")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2478,12 +2140,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "distension":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.distension = updatedb.distension + 1;
-        require("../models/👅NSFW/distension")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/distension")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2492,12 +2149,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "exxxtras":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.exxxtras = updatedb.exxxtras + 1;
-        require("../models/👅NSFW/exxxtras")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/exxxtras")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2506,12 +2158,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "femalepov":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.femalepov = updatedb.femalepov + 1;
-        require("../models/👅NSFW/femalepov")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/femalepov")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2576,12 +2223,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "lactating":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.lactating = updatedb.lactating + 1;
-        require("../models/👅NSFW/lactating")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/lactating")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2690,12 +2332,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "realgirls":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.realgirls = updatedb.realgirls + 1;
-        require("../models/👅NSFW/realgirls")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/realgirls")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2718,12 +2355,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "sexygirls":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.sexygirls = updatedb.sexygirls + 1;
-        require("../models/👅NSFW/sexygirls")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/sexygirls")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2741,12 +2373,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     case "stripgirls":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.stripgirls = updatedb.stripgirls + 1;
-        require("../models/👅NSFW/stripgirls")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("../models/👅NSFW/stripgirls")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2954,7 +2581,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 > No Such Command Found
 > Visit To Know Commands: 
 > _bit.ly/magneum_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
       break;
   }

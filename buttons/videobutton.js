@@ -22,35 +22,33 @@ module.exports = async (Foxbot, Foxchat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) 
       Foxbot.message.extendedTextMessage.contextInfo != null
         ? Foxbot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    await Foxbot
-      .sendMessage(
-        Foxchat.chat,
-        {
-          image: { url: νidē໐ },
-          caption: `*📢Id:* ${Foxchat.chat}
+    await Foxbot.sendMessage(
+      Foxchat.chat,
+      {
+        image: { url: νidē໐ },
+        caption: `*📢Id:* ${Foxchat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${Foxbot.prefix}Dashboard`,
-              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${Foxbot.prefix}Help`,
-              buttonText: { displayText: `${Foxbot.prefix}Help` },
-              type: 1,
-            },
-          ],
-          headerType: 5,
-          mentions: [Foxchat.sender, receiver],
-        },
-        {
-          contextInfo: { mentionedJid: [Foxchat.sender, receiver] },
-          quoted: Foxchat,
-        }
-      )
-      .catch((e) => console.log(e));
+        footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        buttons: [
+          {
+            buttonId: `${Foxbot.prefix}Dashboard`,
+            buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+            type: 1,
+          },
+          {
+            buttonId: `${Foxbot.prefix}Help`,
+            buttonText: { displayText: `${Foxbot.prefix}Help` },
+            type: 1,
+          },
+        ],
+        headerType: 5,
+        mentions: [Foxchat.sender, receiver],
+      },
+      {
+        contextInfo: { mentionedJid: [Foxchat.sender, receiver] },
+        quoted: Foxchat,
+      }
+    ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (Foxbot.mentionByTag) {
     var receiver =
@@ -58,65 +56,61 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
       Foxbot.message.extendedTextMessage.contextInfo != null
         ? Foxbot.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
-    await Foxbot
-      .sendMessage(
-        Foxchat.chat,
-        {
-          image: { url: νidē໐ },
-          caption: `*📢Id:* ${Foxchat.chat}
+    await Foxbot.sendMessage(
+      Foxchat.chat,
+      {
+        image: { url: νidē໐ },
+        caption: `*📢Id:* ${Foxchat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${Foxbot.prefix}Dashboard`,
-              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${Foxbot.prefix}Help`,
-              buttonText: { displayText: `${Foxbot.prefix}Help` },
-              type: 1,
-            },
-          ],
-          headerType: 5,
-          mentions: [Foxchat.sender, receiver],
-        },
-        {
-          contextInfo: { mentionedJid: [Foxchat.sender, receiver] },
-          quoted: Foxchat,
-        }
-      )
-      .catch((e) => console.log(e));
+        footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        buttons: [
+          {
+            buttonId: `${Foxbot.prefix}Dashboard`,
+            buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+            type: 1,
+          },
+          {
+            buttonId: `${Foxbot.prefix}Help`,
+            buttonText: { displayText: `${Foxbot.prefix}Help` },
+            type: 1,
+          },
+        ],
+        headerType: 5,
+        mentions: [Foxchat.sender, receiver],
+      },
+      {
+        contextInfo: { mentionedJid: [Foxchat.sender, receiver] },
+        quoted: Foxchat,
+      }
+    ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
-    return await Foxbot
-      .sendMessage(
-        Foxchat.chat,
-        {
-          image: { url: νidē໐ },
-          caption: `*📢Id:* ${Foxchat.chat}
+    return await Foxbot.sendMessage(
+      Foxchat.chat,
+      {
+        image: { url: νidē໐ },
+        caption: `*📢Id:* ${Foxchat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-          footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${Foxbot.prefix}Dashboard`,
-              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${Foxbot.prefix}Help`,
-              buttonText: { displayText: `${Foxbot.prefix}Help` },
-              type: 1,
-            },
-          ],
-          headerType: 5,
-          mentions: [Foxchat.sender],
-        },
-        {
-          contextInfo: { mentionedJid: [Foxchat.sender] },
-          quoted: Foxchat,
-        }
-      )
-      .catch((e) => console.log(e));
+        footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        buttons: [
+          {
+            buttonId: `${Foxbot.prefix}Dashboard`,
+            buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+            type: 1,
+          },
+          {
+            buttonId: `${Foxbot.prefix}Help`,
+            buttonText: { displayText: `${Foxbot.prefix}Help` },
+            type: 1,
+          },
+        ],
+        headerType: 5,
+        mentions: [Foxchat.sender],
+      },
+      {
+        contextInfo: { mentionedJid: [Foxchat.sender] },
+        quoted: Foxchat,
+      }
+    ).catch((e) => console.log(e));
   }
 };

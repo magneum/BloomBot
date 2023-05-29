@@ -57,27 +57,25 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 *🐞 Bug* 
 > ${error}`);
           } else {
-            var Thumb = await Foxbot.getBuffer("./public/Foxbot.png");
-            return await Foxbot
-              .sendMessage(
-                Foxchat.chat,
-                {
-                  audio: Foxbot.fs.readFileSync(`${random}.mp3`),
-                  contextInfo: {
-                    externalAdReply: {
-                      title: `*🎙️Filter:* _${finalname}_`,
-                      body: "Foxbot by magneum™",
-                      mediaType: 2,
-                      thumbnail: Thumb,
-                      mediaUrl: one.url,
-                    },
+            var Thumb = await Foxbot.getBuffer(Foxbot.dp);
+            return await Foxbot.sendMessage(
+              Foxchat.chat,
+              {
+                audio: Foxbot.fs.readFileSync(`${random}.mp3`),
+                contextInfo: {
+                  externalAdReply: {
+                    title: `*🎙️Filter:* _${finalname}_`,
+                    body: "Foxbot by magneum™",
+                    mediaType: 2,
+                    thumbnail: Thumb,
+                    mediaUrl: one.url,
                   },
-                  mimetype: "audio/mpeg",
-                  fileName: `${one.title}.mp3`,
                 },
-                { quoted: Foxchat }
-              )
-              .then(Foxbot.fs.unlinkSync(`${random}.mp3`));
+                mimetype: "audio/mpeg",
+                fileName: `${one.title}.mp3`,
+              },
+              { quoted: Foxchat }
+            ).then(Foxbot.fs.unlinkSync(`${random}.mp3`));
           }
         }
       );

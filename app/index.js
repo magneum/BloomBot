@@ -263,7 +263,7 @@ async function magneum() {
       try {
         imåge = await Foxbot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./public/Foxbot.png";
+        imåge = "./public/src/Foxbot (8).png";
       }
 
       if (update.action == "add") {

@@ -124,7 +124,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
 
@@ -135,7 +135,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
 
@@ -146,7 +146,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
 
@@ -157,7 +157,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
 
@@ -168,7 +168,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
 
@@ -200,7 +200,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             Foxchat,
             `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
-            "./public/Foxbot.png"
+            Foxbot.dp
           );
         }
 
@@ -229,7 +229,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
 
@@ -246,7 +246,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
 
@@ -373,7 +373,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
 
@@ -393,7 +393,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
 
@@ -413,7 +413,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
 
@@ -431,7 +431,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
               `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              "./public/Foxbot.png"
+              Foxbot.dp
             );
           }
         );

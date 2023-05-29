@@ -95,7 +95,9 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             .catch((error) => {
               return Foxbot.handlerror(Foxbot, Foxchat, error);
             });
-          return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_ 
+          return Foxchat.reply(`*😥Apologies:* _${
+            Foxbot.pushname || Foxbot.Tname
+          }_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -105,7 +107,9 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         }
 
         if (parseInt(Foxbot.args[0]) > uPayer.money) {
-          return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_ 
+          return Foxchat.reply(`*😥Apologies:* _${
+            Foxbot.pushname || Foxbot.Tname
+          }_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
@@ -144,7 +148,9 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 return await Foxbot.imagebutton(
                   Foxbot,
                   Foxchat,
-                  `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+                  `*🔖Here, ${finalname} for ${
+                    Foxbot.pushname || Foxbot.Tname
+                  }:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -155,7 +161,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  "./public/Foxbot.png"
+                  Foxbot.dp
                 );
               }
 
@@ -181,7 +187,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                "./public/Foxbot.png"
+                Foxbot.dp
               );
             }
           );

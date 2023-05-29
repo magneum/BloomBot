@@ -50,7 +50,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
-        "./public/Foxbot.png"
+        Foxbot.dp
       );
     }
   } catch (error) {

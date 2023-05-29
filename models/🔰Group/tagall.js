@@ -62,7 +62,7 @@ module.exports = async (
     try {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(Foxchat.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/Foxbot.png";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.dp;
     }
     if (Foxbot.args) {
       return await Foxbot.sendMessage(

@@ -76,12 +76,11 @@ module.exports = async (
     try {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(Foxchat.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "./public/Foxbot.png";
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.dp;
     }
 
     if (Foxbot.args[0] === "open") {
-      await Foxbot
-        .groupSettingUpdate(Foxchat.chat, "not_announcement")
+      await Foxbot.groupSettingUpdate(Foxchat.chat, "not_announcement")
         .then(
           async (res) =>
             await Foxbot.imagebutton(
@@ -101,8 +100,7 @@ module.exports = async (
           )
         );
     } else if (Foxbot.args[0] === "close") {
-      await Foxbot
-        .groupSettingUpdate(Foxchat.chat, "announcement")
+      await Foxbot.groupSettingUpdate(Foxchat.chat, "announcement")
         .then(
           async (res) =>
             await Foxbot.imagebutton(

@@ -26,9 +26,11 @@ exports.noLink = async (Foxbot, Foxchat) => {
   );
   var isCurrentGroupLink = PresentGroupLink.test(Foxbot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
-    await Foxbot
-      .groupParticipantsUpdate(Foxchat.chat, [Foxbot.sender], "remove")
-      .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
+    await Foxbot.groupParticipantsUpdate(
+      Foxchat.chat,
+      [Foxbot.sender],
+      "remove"
+    ).catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
     await Foxchat.reply(
       `*😥Apologies:* _${Foxbot.pushname}_
 *KryZen❌Anti-Link*
@@ -51,9 +53,11 @@ exports.noLink = async (Foxbot, Foxchat) => {
     Foxbot.budy.includes("wa.me/") &&
     Foxbot.budy.includes("www.")
   ) {
-    await Foxbot
-      .groupParticipantsUpdate(Foxchat.chat, [Foxbot.sender], "remove")
-      .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
+    await Foxbot.groupParticipantsUpdate(
+      Foxchat.chat,
+      [Foxbot.sender],
+      "remove"
+    ).catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
     await Foxchat.reply(
       `*😥Apologies:* _${Foxbot.pushname}_
 *KryZen❌Anti-Link*

@@ -80,7 +80,7 @@ module.exports = async (
     for (var cron of places) {
       await Foxbot.sendMessage(cron, {
         video: {
-          url: "./public/Foxbot.mp4",
+          url: "./public/src/Foxbot (8).mp4",
         },
         mimetype: "video/mp4",
         fileName: "Foxbot.mp4",

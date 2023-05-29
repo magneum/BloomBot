@@ -45,7 +45,9 @@ exports.noPrivate = async (Foxbot, Foxchat, update) => {
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
-          await user.save().catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
+          await user
+            .save()
+            .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
           return await Foxbot.imagebutton(
             Foxbot,
             Foxchat,
@@ -62,9 +64,9 @@ exports.noPrivate = async (Foxbot, Foxchat, update) => {
           await user
             .delete()
             .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
-          return await Foxbot
-            .updateBlockStatus(Foxchat.sender, "block")
-            .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
+          return await Foxbot.updateBlockStatus(Foxchat.sender, "block").catch(
+            (error) => Foxbot.handlerror(Foxbot, Foxchat, error)
+          );
         }
       }
     );

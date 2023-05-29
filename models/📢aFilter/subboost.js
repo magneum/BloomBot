@@ -56,7 +56,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 *🐞 Bug* 
 > ${error}`);
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          var Thumb = await Foxbot.getBuffer("./public/Foxbot.png");
+          var Thumb = await Foxbot.getBuffer(Foxbot.dp);
           return await Foxbot.sendMessage(
             Foxchat.chat,
             {

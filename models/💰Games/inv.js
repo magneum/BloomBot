@@ -44,7 +44,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
-            "./public/Foxbot.png"
+            Foxbot.dp
           );
         }
         return await Foxbot.imagebutton(
@@ -54,7 +54,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
-          "./public/Foxbot.png"
+          Foxbot.dp
         );
       }
     );

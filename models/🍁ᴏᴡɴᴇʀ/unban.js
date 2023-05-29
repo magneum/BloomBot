@@ -88,7 +88,9 @@ module.exports = async (
         async (error, userBan) => {
           if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
           if (!userBan) {
-            return Foxchat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+            return Foxchat.reply(
+              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`
+            );
           } else {
             userBan.delete();
             return Foxchat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
@@ -132,7 +134,9 @@ module.exports = async (
 
 *⚡Usage* 
 > _${Foxbot.prefix}${finalname} reply to person to ban_
-> _${Foxbot.prefix}${finalname} don't reply to anyone and group will be un-banned_`
+> _${
+          Foxbot.prefix
+        }${finalname} don't reply to anyone and group will be un-banned_`
       );
     }
   } catch (error) {

@@ -51,7 +51,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
       Foxchat,
       `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:* 
 > ${Gxt}`,
-      "./public/Foxbot.png"
+      Foxbot.dp
     );
   } catch (error) {
     return Foxbot.handlerror(Foxbot, Foxchat, error);

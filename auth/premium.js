@@ -60,7 +60,7 @@ exports.premium = async (Foxbot, Foxchat, update, store) => {
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
 *💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,
-              "./public/Foxbot.png"
+              Foxbot.dp
             );
           }
         } else {
@@ -72,7 +72,9 @@ exports.premium = async (Foxbot, Foxchat, update, store) => {
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
-          userVium.save().catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
+          userVium
+            .save()
+            .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
           return await require("../System/library")(
             Foxbot,
             Foxchat,

@@ -93,9 +93,7 @@ exports.runtime = function (seconds) {
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    Foxchat > 0
-      ? Foxchat + (Foxchat == 1 ? " minute, " : " minutes, ")
-      : "";
+    Foxchat > 0 ? Foxchat + (Foxchat == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
@@ -246,8 +244,7 @@ exports.νkmake = async (Foxbot, Foxchat, store) => {
         ""
     );
     if (Foxchat.isGroup)
-      Foxchat.participant =
-        Foxbot.decodeJid(Foxchat.key.participant) || "";
+      Foxchat.participant = Foxbot.decodeJid(Foxchat.key.participant) || "";
   }
   if (Foxchat.message) {
     Foxchat.mtype = getContentType(Foxchat.message);
@@ -286,8 +283,7 @@ exports.νkmake = async (Foxbot, Foxchat, store) => {
         };
       Foxchat.quoted.mtype = type;
       Foxchat.quoted.id = Foxchat.msg.contextInfo.stanzaId;
-      Foxchat.quoted.chat =
-        Foxchat.msg.contextInfo.remoteJid || Foxchat.chat;
+      Foxchat.quoted.chat = Foxchat.msg.contextInfo.remoteJid || Foxchat.chat;
       Foxchat.quoted.isBaileys = Foxchat.quoted.id
         ? Foxchat.quoted.id.startsWith("BAE5") &&
           Foxchat.quoted.id.length === 16
@@ -328,11 +324,8 @@ exports.νkmake = async (Foxbot, Foxchat, store) => {
       }));
       Foxchat.quoted.delete = () =>
         Foxbot.sendMessage(Foxchat.quoted.chat, { delete: vM.key });
-      Foxchat.quoted.copyNForward = (
-        jid,
-        forceForward = false,
-        options = {}
-      ) => Foxbot.copyNForward(jid, vM, forceForward, options);
+      Foxchat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+        Foxbot.copyNForward(jid, vM, forceForward, options);
       Foxchat.quoted.download = () =>
         Foxbot.downloadMediaMessage(Foxchat.quoted);
     }

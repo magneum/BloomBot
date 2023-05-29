@@ -60,7 +60,11 @@ var ffprobe = require("@ffprobe-installer/ffprobe");
 var ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
-
+var folderPath = "./public/src/";
+var files = fs.readdirSync(folderPath);
+var pngFiles = files.filter((file) => file.endsWith(".png"));
+var randomIndex = Math.floor(Math.random() * pngFiles.length);
+var randomImage = pngFiles[randomIndex];
 module.exports = async (Foxbot, Foxchat, update, store) => {
   Foxbot.performance = performance;
   Foxbot.createWorker = createWorker;
@@ -136,6 +140,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   Foxbot.dare = require("../public/dare.json");
   Foxbot.truth = require("../public/truth.json");
   Foxbot.magfetch = require("../server/magfetch");
+  Foxbot.dp = folderPath + randomImage;
 
   Foxbot.os = require("os");
   Foxbot.fs = require("fs");

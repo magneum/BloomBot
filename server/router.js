@@ -153,7 +153,9 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
                 Foxchat.chat,
                 {
                   gifPlayback: true,
-                  video: Foxbot.fs.readFileSync("./public/Foxbot_white.png"),
+                  video: Foxbot.fs.readFileSync(
+                    "./public/src/Foxbot (8)_white.png"
+                  ),
                   caption: `*📢Verification Needed*
 *😥Apologies:* _${Foxbot.pushname}_
 
