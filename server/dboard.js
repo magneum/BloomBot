@@ -102,7 +102,7 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
           zoo: 0,
 
           antilink: 0,
-          antinsfw: 0,
+          allownsfw: 0,
           delete: 0,
           demote: 0,
           group: 0,

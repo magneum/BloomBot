@@ -189,7 +189,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 ┕╚═☰
 ┌╔═☰ *🔰${finalname.toUpperCase()}🔰* 
 │║⦁ ${Foxbot.prefix}antilink
-│║⦁ ${Foxbot.prefix}antinsfw
+│║⦁ ${Foxbot.prefix}allownsfw
 │║⦁ ${Foxbot.prefix}delete
 │║⦁ ${Foxbot.prefix}group
 │║⦁ ${Foxbot.prefix}kick

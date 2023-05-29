@@ -1780,10 +1780,10 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
       });
       break;
-    case "antinsfw":
+    case "allownsfw":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
-        updatedb.antinsfw = updatedb.antinsfw + 1;
-        require("../models/🔰Group/antinsfw")(
+        updatedb.allownsfw = updatedb.allownsfw + 1;
+        require("../models/🔰Group/allownsfw")(
           Foxbot,
           Foxchat,
           gmeta,

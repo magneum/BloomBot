@@ -83,7 +83,7 @@ var dBoardSchema = new mongoose.Schema({
   work: Number,
   zoo: Number,
   antilink: Number,
-  antinsfw: Number,
+  allownsfw: Number,
   delete: Number,
   demote: Number,
   group: Number,
