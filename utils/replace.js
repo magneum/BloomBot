@@ -31,12 +31,22 @@ function readFiles(dir, oldWord, newWord) {
     var filePath = path.join(dir, file);
     var stats = fs.statSync(filePath);
 
-    if (stats.isDirectory() && file !== "node_modules" && file !== ".git") {
+    if (
+      stats.isDirectory() &&
+      file !== "node_modules" &&
+      !file.startsWith(".") &&
+      file !== "yarn.lock" &&
+      file !== ".git"
+    ) {
       var newDirName = file.replace(new RegExp(oldWord, "g"), newWord);
       var newDirPath = path.join(dir, newDirName);
       fs.renameSync(filePath, newDirPath);
       readFiles(newDirPath, oldWord, newWord);
-    } else if (stats.isFile()) {
+    } else if (
+      stats.isFile() &&
+      file !== "yarn.lock" &&
+      !file.startsWith(".")
+    ) {
       var newFileName = file.replace(new RegExp(oldWord, "g"), newWord);
       var newFilePath = path.join(dir, newFileName);
       replaceWordsInFile(filePath, newFilePath, oldWord, newWord);
