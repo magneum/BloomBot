@@ -15,18 +15,18 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-const { spawn } = require("child_process");
-const simpleGit = require("simple-git");
-const cron = require("node-cron");
-const rimraf = require("rimraf");
-const chalk = require("chalk");
+var { spawn } = require("child_process");
+var simpleGit = require("simple-git");
+var cron = require("node-cron");
+var rimraf = require("rimraf");
+var chalk = require("chalk");
 var childProcess = null;
 var isRunning = false;
 
-const workdir = ".";
-const git = simpleGit(workdir);
+var workdir = ".";
+var git = simpleGit(workdir);
 
-const startMainCode = () => {
+var startMainCode = () => {
   if (isRunning) {
     console.log(chalk.yellow("Main code is already running."));
     return;
@@ -43,7 +43,7 @@ const startMainCode = () => {
   isRunning = true;
 };
 
-const stopMainCode = () => {
+var stopMainCode = () => {
   if (!childProcess) {
     console.log(chalk.yellow("Main code is not running."));
     return;
@@ -55,16 +55,16 @@ const stopMainCode = () => {
   isRunning = false;
 };
 
-const deleteFiles = () => {
+var deleteFiles = () => {
   console.log(chalk.green("Devaring files and folders..."));
   rimraf.sync(`${workdir}/*`);
   console.log(chalk.gray("All files and folders deleted"));
 };
 
-const gitFetch = async () => {
+var gitFetch = async () => {
   console.log(chalk.green("Performing git fetch..."));
   try {
-    const { behind } = await git.raw([
+    var { behind } = await git.raw([
       "rev-list",
       "--count",
       "@{upstream}..HEAD",

@@ -15,10 +15,10 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-const winston = require("winston");
-const { combine, timestamp, printf } = winston.format;
+var winston = require("winston");
+var { combine, timestamp, printf } = winston.format;
 
-const ogger = () => {
+var ogger = () => {
   return winston.createLogger({
     level: "silly",
     format: combine(
@@ -32,5 +32,5 @@ const ogger = () => {
   });
 };
 
-const logger = ogger();
+var logger = ogger();
 module.exports = logger;

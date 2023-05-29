@@ -43,7 +43,7 @@ var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
-const { exec } = require("child_process");
+var { exec } = require("child_process");
 var dboard = require("../database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("../auth/Database");
@@ -162,7 +162,7 @@ async function magneum() {
 
   Foxbot.ev.on("creds.update", async (update) => await saveCreds());
   Foxbot.ev.on("connection.update", async (update) => {
-    const { lastDisconnect, connection, qr } = update;
+    var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
         logger.info("🐲: Connecting to WhatsApp...▶");

@@ -22,24 +22,24 @@ process.on("uncaughtException", (error) => {
   logger.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
-const { Client } = require("pg");
-const dotenv = require("dotenv");
-const chalk = require("chalk");
+var { Client } = require("pg");
+var dotenv = require("dotenv");
+var chalk = require("chalk");
 
 dotenv.config();
 
 async function cleanDatabase() {
-  const connectionString = process.env.DATABASE_URL;
-  const client = new Client({ connectionString });
+  var connectionString = process.env.DATABASE_URL;
+  var client = new Client({ connectionString });
 
   try {
     await client.connect();
-    const res = await client.query(
+    var res = await client.query(
       "SELECT tablename FROM pg_tables WHERE schemaname = $1",
       ["public"]
     );
-    for (const row of res.rows) {
-      const tableName = row.tablename;
+    for (var row of res.rows) {
+      var tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
       console.log(chalk.green(`Dropped table: ${tableName}`));
     }
