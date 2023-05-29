@@ -1,139 +1,139 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Voxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (Foxbot, Foxchat, update, store) => {
-  Foxbot.body =
-    Foxchat.mtype === "conversation"
-      ? Foxchat.message.conversation
-      : Foxchat.mtype == "imageMessage"
-      ? Foxchat.message.imageMessage.caption
-      : Foxchat.mtype == "videoMessage"
-      ? Foxchat.message.videoMessage.caption
-      : Foxchat.mtype == "extendedTextMessage"
-      ? Foxchat.message.extendedTextMessage.text
-      : Foxchat.mtype == "buttonsResponseMessage"
-      ? Foxchat.message.buttonsResponseMessage.selectedButtonId
-      : Foxchat.mtype == "listResponseMessage"
-      ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : Foxchat.mtype == "templateButtonReplyMessage"
-      ? Foxchat.message.templateButtonReplyMessage.selectedId
-      : Foxchat.mtype === "messageContextInfo"
-      ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
-        Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        Foxchat.text
+module.exports = async (Voxbot, Voxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  Voxbot.body =
+    Voxchat.mtype === "conversation"
+      ? Voxchat.message.conversation
+      : Voxchat.mtype == "imageMessage"
+      ? Voxchat.message.imageMessage.caption
+      : Voxchat.mtype == "videoMessage"
+      ? Voxchat.message.videoMessage.caption
+      : Voxchat.mtype == "extendedTextMessage"
+      ? Voxchat.message.extendedTextMessage.text
+      : Voxchat.mtype == "buttonsResponseMessage"
+      ? Voxchat.message.buttonsResponseMessage.selectedButtonId
+      : Voxchat.mtype == "listResponseMessage"
+      ? Voxchat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : Voxchat.mtype == "templateButtonReplyMessage"
+      ? Voxchat.message.templateButtonReplyMessage.selectedId
+      : Voxchat.mtype === "messageContextInfo"
+      ? Voxchat.message.buttonsResponseMessage?.selectedButtonId ||
+        Voxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        Voxchat.text
       : "";
-  Foxbot.budy = typeof Foxchat.text == "string" ? Foxchat.text : "";
-  Foxbot.icmd = Foxbot.body.startsWith(prefix);
-  Foxbot.isCommand =
-    prefix.includes(Foxbot.body != "" && Foxbot.body.slice(0, 1)) &&
-    Foxbot.body.slice(1) != "";
-  Foxbot.command = Foxbot.isCommand
-    ? Foxbot.body.slice(1).trim().split(" ")[0].toLowerCase()
+  Voxbot.budy = typeof Voxchat.text == "string" ? Voxchat.text : "";
+  Voxbot.icmd = Voxbot.body.startsWith(prefix);
+  Voxbot.isCommand =
+    prefix.includes(Voxbot.body != "" && Voxbot.body.slice(0, 1)) &&
+    Voxbot.body.slice(1) != "";
+  Voxbot.command = Voxbot.isCommand
+    ? Voxbot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  Foxbot.args = Foxbot.body.trim().split(/ +/).slice(1);
-  Foxbot.pushname = Foxchat.pushName || "No Name";
-  Foxbot.botNumber = await Foxbot.decodeJid(Foxbot.user.id);
-  Foxbot.frome = Foxchat.sender == Foxbot.botNumber ? true : false;
-  Foxbot.Fullarg = Foxbot.args.join(" ");
-  Foxbot.contant = q = Foxbot.args.join(" ");
-  Foxbot.quoted = Foxchat.quoted ? Foxchat.quoted : Foxchat;
-  Foxbot.mime = (Foxbot.quoted.msg || Foxbot.quoted).mimetype || "";
-  Foxbot.isMedia = /image|video|sticker|audio/.test(Foxbot.mime);
-  Foxbot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  Foxbot.isCreator = [Foxbot.botNumber, ...global.sudo]
+  Voxbot.args = Voxbot.body.trim().split(/ +/).slice(1);
+  Voxbot.pushname = Voxchat.pushName || "No Name";
+  Voxbot.botNumber = await Voxbot.decodeJid(Voxbot.user.id);
+  Voxbot.frome = Voxchat.sender == Voxbot.botNumber ? true : false;
+  Voxbot.Fullarg = Voxbot.args.join(" ");
+  Voxbot.contant = q = Voxbot.args.join(" ");
+  Voxbot.quoted = Voxchat.quoted ? Voxchat.quoted : Voxchat;
+  Voxbot.mime = (Voxbot.quoted.msg || Voxbot.quoted).mimetype || "";
+  Voxbot.isMedia = /image|video|sticker|audio/.test(Voxbot.mime);
+  Voxbot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  Voxbot.isCreator = [Voxbot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(Foxchat.sender);
-  Foxbot.mentionByTag =
-    Foxchat.mtype == "extendedTextMessage" &&
-    Foxchat.message.extendedTextMessage.contextInfo != null
-      ? Foxchat.message.extendedTextMessage.contextInfo.mentionedJid
+    .includes(Voxchat.sender);
+  Voxbot.mentionByTag =
+    Voxchat.mtype == "extendedTextMessage" &&
+    Voxchat.message.extendedTextMessage.contextInfo != null
+      ? Voxchat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  Foxbot.mentionByReply =
-    Foxchat.mtype == "extendedTextMessage" &&
-    Foxchat.message.extendedTextMessage.contextInfo != null
-      ? Foxchat.message.extendedTextMessage.contextInfo.participant || ""
+  Voxbot.mentionByReply =
+    Voxchat.mtype == "extendedTextMessage" &&
+    Voxchat.message.extendedTextMessage.contextInfo != null
+      ? Voxchat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./FoxLink")(Foxbot, Foxchat, update, store);
-  if (!Foxchat.isGroup && Foxbot.command)
-    return require("../auth/noPrivate")(Foxbot, Foxchat, update);
-  if (Foxchat.isGroup && Foxbot.command)
-    Foxbot.userBanCheck.findOne(
+  require("./VoxLink")(Voxbot, Voxchat, update, store);
+  if (!Voxchat.isGroup && Voxbot.command)
+    return require("@/auth/noPrivate")(Voxbot, Voxchat, update);
+  if (Voxchat.isGroup && Voxbot.command)
+    Voxbot.userBanCheck.findOne(
       {
-        Id: Foxchat.sender,
+        Id: Voxchat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname}_
+          return Voxchat.reply(`*😥Apologies:* _${Voxbot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        Foxbot.userBanCheck.findOne(
+        Voxbot.userBanCheck.findOne(
           {
-            Id: Foxchat.chat,
+            Id: Voxchat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname}_
+              return Voxchat.reply(`*😥Apologies:* _${Voxbot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !Foxbot.frome && !Foxbot.isSudo) return;
-            if (groupCheck && !Foxbot.frome && !Foxbot.isSudo) return;
-            await Foxbot.LinkList.findOne(
+            if (banCheck && !Voxbot.frome && !Voxbot.isSudo) return;
+            if (groupCheck && !Voxbot.frome && !Voxbot.isSudo) return;
+            await Voxbot.LinkList.findOne(
               {
-                serverId: Foxchat.chat,
+                serverId: Voxchat.chat,
               },
               async (error, server) => {
-                if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+                if (error) return Voxbot.handlerror(Voxbot, Voxchat, error);
                 if (!server) return;
-                var { noLink } = require("../auth/antilink");
-                return noLink(Foxbot, Foxchat);
+                var { noLink } = require("@/auth/antilink");
+                return noLink(Voxbot, Voxchat);
               }
             );
 
-            // respA = await Foxbot.groupMetadata("120363020792949649@g.us");
+            // respA = await Voxbot.groupMetadata("120363020792949649@g.us");
             // for (var i = 0; i < respA.participants.length; i++)
-            // Foxbot.memberRespA[i] = respA.participants[i].id;
+            // Voxbot.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await Foxbot.groupMetadata("120363089188116481@g.us");
+            // respB = await Voxbot.groupMetadata("120363089188116481@g.us");
             // for (var i = 0; i < respB.participants.length; i++)
-            // Foxbot.memberRespB[i] = respB.participants[i].id;
+            // Voxbot.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !Foxbot.fromme &&
-            // !Foxbot.isSudo &&
-            // !Foxbot.varResp.includes(Foxbot.command) &&
-            // !Foxbot.memberRespA.includes(Foxchat.sender) &&
-            // !Foxbot.memberRespB.includes(Foxchat.sender)
+            // !Voxbot.fromme &&
+            // !Voxbot.isSudo &&
+            // !Voxbot.varResp.includes(Voxbot.command) &&
+            // !Voxbot.memberRespA.includes(Voxchat.sender) &&
+            // !Voxbot.memberRespB.includes(Voxchat.sender)
             // ) {
-            // return await Foxbot.sendMessage(
-            // Foxchat.chat,
+            // return await Voxbot.sendMessage(
+            // Voxchat.chat,
             // {
             // gifPlayback: true,
-            // video: Foxbot.fs.readFileSync("./public/how.mp4"),
+            // video: Voxbot.fs.readFileSync("./public/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Apologies:* _${Foxbot.pushname}_
+            // *😥Apologies:* _${Voxbot.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -142,22 +142,22 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [Foxchat.sender],
+            // mentions: [Voxchat.sender],
             // },
-            // { quoted: Foxchat }
+            // { quoted: Voxchat }
             // );
             // }
 
-            if (process.env.runtype === "devar" && !Foxbot.isSudo) {
-              return await Foxbot.sendMessage(
-                Foxchat.chat,
+            if (process.env.runtype === "devar" && !Voxbot.isSudo) {
+              return await Voxbot.sendMessage(
+                Voxchat.chat,
                 {
                   gifPlayback: true,
-                  video: Foxbot.fs.readFileSync(
-                    "./public/src/Foxbot (8)_white.png"
+                  video: Voxbot.fs.readFileSync(
+                    "./public/src/Voxbot (8)_white.png"
                   ),
                   caption: `*📢Verification Needed*
-*😥Apologies:* _${Foxbot.pushname}_
+*😥Apologies:* _${Voxbot.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -165,20 +165,20 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [Foxchat.sender],
+                  mentions: [Voxchat.sender],
                 },
-                { quoted: Foxchat }
+                { quoted: Voxchat }
               );
             } else
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await Voxbot.sendMessage(Voxchat.chat, {
                 react: {
                   text: "🔖",
-                  key: Foxchat.key,
+                  key: Voxchat.key,
                 },
               });
-            return await require("../server/library")(
-              Foxbot,
-              Foxchat,
+            return await require("@/server/library")(
+              Voxbot,
+              Voxchat,
               update,
               store
             );
@@ -186,5 +186,5 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         );
       }
     );
-  return Foxbot;
+  return Voxbot;
 };

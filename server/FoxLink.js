@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,8 +14,8 @@
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-require("../logger/global.js");
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("@/logger/global");
 var {
   Simp,
   Pokemon,
@@ -49,7 +49,7 @@ var { readFile } = require("fs/promises");
 var { performance } = require("perf_hooks");
 var { Primbon } = require("scrape-primbon");
 var { getDadjoke } = require("random-jokes");
-var { createWorker } = require("tesseract.js");
+var { createWorker } = require("tesseract");
 var { Manga } = require("@shineiichijo/marika");
 var { AnimeWallpaper } = require("anime-wallpaper");
 var { Doujin } = require("@shineiichijo/nhentai-pdf");
@@ -88,7 +88,7 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (Foxbot, Foxchat, update, store) => {
+module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   Foxbot.display = getRandomImagePath()
     .then((imagePath) => {
       Foxbot.display = imagePath;
@@ -141,36 +141,36 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   Foxbot.Tname = Foxchat.sender.replace(/['@s whatsapp.net']/g, "");
 
   Foxbot.msgFilter = require("./msgFilter");
-  Foxbot.imagebutton = require("../buttons/imagebutton");
-  Foxbot.videobutton = require("../buttons/videobutton");
-  Foxbot.handlerror = require("../buttons/handlerror");
+  Foxbot.imagebutton = require("@/buttons/imagebutton");
+  Foxbot.videobutton = require("@/buttons/videobutton");
+  Foxbot.handlerror = require("@/buttons/handlerror");
   Foxbot.TTS = require("google-tts-api");
   // Foxbot.nhentaidl = require("./nhentaidl");
-  Foxbot.dashboard = require("../database/dashboard");
-  Foxbot.LinkList = require("../database/antilink");
-  Foxbot.Ranker = require("../database/autorank");
-  Foxbot.Bagde = require("../database/badge");
-  Foxbot.premium = require("../database/premium");
-  Foxbot.userBanCheck = require("../database/ban");
-  Foxbot.Cooldown = require("../database/cooldown");
-  Foxbot.DebugMode = require("../database/debug");
-  Foxbot.Economy = require("../database/economy");
-  Foxbot.Gamble = require("../database/gamble");
-  Foxbot.Halt = require("../database/halt");
-  Foxbot.nsfwCheck = require("../database/nsfw");
-  Foxbot.Pokemon = require("../database/pokemon");
-  Foxbot.UserPrivate = require("../database/private");
-  Foxbot.Robbery = require("../database/robbery");
-  Foxbot.ServerDB = require("../database/ServerDB");
-  Foxbot.Welcome = require("../database/setwelcome");
-  Foxbot.Warning = require("../database/warning");
-  Foxbot.Zoology = require("../database/zoo");
-  Foxbot.Fishes = require("../public/fishes.json");
-  Foxbot.animals = require("../public/animals.json");
-  Foxbot.Jwork = require("../public/works.json");
-  Foxbot.dare = require("../public/dare.json");
-  Foxbot.truth = require("../public/truth.json");
-  Foxbot.magfetch = require("../server/magfetch");
+  Foxbot.dashboard = require("@/database/dashboard");
+  Foxbot.LinkList = require("@/database/antilink");
+  Foxbot.Ranker = require("@/database/autorank");
+  Foxbot.Bagde = require("@/database/badge");
+  Foxbot.premium = require("@/database/premium");
+  Foxbot.userBanCheck = require("@/database/ban");
+  Foxbot.Cooldown = require("@/database/cooldown");
+  Foxbot.DebugMode = require("@/database/debug");
+  Foxbot.Economy = require("@/database/economy");
+  Foxbot.Gamble = require("@/database/gamble");
+  Foxbot.Halt = require("@/database/halt");
+  Foxbot.nsfwCheck = require("@/database/nsfw");
+  Foxbot.Pokemon = require("@/database/pokemon");
+  Foxbot.UserPrivate = require("@/database/private");
+  Foxbot.Robbery = require("@/database/robbery");
+  Foxbot.ServerDB = require("@/database/ServerDB");
+  Foxbot.Welcome = require("@/database/setwelcome");
+  Foxbot.Warning = require("@/database/warning");
+  Foxbot.Zoology = require("@/database/zoo");
+  Foxbot.Fishes = require("@/public/fishes.json");
+  Foxbot.animals = require("@/public/animals.json");
+  Foxbot.Jwork = require("@/public/works.json");
+  Foxbot.dare = require("@/public/dare.json");
+  Foxbot.truth = require("@/public/truth.json");
+  Foxbot.magfetch = require("@/server/magfetch");
 
   Foxbot.os = require("os");
   Foxbot.fs = require("fs");
