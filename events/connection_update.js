@@ -116,7 +116,7 @@ module.exports = async (Foxbot, update, magneum) => {
       logger.error("📢: Not New Login.");
       break;
     case qr:
-      console.log(qr);
+      if (qr != undefined) console.log(qr);
       break;
     default:
       logger.info("📢: Foxbot by Magneum connected...", update);
