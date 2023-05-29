@@ -87,7 +87,7 @@
     "jsdom": "^16.4.0",
     "mailist": "^1.0.3",
     "moment-timezone": "^0.5.34",
-    "mongoose": "^7.2.1",
+    "mongoose": "^5.10.7",
     "music-lyrics": "^2.0.2",
     "nhentai-api": "^3.4.3",
     "nhentai-ikyy": "^2.0.1",

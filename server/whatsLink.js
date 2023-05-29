@@ -78,7 +78,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
   whatsbot.tmpdir = tmpdir;
   whatsbot.Doujin = Doujin;
   whatsbot.DownloaderHelper = DownloaderHelper;
-  whatsbot.Chalk = Chalk;
+  whatsbot.chalk = chalk;
   whatsbot.Sticker = Sticker;
   whatsbot.createSticker = createSticker;
   whatsbot.StickerTypes = StickerTypes;

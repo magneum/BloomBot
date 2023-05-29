@@ -78,7 +78,7 @@ module.exports = async (voxbot, voxchat, update, store) => {
   voxbot.tmpdir = tmpdir;
   voxbot.Doujin = Doujin;
   voxbot.DownloaderHelper = DownloaderHelper;
-  voxbot.Chalk = Chalk;
+  voxbot.chalk = chalk;
   voxbot.Sticker = Sticker;
   voxbot.createSticker = createSticker;
   voxbot.StickerTypes = StickerTypes;

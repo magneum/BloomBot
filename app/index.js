@@ -149,6 +149,93 @@ async function magneum() {
   // voxbot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(voxbot, update, store));
 
   voxbot.ev.on("creds.update", async (update) => await saveCreds());
+  // voxbot.ev.on("connection.update", async (update) => {
+  // const {
+  // receivedPendingNotifications,
+  // lastDisconnect,
+  // connection,
+  // isNewLogin,
+  // isOnline,
+  // qr,
+  // } = update;
+
+  // const handleError = async (error) => {
+  // logger.error(error);
+  // await cleanDatabase();
+  // await voxbot.end();
+  // await magneum();
+  // };
+
+  // switch (connection) {
+  // case "connecting":
+  // logger.info("🐲: Connecting to WhatsApp...▶");
+  // break;
+  // case "open":
+  // logger.info("🐲: Login successful! ▶");
+  // break;
+  // case "close":
+  // const reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+  // switch (reason) {
+  // case DisconnectReason.badSession:
+  // handleError(
+  // "❌: Bad Session File, Please Delete Session and Scan Again"
+  // );
+  // break;
+  // case DisconnectReason.connectionClosed:
+  // logger.error("❌: Connection closed, reconnecting....");
+  // break;
+  // case DisconnectReason.connectionLost:
+  // handleError("❌: Connection Lost from Server, reconnecting...");
+  // break;
+  // case DisconnectReason.connectionReplaced:
+  // handleError(
+  // "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+  // );
+  // break;
+  // case DisconnectReason.loggedOut:
+  // handleError("❌: Device Logged Out, Please Scan Again And Run.");
+  // break;
+  // case DisconnectReason.restartRequired:
+  // logger.error("❌: Restart Required, Restarting...");
+  // break;
+  // case DisconnectReason.timedOut:
+  // logger.error("❌: Connection TimedOut, Reconnecting...");
+  // break;
+  // default:
+  // handleError(
+  // `❌: Unknown DisconnectReason: ${reason}|${connection}`
+  // );
+  // return;
+  // }
+  // break;
+  // case isOnline === true:
+  // logger.debug("🐲: Online.");
+  // break;
+  // case isOnline === false:
+  // logger.error("🐲: Offline.");
+  // break;
+  // case receivedPendingNotifications === true:
+  // logger.debug("🐲: Received Pending Notifications.");
+  // break;
+  // case receivedPendingNotifications === false:
+  // logger.error("🐲: Not Received Pending Notifications.");
+  // break;
+  // case isNewLogin === true:
+  // logger.debug("🐲: New Login.");
+  // break;
+  // case isNewLogin === false:
+  // logger.error("🐲: Not New Login.");
+  // break;
+  // case qr:
+  // logger.info("Qr: ");
+  // logger.error(qr);
+  // break;
+  // default:
+  // logger.info("🐲: Connection...", update);
+  // break;
+  // }
+  // });
+
   voxbot.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,
@@ -159,13 +246,6 @@ async function magneum() {
       receivedPendingNotifications,
     } = update;
 
-    const handleError = async (error) => {
-      logger.error(error);
-      await cleanDatabase();
-      await voxbot.end();
-      await magneum();
-    };
-
     switch (connection) {
       case "connecting":
         logger.info("🐲: Connecting to WhatsApp...▶");
@@ -174,57 +254,68 @@ async function magneum() {
         logger.info("🐲: Login successful! ▶");
         break;
       case "close":
-        const reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
         switch (reason) {
           case DisconnectReason.badSession:
-            handleError(
-              "❌: Bad Session File, Please Delete Session and Scan Again"
-            );
+            logger.error("❌: Bad Session File...");
+            await cleanDatabase();
+            await voxbot.end();
+            await magneum();
             break;
           case DisconnectReason.connectionClosed:
-            handleError("❌: Connection closed, reconnecting....");
+            logger.error("❌: Reconnecting....");
+            await cleanDatabase();
+            await voxbot.end();
+            await magneum();
             break;
           case DisconnectReason.connectionLost:
-            handleError("❌: Connection Lost from Server, reconnecting...");
+            logger.error("❌: Reconnecting...");
+            await magneum();
             break;
           case DisconnectReason.connectionReplaced:
-            handleError(
-              "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-            );
+            logger.error("❌: Connection Replaced...");
+            await cleanDatabase();
+            await voxbot.end();
+            await magneum();
             break;
           case DisconnectReason.loggedOut:
-            handleError("❌: Device Logged Out, Please Scan Again And Run.");
+            logger.error("❌: Device Logged Out...");
+            await cleanDatabase();
+            await voxbot.end();
+            await magneum();
             break;
           case DisconnectReason.restartRequired:
-            handleError("❌: Restart Required, Restarting...");
+            logger.error("❌: Restart Required, Restarting...");
+            await magneum();
             break;
           case DisconnectReason.timedOut:
-            handleError("❌: Connection TimedOut, Reconnecting...");
+            logger.error("❌: Connection TimedOut, Reconnecting...");
+            await magneum();
             break;
           default:
-            logger.error(
-              `❌: Unknown DisconnectReason: ${reason}|${connection}`
+            voxbot.end(
+              logger.error(
+                `❌: Unknown DisconnectReason: ${reason}|${connection}`
+              )
             );
-            voxbot.end();
-            return;
         }
         break;
-      case isOnline === true:
+      case true:
         logger.debug("🐲: Online.");
         break;
-      case isOnline === false:
+      case false:
         logger.error("🐲: Offline.");
         break;
-      case receivedPendingNotifications === true:
+      case true:
         logger.debug("🐲: Received Pending Notifications.");
         break;
-      case receivedPendingNotifications === false:
+      case false:
         logger.error("🐲: Not Received Pending Notifications.");
         break;
-      case isNewLogin === true:
+      case true:
         logger.debug("🐲: New Login.");
         break;
-      case isNewLogin === false:
+      case false:
         logger.error("🐲: Not New Login.");
         break;
       case qr:
@@ -233,68 +324,8 @@ async function magneum() {
         break;
       default:
         logger.info("🐲: Connection...", update);
-        break;
     }
   });
-
-  // voxbot.ev.on("connection.update", async (update) => {
-  // var {
-  // lastDisconnect,
-  // connection,
-  // isNewLogin,
-  // isOnline,
-  // qr,
-  // receivedPendingNotifications,
-  // } = update;
-  // if (connection == "connecting")
-  // logger.info("🐲: Connecting to WhatsApp...▶");
-  // else if (connection == "open") logger.info("🐲: Login successful! ▶");
-  // else if (connection == "close") {
-  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-  // if (reason === DisconnectReason.badSession) {
-  // logger.error(
-  // "❌: Bad Session File, Please Delete Session and Scan Again"
-  // );
-  // await cleanDatabase();
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionClosed) {
-  // logger.error("❌: Connection closed, reconnecting....");
-  // await cleanDatabase();
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionLost) {
-  // logger.error("❌: Connection Lost from Server, reconnecting...");
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionReplaced) {
-  // logger.error(
-  // "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-  // );
-  // await cleanDatabase();
-  // await magneum();
-  // } else if (reason === DisconnectReason.loggedOut) {
-  // logger.error("❌: Device Logged Out, Please Scan Again And Run.");
-  // await cleanDatabase();
-  // await magneum();
-  // } else if (reason === DisconnectReason.restartRequired) {
-  // logger.error("❌: Restart Required, Restarting...");
-  // await magneum();
-  // } else if (reason === DisconnectReason.timedOut) {
-  // logger.error("❌: Connection TimedOut, Reconnecting...");
-  // await magneum();
-  // } else
-  // voxbot.end(
-  // logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
-  // );
-  // } else if (isOnline === true) logger.debug("🐲: Online.");
-  // else if (isOnline === false) logger.error("🐲: Offine.");
-  // else if (receivedPendingNotifications === true)
-  // logger.debug("🐲: Received Pending Notifications.");
-  // else if (receivedPendingNotifications === false)
-  // logger.error("🐲: Not Received Pending Notifications.");
-  // else if (isNewLogin === true) logger.debug("🐲: New Login.");
-  // else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-  // else if (qr) logger.info("Qr: "), logger.error(qr);
-  // else logger.info("🐲: Connection...", update);
-  // });
 
   voxbot.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
