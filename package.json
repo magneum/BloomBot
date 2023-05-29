@@ -2,7 +2,7 @@
   "main": "app",
   "name": "foxbot",
   "version": "0.0.1",
-  "description": "Voxbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+  "description": "Foxbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"
@@ -12,10 +12,10 @@
     "dev": "supervisor -w . app",
     "ffdev": "nodemon server/pfmpeg",
     "ffstart": "forever server/pfmpeg",
-    "local": "node --no-warnings Voxbot",
+    "local": "node --no-warnings Foxbot",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms Voxbot.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms Foxbot.js --color",
     "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
   },
   "depecrated": false,
