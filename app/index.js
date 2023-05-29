@@ -67,7 +67,7 @@ async function rmdb() {
 }
 async function magneum() {
   await monGoose
-    .connect(MONGO_URL, {
+    .connect(MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })

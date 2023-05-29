@@ -2954,7 +2954,7 @@ module.exports = async (voxbot, voxchat, update, store) => {
 > No Such Command Found
 > Visit To Know Commands: 
 > _bit.ly/magneum_`,
-        "./public/404.png"
+        "./public/voxbot.png"
       );
       break;
   }

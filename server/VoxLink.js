@@ -252,7 +252,7 @@ module.exports = async (voxbot, voxchat, update, store) => {
   voxbot.packname = packname;
   voxbot.pgdb = DATABASE_URL;
   voxbot.ShowInfo = ShowInfo;
-  voxbot.MONGO_URL = MONGO_URL;
+  voxbot.MONGODB_URL = MONGODB_URL;
   voxbot.author = author;
   voxbot.prefix = prefix;
   voxbot.sudo = sudo;

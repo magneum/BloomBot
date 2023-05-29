@@ -51,7 +51,7 @@ global.DATABASE =
         logging: sqlLog("false"),
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
-global.MONGO_URL = process.env.MONGO_URL;
+global.MONGODB_URL = process.env.MONGODB_URL;
 global.REDIS_URL = process.env.REDIS_URL;
 
 var sudo = process.env.sudo;
