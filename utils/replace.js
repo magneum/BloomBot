@@ -15,106 +15,80 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs");
-var path = require("path");
-var chalk = require("chalk");
-var readline = require("readline");
+const fs = require("fs");
+const path = require("path");
+const chalk = require("chalk");
+const readline = require("readline");
 
-var rl = readline.createInterface({
+async function renameFile(filePath, searchString, replaceString) {
+  const directory = path.dirname(filePath);
+  const oldFileName = path.basename(filePath);
+  const newFileName = oldFileName.replace(
+    new RegExp(searchString, "g"),
+    replaceString
+  );
+  const newPath = path.join(directory, newFileName);
+
+  try {
+    await fs.promises.rename(filePath, newPath);
+    console.log(chalk.green(`Successfully renamed: ${filePath} to ${newPath}`));
+    await fs.promises.unlink(filePath);
+    console.log(chalk.green(`Deleted old file: ${filePath}`));
+  } catch (err) {
+    console.error(chalk.red(`Error renaming file: ${filePath}`, err));
+  }
+}
+
+async function renameFiles(workdir, searchString, replaceString) {
+  try {
+    const files = await fs.promises.readdir(workdir);
+
+    for (const file of files) {
+      const filePath = path.join(workdir, file);
+      const stats = await fs.promises.stat(filePath);
+
+      if (stats.isFile()) {
+        if (!file.startsWith(".") && file !== "node_modules") {
+          await renameFile(filePath, searchString, replaceString);
+        }
+      }
+    }
+  } catch (err) {
+    console.error(chalk.red(`Error reading directory: ${workdir}`, err));
+  }
+}
+
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-  prompt: chalk.blue(">> "),
 });
 
-function escapeRegExp(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
+rl.question("Enter the directory path: ", async (workdir) => {
+  workdir = workdir.trim();
+  try {
+    const stats = await fs.promises.stat(workdir);
+    if (!stats.isDirectory()) {
+      throw new Error(`Not a directory: ${workdir}`);
+    }
 
-function renameFiles(dir, oldWord, newWord) {
-  return new Promise((resolve, reject) => {
-    fs.readdir(dir, (err, files) => {
-      if (err) {
-        reject(err);
-        return;
-      }
-
-      var renamePromises = files.map((file) => {
-        return new Promise((resolve, reject) => {
-          var filePath = path.join(dir, file);
-
-          fs.stat(filePath, (err, stats) => {
-            if (err) {
-              reject(err);
-              return;
-            }
-
-            if (
-              stats.isDirectory() &&
-              file !== "node_modules" &&
-              !file.startsWith(".") &&
-              file !== "yarn.lock" &&
-              file !== ".git"
-            ) {
-              var newDirName = file.replace(
-                new RegExp(escapeRegExp(oldWord), "g"),
-                newWord
-              );
-              var newDirPath = path.join(dir, newDirName);
-
-              renameFiles(newDirPath, oldWord, newWord)
-                .then(() => resolve())
-                .catch((err) => reject(err));
-            } else if (
-              stats.isFile() &&
-              file !== "yarn.lock" &&
-              !file.startsWith(".")
-            ) {
-              var fileExtension = path.extname(file);
-              var fileName = path.basename(file, fileExtension);
-              var newFileName = fileName.replace(
-                new RegExp(escapeRegExp(oldWord), "g"),
-                newWord
-              );
-              var newFilePath = path.join(dir, newFileName + fileExtension);
-
-              fs.rename(filePath, newFilePath, (err) => {
-                if (err) {
-                  reject(err);
-                  return;
-                }
-
-                console.log(chalk.green(`File renamed: ${newFilePath}`));
-                resolve();
-              });
-            } else {
-              resolve();
-            }
-          });
-        });
-      });
-
-      Promise.all(renamePromises)
-        .then(() => resolve())
-        .catch((err) => reject(err));
-    });
-  });
-}
-
-rl.question(chalk.yellow("Enter the word to replace: "), (oldWord) => {
-  rl.question(chalk.yellow("Enter the new word: "), (newWord) => {
     rl.question(
-      chalk.yellow("Enter the directory path where the files are located: "),
-      (folderPath) => {
-        renameFiles(folderPath, oldWord, newWord)
-          .then(() => {
-            console.log(chalk.green("Renaming process completed."));
-            rl.close();
-          })
-          .catch((err) => {
-            console.error(chalk.red("An error occurred:"), err);
-            rl.close();
-          });
+      "Enter the word or sentence to replace: ",
+      async (searchString) => {
+        searchString = searchString.trim();
+        if (searchString === "") {
+          throw new Error("Search string cannot be empty");
+        }
+
+        rl.question("Enter the replacement string: ", async (replaceString) => {
+          replaceString = replaceString.trim();
+          rl.close();
+
+          await renameFiles(workdir, searchString, replaceString);
+        });
       }
     );
-  });
+  } catch (err) {
+    console.error(chalk.red(err.message));
+    rl.close();
+  }
 });
