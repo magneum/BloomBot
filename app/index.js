@@ -36,6 +36,7 @@ var {
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
+var os = require("os");
 var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
@@ -43,6 +44,7 @@ var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
+const { exec } = require("child_process");
 var dboard = require("../database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("../auth/Database");
@@ -52,7 +54,17 @@ var {
   getBuffer,
   getSizeMedia,
 } = require("../server/myfunc");
-
+async function rmdb() {
+  await new Promise((resolve, reject) => {
+    exec("rm -rf voxbot.db", (error, stdout, stderr) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
 async function magneum() {
   await monGoose
     .connect(MONGO_URL, {
@@ -150,15 +162,7 @@ async function magneum() {
 
   voxbot.ev.on("creds.update", async (update) => await saveCreds());
   voxbot.ev.on("connection.update", async (update) => {
-    const {
-      lastDisconnect,
-      connection,
-      isNewLogin,
-      isOnline,
-      qr,
-      receivedPendingNotifications,
-    } = update;
-
+    const { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
         logger.info("🐲: Connecting to WhatsApp...▶");
@@ -171,13 +175,13 @@ async function magneum() {
         switch (reason) {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
-            await cleanDatabase();
+            await cleanDatabase().catch(rmdb());
             await voxbot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
-            await cleanDatabase();
+            await cleanDatabase().catch(rmdb());
             await voxbot.end();
             await magneum();
             break;
@@ -187,13 +191,13 @@ async function magneum() {
             break;
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
-            await cleanDatabase();
+            await cleanDatabase().catch(rmdb());
             await voxbot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
-            await cleanDatabase();
+            await cleanDatabase().catch(rmdb());
             await voxbot.end();
             await magneum();
             break;
