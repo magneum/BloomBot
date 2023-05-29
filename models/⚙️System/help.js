@@ -57,20 +57,20 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 > Total Commands: ${countFiles("./models")}
 
 
-┌╔═☰ *❗ CONSOLE*
-║⦁ *Uptime :* ${runtime(process.uptime())}
-║⦁ *OS Release:* ${Foxbot.os.release()}
-║⦁ *OS Type:*   ${Foxbot.os.type()}
-║⦁ *Directory:*  ${Foxbot.os.homedir()}
-║⦁ *Speed :* ${latensie.toFixed(4)} sec
-║⦁ *Ram Usage :* ${ramUsage}
-║⦁ *Platform :* ${Foxbot.os.platform()}
-║⦁ *Free memory:* ${Foxbot.os.freemem()}
-║⦁ *Total memory:* ${Foxbot.os.totalmem()}
-║⦁ *Host device :* ${Foxbot.os.hostname()}
-║⦁ *OS Version:* ${Foxbot.os.version()}
-┕╚═☰
-┌╔═☰ *❕ COMMANDS*
+╔═☰ *❗ CONSOLE*
+║⦁ *⏲️Uptime :* ${runtime(process.uptime())}
+║⦁ *💻OS Release:* ${Foxbot.os.release()}
+║⦁ *💻OS Type:*   ${Foxbot.os.type()}
+║⦁ *📂Directory:*  ${Foxbot.os.homedir()}
+║⦁ *⚡Speed :* ${latensie.toFixed(4)} sec
+║⦁ *🖥️Ram Usage :* ${ramUsage}
+║⦁ *🌐Platform :* ${Foxbot.os.platform()}
+║⦁ *🆓Free memory:* ${Foxbot.os.freemem()}
+║⦁ *💾Total memory:* ${Foxbot.os.totalmem()}
+║⦁ *🏠Host device :* ${Foxbot.os.hostname()}
+║⦁ *📋OS Version:* ${Foxbot.os.version()}
+╚═☰
+╔═☰ *❕ COMMANDS*
 ║⦁ 🐉 ${Foxbot.prefix}emotionslist
 ║⦁ 📢 ${Foxbot.prefix}audiofilterlist
 ║⦁ 📼 ${Foxbot.prefix}conversionlist
@@ -88,7 +88,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 
 
 
-┌┌╔═☰ *🍁${finalname.toUpperCase()}🍁*
+┌╔═☰ *🍁${finalname.toUpperCase()}🍁*
 │║⦁ ${Foxbot.prefix}ban
 │║⦁ ${Foxbot.prefix}broadcast
 │║⦁ ${Foxbot.prefix}join
@@ -199,8 +199,8 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}tagall
 ┕╚═☰
 ┌╔═☰ *🖼️${finalname.toUpperCase()}🖼️* 
-║> ${Foxbot.prefix}image
-║> ${Foxbot.prefix}unsplash
+│║⦁ ${Foxbot.prefix}image
+│║⦁ ${Foxbot.prefix}unsplash
 │║⦁ ${Foxbot.prefix}pinterest
 │║⦁ ${Foxbot.prefix}wallpaper
 ┕╚═☰
