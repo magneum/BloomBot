@@ -5,12 +5,12 @@
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
@@ -19,47 +19,47 @@ require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, whatschat, update, store) => {
+module.exports = async (voxbot, voxchat, update, store) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-  if (whatsbot.mentionByReply) {
+  if (voxbot.mentionByReply) {
     var receiver =
-      whatschat.mtype == "extendedTextMessage" &&
-      whatschat.message.extendedTextMessage.contextInfo != null
-        ? whatschat.message.extendedTextMessage.contextInfo.participant || ""
+      voxchat.mtype == "extendedTextMessage" &&
+      voxchat.message.extendedTextMessage.contextInfo != null
+        ? voxchat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    var receiverName = await whatsbot.getName(receiver);
-    if (receiver === whatschat.sender) {
-      await whatsbot.sendMessage(whatschat.chat, {
+    var receiverName = await voxbot.getName(receiver);
+    if (receiver === voxchat.sender) {
+      await voxbot.sendMessage(voxchat.chat, {
         react: {
           text: "❌",
-          key: whatschat.key,
+          key: voxchat.key,
         },
       });
-      return whatschat.reply(
-        `*😥Apologies:* _${whatsbot.pushname || whatsbot.Tname}_
+      return voxchat.reply(
+        `*😥Apologies:* _${voxbot.pushname || voxbot.Tname}_
 
 *❌Error* 
 > _Can't rob your own bank_`
       );
     }
 
-    whatsbot.Economy.findOne(
+    voxbot.Economy.findOne(
       {
-        Id: whatschat.sender,
+        Id: voxchat.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
-        whatsbot.Economy.findOne(
+        if (error) return voxbot.handlerror(voxbot, voxchat, error);
+        voxbot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
+            if (error) return voxbot.handlerror(voxbot, voxchat, error);
             if (!ᴠᴇᴄᴏ) {
-              var newUser = new whatsbot.Economy({
+              var newUser = new voxbot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -71,11 +71,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               });
               await newUser
                 .save()
-                .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-              return await whatsbot.imagebutton(
-                whatsbot,
-                whatschat,
-                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
+                .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+              return await voxbot.imagebutton(
+                voxbot,
+                voxchat,
+                `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -83,13 +83,13 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                "./public/whatsbot.png"
+                "./public/voxbot.png"
               );
             }
 
             if (!ᴄᴇᴄᴏ) {
-              var newUser = new whatsbot.Economy({
-                Id: whatschat.sender,
+              var newUser = new voxbot.Economy({
+                Id: voxchat.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,11 +100,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
               });
               await newUser
                 .save()
-                .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-              return await whatsbot.imagebutton(
-                whatsbot,
-                whatschat,
-                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
+                .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+              return await voxbot.imagebutton(
+                voxbot,
+                voxchat,
+                `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -113,15 +113,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                "./public/whatsbot.png"
+                "./public/voxbot.png"
               );
             }
 
             if (ᴄᴇᴄᴏ.money < 1000) {
-              return await whatsbot.imagebutton(
-                whatsbot,
-                whatschat,
-                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
+              return await voxbot.imagebutton(
+                voxbot,
+                voxchat,
+                `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -129,15 +129,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                "./public/whatsbot.png"
+                "./public/voxbot.png"
               );
             }
 
             if (ᴠᴇᴄᴏ.money < 1000) {
-              return await whatsbot.imagebutton(
-                whatsbot,
-                whatschat,
-                `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
+              return await voxbot.imagebutton(
+                voxbot,
+                voxchat,
+                `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -146,22 +146,22 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                "./public/whatsbot.png"
+                "./public/voxbot.png"
               );
             }
 
             Robbery.findOne(
               {
-                Id: whatschat.sender,
+                Id: voxchat.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
+                if (error) return voxbot.handlerror(voxbot, voxchat, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return whatsbot.handlerror(whatsbot, whatschat, error);
+                    if (error) return voxbot.handlerror(voxbot, voxchat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -173,16 +173,16 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       });
                       await newUser
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -193,13 +193,13 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     }
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: whatschat.sender,
+                        Id: voxchat.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -208,16 +208,16 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       });
                       await newUser
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -227,7 +227,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     }
 
@@ -240,11 +240,11 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -252,7 +252,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     }
 
@@ -268,21 +268,21 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -295,7 +295,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -309,21 +309,21 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -336,7 +336,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -350,21 +350,21 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠɪᴄᴛɪᴍ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -377,7 +377,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     }
 
@@ -387,15 +387,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -408,14 +408,14 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                         }!
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${whatsbot.pushname || whatsbot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${voxbot.pushname || voxbot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -423,15 +423,15 @@ module.exports = async (whatsbot, whatschat, update, store) => {
                       ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime = Date.now();
                       await ᴠᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
                       await ᴄᴇᴄᴏ
                         .save()
-                        .catch((error) => whatsbot.handlerror(whatsbot, whatschat, error));
-                      return await whatsbot.imagebutton(
-                        whatsbot,
-                        whatschat,
+                        .catch((error) => voxbot.handlerror(voxbot, voxchat, error));
+                      return await voxbot.imagebutton(
+                        voxbot,
+                        voxchat,
                         `*🔖Here, ${finalname} for ${
-                          whatsbot.pushname || whatsbot.Tname
+                          voxbot.pushname || voxbot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -442,14 +442,14 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${whatsbot.pushname || whatsbot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${voxbot.pushname || voxbot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        "./public/whatsbot.png"
+                        "./public/voxbot.png"
                       );
                     }
                   }
@@ -461,10 +461,10 @@ module.exports = async (whatsbot, whatschat, update, store) => {
       }
     );
   } else {
-    return await whatsbot.imagebutton(
-      whatsbot,
-      whatschat,
-      `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
+    return await voxbot.imagebutton(
+      voxbot,
+      voxchat,
+      `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -490,7 +490,7 @@ module.exports = async (whatsbot, whatschat, update, store) => {
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      "./public/whatsbot.png"
+      "./public/voxbot.png"
     );
   }
 };

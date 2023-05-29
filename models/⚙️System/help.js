@@ -1,30 +1,30 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("../../logger/global.js");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (whatsbot, whatschat, update, store) => {
+module.exports = async (voxbot, voxchat, update, store) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
-  timestampe = whatsbot.speed();
-  latensie = whatsbot.speed() - timestampe;
+  timestampe = voxbot.speed();
+  latensie = voxbot.speed() - timestampe;
   var runtime = function (seconds) {
     seconds = Number(seconds);
     d = Math.floor(seconds / (3600 * 24));
@@ -38,312 +38,312 @@ module.exports = async (whatsbot, whatschat, update, store) => {
     return dDisplay + hDisplay + mDisplay + sDisplay;
   };
   var countFiles = (dir) =>
-    whatsbot.fs.readdirSync(dir).reduce((acc, file) => {
+    voxbot.fs.readdirSync(dir).reduce((acc, file) => {
       var fileDir = `${dir}/${file}`;
-      if (whatsbot.fs.lstatSync(fileDir).isDirectory()) {
+      if (voxbot.fs.lstatSync(fileDir).isDirectory()) {
         return (acc += countFiles(fileDir));
       }
-      if (whatsbot.fs.lstatSync(fileDir).isFile()) {
+      if (voxbot.fs.lstatSync(fileDir).isFile()) {
         return ++acc;
       }
       return acc;
     }, 0);
-  return await whatsbot.imagebutton(
-    whatsbot,
-    whatschat,
-    `*🔖Here, ${finalname} for ${whatsbot.pushname || whatsbot.Tname}:*
-> Ⓒwhatsbot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+  return await voxbot.imagebutton(
+    voxbot,
+    voxchat,
+    `*🔖Here, ${finalname} for ${voxbot.pushname || voxbot.Tname}:*
+> Ⓒvoxbot: is a voxapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./models")}
 
 
 ┌╔═☰ *❗ CONSOLE*
 ║⦁ *Uptime :* ${runtime(process.uptime())}
-║⦁ *OS Release:* ${whatsbot.os.release()}
-║⦁ *OS Type:*   ${whatsbot.os.type()}
-║⦁ *Directory:*  ${whatsbot.os.homedir()}
+║⦁ *OS Release:* ${voxbot.os.release()}
+║⦁ *OS Type:*   ${voxbot.os.type()}
+║⦁ *Directory:*  ${voxbot.os.homedir()}
 ║⦁ *Speed :* ${latensie.toFixed(4)} sec
 ║⦁ *Ram Usage :* ${ramUsage}
-║⦁ *Platform :* ${whatsbot.os.platform()}
-║⦁ *Free memory:* ${whatsbot.os.freemem()}
-║⦁ *Total memory:* ${whatsbot.os.totalmem()}
-║⦁ *Host device :* ${whatsbot.os.hostname()}
-║⦁ *OS Version:* ${whatsbot.os.version()}
+║⦁ *Platform :* ${voxbot.os.platform()}
+║⦁ *Free memory:* ${voxbot.os.freemem()}
+║⦁ *Total memory:* ${voxbot.os.totalmem()}
+║⦁ *Host device :* ${voxbot.os.hostname()}
+║⦁ *OS Version:* ${voxbot.os.version()}
 ┕╚═☰
 ┌╔═☰ *❕ COMMANDS*
-║⦁ 🐉 ${whatsbot.prefix}emotionslist
-║⦁ 📢 ${whatsbot.prefix}audiofilterlist
-║⦁ 📼 ${whatsbot.prefix}conversionlist
-║⦁ 📥 ${whatsbot.prefix}downloadlist
-║⦁ 💰 ${whatsbot.prefix}gameslist
-║⦁ 🔰 ${whatsbot.prefix}grouplist
-║⦁ 🍁 ${whatsbot.prefix}ownerlist
-║⦁ 🖼️ ${whatsbot.prefix}photolist
-║⦁ 🔎 ${whatsbot.prefix}searchlist
-║⦁ ⭕ ${whatsbot.prefix}ytfilterlist
-║⦁ 🦄 ${whatsbot.prefix}sfwlist
-║⦁ 🍑 ${whatsbot.prefix}hentailist
-║⦁ 👅 ${whatsbot.prefix}nsfwlist
+║⦁ 🐉 ${voxbot.prefix}emotionslist
+║⦁ 📢 ${voxbot.prefix}audiofilterlist
+║⦁ 📼 ${voxbot.prefix}conversionlist
+║⦁ 📥 ${voxbot.prefix}downloadlist
+║⦁ 💰 ${voxbot.prefix}gameslist
+║⦁ 🔰 ${voxbot.prefix}grouplist
+║⦁ 🍁 ${voxbot.prefix}ownerlist
+║⦁ 🖼️ ${voxbot.prefix}photolist
+║⦁ 🔎 ${voxbot.prefix}searchlist
+║⦁ ⭕ ${voxbot.prefix}ytfilterlist
+║⦁ 🦄 ${voxbot.prefix}sfwlist
+║⦁ 🍑 ${voxbot.prefix}hentailist
+║⦁ 👅 ${voxbot.prefix}nsfwlist
 ╚══════⋑
 
 
 
 ┌┌╔═☰ *🍁${finalname.toUpperCase()}🍁*
-│║⦁ ${whatsbot.prefix}ban
-│║⦁ ${whatsbot.prefix}broadcast
-│║⦁ ${whatsbot.prefix}join
-│║⦁ ${whatsbot.prefix}leave
-│║⦁ ${whatsbot.prefix}reboot
-│║⦁ ${whatsbot.prefix}rules
-│║⦁ ${whatsbot.prefix}unban
-│║⦁ ${whatsbot.prefix}verify
+│║⦁ ${voxbot.prefix}ban
+│║⦁ ${voxbot.prefix}broadcast
+│║⦁ ${voxbot.prefix}join
+│║⦁ ${voxbot.prefix}leave
+│║⦁ ${voxbot.prefix}reboot
+│║⦁ ${voxbot.prefix}rules
+│║⦁ ${voxbot.prefix}unban
+│║⦁ ${voxbot.prefix}verify
 ┕╚═☰
 ┌╔═☰ *📢${finalname.toUpperCase()}📢*
-│║⦁ ${whatsbot.prefix}panning
-│║⦁ ${whatsbot.prefix}bassboost
-│║⦁ ${whatsbot.prefix}echo
-│║⦁ ${whatsbot.prefix}fast
-│║⦁ ${whatsbot.prefix}flanger
-│║⦁ ${whatsbot.prefix}nightcore
-│║⦁ ${whatsbot.prefix}phaser
-│║⦁ ${whatsbot.prefix}reverse
-│║⦁ ${whatsbot.prefix}slow
-│║⦁ ${whatsbot.prefix}speed
-│║⦁ ${whatsbot.prefix}subboost
-│║⦁ ${whatsbot.prefix}superslow
-│║⦁ ${whatsbot.prefix}superspeed
-│║⦁ ${whatsbot.prefix}surround
-│║⦁ ${whatsbot.prefix}vaporwave
-│║⦁ ${whatsbot.prefix}vibrato
+│║⦁ ${voxbot.prefix}panning
+│║⦁ ${voxbot.prefix}bassboost
+│║⦁ ${voxbot.prefix}echo
+│║⦁ ${voxbot.prefix}fast
+│║⦁ ${voxbot.prefix}flanger
+│║⦁ ${voxbot.prefix}nightcore
+│║⦁ ${voxbot.prefix}phaser
+│║⦁ ${voxbot.prefix}reverse
+│║⦁ ${voxbot.prefix}slow
+│║⦁ ${voxbot.prefix}speed
+│║⦁ ${voxbot.prefix}subboost
+│║⦁ ${voxbot.prefix}superslow
+│║⦁ ${voxbot.prefix}superspeed
+│║⦁ ${voxbot.prefix}surround
+│║⦁ ${voxbot.prefix}vaporwave
+│║⦁ ${voxbot.prefix}vibrato
 ┕╚═☰
 ┌╔═☰ *📼${finalname.toUpperCase()}📼*
-│║⦁ ${whatsbot.prefix}carbon
-│║⦁ ${whatsbot.prefix}ship
-│║⦁ ${whatsbot.prefix}sticker
-│║⦁ ${whatsbot.prefix}tinyurl
-│║⦁ ${whatsbot.prefix}tourl
-│║⦁ ${whatsbot.prefix}tts
+│║⦁ ${voxbot.prefix}carbon
+│║⦁ ${voxbot.prefix}ship
+│║⦁ ${voxbot.prefix}sticker
+│║⦁ ${voxbot.prefix}tinyurl
+│║⦁ ${voxbot.prefix}tourl
+│║⦁ ${voxbot.prefix}tts
 ┕╚═☰
 ┌╔═☰ *📥${finalname.toUpperCase()}📥* 
-│║⦁ ${whatsbot.prefix}yta
-│║⦁ ${whatsbot.prefix}play
-│║⦁ ${whatsbot.prefix}song
-│║⦁ ${whatsbot.prefix}sing
-│║⦁ ${whatsbot.prefix}ytmp3
-│║⦁ ${whatsbot.prefix}music
-│║⦁ ${whatsbot.prefix}ytplay
-│║⦁ ${whatsbot.prefix}ytaudio
-│║⦁ ${whatsbot.prefix}ytmusic
-│║⦁ ${whatsbot.prefix}youtubemusic
+│║⦁ ${voxbot.prefix}yta
+│║⦁ ${voxbot.prefix}play
+│║⦁ ${voxbot.prefix}song
+│║⦁ ${voxbot.prefix}sing
+│║⦁ ${voxbot.prefix}ytmp3
+│║⦁ ${voxbot.prefix}music
+│║⦁ ${voxbot.prefix}ytplay
+│║⦁ ${voxbot.prefix}ytaudio
+│║⦁ ${voxbot.prefix}ytmusic
+│║⦁ ${voxbot.prefix}youtubemusic
 │║⦁ 
-│║⦁ ${whatsbot.prefix}ytv
-│║⦁ ${whatsbot.prefix}watch
-│║⦁ ${whatsbot.prefix}stream
-│║⦁ ${whatsbot.prefix}ytmp4
-│║⦁ ${whatsbot.prefix}video
-│║⦁ ${whatsbot.prefix}ytwatch
-│║⦁ ${whatsbot.prefix}ytvideo
-│║⦁ ${whatsbot.prefix}youtubevideo
+│║⦁ ${voxbot.prefix}ytv
+│║⦁ ${voxbot.prefix}watch
+│║⦁ ${voxbot.prefix}stream
+│║⦁ ${voxbot.prefix}ytmp4
+│║⦁ ${voxbot.prefix}video
+│║⦁ ${voxbot.prefix}ytwatch
+│║⦁ ${voxbot.prefix}ytvideo
+│║⦁ ${voxbot.prefix}youtubevideo
 ┕╚═☰
 ┌╔═☰ *🐉${finalname.toUpperCase()}🐉* 
-│║⦁ ${whatsbot.prefix}bite
-│║⦁ ${whatsbot.prefix}blush
-│║⦁ ${whatsbot.prefix}bonk
-│║⦁ ${whatsbot.prefix}bored
-│║⦁ ${whatsbot.prefix}confused
-│║⦁ ${whatsbot.prefix}cry
-│║⦁ ${whatsbot.prefix}cuddle
-│║⦁ ${whatsbot.prefix}dance
-│║⦁ ${whatsbot.prefix}goodnight
-│║⦁ ${whatsbot.prefix}happy
-│║⦁ ${whatsbot.prefix}highfive
-│║⦁ ${whatsbot.prefix}hug
-│║⦁ ${whatsbot.prefix}kill
-│║⦁ ${whatsbot.prefix}kiss
-│║⦁ ${whatsbot.prefix}nervous
-│║⦁ ${whatsbot.prefix}pat
-│║⦁ ${whatsbot.prefix}poke
-│║⦁ ${whatsbot.prefix}punch
-│║⦁ ${whatsbot.prefix}sad
-│║⦁ ${whatsbot.prefix}scream
-│║⦁ ${whatsbot.prefix}slap
-│║⦁ ${whatsbot.prefix}smile
-│║⦁ ${whatsbot.prefix}stare
-│║⦁ ${whatsbot.prefix}wave
-│║⦁ ${whatsbot.prefix}wink
-│║⦁ ${whatsbot.prefix}yeet
-│║⦁ ${whatsbot.prefix}yes
+│║⦁ ${voxbot.prefix}bite
+│║⦁ ${voxbot.prefix}blush
+│║⦁ ${voxbot.prefix}bonk
+│║⦁ ${voxbot.prefix}bored
+│║⦁ ${voxbot.prefix}confused
+│║⦁ ${voxbot.prefix}cry
+│║⦁ ${voxbot.prefix}cuddle
+│║⦁ ${voxbot.prefix}dance
+│║⦁ ${voxbot.prefix}goodnight
+│║⦁ ${voxbot.prefix}happy
+│║⦁ ${voxbot.prefix}highfive
+│║⦁ ${voxbot.prefix}hug
+│║⦁ ${voxbot.prefix}kill
+│║⦁ ${voxbot.prefix}kiss
+│║⦁ ${voxbot.prefix}nervous
+│║⦁ ${voxbot.prefix}pat
+│║⦁ ${voxbot.prefix}poke
+│║⦁ ${voxbot.prefix}punch
+│║⦁ ${voxbot.prefix}sad
+│║⦁ ${voxbot.prefix}scream
+│║⦁ ${voxbot.prefix}slap
+│║⦁ ${voxbot.prefix}smile
+│║⦁ ${voxbot.prefix}stare
+│║⦁ ${voxbot.prefix}wave
+│║⦁ ${voxbot.prefix}wink
+│║⦁ ${voxbot.prefix}yeet
+│║⦁ ${voxbot.prefix}yes
 ┕╚═☰
 ┌╔═☰ *💰${finalname.toUpperCase()}💰* 
-│║⦁ ${whatsbot.prefix}balance
-│║⦁ ${whatsbot.prefix}buy
-│║⦁ ${whatsbot.prefix}daily
-│║⦁ ${whatsbot.prefix}fish
-│║⦁ ${whatsbot.prefix}gamble
-│║⦁ ${whatsbot.prefix}inv
-│║⦁ ${whatsbot.prefix}pay
-│║⦁ ${whatsbot.prefix}rob
-│║⦁ ${whatsbot.prefix}store
-│║⦁ ${whatsbot.prefix}work
-│║⦁ ${whatsbot.prefix}zoo
+│║⦁ ${voxbot.prefix}balance
+│║⦁ ${voxbot.prefix}buy
+│║⦁ ${voxbot.prefix}daily
+│║⦁ ${voxbot.prefix}fish
+│║⦁ ${voxbot.prefix}gamble
+│║⦁ ${voxbot.prefix}inv
+│║⦁ ${voxbot.prefix}pay
+│║⦁ ${voxbot.prefix}rob
+│║⦁ ${voxbot.prefix}store
+│║⦁ ${voxbot.prefix}work
+│║⦁ ${voxbot.prefix}zoo
 ┕╚═☰
 ┌╔═☰ *🔰${finalname.toUpperCase()}🔰* 
-│║⦁ ${whatsbot.prefix}antilink
-│║⦁ ${whatsbot.prefix}antinsfw
-│║⦁ ${whatsbot.prefix}delete
-│║⦁ ${whatsbot.prefix}group
-│║⦁ ${whatsbot.prefix}kick
-│║⦁ ${whatsbot.prefix}promote
-│║⦁ ${whatsbot.prefix}setdesc
-│║⦁ ${whatsbot.prefix}seticon
-│║⦁ ${whatsbot.prefix}tagall
+│║⦁ ${voxbot.prefix}antilink
+│║⦁ ${voxbot.prefix}antinsfw
+│║⦁ ${voxbot.prefix}delete
+│║⦁ ${voxbot.prefix}group
+│║⦁ ${voxbot.prefix}kick
+│║⦁ ${voxbot.prefix}promote
+│║⦁ ${voxbot.prefix}setdesc
+│║⦁ ${voxbot.prefix}seticon
+│║⦁ ${voxbot.prefix}tagall
 ┕╚═☰
 ┌╔═☰ *🖼️${finalname.toUpperCase()}🖼️* 
-║> ${whatsbot.prefix}image
-║> ${whatsbot.prefix}unsplash
-│║⦁ ${whatsbot.prefix}pinterest
-│║⦁ ${whatsbot.prefix}wallpaper
+║> ${voxbot.prefix}image
+║> ${voxbot.prefix}unsplash
+│║⦁ ${voxbot.prefix}pinterest
+│║⦁ ${voxbot.prefix}wallpaper
 ┕╚═☰
 ┌╔═☰ *🔎${finalname.toUpperCase()}🔎* 
-│║⦁ ${whatsbot.prefix}advice
-│║⦁ ${whatsbot.prefix}anime
-│║⦁ ${whatsbot.prefix}chordlist
-│║⦁ ${whatsbot.prefix}fact
-│║⦁ ${whatsbot.prefix}getchord
-│║⦁ ${whatsbot.prefix}gify
-│║⦁ ${whatsbot.prefix}google
-│║⦁ ${whatsbot.prefix}instagram
-│║⦁ ${whatsbot.prefix}joke
-│║⦁ ${whatsbot.prefix}lyrics
-│║⦁ ${whatsbot.prefix}manga
-│║⦁ ${whatsbot.prefix}meme
-│║⦁ ${whatsbot.prefix}pokedex
-│║⦁ ${whatsbot.prefix}quote
-│║⦁ ${whatsbot.prefix}reddit
-│║⦁ ${whatsbot.prefix}ytsearch
+│║⦁ ${voxbot.prefix}advice
+│║⦁ ${voxbot.prefix}anime
+│║⦁ ${voxbot.prefix}chordlist
+│║⦁ ${voxbot.prefix}fact
+│║⦁ ${voxbot.prefix}getchord
+│║⦁ ${voxbot.prefix}gify
+│║⦁ ${voxbot.prefix}google
+│║⦁ ${voxbot.prefix}instagram
+│║⦁ ${voxbot.prefix}joke
+│║⦁ ${voxbot.prefix}lyrics
+│║⦁ ${voxbot.prefix}manga
+│║⦁ ${voxbot.prefix}meme
+│║⦁ ${voxbot.prefix}pokedex
+│║⦁ ${voxbot.prefix}quote
+│║⦁ ${voxbot.prefix}reddit
+│║⦁ ${voxbot.prefix}ytsearch
 ┕╚═☰
 ┌╔═☰ *🍑${finalname.toUpperCase()}🍑* 
-│║⦁ ${whatsbot.prefix}ass
-│║⦁ ${whatsbot.prefix}bdsm
-│║⦁ ${whatsbot.prefix}blowjob
-│║⦁ ${whatsbot.prefix}cum
-│║⦁ ${whatsbot.prefix}doujin
-│║⦁ ${whatsbot.prefix}feet
-│║⦁ ${whatsbot.prefix}femdom  
-│║⦁ ${whatsbot.prefix}foxgirl  
-│║⦁ ${whatsbot.prefix}glasses  
-│║⦁ ${whatsbot.prefix}hentai
-│║⦁ ${whatsbot.prefix}maid
-│║⦁ ${whatsbot.prefix}masturbation
-│║⦁ ${whatsbot.prefix}netorare
-│║⦁ ${whatsbot.prefix}orgy
-│║⦁ ${whatsbot.prefix}panties
-│║⦁ ${whatsbot.prefix}pussy
-│║⦁ ${whatsbot.prefix}school
-│║⦁ ${whatsbot.prefix}succubus
-│║⦁ ${whatsbot.prefix}tentacles
-│║⦁ ${whatsbot.prefix}thighs
-│║⦁ ${whatsbot.prefix}uglyBastard
-│║⦁ ${whatsbot.prefix}uniform
-│║⦁ ${whatsbot.prefix}yuri
-│║⦁ ${whatsbot.prefix}zettaiRyouiki
+│║⦁ ${voxbot.prefix}ass
+│║⦁ ${voxbot.prefix}bdsm
+│║⦁ ${voxbot.prefix}blowjob
+│║⦁ ${voxbot.prefix}cum
+│║⦁ ${voxbot.prefix}doujin
+│║⦁ ${voxbot.prefix}feet
+│║⦁ ${voxbot.prefix}femdom  
+│║⦁ ${voxbot.prefix}foxgirl  
+│║⦁ ${voxbot.prefix}glasses  
+│║⦁ ${voxbot.prefix}hentai
+│║⦁ ${voxbot.prefix}maid
+│║⦁ ${voxbot.prefix}masturbation
+│║⦁ ${voxbot.prefix}netorare
+│║⦁ ${voxbot.prefix}orgy
+│║⦁ ${voxbot.prefix}panties
+│║⦁ ${voxbot.prefix}pussy
+│║⦁ ${voxbot.prefix}school
+│║⦁ ${voxbot.prefix}succubus
+│║⦁ ${voxbot.prefix}tentacles
+│║⦁ ${voxbot.prefix}thighs
+│║⦁ ${voxbot.prefix}uglyBastard
+│║⦁ ${voxbot.prefix}uniform
+│║⦁ ${voxbot.prefix}yuri
+│║⦁ ${voxbot.prefix}zettaiRyouiki
 ┕╚═☰
 ┌╔═☰ *👅${finalname.toUpperCase()}👅* 
-│║⦁ ${whatsbot.prefix}nsfw
-│║⦁ ${whatsbot.prefix}nsfw2
-│║⦁ ${whatsbot.prefix}bonermaterial
-│║⦁ ${whatsbot.prefix}nsfw411
-│║⦁ ${whatsbot.prefix}iwanttofuckher
-│║⦁ ${whatsbot.prefix}exxxtras
-│║⦁ ${whatsbot.prefix}distension
-│║⦁ ${whatsbot.prefix}bimbofetish
-│║⦁ ${whatsbot.prefix}christiangirls
-│║⦁ ${whatsbot.prefix}dirtygaming
-│║⦁ ${whatsbot.prefix}sexybutnotporn
-│║⦁ ${whatsbot.prefix}femalepov
-│║⦁ ${whatsbot.prefix}omgbeckylookathiscock
-│║⦁ ${whatsbot.prefix}sexygirls
-│║⦁ ${whatsbot.prefix}breedingmaterial
-│║⦁ ${whatsbot.prefix}canthold
-│║⦁ ${whatsbot.prefix}toocuteforporn
-│║⦁ ${whatsbot.prefix}justhotwomen
-│║⦁ ${whatsbot.prefix}stripgirls
-│║⦁ ${whatsbot.prefix}hotstuffnsfw
-│║⦁ ${whatsbot.prefix}uncommonposes
-│║⦁ ${whatsbot.prefix}gifsofremoval
-│║⦁ ${whatsbot.prefix}nostalgiafapping
-│║⦁ ${whatsbot.prefix}truefmk
-│║⦁ ${whatsbot.prefix}nudes
-│║⦁ ${whatsbot.prefix}4k
-│║⦁ ${whatsbot.prefix}realgirls
-│║⦁ ${whatsbot.prefix}blowjobs
-│║⦁ ${whatsbot.prefix}milf
-│║⦁ ${whatsbot.prefix}milk
-│║⦁ ${whatsbot.prefix}milking
-│║⦁ ${whatsbot.prefix}lactating
-│║⦁ ${whatsbot.prefix}pussy
-│║⦁ ${whatsbot.prefix}cum
-│║⦁ ${whatsbot.prefix}slut
-│║⦁ ${whatsbot.prefix}cumslut
+│║⦁ ${voxbot.prefix}nsfw
+│║⦁ ${voxbot.prefix}nsfw2
+│║⦁ ${voxbot.prefix}bonermaterial
+│║⦁ ${voxbot.prefix}nsfw411
+│║⦁ ${voxbot.prefix}iwanttofuckher
+│║⦁ ${voxbot.prefix}exxxtras
+│║⦁ ${voxbot.prefix}distension
+│║⦁ ${voxbot.prefix}bimbofetish
+│║⦁ ${voxbot.prefix}christiangirls
+│║⦁ ${voxbot.prefix}dirtygaming
+│║⦁ ${voxbot.prefix}sexybutnotporn
+│║⦁ ${voxbot.prefix}femalepov
+│║⦁ ${voxbot.prefix}omgbeckylookathiscock
+│║⦁ ${voxbot.prefix}sexygirls
+│║⦁ ${voxbot.prefix}breedingmaterial
+│║⦁ ${voxbot.prefix}canthold
+│║⦁ ${voxbot.prefix}toocuteforporn
+│║⦁ ${voxbot.prefix}justhotwomen
+│║⦁ ${voxbot.prefix}stripgirls
+│║⦁ ${voxbot.prefix}hotstuffnsfw
+│║⦁ ${voxbot.prefix}uncommonposes
+│║⦁ ${voxbot.prefix}gifsofremoval
+│║⦁ ${voxbot.prefix}nostalgiafapping
+│║⦁ ${voxbot.prefix}truefmk
+│║⦁ ${voxbot.prefix}nudes
+│║⦁ ${voxbot.prefix}4k
+│║⦁ ${voxbot.prefix}realgirls
+│║⦁ ${voxbot.prefix}blowjobs
+│║⦁ ${voxbot.prefix}milf
+│║⦁ ${voxbot.prefix}milk
+│║⦁ ${voxbot.prefix}milking
+│║⦁ ${voxbot.prefix}lactating
+│║⦁ ${voxbot.prefix}pussy
+│║⦁ ${voxbot.prefix}cum
+│║⦁ ${voxbot.prefix}slut
+│║⦁ ${voxbot.prefix}cumslut
 ┕╚═☰
 ┌╔═☰ *🦄${finalname.toUpperCase()}🦄* 
-│║⦁ ${whatsbot.prefix}waifu
-│║⦁ ${whatsbot.prefix}swaifu
-│║⦁ ${whatsbot.prefix}neko
-│║⦁ ${whatsbot.prefix}sneko
-│║⦁ ${whatsbot.prefix}shinobu
-│║⦁ ${whatsbot.prefix}sshinobu
-│║⦁ ${whatsbot.prefix}megumin
-│║⦁ ${whatsbot.prefix}smegumin
-│║⦁ ${whatsbot.prefix}awoo
-│║⦁ ${whatsbot.prefix}sawoo
-│║⦁ ${whatsbot.prefix}glomp
-│║⦁ ${whatsbot.prefix}sglomp
-│║⦁ ${whatsbot.prefix}handhold
-│║⦁ ${whatsbot.prefix}shandhold
+│║⦁ ${voxbot.prefix}waifu
+│║⦁ ${voxbot.prefix}swaifu
+│║⦁ ${voxbot.prefix}neko
+│║⦁ ${voxbot.prefix}sneko
+│║⦁ ${voxbot.prefix}shinobu
+│║⦁ ${voxbot.prefix}sshinobu
+│║⦁ ${voxbot.prefix}megumin
+│║⦁ ${voxbot.prefix}smegumin
+│║⦁ ${voxbot.prefix}awoo
+│║⦁ ${voxbot.prefix}sawoo
+│║⦁ ${voxbot.prefix}glomp
+│║⦁ ${voxbot.prefix}sglomp
+│║⦁ ${voxbot.prefix}handhold
+│║⦁ ${voxbot.prefix}shandhold
 │║⦁
-│║⦁ ${whatsbot.prefix}sbully
-│║⦁ ${whatsbot.prefix}scuddle
-│║⦁ ${whatsbot.prefix}scry
-│║⦁ ${whatsbot.prefix}shug
-│║⦁ ${whatsbot.prefix}skiss
-│║⦁ ${whatsbot.prefix}slick
-│║⦁ ${whatsbot.prefix}spat
-│║⦁ ${whatsbot.prefix}ssmug
-│║⦁ ${whatsbot.prefix}sbonk
-│║⦁ ${whatsbot.prefix}syeet
-│║⦁ ${whatsbot.prefix}sblush
-│║⦁ ${whatsbot.prefix}ssmile
-│║⦁ ${whatsbot.prefix}swave
-│║⦁ ${whatsbot.prefix}shighfive
-│║⦁ ${whatsbot.prefix}snom
-│║⦁ ${whatsbot.prefix}sbite
-│║⦁ ${whatsbot.prefix}sslap
-│║⦁ ${whatsbot.prefix}skill
-│║⦁ ${whatsbot.prefix}skick
-│║⦁ ${whatsbot.prefix}shappy
-│║⦁ ${whatsbot.prefix}swink
-│║⦁ ${whatsbot.prefix}spoke
-│║⦁ ${whatsbot.prefix}sdance
-│║⦁ ${whatsbot.prefix}scringe
+│║⦁ ${voxbot.prefix}sbully
+│║⦁ ${voxbot.prefix}scuddle
+│║⦁ ${voxbot.prefix}scry
+│║⦁ ${voxbot.prefix}shug
+│║⦁ ${voxbot.prefix}skiss
+│║⦁ ${voxbot.prefix}slick
+│║⦁ ${voxbot.prefix}spat
+│║⦁ ${voxbot.prefix}ssmug
+│║⦁ ${voxbot.prefix}sbonk
+│║⦁ ${voxbot.prefix}syeet
+│║⦁ ${voxbot.prefix}sblush
+│║⦁ ${voxbot.prefix}ssmile
+│║⦁ ${voxbot.prefix}swave
+│║⦁ ${voxbot.prefix}shighfive
+│║⦁ ${voxbot.prefix}snom
+│║⦁ ${voxbot.prefix}sbite
+│║⦁ ${voxbot.prefix}sslap
+│║⦁ ${voxbot.prefix}skill
+│║⦁ ${voxbot.prefix}skick
+│║⦁ ${voxbot.prefix}shappy
+│║⦁ ${voxbot.prefix}swink
+│║⦁ ${voxbot.prefix}spoke
+│║⦁ ${voxbot.prefix}sdance
+│║⦁ ${voxbot.prefix}scringe
 ┕╚═☰
 ┌╔═☰ *⭕${finalname.toUpperCase()}⭕* 
-│║⦁ ${whatsbot.prefix}ytpanning
-│║⦁ ${whatsbot.prefix}ytbassboost
-│║⦁ ${whatsbot.prefix}ytecho
-│║⦁ ${whatsbot.prefix}ytflanger
-│║⦁ ${whatsbot.prefix}ytnightcore
-│║⦁ ${whatsbot.prefix}ytphaser
-│║⦁ ${whatsbot.prefix}ytreverse
-│║⦁ ${whatsbot.prefix}ytslow
-│║⦁ ${whatsbot.prefix}ytspeed
-│║⦁ ${whatsbot.prefix}ytsubboost
-│║⦁ ${whatsbot.prefix}ytsuperslow
-│║⦁ ${whatsbot.prefix}ytsuperspeed
-│║⦁ ${whatsbot.prefix}ytsurround
-│║⦁ ${whatsbot.prefix}ytvaporwave
-│║⦁ ${whatsbot.prefix}ytvibrato
+│║⦁ ${voxbot.prefix}ytpanning
+│║⦁ ${voxbot.prefix}ytbassboost
+│║⦁ ${voxbot.prefix}ytecho
+│║⦁ ${voxbot.prefix}ytflanger
+│║⦁ ${voxbot.prefix}ytnightcore
+│║⦁ ${voxbot.prefix}ytphaser
+│║⦁ ${voxbot.prefix}ytreverse
+│║⦁ ${voxbot.prefix}ytslow
+│║⦁ ${voxbot.prefix}ytspeed
+│║⦁ ${voxbot.prefix}ytsubboost
+│║⦁ ${voxbot.prefix}ytsuperslow
+│║⦁ ${voxbot.prefix}ytsuperspeed
+│║⦁ ${voxbot.prefix}ytsurround
+│║⦁ ${voxbot.prefix}ytvaporwave
+│║⦁ ${voxbot.prefix}ytvibrato
 ┕╚═════⋑`,
-    "./public/logo/whatsbot.png"
+    "./public/logo/voxbot.png"
   );
 };

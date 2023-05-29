@@ -1,8 +1,8 @@
 {
-  "name": "whatsbot",
+  "name": "voxbot",
   "main": "app",
   "version": "0.0.1",
-  "description": "whatsbot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+  "description": "voxbot is a voxapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"

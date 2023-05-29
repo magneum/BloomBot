@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 whatsbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 voxbot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of whatsbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of voxbot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ whatsbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 var logger = require("../logger");
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -73,7 +73,7 @@ async function magneum() {
     var version;
     try {
       var a = fetchJson(
-        "https://web.whatsapp.com/check-update?version=1&platform=web"
+        "https://web.voxapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
     } catch {
@@ -91,17 +91,17 @@ async function magneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/whatsbot", (request, response) => {
-    response.sendFile("views/whatsbot.html", { root: __dirname });
+  νℓpage.get("/voxbot", (request, response) => {
+    response.sendFile("views/voxbot.html", { root: __dirname });
   });
-  νℓpage.post("/whatsbot", urlencodedParser, (request, response) => {
+  νℓpage.post("/voxbot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
     );
     dboard.findOne(
       {
-        Id: phoneNum + "@s.whatsapp.net",
+        Id: phoneNum + "@s.voxapp.net",
       },
       async (error, uBoard) => {
         if (error) return logger.error("❌:", error);
@@ -112,17 +112,17 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("whatsbot: started at port: " + PORT));
+  νℓpage.listen(PORT, logger.info("voxbot: started at port: " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
-  var whatsbot = νℓкуяє_вσт({
+  var voxbot = νℓкуяє_вσт({
     auth: state,
     msgRetryCounterMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "whatsbot-by-magneum", "Chrome", "4.0.0"],
+    browser: [process.env.deployer || "voxbot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -139,18 +139,18 @@ async function magneum() {
       };
     },
   });
-  store.bind(whatsbot.ev);
+  store.bind(voxbot.ev);
 
-  // whatsbot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
-  // whatsbot.ws.on("CB:call", (update) => require("./events/cb_call")(whatsbot, update, store));
-  // whatsbot.ev.on("contacts.update", (update) => require("./events/contacts.update")(whatsbot, update, store));
-  // whatsbot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(whatsbot, update, store));
-  // whatsbot.ev.on("connection.update", (update) => require("./events/connection.update")(whatsbot, update, store, magneum));
-  // whatsbot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(whatsbot, update, store));
+  // voxbot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
+  // voxbot.ws.on("CB:call", (update) => require("./events/cb_call")(voxbot, update, store));
+  // voxbot.ev.on("contacts.update", (update) => require("./events/contacts.update")(voxbot, update, store));
+  // voxbot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(voxbot, update, store));
+  // voxbot.ev.on("connection.update", (update) => require("./events/connection.update")(voxbot, update, store, magneum));
+  // voxbot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(voxbot, update, store));
 
-  whatsbot.ev.on("creds.update", async (update) => await saveCreds());
-  whatsbot.ev.on("connection.update", async (update) => {
-    var {
+  voxbot.ev.on("creds.update", async (update) => await saveCreds());
+  voxbot.ev.on("connection.update", async (update) => {
+    const {
       lastDisconnect,
       connection,
       isNewLogin,
@@ -158,57 +158,145 @@ async function magneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting")
-      logger.info("🐲: Connecting to WhatsApp...▶");
-    else if (connection == "open") logger.info("🐲: Login successful! ▶");
-    else if (connection == "close") {
-      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-      if (reason === DisconnectReason.badSession) {
-        logger.error(
-          "❌: Bad Session File, Please Delete Session and Scan Again"
-        );
-        await cleanDatabase();
-        await magneum();
-      } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
-        await cleanDatabase();
-        await magneum();
-      } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
-        await magneum();
-      } else if (reason === DisconnectReason.connectionReplaced) {
-        logger.error(
-          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
-        );
-        await cleanDatabase();
-        await magneum();
-      } else if (reason === DisconnectReason.loggedOut) {
-        logger.error("❌: Device Logged Out, Please Scan Again And Run.");
-        await cleanDatabase();
-        await magneum();
-      } else if (reason === DisconnectReason.restartRequired) {
-        logger.error("❌: Restart Required, Restarting...");
-        await magneum();
-      } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
-        await magneum();
-      } else
-        whatsbot.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
-        );
-    } else if (isOnline === true) logger.debug("🐲: Online.");
-    else if (isOnline === false) logger.error("🐲: Offine.");
-    else if (receivedPendingNotifications === true)
-      logger.debug("🐲: Received Pending Notifications.");
-    else if (receivedPendingNotifications === false)
-      logger.error("🐲: Not Received Pending Notifications.");
-    else if (isNewLogin === true) logger.debug("🐲: New Login.");
-    else if (isNewLogin === false) logger.error("🐲: Not New Login.");
-    else if (qr) logger.info("Qr: "), logger.error(qr);
-    else logger.info("🐲: Connection...", update);
+
+    const handleError = async (error) => {
+      logger.error(error);
+      await cleanDatabase();
+      await voxbot.end();
+      await magneum();
+    };
+
+    switch (connection) {
+      case "connecting":
+        logger.info("🐲: Connecting to WhatsApp...▶");
+        break;
+      case "open":
+        logger.info("🐲: Login successful! ▶");
+        break;
+      case "close":
+        const reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+        switch (reason) {
+          case DisconnectReason.badSession:
+            handleError(
+              "❌: Bad Session File, Please Delete Session and Scan Again"
+            );
+            break;
+          case DisconnectReason.connectionClosed:
+            handleError("❌: Connection closed, reconnecting....");
+            break;
+          case DisconnectReason.connectionLost:
+            handleError("❌: Connection Lost from Server, reconnecting...");
+            break;
+          case DisconnectReason.connectionReplaced:
+            handleError(
+              "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+            );
+            break;
+          case DisconnectReason.loggedOut:
+            handleError("❌: Device Logged Out, Please Scan Again And Run.");
+            break;
+          case DisconnectReason.restartRequired:
+            handleError("❌: Restart Required, Restarting...");
+            break;
+          case DisconnectReason.timedOut:
+            handleError("❌: Connection TimedOut, Reconnecting...");
+            break;
+          default:
+            logger.error(
+              `❌: Unknown DisconnectReason: ${reason}|${connection}`
+            );
+            voxbot.end();
+            return;
+        }
+        break;
+      case isOnline === true:
+        logger.debug("🐲: Online.");
+        break;
+      case isOnline === false:
+        logger.error("🐲: Offline.");
+        break;
+      case receivedPendingNotifications === true:
+        logger.debug("🐲: Received Pending Notifications.");
+        break;
+      case receivedPendingNotifications === false:
+        logger.error("🐲: Not Received Pending Notifications.");
+        break;
+      case isNewLogin === true:
+        logger.debug("🐲: New Login.");
+        break;
+      case isNewLogin === false:
+        logger.error("🐲: Not New Login.");
+        break;
+      case qr:
+        logger.info("Qr: ");
+        logger.error(qr);
+        break;
+      default:
+        logger.info("🐲: Connection...", update);
+        break;
+    }
   });
 
-  whatsbot.ev.on("messages.upsert", async (update) => {
+  // voxbot.ev.on("connection.update", async (update) => {
+  // var {
+  // lastDisconnect,
+  // connection,
+  // isNewLogin,
+  // isOnline,
+  // qr,
+  // receivedPendingNotifications,
+  // } = update;
+  // if (connection == "connecting")
+  // logger.info("🐲: Connecting to WhatsApp...▶");
+  // else if (connection == "open") logger.info("🐲: Login successful! ▶");
+  // else if (connection == "close") {
+  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+  // if (reason === DisconnectReason.badSession) {
+  // logger.error(
+  // "❌: Bad Session File, Please Delete Session and Scan Again"
+  // );
+  // await cleanDatabase();
+  // await magneum();
+  // } else if (reason === DisconnectReason.connectionClosed) {
+  // logger.error("❌: Connection closed, reconnecting....");
+  // await cleanDatabase();
+  // await magneum();
+  // } else if (reason === DisconnectReason.connectionLost) {
+  // logger.error("❌: Connection Lost from Server, reconnecting...");
+  // await magneum();
+  // } else if (reason === DisconnectReason.connectionReplaced) {
+  // logger.error(
+  // "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+  // );
+  // await cleanDatabase();
+  // await magneum();
+  // } else if (reason === DisconnectReason.loggedOut) {
+  // logger.error("❌: Device Logged Out, Please Scan Again And Run.");
+  // await cleanDatabase();
+  // await magneum();
+  // } else if (reason === DisconnectReason.restartRequired) {
+  // logger.error("❌: Restart Required, Restarting...");
+  // await magneum();
+  // } else if (reason === DisconnectReason.timedOut) {
+  // logger.error("❌: Connection TimedOut, Reconnecting...");
+  // await magneum();
+  // } else
+  // voxbot.end(
+  // logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+  // );
+  // } else if (isOnline === true) logger.debug("🐲: Online.");
+  // else if (isOnline === false) logger.error("🐲: Offine.");
+  // else if (receivedPendingNotifications === true)
+  // logger.debug("🐲: Received Pending Notifications.");
+  // else if (receivedPendingNotifications === false)
+  // logger.error("🐲: Not Received Pending Notifications.");
+  // else if (isNewLogin === true) logger.debug("🐲: New Login.");
+  // else if (isNewLogin === false) logger.error("🐲: Not New Login.");
+  // else if (qr) logger.info("Qr: "), logger.error(qr);
+  // else logger.info("🐲: Connection...", update);
+  // });
+
+  voxbot.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
     νTēxt.message =
@@ -216,48 +304,47 @@ async function magneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!whatsbot.public && !νTēxt.key.fromMe && update.type === "notify")
-      return;
+    if (!voxbot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    whatschat = await νkmake(whatsbot, νTēxt, store);
-    await require("../server/router.js")(whatsbot, whatschat, update, store);
+    voxchat = await νkmake(voxbot, νTēxt, store);
+    await require("../server/router.js")(voxbot, voxchat, update, store);
   });
 
-  whatsbot.ev.on("group-participants.update", async (update) => {
-    let metadata = await whatsbot.groupMetadata(update.id);
+  voxbot.ev.on("group-participants.update", async (update) => {
+    let metadata = await voxbot.groupMetadata(update.id);
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await whatsbot.profilePictureUrl(sperson, "image");
+        imåge = await voxbot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./public/whatsbot.png";
+        imåge = "./public/voxbot.png";
       }
 
       if (update.action == "add") {
-        return await whatsbot
+        return await voxbot
           .sendMessage(
             update.id,
             {
               image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+              caption: `*🕊️You:* @${sperson.replace(/['@s voxapp.net']/g, "")}
 *📢Id:* ${update.id}
 
 > Firstly Welcome.
-> I am whatsbot Whatsapp Bot.
+> I am voxbot Whatsapp Bot.
 > To Start using type .help or press below buttons.`,
               footer:
-                "*VLkyre™ By whatsbot*\n*💻HomePage:* https://bit.ly/magneum",
+                "*VLkyre™ By voxbot*\n*💻HomePage:* https://bit.ly/magneum",
               buttons: [
                 {
-                  buttonId: `${whatsbot.prefix}Dashboard`,
-                  buttonText: { displayText: `${whatsbot.prefix}Dashboard` },
+                  buttonId: `${voxbot.prefix}Dashboard`,
+                  buttonText: { displayText: `${voxbot.prefix}Dashboard` },
                   type: 1,
                 },
                 {
-                  buttonId: `${whatsbot.prefix}whatsbot`,
-                  buttonText: { displayText: `${whatsbot.prefix}whatsbot` },
+                  buttonId: `${voxbot.prefix}voxbot`,
+                  buttonText: { displayText: `${voxbot.prefix}voxbot` },
                   type: 1,
                 },
               ],
@@ -277,7 +364,7 @@ async function magneum() {
     }
   });
 
-  whatsbot.decodeJid = (jid) => {
+  voxbot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -287,55 +374,55 @@ async function magneum() {
       );
     } else return jid;
   };
-  whatsbot.getName = (jid, withoutContact = false) => {
-    id = whatsbot.decodeJid(jid);
-    withoutContact = whatsbot.withoutContact || withoutContact;
+  voxbot.getName = (jid, withoutContact = false) => {
+    id = voxbot.decodeJid(jid);
+    withoutContact = voxbot.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = whatsbot.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = voxbot.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
-            PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
+            PhoneNumber("+" + id.replace("@s.voxapp.net", "")).getNumber(
               "international"
             )
         );
       });
     else
       v =
-        id === "0@s.whatsapp.net"
+        id === "0@s.voxapp.net"
           ? {
               id,
               name: "WhatsApp",
             }
-          : id === whatsbot.decodeJid(whatsbot.user.id)
-          ? whatsbot.user
+          : id === voxbot.decodeJid(voxbot.user.id)
+          ? voxbot.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
       v.subject ||
       v.verifiedName ||
-      PhoneNumber("+" + jid.replace("@s.whatsapp.net", "")).getNumber(
+      PhoneNumber("+" + jid.replace("@s.voxapp.net", "")).getNumber(
         "international"
       )
     );
   };
 
-  whatsbot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  voxbot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await whatsbot.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await whatsbot.getName(
-          i + "@s.whatsapp.net"
-        )}\nFN:${await whatsbot.getName(
-          i + "@s.whatsapp.net"
+        displayName: await voxbot.getName(i + "@s.voxapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await voxbot.getName(
+          i + "@s.voxapp.net"
+        )}\nFN:${await voxbot.getName(
+          i + "@s.voxapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    whatsbot.sendMessage(
+    voxbot.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -345,10 +432,10 @@ async function magneum() {
     );
   };
 
-  whatsbot.public = true;
-  whatsbot.serializeM = (whatschat) => νkmake(whatsbot, whatschat, store);
+  voxbot.public = true;
+  voxbot.serializeM = (voxchat) => νkmake(voxbot, voxchat, store);
 
-  whatsbot.send5ButImg = async (
+  voxbot.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -358,10 +445,10 @@ async function magneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: whatsbot.waUploadToServer }
+      { upload: voxbot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      whatschat.chat,
+      voxchat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
@@ -374,12 +461,12 @@ async function magneum() {
       }),
       options
     );
-    whatsbot.relayMessage(jid, template.message, {
+    voxbot.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  whatsbot.sendButtonText = (
+  voxbot.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -394,19 +481,13 @@ async function magneum() {
       headerType: 2,
       ...options,
     };
-    whatsbot.sendMessage(jid, buttonMessage, { quoted, ...options });
+    voxbot.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  whatsbot.sendText = (jid, text, quoted = "", options) =>
-    whatsbot.sendMessage(jid, { text: text, ...options }, { quoted });
+  voxbot.sendText = (jid, text, quoted = "", options) =>
+    voxbot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  whatsbot.sendImage = async (
-    jid,
-    path,
-    caption = "",
-    quoted = "",
-    options
-  ) => {
+  voxbot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -416,14 +497,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await whatsbot.sendMessage(
+    return await voxbot.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  whatsbot.sendVideo = async (
+  voxbot.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -440,14 +521,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await whatsbot.sendMessage(
+    return await voxbot.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  whatsbot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  voxbot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -457,21 +538,21 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await whatsbot.sendMessage(
+    return await voxbot.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  whatsbot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    whatsbot.sendMessage(
+  voxbot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    voxbot.sendMessage(
       jid,
       {
         text: text,
         contextInfo: {
           mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
-            (v) => v[1] + "@s.whatsapp.net"
+            (v) => v[1] + "@s.voxapp.net"
           ),
         },
         ...options,
@@ -479,7 +560,7 @@ async function magneum() {
       { quoted }
     );
 
-  whatsbot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  voxbot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -496,7 +577,7 @@ async function magneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await whatsbot.sendMessage(
+    await voxbot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -504,7 +585,7 @@ async function magneum() {
     return buffer;
   };
 
-  whatsbot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  voxbot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -521,7 +602,7 @@ async function magneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await whatsbot.sendMessage(
+    await voxbot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -529,7 +610,7 @@ async function magneum() {
     return buffer;
   };
 
-  whatsbot.downloadAndSaveMediaMessage = async (
+  voxbot.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -551,7 +632,7 @@ async function magneum() {
     return trueFileName;
   };
 
-  whatsbot.downloadMediaMessage = async (message) => {
+  voxbot.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -565,7 +646,7 @@ async function magneum() {
     return buffer;
   };
 
-  whatsbot.sendMedia = async (
+  voxbot.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -573,7 +654,7 @@ async function magneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await whatsbot.getFile(path, true);
+    let types = await voxbot.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -601,7 +682,7 @@ async function magneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await whatsbot.sendMessage(
+    await voxbot.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -609,7 +690,7 @@ async function magneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  whatsbot.copyNforward = async (
+  voxbot.copyNforward = async (
     jid,
     message,
     forceforward = false,
@@ -660,17 +741,17 @@ async function magneum() {
           }
         : {}
     );
-    await whatsbot.relayMessage(jid, waMessage.message, {
+    await voxbot.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  whatsbot.cMod = (
+  voxbot.cMod = (
     jid,
     copy,
     text = "",
-    sender = whatsbot.user.id,
+    sender = voxbot.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -694,17 +775,17 @@ async function magneum() {
       sender = copy.key.participant = sender || copy.key.participant;
     else if (copy.key.participant)
       sender = copy.key.participant = sender || copy.key.participant;
-    if (copy.key.remoteJid.includes("@s.whatsapp.net"))
+    if (copy.key.remoteJid.includes("@s.voxapp.net"))
       sender = sender || copy.key.remoteJid;
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === whatsbot.user.id;
+    copy.key.fromMe = sender === voxbot.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  whatsbot.getFile = async (PATH, save) => {
+  voxbot.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -735,13 +816,13 @@ async function magneum() {
     };
   };
 
-  whatsbot.ws.on("CB:call", async (update) => {
+  voxbot.ws.on("CB:call", async (update) => {
     var sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    let person = await whatsbot.sendContact(callerId, global.owner);
-    whatsbot.sendMessage(
+    let person = await voxbot.sendContact(callerId, global.owner);
+    voxbot.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -749,12 +830,12 @@ async function magneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await whatsbot.updateBlockStatus(callerId, "block");
+    await voxbot.updateBlockStatus(callerId, "block");
   });
 
-  whatsbot.ev.on("contacts.update", async (update) => {
+  voxbot.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = whatsbot.decodeJid(contact.id);
+      let jid = voxbot.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
@@ -771,8 +852,8 @@ async function magneum() {
       "💡maker",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await whatsbot.updateProfileStatus(
-      "Feeling: " + __Feeling + "  :whatsbot by magneum"
+    await voxbot.updateProfileStatus(
+      "Feeling: " + __Feeling + "  :voxbot by magneum"
     );
   }, 1000 * 10);
 }
