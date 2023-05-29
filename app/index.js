@@ -602,25 +602,75 @@ async function magneum() {
   );
   setInterval(async () => {
     var _Type = [
-      "🎭designer",
-      "🌏inventor",
-      "🎨creator",
-      "🎉founder",
-      "🐞innovator",
-      "🏗️builder",
-      "🖊️author",
-      "💡maker",
+      "🎭Designer",
+      "🌏Inventor",
+      "🎨Creator",
+      "🎉Founder",
+      "🐞Innovator",
+      "🏗️Builder",
+      "🖊️Author",
+      "💡Maker",
+      "🎤Speaker",
+      "🎬Director",
+      "🎼Musician",
+      "📷Photographer",
+      "🎮Gamer",
+      "🎯Strategist",
+      "📚Educator",
+      "🔬Scientist",
+      "👩‍💻Programmer",
+      "🎓Researcher",
+      "📺TV host",
+      "🎤Singer",
+      "🎥Filmmaker",
+      "🎧Audio engineer",
+      "🎪Circus performer",
+      "🧪Chemist",
+      "🗺️Cartographer",
+      "🎢Roller coaster designer",
+      "🎁Gift wrapper",
+      "🚀Space explorer",
+      "🔮Psychic",
+      "🌳Environmentalist",
+      "🎟️Ticket collector",
+      "🍽️Chef",
+      "📈Financial analyst",
+      "🧩Puzzle solver",
+      "🌌Astronomer",
+      "🔍Investigator",
+      "🎭Actor",
+      "🌋Volcanologist",
+      "🔐Locksmith",
+      "🎡Amusement park designer",
+      "🏰Architect",
+      "📓Journalist",
+      "📡Radio host",
+      "🎭Mime artist",
+      "🎮Game tester",
+      "🚒Firefighter",
+      "🚁Pilot",
+      "🎾Tennis player",
+      "⚖️Lawyer",
+      "🎧DJ",
+      "📻Radio presenter",
+      "🍳Cook",
+      "🏇Jockey",
+      "🔧Mechanic",
+      "🎪Acrobat",
+      "🎯Archer",
+      "🎬Stunt performer",
+      "🛠️Handyman",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await Foxbot.updateProfileStatus(
       "Feeling: " + __Feeling + " (Foxbot by magneum)"
     );
-  }, 1000 * 10);
+  }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
 
   setInterval(async () => {
     await Foxbot.updateProfilePicture("120363020792949649@g.us", {
       url: Foxbot.display,
     });
-  }, 30000 * 10);
+  }, 60 * 60 * 1000); // Run every hour (60 minutes * 60 seconds * 1000 milliseconds)
 }
 magneum().catch((error) => logger.error(error));
