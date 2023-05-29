@@ -236,7 +236,7 @@ async function magneum() {
         logger.error("🐲: Not New Login.");
         break;
       default:
-        logger.info("🐲: Connection...", update);
+        logger.info("🐲: FOXBOT connected...", update);
     }
   });
 
@@ -267,39 +267,36 @@ async function magneum() {
       }
 
       if (update.action == "add") {
-        return await Foxbot
-          .sendMessage(
-            update.id,
-            {
-              image: { url: imåge },
-              caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+        return await Foxbot.sendMessage(
+          update.id,
+          {
+            image: { url: imåge },
+            caption: `*🕊️You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
 *📢Id:* ${update.id}
 
 > Firstly Welcome.
 > I am Foxbot Whatsapp bot.
 > To Start using type .help or press below buttons.`,
-              footer:
-                "*VLkyre™ By Foxbot*\n*💻HomePage:* https://bit.ly/magneum",
-              buttons: [
-                {
-                  buttonId: `${Foxbot.prefix}Dashboard`,
-                  buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-                  type: 1,
-                },
-                {
-                  buttonId: `${Foxbot.prefix}Foxbot`,
-                  buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
-                  type: 1,
-                },
-              ],
-              headerType: 4,
-              mentions: [sperson],
-            },
-            {
-              contextInfo: { mentionedJid: [sperson] },
-            }
-          )
-          .catch((error) => logger.error(error));
+            footer: "*VLkyre™ By Foxbot*\n*💻HomePage:* https://bit.ly/magneum",
+            buttons: [
+              {
+                buttonId: `${Foxbot.prefix}Dashboard`,
+                buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+                type: 1,
+              },
+              {
+                buttonId: `${Foxbot.prefix}Foxbot`,
+                buttonText: { displayText: `${Foxbot.prefix}Foxbot` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            mentions: [sperson],
+          },
+          {
+            contextInfo: { mentionedJid: [sperson] },
+          }
+        ).catch((error) => logger.error(error));
       } else if (update.action == "remove") {
         return;
       } else {
