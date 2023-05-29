@@ -34,7 +34,6 @@ var {
   generateWAMessageFromContent,
   downloadContentFromMessage,
   makeInMemoryStore,
-  MessageRetryMap,
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
@@ -130,7 +129,6 @@ async function magneum() {
   var { state, saveCreds } = await useRemoteFileAuthState();
   var Foxbot = νℓкуяє_вσт({
     auth: state,
-    MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
