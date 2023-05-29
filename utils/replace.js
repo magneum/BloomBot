@@ -17,8 +17,8 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Voxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var fs = require("fs");
 var path = require("path");
-var readline = require("readline");
 var chalk = require("chalk");
+var readline = require("readline");
 
 var rl = readline.createInterface({
   input: process.stdin,
@@ -28,40 +28,6 @@ var rl = readline.createInterface({
 
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function createBackupDirectory(dir) {
-  return new Promise((resolve, reject) => {
-    var backupDir = path.join(dir, "backup");
-    fs.mkdir(backupDir, (err) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(backupDir);
-      }
-    });
-  });
-}
-
-function copyFile(sourcePath, destinationPath) {
-  return new Promise((resolve, reject) => {
-    var readStream = fs.createReadStream(sourcePath);
-    var writeStream = fs.createWriteStream(destinationPath);
-
-    readStream.on("error", (err) => {
-      reject(err);
-    });
-
-    writeStream.on("error", (err) => {
-      reject(err);
-    });
-
-    writeStream.on("finish", () => {
-      resolve();
-    });
-
-    readStream.pipe(writeStream);
-  });
 }
 
 function renameFiles(dir, oldWord, newWord) {
@@ -111,31 +77,14 @@ function renameFiles(dir, oldWord, newWord) {
               );
               var newFilePath = path.join(dir, newFileName + fileExtension);
 
-              var backupDirPath = path.join(dir, "backup");
-              var backupFilePath = path.join(
-                backupDirPath,
-                file + "." + Date.now()
-              );
-
-              fs.mkdir(backupDirPath, { recursive: true }, (err) => {
+              fs.rename(filePath, newFilePath, (err) => {
                 if (err) {
                   reject(err);
                   return;
                 }
 
-                copyFile(filePath, backupFilePath)
-                  .then(() => {
-                    fs.rename(filePath, newFilePath, (err) => {
-                      if (err) {
-                        reject(err);
-                        return;
-                      }
-
-                      console.log(chalk.green(`File renamed: ${newFilePath}`));
-                      resolve();
-                    });
-                  })
-                  .catch((err) => reject(err));
+                console.log(chalk.green(`File renamed: ${newFilePath}`));
+                resolve();
               });
             } else {
               resolve();
@@ -156,11 +105,7 @@ rl.question(chalk.yellow("Enter the word to replace: "), (oldWord) => {
     rl.question(
       chalk.yellow("Enter the directory path where the files are located: "),
       (folderPath) => {
-        createBackupDirectory(folderPath)
-          .then((backupDir) => {
-            console.log(chalk.yellow(`Backup directory created: ${backupDir}`));
-            return renameFiles(folderPath, oldWord, newWord);
-          })
+        renameFiles(folderPath, oldWord, newWord)
           .then(() => {
             console.log(chalk.green("Renaming process completed."));
             rl.close();
