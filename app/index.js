@@ -32,6 +32,7 @@ var {
   generateWAMessageFromContent,
   downloadContentFromMessage,
   makeInMemoryStore,
+  MessageRetryMap,
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
@@ -62,6 +63,7 @@ async function rmdb() {
       }
     });
   });
+  process.exit(0);
 }
 async function magneum() {
   await monGoose
@@ -232,10 +234,6 @@ async function magneum() {
         break;
       case false:
         logger.error("🐲: Not New Login.");
-        break;
-      case qr:
-        logger.info("Qr: ");
-        logger.error(qr);
         break;
       default:
         logger.info("🐲: Connection...", update);

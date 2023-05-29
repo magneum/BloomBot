@@ -344,6 +344,6 @@ module.exports = async (voxbot, voxchat, update, store) => {
 │║⦁ ${voxbot.prefix}ytvaporwave
 │║⦁ ${voxbot.prefix}ytvibrato
 ┕╚═════⋑`,
-    "./public/logo/voxbot.png"
+    "./public//voxbot.png"
   );
 };
