@@ -344,6 +344,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 │║⦁ ${Foxbot.prefix}ytvaporwave
 │║⦁ ${Foxbot.prefix}ytvibrato
 ┕╚═════⋑`,
-    "./public/FoxBot_Logo.png"
+    Foxbot.display
   );
 };

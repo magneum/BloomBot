@@ -39,6 +39,8 @@ var {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require("./myfunc");
+var fs = require("fs");
+var path = require("path");
 var chalk = require("chalk");
 var { tmpdir } = require("os");
 var { JSDOM } = require("jsdom");
@@ -60,8 +62,41 @@ var ffprobe = require("@ffprobe-installer/ffprobe");
 var ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
+function getRandomImagePath() {
+  return new Promise((resolve, reject) => {
+    const folderPath = "public/src";
+    fs.readdir(folderPath, (err, files) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+      const imageFiles = files.filter((file) => {
+        const extension = path.extname(file).toLowerCase();
+        return (
+          extension === ".png" || extension === ".jpg" || extension === ".jpeg"
+        );
+      });
+      if (imageFiles.length > 0) {
+        const randomImage =
+          imageFiles[Math.floor(Math.random() * imageFiles.length)];
+        const imagePath = path.join(folderPath, randomImage);
+        resolve(imagePath);
+      } else {
+        reject("No .png, .jpg, or .jpeg images found in the folder.");
+      }
+    });
+  });
+}
 
 module.exports = async (Foxbot, Foxchat, update, store) => {
+  Foxbot.display = getRandomImagePath()
+    .then((imagePath) => {
+      Foxbot.display = imagePath;
+    })
+    .catch((err) => {
+      Foxbot.display = "./public/FoxBot_Logo.png";
+    });
+
   Foxbot.performance = performance;
   Foxbot.createWorker = createWorker;
   Foxbot.JSDOM = JSDOM;

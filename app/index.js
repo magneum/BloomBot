@@ -236,7 +236,8 @@ async function magneum() {
         logger.error("🐲: Not New Login.");
         break;
       default:
-        logger.info("🐲: FOXBOT connected...", update);
+        console.clear();
+        logger.info("🐲: Foxbot by Magneum connected...", update);
     }
   });
 
@@ -263,7 +264,7 @@ async function magneum() {
       try {
         imåge = await Foxbot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = "./public/src/Foxbot (8).png";
+        imåge = Foxbot.display;
       }
 
       if (update.action == "add") {

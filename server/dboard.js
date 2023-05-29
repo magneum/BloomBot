@@ -286,7 +286,7 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          "./public/login.png"
+          Foxbot.display
         );
         return updatedb(udBase);
       }
