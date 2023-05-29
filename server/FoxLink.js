@@ -88,7 +88,16 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  Foxbot,
+  Foxchat,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   Foxbot.display = getRandomImagePath()
     .then((imagePath) => {
       Foxbot.display = imagePath;
@@ -141,9 +150,9 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
   Foxbot.Tname = Foxchat.sender.replace(/['@s whatsapp.net']/g, "");
 
   Foxbot.msgFilter = require("./msgFilter");
-  Foxbot.imagebutton = require("@/buttons/imagebutton");
-  Foxbot.videobutton = require("@/buttons/videobutton");
-  Foxbot.handlerror = require("@/buttons/handlerror");
+  Foxbot.imagebutton = require("@/app/buttons/imagebutton");
+  Foxbot.videobutton = require("@/app/buttons/videobutton");
+  Foxbot.handlerror = require("@/app/buttons/handlerror");
   Foxbot.TTS = require("google-tts-api");
   // Foxbot.nhentaidl = require("./nhentaidl");
   Foxbot.dashboard = require("@/database/dashboard");

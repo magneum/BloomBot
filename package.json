@@ -27,7 +27,6 @@
     "logger": "logger",
     "routes": "routes",
     "server": "server",
-    "buttons": "buttons",
     "database": "database"
   },
   "packageManager": "yarn@3.3.1",
