@@ -27,7 +27,7 @@ var { watchFile, unwatchFile } = require("fs");
 var { setupMaster, fork } = require("cluster");
 var rl = createInterface(process.stdin, process.stdout);
 
-say("Foxbot\nWhatsApp Multi Device", {
+say("Foxbot\nWhatsApp Multi Device\nUser Bot", {
   font: "chrome",
   align: "center",
   gradient: ["red", "yellow"],
