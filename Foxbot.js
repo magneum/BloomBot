@@ -44,7 +44,7 @@ say(`~ by magneum`, {
 });
 
 function showCommands(path) {
-  say("✭ Loading Commands From Folders ✭", {
+  say("Loading Commands From Folders", {
     font: "console",
     align: "left",
     gradient: ["red", "blue"],
