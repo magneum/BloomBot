@@ -95,8 +95,6 @@ async function magneum() {
     }
     return version;
   };
-  var msgRetryCounterMap = MessageRetryMap;
-
   var urlencodedParser = bodyParser.urlencoded({ extended: false });
   νℓpage.engine("html", require("ejs").renderFile);
   νℓpage.use(express.static("./views"));
@@ -132,7 +130,7 @@ async function magneum() {
   var { state, saveCreds } = await useRemoteFileAuthState();
   var Foxbot = νℓкуяє_вσт({
     auth: state,
-    msgRetryCounterMap,
+    MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
