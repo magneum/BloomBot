@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     if (!OpenBot.args) {
       await OpenBot.sendMessage(ocID.chat, {
@@ -39,18 +48,16 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
       );
     }
 
-    OpenBot
-      .magfetch(
+    OpenBot.magfetch(
+      OpenBot,
+      "https://magneum.vercel.app/api/unsplash?q=" + OpenBot.args.join(" ")
+    ).then(async (response) => {
+      var fetchedata = response.data;
+      console.log(fetchedata);
+      return await OpenBot.imagebutton(
         OpenBot,
-        "https://magneum.vercel.app/api/unsplash?q=" + OpenBot.args.join(" ")
-      )
-      .then(async (response) => {
-        var fetchedata = response.data;
-        console.log(fetchedata);
-        return await OpenBot.imagebutton(
-          OpenBot,
-          ocID,
-          `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        ocID,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *Topic*: ${fetchedata.meta.topic}
 *Query*: ${fetchedata.meta.query}
 *Width*: ${fetchedata.meta.width}
@@ -58,10 +65,11 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 *Color*: ${fetchedata.meta.color}
 *Description*: ${fetchedata.meta.description || null}
 *Alt-Desc*: ${fetchedata.meta.alt_description || null}`,
-          fetchedata.meta.images[0]._raw
-        );
-      });
+        fetchedata.meta.images[0]._raw
+      );
+    });
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

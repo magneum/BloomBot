@@ -76,6 +76,7 @@ module.exports = async (
       });
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

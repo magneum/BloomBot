@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     if (!OpenBot.args) {
       await OpenBot.sendMessage(ocID.chat, {
@@ -65,47 +74,46 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _${OpenBot.prefix}${finalname} text | language-code_`
       );
     } else {
-      OpenBot
-        .axios({
-          method: "get",
-          url:
-            "https://magneum.vercel.app/api/text2speech?q=" +
-            OpenBot.args.join(" "),
-          headers: {
-            accept: "*/*",
-            "accept-language": "en-US,en;q=0.9",
-            "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-          },
-        })
-        .then(async (response) => {
-          var fetchedata = response.data;
-          console.log(fetchedata);
-          return await OpenBot.sendMessage(
-            ocID.chat,
-            {
-              audio: { url: fetchedata.meta.url },
-              mimetype: "audio/mpeg",
-              fileName: "TalkToSpeech" + ".mp3",
-              headerType: 4,
-              contextInfo: {
-                externalAdReply: {
-                  title: "📢Talk To Speech",
-                  body: "❣️Made by OpenBot.",
-                  renderLargerThumbnail: true,
-                  mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
-                  mediaType: 1,
-                  thumbnail: await OpenBot.getBuffer(
-                    "https://i.postimg.cc/qBSnwdzq/White.png"
-                  ),
-                  sourceUrl: "https://bit.ly/OpenBot",
-                },
+      OpenBot.axios({
+        method: "get",
+        url:
+          "https://magneum.vercel.app/api/text2speech?q=" +
+          OpenBot.args.join(" "),
+        headers: {
+          accept: "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+      }).then(async (response) => {
+        var fetchedata = response.data;
+        console.log(fetchedata);
+        return await OpenBot.sendMessage(
+          ocID.chat,
+          {
+            audio: { url: fetchedata.meta.url },
+            mimetype: "audio/mpeg",
+            fileName: "TalkToSpeech" + ".mp3",
+            headerType: 4,
+            contextInfo: {
+              externalAdReply: {
+                title: "📢Talk To Speech",
+                body: "❣️Made by OpenBot.",
+                renderLargerThumbnail: true,
+                mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
+                mediaType: 1,
+                thumbnail: await OpenBot.getBuffer(
+                  "https://i.postimg.cc/qBSnwdzq/White.png"
+                ),
+                sourceUrl: "https://bit.ly/OpenBot",
               },
             },
-            { quoted: ocID }
-          );
-        });
+          },
+          { quoted: ocID }
+        );
+      });
     }
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

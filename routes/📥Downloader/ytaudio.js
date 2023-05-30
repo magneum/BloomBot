@@ -137,3 +137,4 @@ module.exports = async (
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

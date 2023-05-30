@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     if (!OpenBot.quoted) {
       await OpenBot.sendMessage(ocID.chat, {
@@ -84,47 +93,45 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
             );
           }
 
-          return await OpenBot
-            .sendMessage(
-              ocID.chat,
-              {
-                image: OpenBot.fs.readFileSync(Found),
-                caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
+          return await OpenBot.sendMessage(
+            ocID.chat,
+            {
+              image: OpenBot.fs.readFileSync(Found),
+              caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *😺You:* ${OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 │║⦁ *🎭ChatId:* ${ocID.chat.split("@")[0]}
 │║⦁ *📢Console:* ${OpenBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
 *🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*`,
-                footer: `*OpenBot™ bot By KRYKNZ*
+              footer: `*OpenBot™ bot By KRYKNZ*
 
 _*💻HomePage:* ${OpenBot.ShowInfo}_
 _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
-                mentions: [ocID.sender],
-                buttons: [
-                  {
-                    buttonId: `${OpenBot.prefix}Commands`,
-                    buttonText: {
-                      displayText: `${OpenBot.prefix}✈️Commands`,
-                    },
-                    type: 1,
+              mentions: [ocID.sender],
+              buttons: [
+                {
+                  buttonId: `${OpenBot.prefix}Commands`,
+                  buttonText: {
+                    displayText: `${OpenBot.prefix}✈️Commands`,
                   },
-                  {
-                    buttonId: `${OpenBot.prefix}OpenBot`,
-                    buttonText: { displayText: `${OpenBot.prefix}🛰️OpenBot` },
-                    type: 1,
-                  },
-                ],
-                headerType: 4,
-              },
-              {
-                quoted: ocID,
-              }
-            )
-            .then(
-              OpenBot.fs.unlinkSync(Found),
-              OpenBot.fs.unlinkSync(random + ".png")
-            );
+                  type: 1,
+                },
+                {
+                  buttonId: `${OpenBot.prefix}OpenBot`,
+                  buttonText: { displayText: `${OpenBot.prefix}🛰️OpenBot` },
+                  type: 1,
+                },
+              ],
+              headerType: 4,
+            },
+            {
+              quoted: ocID,
+            }
+          ).then(
+            OpenBot.fs.unlinkSync(Found),
+            OpenBot.fs.unlinkSync(random + ".png")
+          );
         }
       );
     } else {
@@ -148,3 +155,4 @@ _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

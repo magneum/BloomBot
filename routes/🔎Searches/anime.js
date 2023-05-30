@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     if (!OpenBot.args.join(" ")) {
       await OpenBot.sendMessage(ocID.chat, {
@@ -39,15 +48,16 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
       );
     }
 
-    OpenBot
-      .magfetch(OpenBot, `https://magneum.vercel.app/api/anime?q=${finalname}`)
-      .then(async (response) => {
-        var viper = response.data;
-        console.log(viper);
-        OpenBot.imagebutton(
-          OpenBot,
-          ocID,
-          `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
+    OpenBot.magfetch(
+      OpenBot,
+      `https://magneum.vercel.app/api/anime?q=${finalname}`
+    ).then(async (response) => {
+      var viper = response.data;
+      console.log(viper);
+      OpenBot.imagebutton(
+        OpenBot,
+        ocID,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
 MAL_Id: ${viper.meta.id_mal}
 TITLE: ${viper.meta.title}
 EN_TITLE: ${viper.meta.en_title}
@@ -75,10 +85,11 @@ SYNONYMS: ${viper.meta.synonyms}
 SYNOPSIS: ${viper.meta.synopsis}
 CHARACTERS: ${viper.meta.charaters}
 STAFF: ${viper.meta.staffs}`,
-          viper.meta.image
-        );
-      });
+        viper.meta.image
+      );
+    });
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];
