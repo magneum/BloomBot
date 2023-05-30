@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     var кяуяєs = await OpenBot.axios.get("https://favqs.com/api/qotd");
     try {
@@ -35,8 +35,8 @@ module.exports = async (OpenBot, ocID) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
@@ -45,8 +45,8 @@ module.exports = async (OpenBot, ocID) => {
     } catch {
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
@@ -54,7 +54,7 @@ module.exports = async (OpenBot, ocID) => {
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

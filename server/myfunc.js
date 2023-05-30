@@ -88,21 +88,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var ocID = Math.floor((seconds % 3600) / 60);
+  var vChat = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    ocID > 0 ? ocID + (ocID == 1 ? " minute, " : " minutes, ") : "";
+    vChat > 0 ? vChat + (vChat == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var ocID = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var vChat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, ocID, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, vChat, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -226,134 +226,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (OpenBot, ocID, store) => {
-  if (!ocID) return ocID;
+exports.mMake = async (OpenBot, vChat, store) => {
+  if (!vChat) return vChat;
   var νproto = proto.WebMessageInfo;
-  if (ocID.key) {
-    ocID.id = ocID.key.id;
-    ocID.isBaileys =
-      ocID.id.startsWith("BAE5") && ocID.id.length === 16;
-    ocID.chat = ocID.key.remoteJid;
-    ocID.fromMe = ocID.key.fromMe;
-    ocID.isGroup = ocID.chat.endsWith("@g.us");
-    ocID.sender = OpenBot.decodeJid(
-      (ocID.fromMe && OpenBot.user.id) ||
-        ocID.participant ||
-        ocID.key.participant ||
-        ocID.chat ||
+  if (vChat.key) {
+    vChat.id = vChat.key.id;
+    vChat.isBaileys =
+      vChat.id.startsWith("BAE5") && vChat.id.length === 16;
+    vChat.chat = vChat.key.remoteJid;
+    vChat.fromMe = vChat.key.fromMe;
+    vChat.isGroup = vChat.chat.endsWith("@g.us");
+    vChat.sender = OpenBot.decodeJid(
+      (vChat.fromMe && OpenBot.user.id) ||
+        vChat.participant ||
+        vChat.key.participant ||
+        vChat.chat ||
         ""
     );
-    if (ocID.isGroup)
-      ocID.participant = OpenBot.decodeJid(ocID.key.participant) || "";
+    if (vChat.isGroup)
+      vChat.participant = OpenBot.decodeJid(vChat.key.participant) || "";
   }
-  if (ocID.message) {
-    ocID.mtype = getContentType(ocID.message);
-    ocID.msg =
-      ocID.mtype == "viewOnceMessage"
-        ? ocID.message[ocID.mtype].message[
-            getContentType(ocID.message[ocID.mtype].message)
+  if (vChat.message) {
+    vChat.mtype = getContentType(vChat.message);
+    vChat.msg =
+      vChat.mtype == "viewOnceMessage"
+        ? vChat.message[vChat.mtype].message[
+            getContentType(vChat.message[vChat.mtype].message)
           ]
-        : ocID.message[ocID.mtype];
-    ocID.body =
-      ocID.message.conversation ||
-      ocID.msg.caption ||
-      ocID.msg.text ||
-      (ocID.mtype == "listResponseMessage" &&
-        ocID.msg.singleSelectReply.selectedRowId) ||
-      (ocID.mtype == "buttonsResponseMessage" &&
-        ocID.msg.selectedButtonId) ||
-      (ocID.mtype == "viewOnceMessage" && ocID.msg.caption) ||
-      ocID.text;
-    var quoted = (ocID.quoted = ocID.msg.contextInfo
-      ? ocID.msg.contextInfo.quotedMessage
+        : vChat.message[vChat.mtype];
+    vChat.body =
+      vChat.message.conversation ||
+      vChat.msg.caption ||
+      vChat.msg.text ||
+      (vChat.mtype == "listResponseMessage" &&
+        vChat.msg.singleSelectReply.selectedRowId) ||
+      (vChat.mtype == "buttonsResponseMessage" &&
+        vChat.msg.selectedButtonId) ||
+      (vChat.mtype == "viewOnceMessage" && vChat.msg.caption) ||
+      vChat.text;
+    var quoted = (vChat.quoted = vChat.msg.contextInfo
+      ? vChat.msg.contextInfo.quotedMessage
       : null);
-    ocID.mentionedJid = ocID.msg.contextInfo
-      ? ocID.msg.contextInfo.mentionedJid
+    vChat.mentionedJid = vChat.msg.contextInfo
+      ? vChat.msg.contextInfo.mentionedJid
       : [];
-    if (ocID.quoted) {
+    if (vChat.quoted) {
       var type = getContentType(quoted);
-      ocID.quoted = ocID.quoted[type];
+      vChat.quoted = vChat.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(ocID.quoted);
-        ocID.quoted = ocID.quoted[type];
+        type = getContentType(vChat.quoted);
+        vChat.quoted = vChat.quoted[type];
       }
-      if (typeof ocID.quoted === "string")
-        ocID.quoted = {
-          text: ocID.quoted,
+      if (typeof vChat.quoted === "string")
+        vChat.quoted = {
+          text: vChat.quoted,
         };
-      ocID.quoted.mtype = type;
-      ocID.quoted.id = ocID.msg.contextInfo.stanzaId;
-      ocID.quoted.chat = ocID.msg.contextInfo.remoteJid || ocID.chat;
-      ocID.quoted.isBaileys = ocID.quoted.id
-        ? ocID.quoted.id.startsWith("BAE5") &&
-          ocID.quoted.id.length === 16
+      vChat.quoted.mtype = type;
+      vChat.quoted.id = vChat.msg.contextInfo.stanzaId;
+      vChat.quoted.chat = vChat.msg.contextInfo.remoteJid || vChat.chat;
+      vChat.quoted.isBaileys = vChat.quoted.id
+        ? vChat.quoted.id.startsWith("BAE5") &&
+          vChat.quoted.id.length === 16
         : false;
-      ocID.quoted.sender = OpenBot.decodeJid(
-        ocID.msg.contextInfo.participant
+      vChat.quoted.sender = OpenBot.decodeJid(
+        vChat.msg.contextInfo.participant
       );
-      ocID.quoted.fromMe =
-        ocID.quoted.sender === (OpenBot.user && OpenBot.user.id);
-      ocID.quoted.text =
-        ocID.quoted.text ||
-        ocID.quoted.caption ||
-        ocID.quoted.conversation ||
-        ocID.quoted.contentText ||
-        ocID.quoted.selectedDisplayText ||
-        ocID.quoted.title ||
+      vChat.quoted.fromMe =
+        vChat.quoted.sender === (OpenBot.user && OpenBot.user.id);
+      vChat.quoted.text =
+        vChat.quoted.text ||
+        vChat.quoted.caption ||
+        vChat.quoted.conversation ||
+        vChat.quoted.contentText ||
+        vChat.quoted.selectedDisplayText ||
+        vChat.quoted.title ||
         "";
-      ocID.quoted.mentionedJid = ocID.msg.contextInfo
-        ? ocID.msg.contextInfo.mentionedJid
+      vChat.quoted.mentionedJid = vChat.msg.contextInfo
+        ? vChat.msg.contextInfo.mentionedJid
         : [];
-      ocID.getQuotedObj = ocID.getQuotedMessage = async () => {
-        if (!ocID.quoted.id) return false;
+      vChat.getQuotedObj = vChat.getQuotedMessage = async () => {
+        if (!vChat.quoted.id) return false;
         var q = await store.loadMessage(
-          ocID.chat,
-          ocID.quoted.id,
+          vChat.chat,
+          vChat.quoted.id,
           OpenBot
         );
         return exports.mMake(OpenBot, q, store);
       };
-      var vM = (ocID.quoted.fakeObj = νproto.fromObject({
+      var vM = (vChat.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: ocID.quoted.chat,
-          fromMe: ocID.quoted.fromMe,
-          id: ocID.quoted.id,
+          remoteJid: vChat.quoted.chat,
+          fromMe: vChat.quoted.fromMe,
+          id: vChat.quoted.id,
         },
         message: quoted,
-        ...(ocID.isGroup ? { participant: ocID.quoted.sender } : {}),
+        ...(vChat.isGroup ? { participant: vChat.quoted.sender } : {}),
       }));
-      ocID.quoted.delete = () =>
-        OpenBot.sendMessage(ocID.quoted.chat, { delete: vM.key });
-      ocID.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      vChat.quoted.delete = () =>
+        OpenBot.sendMessage(vChat.quoted.chat, { delete: vM.key });
+      vChat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         OpenBot.copyNForward(jid, vM, forceForward, options);
-      ocID.quoted.download = () =>
-        OpenBot.downloadMediaMessage(ocID.quoted);
+      vChat.quoted.download = () =>
+        OpenBot.downloadMediaMessage(vChat.quoted);
     }
   }
 
-  if (ocID.msg.url)
-    ocID.download = () => OpenBot.downloadMediaMessage(ocID.msg);
-  ocID.text =
-    ocID.msg.text ||
-    ocID.msg.caption ||
-    ocID.message.conversation ||
-    ocID.msg.contentText ||
-    ocID.msg.selectedDisplayText ||
-    ocID.msg.title ||
+  if (vChat.msg.url)
+    vChat.download = () => OpenBot.downloadMediaMessage(vChat.msg);
+  vChat.text =
+    vChat.msg.text ||
+    vChat.msg.caption ||
+    vChat.message.conversation ||
+    vChat.msg.contentText ||
+    vChat.msg.selectedDisplayText ||
+    vChat.msg.title ||
     "";
-  ocID.reply = (text, chatId = ocID.chat, options = {}) =>
+  vChat.reply = (text, chatId = vChat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? OpenBot.sendMedia(chatId, text, "file", "", ocID, { ...options })
-      : OpenBot.sendText(chatId, text, ocID, { ...options });
-  ocID.copy = () =>
-    exports.mMake(OpenBot, νproto.fromObject(νproto.toObject(ocID)));
-  ocID.copyNForward = (
-    jid = ocID.chat,
+      ? OpenBot.sendMedia(chatId, text, "file", "", vChat, { ...options })
+      : OpenBot.sendText(chatId, text, vChat, { ...options });
+  vChat.copy = () =>
+    exports.mMake(OpenBot, νproto.fromObject(νproto.toObject(vChat)));
+  vChat.copyNForward = (
+    jid = vChat.chat,
     forceForward = false,
     options = {}
-  ) => OpenBot.copyNForward(jid, ocID, forceForward, options);
+  ) => OpenBot.copyNForward(jid, vChat, forceForward, options);
 
-  return ocID;
+  return vChat;
 };
 
 var file = require.resolve(__filename);

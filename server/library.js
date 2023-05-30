@@ -19,7 +19,7 @@ const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (OpenBot, ocID, update, store) => {
+module.exports = async (OpenBot, vChat, update, store) => {
   const routePath = path.join(__dirname, "..", "routes");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -41,41 +41,41 @@ module.exports = async (OpenBot, ocID, update, store) => {
     return null;
   };
 
-  const gmeta = ocID.isGroup
-    ? await OpenBot.groupMetadata(ocID.chat).catch((error) => {})
+  const gmeta = vChat.isGroup
+    ? await OpenBot.groupMetadata(vChat.chat).catch((error) => {})
     : "";
-  const groupName = ocID.isGroup ? gmeta.subject : "";
-  const participants = ocID.isGroup ? await gmeta.participants : "";
-  const groupAdmins = ocID.isGroup
+  const groupName = vChat.isGroup ? gmeta.subject : "";
+  const participants = vChat.isGroup ? await gmeta.participants : "";
+  const groupAdmins = vChat.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = ocID.isGroup ? gmeta.owner : "";
-  const isbotAdmin = ocID.isGroup
+  const groupOwner = vChat.isGroup ? gmeta.owner : "";
+  const isbotAdmin = vChat.isGroup
     ? groupAdmins.includes(await OpenBot.decodeJid(OpenBot.user.id))
     : false;
-  const isAdmin = ocID.isGroup
-    ? groupAdmins.includes(ocID.sender)
+  const isAdmin = vChat.isGroup
+    ? groupAdmins.includes(vChat.sender)
     : false;
 
   const vbody =
-    ocID.mtype === "conversation"
-      ? ocID.message.conversation
-      : ocID.mtype == "imageMessage"
-      ? ocID.message.imageMessage.caption
-      : ocID.mtype == "videoMessage"
-      ? ocID.message.videoMessage.caption
-      : ocID.mtype == "extendedTextMessage"
-      ? ocID.message.extendedTextMessage.text
-      : ocID.mtype == "buttonsResponseMessage"
-      ? ocID.message.buttonsResponseMessage.selectedButtonId
-      : ocID.mtype == "listResponseMessage"
-      ? ocID.message.listResponseMessage.singleSelectReply.selectedRowId
-      : ocID.mtype == "templateButtonReplyMessage"
-      ? ocID.message.templateButtonReplyMessage.selectedId
-      : ocID.mtype === "messageContextInfo"
-      ? ocID.message.buttonsResponseMessage?.selectedButtonId ||
-        ocID.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        ocID.text
+    vChat.mtype === "conversation"
+      ? vChat.message.conversation
+      : vChat.mtype == "imageMessage"
+      ? vChat.message.imageMessage.caption
+      : vChat.mtype == "videoMessage"
+      ? vChat.message.videoMessage.caption
+      : vChat.mtype == "extendedTextMessage"
+      ? vChat.message.extendedTextMessage.text
+      : vChat.mtype == "buttonsResponseMessage"
+      ? vChat.message.buttonsResponseMessage.selectedButtonId
+      : vChat.mtype == "listResponseMessage"
+      ? vChat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : vChat.mtype == "templateButtonReplyMessage"
+      ? vChat.message.templateButtonReplyMessage.selectedId
+      : vChat.mtype === "messageContextInfo"
+      ? vChat.message.buttonsResponseMessage?.selectedButtonId ||
+        vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        vChat.text
       : "";
   const vcommand = vbody
     .replace(OpenBot.prefix, "")
@@ -101,11 +101,11 @@ module.exports = async (OpenBot, ocID, update, store) => {
   );
   console.log(
     OpenBot.chalk.blueBright("📱USER_NUMBER: "),
-    OpenBot.chalk.green(ocID.sender)
+    OpenBot.chalk.green(vChat.sender)
   );
   console.log(
     OpenBot.chalk.blueBright("💬CHAT_Id: "),
-    OpenBot.chalk.green(ocID.chat)
+    OpenBot.chalk.green(vChat.chat)
   );
   console.log(
     "◎✕———————————————————————✕ ⒸOpenBot by magneum™ ✕———————————————————————✕◎\n"
@@ -122,7 +122,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           OpenBot,
-          ocID,
+          vChat,
           gmeta,
           isAdmin,
           groupName,
@@ -147,9 +147,9 @@ module.exports = async (OpenBot, ocID, update, store) => {
     if (suggestedCommand) {
       const suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await OpenBot.sendMessage(ocID.chat, {
+      return await OpenBot.sendMessage(vChat.chat, {
         image: { url: OpenBot.display },
-        caption: `*📢ID:* ${ocID.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ID:* ${vChat.chat}\n\n${suggestionMessage}`,
         footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -166,16 +166,16 @@ module.exports = async (OpenBot, ocID, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [ocID.sender],
+        mentions: [vChat.sender],
       });
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${OpenBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await OpenBot.sendMessage(ocID.chat, {
+      return await OpenBot.sendMessage(vChat.chat, {
         image: { url: OpenBot.display },
-        caption: `*📢ID:* ${ocID.chat}\n\n${errorMessage}`,
+        caption: `*📢ID:* ${vChat.chat}\n\n${errorMessage}`,
         footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -185,7 +185,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [ocID.sender],
+        mentions: [vChat.sender],
       });
     }
   }

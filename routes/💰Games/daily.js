@@ -19,20 +19,20 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     OpenBot.Economy.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, ocID, error);
+          return OpenBot.handlerror(OpenBot, vChat, error);
         }
 
         if (!userEco) {
           new OpenBot.Economy({
-            Id: ocID.sender,
+            Id: vChat.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -43,12 +43,12 @@ module.exports = async (OpenBot, ocID) => {
           })
             .save()
             .catch((error) => {
-              return OpenBot.handlerror(OpenBot, ocID, error);
+              return OpenBot.handlerror(OpenBot, vChat, error);
             });
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -62,8 +62,8 @@ module.exports = async (OpenBot, ocID) => {
             );
             return await OpenBot.imagebutton(
               OpenBot,
-              ocID,
-              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              vChat,
+              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
               OpenBot.display
@@ -73,12 +73,12 @@ module.exports = async (OpenBot, ocID) => {
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return OpenBot.handlerror(OpenBot, ocID, error);
+            return OpenBot.handlerror(OpenBot, vChat, error);
           });
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
@@ -88,7 +88,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

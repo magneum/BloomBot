@@ -19,9 +19,9 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   if (!OpenBot.mentionByReply) {
-    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -30,7 +30,7 @@ module.exports = async (OpenBot, ocID) => {
 > Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (OpenBot.args.length === 0) {
-    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -39,7 +39,7 @@ module.exports = async (OpenBot, ocID) => {
 > Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(OpenBot.args[0])) {
-    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -48,7 +48,7 @@ module.exports = async (OpenBot, ocID) => {
 > Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (OpenBot.args[0].match(/[a-z]/i)) {
-    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -64,8 +64,8 @@ module.exports = async (OpenBot, ocID) => {
         ? OpenBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await OpenBot.getName(receiver);
-    if (receiver === ocID.sender) {
-      return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    if (receiver === vChat.sender) {
+      return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -76,13 +76,13 @@ module.exports = async (OpenBot, ocID) => {
 
     await OpenBot.Economy.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, uPayer) => {
-        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
         if (!uPayer) {
           new OpenBot.Economy({
-            Id: ocID.sender,
+            Id: vChat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,9 +93,9 @@ module.exports = async (OpenBot, ocID) => {
           })
             .save()
             .catch((error) => {
-              return OpenBot.handlerror(OpenBot, ocID, error);
+              return OpenBot.handlerror(OpenBot, vChat, error);
             });
-          return ocID.reply(`*😥Apologies:* _${
+          return vChat.reply(`*😥Apologies:* _${
             OpenBot.pushname || OpenBot.Tname
           }_ 
 
@@ -107,7 +107,7 @@ module.exports = async (OpenBot, ocID) => {
         }
 
         if (parseInt(OpenBot.args[0]) > uPayer.money) {
-          return ocID.reply(`*😥Apologies:* _${
+          return vChat.reply(`*😥Apologies:* _${
             OpenBot.pushname || OpenBot.Tname
           }_ 
 
@@ -125,7 +125,7 @@ module.exports = async (OpenBot, ocID) => {
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+              if (error) return OpenBot.handlerror(OpenBot, vChat, error);
               if (!uBonus) {
                 new OpenBot.Economy({
                   Id: receiver,
@@ -139,16 +139,16 @@ module.exports = async (OpenBot, ocID) => {
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, ocID, error);
+                    return OpenBot.handlerror(OpenBot, vChat, error);
                   });
                 uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
                 uPayer.save().catch((error) => {
-                  return OpenBot.handlerror(OpenBot, ocID, error);
+                  return OpenBot.handlerror(OpenBot, vChat, error);
                 });
                 return await OpenBot.imagebutton(
                   OpenBot,
-                  ocID,
-                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  vChat,
+                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -165,16 +165,16 @@ module.exports = async (OpenBot, ocID) => {
 
               uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
               uPayer.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               uBonus.money = uBonus.money + parseInt(OpenBot.args[0]);
               uBonus.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -193,7 +193,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } else {
-    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return vChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

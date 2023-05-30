@@ -21,7 +21,7 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
-  ocID,
+  vChat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,26 +29,26 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await OpenBot.sendMessage(ocID.chat, {
+  await OpenBot.sendMessage(vChat.chat, {
     react: {
-      text: "🔖",
-      key: ocID.key,
+      text: "⚡",
+      key: vChat.key,
     },
   });
   try {
-    await OpenBot.sendMessage(ocID.chat, {
+    await OpenBot.sendMessage(vChat.chat, {
       react: {
         text: "❌",
-        key: ocID.key,
+        key: vChat.key,
       },
     });
-    return ocID.reply(
+    return vChat.reply(
       `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

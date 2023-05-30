@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     if (!OpenBot.quoted) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -46,9 +46,9 @@ module.exports = async (OpenBot, ocID) => {
         `${OpenBot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
           if (error) {
-            return ocID.reply(`*😺You:* ${
+            return vChat.reply(`*😺You:* ${
               OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${ocID.chat}
+            }\n*📢Id:* ${vChat.chat}
 
 *😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
@@ -59,7 +59,7 @@ module.exports = async (OpenBot, ocID) => {
           } else {
             var Thumb = await OpenBot.getBuffer(OpenBot.display);
             return await OpenBot.sendMessage(
-              ocID.chat,
+              vChat.chat,
               {
                 audio: OpenBot.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
@@ -74,19 +74,19 @@ module.exports = async (OpenBot, ocID) => {
                 mimetype: "audio/mpeg",
                 fileName: `${one.title}.mp3`,
               },
-              { quoted: ocID }
+              { quoted: vChat }
             ).then(OpenBot.fs.unlinkSync(`${random}.mp3`));
           }
         }
       );
     } else {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -97,7 +97,7 @@ module.exports = async (OpenBot, ocID) => {
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

@@ -21,19 +21,19 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
-  ocID,
+  vChat,
   isAdmin,
   isbotAdmin,
 ) => {
   try {
-    if (!ocID.isGroup) {
-      await OpenBot.sendMessage(ocID.chat, {
+    if (!vChat.isGroup) {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -41,13 +41,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -55,13 +55,13 @@ module.exports = async (
       );
     }
     if (!isbotAdmin) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -69,13 +69,13 @@ module.exports = async (
       );
     }
     if (!/image/.test(OpenBot.mime)) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -86,13 +86,13 @@ module.exports = async (
       );
     }
     if (/webp/.test(OpenBot.mime)) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -104,11 +104,11 @@ module.exports = async (
     }
 
     var media = await OpenBot.downloadAndSaveMediaMessage(OpenBot.quoted);
-    await OpenBot.updateProfilePicture(ocID.chat, { url: media })
+    await OpenBot.updateProfilePicture(vChat.chat, { url: media })
       .then(
         OpenBot.imagebutton(
           OpenBot,
-          ocID,
+          vChat,
           `> *Group icone has been changed: ${
             OpenBot.pushname || OpenBot.Tname
           }*`,
@@ -117,13 +117,13 @@ module.exports = async (
       )
       .catch(async (error) => {
         OpenBot.fs.unlinkSync(media);
-        await OpenBot.sendMessage(ocID.chat, {
+        await OpenBot.sendMessage(vChat.chat, {
           react: {
             text: "❌",
-            key: ocID.key,
+            key: vChat.key,
           },
         });
-        return ocID.reply(
+        return vChat.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -134,7 +134,7 @@ module.exports = async (
         );
       });
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

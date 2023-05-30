@@ -19,18 +19,18 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!OpenBot.args[0] && !OpenBot.args[1]) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -46,13 +46,13 @@ module.exports = async (OpenBot, ocID) => {
     }
 
     if (formatColor.test(OpenBot.args[0])) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -68,13 +68,13 @@ module.exports = async (OpenBot, ocID) => {
     }
 
     if (formatAmount.test(OpenBot.args[1])) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -94,13 +94,13 @@ module.exports = async (OpenBot, ocID) => {
       !OpenBot.args[0].includes("black") &&
       !OpenBot.args[0].includes("purple")
     ) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -120,8 +120,8 @@ module.exports = async (OpenBot, ocID) => {
     if (AmountRoom < 50) {
       return await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
         OpenBot.display
@@ -131,8 +131,8 @@ module.exports = async (OpenBot, ocID) => {
     if (AmountRoom > 800) {
       return await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
         OpenBot.display
@@ -142,8 +142,8 @@ module.exports = async (OpenBot, ocID) => {
     if (ColorRoom === "red" && AmountRoom > 200) {
       return await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
         OpenBot.display
@@ -153,8 +153,8 @@ module.exports = async (OpenBot, ocID) => {
     if (ColorRoom === "black" && AmountRoom > 500) {
       return await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
         OpenBot.display
@@ -164,8 +164,8 @@ module.exports = async (OpenBot, ocID) => {
     if (ColorRoom === "purple" && AmountRoom > 800) {
       return await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
         OpenBot.display
@@ -174,16 +174,16 @@ module.exports = async (OpenBot, ocID) => {
 
     OpenBot.Economy.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, ocID, error);
+          return OpenBot.handlerror(OpenBot, vChat, error);
         }
 
         if (!userEco) {
           var newUser = new OpenBot.Economy({
-            Id: ocID.sender,
+            Id: vChat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -193,12 +193,12 @@ module.exports = async (OpenBot, ocID) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return OpenBot.handlerror(OpenBot, ocID, error);
+            return OpenBot.handlerror(OpenBot, vChat, error);
           });
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
             OpenBot.display
           );
@@ -206,27 +206,27 @@ module.exports = async (OpenBot, ocID) => {
 
         OpenBot.Gamble.findOne(
           {
-            Id: ocID.sender,
+            Id: vChat.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return OpenBot.handlerror(OpenBot, ocID, error);
+              return OpenBot.handlerror(OpenBot, vChat, error);
             }
 
             if (!userGamble) {
               var newUser = new OpenBot.Gamble({
-                Id: ocID.sender,
-                serverId: ocID.chat,
+                Id: vChat.sender,
+                serverId: vChat.chat,
                 Gambledone: 0,
                 Gambvarimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
                 OpenBot.display
@@ -242,8 +242,8 @@ module.exports = async (OpenBot, ocID) => {
               );
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                 OpenBot.display
@@ -263,13 +263,13 @@ module.exports = async (OpenBot, ocID) => {
             var Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
-                  key: ocID.key,
+                  key: vChat.key,
                 },
               });
-              return ocID.reply(
+              return vChat.reply(
                 `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -286,13 +286,13 @@ module.exports = async (OpenBot, ocID) => {
 
             Color = Color.toLowerCase();
             if (!money) {
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
-                  key: ocID.key,
+                  key: vChat.key,
                 },
               });
-              return ocID.reply(
+              return vChat.reply(
                 `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -308,13 +308,13 @@ module.exports = async (OpenBot, ocID) => {
             }
 
             if (money > CurrentMoney) {
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
-                  key: ocID.key,
+                  key: vChat.key,
                 },
               });
-              return ocID.reply(
+              return vChat.reply(
                 `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -336,13 +336,13 @@ module.exports = async (OpenBot, ocID) => {
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
-                  key: ocID.key,
+                  key: vChat.key,
                 },
               });
-              return ocID.reply(
+              return vChat.reply(
                 `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -362,15 +362,15 @@ module.exports = async (OpenBot, ocID) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               await userEco.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
                 OpenBot.display
@@ -382,15 +382,15 @@ module.exports = async (OpenBot, ocID) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               await userEco.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
                 OpenBot.display
@@ -402,15 +402,15 @@ module.exports = async (OpenBot, ocID) => {
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               await userEco.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, ocID, error);
+                return OpenBot.handlerror(OpenBot, vChat, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
                 OpenBot.display
@@ -420,15 +420,15 @@ module.exports = async (OpenBot, ocID) => {
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return OpenBot.handlerror(OpenBot, ocID, error);
+              return OpenBot.handlerror(OpenBot, vChat, error);
             });
             await userEco.save().catch((error) => {
-              return OpenBot.handlerror(OpenBot, ocID, error);
+              return OpenBot.handlerror(OpenBot, vChat, error);
             });
             return await OpenBot.imagebutton(
               OpenBot,
-              ocID,
-              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              vChat,
+              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
               OpenBot.display
@@ -438,7 +438,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

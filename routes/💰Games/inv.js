@@ -19,17 +19,17 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     OpenBot.Robbery.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, userRob) => {
-        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
         if (!userRob) {
           new OpenBot.Robbery({
-            Id: ocID.sender,
+            Id: vChat.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -37,11 +37,11 @@ module.exports = async (OpenBot, ocID) => {
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             OpenBot.display
@@ -49,8 +49,8 @@ module.exports = async (OpenBot, ocID) => {
         }
         return await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+          vChat,
+          `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,
@@ -59,7 +59,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

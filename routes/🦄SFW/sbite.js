@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     OpenBot.magfetch(OpenBot, "https://magneum.vercel.app/api/sfw?q=bite").then(
       async (response) => {
@@ -28,8 +28,8 @@ module.exports = async (OpenBot, ocID) => {
 
         return await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+          vChat,
+          `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *Topic*: ${fetchedata.meta.topic}
 *Query*: ${fetchedata.meta.query}`,
           fetchedata.meta.url
@@ -37,7 +37,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

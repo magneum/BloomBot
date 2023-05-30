@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     if (!OpenBot.quoted) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -48,7 +48,7 @@ module.exports = async (OpenBot, ocID) => {
           if (error) {
             return OpenBot.reply(`*😺You:* ${
               OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${ocID.chat}
+            }\n*📢Id:* ${vChat.chat}
 
 *😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
@@ -67,13 +67,13 @@ module.exports = async (OpenBot, ocID) => {
           } else if (OpenBot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await OpenBot.sendMessage(ocID.chat, {
+            await OpenBot.sendMessage(vChat.chat, {
               react: {
                 text: "❌",
-                key: ocID.key,
+                key: vChat.key,
               },
             });
-            return ocID.reply(
+            return vChat.reply(
               `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -85,21 +85,21 @@ module.exports = async (OpenBot, ocID) => {
           }
 
           return await OpenBot.sendMessage(
-            ocID.chat,
+            vChat.chat,
             {
               image: OpenBot.fs.readFileSync(Found),
               caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *😺You:* ${OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${ocID.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${vChat.chat.split("@")[0]}
 │║⦁ *📢Console:* ${OpenBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*`,
+*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*`,
               footer: `*OpenBot™ bot By KRYKNZ*
 
 _*💻HomePage:* ${OpenBot.ShowInfo}_
 _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
-              mentions: [ocID.sender],
+              mentions: [vChat.sender],
               buttons: [
                 {
                   buttonId: `${OpenBot.prefix}Commands`,
@@ -117,7 +117,7 @@ _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
               headerType: 4,
             },
             {
-              quoted: ocID,
+              quoted: vChat,
             }
           ).then(
             OpenBot.fs.unlinkSync(Found),
@@ -126,13 +126,13 @@ _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
         }
       );
     } else {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -143,7 +143,7 @@ _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

@@ -20,16 +20,16 @@ var ppth = require("path");
 var ytdl = require("ytdl-secktor");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     if (!OpenBot.args) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -47,10 +47,10 @@ module.exports = async (OpenBot, ocID) => {
         console.log(fetchedata);
 
         return await OpenBot.sendMessage(
-          ocID.chat,
+          vChat.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
-            caption: `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
+            caption: `*⚡Here, ${fpth} for ${OpenBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
@@ -71,18 +71,18 @@ module.exports = async (OpenBot, ocID) => {
               },
             ],
             headerType: 4,
-            mentions: [ocID.sender],
+            mentions: [vChat.sender],
           },
           {
-            contextInfo: { mentionedJid: [ocID.sender] },
-            quoted: ocID,
+            contextInfo: { mentionedJid: [vChat.sender] },
+            quoted: vChat,
           }
         );
 
         await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
+          vChat,
+          `*⚡Here, ${fpth} for ${OpenBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
@@ -100,7 +100,7 @@ module.exports = async (OpenBot, ocID) => {
           stream.on("finish", resolve);
         });
         await OpenBot.sendMessage(
-          ocID.chat,
+          vChat.chat,
           {
             audio: OpenBot.fs.readFileSync(`./${fetchedata.uuid}`),
             mimetype: "audio/mpeg",
@@ -121,11 +121,11 @@ module.exports = async (OpenBot, ocID) => {
               },
             },
           },
-          { quoted: ocID }
+          { quoted: vChat }
         ).then(OpenBot.fs.unlinkSync(`./${fetchedata.uuid}`));
       });
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

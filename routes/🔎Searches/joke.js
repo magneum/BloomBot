@@ -19,9 +19,9 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
-    var кяуяєs = await OpenBot.axios.get("https://ocID.life/api/v2/fact");
+    var кяуяєs = await OpenBot.axios.get("https://vChat.life/api/v2/fact");
     try {
       var кяуяєsi = await OpenBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -35,22 +35,22 @@ module.exports = async (OpenBot, ocID) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${await OpenBot.getDadjoke()}`,
         bsoni.url_image
       );
     } catch {
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${await OpenBot.getDadjoke()}`,
         "./public/OpenBot/OpenBot (8).png"
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

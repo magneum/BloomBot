@@ -19,14 +19,14 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
-    var server = await OpenBot.nsfwCheck.findOne({ serverId: ocID.chat });
+    var server = await OpenBot.nsfwCheck.findOne({ serverId: vChat.chat });
     if (!server) {
-      await OpenBot.sendMessage(ocID.chat, {
-        react: { text: "❌", key: ocID.key },
+      await OpenBot.sendMessage(vChat.chat, {
+        react: { text: "❌", key: vChat.key },
       });
-      return ocID.reply(`*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+      return vChat.reply(`*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -39,16 +39,16 @@ module.exports = async (OpenBot, ocID) => {
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
-      await OpenBot.sendMessage(ocID.chat, {
-        react: { text: "❌", key: ocID.key },
+      await OpenBot.sendMessage(vChat.chat, {
+        react: { text: "❌", key: vChat.key },
       });
-      return ocID.reply(`*😥 Apologies:* _${OpenBot.pushname}_
+      return vChat.reply(`*😥 Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
 
     var message = `
-*🔖 Here is ${fpth} for @${OpenBot.Tname || OpenBot.pushname}:*
+*⚡ Here is ${fpth} for @${OpenBot.Tname || OpenBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
 ║⦁ 💡 Title: ${fetchedata.meta.title || "Not available"}
@@ -67,12 +67,12 @@ module.exports = async (OpenBot, ocID) => {
 ╚═══════⋑`;
     await OpenBot.imagebutton(
       OpenBot,
-      ocID,
+      vChat,
       message,
       fetchedata.meta.thumbnail
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

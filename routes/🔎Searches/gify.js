@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     if (!OpenBot.args.join(" ")) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -46,7 +46,7 @@ module.exports = async (OpenBot, ocID) => {
         )}&key=LIVDSRZULELA&limit=8`
       );
       return await OpenBot.sendMessage(
-        ocID.chat,
+        vChat.chat,
         {
           gifPlayback: true,
           video: {
@@ -55,19 +55,19 @@ module.exports = async (OpenBot, ocID) => {
           },
           caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${fpth}
-*⚡for:* @${ocID.sender.split("@")[0] || ""}`,
-          mentions: [ocID.sender],
+*⚡for:* @${vChat.sender.split("@")[0] || ""}`,
+          mentions: [vChat.sender],
         },
-        { quoted: ocID }
+        { quoted: vChat }
       );
     } catch (Èrrðr) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -75,7 +75,7 @@ module.exports = async (OpenBot, ocID) => {
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

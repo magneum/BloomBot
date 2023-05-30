@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, isAdmin) => {
+module.exports = async (OpenBot, vChat, isAdmin) => {
   try {
     if (!OpenBot.quoted) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -41,13 +41,13 @@ module.exports = async (OpenBot, ocID, isAdmin) => {
 
     var { isBaileys } = OpenBot.quoted;
     if (!isBaileys) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -57,17 +57,17 @@ module.exports = async (OpenBot, ocID, isAdmin) => {
 > _${OpenBot.prefix}${fpth} reply to Image/Video/Text_`
       );
     } else {
-      return await OpenBot.sendMessage(ocID.chat, {
+      return await OpenBot.sendMessage(vChat.chat, {
         delete: {
-          remoteJid: ocID.chat,
+          remoteJid: vChat.chat,
           fromMe: true,
-          id: ocID.quoted.id,
-          participant: ocID.quoted.sender,
+          id: vChat.quoted.id,
+          participant: vChat.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

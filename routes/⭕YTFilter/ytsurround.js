@@ -20,17 +20,17 @@ var path = require("path");
 var fileName = path.basename(__filename);
 var functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     var query = OpenBot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !OpenBot.TubeRegex.test(query))
     ) {
-      await OpenBot.sendMessage(ocID.chat, {
-        react: { text: "❌", key: ocID.key },
+      await OpenBot.sendMessage(vChat.chat, {
+        react: { text: "❌", key: vChat.key },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥 Apologies:* ${OpenBot.pushname || OpenBot.Tname}
 *❌ Error* 
 > _No query provided!_
@@ -60,7 +60,7 @@ module.exports = async (OpenBot, ocID) => {
     var authorName = searchData.AUTHOR_NAME || "Not available";
     var description = searchData.DESCRIPTION || "No description available";
     var message = `
-*🔖 Here's the information for ${functionName} requested by ${
+*⚡ Here's the information for ${functionName} requested by ${
       OpenBot.pushname || OpenBot.Tname
     }:*
 *🎵 Title:* ${searchData.TITLE}
@@ -71,7 +71,7 @@ module.exports = async (OpenBot, ocID) => {
 
 *📜 Description:*
 ${description}`;
-    await OpenBot.sendMessage(ocID.chat, {
+    await OpenBot.sendMessage(vChat.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await OpenBot.sendMessage(ocID.chat, {
+    await OpenBot.sendMessage(vChat.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -108,7 +108,7 @@ ${description}`;
     });
     OpenBot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

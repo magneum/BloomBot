@@ -16,28 +16,28 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (OpenBot, ocID, update, store) => {
+module.exports = async (OpenBot, vChat, update, store) => {
   OpenBot.body =
-    ocID.mtype === "conversation"
-      ? ocID.message.conversation
-      : ocID.mtype == "imageMessage"
-      ? ocID.message.imageMessage.caption
-      : ocID.mtype == "videoMessage"
-      ? ocID.message.videoMessage.caption
-      : ocID.mtype == "extendedTextMessage"
-      ? ocID.message.extendedTextMessage.text
-      : ocID.mtype == "buttonsResponseMessage"
-      ? ocID.message.buttonsResponseMessage.selectedButtonId
-      : ocID.mtype == "listResponseMessage"
-      ? ocID.message.listResponseMessage.singleSelectReply.selectedRowId
-      : ocID.mtype == "templateButtonReplyMessage"
-      ? ocID.message.templateButtonReplyMessage.selectedId
-      : ocID.mtype === "messageContextInfo"
-      ? ocID.message.buttonsResponseMessage?.selectedButtonId ||
-        ocID.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        ocID.text
+    vChat.mtype === "conversation"
+      ? vChat.message.conversation
+      : vChat.mtype == "imageMessage"
+      ? vChat.message.imageMessage.caption
+      : vChat.mtype == "videoMessage"
+      ? vChat.message.videoMessage.caption
+      : vChat.mtype == "extendedTextMessage"
+      ? vChat.message.extendedTextMessage.text
+      : vChat.mtype == "buttonsResponseMessage"
+      ? vChat.message.buttonsResponseMessage.selectedButtonId
+      : vChat.mtype == "listResponseMessage"
+      ? vChat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : vChat.mtype == "templateButtonReplyMessage"
+      ? vChat.message.templateButtonReplyMessage.selectedId
+      : vChat.mtype === "messageContextInfo"
+      ? vChat.message.buttonsResponseMessage?.selectedButtonId ||
+        vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        vChat.text
       : "";
-  OpenBot.budy = typeof ocID.text == "string" ? ocID.text : "";
+  OpenBot.budy = typeof vChat.text == "string" ? vChat.text : "";
   OpenBot.icmd = OpenBot.body.startsWith(prefix);
   OpenBot.isCommand =
     prefix.includes(OpenBot.body != "" && OpenBot.body.slice(0, 1)) &&
@@ -46,40 +46,40 @@ module.exports = async (OpenBot, ocID, update, store) => {
     ? OpenBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
   OpenBot.args = OpenBot.body.trim().split(/ +/).slice(1);
-  OpenBot.pushname = ocID.pushName || "No Name";
+  OpenBot.pushname = vChat.pushName || "No Name";
   OpenBot.botNumber = await OpenBot.decodeJid(OpenBot.user.id);
-  OpenBot.frome = ocID.sender == OpenBot.botNumber ? true : false;
+  OpenBot.frome = vChat.sender == OpenBot.botNumber ? true : false;
   OpenBot.Fullarg = OpenBot.args.join(" ");
   OpenBot.contant = q = OpenBot.args.join(" ");
-  OpenBot.quoted = ocID.quoted ? ocID.quoted : ocID;
+  OpenBot.quoted = vChat.quoted ? vChat.quoted : vChat;
   OpenBot.mime = (OpenBot.quoted.msg || OpenBot.quoted).mimetype || "";
   OpenBot.isMedia = /image|video|sticker|audio/.test(OpenBot.mime);
   OpenBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   OpenBot.isCreator = [OpenBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(ocID.sender);
+    .includes(vChat.sender);
   OpenBot.mentionByTag =
-    ocID.mtype == "extendedTextMessage" &&
-    ocID.message.extendedTextMessage.contextInfo != null
-      ? ocID.message.extendedTextMessage.contextInfo.mentionedJid
+    vChat.mtype == "extendedTextMessage" &&
+    vChat.message.extendedTextMessage.contextInfo != null
+      ? vChat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
   OpenBot.mentionByReply =
-    ocID.mtype == "extendedTextMessage" &&
-    ocID.message.extendedTextMessage.contextInfo != null
-      ? ocID.message.extendedTextMessage.contextInfo.participant || ""
+    vChat.mtype == "extendedTextMessage" &&
+    vChat.message.extendedTextMessage.contextInfo != null
+      ? vChat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./whatsLink")(OpenBot, ocID, update, store);
-  if (!ocID.isGroup && OpenBot.command)
-    return require("@/auth/noPrivate")(OpenBot, ocID, update);
-  if (ocID.isGroup && OpenBot.command)
+  require("./whatsLink")(OpenBot, vChat, update, store);
+  if (!vChat.isGroup && OpenBot.command)
+    return require("@/auth/noPrivate")(OpenBot, vChat, update);
+  if (vChat.isGroup && OpenBot.command)
     OpenBot.userBanCheck.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return ocID.reply(`*😥Apologies:* _${OpenBot.pushname}_
+          return vChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -88,11 +88,11 @@ module.exports = async (OpenBot, ocID, update, store) => {
         }
         OpenBot.userBanCheck.findOne(
           {
-            Id: ocID.chat,
+            Id: vChat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return ocID.reply(`*😥Apologies:* _${OpenBot.pushname}_
+              return vChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -103,13 +103,13 @@ module.exports = async (OpenBot, ocID, update, store) => {
             if (groupCheck && !OpenBot.frome && !OpenBot.isSudo) return;
             await OpenBot.LinkList.findOne(
               {
-                serverId: ocID.chat,
+                serverId: vChat.chat,
               },
               async (error, server) => {
-                if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+                if (error) return OpenBot.handlerror(OpenBot, vChat, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(OpenBot, ocID);
+                return noLink(OpenBot, vChat);
               }
             );
 
@@ -124,11 +124,11 @@ module.exports = async (OpenBot, ocID, update, store) => {
             // !OpenBot.fromme &&
             // !OpenBot.isSudo &&
             // !OpenBot.varResp.includes(OpenBot.command) &&
-            // !OpenBot.memberRespA.includes(ocID.sender) &&
-            // !OpenBot.memberRespB.includes(ocID.sender)
+            // !OpenBot.memberRespA.includes(vChat.sender) &&
+            // !OpenBot.memberRespB.includes(vChat.sender)
             // ) {
             // return await OpenBot.sendMessage(
-            // ocID.chat,
+            // vChat.chat,
             // {
             // gifPlayback: true,
             // video: OpenBot.fs.readFileSync("./public/how.mp4"),
@@ -142,15 +142,15 @@ module.exports = async (OpenBot, ocID, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [ocID.sender],
+            // mentions: [vChat.sender],
             // },
-            // { quoted: ocID }
+            // { quoted: vChat }
             // );
             // }
 
             if (process.env.runtype === "devar" && !OpenBot.isSudo) {
               return await OpenBot.sendMessage(
-                ocID.chat,
+                vChat.chat,
                 {
                   gifPlayback: true,
                   video: OpenBot.fs.readFileSync(
@@ -165,20 +165,20 @@ module.exports = async (OpenBot, ocID, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [ocID.sender],
+                  mentions: [vChat.sender],
                 },
-                { quoted: ocID }
+                { quoted: vChat }
               );
             } else
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
-                  text: "🔖",
-                  key: ocID.key,
+                  text: "⚡",
+                  key: vChat.key,
                 },
               });
             return await require("@/server/library")(
               OpenBot,
-              ocID,
+              vChat,
               update,
               store
             );

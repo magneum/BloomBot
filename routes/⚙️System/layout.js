@@ -22,7 +22,7 @@ var fpth = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   OpenBot,
-  ocID,
+  vChat,
   gmeta,
   isAdmin,
   groupName,
@@ -32,7 +32,7 @@ module.exports = async (
 ) => {
   try {
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

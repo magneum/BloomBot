@@ -19,26 +19,26 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (OpenBot.mentionByReply) {
     var receiver =
-      ocID.mtype == "extendedTextMessage" &&
-      ocID.message.extendedTextMessage.contextInfo != null
-        ? ocID.message.extendedTextMessage.contextInfo.participant || ""
+      vChat.mtype == "extendedTextMessage" &&
+      vChat.message.extendedTextMessage.contextInfo != null
+        ? vChat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     var receiverName = await OpenBot.getName(receiver);
-    if (receiver === ocID.sender) {
-      await OpenBot.sendMessage(ocID.chat, {
+    if (receiver === vChat.sender) {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -48,16 +48,16 @@ module.exports = async (OpenBot, ocID) => {
 
     OpenBot.Economy.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
         OpenBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+            if (error) return OpenBot.handlerror(OpenBot, vChat, error);
             if (!ᴠᴇᴄᴏ) {
               var newUser = new OpenBot.Economy({
                 Id: receiver,
@@ -71,11 +71,11 @@ module.exports = async (OpenBot, ocID) => {
               });
               await newUser
                 .save()
-                .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+                .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -89,7 +89,7 @@ module.exports = async (OpenBot, ocID) => {
 
             if (!ᴄᴇᴄᴏ) {
               var newUser = new OpenBot.Economy({
-                Id: ocID.sender,
+                Id: vChat.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,11 +100,11 @@ module.exports = async (OpenBot, ocID) => {
               });
               await newUser
                 .save()
-                .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+                .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -120,8 +120,8 @@ module.exports = async (OpenBot, ocID) => {
             if (ᴄᴇᴄᴏ.money < 1000) {
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -136,8 +136,8 @@ module.exports = async (OpenBot, ocID) => {
             if (ᴠᴇᴄᴏ.money < 1000) {
               return await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -152,16 +152,16 @@ module.exports = async (OpenBot, ocID) => {
 
             Robbery.findOne(
               {
-                Id: ocID.sender,
+                Id: vChat.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+                if (error) return OpenBot.handlerror(OpenBot, vChat, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+                    if (error) return OpenBot.handlerror(OpenBot, vChat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,18 +174,18 @@ module.exports = async (OpenBot, ocID) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -203,7 +203,7 @@ module.exports = async (OpenBot, ocID) => {
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: ocID.sender,
+                        Id: vChat.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -213,18 +213,18 @@ module.exports = async (OpenBot, ocID) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -250,8 +250,8 @@ module.exports = async (OpenBot, ocID) => {
                       );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -277,27 +277,27 @@ module.exports = async (OpenBot, ocID) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -326,27 +326,27 @@ module.exports = async (OpenBot, ocID) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -375,27 +375,27 @@ module.exports = async (OpenBot, ocID) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -420,17 +420,17 @@ module.exports = async (OpenBot, ocID) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -460,17 +460,17 @@ module.exports = async (OpenBot, ocID) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, ocID, error)
+                          OpenBot.handlerror(OpenBot, vChat, error)
                         );
                       return await OpenBot.imagebutton(
                         OpenBot,
-                        ocID,
-                        `*🔖Here, ${fpth} for ${
+                        vChat,
+                        `*⚡Here, ${fpth} for ${
                           OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -503,8 +503,8 @@ module.exports = async (OpenBot, ocID) => {
   } else {
     return await OpenBot.imagebutton(
       OpenBot,
-      ocID,
-      `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+      vChat,
+      `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝

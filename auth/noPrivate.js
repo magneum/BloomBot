@@ -16,24 +16,24 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noPrivate = async (OpenBot, ocID, update) => {
+exports.noPrivate = async (OpenBot, vChat, update) => {
   if (!OpenBot.isSudo)
     await OpenBot.UserPrivate.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, user) => {
-        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
         if (!user) {
           new OpenBot.UserPrivate({
-            Id: ocID.sender,
+            Id: vChat.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
+            vChat,
             `*Dear* _${OpenBot.pushname || OpenBot.Tname}_
 • This Private Is Being Guarded By OpenBot Ai!
 • Do Not Spam The Chat Box!
@@ -47,10 +47,10 @@ exports.noPrivate = async (OpenBot, ocID, update) => {
           user.Amount = user.Amount + 1;
           await user
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
+            vChat,
             `*Dear* _${OpenBot.pushname || OpenBot.Tname}_
 • This Private Is Being Guarded By OpenBot Ai!
 • Do Not Spam The Chat Box!
@@ -63,9 +63,9 @@ exports.noPrivate = async (OpenBot, ocID, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
-          return await OpenBot.updateBlockStatus(ocID.sender, "block").catch(
-            (error) => OpenBot.handlerror(OpenBot, ocID, error)
+            .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
+          return await OpenBot.updateBlockStatus(vChat.sender, "block").catch(
+            (error) => OpenBot.handlerror(OpenBot, vChat, error)
           );
         }
       }

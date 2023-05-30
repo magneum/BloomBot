@@ -19,42 +19,42 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
+module.exports = async (OpenBot, vChat, gmeta, isAdmin, isbotAdmin) => {
   try {
-    if (!ocID.isGroup) {
-      await OpenBot.sendMessage(ocID.chat, {
+    if (!vChat.isGroup) {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > It's a group command!`
       );
     } else if (!isAdmin) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > This is an Admin only Command!`
       );
     } else if (!isbotAdmin) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -63,18 +63,18 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
     } else
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(ocID.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(vChat.chat, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = OpenBot.display;
     }
     if (!OpenBot.args) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -91,19 +91,19 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await OpenBot.nsfwCheck.findOne(
         {
-          serverId: ocID.chat,
+          serverId: vChat.chat,
         },
         async (error, server) => {
-          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
           if (!server) {
             new OpenBot.nsfwCheck({
-              serverId: ocID.chat,
+              serverId: vChat.chat,
               value: "ON",
             }).save();
             return await OpenBot.imagebutton(
               OpenBot,
-              ocID,
-              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              vChat,
+              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -111,8 +111,8 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
           } else
             return await OpenBot.imagebutton(
               OpenBot,
-              ocID,
-              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              vChat,
+              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -126,15 +126,15 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await OpenBot.nsfwCheck.findOne(
         {
-          serverId: ocID.chat,
+          serverId: vChat.chat,
         },
         async (error, server) => {
-          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
           if (!server) {
             return await OpenBot.imagebutton(
               OpenBot,
-              ocID,
-              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              vChat,
+              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -142,8 +142,8 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
           } else await server.delete();
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
             𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -151,13 +151,13 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
         }
       );
     } else
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-    return ocID.reply(
+    return vChat.reply(
       `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -168,7 +168,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, isbotAdmin) => {
 > ${OpenBot.prefix}${fpth} off`
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

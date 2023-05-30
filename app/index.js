@@ -240,8 +240,8 @@ async function magneum() {
     if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify")
       return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    ocID = await mMake(OpenBot, νTēxt, store);
-    await require("../server/router")(OpenBot, ocID, update, store);
+    vChat = await mMake(OpenBot, νTēxt, store);
+    await require("../server/router")(OpenBot, vChat, update, store);
   });
 
   OpenBot.ev.on("group-participants.update", async (update) => {
@@ -365,7 +365,7 @@ async function magneum() {
   };
 
   OpenBot.public = true;
-  OpenBot.serializeM = (ocID) => mMake(OpenBot, ocID, store);
+  OpenBot.serializeM = (vChat) => mMake(OpenBot, vChat, store);
 
   OpenBot.send5ButImg = async (
     jid,
@@ -380,7 +380,7 @@ async function magneum() {
       { upload: OpenBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      ocID.chat,
+      vChat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

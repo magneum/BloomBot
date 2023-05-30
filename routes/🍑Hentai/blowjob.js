@@ -19,22 +19,22 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     return await OpenBot.nsfwCheck.findOne(
       {
-        serverId: ocID.chat,
+        serverId: vChat.chat,
       },
       async (error, server) => {
-        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
         if (!server) {
-          await OpenBot.sendMessage(ocID.chat, {
+          await OpenBot.sendMessage(vChat.chat, {
             react: {
               text: "❌",
-              key: ocID.key,
+              key: vChat.key,
             },
           });
-          return ocID.reply(
+          return vChat.reply(
             `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
@@ -49,13 +49,13 @@ module.exports = async (OpenBot, ocID) => {
             var fetchedata = response.data;
             console.log(fetchedata);
             if (!fetchedata[0].meta.url) {
-              await OpenBot.sendMessage(ocID.chat, {
+              await OpenBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
-                  key: ocID.key,
+                  key: vChat.key,
                 },
               });
-              return ocID.reply(
+              return vChat.reply(
                 `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
@@ -64,8 +64,8 @@ module.exports = async (OpenBot, ocID) => {
             } else
               await OpenBot.imagebutton(
                 OpenBot,
-                ocID,
-                `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
+                vChat,
+                `*⚡Here, ${fpth} for ${OpenBot.pushname}:*
 
 > *Description:* ${fetchedata[0].meta.description}
 > *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
@@ -76,7 +76,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

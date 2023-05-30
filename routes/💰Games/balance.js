@@ -19,18 +19,18 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   await OpenBot.Economy.findOne(
     {
-      Id: ocID.sender,
+      Id: vChat.sender,
     },
     async (error, data) => {
       if (error) {
-        return OpenBot.handlerror(OpenBot, ocID, error);
+        return OpenBot.handlerror(OpenBot, vChat, error);
       }
       if (!data) {
         new OpenBot.Economy({
-          Id: ocID.sender,
+          Id: vChat.sender,
           money: 0,
           daily: 0,
           timeout: 86400000,
@@ -41,12 +41,12 @@ module.exports = async (OpenBot, ocID) => {
         })
           .save()
           .catch((error) => {
-            return OpenBot.handlerror(OpenBot, ocID, error);
+            return OpenBot.handlerror(OpenBot, vChat, error);
           });
         return await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+          vChat,
+          `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
           OpenBot.display
@@ -54,8 +54,8 @@ module.exports = async (OpenBot, ocID) => {
       } else {
         return await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+          vChat,
+          `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* ${data.money}`,
           OpenBot.display
         );

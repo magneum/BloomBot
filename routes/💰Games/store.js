@@ -19,12 +19,12 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     await OpenBot.imagebutton(
       OpenBot,
-      ocID,
-      `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+      vChat,
+      `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
 │║⦁ 💻 *laptop:* _4000gold/robbery_
@@ -42,7 +42,7 @@ module.exports = async (OpenBot, ocID) => {
       OpenBot.display
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

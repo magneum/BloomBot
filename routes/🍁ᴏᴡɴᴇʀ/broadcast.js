@@ -19,35 +19,35 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
-  await OpenBot.sendMessage(ocID.chat, {
+module.exports = async (OpenBot, vChat) => {
+  await OpenBot.sendMessage(vChat.chat, {
     react: {
-      text: "🔖",
-      key: ocID.key,
+      text: "⚡",
+      key: vChat.key,
     },
   });
   try {
     if (!OpenBot.frome && !OpenBot.isSudo) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!OpenBot.args.join(" ")) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -62,7 +62,7 @@ module.exports = async (OpenBot, ocID) => {
       .slice(0)
       .map((entry) => entry[1]);
     var places = vGroup.map((v) => v.id);
-    ocID.reply(
+    vChat.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -80,12 +80,12 @@ module.exports = async (OpenBot, ocID) => {
 │║⦁ *🕛Time:*  ${OpenBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 ┕╚═══════⋑
 
-*🔖Message:*
+*⚡Message:*
 ${OpenBot.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

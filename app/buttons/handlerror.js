@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (OpenBot, ocID, error) => {
+module.exports = async (OpenBot, vChat, error) => {
   console.log("❗Error: " + OpenBot.command.toUpperCase() + " :" + error);
-  return ocID.reply(
+  return vChat.reply(
     `*😥Apologies:* _${OpenBot.pushname}_
 *❌Error* 
 > _Please try again later._

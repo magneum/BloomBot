@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     var Rads = Reds[Math.floor(Math.random() * Reds.length)];
@@ -30,8 +30,8 @@ module.exports = async (OpenBot, ocID) => {
     var data = json[0].data.children[0].data;
     await OpenBot.imagebutton(
       OpenBot,
-      ocID,
-      `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+      vChat,
+      `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
 > *👍🏽‍Ups:* ${data.ups || 0} 👍
@@ -40,7 +40,7 @@ module.exports = async (OpenBot, ocID) => {
       data.url
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

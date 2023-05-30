@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     if (!OpenBot.args.join(" ")) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -45,13 +45,13 @@ module.exports = async (OpenBot, ocID) => {
     );
     var result = data.data;
     if (result.count < 0) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -62,7 +62,7 @@ module.exports = async (OpenBot, ocID) => {
     chord = "*•Chord Search Engine*\n\n";
     for (var i of result.posts) {
       chord += `*📚Name:*  ${no++}\n`;
-      chord += `*🔖Id:* ${i.id}\n`;
+      chord += `*⚡Id:* ${i.id}\n`;
       chord += `*📕Title:* ${i.title.replace(/[0-9]|[#&;]/gi, "")}\n`;
       chord += `*🔔Date:* ${i.date}\n`;
       chord += `*👨‍🎨Author:* ${i.categories[0].title}\n\n`;
@@ -80,22 +80,22 @@ module.exports = async (OpenBot, ocID) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${chord}`,
         bsoni.url_image
       );
     } catch {
       await OpenBot.imagebutton(
         OpenBot,
-        ocID,
-        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
+        vChat,
+        `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${chord}`,
         OpenBot.display
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

@@ -16,8 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noLink = async (OpenBot, ocID) => {
-  var FetchCurrentGroupLink = await OpenBot.groupInviteCode(ocID.chat);
+exports.noLink = async (OpenBot, vChat) => {
+  var FetchCurrentGroupLink = await OpenBot.groupInviteCode(vChat.chat);
   var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   var isGroupLink = GroupLinkRegex.exec(OpenBot.budy);
   var PresentGroupLink = new RegExp(
@@ -27,18 +27,18 @@ exports.noLink = async (OpenBot, ocID) => {
   var isCurrentGroupLink = PresentGroupLink.test(OpenBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await OpenBot.groupParticipantsUpdate(
-      ocID.chat,
+      vChat.chat,
       [OpenBot.sender],
       "remove"
-    ).catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
-    await ocID.reply(
+    ).catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
+    await vChat.reply(
       `*😥Apologies:* _${OpenBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await OpenBot.sendMessage(ocID.chat, {
+    return await OpenBot.sendMessage(vChat.chat, {
       delete: {
-        remoteJid: ocID.chat,
+        remoteJid: vChat.chat,
         fromMe: false,
         id: OpenBot.quoted.id,
         participant: OpenBot.quoted.sender,
@@ -53,18 +53,18 @@ exports.noLink = async (OpenBot, ocID) => {
     OpenBot.budy.includes("www.")
   ) {
     await OpenBot.groupParticipantsUpdate(
-      ocID.chat,
+      vChat.chat,
       [OpenBot.sender],
       "remove"
-    ).catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
-    await ocID.reply(
+    ).catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
+    await vChat.reply(
       `*😥Apologies:* _${OpenBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await OpenBot.sendMessage(ocID.chat, {
+    return await OpenBot.sendMessage(vChat.chat, {
       delete: {
-        remoteJid: ocID.chat,
+        remoteJid: vChat.chat,
         fromMe: false,
         id: OpenBot.quoted.id,
         participant: OpenBot.quoted.sender,

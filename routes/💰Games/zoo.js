@@ -19,20 +19,20 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     await OpenBot.Economy.findOne(
       {
-        Id: ocID.sender,
+        Id: vChat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, ocID, error);
+          return OpenBot.handlerror(OpenBot, vChat, error);
         }
 
         if (!userEco) {
           var newUser = new OpenBot.Economy({
-            Id: ocID.sender,
+            Id: vChat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,12 +42,12 @@ module.exports = async (OpenBot, ocID) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return OpenBot.handlerror(OpenBot, ocID, error);
+            return OpenBot.handlerror(OpenBot, vChat, error);
           });
           return await OpenBot.imagebutton(
             OpenBot,
-            ocID,
-            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            vChat,
+            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             OpenBot.display
@@ -55,24 +55,24 @@ module.exports = async (OpenBot, ocID) => {
         } else {
           await OpenBot.Zoology.findOne(
             {
-              Id: ocID.sender,
+              Id: vChat.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, OpenBot, error);
               if (!userZoo) {
                 new OpenBot.Zoology({
-                  Id: ocID.sender,
+                  Id: vChat.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, ocID, error);
+                    return OpenBot.handlerror(OpenBot, vChat, error);
                   });
                 return await OpenBot.imagebutton(
                   OpenBot,
-                  ocID,
-                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  vChat,
+                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   OpenBot.display
@@ -84,8 +84,8 @@ module.exports = async (OpenBot, ocID) => {
                   );
                   return await OpenBot.imagebutton(
                     OpenBot,
-                    ocID,
-                    `*🔖Here, ${fpth} for @${
+                    vChat,
+                    `*⚡Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
@@ -108,12 +108,12 @@ module.exports = async (OpenBot, ocID) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, ocID, error);
+                    return OpenBot.handlerror(OpenBot, vChat, error);
                   });
                   return await OpenBot.imagebutton(
                     OpenBot,
-                    ocID,
-                    `*🔖Here, ${fpth} for @${
+                    vChat,
+                    `*⚡Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
@@ -129,7 +129,7 @@ module.exports = async (OpenBot, ocID) => {
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

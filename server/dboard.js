@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-module.exports = async (OpenBot, ocID, updatedb) => {
+module.exports = async (OpenBot, vChat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(ocID.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(vChat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/ocIDbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vChatbot.png";
   }
   await OpenBot.dashboard.findOne(
     {
-      Id: ocID.sender,
+      Id: vChat.sender,
     },
     async (error, udBase) => {
-      if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+      if (error) return OpenBot.handlerror(OpenBot, vChat, error);
       if (!udBase) {
         new OpenBot.dashboard({
-          Id: ocID.sender,
+          Id: vChat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: OpenBot.pushname,
 
@@ -274,11 +274,11 @@ module.exports = async (OpenBot, ocID, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+          .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
         await OpenBot.imagebutton(
           OpenBot,
-          ocID,
-          `*🔖Here, for ${OpenBot.pushname}:*
+          vChat,
+          `*⚡Here, for ${OpenBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.

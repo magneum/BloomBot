@@ -19,22 +19,22 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, groupName) => {
-  await OpenBot.sendMessage(ocID.chat, {
+module.exports = async (OpenBot, vChat, groupName) => {
+  await OpenBot.sendMessage(vChat.chat, {
     react: {
-      text: "🔖",
-      key: ocID.key,
+      text: "⚡",
+      key: vChat.key,
     },
   });
   try {
     if (!OpenBot.frome && !OpenBot.isSudo) {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -56,14 +56,14 @@ module.exports = async (OpenBot, ocID, groupName) => {
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
           if (!userBan) {
-            return ocID.reply(
+            return vChat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return ocID.reply(
+            return vChat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
           }
@@ -77,12 +77,12 @@ module.exports = async (OpenBot, ocID, groupName) => {
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
           if (!userBan) {
-            return ocID.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+            return vChat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
           } else {
             userBan.delete();
-            return ocID.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return vChat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -93,30 +93,30 @@ module.exports = async (OpenBot, ocID, groupName) => {
     ) {
       OpenBot.userBanCheck.findOne(
         {
-          Id: ocID.chat,
+          Id: vChat.chat,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
+          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
           if (!userBan) {
-            return ocID.reply(
+            return vChat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
-            return ocID.reply(
+            return vChat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
         }
       );
     } else {
-      await OpenBot.sendMessage(ocID.chat, {
+      await OpenBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
-          key: ocID.key,
+          key: vChat.key,
         },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -127,7 +127,7 @@ module.exports = async (OpenBot, ocID, groupName) => {
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

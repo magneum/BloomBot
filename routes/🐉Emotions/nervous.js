@@ -19,7 +19,7 @@ require("#/logger/config");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID) => {
+module.exports = async (OpenBot, vChat) => {
   try {
     var response = await OpenBot.magfetch(
       OpenBot,
@@ -29,10 +29,10 @@ module.exports = async (OpenBot, ocID) => {
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await OpenBot.sendMessage(ocID.chat, {
-        react: { text: "❌", key: ocID.key },
+      await OpenBot.sendMessage(vChat.chat, {
+        react: { text: "❌", key: vChat.key },
       });
-      return ocID.reply(
+      return vChat.reply(
         `*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
@@ -54,13 +54,13 @@ module.exports = async (OpenBot, ocID) => {
           // Check if a user is mentioned in the command arguments
           var mention = OpenBot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || ocID.msg.contextInfo.participant;
+            (await mention[0]) || vChat.msg.contextInfo.participant;
         } else if (OpenBot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
-            ocID.mtype === "extendedTextMessage" &&
-            ocID.message.extendedTextMessage.contextInfo != null
-              ? ocID.message.extendedTextMessage.contextInfo.participant || ""
+            vChat.mtype === "extendedTextMessage" &&
+            vChat.message.extendedTextMessage.contextInfo != null
+              ? vChat.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
         var message = `*ⒸOpenBot by magneum™*
@@ -72,14 +72,14 @@ module.exports = async (OpenBot, ocID) => {
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await OpenBot.sendMessage(
-          ocID.chat,
+          vChat.chat,
           {
             gifPlayback: true,
             video: OpenBot.fs.readFileSync(resultFilename),
             caption: message,
-            mentions: [mentionedUser, ocID.sender],
+            mentions: [mentionedUser, vChat.sender],
           },
-          { quoted: ocID }
+          { quoted: vChat }
         );
         // Remove the generated video file
         OpenBot.fs.unlinkSync(resultFilename);
@@ -87,7 +87,7 @@ module.exports = async (OpenBot, ocID) => {
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID, error);
+    return OpenBot.handlerror(OpenBot, vChat, error);
   }
 };
 module.exports.aliases = [];

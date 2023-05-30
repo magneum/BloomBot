@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (OpenBot, ocID, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
+module.exports = async (OpenBot, vChat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (OpenBot.isReply) {
     var receiver =
       OpenBot.mtype == "extendedTextMessage" &&
@@ -23,10 +23,10 @@ module.exports = async (OpenBot, ocID, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
         ? OpenBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     await OpenBot.sendMessage(
-      ocID.chat,
+      vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${ocID.chat}
+        caption: `*📢Id:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -42,11 +42,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [ocID.sender, receiver],
+        mentions: [vChat.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [ocID.sender, receiver] },
-        quoted: ocID,
+        contextInfo: { mentionedJid: [vChat.sender, receiver] },
+        quoted: vChat,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -57,10 +57,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         ? OpenBot.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
     await OpenBot.sendMessage(
-      ocID.chat,
+      vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${ocID.chat}
+        caption: `*📢Id:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -76,20 +76,20 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [ocID.sender, receiver],
+        mentions: [vChat.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [ocID.sender, receiver] },
-        quoted: ocID,
+        contextInfo: { mentionedJid: [vChat.sender, receiver] },
+        quoted: vChat,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await OpenBot.sendMessage(
-      ocID.chat,
+      vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${ocID.chat}
+        caption: `*📢Id:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -105,11 +105,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [ocID.sender],
+        mentions: [vChat.sender],
       },
       {
-        contextInfo: { mentionedJid: [ocID.sender] },
-        quoted: ocID,
+        contextInfo: { mentionedJid: [vChat.sender] },
+        quoted: vChat,
       }
     ).catch((e) => console.log(e));
   }
