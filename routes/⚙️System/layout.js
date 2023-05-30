@@ -23,7 +23,7 @@ var finalname = tempname.slice(0, -3).toLowerCase();
 thisfilealias = ["lay", "out", "morelayout", "example"];
 module.exports = async (
   OpenBot,
-  wwChat,
+  ocID,
   gmeta,
   isAdmin,
   groupName,
@@ -33,7 +33,7 @@ module.exports = async (
 ) => {
   try {
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
 

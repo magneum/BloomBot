@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
-  wwChat,
+  ocID,
   gmeta,
   isAdmin,
   groupName,
@@ -31,13 +31,13 @@ module.exports = async (
 ) => {
   try {
     if (!OpenBot.quoted) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (
 
     var { isBaileys } = OpenBot.quoted;
     if (!isBaileys) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -66,16 +66,16 @@ module.exports = async (
 > _${OpenBot.prefix}${finalname} reply to Image/Video/Text_`
       );
     } else {
-      return await OpenBot.sendMessage(wwChat.chat, {
+      return await OpenBot.sendMessage(ocID.chat, {
         delete: {
-          remoteJid: wwChat.chat,
+          remoteJid: ocID.chat,
           fromMe: true,
-          id: wwChat.quoted.id,
-          participant: wwChat.quoted.sender,
+          id: ocID.quoted.id,
+          participant: ocID.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat);
+    return OpenBot.handlerror(OpenBot, ocID);
   }
 };

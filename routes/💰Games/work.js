@@ -19,21 +19,21 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var JworkR = OpenBot.Jwork[Math.floor(Math.random() * OpenBot.Jwork.length)];
     OpenBot.Economy.findOne(
       {
-        Id: wwChat.sender,
+        Id: ocID.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, wwChat, error);
+          return OpenBot.handlerror(OpenBot, ocID, error);
         }
 
         if (!userEco) {
           new OpenBot.Economy({
-            Id: wwChat.sender,
+            Id: ocID.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -44,11 +44,11 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           })
             .save()
             .catch((error) => {
-              return OpenBot.handlerror(OpenBot, wwChat, error);
+              return OpenBot.handlerror(OpenBot, ocID, error);
             });
           return await OpenBot.imagebutton(
             OpenBot,
-            wwChat,
+            ocID,
             `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -61,7 +61,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             );
             return await OpenBot.imagebutton(
               OpenBot,
-              wwChat,
+              ocID,
               `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch((error) => {
-              return OpenBot.handlerror(OpenBot, wwChat, error);
+              return OpenBot.handlerror(OpenBot, ocID, error);
             });
             return await OpenBot.imagebutton(
               OpenBot,
-              wwChat,
+              ocID,
               `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
@@ -88,6 +88,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

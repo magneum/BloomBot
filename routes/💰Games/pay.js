@@ -19,9 +19,9 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   if (!OpenBot.mentionByReply) {
-    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -30,7 +30,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 > Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
   if (OpenBot.args.length === 0) {
-    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -39,7 +39,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 > Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(OpenBot.args[0])) {
-    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -48,7 +48,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 > Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
   if (OpenBot.args[0].match(/[a-z]/i)) {
-    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -64,8 +64,8 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         ? OpenBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await OpenBot.getName(receiver);
-    if (receiver === wwChat.sender) {
-      return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    if (receiver === ocID.sender) {
+      return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -76,13 +76,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 
     await OpenBot.Economy.findOne(
       {
-        Id: wwChat.sender,
+        Id: ocID.sender,
       },
       async (error, uPayer) => {
-        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
         if (!uPayer) {
           new OpenBot.Economy({
-            Id: wwChat.sender,
+            Id: ocID.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,9 +93,9 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           })
             .save()
             .catch((error) => {
-              return OpenBot.handlerror(OpenBot, wwChat, error);
+              return OpenBot.handlerror(OpenBot, ocID, error);
             });
-          return wwChat.reply(`*😥Apologies:* _${
+          return ocID.reply(`*😥Apologies:* _${
             OpenBot.pushname || OpenBot.Tname
           }_ 
 
@@ -107,7 +107,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         }
 
         if (parseInt(OpenBot.args[0]) > uPayer.money) {
-          return wwChat.reply(`*😥Apologies:* _${
+          return ocID.reply(`*😥Apologies:* _${
             OpenBot.pushname || OpenBot.Tname
           }_ 
 
@@ -125,7 +125,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+              if (error) return OpenBot.handlerror(OpenBot, ocID, error);
               if (!uBonus) {
                 new OpenBot.Economy({
                   Id: receiver,
@@ -139,15 +139,15 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, wwChat, error);
+                    return OpenBot.handlerror(OpenBot, ocID, error);
                   });
                 uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
                 uPayer.save().catch((error) => {
-                  return OpenBot.handlerror(OpenBot, wwChat, error);
+                  return OpenBot.handlerror(OpenBot, ocID, error);
                 });
                 return await OpenBot.imagebutton(
                   OpenBot,
-                  wwChat,
+                  ocID,
                   `*🔖Here, ${finalname} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
@@ -167,15 +167,15 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 
               uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
               uPayer.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, wwChat, error);
+                return OpenBot.handlerror(OpenBot, ocID, error);
               });
               uBonus.money = uBonus.money + parseInt(OpenBot.args[0]);
               uBonus.save().catch((error) => {
-                return OpenBot.handlerror(OpenBot, wwChat, error);
+                return OpenBot.handlerror(OpenBot, ocID, error);
               });
               return await OpenBot.imagebutton(
                 OpenBot,
-                wwChat,
+                ocID,
                 `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -195,7 +195,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } else {
-    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
+    return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

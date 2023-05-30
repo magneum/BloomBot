@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!wwChat.isGroup) {
-      await OpenBot.sendMessage(wwChat.chat, {
+    if (!ocID.isGroup) {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
     if (!isAdmin) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
     if (!isbotAdmin) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -66,15 +66,15 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 
     if (OpenBot.args[0] && OpenBot.args[0].startsWith("@")) {
       var mention = OpenBot.mentionByTag;
-      var users = (await mention[0]) || wwChat.msg.contextInfo.participant;
+      var users = (await mention[0]) || ocID.msg.contextInfo.participant;
       if (!users) {
-        await OpenBot.sendMessage(wwChat.chat, {
+        await OpenBot.sendMessage(ocID.chat, {
           react: {
             text: "❌",
-            key: wwChat.key,
+            key: ocID.key,
           },
         });
-        return wwChat.reply(
+        return ocID.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -85,15 +85,15 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         );
       }
       try {
-        await OpenBot.groupParticipantsUpdate(wwChat.chat, [users], "demote");
+        await OpenBot.groupParticipantsUpdate(ocID.chat, [users], "demote");
       } catch {
-        await OpenBot.sendMessage(wwChat.chat, {
+        await OpenBot.sendMessage(ocID.chat, {
           react: {
             text: "❌",
-            key: wwChat.key,
+            key: ocID.key,
           },
         });
-        return wwChat.reply(
+        return ocID.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -107,24 +107,24 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
       await OpenBot.imagebutton(
         OpenBot,
-        wwChat,
+        ocID,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (OpenBot.mentionByReply) {
       var users =
-        wwChat.mtype == "extendedTextMessage" &&
-        wwChat.message.extendedTextMessage.contextInfo != null
-          ? wwChat.message.extendedTextMessage.contextInfo.participant || ""
+        ocID.mtype == "extendedTextMessage" &&
+        ocID.message.extendedTextMessage.contextInfo != null
+          ? ocID.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await OpenBot.sendMessage(wwChat.chat, {
+        await OpenBot.sendMessage(ocID.chat, {
           react: {
             text: "❌",
-            key: wwChat.key,
+            key: ocID.key,
           },
         });
-        return wwChat.reply(
+        return ocID.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -135,15 +135,15 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         );
       }
       try {
-        await OpenBot.groupParticipantsUpdate(wwChat.chat, [users], "demote");
+        await OpenBot.groupParticipantsUpdate(ocID.chat, [users], "demote");
       } catch {
-        await OpenBot.sendMessage(wwChat.chat, {
+        await OpenBot.sendMessage(ocID.chat, {
           react: {
             text: "❌",
-            key: wwChat.key,
+            key: ocID.key,
           },
         });
-        return wwChat.reply(
+        return ocID.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -157,18 +157,18 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
       await OpenBot.imagebutton(
         OpenBot,
-        wwChat,
+        ocID,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -179,6 +179,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat);
+    return OpenBot.handlerror(OpenBot, ocID);
   }
 };

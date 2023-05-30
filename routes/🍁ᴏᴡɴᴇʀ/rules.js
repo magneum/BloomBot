@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await OpenBot.sendMessage(wwChat.chat, {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await OpenBot.sendMessage(ocID.chat, {
     react: {
       text: "🔖",
-      key: wwChat.key,
+      key: ocID.key,
     },
   });
   await OpenBot.imagebutton(
     OpenBot,
-    wwChat,
+    ocID,
     `*🔖Here, ${finalname} for @${OpenBot.Tname || OpenBot.pushname}:*
 *🤖Hello, I am OpenBot User-bot🤖*
 > Ⓒ𝐎𝐩𝐞𝐧𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!

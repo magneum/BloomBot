@@ -16,8 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-exports.noLink = async (OpenBot, wwChat) => {
-  var FetchCurrentGroupLink = await OpenBot.groupInviteCode(wwChat.chat);
+exports.noLink = async (OpenBot, ocID) => {
+  var FetchCurrentGroupLink = await OpenBot.groupInviteCode(ocID.chat);
   var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   var isGroupLink = GroupLinkRegex.exec(OpenBot.budy);
   var PresentGroupLink = new RegExp(
@@ -27,18 +27,18 @@ exports.noLink = async (OpenBot, wwChat) => {
   var isCurrentGroupLink = PresentGroupLink.test(OpenBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await OpenBot.groupParticipantsUpdate(
-      wwChat.chat,
+      ocID.chat,
       [OpenBot.sender],
       "remove"
-    ).catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
-    await wwChat.reply(
+    ).catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+    await ocID.reply(
       `*😥Apologies:* _${OpenBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await OpenBot.sendMessage(wwChat.chat, {
+    return await OpenBot.sendMessage(ocID.chat, {
       delete: {
-        remoteJid: wwChat.chat,
+        remoteJid: ocID.chat,
         fromMe: false,
         id: OpenBot.quoted.id,
         participant: OpenBot.quoted.sender,
@@ -53,18 +53,18 @@ exports.noLink = async (OpenBot, wwChat) => {
     OpenBot.budy.includes("www.")
   ) {
     await OpenBot.groupParticipantsUpdate(
-      wwChat.chat,
+      ocID.chat,
       [OpenBot.sender],
       "remove"
-    ).catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
-    await wwChat.reply(
+    ).catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
+    await ocID.reply(
       `*😥Apologies:* _${OpenBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await OpenBot.sendMessage(wwChat.chat, {
+    return await OpenBot.sendMessage(ocID.chat, {
       delete: {
-        remoteJid: wwChat.chat,
+        remoteJid: ocID.chat,
         fromMe: false,
         id: OpenBot.quoted.id,
         participant: OpenBot.quoted.sender,

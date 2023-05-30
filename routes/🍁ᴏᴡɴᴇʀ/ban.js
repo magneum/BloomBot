@@ -19,22 +19,22 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await OpenBot.sendMessage(wwChat.chat, {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await OpenBot.sendMessage(ocID.chat, {
     react: {
       text: "🔖",
-      key: wwChat.key,
+      key: ocID.key,
     },
   });
   try {
     if (!OpenBot.frome && !OpenBot.isSudo) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -56,16 +56,16 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
           if (!userBan) {
             new OpenBot.userBanCheck({
               Id: repliedPerson,
             }).save();
-            return wwChat.reply(
+            return ocID.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return wwChat.reply(
+            return ocID.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already banned!`
             );
           }
@@ -79,16 +79,16 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
           if (!userBan) {
             new OpenBot.userBanCheck({
               Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
             }).save();
-            return wwChat.reply(
+            return ocID.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return wwChat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
+            return ocID.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
           }
         }
       );
@@ -99,32 +99,32 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     ) {
       OpenBot.userBanCheck.findOne(
         {
-          Id: wwChat.chat,
+          Id: ocID.chat,
         },
         async (error, userBan) => {
-          if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+          if (error) return OpenBot.handlerror(OpenBot, ocID, error);
           if (!userBan) {
             new OpenBot.userBanCheck({
-              Id: wwChat.chat,
+              Id: ocID.chat,
             }).save();
-            return wwChat.reply(
+            return ocID.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been Banned!`
             );
           } else {
-            return wwChat.reply(
+            return ocID.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already banned!`
             );
           }
         }
       );
     } else {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -135,6 +135,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

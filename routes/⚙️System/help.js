@@ -22,7 +22,7 @@ var finalname = tempname.slice(0, -3).toLowerCase();
 thisfilealias = ["list", "menu"];
 module.exports = async (
   OpenBot,
-  wwChat,
+  ocID,
   gmeta,
   isAdmin,
   groupName,
@@ -60,7 +60,7 @@ module.exports = async (
     }, 0);
   return await OpenBot.imagebutton(
     OpenBot,
-    wwChat,
+    ocID,
     `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 > ⒸOpenBot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_

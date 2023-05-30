@@ -19,7 +19,7 @@ require("#/logger/global");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     // Fetch emotion data from the API
     var response = await OpenBot.magfetch(
@@ -30,10 +30,10 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await OpenBot.sendMessage(wwChat.chat, {
-        react: { text: "❌", key: wwChat.key },
+      await OpenBot.sendMessage(ocID.chat, {
+        react: { text: "❌", key: ocID.key },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
@@ -55,13 +55,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           // Check if a user is mentioned in the command arguments
           var mention = OpenBot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || wwChat.msg.contextInfo.participant;
+            (await mention[0]) || ocID.msg.contextInfo.participant;
         } else if (OpenBot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
-            wwChat.mtype === "extendedTextMessage" &&
-            wwChat.message.extendedTextMessage.contextInfo != null
-              ? wwChat.message.extendedTextMessage.contextInfo.participant || ""
+            ocID.mtype === "extendedTextMessage" &&
+            ocID.message.extendedTextMessage.contextInfo != null
+              ? ocID.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
         var message = `*OpenBot by magneum*
@@ -73,14 +73,14 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await OpenBot.sendMessage(
-          wwChat.chat,
+          ocID.chat,
           {
             gifPlayback: true,
             video: OpenBot.fs.readFileSync(resultFilename),
             caption: message,
-            mentions: [mentionedUser, wwChat.sender],
+            mentions: [mentionedUser, ocID.sender],
           },
-          { quoted: wwChat }
+          { quoted: ocID }
         );
         // Remove the generated video file
         OpenBot.fs.unlinkSync(resultFilename);
@@ -89,6 +89,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       .run();
   } catch (error) {
     // Handle any errors that occur during the process
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

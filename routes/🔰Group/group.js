@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!wwChat.isGroup) {
-      await OpenBot.sendMessage(wwChat.chat, {
+    if (!ocID.isGroup) {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
     if (!isAdmin) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
     if (!isbotAdmin) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -65,18 +65,18 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(wwChat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(ocID.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = OpenBot.display;
     }
 
     if (OpenBot.args[0] === "open") {
-      await OpenBot.groupSettingUpdate(wwChat.chat, "not_announcement")
+      await OpenBot.groupSettingUpdate(ocID.chat, "not_announcement")
         .then(
           async (res) =>
             await OpenBot.imagebutton(
               OpenBot,
-              wwChat,
+              ocID,
               `> *Group have been Opened by: ${
                 OpenBot.pushname || OpenBot.Tname
               }*`,
@@ -84,19 +84,19 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             )
         )
         .catch((error) =>
-          wwChat.reply(
+          ocID.reply(
             `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
     } else if (OpenBot.args[0] === "close") {
-      await OpenBot.groupSettingUpdate(wwChat.chat, "announcement")
+      await OpenBot.groupSettingUpdate(ocID.chat, "announcement")
         .then(
           async (res) =>
             await OpenBot.imagebutton(
               OpenBot,
-              wwChat,
+              ocID,
               `> *Group have been Closed by: ${
                 OpenBot.pushname || OpenBot.Tname
               }*`,
@@ -104,7 +104,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             )
         )
         .catch((error) =>
-          wwChat.reply(
+          ocID.reply(
             `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
@@ -118,13 +118,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       ) {
         return await OpenBot.LinkList.findOne(
           {
-            serverId: wwChat.chat,
+            serverId: ocID.chat,
           },
           async (error, server) => {
             if (error) {
               return OpenBot.reply(`*😺You:* ${
                 OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${wwChat.chat}
+              }\n*📢Id:* ${ocID.chat}
 
 *😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
@@ -136,20 +136,20 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 
             if (!server) {
               var newServer = new OpenBot.LinkList({
-                serverId: wwChat.chat,
+                serverId: ocID.chat,
                 value: "ON",
               });
               await newServer.save();
               return await OpenBot.imagebutton(
                 OpenBot,
-                wwChat,
+                ocID,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
               return await OpenBot.imagebutton(
                 OpenBot,
-                wwChat,
+                ocID,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -163,13 +163,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       ) {
         return await OpenBot.LinkList.findOne(
           {
-            serverId: wwChat.chat,
+            serverId: ocID.chat,
           },
           async (error, server) => {
             if (error) {
               return OpenBot.reply(`*😺You:* ${
                 OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${wwChat.chat}
+              }\n*📢Id:* ${ocID.chat}
 
 *😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
@@ -182,7 +182,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             if (!server) {
               return await OpenBot.imagebutton(
                 OpenBot,
-                wwChat,
+                ocID,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -190,7 +190,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
               await server.delete();
               return await OpenBot.imagebutton(
                 OpenBot,
-                wwChat,
+                ocID,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -198,13 +198,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
           }
         );
       } else {
-        await OpenBot.sendMessage(wwChat.chat, {
+        await OpenBot.sendMessage(ocID.chat, {
           react: {
             text: "❌",
-            key: wwChat.key,
+            key: ocID.key,
           },
         });
-        return wwChat.reply(
+        return ocID.reply(
           `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -216,13 +216,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         );
       }
     } else {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -234,6 +234,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat);
+    return OpenBot.handlerror(OpenBot, ocID);
   }
 };

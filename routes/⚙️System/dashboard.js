@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
 OpenBot,
- wChat,
+ ocID,
  meta,
 isAdmin,
 groupName,
@@ -31,7 +31,7 @@ participants
  => {
   return await OpenBot.imagebutton(
     OpenBot,
-    wwChat,
+    ocID,
     `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
@@ -46,4 +46,4 @@ participants
 > try to login`,
     OpenBot.display
   );
-};
+});

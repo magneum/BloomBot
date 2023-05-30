@@ -19,20 +19,20 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     await OpenBot.Economy.findOne(
       {
-        Id: wwChat.sender,
+        Id: ocID.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, wwChat, error);
+          return OpenBot.handlerror(OpenBot, ocID, error);
         }
 
         if (!userEco) {
           var newUser = new OpenBot.Economy({
-            Id: wwChat.sender,
+            Id: ocID.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,11 +42,11 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return OpenBot.handlerror(OpenBot, wwChat, error);
+            return OpenBot.handlerror(OpenBot, ocID, error);
           });
           return await OpenBot.imagebutton(
             OpenBot,
-            wwChat,
+            ocID,
             `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -55,23 +55,23 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         } else {
           await OpenBot.Zoology.findOne(
             {
-              Id: wwChat.sender,
+              Id: ocID.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, OpenBot, error);
               if (!userZoo) {
                 new OpenBot.Zoology({
-                  Id: wwChat.sender,
+                  Id: ocID.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, wwChat, error);
+                    return OpenBot.handlerror(OpenBot, ocID, error);
                   });
                 return await OpenBot.imagebutton(
                   OpenBot,
-                  wwChat,
+                  ocID,
                   `*🔖Here, ${finalname} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
@@ -86,7 +86,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
                   );
                   return await OpenBot.imagebutton(
                     OpenBot,
-                    wwChat,
+                    ocID,
                     `*🔖Here, ${finalname} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
@@ -110,11 +110,11 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, wwChat, error);
+                    return OpenBot.handlerror(OpenBot, ocID, error);
                   });
                   return await OpenBot.imagebutton(
                     OpenBot,
-                    wwChat,
+                    ocID,
                     `*🔖Here, ${finalname} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
@@ -131,6 +131,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

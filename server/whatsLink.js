@@ -88,7 +88,7 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (OpenBot, wwChat, update, store) => {
+module.exports = async (OpenBot, ocID, update, store) => {
   OpenBot.display = getRandomImagePath()
     .then((imagePath) => {
       OpenBot.display = imagePath;
@@ -138,7 +138,7 @@ module.exports = async (OpenBot, wwChat, update, store) => {
   OpenBot.TelegraPh = TelegraPh;
   OpenBot.UploadFileUgu = UploadFileUgu;
   OpenBot.webp2mp4File = webp2mp4File;
-  OpenBot.Tname = wwChat.sender.replace(/['@s whatsapp.net']/g, "");
+  OpenBot.Tname = ocID.sender.replace(/['@s whatsapp.net']/g, "");
 
   OpenBot.msgFilter = require("./msgFilter");
   OpenBot.imagebutton = require("@/app/buttons/imagebutton");
@@ -296,7 +296,7 @@ module.exports = async (OpenBot, wwChat, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   OpenBot.isSudo = sudotring.includes(
-    wwChat.sender.substring(0, wwChat.sender.indexOf("@"))
+    ocID.sender.substring(0, ocID.sender.indexOf("@"))
   );
   return OpenBot;
 };

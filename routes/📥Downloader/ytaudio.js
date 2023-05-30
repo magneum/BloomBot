@@ -22,7 +22,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
-  wwChat,
+  ocID,
   gmeta,
   isAdmin,
   groupName,
@@ -32,13 +32,13 @@ module.exports = async (
 ) => {
   try {
     if (!OpenBot.args) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -56,7 +56,7 @@ module.exports = async (
         console.log(fetchedata);
 
         return await OpenBot.sendMessage(
-          wwChat.chat,
+          ocID.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
             caption: `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
@@ -80,17 +80,17 @@ module.exports = async (
               },
             ],
             headerType: 4,
-            mentions: [wwChat.sender],
+            mentions: [ocID.sender],
           },
           {
-            contextInfo: { mentionedJid: [wwChat.sender] },
-            quoted: wwChat,
+            contextInfo: { mentionedJid: [ocID.sender] },
+            quoted: ocID,
           }
         );
 
         await OpenBot.imagebutton(
           OpenBot,
-          wwChat,
+          ocID,
           `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
@@ -109,7 +109,7 @@ module.exports = async (
           stream.on("finish", resolve);
         });
         await OpenBot.sendMessage(
-          wwChat.chat,
+          ocID.chat,
           {
             audio: OpenBot.fs.readFileSync(`./${fetchedata.uuid}`),
             mimetype: "audio/mpeg",
@@ -130,10 +130,10 @@ module.exports = async (
               },
             },
           },
-          { quoted: wwChat }
+          { quoted: ocID }
         ).then(OpenBot.fs.unlinkSync(`./${fetchedata.uuid}`));
       });
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

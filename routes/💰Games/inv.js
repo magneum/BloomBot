@@ -19,17 +19,17 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     OpenBot.Robbery.findOne(
       {
-        Id: wwChat.sender,
+        Id: ocID.sender,
       },
       async (error, userRob) => {
-        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
         if (!userRob) {
           new OpenBot.Robbery({
-            Id: wwChat.sender,
+            Id: ocID.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -37,10 +37,10 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
           return await OpenBot.imagebutton(
             OpenBot,
-            wwChat,
+            ocID,
             `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -49,7 +49,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         }
         return await OpenBot.imagebutton(
           OpenBot,
-          wwChat,
+          ocID,
           `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -59,6 +59,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

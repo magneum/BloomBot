@@ -19,7 +19,7 @@ const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (OpenBot, wwChat, update, store) => {
+module.exports = async (OpenBot, ocID, update, store) => {
   const routePath = path.join(__dirname, "..", "routes");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -41,41 +41,41 @@ module.exports = async (OpenBot, wwChat, update, store) => {
     return null;
   };
 
-  const gmeta = wwChat.isGroup
-    ? await OpenBot.groupMetadata(wwChat.chat).catch((error) => {})
+  const gmeta = ocID.isGroup
+    ? await OpenBot.groupMetadata(ocID.chat).catch((error) => {})
     : "";
-  const groupName = wwChat.isGroup ? gmeta.subject : "";
-  const participants = wwChat.isGroup ? await gmeta.participants : "";
-  const groupAdmins = wwChat.isGroup
+  const groupName = ocID.isGroup ? gmeta.subject : "";
+  const participants = ocID.isGroup ? await gmeta.participants : "";
+  const groupAdmins = ocID.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = wwChat.isGroup ? gmeta.owner : "";
-  const isbotAdmin = wwChat.isGroup
+  const groupOwner = ocID.isGroup ? gmeta.owner : "";
+  const isbotAdmin = ocID.isGroup
     ? groupAdmins.includes(await OpenBot.decodeJid(OpenBot.user.id))
     : false;
-  const isAdmin = wwChat.isGroup
-    ? groupAdmins.includes(wwChat.sender)
+  const isAdmin = ocID.isGroup
+    ? groupAdmins.includes(ocID.sender)
     : false;
 
   const vbody =
-    wwChat.mtype === "conversation"
-      ? wwChat.message.conversation
-      : wwChat.mtype == "imageMessage"
-      ? wwChat.message.imageMessage.caption
-      : wwChat.mtype == "videoMessage"
-      ? wwChat.message.videoMessage.caption
-      : wwChat.mtype == "extendedTextMessage"
-      ? wwChat.message.extendedTextMessage.text
-      : wwChat.mtype == "buttonsResponseMessage"
-      ? wwChat.message.buttonsResponseMessage.selectedButtonId
-      : wwChat.mtype == "listResponseMessage"
-      ? wwChat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : wwChat.mtype == "templateButtonReplyMessage"
-      ? wwChat.message.templateButtonReplyMessage.selectedId
-      : wwChat.mtype === "messageContextInfo"
-      ? wwChat.message.buttonsResponseMessage?.selectedButtonId ||
-        wwChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        wwChat.text
+    ocID.mtype === "conversation"
+      ? ocID.message.conversation
+      : ocID.mtype == "imageMessage"
+      ? ocID.message.imageMessage.caption
+      : ocID.mtype == "videoMessage"
+      ? ocID.message.videoMessage.caption
+      : ocID.mtype == "extendedTextMessage"
+      ? ocID.message.extendedTextMessage.text
+      : ocID.mtype == "buttonsResponseMessage"
+      ? ocID.message.buttonsResponseMessage.selectedButtonId
+      : ocID.mtype == "listResponseMessage"
+      ? ocID.message.listResponseMessage.singleSelectReply.selectedRowId
+      : ocID.mtype == "templateButtonReplyMessage"
+      ? ocID.message.templateButtonReplyMessage.selectedId
+      : ocID.mtype === "messageContextInfo"
+      ? ocID.message.buttonsResponseMessage?.selectedButtonId ||
+        ocID.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        ocID.text
       : "";
   const vcommand = vbody
     .replace(OpenBot.prefix, "")
@@ -101,11 +101,11 @@ module.exports = async (OpenBot, wwChat, update, store) => {
   );
   console.log(
     OpenBot.chalk.blueBright("📱USER_NUMBER: "),
-    OpenBot.chalk.green(wwChat.sender)
+    OpenBot.chalk.green(ocID.sender)
   );
   console.log(
     OpenBot.chalk.blueBright("💬CHAT_Id: "),
-    OpenBot.chalk.green(wwChat.chat)
+    OpenBot.chalk.green(ocID.chat)
   );
   console.log(
     "◎✕———————————————————————✕ OpenBot by magneum ✕———————————————————————✕◎\n"
@@ -122,7 +122,7 @@ module.exports = async (OpenBot, wwChat, update, store) => {
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           OpenBot,
-          wwChat,
+          ocID,
           gmeta,
           isAdmin,
           groupName,
@@ -147,9 +147,9 @@ module.exports = async (OpenBot, wwChat, update, store) => {
     if (suggestedCommand) {
       const suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await OpenBot.sendMessage(wwChat.chat, {
+      return await OpenBot.sendMessage(ocID.chat, {
         image: { url: OpenBot.display },
-        caption: `*📢ID:* ${wwChat.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ID:* ${ocID.chat}\n\n${suggestionMessage}`,
         footer: "*OpenBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -166,16 +166,16 @@ module.exports = async (OpenBot, wwChat, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [wwChat.sender],
+        mentions: [ocID.sender],
       });
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${OpenBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await OpenBot.sendMessage(wwChat.chat, {
+      return await OpenBot.sendMessage(ocID.chat, {
         image: { url: OpenBot.display },
-        caption: `*📢ID:* ${wwChat.chat}\n\n${errorMessage}`,
+        caption: `*📢ID:* ${ocID.chat}\n\n${errorMessage}`,
         footer: "*OpenBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -185,7 +185,7 @@ module.exports = async (OpenBot, wwChat, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [wwChat.sender],
+        mentions: [ocID.sender],
       });
     }
   }

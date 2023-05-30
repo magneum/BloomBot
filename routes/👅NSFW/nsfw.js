@@ -19,22 +19,22 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     return await OpenBot.nsfwCheck.findOne(
       {
-        serverId: wwChat.chat,
+        serverId: ocID.chat,
       },
       async (error, server) => {
-        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
         if (!server) {
-          await OpenBot.sendMessage(wwChat.chat, {
+          await OpenBot.sendMessage(ocID.chat, {
             react: {
               text: "❌",
-              key: wwChat.key,
+              key: ocID.key,
             },
           });
-          return wwChat.reply(
+          return ocID.reply(
             `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
@@ -48,19 +48,19 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
               var fetchedata = response.data;
               console.log(fetchedata);
               if (!fetchedata.meta.thumbnail) {
-                await OpenBot.sendMessage(wwChat.chat, {
+                await OpenBot.sendMessage(ocID.chat, {
                   react: {
                     text: "❌",
-                    key: wwChat.key,
+                    key: ocID.key,
                   },
                 });
-                return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
+                return ocID.reply(`*😥Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.`);
               } else
                 await OpenBot.imagebutton(
                   OpenBot,
-                  wwChat,
+                  ocID,
                   `*🔖Here, ${finalname} for @${OpenBot.Tname || OpenBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
@@ -85,6 +85,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

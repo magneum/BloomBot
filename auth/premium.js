@@ -16,34 +16,34 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/global");
-exports.premium = async (OpenBot, wwChat, update, store) => {
+exports.premium = async (OpenBot, ocID, update, store) => {
   if (OpenBot.isSudo) {
-    await OpenBot.sendMessage(wwChat.chat, {
+    await OpenBot.sendMessage(ocID.chat, {
       react: {
         text: "🔖",
-        key: wwChat.key,
+        key: ocID.key,
       },
     });
-    return await require("@/System/library")(OpenBot, wwChat, update, store);
+    return await require("@/System/library")(OpenBot, ocID, update, store);
   } else
     await OpenBot.premium.findOne(
       {
-        Id: wwChat.sender,
+        Id: ocID.sender,
       },
       async (error, userVium) => {
-        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+        if (error) return OpenBot.handlerror(OpenBot, ocID, error);
         if (!userVium) {
           new OpenBot.premium({
-            Id: wwChat.sender,
+            Id: ocID.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
           return await require("@/System/library")(
             OpenBot,
-            wwChat,
+            ocID,
             update,
             store
           );
@@ -55,7 +55,7 @@ exports.premium = async (OpenBot, wwChat, update, store) => {
             );
             return await OpenBot.imagebutton(
               OpenBot,
-              wwChat,
+              ocID,
               `*Dear* _${OpenBot.pushname || OpenBot.Tname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -64,20 +64,20 @@ exports.premium = async (OpenBot, wwChat, update, store) => {
             );
           }
         } else {
-          await OpenBot.sendMessage(wwChat.chat, {
+          await OpenBot.sendMessage(ocID.chat, {
             react: {
               text: "🔖",
-              key: wwChat.key,
+              key: ocID.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
           userVium
             .save()
-            .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+            .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
           return await require("@/System/library")(
             OpenBot,
-            wwChat,
+            ocID,
             update,
             store
           );

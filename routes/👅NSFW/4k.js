@@ -19,14 +19,14 @@ require("#/logger/global");
 var path = require("path");
 var finalname = path.basename(__filename, "").toLowerCase();
 
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    var server = await OpenBot.nsfwCheck.findOne({ serverId: wwChat.chat });
+    var server = await OpenBot.nsfwCheck.findOne({ serverId: ocID.chat });
     if (!server) {
-      await OpenBot.sendMessage(wwChat.chat, {
-        react: { text: "❌", key: wwChat.key },
+      await OpenBot.sendMessage(ocID.chat, {
+        react: { text: "❌", key: ocID.key },
       });
-      return wwChat.reply(`*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+      return ocID.reply(`*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -39,10 +39,10 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
-      await OpenBot.sendMessage(wwChat.chat, {
-        react: { text: "❌", key: wwChat.key },
+      await OpenBot.sendMessage(ocID.chat, {
+        react: { text: "❌", key: ocID.key },
       });
-      return wwChat.reply(`*😥 Apologies:* _${OpenBot.pushname}_
+      return ocID.reply(`*😥 Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
@@ -65,8 +65,8 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 ║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await OpenBot.imagebutton(OpenBot, wwChat, message, fetchedata.meta.thumbnail);
+    await OpenBot.imagebutton(OpenBot, ocID, message, fetchedata.meta.thumbnail);
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

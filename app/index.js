@@ -239,8 +239,8 @@ async function magneum() {
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
     if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    wwChat = await mMake(OpenBot, νTēxt, store);
-    await require("../server/router")(OpenBot, wwChat, update, store);
+    ocID = await mMake(OpenBot, νTēxt, store);
+    await require("../server/router")(OpenBot, ocID, update, store);
   });
 
   OpenBot.ev.on("group-participants.update", async (update) => {
@@ -363,7 +363,7 @@ async function magneum() {
   };
 
   OpenBot.public = true;
-  OpenBot.serializeM = (wwChat) => mMake(OpenBot, wwChat, store);
+  OpenBot.serializeM = (ocID) => mMake(OpenBot, ocID, store);
 
   OpenBot.send5ButImg = async (
     jid,
@@ -378,7 +378,7 @@ async function magneum() {
       { upload: OpenBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      wwChat.chat,
+      ocID.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

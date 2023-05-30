@@ -19,7 +19,7 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     var Rads = Reds[Math.floor(Math.random() * Reds.length)];
@@ -30,7 +30,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     var data = json[0].data.children[0].data;
     await OpenBot.imagebutton(
       OpenBot,
-      wwChat,
+      ocID,
       `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
@@ -40,6 +40,6 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       data.url
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

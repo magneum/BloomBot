@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-module.exports = async (OpenBot, wwChat, updatedb) => {
+module.exports = async (OpenBot, ocID, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(wwChat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(ocID.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/wwChatbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/ocIDbot.png";
   }
   await OpenBot.dashboard.findOne(
     {
-      Id: wwChat.sender,
+      Id: ocID.sender,
     },
     async (error, udBase) => {
-      if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+      if (error) return OpenBot.handlerror(OpenBot, ocID, error);
       if (!udBase) {
         new OpenBot.dashboard({
-          Id: wwChat.sender,
+          Id: ocID.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: OpenBot.pushname,
 
@@ -274,10 +274,10 @@ module.exports = async (OpenBot, wwChat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+          .catch((error) => OpenBot.handlerror(OpenBot, ocID, error));
         await OpenBot.imagebutton(
           OpenBot,
-          wwChat,
+          ocID,
           `*🔖Here, for ${OpenBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

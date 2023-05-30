@@ -19,29 +19,29 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await OpenBot.sendMessage(wwChat.chat, {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await OpenBot.sendMessage(ocID.chat, {
     react: {
       text: "🔖",
-      key: wwChat.key,
+      key: ocID.key,
     },
   });
   try {
     if (!OpenBot.frome && !OpenBot.isSudo) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
-    await OpenBot.groupLeave(wwChat.chat).then((res) => console.log(res));
+    await OpenBot.groupLeave(ocID.chat).then((res) => console.log(res));
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

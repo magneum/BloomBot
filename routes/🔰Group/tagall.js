@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!wwChat.isGroup) {
-      await OpenBot.sendMessage(wwChat.chat, {
+    if (!ocID.isGroup) {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error*  
@@ -36,13 +36,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
     if (!isAdmin && !OpenBot.isSudo) {
-      await OpenBot.sendMessage(wwChat.chat, {
+      await OpenBot.sendMessage(ocID.chat, {
         react: {
           text: "❌",
-          key: wwChat.key,
+          key: ocID.key,
         },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
@@ -51,38 +51,38 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(wwChat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(ocID.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = OpenBot.display;
     }
     if (OpenBot.args) {
       return await OpenBot.sendMessage(
-        wwChat.chat,
+        ocID.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${wwChat.chat}
+          caption: `*📢Id:* ${ocID.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${OpenBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${OpenBot.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: wwChat }
+        { quoted: ocID }
       );
     } else {
       return await OpenBot.sendMessage(
-        wwChat.chat,
+        ocID.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${wwChat.chat}
+          caption: `*📢Id:* ${ocID.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${OpenBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: wwChat }
+        { quoted: ocID }
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat);
+    return OpenBot.handlerror(OpenBot, ocID);
   }
 };

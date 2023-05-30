@@ -20,17 +20,17 @@ var path = require("path");
 var fileName = path.basename(__filename);
 var functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var query = OpenBot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !OpenBot.TubeRegex.test(query))
     ) {
-      await OpenBot.sendMessage(wwChat.chat, {
-        react: { text: "❌", key: wwChat.key },
+      await OpenBot.sendMessage(ocID.chat, {
+        react: { text: "❌", key: ocID.key },
       });
-      return wwChat.reply(
+      return ocID.reply(
         `*😥 Apologies:* ${OpenBot.pushname || OpenBot.Tname}
 *❌ Error* 
 > _No query provided!_
@@ -71,7 +71,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
 
 *📜 Description:*
 ${description}`;
-    await OpenBot.sendMessage(wwChat.chat, {
+    await OpenBot.sendMessage(ocID.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await OpenBot.sendMessage(wwChat.chat, {
+    await OpenBot.sendMessage(ocID.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -108,6 +108,6 @@ ${description}`;
     });
     OpenBot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };

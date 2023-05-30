@@ -19,9 +19,9 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    var кяуяєs = await OpenBot.axios.get("https://wwChat.life/api/v2/fact");
+    var кяуяєs = await OpenBot.axios.get("https://ocID.life/api/v2/fact");
     try {
       var кяуяєsi = await OpenBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -35,7 +35,7 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await OpenBot.imagebutton(
         OpenBot,
-        wwChat,
+        ocID,
         `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${кяуяєs.data.fact}`,
         bsoni.url_image
@@ -43,13 +43,13 @@ module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, 
     } catch {
       await OpenBot.imagebutton(
         OpenBot,
-        wwChat,
+        ocID,
         `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${кяуяєs.data.fact}`,
         OpenBot.display
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, wwChat, error);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
