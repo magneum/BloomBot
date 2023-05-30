@@ -22,9 +22,7 @@ var chalk = require("chalk");
 dotenv.config();
 
 async function cleanDatabase() {
-  var connectionString =
-    process.env.DATABASE_URL ||
-    "postgres://vvzxrxhu:78Cr7oFcoSK7stJNsFaFiIOY-JxBwVcM@kashin.db.elephantsql.com/vvzxrxhu";
+  var connectionString = process.env.DATABASE_URL;
   var client = new Client({ connectionString });
 
   try {
