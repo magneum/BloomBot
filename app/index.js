@@ -43,7 +43,7 @@ var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("@/auth/Database");
-var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
+var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 async function rmdb() {
   await new Promise((resolve, reject) => {
     exec("rm -rf OpenBot.db", (error, stdout, stderr) => {

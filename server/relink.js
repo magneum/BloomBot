@@ -38,7 +38,7 @@ var {
   parseMention,
   GIFBufferToVideoBuffer,
   getRandom,
-} = require("./myfunc");
+} = require("./obFunc");
 var fs = require("fs");
 var path = require("path");
 var chalk = require("chalk");
