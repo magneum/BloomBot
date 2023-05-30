@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     return await OpenBot.nsfwCheck.findOne(
       {
@@ -42,38 +51,36 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > You may ask the admins to turn it on.`
           );
         } else {
-          OpenBot
-            .magfetch(
-              OpenBot,
-              "https://magneum.vercel.app/api/hentai?q=" + finalname
-            )
-            .then(async (response) => {
-              var fetchedata = response.data;
-              console.log(fetchedata);
-              if (!fetchedata[0].meta.url) {
-                await OpenBot.sendMessage(ocID.chat, {
-                  react: {
-                    text: "❌",
-                    key: ocID.key,
-                  },
-                });
-                return ocID.reply(
-                  `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+          OpenBot.magfetch(
+            OpenBot,
+            "https://magneum.vercel.app/api/hentai?q=" + finalname
+          ).then(async (response) => {
+            var fetchedata = response.data;
+            console.log(fetchedata);
+            if (!fetchedata[0].meta.url) {
+              await OpenBot.sendMessage(ocID.chat, {
+                react: {
+                  text: "❌",
+                  key: ocID.key,
+                },
+              });
+              return ocID.reply(
+                `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌ Error* 
 > There has been an API Error. Please try again later.`
-                );
-              } else
-                await OpenBot.imagebutton(
-                  OpenBot,
-                  ocID,
-                  `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
+              );
+            } else
+              await OpenBot.imagebutton(
+                OpenBot,
+                ocID,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
 
 > *Description:* ${fetchedata[0].meta.description}
 > *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
-                  fetchedata[0].meta.url
-                );
-            });
+                fetchedata[0].meta.url
+              );
+          });
         }
       }
     );
@@ -81,3 +88,4 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

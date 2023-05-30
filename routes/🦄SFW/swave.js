@@ -19,11 +19,19 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
-    OpenBot
-      .magfetch(OpenBot, "https://magneum.vercel.app/api/sfw?q=wave")
-      .then(async (response) => {
+    OpenBot.magfetch(OpenBot, "https://magneum.vercel.app/api/sfw?q=wave").then(
+      async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);
         return await OpenBot.imagebutton(
@@ -34,8 +42,10 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 *Query*: ${fetchedata.meta.query}`,
           fetchedata.meta.url
         );
-      });
+      }
+    );
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];
