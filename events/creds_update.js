@@ -18,12 +18,11 @@
 require("@/logger/global");
 var logger = require("@/logger");
 module.exports = async (saveCreds, update) => {
-  await saveCreds();
-  // try {
-  // logger.info("Saving credentials...");
-  // await saveCreds();
-  // logger.info("Credentials saved successfully.");
-  // } catch (error) {
-  // logger.error("Failed to save credentials.", error);
-  // }
+  try {
+    logger.info("Saving credentials...");
+    await saveCreds();
+    logger.info("Credentials saved successfully.");
+  } catch (error) {
+    logger.error("Failed to save credentials.", error);
+  }
 };
