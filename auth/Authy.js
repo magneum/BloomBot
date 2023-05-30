@@ -15,19 +15,45 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-("use strict");
+// ("use strict");
 require("@/logger/global");
-var __importDefault =
-  (this && this.__importDefault) ||
-  function (mod) {
-    return mod && mod.__esModule ? mod : { default: mod };
-  };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Auth = void 0;
-var sequelize_1 = require("sequelize");
-var sequelize = DATABASE;
+// var __importDefault =
+// (this && this.__importDefault) ||
+// function (mod) {
+// return mod && mod.__esModule ? mod : { default: mod };
+// };
+// Object.defineProperty(exports, "__esModule", { value: true });
+// exports.Auth = void 0;
+// var sequelize_1 = require("sequelize");
+// var sequelize = DATABASE;
+// class Auth extends sequelize_1.Model {}
+// exports.Auth = Auth;
+// Auth.init(
+// {
+// key: {
+// type: sequelize_1.DataTypes.STRING(1000000),
+// allowNull: false,
+// },
+// value: {
+// type: sequelize_1.DataTypes.STRING(1000000),
+// },
+// type: {
+// type: sequelize_1.DataTypes.STRING(1000000),
+// },
+// },
+// {
+// sequelize,
+// tableName: "Authentication",
+// timestamps: false,
+// }
+// );
+
+const sequelize_1 = require("sequelize");
+const sequelize = DATABASE;
+
 class Auth extends sequelize_1.Model {}
-exports.Auth = Auth;
+module.exports.Auth = Auth;
+
 Auth.init(
   {
     key: {

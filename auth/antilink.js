@@ -44,7 +44,6 @@ exports.noLink = async (Foxbot, Foxchat) => {
         participant: Foxbot.quoted.sender,
       },
     });
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (
     Foxbot.budy.includes("https://t.me/") &&
     Foxbot.budy.includes("discord.gg") &&
