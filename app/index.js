@@ -125,6 +125,26 @@ async function magneum() {
   });
   store.bind(Foxbot.ev);
 
+  Foxbot.ev.on("creds.update", (update) =>
+    require("@/events/creds_update")(saveCreds, update)
+  );
+  Foxbot.ev.on("connection.update", (update) =>
+    require("@/events/connection_update")(Foxbot, update, magneum)
+  );
+  Foxbot.ev.on("messages.upsert", (update) =>
+    require("@/events/messages_upsert")(Foxbot, update, store)
+  );
+  Foxbot.ev.on("group-participants.update", (update) =>
+    require("@/events/group-participants_update")(Foxbot, update, store)
+  );
+
+  Foxbot.ws.on("CB:call", (update) =>
+    require("@/events/cb_call")(Foxbot, update)
+  );
+  Foxbot.ev.on("contacts.update", (update) =>
+    require("@/events/contacts_update")(Foxbot, update, store)
+  );
+
   Foxbot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
@@ -576,25 +596,7 @@ async function magneum() {
       data,
     };
   };
-  Foxbot.ev.on("creds.update", (update) =>
-    require("@/events/creds_update")(saveCreds, update)
-  );
-  Foxbot.ev.on("connection.update", (update) =>
-    require("@/events/connection_update")(Foxbot, update, magneum)
-  );
-  Foxbot.ev.on("messages.upsert", (update) =>
-    require("@/events/messages_upsert")(Foxbot, update, store)
-  );
-  Foxbot.ev.on("group-participants.update", (update) =>
-    require("@/events/group-participants_update")(Foxbot, update, store)
-  );
 
-  Foxbot.ws.on("CB:call", (update) =>
-    require("@/events/cb_call")(Foxbot, update)
-  );
-  Foxbot.ev.on("contacts.update", (update) =>
-    require("@/events/contacts_update")(Foxbot, update, store)
-  );
   setInterval(async () => {
     var _Type = [
       "🎭Designer",
