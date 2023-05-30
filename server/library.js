@@ -15,56 +15,141 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 module.exports = async (Foxbot, Foxchat, update, store) => {
-  const routesFolderPath = path.join(__dirname, '..', 'routes');
-  const specialFolders = fs.readdirSync(routesFolderPath)
-    .filter(folder => !folder.startsWith('.') && fs.statSync(path.join(routesFolderPath, folder)).isDirectory());
+  var gmeta = Foxchat.isGroup
+    ? await Foxbot.groupMetadata(Foxchat.chat).catch((error) => {})
+    : "";
+  var groupName = Foxchat.isGroup ? gmeta.subject : "";
+  var participants = Foxchat.isGroup ? await gmeta.participants : "";
+  var groupAdmins = Foxchat.isGroup
+    ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
+    : "";
+  var groupOwner = Foxchat.isGroup ? gmeta.owner : "";
+  var isbotAdmin = Foxchat.isGroup
+    ? groupAdmins.includes(await Foxbot.decodeJid(Foxbot.user.id))
+    : false;
+  var isAdmin = Foxchat.isGroup ? groupAdmins.includes(Foxchat.sender) : false;
 
-  const vcommand = Foxchat.mtype === 'conversation'
-    ? Foxchat.message.conversation
-    : Foxchat.mtype === 'imageMessage'
-    ? Foxchat.message.imageMessage.caption
-    : Foxchat.mtype === 'videoMessage'
-    ? Foxchat.message.videoMessage.caption
-    : Foxchat.mtype === 'extendedTextMessage'
-    ? Foxchat.message.extendedTextMessage.text
-    : Foxchat.mtype === 'buttonsResponseMessage'
-    ? Foxchat.message.buttonsResponseMessage.selectedButtonId
-    : Foxchat.mtype === 'listResponseMessage'
-    ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
-    : Foxchat.mtype === 'templateButtonReplyMessage'
-    ? Foxchat.message.templateButtonReplyMessage.selectedId
-    : Foxchat.mtype === 'messageContextInfo'
-    ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
-      Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-      Foxchat.text
-    : '';
+  var vbody =
+    Foxchat.mtype === "conversation"
+      ? Foxchat.message.conversation
+      : Foxchat.mtype == "imageMessage"
+      ? Foxchat.message.imageMessage.caption
+      : Foxchat.mtype == "videoMessage"
+      ? Foxchat.message.videoMessage.caption
+      : Foxchat.mtype == "extendedTextMessage"
+      ? Foxchat.message.extendedTextMessage.text
+      : Foxchat.mtype == "buttonsResponseMessage"
+      ? Foxchat.message.buttonsResponseMessage.selectedButtonId
+      : Foxchat.mtype == "listResponseMessage"
+      ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : Foxchat.mtype == "templateButtonReplyMessage"
+      ? Foxchat.message.templateButtonReplyMessage.selectedId
+      : Foxchat.mtype === "messageContextInfo"
+      ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
+        Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        Foxchat.text
+      : "";
+  var vcommand = vbody
+    .replace(Foxbot.prefix, "")
+    .trim()
+    .split(/ +/)
+    .shift()
+    .toLowerCase();
+  console.log(
+    "\n◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎"
+  );
+  console.log(
+    Foxbot.chalk.blueBright("🖊️COMMANDS: "),
+    Foxbot.chalk.green(vcommand)
+  );
+  console.log(
+    Foxbot.chalk.blueBright("🖊️MESSAGE: "),
+    Foxbot.chalk.green(vbody)
+  );
+  console.log(
+    Foxbot.chalk.blueBright("❣️USER_NAME: "),
+    Foxbot.chalk.green(Foxbot.pushname)
+  );
+  console.log(
+    Foxbot.chalk.blueBright("📱USER_NUMBER: "),
+    Foxbot.chalk.green(Foxchat.sender)
+  );
+  console.log(
+    Foxbot.chalk.blueBright("💬CHAT_Id: "),
+    Foxbot.chalk.green(Foxchat.chat)
+  );
+  console.log(
+    "◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎\n"
+  );
+
+  const specialFolders = [
+    "⚙️System",
+    "⭕YTFilter",
+    "🍁ᴏᴡɴᴇʀ",
+    "🍑Hentai",
+    "🐉Emotions",
+    "👅NSFW",
+    "💗Commands",
+    "💰Games",
+    "📢aFilter",
+    "📥Downloader",
+    "📼Conversion",
+    "🔎Searches",
+    "🔰Group",
+    "🖼️Photogenic",
+    "🦄SFW",
+  ];
+
+  const findCommandFile = (folderPath, command) => {
+    const files = fs.readdirSync(folderPath);
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      if (file.toLowerCase() === `${command}.js`) {
+        return file;
+      }
+    }
+    return null;
+  };
 
   let commandFound = false;
   for (let i = 0; i < specialFolders.length; i++) {
-    const folderName = specialFolders[i];
-    const fileName = vcommand + '.js';
-    const filePath = path.join(routesFolderPath, folderName, fileName);
-    try {
-      const command = require(filePath);
-      command(
-        Foxbot,
-        Foxchat,
-        update,
-        store
-      );
-      commandFound = true;
-      break;
-    } catch (error) {
-      // File not found in the current folder, continue to the next folder
-      continue;
+    const folder = specialFolders[i];
+    const folderPath = path.join(__dirname, "..", "routes", folder);
+    console.log("📂Checking folder:", folder);
+    if (fs.existsSync(folderPath)) {
+      console.log("✅ Folder found:", folder);
+      const commandFile = findCommandFile(folderPath, vcommand);
+      if (commandFile) {
+        console.log("✅ Command file found:", commandFile);
+        const commandFilePath = path.join(folderPath, commandFile);
+        require(commandFilePath)(
+          Foxbot,
+          Foxchat,
+          gmeta,
+          isAdmin,
+          groupName,
+          isbotAdmin,
+          groupAdmins,
+          participants,
+          Foxbot.isSudo
+        );
+        commandFound = true;
+        break;
+      } else {
+        console.log("❌ Command file not found in folder:", folder);
+      }
+    } else {
+      console.log("❌ Folder not found:", folder);
     }
   }
 
   if (!commandFound) {
+    console.log("❌ Command not found:", vcommand);
+    console.log("⚠️ Apologies ⚠️");
     await Foxbot.imagebutton(
       Foxbot,
       Foxchat,
@@ -73,7 +158,6 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     );
   }
 };
-
 
 // module.exports = async (Foxbot, Foxchat, update, store) => {
 // var gmeta = Foxchat.isGroup
