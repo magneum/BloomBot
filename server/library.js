@@ -15,143 +15,52 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 module.exports = async (Foxbot, Foxchat, update, store) => {
-  const isGroup = Foxchat.isGroup;
-  let gmeta = "";
-  let groupName = "";
-  let participants = "";
-  let groupAdmins = "";
-  let groupOwner = "";
-  let isbotAdmin = false;
-  let isAdmin = false;
+  const routesFolderPath = path.join(__dirname, '..', 'routes');
+  const specialFolders = fs.readdirSync(routesFolderPath)
+    .filter(folder => !folder.startsWith('.') && fs.statSync(path.join(routesFolderPath, folder)).isDirectory());
 
-  if (isGroup) {
-    try {
-      gmeta = await Foxbot.groupMetadata(Foxchat.chat);
-      groupName = gmeta.subject;
-      participants = await gmeta.participants;
-      groupAdmins = participants
-        .filter((v) => v.admin !== null)
-        .map((v) => v.id);
-      groupOwner = gmeta.owner;
-      isbotAdmin = groupAdmins.includes(await Foxbot.decodeJid(Foxbot.user.id));
-      isAdmin = groupAdmins.includes(Foxchat.sender);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  const getMessageBody = () => {
-    const messageTypes = [
-      { type: "conversation", property: "message.conversation" },
-      { type: "imageMessage", property: "message.imageMessage.caption" },
-      { type: "videoMessage", property: "message.videoMessage.caption" },
-      {
-        type: "extendedTextMessage",
-        property: "message.extendedTextMessage.text",
-      },
-      {
-        type: "buttonsResponseMessage",
-        property: "message.buttonsResponseMessage.selectedButtonId",
-      },
-      {
-        type: "listResponseMessage",
-        property: "message.listResponseMessage.singleSelectReply.selectedRowId",
-      },
-      {
-        type: "templateButtonReplyMessage",
-        property: "message.templateButtonReplyMessage.selectedId",
-      },
-      {
-        type: "messageContextInfo",
-        property:
-          "buttonsResponseMessage?.selectedButtonId || listResponseMessage?.singleSelectReply.selectedRowId || text",
-      },
-    ];
-
-    for (let i = 0; i < messageTypes.length; i++) {
-      if (Foxchat.mtype === messageTypes[i].type) {
-        return Foxchat[messageTypes[i].property];
-      }
-    }
-
-    return "";
-  };
-
-  const vbody = getMessageBody()
-    .replace(Foxbot.prefix, "")
-    .trim()
-    .toLowerCase();
-  console.log(
-    "\n◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎"
-  );
-  console.log(
-    Foxbot.chalk.blueBright("🖊️COMMANDS: "),
-    Foxbot.chalk.green(vcommand)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("🖊️MESSAGE: "),
-    Foxbot.chalk.green(vbody)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("❣️USER_NAME: "),
-    Foxbot.chalk.green(Foxbot.pushname)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("📱USER_NUMBER: "),
-    Foxbot.chalk.green(Foxchat.sender)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("💬CHAT_Id: "),
-    Foxbot.chalk.green(Foxchat.chat)
-  );
-  console.log(
-    "◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎\n"
-  );
-
-  const commandsDir = path.join(__dirname, "routes");
-  const commandFiles = fs.readdirSync(commandsDir);
-  let commands = [];
-
-  commandFiles.forEach((file) => {
-    const command = require(path.join(commandsDir, file));
-    const folderName = path.basename(
-      path.dirname(path.join(commandsDir, file))
-    );
-    const commandName = path.basename(file, ".js");
-
-    commands.push({
-      command: commandName,
-      action: command,
-      folder: folderName,
-    });
-  });
+  const vcommand = Foxchat.mtype === 'conversation'
+    ? Foxchat.message.conversation
+    : Foxchat.mtype === 'imageMessage'
+    ? Foxchat.message.imageMessage.caption
+    : Foxchat.mtype === 'videoMessage'
+    ? Foxchat.message.videoMessage.caption
+    : Foxchat.mtype === 'extendedTextMessage'
+    ? Foxchat.message.extendedTextMessage.text
+    : Foxchat.mtype === 'buttonsResponseMessage'
+    ? Foxchat.message.buttonsResponseMessage.selectedButtonId
+    : Foxchat.mtype === 'listResponseMessage'
+    ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
+    : Foxchat.mtype === 'templateButtonReplyMessage'
+    ? Foxchat.message.templateButtonReplyMessage.selectedId
+    : Foxchat.mtype === 'messageContextInfo'
+    ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
+      Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+      Foxchat.text
+    : '';
 
   let commandFound = false;
-  for (let i = 0; i < commands.length; i++) {
-    if (vcommand === commands[i].command) {
-      require("./dboard")(Foxbot, Foxchat, (updatedb) => {
-        updatedb[commands[i].command] += 1;
-        require(`@/routes/${commands[i].folder}/${commands[i].action}`)(
-          Foxbot,
-          Foxchat,
-          gmeta,
-          isAdmin,
-          groupName,
-          isbotAdmin,
-          groupAdmins,
-          participants,
-          Foxbot.isSudo
-        );
-        updatedb
-          .save()
-          .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
-      });
+  for (let i = 0; i < specialFolders.length; i++) {
+    const folderName = specialFolders[i];
+    const fileName = vcommand + '.js';
+    const filePath = path.join(routesFolderPath, folderName, fileName);
+    try {
+      const command = require(filePath);
+      command(
+        Foxbot,
+        Foxchat,
+        update,
+        store
+      );
       commandFound = true;
       break;
+    } catch (error) {
+      // File not found in the current folder, continue to the next folder
+      continue;
     }
   }
 
@@ -159,15 +68,11 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     await Foxbot.imagebutton(
       Foxbot,
       Foxchat,
-      `⚠️ *Apologies* ⚠️
-
-@${Foxbot.Tname}, it seems that command doesn't exist.
-For more information, please visit: _bit.ly/magneum_`,
+      `⚠️ *Apologies* ⚠️\n\n@${Foxbot.Tname}, it seems that command doesn't exist.\nFor more information, please visit: _bit.ly/magneum_`,
       Foxbot.display
     );
   }
 };
-
 
 
 // module.exports = async (Foxbot, Foxchat, update, store) => {
@@ -2869,7 +2774,7 @@ For more information, please visit: _bit.ly/magneum_`,
 // .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
 // });
 // break;
-// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+// "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱���☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 // case "ass":
 // require("./dboard")(Foxbot, Foxchat, (updatedb) => {
 // updatedb.ass = updatedb.ass + 1;
