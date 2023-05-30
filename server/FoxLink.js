@@ -49,7 +49,7 @@ var { readFile } = require("fs/promises");
 var { performance } = require("perf_hooks");
 var { Primbon } = require("scrape-primbon");
 var { getDadjoke } = require("random-jokes");
-var { createWorker } = require("tesseract");
+// var { createWorker } = require("tesseract");
 var { Manga } = require("@shineiichijo/marika");
 var { AnimeWallpaper } = require("anime-wallpaper");
 var { Doujin } = require("@shineiichijo/nhentai-pdf");
@@ -107,7 +107,7 @@ module.exports = async (
     });
 
   Foxbot.performance = performance;
-  Foxbot.createWorker = createWorker;
+  // Foxbot.createWorker = createWorker;
   Foxbot.JSDOM = JSDOM;
   Foxbot.Character = Character;
   Foxbot.execSync = execSync;
