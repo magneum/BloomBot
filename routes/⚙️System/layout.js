@@ -21,7 +21,6 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 
 thisfilealias = ["lay", "out", "morelayout", "example"];
-module.exports.aliases = thisfilealias;
 module.exports = async (
   Foxbot,
   Foxchat,
@@ -38,3 +37,4 @@ module.exports = async (
   }
 };
 
+module.exports.aliases = thisfilealias;

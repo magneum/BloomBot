@@ -15,11 +15,20 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("#/global");
+require("#/logger/global");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  Foxbot,
+  Foxchat,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     // Fetch emotion data from the API
     var response = await Foxbot.magfetch(
@@ -61,7 +70,8 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
           mentionedUser =
             Foxchat.mtype === "extendedTextMessage" &&
             Foxchat.message.extendedTextMessage.contextInfo != null
-              ? Foxchat.message.extendedTextMessage.contextInfo.participant || ""
+              ? Foxchat.message.extendedTextMessage.contextInfo.participant ||
+                ""
               : "";
         }
         var message = `*Foxbot by magneum*
