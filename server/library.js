@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
@@ -85,7 +85,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ OpenBot by magneum ✕———————————————————————✕◎"
+    "\n◎✕———————————————————————✕ ⒸOpenBot by magneum™ ✕———————————————————————✕◎"
   );
   console.log(
     OpenBot.chalk.blueBright("🖊️COMMANDS: "),
@@ -108,7 +108,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
     OpenBot.chalk.green(ocID.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ OpenBot by magneum ✕———————————————————————✕◎\n"
+    "◎✕———————————————————————✕ ⒸOpenBot by magneum™ ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -150,7 +150,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
       return await OpenBot.sendMessage(ocID.chat, {
         image: { url: OpenBot.display },
         caption: `*📢ID:* ${ocID.chat}\n\n${suggestionMessage}`,
-        footer: "*OpenBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
             buttonId: `${OpenBot.prefix}${suggestedCommand}`,
@@ -176,7 +176,7 @@ module.exports = async (OpenBot, ocID, update, store) => {
       return await OpenBot.sendMessage(ocID.chat, {
         image: { url: OpenBot.display },
         caption: `*📢ID:* ${ocID.chat}\n\n${errorMessage}`,
-        footer: "*OpenBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
             buttonId: `${OpenBot.prefix}Home`,
