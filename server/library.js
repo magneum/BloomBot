@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (Foxbot, Foxchat, update, store) => {
+module.exports = async (NekoBot, nekos, update, store) => {
   const routePath = path.join(__dirname, "..", "routes");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -41,74 +41,74 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     return null;
   };
 
-  const gmeta = Foxchat.isGroup
-    ? await Foxbot.groupMetadata(Foxchat.chat).catch((error) => {})
+  const gmeta = nekos.isGroup
+    ? await NekoBot.groupMetadata(nekos.chat).catch((error) => {})
     : "";
-  const groupName = Foxchat.isGroup ? gmeta.subject : "";
-  const participants = Foxchat.isGroup ? await gmeta.participants : "";
-  const groupAdmins = Foxchat.isGroup
+  const groupName = nekos.isGroup ? gmeta.subject : "";
+  const participants = nekos.isGroup ? await gmeta.participants : "";
+  const groupAdmins = nekos.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = Foxchat.isGroup ? gmeta.owner : "";
-  const isbotAdmin = Foxchat.isGroup
-    ? groupAdmins.includes(await Foxbot.decodeJid(Foxbot.user.id))
+  const groupOwner = nekos.isGroup ? gmeta.owner : "";
+  const isbotAdmin = nekos.isGroup
+    ? groupAdmins.includes(await NekoBot.decodeJid(NekoBot.user.id))
     : false;
-  const isAdmin = Foxchat.isGroup
-    ? groupAdmins.includes(Foxchat.sender)
+  const isAdmin = nekos.isGroup
+    ? groupAdmins.includes(nekos.sender)
     : false;
 
   const vbody =
-    Foxchat.mtype === "conversation"
-      ? Foxchat.message.conversation
-      : Foxchat.mtype == "imageMessage"
-      ? Foxchat.message.imageMessage.caption
-      : Foxchat.mtype == "videoMessage"
-      ? Foxchat.message.videoMessage.caption
-      : Foxchat.mtype == "extendedTextMessage"
-      ? Foxchat.message.extendedTextMessage.text
-      : Foxchat.mtype == "buttonsResponseMessage"
-      ? Foxchat.message.buttonsResponseMessage.selectedButtonId
-      : Foxchat.mtype == "listResponseMessage"
-      ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : Foxchat.mtype == "templateButtonReplyMessage"
-      ? Foxchat.message.templateButtonReplyMessage.selectedId
-      : Foxchat.mtype === "messageContextInfo"
-      ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
-        Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        Foxchat.text
+    nekos.mtype === "conversation"
+      ? nekos.message.conversation
+      : nekos.mtype == "imageMessage"
+      ? nekos.message.imageMessage.caption
+      : nekos.mtype == "videoMessage"
+      ? nekos.message.videoMessage.caption
+      : nekos.mtype == "extendedTextMessage"
+      ? nekos.message.extendedTextMessage.text
+      : nekos.mtype == "buttonsResponseMessage"
+      ? nekos.message.buttonsResponseMessage.selectedButtonId
+      : nekos.mtype == "listResponseMessage"
+      ? nekos.message.listResponseMessage.singleSelectReply.selectedRowId
+      : nekos.mtype == "templateButtonReplyMessage"
+      ? nekos.message.templateButtonReplyMessage.selectedId
+      : nekos.mtype === "messageContextInfo"
+      ? nekos.message.buttonsResponseMessage?.selectedButtonId ||
+        nekos.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        nekos.text
       : "";
   const vcommand = vbody
-    .replace(Foxbot.prefix, "")
+    .replace(NekoBot.prefix, "")
     .trim()
     .split(/ +/)
     .shift()
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎"
+    "\n◎✕———————————————————————✕ NekoBot by magneum ✕———————————————————————✕◎"
   );
   console.log(
-    Foxbot.chalk.blueBright("🖊️COMMANDS: "),
-    Foxbot.chalk.green(vcommand)
+    NekoBot.chalk.blueBright("🖊️COMMANDS: "),
+    NekoBot.chalk.green(vcommand)
   );
   console.log(
-    Foxbot.chalk.blueBright("🖊️MESSAGE: "),
-    Foxbot.chalk.green(vbody)
+    NekoBot.chalk.blueBright("🖊️MESSAGE: "),
+    NekoBot.chalk.green(vbody)
   );
   console.log(
-    Foxbot.chalk.blueBright("❣️USER_NAME: "),
-    Foxbot.chalk.green(Foxbot.pushname)
+    NekoBot.chalk.blueBright("❣️USER_NAME: "),
+    NekoBot.chalk.green(NekoBot.pushname)
   );
   console.log(
-    Foxbot.chalk.blueBright("📱USER_NUMBER: "),
-    Foxbot.chalk.green(Foxchat.sender)
+    NekoBot.chalk.blueBright("📱USER_NUMBER: "),
+    NekoBot.chalk.green(nekos.sender)
   );
   console.log(
-    Foxbot.chalk.blueBright("💬CHAT_Id: "),
-    Foxbot.chalk.green(Foxchat.chat)
+    NekoBot.chalk.blueBright("💬CHAT_Id: "),
+    NekoBot.chalk.green(nekos.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎\n"
+    "◎✕———————————————————————✕ NekoBot by magneum ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -121,15 +121,15 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
       if (commandFile) {
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
-          Foxbot,
-          Foxchat,
+          NekoBot,
+          nekos,
           gmeta,
           isAdmin,
           groupName,
           isbotAdmin,
           groupAdmins,
           participants,
-          Foxbot.isSudo
+          NekoBot.isSudo
         );
         commandFound = true;
         break;
@@ -147,45 +147,45 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     if (suggestedCommand) {
       const suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await Foxbot.sendMessage(Foxchat.chat, {
-        image: { url: Foxbot.display },
-        caption: `*📢ID:* ${Foxchat.chat}\n\n${suggestionMessage}`,
-        footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+      return await NekoBot.sendMessage(nekos.chat, {
+        image: { url: NekoBot.display },
+        caption: `*📢ID:* ${nekos.chat}\n\n${suggestionMessage}`,
+        footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${Foxbot.prefix}${suggestedCommand}`,
+            buttonId: `${NekoBot.prefix}${suggestedCommand}`,
             buttonText: {
-              displayText: `${Foxbot.prefix}${suggestedCommand}`,
+              displayText: `${NekoBot.prefix}${suggestedCommand}`,
             },
             type: 1,
           },
           {
-            buttonId: `${Foxbot.prefix}Home`,
-            buttonText: { displayText: `${Foxbot.prefix}Home` },
+            buttonId: `${NekoBot.prefix}Home`,
+            buttonText: { displayText: `${NekoBot.prefix}Home` },
             type: 1,
           },
         ],
         headerType: 4,
-        mentions: [Foxchat.sender],
+        mentions: [nekos.sender],
       });
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
-        `@${Foxbot.Tname}, it seems that the command you entered doesn't exist.\n` +
+        `@${NekoBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await Foxbot.sendMessage(Foxchat.chat, {
-        image: { url: Foxbot.display },
-        caption: `*📢ID:* ${Foxchat.chat}\n\n${errorMessage}`,
-        footer: "*Foxbot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+      return await NekoBot.sendMessage(nekos.chat, {
+        image: { url: NekoBot.display },
+        caption: `*📢ID:* ${nekos.chat}\n\n${errorMessage}`,
+        footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${Foxbot.prefix}Home`,
-            buttonText: { displayText: `${Foxbot.prefix}Home` },
+            buttonId: `${NekoBot.prefix}Home`,
+            buttonText: { displayText: `${NekoBot.prefix}Home` },
             type: 1,
           },
         ],
         headerType: 4,
-        mentions: [Foxchat.sender],
+        mentions: [nekos.sender],
       });
     }
   }

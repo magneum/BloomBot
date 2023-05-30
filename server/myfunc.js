@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var { proto, getContentType } = require("@adiwajshing/baileys");
 var { sizeFormatter } = require("human-readable");
 var child_process = require("child_process");
@@ -88,21 +88,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var Foxchat = Math.floor((seconds % 3600) / 60);
+  var nekos = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    Foxchat > 0 ? Foxchat + (Foxchat == 1 ? " minute, " : " minutes, ") : "";
+    nekos > 0 ? nekos + (nekos == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var Foxchat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var nekos = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, Foxchat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, nekos, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -226,134 +226,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (Foxbot, Foxchat, store) => {
-  if (!Foxchat) return Foxchat;
+exports.mMake = async (NekoBot, nekos, store) => {
+  if (!nekos) return nekos;
   var νproto = proto.WebMessageInfo;
-  if (Foxchat.key) {
-    Foxchat.id = Foxchat.key.id;
-    Foxchat.isBaileys =
-      Foxchat.id.startsWith("BAE5") && Foxchat.id.length === 16;
-    Foxchat.chat = Foxchat.key.remoteJid;
-    Foxchat.fromMe = Foxchat.key.fromMe;
-    Foxchat.isGroup = Foxchat.chat.endsWith("@g.us");
-    Foxchat.sender = Foxbot.decodeJid(
-      (Foxchat.fromMe && Foxbot.user.id) ||
-        Foxchat.participant ||
-        Foxchat.key.participant ||
-        Foxchat.chat ||
+  if (nekos.key) {
+    nekos.id = nekos.key.id;
+    nekos.isBaileys =
+      nekos.id.startsWith("BAE5") && nekos.id.length === 16;
+    nekos.chat = nekos.key.remoteJid;
+    nekos.fromMe = nekos.key.fromMe;
+    nekos.isGroup = nekos.chat.endsWith("@g.us");
+    nekos.sender = NekoBot.decodeJid(
+      (nekos.fromMe && NekoBot.user.id) ||
+        nekos.participant ||
+        nekos.key.participant ||
+        nekos.chat ||
         ""
     );
-    if (Foxchat.isGroup)
-      Foxchat.participant = Foxbot.decodeJid(Foxchat.key.participant) || "";
+    if (nekos.isGroup)
+      nekos.participant = NekoBot.decodeJid(nekos.key.participant) || "";
   }
-  if (Foxchat.message) {
-    Foxchat.mtype = getContentType(Foxchat.message);
-    Foxchat.msg =
-      Foxchat.mtype == "viewOnceMessage"
-        ? Foxchat.message[Foxchat.mtype].message[
-            getContentType(Foxchat.message[Foxchat.mtype].message)
+  if (nekos.message) {
+    nekos.mtype = getContentType(nekos.message);
+    nekos.msg =
+      nekos.mtype == "viewOnceMessage"
+        ? nekos.message[nekos.mtype].message[
+            getContentType(nekos.message[nekos.mtype].message)
           ]
-        : Foxchat.message[Foxchat.mtype];
-    Foxchat.body =
-      Foxchat.message.conversation ||
-      Foxchat.msg.caption ||
-      Foxchat.msg.text ||
-      (Foxchat.mtype == "listResponseMessage" &&
-        Foxchat.msg.singleSelectReply.selectedRowId) ||
-      (Foxchat.mtype == "buttonsResponseMessage" &&
-        Foxchat.msg.selectedButtonId) ||
-      (Foxchat.mtype == "viewOnceMessage" && Foxchat.msg.caption) ||
-      Foxchat.text;
-    var quoted = (Foxchat.quoted = Foxchat.msg.contextInfo
-      ? Foxchat.msg.contextInfo.quotedMessage
+        : nekos.message[nekos.mtype];
+    nekos.body =
+      nekos.message.conversation ||
+      nekos.msg.caption ||
+      nekos.msg.text ||
+      (nekos.mtype == "listResponseMessage" &&
+        nekos.msg.singleSelectReply.selectedRowId) ||
+      (nekos.mtype == "buttonsResponseMessage" &&
+        nekos.msg.selectedButtonId) ||
+      (nekos.mtype == "viewOnceMessage" && nekos.msg.caption) ||
+      nekos.text;
+    var quoted = (nekos.quoted = nekos.msg.contextInfo
+      ? nekos.msg.contextInfo.quotedMessage
       : null);
-    Foxchat.mentionedJid = Foxchat.msg.contextInfo
-      ? Foxchat.msg.contextInfo.mentionedJid
+    nekos.mentionedJid = nekos.msg.contextInfo
+      ? nekos.msg.contextInfo.mentionedJid
       : [];
-    if (Foxchat.quoted) {
+    if (nekos.quoted) {
       var type = getContentType(quoted);
-      Foxchat.quoted = Foxchat.quoted[type];
+      nekos.quoted = nekos.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(Foxchat.quoted);
-        Foxchat.quoted = Foxchat.quoted[type];
+        type = getContentType(nekos.quoted);
+        nekos.quoted = nekos.quoted[type];
       }
-      if (typeof Foxchat.quoted === "string")
-        Foxchat.quoted = {
-          text: Foxchat.quoted,
+      if (typeof nekos.quoted === "string")
+        nekos.quoted = {
+          text: nekos.quoted,
         };
-      Foxchat.quoted.mtype = type;
-      Foxchat.quoted.id = Foxchat.msg.contextInfo.stanzaId;
-      Foxchat.quoted.chat = Foxchat.msg.contextInfo.remoteJid || Foxchat.chat;
-      Foxchat.quoted.isBaileys = Foxchat.quoted.id
-        ? Foxchat.quoted.id.startsWith("BAE5") &&
-          Foxchat.quoted.id.length === 16
+      nekos.quoted.mtype = type;
+      nekos.quoted.id = nekos.msg.contextInfo.stanzaId;
+      nekos.quoted.chat = nekos.msg.contextInfo.remoteJid || nekos.chat;
+      nekos.quoted.isBaileys = nekos.quoted.id
+        ? nekos.quoted.id.startsWith("BAE5") &&
+          nekos.quoted.id.length === 16
         : false;
-      Foxchat.quoted.sender = Foxbot.decodeJid(
-        Foxchat.msg.contextInfo.participant
+      nekos.quoted.sender = NekoBot.decodeJid(
+        nekos.msg.contextInfo.participant
       );
-      Foxchat.quoted.fromMe =
-        Foxchat.quoted.sender === (Foxbot.user && Foxbot.user.id);
-      Foxchat.quoted.text =
-        Foxchat.quoted.text ||
-        Foxchat.quoted.caption ||
-        Foxchat.quoted.conversation ||
-        Foxchat.quoted.contentText ||
-        Foxchat.quoted.selectedDisplayText ||
-        Foxchat.quoted.title ||
+      nekos.quoted.fromMe =
+        nekos.quoted.sender === (NekoBot.user && NekoBot.user.id);
+      nekos.quoted.text =
+        nekos.quoted.text ||
+        nekos.quoted.caption ||
+        nekos.quoted.conversation ||
+        nekos.quoted.contentText ||
+        nekos.quoted.selectedDisplayText ||
+        nekos.quoted.title ||
         "";
-      Foxchat.quoted.mentionedJid = Foxchat.msg.contextInfo
-        ? Foxchat.msg.contextInfo.mentionedJid
+      nekos.quoted.mentionedJid = nekos.msg.contextInfo
+        ? nekos.msg.contextInfo.mentionedJid
         : [];
-      Foxchat.getQuotedObj = Foxchat.getQuotedMessage = async () => {
-        if (!Foxchat.quoted.id) return false;
+      nekos.getQuotedObj = nekos.getQuotedMessage = async () => {
+        if (!nekos.quoted.id) return false;
         var q = await store.loadMessage(
-          Foxchat.chat,
-          Foxchat.quoted.id,
-          Foxbot
+          nekos.chat,
+          nekos.quoted.id,
+          NekoBot
         );
-        return exports.mMake(Foxbot, q, store);
+        return exports.mMake(NekoBot, q, store);
       };
-      var vM = (Foxchat.quoted.fakeObj = νproto.fromObject({
+      var vM = (nekos.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: Foxchat.quoted.chat,
-          fromMe: Foxchat.quoted.fromMe,
-          id: Foxchat.quoted.id,
+          remoteJid: nekos.quoted.chat,
+          fromMe: nekos.quoted.fromMe,
+          id: nekos.quoted.id,
         },
         message: quoted,
-        ...(Foxchat.isGroup ? { participant: Foxchat.quoted.sender } : {}),
+        ...(nekos.isGroup ? { participant: nekos.quoted.sender } : {}),
       }));
-      Foxchat.quoted.delete = () =>
-        Foxbot.sendMessage(Foxchat.quoted.chat, { delete: vM.key });
-      Foxchat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-        Foxbot.copyNForward(jid, vM, forceForward, options);
-      Foxchat.quoted.download = () =>
-        Foxbot.downloadMediaMessage(Foxchat.quoted);
+      nekos.quoted.delete = () =>
+        NekoBot.sendMessage(nekos.quoted.chat, { delete: vM.key });
+      nekos.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+        NekoBot.copyNForward(jid, vM, forceForward, options);
+      nekos.quoted.download = () =>
+        NekoBot.downloadMediaMessage(nekos.quoted);
     }
   }
 
-  if (Foxchat.msg.url)
-    Foxchat.download = () => Foxbot.downloadMediaMessage(Foxchat.msg);
-  Foxchat.text =
-    Foxchat.msg.text ||
-    Foxchat.msg.caption ||
-    Foxchat.message.conversation ||
-    Foxchat.msg.contentText ||
-    Foxchat.msg.selectedDisplayText ||
-    Foxchat.msg.title ||
+  if (nekos.msg.url)
+    nekos.download = () => NekoBot.downloadMediaMessage(nekos.msg);
+  nekos.text =
+    nekos.msg.text ||
+    nekos.msg.caption ||
+    nekos.message.conversation ||
+    nekos.msg.contentText ||
+    nekos.msg.selectedDisplayText ||
+    nekos.msg.title ||
     "";
-  Foxchat.reply = (text, chatId = Foxchat.chat, options = {}) =>
+  nekos.reply = (text, chatId = nekos.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? Foxbot.sendMedia(chatId, text, "file", "", Foxchat, { ...options })
-      : Foxbot.sendText(chatId, text, Foxchat, { ...options });
-  Foxchat.copy = () =>
-    exports.mMake(Foxbot, νproto.fromObject(νproto.toObject(Foxchat)));
-  Foxchat.copyNForward = (
-    jid = Foxchat.chat,
+      ? NekoBot.sendMedia(chatId, text, "file", "", nekos, { ...options })
+      : NekoBot.sendText(chatId, text, nekos, { ...options });
+  nekos.copy = () =>
+    exports.mMake(NekoBot, νproto.fromObject(νproto.toObject(nekos)));
+  nekos.copyNForward = (
+    jid = nekos.chat,
     forceForward = false,
     options = {}
-  ) => Foxbot.copyNForward(jid, Foxchat, forceForward, options);
+  ) => NekoBot.copyNForward(jid, nekos, forceForward, options);
 
-  return Foxchat;
+  return nekos;
 };
 
 var file = require.resolve(__filename);

@@ -1,139 +1,139 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (Foxbot, Foxchat, update, store) => {
-  Foxbot.body =
-    Foxchat.mtype === "conversation"
-      ? Foxchat.message.conversation
-      : Foxchat.mtype == "imageMessage"
-      ? Foxchat.message.imageMessage.caption
-      : Foxchat.mtype == "videoMessage"
-      ? Foxchat.message.videoMessage.caption
-      : Foxchat.mtype == "extendedTextMessage"
-      ? Foxchat.message.extendedTextMessage.text
-      : Foxchat.mtype == "buttonsResponseMessage"
-      ? Foxchat.message.buttonsResponseMessage.selectedButtonId
-      : Foxchat.mtype == "listResponseMessage"
-      ? Foxchat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : Foxchat.mtype == "templateButtonReplyMessage"
-      ? Foxchat.message.templateButtonReplyMessage.selectedId
-      : Foxchat.mtype === "messageContextInfo"
-      ? Foxchat.message.buttonsResponseMessage?.selectedButtonId ||
-        Foxchat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        Foxchat.text
+module.exports = async (NekoBot, nekos, update, store) => {
+  NekoBot.body =
+    nekos.mtype === "conversation"
+      ? nekos.message.conversation
+      : nekos.mtype == "imageMessage"
+      ? nekos.message.imageMessage.caption
+      : nekos.mtype == "videoMessage"
+      ? nekos.message.videoMessage.caption
+      : nekos.mtype == "extendedTextMessage"
+      ? nekos.message.extendedTextMessage.text
+      : nekos.mtype == "buttonsResponseMessage"
+      ? nekos.message.buttonsResponseMessage.selectedButtonId
+      : nekos.mtype == "listResponseMessage"
+      ? nekos.message.listResponseMessage.singleSelectReply.selectedRowId
+      : nekos.mtype == "templateButtonReplyMessage"
+      ? nekos.message.templateButtonReplyMessage.selectedId
+      : nekos.mtype === "messageContextInfo"
+      ? nekos.message.buttonsResponseMessage?.selectedButtonId ||
+        nekos.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        nekos.text
       : "";
-  Foxbot.budy = typeof Foxchat.text == "string" ? Foxchat.text : "";
-  Foxbot.icmd = Foxbot.body.startsWith(prefix);
-  Foxbot.isCommand =
-    prefix.includes(Foxbot.body != "" && Foxbot.body.slice(0, 1)) &&
-    Foxbot.body.slice(1) != "";
-  Foxbot.command = Foxbot.isCommand
-    ? Foxbot.body.slice(1).trim().split(" ")[0].toLowerCase()
+  NekoBot.budy = typeof nekos.text == "string" ? nekos.text : "";
+  NekoBot.icmd = NekoBot.body.startsWith(prefix);
+  NekoBot.isCommand =
+    prefix.includes(NekoBot.body != "" && NekoBot.body.slice(0, 1)) &&
+    NekoBot.body.slice(1) != "";
+  NekoBot.command = NekoBot.isCommand
+    ? NekoBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  Foxbot.args = Foxbot.body.trim().split(/ +/).slice(1);
-  Foxbot.pushname = Foxchat.pushName || "No Name";
-  Foxbot.botNumber = await Foxbot.decodeJid(Foxbot.user.id);
-  Foxbot.frome = Foxchat.sender == Foxbot.botNumber ? true : false;
-  Foxbot.Fullarg = Foxbot.args.join(" ");
-  Foxbot.contant = q = Foxbot.args.join(" ");
-  Foxbot.quoted = Foxchat.quoted ? Foxchat.quoted : Foxchat;
-  Foxbot.mime = (Foxbot.quoted.msg || Foxbot.quoted).mimetype || "";
-  Foxbot.isMedia = /image|video|sticker|audio/.test(Foxbot.mime);
-  Foxbot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  Foxbot.isCreator = [Foxbot.botNumber, ...global.sudo]
+  NekoBot.args = NekoBot.body.trim().split(/ +/).slice(1);
+  NekoBot.pushname = nekos.pushName || "No Name";
+  NekoBot.botNumber = await NekoBot.decodeJid(NekoBot.user.id);
+  NekoBot.frome = nekos.sender == NekoBot.botNumber ? true : false;
+  NekoBot.Fullarg = NekoBot.args.join(" ");
+  NekoBot.contant = q = NekoBot.args.join(" ");
+  NekoBot.quoted = nekos.quoted ? nekos.quoted : nekos;
+  NekoBot.mime = (NekoBot.quoted.msg || NekoBot.quoted).mimetype || "";
+  NekoBot.isMedia = /image|video|sticker|audio/.test(NekoBot.mime);
+  NekoBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  NekoBot.isCreator = [NekoBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(Foxchat.sender);
-  Foxbot.mentionByTag =
-    Foxchat.mtype == "extendedTextMessage" &&
-    Foxchat.message.extendedTextMessage.contextInfo != null
-      ? Foxchat.message.extendedTextMessage.contextInfo.mentionedJid
+    .includes(nekos.sender);
+  NekoBot.mentionByTag =
+    nekos.mtype == "extendedTextMessage" &&
+    nekos.message.extendedTextMessage.contextInfo != null
+      ? nekos.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  Foxbot.mentionByReply =
-    Foxchat.mtype == "extendedTextMessage" &&
-    Foxchat.message.extendedTextMessage.contextInfo != null
-      ? Foxchat.message.extendedTextMessage.contextInfo.participant || ""
+  NekoBot.mentionByReply =
+    nekos.mtype == "extendedTextMessage" &&
+    nekos.message.extendedTextMessage.contextInfo != null
+      ? nekos.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./FoxLink")(Foxbot, Foxchat, update, store);
-  if (!Foxchat.isGroup && Foxbot.command)
-    return require("@/auth/noPrivate")(Foxbot, Foxchat, update);
-  if (Foxchat.isGroup && Foxbot.command)
-    Foxbot.userBanCheck.findOne(
+  require("./nekoLink")(NekoBot, nekos, update, store);
+  if (!nekos.isGroup && NekoBot.command)
+    return require("@/auth/noPrivate")(NekoBot, nekos, update);
+  if (nekos.isGroup && NekoBot.command)
+    NekoBot.userBanCheck.findOne(
       {
-        Id: Foxchat.sender,
+        Id: nekos.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname}_
+          return nekos.reply(`*😥Apologies:* _${NekoBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        Foxbot.userBanCheck.findOne(
+        NekoBot.userBanCheck.findOne(
           {
-            Id: Foxchat.chat,
+            Id: nekos.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return Foxchat.reply(`*😥Apologies:* _${Foxbot.pushname}_
+              return nekos.reply(`*😥Apologies:* _${NekoBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !Foxbot.frome && !Foxbot.isSudo) return;
-            if (groupCheck && !Foxbot.frome && !Foxbot.isSudo) return;
-            await Foxbot.LinkList.findOne(
+            if (banCheck && !NekoBot.frome && !NekoBot.isSudo) return;
+            if (groupCheck && !NekoBot.frome && !NekoBot.isSudo) return;
+            await NekoBot.LinkList.findOne(
               {
-                serverId: Foxchat.chat,
+                serverId: nekos.chat,
               },
               async (error, server) => {
-                if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+                if (error) return NekoBot.handlerror(NekoBot, nekos, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(Foxbot, Foxchat);
+                return noLink(NekoBot, nekos);
               }
             );
 
-            // respA = await Foxbot.groupMetadata("120363020792949649@g.us");
+            // respA = await NekoBot.groupMetadata("120363020792949649@g.us");
             // for (var i = 0; i < respA.participants.length; i++)
-            // Foxbot.memberRespA[i] = respA.participants[i].id;
+            // NekoBot.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await Foxbot.groupMetadata("120363089188116481@g.us");
+            // respB = await NekoBot.groupMetadata("120363089188116481@g.us");
             // for (var i = 0; i < respB.participants.length; i++)
-            // Foxbot.memberRespB[i] = respB.participants[i].id;
+            // NekoBot.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !Foxbot.fromme &&
-            // !Foxbot.isSudo &&
-            // !Foxbot.varResp.includes(Foxbot.command) &&
-            // !Foxbot.memberRespA.includes(Foxchat.sender) &&
-            // !Foxbot.memberRespB.includes(Foxchat.sender)
+            // !NekoBot.fromme &&
+            // !NekoBot.isSudo &&
+            // !NekoBot.varResp.includes(NekoBot.command) &&
+            // !NekoBot.memberRespA.includes(nekos.sender) &&
+            // !NekoBot.memberRespB.includes(nekos.sender)
             // ) {
-            // return await Foxbot.sendMessage(
-            // Foxchat.chat,
+            // return await NekoBot.sendMessage(
+            // nekos.chat,
             // {
             // gifPlayback: true,
-            // video: Foxbot.fs.readFileSync("./public/how.mp4"),
+            // video: NekoBot.fs.readFileSync("./public/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Apologies:* _${Foxbot.pushname}_
+            // *😥Apologies:* _${NekoBot.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -142,22 +142,22 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [Foxchat.sender],
+            // mentions: [nekos.sender],
             // },
-            // { quoted: Foxchat }
+            // { quoted: nekos }
             // );
             // }
 
-            if (process.env.runtype === "devar" && !Foxbot.isSudo) {
-              return await Foxbot.sendMessage(
-                Foxchat.chat,
+            if (process.env.runtype === "devar" && !NekoBot.isSudo) {
+              return await NekoBot.sendMessage(
+                nekos.chat,
                 {
                   gifPlayback: true,
-                  video: Foxbot.fs.readFileSync(
-                    "./public/src/Foxbot (8)_white.png"
+                  video: NekoBot.fs.readFileSync(
+                    "./public/src/NekoBot (8)_white.png"
                   ),
                   caption: `*📢Verification Needed*
-*😥Apologies:* _${Foxbot.pushname}_
+*😥Apologies:* _${NekoBot.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -165,20 +165,20 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [Foxchat.sender],
+                  mentions: [nekos.sender],
                 },
-                { quoted: Foxchat }
+                { quoted: nekos }
               );
             } else
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await NekoBot.sendMessage(nekos.chat, {
                 react: {
                   text: "🔖",
-                  key: Foxchat.key,
+                  key: nekos.key,
                 },
               });
             return await require("@/server/library")(
-              Foxbot,
-              Foxchat,
+              NekoBot,
+              nekos,
               update,
               store
             );
@@ -186,5 +186,5 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         );
       }
     );
-  return Foxbot;
+  return NekoBot;
 };

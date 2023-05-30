@@ -1,38 +1,38 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-module.exports = async (Foxbot, Foxchat, updatedb) => {
+module.exports = async (NekoBot, nekos, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(Foxchat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(nekos.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/Foxsbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/nekosbot.png";
   }
-  await Foxbot.dashboard.findOne(
+  await NekoBot.dashboard.findOne(
     {
-      Id: Foxchat.sender,
+      Id: nekos.sender,
     },
     async (error, udBase) => {
-      if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+      if (error) return NekoBot.handlerror(NekoBot, nekos, error);
       if (!udBase) {
-        new Foxbot.dashboard({
-          Id: Foxchat.sender,
+        new NekoBot.dashboard({
+          Id: nekos.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: Foxbot.pushname,
+          username: NekoBot.pushname,
 
           bite: 0,
           blush: 0,
@@ -204,7 +204,7 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
           doujin: 0,
           feet: 0,
           femdom: 0,
-          Foxgirl: 0,
+          nekogirl: 0,
           glasses: 0,
           hentai: 0,
           maid: 0,
@@ -223,7 +223,7 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
           zettaiRyouiki: 0,
 
           list: 0,
-          Foxbot: 0,
+          NekoBot: 0,
           dashboard: 0,
 
           waifu: 0,
@@ -274,11 +274,11 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
-        await Foxbot.imagebutton(
-          Foxbot,
-          Foxchat,
-          `*🔖Here, for ${Foxbot.pushname}:*
+          .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+        await NekoBot.imagebutton(
+          NekoBot,
+          nekos,
+          `*🔖Here, for ${NekoBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -286,11 +286,11 @@ module.exports = async (Foxbot, Foxchat, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          Foxbot.display
+          NekoBot.display
         );
         return updatedb(udBase);
       }
-      udBase.username = `${Foxbot.pushname}`;
+      udBase.username = `${NekoBot.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }
