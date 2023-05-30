@@ -15,73 +15,78 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var { spawn } = require("child_process");
-var simpleGit = require("simple-git");
-var cron = require("node-cron");
-var rimraf = require("rimraf");
-var chalk = require("chalk");
-var childProcess = null;
-var isRunning = false;
+const { spawn } = require("child_process");
+const simpleGit = require("simple-git");
+const cron = require("node-cron");
+const rimraf = require("rimraf");
+const chalk = require("chalk");
 
-var workdir = ".";
-var git = simpleGit(workdir);
+const workdir = ".";
+const git = simpleGit(workdir);
 
-var startMainCode = () => {
-  if (isRunning) {
-    console.log(chalk.yellow("Main code is already running."));
-    return;
-  }
+let childProcess = null;
+let isRunning = false;
 
-  console.log(chalk.green("Starting main code..."));
-  childProcess = spawn("yarn", ["start"], { cwd: workdir, stdio: "inherit" });
-
-  childProcess.on("close", (code) => {
-    console.log(chalk.yellow(`Main code exited with code ${code}`));
-    isRunning = false;
-  });
-
-  isRunning = true;
-};
-
-var stopMainCode = () => {
-  if (!childProcess) {
-    console.log(chalk.yellow("Main code is not running."));
-    return;
-  }
-
-  console.log(chalk.green("Stopping main code..."));
-  childProcess.kill("SIGINT");
-  childProcess = null;
-  isRunning = false;
-};
-
-var deleteFiles = () => {
-  console.log(chalk.green("Devaring files and folders..."));
-  rimraf.sync(`${workdir}/*`);
-  console.log(chalk.gray("All files and folders deleted"));
-};
-
-var gitFetch = async () => {
-  console.log(chalk.green("Performing git fetch..."));
-  try {
-    var { behind } = await git.raw([
-      "rev-list",
-      "--count",
-      "@{upstream}..HEAD",
-    ]);
-
-    if (parseInt(behind) === 0) {
-      console.log(chalk.yellow("No new commits found"));
+const handleGitSync = () => {
+  const startMainCode = () => {
+    if (isRunning) {
+      console.log(chalk.yellow("Main code is already running."));
       return;
     }
 
-    stopMainCode();
-    deleteFiles();
-    startMainCode();
-  } catch (error) {
-    console.error(chalk.red(`Error executing git fetch: ${error.message}`));
-  }
+    console.log(chalk.green("Starting main code..."));
+    childProcess = spawn("yarn", ["start"], { cwd: workdir, stdio: "inherit" });
+
+    childProcess.on("close", (code) => {
+      console.log(chalk.yellow(`Main code exited with code ${code}`));
+      isRunning = false;
+    });
+
+    isRunning = true;
+  };
+
+  const stopMainCode = () => {
+    if (!childProcess) {
+      console.log(chalk.yellow("Main code is not running."));
+      return;
+    }
+
+    console.log(chalk.green("Stopping main code..."));
+    childProcess.kill("SIGINT");
+    childProcess = null;
+    isRunning = false;
+  };
+
+  const deleteFiles = () => {
+    console.log(chalk.green("Deleting files and folders..."));
+    rimraf.sync(`${workdir}/*`);
+    console.log(chalk.gray("All files and folders deleted."));
+  };
+
+  const gitFetch = async () => {
+    console.log(chalk.green("Performing git fetch..."));
+    try {
+      const { behind } = await git.raw([
+        "rev-list",
+        "--count",
+        "@{upstream}..HEAD",
+      ]);
+
+      if (parseInt(behind) === 0) {
+        console.log(chalk.yellow("No new commits found."));
+        return;
+      }
+
+      stopMainCode();
+      deleteFiles();
+      startMainCode();
+    } catch (error) {
+      console.error(chalk.red(`Error executing git fetch: ${error.message}`));
+    }
+  };
+
+  cron.schedule("* * * * *", gitFetch);
+  startMainCode();
 };
 
-cron.schedule("* * * * *", gitFetch);
-startMainCode();
+module.exports = handleGitSync;
