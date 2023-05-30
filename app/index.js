@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
-require("@/logger/global");
+require("@/logger/config");
 var logger = require("@/logger");
 var gitPull = require("@/utils/gitPull");
 var cleanDatabase = require("./elephant");

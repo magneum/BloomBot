@@ -71,7 +71,7 @@
     "fs-extra": "^10.1.0",
     "g-i-s": "^2.1.6",
     "genius-lyrics": "^4.4.2",
-    "global": "^4.4.0",
+    "config": "^4.4.0",
     "google-it": "^1.6.3",
     "google-tts-api": "^2.0.2",
     "got": "^11.8.3",

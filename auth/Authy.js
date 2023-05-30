@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 // ("use strict");
-require("@/logger/global");
+require("@/logger/config");
 // var __importDefault =
 // (this && this.__importDefault) ||
 // function (mod) {

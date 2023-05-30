@@ -537,7 +537,7 @@
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/helper-replace-supers" "^7.20.7"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    globals "^11.1.0"
+    configs "^11.1.0"
 
 "@babel/plugin-transform-computed-properties@^7.21.5":
   version "7.21.5"
@@ -987,7 +987,7 @@
     "@babel/parser" "^7.22.4"
     "@babel/types" "^7.22.4"
     debug "^4.1.0"
-    globals "^11.1.0"
+    configs "^11.1.0"
 
 "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.20.0", "@babel/types@^7.20.5", "@babel/types@^7.21.0", "@babel/types@^7.21.4", "@babel/types@^7.21.5", "@babel/types@^7.22.0", "@babel/types@^7.22.3", "@babel/types@^7.22.4", "@babel/types@^7.4.4":
   version "7.22.4"
@@ -2164,9 +2164,9 @@ accepts@~1.3.8:
     mime-types "~2.1.34"
     negotiator "0.6.3"
 
-acorn-globals@^6.0.0:
+acorn-configs@^6.0.0:
   version "6.0.0"
-  resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-6.0.0.tgz#46cdd39f0f8ff08a876619b55f5ac8a6dc770b45"
+  resolved "https://registry.yarnpkg.com/acorn-configs/-/acorn-configs-6.0.0.tgz#46cdd39f0f8ff08a876619b55f5ac8a6dc770b45"
   integrity sha512-ZQl7LOWaF5ePqqcX4hLuv/bLXYQNfNWw2c0/yX/TsPRKamzHcTGQnlCjHT3TsmkOUVEPS3crCxiPfdzE/Trlhg==
   dependencies:
     acorn "^7.1.1"
@@ -4303,7 +4303,7 @@ es-abstract@^1.19.0, es-abstract@^1.20.4, es-abstract@^1.21.2:
     function.prototype.name "^1.1.5"
     get-intrinsic "^1.2.0"
     get-symbol-description "^1.0.0"
-    globalthis "^1.0.3"
+    configthis "^1.0.3"
     gopd "^1.0.1"
     has "^1.0.3"
     has-property-descriptors "^1.0.0"
@@ -4476,7 +4476,7 @@ eslint@^6.8.0:
     file-entry-cache "^5.0.1"
     functional-red-black-tree "^1.0.1"
     glob-parent "^5.0.0"
-    globals "^12.1.0"
+    configs "^12.1.0"
     ignore "^4.0.6"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
@@ -5446,29 +5446,29 @@ glob@^9.2.0:
     minipass "^4.2.4"
     path-scurry "^1.6.1"
 
-global@^4.4.0, global@~4.4.0:
+config@^4.4.0, config@~4.4.0:
   version "4.4.0"
-  resolved "https://registry.yarnpkg.com/global/-/global-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
+  resolved "https://registry.yarnpkg.com/config/-/config-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
   integrity sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
   dependencies:
     min-document "^2.19.0"
     process "^0.11.10"
 
-globals@^11.1.0:
+configs@^11.1.0:
   version "11.12.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
+  resolved "https://registry.yarnpkg.com/configs/-/configs-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-globals@^12.1.0:
+configs@^12.1.0:
   version "12.4.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-12.4.0.tgz#a18813576a41b00a24a97e7f815918c2e19925f8"
+  resolved "https://registry.yarnpkg.com/configs/-/configs-12.4.0.tgz#a18813576a41b00a24a97e7f815918c2e19925f8"
   integrity sha512-BWICuzzDvDoH54NHKCseDanAhE3CeDorgDL5MT6LMXXj2WCnd9UC2szdk4AWLfjdgNBCXLUanXYcpBBKOSWGwg==
   dependencies:
     type-fest "^0.8.1"
 
-globalthis@^1.0.3:
+configthis@^1.0.3:
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/globalthis/-/globalthis-1.0.3.tgz#5852882a52b80dc301b0660273e1ed082f0b6ccf"
+  resolved "https://registry.yarnpkg.com/configthis/-/configthis-1.0.3.tgz#5852882a52b80dc301b0660273e1ed082f0b6ccf"
   integrity sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==
   dependencies:
     define-properties "^1.1.3"
@@ -6522,7 +6522,7 @@ jsdom@^16.4.0:
   dependencies:
     abab "^2.0.5"
     acorn "^8.2.4"
-    acorn-globals "^6.0.0"
+    acorn-configs "^6.0.0"
     cssom "^0.4.4"
     cssstyle "^2.3.0"
     data-urls "^2.0.0"
@@ -6848,7 +6848,7 @@ log-update@^2.3.0:
     event-emitter "^0.3.5"
     sprintf-kit "^2.0.1"
     type "^2.5.0"
-    uni-global "^1.0.0"
+    uni-config "^1.0.0"
 
 logform@^2.3.2, logform@^2.4.0:
   version "2.5.1"
@@ -10850,9 +10850,9 @@ unfetch@^5.0.0:
   resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-5.0.0.tgz#8a5b6e5779ebe4dde0049f7d7a81d4a1af99d142"
   integrity sha512-3xM2c89siXg0nHvlmYsQ2zkLASvVMBisZm5lF3gFDqfF2xonNStDJyMpvaOBe0a1Edxmqrf2E0HBdmy9QyZaeg==
 
-uni-global@^1.0.0:
+uni-config@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/uni-global/-/uni-global-1.0.0.tgz#3583c449e87a2d9dc270ea221410a649bcdad040"
+  resolved "https://registry.yarnpkg.com/uni-config/-/uni-config-1.0.0.tgz#3583c449e87a2d9dc270ea221410a649bcdad040"
   integrity sha512-WWM3HP+siTxzIWPNUg7hZ4XO8clKi6NoCAJJWnuRL+BAqyFXF8gC03WNyTefGoUXYc47uYgXxpKLIEvo65PEHw==
   dependencies:
     type "^2.5.0"
@@ -11433,7 +11433,7 @@ xhr@^2.0.1:
   resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.6.0.tgz#b69d4395e792b4173d6b7df077f0fc5e4e2b249d"
   integrity sha512-/eCGLb5rxjx5e3mF1A7s+pLlR6CGyqWN91fv1JgER5mVWg1MZmlhBvy9kjcsOdRk8RrIujotWyJamfyrp+WIcA==
   dependencies:
-    global "~4.4.0"
+    config "~4.4.0"
     is-function "^1.0.1"
     parse-headers "^2.0.0"
     xtend "^4.0.0"

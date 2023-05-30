@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("@/logger/global");
+require("@/logger/config");
 exports.noLink = async (OpenBot, ocID) => {
   var FetchCurrentGroupLink = await OpenBot.groupInviteCode(ocID.chat);
   var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
