@@ -36,6 +36,12 @@ module.exports = async (
     },
   });
   try {
+    await OpenBot.sendMessage(ocID.chat, {
+      react: {
+        text: "❌",
+        key: ocID.key,
+      },
+    });
     return ocID.reply(
       `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌Error* 

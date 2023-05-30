@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID, groupName) => {
   await OpenBot.sendMessage(ocID.chat, {
     react: {
       text: "🔖",
@@ -140,9 +131,7 @@ module.exports = async (
 
 *⚡Usage* 
 > _${OpenBot.prefix}${fpth} reply to person to ban_
-> _${
-          OpenBot.prefix
-        }${fpth} don't reply to anyone and group will be banned_`
+> _${OpenBot.prefix}${fpth} don't reply to anyone and group will be banned_`
       );
     }
   } catch (error) {

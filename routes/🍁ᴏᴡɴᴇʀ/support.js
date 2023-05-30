@@ -36,6 +36,17 @@ module.exports = async (
     },
   });
   try {
+    await OpenBot.sendMessage(ocID.chat, {
+      react: {
+        text: "❌",
+        key: ocID.key,
+      },
+    });
+    return ocID.reply(
+      `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+*❌Error* 
+> _This Command is not yet ready for public usage!_`
+    );
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
