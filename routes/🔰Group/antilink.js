@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -92,8 +92,8 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage*   
-> _${OpenBot.prefix}${finalname} on
-> _${OpenBot.prefix}${finalname} off_`
+> _${OpenBot.prefix}${fpth} on
+> _${OpenBot.prefix}${fpth} off_`
       );
     } else if (
       OpenBot.args[0] === "ON" ||
@@ -114,7 +114,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -123,7 +123,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -146,7 +146,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -156,7 +156,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -178,8 +178,8 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage*   
-> _${OpenBot.prefix}${finalname} on
-> _${OpenBot.prefix}${finalname} off_`
+> _${OpenBot.prefix}${fpth} on
+> _${OpenBot.prefix}${fpth} off_`
       );
     }
   } catch (error) {

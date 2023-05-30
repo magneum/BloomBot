@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -44,7 +44,7 @@ module.exports = async (
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${fpth} reply to Image_`
       );
     }
 
@@ -89,7 +89,7 @@ module.exports = async (
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${fpth} reply to Image_`
             );
           }
 
@@ -103,7 +103,7 @@ module.exports = async (
 │║⦁ *📢Console:* ${OpenBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*`,
+*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*`,
               footer: `*OpenBot™ bot By KRYKNZ*
 
 _*💻HomePage:* ${OpenBot.ShowInfo}_
@@ -148,7 +148,7 @@ _*⛺HomeLog:* ${OpenBot.Showlogger}_`,
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${fpth} reply to Image_`
       );
     }
   } catch (error) {

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -50,7 +50,7 @@ module.exports = async (
           return await OpenBot.imagebutton(
             OpenBot,
             ocID,
-            `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
             OpenBot.display
@@ -59,7 +59,7 @@ module.exports = async (
         return await OpenBot.imagebutton(
           OpenBot,
           ocID,
-          `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
 🔮 𝗖𝗵𝗮𝗿𝗺: ${userRob.charm}`,

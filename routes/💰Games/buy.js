@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -121,7 +121,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} item_
+> _${OpenBot.prefix}${fpth} item_
 > _You may use ${OpenBot.prefix}shop to look for items..._`
       );
     }
@@ -140,7 +140,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} item_
+> _${OpenBot.prefix}${fpth} item_
 > _You may use ${OpenBot.prefix}shop to look for items..._`
       );
     }
@@ -172,7 +172,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
               OpenBot.display
             );
@@ -201,7 +201,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 *💰Balance:* _Just Opened Your Account!_`,
@@ -212,7 +212,7 @@ module.exports = async (
                   return await OpenBot.imagebutton(
                     OpenBot,
                     ocID,
-                    `*🔖Here, ${finalname} for @${
+                    `*🔖Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
@@ -236,7 +236,7 @@ module.exports = async (
                   return await OpenBot.imagebutton(
                     OpenBot,
                     ocID,
-                    `*🔖Here, ${finalname} for @${
+                    `*🔖Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -258,7 +258,7 @@ module.exports = async (
                   return await OpenBot.imagebutton(
                     OpenBot,
                     ocID,
-                    `*🔖Here, ${finalname} for @${
+                    `*🔖Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -280,7 +280,7 @@ module.exports = async (
                   return await OpenBot.imagebutton(
                     OpenBot,
                     ocID,
-                    `*🔖Here, ${finalname} for @${
+                    `*🔖Here, ${fpth} for @${
                       OpenBot.Tname || OpenBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -292,7 +292,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
@@ -341,7 +341,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
@@ -368,7 +368,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
@@ -384,7 +384,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
@@ -400,7 +400,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
@@ -426,7 +426,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -454,7 +454,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} item_
+> _${OpenBot.prefix}${fpth} item_
 > _You may use ${OpenBot.prefix}shop to look for items..._`
       );
     }

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -46,7 +46,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -68,7 +68,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -90,7 +90,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -116,7 +116,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -130,7 +130,7 @@ module.exports = async (
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
         OpenBot.display
@@ -141,7 +141,7 @@ module.exports = async (
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
         OpenBot.display
@@ -152,7 +152,7 @@ module.exports = async (
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
         OpenBot.display
@@ -163,7 +163,7 @@ module.exports = async (
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
         OpenBot.display
@@ -174,7 +174,7 @@ module.exports = async (
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
         OpenBot.display
@@ -207,7 +207,7 @@ module.exports = async (
           return await OpenBot.imagebutton(
             OpenBot,
             ocID,
-            `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
             OpenBot.display
           );
@@ -235,7 +235,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${
+                `*🔖Here, ${fpth} for ${
                   OpenBot.pushname || OpenBot.Tname
                 }:*
 *🧈Status:* Added To DB!
@@ -254,7 +254,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${
+                `*🔖Here, ${fpth} for ${
                   OpenBot.pushname || OpenBot.Tname
                 }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
@@ -289,7 +289,7 @@ module.exports = async (
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} _color money_
+> _${OpenBot.prefix}${fpth} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -312,7 +312,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -334,7 +334,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -362,7 +362,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${fpth} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -383,7 +383,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${
+                `*🔖Here, ${fpth} for ${
                   OpenBot.pushname || OpenBot.Tname
                 }:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
@@ -405,7 +405,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${
+                `*🔖Here, ${fpth} for ${
                   OpenBot.pushname || OpenBot.Tname
                 }:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
@@ -427,7 +427,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${
+                `*🔖Here, ${fpth} for ${
                   OpenBot.pushname || OpenBot.Tname
                 }:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
@@ -447,7 +447,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
               OpenBot.display

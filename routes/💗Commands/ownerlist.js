@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   await OpenBot.imagebutton(
     OpenBot,
     ocID,
-    `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+    `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🤖Hello, I am OpenBot User-bot🤖*
 > Ⓒ𝐎𝐩𝐞𝐧𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
 
 
 
-┌『 *🍁${finalname.toUpperCase()}🍁* 』
+┌『 *🍁${fpth.toUpperCase()}🍁* 』
 │║⦁ ${OpenBot.prefix}ban
 │║⦁ ${OpenBot.prefix}broadcast
 │║⦁ ${OpenBot.prefix}join

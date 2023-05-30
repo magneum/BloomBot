@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -220,8 +220,8 @@ module.exports = async (
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} close/open
-> _${OpenBot.prefix}${finalname} antilink on/off`
+> _${OpenBot.prefix}${fpth} close/open
+> _${OpenBot.prefix}${fpth} antilink on/off`
         );
       }
     } else {
@@ -238,8 +238,8 @@ module.exports = async (
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} close/open
-> _${OpenBot.prefix}${finalname} antilink on/off`
+> _${OpenBot.prefix}${fpth} close/open
+> _${OpenBot.prefix}${fpth} antilink on/off`
       );
     }
   } catch (error) {

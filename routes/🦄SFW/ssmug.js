@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -32,14 +32,14 @@ module.exports = async (
   try {
     OpenBot.magfetch(
       OpenBot,
-      "https://magneum.vercel.app/api/hentai?q=" + finalname
+      "https://magneum.vercel.app/api/hentai?q=" + fpth
     ).then(async (response) => {
       var fetchedata = response.data;
       console.log(fetchedata);
       return await OpenBot.imagebutton(
         OpenBot,
         ocID,
-        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *Topic*: ${fetchedata.meta.topic}
 *Query*: ${fetchedata.meta.query}`,
         fetchedata.meta.url

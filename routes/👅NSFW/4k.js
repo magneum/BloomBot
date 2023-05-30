@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var path = require("path");
-var finalname = path.basename(__filename, "").toLowerCase();
+var fpth = path.basename(__filename, "").toLowerCase();
 
 module.exports = async (
   OpenBot,
@@ -44,7 +44,7 @@ module.exports = async (
 
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum.vercel.app/api/nsfw?q=${finalname}`
+      `https://magneum.vercel.app/api/nsfw?q=${fpth}`
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
@@ -57,7 +57,7 @@ module.exports = async (
     }
 
     var message = `
-*🔖 Here is ${finalname} for @${OpenBot.Tname || OpenBot.pushname}:*
+*🔖 Here is ${fpth} for @${OpenBot.Tname || OpenBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
 ║⦁ 💡 Title: ${fetchedata.meta.title || "Not available"}

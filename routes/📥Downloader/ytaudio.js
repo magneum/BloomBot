@@ -16,10 +16,10 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
+var ppth = require("path");
 var ytdl = require("ytdl-secktor");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -45,7 +45,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} song-name_`
+> _${OpenBot.prefix}${fpth} song-name_`
       );
     } else
       OpenBot.magfetch(
@@ -59,7 +59,7 @@ module.exports = async (
           ocID.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
-            caption: `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
+            caption: `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
@@ -91,7 +91,7 @@ module.exports = async (
         await OpenBot.imagebutton(
           OpenBot,
           ocID,
-          `*🔖Here, ${finalname} for ${OpenBot.pushname}:*
+          `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}

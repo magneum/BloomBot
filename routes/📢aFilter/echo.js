@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -44,7 +44,7 @@ module.exports = async (
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} reply to Audio_`
+> _${OpenBot.prefix}${fpth} reply to Audio_`
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -72,7 +72,7 @@ module.exports = async (
               audio: OpenBot.fs.readFileSync(`${random}.mp3`),
               contextInfo: {
                 externalAdReply: {
-                  title: `*🎙️Filter:* _${finalname}_`,
+                  title: `*🎙️Filter:* _${fpth}_`,
                   body: "OpenBot by xhåÐr™",
                   mediaType: 2,
                   thumbnail: Thumb,
@@ -101,7 +101,7 @@ module.exports = async (
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} reply to Audio_`
+> _${OpenBot.prefix}${fpth} reply to Audio_`
       );
     }
   } catch (error) {

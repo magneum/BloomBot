@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -90,7 +90,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} @tag/reply_`
+> _${OpenBot.prefix}${fpth} @tag/reply_`
         );
       }
       try {
@@ -140,7 +140,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} @tag/reply_`
+> _${OpenBot.prefix}${fpth} @tag/reply_`
         );
       }
       try {
@@ -184,7 +184,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} @tag/reply_`
+> _${OpenBot.prefix}${fpth} @tag/reply_`
       );
     }
   } catch (error) {

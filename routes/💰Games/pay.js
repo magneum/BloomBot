@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   if (!OpenBot.mentionByReply) {
     return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
@@ -27,7 +27,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (OpenBot.args.length === 0) {
     return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
@@ -36,7 +36,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(OpenBot.args[0])) {
     return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
@@ -45,7 +45,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
   if (OpenBot.args[0].match(/[a-z]/i)) {
     return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
@@ -54,7 +54,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
 
   if (OpenBot.mentionByReply) {
@@ -71,7 +71,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _Can't pay self account!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
     }
 
     await OpenBot.Economy.findOne(
@@ -103,7 +103,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _You Have 0-gold To Pay_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
         }
 
         if (parseInt(OpenBot.args[0]) > uPayer.money) {
@@ -118,7 +118,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 >${uPayer.money}
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
         } else {
           await OpenBot.Economy.findOne(
             {
@@ -148,7 +148,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${finalname} for ${
+                  `*🔖Here, ${fpth} for ${
                     OpenBot.pushname || OpenBot.Tname
                   }:*
 
@@ -176,7 +176,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -201,6 +201,6 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${fpth} amount_`);
   }
 };

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -57,7 +57,7 @@ module.exports = async (
           return await OpenBot.imagebutton(
             OpenBot,
             ocID,
-            `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -72,7 +72,7 @@ module.exports = async (
             return await OpenBot.imagebutton(
               OpenBot,
               ocID,
-              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
               OpenBot.display
@@ -87,7 +87,7 @@ module.exports = async (
           return await OpenBot.imagebutton(
             OpenBot,
             ocID,
-            `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,

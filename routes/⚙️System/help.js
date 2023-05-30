@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -61,7 +61,7 @@ module.exports = async (
     return await OpenBot.imagebutton(
       OpenBot,
       ocID,
-      `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+      `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 > ⒸOpenBot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./routes")}
@@ -98,7 +98,7 @@ module.exports = async (
 
 
 
-┌╔═☰ *🍁${finalname.toUpperCase()}🍁*
+┌╔═☰ *🍁${fpth.toUpperCase()}🍁*
 │║⦁ ${OpenBot.prefix}ban
 │║⦁ ${OpenBot.prefix}broadcast
 │║⦁ ${OpenBot.prefix}join
@@ -108,7 +108,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}unban
 │║⦁ ${OpenBot.prefix}verify
 ┕╚═☰
-┌╔═☰ *📢${finalname.toUpperCase()}📢*
+┌╔═☰ *📢${fpth.toUpperCase()}📢*
 │║⦁ ${OpenBot.prefix}panning
 │║⦁ ${OpenBot.prefix}bassboost
 │║⦁ ${OpenBot.prefix}echo
@@ -126,7 +126,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}vaporwave
 │║⦁ ${OpenBot.prefix}vibrato
 ┕╚═☰
-┌╔═☰ *📼${finalname.toUpperCase()}📼*
+┌╔═☰ *📼${fpth.toUpperCase()}📼*
 │║⦁ ${OpenBot.prefix}carbon
 │║⦁ ${OpenBot.prefix}ship
 │║⦁ ${OpenBot.prefix}sticker
@@ -134,7 +134,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}tourl
 │║⦁ ${OpenBot.prefix}tts
 ┕╚═☰
-┌╔═☰ *📥${finalname.toUpperCase()}📥* 
+┌╔═☰ *📥${fpth.toUpperCase()}📥* 
 │║⦁ ${OpenBot.prefix}yta
 │║⦁ ${OpenBot.prefix}play
 │║⦁ ${OpenBot.prefix}song
@@ -155,7 +155,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}ytvideo
 │║⦁ ${OpenBot.prefix}youtubevideo
 ┕╚═☰
-┌╔═☰ *🐉${finalname.toUpperCase()}🐉* 
+┌╔═☰ *🐉${fpth.toUpperCase()}🐉* 
 │║⦁ ${OpenBot.prefix}bite
 │║⦁ ${OpenBot.prefix}blush
 │║⦁ ${OpenBot.prefix}bonk
@@ -184,7 +184,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}yeet
 │║⦁ ${OpenBot.prefix}yes
 ┕╚═☰
-┌╔═☰ *💰${finalname.toUpperCase()}💰* 
+┌╔═☰ *💰${fpth.toUpperCase()}💰* 
 │║⦁ ${OpenBot.prefix}balance
 │║⦁ ${OpenBot.prefix}buy
 │║⦁ ${OpenBot.prefix}daily
@@ -197,7 +197,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}work
 │║⦁ ${OpenBot.prefix}zoo
 ┕╚═☰
-┌╔═☰ *🔰${finalname.toUpperCase()}🔰* 
+┌╔═☰ *🔰${fpth.toUpperCase()}🔰* 
 │║⦁ ${OpenBot.prefix}antilink
 │║⦁ ${OpenBot.prefix}allownsfw
 │║⦁ ${OpenBot.prefix}delete
@@ -208,13 +208,13 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}seticon
 │║⦁ ${OpenBot.prefix}tagall
 ┕╚═☰
-┌╔═☰ *🖼️${finalname.toUpperCase()}🖼️* 
+┌╔═☰ *🖼️${fpth.toUpperCase()}🖼️* 
 │║⦁ ${OpenBot.prefix}image
 │║⦁ ${OpenBot.prefix}unsplash
 │║⦁ ${OpenBot.prefix}pinterest
 │║⦁ ${OpenBot.prefix}wallpaper
 ┕╚═☰
-┌╔═☰ *🔎${finalname.toUpperCase()}🔎* 
+┌╔═☰ *🔎${fpth.toUpperCase()}🔎* 
 │║⦁ ${OpenBot.prefix}advice
 │║⦁ ${OpenBot.prefix}anime
 │║⦁ ${OpenBot.prefix}chordlist
@@ -232,7 +232,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}reddit
 │║⦁ ${OpenBot.prefix}ytsearch
 ┕╚═☰
-┌╔═☰ *🍑${finalname.toUpperCase()}🍑* 
+┌╔═☰ *🍑${fpth.toUpperCase()}🍑* 
 │║⦁ ${OpenBot.prefix}ass
 │║⦁ ${OpenBot.prefix}bdsm
 │║⦁ ${OpenBot.prefix}blowjob
@@ -258,7 +258,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}yuri
 │║⦁ ${OpenBot.prefix}zettaiRyouiki
 ┕╚═☰
-┌╔═☰ *👅${finalname.toUpperCase()}👅* 
+┌╔═☰ *👅${fpth.toUpperCase()}👅* 
 │║⦁ ${OpenBot.prefix}nsfw
 │║⦁ ${OpenBot.prefix}nsfw2
 │║⦁ ${OpenBot.prefix}bonermaterial
@@ -296,7 +296,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}slut
 │║⦁ ${OpenBot.prefix}cumslut
 ┕╚═☰
-┌╔═☰ *🦄${finalname.toUpperCase()}🦄* 
+┌╔═☰ *🦄${fpth.toUpperCase()}🦄* 
 │║⦁ ${OpenBot.prefix}waifu
 │║⦁ ${OpenBot.prefix}swaifu
 │║⦁ ${OpenBot.prefix}whats
@@ -337,7 +337,7 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}sdance
 │║⦁ ${OpenBot.prefix}scringe
 ┕╚═☰
-┌╔═☰ *⭕${finalname.toUpperCase()}⭕* 
+┌╔═☰ *⭕${fpth.toUpperCase()}⭕* 
 │║⦁ ${OpenBot.prefix}ytpanning
 │║⦁ ${OpenBot.prefix}ytbassboost
 │║⦁ ${OpenBot.prefix}ytecho

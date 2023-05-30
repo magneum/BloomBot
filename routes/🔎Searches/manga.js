@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
-var presentpath = require("path");
-var tempname = presentpath.basename(__filename);
-var finalname = tempname.slice(0, -3).toLowerCase();
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
@@ -44,7 +44,7 @@ module.exports = async (
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${finalname} manga-name_`
+> _${OpenBot.prefix}${fpth} manga-name_`
       );
     }
 
@@ -76,7 +76,7 @@ module.exports = async (
     await OpenBot.imagebutton(
       OpenBot,
       ocID,
-      `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:* 
+      `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:* 
 > ${Found}`,
       response.data[0].images.png.large_image_url
     );
