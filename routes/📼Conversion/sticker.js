@@ -112,4 +112,4 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
-};
+});
