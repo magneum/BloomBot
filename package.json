@@ -97,6 +97,7 @@
     "node-fetch": "^2.6.1",
     "node-webpmux": "^3.1.0",
     "nodemon": "^2.0.20",
+    "openbot": "latest",
     "os": "^0.1.2",
     "parse-ms": "^2.1.0",
     "parse-time": "^0.1.4",
