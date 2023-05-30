@@ -56,7 +56,6 @@
     "child_process": "^1.0.2",
     "cluster": "^0.7.7",
     "codecov": "^3.8.3",
-    "config": "^4.4.0",
     "content-disposition": "^0.5.4",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
