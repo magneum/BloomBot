@@ -1,88 +1,88 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  if (!Nekobot.mentionByReply) {
-    return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  if (!OpenBot.mentionByReply) {
+    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
-  if (Nekobot.args.length === 0) {
-    return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+  if (OpenBot.args.length === 0) {
+    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
-  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(Nekobot.args[0])) {
-    return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+  if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(OpenBot.args[0])) {
+    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
-  if (Nekobot.args[0].match(/[a-z]/i)) {
-    return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+  if (OpenBot.args[0].match(/[a-z]/i)) {
+    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
 
-  if (Nekobot.mentionByReply) {
+  if (OpenBot.mentionByReply) {
     receiver =
-      Nekobot.mtype == "extendedTextMessage" &&
-      Nekobot.message.extendedTextMessage.contextInfo != null
-        ? Nekobot.message.extendedTextMessage.contextInfo.participant || ""
+      OpenBot.mtype == "extendedTextMessage" &&
+      OpenBot.message.extendedTextMessage.contextInfo != null
+        ? OpenBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    receiverName = await Nekobot.getName(receiver);
-    if (receiver === Nekos.sender) {
-      return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+    receiverName = await OpenBot.getName(receiver);
+    if (receiver === wwChat.sender) {
+      return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
     }
 
-    await Nekobot.Economy.findOne(
+    await OpenBot.Economy.findOne(
       {
-        Id: Nekos.sender,
+        Id: wwChat.sender,
       },
       async (error, uPayer) => {
-        if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
         if (!uPayer) {
-          new Nekobot.Economy({
-            Id: Nekos.sender,
+          new OpenBot.Economy({
+            Id: wwChat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,22 +93,22 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           })
             .save()
             .catch((error) => {
-              return Nekobot.handlerror(Nekobot, Nekos, error);
+              return OpenBot.handlerror(OpenBot, wwChat, error);
             });
-          return Nekos.reply(`*😥Apologies:* _${
-            Nekobot.pushname || Nekobot.Tname
+          return wwChat.reply(`*😥Apologies:* _${
+            OpenBot.pushname || OpenBot.Tname
           }_ 
 
 *❌Error* 
 > _You Have 0-gold To Pay_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
         }
 
-        if (parseInt(Nekobot.args[0]) > uPayer.money) {
-          return Nekos.reply(`*😥Apologies:* _${
-            Nekobot.pushname || Nekobot.Tname
+        if (parseInt(OpenBot.args[0]) > uPayer.money) {
+          return wwChat.reply(`*😥Apologies:* _${
+            OpenBot.pushname || OpenBot.Tname
           }_ 
 
 *❌Error* 
@@ -118,18 +118,18 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 >${uPayer.money}
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
         } else {
-          await Nekobot.Economy.findOne(
+          await OpenBot.Economy.findOne(
             {
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+              if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
               if (!uBonus) {
-                new Nekobot.Economy({
+                new OpenBot.Economy({
                   Id: receiver,
-                  money: parseInt(Nekobot.args[0]),
+                  money: parseInt(OpenBot.args[0]),
                   daily: 0,
                   timeout: 86400000,
                   fishdone: 0,
@@ -139,55 +139,55 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 })
                   .save()
                   .catch((error) => {
-                    return Nekobot.handlerror(Nekobot, Nekos, error);
+                    return OpenBot.handlerror(OpenBot, wwChat, error);
                   });
-                uPayer.money = uPayer.money - parseInt(Nekobot.args[0]);
+                uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
                 uPayer.save().catch((error) => {
-                  return Nekobot.handlerror(Nekobot, Nekos, error);
+                  return OpenBot.handlerror(OpenBot, wwChat, error);
                 });
-                return await Nekobot.imagebutton(
-                  Nekobot,
-                  Nekos,
+                return await OpenBot.imagebutton(
+                  OpenBot,
+                  wwChat,
                   `*🔖Here, ${finalname} for ${
-                    Nekobot.pushname || Nekobot.Tname
+                    OpenBot.pushname || OpenBot.Tname
                   }:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${Nekobot.pushname || Nekobot.Tname}
+│║⦁ *🦚Account Holder:* ${OpenBot.pushname || OpenBot.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
 │║⦁ *💰Balance:* ${payGold}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  Nekobot.display
+                  OpenBot.display
                 );
               }
 
-              uPayer.money = uPayer.money - parseInt(Nekobot.args[0]);
+              uPayer.money = uPayer.money - parseInt(OpenBot.args[0]);
               uPayer.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              uBonus.money = uBonus.money + parseInt(Nekobot.args[0]);
+              uBonus.money = uBonus.money + parseInt(OpenBot.args[0]);
               uBonus.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${Nekobot.pushname || Nekobot.Tname}
+│║⦁ *🦚Account Holder:* ${OpenBot.pushname || OpenBot.Tname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
 │║⦁ *💰Balance:* ${uBonus.money}
 │║⦁ *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                Nekobot.display
+                OpenBot.display
               );
             }
           );
@@ -195,12 +195,12 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } else {
-    return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_ 
+    return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> Reply-Person: _${Nekobot.prefix}${finalname} amount_`);
+> Reply-Person: _${OpenBot.prefix}${finalname} amount_`);
   }
 };

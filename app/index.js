@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/global");
 var logger = require("@/logger");
@@ -46,7 +46,7 @@ var { useRemoteFileAuthState } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
 async function rmdb() {
   await new Promise((resolve, reject) => {
-    exec("rm -rf Nekobot.db", (error, stdout, stderr) => {
+    exec("rm -rf OpenBot.db", (error, stdout, stderr) => {
       if (error) {
         reject(error);
       } else {
@@ -92,10 +92,10 @@ async function magneum() {
   νℓpage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/Nekobot", (request, response) => {
-    response.sendFile("views/Nekobot.html", { root: __dirname });
+  νℓpage.get("/OpenBot", (request, response) => {
+    response.sendFile("views/OpenBot.html", { root: __dirname });
   });
-  νℓpage.post("/Nekobot", urlencodedParser, (request, response) => {
+  νℓpage.post("/OpenBot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -113,17 +113,17 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("📢: Nekobot started at port " + PORT));
+  νℓpage.listen(PORT, logger.info("📢: OpenBot started at port " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
-  var Nekobot = νℓкуяє_вσт({
+  var OpenBot = νℓкуяє_вσт({
     auth: state,
     MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "Nekobot-by-magneum", "Chrome", "4.0.0"],
+    browser: [process.env.deployer || "OpenBot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -140,21 +140,21 @@ async function magneum() {
       };
     },
   });
-  store.bind(Nekobot.ev);
+  store.bind(OpenBot.ev);
 
-  // Nekobot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
-  // Nekobot.ws.on("CB:call", (update) => require("./events/cb_call")(Nekobot, update, store));
-  // Nekobot.ev.on("contacts.update", (update) => require("./events/contacts.update")(Nekobot, update, store));
-  // Nekobot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(Nekobot, update, store));
-  // Nekobot.ev.on("connection.update", (update) => require("./events/connection.update")(Nekobot, update, store, magneum));
-  // Nekobot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(Nekobot, update, store));
+  // OpenBot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
+  // OpenBot.ws.on("CB:call", (update) => require("./events/cb_call")(OpenBot, update, store));
+  // OpenBot.ev.on("contacts.update", (update) => require("./events/contacts.update")(OpenBot, update, store));
+  // OpenBot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(OpenBot, update, store));
+  // OpenBot.ev.on("connection.update", (update) => require("./events/connection.update")(OpenBot, update, store, magneum));
+  // OpenBot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(OpenBot, update, store));
 
-  Nekobot.ev.on("creds.update", async (update) => await saveCreds());
-  Nekobot.ev.on("connection.update", async (update) => {
+  OpenBot.ev.on("creds.update", async (update) => await saveCreds());
+  OpenBot.ev.on("connection.update", async (update) => {
     var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
-        logger.info("📢: Connecting to WhatsApp...▶");
+        logger.info("📢: Connecting to whatsApp...▶");
         break;
       case "open":
         logger.info("📢: Login successful! ▶");
@@ -165,13 +165,13 @@ async function magneum() {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
             await cleanDatabase().catch(rmdb());
-            await Nekobot.end();
+            await OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
             await cleanDatabase().catch(rmdb());
-            await Nekobot.end();
+            await OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionLost:
@@ -181,13 +181,13 @@ async function magneum() {
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
             await cleanDatabase().catch(rmdb());
-            await Nekobot.end();
+            await OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
             await cleanDatabase().catch(rmdb());
-            await Nekobot.end();
+            await OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.restartRequired:
@@ -199,7 +199,7 @@ async function magneum() {
             await magneum();
             break;
           default:
-            Nekobot.end(
+            OpenBot.end(
               logger.error(
                 `❌: Unknown DisconnectReason: ${reason}|${connection}`
               )
@@ -225,11 +225,11 @@ async function magneum() {
         logger.error("📢: Not New Login.");
         break;
       default:
-        logger.info("📢: Nekobot by Magneum connected...", update);
+        logger.info("📢: OpenBot by Magneum connected...", update);
     }
   });
 
-  Nekobot.ev.on("messages.upsert", async (update) => {
+  OpenBot.ev.on("messages.upsert", async (update) => {
     νTēxt = update.messages[0];
     if (!νTēxt.message) return;
     νTēxt.message =
@@ -237,26 +237,26 @@ async function magneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!Nekobot.public && !νTēxt.key.fromMe && update.type === "notify") return;
+    if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    Nekos = await mMake(Nekobot, νTēxt, store);
-    await require("../server/router")(Nekobot, Nekos, update, store);
+    wwChat = await mMake(OpenBot, νTēxt, store);
+    await require("../server/router")(OpenBot, wwChat, update, store);
   });
 
-  Nekobot.ev.on("group-participants.update", async (update) => {
-    let metadata = await Nekobot.groupMetadata(update.id);
+  OpenBot.ev.on("group-participants.update", async (update) => {
+    let metadata = await OpenBot.groupMetadata(update.id);
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await Nekobot.profilePictureUrl(sperson, "image");
+        imåge = await OpenBot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = Nekobot.display;
+        imåge = OpenBot.display;
       }
 
       if (update.action == "add") {
-        return await Nekobot.sendMessage(
+        return await OpenBot.sendMessage(
           update.id,
           {
             image: { url: imåge },
@@ -264,18 +264,18 @@ async function magneum() {
 *📢Id:* ${update.id}
 
 > Firstly Welcome.
-> I am Nekobot Whatsapp bot.
+> I am OpenBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
-            footer: "*VLkyre™ By Nekobot*\n*💻HomePage:* https://bit.ly/magneum",
+            footer: "*VLkyre™ By OpenBot*\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
-                buttonId: `${Nekobot.prefix}Dashboard`,
-                buttonText: { displayText: `${Nekobot.prefix}Dashboard` },
+                buttonId: `${OpenBot.prefix}Dashboard`,
+                buttonText: { displayText: `${OpenBot.prefix}Dashboard` },
                 type: 1,
               },
               {
-                buttonId: `${Nekobot.prefix}Nekobot`,
-                buttonText: { displayText: `${Nekobot.prefix}Nekobot` },
+                buttonId: `${OpenBot.prefix}OpenBot`,
+                buttonText: { displayText: `${OpenBot.prefix}OpenBot` },
                 type: 1,
               },
             ],
@@ -294,7 +294,7 @@ async function magneum() {
     }
   });
 
-  Nekobot.decodeJid = (jid) => {
+  OpenBot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -304,14 +304,14 @@ async function magneum() {
       );
     } else return jid;
   };
-  Nekobot.getName = (jid, withoutContact = false) => {
-    id = Nekobot.decodeJid(jid);
-    withoutContact = Nekobot.withoutContact || withoutContact;
+  OpenBot.getName = (jid, withoutContact = false) => {
+    id = OpenBot.decodeJid(jid);
+    withoutContact = OpenBot.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = Nekobot.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = OpenBot.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -325,10 +325,10 @@ async function magneum() {
         id === "0@s.whatsapp.net"
           ? {
               id,
-              name: "WhatsApp",
+              name: "whatsApp",
             }
-          : id === Nekobot.decodeJid(Nekobot.user.id)
-          ? Nekobot.user
+          : id === OpenBot.decodeJid(OpenBot.user.id)
+          ? OpenBot.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
@@ -340,19 +340,19 @@ async function magneum() {
     );
   };
 
-  Nekobot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  OpenBot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await Nekobot.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await Nekobot.getName(
+        displayName: await OpenBot.getName(i + "@s.whatsapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await OpenBot.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${await Nekobot.getName(
+        )}\nFN:${await OpenBot.getName(
           i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    Nekobot.sendMessage(
+    OpenBot.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -362,10 +362,10 @@ async function magneum() {
     );
   };
 
-  Nekobot.public = true;
-  Nekobot.serializeM = (Nekos) => mMake(Nekobot, Nekos, store);
+  OpenBot.public = true;
+  OpenBot.serializeM = (wwChat) => mMake(OpenBot, wwChat, store);
 
-  Nekobot.send5ButImg = async (
+  OpenBot.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -375,10 +375,10 @@ async function magneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: Nekobot.waUploadToServer }
+      { upload: OpenBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      Nekos.chat,
+      wwChat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
@@ -391,12 +391,12 @@ async function magneum() {
       }),
       options
     );
-    Nekobot.relayMessage(jid, template.message, {
+    OpenBot.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  Nekobot.sendButtonText = (
+  OpenBot.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -411,13 +411,13 @@ async function magneum() {
       headerType: 2,
       ...options,
     };
-    Nekobot.sendMessage(jid, buttonMessage, { quoted, ...options });
+    OpenBot.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  Nekobot.sendText = (jid, text, quoted = "", options) =>
-    Nekobot.sendMessage(jid, { text: text, ...options }, { quoted });
+  OpenBot.sendText = (jid, text, quoted = "", options) =>
+    OpenBot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  Nekobot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  OpenBot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -427,14 +427,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await Nekobot.sendMessage(
+    return await OpenBot.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  Nekobot.sendVideo = async (
+  OpenBot.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -451,14 +451,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await Nekobot.sendMessage(
+    return await OpenBot.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  Nekobot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  OpenBot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -468,15 +468,15 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await Nekobot.sendMessage(
+    return await OpenBot.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  Nekobot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    Nekobot.sendMessage(
+  OpenBot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    OpenBot.sendMessage(
       jid,
       {
         text: text,
@@ -490,7 +490,7 @@ async function magneum() {
       { quoted }
     );
 
-  Nekobot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  OpenBot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -507,7 +507,7 @@ async function magneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await Nekobot.sendMessage(
+    await OpenBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -515,7 +515,7 @@ async function magneum() {
     return buffer;
   };
 
-  Nekobot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  OpenBot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -532,7 +532,7 @@ async function magneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await Nekobot.sendMessage(
+    await OpenBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -540,7 +540,7 @@ async function magneum() {
     return buffer;
   };
 
-  Nekobot.downloadAndSaveMediaMessage = async (
+  OpenBot.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -562,7 +562,7 @@ async function magneum() {
     return trueFileName;
   };
 
-  Nekobot.downloadMediaMessage = async (message) => {
+  OpenBot.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -576,7 +576,7 @@ async function magneum() {
     return buffer;
   };
 
-  Nekobot.sendMedia = async (
+  OpenBot.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -584,7 +584,7 @@ async function magneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await Nekobot.getFile(path, true);
+    let types = await OpenBot.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -612,7 +612,7 @@ async function magneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await Nekobot.sendMessage(
+    await OpenBot.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -620,7 +620,7 @@ async function magneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  Nekobot.copyNforward = async (
+  OpenBot.copyNforward = async (
     jid,
     message,
     forceforward = false,
@@ -671,17 +671,17 @@ async function magneum() {
           }
         : {}
     );
-    await Nekobot.relayMessage(jid, waMessage.message, {
+    await OpenBot.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  Nekobot.cMod = (
+  OpenBot.cMod = (
     jid,
     copy,
     text = "",
-    sender = Nekobot.user.id,
+    sender = OpenBot.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -710,12 +710,12 @@ async function magneum() {
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === Nekobot.user.id;
+    copy.key.fromMe = sender === OpenBot.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  Nekobot.getFile = async (PATH, save) => {
+  OpenBot.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -746,13 +746,13 @@ async function magneum() {
     };
   };
 
-  Nekobot.ws.on("CB:call", async (update) => {
+  OpenBot.ws.on("CB:call", async (update) => {
     var sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    let person = await Nekobot.sendContact(callerId, global.owner);
-    Nekobot.sendMessage(
+    let person = await OpenBot.sendContact(callerId, global.owner);
+    OpenBot.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -760,12 +760,12 @@ async function magneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await Nekobot.updateBlockStatus(callerId, "block");
+    await OpenBot.updateBlockStatus(callerId, "block");
   });
 
-  Nekobot.ev.on("contacts.update", async (update) => {
+  OpenBot.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = Nekobot.decodeJid(contact.id);
+      let jid = OpenBot.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
@@ -832,13 +832,13 @@ async function magneum() {
       "🛠️Handyman",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await Nekobot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (Nekobot by magneum)"
+    await OpenBot.updateProfileStatus(
+      "Feeling: " + __Feeling + " (OpenBot by magneum)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {
-    await Nekobot.updateProfilePicture("120363020792949649@g.us", {
-      url: Nekobot.display,
+    await OpenBot.updateProfilePicture("120363020792949649@g.us", {
+      url: OpenBot.display,
     });
   }, 60 * 60 * 1000); // Run every hour (60 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {

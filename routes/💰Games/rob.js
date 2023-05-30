@@ -1,17 +1,17 @@
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
@@ -19,47 +19,47 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-  if (Nekobot.mentionByReply) {
+  if (OpenBot.mentionByReply) {
     var receiver =
-      Nekos.mtype == "extendedTextMessage" &&
-      Nekos.message.extendedTextMessage.contextInfo != null
-        ? Nekos.message.extendedTextMessage.contextInfo.participant || ""
+      wwChat.mtype == "extendedTextMessage" &&
+      wwChat.message.extendedTextMessage.contextInfo != null
+        ? wwChat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    var receiverName = await Nekobot.getName(receiver);
-    if (receiver === Nekos.sender) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    var receiverName = await OpenBot.getName(receiver);
+    if (receiver === wwChat.sender) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Can't rob your own bank_`
       );
     }
 
-    Nekobot.Economy.findOne(
+    OpenBot.Economy.findOne(
       {
-        Id: Nekos.sender,
+        Id: wwChat.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
-        Nekobot.Economy.findOne(
+        if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
+        OpenBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+            if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
             if (!ᴠᴇᴄᴏ) {
-              var newUser = new Nekobot.Economy({
+              var newUser = new OpenBot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -71,11 +71,11 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               });
               await newUser
                 .save()
-                .catch((error) => Nekobot.handlerror(Nekobot, Nekos, error));
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+                .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -83,13 +83,13 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
             if (!ᴄᴇᴄᴏ) {
-              var newUser = new Nekobot.Economy({
-                Id: Nekos.sender,
+              var newUser = new OpenBot.Economy({
+                Id: wwChat.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,11 +100,11 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               });
               await newUser
                 .save()
-                .catch((error) => Nekobot.handlerror(Nekobot, Nekos, error));
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+                .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -113,15 +113,15 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
             if (ᴄᴇᴄᴏ.money < 1000) {
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -129,15 +129,15 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
             if (ᴠᴇᴄᴏ.money < 1000) {
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -146,22 +146,22 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
             Robbery.findOne(
               {
-                Id: Nekos.sender,
+                Id: wwChat.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+                if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+                    if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,19 +174,19 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await newUser
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -197,13 +197,13 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     }
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: Nekos.sender,
+                        Id: wwChat.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -213,19 +213,19 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await newUser
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -235,7 +235,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     }
 
@@ -248,11 +248,11 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -260,7 +260,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     }
 
@@ -277,28 +277,28 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -311,7 +311,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -326,28 +326,28 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -360,7 +360,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -375,28 +375,28 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -409,7 +409,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     }
 
@@ -420,18 +420,18 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -444,14 +444,14 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                         }!
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${Nekobot.pushname || Nekobot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${OpenBot.pushname || OpenBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -460,18 +460,18 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Nekobot.handlerror(Nekobot, Nekos, error)
+                          OpenBot.handlerror(OpenBot, wwChat, error)
                         );
-                      return await Nekobot.imagebutton(
-                        Nekobot,
-                        Nekos,
+                      return await OpenBot.imagebutton(
+                        OpenBot,
+                        wwChat,
                         `*🔖Here, ${finalname} for ${
-                          Nekobot.pushname || Nekobot.Tname
+                          OpenBot.pushname || OpenBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -482,14 +482,14 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${Nekobot.pushname || Nekobot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${OpenBot.pushname || OpenBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        Nekobot.display
+                        OpenBot.display
                       );
                     }
                   }
@@ -501,10 +501,10 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } else {
-    return await Nekobot.imagebutton(
-      Nekobot,
-      Nekos,
-      `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+    return await OpenBot.imagebutton(
+      OpenBot,
+      wwChat,
+      `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -530,7 +530,7 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      Nekobot.display
+      OpenBot.display
     );
   }
 };

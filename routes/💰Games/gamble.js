@@ -1,43 +1,43 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-    if (!Nekobot.args[0] && !Nekobot.args[1]) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    if (!OpenBot.args[0] && !OpenBot.args[1]) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -45,21 +45,21 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
 
-    if (formatColor.test(Nekobot.args[0])) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    if (formatColor.test(OpenBot.args[0])) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -67,21 +67,21 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
 
-    if (formatAmount.test(Nekobot.args[1])) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    if (formatAmount.test(OpenBot.args[1])) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -90,24 +90,24 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     }
 
     if (
-      !Nekobot.args[0].includes("red") &&
-      !Nekobot.args[0].includes("black") &&
-      !Nekobot.args[0].includes("purple")
+      !OpenBot.args[0].includes("red") &&
+      !OpenBot.args[0].includes("black") &&
+      !OpenBot.args[0].includes("purple")
     ) {
-      await Nekobot.sendMessage(Nekos.chat, {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -115,75 +115,75 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
 
-    var ColorRoom = Nekobot.args[0];
-    var AmountRoom = parseInt(Nekobot.args[1]);
+    var ColorRoom = OpenBot.args[0];
+    var AmountRoom = parseInt(OpenBot.args[1]);
     if (AmountRoom < 50) {
-      return await Nekobot.imagebutton(
-        Nekobot,
-        Nekos,
-        `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+      return await OpenBot.imagebutton(
+        OpenBot,
+        wwChat,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        Nekobot.display
+        OpenBot.display
       );
     }
 
     if (AmountRoom > 800) {
-      return await Nekobot.imagebutton(
-        Nekobot,
-        Nekos,
-        `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+      return await OpenBot.imagebutton(
+        OpenBot,
+        wwChat,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        Nekobot.display
+        OpenBot.display
       );
     }
 
     if (ColorRoom === "red" && AmountRoom > 200) {
-      return await Nekobot.imagebutton(
-        Nekobot,
-        Nekos,
-        `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+      return await OpenBot.imagebutton(
+        OpenBot,
+        wwChat,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        Nekobot.display
+        OpenBot.display
       );
     }
 
     if (ColorRoom === "black" && AmountRoom > 500) {
-      return await Nekobot.imagebutton(
-        Nekobot,
-        Nekos,
-        `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+      return await OpenBot.imagebutton(
+        OpenBot,
+        wwChat,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        Nekobot.display
+        OpenBot.display
       );
     }
 
     if (ColorRoom === "purple" && AmountRoom > 800) {
-      return await Nekobot.imagebutton(
-        Nekobot,
-        Nekos,
-        `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+      return await OpenBot.imagebutton(
+        OpenBot,
+        wwChat,
+        `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        Nekobot.display
+        OpenBot.display
       );
     }
 
-    Nekobot.Economy.findOne(
+    OpenBot.Economy.findOne(
       {
-        Id: Nekos.sender,
+        Id: wwChat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return Nekobot.handlerror(Nekobot, Nekos, error);
+          return OpenBot.handlerror(OpenBot, wwChat, error);
         }
 
         if (!userEco) {
-          var newUser = new Nekobot.Economy({
-            Id: Nekos.sender,
+          var newUser = new OpenBot.Economy({
+            Id: wwChat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -193,43 +193,43 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return Nekobot.handlerror(Nekobot, Nekos, error);
+            return OpenBot.handlerror(OpenBot, wwChat, error);
           });
-          return await Nekobot.imagebutton(
-            Nekobot,
-            Nekos,
-            `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+          return await OpenBot.imagebutton(
+            OpenBot,
+            wwChat,
+            `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
-            Nekobot.display
+            OpenBot.display
           );
         }
 
-        Nekobot.Gamble.findOne(
+        OpenBot.Gamble.findOne(
           {
-            Id: Nekos.sender,
+            Id: wwChat.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return Nekobot.handlerror(Nekobot, Nekos, error);
+              return OpenBot.handlerror(OpenBot, wwChat, error);
             }
 
             if (!userGamble) {
-              var newUser = new Nekobot.Gamble({
-                Id: Nekos.sender,
-                serverId: Nekos.chat,
+              var newUser = new OpenBot.Gamble({
+                Id: wwChat.sender,
+                serverId: wwChat.chat,
                 Gambledone: 0,
                 Gambvarimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
@@ -237,16 +237,16 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              var time = Nekobot.ms(
+              var time = OpenBot.ms(
                 userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone)
               );
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
@@ -263,20 +263,20 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             var Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await Nekobot.sendMessage(Nekos.chat, {
+              await OpenBot.sendMessage(wwChat.chat, {
                 react: {
                   text: "❌",
-                  key: Nekos.key,
+                  key: wwChat.key,
                 },
               });
-              return Nekos.reply(
-                `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+              return wwChat.reply(
+                `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} _color money_
+> _${OpenBot.prefix}${finalname} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -286,20 +286,20 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
             Color = Color.toLowerCase();
             if (!money) {
-              await Nekobot.sendMessage(Nekos.chat, {
+              await OpenBot.sendMessage(wwChat.chat, {
                 react: {
                   text: "❌",
-                  key: Nekos.key,
+                  key: wwChat.key,
                 },
               });
-              return Nekos.reply(
-                `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+              return wwChat.reply(
+                `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -308,20 +308,20 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             }
 
             if (money > CurrentMoney) {
-              await Nekobot.sendMessage(Nekos.chat, {
+              await OpenBot.sendMessage(wwChat.chat, {
                 react: {
                   text: "❌",
-                  key: Nekos.key,
+                  key: wwChat.key,
                 },
               });
-              return Nekos.reply(
-                `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+              return wwChat.reply(
+                `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -336,20 +336,20 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await Nekobot.sendMessage(Nekos.chat, {
+              await OpenBot.sendMessage(wwChat.chat, {
                 react: {
                   text: "❌",
-                  key: Nekos.key,
+                  key: wwChat.key,
                 },
               });
-              return Nekos.reply(
-                `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+              return wwChat.reply(
+                `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} color money_
+> _${OpenBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -362,18 +362,18 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
               await userEco.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
@@ -382,18 +382,18 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
               await userEco.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
@@ -402,42 +402,42 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
               await userEco.save().catch((error) => {
-                return Nekobot.handlerror(Nekobot, Nekos, error);
+                return OpenBot.handlerror(OpenBot, wwChat, error);
               });
-              return await Nekobot.imagebutton(
-                Nekobot,
-                Nekos,
-                `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+              return await OpenBot.imagebutton(
+                OpenBot,
+                wwChat,
+                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                Nekobot.display
+                OpenBot.display
               );
             }
 
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return Nekobot.handlerror(Nekobot, Nekos, error);
+              return OpenBot.handlerror(OpenBot, wwChat, error);
             });
             await userEco.save().catch((error) => {
-              return Nekobot.handlerror(Nekobot, Nekos, error);
+              return OpenBot.handlerror(OpenBot, wwChat, error);
             });
-            return await Nekobot.imagebutton(
-              Nekobot,
-              Nekos,
-              `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
+            return await OpenBot.imagebutton(
+              OpenBot,
+              wwChat,
+              `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              Nekobot.display
+              OpenBot.display
             );
           }
         );
       }
     );
   } catch (error) {
-    return Nekobot.handlerror(Nekobot, Nekos, error);
+    return OpenBot.handlerror(OpenBot, wwChat, error);
   }
 };

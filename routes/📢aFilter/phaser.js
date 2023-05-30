@@ -1,70 +1,70 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!Nekobot.quoted) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    if (!OpenBot.quoted) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} reply to Audio_`
+> _${OpenBot.prefix}${finalname} reply to Audio_`
       );
     }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-    if (/audio/.test(Nekobot.mime)) {
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    if (/audio/.test(OpenBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await Nekobot.downloadAndSaveMediaMessage(Nekobot.quoted, random);
-      Nekobot.exec(
-        `${Nekobot.pathFFmpeg} -i ${media} -af "aphaser=in_gain=0.4" ${random}.mp3`,
+      media = await OpenBot.downloadAndSaveMediaMessage(OpenBot.quoted, random);
+      OpenBot.exec(
+        `${OpenBot.pathFFmpeg} -i ${media} -af "aphaser=in_gain=0.4" ${random}.mp3`,
         async (error) => {
-          return Nekos.reply(`*😺You:* ${
-            Nekobot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-          }\n*📢Id:* ${Nekos.chat}
+          return wwChat.reply(`*😺You:* ${
+            OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+          }\n*📢Id:* ${wwChat.chat}
 
-*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
-          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-          var Thumb = await Nekobot.getBuffer(Nekobot.display);
-          return await Nekobot.sendMessage(
-            Nekos.chat,
+          ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+          var Thumb = await OpenBot.getBuffer(OpenBot.display);
+          return await OpenBot.sendMessage(
+            wwChat.chat,
             {
-              audio: Nekobot.fs.readFileSync(`${random}.mp3`),
+              audio: OpenBot.fs.readFileSync(`${random}.mp3`),
               contextInfo: {
                 externalAdReply: {
                   title: `*🎙️Filter:* _${finalname}_`,
-                  body: "Nekobot вσт by xhåÐr™",
+                  body: "OpenBot вσт by xhåÐr™",
                   mediaType: 2,
                   thumbnail: Thumb,
                   mediaUrl: one.url,
@@ -73,30 +73,30 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               mimetype: "audio/mpeg",
               fileName: `${one.title}.mp3`,
             },
-            { quoted: Nekos }
-          ).then(Nekobot.fs.unlinkSync(`${random}.mp3`));
+            { quoted: wwChat }
+          ).then(OpenBot.fs.unlinkSync(`${random}.mp3`));
         }
       );
     } else {
-      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-      await Nekobot.sendMessage(Nekos.chat, {
+      ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Could not find any Audio in context!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} reply to Audio_`
+> _${OpenBot.prefix}${finalname} reply to Audio_`
       );
     }
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } catch (error) {
-    return Nekobot.handlerror(Nekobot, Nekos, error);
+    return OpenBot.handlerror(OpenBot, wwChat, error);
   }
 };

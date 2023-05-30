@@ -1,56 +1,56 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, wwChat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!Nekobot.quoted) {
-      await Nekobot.sendMessage(Nekos.chat, {
+    if (!OpenBot.quoted) {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${finalname} reply to Image_`
       );
     }
 
-    if (/image/.test(Nekobot.mime)) {
+    if (/image/.test(OpenBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await Nekobot.downloadAndSaveMediaMessage(Nekobot.quoted, random);
-      Nekobot.exec(
-        Nekobot.pathFFmpeg + ` -i ${media} ${random}.png`,
+      media = await OpenBot.downloadAndSaveMediaMessage(OpenBot.quoted, random);
+      OpenBot.exec(
+        OpenBot.pathFFmpeg + ` -i ${media} ${random}.png`,
         async (error) => {
           if (error) {
-            return Nekobot.reply(`*😺You:* ${
-              Nekobot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${Nekos.chat}
+            return OpenBot.reply(`*😺You:* ${
+              OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+            }\n*📢Id:* ${wwChat.chat}
 
-*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -58,93 +58,93 @@ module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 > ${error}`);
           }
 
-          if (Nekobot.fs.existsSync(random + ".png")) {
+          if (OpenBot.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (Nekobot.fs.existsSync(random + ".png")) {
+          } else if (OpenBot.fs.existsSync(random + ".png")) {
             Found = random + ".png";
-          } else if (Nekobot.fs.existsSync(random + ".jpeg")) {
+          } else if (OpenBot.fs.existsSync(random + ".jpeg")) {
             Found = random + ".jpeg";
-          } else if (Nekobot.fs.existsSync(random + ".webp")) {
+          } else if (OpenBot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await Nekobot.sendMessage(Nekos.chat, {
+            await OpenBot.sendMessage(wwChat.chat, {
               react: {
                 text: "❌",
-                key: Nekos.key,
+                key: wwChat.key,
               },
             });
-            return Nekos.reply(
-              `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+            return wwChat.reply(
+              `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${finalname} reply to Image_`
             );
           }
 
-          return await Nekobot
+          return await OpenBot
             .sendMessage(
-              Nekos.chat,
+              wwChat.chat,
               {
-                image: Nekobot.fs.readFileSync(Found),
+                image: OpenBot.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
-│║⦁ *😺You:* ${Nekobot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${Nekos.chat.split("@")[0]}
-│║⦁ *📢Console:* ${Nekobot.ShowInfo.replace("http://", "")}
+│║⦁ *😺You:* ${OpenBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║⦁ *🎭ChatId:* ${wwChat.chat.split("@")[0]}
+│║⦁ *📢Console:* ${OpenBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*`,
-                footer: `*Nekobot™ bot By KRYKNZ*
+*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*`,
+                footer: `*OpenBot™ bot By KRYKNZ*
 
-_*💻HomePage:* ${Nekobot.ShowInfo}_
-_*⛺HomeLog:* ${Nekobot.Showlogger}_`,
-                mentions: [Nekos.sender],
+_*💻HomePage:* ${OpenBot.ShowInfo}_
+_*⛺HomeLog:* ${OpenBot.Showlogger}_`,
+                mentions: [wwChat.sender],
                 buttons: [
                   {
-                    buttonId: `${Nekobot.prefix}Commands`,
+                    buttonId: `${OpenBot.prefix}Commands`,
                     buttonText: {
-                      displayText: `${Nekobot.prefix}✈️Commands`,
+                      displayText: `${OpenBot.prefix}✈️Commands`,
                     },
                     type: 1,
                   },
                   {
-                    buttonId: `${Nekobot.prefix}Nekobot`,
-                    buttonText: { displayText: `${Nekobot.prefix}🛰️Nekobot` },
+                    buttonId: `${OpenBot.prefix}OpenBot`,
+                    buttonText: { displayText: `${OpenBot.prefix}🛰️OpenBot` },
                     type: 1,
                   },
                 ],
                 headerType: 4,
               },
               {
-                quoted: Nekos,
+                quoted: wwChat,
               }
             )
             .then(
-              Nekobot.fs.unlinkSync(Found),
-              Nekobot.fs.unlinkSync(random + ".png")
+              OpenBot.fs.unlinkSync(Found),
+              OpenBot.fs.unlinkSync(random + ".png")
             );
         }
       );
     } else {
-      await Nekobot.sendMessage(Nekos.chat, {
+      await OpenBot.sendMessage(wwChat.chat, {
         react: {
           text: "❌",
-          key: Nekos.key,
+          key: wwChat.key,
         },
       });
-      return Nekos.reply(
-        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
+      return wwChat.reply(
+        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
 
 *❌Error* 
 > _Could not find any Image in context!_
 
 *⚡Usage* 
-> _${Nekobot.prefix}${finalname} reply to Image_`
+> _${OpenBot.prefix}${finalname} reply to Image_`
       );
     }
   } catch (error) {
-    return Nekobot.handlerror(Nekobot, Nekos, error);
+    return OpenBot.handlerror(OpenBot, wwChat, error);
   }
 };
