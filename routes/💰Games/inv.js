@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     OpenBot.Robbery.findOne(
       {
@@ -62,3 +71,4 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

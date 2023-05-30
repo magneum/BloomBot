@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
@@ -226,7 +235,9 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${finalname} for ${
+                  OpenBot.pushname || OpenBot.Tname
+                }:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
                 OpenBot.display
@@ -243,7 +254,9 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${finalname} for ${
+                  OpenBot.pushname || OpenBot.Tname
+                }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                 OpenBot.display
@@ -370,7 +383,9 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${finalname} for ${
+                  OpenBot.pushname || OpenBot.Tname
+                }:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
                 OpenBot.display
@@ -390,7 +405,9 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${finalname} for ${
+                  OpenBot.pushname || OpenBot.Tname
+                }:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
                 OpenBot.display
@@ -410,7 +427,9 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*🔖Here, ${finalname} for ${
+                  OpenBot.pushname || OpenBot.Tname
+                }:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
                 OpenBot.display
@@ -441,3 +460,4 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];
