@@ -19,7 +19,16 @@ require("#/logger/global");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     // Fetch emotion data from the API
     var response = await OpenBot.magfetch(
@@ -88,7 +97,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
-    // Handle any errors that occur during the process
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

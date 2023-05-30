@@ -19,7 +19,16 @@ require("#/logger/global");
 var path = require("path");
 var finalname = path.basename(__filename, "").toLowerCase();
 
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
     var server = await OpenBot.nsfwCheck.findOne({ serverId: ocID.chat });
     if (!server) {
@@ -65,8 +74,14 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 ║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await OpenBot.imagebutton(OpenBot, ocID, message, fetchedata.meta.thumbnail);
+    await OpenBot.imagebutton(
+      OpenBot,
+      ocID,
+      message,
+      fetchedata.meta.thumbnail
+    );
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

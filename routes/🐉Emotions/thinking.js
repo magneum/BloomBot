@@ -70,8 +70,7 @@ module.exports = async (
           mentionedUser =
             ocID.mtype === "extendedTextMessage" &&
             ocID.message.extendedTextMessage.contextInfo != null
-              ? ocID.message.extendedTextMessage.contextInfo.participant ||
-                ""
+              ? ocID.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
         var message = `*OpenBot by magneum*
@@ -98,7 +97,7 @@ module.exports = async (
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
-    // Handle any errors that occur during the process
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];
