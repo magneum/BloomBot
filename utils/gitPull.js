@@ -55,10 +55,6 @@ const gitPull = async () => {
       }
 
       logger.info("📢: Updated the bot with latest changes.");
-      logger.info("📢: Restarting the main thread...");
-      const startProcess = exec("yarn start");
-      startProcess.stderr.pipe(process.stderr);
-      startProcess.stdout.pipe(process.stdout);
     } else {
       logger.info("📢: Bot is already working on the latest version.");
     }
@@ -68,3 +64,4 @@ const gitPull = async () => {
 };
 
 module.exports = gitPull;
+
