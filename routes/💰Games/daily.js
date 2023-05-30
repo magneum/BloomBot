@@ -19,20 +19,20 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     NekoBot.Economy.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return NekoBot.handlerror(NekoBot, nekos, error);
+          return NekoBot.handlerror(NekoBot, Nekos, error);
         }
 
         if (!userEco) {
           new NekoBot.Economy({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -43,11 +43,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           })
             .save()
             .catch((error) => {
-              return NekoBot.handlerror(NekoBot, nekos, error);
+              return NekoBot.handlerror(NekoBot, Nekos, error);
             });
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -62,7 +62,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             );
             return await NekoBot.imagebutton(
               NekoBot,
-              nekos,
+              Nekos,
               `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return NekoBot.handlerror(NekoBot, nekos, error);
+            return NekoBot.handlerror(NekoBot, Nekos, error);
           });
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -88,6 +88,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

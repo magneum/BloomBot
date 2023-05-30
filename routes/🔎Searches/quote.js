@@ -19,7 +19,7 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var кяуяєs = await NekoBot.axios.get("https://favqs.com/api/qotd");
     try {
@@ -35,7 +35,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await NekoBot.imagebutton(
         NekoBot,
-        nekos,
+        Nekos,
         `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
@@ -45,7 +45,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     } catch {
       await NekoBot.imagebutton(
         NekoBot,
-        nekos,
+        Nekos,
         `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:* 
 > ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
@@ -54,6 +54,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -30,19 +30,19 @@ module.exports = async (
   participants
 ) => {
   try {
-    await NekoBot.sendMessage(nekos.chat, {
+    await NekoBot.sendMessage(Nekos.chat, {
       react: {
         text: "❌",
-        key: nekos.key,
+        key: Nekos.key,
       },
     });
-    return nekos.reply(
+    return Nekos.reply(
       `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

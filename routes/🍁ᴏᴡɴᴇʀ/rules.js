@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await NekoBot.sendMessage(nekos.chat, {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await NekoBot.sendMessage(Nekos.chat, {
     react: {
       text: "🔖",
-      key: nekos.key,
+      key: Nekos.key,
     },
   });
   await NekoBot.imagebutton(
     NekoBot,
-    nekos,
+    Nekos,
     `*🔖Here, ${finalname} for @${NekoBot.Tname || NekoBot.pushname}:*
 *🤖Hello, I am NekoBot User-bot🤖*
 > Ⓒ𝐍𝐞𝐤𝐨𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!

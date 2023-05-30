@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (NekoBot, nekos, error) => {
+module.exports = async (NekoBot, Nekos, error) => {
   console.log("❗Error: " + NekoBot.command.toUpperCase() + " :" + error);
-  return nekos.reply(
+  return Nekos.reply(
     `*😥Apologies:* _${NekoBot.pushname}_
 *❌Error* 
 > _Please try again later._

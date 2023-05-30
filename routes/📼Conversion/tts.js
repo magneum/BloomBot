@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     if (!NekoBot.args) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -49,13 +49,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       text += NekoBot.args[i] + " ";
     }
     if (text.length > 200) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -81,7 +81,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           var fetchedata = response.data;
           console.log(fetchedata);
           return await NekoBot.sendMessage(
-            nekos.chat,
+            Nekos.chat,
             {
               audio: { url: fetchedata.meta.url },
               mimetype: "audio/mpeg",
@@ -101,11 +101,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 },
               },
             },
-            { quoted: nekos }
+            { quoted: Nekos }
           );
         });
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

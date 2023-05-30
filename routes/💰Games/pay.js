@@ -19,9 +19,9 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   if (!NekoBot.mentionByReply) {
-    return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -30,7 +30,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 > Reply-Person: _${NekoBot.prefix}${finalname} amount_`);
   }
   if (NekoBot.args.length === 0) {
-    return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -39,7 +39,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 > Reply-Person: _${NekoBot.prefix}${finalname} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(NekoBot.args[0])) {
-    return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -48,7 +48,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 > Reply-Person: _${NekoBot.prefix}${finalname} amount_`);
   }
   if (NekoBot.args[0].match(/[a-z]/i)) {
-    return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -64,8 +64,8 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         ? NekoBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await NekoBot.getName(receiver);
-    if (receiver === nekos.sender) {
-      return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    if (receiver === Nekos.sender) {
+      return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -76,13 +76,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
     await NekoBot.Economy.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, uPayer) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         if (!uPayer) {
           new NekoBot.Economy({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,9 +93,9 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           })
             .save()
             .catch((error) => {
-              return NekoBot.handlerror(NekoBot, nekos, error);
+              return NekoBot.handlerror(NekoBot, Nekos, error);
             });
-          return nekos.reply(`*😥Apologies:* _${
+          return Nekos.reply(`*😥Apologies:* _${
             NekoBot.pushname || NekoBot.Tname
           }_ 
 
@@ -107,7 +107,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         }
 
         if (parseInt(NekoBot.args[0]) > uPayer.money) {
-          return nekos.reply(`*😥Apologies:* _${
+          return Nekos.reply(`*😥Apologies:* _${
             NekoBot.pushname || NekoBot.Tname
           }_ 
 
@@ -125,7 +125,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+              if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
               if (!uBonus) {
                 new NekoBot.Economy({
                   Id: receiver,
@@ -139,15 +139,15 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 })
                   .save()
                   .catch((error) => {
-                    return NekoBot.handlerror(NekoBot, nekos, error);
+                    return NekoBot.handlerror(NekoBot, Nekos, error);
                   });
                 uPayer.money = uPayer.money - parseInt(NekoBot.args[0]);
                 uPayer.save().catch((error) => {
-                  return NekoBot.handlerror(NekoBot, nekos, error);
+                  return NekoBot.handlerror(NekoBot, Nekos, error);
                 });
                 return await NekoBot.imagebutton(
                   NekoBot,
-                  nekos,
+                  Nekos,
                   `*🔖Here, ${finalname} for ${
                     NekoBot.pushname || NekoBot.Tname
                   }:*
@@ -167,15 +167,15 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
               uPayer.money = uPayer.money - parseInt(NekoBot.args[0]);
               uPayer.save().catch((error) => {
-                return NekoBot.handlerror(NekoBot, nekos, error);
+                return NekoBot.handlerror(NekoBot, Nekos, error);
               });
               uBonus.money = uBonus.money + parseInt(NekoBot.args[0]);
               uBonus.save().catch((error) => {
-                return NekoBot.handlerror(NekoBot, nekos, error);
+                return NekoBot.handlerror(NekoBot, Nekos, error);
               });
               return await NekoBot.imagebutton(
                 NekoBot,
-                nekos,
+                Nekos,
                 `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -195,7 +195,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } else {
-    return nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
+    return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

@@ -19,7 +19,7 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     var Rads = Reds[Math.floor(Math.random() * Reds.length)];
@@ -30,7 +30,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     var data = json[0].data.children[0].data;
     await NekoBot.imagebutton(
       NekoBot,
-      nekos,
+      Nekos,
       `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
@@ -40,6 +40,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       data.url
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

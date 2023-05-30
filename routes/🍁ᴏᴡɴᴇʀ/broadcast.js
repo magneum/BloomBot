@@ -19,35 +19,35 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await NekoBot.sendMessage(nekos.chat, {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await NekoBot.sendMessage(Nekos.chat, {
     react: {
       text: "🔖",
-      key: nekos.key,
+      key: Nekos.key,
     },
   });
   try {
     if (!NekoBot.frome && !NekoBot.isSudo) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!NekoBot.args.join(" ")) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -62,7 +62,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       .slice(0)
       .map((entry) => entry[1]);
     var places = vGroup.map((v) => v.id);
-    nekos.reply(
+    Nekos.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -71,7 +71,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     for (var cron of places) {
       await NekoBot.sendMessage(cron, {
         video: {
-          url: "./public/src/NekoBot (8).mp4",
+          url: "./public/NekoBot/NekoBot (8).mp4",
         },
         mimetype: "video/mp4",
         fileName: "NekoBot.mp4",
@@ -85,6 +85,6 @@ ${NekoBot.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos);
+    return NekoBot.handlerror(NekoBot, Nekos);
   }
 };

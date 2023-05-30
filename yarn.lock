@@ -1446,9 +1446,9 @@ ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-akaneko@^5.2.5:
+akaNeko@^5.2.5:
   version "5.2.7"
-  resolved "https://registry.yarnpkg.com/akaneko/-/akaneko-5.2.7.tgz#1dd2300e169fccd461111540cecef2290d49a296"
+  resolved "https://registry.yarnpkg.com/akaNeko/-/akaNeko-5.2.7.tgz#1dd2300e169fccd461111540cecef2290d49a296"
   integrity sha512-0cCMo9HQEx21mxQANsnPPhKc5ZTWNK6GjmtcElf3yYSwxpavUuvoR1PWkI0vG9JRDJqP4FzR3MN66Bzhl0tDwg==
   dependencies:
     node-fetch "^2.6.1"

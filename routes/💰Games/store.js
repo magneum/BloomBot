@@ -19,11 +19,11 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     await NekoBot.imagebutton(
       NekoBot,
-      nekos,
+      Nekos,
       `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
@@ -42,6 +42,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       NekoBot.display
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

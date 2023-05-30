@@ -21,7 +21,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -31,13 +31,13 @@ module.exports = async (
 ) => {
   try {
     if (!NekoBot.quoted) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (
 
     var { isBaileys } = NekoBot.quoted;
     if (!isBaileys) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -66,16 +66,16 @@ module.exports = async (
 > _${NekoBot.prefix}${finalname} reply to Image/Video/Text_`
       );
     } else {
-      return await NekoBot.sendMessage(nekos.chat, {
+      return await NekoBot.sendMessage(Nekos.chat, {
         delete: {
-          remoteJid: nekos.chat,
+          remoteJid: Nekos.chat,
           fromMe: true,
-          id: nekos.quoted.id,
-          participant: nekos.quoted.sender,
+          id: Nekos.quoted.id,
+          participant: Nekos.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos);
+    return NekoBot.handlerror(NekoBot, Nekos);
   }
 };

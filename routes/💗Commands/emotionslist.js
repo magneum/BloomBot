@@ -19,10 +19,10 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   await NekoBot.imagebutton(
     NekoBot,
-    nekos,
+    Nekos,
     `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🤖Hello, I am NekoBot User-bot🤖*
 > Ⓒ𝐍𝐞𝐤𝐨𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
@@ -59,6 +59,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 │║⦁ ${NekoBot.prefix}yeet
 │║⦁ ${NekoBot.prefix}yes
 ┕╚═══════⋑`,
-    "./public/src/NekoBot (8).png"
+    "./public/NekoBot/NekoBot (8).png"
   );
 };

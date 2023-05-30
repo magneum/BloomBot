@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!nekos.isGroup) {
-      await NekoBot.sendMessage(nekos.chat, {
+    if (!Nekos.isGroup) {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!isAdmin) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!isbotAdmin) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -64,13 +64,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!/image/.test(NekoBot.mime)) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -81,13 +81,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (/webp/.test(NekoBot.mime)) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -100,11 +100,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
     var media = await NekoBot.downloadAndSaveMediaMessage(NekoBot.quoted);
     await NekoBot
-      .updateProfilePicture(nekos.chat, { url: media })
+      .updateProfilePicture(Nekos.chat, { url: media })
       .then(
         NekoBot.imagebutton(
           NekoBot,
-          nekos,
+          Nekos,
           `> *Group icone has been changed: ${
             NekoBot.pushname || NekoBot.Tname
           }*`,
@@ -113,13 +113,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       )
       .catch(async (error) => {
         NekoBot.fs.unlinkSync(media);
-        await NekoBot.sendMessage(nekos.chat, {
+        await NekoBot.sendMessage(Nekos.chat, {
           react: {
             text: "❌",
-            key: nekos.key,
+            key: Nekos.key,
           },
         });
-        return nekos.reply(
+        return Nekos.reply(
           `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -130,6 +130,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         );
       });
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos);
+    return NekoBot.handlerror(NekoBot, Nekos);
   }
 };

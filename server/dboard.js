@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-module.exports = async (NekoBot, nekos, updatedb) => {
+module.exports = async (NekoBot, Nekos, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(nekos.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(Nekos.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/nekosbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/Nekosbot.png";
   }
   await NekoBot.dashboard.findOne(
     {
-      Id: nekos.sender,
+      Id: Nekos.sender,
     },
     async (error, udBase) => {
-      if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+      if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
       if (!udBase) {
         new NekoBot.dashboard({
-          Id: nekos.sender,
+          Id: Nekos.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: NekoBot.pushname,
 
@@ -113,7 +113,7 @@ module.exports = async (NekoBot, nekos, updatedb) => {
           tagall: 0,
 
           image: 0,
-          neko: 0,
+          Neko: 0,
           pinterest: 0,
           waifu: 0,
           wallpaper: 0,
@@ -204,7 +204,7 @@ module.exports = async (NekoBot, nekos, updatedb) => {
           doujin: 0,
           feet: 0,
           femdom: 0,
-          nekogirl: 0,
+          Nekogirl: 0,
           glasses: 0,
           hentai: 0,
           maid: 0,
@@ -228,7 +228,7 @@ module.exports = async (NekoBot, nekos, updatedb) => {
 
           waifu: 0,
           swaifu: 0,
-          neko: 0,
+          Neko: 0,
           shinobu: 0,
           megumin: 0,
           awoo: 0,
@@ -274,10 +274,10 @@ module.exports = async (NekoBot, nekos, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+          .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
         await NekoBot.imagebutton(
           NekoBot,
-          nekos,
+          Nekos,
           `*🔖Here, for ${NekoBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

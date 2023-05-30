@@ -64,7 +64,7 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "public/src";
+    const folderPath = "public/NekoBot";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
@@ -88,13 +88,13 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (NekoBot, nekos, update, store) => {
+module.exports = async (NekoBot, Nekos, update, store) => {
   NekoBot.display = getRandomImagePath()
     .then((imagePath) => {
       NekoBot.display = imagePath;
     })
     .catch((err) => {
-      NekoBot.display = "./public/nekoBot_Logo.png";
+      NekoBot.display = "./public/NekoBot_Logo.png";
     });
 
   NekoBot.performance = performance;
@@ -138,7 +138,7 @@ module.exports = async (NekoBot, nekos, update, store) => {
   NekoBot.TelegraPh = TelegraPh;
   NekoBot.UploadFileUgu = UploadFileUgu;
   NekoBot.webp2mp4File = webp2mp4File;
-  NekoBot.Tname = nekos.sender.replace(/['@s whatsapp.net']/g, "");
+  NekoBot.Tname = Nekos.sender.replace(/['@s whatsapp.net']/g, "");
 
   NekoBot.msgFilter = require("./msgFilter");
   NekoBot.imagebutton = require("@/app/buttons/imagebutton");
@@ -189,7 +189,7 @@ module.exports = async (NekoBot, nekos, update, store) => {
   NekoBot.cron = require("node-cron");
   NekoBot.nHentai = require("shentai");
   NekoBot.cheerio = require("cheerio");
-  NekoBot.akaneko = require("akaneko");
+  NekoBot.akaNeko = require("akaNeko");
   NekoBot.fetch = require("node-fetch");
   NekoBot.google = require("google-it");
   NekoBot.Spinnies = require("spinnies");
@@ -296,7 +296,7 @@ module.exports = async (NekoBot, nekos, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   NekoBot.isSudo = sudotring.includes(
-    nekos.sender.substring(0, nekos.sender.indexOf("@"))
+    Nekos.sender.substring(0, Nekos.sender.indexOf("@"))
   );
   return NekoBot;
 };

@@ -239,8 +239,8 @@ async function magneum() {
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
     if (!NekoBot.public && !νTēxt.key.fromMe && update.type === "notify") return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    nekos = await mMake(NekoBot, νTēxt, store);
-    await require("../server/router")(NekoBot, nekos, update, store);
+    Nekos = await mMake(NekoBot, νTēxt, store);
+    await require("../server/router")(NekoBot, Nekos, update, store);
   });
 
   NekoBot.ev.on("group-participants.update", async (update) => {
@@ -363,7 +363,7 @@ async function magneum() {
   };
 
   NekoBot.public = true;
-  NekoBot.serializeM = (nekos) => mMake(NekoBot, nekos, store);
+  NekoBot.serializeM = (Nekos) => mMake(NekoBot, Nekos, store);
 
   NekoBot.send5ButImg = async (
     jid,
@@ -378,7 +378,7 @@ async function magneum() {
       { upload: NekoBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      nekos.chat,
+      Nekos.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

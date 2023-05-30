@@ -21,7 +21,7 @@ var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -39,10 +39,10 @@ module.exports = async (
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await NekoBot.sendMessage(nekos.chat, {
-        react: { text: "❌", key: nekos.key },
+      await NekoBot.sendMessage(Nekos.chat, {
+        react: { text: "❌", key: Nekos.key },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥 Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
@@ -64,13 +64,13 @@ module.exports = async (
           // Check if a user is mentioned in the command arguments
           var mention = NekoBot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || nekos.msg.contextInfo.participant;
+            (await mention[0]) || Nekos.msg.contextInfo.participant;
         } else if (NekoBot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
-            nekos.mtype === "extendedTextMessage" &&
-            nekos.message.extendedTextMessage.contextInfo != null
-              ? nekos.message.extendedTextMessage.contextInfo.participant ||
+            Nekos.mtype === "extendedTextMessage" &&
+            Nekos.message.extendedTextMessage.contextInfo != null
+              ? Nekos.message.extendedTextMessage.contextInfo.participant ||
                 ""
               : "";
         }
@@ -83,14 +83,14 @@ module.exports = async (
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await NekoBot.sendMessage(
-          nekos.chat,
+          Nekos.chat,
           {
             gifPlayback: true,
             video: NekoBot.fs.readFileSync(resultFilename),
             caption: message,
-            mentions: [mentionedUser, nekos.sender],
+            mentions: [mentionedUser, Nekos.sender],
           },
-          { quoted: nekos }
+          { quoted: Nekos }
         );
         // Remove the generated video file
         NekoBot.fs.unlinkSync(resultFilename);
@@ -99,6 +99,6 @@ module.exports = async (
       .run();
   } catch (error) {
     // Handle any errors that occur during the process
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

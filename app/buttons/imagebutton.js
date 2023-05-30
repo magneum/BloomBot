@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (NekoBot, nekos, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
+module.exports = async (NekoBot, Nekos, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (NekoBot.isReply) {
     var receiver =
       NekoBot.mtype == "extendedTextMessage" &&
@@ -23,10 +23,10 @@ module.exports = async (NekoBot, nekos, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
         ? NekoBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     await NekoBot.sendMessage(
-      nekos.chat,
+      Nekos.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${nekos.chat}
+        caption: `*📢Id:* ${Nekos.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -42,11 +42,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [nekos.sender, receiver],
+        mentions: [Nekos.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [nekos.sender, receiver] },
-        quoted: nekos,
+        contextInfo: { mentionedJid: [Nekos.sender, receiver] },
+        quoted: Nekos,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -57,10 +57,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         ? NekoBot.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
     await NekoBot.sendMessage(
-      nekos.chat,
+      Nekos.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${nekos.chat}
+        caption: `*📢Id:* ${Nekos.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -76,20 +76,20 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [nekos.sender, receiver],
+        mentions: [Nekos.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [nekos.sender, receiver] },
-        quoted: nekos,
+        contextInfo: { mentionedJid: [Nekos.sender, receiver] },
+        quoted: Nekos,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await NekoBot.sendMessage(
-      nekos.chat,
+      Nekos.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${nekos.chat}
+        caption: `*📢Id:* ${Nekos.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -105,11 +105,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 4,
-        mentions: [nekos.sender],
+        mentions: [Nekos.sender],
       },
       {
-        contextInfo: { mentionedJid: [nekos.sender] },
-        quoted: nekos,
+        contextInfo: { mentionedJid: [Nekos.sender] },
+        quoted: Nekos,
       }
     ).catch((e) => console.log(e));
   }

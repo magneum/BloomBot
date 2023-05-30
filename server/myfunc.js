@@ -88,21 +88,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var nekos = Math.floor((seconds % 3600) / 60);
+  var Nekos = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    nekos > 0 ? nekos + (nekos == 1 ? " minute, " : " minutes, ") : "";
+    Nekos > 0 ? Nekos + (Nekos == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var nekos = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var Nekos = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, nekos, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, Nekos, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -226,134 +226,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (NekoBot, nekos, store) => {
-  if (!nekos) return nekos;
+exports.mMake = async (NekoBot, Nekos, store) => {
+  if (!Nekos) return Nekos;
   var νproto = proto.WebMessageInfo;
-  if (nekos.key) {
-    nekos.id = nekos.key.id;
-    nekos.isBaileys =
-      nekos.id.startsWith("BAE5") && nekos.id.length === 16;
-    nekos.chat = nekos.key.remoteJid;
-    nekos.fromMe = nekos.key.fromMe;
-    nekos.isGroup = nekos.chat.endsWith("@g.us");
-    nekos.sender = NekoBot.decodeJid(
-      (nekos.fromMe && NekoBot.user.id) ||
-        nekos.participant ||
-        nekos.key.participant ||
-        nekos.chat ||
+  if (Nekos.key) {
+    Nekos.id = Nekos.key.id;
+    Nekos.isBaileys =
+      Nekos.id.startsWith("BAE5") && Nekos.id.length === 16;
+    Nekos.chat = Nekos.key.remoteJid;
+    Nekos.fromMe = Nekos.key.fromMe;
+    Nekos.isGroup = Nekos.chat.endsWith("@g.us");
+    Nekos.sender = NekoBot.decodeJid(
+      (Nekos.fromMe && NekoBot.user.id) ||
+        Nekos.participant ||
+        Nekos.key.participant ||
+        Nekos.chat ||
         ""
     );
-    if (nekos.isGroup)
-      nekos.participant = NekoBot.decodeJid(nekos.key.participant) || "";
+    if (Nekos.isGroup)
+      Nekos.participant = NekoBot.decodeJid(Nekos.key.participant) || "";
   }
-  if (nekos.message) {
-    nekos.mtype = getContentType(nekos.message);
-    nekos.msg =
-      nekos.mtype == "viewOnceMessage"
-        ? nekos.message[nekos.mtype].message[
-            getContentType(nekos.message[nekos.mtype].message)
+  if (Nekos.message) {
+    Nekos.mtype = getContentType(Nekos.message);
+    Nekos.msg =
+      Nekos.mtype == "viewOnceMessage"
+        ? Nekos.message[Nekos.mtype].message[
+            getContentType(Nekos.message[Nekos.mtype].message)
           ]
-        : nekos.message[nekos.mtype];
-    nekos.body =
-      nekos.message.conversation ||
-      nekos.msg.caption ||
-      nekos.msg.text ||
-      (nekos.mtype == "listResponseMessage" &&
-        nekos.msg.singleSelectReply.selectedRowId) ||
-      (nekos.mtype == "buttonsResponseMessage" &&
-        nekos.msg.selectedButtonId) ||
-      (nekos.mtype == "viewOnceMessage" && nekos.msg.caption) ||
-      nekos.text;
-    var quoted = (nekos.quoted = nekos.msg.contextInfo
-      ? nekos.msg.contextInfo.quotedMessage
+        : Nekos.message[Nekos.mtype];
+    Nekos.body =
+      Nekos.message.conversation ||
+      Nekos.msg.caption ||
+      Nekos.msg.text ||
+      (Nekos.mtype == "listResponseMessage" &&
+        Nekos.msg.singleSelectReply.selectedRowId) ||
+      (Nekos.mtype == "buttonsResponseMessage" &&
+        Nekos.msg.selectedButtonId) ||
+      (Nekos.mtype == "viewOnceMessage" && Nekos.msg.caption) ||
+      Nekos.text;
+    var quoted = (Nekos.quoted = Nekos.msg.contextInfo
+      ? Nekos.msg.contextInfo.quotedMessage
       : null);
-    nekos.mentionedJid = nekos.msg.contextInfo
-      ? nekos.msg.contextInfo.mentionedJid
+    Nekos.mentionedJid = Nekos.msg.contextInfo
+      ? Nekos.msg.contextInfo.mentionedJid
       : [];
-    if (nekos.quoted) {
+    if (Nekos.quoted) {
       var type = getContentType(quoted);
-      nekos.quoted = nekos.quoted[type];
+      Nekos.quoted = Nekos.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(nekos.quoted);
-        nekos.quoted = nekos.quoted[type];
+        type = getContentType(Nekos.quoted);
+        Nekos.quoted = Nekos.quoted[type];
       }
-      if (typeof nekos.quoted === "string")
-        nekos.quoted = {
-          text: nekos.quoted,
+      if (typeof Nekos.quoted === "string")
+        Nekos.quoted = {
+          text: Nekos.quoted,
         };
-      nekos.quoted.mtype = type;
-      nekos.quoted.id = nekos.msg.contextInfo.stanzaId;
-      nekos.quoted.chat = nekos.msg.contextInfo.remoteJid || nekos.chat;
-      nekos.quoted.isBaileys = nekos.quoted.id
-        ? nekos.quoted.id.startsWith("BAE5") &&
-          nekos.quoted.id.length === 16
+      Nekos.quoted.mtype = type;
+      Nekos.quoted.id = Nekos.msg.contextInfo.stanzaId;
+      Nekos.quoted.chat = Nekos.msg.contextInfo.remoteJid || Nekos.chat;
+      Nekos.quoted.isBaileys = Nekos.quoted.id
+        ? Nekos.quoted.id.startsWith("BAE5") &&
+          Nekos.quoted.id.length === 16
         : false;
-      nekos.quoted.sender = NekoBot.decodeJid(
-        nekos.msg.contextInfo.participant
+      Nekos.quoted.sender = NekoBot.decodeJid(
+        Nekos.msg.contextInfo.participant
       );
-      nekos.quoted.fromMe =
-        nekos.quoted.sender === (NekoBot.user && NekoBot.user.id);
-      nekos.quoted.text =
-        nekos.quoted.text ||
-        nekos.quoted.caption ||
-        nekos.quoted.conversation ||
-        nekos.quoted.contentText ||
-        nekos.quoted.selectedDisplayText ||
-        nekos.quoted.title ||
+      Nekos.quoted.fromMe =
+        Nekos.quoted.sender === (NekoBot.user && NekoBot.user.id);
+      Nekos.quoted.text =
+        Nekos.quoted.text ||
+        Nekos.quoted.caption ||
+        Nekos.quoted.conversation ||
+        Nekos.quoted.contentText ||
+        Nekos.quoted.selectedDisplayText ||
+        Nekos.quoted.title ||
         "";
-      nekos.quoted.mentionedJid = nekos.msg.contextInfo
-        ? nekos.msg.contextInfo.mentionedJid
+      Nekos.quoted.mentionedJid = Nekos.msg.contextInfo
+        ? Nekos.msg.contextInfo.mentionedJid
         : [];
-      nekos.getQuotedObj = nekos.getQuotedMessage = async () => {
-        if (!nekos.quoted.id) return false;
+      Nekos.getQuotedObj = Nekos.getQuotedMessage = async () => {
+        if (!Nekos.quoted.id) return false;
         var q = await store.loadMessage(
-          nekos.chat,
-          nekos.quoted.id,
+          Nekos.chat,
+          Nekos.quoted.id,
           NekoBot
         );
         return exports.mMake(NekoBot, q, store);
       };
-      var vM = (nekos.quoted.fakeObj = νproto.fromObject({
+      var vM = (Nekos.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: nekos.quoted.chat,
-          fromMe: nekos.quoted.fromMe,
-          id: nekos.quoted.id,
+          remoteJid: Nekos.quoted.chat,
+          fromMe: Nekos.quoted.fromMe,
+          id: Nekos.quoted.id,
         },
         message: quoted,
-        ...(nekos.isGroup ? { participant: nekos.quoted.sender } : {}),
+        ...(Nekos.isGroup ? { participant: Nekos.quoted.sender } : {}),
       }));
-      nekos.quoted.delete = () =>
-        NekoBot.sendMessage(nekos.quoted.chat, { delete: vM.key });
-      nekos.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      Nekos.quoted.delete = () =>
+        NekoBot.sendMessage(Nekos.quoted.chat, { delete: vM.key });
+      Nekos.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         NekoBot.copyNForward(jid, vM, forceForward, options);
-      nekos.quoted.download = () =>
-        NekoBot.downloadMediaMessage(nekos.quoted);
+      Nekos.quoted.download = () =>
+        NekoBot.downloadMediaMessage(Nekos.quoted);
     }
   }
 
-  if (nekos.msg.url)
-    nekos.download = () => NekoBot.downloadMediaMessage(nekos.msg);
-  nekos.text =
-    nekos.msg.text ||
-    nekos.msg.caption ||
-    nekos.message.conversation ||
-    nekos.msg.contentText ||
-    nekos.msg.selectedDisplayText ||
-    nekos.msg.title ||
+  if (Nekos.msg.url)
+    Nekos.download = () => NekoBot.downloadMediaMessage(Nekos.msg);
+  Nekos.text =
+    Nekos.msg.text ||
+    Nekos.msg.caption ||
+    Nekos.message.conversation ||
+    Nekos.msg.contentText ||
+    Nekos.msg.selectedDisplayText ||
+    Nekos.msg.title ||
     "";
-  nekos.reply = (text, chatId = nekos.chat, options = {}) =>
+  Nekos.reply = (text, chatId = Nekos.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? NekoBot.sendMedia(chatId, text, "file", "", nekos, { ...options })
-      : NekoBot.sendText(chatId, text, nekos, { ...options });
-  nekos.copy = () =>
-    exports.mMake(NekoBot, νproto.fromObject(νproto.toObject(nekos)));
-  nekos.copyNForward = (
-    jid = nekos.chat,
+      ? NekoBot.sendMedia(chatId, text, "file", "", Nekos, { ...options })
+      : NekoBot.sendText(chatId, text, Nekos, { ...options });
+  Nekos.copy = () =>
+    exports.mMake(NekoBot, νproto.fromObject(νproto.toObject(Nekos)));
+  Nekos.copyNForward = (
+    jid = Nekos.chat,
     forceForward = false,
     options = {}
-  ) => NekoBot.copyNForward(jid, nekos, forceForward, options);
+  ) => NekoBot.copyNForward(jid, Nekos, forceForward, options);
 
-  return nekos;
+  return Nekos;
 };
 
 var file = require.resolve(__filename);

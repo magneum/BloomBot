@@ -19,14 +19,14 @@ require("#/logger/global");
 var path = require("path");
 var finalname = path.basename(__filename, "").toLowerCase();
 
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    var server = await NekoBot.nsfwCheck.findOne({ serverId: nekos.chat });
+    var server = await NekoBot.nsfwCheck.findOne({ serverId: Nekos.chat });
     if (!server) {
-      await NekoBot.sendMessage(nekos.chat, {
-        react: { text: "❌", key: nekos.key },
+      await NekoBot.sendMessage(Nekos.chat, {
+        react: { text: "❌", key: Nekos.key },
       });
-      return nekos.reply(`*😥 Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
+      return Nekos.reply(`*😥 Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -39,10 +39,10 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
-      await NekoBot.sendMessage(nekos.chat, {
-        react: { text: "❌", key: nekos.key },
+      await NekoBot.sendMessage(Nekos.chat, {
+        react: { text: "❌", key: Nekos.key },
       });
-      return nekos.reply(`*😥 Apologies:* _${NekoBot.pushname}_
+      return Nekos.reply(`*😥 Apologies:* _${NekoBot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
@@ -65,8 +65,8 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 ║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await NekoBot.imagebutton(NekoBot, nekos, message, fetchedata.meta.thumbnail);
+    await NekoBot.imagebutton(NekoBot, Nekos, message, fetchedata.meta.thumbnail);
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

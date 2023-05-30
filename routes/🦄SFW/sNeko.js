@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     NekoBot
-      .magfetch(NekoBot, "https://magneum.vercel.app/api/sfw?q=neko")
+      .magfetch(NekoBot, "https://magneum.vercel.app/api/sfw?q=Neko")
       .then(async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);
         return await NekoBot.imagebutton(
           NekoBot,
-          nekos,
+          Nekos,
           `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *Topic*: ${fetchedata.meta.topic}
 *Query*: ${fetchedata.meta.query}`,
@@ -36,6 +36,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         );
       });
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

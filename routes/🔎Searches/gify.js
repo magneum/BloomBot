@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     if (!NekoBot.args.join(" ")) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -46,7 +46,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         )}&key=LIVDSRZULELA&limit=8`
       );
       return await NekoBot.sendMessage(
-        nekos.chat,
+        Nekos.chat,
         {
           gifPlayback: true,
           video: {
@@ -55,19 +55,19 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           },
           caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${finalname}
-*⚡for:* @${nekos.sender.split("@")[0] || ""}`,
-          mentions: [nekos.sender],
+*⚡for:* @${Nekos.sender.split("@")[0] || ""}`,
+          mentions: [Nekos.sender],
         },
-        { quoted: nekos }
+        { quoted: Nekos }
       );
     } catch (Èrrðr) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -75,6 +75,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

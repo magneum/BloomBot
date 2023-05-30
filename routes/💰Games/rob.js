@@ -19,26 +19,26 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (NekoBot.mentionByReply) {
     var receiver =
-      nekos.mtype == "extendedTextMessage" &&
-      nekos.message.extendedTextMessage.contextInfo != null
-        ? nekos.message.extendedTextMessage.contextInfo.participant || ""
+      Nekos.mtype == "extendedTextMessage" &&
+      Nekos.message.extendedTextMessage.contextInfo != null
+        ? Nekos.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     var receiverName = await NekoBot.getName(receiver);
-    if (receiver === nekos.sender) {
-      await NekoBot.sendMessage(nekos.chat, {
+    if (receiver === Nekos.sender) {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -48,16 +48,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
     NekoBot.Economy.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         NekoBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+            if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
             if (!ᴠᴇᴄᴏ) {
               var newUser = new NekoBot.Economy({
                 Id: receiver,
@@ -71,10 +71,10 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               });
               await newUser
                 .save()
-                .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+                .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
               return await NekoBot.imagebutton(
                 NekoBot,
-                nekos,
+                Nekos,
                 `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -89,7 +89,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
             if (!ᴄᴇᴄᴏ) {
               var newUser = new NekoBot.Economy({
-                Id: nekos.sender,
+                Id: Nekos.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,10 +100,10 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               });
               await newUser
                 .save()
-                .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+                .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
               return await NekoBot.imagebutton(
                 NekoBot,
-                nekos,
+                Nekos,
                 `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -120,7 +120,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             if (ᴄᴇᴄᴏ.money < 1000) {
               return await NekoBot.imagebutton(
                 NekoBot,
-                nekos,
+                Nekos,
                 `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -136,7 +136,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             if (ᴠᴇᴄᴏ.money < 1000) {
               return await NekoBot.imagebutton(
                 NekoBot,
-                nekos,
+                Nekos,
                 `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -152,16 +152,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
             Robbery.findOne(
               {
-                Id: nekos.sender,
+                Id: Nekos.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+                if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+                    if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,17 +174,17 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await newUser
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -203,7 +203,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: nekos.sender,
+                        Id: Nekos.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -213,17 +213,17 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await newUser
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -250,7 +250,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -277,26 +277,26 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -326,26 +326,26 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -375,26 +375,26 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -420,16 +420,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -460,16 +460,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          NekoBot.handlerror(NekoBot, nekos, error)
+                          NekoBot.handlerror(NekoBot, Nekos, error)
                         );
                       return await NekoBot.imagebutton(
                         NekoBot,
-                        nekos,
+                        Nekos,
                         `*🔖Here, ${finalname} for ${
                           NekoBot.pushname || NekoBot.Tname
                         }:*
@@ -503,7 +503,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
   } else {
     return await NekoBot.imagebutton(
       NekoBot,
-      nekos,
+      Nekos,
       `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲

@@ -20,17 +20,17 @@ var path = require("path");
 var fileName = path.basename(__filename);
 var functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var query = NekoBot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !NekoBot.TubeRegex.test(query))
     ) {
-      await NekoBot.sendMessage(nekos.chat, {
-        react: { text: "❌", key: nekos.key },
+      await NekoBot.sendMessage(Nekos.chat, {
+        react: { text: "❌", key: Nekos.key },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥 Apologies:* ${NekoBot.pushname || NekoBot.Tname}
 *❌ Error* 
 > _No query provided!_
@@ -71,7 +71,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
 *📜 Description:*
 ${description}`;
-    await NekoBot.sendMessage(nekos.chat, {
+    await NekoBot.sendMessage(Nekos.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await NekoBot.sendMessage(nekos.chat, {
+    await NekoBot.sendMessage(Nekos.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -108,6 +108,6 @@ ${description}`;
     });
     NekoBot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

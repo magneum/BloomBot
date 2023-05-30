@@ -16,8 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-exports.noLink = async (NekoBot, nekos) => {
-  var FetchCurrentGroupLink = await NekoBot.groupInviteCode(nekos.chat);
+exports.noLink = async (NekoBot, Nekos) => {
+  var FetchCurrentGroupLink = await NekoBot.groupInviteCode(Nekos.chat);
   var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   var isGroupLink = GroupLinkRegex.exec(NekoBot.budy);
   var PresentGroupLink = new RegExp(
@@ -27,18 +27,18 @@ exports.noLink = async (NekoBot, nekos) => {
   var isCurrentGroupLink = PresentGroupLink.test(NekoBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await NekoBot.groupParticipantsUpdate(
-      nekos.chat,
+      Nekos.chat,
       [NekoBot.sender],
       "remove"
-    ).catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
-    await nekos.reply(
+    ).catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
+    await Nekos.reply(
       `*😥Apologies:* _${NekoBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await NekoBot.sendMessage(nekos.chat, {
+    return await NekoBot.sendMessage(Nekos.chat, {
       delete: {
-        remoteJid: nekos.chat,
+        remoteJid: Nekos.chat,
         fromMe: false,
         id: NekoBot.quoted.id,
         participant: NekoBot.quoted.sender,
@@ -53,18 +53,18 @@ exports.noLink = async (NekoBot, nekos) => {
     NekoBot.budy.includes("www.")
   ) {
     await NekoBot.groupParticipantsUpdate(
-      nekos.chat,
+      Nekos.chat,
       [NekoBot.sender],
       "remove"
-    ).catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
-    await nekos.reply(
+    ).catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
+    await Nekos.reply(
       `*😥Apologies:* _${NekoBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await NekoBot.sendMessage(nekos.chat, {
+    return await NekoBot.sendMessage(Nekos.chat, {
       delete: {
-        remoteJid: nekos.chat,
+        remoteJid: Nekos.chat,
         fromMe: false,
         id: NekoBot.quoted.id,
         participant: NekoBot.quoted.sender,

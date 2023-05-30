@@ -22,7 +22,7 @@ var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -32,13 +32,13 @@ module.exports = async (
 ) => {
   try {
     if (!NekoBot.args) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -56,7 +56,7 @@ module.exports = async (
         console.log(fetchedata);
 
         return await NekoBot.sendMessage(
-          nekos.chat,
+          Nekos.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
             caption: `*🔖Here, ${finalname} for ${NekoBot.pushname}:*
@@ -80,17 +80,17 @@ module.exports = async (
               },
             ],
             headerType: 4,
-            mentions: [nekos.sender],
+            mentions: [Nekos.sender],
           },
           {
-            contextInfo: { mentionedJid: [nekos.sender] },
-            quoted: nekos,
+            contextInfo: { mentionedJid: [Nekos.sender] },
+            quoted: Nekos,
           }
         );
 
         await NekoBot.imagebutton(
           NekoBot,
-          nekos,
+          Nekos,
           `*🔖Here, ${finalname} for ${NekoBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
@@ -109,7 +109,7 @@ module.exports = async (
           stream.on("finish", resolve);
         });
         await NekoBot.sendMessage(
-          nekos.chat,
+          Nekos.chat,
           {
             audio: NekoBot.fs.readFileSync(`./${fetchedata.uuid}`),
             mimetype: "audio/mpeg",
@@ -130,10 +130,10 @@ module.exports = async (
               },
             },
           },
-          { quoted: nekos }
+          { quoted: Nekos }
         ).then(NekoBot.fs.unlinkSync(`./${fetchedata.uuid}`));
       });
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

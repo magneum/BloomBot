@@ -16,34 +16,34 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/global");
-exports.premium = async (NekoBot, nekos, update, store) => {
+exports.premium = async (NekoBot, Nekos, update, store) => {
   if (NekoBot.isSudo) {
-    await NekoBot.sendMessage(nekos.chat, {
+    await NekoBot.sendMessage(Nekos.chat, {
       react: {
         text: "🔖",
-        key: nekos.key,
+        key: Nekos.key,
       },
     });
-    return await require("@/System/library")(NekoBot, nekos, update, store);
+    return await require("@/System/library")(NekoBot, Nekos, update, store);
   } else
     await NekoBot.premium.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, userVium) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         if (!userVium) {
           new NekoBot.premium({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
           return await require("@/System/library")(
             NekoBot,
-            nekos,
+            Nekos,
             update,
             store
           );
@@ -55,7 +55,7 @@ exports.premium = async (NekoBot, nekos, update, store) => {
             );
             return await NekoBot.imagebutton(
               NekoBot,
-              nekos,
+              Nekos,
               `*Dear* _${NekoBot.pushname || NekoBot.Tname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -64,20 +64,20 @@ exports.premium = async (NekoBot, nekos, update, store) => {
             );
           }
         } else {
-          await NekoBot.sendMessage(nekos.chat, {
+          await NekoBot.sendMessage(Nekos.chat, {
             react: {
               text: "🔖",
-              key: nekos.key,
+              key: Nekos.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
           userVium
             .save()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
           return await require("@/System/library")(
             NekoBot,
-            nekos,
+            Nekos,
             update,
             store
           );

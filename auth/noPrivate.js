@@ -16,24 +16,24 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-exports.noPrivate = async (NekoBot, nekos, update) => {
+exports.noPrivate = async (NekoBot, Nekos, update) => {
   if (!NekoBot.isSudo)
     await NekoBot.UserPrivate.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, user) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         if (!user) {
           new NekoBot.UserPrivate({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*Dear* _${NekoBot.pushname || NekoBot.Tname}_
 • This Private Is Being Guarded By NekoBot Ai!
 • Do Not Spam The Chat Box!
@@ -47,10 +47,10 @@ exports.noPrivate = async (NekoBot, nekos, update) => {
           user.Amount = user.Amount + 1;
           await user
             .save()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*Dear* _${NekoBot.pushname || NekoBot.Tname}_
 • This Private Is Being Guarded By NekoBot Ai!
 • Do Not Spam The Chat Box!
@@ -63,9 +63,9 @@ exports.noPrivate = async (NekoBot, nekos, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
-          return await NekoBot.updateBlockStatus(nekos.sender, "block").catch(
-            (error) => NekoBot.handlerror(NekoBot, nekos, error)
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
+          return await NekoBot.updateBlockStatus(Nekos.sender, "block").catch(
+            (error) => NekoBot.handlerror(NekoBot, Nekos, error)
           );
         }
       }

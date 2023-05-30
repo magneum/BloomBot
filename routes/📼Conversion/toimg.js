@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     if (!NekoBot.quoted) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -48,7 +48,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           if (error) {
             return NekoBot.reply(`*🕊️You:* ${
               NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${nekos.chat}
+            }\n*📢Id:* ${Nekos.chat}
 
 *😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌ Error* 
@@ -67,13 +67,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           } else if (NekoBot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await NekoBot.sendMessage(nekos.chat, {
+            await NekoBot.sendMessage(Nekos.chat, {
               react: {
                 text: "❌",
-                key: nekos.key,
+                key: Nekos.key,
               },
             });
-            return nekos.reply(
+            return Nekos.reply(
               `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -86,12 +86,12 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
           return await NekoBot
             .sendMessage(
-              nekos.chat,
+              Nekos.chat,
               {
                 image: NekoBot.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🕊️You:* ${NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${nekos.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${Nekos.chat.split("@")[0]}
 │║⦁ *📢Console:* ${NekoBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -100,7 +100,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
 _*💻HomePage:* ${NekoBot.ShowInfo}_
 _*⛺HomeLog:* ${NekoBot.Showlogger}_`,
-                mentions: [nekos.sender],
+                mentions: [Nekos.sender],
                 buttons: [
                   {
                     buttonId: `${NekoBot.prefix}Commands`,
@@ -118,7 +118,7 @@ _*⛺HomeLog:* ${NekoBot.Showlogger}_`,
                 headerType: 4,
               },
               {
-                quoted: nekos,
+                quoted: Nekos,
               }
             )
             .then(
@@ -128,13 +128,13 @@ _*⛺HomeLog:* ${NekoBot.Showlogger}_`,
         }
       );
     } else {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -145,6 +145,6 @@ _*⛺HomeLog:* ${NekoBot.Showlogger}_`,
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

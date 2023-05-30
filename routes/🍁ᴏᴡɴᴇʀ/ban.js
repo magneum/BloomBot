@@ -19,22 +19,22 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await NekoBot.sendMessage(nekos.chat, {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await NekoBot.sendMessage(Nekos.chat, {
     react: {
       text: "🔖",
-      key: nekos.key,
+      key: Nekos.key,
     },
   });
   try {
     if (!NekoBot.frome && !NekoBot.isSudo) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -56,16 +56,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
             new NekoBot.userBanCheck({
               Id: repliedPerson,
             }).save();
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already banned!`
             );
           }
@@ -79,16 +79,16 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
             new NekoBot.userBanCheck({
               Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
             }).save();
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been banned and won't respond to that Dumbo!`
             );
           } else {
-            return nekos.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
+            return Nekos.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already banned!`);
           }
         }
       );
@@ -99,32 +99,32 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     ) {
       NekoBot.userBanCheck.findOne(
         {
-          Id: nekos.chat,
+          Id: Nekos.chat,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
             new NekoBot.userBanCheck({
-              Id: nekos.chat,
+              Id: Nekos.chat,
             }).save();
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been Banned!`
             );
           } else {
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already banned!`
             );
           }
         }
       );
     } else {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -135,6 +135,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

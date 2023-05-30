@@ -19,26 +19,26 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await NekoBot.sendMessage(nekos.chat, {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await NekoBot.sendMessage(Nekos.chat, {
     react: {
       text: "🔖",
-      key: nekos.key,
+      key: Nekos.key,
     },
   });
   try {
-    await NekoBot.sendMessage(nekos.chat, {
+    await NekoBot.sendMessage(Nekos.chat, {
       react: {
         text: "❌",
-        key: nekos.key,
+        key: Nekos.key,
       },
     });
-    return nekos.reply(
+    return Nekos.reply(
       `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

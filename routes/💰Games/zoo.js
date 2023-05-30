@@ -19,20 +19,20 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     await NekoBot.Economy.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return NekoBot.handlerror(NekoBot, nekos, error);
+          return NekoBot.handlerror(NekoBot, Nekos, error);
         }
 
         if (!userEco) {
           var newUser = new NekoBot.Economy({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,11 +42,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return NekoBot.handlerror(NekoBot, nekos, error);
+            return NekoBot.handlerror(NekoBot, Nekos, error);
           });
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -55,23 +55,23 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         } else {
           await NekoBot.Zoology.findOne(
             {
-              Id: nekos.sender,
+              Id: Nekos.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, NekoBot, error);
               if (!userZoo) {
                 new NekoBot.Zoology({
-                  Id: nekos.sender,
+                  Id: Nekos.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return NekoBot.handlerror(NekoBot, nekos, error);
+                    return NekoBot.handlerror(NekoBot, Nekos, error);
                   });
                 return await NekoBot.imagebutton(
                   NekoBot,
-                  nekos,
+                  Nekos,
                   `*🔖Here, ${finalname} for ${
                     NekoBot.pushname || NekoBot.Tname
                   }:*
@@ -86,7 +86,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   );
                   return await NekoBot.imagebutton(
                     NekoBot,
-                    nekos,
+                    Nekos,
                     `*🔖Here, ${finalname} for @${
                       NekoBot.Tname || NekoBot.pushname
                     }:*
@@ -110,11 +110,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, nekos, error);
+                    return NekoBot.handlerror(NekoBot, Nekos, error);
                   });
                   return await NekoBot.imagebutton(
                     NekoBot,
-                    nekos,
+                    Nekos,
                     `*🔖Here, ${finalname} for @${
                       NekoBot.Tname || NekoBot.pushname
                     }:*
@@ -131,6 +131,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

@@ -22,7 +22,7 @@ var finalname = tempname.slice(0, -3).toLowerCase();
 thisfilealias = ["list", "menu"];
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -60,7 +60,7 @@ module.exports = async (
     }, 0);
   return await NekoBot.imagebutton(
     NekoBot,
-    nekos,
+    Nekos,
     `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 > ⒸNekoBot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
@@ -240,7 +240,7 @@ module.exports = async (
 │║⦁ ${NekoBot.prefix}doujin
 │║⦁ ${NekoBot.prefix}feet
 │║⦁ ${NekoBot.prefix}femdom  
-│║⦁ ${NekoBot.prefix}nekogirl  
+│║⦁ ${NekoBot.prefix}Nekogirl  
 │║⦁ ${NekoBot.prefix}glasses  
 │║⦁ ${NekoBot.prefix}hentai
 │║⦁ ${NekoBot.prefix}maid
@@ -299,8 +299,8 @@ module.exports = async (
 ┌╔═☰ *🦄${finalname.toUpperCase()}🦄* 
 │║⦁ ${NekoBot.prefix}waifu
 │║⦁ ${NekoBot.prefix}swaifu
-│║⦁ ${NekoBot.prefix}neko
-│║⦁ ${NekoBot.prefix}sneko
+│║⦁ ${NekoBot.prefix}Neko
+│║⦁ ${NekoBot.prefix}sNeko
 │║⦁ ${NekoBot.prefix}shinobu
 │║⦁ ${NekoBot.prefix}sshinobu
 │║⦁ ${NekoBot.prefix}megumin

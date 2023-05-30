@@ -19,21 +19,21 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var JworkR = NekoBot.Jwork[Math.floor(Math.random() * NekoBot.Jwork.length)];
     NekoBot.Economy.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return NekoBot.handlerror(NekoBot, nekos, error);
+          return NekoBot.handlerror(NekoBot, Nekos, error);
         }
 
         if (!userEco) {
           new NekoBot.Economy({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -44,11 +44,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           })
             .save()
             .catch((error) => {
-              return NekoBot.handlerror(NekoBot, nekos, error);
+              return NekoBot.handlerror(NekoBot, Nekos, error);
             });
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -61,7 +61,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             );
             return await NekoBot.imagebutton(
               NekoBot,
-              nekos,
+              Nekos,
               `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch((error) => {
-              return NekoBot.handlerror(NekoBot, nekos, error);
+              return NekoBot.handlerror(NekoBot, Nekos, error);
             });
             return await NekoBot.imagebutton(
               NekoBot,
-              nekos,
+              Nekos,
               `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
@@ -88,6 +88,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

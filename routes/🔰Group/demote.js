@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!nekos.isGroup) {
-      await NekoBot.sendMessage(nekos.chat, {
+    if (!Nekos.isGroup) {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!isAdmin) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!isbotAdmin) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -66,15 +66,15 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
 
     if (NekoBot.args[0] && NekoBot.args[0].startsWith("@")) {
       var mention = NekoBot.mentionByTag;
-      var users = (await mention[0]) || nekos.msg.contextInfo.participant;
+      var users = (await mention[0]) || Nekos.msg.contextInfo.participant;
       if (!users) {
-        await NekoBot.sendMessage(nekos.chat, {
+        await NekoBot.sendMessage(Nekos.chat, {
           react: {
             text: "❌",
-            key: nekos.key,
+            key: Nekos.key,
           },
         });
-        return nekos.reply(
+        return Nekos.reply(
           `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -85,15 +85,15 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         );
       }
       try {
-        await NekoBot.groupParticipantsUpdate(nekos.chat, [users], "demote");
+        await NekoBot.groupParticipantsUpdate(Nekos.chat, [users], "demote");
       } catch {
-        await NekoBot.sendMessage(nekos.chat, {
+        await NekoBot.sendMessage(Nekos.chat, {
           react: {
             text: "❌",
-            key: nekos.key,
+            key: Nekos.key,
           },
         });
-        return nekos.reply(
+        return Nekos.reply(
           `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -107,24 +107,24 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
       await NekoBot.imagebutton(
         NekoBot,
-        nekos,
+        Nekos,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (NekoBot.mentionByReply) {
       var users =
-        nekos.mtype == "extendedTextMessage" &&
-        nekos.message.extendedTextMessage.contextInfo != null
-          ? nekos.message.extendedTextMessage.contextInfo.participant || ""
+        Nekos.mtype == "extendedTextMessage" &&
+        Nekos.message.extendedTextMessage.contextInfo != null
+          ? Nekos.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await NekoBot.sendMessage(nekos.chat, {
+        await NekoBot.sendMessage(Nekos.chat, {
           react: {
             text: "❌",
-            key: nekos.key,
+            key: Nekos.key,
           },
         });
-        return nekos.reply(
+        return Nekos.reply(
           `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -135,15 +135,15 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         );
       }
       try {
-        await NekoBot.groupParticipantsUpdate(nekos.chat, [users], "demote");
+        await NekoBot.groupParticipantsUpdate(Nekos.chat, [users], "demote");
       } catch {
-        await NekoBot.sendMessage(nekos.chat, {
+        await NekoBot.sendMessage(Nekos.chat, {
           react: {
             text: "❌",
-            key: nekos.key,
+            key: Nekos.key,
           },
         });
-        return nekos.reply(
+        return Nekos.reply(
           `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -157,18 +157,18 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
       await NekoBot.imagebutton(
         NekoBot,
-        nekos,
+        Nekos,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -179,6 +179,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos);
+    return NekoBot.handlerror(NekoBot, Nekos);
   }
 };

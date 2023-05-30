@@ -19,10 +19,10 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   return await NekoBot.imagebutton(
     NekoBot,
-    nekos,
+    Nekos,
     `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 

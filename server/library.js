@@ -19,7 +19,7 @@ const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (NekoBot, nekos, update, store) => {
+module.exports = async (NekoBot, Nekos, update, store) => {
   const routePath = path.join(__dirname, "..", "routes");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -41,41 +41,41 @@ module.exports = async (NekoBot, nekos, update, store) => {
     return null;
   };
 
-  const gmeta = nekos.isGroup
-    ? await NekoBot.groupMetadata(nekos.chat).catch((error) => {})
+  const gmeta = Nekos.isGroup
+    ? await NekoBot.groupMetadata(Nekos.chat).catch((error) => {})
     : "";
-  const groupName = nekos.isGroup ? gmeta.subject : "";
-  const participants = nekos.isGroup ? await gmeta.participants : "";
-  const groupAdmins = nekos.isGroup
+  const groupName = Nekos.isGroup ? gmeta.subject : "";
+  const participants = Nekos.isGroup ? await gmeta.participants : "";
+  const groupAdmins = Nekos.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = nekos.isGroup ? gmeta.owner : "";
-  const isbotAdmin = nekos.isGroup
+  const groupOwner = Nekos.isGroup ? gmeta.owner : "";
+  const isbotAdmin = Nekos.isGroup
     ? groupAdmins.includes(await NekoBot.decodeJid(NekoBot.user.id))
     : false;
-  const isAdmin = nekos.isGroup
-    ? groupAdmins.includes(nekos.sender)
+  const isAdmin = Nekos.isGroup
+    ? groupAdmins.includes(Nekos.sender)
     : false;
 
   const vbody =
-    nekos.mtype === "conversation"
-      ? nekos.message.conversation
-      : nekos.mtype == "imageMessage"
-      ? nekos.message.imageMessage.caption
-      : nekos.mtype == "videoMessage"
-      ? nekos.message.videoMessage.caption
-      : nekos.mtype == "extendedTextMessage"
-      ? nekos.message.extendedTextMessage.text
-      : nekos.mtype == "buttonsResponseMessage"
-      ? nekos.message.buttonsResponseMessage.selectedButtonId
-      : nekos.mtype == "listResponseMessage"
-      ? nekos.message.listResponseMessage.singleSelectReply.selectedRowId
-      : nekos.mtype == "templateButtonReplyMessage"
-      ? nekos.message.templateButtonReplyMessage.selectedId
-      : nekos.mtype === "messageContextInfo"
-      ? nekos.message.buttonsResponseMessage?.selectedButtonId ||
-        nekos.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        nekos.text
+    Nekos.mtype === "conversation"
+      ? Nekos.message.conversation
+      : Nekos.mtype == "imageMessage"
+      ? Nekos.message.imageMessage.caption
+      : Nekos.mtype == "videoMessage"
+      ? Nekos.message.videoMessage.caption
+      : Nekos.mtype == "extendedTextMessage"
+      ? Nekos.message.extendedTextMessage.text
+      : Nekos.mtype == "buttonsResponseMessage"
+      ? Nekos.message.buttonsResponseMessage.selectedButtonId
+      : Nekos.mtype == "listResponseMessage"
+      ? Nekos.message.listResponseMessage.singleSelectReply.selectedRowId
+      : Nekos.mtype == "templateButtonReplyMessage"
+      ? Nekos.message.templateButtonReplyMessage.selectedId
+      : Nekos.mtype === "messageContextInfo"
+      ? Nekos.message.buttonsResponseMessage?.selectedButtonId ||
+        Nekos.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        Nekos.text
       : "";
   const vcommand = vbody
     .replace(NekoBot.prefix, "")
@@ -101,11 +101,11 @@ module.exports = async (NekoBot, nekos, update, store) => {
   );
   console.log(
     NekoBot.chalk.blueBright("📱USER_NUMBER: "),
-    NekoBot.chalk.green(nekos.sender)
+    NekoBot.chalk.green(Nekos.sender)
   );
   console.log(
     NekoBot.chalk.blueBright("💬CHAT_Id: "),
-    NekoBot.chalk.green(nekos.chat)
+    NekoBot.chalk.green(Nekos.chat)
   );
   console.log(
     "◎✕———————————————————————✕ NekoBot by magneum ✕———————————————————————✕◎\n"
@@ -122,7 +122,7 @@ module.exports = async (NekoBot, nekos, update, store) => {
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           NekoBot,
-          nekos,
+          Nekos,
           gmeta,
           isAdmin,
           groupName,
@@ -147,9 +147,9 @@ module.exports = async (NekoBot, nekos, update, store) => {
     if (suggestedCommand) {
       const suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await NekoBot.sendMessage(nekos.chat, {
+      return await NekoBot.sendMessage(Nekos.chat, {
         image: { url: NekoBot.display },
-        caption: `*📢ID:* ${nekos.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ID:* ${Nekos.chat}\n\n${suggestionMessage}`,
         footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -166,16 +166,16 @@ module.exports = async (NekoBot, nekos, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [nekos.sender],
+        mentions: [Nekos.sender],
       });
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${NekoBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await NekoBot.sendMessage(nekos.chat, {
+      return await NekoBot.sendMessage(Nekos.chat, {
         image: { url: NekoBot.display },
-        caption: `*📢ID:* ${nekos.chat}\n\n${errorMessage}`,
+        caption: `*📢ID:* ${Nekos.chat}\n\n${errorMessage}`,
         footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -185,7 +185,7 @@ module.exports = async (NekoBot, nekos, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [nekos.sender],
+        mentions: [Nekos.sender],
       });
     }
   }

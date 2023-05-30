@@ -1,6 +1,6 @@
 # [Ⓒ𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!](https://bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum/NekoBot/blob/magneum/public/src/NekoBot (8).png" /></p>
+<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum/NekoBot/blob/magneum/public/NekoBot/NekoBot (8).png" /></p>
 
 <img align="centre" public="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="magneum"/> <img align="centre" public="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 

@@ -19,22 +19,22 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await NekoBot.sendMessage(nekos.chat, {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+  await NekoBot.sendMessage(Nekos.chat, {
     react: {
       text: "🔖",
-      key: nekos.key,
+      key: Nekos.key,
     },
   });
   try {
     if (!NekoBot.frome && !NekoBot.isSudo) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -56,14 +56,14 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
           }
@@ -77,14 +77,14 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return nekos.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return Nekos.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -95,30 +95,30 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     ) {
       NekoBot.userBanCheck.findOne(
         {
-          Id: nekos.chat,
+          Id: Nekos.chat,
         },
         async (error, userBan) => {
-          if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+          if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
           if (!userBan) {
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
-            return nekos.reply(
+            return Nekos.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
         }
       );
     } else {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -131,6 +131,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

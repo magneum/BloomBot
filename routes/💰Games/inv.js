@@ -19,17 +19,17 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     NekoBot.Robbery.findOne(
       {
-        Id: nekos.sender,
+        Id: Nekos.sender,
       },
       async (error, userRob) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         if (!userRob) {
           new NekoBot.Robbery({
-            Id: nekos.sender,
+            Id: Nekos.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -37,10 +37,10 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+            .catch((error) => NekoBot.handlerror(NekoBot, Nekos, error));
           return await NekoBot.imagebutton(
             NekoBot,
-            nekos,
+            Nekos,
             `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Opened Your Account!`,
@@ -49,7 +49,7 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         }
         return await NekoBot.imagebutton(
           NekoBot,
-          nekos,
+          Nekos,
           `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -59,6 +59,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

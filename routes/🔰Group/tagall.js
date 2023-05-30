@@ -19,16 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!nekos.isGroup) {
-      await NekoBot.sendMessage(nekos.chat, {
+    if (!Nekos.isGroup) {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error*  
@@ -36,13 +36,13 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       );
     }
     if (!isAdmin && !NekoBot.isSudo) {
-      await NekoBot.sendMessage(nekos.chat, {
+      await NekoBot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
-          key: nekos.key,
+          key: Nekos.key,
         },
       });
-      return nekos.reply(
+      return Nekos.reply(
         `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
@@ -51,38 +51,38 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(nekos.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(Nekos.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = NekoBot.display;
     }
     if (NekoBot.args) {
       return await NekoBot.sendMessage(
-        nekos.chat,
+        Nekos.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${nekos.chat}
+          caption: `*📢Id:* ${Nekos.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${NekoBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${NekoBot.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: nekos }
+        { quoted: Nekos }
       );
     } else {
       return await NekoBot.sendMessage(
-        nekos.chat,
+        Nekos.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢Id:* ${nekos.chat}
+          caption: `*📢Id:* ${Nekos.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${NekoBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: nekos }
+        { quoted: Nekos }
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos);
+    return NekoBot.handlerror(NekoBot, Nekos);
   }
 };

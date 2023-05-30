@@ -19,22 +19,22 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     return await NekoBot.nsfwCheck.findOne(
       {
-        serverId: nekos.chat,
+        serverId: Nekos.chat,
       },
       async (error, server) => {
-        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        if (error) return NekoBot.handlerror(NekoBot, Nekos, error);
         if (!server) {
-          await NekoBot.sendMessage(nekos.chat, {
+          await NekoBot.sendMessage(Nekos.chat, {
             react: {
               text: "❌",
-              key: nekos.key,
+              key: Nekos.key,
             },
           });
-          return nekos.reply(
+          return Nekos.reply(
             `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌ Error* 
@@ -48,19 +48,19 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               var fetchedata = response.data;
               console.log(fetchedata);
               if (!fetchedata.meta.thumbnail) {
-                await NekoBot.sendMessage(nekos.chat, {
+                await NekoBot.sendMessage(Nekos.chat, {
                   react: {
                     text: "❌",
-                    key: nekos.key,
+                    key: Nekos.key,
                   },
                 });
-                return nekos.reply(`*😥Apologies:* _${NekoBot.pushname}_
+                return Nekos.reply(`*😥Apologies:* _${NekoBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.`);
               } else
                 await NekoBot.imagebutton(
                   NekoBot,
-                  nekos,
+                  Nekos,
                   `*🔖Here, ${finalname} for @${NekoBot.Tname || NekoBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
@@ -85,6 +85,6 @@ module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, g
       }
     );
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };

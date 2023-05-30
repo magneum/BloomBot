@@ -23,7 +23,7 @@ var finalname = tempname.slice(0, -3).toLowerCase();
 thisfilealias = ["lay", "out", "morelayout", "example"];
 module.exports = async (
   NekoBot,
-  nekos,
+  Nekos,
   gmeta,
   isAdmin,
   groupName,
@@ -33,7 +33,7 @@ module.exports = async (
 ) => {
   try {
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, nekos, error);
+    return NekoBot.handlerror(NekoBot, Nekos, error);
   }
 };
 
