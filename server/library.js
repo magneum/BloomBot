@@ -59,32 +59,14 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     .split(/ +/)
     .shift()
     .toLowerCase();
-  console.log(
-    "\n◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎"
-  );
-  console.log(
-    Foxbot.chalk.blueBright("🖊️COMMANDS: "),
-    Foxbot.chalk.green(vcommand)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("🖊️MESSAGE: "),
-    Foxbot.chalk.green(vbody)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("❣️USER_NAME: "),
-    Foxbot.chalk.green(Foxbot.pushname)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("📱USER_NUMBER: "),
-    Foxbot.chalk.green(Foxchat.sender)
-  );
-  console.log(
-    Foxbot.chalk.blueBright("💬CHAT_Id: "),
-    Foxbot.chalk.green(Foxchat.chat)
-  );
-  console.log(
-    "◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎\n"
-  );
+    
+  console.log("\n◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎");
+  console.log(Foxbot.chalk.blueBright("🖊️COMMANDS: "), Foxbot.chalk.green(vcommand));
+  console.log(Foxbot.chalk.blueBright("🖊️MESSAGE: "), Foxbot.chalk.green(vbody));
+  console.log(Foxbot.chalk.blueBright("❣️USER_NAME: "), Foxbot.chalk.green(Foxbot.pushname));
+  console.log(Foxbot.chalk.blueBright("📱USER_NUMBER: "), Foxbot.chalk.green(Foxchat.sender));
+  console.log(Foxbot.chalk.blueBright("💬CHAT_Id: "), Foxbot.chalk.green(Foxchat.chat));
+  console.log("◎✕———————————————————————✕ Foxbot by magneum ✕———————————————————————✕◎\n");
 
   const specialFolders = [
     "⚙️System",
@@ -119,12 +101,12 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   for (let i = 0; i < specialFolders.length; i++) {
     const folder = specialFolders[i];
     const folderPath = path.join(__dirname, "..", "routes", folder);
-    console.log("📂Checking folder:", folder);
+    // console.log('📂Checking folder:', folder);
     if (fs.existsSync(folderPath)) {
-      console.log("✅ Folder found:", folder);
+      // console.log('✅ Folder found:', folder);
       const commandFile = findCommandFile(folderPath, vcommand);
       if (commandFile) {
-        console.log("✅ Command file found:", commandFile);
+        // console.log('✅ Command file found:', commandFile);
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           Foxbot,
@@ -140,16 +122,16 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         commandFound = true;
         break;
       } else {
-        console.log("❌ Command file not found in folder:", folder);
+        // console.log('❌ Command file not found in folder:', folder);
       }
     } else {
-      console.log("❌ Folder not found:", folder);
+      // console.log('❌ Folder not found:', folder);
     }
   }
 
   if (!commandFound) {
-    console.log("❌ Command not found:", vcommand);
-    console.log("⚠️ Apologies ⚠️");
+    // console.log('❌ Command not found:', vcommand);
+    // console.log('⚠️ Apologies ⚠️');
     await Foxbot.imagebutton(
       Foxbot,
       Foxchat,
