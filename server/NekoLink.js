@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var {
   Simp,
@@ -64,7 +64,7 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "public/NekoBot";
+    const folderPath = "public/Nekobot";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
@@ -88,130 +88,130 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (NekoBot, Nekos, update, store) => {
-  NekoBot.display = getRandomImagePath()
+module.exports = async (Nekobot, Nekos, update, store) => {
+  Nekobot.display = getRandomImagePath()
     .then((imagePath) => {
-      NekoBot.display = imagePath;
+      Nekobot.display = imagePath;
     })
     .catch((err) => {
-      NekoBot.display = "./public/NekoBot_Logo.png";
+      Nekobot.display = "./public/Nekobot_Logo.png";
     });
 
-  NekoBot.performance = performance;
-  // NekoBot.createWorker = createWorker;
-  NekoBot.JSDOM = JSDOM;
-  NekoBot.Character = Character;
-  NekoBot.execSync = execSync;
-  NekoBot.spawn = spawn;
-  NekoBot.exec = exec;
-  NekoBot.Primbon = Primbon;
-  NekoBot.IShipOptions = IShipOptions;
-  NekoBot.Ship = Ship;
-  NekoBot.Pokemon = Pokemon;
-  NekoBot.Simp = Simp;
-  NekoBot.readFile = readFile;
-  NekoBot.tmpdir = tmpdir;
-  NekoBot.Doujin = Doujin;
-  NekoBot.DownloaderHelper = DownloaderHelper;
-  NekoBot.chalk = chalk;
-  NekoBot.Sticker = Sticker;
-  NekoBot.createSticker = createSticker;
-  NekoBot.StickerTypes = StickerTypes;
-  NekoBot.mMake = mMake;
-  NekoBot.formatp = formatp;
-  NekoBot.formatDate = formatDate;
-  NekoBot.getTime = getTime;
-  NekoBot.isUrl = isUrl;
-  NekoBot.sleep = sleep;
-  NekoBot.clockString = clockString;
-  NekoBot.runtime = runtime;
-  NekoBot.fetchJson = fetchJson;
-  NekoBot.getBuffer = getBuffer;
-  NekoBot.jsonformat = jsonformat;
-  NekoBot.format = format;
-  NekoBot.parseMention = parseMention;
-  NekoBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
-  NekoBot.getRandom = getRandom;
-  NekoBot.getDadjoke = getDadjoke;
-  NekoBot.Manga = Manga;
-  NekoBot.AnimeWallpaper = AnimeWallpaper;
-  NekoBot.TelegraPh = TelegraPh;
-  NekoBot.UploadFileUgu = UploadFileUgu;
-  NekoBot.webp2mp4File = webp2mp4File;
-  NekoBot.Tname = Nekos.sender.replace(/['@s whatsapp.net']/g, "");
+  Nekobot.performance = performance;
+  // Nekobot.createWorker = createWorker;
+  Nekobot.JSDOM = JSDOM;
+  Nekobot.Character = Character;
+  Nekobot.execSync = execSync;
+  Nekobot.spawn = spawn;
+  Nekobot.exec = exec;
+  Nekobot.Primbon = Primbon;
+  Nekobot.IShipOptions = IShipOptions;
+  Nekobot.Ship = Ship;
+  Nekobot.Pokemon = Pokemon;
+  Nekobot.Simp = Simp;
+  Nekobot.readFile = readFile;
+  Nekobot.tmpdir = tmpdir;
+  Nekobot.Doujin = Doujin;
+  Nekobot.DownloaderHelper = DownloaderHelper;
+  Nekobot.chalk = chalk;
+  Nekobot.Sticker = Sticker;
+  Nekobot.createSticker = createSticker;
+  Nekobot.StickerTypes = StickerTypes;
+  Nekobot.mMake = mMake;
+  Nekobot.formatp = formatp;
+  Nekobot.formatDate = formatDate;
+  Nekobot.getTime = getTime;
+  Nekobot.isUrl = isUrl;
+  Nekobot.sleep = sleep;
+  Nekobot.clockString = clockString;
+  Nekobot.runtime = runtime;
+  Nekobot.fetchJson = fetchJson;
+  Nekobot.getBuffer = getBuffer;
+  Nekobot.jsonformat = jsonformat;
+  Nekobot.format = format;
+  Nekobot.parseMention = parseMention;
+  Nekobot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+  Nekobot.getRandom = getRandom;
+  Nekobot.getDadjoke = getDadjoke;
+  Nekobot.Manga = Manga;
+  Nekobot.AnimeWallpaper = AnimeWallpaper;
+  Nekobot.TelegraPh = TelegraPh;
+  Nekobot.UploadFileUgu = UploadFileUgu;
+  Nekobot.webp2mp4File = webp2mp4File;
+  Nekobot.Tname = Nekos.sender.replace(/['@s whatsapp.net']/g, "");
 
-  NekoBot.msgFilter = require("./msgFilter");
-  NekoBot.imagebutton = require("@/app/buttons/imagebutton");
-  NekoBot.videobutton = require("@/app/buttons/videobutton");
-  NekoBot.handlerror = require("@/app/buttons/handlerror");
-  NekoBot.TTS = require("google-tts-api");
-  // NekoBot.nhentaidl = require("./nhentaidl");
-  NekoBot.dashboard = require("@/database/dashboard");
-  NekoBot.LinkList = require("@/database/antilink");
-  NekoBot.Ranker = require("@/database/autorank");
-  NekoBot.Bagde = require("@/database/badge");
-  NekoBot.premium = require("@/database/premium");
-  NekoBot.userBanCheck = require("@/database/ban");
-  NekoBot.Cooldown = require("@/database/cooldown");
-  NekoBot.DebugMode = require("@/database/debug");
-  NekoBot.Economy = require("@/database/economy");
-  NekoBot.Gamble = require("@/database/gamble");
-  NekoBot.Halt = require("@/database/halt");
-  NekoBot.nsfwCheck = require("@/database/nsfw");
-  NekoBot.Pokemon = require("@/database/pokemon");
-  NekoBot.UserPrivate = require("@/database/private");
-  NekoBot.Robbery = require("@/database/robbery");
-  NekoBot.ServerDB = require("@/database/ServerDB");
-  NekoBot.Welcome = require("@/database/setwelcome");
-  NekoBot.Warning = require("@/database/warning");
-  NekoBot.Zoology = require("@/database/zoo");
-  NekoBot.Fishes = require("@/public/fishes.json");
-  NekoBot.animals = require("@/public/animals.json");
-  NekoBot.Jwork = require("@/public/works.json");
-  NekoBot.dare = require("@/public/dare.json");
-  NekoBot.truth = require("@/public/truth.json");
-  NekoBot.magfetch = require("@/server/magfetch");
+  Nekobot.msgFilter = require("./msgFilter");
+  Nekobot.imagebutton = require("@/app/buttons/imagebutton");
+  Nekobot.videobutton = require("@/app/buttons/videobutton");
+  Nekobot.handlerror = require("@/app/buttons/handlerror");
+  Nekobot.TTS = require("google-tts-api");
+  // Nekobot.nhentaidl = require("./nhentaidl");
+  Nekobot.dashboard = require("@/database/dashboard");
+  Nekobot.LinkList = require("@/database/antilink");
+  Nekobot.Ranker = require("@/database/autorank");
+  Nekobot.Bagde = require("@/database/badge");
+  Nekobot.premium = require("@/database/premium");
+  Nekobot.userBanCheck = require("@/database/ban");
+  Nekobot.Cooldown = require("@/database/cooldown");
+  Nekobot.DebugMode = require("@/database/debug");
+  Nekobot.Economy = require("@/database/economy");
+  Nekobot.Gamble = require("@/database/gamble");
+  Nekobot.Halt = require("@/database/halt");
+  Nekobot.nsfwCheck = require("@/database/nsfw");
+  Nekobot.Pokemon = require("@/database/pokemon");
+  Nekobot.UserPrivate = require("@/database/private");
+  Nekobot.Robbery = require("@/database/robbery");
+  Nekobot.ServerDB = require("@/database/ServerDB");
+  Nekobot.Welcome = require("@/database/setwelcome");
+  Nekobot.Warning = require("@/database/warning");
+  Nekobot.Zoology = require("@/database/zoo");
+  Nekobot.Fishes = require("@/public/fishes.json");
+  Nekobot.animals = require("@/public/animals.json");
+  Nekobot.Jwork = require("@/public/works.json");
+  Nekobot.dare = require("@/public/dare.json");
+  Nekobot.truth = require("@/public/truth.json");
+  Nekobot.magfetch = require("@/server/magfetch");
 
-  NekoBot.os = require("os");
-  NekoBot.fs = require("fs");
-  NekoBot.got = require("got");
-  NekoBot.gis = require("g-i-s");
-  NekoBot.path = require("path");
-  NekoBot.util = require("util");
-  NekoBot.primbon = new Primbon();
-  NekoBot.ms = require("parse-ms");
-  NekoBot.hxz = require("hxz-api");
-  NekoBot.axios = require("axios");
-  NekoBot.chalk = require("chalk");
-  NekoBot.playdl = require("play-dl");
-  NekoBot.request = require("request");
-  NekoBot.xfar = require("xfarr-api");
-  NekoBot.cron = require("node-cron");
-  NekoBot.nHentai = require("shentai");
-  NekoBot.cheerio = require("cheerio");
-  NekoBot.akaneko = require("akaneko");
-  NekoBot.fetch = require("node-fetch");
-  NekoBot.google = require("google-it");
-  NekoBot.Spinnies = require("spinnies");
-  NekoBot.Anime = require("anime-actions");
-  NekoBot.Tinyurl = require("tinyurl-api");
-  NekoBot.FastHub = require("simple-git")();
-  NekoBot.speed = require("performance-now");
-  NekoBot.moment = require("moment-timezone");
-  NekoBot.Carbon = require("unofficial-carbon-now");
-  NekoBot.Levels = require("discord-xp");
-  NekoBot.canvacord = require("canvacord");
-  NekoBot.randomMC = require("random-material-color");
-  NekoBot.yClient = require("youtube-avdl");
-  NekoBot.pokemontcgsdk = require("pokemontcgsdk");
-  NekoBot.singer = require("play-dl");
-  NekoBot.ffmpeg = ffmpeg;
-  NekoBot.pathFFmpeg = require("ffmpeg-static");
+  Nekobot.os = require("os");
+  Nekobot.fs = require("fs");
+  Nekobot.got = require("got");
+  Nekobot.gis = require("g-i-s");
+  Nekobot.path = require("path");
+  Nekobot.util = require("util");
+  Nekobot.primbon = new Primbon();
+  Nekobot.ms = require("parse-ms");
+  Nekobot.hxz = require("hxz-api");
+  Nekobot.axios = require("axios");
+  Nekobot.chalk = require("chalk");
+  Nekobot.playdl = require("play-dl");
+  Nekobot.request = require("request");
+  Nekobot.xfar = require("xfarr-api");
+  Nekobot.cron = require("node-cron");
+  Nekobot.nHentai = require("shentai");
+  Nekobot.cheerio = require("cheerio");
+  Nekobot.akaneko = require("akaneko");
+  Nekobot.fetch = require("node-fetch");
+  Nekobot.google = require("google-it");
+  Nekobot.Spinnies = require("spinnies");
+  Nekobot.Anime = require("anime-actions");
+  Nekobot.Tinyurl = require("tinyurl-api");
+  Nekobot.FastHub = require("simple-git")();
+  Nekobot.speed = require("performance-now");
+  Nekobot.moment = require("moment-timezone");
+  Nekobot.Carbon = require("unofficial-carbon-now");
+  Nekobot.Levels = require("discord-xp");
+  Nekobot.canvacord = require("canvacord");
+  Nekobot.randomMC = require("random-material-color");
+  Nekobot.yClient = require("youtube-avdl");
+  Nekobot.pokemontcgsdk = require("pokemontcgsdk");
+  Nekobot.singer = require("play-dl");
+  Nekobot.ffmpeg = ffmpeg;
+  Nekobot.pathFFmpeg = require("ffmpeg-static");
 
-  // NekoBot.memberRespA = [];
-  // NekoBot.memberRespB = [];
-  // NekoBot.resp1 = await NekoBot.groupInviteCode("120363020792949649@g.us");
-  NekoBot.varResp = [
+  // Nekobot.memberRespA = [];
+  // Nekobot.memberRespB = [];
+  // Nekobot.resp1 = await Nekobot.groupInviteCode("120363020792949649@g.us");
+  Nekobot.varResp = [
     "h",
     "m",
     "c",
@@ -219,40 +219,40 @@ module.exports = async (NekoBot, Nekos, update, store) => {
     "list",
     "command",
     "commands",
-    "NekoBot",
+    "Nekobot",
     "Commands",
   ];
 
   function ShowGreen(Topic, Text) {
-    var TShow = NekoBot.chalk.hex("#2D5A27").bold(Topic);
-    var Show = NekoBot.chalk.hex("#849871").italic.bold(Text);
+    var TShow = Nekobot.chalk.hex("#2D5A27").bold(Topic);
+    var Show = Nekobot.chalk.hex("#849871").italic.bold(Text);
     console.log(
-      NekoBot.chalk.black(NekoBot.chalk.bgBlack(TShow)),
-      NekoBot.chalk.black(Show)
+      Nekobot.chalk.black(Nekobot.chalk.bgBlack(TShow)),
+      Nekobot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    var TShow = NekoBot.chalk.hex("#008B8B").bold(Topic);
-    var Show = NekoBot.chalk.hex("#818d94").italic.bold(Text);
+    var TShow = Nekobot.chalk.hex("#008B8B").bold(Topic);
+    var Show = Nekobot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
-      NekoBot.chalk.black(NekoBot.chalk.bgBlack(TShow)),
-      NekoBot.chalk.black(Show)
+      Nekobot.chalk.black(Nekobot.chalk.bgBlack(TShow)),
+      Nekobot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    var TShow = NekoBot.chalk.hex("#ff6347").bold(Topic);
-    var Show = NekoBot.chalk.hex("#ed7777").italic.bold(Text);
+    var TShow = Nekobot.chalk.hex("#ff6347").bold(Topic);
+    var Show = Nekobot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
-      NekoBot.chalk.black(NekoBot.chalk.bgBlack(TShow)),
-      NekoBot.chalk.black(Show)
+      Nekobot.chalk.black(Nekobot.chalk.bgBlack(TShow)),
+      Nekobot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    var TShow = NekoBot.chalk.hex("#8B8000").bold(Topic);
-    var Show = NekoBot.chalk.hex("#ECCF8D").italic.bold(Text);
+    var TShow = Nekobot.chalk.hex("#8B8000").bold(Topic);
+    var Show = Nekobot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
-      NekoBot.chalk.black(NekoBot.chalk.bgBlack(TShow)),
-      NekoBot.chalk.black(Show)
+      Nekobot.chalk.black(Nekobot.chalk.bgBlack(TShow)),
+      Nekobot.chalk.black(Show)
     );
   }
   function between(min, max) {
@@ -260,43 +260,43 @@ module.exports = async (NekoBot, Nekos, update, store) => {
   }
   function clearStorage(files) {
     for (var file of files) {
-      NekoBot.fs.unlink(file, (err) => {
+      Nekobot.fs.unlink(file, (err) => {
         if (err) throw err;
       });
     }
   }
 
-  NekoBot.ShowGreen = ShowGreen;
-  NekoBot.ShowBlue = ShowBlue;
-  NekoBot.ShowRed = ShowRed;
-  NekoBot.ShowYellow = ShowYellow;
-  NekoBot.between = between;
-  NekoBot.clearStorage = clearStorage;
-  NekoBot.spinner = {
+  Nekobot.ShowGreen = ShowGreen;
+  Nekobot.ShowBlue = ShowBlue;
+  Nekobot.ShowRed = ShowRed;
+  Nekobot.ShowYellow = ShowYellow;
+  Nekobot.between = between;
+  Nekobot.clearStorage = clearStorage;
+  Nekobot.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
   };
-  NekoBot.spinnies = new NekoBot.Spinnies({
+  Nekobot.spinnies = new Nekobot.Spinnies({
     color: "cyan",
     succeedColor: "green",
-    spinner: NekoBot.spinner,
+    spinner: Nekobot.spinner,
   });
-  NekoBot.TubeRegex =
+  Nekobot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  NekoBot.Showlogger = Showlogger;
-  NekoBot.packname = packname;
-  NekoBot.pgdb = DATABASE_URL;
-  NekoBot.ShowInfo = ShowInfo;
-  NekoBot.MONGODB_URL = MONGODB_URL;
-  NekoBot.author = author;
-  NekoBot.prefix = prefix;
-  NekoBot.sudo = sudo;
+  Nekobot.Showlogger = Showlogger;
+  Nekobot.packname = packname;
+  Nekobot.pgdb = DATABASE_URL;
+  Nekobot.ShowInfo = ShowInfo;
+  Nekobot.MONGODB_URL = MONGODB_URL;
+  Nekobot.author = author;
+  Nekobot.prefix = prefix;
+  Nekobot.sudo = sudo;
   sudotring =
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  NekoBot.isSudo = sudotring.includes(
+  Nekobot.isSudo = sudotring.includes(
     Nekos.sender.substring(0, Nekos.sender.indexOf("@"))
   );
-  return NekoBot;
+  return Nekobot;
 };

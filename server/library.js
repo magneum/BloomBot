@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (NekoBot, Nekos, update, store) => {
+module.exports = async (Nekobot, Nekos, update, store) => {
   const routePath = path.join(__dirname, "..", "routes");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -42,7 +42,7 @@ module.exports = async (NekoBot, Nekos, update, store) => {
   };
 
   const gmeta = Nekos.isGroup
-    ? await NekoBot.groupMetadata(Nekos.chat).catch((error) => {})
+    ? await Nekobot.groupMetadata(Nekos.chat).catch((error) => {})
     : "";
   const groupName = Nekos.isGroup ? gmeta.subject : "";
   const participants = Nekos.isGroup ? await gmeta.participants : "";
@@ -51,7 +51,7 @@ module.exports = async (NekoBot, Nekos, update, store) => {
     : "";
   const groupOwner = Nekos.isGroup ? gmeta.owner : "";
   const isbotAdmin = Nekos.isGroup
-    ? groupAdmins.includes(await NekoBot.decodeJid(NekoBot.user.id))
+    ? groupAdmins.includes(await Nekobot.decodeJid(Nekobot.user.id))
     : false;
   const isAdmin = Nekos.isGroup
     ? groupAdmins.includes(Nekos.sender)
@@ -78,37 +78,37 @@ module.exports = async (NekoBot, Nekos, update, store) => {
         Nekos.text
       : "";
   const vcommand = vbody
-    .replace(NekoBot.prefix, "")
+    .replace(Nekobot.prefix, "")
     .trim()
     .split(/ +/)
     .shift()
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ NekoBot by magneum ✕———————————————————————✕◎"
+    "\n◎✕———————————————————————✕ Nekobot by magneum ✕———————————————————————✕◎"
   );
   console.log(
-    NekoBot.chalk.blueBright("🖊️COMMANDS: "),
-    NekoBot.chalk.green(vcommand)
+    Nekobot.chalk.blueBright("🖊️COMMANDS: "),
+    Nekobot.chalk.green(vcommand)
   );
   console.log(
-    NekoBot.chalk.blueBright("🖊️MESSAGE: "),
-    NekoBot.chalk.green(vbody)
+    Nekobot.chalk.blueBright("🖊️MESSAGE: "),
+    Nekobot.chalk.green(vbody)
   );
   console.log(
-    NekoBot.chalk.blueBright("❣️USER_NAME: "),
-    NekoBot.chalk.green(NekoBot.pushname)
+    Nekobot.chalk.blueBright("❣️USER_NAME: "),
+    Nekobot.chalk.green(Nekobot.pushname)
   );
   console.log(
-    NekoBot.chalk.blueBright("📱USER_NUMBER: "),
-    NekoBot.chalk.green(Nekos.sender)
+    Nekobot.chalk.blueBright("📱USER_NUMBER: "),
+    Nekobot.chalk.green(Nekos.sender)
   );
   console.log(
-    NekoBot.chalk.blueBright("💬CHAT_Id: "),
-    NekoBot.chalk.green(Nekos.chat)
+    Nekobot.chalk.blueBright("💬CHAT_Id: "),
+    Nekobot.chalk.green(Nekos.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ NekoBot by magneum ✕———————————————————————✕◎\n"
+    "◎✕———————————————————————✕ Nekobot by magneum ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -121,7 +121,7 @@ module.exports = async (NekoBot, Nekos, update, store) => {
       if (commandFile) {
         const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
-          NekoBot,
+          Nekobot,
           Nekos,
           gmeta,
           isAdmin,
@@ -129,7 +129,7 @@ module.exports = async (NekoBot, Nekos, update, store) => {
           isbotAdmin,
           groupAdmins,
           participants,
-          NekoBot.isSudo
+          Nekobot.isSudo
         );
         commandFound = true;
         break;
@@ -147,21 +147,21 @@ module.exports = async (NekoBot, Nekos, update, store) => {
     if (suggestedCommand) {
       const suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await NekoBot.sendMessage(Nekos.chat, {
-        image: { url: NekoBot.display },
+      return await Nekobot.sendMessage(Nekos.chat, {
+        image: { url: Nekobot.display },
         caption: `*📢ID:* ${Nekos.chat}\n\n${suggestionMessage}`,
-        footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*Nekobot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${NekoBot.prefix}${suggestedCommand}`,
+            buttonId: `${Nekobot.prefix}${suggestedCommand}`,
             buttonText: {
-              displayText: `${NekoBot.prefix}${suggestedCommand}`,
+              displayText: `${Nekobot.prefix}${suggestedCommand}`,
             },
             type: 1,
           },
           {
-            buttonId: `${NekoBot.prefix}Home`,
-            buttonText: { displayText: `${NekoBot.prefix}Home` },
+            buttonId: `${Nekobot.prefix}Home`,
+            buttonText: { displayText: `${Nekobot.prefix}Home` },
             type: 1,
           },
         ],
@@ -171,16 +171,16 @@ module.exports = async (NekoBot, Nekos, update, store) => {
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
-        `@${NekoBot.Tname}, it seems that the command you entered doesn't exist.\n` +
+        `@${Nekobot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await NekoBot.sendMessage(Nekos.chat, {
-        image: { url: NekoBot.display },
+      return await Nekobot.sendMessage(Nekos.chat, {
+        image: { url: Nekobot.display },
         caption: `*📢ID:* ${Nekos.chat}\n\n${errorMessage}`,
-        footer: "*NekoBot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*Nekobot by magneum*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${NekoBot.prefix}Home`,
-            buttonText: { displayText: `${NekoBot.prefix}Home` },
+            buttonId: `${Nekobot.prefix}Home`,
+            buttonText: { displayText: `${Nekobot.prefix}Home` },
             type: 1,
           },
         ],

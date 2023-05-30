@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var { proto, getContentType } = require("@adiwajshing/baileys");
 var { sizeFormatter } = require("human-readable");
 var child_process = require("child_process");
@@ -226,7 +226,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (NekoBot, Nekos, store) => {
+exports.mMake = async (Nekobot, Nekos, store) => {
   if (!Nekos) return Nekos;
   var νproto = proto.WebMessageInfo;
   if (Nekos.key) {
@@ -236,15 +236,15 @@ exports.mMake = async (NekoBot, Nekos, store) => {
     Nekos.chat = Nekos.key.remoteJid;
     Nekos.fromMe = Nekos.key.fromMe;
     Nekos.isGroup = Nekos.chat.endsWith("@g.us");
-    Nekos.sender = NekoBot.decodeJid(
-      (Nekos.fromMe && NekoBot.user.id) ||
+    Nekos.sender = Nekobot.decodeJid(
+      (Nekos.fromMe && Nekobot.user.id) ||
         Nekos.participant ||
         Nekos.key.participant ||
         Nekos.chat ||
         ""
     );
     if (Nekos.isGroup)
-      Nekos.participant = NekoBot.decodeJid(Nekos.key.participant) || "";
+      Nekos.participant = Nekobot.decodeJid(Nekos.key.participant) || "";
   }
   if (Nekos.message) {
     Nekos.mtype = getContentType(Nekos.message);
@@ -288,11 +288,11 @@ exports.mMake = async (NekoBot, Nekos, store) => {
         ? Nekos.quoted.id.startsWith("BAE5") &&
           Nekos.quoted.id.length === 16
         : false;
-      Nekos.quoted.sender = NekoBot.decodeJid(
+      Nekos.quoted.sender = Nekobot.decodeJid(
         Nekos.msg.contextInfo.participant
       );
       Nekos.quoted.fromMe =
-        Nekos.quoted.sender === (NekoBot.user && NekoBot.user.id);
+        Nekos.quoted.sender === (Nekobot.user && Nekobot.user.id);
       Nekos.quoted.text =
         Nekos.quoted.text ||
         Nekos.quoted.caption ||
@@ -309,9 +309,9 @@ exports.mMake = async (NekoBot, Nekos, store) => {
         var q = await store.loadMessage(
           Nekos.chat,
           Nekos.quoted.id,
-          NekoBot
+          Nekobot
         );
-        return exports.mMake(NekoBot, q, store);
+        return exports.mMake(Nekobot, q, store);
       };
       var vM = (Nekos.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -323,16 +323,16 @@ exports.mMake = async (NekoBot, Nekos, store) => {
         ...(Nekos.isGroup ? { participant: Nekos.quoted.sender } : {}),
       }));
       Nekos.quoted.delete = () =>
-        NekoBot.sendMessage(Nekos.quoted.chat, { delete: vM.key });
+        Nekobot.sendMessage(Nekos.quoted.chat, { delete: vM.key });
       Nekos.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-        NekoBot.copyNForward(jid, vM, forceForward, options);
+        Nekobot.copyNForward(jid, vM, forceForward, options);
       Nekos.quoted.download = () =>
-        NekoBot.downloadMediaMessage(Nekos.quoted);
+        Nekobot.downloadMediaMessage(Nekos.quoted);
     }
   }
 
   if (Nekos.msg.url)
-    Nekos.download = () => NekoBot.downloadMediaMessage(Nekos.msg);
+    Nekos.download = () => Nekobot.downloadMediaMessage(Nekos.msg);
   Nekos.text =
     Nekos.msg.text ||
     Nekos.msg.caption ||
@@ -343,15 +343,15 @@ exports.mMake = async (NekoBot, Nekos, store) => {
     "";
   Nekos.reply = (text, chatId = Nekos.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? NekoBot.sendMedia(chatId, text, "file", "", Nekos, { ...options })
-      : NekoBot.sendText(chatId, text, Nekos, { ...options });
+      ? Nekobot.sendMedia(chatId, text, "file", "", Nekos, { ...options })
+      : Nekobot.sendText(chatId, text, Nekos, { ...options });
   Nekos.copy = () =>
-    exports.mMake(NekoBot, νproto.fromObject(νproto.toObject(Nekos)));
+    exports.mMake(Nekobot, νproto.fromObject(νproto.toObject(Nekos)));
   Nekos.copyNForward = (
     jid = Nekos.chat,
     forceForward = false,
     options = {}
-  ) => NekoBot.copyNForward(jid, Nekos, forceForward, options);
+  ) => Nekobot.copyNForward(jid, Nekos, forceForward, options);
 
   return Nekos;
 };
