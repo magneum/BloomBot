@@ -154,10 +154,10 @@ async function magneum() {
     var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
-        logger.info("📢: Connecting to whatsApp...▶");
+        logger.info("📢: Connecting to whatsApp...");
         break;
       case "open":
-        logger.info("📢: Login successful! ▶");
+        logger.info("📢: Login successful! ");
         break;
       case "close":
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
