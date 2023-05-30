@@ -42,7 +42,7 @@ module.exports = async (OpenBot, ocID) => {
     OpenBot.axios({
       method: "get",
       url:
-        "https://magneum™.vercel.app/api/shorten?q=" + OpenBot.args.join(" "),
+        "https://magneum.vercel.app/api/shorten?q=" + OpenBot.args.join(" "),
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",

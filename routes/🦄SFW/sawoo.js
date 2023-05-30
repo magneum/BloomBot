@@ -21,7 +21,7 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (OpenBot, ocID) => {
   try {
-    OpenBot.magfetch(OpenBot, "https://magneum™.vercel.app/api/sfw?q=awoo").then(
+    OpenBot.magfetch(OpenBot, "https://magneum.vercel.app/api/sfw?q=awoo").then(
       async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);

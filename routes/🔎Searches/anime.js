@@ -41,7 +41,7 @@ module.exports = async (OpenBot, ocID) => {
 
     OpenBot.magfetch(
       OpenBot,
-      `https://magneum™.vercel.app/api/anime?q=${fpth}`
+      `https://magneum.vercel.app/api/anime?q=${fpth}`
     ).then(async (response) => {
       var viper = response.data;
       console.log(viper);

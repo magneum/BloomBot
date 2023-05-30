@@ -23,7 +23,7 @@ module.exports = async (OpenBot, ocID) => {
   try {
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum™.vercel.app/api/emotions?q=${feeling}`
+      `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     var magData = response.data;
     console.log(magData);
@@ -69,7 +69,7 @@ module.exports = async (OpenBot, ocID) => {
 *🎋Emo:* ${feeling}
 *📢From:* ${OpenBot.pushname}
 *⚡for:* @${mentionedUser.split("@")[0] || ""}
-*🐞Api:* https://magneum™.vercel.app/api/emotions`;
+*🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await OpenBot.sendMessage(
           ocID.chat,

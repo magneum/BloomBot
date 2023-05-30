@@ -41,13 +41,13 @@ module.exports = async (OpenBot, ocID) => {
     }
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum™.vercel.app/api/youtube_sr?q=${query}`
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
     console.log(response.response);
     var searchData = response.data.youtube_search[0];
     var musicResponse = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum™.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
+      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
     var musicData = musicResponse.data[0];
     var audioFilename = `${OpenBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;

@@ -32,7 +32,7 @@ module.exports = async (
   try {
     OpenBot.magfetch(
       OpenBot,
-      "https://magneum™.vercel.app/api/sfw?q=cuddle"
+      "https://magneum.vercel.app/api/sfw?q=cuddle"
     ).then(async (response) => {
       var fetchedata = response.data;
       console.log(fetchedata);

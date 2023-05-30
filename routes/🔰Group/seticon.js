@@ -22,7 +22,6 @@ var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   OpenBot,
   ocID,
-  gmeta,
   isAdmin,
   isbotAdmin,
 ) => {

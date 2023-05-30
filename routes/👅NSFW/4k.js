@@ -35,7 +35,7 @@ module.exports = async (OpenBot, ocID) => {
 
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum™.vercel.app/api/nsfw?q=${fpth}`
+      `https://magneum.vercel.app/api/nsfw?q=${fpth}`
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {

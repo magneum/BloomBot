@@ -30,7 +30,7 @@ module.exports = async (
   participants
 ) => {
   try {
-    OpenBot.magfetch(OpenBot, "https://magneum™.vercel.app/api/sfw?q=bonk").then(
+    OpenBot.magfetch(OpenBot, "https://magneum.vercel.app/api/sfw?q=bonk").then(
       async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);

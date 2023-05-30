@@ -41,7 +41,7 @@ module.exports = async (OpenBot, ocID) => {
 
     OpenBot.magfetch(
       OpenBot,
-      "https://magneum™.vercel.app/api/pinterest?q=" + OpenBot.args.join(" ")
+      "https://magneum.vercel.app/api/pinterest?q=" + OpenBot.args.join(" ")
     ).then(async (response) => {
       var fetchedata = response.data;
       console.log(fetchedata);

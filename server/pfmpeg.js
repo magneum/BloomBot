@@ -66,7 +66,7 @@ app.get("/spotify", async (request, response) => {
     console.log(request.query);
     axios({
       method: "get",
-      url: "https://magneum™.vercel.app/api/youtube_sr?q=" + request.query,
+      url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
@@ -209,7 +209,7 @@ app.get("/metadata", async (request, response) => {
     var _ALINK;
     axios({
       method: "get",
-      url: "https://magneum™.vercel.app/api/youtube_sr?q=" + request.query,
+      url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",

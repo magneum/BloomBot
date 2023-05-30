@@ -19,31 +19,23 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
-    OpenBot.magfetch(OpenBot, "https://magneum™.vercel.app/api/sfw?q=wink").then(
-      async (response) => {
-        var fetchedata = response.data;
-        console.log(fetchedata);
-        return await OpenBot.imagebutton(
-          OpenBot,
-          ocID,
-          `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+    OpenBot.magfetch(
+      OpenBot,
+      "https://magneum.vercel.app/api/sfw?q=wink"
+    ).then(async (response) => {
+      var fetchedata = response.data;
+      console.log(fetchedata);
+      return await OpenBot.imagebutton(
+        OpenBot,
+        ocID,
+        `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *Topic*: ${fetchedata.meta.topic}
 *Query*: ${fetchedata.meta.query}`,
-          fetchedata.meta.url
-        );
-      }
-    );
+        fetchedata.meta.url
+      );
+    });
   } catch (error) {
     return OpenBot.handlerror(OpenBot, ocID, error);
   }

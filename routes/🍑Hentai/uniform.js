@@ -44,7 +44,7 @@ module.exports = async (OpenBot, ocID) => {
         } else {
           OpenBot.magfetch(
             OpenBot,
-            "https://magneum™.vercel.app/api/hentai?q=" + fpth
+            "https://magneum.vercel.app/api/hentai?q=" + fpth
           ).then(async (response) => {
             var fetchedata = response.data;
             console.log(fetchedata);
@@ -68,7 +68,7 @@ module.exports = async (OpenBot, ocID) => {
                 `*🔖Here, ${fpth} for ${OpenBot.pushname}:*
 
 > *Description:* ${fetchedata[0].meta.description}
-> *Api Fetch Url:* https://magneum™.vercel.app/api/hentai`,
+> *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
                 fetchedata[0].meta.url
               );
           });

@@ -68,7 +68,7 @@ module.exports = async (OpenBot, ocID) => {
       OpenBot.axios({
         method: "get",
         url:
-          "https://magneum™.vercel.app/api/text2speech?q=" +
+          "https://magneum.vercel.app/api/text2speech?q=" +
           OpenBot.args.join(" "),
         headers: {
           accept: "*/*",
