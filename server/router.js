@@ -69,7 +69,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
       ? vChat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./whatsLink")(OpenBot, vChat, update, store);
+  require("./relink")(OpenBot, vChat, update, store);
   if (!vChat.isGroup && OpenBot.command)
     return require("@/auth/noPrivate")(OpenBot, vChat, update);
   if (vChat.isGroup && OpenBot.command)
