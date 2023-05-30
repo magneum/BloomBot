@@ -48,8 +48,8 @@ require("@/logger/config");
 // }
 // );
 
-const sequelize_1 = require("sequelize");
-const sequelize = DATABASE;
+var sequelize_1 = require("sequelize");
+var sequelize = DATABASE;
 
 class Auth extends sequelize_1.Model {}
 module.exports.Auth = Auth;

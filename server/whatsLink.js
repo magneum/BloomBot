@@ -64,22 +64,22 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "public/src";
+    var folderPath = "public/src";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
         return;
       }
-      const imageFiles = files.filter((file) => {
-        const extension = path.extname(file).toLowerCase();
+      var imageFiles = files.filter((file) => {
+        var extension = path.extname(file).toLowerCase();
         return (
           extension === ".png" || extension === ".jpg" || extension === ".jpeg"
         );
       });
       if (imageFiles.length > 0) {
-        const randomImage =
+        var randomImage =
           imageFiles[Math.floor(Math.random() * imageFiles.length)];
-        const imagePath = path.join(folderPath, randomImage);
+        var imagePath = path.join(folderPath, randomImage);
         resolve(imagePath);
       } else {
         reject("No .png, .jpg, or .jpeg images found in the folder.");

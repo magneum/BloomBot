@@ -15,24 +15,24 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const fs = require("fs");
-const path = require("path");
-const didYouMean = require("didyoumean2").default;
+var fs = require("fs");
+var path = require("path");
+var didYouMean = require("didyoumean2").default;
 
 module.exports = async (OpenBot, vChat, update, store) => {
-  const routePath = path.join(__dirname, "..", "routes");
-  const specialFolders = fs
+  var routePath = path.join(__dirname, "..", "routes");
+  var specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
 
-  const commandList = []; // List to store command filenames and aliases
+  var commandList = []; // List to store command filenames and aliases
 
-  const findCommandFile = (folderPath, command) => {
-    const files = fs.readdirSync(folderPath);
-    for (const file of files) {
-      const fileName = path.parse(file).name.toLowerCase();
-      const commandAliases = require(path.join(folderPath, file)).aliases || [];
+  var findCommandFile = (folderPath, command) => {
+    var files = fs.readdirSync(folderPath);
+    for (var file of files) {
+      var fileName = path.parse(file).name.toLowerCase();
+      var commandAliases = require(path.join(folderPath, file)).aliases || [];
       commandList.push({ name: fileName, aliases: commandAliases }); // Add command and its aliases to the list
       if (fileName === command || commandAliases.includes(command)) {
         return file;
@@ -41,23 +41,23 @@ module.exports = async (OpenBot, vChat, update, store) => {
     return null;
   };
 
-  const gmeta = vChat.isGroup
+  var gmeta = vChat.isGroup
     ? await OpenBot.groupMetadata(vChat.chat).catch((error) => {})
     : "";
-  const groupName = vChat.isGroup ? gmeta.subject : "";
-  const participants = vChat.isGroup ? await gmeta.participants : "";
-  const groupAdmins = vChat.isGroup
+  var groupName = vChat.isGroup ? gmeta.subject : "";
+  var participants = vChat.isGroup ? await gmeta.participants : "";
+  var groupAdmins = vChat.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = vChat.isGroup ? gmeta.owner : "";
-  const isbotAdmin = vChat.isGroup
+  var groupOwner = vChat.isGroup ? gmeta.owner : "";
+  var isbotAdmin = vChat.isGroup
     ? groupAdmins.includes(await OpenBot.decodeJid(OpenBot.user.id))
     : false;
-  const isAdmin = vChat.isGroup
+  var isAdmin = vChat.isGroup
     ? groupAdmins.includes(vChat.sender)
     : false;
 
-  const vbody =
+  var vbody =
     vChat.mtype === "conversation"
       ? vChat.message.conversation
       : vChat.mtype == "imageMessage"
@@ -77,7 +77,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
         vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         vChat.text
       : "";
-  const vcommand = vbody
+  var vcommand = vbody
     .replace(OpenBot.prefix, "")
     .trim()
     .split(/ +/)
@@ -114,12 +114,12 @@ module.exports = async (OpenBot, vChat, update, store) => {
   let commandFound = false;
   let suggestedCommand = null;
 
-  for (const folder of specialFolders) {
-    const folderPath = path.join(routePath, folder);
+  for (var folder of specialFolders) {
+    var folderPath = path.join(routePath, folder);
     if (fs.existsSync(folderPath)) {
-      const commandFile = findCommandFile(folderPath, vcommand);
+      var commandFile = findCommandFile(folderPath, vcommand);
       if (commandFile) {
-        const commandFilePath = path.join(folderPath, commandFile);
+        var commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           OpenBot,
           vChat,
@@ -134,8 +134,8 @@ module.exports = async (OpenBot, vChat, update, store) => {
         commandFound = true;
         break;
       } else {
-        const folderCommands = commandList.map((cmd) => cmd.name);
-        const suggestion = didYouMean(vcommand, folderCommands);
+        var folderCommands = commandList.map((cmd) => cmd.name);
+        var suggestion = didYouMean(vcommand, folderCommands);
         if (suggestion) {
           suggestedCommand = suggestion;
         }
@@ -145,7 +145,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
 
   if (!commandFound) {
     if (suggestedCommand) {
-      const suggestionMessage =
+      var suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
       return await OpenBot.sendMessage(vChat.chat, {
         image: { url: OpenBot.display },
@@ -169,7 +169,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
         mentions: [vChat.sender],
       });
     } else {
-      const errorMessage =
+      var errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${OpenBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";

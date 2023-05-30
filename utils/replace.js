@@ -1,9 +1,9 @@
-const fs = require("fs");
-const path = require("path");
-const readline = require("readline");
+var fs = require("fs");
+var path = require("path");
+var readline = require("readline");
 
 // List of file extensions to ignore for content changes
-const ignoredContentExtensions = [
+var ignoredContentExtensions = [
   ".jpg",
   ".jpeg",
   ".png",
@@ -18,10 +18,10 @@ const ignoredContentExtensions = [
 ];
 
 // List of folder names to ignore
-const ignoredFolders = [".git", "node_modules"];
+var ignoredFolders = [".git", "node_modules"];
 
 // List of file extensions to ignore for renaming
-const ignoredRenameExtensions = [
+var ignoredRenameExtensions = [
   ".jpg",
   ".jpeg",
   ".png",
@@ -37,30 +37,30 @@ const ignoredRenameExtensions = [
 
 // Function to recursively rename files and folders
 function renameFilesAndFolders(dirPath, oldWord, newWord) {
-  const files = fs.readdirSync(dirPath);
+  var files = fs.readdirSync(dirPath);
 
   files.forEach((file) => {
-    const filePath = path.join(dirPath, file);
-    const stats = fs.statSync(filePath);
+    var filePath = path.join(dirPath, file);
+    var stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
       if (!ignoredFolders.includes(file)) {
         renameFilesAndFolders(filePath, oldWord, newWord);
       }
     } else {
-      const fileExtension = path.extname(file).toLowerCase();
+      var fileExtension = path.extname(file).toLowerCase();
       if (ignoredContentExtensions.includes(fileExtension)) {
-        const newFilePath = path.join(
+        var newFilePath = path.join(
           dirPath,
           replaceAll(file, oldWord, newWord)
         );
         fs.renameSync(filePath, newFilePath);
       } else if (!ignoredRenameExtensions.includes(fileExtension)) {
-        const fileContent = fs.readFileSync(filePath, "utf8");
-        const newContent = replaceAll(fileContent, oldWord, newWord);
+        var fileContent = fs.readFileSync(filePath, "utf8");
+        var newContent = replaceAll(fileContent, oldWord, newWord);
         fs.writeFileSync(filePath, newContent, "utf8");
 
-        const newFilePath = path.join(
+        var newFilePath = path.join(
           dirPath,
           replaceAll(file, oldWord, newWord)
         );
@@ -76,7 +76,7 @@ function replaceAll(str, search, replacement) {
 }
 
 // Readline interface for user input
-const rl = readline.createInterface({
+var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
