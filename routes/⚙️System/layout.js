@@ -10,18 +10,32 @@
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of you
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("#/global");
+require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+
+thisfilealias = ["lay", "out", "morelayout", "example"];
+
+module.exports = async (
+  Foxbot,
+  Foxchat,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   try {
   } catch (error) {
     return Foxbot.handlerror(Foxbot, Foxchat, error);
   }
 };
+
+module.exports.aliases = thisfilealias;
