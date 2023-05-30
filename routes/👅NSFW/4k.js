@@ -16,19 +16,10 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var path = require("path");
-var fpth = path.basename(__filename, "").toLowerCase();
-
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+var ppth = require("path");
+var tpth = ppth.basename(__filename);
+var fpth = tpth.slice(0, -3).toLowerCase();
+module.exports = async (OpenBot, ocID) => {
   try {
     var server = await OpenBot.nsfwCheck.findOne({ serverId: ocID.chat });
     if (!server) {

@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     var Item;
     var NewLimit;
@@ -201,9 +192,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
                   OpenBot.display
                 );
@@ -292,9 +281,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   OpenBot.display
@@ -341,9 +328,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -368,9 +353,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -384,9 +367,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -400,9 +381,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   OpenBot.display
@@ -426,9 +405,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_

@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     return await OpenBot.nsfwCheck.findOne(
       {
@@ -71,9 +62,7 @@ module.exports = async (
               await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for @${
-                  OpenBot.Tname || OpenBot.pushname
-                }:*
+                `*🔖Here, ${fpth} for @${OpenBot.Tname || OpenBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
 ║⦁ 💡Title: ${fetchedata.meta.title || null}
