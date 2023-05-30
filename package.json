@@ -59,6 +59,7 @@
     "content-disposition": "^0.5.4",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "didyoumean2": "^5.0.0",
     "discord-phub": "^1.0.7",
     "discord-xp": "^1.1.16",
     "djs-chatbot": "^1.0.1",

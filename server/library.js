@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
 const path = require("path");
-const stringSimilarity = require("string-similarity");
+const didYouMean = require("didyoumean2").default;
 
 module.exports = async (Foxbot, Foxchat, update, store) => {
   var gmeta = Foxchat.isGroup
@@ -106,15 +106,18 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
     "🦄SFW",
   ];
 
+  const commandList = []; // List to store command filenames and aliases
+
   const findCommandFile = (folderPath, command) => {
     const files = fs.readdirSync(folderPath);
-    const commandNames = files.map((file) =>
-      path.parse(file).name.toLowerCase()
-    );
-    const similarity = stringSimilarity.findBestMatch(command, commandNames);
-    const bestMatch = similarity.bestMatch;
-    if (bestMatch.rating >= 0.5) {
-      return files[bestMatch.index];
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const fileName = path.parse(file).name.toLowerCase();
+      const commandAliases = require(path.join(folderPath, file)).aliases || [];
+      commandList.push({ name: fileName, aliases: commandAliases }); // Add command and its aliases to the list
+      if (fileName === command || commandAliases.includes(command)) {
+        return file;
+      }
     }
     return null;
   };
@@ -143,16 +146,10 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         commandFound = true;
         break;
       } else {
-        const folderCommands = fs
-          .readdirSync(folderPath)
-          .map((file) => path.parse(file).name);
-        const similarity = stringSimilarity.findBestMatch(
-          vcommand,
-          folderCommands
-        );
-        const bestMatch = similarity.bestMatch;
-        if (bestMatch.rating >= 0.5) {
-          suggestedCommand = bestMatch.target;
+        const folderCommands = commandList.map((cmd) => cmd.name);
+        const suggestion = didYouMean(vcommand, folderCommands);
+        if (suggestion) {
+          suggestedCommand = suggestion;
         }
       }
     }
@@ -160,7 +157,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 
   if (!commandFound) {
     if (suggestedCommand) {
-      const suggestionMessage = `Command not found. Did you mean: ${suggestedCommand}?`;
+      const suggestionMessage = `Command not found. Did you mean: .${suggestedCommand}?`;
       await Foxbot.imagebutton(
         Foxbot,
         Foxchat,

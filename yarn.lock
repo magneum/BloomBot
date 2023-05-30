@@ -182,7 +182,7 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.4.tgz#a770e98fd785c231af9d93f6459d36770993fb32"
   integrity sha512-VLLsx06XkEYqBtE5YGPwfSGwfrjnyPP5oiGty3S8pQLFDFLaS8VwWSIxkTXpcvr5zeYLE6+MBNl2npl/YnfofA==
 
-"@babel/runtime@^7.21.0", "@babel/runtime@^7.7.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.21.0", "@babel/runtime@^7.7.2":
   version "7.22.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.3.tgz#0a7fce51d43adbf0f7b517a71f4c3aaca92ebcbb"
   integrity sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==
@@ -2307,9 +2307,9 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001489:
-  version "1.0.30001489"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001489.tgz#ca82ee2d4e4dbf2bd2589c9360d3fcc2c7ba3bd8"
-  integrity sha512-x1mgZEXK8jHIfAxm+xgdpHpk50IN3z3q3zP261/WS+uvePxW8izXuCu6AHz0lkuYTlATDehiZ/tNyYBdSQsOUQ==
+  version "1.0.30001491"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001491.tgz#eab0e0f392de6f7411751d148de9b5bd6b203e46"
+  integrity sha512-17EYIi4TLnPiTzVKMveIxU5ETlxbSO3B6iPvMbprqnKh4qJsQGk5Nh1Lp4jIMAE0XfrujsJuWZAM3oJdMHaKBA==
 
 canvacord@^5.2.3:
   version "5.4.9"
@@ -3199,6 +3199,15 @@ dfa@^1.2.0:
   resolved "https://registry.yarnpkg.com/dfa/-/dfa-1.2.0.tgz#96ac3204e2d29c49ea5b57af8d92c2ae12790657"
   integrity sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==
 
+didyoumean2@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/didyoumean2/-/didyoumean2-5.0.0.tgz#84cc03b42f1b04beff13f3f69edca2a0daf3e998"
+  integrity sha512-Plha9WCF08aSGB39IsOhlk0AHecwcXtq/gMbHgylRNEv7JV3lnlt7akfdax7mnUHndEuuh57CmBaKSSXns7+YA==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    fastest-levenshtein "^1.0.12"
+    lodash.deburr "^4.1.0"
+
 didyoumean@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/didyoumean/-/didyoumean-1.2.2.tgz#989346ffe9e839b4555ecf5666edea0d3e8ad037"
@@ -3412,9 +3421,9 @@ ejs@^3.1.8:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.411:
-  version "1.4.411"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.411.tgz#8cb7787f0442fcb4209590e9951bdb482caa93b2"
-  integrity sha512-5VXLW4Qw89vM2WTICHua/y8v7fKGDRVa2VPOtBB9IpLvW316B+xd8yD1wTmLPY2ot/00P/qt87xdolj4aG/Lzg==
+  version "1.4.413"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.413.tgz#0067c3122946ae234cbefb9401ecefde851cdcf2"
+  integrity sha512-Gd+/OAhRca06dkVxIQo/W7dr6Nmk9cx6lQdZ19GvFp51k5B/lUAokm6SJfNkdV8kFLsC3Z4sLTyEHWCnB1Efbw==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -3955,6 +3964,11 @@ fast-url-parser@^1.1.3:
   integrity sha512-5jOCVXADYNuRkKFzNJ0dCCewsZiYo0dz8QNYljkOpFC6r2U4OBmKtvm/Tsuh4w1YYdDqDb31a8TVhBJ2OJKdqQ==
   dependencies:
     punycode "^1.3.2"
+
+fastest-levenshtein@^1.0.12:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz#210e61b6ff181de91ea9b3d1b84fdedd47e034e5"
+  integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
 
 fastq@^1.6.0:
   version "1.15.0"
@@ -5945,6 +5959,11 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
+
+lodash.deburr@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
+  integrity sha512-m/M1U1f3ddMCs6Hq2tAsYThTBDaAKFDX3dwDo97GEYzamXi9SqUpjWi/Rrj/gf3X2n8ktwgZrlP1z6E3v/IExQ==
 
 lodash.defaults@^4.2.0:
   version "4.2.0"
