@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
 var logger = require("@/logger");
-module.exports = async (Foxbot, update) => {
+module.exports = async (Foxbot, update, store) => {
   for (let contact of update) {
     let jid = Foxbot.decodeJid(contact.id);
     if (store && store.contacts) {

@@ -593,7 +593,7 @@ async function magneum() {
     require("@/events/cb_call")(Foxbot, update)
   );
   Foxbot.ev.on("contacts.update", (update) =>
-    require("@/events/contacts.update")(Foxbot, update)
+    require("@/events/contacts_update")(Foxbot, update, store)
   );
   setInterval(async () => {
     var _Type = [
