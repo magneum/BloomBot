@@ -15,10 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var logger = require("@/logger");
 var { Client } = require("pg");
 var dotenv = require("dotenv");
-var chalk = require("chalk");
+var logger = require("@/logger");
 
 dotenv.config();
 
@@ -35,17 +34,15 @@ async function cleanDatabase() {
     for (var row of res.rows) {
       var tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
-      console.log(chalk.green(`Dropped table: ${tableName}`));
+      logger.log(`Dropped table: ${tableName}`);
     }
-    console.log(chalk.green("Database cleaned successfully."));
+    logger.log("Database cleaned successfully.");
   } catch (err) {
-    console.error(
-      chalk.red("An error occurred while cleaning the database:"),
-      err
-    );
+    logger.error("An error occurred while cleaning the database:", err);
   } finally {
     await client.end();
   }
 }
-// cleanDatabase();
+
+cleanDatabase();
 module.exports = cleanDatabase;
