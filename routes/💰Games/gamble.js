@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
@@ -235,9 +226,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for ${
-                  OpenBot.pushname || OpenBot.Tname
-                }:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
                 OpenBot.display
@@ -254,9 +243,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for ${
-                  OpenBot.pushname || OpenBot.Tname
-                }:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
                 OpenBot.display
@@ -383,9 +370,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for ${
-                  OpenBot.pushname || OpenBot.Tname
-                }:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
                 OpenBot.display
@@ -405,9 +390,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for ${
-                  OpenBot.pushname || OpenBot.Tname
-                }:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
                 OpenBot.display
@@ -427,9 +410,7 @@ module.exports = async (
               return await OpenBot.imagebutton(
                 OpenBot,
                 ocID,
-                `*🔖Here, ${fpth} for ${
-                  OpenBot.pushname || OpenBot.Tname
-                }:*
+                `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
                 OpenBot.display

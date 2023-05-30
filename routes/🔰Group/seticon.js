@@ -24,10 +24,7 @@ module.exports = async (
   ocID,
   gmeta,
   isAdmin,
-  groupName,
   isbotAdmin,
-  groupAdmins,
-  participants
 ) => {
   try {
     if (!ocID.isGroup) {

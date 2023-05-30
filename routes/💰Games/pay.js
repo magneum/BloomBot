@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (OpenBot, ocID) => {
   if (!OpenBot.mentionByReply) {
     return ocID.reply(`*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_ 
 
@@ -148,9 +148,7 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}

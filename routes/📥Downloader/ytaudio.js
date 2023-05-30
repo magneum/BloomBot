@@ -20,16 +20,7 @@ var ppth = require("path");
 var ytdl = require("ytdl-secktor");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     if (!OpenBot.args) {
       await OpenBot.sendMessage(ocID.chat, {

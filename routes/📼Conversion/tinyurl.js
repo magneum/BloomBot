@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     if (!OpenBot.args.join(" ")) {
       await OpenBot.sendMessage(ocID.chat, {
@@ -50,7 +41,8 @@ module.exports = async (
 
     OpenBot.axios({
       method: "get",
-      url: "https://magneum™.vercel.app/api/shorten?q=" + OpenBot.args.join(" "),
+      url:
+        "https://magneum™.vercel.app/api/shorten?q=" + OpenBot.args.join(" "),
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",

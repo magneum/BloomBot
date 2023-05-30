@@ -19,16 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
     await OpenBot.Economy.findOne(
       {
@@ -81,9 +72,7 @@ module.exports = async (
                 return await OpenBot.imagebutton(
                   OpenBot,
                   ocID,
-                  `*🔖Here, ${fpth} for ${
-                    OpenBot.pushname || OpenBot.Tname
-                  }:*
+                  `*🔖Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   OpenBot.display
