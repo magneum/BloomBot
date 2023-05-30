@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var path = require("path");
 var fileName = path.basename(__filename);
@@ -33,7 +33,7 @@ module.exports = async (
     // Fetch emotion data from the API
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum.vercel.app/api/emotions?q=${feeling}`
+      `https://magneum™.vercel.app/api/emotions?q=${feeling}`
     );
     var magData = response.data;
     console.log(magData);
@@ -73,13 +73,13 @@ module.exports = async (
               ? ocID.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
-        var message = `*OpenBot by magneum*
+        var message = `*ⒸOpenBot by magneum™*
 *💻HomePage:* https://bit.ly/magneum
 
 *🎋Emo:* ${feeling}
 *📢From:* ${OpenBot.pushname}
 *⚡for:* @${mentionedUser.split("@")[0] || ""}
-*🐞Api:* https://magneum.vercel.app/api/emotions`;
+*🐞Api:* https://magneum™.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await OpenBot.sendMessage(
           ocID.chat,

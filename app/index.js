@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/global");
 var logger = require("@/logger");
@@ -123,7 +123,7 @@ async function magneum() {
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "OpenBot-by-magneum", "Chrome", "4.0.0"],
+    browser: [process.env.deployer || "OpenBot-by-magneum™", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -146,7 +146,7 @@ async function magneum() {
   // OpenBot.ws.on("CB:call", (update) => require("./events/cb_call")(OpenBot, update, store));
   // OpenBot.ev.on("contacts.update", (update) => require("./events/contacts.update")(OpenBot, update, store));
   // OpenBot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(OpenBot, update, store));
-  // OpenBot.ev.on("connection.update", (update) => require("./events/connection.update")(OpenBot, update, store, magneum));
+  // OpenBot.ev.on("connection.update", (update) => require("./events/connection.update")(OpenBot, update, store, magneum™));
   // OpenBot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(OpenBot, update, store));
 
   OpenBot.ev.on("creds.update", async (update) => await saveCreds());
@@ -225,7 +225,7 @@ async function magneum() {
         logger.error("📢: Not New Login.");
         break;
       default:
-        logger.info("📢: OpenBot by Magneum connected...", update);
+        logger.info("📢: OpenBot by Magneum™ connected...", update);
     }
   });
 
@@ -237,7 +237,8 @@ async function magneum() {
         ? νTēxt.message.ephemeralMessage.message
         : νTēxt.message;
     if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify") return;
+    if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify")
+      return;
     if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
     ocID = await mMake(OpenBot, νTēxt, store);
     await require("../server/router")(OpenBot, ocID, update, store);
@@ -266,7 +267,8 @@ async function magneum() {
 > Firstly Welcome.
 > I am OpenBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
-            footer: "*VLkyre™ By OpenBot*\n*💻HomePage:* https://bit.ly/magneum",
+            footer:
+              "*VLkyre™ By OpenBot*\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${OpenBot.prefix}Dashboard`,
@@ -833,7 +835,7 @@ async function magneum() {
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await OpenBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (OpenBot by magneum)"
+      "Feeling: " + __Feeling + " (ⒸOpenBot by magneum™)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {

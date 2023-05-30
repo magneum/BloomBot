@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var path = require("path");
 var fileName = path.basename(__filename);
@@ -50,13 +50,13 @@ module.exports = async (
     }
     var response = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+      `https://magneum™.vercel.app/api/youtube_sr?q=${query}`
     );
     console.log(response.response);
     var searchData = response.data.youtube_search[0];
     var musicResponse = await OpenBot.magfetch(
       OpenBot,
-      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
+      `https://magneum™.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
     var musicData = musicResponse.data[0];
     var audioFilename = `${OpenBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
@@ -86,7 +86,7 @@ ${description}`;
         contextInfo: {
           externalAdReply: {
             title: searchData.TITLE,
-            body: "This result is powered by magneum's YT-Filter.",
+            body: "This result is powered by magneum™'s YT-Filter.",
             renderLargerThumbnail: true,
             thumbnailUrl: searchData.HQ_IMAGE,
             mediaUrl,
@@ -105,7 +105,7 @@ ${description}`;
       contextInfo: {
         externalAdReply: {
           title: searchData.TITLE,
-          body: "This result is powered by magneum's YT-Filter.",
+          body: "This result is powered by magneum™'s YT-Filter.",
           renderLargerThumbnail: true,
           thumbnailUrl: searchData.HQ_IMAGE,
           mediaUrl,
