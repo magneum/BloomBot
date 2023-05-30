@@ -64,7 +64,7 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "public/whats";
+    const folderPath = "public/src";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
