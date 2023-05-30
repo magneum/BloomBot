@@ -19,18 +19,8 @@ require("#/logger/config");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (
-  OpenBot,
-  ocID,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (OpenBot, ocID) => {
   try {
-    // Fetch emotion data from the API
     var response = await OpenBot.magfetch(
       OpenBot,
       `https://magneum™.vercel.app/api/emotions?q=${feeling}`
