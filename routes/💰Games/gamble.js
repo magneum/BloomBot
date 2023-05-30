@@ -1,43 +1,43 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
-    if (!Foxbot.args[0] && !Foxbot.args[1]) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+    if (!NekoBot.args[0] && !NekoBot.args[1]) {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -45,21 +45,21 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
 
-    if (formatColor.test(Foxbot.args[0])) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+    if (formatColor.test(NekoBot.args[0])) {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -67,21 +67,21 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
 
-    if (formatAmount.test(Foxbot.args[1])) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+    if (formatAmount.test(NekoBot.args[1])) {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -90,24 +90,24 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     }
 
     if (
-      !Foxbot.args[0].includes("red") &&
-      !Foxbot.args[0].includes("black") &&
-      !Foxbot.args[0].includes("purple")
+      !NekoBot.args[0].includes("red") &&
+      !NekoBot.args[0].includes("black") &&
+      !NekoBot.args[0].includes("purple")
     ) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -115,75 +115,75 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
       );
     }
 
-    var ColorRoom = Foxbot.args[0];
-    var AmountRoom = parseInt(Foxbot.args[1]);
+    var ColorRoom = NekoBot.args[0];
+    var AmountRoom = parseInt(NekoBot.args[1]);
     if (AmountRoom < 50) {
-      return await Foxbot.imagebutton(
-        Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+      return await NekoBot.imagebutton(
+        NekoBot,
+        nekos,
+        `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        Foxbot.display
+        NekoBot.display
       );
     }
 
     if (AmountRoom > 800) {
-      return await Foxbot.imagebutton(
-        Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+      return await NekoBot.imagebutton(
+        NekoBot,
+        nekos,
+        `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        Foxbot.display
+        NekoBot.display
       );
     }
 
     if (ColorRoom === "red" && AmountRoom > 200) {
-      return await Foxbot.imagebutton(
-        Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+      return await NekoBot.imagebutton(
+        NekoBot,
+        nekos,
+        `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        Foxbot.display
+        NekoBot.display
       );
     }
 
     if (ColorRoom === "black" && AmountRoom > 500) {
-      return await Foxbot.imagebutton(
-        Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+      return await NekoBot.imagebutton(
+        NekoBot,
+        nekos,
+        `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        Foxbot.display
+        NekoBot.display
       );
     }
 
     if (ColorRoom === "purple" && AmountRoom > 800) {
-      return await Foxbot.imagebutton(
-        Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+      return await NekoBot.imagebutton(
+        NekoBot,
+        nekos,
+        `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        Foxbot.display
+        NekoBot.display
       );
     }
 
-    Foxbot.Economy.findOne(
+    NekoBot.Economy.findOne(
       {
-        Id: Foxchat.sender,
+        Id: nekos.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return Foxbot.handlerror(Foxbot, Foxchat, error);
+          return NekoBot.handlerror(NekoBot, nekos, error);
         }
 
         if (!userEco) {
-          var newUser = new Foxbot.Economy({
-            Id: Foxchat.sender,
+          var newUser = new NekoBot.Economy({
+            Id: nekos.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -193,43 +193,43 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return Foxbot.handlerror(Foxbot, Foxchat, error);
+            return NekoBot.handlerror(NekoBot, nekos, error);
           });
-          return await Foxbot.imagebutton(
-            Foxbot,
-            Foxchat,
-            `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+          return await NekoBot.imagebutton(
+            NekoBot,
+            nekos,
+            `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *💰Balance:* Just Opened Your Account!`,
-            Foxbot.display
+            NekoBot.display
           );
         }
 
-        Foxbot.Gamble.findOne(
+        NekoBot.Gamble.findOne(
           {
-            Id: Foxchat.sender,
+            Id: nekos.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return Foxbot.handlerror(Foxbot, Foxchat, error);
+              return NekoBot.handlerror(NekoBot, nekos, error);
             }
 
             if (!userGamble) {
-              var newUser = new Foxbot.Gamble({
-                Id: Foxchat.sender,
-                serverId: Foxchat.chat,
+              var newUser = new NekoBot.Gamble({
+                Id: nekos.sender,
+                serverId: nekos.chat,
                 Gambledone: 0,
                 Gambvarimeout: 480000,
               });
               await newUser.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
@@ -237,16 +237,16 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              var time = Foxbot.ms(
+              var time = NekoBot.ms(
                 userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone)
               );
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
@@ -263,20 +263,20 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             var Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await NekoBot.sendMessage(nekos.chat, {
                 react: {
                   text: "❌",
-                  key: Foxchat.key,
+                  key: nekos.key,
                 },
               });
-              return Foxchat.reply(
-                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+              return nekos.reply(
+                `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _Argument Needed!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} _color money_
+> _${NekoBot.prefix}${finalname} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -286,20 +286,20 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 
             Color = Color.toLowerCase();
             if (!money) {
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await NekoBot.sendMessage(nekos.chat, {
                 react: {
                   text: "❌",
-                  key: Foxchat.key,
+                  key: nekos.key,
                 },
               });
-              return Foxchat.reply(
-                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+              return nekos.reply(
+                `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -308,20 +308,20 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             }
 
             if (money > CurrentMoney) {
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await NekoBot.sendMessage(nekos.chat, {
                 react: {
                   text: "❌",
-                  key: Foxchat.key,
+                  key: nekos.key,
                 },
               });
-              return Foxchat.reply(
-                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+              return nekos.reply(
+                `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -336,20 +336,20 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await Foxbot.sendMessage(Foxchat.chat, {
+              await NekoBot.sendMessage(nekos.chat, {
                 react: {
                   text: "❌",
-                  key: Foxchat.key,
+                  key: nekos.key,
                 },
               });
-              return Foxchat.reply(
-                `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+              return nekos.reply(
+                `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} color money_
+> _${NekoBot.prefix}${finalname} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -362,18 +362,18 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
               await userEco.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
@@ -382,18 +382,18 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
               await userEco.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
@@ -402,42 +402,42 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
               await userEco.save().catch((error) => {
-                return Foxbot.handlerror(Foxbot, Foxchat, error);
+                return NekoBot.handlerror(NekoBot, nekos, error);
               });
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch((error) => {
-              return Foxbot.handlerror(Foxbot, Foxchat, error);
+              return NekoBot.handlerror(NekoBot, nekos, error);
             });
             await userEco.save().catch((error) => {
-              return Foxbot.handlerror(Foxbot, Foxchat, error);
+              return NekoBot.handlerror(NekoBot, nekos, error);
             });
-            return await Foxbot.imagebutton(
-              Foxbot,
-              Foxchat,
-              `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+            return await NekoBot.imagebutton(
+              NekoBot,
+              nekos,
+              `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              Foxbot.display
+              NekoBot.display
             );
           }
         );
       }
     );
   } catch (error) {
-    return Foxbot.handlerror(Foxbot, Foxchat, error);
+    return NekoBot.handlerror(NekoBot, nekos, error);
   }
 };

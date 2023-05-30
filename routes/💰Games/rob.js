@@ -1,16 +1,16 @@
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
@@ -19,47 +19,47 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-  if (Foxbot.mentionByReply) {
+  if (NekoBot.mentionByReply) {
     var receiver =
-      Foxchat.mtype == "extendedTextMessage" &&
-      Foxchat.message.extendedTextMessage.contextInfo != null
-        ? Foxchat.message.extendedTextMessage.contextInfo.participant || ""
+      nekos.mtype == "extendedTextMessage" &&
+      nekos.message.extendedTextMessage.contextInfo != null
+        ? nekos.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    var receiverName = await Foxbot.getName(receiver);
-    if (receiver === Foxchat.sender) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+    var receiverName = await NekoBot.getName(receiver);
+    if (receiver === nekos.sender) {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _Can't rob your own bank_`
       );
     }
 
-    Foxbot.Economy.findOne(
+    NekoBot.Economy.findOne(
       {
-        Id: Foxchat.sender,
+        Id: nekos.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
-        Foxbot.Economy.findOne(
+        if (error) return NekoBot.handlerror(NekoBot, nekos, error);
+        NekoBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+            if (error) return NekoBot.handlerror(NekoBot, nekos, error);
             if (!ᴠᴇᴄᴏ) {
-              var newUser = new Foxbot.Economy({
+              var newUser = new NekoBot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -71,11 +71,11 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               });
               await newUser
                 .save()
-                .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+                .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -83,13 +83,13 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
             if (!ᴄᴇᴄᴏ) {
-              var newUser = new Foxbot.Economy({
-                Id: Foxchat.sender,
+              var newUser = new NekoBot.Economy({
+                Id: nekos.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,11 +100,11 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
               });
               await newUser
                 .save()
-                .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+                .catch((error) => NekoBot.handlerror(NekoBot, nekos, error));
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -113,15 +113,15 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
             if (ᴄᴇᴄᴏ.money < 1000) {
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -129,15 +129,15 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
             if (ᴠᴇᴄᴏ.money < 1000) {
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
-                `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
+                `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -146,22 +146,22 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                Foxbot.display
+                NekoBot.display
               );
             }
 
             Robbery.findOne(
               {
-                Id: Foxchat.sender,
+                Id: nekos.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+                if (error) return NekoBot.handlerror(NekoBot, nekos, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return Foxbot.handlerror(Foxbot, Foxchat, error);
+                    if (error) return NekoBot.handlerror(NekoBot, nekos, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,19 +174,19 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await newUser
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -197,13 +197,13 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     }
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: Foxchat.sender,
+                        Id: nekos.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -213,19 +213,19 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await newUser
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -235,7 +235,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     }
 
@@ -248,11 +248,11 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -260,7 +260,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     }
 
@@ -277,28 +277,28 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -311,7 +311,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -326,28 +326,28 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -360,7 +360,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -375,28 +375,28 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -409,7 +409,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     }
 
@@ -420,18 +420,18 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -444,14 +444,14 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                         }!
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${Foxbot.pushname || Foxbot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${NekoBot.pushname || NekoBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -460,18 +460,18 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          Foxbot.handlerror(Foxbot, Foxchat, error)
+                          NekoBot.handlerror(NekoBot, nekos, error)
                         );
-                      return await Foxbot.imagebutton(
-                        Foxbot,
-                        Foxchat,
+                      return await NekoBot.imagebutton(
+                        NekoBot,
+                        nekos,
                         `*🔖Here, ${finalname} for ${
-                          Foxbot.pushname || Foxbot.Tname
+                          NekoBot.pushname || NekoBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -482,14 +482,14 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${Foxbot.pushname || Foxbot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${NekoBot.pushname || NekoBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        Foxbot.display
+                        NekoBot.display
                       );
                     }
                   }
@@ -501,10 +501,10 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
       }
     );
   } else {
-    return await Foxbot.imagebutton(
-      Foxbot,
-      Foxchat,
-      `*🔖Here, ${finalname} for ${Foxbot.pushname || Foxbot.Tname}:*
+    return await NekoBot.imagebutton(
+      NekoBot,
+      nekos,
+      `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -530,7 +530,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      Foxbot.display
+      NekoBot.display
     );
   }
 };

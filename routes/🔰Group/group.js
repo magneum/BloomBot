@@ -1,63 +1,63 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐅𝐨𝐱𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Foxbot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Foxbot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (NekoBot, nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
-    if (!Foxchat.isGroup) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+    if (!nekos.isGroup) {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isbotAdmin) {
-      await Foxbot.sendMessage(Foxchat.chat, {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _bot not Admin!_`
@@ -65,68 +65,68 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Foxbot.profilePictureUrl(Foxchat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await NekoBot.profilePictureUrl(nekos.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = Foxbot.display;
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = NekoBot.display;
     }
 
-    if (Foxbot.args[0] === "open") {
-      await Foxbot.groupSettingUpdate(Foxchat.chat, "not_announcement")
+    if (NekoBot.args[0] === "open") {
+      await NekoBot.groupSettingUpdate(nekos.chat, "not_announcement")
         .then(
           async (res) =>
-            await Foxbot.imagebutton(
-              Foxbot,
-              Foxchat,
+            await NekoBot.imagebutton(
+              NekoBot,
+              nekos,
               `> *Group have been Opened by: ${
-                Foxbot.pushname || Foxbot.Tname
+                NekoBot.pushname || NekoBot.Tname
               }*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
-          Foxchat.reply(
-            `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+          nekos.reply(
+            `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
-    } else if (Foxbot.args[0] === "close") {
-      await Foxbot.groupSettingUpdate(Foxchat.chat, "announcement")
+    } else if (NekoBot.args[0] === "close") {
+      await NekoBot.groupSettingUpdate(nekos.chat, "announcement")
         .then(
           async (res) =>
-            await Foxbot.imagebutton(
-              Foxbot,
-              Foxchat,
+            await NekoBot.imagebutton(
+              NekoBot,
+              nekos,
               `> *Group have been Closed by: ${
-                Foxbot.pushname || Foxbot.Tname
+                NekoBot.pushname || NekoBot.Tname
               }*`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             )
         )
         .catch((error) =>
-          Foxchat.reply(
-            `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+          nekos.reply(
+            `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌Error* 
 > ${jsonformat(error)}`
           )
         );
-    } else if (Foxbot.args[0] === "antilink") {
+    } else if (NekoBot.args[0] === "antilink") {
       if (
-        Foxbot.args[1] === "ON" ||
-        Foxbot.args[1] === "on" ||
-        Foxbot.args[1] === "On"
+        NekoBot.args[1] === "ON" ||
+        NekoBot.args[1] === "on" ||
+        NekoBot.args[1] === "On"
       ) {
-        return await Foxbot.LinkList.findOne(
+        return await NekoBot.LinkList.findOne(
           {
-            serverId: Foxchat.chat,
+            serverId: nekos.chat,
           },
           async (error, server) => {
             if (error) {
-              return Foxbot.reply(`*🕊️You:* ${
-                Foxbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${Foxchat.chat}
+              return NekoBot.reply(`*🕊️You:* ${
+                NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+              }\n*📢Id:* ${nekos.chat}
 
-*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -135,21 +135,21 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             }
 
             if (!server) {
-              var newServer = new Foxbot.LinkList({
-                serverId: Foxchat.chat,
+              var newServer = new NekoBot.LinkList({
+                serverId: nekos.chat,
                 value: "ON",
               });
               await newServer.save();
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -157,21 +157,21 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
           }
         );
       } else if (
-        Foxbot.args[1] === "OFF" ||
-        Foxbot.args[1] === "off" ||
-        Foxbot.args[1] === "Off"
+        NekoBot.args[1] === "OFF" ||
+        NekoBot.args[1] === "off" ||
+        NekoBot.args[1] === "Off"
       ) {
-        return await Foxbot.LinkList.findOne(
+        return await NekoBot.LinkList.findOne(
           {
-            serverId: Foxchat.chat,
+            serverId: nekos.chat,
           },
           async (error, server) => {
             if (error) {
-              return Foxbot.reply(`*🕊️You:* ${
-                Foxbot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${Foxchat.chat}
+              return NekoBot.reply(`*🕊️You:* ${
+                NekoBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
+              }\n*📢Id:* ${nekos.chat}
 
-*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -180,17 +180,17 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
             }
 
             if (!server) {
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
             } else {
               await server.delete();
-              return await Foxbot.imagebutton(
-                Foxbot,
-                Foxchat,
+              return await NekoBot.imagebutton(
+                NekoBot,
+                nekos,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 𝕯𝖎𝖘𝖕𝖑𝖆𝖞
               );
@@ -198,42 +198,42 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
           }
         );
       } else {
-        await Foxbot.sendMessage(Foxchat.chat, {
+        await NekoBot.sendMessage(nekos.chat, {
           react: {
             text: "❌",
-            key: Foxchat.key,
+            key: nekos.key,
           },
         });
-        return Foxchat.reply(
-          `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+        return nekos.reply(
+          `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} close/open
-> _${Foxbot.prefix}${finalname} antilink on/off`
+> _${NekoBot.prefix}${finalname} close/open
+> _${NekoBot.prefix}${finalname} antilink on/off`
         );
       }
     } else {
-      await Foxbot.sendMessage(Foxchat.chat, {
+      await NekoBot.sendMessage(nekos.chat, {
         react: {
           text: "❌",
-          key: Foxchat.key,
+          key: nekos.key,
         },
       });
-      return Foxchat.reply(
-        `*😥Apologies:* _${Foxbot.pushname || Foxbot.Tname}_
+      return nekos.reply(
+        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
 
 *❌Error* 
 > _Argument Missing!_
 
 *⚡Usage* 
-> _${Foxbot.prefix}${finalname} close/open
-> _${Foxbot.prefix}${finalname} antilink on/off`
+> _${NekoBot.prefix}${finalname} close/open
+> _${NekoBot.prefix}${finalname} antilink on/off`
       );
     }
   } catch (error) {
-    return Foxbot.handlerror(Foxbot, Foxchat);
+    return NekoBot.handlerror(NekoBot, nekos);
   }
 };
