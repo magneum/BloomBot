@@ -40,7 +40,7 @@ var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
 var { exec } = require("child_process");
-var dboard = require("@/database/dashboard");
+var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { useRemoteFileAuthState } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/myfunc");
@@ -100,7 +100,7 @@ async function magneum() {
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
     );
-    dboard.findOne(
+    dashboards.findOne(
       {
         Id: phoneNum + "@s.whatsapp.net",
       },
