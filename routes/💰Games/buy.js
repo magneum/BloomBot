@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭🕊️𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 NekoBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of NekoBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
 //  ║   WhatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ NekoBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (Nekobot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
   try {
     var Item;
     var NewLimit;
@@ -34,120 +34,120 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
     var BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
     var RobCatelog = ["sword", "laptop", "charm"];
 
-    if (NekoBot.args[0] === "bronze") {
+    if (Nekobot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (NekoBot.args[0] === "silver") {
+    if (Nekobot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (NekoBot.args[0] === "gold") {
+    if (Nekobot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (NekoBot.args[0] === "platinum") {
+    if (Nekobot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (NekoBot.args[0] === "diamond") {
+    if (Nekobot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
-    if (NekoBot.args[0] === "charm") {
+    if (Nekobot.args[0] === "charm") {
       Item = "charm";
       ItemPrice = 6000;
     }
-    if (NekoBot.args[0] === "sword") {
+    if (Nekobot.args[0] === "sword") {
       Item = "sword";
       ItemPrice = 1000;
     }
-    if (NekoBot.args[0] === "laptop") {
+    if (Nekobot.args[0] === "laptop") {
       Item = "laptop";
       ItemPrice = 4000;
     }
 
-    if (NekoBot.args[0] === "bronze") {
+    if (Nekobot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (NekoBot.args[0] === "silver") {
+    if (Nekobot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (NekoBot.args[0] === "gold") {
+    if (Nekobot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (NekoBot.args[0] === "platinum") {
+    if (Nekobot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (NekoBot.args[0] === "diamond") {
+    if (Nekobot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
 
-    if (!NekoBot.args) {
-      await NekoBot.sendMessage(Nekos.chat, {
+    if (!Nekobot.args) {
+      await Nekobot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
           key: Nekos.key,
         },
       });
       return Nekos.reply(
-        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
+        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${NekoBot.prefix}${finalname} item_
-> _You may use ${NekoBot.prefix}shop to look for items..._`
+> _${Nekobot.prefix}${finalname} item_
+> _You may use ${Nekobot.prefix}shop to look for items..._`
       );
     }
 
-    if (NekoBot.args.length === 0) {
-      await NekoBot.sendMessage(Nekos.chat, {
+    if (Nekobot.args.length === 0) {
+      await Nekobot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
           key: Nekos.key,
         },
       });
       return Nekos.reply(
-        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
+        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${NekoBot.prefix}${finalname} item_
-> _You may use ${NekoBot.prefix}shop to look for items..._`
+> _${Nekobot.prefix}${finalname} item_
+> _You may use ${Nekobot.prefix}shop to look for items..._`
       );
     }
 
-    if (RobCatelog.includes(NekoBot.args[0])) {
-      NekoBot.Economy.findOne(
+    if (RobCatelog.includes(Nekobot.args[0])) {
+      Nekobot.Economy.findOne(
         {
           Id: Nekos.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return NekoBot.handlerror(NekoBot, Nekos, error);
+            return Nekobot.handlerror(Nekobot, Nekos, error);
           }
 
           if (!userEco) {
-            var newUser = new NekoBot.Economy({
+            var newUser = new Nekobot.Economy({
               Id: Nekos.sender,
               money: 0,
               daily: 0,
@@ -158,26 +158,26 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return NekoBot.handlerror(NekoBot, Nekos, error);
+              return Nekobot.handlerror(Nekobot, Nekos, error);
             });
-            return await NekoBot.imagebutton(
-              NekoBot,
+            return await Nekobot.imagebutton(
+              Nekobot,
               Nekos,
-              `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
+              `*🔖Here, ${finalname} for ${Nekobot.pushname || Nekobot.Tname}:*
 *💰Balance:* _Just Opened Your Account!_`,
-              NekoBot.display
+              Nekobot.display
             );
           }
-          NekoBot.Robbery.findOne(
+          Nekobot.Robbery.findOne(
             {
               Id: Nekos.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return NekoBot.handlerror(NekoBot, Nekos, error);
+                return Nekobot.handlerror(Nekobot, Nekos, error);
               }
               if (!userRob) {
-                new NekoBot.Robbery({
+                new Nekobot.Robbery({
                   Id: Nekos.sender,
                   sword: 0,
                   laptop: 0,
@@ -187,31 +187,31 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 })
                   .save()
                   .catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 *💰Balance:* _Just Opened Your Account!_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               } else {
                 if (userEco.money < ItemPrice) {
-                  return await NekoBot.imagebutton(
-                    NekoBot,
+                  return await Nekobot.imagebutton(
+                    Nekobot,
                     Nekos,
                     `*🔖Here, ${finalname} for @${
-                      NekoBot.Tname || NekoBot.pushname
+                      Nekobot.Tname || Nekobot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    NekoBot.display
+                    Nekobot.display
                   );
                 }
 
@@ -219,21 +219,21 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
                   await userRob.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
-                  return await NekoBot.imagebutton(
-                    NekoBot,
+                  return await Nekobot.imagebutton(
+                    Nekobot,
                     Nekos,
                     `*🔖Here, ${finalname} for @${
-                      NekoBot.Tname || NekoBot.pushname
+                      Nekobot.Tname || Nekobot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    NekoBot.display
+                    Nekobot.display
                   );
                 }
 
@@ -241,21 +241,21 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
                   await userRob.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
-                  return await NekoBot.imagebutton(
-                    NekoBot,
+                  return await Nekobot.imagebutton(
+                    Nekobot,
                     Nekos,
                     `*🔖Here, ${finalname} for @${
-                      NekoBot.Tname || NekoBot.pushname
+                      Nekobot.Tname || Nekobot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    NekoBot.display
+                    Nekobot.display
                   );
                 }
 
@@ -263,59 +263,59 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
                   await userRob.save().catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
-                  return await NekoBot.imagebutton(
-                    NekoBot,
+                  return await Nekobot.imagebutton(
+                    Nekobot,
                     Nekos,
                     `*🔖Here, ${finalname} for @${
-                      NekoBot.Tname || NekoBot.pushname
+                      Nekobot.Tname || Nekobot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    NekoBot.display
+                    Nekobot.display
                   );
                 }
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
             }
           );
         }
       );
-    } else if (BadCatelog.includes(NekoBot.args[0])) {
-      await NekoBot.Economy.findOne(
+    } else if (BadCatelog.includes(Nekobot.args[0])) {
+      await Nekobot.Economy.findOne(
         {
           Id: Nekos.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return NekoBot.handlerror(NekoBot, Nekos, error);
+            return Nekobot.handlerror(Nekobot, Nekos, error);
           }
 
-          await NekoBot.Bagde.findOne(
+          await Nekobot.Bagde.findOne(
             {
               Id: Nekos.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return NekoBot.handlerror(NekoBot, Nekos, error);
+                return Nekobot.handlerror(Nekobot, Nekos, error);
               }
 
               if (!userEco) {
-                new NekoBot.Economy({
+                new Nekobot.Economy({
                   Id: Nekos.sender,
                   money: 0,
                   daily: 0,
@@ -327,25 +327,25 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 })
                   .save()
                   .catch((error) => {
-                    return NekoBot.handlerror(NekoBot, Nekos, error);
+                    return Nekobot.handlerror(Nekobot, Nekos, error);
                   });
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
 
               if (!userBadge) {
-                var newBagdeUser = new NekoBot.Bagde({
+                var newBagdeUser = new Nekobot.Bagde({
                   Id: Nekos.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -354,49 +354,49 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return NekoBot.handlerror(NekoBot, Nekos, error);
+                  return Nekobot.handlerror(Nekobot, Nekos, error);
                 });
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
 
               if (userEco.money < ItemPrice) {
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
 
               if (userBadge.Badge === Item) {
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
 
@@ -409,22 +409,22 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return NekoBot.handlerror(NekoBot, Nekos, error);
+                  return Nekobot.handlerror(Nekobot, Nekos, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return NekoBot.handlerror(NekoBot, Nekos, error);
+                  return Nekobot.handlerror(Nekobot, Nekos, error);
                 });
-                return await NekoBot.imagebutton(
-                  NekoBot,
+                return await Nekobot.imagebutton(
+                  Nekobot,
                   Nekos,
                   `*🔖Here, ${finalname} for ${
-                    NekoBot.pushname || NekoBot.Tname
+                    Nekobot.pushname || Nekobot.Tname
                   }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  NekoBot.display
+                  Nekobot.display
                 );
               }
             }
@@ -432,24 +432,24 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
         }
       );
     } else {
-      await NekoBot.sendMessage(Nekos.chat, {
+      await Nekobot.sendMessage(Nekos.chat, {
         react: {
           text: "❌",
           key: Nekos.key,
         },
       });
       return Nekos.reply(
-        `*😥Apologies:* _${NekoBot.pushname || NekoBot.Tname}_
+        `*😥Apologies:* _${Nekobot.pushname || Nekobot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${NekoBot.prefix}${finalname} item_
-> _You may use ${NekoBot.prefix}shop to look for items..._`
+> _${Nekobot.prefix}${finalname} item_
+> _You may use ${Nekobot.prefix}shop to look for items..._`
       );
     }
   } catch (error) {
-    return NekoBot.handlerror(NekoBot, Nekos, error);
+    return Nekobot.handlerror(Nekobot, Nekos, error);
   }
 };
