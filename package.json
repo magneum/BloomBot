@@ -147,6 +147,9 @@
     "ytdl-secktor": "^0.0.1-development"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
     "autoprefixer": "^10.4.13",
     "concurrently": "^*",
     "forever": "^4.0.3",
