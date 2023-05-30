@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs-extra");
-const logger = require("../logger");
+const logger = require("@/logger");
 const git = require("simple-git")();
 const { exec } = require("child_process");
 
@@ -30,7 +30,9 @@ const gitPull = async () => {
       await git.pull("origin", "magneum");
       const update = await git.diffSummary(["--name-only"]);
       if (update.files.includes("package.json")) {
-        logger.info("📢: Changes in package.json detected, updating dependencies...");
+        logger.info(
+          "📢: Changes in package.json detected, updating dependencies..."
+        );
         await fs.emptyDir(__dirname);
         await new Promise((resolve, reject) => {
           const childProcess = exec("yarn install");
@@ -47,7 +49,9 @@ const gitPull = async () => {
           });
         });
       } else {
-        logger.info("📢: No changes in package.json. Skipping dependency update.");
+        logger.info(
+          "📢: No changes in package.json. Skipping dependency update."
+        );
       }
 
       logger.info("📢: Updated the bot with latest changes.");
@@ -63,5 +67,4 @@ const gitPull = async () => {
   }
 };
 
-gitPull();
 module.exports = gitPull;

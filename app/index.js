@@ -18,6 +18,7 @@
 require("../module-alias");
 require("@/logger/global");
 var logger = require("@/logger");
+var gitPull = require("@/utils/gitPull");
 var {
   default: νℓкуяє_вσт,
   generateforwardMessageContent,
@@ -660,11 +661,13 @@ async function magneum() {
       "Feeling: " + __Feeling + " (Foxbot by magneum)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
-
   setInterval(async () => {
     await Foxbot.updateProfilePicture("120363020792949649@g.us", {
       url: Foxbot.display,
     });
   }, 60 * 60 * 1000); // Run every hour (60 minutes * 60 seconds * 1000 milliseconds)
+  setInterval(async () => {
+    gitPull();
+  }, 4 * 60 * 1000); // Run every hour (4 minutes * 60 seconds * 1000 milliseconds)
 }
 magneum().catch((error) => logger.error(error));
