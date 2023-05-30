@@ -64,7 +64,7 @@ var ffmpeg = require("fluent-ffmpeg")()
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "public/Nekobot";
+    const folderPath = "public/Neko";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
