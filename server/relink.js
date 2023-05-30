@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
 var {
   Simp,
@@ -88,130 +88,130 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (OpenBot, vChat, update, store) => {
-  OpenBot.display = getRandomImagePath()
+module.exports = async (BloomBot, vChat, update, store) => {
+  BloomBot.display = getRandomImagePath()
     .then((imagePath) => {
-      OpenBot.display = imagePath;
+      BloomBot.display = imagePath;
     })
     .catch((err) => {
-      OpenBot.display = "./public/OpenBot_Logo.png";
+      BloomBot.display = "./public/BloomBot_Logo.png";
     });
 
-  OpenBot.performance = performance;
-  // OpenBot.createWorker = createWorker;
-  OpenBot.JSDOM = JSDOM;
-  OpenBot.Character = Character;
-  OpenBot.execSync = execSync;
-  OpenBot.spawn = spawn;
-  OpenBot.exec = exec;
-  OpenBot.Primbon = Primbon;
-  OpenBot.IShipOptions = IShipOptions;
-  OpenBot.Ship = Ship;
-  OpenBot.Pokemon = Pokemon;
-  OpenBot.Simp = Simp;
-  OpenBot.readFile = readFile;
-  OpenBot.tmpdir = tmpdir;
-  OpenBot.Doujin = Doujin;
-  OpenBot.DownloaderHelper = DownloaderHelper;
-  OpenBot.chalk = chalk;
-  OpenBot.Sticker = Sticker;
-  OpenBot.createSticker = createSticker;
-  OpenBot.StickerTypes = StickerTypes;
-  OpenBot.mMake = mMake;
-  OpenBot.formatp = formatp;
-  OpenBot.formatDate = formatDate;
-  OpenBot.getTime = getTime;
-  OpenBot.isUrl = isUrl;
-  OpenBot.sleep = sleep;
-  OpenBot.clockString = clockString;
-  OpenBot.runtime = runtime;
-  OpenBot.fetchJson = fetchJson;
-  OpenBot.getBuffer = getBuffer;
-  OpenBot.jsonformat = jsonformat;
-  OpenBot.format = format;
-  OpenBot.parseMention = parseMention;
-  OpenBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
-  OpenBot.getRandom = getRandom;
-  OpenBot.getDadjoke = getDadjoke;
-  OpenBot.Manga = Manga;
-  OpenBot.AnimeWallpaper = AnimeWallpaper;
-  OpenBot.TelegraPh = TelegraPh;
-  OpenBot.UploadFileUgu = UploadFileUgu;
-  OpenBot.webp2mp4File = webp2mp4File;
-  OpenBot.Tname = vChat.sender.replace(/['@s whatsapp.net']/g, "");
+  BloomBot.performance = performance;
+  // BloomBot.createWorker = createWorker;
+  BloomBot.JSDOM = JSDOM;
+  BloomBot.Character = Character;
+  BloomBot.execSync = execSync;
+  BloomBot.spawn = spawn;
+  BloomBot.exec = exec;
+  BloomBot.Primbon = Primbon;
+  BloomBot.IShipOptions = IShipOptions;
+  BloomBot.Ship = Ship;
+  BloomBot.Pokemon = Pokemon;
+  BloomBot.Simp = Simp;
+  BloomBot.readFile = readFile;
+  BloomBot.tmpdir = tmpdir;
+  BloomBot.Doujin = Doujin;
+  BloomBot.DownloaderHelper = DownloaderHelper;
+  BloomBot.chalk = chalk;
+  BloomBot.Sticker = Sticker;
+  BloomBot.createSticker = createSticker;
+  BloomBot.StickerTypes = StickerTypes;
+  BloomBot.mMake = mMake;
+  BloomBot.formatp = formatp;
+  BloomBot.formatDate = formatDate;
+  BloomBot.getTime = getTime;
+  BloomBot.isUrl = isUrl;
+  BloomBot.sleep = sleep;
+  BloomBot.clockString = clockString;
+  BloomBot.runtime = runtime;
+  BloomBot.fetchJson = fetchJson;
+  BloomBot.getBuffer = getBuffer;
+  BloomBot.jsonformat = jsonformat;
+  BloomBot.format = format;
+  BloomBot.parseMention = parseMention;
+  BloomBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
+  BloomBot.getRandom = getRandom;
+  BloomBot.getDadjoke = getDadjoke;
+  BloomBot.Manga = Manga;
+  BloomBot.AnimeWallpaper = AnimeWallpaper;
+  BloomBot.TelegraPh = TelegraPh;
+  BloomBot.UploadFileUgu = UploadFileUgu;
+  BloomBot.webp2mp4File = webp2mp4File;
+  BloomBot.Tname = vChat.sender.replace(/['@s whatsapp.net']/g, "");
 
-  OpenBot.msgFilter = require("./msgFilter");
-  OpenBot.imagebutton = require("@/app/buttons/imagebutton");
-  OpenBot.videobutton = require("@/app/buttons/videobutton");
-  OpenBot.handlerror = require("@/app/buttons/handlerror");
-  OpenBot.TTS = require("google-tts-api");
-  // OpenBot.nhentaidl = require("./nhentaidl");
-  OpenBot.dashboard = require("@/database/dashboard");
-  OpenBot.LinkList = require("@/database/antilink");
-  OpenBot.Ranker = require("@/database/autorank");
-  OpenBot.Bagde = require("@/database/badge");
-  OpenBot.premium = require("@/database/premium");
-  OpenBot.userBanCheck = require("@/database/ban");
-  OpenBot.Cooldown = require("@/database/cooldown");
-  OpenBot.DebugMode = require("@/database/debug");
-  OpenBot.Economy = require("@/database/economy");
-  OpenBot.Gamble = require("@/database/gamble");
-  OpenBot.Halt = require("@/database/halt");
-  OpenBot.nsfwCheck = require("@/database/nsfw");
-  OpenBot.Pokemon = require("@/database/pokemon");
-  OpenBot.UserPrivate = require("@/database/private");
-  OpenBot.Robbery = require("@/database/robbery");
-  OpenBot.ServerDB = require("@/database/ServerDB");
-  OpenBot.Welcome = require("@/database/setwelcome");
-  OpenBot.Warning = require("@/database/warning");
-  OpenBot.Zoology = require("@/database/zoo");
-  OpenBot.Fishes = require("@/public/fishes.json");
-  OpenBot.animals = require("@/public/animals.json");
-  OpenBot.Jwork = require("@/public/works.json");
-  OpenBot.dare = require("@/public/dare.json");
-  OpenBot.truth = require("@/public/truth.json");
-  OpenBot.magfetch = require("@/server/magfetch");
+  BloomBot.msgFilter = require("./msgFilter");
+  BloomBot.imagebutton = require("@/app/buttons/imagebutton");
+  BloomBot.videobutton = require("@/app/buttons/videobutton");
+  BloomBot.handlerror = require("@/app/buttons/handlerror");
+  BloomBot.TTS = require("google-tts-api");
+  // BloomBot.nhentaidl = require("./nhentaidl");
+  BloomBot.dashboard = require("@/database/dashboard");
+  BloomBot.LinkList = require("@/database/antilink");
+  BloomBot.Ranker = require("@/database/autorank");
+  BloomBot.Bagde = require("@/database/badge");
+  BloomBot.premium = require("@/database/premium");
+  BloomBot.userBanCheck = require("@/database/ban");
+  BloomBot.Cooldown = require("@/database/cooldown");
+  BloomBot.DebugMode = require("@/database/debug");
+  BloomBot.Economy = require("@/database/economy");
+  BloomBot.Gamble = require("@/database/gamble");
+  BloomBot.Halt = require("@/database/halt");
+  BloomBot.nsfwCheck = require("@/database/nsfw");
+  BloomBot.Pokemon = require("@/database/pokemon");
+  BloomBot.UserPrivate = require("@/database/private");
+  BloomBot.Robbery = require("@/database/robbery");
+  BloomBot.ServerDB = require("@/database/ServerDB");
+  BloomBot.Welcome = require("@/database/setwelcome");
+  BloomBot.Warning = require("@/database/warning");
+  BloomBot.Zoology = require("@/database/zoo");
+  BloomBot.Fishes = require("@/public/fishes.json");
+  BloomBot.animals = require("@/public/animals.json");
+  BloomBot.Jwork = require("@/public/works.json");
+  BloomBot.dare = require("@/public/dare.json");
+  BloomBot.truth = require("@/public/truth.json");
+  BloomBot.magfetch = require("@/server/magfetch");
 
-  OpenBot.os = require("os");
-  OpenBot.fs = require("fs");
-  OpenBot.got = require("got");
-  OpenBot.gis = require("g-i-s");
-  OpenBot.path = require("path");
-  OpenBot.util = require("util");
-  OpenBot.primbon = new Primbon();
-  OpenBot.ms = require("parse-ms");
-  OpenBot.hxz = require("hxz-api");
-  OpenBot.axios = require("axios");
-  OpenBot.chalk = require("chalk");
-  OpenBot.playdl = require("play-dl");
-  OpenBot.request = require("request");
-  OpenBot.xfar = require("xfarr-api");
-  OpenBot.cron = require("node-cron");
-  OpenBot.nHentai = require("shentai");
-  OpenBot.cheerio = require("cheerio");
-  OpenBot.akaneko = require("akaneko");
-  OpenBot.fetch = require("node-fetch");
-  OpenBot.google = require("google-it");
-  OpenBot.Spinnies = require("spinnies");
-  OpenBot.Anime = require("anime-actions");
-  OpenBot.Tinyurl = require("tinyurl-api");
-  OpenBot.FastHub = require("simple-git")();
-  OpenBot.speed = require("performance-now");
-  OpenBot.moment = require("moment-timezone");
-  OpenBot.Carbon = require("unofficial-carbon-now");
-  OpenBot.Levels = require("discord-xp");
-  OpenBot.canvacord = require("canvacord");
-  OpenBot.randomMC = require("random-material-color");
-  OpenBot.yClient = require("youtube-avdl");
-  OpenBot.pokemontcgsdk = require("pokemontcgsdk");
-  OpenBot.singer = require("play-dl");
-  OpenBot.ffmpeg = ffmpeg;
-  OpenBot.pathFFmpeg = require("ffmpeg-static");
+  BloomBot.os = require("os");
+  BloomBot.fs = require("fs");
+  BloomBot.got = require("got");
+  BloomBot.gis = require("g-i-s");
+  BloomBot.path = require("path");
+  BloomBot.util = require("util");
+  BloomBot.primbon = new Primbon();
+  BloomBot.ms = require("parse-ms");
+  BloomBot.hxz = require("hxz-api");
+  BloomBot.axios = require("axios");
+  BloomBot.chalk = require("chalk");
+  BloomBot.playdl = require("play-dl");
+  BloomBot.request = require("request");
+  BloomBot.xfar = require("xfarr-api");
+  BloomBot.cron = require("node-cron");
+  BloomBot.nHentai = require("shentai");
+  BloomBot.cheerio = require("cheerio");
+  BloomBot.akaneko = require("akaneko");
+  BloomBot.fetch = require("node-fetch");
+  BloomBot.google = require("google-it");
+  BloomBot.Spinnies = require("spinnies");
+  BloomBot.Anime = require("anime-actions");
+  BloomBot.Tinyurl = require("tinyurl-api");
+  BloomBot.FastHub = require("simple-git")();
+  BloomBot.speed = require("performance-now");
+  BloomBot.moment = require("moment-timezone");
+  BloomBot.Carbon = require("unofficial-carbon-now");
+  BloomBot.Levels = require("discord-xp");
+  BloomBot.canvacord = require("canvacord");
+  BloomBot.randomMC = require("random-material-color");
+  BloomBot.yClient = require("youtube-avdl");
+  BloomBot.pokemontcgsdk = require("pokemontcgsdk");
+  BloomBot.singer = require("play-dl");
+  BloomBot.ffmpeg = ffmpeg;
+  BloomBot.pathFFmpeg = require("ffmpeg-static");
 
-  // OpenBot.memberRespA = [];
-  // OpenBot.memberRespB = [];
-  // OpenBot.resp1 = await OpenBot.groupInviteCode("120363020792949649@g.us");
-  OpenBot.varResp = [
+  // BloomBot.memberRespA = [];
+  // BloomBot.memberRespB = [];
+  // BloomBot.resp1 = await BloomBot.groupInviteCode("120363020792949649@g.us");
+  BloomBot.varResp = [
     "h",
     "m",
     "c",
@@ -219,40 +219,40 @@ module.exports = async (OpenBot, vChat, update, store) => {
     "list",
     "command",
     "commands",
-    "OpenBot",
+    "BloomBot",
     "Commands",
   ];
 
   function ShowGreen(Topic, Text) {
-    var TShow = OpenBot.chalk.hex("#2D5A27").bold(Topic);
-    var Show = OpenBot.chalk.hex("#849871").italic.bold(Text);
+    var TShow = BloomBot.chalk.hex("#2D5A27").bold(Topic);
+    var Show = BloomBot.chalk.hex("#849871").italic.bold(Text);
     console.log(
-      OpenBot.chalk.black(OpenBot.chalk.bgBlack(TShow)),
-      OpenBot.chalk.black(Show)
+      BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
+      BloomBot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    var TShow = OpenBot.chalk.hex("#008B8B").bold(Topic);
-    var Show = OpenBot.chalk.hex("#818d94").italic.bold(Text);
+    var TShow = BloomBot.chalk.hex("#008B8B").bold(Topic);
+    var Show = BloomBot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
-      OpenBot.chalk.black(OpenBot.chalk.bgBlack(TShow)),
-      OpenBot.chalk.black(Show)
+      BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
+      BloomBot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    var TShow = OpenBot.chalk.hex("#ff6347").bold(Topic);
-    var Show = OpenBot.chalk.hex("#ed7777").italic.bold(Text);
+    var TShow = BloomBot.chalk.hex("#ff6347").bold(Topic);
+    var Show = BloomBot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
-      OpenBot.chalk.black(OpenBot.chalk.bgBlack(TShow)),
-      OpenBot.chalk.black(Show)
+      BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
+      BloomBot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    var TShow = OpenBot.chalk.hex("#8B8000").bold(Topic);
-    var Show = OpenBot.chalk.hex("#ECCF8D").italic.bold(Text);
+    var TShow = BloomBot.chalk.hex("#8B8000").bold(Topic);
+    var Show = BloomBot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
-      OpenBot.chalk.black(OpenBot.chalk.bgBlack(TShow)),
-      OpenBot.chalk.black(Show)
+      BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
+      BloomBot.chalk.black(Show)
     );
   }
   function between(min, max) {
@@ -260,43 +260,43 @@ module.exports = async (OpenBot, vChat, update, store) => {
   }
   function clearStorage(files) {
     for (var file of files) {
-      OpenBot.fs.unlink(file, (err) => {
+      BloomBot.fs.unlink(file, (err) => {
         if (err) throw err;
       });
     }
   }
 
-  OpenBot.ShowGreen = ShowGreen;
-  OpenBot.ShowBlue = ShowBlue;
-  OpenBot.ShowRed = ShowRed;
-  OpenBot.ShowYellow = ShowYellow;
-  OpenBot.between = between;
-  OpenBot.clearStorage = clearStorage;
-  OpenBot.spinner = {
+  BloomBot.ShowGreen = ShowGreen;
+  BloomBot.ShowBlue = ShowBlue;
+  BloomBot.ShowRed = ShowRed;
+  BloomBot.ShowYellow = ShowYellow;
+  BloomBot.between = between;
+  BloomBot.clearStorage = clearStorage;
+  BloomBot.spinner = {
     interval: 80,
     frames: ["◜", "◟", "◝", "◞", "◠", "◡", "⧬", "⧭", "⧬", "⧭"],
   };
-  OpenBot.spinnies = new OpenBot.Spinnies({
+  BloomBot.spinnies = new BloomBot.Spinnies({
     color: "cyan",
     succeedColor: "green",
-    spinner: OpenBot.spinner,
+    spinner: BloomBot.spinner,
   });
-  OpenBot.TubeRegex =
+  BloomBot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
-  OpenBot.Showlogger = Showlogger;
-  OpenBot.packname = packname;
-  OpenBot.pgdb = DATABASE_URL;
-  OpenBot.ShowInfo = ShowInfo;
-  OpenBot.MONGODB_URL = MONGODB_URL;
-  OpenBot.author = author;
-  OpenBot.prefix = prefix;
-  OpenBot.sudo = sudo;
+  BloomBot.Showlogger = Showlogger;
+  BloomBot.packname = packname;
+  BloomBot.pgdb = DATABASE_URL;
+  BloomBot.ShowInfo = ShowInfo;
+  BloomBot.MONGODB_URL = MONGODB_URL;
+  BloomBot.author = author;
+  BloomBot.prefix = prefix;
+  BloomBot.sudo = sudo;
   sudotring =
     process.env.sudo === undefined
       ? "918436686758,917430922909"
       : process.env.sudo;
-  OpenBot.isSudo = sudotring.includes(
+  BloomBot.isSudo = sudotring.includes(
     vChat.sender.substring(0, vChat.sender.indexOf("@"))
   );
-  return OpenBot;
+  return BloomBot;
 };

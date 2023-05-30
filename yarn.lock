@@ -8017,9 +8017,9 @@ onetime@^5.1.0, onetime@^5.1.2:
   dependencies:
     mimic-fn "^2.1.0"
 
-openbot@latest:
+bloombot@latest:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/openbot/-/openbot-1.1.1.tgz#91b8e7d7ddcd72a19192da2c72c52d7813e4ec60"
+  resolved "https://registry.yarnpkg.com/bloombot/-/bloombot-1.1.1.tgz#91b8e7d7ddcd72a19192da2c72c52d7813e4ec60"
   integrity sha512-70y7ZDBND+4lksoaxtGkfFP1URTODQ9TWidQbtdEtG2XkSZOQfgW/+Lqin7CTn525B1jeZEV/q1/C80NVvE/8w==
   dependencies:
     "@adiwajshing/baileys" "^4.4.0"
@@ -8137,9 +8137,9 @@ openbot@latest:
     youtube-dl-exec "^2.4.0"
     ytdl-secktor "^0.0.1-development"
 
-opencollective-postinstall@^2.0.2:
+Bloomcollective-postinstall@^2.0.2:
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
+  resolved "https://registry.yarnpkg.com/Bloomcollective-postinstall/-/Bloomcollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
 optimist@0.6.0:
@@ -10572,7 +10572,7 @@ tesseract.js@^2.1.5:
     is-url "^1.2.4"
     jpeg-autorotate "^7.1.1"
     node-fetch "^2.6.0"
-    opencollective-postinstall "^2.0.2"
+    Bloomcollective-postinstall "^2.0.2"
     regenerator-runtime "^0.13.3"
     resolve-url "^0.2.1"
     tesseract.js-core "^2.2.0"

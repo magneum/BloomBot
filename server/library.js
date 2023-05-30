@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var fs = require("fs");
 var path = require("path");
 var didYouMean = require("didyoumean2").default;
 
-module.exports = async (OpenBot, vChat, update, store) => {
+module.exports = async (BloomBot, vChat, update, store) => {
   var routePath = path.join(__dirname, "..", "routes");
   var specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -42,7 +42,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
   };
 
   var gmeta = vChat.isGroup
-    ? await OpenBot.groupMetadata(vChat.chat).catch((error) => {})
+    ? await BloomBot.groupMetadata(vChat.chat).catch((error) => {})
     : "";
   var groupName = vChat.isGroup ? gmeta.subject : "";
   var participants = vChat.isGroup ? await gmeta.participants : "";
@@ -51,7 +51,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
     : "";
   var groupOwner = vChat.isGroup ? gmeta.owner : "";
   var isbotAdmin = vChat.isGroup
-    ? groupAdmins.includes(await OpenBot.decodeJid(OpenBot.user.id))
+    ? groupAdmins.includes(await BloomBot.decodeJid(BloomBot.user.id))
     : false;
   var isAdmin = vChat.isGroup
     ? groupAdmins.includes(vChat.sender)
@@ -78,37 +78,37 @@ module.exports = async (OpenBot, vChat, update, store) => {
         vChat.text
       : "";
   var vcommand = vbody
-    .replace(OpenBot.prefix, "")
+    .replace(BloomBot.prefix, "")
     .trim()
     .split(/ +/)
     .shift()
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ ⒸOpenBot by magneum™ ✕———————————————————————✕◎"
+    "\n◎✕———————————————————————✕ ⒸBloomBot by magneum™ ✕———————————————————————✕◎"
   );
   console.log(
-    OpenBot.chalk.blueBright("🖊️COMMANDS: "),
-    OpenBot.chalk.green(vcommand)
+    BloomBot.chalk.blueBright("🖊️COMMANDS: "),
+    BloomBot.chalk.green(vcommand)
   );
   console.log(
-    OpenBot.chalk.blueBright("🖊️MESSAGE: "),
-    OpenBot.chalk.green(vbody)
+    BloomBot.chalk.blueBright("🖊️MESSAGE: "),
+    BloomBot.chalk.green(vbody)
   );
   console.log(
-    OpenBot.chalk.blueBright("❣️USER_NAME: "),
-    OpenBot.chalk.green(OpenBot.pushname)
+    BloomBot.chalk.blueBright("❣️USER_NAME: "),
+    BloomBot.chalk.green(BloomBot.pushname)
   );
   console.log(
-    OpenBot.chalk.blueBright("📱USER_NUMBER: "),
-    OpenBot.chalk.green(vChat.sender)
+    BloomBot.chalk.blueBright("📱USER_NUMBER: "),
+    BloomBot.chalk.green(vChat.sender)
   );
   console.log(
-    OpenBot.chalk.blueBright("💬CHAT_Id: "),
-    OpenBot.chalk.green(vChat.chat)
+    BloomBot.chalk.blueBright("💬CHAT_Id: "),
+    BloomBot.chalk.green(vChat.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ ⒸOpenBot by magneum™ ✕———————————————————————✕◎\n"
+    "◎✕———————————————————————✕ ⒸBloomBot by magneum™ ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -121,7 +121,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
       if (commandFile) {
         var commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
-          OpenBot,
+          BloomBot,
           vChat,
           gmeta,
           isAdmin,
@@ -129,7 +129,7 @@ module.exports = async (OpenBot, vChat, update, store) => {
           isbotAdmin,
           groupAdmins,
           participants,
-          OpenBot.isSudo
+          BloomBot.isSudo
         );
         commandFound = true;
         break;
@@ -147,21 +147,21 @@ module.exports = async (OpenBot, vChat, update, store) => {
     if (suggestedCommand) {
       var suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await OpenBot.sendMessage(vChat.chat, {
-        image: { url: OpenBot.display },
+      return await BloomBot.sendMessage(vChat.chat, {
+        image: { url: BloomBot.display },
         caption: `*📢ID:* ${vChat.chat}\n\n${suggestionMessage}`,
-        footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${OpenBot.prefix}${suggestedCommand}`,
+            buttonId: `${BloomBot.prefix}${suggestedCommand}`,
             buttonText: {
-              displayText: `${OpenBot.prefix}${suggestedCommand}`,
+              displayText: `${BloomBot.prefix}${suggestedCommand}`,
             },
             type: 1,
           },
           {
-            buttonId: `${OpenBot.prefix}Home`,
-            buttonText: { displayText: `${OpenBot.prefix}Home` },
+            buttonId: `${BloomBot.prefix}Home`,
+            buttonText: { displayText: `${BloomBot.prefix}Home` },
             type: 1,
           },
         ],
@@ -171,16 +171,16 @@ module.exports = async (OpenBot, vChat, update, store) => {
     } else {
       var errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
-        `@${OpenBot.Tname}, it seems that the command you entered doesn't exist.\n` +
+        `@${BloomBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await OpenBot.sendMessage(vChat.chat, {
-        image: { url: OpenBot.display },
+      return await BloomBot.sendMessage(vChat.chat, {
+        image: { url: BloomBot.display },
         caption: `*📢ID:* ${vChat.chat}\n\n${errorMessage}`,
-        footer: "*ⒸOpenBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
-            buttonId: `${OpenBot.prefix}Home`,
-            buttonText: { displayText: `${OpenBot.prefix}Home` },
+            buttonId: `${BloomBot.prefix}Home`,
+            buttonText: { displayText: `${BloomBot.prefix}Home` },
             type: 1,
           },
         ],

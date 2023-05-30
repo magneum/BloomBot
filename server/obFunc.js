@@ -1,20 +1,20 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var { proto, getContentType } = require("@adiwajshing/baileys");
 var { sizeFormatter } = require("human-readable");
 var child_process = require("child_process");
@@ -226,7 +226,7 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (OpenBot, vChat, store) => {
+exports.mMake = async (BloomBot, vChat, store) => {
   if (!vChat) return vChat;
   var νproto = proto.WebMessageInfo;
   if (vChat.key) {
@@ -236,15 +236,15 @@ exports.mMake = async (OpenBot, vChat, store) => {
     vChat.chat = vChat.key.remoteJid;
     vChat.fromMe = vChat.key.fromMe;
     vChat.isGroup = vChat.chat.endsWith("@g.us");
-    vChat.sender = OpenBot.decodeJid(
-      (vChat.fromMe && OpenBot.user.id) ||
+    vChat.sender = BloomBot.decodeJid(
+      (vChat.fromMe && BloomBot.user.id) ||
         vChat.participant ||
         vChat.key.participant ||
         vChat.chat ||
         ""
     );
     if (vChat.isGroup)
-      vChat.participant = OpenBot.decodeJid(vChat.key.participant) || "";
+      vChat.participant = BloomBot.decodeJid(vChat.key.participant) || "";
   }
   if (vChat.message) {
     vChat.mtype = getContentType(vChat.message);
@@ -288,11 +288,11 @@ exports.mMake = async (OpenBot, vChat, store) => {
         ? vChat.quoted.id.startsWith("BAE5") &&
           vChat.quoted.id.length === 16
         : false;
-      vChat.quoted.sender = OpenBot.decodeJid(
+      vChat.quoted.sender = BloomBot.decodeJid(
         vChat.msg.contextInfo.participant
       );
       vChat.quoted.fromMe =
-        vChat.quoted.sender === (OpenBot.user && OpenBot.user.id);
+        vChat.quoted.sender === (BloomBot.user && BloomBot.user.id);
       vChat.quoted.text =
         vChat.quoted.text ||
         vChat.quoted.caption ||
@@ -309,9 +309,9 @@ exports.mMake = async (OpenBot, vChat, store) => {
         var q = await store.loadMessage(
           vChat.chat,
           vChat.quoted.id,
-          OpenBot
+          BloomBot
         );
-        return exports.mMake(OpenBot, q, store);
+        return exports.mMake(BloomBot, q, store);
       };
       var vM = (vChat.quoted.fakeObj = νproto.fromObject({
         key: {
@@ -323,16 +323,16 @@ exports.mMake = async (OpenBot, vChat, store) => {
         ...(vChat.isGroup ? { participant: vChat.quoted.sender } : {}),
       }));
       vChat.quoted.delete = () =>
-        OpenBot.sendMessage(vChat.quoted.chat, { delete: vM.key });
+        BloomBot.sendMessage(vChat.quoted.chat, { delete: vM.key });
       vChat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
-        OpenBot.copyNForward(jid, vM, forceForward, options);
+        BloomBot.copyNForward(jid, vM, forceForward, options);
       vChat.quoted.download = () =>
-        OpenBot.downloadMediaMessage(vChat.quoted);
+        BloomBot.downloadMediaMessage(vChat.quoted);
     }
   }
 
   if (vChat.msg.url)
-    vChat.download = () => OpenBot.downloadMediaMessage(vChat.msg);
+    vChat.download = () => BloomBot.downloadMediaMessage(vChat.msg);
   vChat.text =
     vChat.msg.text ||
     vChat.msg.caption ||
@@ -343,15 +343,15 @@ exports.mMake = async (OpenBot, vChat, store) => {
     "";
   vChat.reply = (text, chatId = vChat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? OpenBot.sendMedia(chatId, text, "file", "", vChat, { ...options })
-      : OpenBot.sendText(chatId, text, vChat, { ...options });
+      ? BloomBot.sendMedia(chatId, text, "file", "", vChat, { ...options })
+      : BloomBot.sendText(chatId, text, vChat, { ...options });
   vChat.copy = () =>
-    exports.mMake(OpenBot, νproto.fromObject(νproto.toObject(vChat)));
+    exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(vChat)));
   vChat.copyNForward = (
     jid = vChat.chat,
     forceForward = false,
     options = {}
-  ) => OpenBot.copyNForward(jid, vChat, forceForward, options);
+  ) => BloomBot.copyNForward(jid, vChat, forceForward, options);
 
   return vChat;
 };

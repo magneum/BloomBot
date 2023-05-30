@@ -1,38 +1,38 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-module.exports = async (OpenBot, vChat, updatedb) => {
+module.exports = async (BloomBot, vChat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(vChat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(vChat.sender, "image");
   } catch {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vChatbot.png";
   }
-  await OpenBot.dashboard.findOne(
+  await BloomBot.dashboard.findOne(
     {
       Id: vChat.sender,
     },
     async (error, udBase) => {
-      if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+      if (error) return BloomBot.handlerror(BloomBot, vChat, error);
       if (!udBase) {
-        new OpenBot.dashboard({
+        new BloomBot.dashboard({
           Id: vChat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: OpenBot.pushname,
+          username: BloomBot.pushname,
 
           bite: 0,
           blush: 0,
@@ -223,7 +223,7 @@ module.exports = async (OpenBot, vChat, updatedb) => {
           zettaiRyouiki: 0,
 
           list: 0,
-          OpenBot: 0,
+          BloomBot: 0,
           dashboard: 0,
 
           waifu: 0,
@@ -274,11 +274,11 @@ module.exports = async (OpenBot, vChat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
-        await OpenBot.imagebutton(
-          OpenBot,
+          .catch((error) => BloomBot.handlerror(BloomBot, vChat, error));
+        await BloomBot.imagebutton(
+          BloomBot,
           vChat,
-          `*⚡Here, for ${OpenBot.pushname}:*
+          `*⚡Here, for ${BloomBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -286,11 +286,11 @@ module.exports = async (OpenBot, vChat, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          OpenBot.display
+          BloomBot.display
         );
         return updatedb(udBase);
       }
-      udBase.username = `${OpenBot.pushname}`;
+      udBase.username = `${BloomBot.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }

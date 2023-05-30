@@ -1,23 +1,23 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (OpenBot, vChat, update, store) => {
-  OpenBot.body =
+module.exports = async (BloomBot, vChat, update, store) => {
+  BloomBot.body =
     vChat.mtype === "conversation"
       ? vChat.message.conversation
       : vChat.mtype == "imageMessage"
@@ -37,103 +37,103 @@ module.exports = async (OpenBot, vChat, update, store) => {
         vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         vChat.text
       : "";
-  OpenBot.budy = typeof vChat.text == "string" ? vChat.text : "";
-  OpenBot.icmd = OpenBot.body.startsWith(prefix);
-  OpenBot.isCommand =
-    prefix.includes(OpenBot.body != "" && OpenBot.body.slice(0, 1)) &&
-    OpenBot.body.slice(1) != "";
-  OpenBot.command = OpenBot.isCommand
-    ? OpenBot.body.slice(1).trim().split(" ")[0].toLowerCase()
+  BloomBot.budy = typeof vChat.text == "string" ? vChat.text : "";
+  BloomBot.icmd = BloomBot.body.startsWith(prefix);
+  BloomBot.isCommand =
+    prefix.includes(BloomBot.body != "" && BloomBot.body.slice(0, 1)) &&
+    BloomBot.body.slice(1) != "";
+  BloomBot.command = BloomBot.isCommand
+    ? BloomBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  OpenBot.args = OpenBot.body.trim().split(/ +/).slice(1);
-  OpenBot.pushname = vChat.pushName || "No Name";
-  OpenBot.botNumber = await OpenBot.decodeJid(OpenBot.user.id);
-  OpenBot.frome = vChat.sender == OpenBot.botNumber ? true : false;
-  OpenBot.Fullarg = OpenBot.args.join(" ");
-  OpenBot.contant = q = OpenBot.args.join(" ");
-  OpenBot.quoted = vChat.quoted ? vChat.quoted : vChat;
-  OpenBot.mime = (OpenBot.quoted.msg || OpenBot.quoted).mimetype || "";
-  OpenBot.isMedia = /image|video|sticker|audio/.test(OpenBot.mime);
-  OpenBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  OpenBot.isCreator = [OpenBot.botNumber, ...global.sudo]
+  BloomBot.args = BloomBot.body.trim().split(/ +/).slice(1);
+  BloomBot.pushname = vChat.pushName || "No Name";
+  BloomBot.botNumber = await BloomBot.decodeJid(BloomBot.user.id);
+  BloomBot.frome = vChat.sender == BloomBot.botNumber ? true : false;
+  BloomBot.Fullarg = BloomBot.args.join(" ");
+  BloomBot.contant = q = BloomBot.args.join(" ");
+  BloomBot.quoted = vChat.quoted ? vChat.quoted : vChat;
+  BloomBot.mime = (BloomBot.quoted.msg || BloomBot.quoted).mimetype || "";
+  BloomBot.isMedia = /image|video|sticker|audio/.test(BloomBot.mime);
+  BloomBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  BloomBot.isCreator = [BloomBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
     .includes(vChat.sender);
-  OpenBot.mentionByTag =
+  BloomBot.mentionByTag =
     vChat.mtype == "extendedTextMessage" &&
     vChat.message.extendedTextMessage.contextInfo != null
       ? vChat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  OpenBot.mentionByReply =
+  BloomBot.mentionByReply =
     vChat.mtype == "extendedTextMessage" &&
     vChat.message.extendedTextMessage.contextInfo != null
       ? vChat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./relink")(OpenBot, vChat, update, store);
-  if (!vChat.isGroup && OpenBot.command)
-    return require("@/auth/noPrivate")(OpenBot, vChat, update);
-  if (vChat.isGroup && OpenBot.command)
-    OpenBot.userBanCheck.findOne(
+  require("./relink")(BloomBot, vChat, update, store);
+  if (!vChat.isGroup && BloomBot.command)
+    return require("@/auth/noPrivate")(BloomBot, vChat, update);
+  if (vChat.isGroup && BloomBot.command)
+    BloomBot.userBanCheck.findOne(
       {
         Id: vChat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return vChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
+          return vChat.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        OpenBot.userBanCheck.findOne(
+        BloomBot.userBanCheck.findOne(
           {
             Id: vChat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return vChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
+              return vChat.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !OpenBot.frome && !OpenBot.isSudo) return;
-            if (groupCheck && !OpenBot.frome && !OpenBot.isSudo) return;
-            await OpenBot.LinkList.findOne(
+            if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
+            if (groupCheck && !BloomBot.frome && !BloomBot.isSudo) return;
+            await BloomBot.LinkList.findOne(
               {
                 serverId: vChat.chat,
               },
               async (error, server) => {
-                if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+                if (error) return BloomBot.handlerror(BloomBot, vChat, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(OpenBot, vChat);
+                return noLink(BloomBot, vChat);
               }
             );
 
-            // respA = await OpenBot.groupMetadata("120363020792949649@g.us");
+            // respA = await BloomBot.groupMetadata("120363020792949649@g.us");
             // for (var i = 0; i < respA.participants.length; i++)
-            // OpenBot.memberRespA[i] = respA.participants[i].id;
+            // BloomBot.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await OpenBot.groupMetadata("120363089188116481@g.us");
+            // respB = await BloomBot.groupMetadata("120363089188116481@g.us");
             // for (var i = 0; i < respB.participants.length; i++)
-            // OpenBot.memberRespB[i] = respB.participants[i].id;
+            // BloomBot.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !OpenBot.fromme &&
-            // !OpenBot.isSudo &&
-            // !OpenBot.varResp.includes(OpenBot.command) &&
-            // !OpenBot.memberRespA.includes(vChat.sender) &&
-            // !OpenBot.memberRespB.includes(vChat.sender)
+            // !BloomBot.fromme &&
+            // !BloomBot.isSudo &&
+            // !BloomBot.varResp.includes(BloomBot.command) &&
+            // !BloomBot.memberRespA.includes(vChat.sender) &&
+            // !BloomBot.memberRespB.includes(vChat.sender)
             // ) {
-            // return await OpenBot.sendMessage(
+            // return await BloomBot.sendMessage(
             // vChat.chat,
             // {
             // gifPlayback: true,
-            // video: OpenBot.fs.readFileSync("./public/how.mp4"),
+            // video: BloomBot.fs.readFileSync("./public/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Apologies:* _${OpenBot.pushname}_
+            // *😥Apologies:* _${BloomBot.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -148,16 +148,16 @@ module.exports = async (OpenBot, vChat, update, store) => {
             // );
             // }
 
-            if (process.env.runtype === "devar" && !OpenBot.isSudo) {
-              return await OpenBot.sendMessage(
+            if (process.env.runtype === "devar" && !BloomBot.isSudo) {
+              return await BloomBot.sendMessage(
                 vChat.chat,
                 {
                   gifPlayback: true,
-                  video: OpenBot.fs.readFileSync(
-                    "./public/OpenBot/OpenBot (8)_white.png"
+                  video: BloomBot.fs.readFileSync(
+                    "./public/BloomBot/BloomBot (8)_white.png"
                   ),
                   caption: `*📢Verification Needed*
-*😥Apologies:* _${OpenBot.pushname}_
+*😥Apologies:* _${BloomBot.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -170,14 +170,14 @@ module.exports = async (OpenBot, vChat, update, store) => {
                 { quoted: vChat }
               );
             } else
-              await OpenBot.sendMessage(vChat.chat, {
+              await BloomBot.sendMessage(vChat.chat, {
                 react: {
                   text: "⚡",
                   key: vChat.key,
                 },
               });
             return await require("@/server/library")(
-              OpenBot,
+              BloomBot,
               vChat,
               update,
               store
@@ -186,5 +186,5 @@ module.exports = async (OpenBot, vChat, update, store) => {
         );
       }
     );
-  return OpenBot;
+  return BloomBot;
 };
