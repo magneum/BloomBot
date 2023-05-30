@@ -29,38 +29,39 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
-    2
-  )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
-  timestampe = OpenBot.speed();
-  latensie = OpenBot.speed() - timestampe;
-  var runtime = function (seconds) {
-    seconds = Number(seconds);
-    d = Math.floor(seconds / (3600 * 24));
-    h = Math.floor((seconds % (3600 * 24)) / 3600);
-    m = Math.floor((seconds % 3600) / 60);
-    s = Math.floor(seconds % 60);
-    dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-    hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-    mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-    sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
-    return dDisplay + hDisplay + mDisplay + sDisplay;
-  };
-  var countFiles = (dir) =>
-    OpenBot.fs.readdirSync(dir).reduce((acc, file) => {
-      var fileDir = `${dir}/${file}`;
-      if (OpenBot.fs.lstatSync(fileDir).isDirectory()) {
-        return (acc += countFiles(fileDir));
-      }
-      if (OpenBot.fs.lstatSync(fileDir).isFile()) {
-        return ++acc;
-      }
-      return acc;
-    }, 0);
-  return await OpenBot.imagebutton(
-    OpenBot,
-    ocID,
-    `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+  try {
+    ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
+      2
+    )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
+    timestampe = OpenBot.speed();
+    latensie = OpenBot.speed() - timestampe;
+    var runtime = function (seconds) {
+      seconds = Number(seconds);
+      d = Math.floor(seconds / (3600 * 24));
+      h = Math.floor((seconds % (3600 * 24)) / 3600);
+      m = Math.floor((seconds % 3600) / 60);
+      s = Math.floor(seconds % 60);
+      dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+      hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+      mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
+      sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+      return dDisplay + hDisplay + mDisplay + sDisplay;
+    };
+    var countFiles = (dir) =>
+      OpenBot.fs.readdirSync(dir).reduce((acc, file) => {
+        var fileDir = `${dir}/${file}`;
+        if (OpenBot.fs.lstatSync(fileDir).isDirectory()) {
+          return (acc += countFiles(fileDir));
+        }
+        if (OpenBot.fs.lstatSync(fileDir).isFile()) {
+          return ++acc;
+        }
+        return acc;
+      }, 0);
+    return await OpenBot.imagebutton(
+      OpenBot,
+      ocID,
+      `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 > ⒸOpenBot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./routes")}
@@ -353,7 +354,10 @@ module.exports = async (
 │║⦁ ${OpenBot.prefix}ytvaporwave
 │║⦁ ${OpenBot.prefix}ytvibrato
 ┕╚═════⋑`,
-    OpenBot.display
-  );
+      OpenBot.display
+    );
+  } catch (error) {
+    return OpenBot.handlerror(OpenBot, ocID, error);
+  }
 };
-module.exports.aliases = ["example", "example"];
+module.exports.aliases = [];

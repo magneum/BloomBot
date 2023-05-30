@@ -29,10 +29,11 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  return await OpenBot.imagebutton(
-    OpenBot,
-    ocID,
-    `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
+  try {
+    return await OpenBot.imagebutton(
+      OpenBot,
+      ocID,
+      `*🔖Here, ${finalname} for ${OpenBot.pushname || OpenBot.Tname}:*
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*
@@ -44,6 +45,10 @@ module.exports = async (
 > type ${OpenBot.prefix}help in OpenBot official group
 > head back to bit.ly/magneum
 > try to login`,
-    OpenBot.display
-  );
+      OpenBot.display
+    );
+  } catch (error) {
+    return OpenBot.handlerror(OpenBot, ocID, error);
+  }
 };
+module.exports.aliases = [];
