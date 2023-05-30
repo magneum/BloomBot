@@ -189,7 +189,7 @@ module.exports = async (NekoBot, Nekos, update, store) => {
   NekoBot.cron = require("node-cron");
   NekoBot.nHentai = require("shentai");
   NekoBot.cheerio = require("cheerio");
-  NekoBot.akaNeko = require("akaNeko");
+  NekoBot.akaneko = require("akaneko");
   NekoBot.fetch = require("node-fetch");
   NekoBot.google = require("google-it");
   NekoBot.Spinnies = require("spinnies");

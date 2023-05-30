@@ -1,6 +1,6 @@
 {
   "main": "app",
-  "name": "Nekobot",
+  "name": "nekobot",
   "version": "0.0.3",
   "description": "NekoBot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
   "engines": {
@@ -41,7 +41,7 @@
     "@shineiichijo/canvas-chan": "^1.0.0",
     "@shineiichijo/marika": "^2.0.2",
     "@shineiichijo/nhentai-pdf": "^1.0.5",
-    "akaNeko": "^5.2.5",
+    "akaneko": "^5.2.5",
     "anime-actions": "^1.0.6",
     "anime-wallpaper": "^1.0.2",
     "ascii-table": "^0.0.9",

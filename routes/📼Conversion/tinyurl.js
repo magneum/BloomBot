@@ -58,7 +58,7 @@ module.exports = async (NekoBot, Nekos, gmeta, isAdmin, groupName, isbotAdmin, g
           Nekos,
           `*🔖Here, ${finalname} for ${NekoBot.pushname || NekoBot.Tname}:*
 > ${fetchedata.meta.url}`,
-          await NekoBot.akaNeko.nsfw.ass()
+          await NekoBot.akaneko.nsfw.ass()
         );
       });
   } catch (error) {
