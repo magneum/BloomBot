@@ -47,90 +47,92 @@ module.exports = async (
 *⚡Usage* 
 > _${Foxbot.prefix}${finalname} song-name_`
       );
-    }
-    Foxbot.magfetch(
-      Foxbot,
-      "https://magneum.vercel.app/api/youtube_sr?q=" + Foxbot.args.join(" ")
-    ).then(async (response) => {
-      var fetchedata = response.data;
-      console.log(fetchedata);
-
-      return await Foxbot.sendMessage(
-        Foxchat.chat,
-        {
-          image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
-          caption: `*🔖Here, ${finalname} for ${Foxbot.pushname}:*
-*🍻Title:* ${fetchedata.youtube_search[0].TITLE}
-*🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
-*🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
-*⏰Duration:* ${fetchedata.youtube_search[0].DURATION_FULL}
-*📜Description:* ${fetchedata.youtube_search[0].DESCRIPTION}`,
-          footer: "*Foxbot™ by magneum*\n*💻HomePage:* https://bit.ly/magneum",
-          buttons: [
-            {
-              buttonId: `${Foxbot.prefix}Dashboard`,
-              buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
-              type: 1,
-            },
-            {
-              buttonId: `${Foxbot.prefix}Help`,
-              buttonText: { displayText: `${Foxbot.prefix}Help` },
-              type: 1,
-            },
-          ],
-          headerType: 4,
-          mentions: [Foxchat.sender],
-        },
-        {
-          contextInfo: { mentionedJid: [Foxchat.sender] },
-          quoted: Foxchat,
-        }
-      );
-
-      await Foxbot.imagebutton(
+    } else
+      Foxbot.magfetch(
         Foxbot,
-        Foxchat,
-        `*🔖Here, ${finalname} for ${Foxbot.pushname}:*
+        "https://magneum.vercel.app/api/youtube_sr?q=" + Foxbot.args.join(" ")
+      ).then(async (response) => {
+        var fetchedata = response.data;
+        console.log(fetchedata);
+
+        return await Foxbot.sendMessage(
+          Foxchat.chat,
+          {
+            image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
+            caption: `*🔖Here, ${finalname} for ${Foxbot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
 *⏰Duration:* ${fetchedata.youtube_search[0].DURATION_FULL}
 *📜Description:* ${fetchedata.youtube_search[0].DESCRIPTION}`,
-        fetchedata.youtube_search[0].HQ_IMAGE
-      );
-      return;
-      var stream = ytdl(fetchedata.youtube_search[0].LINK, {
-        filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-      }).pipe(Foxbot.fs.createWriteStream(`./${fetchedata.uuid}`));
-      await new Promise((resolve, reject) => {
-        stream.on("error", reject);
-        stream.on("finish", resolve);
-      });
-      await Foxbot.sendMessage(
-        Foxchat.chat,
-        {
-          audio: Foxbot.fs.readFileSync(`./${fetchedata.uuid}`),
-          mimetype: "audio/mpeg",
-          fileName: fetchedata.youtube_search[0].TITLE + ".mp3",
-          headerType: 4,
-          contextInfo: {
-            externalAdReply: {
-              title: fetchedata.youtube_search[0].TITLE,
-              body: "⭕made by Foxbot",
-              renderLargerThumbnail: true,
-              thumbnailUrl: fetchedata.youtube_search[0].THUMB,
-              mediaUrl: fetchedata.youtube_search[0].LINK,
-              mediaType: 1,
-              thumbnail: await Foxbot.getBuffer(
-                fetchedata.youtube_search[0].HQ_IMAGE
-              ),
-              sourceUrl: "https://bit.ly/magneum",
+            footer:
+              "*Foxbot™ by magneum*\n*💻HomePage:* https://bit.ly/magneum",
+            buttons: [
+              {
+                buttonId: `${Foxbot.prefix}Dashboard`,
+                buttonText: { displayText: `${Foxbot.prefix}Dashboard` },
+                type: 1,
+              },
+              {
+                buttonId: `${Foxbot.prefix}Help`,
+                buttonText: { displayText: `${Foxbot.prefix}Help` },
+                type: 1,
+              },
+            ],
+            headerType: 4,
+            mentions: [Foxchat.sender],
+          },
+          {
+            contextInfo: { mentionedJid: [Foxchat.sender] },
+            quoted: Foxchat,
+          }
+        );
+
+        await Foxbot.imagebutton(
+          Foxbot,
+          Foxchat,
+          `*🔖Here, ${finalname} for ${Foxbot.pushname}:*
+*🍻Title:* ${fetchedata.youtube_search[0].TITLE}
+*🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
+*🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
+*⏰Duration:* ${fetchedata.youtube_search[0].DURATION_FULL}
+*📜Description:* ${fetchedata.youtube_search[0].DESCRIPTION}`,
+          fetchedata.youtube_search[0].HQ_IMAGE
+        );
+        return;
+        var stream = ytdl(fetchedata.youtube_search[0].LINK, {
+          filter: (info) =>
+            info.audioBitrate == 160 || info.audioBitrate == 128,
+        }).pipe(Foxbot.fs.createWriteStream(`./${fetchedata.uuid}`));
+        await new Promise((resolve, reject) => {
+          stream.on("error", reject);
+          stream.on("finish", resolve);
+        });
+        await Foxbot.sendMessage(
+          Foxchat.chat,
+          {
+            audio: Foxbot.fs.readFileSync(`./${fetchedata.uuid}`),
+            mimetype: "audio/mpeg",
+            fileName: fetchedata.youtube_search[0].TITLE + ".mp3",
+            headerType: 4,
+            contextInfo: {
+              externalAdReply: {
+                title: fetchedata.youtube_search[0].TITLE,
+                body: "⭕made by Foxbot",
+                renderLargerThumbnail: true,
+                thumbnailUrl: fetchedata.youtube_search[0].THUMB,
+                mediaUrl: fetchedata.youtube_search[0].LINK,
+                mediaType: 1,
+                thumbnail: await Foxbot.getBuffer(
+                  fetchedata.youtube_search[0].HQ_IMAGE
+                ),
+                sourceUrl: "https://bit.ly/magneum",
+              },
             },
           },
-        },
-        { quoted: Foxchat }
-      ).then(Foxbot.fs.unlinkSync(`./${fetchedata.uuid}`));
-    });
+          { quoted: Foxchat }
+        ).then(Foxbot.fs.unlinkSync(`./${fetchedata.uuid}`));
+      });
   } catch (error) {
     return Foxbot.handlerror(Foxbot, Foxchat, error);
   }
