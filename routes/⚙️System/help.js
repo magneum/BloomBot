@@ -19,7 +19,18 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+thisfilealias = ["list", "menu"];
+module.exports.aliases = thisfilealias;
+module.exports = async (
+  Foxbot,
+  Foxchat,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
     2
   )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
