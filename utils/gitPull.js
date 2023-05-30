@@ -24,7 +24,7 @@ const gitPull = async () => {
   try {
     logger.info("📢: Checking for updates...");
     await git.fetch();
-    const newCommits = await git.log(["magneum™..origin/magneum™"]);
+    const newCommits = await git.log(["magneum..origin/magneum"]);
     if (newCommits.total) {
       logger.info("📢: New update pending, updating...");
       await git.pull("origin", "magneum™");
