@@ -88,16 +88,7 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (
-  Foxbot,
-  Foxchat,
-  gmeta,
-  isAdmin,
-  groupName,
-  isbotAdmin,
-  groupAdmins,
-  participants
-) => {
+module.exports = async (Foxbot, Foxchat, update, store) => {
   Foxbot.display = getRandomImagePath()
     .then((imagePath) => {
       Foxbot.display = imagePath;

@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (Foxbot, Foxchat, update, store) => {
   var gmeta = Foxchat.isGroup
     ? await Foxbot.groupMetadata(Foxchat.chat).catch((error) => {})
     : "";
@@ -237,12 +237,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "confused":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.confused = updatedb.confused + 1;
-        require("@/routes/🐉Emotions/confused")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/🐉Emotions/confused")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -341,12 +336,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "highfive":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.highfive = updatedb.highfive + 1;
-        require("@/routes/🐉Emotions/highfive")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/🐉Emotions/highfive")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -660,12 +650,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "nsfwlist":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.nsfwlist = updatedb.nsfwlist + 1;
-        require("@/routes/💗Commands/nsfwlist")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/💗Commands/nsfwlist")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -848,12 +833,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "bassboost":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.bassboost = updatedb.bassboost + 1;
-        require("@/routes/📢aFilter/bassboost")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/📢aFilter/bassboost")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -900,12 +880,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "nightcore":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.nightcore = updatedb.nightcore + 1;
-        require("@/routes/📢aFilter/nightcore")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/📢aFilter/nightcore")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1009,12 +984,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "superslow":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.superslow = updatedb.superslow + 1;
-        require("@/routes/📢aFilter/superslow")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/📢aFilter/superslow")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1056,12 +1026,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "vaporwave":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.vaporwave = updatedb.vaporwave + 1;
-        require("@/routes/📢aFilter/vaporwave")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/📢aFilter/vaporwave")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1170,12 +1135,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "ytphaser":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ytphaser = updatedb.ytphaser + 1;
-        require("@/routes/⭕YTFilter/ytphaser")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/⭕YTFilter/ytphaser")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -1999,12 +1959,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "carbon":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.carbon = updatedb.carbon + 1;
-        require("@/routes/📼Conversion/carbon")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/📼Conversion/carbon")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2499,12 +2454,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "getChord":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.getChord = updatedb.getChord + 1;
-        require("@/routes/🔎Searches/getChord")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/🔎Searches/getChord")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -2570,12 +2520,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "ytsearch":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.ytsearch = updatedb.ytsearch + 1;
-        require("@/routes/🔎Searches/ytsearch")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/🔎Searches/ytsearch")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -3461,12 +3406,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "hotstuffnsfw":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.hotstuffnsfw = updatedb.hotstuffnsfw + 1;
-        require("@/routes/👅NSFW/hotstuffnsfw")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/👅NSFW/hotstuffnsfw")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
@@ -3489,12 +3429,7 @@ module.exports = async (Foxbot, Foxchat, gmeta, isAdmin, groupName, isbotAdmin, 
     case "justhotwomen":
       require("./dboard")(Foxbot, Foxchat, (updatedb) => {
         updatedb.justhotwomen = updatedb.justhotwomen + 1;
-        require("@/routes/👅NSFW/justhotwomen")(
-          Foxbot,
-          Foxchat,
-          update,
-          store
-        );
+        require("@/routes/👅NSFW/justhotwomen")(Foxbot, Foxchat, update, store);
         updatedb
           .save()
           .catch((error) => Foxbot.handlerror(Foxbot, Foxchat, error));
