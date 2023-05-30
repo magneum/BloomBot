@@ -1,5 +1,5 @@
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
@@ -75,7 +75,7 @@ module.exports = async (BloomBot, vChat) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -104,7 +104,7 @@ module.exports = async (BloomBot, vChat) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -121,7 +121,7 @@ module.exports = async (BloomBot, vChat) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, vChat) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -185,7 +185,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -224,7 +224,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -251,7 +251,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -297,7 +297,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -346,7 +346,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -395,7 +395,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -430,7 +430,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -470,7 +470,7 @@ module.exports = async (BloomBot, vChat) => {
                       return await BloomBot.imagebutton(
                         BloomBot,
                         vChat,
-                        `*⚡Here, ${fpth} for ${
+                        `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
@@ -504,31 +504,31 @@ module.exports = async (BloomBot, vChat) => {
     return await BloomBot.imagebutton(
       BloomBot,
       vChat,
-      `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+      `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
 
 *❌ERROR:* No query provided!
-*⚡USAGE:* Reply Person: ${prefix}${fpth}}
+*🌻USAGE:* Reply Person: ${prefix}${fpth}}
 
 
 ┌『 *⚔️Swords* 』
 │║⦁ *🛸𝗧𝘆𝗽𝗲:* The medium account safe mode. 
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy sword you will need to have 4000gold.
-│║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!
+│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!
 ┕╚═══════⋑
 
 ┌『 *💻laptop* 』
 │║⦁ *🛸𝗧𝘆𝗽𝗲:* The hard account safe mode.
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 3000gold.
-│║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!
+│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!
 ┕╚═══════⋑
 
 ┌『 *💻Charm* 』
 │║⦁ *🛸𝗧𝘆𝗽𝗲:* The devil account safe mode.
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
-│║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
+│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
       BloomBot.display
     );

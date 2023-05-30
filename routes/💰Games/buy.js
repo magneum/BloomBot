@@ -1,5 +1,5 @@
 //  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
@@ -111,7 +111,7 @@ module.exports = async (BloomBot, vChat) => {
 *❌Error* 
 > _No query provided!_
 
-*⚡Usage* 
+*🌻Usage* 
 > _${BloomBot.prefix}${fpth} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`
       );
@@ -130,7 +130,7 @@ module.exports = async (BloomBot, vChat) => {
 *❌Error* 
 > _No query provided!_
 
-*⚡Usage* 
+*🌻Usage* 
 > _${BloomBot.prefix}${fpth} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`
       );
@@ -163,7 +163,7 @@ module.exports = async (BloomBot, vChat) => {
             return await BloomBot.imagebutton(
               BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *💰Balance:* _Just Bloomed Your Account!_`,
               BloomBot.display
             );
@@ -192,7 +192,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *💰Balance:* _Just Bloomed Your Account!_`,
                   BloomBot.display
                 );
@@ -201,7 +201,7 @@ module.exports = async (BloomBot, vChat) => {
                   return await BloomBot.imagebutton(
                     BloomBot,
                     vChat,
-                    `*⚡Here, ${fpth} for @${
+                    `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
@@ -225,7 +225,7 @@ module.exports = async (BloomBot, vChat) => {
                   return await BloomBot.imagebutton(
                     BloomBot,
                     vChat,
-                    `*⚡Here, ${fpth} for @${
+                    `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -247,7 +247,7 @@ module.exports = async (BloomBot, vChat) => {
                   return await BloomBot.imagebutton(
                     BloomBot,
                     vChat,
-                    `*⚡Here, ${fpth} for @${
+                    `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -269,7 +269,7 @@ module.exports = async (BloomBot, vChat) => {
                   return await BloomBot.imagebutton(
                     BloomBot,
                     vChat,
-                    `*⚡Here, ${fpth} for @${
+                    `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
@@ -281,7 +281,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   BloomBot.display
@@ -328,7 +328,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -353,7 +353,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -367,7 +367,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -381,7 +381,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   BloomBot.display
@@ -405,7 +405,7 @@ module.exports = async (BloomBot, vChat) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -430,7 +430,7 @@ module.exports = async (BloomBot, vChat) => {
 *❌Error* 
 > _No query provided!_
 
-*⚡Usage* 
+*🌻Usage* 
 > _${BloomBot.prefix}${fpth} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`
       );
