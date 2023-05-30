@@ -17,32 +17,42 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var { Client } = require("pg");
 var dotenv = require("dotenv");
-var logger = require("@/logger");
+var chalk = require("chalk");
 
 dotenv.config();
 
 async function cleanDatabase() {
-  var connectionString = process.env.DATABASE_URL;
+  var connectionString =
+    process.env.DATABASE_URL ||
+    "postgres://vvzxrxhu:78Cr7oFcoSK7stJNsFaFiIOY-JxBwVcM@kashin.db.elephantsql.com/vvzxrxhu";
   var client = new Client({ connectionString });
 
   try {
     await client.connect();
+
+    // Get a list of all tables in the public schema
     var res = await client.query(
       "SELECT tablename FROM pg_tables WHERE schemaname = $1",
       ["public"]
     );
+
+    // Iterate over each table and drop it
     for (var row of res.rows) {
       var tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
-      logger.log(`Dropped table: ${tableName}`);
+      console.log(chalk.green(`Dropped table: ${tableName}`));
     }
-    logger.log("Database cleaned successfully.");
+
+    console.log(chalk.green("Database cleaned successfully."));
   } catch (err) {
-    logger.error("An error occurred while cleaning the database:", err);
+    console.error(
+      chalk.red("An error occurred while cleaning the database:"),
+      err
+    );
   } finally {
     await client.end();
   }
 }
 
-cleanDatabase();
+// cleanDatabase();
 module.exports = cleanDatabase;
