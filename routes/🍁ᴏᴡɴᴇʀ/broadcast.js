@@ -19,7 +19,16 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   await OpenBot.sendMessage(ocID.chat, {
     react: {
       text: "🔖",
@@ -85,6 +94,7 @@ ${OpenBot.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, ocID);
+    return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
+module.exports.aliases = ["example", "example"];

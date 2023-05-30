@@ -20,15 +20,15 @@ var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 module.exports = async (
-OpenBot,
- ocID,
- meta,
-isAdmin,
-groupName,
-isbotAdmin,
-groupAdmins,
-participants
- => {
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
   return await OpenBot.imagebutton(
     OpenBot,
     ocID,
@@ -46,4 +46,4 @@ participants
 > try to login`,
     OpenBot.display
   );
-});
+};

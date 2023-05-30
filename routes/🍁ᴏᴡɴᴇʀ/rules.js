@@ -19,17 +19,27 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, groupAdmins, participants) => {
-  await OpenBot.sendMessage(ocID.chat, {
-    react: {
-      text: "🔖",
-      key: ocID.key,
-    },
-  });
-  await OpenBot.imagebutton(
-    OpenBot,
-    ocID,
-    `*🔖Here, ${finalname} for @${OpenBot.Tname || OpenBot.pushname}:*
+module.exports = async (
+  OpenBot,
+  ocID,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants
+) => {
+  try {
+    await OpenBot.sendMessage(ocID.chat, {
+      react: {
+        text: "🔖",
+        key: ocID.key,
+      },
+    });
+    await OpenBot.imagebutton(
+      OpenBot,
+      ocID,
+      `*🔖Here, ${finalname} for @${OpenBot.Tname || OpenBot.pushname}:*
 *🤖Hello, I am OpenBot User-bot🤖*
 > Ⓒ𝐎𝐩𝐞𝐧𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
 > My developers are working on my code.
@@ -41,6 +51,10 @@ module.exports = async (OpenBot, ocID, gmeta, isAdmin, groupName, isbotAdmin, gr
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.
 ⚠️ If you see any bug/error in bot then report it to devs in the above group chats.
 ⚠️ Do not spam bot with commands, if bot is not responding then it means either bot is offline or there's internet issue at server end.`,
-    OpenBot.display
-  );
+      OpenBot.display
+    );
+  } catch (error) {
+    return OpenBot.handlerror(OpenBot, ocID, error);
+  }
 };
+module.exports.aliases = ["example", "example"];

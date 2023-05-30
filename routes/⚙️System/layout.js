@@ -20,7 +20,6 @@ var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
 
-thisfilealias = ["lay", "out", "morelayout", "example"];
 module.exports = async (
   OpenBot,
   ocID,
@@ -36,5 +35,4 @@ module.exports = async (
     return OpenBot.handlerror(OpenBot, ocID, error);
   }
 };
-
-module.exports.aliases = thisfilealias;
+module.exports.aliases = ["example", "example"];

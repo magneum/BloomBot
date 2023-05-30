@@ -19,7 +19,6 @@ require("#/logger/global");
 var presentpath = require("path");
 var tempname = presentpath.basename(__filename);
 var finalname = tempname.slice(0, -3).toLowerCase();
-thisfilealias = ["list", "menu"];
 module.exports = async (
   OpenBot,
   ocID,
@@ -357,5 +356,4 @@ module.exports = async (
     OpenBot.display
   );
 };
-
-module.exports.aliases = thisfilealias;
+module.exports.aliases = ["example", "example"];
