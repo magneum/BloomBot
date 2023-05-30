@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Foxbot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
 const path = require("path");
-const suggestions = require("suggestions"); // Spell-checking library
+const stringSimilarity = require("string-similarity");
 
 module.exports = async (Foxbot, Foxchat, update, store) => {
   var gmeta = Foxchat.isGroup
@@ -108,25 +108,18 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 
   const findCommandFile = (folderPath, command) => {
     const files = fs.readdirSync(folderPath);
-    for (let i = 0; i < files.length; i++) {
-      const file = files[i];
-      const fileName = path.parse(file).name.toLowerCase();
-      const commandAliases = require(path.join(folderPath, file)).aliases || [];
-      if (fileName === command || commandAliases.includes(command)) {
-        return file;
-      }
+    const commandNames = files.map((file) => path.parse(file).name.toLowerCase());
+    const similarity = stringSimilarity.findBestMatch(command, commandNames);
+    const bestMatch = similarity.bestMatch;
+    if (bestMatch.rating >= 0.5) {
+      return files[bestMatch.index];
     }
-
-    const commandSuggestions = suggestions(command, files);
-    if (commandSuggestions.length > 0) {
-      const suggestionMessage = `Command not found. Did you mean: ${commandSuggestions.join(", ")}?`;
-      throw new Error(suggestionMessage);
-    }
-
     return null;
   };
 
   let commandFound = false;
+  let suggestedCommand = null;
+
   for (let i = 0; i < specialFolders.length; i++) {
     const folder = specialFolders[i];
     const folderPath = path.join(__dirname, "..", "routes", folder);
@@ -147,29 +140,27 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         );
         commandFound = true;
         break;
+      } else {
+        const folderCommands = fs.readdirSync(folderPath).map((file) => path.parse(file).name);
+        const similarity = stringSimilarity.findBestMatch(vcommand, folderCommands);
+        const bestMatch = similarity.bestMatch;
+        if (bestMatch.rating >= 0.5) {
+          suggestedCommand = bestMatch.target;
+        }
       }
     }
   }
 
   if (!commandFound) {
-    try {
-      throw new Error("Command not found.");
-    } catch (error) {
-      const errorMessage = error.message;
-      if (errorMessage.includes("Command not found.")) {
-        const commandSuggestions = errorMessage.split(": ")[1].split(": ")[0].split(", ");
-        const suggestionMessage = `Command not found. Did you mean: ${commandSuggestions.join(", ")}?`;
-        await Foxbot.imagebutton(
-          Foxbot,
-          Foxchat,
-          suggestionMessage,
-          Foxbot.display
-        );
-      }
+    if (suggestedCommand) {
+      const suggestionMessage = `Command not found. Did you mean: ${suggestedCommand}?`;
+      await Foxbot.imagebutton(Foxbot, Foxchat, suggestionMessage, Foxbot.display);
+    } else {
+      const errorMessage = `⚠️ *Apologies* ⚠️\n\n@${Foxbot.Tname}, it seems that command doesn't exist.\nFor more information, please visit: _bit.ly/magneum_`;
+      await Foxbot.imagebutton(Foxbot, Foxchat, errorMessage, Foxbot.display);
     }
   }
 };
-
 
 
 // const fs = require("fs");
@@ -2697,7 +2688,7 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 // case "manga":
 // require("./dboard")(Foxbot, Foxchat, (updatedb) => {
 // updatedb.manga = updatedb.manga + 1;
-// require("@/routes/🔎Searches/manga")(
+// require("@/routes/���Searches/manga")(
 // Foxbot,
 // Foxchat,
 // gmeta,
