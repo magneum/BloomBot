@@ -53,7 +53,7 @@ module.exports = async (OpenBot, vChat) => {
             url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
               ?.media[0]?.mp4?.url,
           },
-          caption: `*VLkyre™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
+          caption: `*OpenBot™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
 *🎋Feeling:* ${fpth}
 *⚡for:* @${vChat.sender.split("@")[0] || ""}`,
           mentions: [vChat.sender],

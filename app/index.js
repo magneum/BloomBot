@@ -21,7 +21,7 @@ var logger = require("@/logger");
 var gitPull = require("@/utils/gitPull");
 var cleanDatabase = require("./elephant");
 var {
-  default: νℓкуяє_вσт,
+  default: open_bot_client,
   DisconnectReason,
   generateforwardMessageContent,
   prepareWAMessageMedia,
@@ -63,11 +63,11 @@ async function magneum() {
       useUnifiedTopology: true,
     })
     .catch((error) => {
-      logger.error("❌: Unable to Connect with Mongoose.");
+      logger.error("❌: Unable to Connect with mongoose.");
       logger.error(error);
     })
-    .then(logger.info("📢: Connected with Mongoose."));
-  var νℓpage = express();
+    .then(logger.info("📢: Connected with mongoose."));
+  var opage = express();
   var sequelize = DATABASE;
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
@@ -85,17 +85,17 @@ async function magneum() {
     return version;
   };
   var urlencodedParser = bodyParser.urlencoded({ extended: false });
-  νℓpage.engine("html", require("ejs").renderFile);
-  νℓpage.use(express.static("./views"));
-  νℓpage.set("view engine", "html");
-  νℓpage.set("views", __dirname);
-  νℓpage.get("/", (request, response) => {
+  opage.engine("html", require("ejs").renderFile);
+  opage.use(express.static("./views"));
+  opage.set("view engine", "html");
+  opage.set("views", __dirname);
+  opage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  νℓpage.get("/OpenBot", (request, response) => {
+  opage.get("/OpenBot", (request, response) => {
     response.sendFile("views/OpenBot.html", { root: __dirname });
   });
-  νℓpage.post("/OpenBot", urlencodedParser, (request, response) => {
+  opage.post("/OpenBot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -113,17 +113,17 @@ async function magneum() {
       }
     );
   });
-  νℓpage.listen(PORT, logger.info("📢: OpenBot started at port " + PORT));
+  opage.listen(PORT, logger.info("📢: OpenBot started at port " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
-  var OpenBot = νℓкуяє_вσт({
+  var OpenBot = open_bot_client({
     auth: state,
     MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: [process.env.deployer || "OpenBot-by-magneum™", "Chrome", "4.0.0"],
+    browser: ["OpenBot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -142,13 +142,6 @@ async function magneum() {
   });
   store.bind(OpenBot.ev);
 
-  // OpenBot.ev.on("creds.update", (update) => require("./events/creds.update")(update));
-  // OpenBot.ws.on("CB:call", (update) => require("./events/cb_call")(OpenBot, update, store));
-  // OpenBot.ev.on("contacts.update", (update) => require("./events/contacts.update")(OpenBot, update, store));
-  // OpenBot.ev.on("messages.upsert", (update) => require("./events/messages.upsert")(OpenBot, update, store));
-  // OpenBot.ev.on("connection.update", (update) => require("./events/connection.update")(OpenBot, update, store, magneum™));
-  // OpenBot.ev.on("group-participants.update", (update) => require("./events/group-participants.update")(OpenBot, update, store));
-
   OpenBot.ev.on("creds.update", async (update) => await saveCreds());
   OpenBot.ev.on("connection.update", async (update) => {
     var { lastDisconnect, connection, qr } = update;
@@ -165,13 +158,13 @@ async function magneum() {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
             await cleanDatabase().catch(rmdb());
-            await OpenBot.end();
+            OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
             await cleanDatabase().catch(rmdb());
-            await OpenBot.end();
+            OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionLost:
@@ -181,13 +174,13 @@ async function magneum() {
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
             await cleanDatabase().catch(rmdb());
-            await OpenBot.end();
+            OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
             await cleanDatabase().catch(rmdb());
-            await OpenBot.end();
+            OpenBot.end();
             await magneum();
             break;
           case DisconnectReason.restartRequired:
@@ -230,17 +223,17 @@ async function magneum() {
   });
 
   OpenBot.ev.on("messages.upsert", async (update) => {
-    νTēxt = update.messages[0];
-    if (!νTēxt.message) return;
-    νTēxt.message =
-      Object.keys(νTēxt.message)[0] === "ephemeralMessage"
-        ? νTēxt.message.ephemeralMessage.message
-        : νTēxt.message;
-    if (νTēxt.key && νTēxt.key.remoteJid === "status@broadcast") return;
-    if (!OpenBot.public && !νTēxt.key.fromMe && update.type === "notify")
+    oText = update.messages[0];
+    if (!oText.message) return;
+    oText.message =
+      Object.keys(oText.message)[0] === "ephemeralMessage"
+        ? oText.message.ephemeralMessage.message
+        : oText.message;
+    if (oText.key && oText.key.remoteJid === "status@broadcast") return;
+    if (!OpenBot.public && !oText.key.fromMe && update.type === "notify")
       return;
-    if (νTēxt.key.id.startsWith("BAE5") && νTēxt.key.id.length === 16) return;
-    vChat = await mMake(OpenBot, νTēxt, store);
+    if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
+    vChat = await mMake(OpenBot, oText, store);
     await require("../server/router")(OpenBot, vChat, update, store);
   });
 
@@ -268,7 +261,7 @@ async function magneum() {
 > I am OpenBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
             footer:
-              "*VLkyre™ By OpenBot*\n*💻HomePage:* https://bit.ly/magneum",
+              "*ⒸOpenBot by magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${OpenBot.prefix}Dashboard`,
