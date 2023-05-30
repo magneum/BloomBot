@@ -135,7 +135,15 @@
     "yargs": "^17.6.2",
     "youtube-avdl": "^1.1.0",
     "youtube-dl-exec": "^2.4.0",
-    "ytdl-secktor": "^0.0.1-development"
+    "ytdl-secktor": "^0.0.1-development",
+    "@next/font": "^13.1.2",
+    "discord-phub": "^1.0.7",
+    "discord-xp": "^1.1.16",
+    "djs-chatbot": "^1.0.1",
+    "js-to-ts-converter": "^0.18.2",
+    "node-webpmux": "^3.1.0",
+    "tesseract.js": "^2.1.5"
+
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
