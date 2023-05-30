@@ -1,139 +1,139 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (Nekobot, Nekos, update, store) => {
-  Nekobot.body =
-    Nekos.mtype === "conversation"
-      ? Nekos.message.conversation
-      : Nekos.mtype == "imageMessage"
-      ? Nekos.message.imageMessage.caption
-      : Nekos.mtype == "videoMessage"
-      ? Nekos.message.videoMessage.caption
-      : Nekos.mtype == "extendedTextMessage"
-      ? Nekos.message.extendedTextMessage.text
-      : Nekos.mtype == "buttonsResponseMessage"
-      ? Nekos.message.buttonsResponseMessage.selectedButtonId
-      : Nekos.mtype == "listResponseMessage"
-      ? Nekos.message.listResponseMessage.singleSelectReply.selectedRowId
-      : Nekos.mtype == "templateButtonReplyMessage"
-      ? Nekos.message.templateButtonReplyMessage.selectedId
-      : Nekos.mtype === "messageContextInfo"
-      ? Nekos.message.buttonsResponseMessage?.selectedButtonId ||
-        Nekos.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        Nekos.text
+module.exports = async (OpenBot, wwChat, update, store) => {
+  OpenBot.body =
+    wwChat.mtype === "conversation"
+      ? wwChat.message.conversation
+      : wwChat.mtype == "imageMessage"
+      ? wwChat.message.imageMessage.caption
+      : wwChat.mtype == "videoMessage"
+      ? wwChat.message.videoMessage.caption
+      : wwChat.mtype == "extendedTextMessage"
+      ? wwChat.message.extendedTextMessage.text
+      : wwChat.mtype == "buttonsResponseMessage"
+      ? wwChat.message.buttonsResponseMessage.selectedButtonId
+      : wwChat.mtype == "listResponseMessage"
+      ? wwChat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : wwChat.mtype == "templateButtonReplyMessage"
+      ? wwChat.message.templateButtonReplyMessage.selectedId
+      : wwChat.mtype === "messageContextInfo"
+      ? wwChat.message.buttonsResponseMessage?.selectedButtonId ||
+        wwChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        wwChat.text
       : "";
-  Nekobot.budy = typeof Nekos.text == "string" ? Nekos.text : "";
-  Nekobot.icmd = Nekobot.body.startsWith(prefix);
-  Nekobot.isCommand =
-    prefix.includes(Nekobot.body != "" && Nekobot.body.slice(0, 1)) &&
-    Nekobot.body.slice(1) != "";
-  Nekobot.command = Nekobot.isCommand
-    ? Nekobot.body.slice(1).trim().split(" ")[0].toLowerCase()
+  OpenBot.budy = typeof wwChat.text == "string" ? wwChat.text : "";
+  OpenBot.icmd = OpenBot.body.startsWith(prefix);
+  OpenBot.isCommand =
+    prefix.includes(OpenBot.body != "" && OpenBot.body.slice(0, 1)) &&
+    OpenBot.body.slice(1) != "";
+  OpenBot.command = OpenBot.isCommand
+    ? OpenBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
-  Nekobot.args = Nekobot.body.trim().split(/ +/).slice(1);
-  Nekobot.pushname = Nekos.pushName || "No Name";
-  Nekobot.botNumber = await Nekobot.decodeJid(Nekobot.user.id);
-  Nekobot.frome = Nekos.sender == Nekobot.botNumber ? true : false;
-  Nekobot.Fullarg = Nekobot.args.join(" ");
-  Nekobot.contant = q = Nekobot.args.join(" ");
-  Nekobot.quoted = Nekos.quoted ? Nekos.quoted : Nekos;
-  Nekobot.mime = (Nekobot.quoted.msg || Nekobot.quoted).mimetype || "";
-  Nekobot.isMedia = /image|video|sticker|audio/.test(Nekobot.mime);
-  Nekobot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  Nekobot.isCreator = [Nekobot.botNumber, ...global.sudo]
+  OpenBot.args = OpenBot.body.trim().split(/ +/).slice(1);
+  OpenBot.pushname = wwChat.pushName || "No Name";
+  OpenBot.botNumber = await OpenBot.decodeJid(OpenBot.user.id);
+  OpenBot.frome = wwChat.sender == OpenBot.botNumber ? true : false;
+  OpenBot.Fullarg = OpenBot.args.join(" ");
+  OpenBot.contant = q = OpenBot.args.join(" ");
+  OpenBot.quoted = wwChat.quoted ? wwChat.quoted : wwChat;
+  OpenBot.mime = (OpenBot.quoted.msg || OpenBot.quoted).mimetype || "";
+  OpenBot.isMedia = /image|video|sticker|audio/.test(OpenBot.mime);
+  OpenBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
+  OpenBot.isCreator = [OpenBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(Nekos.sender);
-  Nekobot.mentionByTag =
-    Nekos.mtype == "extendedTextMessage" &&
-    Nekos.message.extendedTextMessage.contextInfo != null
-      ? Nekos.message.extendedTextMessage.contextInfo.mentionedJid
+    .includes(wwChat.sender);
+  OpenBot.mentionByTag =
+    wwChat.mtype == "extendedTextMessage" &&
+    wwChat.message.extendedTextMessage.contextInfo != null
+      ? wwChat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
-  Nekobot.mentionByReply =
-    Nekos.mtype == "extendedTextMessage" &&
-    Nekos.message.extendedTextMessage.contextInfo != null
-      ? Nekos.message.extendedTextMessage.contextInfo.participant || ""
+  OpenBot.mentionByReply =
+    wwChat.mtype == "extendedTextMessage" &&
+    wwChat.message.extendedTextMessage.contextInfo != null
+      ? wwChat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./NekoLink")(Nekobot, Nekos, update, store);
-  if (!Nekos.isGroup && Nekobot.command)
-    return require("@/auth/noPrivate")(Nekobot, Nekos, update);
-  if (Nekos.isGroup && Nekobot.command)
-    Nekobot.userBanCheck.findOne(
+  require("./whatsLink")(OpenBot, wwChat, update, store);
+  if (!wwChat.isGroup && OpenBot.command)
+    return require("@/auth/noPrivate")(OpenBot, wwChat, update);
+  if (wwChat.isGroup && OpenBot.command)
+    OpenBot.userBanCheck.findOne(
       {
-        Id: Nekos.sender,
+        Id: wwChat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname}_
+          return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
         }
-        Nekobot.userBanCheck.findOne(
+        OpenBot.userBanCheck.findOne(
           {
-            Id: Nekos.chat,
+            Id: wwChat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return Nekos.reply(`*😥Apologies:* _${Nekobot.pushname}_
+              return wwChat.reply(`*😥Apologies:* _${OpenBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
 *🐞 Bug* 
 > ${error}`);
             }
-            if (banCheck && !Nekobot.frome && !Nekobot.isSudo) return;
-            if (groupCheck && !Nekobot.frome && !Nekobot.isSudo) return;
-            await Nekobot.LinkList.findOne(
+            if (banCheck && !OpenBot.frome && !OpenBot.isSudo) return;
+            if (groupCheck && !OpenBot.frome && !OpenBot.isSudo) return;
+            await OpenBot.LinkList.findOne(
               {
-                serverId: Nekos.chat,
+                serverId: wwChat.chat,
               },
               async (error, server) => {
-                if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+                if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(Nekobot, Nekos);
+                return noLink(OpenBot, wwChat);
               }
             );
 
-            // respA = await Nekobot.groupMetadata("120363020792949649@g.us");
+            // respA = await OpenBot.groupMetadata("120363020792949649@g.us");
             // for (var i = 0; i < respA.participants.length; i++)
-            // Nekobot.memberRespA[i] = respA.participants[i].id;
+            // OpenBot.memberRespA[i] = respA.participants[i].id;
 
-            // respB = await Nekobot.groupMetadata("120363089188116481@g.us");
+            // respB = await OpenBot.groupMetadata("120363089188116481@g.us");
             // for (var i = 0; i < respB.participants.length; i++)
-            // Nekobot.memberRespB[i] = respB.participants[i].id;
+            // OpenBot.memberRespB[i] = respB.participants[i].id;
             // if (
-            // !Nekobot.fromme &&
-            // !Nekobot.isSudo &&
-            // !Nekobot.varResp.includes(Nekobot.command) &&
-            // !Nekobot.memberRespA.includes(Nekos.sender) &&
-            // !Nekobot.memberRespB.includes(Nekos.sender)
+            // !OpenBot.fromme &&
+            // !OpenBot.isSudo &&
+            // !OpenBot.varResp.includes(OpenBot.command) &&
+            // !OpenBot.memberRespA.includes(wwChat.sender) &&
+            // !OpenBot.memberRespB.includes(wwChat.sender)
             // ) {
-            // return await Nekobot.sendMessage(
-            // Nekos.chat,
+            // return await OpenBot.sendMessage(
+            // wwChat.chat,
             // {
             // gifPlayback: true,
-            // video: Nekobot.fs.readFileSync("./public/how.mp4"),
+            // video: OpenBot.fs.readFileSync("./public/how.mp4"),
             // caption: `*📢Verification Needed*
-            // *😥Apologies:* _${Nekobot.pushname}_
+            // *😥Apologies:* _${OpenBot.pushname}_
 
             // > You need to be verified to use bot...
             // > join official group
@@ -142,22 +142,22 @@ module.exports = async (Nekobot, Nekos, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [Nekos.sender],
+            // mentions: [wwChat.sender],
             // },
-            // { quoted: Nekos }
+            // { quoted: wwChat }
             // );
             // }
 
-            if (process.env.runtype === "devar" && !Nekobot.isSudo) {
-              return await Nekobot.sendMessage(
-                Nekos.chat,
+            if (process.env.runtype === "devar" && !OpenBot.isSudo) {
+              return await OpenBot.sendMessage(
+                wwChat.chat,
                 {
                   gifPlayback: true,
-                  video: Nekobot.fs.readFileSync(
-                    "./public/Nekobot/Nekobot (8)_white.png"
+                  video: OpenBot.fs.readFileSync(
+                    "./public/OpenBot/OpenBot (8)_white.png"
                   ),
                   caption: `*📢Verification Needed*
-*😥Apologies:* _${Nekobot.pushname}_
+*😥Apologies:* _${OpenBot.pushname}_
 
 > bot is now under development mode
 > come back another time
@@ -165,20 +165,20 @@ module.exports = async (Nekobot, Nekos, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [Nekos.sender],
+                  mentions: [wwChat.sender],
                 },
-                { quoted: Nekos }
+                { quoted: wwChat }
               );
             } else
-              await Nekobot.sendMessage(Nekos.chat, {
+              await OpenBot.sendMessage(wwChat.chat, {
                 react: {
                   text: "🔖",
-                  key: Nekos.key,
+                  key: wwChat.key,
                 },
               });
             return await require("@/server/library")(
-              Nekobot,
-              Nekos,
+              OpenBot,
+              wwChat,
               update,
               store
             );
@@ -186,5 +186,5 @@ module.exports = async (Nekobot, Nekos, update, store) => {
         );
       }
     );
-  return Nekobot;
+  return OpenBot;
 };

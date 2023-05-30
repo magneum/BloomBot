@@ -1,38 +1,38 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-//  ║⧉༻ 🤖𝐍𝐞𝐤𝐨𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐖𝐡𝐚𝐭𝐬𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
-//  ║🌟 A versatile WhatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 Nekobot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of Nekobot responsibly! Make the most out of your
-//  ║   WhatsApp group management experience! 🎉
+//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ Nekobot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ OpenBot by magneum ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/global");
-module.exports = async (Nekobot, Nekos, updatedb) => {
+module.exports = async (OpenBot, wwChat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await Nekobot.profilePictureUrl(Nekos.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(wwChat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/Nekosbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/wwChatbot.png";
   }
-  await Nekobot.dashboard.findOne(
+  await OpenBot.dashboard.findOne(
     {
-      Id: Nekos.sender,
+      Id: wwChat.sender,
     },
     async (error, udBase) => {
-      if (error) return Nekobot.handlerror(Nekobot, Nekos, error);
+      if (error) return OpenBot.handlerror(OpenBot, wwChat, error);
       if (!udBase) {
-        new Nekobot.dashboard({
-          Id: Nekos.sender,
+        new OpenBot.dashboard({
+          Id: wwChat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
-          username: Nekobot.pushname,
+          username: OpenBot.pushname,
 
           bite: 0,
           blush: 0,
@@ -113,7 +113,7 @@ module.exports = async (Nekobot, Nekos, updatedb) => {
           tagall: 0,
 
           image: 0,
-          Neko: 0,
+          whats: 0,
           pinterest: 0,
           waifu: 0,
           wallpaper: 0,
@@ -204,7 +204,7 @@ module.exports = async (Nekobot, Nekos, updatedb) => {
           doujin: 0,
           feet: 0,
           femdom: 0,
-          Nekogirl: 0,
+          whatsgirl: 0,
           glasses: 0,
           hentai: 0,
           maid: 0,
@@ -223,12 +223,12 @@ module.exports = async (Nekobot, Nekos, updatedb) => {
           zettaiRyouiki: 0,
 
           list: 0,
-          Nekobot: 0,
+          OpenBot: 0,
           dashboard: 0,
 
           waifu: 0,
           swaifu: 0,
-          Neko: 0,
+          whats: 0,
           shinobu: 0,
           megumin: 0,
           awoo: 0,
@@ -274,11 +274,11 @@ module.exports = async (Nekobot, Nekos, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => Nekobot.handlerror(Nekobot, Nekos, error));
-        await Nekobot.imagebutton(
-          Nekobot,
-          Nekos,
-          `*🔖Here, for ${Nekobot.pushname}:*
+          .catch((error) => OpenBot.handlerror(OpenBot, wwChat, error));
+        await OpenBot.imagebutton(
+          OpenBot,
+          wwChat,
+          `*🔖Here, for ${OpenBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
@@ -286,11 +286,11 @@ module.exports = async (Nekobot, Nekos, updatedb) => {
 *⚙️Webpage:*
 > bit.ly/magneum
 > Login To Your Dashboard`,
-          Nekobot.display
+          OpenBot.display
         );
         return updatedb(udBase);
       }
-      udBase.username = `${Nekobot.pushname}`;
+      udBase.username = `${OpenBot.pushname}`;
       udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
       return updatedb(udBase);
     }
