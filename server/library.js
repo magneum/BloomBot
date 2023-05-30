@@ -108,7 +108,9 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
 
   const findCommandFile = (folderPath, command) => {
     const files = fs.readdirSync(folderPath);
-    const commandNames = files.map((file) => path.parse(file).name.toLowerCase());
+    const commandNames = files.map((file) =>
+      path.parse(file).name.toLowerCase()
+    );
     const similarity = stringSimilarity.findBestMatch(command, commandNames);
     const bestMatch = similarity.bestMatch;
     if (bestMatch.rating >= 0.5) {
@@ -141,8 +143,13 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
         commandFound = true;
         break;
       } else {
-        const folderCommands = fs.readdirSync(folderPath).map((file) => path.parse(file).name);
-        const similarity = stringSimilarity.findBestMatch(vcommand, folderCommands);
+        const folderCommands = fs
+          .readdirSync(folderPath)
+          .map((file) => path.parse(file).name);
+        const similarity = stringSimilarity.findBestMatch(
+          vcommand,
+          folderCommands
+        );
         const bestMatch = similarity.bestMatch;
         if (bestMatch.rating >= 0.5) {
           suggestedCommand = bestMatch.target;
@@ -154,14 +161,18 @@ module.exports = async (Foxbot, Foxchat, update, store) => {
   if (!commandFound) {
     if (suggestedCommand) {
       const suggestionMessage = `Command not found. Did you mean: ${suggestedCommand}?`;
-      await Foxbot.imagebutton(Foxbot, Foxchat, suggestionMessage, Foxbot.display);
+      await Foxbot.imagebutton(
+        Foxbot,
+        Foxchat,
+        suggestionMessage,
+        Foxbot.display
+      );
     } else {
       const errorMessage = `⚠️ *Apologies* ⚠️\n\n@${Foxbot.Tname}, it seems that command doesn't exist.\nFor more information, please visit: _bit.ly/magneum_`;
       await Foxbot.imagebutton(Foxbot, Foxchat, errorMessage, Foxbot.display);
     }
   }
 };
-
 
 // const fs = require("fs");
 // const path = require("path");
