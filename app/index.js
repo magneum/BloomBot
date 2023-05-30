@@ -1,27 +1,27 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
 var gitPull = require("@/utils/gitPull");
 var cleanDatabase = require("./elephant");
 var {
-  default: open_bot_client,
+  default: Bloom_bot_client,
   DisconnectReason,
   generateforwardMessageContent,
   prepareWAMessageMedia,
@@ -46,7 +46,7 @@ var { useRemoteFileAuthState } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 async function rmdb() {
   await new Promise((resolve, reject) => {
-    exec("rm -rf OpenBot.db", (error, stdout, stderr) => {
+    exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
       if (error) {
         reject(error);
       } else {
@@ -92,10 +92,10 @@ async function magneum() {
   opage.get("/", (request, response) => {
     response.redirect("https://bit.ly/magneum");
   });
-  opage.get("/OpenBot", (request, response) => {
-    response.sendFile("views/OpenBot.html", { root: __dirname });
+  opage.get("/BloomBot", (request, response) => {
+    response.sendFile("views/BloomBot.html", { root: __dirname });
   });
-  opage.post("/OpenBot", urlencodedParser, (request, response) => {
+  opage.post("/BloomBot", urlencodedParser, (request, response) => {
     var phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
@@ -113,17 +113,17 @@ async function magneum() {
       }
     );
   });
-  opage.listen(PORT, logger.info("📢: OpenBot started at port " + PORT));
+  opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
 
   await sequelize.sync();
   var { state, saveCreds } = await useRemoteFileAuthState();
-  var OpenBot = open_bot_client({
+  var BloomBot = Bloom_bot_client({
     auth: state,
     MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: ["OpenBot-by-magneum", "Chrome", "4.0.0"],
+    browser: ["BloomBot-by-magneum", "Chrome", "4.0.0"],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -140,16 +140,16 @@ async function magneum() {
       };
     },
   });
-  store.bind(OpenBot.ev);
+  store.bind(BloomBot.ev);
 
-  OpenBot.ev.on("creds.update", async (update) => await saveCreds());
-  OpenBot.ev.on("connection.update", async (update) => {
+  BloomBot.ev.on("creds.update", async (update) => await saveCreds());
+  BloomBot.ev.on("connection.update", async (update) => {
     var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
         logger.info("📢: Connecting to whatsApp...");
         break;
-      case "open":
+      case "Bloom":
         logger.info("📢: Login successful! ");
         break;
       case "close":
@@ -158,13 +158,13 @@ async function magneum() {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
             await cleanDatabase().catch(rmdb());
-            OpenBot.end();
+            BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
             await cleanDatabase().catch(rmdb());
-            OpenBot.end();
+            BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionLost:
@@ -174,13 +174,13 @@ async function magneum() {
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
             await cleanDatabase().catch(rmdb());
-            OpenBot.end();
+            BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
             await cleanDatabase().catch(rmdb());
-            OpenBot.end();
+            BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.restartRequired:
@@ -192,7 +192,7 @@ async function magneum() {
             await magneum();
             break;
           default:
-            OpenBot.end(
+            BloomBot.end(
               logger.error(
                 `❌: Unknown DisconnectReason: ${reason}|${connection}`
               )
@@ -218,11 +218,11 @@ async function magneum() {
         logger.error("📢: Not New Login.");
         break;
       default:
-        logger.info("📢: OpenBot by Magneum™ connected...", update);
+        logger.info("📢: BloomBot by Magneum™ connected...", update);
     }
   });
 
-  OpenBot.ev.on("messages.upsert", async (update) => {
+  BloomBot.ev.on("messages.upsert", async (update) => {
     oText = update.messages[0];
     if (!oText.message) return;
     oText.message =
@@ -230,27 +230,27 @@ async function magneum() {
         ? oText.message.ephemeralMessage.message
         : oText.message;
     if (oText.key && oText.key.remoteJid === "status@broadcast") return;
-    if (!OpenBot.public && !oText.key.fromMe && update.type === "notify")
+    if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    vChat = await mMake(OpenBot, oText, store);
-    await require("../server/router")(OpenBot, vChat, update, store);
+    vChat = await mMake(BloomBot, oText, store);
+    await require("../server/router")(BloomBot, vChat, update, store);
   });
 
-  OpenBot.ev.on("group-participants.update", async (update) => {
-    let metadata = await OpenBot.groupMetadata(update.id);
+  BloomBot.ev.on("group-participants.update", async (update) => {
+    let metadata = await BloomBot.groupMetadata(update.id);
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
       var imåge;
       try {
-        imåge = await OpenBot.profilePictureUrl(sperson, "image");
+        imåge = await BloomBot.profilePictureUrl(sperson, "image");
       } catch {
-        imåge = OpenBot.display;
+        imåge = BloomBot.display;
       }
 
       if (update.action == "add") {
-        return await OpenBot.sendMessage(
+        return await BloomBot.sendMessage(
           update.id,
           {
             image: { url: imåge },
@@ -258,19 +258,19 @@ async function magneum() {
 *📢Id:* ${update.id}
 
 > Firstly Welcome.
-> I am OpenBot whatsapp bot.
+> I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
             footer:
-              "*ⒸOpenBot by magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
+              "*ⒸBloomBot by magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
-                buttonId: `${OpenBot.prefix}Dashboard`,
-                buttonText: { displayText: `${OpenBot.prefix}Dashboard` },
+                buttonId: `${BloomBot.prefix}Dashboard`,
+                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
                 type: 1,
               },
               {
-                buttonId: `${OpenBot.prefix}OpenBot`,
-                buttonText: { displayText: `${OpenBot.prefix}OpenBot` },
+                buttonId: `${BloomBot.prefix}BloomBot`,
+                buttonText: { displayText: `${BloomBot.prefix}BloomBot` },
                 type: 1,
               },
             ],
@@ -289,7 +289,7 @@ async function magneum() {
     }
   });
 
-  OpenBot.decodeJid = (jid) => {
+  BloomBot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
@@ -299,14 +299,14 @@ async function magneum() {
       );
     } else return jid;
   };
-  OpenBot.getName = (jid, withoutContact = false) => {
-    id = OpenBot.decodeJid(jid);
-    withoutContact = OpenBot.withoutContact || withoutContact;
+  BloomBot.getName = (jid, withoutContact = false) => {
+    id = BloomBot.decodeJid(jid);
+    withoutContact = BloomBot.withoutContact || withoutContact;
     let v;
     if (id.endsWith("@g.us"))
       return new Promise(async (resolve) => {
         v = store.contacts[id] || {};
-        if (!(v.name || v.subject)) v = OpenBot.groupMetadata(id) || {};
+        if (!(v.name || v.subject)) v = BloomBot.groupMetadata(id) || {};
         resolve(
           v.name ||
             v.subject ||
@@ -322,8 +322,8 @@ async function magneum() {
               id,
               name: "whatsApp",
             }
-          : id === OpenBot.decodeJid(OpenBot.user.id)
-          ? OpenBot.user
+          : id === BloomBot.decodeJid(BloomBot.user.id)
+          ? BloomBot.user
           : store.contacts[id] || {};
     return (
       (withoutContact ? "" : v.name) ||
@@ -335,19 +335,19 @@ async function magneum() {
     );
   };
 
-  OpenBot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
+  BloomBot.sendContact = async (jid, kon, quoted = "", opts = {}) => {
     let list = [];
     for (let i of kon) {
       list.push({
-        displayName: await OpenBot.getName(i + "@s.whatsapp.net"),
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await OpenBot.getName(
+        displayName: await BloomBot.getName(i + "@s.whatsapp.net"),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await BloomBot.getName(
           i + "@s.whatsapp.net"
-        )}\nFN:${await OpenBot.getName(
+        )}\nFN:${await BloomBot.getName(
           i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
-    OpenBot.sendMessage(
+    BloomBot.sendMessage(
       jid,
       {
         contacts: { displayName: `${list.length} contact`, contacts: list },
@@ -357,10 +357,10 @@ async function magneum() {
     );
   };
 
-  OpenBot.public = true;
-  OpenBot.serializeM = (vChat) => mMake(OpenBot, vChat, store);
+  BloomBot.public = true;
+  BloomBot.serializeM = (vChat) => mMake(BloomBot, vChat, store);
 
-  OpenBot.send5ButImg = async (
+  BloomBot.send5ButImg = async (
     jid,
     text = "",
     footer = "",
@@ -370,7 +370,7 @@ async function magneum() {
   ) => {
     let message = await prepareWAMessageMedia(
       { image: img },
-      { upload: OpenBot.waUploadToServer }
+      { upload: BloomBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
       vChat.chat,
@@ -386,12 +386,12 @@ async function magneum() {
       }),
       options
     );
-    OpenBot.relayMessage(jid, template.message, {
+    BloomBot.relayMessage(jid, template.message, {
       messageId: template.key.id,
     });
   };
 
-  OpenBot.sendButtonText = (
+  BloomBot.sendButtonText = (
     jid,
     buttons = [],
     text,
@@ -406,13 +406,13 @@ async function magneum() {
       headerType: 2,
       ...options,
     };
-    OpenBot.sendMessage(jid, buttonMessage, { quoted, ...options });
+    BloomBot.sendMessage(jid, buttonMessage, { quoted, ...options });
   };
 
-  OpenBot.sendText = (jid, text, quoted = "", options) =>
-    OpenBot.sendMessage(jid, { text: text, ...options }, { quoted });
+  BloomBot.sendText = (jid, text, quoted = "", options) =>
+    BloomBot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  OpenBot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  BloomBot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -422,14 +422,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await OpenBot.sendMessage(
+    return await BloomBot.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
       { quoted }
     );
   };
 
-  OpenBot.sendVideo = async (
+  BloomBot.sendVideo = async (
     jid,
     path,
     caption = "",
@@ -446,14 +446,14 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await OpenBot.sendMessage(
+    return await BloomBot.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
       { quoted }
     );
   };
 
-  OpenBot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
+  BloomBot.sendAudio = async (jid, path, quoted = "", ptt = false, options) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -463,15 +463,15 @@ async function magneum() {
       : fs.existsSync(path)
       ? fs.readFileSync(path)
       : Buffer.alloc(0);
-    return await OpenBot.sendMessage(
+    return await BloomBot.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
       { quoted }
     );
   };
 
-  OpenBot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
-    OpenBot.sendMessage(
+  BloomBot.sendTextWithMentions = async (jid, text, quoted, options = {}) =>
+    BloomBot.sendMessage(
       jid,
       {
         text: text,
@@ -485,7 +485,7 @@ async function magneum() {
       { quoted }
     );
 
-  OpenBot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+  BloomBot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -502,7 +502,7 @@ async function magneum() {
       buffer = await imageToWebp(buff);
     }
 
-    await OpenBot.sendMessage(
+    await BloomBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -510,7 +510,7 @@ async function magneum() {
     return buffer;
   };
 
-  OpenBot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+  BloomBot.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
     let buff = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
@@ -527,7 +527,7 @@ async function magneum() {
       buffer = await videoToWebp(buff);
     }
 
-    await OpenBot.sendMessage(
+    await BloomBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
       { quoted }
@@ -535,7 +535,7 @@ async function magneum() {
     return buffer;
   };
 
-  OpenBot.downloadAndSaveMediaMessage = async (
+  BloomBot.downloadAndSaveMediaMessage = async (
     message,
     filename,
     attachExtension = true
@@ -557,7 +557,7 @@ async function magneum() {
     return trueFileName;
   };
 
-  OpenBot.downloadMediaMessage = async (message) => {
+  BloomBot.downloadMediaMessage = async (message) => {
     let mime = (message.msg || message).mimetype || "";
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
@@ -571,7 +571,7 @@ async function magneum() {
     return buffer;
   };
 
-  OpenBot.sendMedia = async (
+  BloomBot.sendMedia = async (
     jid,
     path,
     fileName = "",
@@ -579,7 +579,7 @@ async function magneum() {
     quoted = "",
     options = {}
   ) => {
-    let types = await OpenBot.getFile(path, true);
+    let types = await BloomBot.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
     if ((response && response.status !== 200) || file.length <= 65536) {
       try {
@@ -607,7 +607,7 @@ async function magneum() {
     else if (/video/.test(mime)) type = "video";
     else if (/audio/.test(mime)) type = "audio";
     else type = "document";
-    await OpenBot.sendMessage(
+    await BloomBot.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
       { quoted, ...options }
@@ -615,7 +615,7 @@ async function magneum() {
     return fs.promises.unlink(pathFile);
   };
 
-  OpenBot.copyNforward = async (
+  BloomBot.copyNforward = async (
     jid,
     message,
     forceforward = false,
@@ -666,17 +666,17 @@ async function magneum() {
           }
         : {}
     );
-    await OpenBot.relayMessage(jid, waMessage.message, {
+    await BloomBot.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
     });
     return waMessage;
   };
 
-  OpenBot.cMod = (
+  BloomBot.cMod = (
     jid,
     copy,
     text = "",
-    sender = OpenBot.user.id,
+    sender = BloomBot.user.id,
     options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
@@ -705,12 +705,12 @@ async function magneum() {
     else if (copy.key.remoteJid.includes("@broadcast"))
       sender = sender || copy.key.remoteJid;
     copy.key.remoteJid = jid;
-    copy.key.fromMe = sender === OpenBot.user.id;
+    copy.key.fromMe = sender === BloomBot.user.id;
 
     return proto.WebMessageInfo.fromObject(copy);
   };
 
-  OpenBot.getFile = async (PATH, save) => {
+  BloomBot.getFile = async (PATH, save) => {
     let response;
     let data = Buffer.isBuffer(PATH)
       ? PATH
@@ -741,13 +741,13 @@ async function magneum() {
     };
   };
 
-  OpenBot.ws.on("CB:call", async (update) => {
+  BloomBot.ws.on("CB:call", async (update) => {
     var sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
     var callerId = update.content[0].attrs["call-creator"];
-    let person = await OpenBot.sendContact(callerId, global.owner);
-    OpenBot.sendMessage(
+    let person = await BloomBot.sendContact(callerId, global.owner);
+    BloomBot.sendMessage(
       callerId,
       {
         text: "Automatic system block!",
@@ -755,12 +755,12 @@ async function magneum() {
       { quoted: person }
     );
     await sleep(8000);
-    await OpenBot.updateBlockStatus(callerId, "block");
+    await BloomBot.updateBlockStatus(callerId, "block");
   });
 
-  OpenBot.ev.on("contacts.update", async (update) => {
+  BloomBot.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
-      let jid = OpenBot.decodeJid(contact.id);
+      let jid = BloomBot.decodeJid(contact.id);
       if (store && store.contacts)
         store.contacts[jid] = { jid, name: contact.notify };
     }
@@ -827,13 +827,13 @@ async function magneum() {
       "🛠️Handyman",
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await OpenBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸOpenBot by magneum™)"
+    await BloomBot.updateProfileStatus(
+      "Feeling: " + __Feeling + " (ⒸBloomBot by magneum™)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {
-    await OpenBot.updateProfilePicture("120363020792949649@g.us", {
-      url: OpenBot.display,
+    await BloomBot.updateProfilePicture("120363020792949649@g.us", {
+      url: BloomBot.display,
     });
   }, 60 * 60 * 1000); // Run every hour (60 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {

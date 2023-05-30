@@ -1,118 +1,118 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat, gmeta, isAdmin, isbotAdmin) => {
+module.exports = async (BloomBot, vChat, gmeta, isAdmin, isbotAdmin) => {
   try {
     if (!vChat.isGroup) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > It's a group command!`
       );
     } else if (!isAdmin) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > This is an Admin only Command!`
       );
     } else if (!isbotAdmin) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > bot not Admin!`
       );
     } else
-      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(vChat.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(vChat.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = OpenBot.display;
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
     }
-    if (!OpenBot.args) {
-      await OpenBot.sendMessage(vChat.chat, {
+    if (!BloomBot.args) {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > No query provided!
 
 *⚡Usage*   
-> ${OpenBot.prefix}${fpth} on
-> ${OpenBot.prefix}${fpth} off`
+> ${BloomBot.prefix}${fpth} on
+> ${BloomBot.prefix}${fpth} off`
       );
     } else if (
-      OpenBot.args[0] === "ON" ||
-      OpenBot.args[0] === "on" ||
-      OpenBot.args[0] === "On"
+      BloomBot.args[0] === "ON" ||
+      BloomBot.args[0] === "on" ||
+      BloomBot.args[0] === "On"
     ) {
-      return await OpenBot.nsfwCheck.findOne(
+      return await BloomBot.nsfwCheck.findOne(
         {
           serverId: vChat.chat,
         },
         async (error, server) => {
-          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+          if (error) return BloomBot.handlerror(BloomBot, vChat, error);
           if (!server) {
-            new OpenBot.nsfwCheck({
+            new BloomBot.nsfwCheck({
               serverId: vChat.chat,
               value: "ON",
             }).save();
-            return await OpenBot.imagebutton(
-              OpenBot,
+            return await BloomBot.imagebutton(
+              BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else
-            return await OpenBot.imagebutton(
-              OpenBot,
+            return await BloomBot.imagebutton(
+              BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -120,30 +120,30 @@ module.exports = async (OpenBot, vChat, gmeta, isAdmin, isbotAdmin) => {
         }
       );
     } else if (
-      OpenBot.args[0] === "OFF" ||
-      OpenBot.args[0] === "off" ||
-      OpenBot.args[0] === "Off"
+      BloomBot.args[0] === "OFF" ||
+      BloomBot.args[0] === "off" ||
+      BloomBot.args[0] === "Off"
     ) {
-      return await OpenBot.nsfwCheck.findOne(
+      return await BloomBot.nsfwCheck.findOne(
         {
           serverId: vChat.chat,
         },
         async (error, server) => {
-          if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+          if (error) return BloomBot.handlerror(BloomBot, vChat, error);
           if (!server) {
-            return await OpenBot.imagebutton(
-              OpenBot,
+            return await BloomBot.imagebutton(
+              BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else await server.delete();
-          return await OpenBot.imagebutton(
-            OpenBot,
+          return await BloomBot.imagebutton(
+            BloomBot,
             vChat,
-            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
             𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -151,24 +151,24 @@ module.exports = async (OpenBot, vChat, gmeta, isAdmin, isbotAdmin) => {
         }
       );
     } else
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
     return vChat.reply(
-      `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+      `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > No query provided!
 
 *⚡Usage*   
-> ${OpenBot.prefix}${fpth} on
-> ${OpenBot.prefix}${fpth} off`
+> ${BloomBot.prefix}${fpth} on
+> ${BloomBot.prefix}${fpth} off`
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

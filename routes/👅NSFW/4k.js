@@ -1,54 +1,54 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   try {
-    var server = await OpenBot.nsfwCheck.findOne({ serverId: vChat.chat });
+    var server = await BloomBot.nsfwCheck.findOne({ serverId: vChat.chat });
     if (!server) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: { text: "❌", key: vChat.key },
       });
-      return vChat.reply(`*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+      return vChat.reply(`*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
 > You can ask the administrators to enable them.`);
     }
 
-    var response = await OpenBot.magfetch(
-      OpenBot,
+    var response = await BloomBot.magfetch(
+      BloomBot,
       `https://magneum.vercel.app/api/nsfw?q=${fpth}`
     );
     var fetchedata = response.data;
     if (!fetchedata.meta.thumbnail) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: { text: "❌", key: vChat.key },
       });
-      return vChat.reply(`*😥 Apologies:* _${OpenBot.pushname}_
+      return vChat.reply(`*😥 Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
 
     var message = `
-*⚡ Here is ${fpth} for @${OpenBot.Tname || OpenBot.pushname}:*
+*⚡ Here is ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
 ║⦁ 💡 Title: ${fetchedata.meta.title || "Not available"}
@@ -65,14 +65,14 @@ module.exports = async (OpenBot, vChat) => {
 ║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await OpenBot.imagebutton(
-      OpenBot,
+    await BloomBot.imagebutton(
+      BloomBot,
       vChat,
       message,
       fetchedata.meta.thumbnail
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

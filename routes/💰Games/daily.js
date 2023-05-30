@@ -1,37 +1,37 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   try {
-    OpenBot.Economy.findOne(
+    BloomBot.Economy.findOne(
       {
         Id: vChat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return OpenBot.handlerror(OpenBot, vChat, error);
+          return BloomBot.handlerror(BloomBot, vChat, error);
         }
 
         if (!userEco) {
-          new OpenBot.Economy({
+          new BloomBot.Economy({
             Id: vChat.sender,
             money: 500,
             daily: Date.now(),
@@ -43,52 +43,52 @@ module.exports = async (OpenBot, vChat) => {
           })
             .save()
             .catch((error) => {
-              return OpenBot.handlerror(OpenBot, vChat, error);
+              return BloomBot.handlerror(BloomBot, vChat, error);
             });
-          return await OpenBot.imagebutton(
-            OpenBot,
+          return await BloomBot.imagebutton(
+            BloomBot,
             vChat,
-            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
-*💰Balance:* Just Opened Your Account!`,
-            OpenBot.display
+*💰Balance:* Just Bloomed Your Account!`,
+            BloomBot.display
           );
         } else {
           if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-            var ᴄʟᴏᴄᴋ = OpenBot.ms(
+            var ᴄʟᴏᴄᴋ = BloomBot.ms(
               userEco.timeout - (Date.now() - userEco.daily)
             );
-            return await OpenBot.imagebutton(
-              OpenBot,
+            return await BloomBot.imagebutton(
+              BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
-              OpenBot.display
+              BloomBot.display
             );
           }
 
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return OpenBot.handlerror(OpenBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, vChat, error);
           });
-          return await OpenBot.imagebutton(
-            OpenBot,
+          return await BloomBot.imagebutton(
+            BloomBot,
             vChat,
-            `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+            `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
-            OpenBot.display
+            BloomBot.display
           );
         }
       }
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

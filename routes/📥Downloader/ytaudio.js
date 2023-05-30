@@ -1,72 +1,72 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var ytdl = require("ytdl-secktor");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   try {
-    if (!OpenBot.args) {
-      await OpenBot.sendMessage(vChat.chat, {
+    if (!BloomBot.args) {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${fpth} song-name_`
+> _${BloomBot.prefix}${fpth} song-name_`
       );
     } else
-      OpenBot.magfetch(
-        OpenBot,
-        "https://magneum.vercel.app/api/youtube_sr?q=" + OpenBot.args.join(" ")
+      BloomBot.magfetch(
+        BloomBot,
+        "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
       ).then(async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);
 
-        return await OpenBot.sendMessage(
+        return await BloomBot.sendMessage(
           vChat.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
-            caption: `*⚡Here, ${fpth} for ${OpenBot.pushname}:*
+            caption: `*⚡Here, ${fpth} for ${BloomBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
 *⏰Duration:* ${fetchedata.youtube_search[0].DURATION_FULL}
 *📜Description:* ${fetchedata.youtube_search[0].DESCRIPTION}`,
             footer:
-              "*OpenBot™ by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+              "*BloomBot™ by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
-                buttonId: `${OpenBot.prefix}Dashboard`,
-                buttonText: { displayText: `${OpenBot.prefix}Dashboard` },
+                buttonId: `${BloomBot.prefix}Dashboard`,
+                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
                 type: 1,
               },
               {
-                buttonId: `${OpenBot.prefix}Help`,
-                buttonText: { displayText: `${OpenBot.prefix}Help` },
+                buttonId: `${BloomBot.prefix}Help`,
+                buttonText: { displayText: `${BloomBot.prefix}Help` },
                 type: 1,
               },
             ],
@@ -79,10 +79,10 @@ module.exports = async (OpenBot, vChat) => {
           }
         );
 
-        await OpenBot.imagebutton(
-          OpenBot,
+        await BloomBot.imagebutton(
+          BloomBot,
           vChat,
-          `*⚡Here, ${fpth} for ${OpenBot.pushname}:*
+          `*⚡Here, ${fpth} for ${BloomBot.pushname}:*
 *🍻Title:* ${fetchedata.youtube_search[0].TITLE}
 *🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
 *🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
@@ -94,27 +94,27 @@ module.exports = async (OpenBot, vChat) => {
         var stream = ytdl(fetchedata.youtube_search[0].LINK, {
           filter: (info) =>
             info.audioBitrate == 160 || info.audioBitrate == 128,
-        }).pipe(OpenBot.fs.createWriteStream(`./${fetchedata.uuid}`));
+        }).pipe(BloomBot.fs.createWriteStream(`./${fetchedata.uuid}`));
         await new Promise((resolve, reject) => {
           stream.on("error", reject);
           stream.on("finish", resolve);
         });
-        await OpenBot.sendMessage(
+        await BloomBot.sendMessage(
           vChat.chat,
           {
-            audio: OpenBot.fs.readFileSync(`./${fetchedata.uuid}`),
+            audio: BloomBot.fs.readFileSync(`./${fetchedata.uuid}`),
             mimetype: "audio/mpeg",
             fileName: fetchedata.youtube_search[0].TITLE + ".mp3",
             headerType: 4,
             contextInfo: {
               externalAdReply: {
                 title: fetchedata.youtube_search[0].TITLE,
-                body: "⭕made by OpenBot",
+                body: "⭕made by BloomBot",
                 renderLargerThumbnail: true,
                 thumbnailUrl: fetchedata.youtube_search[0].THUMB,
                 mediaUrl: fetchedata.youtube_search[0].LINK,
                 mediaType: 1,
-                thumbnail: await OpenBot.getBuffer(
+                thumbnail: await BloomBot.getBuffer(
                   fetchedata.youtube_search[0].HQ_IMAGE
                 ),
                 sourceUrl: "https://bit.ly/magneum",
@@ -122,10 +122,10 @@ module.exports = async (OpenBot, vChat) => {
             },
           },
           { quoted: vChat }
-        ).then(OpenBot.fs.unlinkSync(`./${fetchedata.uuid}`));
+        ).then(BloomBot.fs.unlinkSync(`./${fetchedata.uuid}`));
       });
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

@@ -1,105 +1,105 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat, isAdmin, isbotAdmin) => {
+module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
   try {
     if (!vChat.isGroup) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _It's a group command!_`
       );
     }
     if (!isAdmin) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _This is an Admin only Command!_`
       );
     }
     if (!isbotAdmin) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _bot not Admin!_`
       );
     }
-    if (!OpenBot.args.join(" ")) {
-      await OpenBot.sendMessage(vChat.chat, {
+    if (!BloomBot.args.join(" ")) {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${fpth} manga-name_`
+> _${BloomBot.prefix}${fpth} manga-name_`
       );
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await OpenBot.profilePictureUrl(vChat.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(vChat.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = OpenBot.display;
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
     }
-    await OpenBot.groupUpdateDescription(vChat.chat, OpenBot.args.join(" "));
-    return await OpenBot.imagebutton(
-      OpenBot,
+    await BloomBot.groupUpdateDescription(vChat.chat, BloomBot.args.join(" "));
+    return await BloomBot.imagebutton(
+      BloomBot,
       vChat,
       `> *Group Description Changed successfuly by: ${
-        OpenBot.pushname || OpenBot.Tname
+        BloomBot.pushname || BloomBot.Tname
       }*
 
 *📜New Description:*
-${OpenBot.args.join(" ")}`,
+${BloomBot.args.join(" ")}`,
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞
     );
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

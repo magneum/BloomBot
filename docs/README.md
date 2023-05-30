@@ -1,19 +1,19 @@
 # [Ⓒ𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!](https://bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum™/OpenBot/blob/magneum™/public/OpenBot/OpenBot (8).png" /></p>
+<p align="centre"><img  width="40%" height="80%" img public="https://github.com/magneum™/BloomBot/blob/magneum™/public/BloomBot/BloomBot (8).png" /></p>
 
 <img align="centre" public="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="magneum™"/> <img align="centre" public="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-## 🤖Hello, I am OpenBot
+## 🤖Hello, I am BloomBot
 
 - I am a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 - As i am on my multidevice api which is still not properly ready,know minor bugs can occure.
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/OpenBot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/OpenBot)
+[![NPM](https://nodei.co/npm/BloomBot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/BloomBot)
 
-[![npm version](https://badge.fury.io/js/OpenBot.svg)](https://badge.fury.io/js/OpenBot/)
+[![npm version](https://badge.fury.io/js/BloomBot.svg)](https://badge.fury.io/js/BloomBot/)
 
 
 
@@ -26,19 +26,19 @@
 🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 🚀 Simplifies group management tasks and enhances the overall user experience.
 ⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 ⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 🔄 We'll continue providing updates and support for the original version of the bot.
-👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
    whatsApp group management experience! 🎉
 ```
 
 <h1 align="left">🚨Legal</h1>
 
 ```
-OpenBot is in no way affiliated with, authorized, maintained,
+BloomBot is in no way affiliated with, authorized, maintained,
 sponsored or endorsed by whatsApp or any of its affiliates or
 subsidiaries. This is an independent and unofficial software.
 Use at your own risk.

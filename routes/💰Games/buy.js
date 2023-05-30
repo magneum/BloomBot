@@ -1,25 +1,25 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   try {
     var Item;
     var NewLimit;
@@ -34,120 +34,120 @@ module.exports = async (OpenBot, vChat) => {
     var BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
     var RobCatelog = ["sword", "laptop", "charm"];
 
-    if (OpenBot.args[0] === "bronze") {
+    if (BloomBot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (OpenBot.args[0] === "silver") {
+    if (BloomBot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (OpenBot.args[0] === "gold") {
+    if (BloomBot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (OpenBot.args[0] === "platinum") {
+    if (BloomBot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (OpenBot.args[0] === "diamond") {
+    if (BloomBot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
-    if (OpenBot.args[0] === "charm") {
+    if (BloomBot.args[0] === "charm") {
       Item = "charm";
       ItemPrice = 6000;
     }
-    if (OpenBot.args[0] === "sword") {
+    if (BloomBot.args[0] === "sword") {
       Item = "sword";
       ItemPrice = 1000;
     }
-    if (OpenBot.args[0] === "laptop") {
+    if (BloomBot.args[0] === "laptop") {
       Item = "laptop";
       ItemPrice = 4000;
     }
 
-    if (OpenBot.args[0] === "bronze") {
+    if (BloomBot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
       ItemPrice = 20000;
       NewLimit = 20;
     }
-    if (OpenBot.args[0] === "silver") {
+    if (BloomBot.args[0] === "silver") {
       Item = "🥈Silver 40 Commands";
       ItemPrice = 40000;
       NewLimit = 40;
     }
-    if (OpenBot.args[0] === "gold") {
+    if (BloomBot.args[0] === "gold") {
       Item = "🥇Golden 60 Commands";
       ItemPrice = 60000;
       NewLimit = 60;
     }
-    if (OpenBot.args[0] === "platinum") {
+    if (BloomBot.args[0] === "platinum") {
       Item = "💍Platinum 80 Commands";
       ItemPrice = 80000;
       NewLimit = 80;
     }
-    if (OpenBot.args[0] === "diamond") {
+    if (BloomBot.args[0] === "diamond") {
       Item = "💎Diamond 100 Commands";
       ItemPrice = 100000;
       NewLimit = 100;
     }
 
-    if (!OpenBot.args) {
-      await OpenBot.sendMessage(vChat.chat, {
+    if (!BloomBot.args) {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${fpth} item_
-> _You may use ${OpenBot.prefix}shop to look for items..._`
+> _${BloomBot.prefix}${fpth} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
 
-    if (OpenBot.args.length === 0) {
-      await OpenBot.sendMessage(vChat.chat, {
+    if (BloomBot.args.length === 0) {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${fpth} item_
-> _You may use ${OpenBot.prefix}shop to look for items..._`
+> _${BloomBot.prefix}${fpth} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
 
-    if (RobCatelog.includes(OpenBot.args[0])) {
-      OpenBot.Economy.findOne(
+    if (RobCatelog.includes(BloomBot.args[0])) {
+      BloomBot.Economy.findOne(
         {
           Id: vChat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return OpenBot.handlerror(OpenBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, vChat, error);
           }
 
           if (!userEco) {
-            var newUser = new OpenBot.Economy({
+            var newUser = new BloomBot.Economy({
               Id: vChat.sender,
               money: 0,
               daily: 0,
@@ -158,26 +158,26 @@ module.exports = async (OpenBot, vChat) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return OpenBot.handlerror(OpenBot, vChat, error);
+              return BloomBot.handlerror(BloomBot, vChat, error);
             });
-            return await OpenBot.imagebutton(
-              OpenBot,
+            return await BloomBot.imagebutton(
+              BloomBot,
               vChat,
-              `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
-*💰Balance:* _Just Opened Your Account!_`,
-              OpenBot.display
+              `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+*💰Balance:* _Just Bloomed Your Account!_`,
+              BloomBot.display
             );
           }
-          OpenBot.Robbery.findOne(
+          BloomBot.Robbery.findOne(
             {
               Id: vChat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return OpenBot.handlerror(OpenBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, vChat, error);
               }
               if (!userRob) {
-                new OpenBot.Robbery({
+                new BloomBot.Robbery({
                   Id: vChat.sender,
                   sword: 0,
                   laptop: 0,
@@ -187,29 +187,29 @@ module.exports = async (OpenBot, vChat) => {
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
-*💰Balance:* _Just Opened Your Account!_`,
-                  OpenBot.display
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+*💰Balance:* _Just Bloomed Your Account!_`,
+                  BloomBot.display
                 );
               } else {
                 if (userEco.money < ItemPrice) {
-                  return await OpenBot.imagebutton(
-                    OpenBot,
+                  return await BloomBot.imagebutton(
+                    BloomBot,
                     vChat,
                     `*⚡Here, ${fpth} for @${
-                      OpenBot.Tname || OpenBot.pushname
+                      BloomBot.Tname || BloomBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    OpenBot.display
+                    BloomBot.display
                   );
                 }
 
@@ -217,21 +217,21 @@ module.exports = async (OpenBot, vChat) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
-                  return await OpenBot.imagebutton(
-                    OpenBot,
+                  return await BloomBot.imagebutton(
+                    BloomBot,
                     vChat,
                     `*⚡Here, ${fpth} for @${
-                      OpenBot.Tname || OpenBot.pushname
+                      BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    OpenBot.display
+                    BloomBot.display
                   );
                 }
 
@@ -239,21 +239,21 @@ module.exports = async (OpenBot, vChat) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
-                  return await OpenBot.imagebutton(
-                    OpenBot,
+                  return await BloomBot.imagebutton(
+                    BloomBot,
                     vChat,
                     `*⚡Here, ${fpth} for @${
-                      OpenBot.Tname || OpenBot.pushname
+                      BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    OpenBot.display
+                    BloomBot.display
                   );
                 }
 
@@ -261,57 +261,57 @@ module.exports = async (OpenBot, vChat) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
-                  return await OpenBot.imagebutton(
-                    OpenBot,
+                  return await BloomBot.imagebutton(
+                    BloomBot,
                     vChat,
                     `*⚡Here, ${fpth} for @${
-                      OpenBot.Tname || OpenBot.pushname
+                      BloomBot.Tname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    OpenBot.display
+                    BloomBot.display
                   );
                 }
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  OpenBot.display
+                  BloomBot.display
                 );
               }
             }
           );
         }
       );
-    } else if (BadCatelog.includes(OpenBot.args[0])) {
-      await OpenBot.Economy.findOne(
+    } else if (BadCatelog.includes(BloomBot.args[0])) {
+      await BloomBot.Economy.findOne(
         {
           Id: vChat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return OpenBot.handlerror(OpenBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, vChat, error);
           }
 
-          await OpenBot.Bagde.findOne(
+          await BloomBot.Bagde.findOne(
             {
               Id: vChat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return OpenBot.handlerror(OpenBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, vChat, error);
               }
 
               if (!userEco) {
-                new OpenBot.Economy({
+                new BloomBot.Economy({
                   Id: vChat.sender,
                   money: 0,
                   daily: 0,
@@ -323,23 +323,23 @@ module.exports = async (OpenBot, vChat) => {
                 })
                   .save()
                   .catch((error) => {
-                    return OpenBot.handlerror(OpenBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, vChat, error);
                   });
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
-💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  OpenBot.display
+💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
+                  BloomBot.display
                 );
               }
 
               if (!userBadge) {
-                var newBagdeUser = new OpenBot.Bagde({
+                var newBagdeUser = new BloomBot.Bagde({
                   Id: vChat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -348,43 +348,43 @@ module.exports = async (OpenBot, vChat) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return OpenBot.handlerror(OpenBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, vChat, error);
                 });
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
-💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Opened Your Account!_`,
-                  OpenBot.display
+💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
+                  BloomBot.display
                 );
               }
 
               if (userEco.money < ItemPrice) {
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  OpenBot.display
+                  BloomBot.display
                 );
               }
 
               if (userBadge.Badge === Item) {
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  OpenBot.display
+                  BloomBot.display
                 );
               }
 
@@ -397,20 +397,20 @@ module.exports = async (OpenBot, vChat) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return OpenBot.handlerror(OpenBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, vChat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return OpenBot.handlerror(OpenBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, vChat, error);
                 });
-                return await OpenBot.imagebutton(
-                  OpenBot,
+                return await BloomBot.imagebutton(
+                  BloomBot,
                   vChat,
-                  `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                  `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  OpenBot.display
+                  BloomBot.display
                 );
               }
             }
@@ -418,25 +418,25 @@ module.exports = async (OpenBot, vChat) => {
         }
       );
     } else {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _No query provided!_
 
 *⚡Usage* 
-> _${OpenBot.prefix}${fpth} item_
-> _You may use ${OpenBot.prefix}shop to look for items..._`
+> _${BloomBot.prefix}${fpth} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];

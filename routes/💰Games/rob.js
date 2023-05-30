@@ -5,12 +5,12 @@
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
@@ -19,47 +19,47 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
-  if (OpenBot.mentionByReply) {
+  if (BloomBot.mentionByReply) {
     var receiver =
       vChat.mtype == "extendedTextMessage" &&
       vChat.message.extendedTextMessage.contextInfo != null
         ? vChat.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    var receiverName = await OpenBot.getName(receiver);
+    var receiverName = await BloomBot.getName(receiver);
     if (receiver === vChat.sender) {
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: {
           text: "❌",
           key: vChat.key,
         },
       });
       return vChat.reply(
-        `*😥Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > _Can't rob your own bank_`
       );
     }
 
-    OpenBot.Economy.findOne(
+    BloomBot.Economy.findOne(
       {
         Id: vChat.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return OpenBot.handlerror(OpenBot, vChat, error);
-        OpenBot.Economy.findOne(
+        if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+        BloomBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+            if (error) return BloomBot.handlerror(BloomBot, vChat, error);
             if (!ᴠᴇᴄᴏ) {
-              var newUser = new OpenBot.Economy({
+              var newUser = new BloomBot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -71,11 +71,11 @@ module.exports = async (OpenBot, vChat) => {
               });
               await newUser
                 .save()
-                .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
-              return await OpenBot.imagebutton(
-                OpenBot,
+                .catch((error) => BloomBot.handlerror(BloomBot, vChat, error));
+              return await BloomBot.imagebutton(
+                BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -83,12 +83,12 @@ module.exports = async (OpenBot, vChat) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                OpenBot.display
+                BloomBot.display
               );
             }
 
             if (!ᴄᴇᴄᴏ) {
-              var newUser = new OpenBot.Economy({
+              var newUser = new BloomBot.Economy({
                 Id: vChat.sender,
                 money: 0,
                 daily: 0,
@@ -100,11 +100,11 @@ module.exports = async (OpenBot, vChat) => {
               });
               await newUser
                 .save()
-                .catch((error) => OpenBot.handlerror(OpenBot, vChat, error));
-              return await OpenBot.imagebutton(
-                OpenBot,
+                .catch((error) => BloomBot.handlerror(BloomBot, vChat, error));
+              return await BloomBot.imagebutton(
+                BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -113,15 +113,15 @@ module.exports = async (OpenBot, vChat) => {
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                OpenBot.display
+                BloomBot.display
               );
             }
 
             if (ᴄᴇᴄᴏ.money < 1000) {
-              return await OpenBot.imagebutton(
-                OpenBot,
+              return await BloomBot.imagebutton(
+                BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -129,15 +129,15 @@ module.exports = async (OpenBot, vChat) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                OpenBot.display
+                BloomBot.display
               );
             }
 
             if (ᴠᴇᴄᴏ.money < 1000) {
-              return await OpenBot.imagebutton(
-                OpenBot,
+              return await BloomBot.imagebutton(
+                BloomBot,
                 vChat,
-                `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+                `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -146,7 +146,7 @@ module.exports = async (OpenBot, vChat) => {
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                OpenBot.display
+                BloomBot.display
               );
             }
 
@@ -155,13 +155,13 @@ module.exports = async (OpenBot, vChat) => {
                 Id: vChat.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+                if (error) return BloomBot.handlerror(BloomBot, vChat, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return OpenBot.handlerror(OpenBot, vChat, error);
+                    if (error) return BloomBot.handlerror(BloomBot, vChat, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,19 +174,19 @@ module.exports = async (OpenBot, vChat) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -197,7 +197,7 @@ module.exports = async (OpenBot, vChat) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     }
 
@@ -213,19 +213,19 @@ module.exports = async (OpenBot, vChat) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -235,7 +235,7 @@ module.exports = async (OpenBot, vChat) => {
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     }
 
@@ -248,11 +248,11 @@ module.exports = async (OpenBot, vChat) => {
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -260,7 +260,7 @@ module.exports = async (OpenBot, vChat) => {
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     }
 
@@ -277,28 +277,28 @@ module.exports = async (OpenBot, vChat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -311,7 +311,7 @@ module.exports = async (OpenBot, vChat) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -326,28 +326,28 @@ module.exports = async (OpenBot, vChat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -360,7 +360,7 @@ module.exports = async (OpenBot, vChat) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -375,28 +375,28 @@ module.exports = async (OpenBot, vChat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -409,7 +409,7 @@ module.exports = async (OpenBot, vChat) => {
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     }
 
@@ -420,18 +420,18 @@ module.exports = async (OpenBot, vChat) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -444,14 +444,14 @@ module.exports = async (OpenBot, vChat) => {
                         }!
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${OpenBot.pushname || OpenBot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -460,18 +460,18 @@ module.exports = async (OpenBot, vChat) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          OpenBot.handlerror(OpenBot, vChat, error)
+                          BloomBot.handlerror(BloomBot, vChat, error)
                         );
-                      return await OpenBot.imagebutton(
-                        OpenBot,
+                      return await BloomBot.imagebutton(
+                        BloomBot,
                         vChat,
                         `*⚡Here, ${fpth} for ${
-                          OpenBot.pushname || OpenBot.Tname
+                          BloomBot.pushname || BloomBot.Tname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -482,14 +482,14 @@ module.exports = async (OpenBot, vChat) => {
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${OpenBot.pushname || OpenBot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.Tname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        OpenBot.display
+                        BloomBot.display
                       );
                     }
                   }
@@ -501,10 +501,10 @@ module.exports = async (OpenBot, vChat) => {
       }
     );
   } else {
-    return await OpenBot.imagebutton(
-      OpenBot,
+    return await BloomBot.imagebutton(
+      BloomBot,
       vChat,
-      `*⚡Here, ${fpth} for ${OpenBot.pushname || OpenBot.Tname}:*
+      `*⚡Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -530,7 +530,7 @@ module.exports = async (OpenBot, vChat) => {
 │║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║⦁ *⚡𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      OpenBot.display
+      BloomBot.display
     );
   }
 };

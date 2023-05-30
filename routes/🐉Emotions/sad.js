@@ -1,45 +1,45 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐎𝐩𝐞𝐧𝐁𝐨𝐭😺𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐌𝐮𝐥𝐭𝐢𝐏𝐮𝐫𝐩𝐨𝐬𝐞 - 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐦𝐨𝐫𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!
 //  ║
 //  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
 //  ║🚀 Simplifies group management tasks and enhances the overall user experience.
 //  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 OpenBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
 //  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
 //  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
 //  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
 //  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of OpenBot responsibly! Make the most out of your
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸOpenBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (OpenBot, vChat) => {
+module.exports = async (BloomBot, vChat) => {
   try {
-    var response = await OpenBot.magfetch(
-      OpenBot,
+    var response = await BloomBot.magfetch(
+      BloomBot,
       `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     var magData = response.data;
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await OpenBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(vChat.chat, {
         react: { text: "❌", key: vChat.key },
       });
       return vChat.reply(
-        `*😥 Apologies:* _${OpenBot.pushname || OpenBot.Tname}_
+        `*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
       );
     }
     var resultFilename = magData.resp.id + ".mp4";
-    await OpenBot.ffmpeg
+    await BloomBot.ffmpeg
       .input(magData.meta.url)
       .outputOptions([
         "-pix_fmt yuv420p",
@@ -50,12 +50,12 @@ module.exports = async (OpenBot, vChat) => {
       .output(resultFilename)
       .on("end", async () => {
         var mentionedUser = "";
-        if (OpenBot.args[0] && OpenBot.args[0].startsWith("@")) {
+        if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
           // Check if a user is mentioned in the command arguments
-          var mention = OpenBot.mentionByTag;
+          var mention = BloomBot.mentionByTag;
           mentionedUser =
             (await mention[0]) || vChat.msg.contextInfo.participant;
-        } else if (OpenBot.mentionByReply) {
+        } else if (BloomBot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
             vChat.mtype === "extendedTextMessage" &&
@@ -63,31 +63,31 @@ module.exports = async (OpenBot, vChat) => {
               ? vChat.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
-        var message = `*ⒸOpenBot by magneum™*
+        var message = `*ⒸBloomBot by magneum™*
 *💻HomePage:* https://bit.ly/magneum
 
 *🎋Emo:* ${feeling}
-*📢From:* ${OpenBot.pushname}
+*📢From:* ${BloomBot.pushname}
 *⚡for:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
-        await OpenBot.sendMessage(
+        await BloomBot.sendMessage(
           vChat.chat,
           {
             gifPlayback: true,
-            video: OpenBot.fs.readFileSync(resultFilename),
+            video: BloomBot.fs.readFileSync(resultFilename),
             caption: message,
             mentions: [mentionedUser, vChat.sender],
           },
           { quoted: vChat }
         );
         // Remove the generated video file
-        OpenBot.fs.unlinkSync(resultFilename);
+        BloomBot.fs.unlinkSync(resultFilename);
       })
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
-    return OpenBot.handlerror(OpenBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, vChat, error);
   }
 };
 module.exports.aliases = [];
