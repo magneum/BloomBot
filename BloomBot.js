@@ -15,17 +15,18 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +91825088932593259325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("./logger/config");
 var fs = require("fs");
-var cL = require("chalk");
+var chalk = require("chalk");
 var yargs = require("yargs");
 var { join } = require("path");
 var { say } = require("cfonts");
 var mFolders = fs.readdirSync("./routes");
+var { execSync } = require("child_process");
 var { createInterface } = require("readline");
 var { watchFile, unwatchFile } = require("fs");
 var { setupMaster, fork } = require("cluster");
 var rl = createInterface(process.stdin, process.stdout);
-var { execSync } = require("child_process");
 
 process.removeAllListeners("warning");
 process.env.NODE_NO_WARNINGS = "1";
@@ -75,8 +76,8 @@ function showCommands(path) {
 
     if (specialFolders.includes(cFolder)) {
       console.log(
-        cL.bgGreen(cL.black("> " + cFolder)),
-        cL.yellow("  | " + cFiles)
+        chalk.bgGreen(chalk.black("> " + cFolder)),
+        chalk.yellow("  | " + cFiles)
       );
     }
   }
@@ -93,7 +94,7 @@ function ignite(cFile) {
   });
   var p = fork();
   p.on("message", (data) => {
-    console.log(cL.bgGreen(cL.black("[RECEIVED]")), cL.yellow(data));
+    console.log(chalk.bgGreen(chalk.black("[RECEIVED]")), chalk.yellow(data));
     switch (data) {
       case "reset":
         p.process.kill();
@@ -107,7 +108,7 @@ function ignite(cFile) {
   });
   p.on("exit", (_, code) => {
     isRunning = false;
-    console.error(cL.bgRed("❌ An unexpected error occurred:" + _));
+    console.error(chalk.bgRed("❌ An unexpected error occurred:" + _));
     p.process.kill();
     isRunning = false;
     ignite.apply(this, arguments);
@@ -128,12 +129,12 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
-
-try {
-  execSync("sudo systemctl start redis.service");
-  console.log("Redis service started successfully.");
-} catch (error) {
-  console.error("Failed to start Redis service:", error);
+if (REDIS_URL && REDIS_URL != undefined && REDIS_URL != null) {
+  try {
+    execSync("sudo systemctl start redis.service");
+    console.log("Redis service started successfully.");
+  } catch (error) {
+    console.error("Failed to start Redis service:", error);
+  }
 }
-
 ignite("app/index", "uptime");
