@@ -16,17 +16,18 @@
 //  ║🐞 Developers: +918436686758, +91825088932593259325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("./logger/config");
-const fs = require("fs");
-const chalk = require("chalk");
-const yargs = require("yargs");
-const { join } = require("path");
-const { say } = require("cfonts");
-const mFolders = fs.readdirSync("./routes");
-const { execSync } = require("child_process");
-const { createInterface } = require("readline");
-const { watchFile, unwatchFile } = require("fs");
-const { setupMaster, fork } = require("cluster");
-const rl = createInterface(process.stdin, process.stdout);
+var fs = require("fs");
+var chalk = require("chalk");
+var yargs = require("yargs");
+var { join } = require("path");
+var { say } = require("cfonts");
+var Table = require("cli-table3");
+var mFolders = fs.readdirSync("./routes");
+var { execSync } = require("child_process");
+var { createInterface } = require("readline");
+var { watchFile, unwatchFile } = require("fs");
+var { setupMaster, fork } = require("cluster");
+var rl = createInterface(process.stdin, process.stdout);
 
 process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
@@ -47,12 +48,18 @@ say(`~ by magneum™`, {
 });
 
 function showCommands(path) {
+  var table = new Table({
+    head: [chalk.bgGreen(chalk.black("Folder")), chalk.yellow("Files")],
+    colWidths: [20, 30],
+  });
+
   say("Loading Commands From Folders", {
     font: "console",
     align: "left",
     gradient: ["red", "blue"],
   });
-  const specialFolders = [
+
+  var specialFolders = [
     "⚙️System",
     "⭕YTFilter",
     "🍁ᴏᴡɴᴇʀ",
@@ -69,30 +76,30 @@ function showCommands(path) {
     "🖼️Photogenic",
     "🦄SFW",
   ];
-  for (const cFolder of mFolders) {
-    const cFiles = fs
+
+  for (var cFolder of mFolders) {
+    var cFiles = fs
       .readdirSync(`./${path}/${cFolder}`)
       .filter((cFile) => cFile.endsWith(""));
 
     if (specialFolders.includes(cFolder)) {
-      console.log(
-        chalk.bgGreen(chalk.black("> " + cFolder)),
-        chalk.yellow("  | " + cFiles)
-      );
+      table.push([cFolder, cFiles.join(", ")]);
     }
   }
+
+  console.log(table.toString());
 }
 
 let isRunning = false;
 function ignite(cFile) {
   if (isRunning) return;
   isRunning = true;
-  const args = [join(__dirname, cFile), ...process.argv.slice(2)];
+  var args = [join(__dirname, cFile), ...process.argv.slice(2)];
   setupMaster({
     exec: args[0],
     args: args.slice(1),
   });
-  const p = fork();
+  var p = fork();
   p.on("message", (data) => {
     console.log(chalk.bgGreen(chalk.black("[RECEIVED]")), chalk.yellow(data));
     switch (data) {
@@ -118,7 +125,7 @@ function ignite(cFile) {
       ignite(cFile);
     });
   });
-  const opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
+  var opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
   if (!opts["test"]) {
     if (!rl.listenerCount()) {
       rl.on("line", (line) => {
