@@ -26,7 +26,7 @@ module.exports = async (BloomBot, vChat, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => 
       vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${vChat.chat}
+        caption: `*📢ChatId:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -60,7 +60,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
       vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${vChat.chat}
+        caption: `*📢ChatId:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -89,7 +89,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
       vChat.chat,
       {
         image: { url: imåge },
-        caption: `*📢Id:* ${vChat.chat}
+        caption: `*📢ChatId:* ${vChat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [

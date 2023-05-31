@@ -124,7 +124,7 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
             if (error) {
               return BloomBot.reply(`*🌻You:* ${
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${vChat.chat}
+              }\n*📢ChatId:* ${vChat.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error* 
@@ -169,7 +169,7 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
             if (error) {
               return BloomBot.reply(`*🌻You:* ${
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Id:* ${vChat.chat}
+              }\n*📢ChatId:* ${vChat.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error* 

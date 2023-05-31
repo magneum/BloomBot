@@ -48,7 +48,7 @@ module.exports = async (BloomBot, vChat) => {
           if (error) {
             return vChat.reply(`*🌻You:* ${
               BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Id:* ${vChat.chat}
+            }\n*📢ChatId:* ${vChat.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error* 

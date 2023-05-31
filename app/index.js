@@ -273,7 +273,7 @@ async function magneum() {
           {
             image: { url: imåge },
             caption: `*🌻You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-*📢Id:* ${update.id}
+*📢ChatId:* ${update.id}
 
 > Firstly Welcome.
 > I am BloomBot whatsapp bot.
