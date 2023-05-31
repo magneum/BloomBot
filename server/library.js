@@ -149,7 +149,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
       return await BloomBot.sendMessage(vChat.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢ID:* ${vChat.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ChatId:* ${vChat.chat}\n\n${suggestionMessage}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -175,7 +175,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
         "For more information, please visit: _bit.ly/magneum_";
       return await BloomBot.sendMessage(vChat.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢ID:* ${vChat.chat}\n\n${errorMessage}`,
+        caption: `*📢ChatId:* ${vChat.chat}\n\n${errorMessage}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
