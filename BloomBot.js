@@ -22,7 +22,6 @@ var yargs = require("yargs");
 var { join } = require("path");
 var { say } = require("cfonts");
 var mFolders = fs.readdirSync("./routes");
-var { execSync } = require("child_process");
 var { createInterface } = require("readline");
 var { watchFile, unwatchFile } = require("fs");
 var { setupMaster, fork } = require("cluster");
