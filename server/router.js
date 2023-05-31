@@ -75,6 +75,4 @@ module.exports = async (BloomBot, mags, update, store) => {
   } else if (BloomBot.bloom_mode == "private") {
     return require("@/app/mode/Private")(BloomBot, mags, update, store);
   } else return require("@/app/mode/Default")(BloomBot, mags, update, store);
-
-  return BloomBot;
 };

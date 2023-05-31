@@ -29,6 +29,7 @@ global.upVersion = process.env.upVersion;
 global.REDIS_URL = process.env.REDIS_URL;
 global.Showlogger = process.env.Showlogger;
 global.MONGODB_URL = process.env.MONGODB_URL;
+global.MAINTAINANCE_MODE = process.env.MAINTAINANCE_MODE;
 if (!sudo) sudo = "918436686758,917430922909";
 global.verbose = process.env.verbose || "0";
 global.bloom_mode = process.env.bloom_mode || "default";
