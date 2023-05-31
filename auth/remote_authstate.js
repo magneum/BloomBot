@@ -15,7 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const debugEnabled = VERBOSE === "1";
+
+const debugEnabled = verbose_level === "1";
 const { DataTypes, Model, Sequelize } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
@@ -256,5 +257,4 @@ const remote_authstate = async () => {
     saveCreds,
   };
 };
-
 module.exports = remote_authstate;
