@@ -1,4 +1,4 @@
-const YouTubeAudio = require("./utils/YouAudio");
+const YouTubeAudio = require("../utils/YouAudio");
 const { randomUUID } = require("crypto");
 const ffmpeg = require("fluent-ffmpeg");
 
