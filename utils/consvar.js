@@ -7,10 +7,8 @@ function convertFilesAndFolders(directoryPath) {
       console.error("Error reading directory:", err);
       return;
     }
-
     files.forEach((file) => {
       const filePath = path.join(directoryPath, file);
-
       fs.stat(filePath, (err, stat) => {
         if (err) {
           console.error("Error retrieving file stats:", err);
@@ -33,19 +31,15 @@ function convertFile(filePath) {
       console.error("Error reading file:", err);
       return;
     }
-
-    const convertedData = data.replace(/const/g, "const");
-
+    const convertedData = data.replace(/var/g, "const");
     fs.writeFile(filePath, convertedData, "utf8", (err) => {
       if (err) {
         console.error("Error writing file:", err);
         return;
       }
-
       console.log("Converted file:", filePath);
     });
   });
 }
-
 const directoryPath = ".";
 convertFilesAndFolders(directoryPath);
