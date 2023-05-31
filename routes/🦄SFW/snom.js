@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     BloomBot.magfetch(BloomBot, "https://magneum.vercel.app/api/sfw?q=nom").then(
       async (response) => {
@@ -27,7 +27,7 @@ module.exports = async (BloomBot, blyat) => {
         console.log(mgdata);
         return await BloomBot.imagebutton(
           BloomBot,
-          blyat,
+          mags,
           `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *Topic*: ${mgdata.meta.topic}
 *Query*: ${mgdata.meta.query}`,
@@ -36,7 +36,7 @@ module.exports = async (BloomBot, blyat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

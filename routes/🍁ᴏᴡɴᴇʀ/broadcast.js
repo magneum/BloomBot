@@ -19,35 +19,35 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
-  await BloomBot.sendMessage(blyat.chat, {
+module.exports = async (BloomBot, mags) => {
+  await BloomBot.sendMessage(mags.chat, {
     react: {
       text: "🌻",
-      key: blyat.key,
+      key: mags.key,
     },
   });
   try {
     if (!BloomBot.frome && !BloomBot.isSudo) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
       );
     }
     if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌Error* 
 > _No query provided!_
@@ -62,7 +62,7 @@ module.exports = async (BloomBot, blyat) => {
       .slice(0)
       .map((entry) => entry[1]);
     var places = vGroup.map((v) => v.id);
-    blyat.reply(
+    mags.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
@@ -85,7 +85,7 @@ ${BloomBot.args.join(" ")}`,
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

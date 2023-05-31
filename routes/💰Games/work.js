@@ -19,22 +19,22 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     var JworkR =
       BloomBot.Jwork[Math.floor(Math.random() * BloomBot.Jwork.length)];
     BloomBot.Economy.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, blyat, error);
+          return BloomBot.handlerror(BloomBot, mags, error);
         }
 
         if (!userEco) {
           new BloomBot.Economy({
-            Id: blyat.sender,
+            Id: mags.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -45,11 +45,11 @@ module.exports = async (BloomBot, blyat) => {
           })
             .save()
             .catch((error) => {
-              return BloomBot.handlerror(BloomBot, blyat, error);
+              return BloomBot.handlerror(BloomBot, mags, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -62,7 +62,7 @@ module.exports = async (BloomBot, blyat) => {
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -74,11 +74,11 @@ module.exports = async (BloomBot, blyat) => {
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch((error) => {
-              return BloomBot.handlerror(BloomBot, blyat, error);
+              return BloomBot.handlerror(BloomBot, mags, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
@@ -89,7 +89,7 @@ module.exports = async (BloomBot, blyat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

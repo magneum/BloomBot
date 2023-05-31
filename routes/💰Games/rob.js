@@ -19,26 +19,26 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
   var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
   var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (BloomBot.mentionByReply) {
     var receiver =
-      blyat.mtype == "extendedTextMessage" &&
-      blyat.message.extendedTextMessage.contextInfo != null
-        ? blyat.message.extendedTextMessage.contextInfo.participant || ""
+      mags.mtype == "extendedTextMessage" &&
+      mags.message.extendedTextMessage.contextInfo != null
+        ? mags.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     var receiverName = await BloomBot.getName(receiver);
-    if (receiver === blyat.sender) {
-      await BloomBot.sendMessage(blyat.chat, {
+    if (receiver === mags.sender) {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -48,16 +48,16 @@ module.exports = async (BloomBot, blyat) => {
 
     BloomBot.Economy.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+        if (error) return BloomBot.handlerror(BloomBot, mags, error);
         BloomBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+            if (error) return BloomBot.handlerror(BloomBot, mags, error);
             if (!ᴠᴇᴄᴏ) {
               var newUser = new BloomBot.Economy({
                 Id: receiver,
@@ -71,10 +71,10 @@ module.exports = async (BloomBot, blyat) => {
               });
               await newUser
                 .save()
-                .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+                .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
               return await BloomBot.imagebutton(
                 BloomBot,
-                blyat,
+                mags,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -89,7 +89,7 @@ module.exports = async (BloomBot, blyat) => {
 
             if (!ᴄᴇᴄᴏ) {
               var newUser = new BloomBot.Economy({
-                Id: blyat.sender,
+                Id: mags.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -100,10 +100,10 @@ module.exports = async (BloomBot, blyat) => {
               });
               await newUser
                 .save()
-                .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+                .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
               return await BloomBot.imagebutton(
                 BloomBot,
-                blyat,
+                mags,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -120,7 +120,7 @@ module.exports = async (BloomBot, blyat) => {
             if (ᴄᴇᴄᴏ.money < 1000) {
               return await BloomBot.imagebutton(
                 BloomBot,
-                blyat,
+                mags,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -136,7 +136,7 @@ module.exports = async (BloomBot, blyat) => {
             if (ᴠᴇᴄᴏ.money < 1000) {
               return await BloomBot.imagebutton(
                 BloomBot,
-                blyat,
+                mags,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -152,16 +152,16 @@ module.exports = async (BloomBot, blyat) => {
 
             Robbery.findOne(
               {
-                Id: blyat.sender,
+                Id: mags.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+                if (error) return BloomBot.handlerror(BloomBot, mags, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+                    if (error) return BloomBot.handlerror(BloomBot, mags, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       var newUser = new Robbery({
                         Id: receiver,
@@ -174,17 +174,17 @@ module.exports = async (BloomBot, blyat) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -203,7 +203,7 @@ module.exports = async (BloomBot, blyat) => {
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       var newUser = new Robbery({
-                        Id: blyat.sender,
+                        Id: mags.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -213,17 +213,17 @@ module.exports = async (BloomBot, blyat) => {
                       await newUser
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -250,7 +250,7 @@ module.exports = async (BloomBot, blyat) => {
                       );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -277,26 +277,26 @@ module.exports = async (BloomBot, blyat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -326,26 +326,26 @@ module.exports = async (BloomBot, blyat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -375,26 +375,26 @@ module.exports = async (BloomBot, blyat) => {
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -420,16 +420,16 @@ module.exports = async (BloomBot, blyat) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -460,16 +460,16 @@ module.exports = async (BloomBot, blyat) => {
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch((error) =>
-                          BloomBot.handlerror(BloomBot, blyat, error)
+                          BloomBot.handlerror(BloomBot, mags, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        blyat,
+                        mags,
                         `*🌻Here, ${fpth} for ${
                           BloomBot.pushname || BloomBot.Tname
                         }:*
@@ -503,7 +503,7 @@ module.exports = async (BloomBot, blyat) => {
   } else {
     return await BloomBot.imagebutton(
       BloomBot,
-      blyat,
+      mags,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲

@@ -20,16 +20,16 @@ var ppth = require("path");
 var ytdl = require("ytdl-secktor");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -46,7 +46,7 @@ module.exports = async (BloomBot, blyat) => {
         var mgdata = response.data;
         console.log(mgdata);
         await BloomBot.sendMessage(
-          blyat.chat,
+          mags.chat,
           {
             image: { url: mgdata.youtube_search[0].HQ_IMAGE },
             caption: `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
@@ -70,11 +70,11 @@ module.exports = async (BloomBot, blyat) => {
               },
             ],
             headerType: 4,
-            mentions: [blyat.sender],
+            mentions: [mags.sender],
           },
           {
-            contextInfo: { mentionedJid: [blyat.sender] },
-            quoted: blyat,
+            contextInfo: { mentionedJid: [mags.sender] },
+            quoted: mags,
           }
         );
 
@@ -87,7 +87,7 @@ module.exports = async (BloomBot, blyat) => {
           stream.on("finish", resolve);
         });
         await BloomBot.sendMessage(
-          blyat.chat,
+          mags.chat,
           {
             audio: BloomBot.fs.readFileSync(`./${mgdata.uuid}`),
             mimetype: "audio/mpeg",
@@ -108,11 +108,11 @@ module.exports = async (BloomBot, blyat) => {
               },
             },
           },
-          { quoted: blyat }
+          { quoted: mags }
         ).then(BloomBot.fs.unlinkSync(`./${mgdata.uuid}`));
       });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

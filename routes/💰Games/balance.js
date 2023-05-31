@@ -19,18 +19,18 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   await BloomBot.Economy.findOne(
     {
-      Id: blyat.sender,
+      Id: mags.sender,
     },
     async (error, data) => {
       if (error) {
-        return BloomBot.handlerror(BloomBot, blyat, error);
+        return BloomBot.handlerror(BloomBot, mags, error);
       }
       if (!data) {
         new BloomBot.Economy({
-          Id: blyat.sender,
+          Id: mags.sender,
           money: 0,
           daily: 0,
           timeout: 86400000,
@@ -41,11 +41,11 @@ module.exports = async (BloomBot, blyat) => {
         })
           .save()
           .catch((error) => {
-            return BloomBot.handlerror(BloomBot, blyat, error);
+            return BloomBot.handlerror(BloomBot, mags, error);
           });
         return await BloomBot.imagebutton(
           BloomBot,
-          blyat,
+          mags,
           `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -54,7 +54,7 @@ module.exports = async (BloomBot, blyat) => {
       } else {
         return await BloomBot.imagebutton(
           BloomBot,
-          blyat,
+          mags,
           `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *💰Balance:* ${data.money}`,
           BloomBot.display

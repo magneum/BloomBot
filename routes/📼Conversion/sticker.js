@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -52,21 +52,21 @@ module.exports = async (BloomBot, blyat) => {
       });
       var buffer = await sticker.toBuffer();
       return await BloomBot.sendMessage(
-        blyat.chat,
+        mags.chat,
         {
           sticker: buffer,
         },
-        { quoted: blyat }
+        { quoted: mags }
       );
     } else if (/video/.test(BloomBot.mime)) {
       if ((BloomBot.quoted.msg || BloomBot.quoted).seconds > 20) {
-        await BloomBot.sendMessage(blyat.chat, {
+        await BloomBot.sendMessage(mags.chat, {
           react: {
             text: "❌",
-            key: blyat.key,
+            key: mags.key,
           },
         });
-        return blyat.reply(
+        return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -85,21 +85,21 @@ module.exports = async (BloomBot, blyat) => {
         });
         var buffer = await sticker.toBuffer();
         return await BloomBot.sendMessage(
-          blyat.chat,
+          mags.chat,
           {
             sticker: buffer,
           },
-          { quoted: blyat }
+          { quoted: mags }
         );
       }
     } else {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -110,7 +110,7 @@ module.exports = async (BloomBot, blyat) => {
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

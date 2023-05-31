@@ -19,7 +19,7 @@ require("#/logger/config");
 var path = require("path");
 var fileName = path.basename(__filename);
 var feeling = fileName.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     var response = await BloomBot.magfetch(
       BloomBot,
@@ -29,10 +29,10 @@ module.exports = async (BloomBot, blyat) => {
     console.log(magData);
     if (!magData.meta.url) {
       // Handle API error
-      await BloomBot.sendMessage(blyat.chat, {
-        react: { text: "❌", key: blyat.key },
+      await BloomBot.sendMessage(mags.chat, {
+        react: { text: "❌", key: mags.key },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error*
 > An API error has occurred. Please try again later.`
@@ -54,13 +54,13 @@ module.exports = async (BloomBot, blyat) => {
           // Check if a user is mentioned in the command arguments
           var mention = BloomBot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || blyat.msg.contextInfo.participant;
+            (await mention[0]) || mags.msg.contextInfo.participant;
         } else if (BloomBot.mentionByReply) {
           // Check if a user is mentioned by replying to their message
           mentionedUser =
-            blyat.mtype === "extendedTextMessage" &&
-            blyat.message.extendedTextMessage.contextInfo != null
-              ? blyat.message.extendedTextMessage.contextInfo.participant || ""
+            mags.mtype === "extendedTextMessage" &&
+            mags.message.extendedTextMessage.contextInfo != null
+              ? mags.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
         var message = `*ⒸBloomBot by magneum™*
@@ -72,14 +72,14 @@ module.exports = async (BloomBot, blyat) => {
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
         // Send the generated video and caption to the chat
         await BloomBot.sendMessage(
-          blyat.chat,
+          mags.chat,
           {
             gifPlayback: true,
             video: BloomBot.fs.readFileSync(resultFilename),
             caption: message,
-            mentions: [mentionedUser, blyat.sender],
+            mentions: [mentionedUser, mags.sender],
           },
-          { quoted: blyat }
+          { quoted: mags }
         );
         // Remove the generated video file
         BloomBot.fs.unlinkSync(resultFilename);
@@ -87,7 +87,7 @@ module.exports = async (BloomBot, blyat) => {
       .on("error", (error) => console.log(error))
       .run();
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

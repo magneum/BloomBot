@@ -88,21 +88,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var blyat = Math.floor((seconds % 3600) / 60);
+  var mags = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    blyat > 0 ? blyat + (blyat == 1 ? " minute, " : " minutes, ") : "";
+    mags > 0 ? mags + (mags == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var blyat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var mags = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, blyat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, mags, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -226,134 +226,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (BloomBot, blyat, store) => {
-  if (!blyat) return blyat;
+exports.mMake = async (BloomBot, mags, store) => {
+  if (!mags) return mags;
   var νproto = proto.WebMessageInfo;
-  if (blyat.key) {
-    blyat.id = blyat.key.id;
-    blyat.isBaileys =
-      blyat.id.startsWith("BAE5") && blyat.id.length === 16;
-    blyat.chat = blyat.key.remoteJid;
-    blyat.fromMe = blyat.key.fromMe;
-    blyat.isGroup = blyat.chat.endsWith("@g.us");
-    blyat.sender = BloomBot.decodeJid(
-      (blyat.fromMe && BloomBot.user.id) ||
-        blyat.participant ||
-        blyat.key.participant ||
-        blyat.chat ||
+  if (mags.key) {
+    mags.id = mags.key.id;
+    mags.isBaileys =
+      mags.id.startsWith("BAE5") && mags.id.length === 16;
+    mags.chat = mags.key.remoteJid;
+    mags.fromMe = mags.key.fromMe;
+    mags.isGroup = mags.chat.endsWith("@g.us");
+    mags.sender = BloomBot.decodeJid(
+      (mags.fromMe && BloomBot.user.id) ||
+        mags.participant ||
+        mags.key.participant ||
+        mags.chat ||
         ""
     );
-    if (blyat.isGroup)
-      blyat.participant = BloomBot.decodeJid(blyat.key.participant) || "";
+    if (mags.isGroup)
+      mags.participant = BloomBot.decodeJid(mags.key.participant) || "";
   }
-  if (blyat.message) {
-    blyat.mtype = getContentType(blyat.message);
-    blyat.msg =
-      blyat.mtype == "viewOnceMessage"
-        ? blyat.message[blyat.mtype].message[
-            getContentType(blyat.message[blyat.mtype].message)
+  if (mags.message) {
+    mags.mtype = getContentType(mags.message);
+    mags.msg =
+      mags.mtype == "viewOnceMessage"
+        ? mags.message[mags.mtype].message[
+            getContentType(mags.message[mags.mtype].message)
           ]
-        : blyat.message[blyat.mtype];
-    blyat.body =
-      blyat.message.conversation ||
-      blyat.msg.caption ||
-      blyat.msg.text ||
-      (blyat.mtype == "listResponseMessage" &&
-        blyat.msg.singleSelectReply.selectedRowId) ||
-      (blyat.mtype == "buttonsResponseMessage" &&
-        blyat.msg.selectedButtonId) ||
-      (blyat.mtype == "viewOnceMessage" && blyat.msg.caption) ||
-      blyat.text;
-    var quoted = (blyat.quoted = blyat.msg.contextInfo
-      ? blyat.msg.contextInfo.quotedMessage
+        : mags.message[mags.mtype];
+    mags.body =
+      mags.message.conversation ||
+      mags.msg.caption ||
+      mags.msg.text ||
+      (mags.mtype == "listResponseMessage" &&
+        mags.msg.singleSelectReply.selectedRowId) ||
+      (mags.mtype == "buttonsResponseMessage" &&
+        mags.msg.selectedButtonId) ||
+      (mags.mtype == "viewOnceMessage" && mags.msg.caption) ||
+      mags.text;
+    var quoted = (mags.quoted = mags.msg.contextInfo
+      ? mags.msg.contextInfo.quotedMessage
       : null);
-    blyat.mentionedJid = blyat.msg.contextInfo
-      ? blyat.msg.contextInfo.mentionedJid
+    mags.mentionedJid = mags.msg.contextInfo
+      ? mags.msg.contextInfo.mentionedJid
       : [];
-    if (blyat.quoted) {
+    if (mags.quoted) {
       var type = getContentType(quoted);
-      blyat.quoted = blyat.quoted[type];
+      mags.quoted = mags.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(blyat.quoted);
-        blyat.quoted = blyat.quoted[type];
+        type = getContentType(mags.quoted);
+        mags.quoted = mags.quoted[type];
       }
-      if (typeof blyat.quoted === "string")
-        blyat.quoted = {
-          text: blyat.quoted,
+      if (typeof mags.quoted === "string")
+        mags.quoted = {
+          text: mags.quoted,
         };
-      blyat.quoted.mtype = type;
-      blyat.quoted.id = blyat.msg.contextInfo.stanzaId;
-      blyat.quoted.chat = blyat.msg.contextInfo.remoteJid || blyat.chat;
-      blyat.quoted.isBaileys = blyat.quoted.id
-        ? blyat.quoted.id.startsWith("BAE5") &&
-          blyat.quoted.id.length === 16
+      mags.quoted.mtype = type;
+      mags.quoted.id = mags.msg.contextInfo.stanzaId;
+      mags.quoted.chat = mags.msg.contextInfo.remoteJid || mags.chat;
+      mags.quoted.isBaileys = mags.quoted.id
+        ? mags.quoted.id.startsWith("BAE5") &&
+          mags.quoted.id.length === 16
         : false;
-      blyat.quoted.sender = BloomBot.decodeJid(
-        blyat.msg.contextInfo.participant
+      mags.quoted.sender = BloomBot.decodeJid(
+        mags.msg.contextInfo.participant
       );
-      blyat.quoted.fromMe =
-        blyat.quoted.sender === (BloomBot.user && BloomBot.user.id);
-      blyat.quoted.text =
-        blyat.quoted.text ||
-        blyat.quoted.caption ||
-        blyat.quoted.conversation ||
-        blyat.quoted.contentText ||
-        blyat.quoted.selectedDisplayText ||
-        blyat.quoted.title ||
+      mags.quoted.fromMe =
+        mags.quoted.sender === (BloomBot.user && BloomBot.user.id);
+      mags.quoted.text =
+        mags.quoted.text ||
+        mags.quoted.caption ||
+        mags.quoted.conversation ||
+        mags.quoted.contentText ||
+        mags.quoted.selectedDisplayText ||
+        mags.quoted.title ||
         "";
-      blyat.quoted.mentionedJid = blyat.msg.contextInfo
-        ? blyat.msg.contextInfo.mentionedJid
+      mags.quoted.mentionedJid = mags.msg.contextInfo
+        ? mags.msg.contextInfo.mentionedJid
         : [];
-      blyat.getQuotedObj = blyat.getQuotedMessage = async () => {
-        if (!blyat.quoted.id) return false;
+      mags.getQuotedObj = mags.getQuotedMessage = async () => {
+        if (!mags.quoted.id) return false;
         var q = await store.loadMessage(
-          blyat.chat,
-          blyat.quoted.id,
+          mags.chat,
+          mags.quoted.id,
           BloomBot
         );
         return exports.mMake(BloomBot, q, store);
       };
-      var vM = (blyat.quoted.fakeObj = νproto.fromObject({
+      var vM = (mags.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: blyat.quoted.chat,
-          fromMe: blyat.quoted.fromMe,
-          id: blyat.quoted.id,
+          remoteJid: mags.quoted.chat,
+          fromMe: mags.quoted.fromMe,
+          id: mags.quoted.id,
         },
         message: quoted,
-        ...(blyat.isGroup ? { participant: blyat.quoted.sender } : {}),
+        ...(mags.isGroup ? { participant: mags.quoted.sender } : {}),
       }));
-      blyat.quoted.delete = () =>
-        BloomBot.sendMessage(blyat.quoted.chat, { delete: vM.key });
-      blyat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      mags.quoted.delete = () =>
+        BloomBot.sendMessage(mags.quoted.chat, { delete: vM.key });
+      mags.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         BloomBot.copyNForward(jid, vM, forceForward, options);
-      blyat.quoted.download = () =>
-        BloomBot.downloadMediaMessage(blyat.quoted);
+      mags.quoted.download = () =>
+        BloomBot.downloadMediaMessage(mags.quoted);
     }
   }
 
-  if (blyat.msg.url)
-    blyat.download = () => BloomBot.downloadMediaMessage(blyat.msg);
-  blyat.text =
-    blyat.msg.text ||
-    blyat.msg.caption ||
-    blyat.message.conversation ||
-    blyat.msg.contentText ||
-    blyat.msg.selectedDisplayText ||
-    blyat.msg.title ||
+  if (mags.msg.url)
+    mags.download = () => BloomBot.downloadMediaMessage(mags.msg);
+  mags.text =
+    mags.msg.text ||
+    mags.msg.caption ||
+    mags.message.conversation ||
+    mags.msg.contentText ||
+    mags.msg.selectedDisplayText ||
+    mags.msg.title ||
     "";
-  blyat.reply = (text, chatId = blyat.chat, options = {}) =>
+  mags.reply = (text, chatId = mags.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? BloomBot.sendMedia(chatId, text, "file", "", blyat, { ...options })
-      : BloomBot.sendText(chatId, text, blyat, { ...options });
-  blyat.copy = () =>
-    exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(blyat)));
-  blyat.copyNForward = (
-    jid = blyat.chat,
+      ? BloomBot.sendMedia(chatId, text, "file", "", mags, { ...options })
+      : BloomBot.sendText(chatId, text, mags, { ...options });
+  mags.copy = () =>
+    exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(mags)));
+  mags.copyNForward = (
+    jid = mags.chat,
     forceForward = false,
     options = {}
-  ) => BloomBot.copyNForward(jid, blyat, forceForward, options);
+  ) => BloomBot.copyNForward(jid, mags, forceForward, options);
 
-  return blyat;
+  return mags;
 };
 
 var file = require.resolve(__filename);

@@ -16,24 +16,24 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noPrivate = async (BloomBot, blyat, update) => {
+exports.noPrivate = async (BloomBot, mags, update) => {
   if (!BloomBot.isSudo)
     await BloomBot.UserPrivate.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, user) => {
-        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+        if (error) return BloomBot.handlerror(BloomBot, mags, error);
         if (!user) {
           new BloomBot.UserPrivate({
-            Id: blyat.sender,
+            Id: mags.sender,
             Amount: 1,
           })
             .save()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
@@ -47,10 +47,10 @@ exports.noPrivate = async (BloomBot, blyat, update) => {
           user.Amount = user.Amount + 1;
           await user
             .save()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
@@ -63,9 +63,9 @@ exports.noPrivate = async (BloomBot, blyat, update) => {
         } else {
           await user
             .delete()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
-          return await BloomBot.updateBlockStatus(blyat.sender, "block").catch(
-            (error) => BloomBot.handlerror(BloomBot, blyat, error)
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+          return await BloomBot.updateBlockStatus(mags.sender, "block").catch(
+            (error) => BloomBot.handlerror(BloomBot, mags, error)
           );
         }
       }

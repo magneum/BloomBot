@@ -19,20 +19,20 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     await BloomBot.Economy.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, blyat, error);
+          return BloomBot.handlerror(BloomBot, mags, error);
         }
 
         if (!userEco) {
           var newUser = new BloomBot.Economy({
-            Id: blyat.sender,
+            Id: mags.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -42,11 +42,11 @@ module.exports = async (BloomBot, blyat) => {
             worktimeout: 900000,
           });
           await newUser.save().catch((error) => {
-            return BloomBot.handlerror(BloomBot, blyat, error);
+            return BloomBot.handlerror(BloomBot, mags, error);
           });
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -55,23 +55,23 @@ module.exports = async (BloomBot, blyat) => {
         } else {
           await BloomBot.Zoology.findOne(
             {
-              Id: blyat.sender,
+              Id: mags.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, BloomBot, error);
               if (!userZoo) {
                 new BloomBot.Zoology({
-                  Id: blyat.sender,
+                  Id: mags.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch((error) => {
-                    return BloomBot.handlerror(BloomBot, blyat, error);
+                    return BloomBot.handlerror(BloomBot, mags, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  blyat,
+                  mags,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
@@ -84,7 +84,7 @@ module.exports = async (BloomBot, blyat) => {
                   );
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    blyat,
+                    mags,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -108,11 +108,11 @@ module.exports = async (BloomBot, blyat) => {
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, blyat, error);
+                    return BloomBot.handlerror(BloomBot, mags, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    blyat,
+                    mags,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -129,7 +129,7 @@ module.exports = async (BloomBot, blyat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
+module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
   try {
-    if (!blyat.isGroup) {
-      await BloomBot.sendMessage(blyat.chat, {
+    if (!mags.isGroup) {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
       );
     }
     if (!isAdmin) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
       );
     }
     if (!isbotAdmin) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -66,15 +66,15 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
 
     if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
       var mention = BloomBot.mentionByTag;
-      var users = (await mention[0]) || blyat.msg.contextInfo.participant;
+      var users = (await mention[0]) || mags.msg.contextInfo.participant;
       if (!users) {
-        await BloomBot.sendMessage(blyat.chat, {
+        await BloomBot.sendMessage(mags.chat, {
           react: {
             text: "❌",
-            key: blyat.key,
+            key: mags.key,
           },
         });
-        return blyat.reply(
+        return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -85,15 +85,15 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        await BloomBot.groupParticipantsUpdate(blyat.chat, [users], "demote");
+        await BloomBot.groupParticipantsUpdate(mags.chat, [users], "demote");
       } catch {
-        await BloomBot.sendMessage(blyat.chat, {
+        await BloomBot.sendMessage(mags.chat, {
           react: {
             text: "❌",
-            key: blyat.key,
+            key: mags.key,
           },
         });
-        return blyat.reply(
+        return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -107,24 +107,24 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
       }
       await BloomBot.imagebutton(
         BloomBot,
-        blyat,
+        mags,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (BloomBot.mentionByReply) {
       var users =
-        blyat.mtype == "extendedTextMessage" &&
-        blyat.message.extendedTextMessage.contextInfo != null
-          ? blyat.message.extendedTextMessage.contextInfo.participant || ""
+        mags.mtype == "extendedTextMessage" &&
+        mags.message.extendedTextMessage.contextInfo != null
+          ? mags.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await BloomBot.sendMessage(blyat.chat, {
+        await BloomBot.sendMessage(mags.chat, {
           react: {
             text: "❌",
-            key: blyat.key,
+            key: mags.key,
           },
         });
-        return blyat.reply(
+        return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -135,15 +135,15 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        await BloomBot.groupParticipantsUpdate(blyat.chat, [users], "demote");
+        await BloomBot.groupParticipantsUpdate(mags.chat, [users], "demote");
       } catch {
-        await BloomBot.sendMessage(blyat.chat, {
+        await BloomBot.sendMessage(mags.chat, {
           react: {
             text: "❌",
-            key: blyat.key,
+            key: mags.key,
           },
         });
-        return blyat.reply(
+        return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -157,18 +157,18 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
       }
       await BloomBot.imagebutton(
         BloomBot,
-        blyat,
+        mags,
         `OOPs!! looks like someone demoted @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -179,7 +179,7 @@ module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

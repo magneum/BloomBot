@@ -16,8 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noLink = async (BloomBot, blyat) => {
-  var FetchCurrentGroupLink = await BloomBot.groupInviteCode(blyat.chat);
+exports.noLink = async (BloomBot, mags) => {
+  var FetchCurrentGroupLink = await BloomBot.groupInviteCode(mags.chat);
   var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   var isGroupLink = GroupLinkRegex.exec(BloomBot.budy);
   var PresentGroupLink = new RegExp(
@@ -27,18 +27,18 @@ exports.noLink = async (BloomBot, blyat) => {
   var isCurrentGroupLink = PresentGroupLink.test(BloomBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await BloomBot.groupParticipantsUpdate(
-      blyat.chat,
+      mags.chat,
       [BloomBot.sender],
       "remove"
-    ).catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
-    await blyat.reply(
+    ).catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+    await mags.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await BloomBot.sendMessage(blyat.chat, {
+    return await BloomBot.sendMessage(mags.chat, {
       delete: {
-        remoteJid: blyat.chat,
+        remoteJid: mags.chat,
         fromMe: false,
         id: BloomBot.quoted.id,
         participant: BloomBot.quoted.sender,
@@ -53,18 +53,18 @@ exports.noLink = async (BloomBot, blyat) => {
     BloomBot.budy.includes("www.")
   ) {
     await BloomBot.groupParticipantsUpdate(
-      blyat.chat,
+      mags.chat,
       [BloomBot.sender],
       "remove"
-    ).catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
-    await blyat.reply(
+    ).catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+    await mags.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
 > _Kicked! One Less MoFo!_`
     );
-    return await BloomBot.sendMessage(blyat.chat, {
+    return await BloomBot.sendMessage(mags.chat, {
       delete: {
-        remoteJid: blyat.chat,
+        remoteJid: mags.chat,
         fromMe: false,
         id: BloomBot.quoted.id,
         participant: BloomBot.quoted.sender,

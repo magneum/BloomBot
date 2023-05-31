@@ -16,34 +16,34 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/config");
-exports.premium = async (BloomBot, blyat, update, store) => {
+exports.premium = async (BloomBot, mags, update, store) => {
   if (BloomBot.isSudo) {
-    await BloomBot.sendMessage(blyat.chat, {
+    await BloomBot.sendMessage(mags.chat, {
       react: {
         text: "🌻",
-        key: blyat.key,
+        key: mags.key,
       },
     });
-    return await require("@/System/library")(BloomBot, blyat, update, store);
+    return await require("@/System/library")(BloomBot, mags, update, store);
   } else
     await BloomBot.premium.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, userVium) => {
-        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+        if (error) return BloomBot.handlerror(BloomBot, mags, error);
         if (!userVium) {
           new BloomBot.premium({
-            Id: blyat.sender,
+            Id: mags.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
           return await require("@/System/library")(
             BloomBot,
-            blyat,
+            mags,
             update,
             store
           );
@@ -55,7 +55,7 @@ exports.premium = async (BloomBot, blyat, update, store) => {
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -64,20 +64,20 @@ exports.premium = async (BloomBot, blyat, update, store) => {
             );
           }
         } else {
-          await BloomBot.sendMessage(blyat.chat, {
+          await BloomBot.sendMessage(mags.chat, {
             react: {
               text: "🌻",
-              key: blyat.key,
+              key: mags.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
           userVium
             .save()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
           return await require("@/System/library")(
             BloomBot,
-            blyat,
+            mags,
             update,
             store
           );

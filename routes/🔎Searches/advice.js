@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     var кяуяєs = await BloomBot.axios.get("https://api.adviceslip.com/advice");
     try {
@@ -35,7 +35,7 @@ module.exports = async (BloomBot, blyat) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await BloomBot.imagebutton(
         BloomBot,
-        blyat,
+        mags,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
         bsoni.url_image
@@ -43,14 +43,14 @@ module.exports = async (BloomBot, blyat) => {
     } catch {
       await BloomBot.imagebutton(
         BloomBot,
-        blyat,
+        mags,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
 > ${кяуяєs.data.slip.advice}`,
         BloomBot.display
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

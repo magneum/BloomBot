@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
       2
@@ -51,7 +51,7 @@ module.exports = async (BloomBot, blyat) => {
       }, 0);
     return await BloomBot.imagebutton(
       BloomBot,
-      blyat,
+      mags,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 > ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
@@ -348,7 +348,7 @@ module.exports = async (BloomBot, blyat) => {
       BloomBot.display
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

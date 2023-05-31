@@ -19,20 +19,20 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     await BloomBot.Economy.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, blyat, error);
+          return BloomBot.handlerror(BloomBot, mags, error);
         }
 
         if (!userEco) {
           new BloomBot.Economy({
-            Id: blyat.sender,
+            Id: mags.sender,
             money: 0,
             daily: 0,
             timeout: 0,
@@ -43,11 +43,11 @@ module.exports = async (BloomBot, blyat) => {
           })
             .save()
             .catch((error) => {
-              return BloomBot.handlerror(BloomBot, blyat, error);
+              return BloomBot.handlerror(BloomBot, mags, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -60,7 +60,7 @@ module.exports = async (BloomBot, blyat) => {
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -82,11 +82,11 @@ module.exports = async (BloomBot, blyat) => {
             userEco.fishdone = Date.now();
             userEco.fishtimeout = 1800000;
             userEco.save().catch((error) => {
-              return BloomBot.handlerror(BloomBot, blyat, error);
+              return BloomBot.handlerror(BloomBot, mags, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell for Around *${worth}*!
@@ -98,7 +98,7 @@ module.exports = async (BloomBot, blyat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

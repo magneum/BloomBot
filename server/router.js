@@ -16,28 +16,28 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (BloomBot, blyat, update, store) => {
+module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.body =
-    blyat.mtype === "conversation"
-      ? blyat.message.conversation
-      : blyat.mtype == "imageMessage"
-      ? blyat.message.imageMessage.caption
-      : blyat.mtype == "videoMessage"
-      ? blyat.message.videoMessage.caption
-      : blyat.mtype == "extendedTextMessage"
-      ? blyat.message.extendedTextMessage.text
-      : blyat.mtype == "buttonsResponseMessage"
-      ? blyat.message.buttonsResponseMessage.selectedButtonId
-      : blyat.mtype == "listResponseMessage"
-      ? blyat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : blyat.mtype == "templateButtonReplyMessage"
-      ? blyat.message.templateButtonReplyMessage.selectedId
-      : blyat.mtype === "messageContextInfo"
-      ? blyat.message.buttonsResponseMessage?.selectedButtonId ||
-        blyat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        blyat.text
+    mags.mtype === "conversation"
+      ? mags.message.conversation
+      : mags.mtype == "imageMessage"
+      ? mags.message.imageMessage.caption
+      : mags.mtype == "videoMessage"
+      ? mags.message.videoMessage.caption
+      : mags.mtype == "extendedTextMessage"
+      ? mags.message.extendedTextMessage.text
+      : mags.mtype == "buttonsResponseMessage"
+      ? mags.message.buttonsResponseMessage.selectedButtonId
+      : mags.mtype == "listResponseMessage"
+      ? mags.message.listResponseMessage.singleSelectReply.selectedRowId
+      : mags.mtype == "templateButtonReplyMessage"
+      ? mags.message.templateButtonReplyMessage.selectedId
+      : mags.mtype === "messageContextInfo"
+      ? mags.message.buttonsResponseMessage?.selectedButtonId ||
+        mags.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        mags.text
       : "";
-  BloomBot.budy = typeof blyat.text == "string" ? blyat.text : "";
+  BloomBot.budy = typeof mags.text == "string" ? mags.text : "";
   BloomBot.icmd = BloomBot.body.startsWith(prefix);
   BloomBot.isCommand =
     prefix.includes(BloomBot.body != "" && BloomBot.body.slice(0, 1)) &&
@@ -46,40 +46,40 @@ module.exports = async (BloomBot, blyat, update, store) => {
     ? BloomBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
   BloomBot.args = BloomBot.body.trim().split(/ +/).slice(1);
-  BloomBot.pushname = blyat.pushName || "No Name";
+  BloomBot.pushname = mags.pushName || "No Name";
   BloomBot.botNumber = await BloomBot.decodeJid(BloomBot.user.id);
-  BloomBot.frome = blyat.sender == BloomBot.botNumber ? true : false;
+  BloomBot.frome = mags.sender == BloomBot.botNumber ? true : false;
   BloomBot.Fullarg = BloomBot.args.join(" ");
   BloomBot.contant = q = BloomBot.args.join(" ");
-  BloomBot.quoted = blyat.quoted ? blyat.quoted : blyat;
+  BloomBot.quoted = mags.quoted ? mags.quoted : mags;
   BloomBot.mime = (BloomBot.quoted.msg || BloomBot.quoted).mimetype || "";
   BloomBot.isMedia = /image|video|sticker|audio/.test(BloomBot.mime);
   BloomBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   BloomBot.isCreator = [BloomBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(blyat.sender);
+    .includes(mags.sender);
   BloomBot.mentionByTag =
-    blyat.mtype == "extendedTextMessage" &&
-    blyat.message.extendedTextMessage.contextInfo != null
-      ? blyat.message.extendedTextMessage.contextInfo.mentionedJid
+    mags.mtype == "extendedTextMessage" &&
+    mags.message.extendedTextMessage.contextInfo != null
+      ? mags.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
   BloomBot.mentionByReply =
-    blyat.mtype == "extendedTextMessage" &&
-    blyat.message.extendedTextMessage.contextInfo != null
-      ? blyat.message.extendedTextMessage.contextInfo.participant || ""
+    mags.mtype == "extendedTextMessage" &&
+    mags.message.extendedTextMessage.contextInfo != null
+      ? mags.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./relink")(BloomBot, blyat, update, store);
-  if (!blyat.isGroup && BloomBot.command)
-    return require("@/auth/noPrivate")(BloomBot, blyat, update);
-  if (blyat.isGroup && BloomBot.command)
+  require("./relink")(BloomBot, mags, update, store);
+  if (!mags.isGroup && BloomBot.command)
+    return require("@/auth/noPrivate")(BloomBot, mags, update);
+  if (mags.isGroup && BloomBot.command)
     BloomBot.userBanCheck.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return blyat.reply(`*😥Apologies:* _${BloomBot.pushname}_
+          return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -88,11 +88,11 @@ module.exports = async (BloomBot, blyat, update, store) => {
         }
         BloomBot.userBanCheck.findOne(
           {
-            Id: blyat.chat,
+            Id: mags.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return blyat.reply(`*😥Apologies:* _${BloomBot.pushname}_
+              return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -103,13 +103,13 @@ module.exports = async (BloomBot, blyat, update, store) => {
             if (groupCheck && !BloomBot.frome && !BloomBot.isSudo) return;
             await BloomBot.LinkList.findOne(
               {
-                serverId: blyat.chat,
+                serverId: mags.chat,
               },
               async (error, server) => {
-                if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+                if (error) return BloomBot.handlerror(BloomBot, mags, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(BloomBot, blyat);
+                return noLink(BloomBot, mags);
               }
             );
 
@@ -124,11 +124,11 @@ module.exports = async (BloomBot, blyat, update, store) => {
             // !BloomBot.fromme &&
             // !BloomBot.isSudo &&
             // !BloomBot.varResp.includes(BloomBot.command) &&
-            // !BloomBot.memberRespA.includes(blyat.sender) &&
-            // !BloomBot.memberRespB.includes(blyat.sender)
+            // !BloomBot.memberRespA.includes(mags.sender) &&
+            // !BloomBot.memberRespB.includes(mags.sender)
             // ) {
             // return await BloomBot.sendMessage(
-            // blyat.chat,
+            // mags.chat,
             // {
             // gifPlayback: true,
             // video: BloomBot.fs.readFileSync("./public/how.mp4"),
@@ -142,15 +142,15 @@ module.exports = async (BloomBot, blyat, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [blyat.sender],
+            // mentions: [mags.sender],
             // },
-            // { quoted: blyat }
+            // { quoted: mags }
             // );
             // }
 
             if (process.env.runtype === "devar" && !BloomBot.isSudo) {
               return await BloomBot.sendMessage(
-                blyat.chat,
+                mags.chat,
                 {
                   gifPlayback: true,
                   video: BloomBot.fs.readFileSync(
@@ -165,20 +165,20 @@ module.exports = async (BloomBot, blyat, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [blyat.sender],
+                  mentions: [mags.sender],
                 },
-                { quoted: blyat }
+                { quoted: mags }
               );
             } else
-              await BloomBot.sendMessage(blyat.chat, {
+              await BloomBot.sendMessage(mags.chat, {
                 react: {
                   text: "🌻",
-                  key: blyat.key,
+                  key: mags.key,
                 },
               });
             return await require("@/server/library")(
               BloomBot,
-              blyat,
+              mags,
               update,
               store
             );

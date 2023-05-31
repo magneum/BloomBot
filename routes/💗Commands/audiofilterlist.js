@@ -19,10 +19,10 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   await BloomBot.imagebutton(
     BloomBot,
-    blyat,
+    mags,
     `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🤖Hello, I am BloomBot User-bot🤖*
 > Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!

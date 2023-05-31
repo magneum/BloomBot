@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat, isAdmin) => {
+module.exports = async (BloomBot, mags, isAdmin) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -41,13 +41,13 @@ module.exports = async (BloomBot, blyat, isAdmin) => {
 
     var { isBaileys } = BloomBot.quoted;
     if (!isBaileys) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -57,17 +57,17 @@ module.exports = async (BloomBot, blyat, isAdmin) => {
 > _${BloomBot.prefix}${fpth} reply to Image/Video/Text_`
       );
     } else {
-      return await BloomBot.sendMessage(blyat.chat, {
+      return await BloomBot.sendMessage(mags.chat, {
         delete: {
-          remoteJid: blyat.chat,
+          remoteJid: mags.chat,
           fromMe: true,
-          id: blyat.quoted.id,
-          participant: blyat.quoted.sender,
+          id: mags.quoted.id,
+          participant: mags.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

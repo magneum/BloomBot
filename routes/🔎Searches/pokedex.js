@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -48,13 +48,13 @@ module.exports = async (BloomBot, blyat) => {
       );
       json = await res.json();
     } catch {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -68,7 +68,7 @@ module.exports = async (BloomBot, blyat) => {
       .then(async (card) => {
         return await BloomBot.imagebutton(
           BloomBot,
-          blyat,
+          mags,
           `💫 *Name:* ${json.name}
 〽️ *Pokedex Id:* ${json.id}
 🎀 *Type:* ${json.type}
@@ -103,7 +103,7 @@ module.exports = async (BloomBot, blyat) => {
         );
       });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

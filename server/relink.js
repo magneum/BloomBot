@@ -88,7 +88,7 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (BloomBot, blyat, update, store) => {
+module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.display = getRandomImagePath()
     .then((imagePath) => {
       BloomBot.display = imagePath;
@@ -139,7 +139,7 @@ module.exports = async (BloomBot, blyat, update, store) => {
   BloomBot.TelegraPh = TelegraPh;
   BloomBot.UploadFileUgu = UploadFileUgu;
   BloomBot.webp2mp4File = webp2mp4File;
-  BloomBot.Tname = blyat.sender.replace(/['@s whatsapp.net']/g, "");
+  BloomBot.Tname = mags.sender.replace(/['@s whatsapp.net']/g, "");
 
   BloomBot.msgFilter = require("./msgFilter");
   BloomBot.imagebutton = require("@/app/buttons/imagebutton");
@@ -296,7 +296,7 @@ module.exports = async (BloomBot, blyat, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   BloomBot.isSudo = sudotring.includes(
-    blyat.sender.substring(0, blyat.sender.indexOf("@"))
+    mags.sender.substring(0, mags.sender.indexOf("@"))
   );
   return BloomBot;
 };

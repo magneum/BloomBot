@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -49,13 +49,13 @@ module.exports = async (BloomBot, blyat) => {
       text += BloomBot.args[i] + " ";
     }
     if (text.length > 200) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -79,7 +79,7 @@ module.exports = async (BloomBot, blyat) => {
         var mgdata = response.data;
         console.log(mgdata);
         return await BloomBot.sendMessage(
-          blyat.chat,
+          mags.chat,
           {
             audio: { url: mgdata.meta.url },
             mimetype: "audio/mpeg",
@@ -99,12 +99,12 @@ module.exports = async (BloomBot, blyat) => {
               },
             },
           },
-          { quoted: blyat }
+          { quoted: mags }
         );
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

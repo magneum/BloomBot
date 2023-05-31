@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat, isAdmin, participants) => {
+module.exports = async (BloomBot, mags, isAdmin, participants) => {
   try {
-    if (!blyat.isGroup) {
-      await BloomBot.sendMessage(blyat.chat, {
+    if (!mags.isGroup) {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error*  
@@ -36,13 +36,13 @@ module.exports = async (BloomBot, blyat, isAdmin, participants) => {
       );
     }
     if (!isAdmin && !BloomBot.isSudo) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -51,39 +51,39 @@ module.exports = async (BloomBot, blyat, isAdmin, participants) => {
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(blyat.sender, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.sender, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
     }
     if (BloomBot.args) {
       return await BloomBot.sendMessage(
-        blyat.chat,
+        mags.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ChatId:* ${blyat.chat}
+          caption: `*📢ChatId:* ${mags.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${BloomBot.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: blyat }
+        { quoted: mags }
       );
     } else {
       return await BloomBot.sendMessage(
-        blyat.chat,
+        mags.chat,
         {
           image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
-          caption: `*📢ChatId:* ${blyat.chat}
+          caption: `*📢ChatId:* ${mags.chat}
 Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 Ῠ 🕛𝐓𝐢𝐦𝐞:  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
-        { quoted: blyat }
+        { quoted: mags }
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

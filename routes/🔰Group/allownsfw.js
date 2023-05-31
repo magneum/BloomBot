@@ -19,42 +19,42 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
+module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
   try {
-    if (!blyat.isGroup) {
-      await BloomBot.sendMessage(blyat.chat, {
+    if (!mags.isGroup) {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > It's a group command!`
       );
     } else if (!isAdmin) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
 > This is an Admin only Command!`
       );
     } else if (!isbotAdmin) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -63,18 +63,18 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
     } else
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(blyat.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.chat, "image");
     } catch {
       𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
     }
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-      return blyat.reply(
+      return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -91,18 +91,18 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await BloomBot.nsfwCheck.findOne(
         {
-          serverId: blyat.chat,
+          serverId: mags.chat,
         },
         async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+          if (error) return BloomBot.handlerror(BloomBot, mags, error);
           if (!server) {
             new BloomBot.nsfwCheck({
-              serverId: blyat.chat,
+              serverId: mags.chat,
               value: "ON",
             }).save();
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
@@ -111,7 +111,7 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
           } else
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
@@ -126,14 +126,14 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await BloomBot.nsfwCheck.findOne(
         {
-          serverId: blyat.chat,
+          serverId: mags.chat,
         },
         async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+          if (error) return BloomBot.handlerror(BloomBot, mags, error);
           if (!server) {
             return await BloomBot.imagebutton(
               BloomBot,
-              blyat,
+              mags,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
@@ -142,7 +142,7 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
           } else await server.delete();
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
@@ -151,13 +151,13 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
         }
       );
     } else
-      await BloomBot.sendMessage(blyat.chat, {
+      await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",
-          key: blyat.key,
+          key: mags.key,
         },
       });
-    return blyat.reply(
+    return mags.reply(
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -168,7 +168,7 @@ module.exports = async (BloomBot, blyat, gmeta, isAdmin, isbotAdmin) => {
 > ${BloomBot.prefix}${fpth} off`
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];

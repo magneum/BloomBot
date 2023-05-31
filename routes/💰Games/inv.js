@@ -19,17 +19,17 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, blyat) => {
+module.exports = async (BloomBot, mags) => {
   try {
     BloomBot.Robbery.findOne(
       {
-        Id: blyat.sender,
+        Id: mags.sender,
       },
       async (error, userRob) => {
-        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
+        if (error) return BloomBot.handlerror(BloomBot, mags, error);
         if (!userRob) {
           new BloomBot.Robbery({
-            Id: blyat.sender,
+            Id: mags.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -37,10 +37,10 @@ module.exports = async (BloomBot, blyat) => {
             PermanentRobberyTime: 900000,
           })
             .save()
-            .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
+            .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
           return await BloomBot.imagebutton(
             BloomBot,
-            blyat,
+            mags,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -49,7 +49,7 @@ module.exports = async (BloomBot, blyat) => {
         }
         return await BloomBot.imagebutton(
           BloomBot,
-          blyat,
+          mags,
           `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -59,7 +59,7 @@ module.exports = async (BloomBot, blyat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, blyat, error);
+    return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
 module.exports.aliases = [];
