@@ -42,8 +42,11 @@ var bodyParser = require("body-parser");
 var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
+
+var RemoteFileAuthState = require("@/temp/RemoteFileAuthState");
+var { useRemoteFileAuthState } = require("@/auth/Database");
+
 async function rmdb() {
   await new Promise((resolve, reject) => {
     exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
@@ -114,9 +117,22 @@ async function magneum() {
     );
   });
   opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
-
   await sequelize.sync();
-  var { state, saveCreds } = await useRemoteFileAuthState();
+
+  let state, saveCreds;
+  try {
+    ({ state, saveCreds } = await RemoteFileAuthState(logger));
+    logger.info(
+      "Successfully retrieved state and saveCreds from RemoteFileAuthState."
+    );
+  } catch (error) {
+    logger.error("Error occurred in RemoteFileAuthState:", error);
+    ({ state, saveCreds } = await useRemoteFileAuthState(logger));
+    logger.info(
+      "Successfully retrieved state and saveCreds from useRemoteFileAuthState."
+    );
+  }
+
   var BloomBot = Bloom_bot_client({
     auth: state,
     MessageRetryMap,
@@ -412,7 +428,13 @@ async function magneum() {
   BloomBot.sendText = (jid, text, quoted = "", options) =>
     BloomBot.sendMessage(jid, { text: text, ...options }, { quoted });
 
-  BloomBot.sendImage = async (jid, path, caption = "", quoted = "", options) => {
+  BloomBot.sendImage = async (
+    jid,
+    path,
+    caption = "",
+    quoted = "",
+    options
+  ) => {
     let buffer = Buffer.isBuffer(path)
       ? path
       : /^data:.*?\/.*?;base64,/i.test(path)
