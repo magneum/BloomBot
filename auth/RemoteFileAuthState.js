@@ -109,7 +109,7 @@ var RemoteFileAuthState = async (logger) => {
 
   var saveCreds = async (data) => {
     if (!data) {
-      console.log("Saving all creds");
+      // console.log("Saving all creds");
       data = creds;
     }
     for (var _key in data) {
@@ -124,10 +124,10 @@ var RemoteFileAuthState = async (logger) => {
             value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
           })
           .then((res) => {
-            console.log(`updated value ${_key} `);
+            // console.log(`updated value ${_key} `);
           })
           .catch((err) => {
-            console.log(chalk.whiteBright(err));
+            // console.log(chalk.whiteBright(err));
           });
       } else {
         await Cred.create({
@@ -135,10 +135,10 @@ var RemoteFileAuthState = async (logger) => {
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         })
           .then((res) => {
-            console.log(`inserted value ${_key}`);
+            // console.log(`inserted value ${_key}`);
           })
           .catch((err) => {
-            console.log(chalk.whiteBright(err));
+            // console.log(chalk.whiteBright(err));
           });
       }
     }
@@ -146,7 +146,7 @@ var RemoteFileAuthState = async (logger) => {
 
   var saveKey = async (key, data, _key) => {
     for (var subKey in data[_key]) {
-      console.log(`Trying to find key ${key} and subKey ${subKey}.`);
+      // console.log(`Trying to find key ${key} and subKey ${subKey}.`);
       var res = await Key.findOne({
         where: {
           key: subKey,
@@ -159,10 +159,10 @@ var RemoteFileAuthState = async (logger) => {
             value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
           })
           .then((res) => {
-            console.log(`updated key ${key} and subKey ${subKey}`);
+            // console.log(`updated key ${key} and subKey ${subKey}`);
           })
           .catch((err) => {
-            console.log(chalk.blueBright(err));
+            // console.log(chalk.blueBright(err));
           });
       } else {
         await Key.create({
@@ -171,10 +171,10 @@ var RemoteFileAuthState = async (logger) => {
           type: key,
         })
           .then((res) => {
-            console.log(`inserted key ${key} and subKey ${subKey}`);
+            // console.log(`inserted key ${key} and subKey ${subKey}`);
           })
           .catch((err) => {
-            console.log(chalk.blueBright(err));
+            // console.log(chalk.blueBright(err));
           });
       }
     }
@@ -183,7 +183,7 @@ var RemoteFileAuthState = async (logger) => {
 
   let credsExist = await checkCreds();
   if (credsExist) {
-    console.log("loading values back.");
+    // console.log("loading values back.");
     let parent = {
       creds: {},
       keys: {},
@@ -195,7 +195,7 @@ var RemoteFileAuthState = async (logger) => {
     parent.keys = allKeys;
 
     var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    console.log(final);
+    // console.log(final);
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -226,9 +226,7 @@ var RemoteFileAuthState = async (logger) => {
         set: async (data) => {
           for (var _key in data) {
             var key = KEY_MAP[_key];
-            console.log(
-              `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
-            );
+            // console.log(`Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`);
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);
