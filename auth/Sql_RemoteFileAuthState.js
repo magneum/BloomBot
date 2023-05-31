@@ -72,7 +72,7 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const RemoteFileAuthState = async () => {
+const Sql_RemoteFileAuthState = async () => {
   let creds;
   let keys = {};
 
@@ -178,7 +178,7 @@ const RemoteFileAuthState = async () => {
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    process.env.VERBOSE === "1" ? logger.info("loading values back.") : null;
+    debugEnabled ? logger.info("loading values back.") : null;
     const parent = {
       creds: {},
       keys: {},
@@ -190,7 +190,7 @@ const RemoteFileAuthState = async () => {
     parent.keys = allKeys;
 
     const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    process.env.VERBOSE === "1" ? logger.info(final) : null;
+    debugEnabled ? logger.info(final) : null;
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -237,4 +237,4 @@ const RemoteFileAuthState = async () => {
   };
 };
 
-module.exports = RemoteFileAuthState;
+module.exports = Sql_RemoteFileAuthState;
