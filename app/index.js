@@ -15,6 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
 var gitPull = require("@/utils/gitPull");
