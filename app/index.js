@@ -823,14 +823,15 @@ async function magneum() {
     await BloomBot.updateProfileStatus(
       "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );
-  }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
+  }, 300 * 1000);
   setInterval(async () => {
     await BloomBot.updateProfilePicture("120363020792949649@g.us", {
       url: BloomBot.display,
     });
-  }, 60 * 60 * 1000);
+  }, 120 * 1000);
+
   setInterval(async () => {
     gitPull();
-  }, 2 * 60 * 1000);
+  }, 120 * 1000);
 }
 magneum().catch((error) => logger.error(error));
