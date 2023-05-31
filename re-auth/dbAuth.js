@@ -1,20 +1,5 @@
 const { initAuthCreds, proto } = require("@adiwajshing/baileys");
-const { Cred, Key, Auth } = require("./auth");
-
-const BufferJSON = {
-  reviver: (key, value) => {
-    if (typeof value === "string" && /^Buffer:/.test(value)) {
-      return Buffer.from(value.slice("Buffer:".length), "base64");
-    }
-    return value;
-  },
-  replacer: (key, value) => {
-    if (Buffer.isBuffer(value)) {
-      return `Buffer:${value.toString("base64")}`;
-    }
-    return value;
-  },
-};
+const { Cred, Key } = require("../database/auth");
 
 const KEY_MAP = {
   "pre-key": "preKeys",
@@ -25,7 +10,8 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const useRemoteFileAuthState = async () => {
+const useRemoteFileAuthState = async (logger) => {
+  const { readFileSync, writeFileSync, existsSync } = require("fs");
   let creds;
   let keys = {};
 
@@ -172,6 +158,7 @@ const useRemoteFileAuthState = async () => {
         },
       },
     },
+    saveCreds,
   };
 };
 

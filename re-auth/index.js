@@ -37,24 +37,11 @@ var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var bodyParser = require("body-parser");
-var { exec } = require("child_process");
 var useRemoteFileAuthState = require("./dbAuth");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
-async function rmdb() {
-  await new Promise((resolve, reject) => {
-    exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve();
-      }
-    });
-  });
-  process.exit(0);
-}
 async function magneum() {
   await monGoose
     .connect(MONGODB_URL, {
@@ -112,9 +99,6 @@ async function magneum() {
     );
   });
   opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
-
-  // var sequelize = DATABASE;
-  // await sequelize.sync();
   let { state, saveCreds } = await useRemoteFileAuthState();
 
   var BloomBot = Bloom_bot_client({
@@ -141,7 +125,7 @@ async function magneum() {
   });
   store.bind(BloomBot.ev);
 
-  BloomBot.ev.on("creds.update", async (update) => await saveCreds());
+  BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
   BloomBot.ev.on("connection.update", async (update) => {
     var {
       lastDisconnect,

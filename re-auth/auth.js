@@ -1,9 +1,10 @@
-require("@/logger/config");
+const config = require("./dbConfig");
 const { DataTypes, Model } = require("sequelize");
 
-const sequelize = DATABASE;
+const sequelize = config.DATABASE;
 
 class Cred extends Model {}
+
 Cred.init(
   {
     key: {
@@ -22,6 +23,7 @@ Cred.init(
 );
 
 class Key extends Model {}
+
 Key.init(
   {
     key: {
@@ -42,25 +44,4 @@ Key.init(
   }
 );
 
-class Auth extends Model {}
-Auth.init(
-  {
-    key: {
-      type: DataTypes.STRING(1000000),
-      allowNull: false,
-    },
-    value: {
-      type: DataTypes.STRING(1000000),
-    },
-    type: {
-      type: DataTypes.STRING(1000000),
-    },
-  },
-  {
-    sequelize,
-    tableName: "Authentication",
-    timestamps: false,
-  }
-);
-
-module.exports = { Cred, Key, Auth };
+module.exports = { Cred, Key };

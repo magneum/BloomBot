@@ -20,8 +20,9 @@ var fs = require("fs");
 var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
+} else {
+  require("dotenv");
 }
-
 process.env.DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
