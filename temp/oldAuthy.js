@@ -1,9 +1,8 @@
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-const chalk = require("chalk");
-const { Logger } = require("pino");
-const { Cred, Key } = require("./auth.js");
+var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+var { Cred, Key } = require("./auth.js");
+var chalk = require("chalk");
 
-const KEY_MAP = {
+var KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -12,12 +11,12 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const useRemoteFileAuthState = async (logger) => {
+var useRemoteFileAuthState = async (logger) => {
   let creds;
   let keys = {};
 
-  const checkCreds = async () => {
-    const lock = await Cred.findOne({
+  var checkCreds = async () => {
+    var lock = await Cred.findOne({
       where: {
         key: "noiseKey",
       },
@@ -29,8 +28,8 @@ const useRemoteFileAuthState = async (logger) => {
     }
   };
 
-  const loadCreds = async () => {
-    const allCreds = await Cred.findAll();
+  var loadCreds = async () => {
+    var allCreds = await Cred.findAll();
     let temp = {};
     allCreds.forEach((res) => {
       let val = res.getDataValue("value");
@@ -42,7 +41,7 @@ const useRemoteFileAuthState = async (logger) => {
     return temp;
   };
 
-  const loadKeys = async () => {
+  var loadKeys = async () => {
     let keys = {
       preKeys: {},
       sessions: {},
@@ -51,7 +50,7 @@ const useRemoteFileAuthState = async (logger) => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    const allKeys = await Key.findAll();
+    var allKeys = await Key.findAll();
     allKeys.forEach((res) => {
       let val = res.getDataValue("value");
       let key = res.getDataValue("key");
@@ -63,13 +62,13 @@ const useRemoteFileAuthState = async (logger) => {
     return keys;
   };
 
-  const saveCreds = async (data) => {
+  var saveCreds = async (data) => {
     if (!data) {
       console.log("Saving all creds");
       data = creds;
     }
-    for (const _key in data) {
-      const cred = await Cred.findOne({
+    for (var _key in data) {
+      var cred = await Cred.findOne({
         where: {
           key: _key,
         },
@@ -100,10 +99,10 @@ const useRemoteFileAuthState = async (logger) => {
     }
   };
 
-  const saveKey = async (key, data, _key) => {
-    for (const subKey in data[_key]) {
+  var saveKey = async (key, data, _key) => {
+    for (var subKey in data[_key]) {
       console.log(`Trying to find key ${key} and subKey ${subKey}.`);
-      const res = await Key.findOne({
+      var res = await Key.findOne({
         where: {
           key: subKey,
           type: key,
@@ -144,13 +143,13 @@ const useRemoteFileAuthState = async (logger) => {
       creds: {},
       keys: {},
     };
-    const allCreds = await loadCreds();
-    const allKeys = await loadKeys();
+    var allCreds = await loadCreds();
+    var allKeys = await loadKeys();
 
     parent.creds = allCreds;
     parent.keys = allKeys;
 
-    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
     console.log(final);
     creds = final.creds;
     keys = final.keys;
@@ -165,7 +164,7 @@ const useRemoteFileAuthState = async (logger) => {
       creds,
       keys: {
         get: (type, ids) => {
-          const key = KEY_MAP[type];
+          var key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
             let _a;
             let value =
@@ -180,8 +179,8 @@ const useRemoteFileAuthState = async (logger) => {
           }, {});
         },
         set: async (data) => {
-          for (const _key in data) {
-            const key = KEY_MAP[_key];
+          for (var _key in data) {
+            var key = KEY_MAP[_key];
             console.log(
               `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
             );

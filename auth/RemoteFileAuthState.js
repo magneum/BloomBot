@@ -1,7 +1,8 @@
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-const { DataTypes, Model } = require("sequelize");
-const sequelize = process.env.DATABASE;
-const chalk = require("chalk");
+require("@/logger/config");
+var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+var { DataTypes, Model } = require("sequelize");
+var chalk = require("chalk");
+var sequelize = DATABASE;
 
 class Cred extends Model {}
 
@@ -46,7 +47,7 @@ Key.init(
   }
 );
 
-const KEY_MAP = {
+var KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -55,12 +56,12 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const RemoteFileAuthState = async (logger) => {
+var RemoteFileAuthState = async (logger) => {
   let creds;
   let keys = {};
 
-  const checkCreds = async () => {
-    const lock = await Cred.findOne({
+  var checkCreds = async () => {
+    var lock = await Cred.findOne({
       where: {
         key: "noiseKey",
       },
@@ -72,8 +73,8 @@ const RemoteFileAuthState = async (logger) => {
     }
   };
 
-  const loadCreds = async () => {
-    const allCreds = await Cred.findAll();
+  var loadCreds = async () => {
+    var allCreds = await Cred.findAll();
     let temp = {};
     allCreds.forEach((res) => {
       let val = res.getDataValue("value");
@@ -85,7 +86,7 @@ const RemoteFileAuthState = async (logger) => {
     return temp;
   };
 
-  const loadKeys = async () => {
+  var loadKeys = async () => {
     let keys = {
       preKeys: {},
       sessions: {},
@@ -94,7 +95,7 @@ const RemoteFileAuthState = async (logger) => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    const allKeys = await Key.findAll();
+    var allKeys = await Key.findAll();
     allKeys.forEach((res) => {
       let val = res.getDataValue("value");
       let key = res.getDataValue("key");
@@ -106,13 +107,13 @@ const RemoteFileAuthState = async (logger) => {
     return keys;
   };
 
-  const saveCreds = async (data) => {
+  var saveCreds = async (data) => {
     if (!data) {
       console.log("Saving all creds");
       data = creds;
     }
-    for (const _key in data) {
-      const cred = await Cred.findOne({
+    for (var _key in data) {
+      var cred = await Cred.findOne({
         where: {
           key: _key,
         },
@@ -143,10 +144,10 @@ const RemoteFileAuthState = async (logger) => {
     }
   };
 
-  const saveKey = async (key, data, _key) => {
-    for (const subKey in data[_key]) {
+  var saveKey = async (key, data, _key) => {
+    for (var subKey in data[_key]) {
       console.log(`Trying to find key ${key} and subKey ${subKey}.`);
-      const res = await Key.findOne({
+      var res = await Key.findOne({
         where: {
           key: subKey,
           type: key,
@@ -187,13 +188,13 @@ const RemoteFileAuthState = async (logger) => {
       creds: {},
       keys: {},
     };
-    const allCreds = await loadCreds();
-    const allKeys = await loadKeys();
+    var allCreds = await loadCreds();
+    var allKeys = await loadKeys();
 
     parent.creds = allCreds;
     parent.keys = allKeys;
 
-    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
     console.log(final);
     creds = final.creds;
     keys = final.keys;
@@ -208,7 +209,7 @@ const RemoteFileAuthState = async (logger) => {
       creds,
       keys: {
         get: (type, ids) => {
-          const key = KEY_MAP[type];
+          var key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
             let _a;
             let value =
@@ -223,8 +224,8 @@ const RemoteFileAuthState = async (logger) => {
           }, {});
         },
         set: async (data) => {
-          for (const _key in data) {
-            const key = KEY_MAP[_key];
+          for (var _key in data) {
+            var key = KEY_MAP[_key];
             console.log(
               `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
             );
