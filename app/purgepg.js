@@ -16,13 +16,11 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var { Client } = require("pg");
-var dotenv = require("dotenv");
 var chalk = require("chalk");
-
-dotenv.config();
+var dbConfig = require("../auth/dbConfig");
 
 async function cleanDatabase() {
-  var connectionString = process.env.DATABASE_URL;
+  var connectionString = dbConfig.DATABASE_URL;
   var client = new Client({ connectionString });
   try {
     await client.connect();
