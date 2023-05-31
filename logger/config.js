@@ -22,17 +22,17 @@ if (fs.existsSync(".env")) {
 } else {
   require("dotenv");
 }
-var sudo = process.env.sudo;
-global.sudo = sudo.split(",");
+var SUDO = process.env.SUDO;
+global.SUDO = SUDO.split(",");
 global.ShowInfo = process.env.ShowInfo;
 global.upVersion = process.env.upVersion;
 global.REDIS_URL = process.env.REDIS_URL;
 global.Showlogger = process.env.Showlogger;
 global.MONGODB_URL = process.env.MONGODB_URL;
 global.MAINTAINANCE_MODE = process.env.MAINTAINANCE_MODE;
-if (!sudo) sudo = "918436686758,917430922909";
+if (!SUDO) SUDO = "918436686758,917430922909";
 global.verbose = process.env.verbose || "0";
-global.bloom_mode = process.env.bloom_mode || "default";
+global.BLOOM_MODE = process.env.BLOOM_MODE || "default";
 global.PORT = process.env.PORT || Math.floor(Math.random() * 65535) + 10;
 global.pgdb = process.env.pgdb;
 global.prefix = process.env.prefix || "#";

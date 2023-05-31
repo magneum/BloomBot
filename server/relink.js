@@ -289,17 +289,17 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
   BloomBot.Showlogger = Showlogger;
-  BloomBot.bloom_mode = bloom_mode;
+  BloomBot.BLOOM_MODE = BLOOM_MODE;
   BloomBot.packname = packname;
   BloomBot.ShowInfo = ShowInfo;
   BloomBot.author = author;
   BloomBot.prefix = prefix;
-  BloomBot.sudo = sudo;
-  sudotring =
-    process.env.sudo === undefined
+  BloomBot.SUDO = SUDO;
+  SUDOtring =
+    process.env.SUDO === undefined
       ? "918436686758,917430922909"
-      : process.env.sudo;
-  BloomBot.isSudo = sudotring.includes(
+      : process.env.SUDO;
+  BloomBot.isSudo = SUDOtring.includes(
     mags.sender.substring(0, mags.sender.indexOf("@"))
   );
   return BloomBot;
