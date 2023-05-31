@@ -40,7 +40,12 @@ const { Boom } = require("@hapi/boom");
 const { exec } = require("child_process");
 let PhoneNumber = require("awesome-phonenumber");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
-const { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
+const {
+  mMake,
+  fetchJson,
+  getBuffer,
+  getSizeMedia,
+} = require("@/server/obFunc");
 
 async function magneum() {
   await monGoose
@@ -58,7 +63,7 @@ async function magneum() {
     logger: pino().child({ level: "silent", stream: "store" }),
   });
   const getVersionWaweb = () => {
-    const version;
+    let version;
     try {
       const a = fetchJson(
         "https://web.whatsapp.com/check-update?version=1&platform=web"
@@ -226,7 +231,7 @@ async function magneum() {
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
-      const imåge;
+      let imåge;
       try {
         imåge = await BloomBot.profilePictureUrl(sperson, "image");
       } catch {

@@ -44,7 +44,12 @@ const dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 const remote_authstate = require("@/auth/remote_authstate");
 const { fallback_remote_authstate } = require("@/auth/Database");
-const { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
+const {
+  mMake,
+  fetchJson,
+  getBuffer,
+  getSizeMedia,
+} = require("@/server/obFunc");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {
@@ -74,7 +79,7 @@ async function magneum() {
     logger: pino().child({ level: "silent", stream: "store" }),
   });
   const getVersionWaweb = () => {
-    const version;
+    let version;
     try {
       const a = fetchJson(
         "https://web.whatsapp.com/check-update?version=1&platform=web"
@@ -170,8 +175,7 @@ async function magneum() {
       qr,
       receivedPendingNotifications,
     } = update;
-    if (connection == "connecting")
-      logger.info("📢 Connecting to WhatsApp...");
+    if (connection == "connecting") logger.info("📢 Connecting to WhatsApp...");
     else if (connection == "open") logger.info("📢 Login successful!");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
@@ -236,7 +240,7 @@ async function magneum() {
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
-      const imåge;
+      let imåge;
       try {
         imåge = await BloomBot.profilePictureUrl(sperson, "image");
       } catch {
