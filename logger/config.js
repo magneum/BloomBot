@@ -30,6 +30,7 @@ global.DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
     : process.env.DATABASE_URL;
+
 global.DATABASE =
   process.env.DATABASE_URL === "./BloomBot.db"
     ? new sequelize.Sequelize({

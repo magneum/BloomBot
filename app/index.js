@@ -70,7 +70,6 @@ async function magneum() {
     })
     .then(logger.info("📢: Connected with mongoose."));
   var opage = express();
-  var sequelize = DATABASE;
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
@@ -116,8 +115,9 @@ async function magneum() {
     );
   });
   opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
-  await sequelize.sync();
 
+  // var sequelize = DATABASE;
+  // await sequelize.sync();
   let state, saveCreds;
   try {
     ({ state, saveCreds } = await remote_authstate());
@@ -162,82 +162,58 @@ async function magneum() {
 
   BloomBot.ev.on("creds.update", async (update) => await saveCreds());
   BloomBot.ev.on("connection.update", async (update) => {
-    var { lastDisconnect, connection, qr } = update;
-    switch (connection) {
-      case "connecting":
-        logger.info("📢: Connecting to whatsApp...");
-        break;
-      case "Bloom":
-        logger.info("📢: Login successful! ");
-        break;
-      case "close":
-        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-        switch (reason) {
-          case DisconnectReason.badSession:
-            logger.error("❌: Bad Session File...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionClosed:
-            logger.error("❌: Reconnecting....");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionLost:
-            logger.error("❌: Reconnecting...");
-            await magneum();
-            break;
-          case DisconnectReason.connectionReplaced:
-            logger.error("❌: Connection Replaced...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.loggedOut:
-            logger.error("❌: Device Logged Out...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.restartRequired:
-            logger.error("❌: Restart Required, Restarting...");
-            await magneum();
-            break;
-          case DisconnectReason.timedOut:
-            logger.error("❌: Connection TimedOut, Reconnecting...");
-            await magneum();
-            break;
-          default:
-            BloomBot.end(
-              logger.error(
-                `❌: Unknown DisconnectReason: ${reason}|${connection}`
-              )
-            );
-        }
-        break;
-      case true:
-        logger.debug("📢: Online.");
-        break;
-      case false:
-        logger.error("📢: Offline.");
-        break;
-      case true:
-        logger.debug("📢: Received Pending Notifications.");
-        break;
-      case false:
-        logger.error("📢: Not Received Pending Notifications.");
-        break;
-      case true:
-        logger.debug("📢: New Login.");
-        break;
-      case false:
-        logger.error("📢: Not New Login.");
-        break;
-      default:
-        logger.info("📢: BloomBot by Magneum™ connected...", update);
-    }
+    var {
+      lastDisconnect,
+      connection,
+      isNewLogin,
+      isOnline,
+      qr,
+      receivedPendingNotifications,
+    } = update;
+    if (connection == "connecting")
+      logger.info("📢: Connecting to WhatsApp...");
+    else if (connection == "open") logger.info("📢: Login successful!");
+    else if (connection == "close") {
+      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+      if (reason === DisconnectReason.badSession) {
+        logger.error(
+          `❌: Bad Session File, Please Delete Session and Scan Again`
+        );
+        BloomBot.logout();
+      } else if (reason === DisconnectReason.connectionClosed) {
+        logger.error("❌: Connection closed, reconnecting....");
+        await magneum();
+      } else if (reason === DisconnectReason.connectionLost) {
+        logger.error("❌: Connection Lost from Server, reconnecting...");
+        await magneum();
+      } else if (reason === DisconnectReason.connectionReplaced) {
+        logger.error(
+          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+        );
+        BloomBot.logout();
+      } else if (reason === DisconnectReason.loggedOut) {
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        process.exit(0);
+      } else if (reason === DisconnectReason.restartRequired) {
+        logger.debug("💡: Restart Required, Restarting...");
+        await magneum();
+      } else if (reason === DisconnectReason.timedOut) {
+        logger.error("❌: Connection TimedOut, Reconnecting...");
+        await magneum();
+      } else
+        BloomBot.end(
+          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+        );
+    } else if (isOnline === true) logger.debug("💡: Online.");
+    else if (isOnline === false) logger.error("📢: Offine.");
+    else if (receivedPendingNotifications === true)
+      logger.debug("💡: Received Pending Notifications.");
+    else if (receivedPendingNotifications === false)
+      logger.error("📢: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logger.debug("💡: New Login.");
+    else if (isNewLogin === false) logger.error("📢: Not New Login.");
+    else if (qr) logger.info("Qr: "), console.log(qr);
+    else logger.info("📢: Connection...", update);
   });
 
   BloomBot.ev.on("messages.upsert", async (update) => {

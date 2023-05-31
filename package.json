@@ -8,7 +8,6 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "test": "supervisor test",
     "dev": "supervisor -w . BloomBot.js",
     "ffdev": "nodemon server/pfmpeg.js",
     "ffstart": "forever server/pfmpeg.js",
