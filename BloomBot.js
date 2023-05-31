@@ -15,19 +15,19 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +91825088932593259325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs");
 require("./module-alias");
 require("./logger/config");
-var chalk = require("chalk");
-var yargs = require("yargs");
-var { join } = require("path");
-var { say } = require("cfonts");
-var mFolders = fs.readdirSync("./routes");
-var { execSync } = require("child_process");
-var { createInterface } = require("readline");
-var { watchFile, unwatchFile } = require("fs");
-var { setupMaster, fork } = require("cluster");
-var rl = createInterface(process.stdin, process.stdout);
+const fs = require("fs");
+const chalk = require("chalk");
+const yargs = require("yargs");
+const { join } = require("path");
+const { say } = require("cfonts");
+const mFolders = fs.readdirSync("./routes");
+const { execSync } = require("child_process");
+const { createInterface } = require("readline");
+const { watchFile, unwatchFile } = require("fs");
+const { setupMaster, fork } = require("cluster");
+const rl = createInterface(process.stdin, process.stdout);
 
 process.removeAllListeners("warning");
 process.env.NODE_NO_WARNINGS = "1";
@@ -53,7 +53,7 @@ function showCommands(path) {
     align: "left",
     gradient: ["red", "blue"],
   });
-  var specialFolders = [
+  const specialFolders = [
     "⚙️System",
     "⭕YTFilter",
     "🍁ᴏᴡɴᴇʀ",
@@ -70,8 +70,8 @@ function showCommands(path) {
     "🖼️Photogenic",
     "🦄SFW",
   ];
-  for (var cFolder of mFolders) {
-    var cFiles = fs
+  for (const cFolder of mFolders) {
+    const cFiles = fs
       .readdirSync(`./${path}/${cFolder}`)
       .filter((cFile) => cFile.endsWith(""));
 
@@ -88,12 +88,12 @@ let isRunning = false;
 function ignite(cFile) {
   if (isRunning) return;
   isRunning = true;
-  var args = [join(__dirname, cFile), ...process.argv.slice(2)];
+  const args = [join(__dirname, cFile), ...process.argv.slice(2)];
   setupMaster({
     exec: args[0],
     args: args.slice(1),
   });
-  var p = fork();
+  const p = fork();
   p.on("message", (data) => {
     console.log(chalk.bgGreen(chalk.black("[RECEIVED]")), chalk.yellow(data));
     switch (data) {
@@ -119,7 +119,7 @@ function ignite(cFile) {
       ignite(cFile);
     });
   });
-  var opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
+  const opts = yargs(process.argv.slice(2)).exitProcess(false).parse();
   if (!opts["test"]) {
     if (!rl.listenerCount()) {
       rl.on("line", (line) => {
@@ -133,9 +133,9 @@ showCommands("routes");
 if (REDIS_URL && REDIS_URL != undefined && REDIS_URL != null) {
   try {
     execSync("sudo systemctl start redis.service");
-    console.log("Redis service started successfully.");
+    console.log(chalk.green("Redis service started successfully."));
   } catch (error) {
-    console.error("Failed to start Redis service:", error);
+    console.error(chalk.red("Failed to start Redis service:"), error);
   }
 }
 ignite("app/index", "uptime");
