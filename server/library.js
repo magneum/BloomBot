@@ -145,17 +145,17 @@ module.exports = async (BloomBot, mags, update, store) => {
 
   if (!commandFound) {
     if (suggestedCommand) {
-      const suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
-      const suggestionMessage =
+      let suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
+      let suggestionMessage =
         "Command not found. Below are some suggestions:\n\n";
-      const suggestedCommandsText = commandList
+      let suggestedCommandsText = commandList
         .filter(
           (cmd) =>
             cmd.name === suggestedCommand ||
             suggestedCommandAliases.includes(cmd.name)
         )
         .map((cmd) => {
-          const aliasesText =
+          let aliasesText =
             cmd.aliases && cmd.aliases.length > 0
               ? ` (${cmd.aliases.join(", ")})`
               : "";
