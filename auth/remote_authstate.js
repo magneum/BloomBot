@@ -15,20 +15,18 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-
-const debugEnabled = verbose_level === "1";
+const fs = require("fs");
+const chalk = require("chalk");
 const { DataTypes, Model, Sequelize } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-
-const fs = require("fs");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
+const debugEnabled = process.env.verbose_level === "1";
 const DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
     : process.env.DATABASE_URL;
-
 const sequelize =
   DATABASE_URL === "./BloomBot.db"
     ? new Sequelize({
@@ -142,7 +140,7 @@ const remote_authstate = async () => {
 
   const saveCreds = async (data) => {
     if (!data) {
-      debugEnabled ? console.info("Saving all creds") : null;
+      debugEnabled ? console.info(chalk.yellow("Saving all creds")) : null;
       data = creds;
     }
     for (const _key in data) {
@@ -155,13 +153,17 @@ const remote_authstate = async () => {
         cred = await cred.update({
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? console.info(`updated value ${_key}`) : null;
+        debugEnabled
+          ? console.info(chalk.green(`updated value ${_key}`))
+          : null;
       } else {
         cred = await Cred.create({
           key: _key,
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? console.info(`inserted value ${_key}`) : null;
+        debugEnabled
+          ? console.info(chalk.green(`inserted value ${_key}`))
+          : null;
       }
     }
   };
@@ -169,7 +171,9 @@ const remote_authstate = async () => {
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
       debugEnabled
-        ? console.info(`Trying to find key ${key} and subKey ${subKey}.`)
+        ? console.info(
+            chalk.yellow(`Trying to find key ${key} and subKey ${subKey}.`)
+          )
         : null;
       let res = await Key.findOne({
         where: {
@@ -182,7 +186,7 @@ const remote_authstate = async () => {
           value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
         });
         debugEnabled
-          ? console.info(`updated key ${key} and subKey ${subKey}`)
+          ? console.info(chalk.green(`updated key ${key} and subKey ${subKey}`))
           : null;
       } else {
         res = await Key.create({
@@ -191,7 +195,9 @@ const remote_authstate = async () => {
           type: key,
         });
         debugEnabled
-          ? console.info(`inserted key ${key} and subKey ${subKey}`)
+          ? console.info(
+              chalk.green(`inserted key ${key} and subKey ${subKey}`)
+            )
           : null;
       }
     }
@@ -199,7 +205,7 @@ const remote_authstate = async () => {
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    debugEnabled ? console.info("loading values back.") : null;
+    debugEnabled ? console.info(chalk.blue("loading values back.")) : null;
     const parent = {
       creds: {},
       keys: {},
@@ -243,7 +249,9 @@ const remote_authstate = async () => {
 
             debugEnabled
               ? console.info(
-                  `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
+                  chalk.yellow(
+                    `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
+                  )
                 )
               : null;
             keys[key] = keys[key] || {};
@@ -257,4 +265,5 @@ const remote_authstate = async () => {
     saveCreds,
   };
 };
+
 module.exports = remote_authstate;
