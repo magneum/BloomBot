@@ -41,7 +41,10 @@ module.exports = async (BloomBot, mags) => {
 
     if (/image/.test(BloomBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted, random);
+      media = await BloomBot.downloadAndSaveMediaMessage(
+        BloomBot.quoted,
+        random
+      );
       BloomBot.exec(
         BloomBot.pathFFmpeg + ` -i ${media} ${random}.png`,
         async (error) => {
@@ -51,10 +54,9 @@ module.exports = async (BloomBot, mags) => {
             }\n*📢ChatId:* ${mags.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.
 
-*🐞 Bug* 
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:* 
 > ${error}`);
           }
 

@@ -127,10 +127,9 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               }\n*📢ChatId:* ${mags.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.
 
-*🐞 Bug* 
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:* 
 > ${error}`);
             }
 
@@ -172,10 +171,9 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               }\n*📢ChatId:* ${mags.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.
 
-*🐞 Bug* 
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:* 
 > ${error}`);
             }
 
