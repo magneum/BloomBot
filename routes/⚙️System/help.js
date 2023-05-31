@@ -53,7 +53,7 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot,
       vChat,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
-> ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 > You can visit your dashboard at _bit.ly/magneum_
 > Total Commands: ${countFiles("./routes")}
 

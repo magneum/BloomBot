@@ -25,7 +25,7 @@ module.exports = async (BloomBot, vChat) => {
     vChat,
     `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🤖Hello, I am BloomBot User-bot🤖*
-> Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 100+ commands!
+> Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 > My developers are working on my code.
 
 
