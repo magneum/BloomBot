@@ -1301,11 +1301,6 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-11.0.2.tgz#cb3ea547daac7de5c9cf1d960c3f35c34f065427"
   integrity sha512-aKmlCO57XFZ26wso4rJsW4oTUnrgTFw2jh3io7CAtO9w4UltBNwRXvXIVzzyfkaaLRo3nluP/19msA8vDUUuKw==
 
-"@ioredis/commands@^1.1.1":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@ioredis/commands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
-  integrity sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==
-
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -2792,128 +2787,6 @@ bl@^4.0.3:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
-bloombot@latest:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/bloombot/-/bloombot-0.0.1.tgz#312b91ae1255e709dd6b6727a3dc9962989c18d2"
-  integrity sha512-ME6OzfyUrvXJMXrkrhPskYuYL2H1fvwtbZBVZpOZEB4IDDOIrbo3ejK7euBm8nuse/KwshqGmrM4wU7xYhyOqw==
-  dependencies:
-    "@adiwajshing/baileys" "^4.4.0"
-    "@adiwajshing/keyed-db" "^0.2.4"
-    "@bochilteam/scraper" "^4.0.22-alpha.0"
-    "@ffmpeg-installer/ffmpeg" "^1.1.0"
-    "@ffprobe-installer/ffprobe" "^2.0.0"
-    "@hapi/boom" "^10.0.0"
-    "@next/font" "^13.1.2"
-    "@prisma/client" "^4.14.1"
-    "@shineiichijo/canvas-chan" "^1.0.0"
-    "@shineiichijo/marika" "^2.0.2"
-    "@shineiichijo/nhentai-pdf" "^1.0.5"
-    akaneko "^5.2.5"
-    anime-actions "^1.0.6"
-    anime-wallpaper "^1.0.2"
-    ascii-table "^0.0.9"
-    awesome-phonenumber "^2.64.0"
-    axios "^1.3.4"
-    better-sqlite3 "^8.4.0"
-    body-parser "^1.20.1"
-    canvacord "^5.2.3"
-    cfonts "^3.1.1"
-    chalk "^4.1.2"
-    cheerio "^1.0.0-rc.10"
-    child_process "^1.0.2"
-    cli-table3 "^0.6.3"
-    cluster "^0.7.7"
-    codecov "^3.8.3"
-    colors "^1.4.0"
-    content-disposition "^0.5.4"
-    cors "^2.8.5"
-    crypto "^1.0.1"
-    didyoumean2 "^5.0.0"
-    discord-phub "^1.0.7"
-    discord-xp "^1.1.16"
-    djs-chatbot "^1.0.1"
-    dotenv "^16.0.3"
-    ejs "^3.1.8"
-    express "^4.18.2"
-    ffmpeg-static "^5.1.0"
-    fluent-ffmpeg "^2.1.2"
-    fs-extra "^10.1.0"
-    g-i-s "^2.1.6"
-    genius-lyrics "^4.4.2"
-    google-it "^1.6.3"
-    google-tts-api "^2.0.2"
-    got "^11.8.3"
-    https "^1.0.0"
-    human-readable "^0.2.1"
-    hxz-api "^1.0.1"
-    image-to-pdf "^1.0.0"
-    ioredis "^5.2.4"
-    isomorphic-unfetch "^4.0.2"
-    jimp "^0.16.1"
-    js-to-ts-converter "^0.18.2"
-    jsdom "^16.4.0"
-    mailist "^1.0.3"
-    module-alias "^2.2.2"
-    moment-timezone "^0.5.34"
-    mongoose "^5.10.7"
-    music-lyrics "^2.0.2"
-    nhentai-api "^3.4.3"
-    nhentai-ikyy "^2.0.1"
-    nhentai-js "^4.0.0"
-    nhentai-node-api "^1.1.2"
-    node-cron "^3.0.2"
-    node-downloader-helper "^2.1.1"
-    node-fetch "^2.6.1"
-    node-webpmux "^3.1.0"
-    nodemon "^2.0.20"
-    os "^0.1.2"
-    parse-ms "^2.1.0"
-    parse-time "^0.1.4"
-    path "^0.12.7"
-    perf_hooks "^0.0.1"
-    performance-now "^2.1.0"
-    pg "^8.8.0"
-    pino "^8.8.0"
-    play-dl "^1.9.6"
-    pokemontcgsdk "^2.0.0"
-    progress-estimator "^0.3.0"
-    promise-mysql "^5.2.0"
-    qrcode-reader "^1.0.4"
-    qrcode-terminal "^0.12.0"
-    quick.db "^9.0.8"
-    random-jokes "^2.0.3"
-    random-material-color "^1.0.5"
-    readline "^1.3.0"
-    redis "^4.6.6"
-    rimraf "^4.1.1"
-    scrape-primbon "^1.1.0"
-    scrapper-pro "^1.0.0"
-    secktor-pack "^0.0.1-development"
-    sequelize "^6.31.1"
-    shentai "^2.0.0"
-    simple-git "^3.19.0"
-    smart-botto "^1.1.1"
-    songlyrics "^2.4.4"
-    spinnies "^0.5.1"
-    spotify-url-info "^3.2.3"
-    sqlite "^4.2.1"
-    sqlite3 "^5.1.6"
-    string-similarity "^4.0.4"
-    supervisor "^0.12.0"
-    tesseract.js "^2.1.5"
-    tinyurl "^1.1.7"
-    tinyurl-api "^1.0.1"
-    tube-exec "^0.0.1"
-    unofficial-carbon-now "^1.0.6"
-    util "^0.12.4"
-    wa-sticker-formatter "^4.3.2"
-    winston "^3.8.2"
-    xfarr-api "^1.0.3"
-    yargs "^17.6.2"
-    youtube-avdl "^1.1.0"
-    youtube-dl-exec "^2.4.0"
-    ytdl-secktor "^0.0.1-development"
-
 bluebird@3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
@@ -3540,7 +3413,7 @@ clone@^1.0.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
 
-cluster-key-slot@1.1.2, cluster-key-slot@^1.1.0:
+cluster-key-slot@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz#88ddaa46906e303b5de30d3153b7d9fe0a0c19ac"
   integrity sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==
@@ -4115,11 +3988,6 @@ denque@^1.4.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/denque/-/denque-1.5.1.tgz#07f670e29c9a78f8faecb2566a1e2c11929c5cbf"
   integrity sha512-XwE+iZ4D6ZUB7mfYRMb5wByE8L74HCn30FBN7sWnXksWc1LO1bPDl67pBR9o/kC4z/xSNAwkMYcGgqDV3BE3Hw==
-
-denque@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/denque/-/denque-2.1.0.tgz#e93e1a6569fb5e66f16a3c2a2964617d349d6ab1"
-  integrity sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==
 
 depd@2.0.0, depd@^2.0.0:
   version "2.0.0"
@@ -6086,21 +5954,6 @@ internal-slot@^1.0.4, internal-slot@^1.0.5:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-ioredis@^5.2.4:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.3.2.tgz#9139f596f62fc9c72d873353ac5395bcf05709f7"
-  integrity sha512-1DKMMzlIHM02eBBVOFQ1+AolGjs6+xEcM4PDL7NqOS6szq7H9jSaEkIUH6/a5Hl241LzW6JLSiAbNvTQjUupUA==
-  dependencies:
-    "@ioredis/commands" "^1.1.1"
-    cluster-key-slot "^1.1.0"
-    debug "^4.3.4"
-    denque "^2.1.0"
-    lodash.defaults "^4.2.0"
-    lodash.isarguments "^3.1.0"
-    redis-errors "^1.2.0"
-    redis-parser "^3.0.0"
-    standard-as-callback "^2.1.0"
-
 ip@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ip/-/ip-2.0.0.tgz#4cf4ab182fee2314c75ede1276f8c80b479936da"
@@ -6922,11 +6775,6 @@ lodash.deburr@^4.1.0:
   resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
   integrity sha512-m/M1U1f3ddMCs6Hq2tAsYThTBDaAKFDX3dwDo97GEYzamXi9SqUpjWi/Rrj/gf3X2n8ktwgZrlP1z6E3v/IExQ==
 
-lodash.defaults@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
-  integrity sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==
-
 lodash.flatten@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
@@ -6941,11 +6789,6 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==
-
-lodash.isarguments@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
-  integrity sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==
 
 lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
@@ -9207,18 +9050,6 @@ real-require@^0.2.0:
   resolved "https://registry.yarnpkg.com/real-require/-/real-require-0.2.0.tgz#209632dea1810be2ae063a6ac084fee7e33fba78"
   integrity sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==
 
-redis-errors@^1.0.0, redis-errors@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/redis-errors/-/redis-errors-1.2.0.tgz#eb62d2adb15e4eaf4610c04afe1529384250abad"
-  integrity sha512-1qny3OExCf0UvUV/5wpYKf2YwPcOqXzkwKKSmKHiE6ZMQs5heeE/c8eXK+PNllPvmjgAbfnsbpkGZWy8cBpn9w==
-
-redis-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/redis-parser/-/redis-parser-3.0.0.tgz#b66d828cdcafe6b4b8a428a7def4c6bcac31c8b4"
-  integrity sha512-DJnGAeenTdpMEH6uAJRK/uiyEIH9WVsUmoLwzudwGJUwZPp80PDBWPHXSAGNPwNvIXAbe7MSUB1zQFugFml66A==
-  dependencies:
-    redis-errors "^1.0.0"
-
 redis@^4.6.6:
   version "4.6.6"
   resolved "https://registry.yarnpkg.com/redis/-/redis-4.6.6.tgz#46d4f2d149d1634d6ef53db5747412a0ef7974ec"
@@ -10180,11 +10011,6 @@ stack-trace@0.0.x:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
   integrity sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==
-
-standard-as-callback@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/standard-as-callback/-/standard-as-callback-2.1.0.tgz#8953fc05359868a77b5b9739a665c5977bb7df45"
-  integrity sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==
 
 static-extend@^0.1.1:
   version "0.1.2"
@@ -11728,7 +11554,7 @@ youtube-avdl@^1.1.0:
     stream-equal "~1.1.0"
     typescript "^3.9.7"
 
-youtube-dl-exec@^2.4.0, youtube-dl-exec@latest:
+youtube-dl-exec@latest:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/youtube-dl-exec/-/youtube-dl-exec-2.4.4.tgz#afb7120eb896b28ba30c763d34f4190205d2bca3"
   integrity sha512-vCBdcY3IK3//wZbJDPOVVufZpYNCylaUSGB/PzgU/5jJqUqJlpVdw8Qt4RA770dT18mN7PfBD7zOOlmkTTEh0A==

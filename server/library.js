@@ -161,7 +161,7 @@ if (!commandFound) {
     return await BloomBot.sendMessage(mags.chat, {
       image: { url: BloomBot.display },
       caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
-      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
       buttons: [
         {
           buttonId: `${BloomBot.prefix}${suggestedCommand}`,
@@ -187,7 +187,7 @@ if (!commandFound) {
     return await BloomBot.sendMessage(mags.chat, {
       image: { url: BloomBot.display },
       caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
-      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
       buttons: [
         {
           buttonId: `${BloomBot.prefix}Help`,
