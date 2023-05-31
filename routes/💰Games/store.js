@@ -24,7 +24,7 @@ module.exports = async (BloomBot, mags) => {
     await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
 │║⦁ 💻 *laptop:* _4000gold/robbery_

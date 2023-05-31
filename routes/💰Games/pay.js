@@ -23,37 +23,37 @@ module.exports = async (BloomBot, mags) => {
   if (!BloomBot.mentionByReply) {
     return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args.length === 0) {
     return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(BloomBot.args[0])) {
     return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args[0].match(/[a-z]/i)) {
     return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
 
@@ -67,10 +67,10 @@ module.exports = async (BloomBot, mags) => {
     if (receiver === mags.sender) {
       return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _Can't pay self account!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
     }
 
@@ -99,10 +99,10 @@ module.exports = async (BloomBot, mags) => {
             BloomBot.pushname || BloomBot.Tname
           }_ 
 
-*❌Error* 
+*❌Error:* 
 > _You Have 0-gold To Pay_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
         }
 
@@ -111,13 +111,13 @@ module.exports = async (BloomBot, mags) => {
             BloomBot.pushname || BloomBot.Tname
           }_ 
 
-*❌Error* 
+*❌Error:* 
 > _You Have 0-gold To Pay_
 
 *💰Balance:*
 >${uPayer.money}
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
         } else {
           await BloomBot.Economy.findOne(
@@ -148,7 +148,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -174,7 +174,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
@@ -195,10 +195,10 @@ module.exports = async (BloomBot, mags) => {
   } else {
     return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
 };

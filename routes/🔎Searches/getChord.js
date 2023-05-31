@@ -31,10 +31,10 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} Id_
 > _get the Id from ${BloomBot.prefix}${fpth}chordlist command!_`
       );
@@ -69,7 +69,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
 > ${chordFound}`,
         bsoni.url_image
       );
@@ -77,7 +77,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
 > ${chordFound}`,
         BloomBot.display
       );

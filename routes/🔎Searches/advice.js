@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
 > ${кяуяєs.data.slip.advice}`,
         bsoni.url_image
       );
@@ -44,7 +44,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
 > ${кяуяєs.data.slip.advice}`,
         BloomBot.display
       );

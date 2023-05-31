@@ -36,7 +36,7 @@ module.exports = async (
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _It's a group command!_`
       );
     }
@@ -50,7 +50,7 @@ module.exports = async (
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _This is an Admin only Command!_`
       );
     }
@@ -64,7 +64,7 @@ module.exports = async (
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _bot not Admin!_`
       );
     }
@@ -78,10 +78,10 @@ module.exports = async (
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Image in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply/send image_`
       );
     }
@@ -95,10 +95,10 @@ module.exports = async (
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Image in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply/send image_`
       );
     }
@@ -126,7 +126,7 @@ module.exports = async (
         return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not change group image!_
 
 *🐞Bug* 

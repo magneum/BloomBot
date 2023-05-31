@@ -31,10 +31,10 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Audio in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply to Audio_`
       );
     }
@@ -91,10 +91,10 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Audio in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply to Audio_`
       );
     }

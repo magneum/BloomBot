@@ -24,7 +24,7 @@ module.exports = async (BloomBot, mags) => {
     return await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 > Remember that since bot is in beta stage, your dashboard is going to be temporary.
 
 *⚙️Webpage:*

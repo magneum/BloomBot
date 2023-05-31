@@ -41,7 +41,7 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Can't rob your own bank_`
       );
     }
@@ -75,7 +75,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -104,7 +104,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -121,7 +121,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -438,7 +438,7 @@ module.exports = async (BloomBot, mags) => {
 ╚◇══════════◇╝
 
 
-*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${receiverName} _Got Robbed!_
+*🔓Status:* @${receiverName} _Got Robbed!_
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* Seems Like The Victim Had Gold<1000. _You Got All Their Golds ${
                           ᴠᴇᴄᴏ.money
                         }!
@@ -478,7 +478,7 @@ module.exports = async (BloomBot, mags) => {
 ╚◇══════════◇╝
 
 
-*🔓𝐒𝐭𝐚𝐭𝐮𝐬:* @${receiverName} _Got Robbed!_
+*🔓Status:* @${receiverName} _Got Robbed!_
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
@@ -504,7 +504,7 @@ module.exports = async (BloomBot, mags) => {
     return await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝

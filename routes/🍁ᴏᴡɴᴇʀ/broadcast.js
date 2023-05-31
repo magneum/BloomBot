@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
       });
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > _Owner Only Command!_`
       );
     }
@@ -49,10 +49,10 @@ module.exports = async (BloomBot, mags) => {
       });
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage*   
+*🌻Usage:*   
 > _${BloomBot.prefix}${fpth} message_`
       );
     }

@@ -49,10 +49,10 @@ async function magneum() {
       useUnifiedTopology: true,
     })
     .catch((error) => {
-      logger.error("❌: Unable to Connect with mongoose.");
+      logger.error("❌ Unable to Connect with mongoose.");
       logger.error(error);
     })
-    .then(logger.info("📢: Connected with mongoose."));
+    .then(logger.info("📢 Connected with mongoose."));
 
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
@@ -71,14 +71,14 @@ async function magneum() {
   };
 
   const sequelize = dbConfig.DATABASE;
-  logger.info("📢: Connecting to Database.");
+  logger.info("📢 Connecting to Database.");
   try {
     await sequelize.authenticate();
-    logger.info("📢: Connection has been established successfully.");
+    logger.info("📢 Connection has been established successfully.");
   } catch (error) {
-    console.error("📢: Unable to connect to the database:", error);
+    console.error("📢 Unable to connect to the database:", error);
   }
-  logger.info("📢: Syncing Database...");
+  logger.info("📢 Syncing Database...");
   await sequelize.sync();
   let { state, saveCreds } = await useSqlAuthState();
   var BloomBot = Bloom_bot_client({
@@ -121,87 +121,87 @@ async function magneum() {
     var { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
-        logger.info("📢: Connecting to whatsApp...");
+        logger.info("📢 Connecting to whatsApp...");
         break;
       case "Bloom":
-        logger.info("📢: Login successful! ");
+        logger.info("📢 Login successful! ");
         break;
       case "close":
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
         switch (reason) {
           case DisconnectReason.badSession:
-            logger.error("❌: Bad Session File...");
+            logger.error("❌ Bad Session File...");
             await purgepg().catch((e) => {
-              logger.error("❌: purging db error ", e);
+              logger.error("❌ purging db error ", e);
               rmdb();
             });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
-            logger.error("❌: Reconnecting....");
+            logger.error("❌ Reconnecting....");
             await purgepg().catch((e) => {
-              logger.error("❌: purging db error ", e);
+              logger.error("❌ purging db error ", e);
               rmdb();
             });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionLost:
-            logger.error("❌: Reconnecting...");
+            logger.error("❌ Reconnecting...");
             await magneum();
             break;
           case DisconnectReason.connectionReplaced:
-            logger.error("❌: Connection Replaced...");
+            logger.error("❌ Connection Replaced...");
             await purgepg().catch((e) => {
-              logger.error("❌: purging db error ", e);
+              logger.error("❌ purging db error ", e);
               rmdb();
             });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
-            logger.error("❌: Device Logged Out...");
+            logger.error("❌ Device Logged Out...");
             await purgepg().catch((e) => {
-              logger.error("❌: purging db error ", e);
+              logger.error("❌ purging db error ", e);
               rmdb();
             });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.restartRequired:
-            logger.error("❌: Restart Required, Restarting...");
+            logger.error("❌ Restart Required, Restarting...");
             await magneum();
             break;
           case DisconnectReason.timedOut:
-            logger.error("❌: Connection TimedOut, Reconnecting...");
+            logger.error("❌ Connection TimedOut, Reconnecting...");
             await magneum();
             break;
           default:
             BloomBot.end(
               logger.error(
-                `❌: Unknown DisconnectReason: ${reason}|${connection}`
+                `❌ Unknown DisconnectReason: ${reason}|${connection}`
               )
             );
         }
         break;
       case true:
-        logger.debug("📢: Online.");
+        logger.debug("📢 Online.");
         break;
       case false:
-        logger.error("📢: Offline.");
+        logger.error("📢 Offline.");
         break;
       case true:
-        logger.debug("📢: Received Pending Notifications.");
+        logger.debug("📢 Received Pending Notifications.");
         break;
       case false:
-        logger.error("📢: Not Received Pending Notifications.");
+        logger.error("📢 Not Received Pending Notifications.");
         break;
       case true:
-        logger.debug("📢: New Login.");
+        logger.debug("📢 New Login.");
         break;
       case false:
-        logger.error("📢: Not New Login.");
+        logger.error("📢 Not New Login.");
         break;
     }
   });

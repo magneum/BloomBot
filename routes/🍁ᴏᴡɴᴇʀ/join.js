@@ -44,7 +44,7 @@ module.exports = async (
     });
     return mags.reply(
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {

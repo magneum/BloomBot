@@ -31,10 +31,10 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Image/Video in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply to Image/Video_`
       );
     }
@@ -46,7 +46,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *🎊Link: * _${BloomBot.util.format(upload)}_`,
         BloomBot.display
       );
@@ -56,7 +56,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *🎊Link: * _${BloomBot.util.format(upload)}_`,
         BloomBot.display
       );
@@ -70,10 +70,10 @@ module.exports = async (BloomBot, mags) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Could not find any Image/Video in context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply to Image/Video_`
       );
     }

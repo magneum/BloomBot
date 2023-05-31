@@ -48,7 +48,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
             BloomBot.display
@@ -61,7 +61,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
               BloomBot.display
@@ -87,7 +87,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell for Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,

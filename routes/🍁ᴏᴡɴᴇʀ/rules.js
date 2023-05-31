@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
 
 
 
-*🏮 RULES 🏮*
+*🏮Rules:*
 ⚠️ Do not abuse/disrespect bot and its owner.
 ⚠️ If you want this bot in your group then contact devs.
 ⚠️ Do not call bot, if you do then you'll get blocked by bot.

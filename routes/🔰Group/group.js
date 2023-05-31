@@ -31,7 +31,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _It's a group command!_`
       );
     }
@@ -45,7 +45,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _This is an Admin only Command!_`
       );
     }
@@ -59,7 +59,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _bot not Admin!_`
       );
     }
@@ -86,7 +86,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         .catch((error) =>
           mags.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > ${jsonformat(error)}`
           )
         );
@@ -106,7 +106,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         .catch((error) =>
           mags.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > ${jsonformat(error)}`
           )
         );
@@ -205,10 +205,10 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         return mags.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Argument Missing!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} close/Bloom
 > _${BloomBot.prefix}${fpth} antilink on/off`
         );
@@ -223,10 +223,10 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _Argument Missing!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} close/Bloom
 > _${BloomBot.prefix}${fpth} antilink on/off`
       );

@@ -31,7 +31,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > It's a group command!`
       );
     } else if (!isAdmin) {
@@ -44,7 +44,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > This is an Admin only Command!`
       );
     } else if (!isbotAdmin) {
@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > bot not Admin!`
       );
     } else
@@ -77,10 +77,10 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > No query provided!
 
-*🌻Usage*   
+*🌻Usage:*   
 > ${BloomBot.prefix}${fpth} on
 > ${BloomBot.prefix}${fpth} off`
       );
@@ -103,7 +103,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -112,7 +112,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -134,7 +134,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -143,7 +143,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
             𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -160,10 +160,10 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     return mags.reply(
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > No query provided!
 
-*🌻Usage*   
+*🌻Usage:*   
 > ${BloomBot.prefix}${fpth} on
 > ${BloomBot.prefix}${fpth} off`
     );

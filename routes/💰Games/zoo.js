@@ -47,7 +47,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             BloomBot.display
@@ -72,7 +72,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   BloomBot.display

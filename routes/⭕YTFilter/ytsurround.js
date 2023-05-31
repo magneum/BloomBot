@@ -32,7 +32,7 @@ module.exports = async (BloomBot, mags) => {
       });
       return mags.reply(
         `*😥 Apologies:* ${BloomBot.pushname || BloomBot.Tname}
-*❌ Error* 
+*❌Error:*
 > _No query provided!_
 
 *🌻 Usage* 

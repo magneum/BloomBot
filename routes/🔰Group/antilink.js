@@ -31,7 +31,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _It's a group command!_`
       );
     }
@@ -45,7 +45,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _This is an Admin only Command!_`
       );
     }
@@ -59,7 +59,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _bot not Admin!_`
       );
     }
@@ -79,10 +79,10 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage*   
+*🌻Usage:*   
 > _${BloomBot.prefix}${fpth} on
 > _${BloomBot.prefix}${fpth} off_`
       );
@@ -105,7 +105,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -114,7 +114,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -147,7 +147,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
               𝕯𝖎𝖘𝖕𝖑𝖆𝖞
@@ -165,10 +165,10 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌Error* 
+*❌Error:* 
 > _No query provided!_
 
-*🌻Usage*   
+*🌻Usage:*   
 > _${BloomBot.prefix}${fpth} on
 > _${BloomBot.prefix}${fpth} off_`
       );

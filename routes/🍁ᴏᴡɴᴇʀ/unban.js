@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, groupName) => {
       });
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > _Owner Only Command!_`
       );
     }
@@ -59,12 +59,12 @@ module.exports = async (BloomBot, mags, groupName) => {
           if (error) return BloomBot.handlerror(BloomBot, mags, error);
           if (!userBan) {
             return mags.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
+              `*🔒Status:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
             return mags.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
+              `*🔒Status:* @${repliedPersonNum} has been un-banned!`
             );
           }
         }
@@ -79,10 +79,10 @@ module.exports = async (BloomBot, mags, groupName) => {
         async (error, userBan) => {
           if (error) return BloomBot.handlerror(BloomBot, mags, error);
           if (!userBan) {
-            return mags.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+            return mags.reply(`*🔒Status:* @${mention} is already un-banned!`);
           } else {
             userBan.delete();
-            return mags.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return mags.reply(`*🔒Status:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -99,12 +99,12 @@ module.exports = async (BloomBot, mags, groupName) => {
           if (error) return BloomBot.handlerror(BloomBot, mags, error);
           if (!userBan) {
             return mags.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
+              `*🔒Status:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
             return mags.reply(
-              `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
+              `*🔒Status:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
         }
@@ -118,10 +118,10 @@ module.exports = async (BloomBot, mags, groupName) => {
       });
       return mags.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌Error* 
+*❌Error:* 
 > _Could not find any context!_
 
-*🌻Usage* 
+*🌻Usage:* 
 > _${BloomBot.prefix}${fpth} reply to person to ban_
 > _${BloomBot.prefix}${fpth} don't reply to anyone and group will be un-banned_`
       );

@@ -37,7 +37,7 @@ module.exports = async (BloomBot, mags) => {
           return mags.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
-*❌ Error* 
+*❌Error:*
 > NSFW Commands have been turned off for this group.
 > You may ask the admins to turn it on.`
           );

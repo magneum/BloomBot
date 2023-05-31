@@ -65,10 +65,10 @@ async function magneum() {
       useUnifiedTopology: true,
     })
     .catch((error) => {
-      logger.error("❌: Unable to Connect with mongoose.");
+      logger.error("❌ Unable to Connect with mongoose.");
       logger.error(error);
     })
-    .then(logger.info("📢: Connected with mongoose."));
+    .then(logger.info("📢 Connected with mongoose."));
   var opage = express();
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
@@ -114,7 +114,7 @@ async function magneum() {
       }
     );
   });
-  opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
+  opage.listen(PORT, logger.info("📢 BloomBot started at port " + PORT));
 
   // var sequelize = DATABASE;
   // await sequelize.sync();
@@ -122,16 +122,16 @@ async function magneum() {
   try {
     ({ state, saveCreds } = await remote_authstate());
     logger.info(
-      "📢: Successfully retrieved state and saveCreds from remote_authstate."
+      "📢 Successfully retrieved state and saveCreds from remote_authstate."
     );
   } catch (error) {
-    logger.error("📢: Error occurred in remote_authstate:", error);
+    logger.error("📢 Error occurred in remote_authstate:", error);
     logger.debug(
-      "📢: Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
+      "📢 Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
     );
     ({ state, saveCreds } = await fallback_remote_authstate(logger));
     logger.info(
-      "📢: Successfully retrieved state and saveCreds from fallback_remote_authstate."
+      "📢 Successfully retrieved state and saveCreds from fallback_remote_authstate."
     );
   }
 
@@ -171,49 +171,49 @@ async function magneum() {
       receivedPendingNotifications,
     } = update;
     if (connection == "connecting")
-      logger.info("📢: Connecting to WhatsApp...");
-    else if (connection == "open") logger.info("📢: Login successful!");
+      logger.info("📢 Connecting to WhatsApp...");
+    else if (connection == "open") logger.info("📢 Login successful!");
     else if (connection == "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
       if (reason === DisconnectReason.badSession) {
         logger.error(
-          `❌: Bad Session File, Please Delete Session and Scan Again`
+          `❌ Bad Session File, Please Delete Session and Scan Again`
         );
         BloomBot.logout();
       } else if (reason === DisconnectReason.connectionClosed) {
-        logger.error("❌: Connection closed, reconnecting....");
+        logger.error("❌ Connection closed, reconnecting....");
         await magneum();
       } else if (reason === DisconnectReason.connectionLost) {
-        logger.error("❌: Connection Lost from Server, reconnecting...");
+        logger.error("❌ Connection Lost from Server, reconnecting...");
         await magneum();
       } else if (reason === DisconnectReason.connectionReplaced) {
         logger.error(
-          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+          "❌ Connection Replaced, Another New Session Opened, Please Close Current Session First"
         );
         BloomBot.logout();
       } else if (reason === DisconnectReason.loggedOut) {
-        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        logger.error(`❌ Device Logged Out, Please Scan Again And Run.`);
         process.exit(0);
       } else if (reason === DisconnectReason.restartRequired) {
         logger.debug("💡: Restart Required, Restarting...");
         await magneum();
       } else if (reason === DisconnectReason.timedOut) {
-        logger.error("❌: Connection TimedOut, Reconnecting...");
+        logger.error("❌ Connection TimedOut, Reconnecting...");
         await magneum();
       } else
         BloomBot.end(
-          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+          logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`)
         );
     } else if (isOnline === true) logger.debug("💡: Online.");
-    else if (isOnline === false) logger.error("📢: Offine.");
+    else if (isOnline === false) logger.error("📢 Offine.");
     else if (receivedPendingNotifications === true)
       logger.debug("💡: Received Pending Notifications.");
     else if (receivedPendingNotifications === false)
-      logger.error("📢: Not Received Pending Notifications.");
+      logger.error("📢 Not Received Pending Notifications.");
     else if (isNewLogin === true) logger.debug("💡: New Login.");
-    else if (isNewLogin === false) logger.error("📢: Not New Login.");
+    else if (isNewLogin === false) logger.error("📢 Not New Login.");
     else if (qr) logger.info("Qr: "), console.log(qr);
-    else logger.info("📢: Connection...", update);
+    else logger.info("📢 Connection...", update);
   });
 
   BloomBot.ev.on("messages.upsert", async (update) => {

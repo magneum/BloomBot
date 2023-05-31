@@ -46,7 +46,7 @@ module.exports = async (BloomBot, mags) => {
         return await BloomBot.imagebutton(
           BloomBot,
           mags,
-          `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+          `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
           BloomBot.display
@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags) => {
         return await BloomBot.imagebutton(
           BloomBot,
           mags,
-          `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
+          `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *💰Balance:* ${data.money}`,
           BloomBot.display
         );

@@ -22,16 +22,16 @@ var { exec } = require("child_process");
 
 var gitPull = async () => {
   try {
-    logger.info("📢: Checking for updates...");
+    logger.info("📢 Checking for updates...");
     await git.fetch();
     var newCommits = await git.log(["magneum..origin/magneum"]);
     if (newCommits.total) {
-      logger.info("📢: New update pending, updating...");
+      logger.info("📢 New update pending, updating...");
       await git.pull("origin", "Magneum™");
       var update = await git.diffSummary(["--name-only"]);
       if (update.files.includes("package.json")) {
         logger.info(
-          "📢: Changes in package.json detected, updating dependencies..."
+          "📢 Changes in package.json detected, updating dependencies..."
         );
         await fs.emptyDir(__dirname);
         await new Promise((resolve, reject) => {
@@ -40,26 +40,26 @@ var gitPull = async () => {
           childProcess.stdout.pipe(process.stdout);
           childProcess.on("close", (code) => {
             if (code === 0) {
-              logger.info("📢: Installed dependencies.");
+              logger.info("📢 Installed dependencies.");
               resolve();
             } else {
-              logger.error("📢: Failed to install dependencies.");
+              logger.error("📢 Failed to install dependencies.");
               reject(new Error("Failed to install dependencies."));
             }
           });
         });
       } else {
         logger.info(
-          "📢: No changes in package.json. Skipping dependency update."
+          "📢 No changes in package.json. Skipping dependency update."
         );
       }
 
-      logger.info("📢: Updated the bot with latest changes.");
+      logger.info("📢 Updated the bot with latest changes.");
     } else {
-      logger.info("📢: bot is already working on the latest version.");
+      logger.info("📢 bot is already working on the latest version.");
     }
   } catch (error) {
-    logger.error(`📢: Error occurred during update: ${error.message}`);
+    logger.error(`📢 Error occurred during update: ${error.message}`);
   }
 };
 

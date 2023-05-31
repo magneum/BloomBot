@@ -30,7 +30,7 @@ module.exports = async (BloomBot, mags) => {
         BloomBot.pushname || BloomBot.Tname
       }_
 
-*❌ Error* 
+*❌Error:*
 > NSFW commands have been disabled for this group.
 > You can ask the administrators to enable them.`);
     }
