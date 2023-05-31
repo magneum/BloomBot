@@ -104,7 +104,7 @@ async function magneum() {
     });
     process.exit(0);
   }
-  require("./bloomext")(BloomBot);
+  require("./bExts")(BloomBot);
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/messages_upsert")(BloomBot, store, logger);
