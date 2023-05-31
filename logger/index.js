@@ -25,7 +25,10 @@ var ogger = () => {
       winston.format.colorize(),
       timestamp({ format: "HH:mm:ss" }),
       printf(({ level, message, timestamp }) => {
-        return `${timestamp} ${level}: ${message}`;
+        const boldTimestamp = "\x1b[1m" + timestamp + "\x1b[0m";
+        const boldLevel = "\x1b[1m" + level + "\x1b[0m";
+        const boldMessage = "\x1b[1m" + message + "\x1b[0m";
+        return `${boldTimestamp} ${boldLevel}: ${boldMessage}`;
       })
     ),
     transports: [new winston.transports.Console()],
