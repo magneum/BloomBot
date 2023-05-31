@@ -44,7 +44,7 @@ var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
-var RemoteFileAuthState = require("@/temp/RemoteFileAuthState");
+var RemoteFileAuthState = require("@/auth/RemoteFileAuthState");
 var { useRemoteFileAuthState } = require("@/auth/Database");
 
 async function rmdb() {
