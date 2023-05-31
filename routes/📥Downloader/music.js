@@ -80,10 +80,14 @@ module.exports = async (BloomBot, mags) => {
         BloomBot.YouTubeAudio(mgdata.youtube_search[0].LINK)
           .then(async (AudioLink) => {
             if (AudioLink.status == false) {
-              return BloomBot.handlerror(
-                BloomBot,
-                mags,
-                "Sorry no audio found!"
+              return mags.reply(
+                `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+
+*❌Error* 
+> _No Audio Link Found_
+
+*🌻Usage* 
+> _${BloomBot.prefix}${fpth} song-name_`
               );
             } else {
               await BloomBot.sendMessage(
