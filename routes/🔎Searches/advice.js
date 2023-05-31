@@ -21,7 +21,9 @@ const tpth = ppth.basename(__filename);
 const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    const кяуяєs = await BloomBot.axios.get("https://api.adviceslip.com/advice");
+    const кяуяєs = await BloomBot.axios.get(
+      "https://api.adviceslip.com/advice"
+    );
     try {
       const кяуяєsi = await BloomBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
