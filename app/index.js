@@ -120,7 +120,7 @@ async function magneum() {
 
   let state, saveCreds;
   try {
-    ({ state, saveCreds } = await RemoteFileAuthState(logger));
+    ({ state, saveCreds } = await RemoteFileAuthState());
     logger.info(
       "📢: Successfully retrieved state and saveCreds from RemoteFileAuthState."
     );

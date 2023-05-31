@@ -1,8 +1,9 @@
 require("@/logger/config");
-var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-var { DataTypes, Model } = require("sequelize");
-var chalk = require("chalk");
 var sequelize = DATABASE;
+var chalk = require("chalk");
+var logger = require("@/logger");
+var { DataTypes, Model } = require("sequelize");
+var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
 class Cred extends Model {}
 
@@ -56,7 +57,7 @@ var KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-var RemoteFileAuthState = async (logger) => {
+var RemoteFileAuthState = async () => {
   let creds;
   let keys = {};
 
@@ -109,7 +110,7 @@ var RemoteFileAuthState = async (logger) => {
 
   var saveCreds = async (data) => {
     if (!data) {
-      // console.log("Saving all creds");
+      logger.info("Saving all creds");
       data = creds;
     }
     for (var _key in data) {
@@ -124,10 +125,12 @@ var RemoteFileAuthState = async (logger) => {
             value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
           })
           .then((res) => {
-            // console.log(`updated value ${_key} `);
+            if (logger.isEnabled()) {
+              logger.info(`updated value ${_key}`);
+            }
           })
           .catch((err) => {
-            // console.log(chalk.whiteBright(err));
+            logger.error(chalk.whiteBright(err));
           });
       } else {
         await Cred.create({
@@ -135,10 +138,12 @@ var RemoteFileAuthState = async (logger) => {
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         })
           .then((res) => {
-            // console.log(`inserted value ${_key}`);
+            if (logger.isEnabled()) {
+              logger.info(`inserted value ${_key}`);
+            }
           })
           .catch((err) => {
-            // console.log(chalk.whiteBright(err));
+            logger.error(chalk.whiteBright(err));
           });
       }
     }
@@ -146,7 +151,9 @@ var RemoteFileAuthState = async (logger) => {
 
   var saveKey = async (key, data, _key) => {
     for (var subKey in data[_key]) {
-      // console.log(`Trying to find key ${key} and subKey ${subKey}.`);
+      if (logger.isEnabled()) {
+        logger.info(`Trying to find key ${key} and subKey ${subKey}.`);
+      }
       var res = await Key.findOne({
         where: {
           key: subKey,
@@ -159,10 +166,12 @@ var RemoteFileAuthState = async (logger) => {
             value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
           })
           .then((res) => {
-            // console.log(`updated key ${key} and subKey ${subKey}`);
+            if (logger.isEnabled()) {
+              logger.info(`updated key ${key} and subKey ${subKey}`);
+            }
           })
           .catch((err) => {
-            // console.log(chalk.blueBright(err));
+            logger.error(chalk.blueBright(err));
           });
       } else {
         await Key.create({
@@ -171,10 +180,12 @@ var RemoteFileAuthState = async (logger) => {
           type: key,
         })
           .then((res) => {
-            // console.log(`inserted key ${key} and subKey ${subKey}`);
+            if (logger.isEnabled()) {
+              logger.info(`inserted key ${key} and subKey ${subKey}`);
+            }
           })
           .catch((err) => {
-            // console.log(chalk.blueBright(err));
+            logger.error(chalk.blueBright(err));
           });
       }
     }
@@ -183,7 +194,9 @@ var RemoteFileAuthState = async (logger) => {
 
   let credsExist = await checkCreds();
   if (credsExist) {
-    // console.log("loading values back.");
+    if (logger.isEnabled()) {
+      logger.info("loading values back.");
+    }
     let parent = {
       creds: {},
       keys: {},
@@ -195,7 +208,9 @@ var RemoteFileAuthState = async (logger) => {
     parent.keys = allKeys;
 
     var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    // console.log(final);
+    if (logger.isEnabled()) {
+      logger.info(final);
+    }
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -213,7 +228,9 @@ var RemoteFileAuthState = async (logger) => {
           return ids.reduce((dict, id) => {
             let _a;
             let value =
-              (_a = keys[key]) === null || _a === void 0 ? void 0 : _a[id];
+              (_a = keys[key]) === null || _a === undefined
+                ? undefined
+                : _a[id];
             if (value) {
               if (type === "app-state-sync-key") {
                 value = proto.AppStateSyncKeyData.fromObject(value);
@@ -226,12 +243,15 @@ var RemoteFileAuthState = async (logger) => {
         set: async (data) => {
           for (var _key in data) {
             var key = KEY_MAP[_key];
-            // console.log(`Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`);
+            if (logger.isEnabled()) {
+              logger.info(
+                `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
+              );
+            }
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);
           }
-          // saveState();
         },
       },
     },
