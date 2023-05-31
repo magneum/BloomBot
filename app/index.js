@@ -203,8 +203,6 @@ async function magneum() {
       case false:
         logger.error("📢: Not New Login.");
         break;
-      default:
-        logger.info("📢: BloomBot by Magneum™ connected...", update);
     }
   });
 
