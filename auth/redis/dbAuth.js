@@ -32,7 +32,7 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const useRemoteFileAuthState = async (logger) => {
+const useRedisAuthState = async (logger) => {
   let creds;
   let keys = {};
 
@@ -139,4 +139,4 @@ const useRemoteFileAuthState = async (logger) => {
   };
 };
 
-module.exports = useRemoteFileAuthState;
+module.exports = useRedisAuthState;
