@@ -1,5 +1,23 @@
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
+//  ║
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
+//  ║
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
 const sequelize = DATABASE;
+var logger = require("@/logger");
 const debugEnabled = VERBOSE === "1";
 const { DataTypes, Model } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
@@ -54,7 +72,7 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const RemoteFileAuthState = async (logger) => {
+const RemoteFileAuthState = async () => {
   let creds;
   let keys = {};
 
@@ -103,7 +121,7 @@ const RemoteFileAuthState = async (logger) => {
 
   const saveCreds = async (data) => {
     if (!data) {
-      debugEnabled ? console.log("Saving all creds") : null;
+      debugEnabled ? logger.info("Saving all creds") : null;
       data = creds;
     }
     for (const _key in data) {
@@ -116,13 +134,13 @@ const RemoteFileAuthState = async (logger) => {
         cred = await cred.update({
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? console.log(`updated value ${_key}`) : null;
+        debugEnabled ? logger.info(`updated value ${_key}`) : null;
       } else {
         cred = await Cred.create({
           key: _key,
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? console.log(`inserted value ${_key}`) : null;
+        debugEnabled ? logger.info(`inserted value ${_key}`) : null;
       }
     }
   };
@@ -130,7 +148,7 @@ const RemoteFileAuthState = async (logger) => {
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
       debugEnabled
-        ? console.log(`Trying to find key ${key} and subKey ${subKey}.`)
+        ? logger.info(`Trying to find key ${key} and subKey ${subKey}.`)
         : null;
       let res = await Key.findOne({
         where: {
@@ -143,7 +161,7 @@ const RemoteFileAuthState = async (logger) => {
           value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
         });
         debugEnabled
-          ? console.log(`updated key ${key} and subKey ${subKey}`)
+          ? logger.info(`updated key ${key} and subKey ${subKey}`)
           : null;
       } else {
         res = await Key.create({
@@ -152,7 +170,7 @@ const RemoteFileAuthState = async (logger) => {
           type: key,
         });
         debugEnabled
-          ? console.log(`inserted key ${key} and subKey ${subKey}`)
+          ? logger.info(`inserted key ${key} and subKey ${subKey}`)
           : null;
       }
     }
@@ -160,7 +178,7 @@ const RemoteFileAuthState = async (logger) => {
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    process.env.VERBOSE === "1" ? console.log("loading values back.") : null;
+    process.env.VERBOSE === "1" ? logger.info("loading values back.") : null;
     const parent = {
       creds: {},
       keys: {},
@@ -172,7 +190,7 @@ const RemoteFileAuthState = async (logger) => {
     parent.keys = allKeys;
 
     const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    process.env.VERBOSE === "1" ? console.log(final) : null;
+    process.env.VERBOSE === "1" ? logger.info(final) : null;
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -203,7 +221,7 @@ const RemoteFileAuthState = async (logger) => {
             const key = KEY_MAP[_key];
 
             debugEnabled
-              ? console.log(
+              ? logger.info(
                   `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
                 )
               : null;
