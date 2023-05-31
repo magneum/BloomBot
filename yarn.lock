@@ -11728,7 +11728,7 @@ youtube-avdl@^1.1.0:
     stream-equal "~1.1.0"
     typescript "^3.9.7"
 
-youtube-dl-exec@^2.4.0:
+youtube-dl-exec@^2.4.0, youtube-dl-exec@latest:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/youtube-dl-exec/-/youtube-dl-exec-2.4.4.tgz#afb7120eb896b28ba30c763d34f4190205d2bca3"
   integrity sha512-vCBdcY3IK3//wZbJDPOVVufZpYNCylaUSGB/PzgU/5jJqUqJlpVdw8Qt4RA770dT18mN7PfBD7zOOlmkTTEh0A==
