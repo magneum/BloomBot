@@ -175,6 +175,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.truth = require("@/public/truth.json");
   BloomBot.magfetch = require("@/server/magfetch");
   BloomBot.YouTubeAudio = require("@/utils/YouAudio");
+  BloomBot.logger = require("@/logger/index.js");
 
   BloomBot.os = require("os");
   BloomBot.fs = require("fs");

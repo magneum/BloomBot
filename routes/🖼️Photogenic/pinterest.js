@@ -44,7 +44,7 @@ module.exports = async (BloomBot, mags) => {
       "https://magneum.vercel.app/api/pinterest?q=" + BloomBot.args.join(" ")
     ).then(async (response) => {
       var mgdata = response.data;
-      console.log(mgdata);
+      BloomBot.logger.info(mgdata);
 
       var download =
         mgdata.meta.links[

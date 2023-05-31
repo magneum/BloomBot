@@ -43,40 +43,43 @@ module.exports = async (BloomBot, mags) => {
       BloomBot,
       `https://magneum.vercel.app/api/anime?q=${fpth}`
     ).then(async (response) => {
-      var viper = response.data;
-      console.log(viper);
+      var mgdata = response.data;
+      BloomBot.logger.info(mgdata);
       BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
-MAL_Id: ${viper.meta.id_mal}
-TITLE: ${viper.meta.title}
-EN_TITLE: ${viper.meta.en_title}
-JP_TITLE: ${viper.meta.jp_title}
-IMAGE: ${viper.meta.image}
-PREMIERED: ${viper.meta.premiered}
-WEBPAGE: ${viper.meta.webpage}
-BROADCAST: ${viper.meta.broadcast}
-GENRES: ${viper.meta.genres}
-TYPE: ${viper.meta.type}
-EPISODES: ${viper.meta.episodes}
-RATING: ${viper.meta.rating}
-AIRED: ${viper.meta.aired}
-SCORE: ${viper.meta.score}
-FAVORITES: ${viper.meta.favorites}
-RANK: ${viper.meta.rank}
-DURATION: ${viper.meta.duration}
-STUDIOS: ${viper.meta.studios}
-PRODUCERS: ${viper.meta.producers}
-POPULARITY: ${viper.meta.popularity}
-TOTAL_MEMBERS: ${viper.meta.members}
-SCORE_STATUS: ${viper.meta.scores}
-SOURCE: ${viper.meta.source}
-SYNONYMS: ${viper.meta.synonyms}
-SYNOPSIS: ${viper.meta.synopsis}
-CHARACTERS: ${viper.meta.charaters}
-STAFF: ${viper.meta.staffs}`,
-        viper.meta.image
+        `🌻 *Here's some information about ${
+          BloomBot.pushname || BloomBot.Tname
+        }:*
+
+*🔍 MAL Id:* ${mgdata.meta.id_mal}
+*🎬 Title:* ${mgdata.meta.title}
+*🌐 English Title:* ${mgdata.meta.en_title}
+*🎌 Japanese Title:* ${mgdata.meta.jp_title}
+*📷 Image:* ${mgdata.meta.image}
+*📅 Premiered:* ${mgdata.meta.premiered}
+*🌐 Webpage:* ${mgdata.meta.webpage}
+*📺 Broadcast:* ${mgdata.meta.broadcast}
+*🎭 Genres:* ${mgdata.meta.genres}
+*🔖 Type:* ${mgdata.meta.type}
+*📺 Episodes:* ${mgdata.meta.episodes}
+*⭐ Rating:* ${mgdata.meta.rating}
+*📅 Aired:* ${mgdata.meta.aired}
+*📈 Score:* ${mgdata.meta.score}
+*❤️ Favorites:* ${mgdata.meta.favorites}
+*🔢 Rank:* ${mgdata.meta.rank}
+*⏳ Duration:* ${mgdata.meta.duration}
+*🏢 Studios:* ${mgdata.meta.studios}
+*🎬 Producers:* ${mgdata.meta.producers}
+*🔥 Popularity:* ${mgdata.meta.popularity}
+*👥 Total Members:* ${mgdata.meta.members}
+*⚖️ Score Status:* ${mgdata.meta.scores}
+*🎬 Source:* ${mgdata.meta.source}
+*📚 Synonyms:* ${mgdata.meta.synonyms}
+*📖 Synopsis:* ${mgdata.meta.synopsis}
+*👥 Characters:* ${mgdata.meta.characters}
+*👥 Staff:* ${mgdata.meta.staffs}`,
+        mgdata.meta.image
       );
     });
   } catch (error) {

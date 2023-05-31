@@ -47,7 +47,7 @@ module.exports = async (BloomBot, mags) => {
             "https://magneum.vercel.app/api/nsfw?q=" + fpth
           ).then(async (response) => {
             var mgdata = response.data;
-            console.log(mgdata);
+            BloomBot.logger.info(mgdata);
             if (!mgdata.meta.thumbnail) {
               await BloomBot.sendMessage(mags.chat, {
                 react: {

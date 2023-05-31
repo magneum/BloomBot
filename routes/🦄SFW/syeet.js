@@ -26,7 +26,7 @@ module.exports = async (BloomBot, mags) => {
       "https://magneum.vercel.app/api/sfw?q=yeet"
     ).then(async (response) => {
       var mgdata = response.data;
-      console.log(mgdata);
+      BloomBot.logger.info(mgdata);
       return await BloomBot.imagebutton(
         BloomBot,
         mags,
