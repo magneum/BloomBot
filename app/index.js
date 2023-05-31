@@ -249,8 +249,7 @@ async function magneum() {
 > Firstly Welcome.
 > I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
-            footer:
-              "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
+            footer: "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,
@@ -832,6 +831,6 @@ async function magneum() {
   }, 60 * 60 * 1000);
   setInterval(async () => {
     gitPull();
-  }, 5 * 60 * 1000);
+  }, 2 * 60 * 1000);
 }
 magneum().catch((error) => logger.error(error));
