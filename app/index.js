@@ -42,8 +42,8 @@ var bodyParser = require("body-parser");
 var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { fallback_RemoteFileAuthState } = require("@/auth/Database");
-var RemoteFileAuthState = require("@/auth/RemoteFileAuthState");
+var remote_authstate = require("@/auth/remote_authstate");
+var { fallback_remote_authstate } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function rmdb() {
@@ -120,18 +120,18 @@ async function magneum() {
 
   let state, saveCreds;
   try {
-    ({ state, saveCreds } = await RemoteFileAuthState());
+    ({ state, saveCreds } = await remote_authstate());
     logger.info(
-      "📢: Successfully retrieved state and saveCreds from RemoteFileAuthState."
+      "📢: Successfully retrieved state and saveCreds from remote_authstate."
     );
   } catch (error) {
-    logger.error("📢: Error occurred in RemoteFileAuthState:", error);
+    logger.error("📢: Error occurred in remote_authstate:", error);
     logger.debug(
-      "📢: Using fallback_RemoteFileAuthState: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
+      "📢: Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
     );
-    ({ state, saveCreds } = await fallback_RemoteFileAuthState(logger));
+    ({ state, saveCreds } = await fallback_remote_authstate(logger));
     logger.info(
-      "📢: Successfully retrieved state and saveCreds from fallback_RemoteFileAuthState."
+      "📢: Successfully retrieved state and saveCreds from fallback_remote_authstate."
     );
   }
 

@@ -72,7 +72,7 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const RemoteFileAuthState = async () => {
+const remote_authstate = async () => {
   let creds;
   let keys = {};
 
@@ -237,4 +237,4 @@ const RemoteFileAuthState = async () => {
   };
 };
 
-module.exports = RemoteFileAuthState;
+module.exports = remote_authstate;
