@@ -116,11 +116,6 @@ module.exports = async (BloomBot, mags) => {
   }
 };
 module.exports.aliases = [
-  "yt_audx",
-  "yt_audtr",
-  "aud_f_yt",
-  "yt_audfl",
-  "yt_sndtr",
   "ytbaudio",
   "yt_sndbt",
   "yt_sound",
@@ -136,13 +131,8 @@ module.exports.aliases = [
   "music",
   "track",
   "aud_trk",
-  "musxtrct",
-  "sndxtrct",
   "play_mus",
-  "song_xtr",
-  "yt_xtrct",
   "yt_muxtr",
-  "yt_snd_x",
   "play",
   "yt_audio",
   "audio_pl",
@@ -186,9 +176,4 @@ module.exports.aliases = [
   "aud_dl",
   "snd_dl",
   "mus_dl",
-  "gaana_ex",
-  "gaana_tr",
-  "gaana_mu",
-  "gaana_aud",
-  "gaana_dl",
 ];
