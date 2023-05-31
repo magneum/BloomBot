@@ -27,7 +27,7 @@ const gitPull = async () => {
     const newCommits = await git.log(["magneum..origin/magneum"]);
     if (newCommits.total) {
       logger.info("📢 New update pending, updating...");
-      await git.pull("origin", "Magneum™");
+      await git.pull("origin", "magneum");
       const update = await git.diffSummary(["--name-only"]);
       if (update.files.includes("package.json")) {
         logger.info(
