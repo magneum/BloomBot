@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -39,14 +39,14 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var manga = new BloomBot.Manga();
-    var response = await manga.searchManga(BloomBot.args.join(" "));
-    var Found = `*🎀Title:* ${response.data[0].title}`;
+    const manga = new BloomBot.Manga();
+    const response = await manga.searchManga(BloomBot.args.join(" "));
+    const Found = `*🎀Title:* ${response.data[0].title}`;
     Found += `*📈Status:* ${response.data[0].status}`;
     Found += `*🌸Total Volumes:* ${response.data[0].volumes}`;
     Found += `*🎗Total Chapters:* ${response.data[0].chapters}`;
     Found += `*🧧Genres:*`;
-    for (var i = 0; i < response.data[0].genres.length; i++) {
+    for (const i = 0; i < response.data[0].genres.length; i++) {
       Found += `\t\t\t\t\t\t\t\t*${response.data[0].genres[i].name}*`;
     }
     Found += `*✨Published on:* ${response.data[0].published.from}`;
@@ -54,7 +54,7 @@ module.exports = async (BloomBot, mags) => {
     Found += `*🎐Popularity:* ${response.data[0].popularity}`;
     Found += `*🎏Favorites:* ${response.data[0].favorites}`;
     Found += `*✍Authors:*`;
-    for (var i = 0; i < response.data[0].authors.length; i++) {
+    for (const i = 0; i < response.data[0].authors.length; i++) {
       Found += `\t\t\t\t\t\t\t\t\t*${response.data[0].authors[i].name}* *(${response.data[0].authors[0].type})*`;
     }
     Found += `*🌐URL:* ${response.data[0].url}`;

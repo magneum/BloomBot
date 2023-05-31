@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   await BloomBot.sendMessage(mags.chat, {
     react: {
@@ -57,18 +57,18 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var BloomBotGroups = await BloomBot.groupFetchAllParticipating();
-    var vGroup = Object.entries(BloomBotGroups)
+    const BloomBotGroups = await BloomBot.groupFetchAllParticipating();
+    const vGroup = Object.entries(BloomBotGroups)
       .slice(0)
       .map((entry) => entry[1]);
-    var places = vGroup.map((v) => v.id);
+    const places = vGroup.map((v) => v.id);
     mags.reply(
       `Broadcasting in ${places.length} Group Chat, in ${
         places.length * 1.5
       } seconds`
     );
 
-    for (var cron of places) {
+    for (const cron of places) {
       await BloomBot.sendMessage(cron, {
         video: {
           url: "./public/BloomBot/BloomBot (8).mp4",

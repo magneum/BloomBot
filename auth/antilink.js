@@ -16,15 +16,15 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noLink = async (BloomBot, mags) => {
-  var FetchCurrentGroupLink = await BloomBot.groupInviteCode(mags.chat);
-  var GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
-  var isGroupLink = GroupLinkRegex.exec(BloomBot.budy);
-  var PresentGroupLink = new RegExp(
+module.exports = async (BloomBot, mags) => {
+  const FetchCurrentGroupLink = await BloomBot.groupInviteCode(mags.chat);
+  const GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
+  const isGroupLink = GroupLinkRegex.exec(BloomBot.budy);
+  const PresentGroupLink = new RegExp(
     `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
     "i"
   );
-  var isCurrentGroupLink = PresentGroupLink.test(BloomBot.budy);
+  const isCurrentGroupLink = PresentGroupLink.test(BloomBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await BloomBot.groupParticipantsUpdate(
       mags.chat,

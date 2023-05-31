@@ -16,13 +16,13 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-    var formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
+    const formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    const formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!BloomBot.args[0] && !BloomBot.args[1]) {
       await BloomBot.sendMessage(mags.chat, {
         react: {
@@ -115,8 +115,8 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var ColorRoom = BloomBot.args[0];
-    var AmountRoom = parseInt(BloomBot.args[1]);
+    const ColorRoom = BloomBot.args[0];
+    const AmountRoom = parseInt(BloomBot.args[1]);
     if (AmountRoom < 50) {
       return await BloomBot.imagebutton(
         BloomBot,
@@ -182,7 +182,7 @@ module.exports = async (BloomBot, mags) => {
         }
 
         if (!userEco) {
-          var newUser = new BloomBot.Economy({
+          const newUser = new BloomBot.Economy({
             Id: mags.sender,
             money: 0,
             daily: 0,
@@ -214,11 +214,11 @@ module.exports = async (BloomBot, mags) => {
             }
 
             if (!userGamble) {
-              var newUser = new BloomBot.Gamble({
+              const newUser = new BloomBot.Gamble({
                 Id: mags.sender,
                 serverId: mags.chat,
                 Gambledone: 0,
-                Gambvarimeout: 480000,
+                Gambconstimeout: 480000,
               });
               await newUser.save().catch((error) => {
                 return BloomBot.handlerror(BloomBot, mags, error);
@@ -234,11 +234,11 @@ module.exports = async (BloomBot, mags) => {
             }
 
             if (
-              userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone) >
+              userGamble.Gambconstimeout - (Date.now() - userGamble.Gambledone) >
               0
             ) {
-              var time = BloomBot.ms(
-                userGamble.Gambvarimeout - (Date.now() - userGamble.Gambledone)
+              const time = BloomBot.ms(
+                userGamble.Gambconstimeout - (Date.now() - userGamble.Gambledone)
               );
               return await BloomBot.imagebutton(
                 BloomBot,
@@ -257,10 +257,10 @@ module.exports = async (BloomBot, mags) => {
               else if (num % 4 == 1) return true;
               else return false;
             }
-            var Color = ColorRoom;
-            var money = parseInt(AmountRoom);
-            var CurrentMoney = userEco.money;
-            var Amount = Math.floor(Math.random() * 10);
+            const Color = ColorRoom;
+            const money = parseInt(AmountRoom);
+            const CurrentMoney = userEco.money;
+            const Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
               await BloomBot.sendMessage(mags.chat, {

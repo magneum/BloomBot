@@ -16,23 +16,23 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var Item;
-    var NewLimit;
-    var ItemPrice;
-    var BadgeCatelog = [
+    const Item;
+    const NewLimit;
+    const ItemPrice;
+    const BadgeCatelog = [
       "🥉Bronze 20 Commands",
       "🥈Silver 40 Commands",
       "🥇Golden 60 Commands",
       "💍Platinum 80 Commands",
       "💎Diamond 100 Commands",
     ];
-    var BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
-    var RobCatelog = ["sword", "laptop", "charm"];
+    const BadCatelog = ["bronze", "silver", "gold", "platinum", "diamond"];
+    const RobCatelog = ["sword", "laptop", "charm"];
 
     if (BloomBot.args[0] === "bronze") {
       Item = "🥉Bronze 20 Commands";
@@ -147,7 +147,7 @@ module.exports = async (BloomBot, mags) => {
           }
 
           if (!userEco) {
-            var newUser = new BloomBot.Economy({
+            const newUser = new BloomBot.Economy({
               Id: mags.sender,
               money: 0,
               daily: 0,
@@ -228,7 +228,7 @@ module.exports = async (BloomBot, mags) => {
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     BloomBot.display
@@ -250,7 +250,7 @@ module.exports = async (BloomBot, mags) => {
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     BloomBot.display
@@ -272,7 +272,7 @@ module.exports = async (BloomBot, mags) => {
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
                     BloomBot.display
@@ -339,7 +339,7 @@ module.exports = async (BloomBot, mags) => {
               }
 
               if (!userBadge) {
-                var newBagdeUser = new BloomBot.Bagde({
+                const newBagdeUser = new BloomBot.Bagde({
                   Id: mags.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
@@ -406,7 +406,7 @@ module.exports = async (BloomBot, mags) => {
                   BloomBot,
                   mags,
                   `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
-🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
+🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,

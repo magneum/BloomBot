@@ -15,19 +15,19 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var winston = require("winston");
-var { combine, timestamp, printf } = winston.format;
+const winston = require("winston");
+const { combine, timestamp, printf } = winston.format;
 
-var ogger = () => {
+const ogger = () => {
   return winston.createLogger({
     level: "silly",
     format: combine(
       winston.format.colorize(),
       timestamp({ format: "HH:mm:ss" }),
       printf(({ level, message, timestamp }) => {
-        var boldTimestamp = "\x1b[1m" + timestamp + "\x1b[0m";
-        var boldLevel = "\x1b[1m" + level + "\x1b[0m";
-        var boldMessage = "\x1b[1m" + message + "\x1b[0m";
+        const boldTimestamp = "\x1b[1m" + timestamp + "\x1b[0m";
+        const boldLevel = "\x1b[1m" + level + "\x1b[0m";
+        const boldMessage = "\x1b[1m" + message + "\x1b[0m";
         return `${boldTimestamp} ${boldLevel}: ${boldMessage}`;
       })
     ),
@@ -35,5 +35,5 @@ var ogger = () => {
   });
 };
 
-var logger = ogger();
+const logger = ogger();
 module.exports = logger;

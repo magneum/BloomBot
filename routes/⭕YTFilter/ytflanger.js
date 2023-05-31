@@ -16,13 +16,13 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var path = require("path");
-var fileName = path.basename(__filename);
-var functionName = fileName.slice(0, -3).toLowerCase();
+const path = require("path");
+const fileName = path.basename(__filename);
+const functionName = fileName.slice(0, -3).toLowerCase();
 
 module.exports = async (BloomBot, mags) => {
   try {
-    var query = BloomBot.args.join(" ");
+    const query = BloomBot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !BloomBot.TubeRegex.test(query))
@@ -39,27 +39,27 @@ module.exports = async (BloomBot, mags) => {
 > _${BloomBot.prefix}${functionName} song/link_`
       );
     }
-    var response = await BloomBot.magfetch(
+    const response = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
     console.log(response.response);
-    var searchData = response.data.youtube_search[0];
-    var musicResponse = await BloomBot.magfetch(
+    const searchData = response.data.youtube_search[0];
+    const musicResponse = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
-    var musicData = musicResponse.data[0];
-    var audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
+    const musicData = musicResponse.data[0];
+    const audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
     await BloomBot.exec(
       `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af "flanger" ${audioFilename}`
     );
-    var audioFile = BloomBot.fs.readFileSync(`./${audioFilename}`);
-    var thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
-    var mediaUrl = searchData.LINK || "Not available";
-    var authorName = searchData.AUTHOR_NAME || "Not available";
-    var description = searchData.DESCRIPTION || "No description available";
-    var message = `
+    const audioFile = BloomBot.fs.readFileSync(`./${audioFilename}`);
+    const thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
+    const mediaUrl = searchData.LINK || "Not available";
+    const authorName = searchData.AUTHOR_NAME || "Not available";
+    const description = searchData.DESCRIPTION || "No description available";
+    const message = `
 *🌻 Here's the information for ${functionName} requested by ${
       BloomBot.pushname || BloomBot.Tname
     }:*

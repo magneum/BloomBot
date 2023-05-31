@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var mongoose = require("mongoose");
-var VimiumSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+const VimiumSchema = new mongoose.Schema({
   Id: String,
   Limits: Number,
   currTime: Number,

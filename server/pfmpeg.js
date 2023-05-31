@@ -16,20 +16,20 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("dotenv").config();
-var cors = require("cors");
-var https = require("https");
-var axios = require("axios");
-var Tube = require("tube-exec");
-var Spinnies = require("spinnies");
-var FFmpeg = require("fluent-ffmpeg");
-var fetch = require("isomorphic-unfetch");
-var youtubedl = require("youtube-dl-exec");
-var progress = require("progress-estimator")();
-var { getDetails } = require("spotify-url-info")(fetch);
-var contentDisposition = require("content-disposition");
-var FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
-var FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
-var PFPORT = process.env.PFPORT || process.env.pfport || 3003;
+const cors = require("cors");
+const https = require("https");
+const axios = require("axios");
+const Tube = require("tube-exec");
+const Spinnies = require("spinnies");
+const FFmpeg = require("fluent-ffmpeg");
+const fetch = require("isomorphic-unfetch");
+const youtubedl = require("youtube-dl-exec");
+const progress = require("progress-estimator")();
+const { getDetails } = require("spotify-url-info")(fetch);
+const contentDisposition = require("content-disposition");
+const FFmpegPath = require("@ffmpeg-installer/ffmpeg").path;
+const FFmpegProbe = require("@ffprobe-installer/ffprobe").path;
+const PFPORT = process.env.PFPORT || process.env.pfport || 3003;
 
 function shrink(url) {
   return new Promise((resolve, reject) => {
@@ -48,9 +48,9 @@ function shrink(url) {
   });
 }
 
-var express = require("express");
-var app = express();
-var spin = new Spinnies();
+const express = require("express");
+const app = express();
+const spin = new Spinnies();
 spin.add("premiumdl", { text: "Blackmagik Server Started" });
 app.use(cors());
 app.use(express.json());
@@ -61,8 +61,8 @@ app.get("/", (request, response) => {
 
 app.get("/spotify", async (request, response) => {
   try {
-    var _ALINK;
-    var _DROP;
+    const _ALINK;
+    const _DROP;
     console.log(request.query);
     axios({
       method: "get",
@@ -86,7 +86,7 @@ app.get("/spotify", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var mgdata = response.data;
+      const mgdata = response.data;
       try {
         _DROP = youtubedl(mgdata.meta.url, {
           noWarnings: true,
@@ -104,24 +104,24 @@ app.get("/spotify", async (request, response) => {
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
       }
-      var YouGhost = await progress(_DROP, "Obtaining: " + " ");
+      const YouGhost = await progress(_DROP, "Obtaining: " + " ");
       console.log(_ALINK);
       // =========================================================
-      var a_ultralow = YouGhost.formats.filter(
+      const a_ultralow = YouGhost.formats.filter(
         (v) => v.format_id === "599" || v.format_id === "600"
       );
-      var db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
-      var a_low = YouGhost.formats.filter(
+      const db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
+      const a_low = YouGhost.formats.filter(
         (v) =>
           v.format_id === "139" ||
           v.format_id === "249" ||
           v.format_id === "250"
       );
-      var db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
-      var a_medium = YouGhost.formats.filter(
+      const db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
+      const a_medium = YouGhost.formats.filter(
         (v) => v.format_id === "140" || v.format_id === "251"
       );
-      var db_medium = a_medium[0] || a_medium[1] || a_medium;
+      const db_medium = a_medium[0] || a_medium[1] || a_medium;
 
       if (db_medium.width !== undefined) {
         _ALINK = db_medium.url;
@@ -206,7 +206,7 @@ app.get("/audio", async (request, response) => {
 
 app.get("/metadata", async (request, response) => {
   try {
-    var _ALINK;
+    const _ALINK;
     axios({
       method: "get",
       url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
@@ -229,7 +229,7 @@ app.get("/metadata", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var mgdata = response.data;
+      const mgdata = response.data;
       _FOUND = [
         {
           YT_Id: mgdata.youtube_search.YT_Id,
@@ -246,7 +246,7 @@ app.get("/metadata", async (request, response) => {
           DESCRIPTION: mgdata.youtube_search.DESCRIPTION,
         },
       ];
-      var _DROP;
+      const _DROP;
       try {
         _DROP = youtubedl(_FOUND[0].LINK, {
           noWarnings: true,
@@ -264,23 +264,23 @@ app.get("/metadata", async (request, response) => {
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
       }
-      var YouGhost = await progress(_DROP, "Obtaining: " + " ");
+      const YouGhost = await progress(_DROP, "Obtaining: " + " ");
       // =========================================================
-      var a_ultralow = YouGhost.formats.filter(
+      const a_ultralow = YouGhost.formats.filter(
         (v) => v.format_id === "599" || v.format_id === "600"
       );
-      var db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
-      var a_low = YouGhost.formats.filter(
+      const db_ultralow = a_ultralow[0] || a_ultralow[1] || a_ultralow;
+      const a_low = YouGhost.formats.filter(
         (v) =>
           v.format_id === "139" ||
           v.format_id === "249" ||
           v.format_id === "250"
       );
-      var db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
-      var a_medium = YouGhost.formats.filter(
+      const db_low = a_low[0] || a_low[1] || a_low[2] || a_low;
+      const a_medium = YouGhost.formats.filter(
         (v) => v.format_id === "140" || v.format_id === "251"
       );
-      var db_medium = a_medium[0] || a_medium[1] || a_medium;
+      const db_medium = a_medium[0] || a_medium[1] || a_medium;
 
       if (db_medium.width !== undefined) {
         _ALINK = db_medium.url;
@@ -294,46 +294,46 @@ app.get("/metadata", async (request, response) => {
         _ALINK = db_ultralow.url;
       }
       // =========================================================
-      var v_1080p = YouGhost.formats.filter(
+      const v_1080p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "399" ||
           v.format_id === "137" ||
           v.format_id === "248"
       );
-      var tuub_1080p = v_1080p[2] || v_1080p[1] || v_1080p[0] || v_1080p;
-      var v_720p = YouGhost.formats.filter(
+      const tuub_1080p = v_1080p[2] || v_1080p[1] || v_1080p[0] || v_1080p;
+      const v_720p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "247" ||
           v.format_id === "398" ||
           v.format_id === "136" ||
           v.format_id === "22"
       );
-      var tuub_720p =
+      const tuub_720p =
         v_720p[3] || v_720p[2] || v_720p[1] || v_720p[0] || v_720p;
-      var v_480p = YouGhost.formats.filter(
+      const v_480p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "397" ||
           v.format_id === "135" ||
           v.format_id === "244"
       );
-      var tuub_480p = v_480p[0] || v_480p[1] || v_480p[2] || v_480p;
-      var v_360p = YouGhost.formats.filter(
+      const tuub_480p = v_480p[0] || v_480p[1] || v_480p[2] || v_480p;
+      const v_360p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "396" ||
           v.format_id === "134" ||
           v.format_id === "18" ||
           v.format_id === "243"
       );
-      var tuub_360p =
+      const tuub_360p =
         v_360p[0] || v_360p[1] || v_360p[2] || v_360p[3] || v_360p;
-      var v_240p = YouGhost.formats.filter(
+      const v_240p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "395" ||
           v.format_id === "133" ||
           v.format_id === "242"
       );
-      var tuub_240p = v_240p[0] || v_240p[1] || v_240p[2] || v_240p;
-      var v_144p = YouGhost.formats.filter(
+      const tuub_240p = v_240p[0] || v_240p[1] || v_240p[2] || v_240p;
+      const v_144p = YouGhost.formats.filter(
         (v) =>
           v.format_id === "17" ||
           v.format_id === "597" ||
@@ -342,7 +342,7 @@ app.get("/metadata", async (request, response) => {
           v.format_id === "160" ||
           v.format_id === "278"
       );
-      var tuub_144p =
+      const tuub_144p =
         v_144p[0] ||
         v_144p[1] ||
         v_144p[2] ||

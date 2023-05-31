@@ -16,11 +16,11 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-var sequelize = DATABASE;
-var logger = require("@/logger");
-var debugEnabled = verbose === "1";
-var { DataTypes, Model } = require("sequelize");
-var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const sequelize = DATABASE;
+const logger = require("@/logger");
+const debugEnabled = verbose === "1";
+const { DataTypes, Model } = require("sequelize");
+const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
 class Cred extends Model {}
 Cred.init(
@@ -63,7 +63,7 @@ Key.init(
   }
 );
 
-var KEY_MAP = {
+const KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -72,12 +72,12 @@ var KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-var remote_authstate = async () => {
+const remote_authstate = async () => {
   let creds;
   let keys = {};
 
-  var checkCreds = async () => {
-    var lock = await Cred.findOne({
+  const checkCreds = async () => {
+    const lock = await Cred.findOne({
       where: {
         key: "noiseKey",
       },
@@ -85,21 +85,21 @@ var remote_authstate = async () => {
     return lock !== null;
   };
 
-  var loadCreds = async () => {
-    var allCreds = await Cred.findAll();
-    var temp = {};
+  const loadCreds = async () => {
+    const allCreds = await Cred.findAll();
+    const temp = {};
     allCreds.forEach((res) => {
-      var val = res.getDataValue("value");
-      var key = res.getDataValue("key");
-      var parsedVal = JSON.parse(val, BufferJSON.reviver);
+      const val = res.getDataValue("value");
+      const key = res.getDataValue("key");
+      const parsedVal = JSON.parse(val, BufferJSON.reviver);
       temp[key] = parsedVal;
     });
 
     return temp;
   };
 
-  var loadKeys = async () => {
-    var keys = {
+  const loadKeys = async () => {
+    const keys = {
       preKeys: {},
       sessions: {},
       senderKeys: {},
@@ -107,24 +107,24 @@ var remote_authstate = async () => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    var allKeys = await Key.findAll();
+    const allKeys = await Key.findAll();
     allKeys.forEach((res) => {
-      var val = res.getDataValue("value");
-      var key = res.getDataValue("key");
-      var type = res.getDataValue("type");
-      var parsedVal = JSON.parse(val, BufferJSON.reviver);
+      const val = res.getDataValue("value");
+      const key = res.getDataValue("key");
+      const type = res.getDataValue("type");
+      const parsedVal = JSON.parse(val, BufferJSON.reviver);
       keys[type][key] = parsedVal;
     });
 
     return keys;
   };
 
-  var saveCreds = async (data) => {
+  const saveCreds = async (data) => {
     if (!data) {
       debugEnabled ? logger.info("Saving all creds") : null;
       data = creds;
     }
-    for (var _key in data) {
+    for (const _key in data) {
       let cred = await Cred.findOne({
         where: {
           key: _key,
@@ -145,8 +145,8 @@ var remote_authstate = async () => {
     }
   };
 
-  var saveKey = async (key, data, _key) => {
-    for (var subKey in data[_key]) {
+  const saveKey = async (key, data, _key) => {
+    for (const subKey in data[_key]) {
       debugEnabled
         ? logger.info(`Trying to find key ${key} and subKey ${subKey}.`)
         : null;
@@ -176,20 +176,20 @@ var remote_authstate = async () => {
     }
   };
 
-  var credsExist = await checkCreds();
+  const credsExist = await checkCreds();
   if (credsExist) {
     debugEnabled ? logger.info("loading values back.") : null;
-    var parent = {
+    const parent = {
       creds: {},
       keys: {},
     };
-    var allCreds = await loadCreds();
-    var allKeys = await loadKeys();
+    const allCreds = await loadCreds();
+    const allKeys = await loadKeys();
 
     parent.creds = allCreds;
     parent.keys = allKeys;
 
-    var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
     debugEnabled ? logger.info(final) : null;
     creds = final.creds;
     keys = final.keys;
@@ -204,7 +204,7 @@ var remote_authstate = async () => {
       creds,
       keys: {
         get: (type, ids) => {
-          var key = KEY_MAP[type];
+          const key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
             let value = keys[key]?.[id];
             if (value) {
@@ -217,8 +217,8 @@ var remote_authstate = async () => {
           }, {});
         },
         set: async (data) => {
-          for (var _key in data) {
-            var key = KEY_MAP[_key];
+          for (const _key in data) {
+            const key = KEY_MAP[_key];
 
             debugEnabled
               ? logger.info(

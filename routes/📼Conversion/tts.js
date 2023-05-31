@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
@@ -39,9 +39,9 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var text = "";
-    var langCode = "en";
-    for (var i = 0; i < BloomBot.args.length; i++) {
+    const text = "";
+    const langCode = "en";
+    for (const i = 0; i < BloomBot.args.length; i++) {
       if (BloomBot.args[i] == `=`) {
         langCode = BloomBot.args[i + 1];
         break;
@@ -76,7 +76,7 @@ module.exports = async (BloomBot, mags) => {
           "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         },
       }).then(async (response) => {
-        var mgdata = response.data;
+        const mgdata = response.data;
         BloomBot.logger.info(mgdata);
         return await BloomBot.sendMessage(
           mags.chat,

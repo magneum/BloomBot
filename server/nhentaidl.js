@@ -15,17 +15,17 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs-extra");
-var request = require("request");
-var formgdata = require("form-data");
-var topdf = require("image-to-pdf");
-var nhentai = require("nhentai-node-api");
-var { default: Axios } = require("axios");
+const fs = require("fs-extra");
+const request = require("request");
+const formgdata = require("form-data");
+const topdf = require("image-to-pdf");
+const nhentai = require("nhentai-node-api");
+const { default: Axios } = require("axios");
 
-var uploadFile = (path) =>
+const uploadFile = (path) =>
   new Promise((resolve, reject) => {
-    var fs = require("fs");
-    var fd = new formgdata();
+    const fs = require("fs");
+    const fd = new formgdata();
     fd.append("file", fs.createReadStream(path));
     Axios({
       method: "POST",
@@ -47,18 +47,18 @@ exports.NhentaiDL = async (msg, args, conn) => {
   if (!args[0]) return msg.reply(`Penggunaan #nhentai 298547`);
   if (isNaN(args[0])) return msg.reply("Pake angka");
   await msg.reply("Loading...");
-  var count = 0;
-  var ResultPdf = [];
-  var doujin = await nhentai.getDoujin(args[0]);
-  var title = doujin.title.default;
-  var details = doujin.details;
-  var parodies = details.parodies.map((v) => v.name);
-  var characters = details.characters.map((v) => v.name);
-  var tags = details.tags.map((v) => v.name);
-  var artists = details.artists.map((v) => v.name);
-  var groups = details.groups.map((v) => v.name);
-  var categories = details.categories.map((v) => v.name);
-  var array_page = doujin.pages.map((a) =>
+  const count = 0;
+  const ResultPdf = [];
+  const doujin = await nhentai.getDoujin(args[0]);
+  const title = doujin.title.default;
+  const details = doujin.details;
+  const parodies = details.parodies.map((v) => v.name);
+  const characters = details.characters.map((v) => v.name);
+  const tags = details.tags.map((v) => v.name);
+  const artists = details.artists.map((v) => v.name);
+  const groups = details.groups.map((v) => v.name);
+  const categories = details.categories.map((v) => v.name);
+  const array_page = doujin.pages.map((a) =>
     a.replace(/(t[0-9]\.nhentai)/, "i.nhentai")
   );
 
@@ -79,9 +79,9 @@ exports.NhentaiDL = async (msg, args, conn) => {
   );
   if (array_page.length > 50)
     return msg.reply("terlalu banyak halaman, Maks Page 50!");
-  for (var i = 0; i < array_page.length; i++) {
+  for (const i = 0; i < array_page.length; i++) {
     if (!fs.existsSync("./nhentai")) fs.mkdirSync("./nhentai");
-    var image_name = "./nhentai/" + title + i + ".png";
+    const image_name = "./nhentai/" + title + i + ".png";
     await new Promise((resolve) =>
       request(array_page[i])
         .pipe(fs.createWriteStream(image_name))
@@ -98,14 +98,14 @@ exports.NhentaiDL = async (msg, args, conn) => {
       .on("finish", resolve)
   );
 
-  for (var i = 0; i < array_page.length; i++) {
+  for (const i = 0; i < array_page.length; i++) {
     fs.unlink("./nhentai/" + title + i + ".png");
   }
 
-  var size = await fs.statSync(`./nhentai/${title}.pdf`).size;
+  const size = await fs.statSync(`./nhentai/${title}.pdf`).size;
   if (size < 10000000) {
     await msg.reply("Uploading...");
-    var thumbnail = await conn.getBuffer(doujin.cover);
+    const thumbnail = await conn.getBuffer(doujin.cover);
     await conn
       .sendFile(
         msg.from,

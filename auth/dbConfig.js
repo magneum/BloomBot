@@ -1,13 +1,13 @@
-var fs = require("fs");
-var { Sequelize } = require("sequelize");
+const fs = require("fs");
+const { Sequelize } = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 } else {
   require("dotenv");
 }
 
-var convertToLogLevel = (value) => {
-  var log = false;
+const convertToLogLevel = (value) => {
+  const log = false;
   if (typeof value === "string") {
     if (value.toLowerCase() === "true") {
       log = console.log;
@@ -23,7 +23,7 @@ process.env.DATABASE_URL =
 process.env.DEBUG =
   process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
 
-var dbConfig = {
+const dbConfig = {
   DATABASE_URL:
     process.env.DATABASE_URL === undefined
       ? "./BloomBot.db"

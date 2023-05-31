@@ -16,12 +16,12 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var JworkR =
+    const JworkR =
       BloomBot.Jwork[Math.floor(Math.random() * BloomBot.Jwork.length)];
     BloomBot.Economy.findOne(
       {
@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
-            var time = BloomBot.ms(
+            const time = BloomBot.ms(
               userEco.worktimeout - (Date.now() - userEco.workdone)
             );
             return await BloomBot.imagebutton(
@@ -69,7 +69,7 @@ module.exports = async (BloomBot, mags) => {
               BloomBot.display
             );
           } else {
-            var amount = Math.floor(Math.random() * 80) + 1;
+            const amount = Math.floor(Math.random() * 80) + 1;
             userEco.money = userEco.money + amount;
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;

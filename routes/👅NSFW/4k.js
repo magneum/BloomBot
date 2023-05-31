@@ -16,12 +16,12 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var server = await BloomBot.nsfwCheck.findOne({ serverId: mags.chat });
+    const server = await BloomBot.nsfwCheck.findOne({ serverId: mags.chat });
     if (!server) {
       await BloomBot.sendMessage(mags.chat, {
         react: { text: "❌", key: mags.key },
@@ -35,11 +35,11 @@ module.exports = async (BloomBot, mags) => {
 > You can ask the administrators to enable them.`);
     }
 
-    var response = await BloomBot.magfetch(
+    const response = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/nsfw?q=${fpth}`
     );
-    var mgdata = response.data;
+    const mgdata = response.data;
     if (!mgdata.meta.thumbnail) {
       await BloomBot.sendMessage(mags.chat, {
         react: { text: "❌", key: mags.key },
@@ -49,7 +49,7 @@ module.exports = async (BloomBot, mags) => {
 *❌Error:* There has been an API Error. Please try again later.`);
     }
 
-    var message = `
+    const message = `
 *🌻 Here is ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*

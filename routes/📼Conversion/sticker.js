@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.quoted) {
@@ -40,8 +40,8 @@ module.exports = async (BloomBot, mags) => {
     }
 
     if (/image/.test(BloomBot.mime)) {
-      var media = await BloomBot.quoted.download();
-      var sticker = new BloomBot.Sticker(media, {
+      const media = await BloomBot.quoted.download();
+      const sticker = new BloomBot.Sticker(media, {
         pack: "Magneum™",
         author: "by BloomBot",
         type: BloomBot.StickerTypes.FULL,
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags) => {
         quality: 100,
         background: "transparent",
       });
-      var buffer = await sticker.toBuffer();
+      const buffer = await sticker.toBuffer();
       return await BloomBot.sendMessage(
         mags.chat,
         {
@@ -73,8 +73,8 @@ module.exports = async (BloomBot, mags) => {
 > _Cannot convert videos longer than 21 Seconds!_`
         );
       } else {
-        var media = await BloomBot.quoted.download();
-        var sticker = new BloomBot.Sticker(media, {
+        const media = await BloomBot.quoted.download();
+        const sticker = new BloomBot.Sticker(media, {
           pack: "Magneum™",
           author: "by BloomBot",
           type: BloomBot.StickerTypes.FULL,
@@ -83,7 +83,7 @@ module.exports = async (BloomBot, mags) => {
           quality: 100,
           background: "transparent",
         });
-        var buffer = await sticker.toBuffer();
+        const buffer = await sticker.toBuffer();
         return await BloomBot.sendMessage(
           mags.chat,
           {

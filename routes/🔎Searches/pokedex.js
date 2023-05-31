@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -39,9 +39,9 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var json;
+    const json;
     try {
-      var res = await BloomBot.fetch(
+      const res = await BloomBot.fetch(
         API(`https://some-random-api.ml`, `/pokedex`, {
           pokemon: BloomBot.args.join(" "),
         })

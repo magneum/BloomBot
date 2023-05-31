@@ -16,13 +16,13 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-var {
+const {
   Simp,
   Pokemon,
   Ship,
   IShipOptions,
 } = require("@shineiichijo/canvas-chan");
-var {
+const {
   mMake,
   formatp,
   formatDate,
@@ -39,48 +39,48 @@ var {
   GIFBufferToVideoBuffer,
   getRandom,
 } = require("./obFunc");
-var fs = require("fs");
-var path = require("path");
-var chalk = require("chalk");
-var { tmpdir } = require("os");
-var { JSDOM } = require("jsdom");
-var { Character } = require("mailist");
-var { randomUUID } = require("crypto");
-var { readFile } = require("fs/promises");
-var { performance } = require("perf_hooks");
-var { Primbon } = require("scrape-primbon");
-var { getDadjoke } = require("random-jokes");
-// var { createWorker } = require("tesseract");
-var { Manga } = require("@shineiichijo/marika");
-var { AnimeWallpaper } = require("anime-wallpaper");
-var { Doujin } = require("@shineiichijo/nhentai-pdf");
-var { exec, spawn, execSync } = require("child_process");
-var { DownloaderHelper } = require("node-downloader-helper");
-var { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
-var { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
-var ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
-var ffprobe = require("@ffprobe-installer/ffprobe");
-var ffmpeg = require("fluent-ffmpeg")()
+const fs = require("fs");
+const path = require("path");
+const chalk = require("chalk");
+const { tmpdir } = require("os");
+const { JSDOM } = require("jsdom");
+const { Character } = require("mailist");
+const { randomUUID } = require("crypto");
+const { readFile } = require("fs/promises");
+const { performance } = require("perf_hooks");
+const { Primbon } = require("scrape-primbon");
+const { getDadjoke } = require("random-jokes");
+// const { createWorker } = require("tesseract");
+const { Manga } = require("@shineiichijo/marika");
+const { AnimeWallpaper } = require("anime-wallpaper");
+const { Doujin } = require("@shineiichijo/nhentai-pdf");
+const { exec, spawn, execSync } = require("child_process");
+const { DownloaderHelper } = require("node-downloader-helper");
+const { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
+const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
+const ffprobe = require("@ffprobe-installer/ffprobe");
+const ffmpeg = require("fluent-ffmpeg")()
   .setFfprobePath(ffprobe.path)
   .setFfmpegPath(ffmpegInstaller.path);
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    var folderPath = "public/src";
+    const folderPath = "public/src";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);
         return;
       }
-      var imageFiles = files.filter((file) => {
-        var extension = path.extname(file).toLowerCase();
+      const imageFiles = files.filter((file) => {
+        const extension = path.extname(file).toLowerCase();
         return (
           extension === ".png" || extension === ".jpg" || extension === ".jpeg"
         );
       });
       if (imageFiles.length > 0) {
-        var randomImage =
+        const randomImage =
           imageFiles[Math.floor(Math.random() * imageFiles.length)];
-        var imagePath = path.join(folderPath, randomImage);
+        const imagePath = path.join(folderPath, randomImage);
         resolve(imagePath);
       } else {
         reject("No .png, .jpg, or .jpeg images found in the folder.");
@@ -216,7 +216,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   // BloomBot.memberRespA = [];
   // BloomBot.memberRespB = [];
   // BloomBot.resp1 = await BloomBot.groupInviteCode("120363020792949649@g.us");
-  BloomBot.varResp = [
+  BloomBot.constResp = [
     "h",
     "m",
     "c",
@@ -229,32 +229,32 @@ module.exports = async (BloomBot, mags, update, store) => {
   ];
 
   function ShowGreen(Topic, Text) {
-    var TShow = BloomBot.chalk.hex("#2D5A27").bold(Topic);
-    var Show = BloomBot.chalk.hex("#849871").italic.bold(Text);
+    const TShow = BloomBot.chalk.hex("#2D5A27").bold(Topic);
+    const Show = BloomBot.chalk.hex("#849871").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
       BloomBot.chalk.black(Show)
     );
   }
   function ShowBlue(Topic, Text) {
-    var TShow = BloomBot.chalk.hex("#008B8B").bold(Topic);
-    var Show = BloomBot.chalk.hex("#818d94").italic.bold(Text);
+    const TShow = BloomBot.chalk.hex("#008B8B").bold(Topic);
+    const Show = BloomBot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
       BloomBot.chalk.black(Show)
     );
   }
   function ShowRed(Topic, Text) {
-    var TShow = BloomBot.chalk.hex("#ff6347").bold(Topic);
-    var Show = BloomBot.chalk.hex("#ed7777").italic.bold(Text);
+    const TShow = BloomBot.chalk.hex("#ff6347").bold(Topic);
+    const Show = BloomBot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
       BloomBot.chalk.black(Show)
     );
   }
   function ShowYellow(Topic, Text) {
-    var TShow = BloomBot.chalk.hex("#8B8000").bold(Topic);
-    var Show = BloomBot.chalk.hex("#ECCF8D").italic.bold(Text);
+    const TShow = BloomBot.chalk.hex("#8B8000").bold(Topic);
+    const Show = BloomBot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
       BloomBot.chalk.black(Show)
@@ -264,7 +264,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     return Math.floor(Math.random() * (max - min) + min);
   }
   function clearStorage(files) {
-    for (var file of files) {
+    for (const file of files) {
       BloomBot.fs.unlink(file, (err) => {
         if (err) throw err;
       });

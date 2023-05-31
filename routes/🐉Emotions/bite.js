@@ -16,16 +16,16 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var path = require("path");
-var fileName = path.basename(__filename);
-var feeling = fileName.slice(0, -3).toLowerCase();
+const path = require("path");
+const fileName = path.basename(__filename);
+const feeling = fileName.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var response = await BloomBot.magfetch(
+    const response = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
-    var magData = response.data;
+    const magData = response.data;
     console.log(magData);
     if (!magData.meta.url) {
       await BloomBot.sendMessage(mags.chat, {
@@ -37,7 +37,7 @@ module.exports = async (BloomBot, mags) => {
 *❌Error:* There has been an API Error. Please try again later.`
       );
     }
-    var resultFilename = magData.resp.id + ".mp4";
+    const resultFilename = magData.resp.id + ".mp4";
     await BloomBot.ffmpeg
       .input(magData.meta.url)
       .outputOptions([
@@ -48,9 +48,9 @@ module.exports = async (BloomBot, mags) => {
       ])
       .output(resultFilename)
       .on("end", async () => {
-        var mentionedUser = "";
+        const mentionedUser = "";
         if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
-          var mention = BloomBot.mentionByTag;
+          const mention = BloomBot.mentionByTag;
           mentionedUser =
             (await mention[0]) || mags.msg.contextInfo.participant;
         } else if (BloomBot.mentionByReply) {
@@ -60,7 +60,7 @@ module.exports = async (BloomBot, mags) => {
               ? mags.message.extendedTextMessage.contextInfo.participant || ""
               : "";
         }
-        var message = `*ⒸBloomBot by Magneum™*
+        const message = `*ⒸBloomBot by Magneum™*
 *💻HomePage:* https://bit.ly/magneum
 
 *🎋Emo:* ${feeling}

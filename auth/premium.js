@@ -50,7 +50,7 @@ exports.premium = async (BloomBot, mags, update, store) => {
         }
         if (userVium.Limits < 1) {
           if (userVium.permTime - (Date.now() - userVium.currTime) > 0) {
-            var clock = BloomBot.ms(
+            const clock = BloomBot.ms(
               userVium.permTime - (Date.now() - userVium.currTime)
             );
             return await BloomBot.imagebutton(

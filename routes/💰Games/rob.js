@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
-  var ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
-  var MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
-  var MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
-  var MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+  const ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
+  const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
+  const MoneyCharm = Math.floor(Math.random() * (6000 - 5000 + 1)) + 5000;
+  const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (BloomBot.mentionByReply) {
-    var receiver =
+    const receiver =
       mags.mtype == "extendedTextMessage" &&
       mags.message.extendedTextMessage.contextInfo != null
         ? mags.message.extendedTextMessage.contextInfo.participant || ""
         : "";
-    var receiverName = await BloomBot.getName(receiver);
+    const receiverName = await BloomBot.getName(receiver);
     if (receiver === mags.sender) {
       await BloomBot.sendMessage(mags.chat, {
         react: {
@@ -59,7 +59,7 @@ module.exports = async (BloomBot, mags) => {
           async (error, ᴠᴇᴄᴏ) => {
             if (error) return BloomBot.handlerror(BloomBot, mags, error);
             if (!ᴠᴇᴄᴏ) {
-              var newUser = new BloomBot.Economy({
+              const newUser = new BloomBot.Economy({
                 Id: receiver,
                 money: 0,
                 daily: 0,
@@ -88,7 +88,7 @@ module.exports = async (BloomBot, mags) => {
             }
 
             if (!ᴄᴇᴄᴏ) {
-              var newUser = new BloomBot.Economy({
+              const newUser = new BloomBot.Economy({
                 Id: mags.sender,
                 money: 0,
                 daily: 0,
@@ -163,7 +163,7 @@ module.exports = async (BloomBot, mags) => {
                   async (error, ᴠɪᴄᴛɪᴍ) => {
                     if (error) return BloomBot.handlerror(BloomBot, mags, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
-                      var newUser = new Robbery({
+                      const newUser = new Robbery({
                         Id: receiver,
                         sword: 0,
                         laptop: 0,
@@ -202,7 +202,7 @@ module.exports = async (BloomBot, mags) => {
                     }
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
-                      var newUser = new Robbery({
+                      const newUser = new Robbery({
                         Id: mags.sender,
                         sword: 0,
                         laptop: 0,
@@ -244,7 +244,7 @@ module.exports = async (BloomBot, mags) => {
                         (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime) >
                       0
                     ) {
-                      var Time = ms(
+                      const Time = ms(
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
                           (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );

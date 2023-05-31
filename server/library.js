@@ -15,22 +15,22 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs");
-var path = require("path");
-var didYouMean = require("didyoumean2").default;
+const fs = require("fs");
+const path = require("path");
+const didYouMean = require("didyoumean2").default;
 
 module.exports = async (BloomBot, mags, update, store) => {
-  var routePath = path.join(__dirname, "..", "routes");
-  var specialFolders = fs
+  const routePath = path.join(__dirname, "..", "routes");
+  const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
-  var commandList = [];
-  var findCommandFile = (folderPath, command) => {
-    var files = fs.readdirSync(folderPath);
-    for (var file of files) {
-      var fileName = path.parse(file).name.toLowerCase();
-      var commandAliases = require(path.join(folderPath, file)).aliases || [];
+  const commandList = [];
+  const findCommandFile = (folderPath, command) => {
+    const files = fs.readdirSync(folderPath);
+    for (const file of files) {
+      const fileName = path.parse(file).name.toLowerCase();
+      const commandAliases = require(path.join(folderPath, file)).aliases || [];
       commandList.push({ name: fileName, aliases: commandAliases });
       if (fileName === command || commandAliases.includes(command)) {
         return file;
@@ -38,20 +38,20 @@ module.exports = async (BloomBot, mags, update, store) => {
     }
     return null;
   };
-  var gmeta = mags.isGroup
+  const gmeta = mags.isGroup
     ? await BloomBot.groupMetadata(mags.chat).catch((error) => {})
     : "";
-  var groupName = mags.isGroup ? gmeta.subject : "";
-  var participants = mags.isGroup ? await gmeta.participants : "";
-  var groupAdmins = mags.isGroup
+  const groupName = mags.isGroup ? gmeta.subject : "";
+  const participants = mags.isGroup ? await gmeta.participants : "";
+  const groupAdmins = mags.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  var groupOwner = mags.isGroup ? gmeta.owner : "";
-  var isbotAdmin = mags.isGroup
+  const groupOwner = mags.isGroup ? gmeta.owner : "";
+  const isbotAdmin = mags.isGroup
     ? groupAdmins.includes(await BloomBot.decodeJid(BloomBot.user.id))
     : false;
-  var isAdmin = mags.isGroup ? groupAdmins.includes(mags.sender) : false;
-  var vbody =
+  const isAdmin = mags.isGroup ? groupAdmins.includes(mags.sender) : false;
+  const vbody =
     mags.mtype === "conversation"
       ? mags.message.conversation
       : mags.mtype == "imageMessage"
@@ -71,7 +71,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         mags.message.listResponseMessage?.singleSelectReply.selectedRowId ||
         mags.text
       : "";
-  var vcommand = vbody
+  const vcommand = vbody
     .replace(BloomBot.prefix, "")
     .trim()
     .split(/ +/)
@@ -108,12 +108,12 @@ module.exports = async (BloomBot, mags, update, store) => {
   let commandFound = false;
   let suggestedCommand = null;
   let suggestedCommandAliases = [];
-  for (var folder of specialFolders) {
-    var folderPath = path.join(routePath, folder);
+  for (const folder of specialFolders) {
+    const folderPath = path.join(routePath, folder);
     if (fs.existsSync(folderPath)) {
-      var commandFile = findCommandFile(folderPath, vcommand);
+      const commandFile = findCommandFile(folderPath, vcommand);
       if (commandFile) {
-        var commandFilePath = path.join(folderPath, commandFile);
+        const commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           BloomBot,
           mags,
@@ -128,11 +128,11 @@ module.exports = async (BloomBot, mags, update, store) => {
         commandFound = true;
         break;
       } else {
-        var folderCommands = commandList.map((cmd) => cmd.name);
-        var suggestion = didYouMean(vcommand, folderCommands);
+        const folderCommands = commandList.map((cmd) => cmd.name);
+        const suggestion = didYouMean(vcommand, folderCommands);
         if (suggestion) {
           suggestedCommand = suggestion;
-          var suggestedCommandData = commandList.find(
+          const suggestedCommandData = commandList.find(
             (cmd) => cmd.name === suggestedCommand
           );
           if (suggestedCommandData) {
@@ -145,13 +145,13 @@ module.exports = async (BloomBot, mags, update, store) => {
 
 if (!commandFound) {
   if (suggestedCommand) {
-    var suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
-    var suggestionMessage =
+    const suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
+    const suggestionMessage =
       "Command not found. Below are some suggestions:\n\n";
-    var suggestedCommandsText = commandList
+    const suggestedCommandsText = commandList
       .filter(cmd => cmd.name === suggestedCommand || suggestedCommandAliases.includes(cmd.name))
       .map(cmd => {
-        var aliasesText = cmd.aliases && cmd.aliases.length > 0 ? ` (${cmd.aliases.join(", ")})` : "";
+        const aliasesText = cmd.aliases && cmd.aliases.length > 0 ? ` (${cmd.aliases.join(", ")})` : "";
         return `${cmd.name}${aliasesText}`;
       })
       .join("\n");
@@ -180,7 +180,7 @@ if (!commandFound) {
       mentions: [mags.sender],
     });
   } else {
-    var errorMessage =
+    const errorMessage =
       "⚠️ *Apologies* ⚠️\n\n" +
       `@${BloomBot.Tname}, it seems that the command you entered doesn't exist.\n` +
       "For command list press below buttons.";

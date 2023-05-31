@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -39,9 +39,9 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var Googled = await BloomBot.google({ query: BloomBot.args.join(" ") });
-    var Gxt = `*🔎Searched:* ${BloomBot.args.join(" ")}`;
-    for (var gL of Googled) {
+    const Googled = await BloomBot.google({ query: BloomBot.args.join(" ") });
+    const Gxt = `*🔎Searched:* ${BloomBot.args.join(" ")}`;
+    for (const gL of Googled) {
       Gxt += `*📒Title* : ${gL.title}`;
       Gxt += `*🍃Description* : ${gL.snippet}`;
       Gxt += `*🌐Link* : ${gL.link}\n\n`;

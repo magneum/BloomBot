@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     return await BloomBot.nsfwCheck.findOne(
@@ -46,7 +46,7 @@ module.exports = async (BloomBot, mags) => {
             BloomBot,
             "https://magneum.vercel.app/api/hentai?q=" + fpth
           ).then(async (response) => {
-            var mgdata = response.data;
+            const mgdata = response.data;
             BloomBot.logger.info(mgdata);
             if (!mgdata[0].meta.url) {
               await BloomBot.sendMessage(mags.chat, {

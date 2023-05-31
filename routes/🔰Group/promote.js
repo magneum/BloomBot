@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
   try {
     if (!mags.isGroup) {
@@ -65,8 +65,8 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
     }
 
     if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
-      var mention = BloomBot.mentionByTag;
-      var users = (await mention[0]) || mags.msg.contextInfo.participant;
+      const mention = BloomBot.mentionByTag;
+      const users = (await mention[0]) || mags.msg.contextInfo.participant;
       if (!users) {
         await BloomBot.sendMessage(mags.chat, {
           react: {
@@ -112,7 +112,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (BloomBot.mentionByReply) {
-      var users =
+      const users =
         mags.mtype == "extendedTextMessage" &&
         mags.message.extendedTextMessage.contextInfo != null
           ? mags.message.extendedTextMessage.contextInfo.participant || ""

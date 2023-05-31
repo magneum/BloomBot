@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -43,7 +43,7 @@ module.exports = async (BloomBot, mags) => {
       fids = await BloomBot.axios.get(
         `https://api.popcat.xyz/instagram?user=${BloomBot.args.join(" ")}`
       );
-      var reply = `
+      const reply = `
 *🀄Username:* ${fids.data.username}
 *📃Name:* ${fids.data.full_name}
 *🗣Private:* ${fids.data.private}

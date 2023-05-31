@@ -16,10 +16,10 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var ytdl = require("ytdl-secktor");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const ytdl = require("ytdl-secktor");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
@@ -43,7 +43,7 @@ module.exports = async (BloomBot, mags) => {
         BloomBot,
         "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
       ).then(async (response) => {
-        var mgdata = response.data;
+        const mgdata = response.data;
         BloomBot.logger.info(mgdata);
         await BloomBot.sendMessage(
           mags.chat,
@@ -78,7 +78,7 @@ module.exports = async (BloomBot, mags) => {
           }
         );
 
-        var stream = ytdl(mgdata.youtube_search[0].LINK, {
+        const stream = ytdl(mgdata.youtube_search[0].LINK, {
           filter: (info) =>
             info.audioBitrate == 160 || info.audioBitrate == 128,
         }).pipe(BloomBot.fs.createWriteStream(`./${mgdata.uuid}`));

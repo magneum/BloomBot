@@ -15,18 +15,18 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs");
-var axios = require("axios");
-var cheerio = require("cheerio");
-var Bodyform = require("form-data");
+const fs = require("fs");
+const axios = require("axios");
+const cheerio = require("cheerio");
+const Bodyform = require("form-data");
 
 function TelegraPh(Path) {
   return new Promise(async (resolve, reject) => {
     if (!fs.existsSync(Path)) return reject(new Error("File not Found"));
     try {
-      var form = new Bodyform();
+      const form = new Bodyform();
       form.append("file", fs.createReadStream(Path));
-      var data = await axios({
+      const data = await axios({
         url: "https://telegra.ph/upload",
         method: "POST",
         headers: {
@@ -43,7 +43,7 @@ function TelegraPh(Path) {
 
 async function UploadFileUgu(input) {
   return new Promise(async (resolve, reject) => {
-    var form = new Bodyform();
+    const form = new Bodyform();
     form.append("files[]", fs.createReadStream(input));
     await axios({
       url: "https://uguu.se/upload.php",
@@ -64,7 +64,7 @@ async function UploadFileUgu(input) {
 
 function webp2mp4File(path) {
   return new Promise((resolve, reject) => {
-    var form = new Bodyform();
+    const form = new Bodyform();
     form.append("new-image-url", "");
     form.append("new-image", fs.createReadStream(path));
     axios({
@@ -76,9 +76,9 @@ function webp2mp4File(path) {
       },
     })
       .then(({ data }) => {
-        var bodyformThen = new Bodyform();
-        var $ = cheerio.load(data);
-        var file = $('input[name="file"]').attr("value");
+        const bodyformThen = new Bodyform();
+        const $ = cheerio.load(data);
+        const file = $('input[name="file"]').attr("value");
         bodyformThen.append("file", file);
         bodyformThen.append("convert", "Convert WebP to MP4!");
         axios({
@@ -90,8 +90,8 @@ function webp2mp4File(path) {
           },
         })
           .then(({ data }) => {
-            var $ = cheerio.load(data);
-            var result =
+            const $ = cheerio.load(data);
+            const result =
               "https:" +
               $("div#output > p.outfile > video > source").attr("public");
             resolve({

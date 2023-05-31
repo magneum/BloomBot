@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     await BloomBot.Economy.findOne(
@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags) => {
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
-            var time = BloomBot.ms(
+            const time = BloomBot.ms(
               userEco.fishtimeout - (Date.now() - userEco.fishdone)
             );
             return await BloomBot.imagebutton(
@@ -67,15 +67,15 @@ module.exports = async (BloomBot, mags) => {
               BloomBot.display
             );
           } else {
-            var fishId = Math.floor(Math.random() * 10) + 1;
-            var rarity;
+            const fishId = Math.floor(Math.random() * 10) + 1;
+            const rarity;
             if (fishId < 5) rarity = `junk`;
             else if (fishId < 8) rarity = `common`;
             else if (fishId < 9) rarity = `uncommon`;
             else if (fishId < 10) rarity = `rare`;
             else rarity = `legendary`;
-            var fishh = BloomBot.Fishes[rarity];
-            var worth =
+            const fishh = BloomBot.Fishes[rarity];
+            const worth =
               Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +
               fishh.min;
             userEco.money = userEco.money + worth;

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args[0] && isNaN(BloomBot.args[0])) {
@@ -40,15 +40,15 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var data = await BloomBot.axios.get(
+    const data = await BloomBot.axios.get(
       "http://app.chordindonesia.com/?json=get_post&id=" + BloomBot.args[0]
     );
-    var clean = (data) => {
-      var regex = /(<([^>]+)>)/gi;
+    const clean = (data) => {
+      const regex = /(<([^>]+)>)/gi;
       data = data.replace(/(<br?\s?\/>)/gi, " \n");
       return data.replace(regex, "");
     };
-    var result = data.data;
+    const result = data.data;
     chordFound = "*• Chord Music Found*\n";
     chordFound += `*- Title:* ${result.post.title.replace(
       /[0-9]|[#&;]/gi,
@@ -56,15 +56,15 @@ module.exports = async (BloomBot, mags) => {
     )}\n\n`;
     chordFound += clean(result.post.content);
     try {
-      var кяуяєsi = await BloomBot.fetch(
+      const кяуяєsi = await BloomBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",
         })
       );
-      var bson = await кяуяєsi.json();
-      var bsoni =
+      const bson = await кяуяєsi.json();
+      const bsoni =
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await BloomBot.imagebutton(
         BloomBot,

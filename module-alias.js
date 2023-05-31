@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var moduleAlias = require("module-alias");
-var aliasMapping = {
+const moduleAlias = require("module-alias");
+const aliasMapping = {
   "@": "../",
   "#": "../../",
   "*": "../../../",

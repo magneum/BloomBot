@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     BloomBot.Economy.findOne(
@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
           );
         } else {
           if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
-            var ᴄʟᴏᴄᴋ = BloomBot.ms(
+            const ᴄʟᴏᴄᴋ = BloomBot.ms(
               userEco.timeout - (Date.now() - userEco.daily)
             );
             return await BloomBot.imagebutton(

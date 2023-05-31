@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var mongoose = require("mongoose");
-var ZooSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+const ZooSchema = new mongoose.Schema({
   Id: String,
   zoodone: Number,
   zootimeout: Number,

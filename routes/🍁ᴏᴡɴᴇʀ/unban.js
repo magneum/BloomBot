@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags, groupName) => {
   await BloomBot.sendMessage(mags.chat, {
     react: {
@@ -42,12 +42,12 @@ module.exports = async (BloomBot, mags, groupName) => {
     }
 
     if (BloomBot.mentionByReply) {
-      var repliedPerson =
+      const repliedPerson =
         BloomBot.mtype == "extendedTextMessage" &&
         BloomBot.message.extendedTextMessage.contextInfo != null
           ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
           : "";
-      var repliedPersonNum = repliedPerson.substring(
+      const repliedPersonNum = repliedPerson.substring(
         0,
         repliedPerson.length - 15
       );
@@ -70,8 +70,8 @@ module.exports = async (BloomBot, mags, groupName) => {
         }
       );
     } else if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
-      var mention = BloomBot.mentionByTag;
-      var 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || BloomBot.msg.contextInfo.participant;
+      const mention = BloomBot.mentionByTag;
+      const 𝕻𝖊𝖗𝖘𝖔𝖓 = (await mention[0]) || BloomBot.msg.contextInfo.participant;
       BloomBot.userBanCheck.findOne(
         {
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,

@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var mongoose = require("mongoose");
-var BanSchema = new mongoose.Schema({
+const mongoose = require("mongoose");
+const BanSchema = new mongoose.Schema({
   Id: String,
 });
 module.exports = mongoose.model("Ban", BanSchema);

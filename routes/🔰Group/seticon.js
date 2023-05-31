@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
   mags,
@@ -103,7 +103,7 @@ module.exports = async (
       );
     }
 
-    var media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted);
+    const media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted);
     await BloomBot.updateProfilePicture(mags.chat, { url: media })
       .then(
         BloomBot.imagebutton(

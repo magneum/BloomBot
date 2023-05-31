@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     ramUsage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
@@ -26,7 +26,7 @@ module.exports = async (BloomBot, mags) => {
     )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB`;
     timestampe = BloomBot.speed();
     latensie = BloomBot.speed() - timestampe;
-    var runtime = function (seconds) {
+    const runtime = function (seconds) {
       seconds = Number(seconds);
       d = Math.floor(seconds / (3600 * 24));
       h = Math.floor((seconds % (3600 * 24)) / 3600);
@@ -38,9 +38,9 @@ module.exports = async (BloomBot, mags) => {
       sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
       return dDisplay + hDisplay + mDisplay + sDisplay;
     };
-    var countFiles = (dir) =>
+    const countFiles = (dir) =>
       BloomBot.fs.readdirSync(dir).reduce((acc, file) => {
-        var fileDir = `${dir}/${file}`;
+        const fileDir = `${dir}/${file}`;
         if (BloomBot.fs.lstatSync(fileDir).isDirectory()) {
           return (acc += countFiles(fileDir));
         }

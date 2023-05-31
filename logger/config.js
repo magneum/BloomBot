@@ -16,13 +16,13 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("dotenv");
-var fs = require("fs");
+const fs = require("fs");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 } else {
   require("dotenv");
 }
-var SUDO = process.env.SUDO;
+const SUDO = process.env.SUDO;
 global.SUDO = SUDO.split(",");
 global.ShowInfo = process.env.ShowInfo;
 global.upVersion = process.env.upVersion;

@@ -17,10 +17,10 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/config");
-var logger = require("@/logger");
-var gitPull = require("@/utils/gitPull");
-var purgepg = require("./purgepg");
-var {
+const logger = require("@/logger");
+const gitPull = require("@/utils/gitPull");
+const purgepg = require("./purgepg");
+const {
   default: Bloom_bot_client,
   DisconnectReason,
   generateforwardMessageContent,
@@ -32,19 +32,19 @@ var {
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
-var fs = require("fs");
-var path = require("path");
-var pino = require("pino");
-var express = require("express");
-var monGoose = require("mongoose");
-var { Boom } = require("@hapi/boom");
-var bodyParser = require("body-parser");
-var { exec } = require("child_process");
-var dashboards = require("@/database/dashboard");
+const fs = require("fs");
+const path = require("path");
+const pino = require("pino");
+const express = require("express");
+const monGoose = require("mongoose");
+const { Boom } = require("@hapi/boom");
+const bodyParser = require("body-parser");
+const { exec } = require("child_process");
+const dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var remote_authstate = require("@/auth/remote_authstate");
-var { fallback_remote_authstate } = require("@/auth/Database");
-var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
+const remote_authstate = require("@/auth/remote_authstate");
+const { fallback_remote_authstate } = require("@/auth/Database");
+const { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {
@@ -69,14 +69,14 @@ async function magneum() {
       logger.error(error);
     })
     .then(logger.info("📢 Connected with mongoose."));
-  var opage = express();
-  var store = makeInMemoryStore({
+  const opage = express();
+  const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
-  var getVersionWaweb = () => {
-    var version;
+  const getVersionWaweb = () => {
+    const version;
     try {
-      var a = fetchJson(
+      const a = fetchJson(
         "https://web.whatsapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
@@ -85,7 +85,7 @@ async function magneum() {
     }
     return version;
   };
-  var urlencodedParser = bodyParser.urlencoded({ extended: false });
+  const urlencodedParser = bodyParser.urlencoded({ extended: false });
   opage.engine("html", require("ejs").renderFile);
   opage.use(express.static("./views"));
   opage.set("view engine", "html");
@@ -97,7 +97,7 @@ async function magneum() {
     response.sendFile("views/BloomBot.html", { root: __dirname });
   });
   opage.post("/BloomBot", urlencodedParser, (request, response) => {
-    var phoneNum = request.body.phone.replace(
+    const phoneNum = request.body.phone.replace(
       /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
       ""
     );
@@ -116,7 +116,7 @@ async function magneum() {
   });
   opage.listen(PORT, logger.info("📢 BloomBot started at port " + PORT));
 
-  // var sequelize = DATABASE;
+  // const sequelize = DATABASE;
   // await sequelize.sync();
   let state, saveCreds;
   try {
@@ -135,7 +135,7 @@ async function magneum() {
     );
   }
 
-  var BloomBot = Bloom_bot_client({
+  const BloomBot = Bloom_bot_client({
     auth: state,
     MessageRetryMap,
     printQRInTerminal: true,
@@ -150,7 +150,7 @@ async function magneum() {
     generateHighQualityLinkPreview: true,
     getMessage: async (key) => {
       if (store) {
-        var msg = await store.loadMessage(key.remoteJid, key.id, undefined);
+        const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
         return msg.message || undefined;
       }
       return {
@@ -162,7 +162,7 @@ async function magneum() {
 
   BloomBot.ev.on("creds.update", async (update) => await saveCreds());
   BloomBot.ev.on("connection.update", async (update) => {
-    var {
+    const {
       lastDisconnect,
       connection,
       isNewLogin,
@@ -236,7 +236,7 @@ async function magneum() {
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
-      var imåge;
+      const imåge;
       try {
         imåge = await BloomBot.profilePictureUrl(sperson, "image");
       } catch {
@@ -366,7 +366,7 @@ async function magneum() {
       { image: img },
       { upload: BloomBot.waUploadToServer }
     );
-    var template = generateWAMessageFromContent(
+    const template = generateWAMessageFromContent(
       mags.chat,
       proto.Message.fromObject({
         templateMessage: {
@@ -545,9 +545,9 @@ async function magneum() {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    var stream = await downloadContentFromMessage(quoted, messageType);
+    const stream = await downloadContentFromMessage(quoted, messageType);
     let buffer = Buffer.from([]);
-    for await (var chunk of stream) {
+    for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
     let type = await FileType.fromBuffer(buffer);
@@ -562,9 +562,9 @@ async function magneum() {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    var stream = await downloadContentFromMessage(message, messageType);
+    const stream = await downloadContentFromMessage(message, messageType);
     let buffer = Buffer.from([]);
-    for await (var chunk of stream) {
+    for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
 
@@ -648,7 +648,7 @@ async function magneum() {
       ...context,
       ...content[ctype].contextInfo,
     };
-    var waMessage = await generateWAMessageFromContent(
+    const waMessage = await generateWAMessageFromContent(
       jid,
       content,
       options
@@ -742,10 +742,10 @@ async function magneum() {
   };
 
   BloomBot.ws.on("CB:call", async (update) => {
-    var sleep = async (ms) => {
+    const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
-    var callerId = update.content[0].attrs["call-creator"];
+    const callerId = update.content[0].attrs["call-creator"];
     let person = await BloomBot.sendContact(callerId, global.owner);
     BloomBot.sendMessage(
       callerId,
@@ -766,7 +766,7 @@ async function magneum() {
     }
   });
   setInterval(async () => {
-    var _Type = [
+    const _Type = [
       "🎭Designer",
       "🌏Inventor",
       "🎨Creator",
@@ -826,7 +826,7 @@ async function magneum() {
       "🎬Stunt performer",
       "🛠️Handyman",
     ];
-    var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
+    const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
       "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );

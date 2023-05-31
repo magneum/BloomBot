@@ -53,20 +53,19 @@ module.exports = async (BloomBot, mags, update, store) => {
                 async (error, server) => {
                   if (error) return BloomBot.handlerror(BloomBot, mags, error);
                   if (!server) return;
-                  var { noLink } = require("#/auth/antilink");
-                  return noLink(BloomBot, mags);
+                  return require("#/auth/antilink")(BloomBot, mags);
                 }
               );
               // respA = await BloomBot.groupMetadata("120363020792949649@g.us");
-              // for (var i = 0; i < respA.participants.length; i++)
+              // for (const i = 0; i < respA.participants.length; i++)
               // BloomBot.memberRespA[i] = respA.participants[i].id;
               // respB = await BloomBot.groupMetadata("120363089188116481@g.us");
-              // for (var i = 0; i < respB.participants.length; i++)
+              // for (const i = 0; i < respB.participants.length; i++)
               // BloomBot.memberRespB[i] = respB.participants[i].id;
               // if (
               // !BloomBot.fromme &&
               // !BloomBot.isSudo &&
-              // !BloomBot.varResp.includes(BloomBot.command) &&
+              // !BloomBot.constResp.includes(BloomBot.command) &&
               // !BloomBot.memberRespA.includes(mags.sender) &&
               // !BloomBot.memberRespB.includes(mags.sender)
               // ) {

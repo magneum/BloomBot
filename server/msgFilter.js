@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var usedCommandRecently = new Set();
-var isFiltered = (from) => !!usedCommandRecently.has(from);
-var addFilter = (from, cl) => {
+const usedCommandRecently = new Set();
+const isFiltered = (from) => !!usedCommandRecently.has(from);
+const addFilter = (from, cl) => {
   usedCommandRecently.add(from);
   setTimeout(() => usedCommandRecently.delete(from), cl);
 };

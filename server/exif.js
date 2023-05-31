@@ -15,19 +15,19 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs");
-var { tmpdir } = require("os");
-var Crypto = require("crypto");
-var ff = require("fluent-ffmpeg");
-var webp = require("node-webpmux");
-var path = require("path");
+const fs = require("fs");
+const { tmpdir } = require("os");
+const Crypto = require("crypto");
+const ff = require("fluent-ffmpeg");
+const webp = require("node-webpmux");
+const path = require("path");
 
 async function imageToWebp(media) {
-  var tmpFileOut = path.join(
+  const tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  var tmpFileIn = path.join(
+  const tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.png`
   );
@@ -42,24 +42,24 @@ async function imageToWebp(media) {
         "-vcodec",
         "libwebp",
         "-vf",
-        "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] pavartegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] pavarteuse",
+        "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] paconsttegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paconstteuse",
       ])
       .toformat("webp")
       .save(tmpFileOut);
   });
 
-  var buff = fs.readFileSync(tmpFileOut);
+  const buff = fs.readFileSync(tmpFileOut);
   fs.unlinkSync(tmpFileOut);
   fs.unlinkSync(tmpFileIn);
   return buff;
 }
 
 async function videoToWebp(media) {
-  var tmpFileOut = path.join(
+  const tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  var tmpFileIn = path.join(
+  const tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.mp4`
   );
@@ -74,7 +74,7 @@ async function videoToWebp(media) {
         "-vcodec",
         "libwebp",
         "-vf",
-        "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] pavartegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] pavarteuse",
+        "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] paconsttegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paconstteuse",
         "-loop",
         "0",
         "-ss",
@@ -91,38 +91,38 @@ async function videoToWebp(media) {
       .save(tmpFileOut);
   });
 
-  var buff = fs.readFileSync(tmpFileOut);
+  const buff = fs.readFileSync(tmpFileOut);
   fs.unlinkSync(tmpFileOut);
   fs.unlinkSync(tmpFileIn);
   return buff;
 }
 
 async function writeExifImg(media, metadata) {
-  var wMedia = await imageToWebp(media);
-  var tmpFileIn = path.join(
+  const wMedia = await imageToWebp(media);
+  const tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  var tmpFileOut = path.join(
+  const tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    var img = new webp.Image();
-    var json = {
+    const img = new webp.Image();
+    const json = {
       "sticker-pack-id": `https://github.com/pratyush4932`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    var exifAttr = Buffer.from([
+    const exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    var jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    var exif = Buffer.concat([exifAttr, jsonBuff]);
+    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    const exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);
@@ -133,31 +133,31 @@ async function writeExifImg(media, metadata) {
 }
 
 async function writeExifVid(media, metadata) {
-  var wMedia = await videoToWebp(media);
-  var tmpFileIn = path.join(
+  const wMedia = await videoToWebp(media);
+  const tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  var tmpFileOut = path.join(
+  const tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    var img = new webp.Image();
-    var json = {
+    const img = new webp.Image();
+    const json = {
       "sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    var exifAttr = Buffer.from([
+    const exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    var jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    var exif = Buffer.concat([exifAttr, jsonBuff]);
+    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    const exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);
@@ -168,37 +168,37 @@ async function writeExifVid(media, metadata) {
 }
 
 async function writeExif(media, metadata) {
-  var wMedia = /webp/.test(media.mimetype)
+  const wMedia = /webp/.test(media.mimetype)
     ? media.data
     : /image/.test(media.mimetype)
     ? await imageToWebp(media.data)
     : /video/.test(media.mimetype)
     ? await videoToWebp(media.data)
     : "";
-  var tmpFileIn = path.join(
+  const tmpFileIn = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
-  var tmpFileOut = path.join(
+  const tmpFileOut = path.join(
     tmpdir(),
     `${Crypto.randomBytes(6).readUIntLE(0, 6).toString(36)}.webp`
   );
   fs.writeFileSync(tmpFileIn, wMedia);
 
   if (metadata.packname || metadata.author) {
-    var img = new webp.Image();
-    var json = {
+    const img = new webp.Image();
+    const json = {
       "sticker-pack-id": `https://github.com/DikaArdnt/Hisoka-Morou`,
       "sticker-pack-name": metadata.packname,
       "sticker-pack-publisher": metadata.author,
       emojis: metadata.categories ? metadata.categories : [""],
     };
-    var exifAttr = Buffer.from([
+    const exifAttr = Buffer.from([
       0x49, 0x49, 0x2a, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57,
       0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00,
     ]);
-    var jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
-    var exif = Buffer.concat([exifAttr, jsonBuff]);
+    const jsonBuff = Buffer.from(JSON.stringify(json), "utf-8");
+    const exif = Buffer.concat([exifAttr, jsonBuff]);
     exif.writeUIntLE(jsonBuff.length, 14, 4);
     await img.load(tmpFileIn);
     fs.unlinkSync(tmpFileIn);

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -39,11 +39,11 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var data = await BloomBot.axios.get(
+    const data = await BloomBot.axios.get(
       "http://app.chordindonesia.com/?json=get_search_results&search=" +
         BloomBot.args.join(" ")
     );
-    var result = data.data;
+    const result = data.data;
     if (result.count < 0) {
       await BloomBot.sendMessage(mags.chat, {
         react: {
@@ -60,7 +60,7 @@ module.exports = async (BloomBot, mags) => {
     }
     no = 1;
     chord = "*•Chord Search Engine*\n\n";
-    for (var i of result.posts) {
+    for (const i of result.posts) {
       chord += `*📚Name:*  ${no++}\n`;
       chord += `*🌻Id:* ${i.id}\n`;
       chord += `*📕Title:* ${i.title.replace(/[0-9]|[#&;]/gi, "")}\n`;
@@ -68,15 +68,15 @@ module.exports = async (BloomBot, mags) => {
       chord += `*👨‍🎨Author:* ${i.categories[0].title}\n\n`;
     }
     try {
-      var кяуяєsi = await BloomBot.fetch(
+      const кяуяєsi = await BloomBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",
         })
       );
-      var bson = await кяуяєsi.json();
-      var bsoni =
+      const bson = await кяуяєsi.json();
+      const bsoni =
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await BloomBot.imagebutton(
         BloomBot,

@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     await BloomBot.Economy.findOne(
@@ -31,7 +31,7 @@ module.exports = async (BloomBot, mags) => {
         }
 
         if (!userEco) {
-          var newUser = new BloomBot.Economy({
+          const newUser = new BloomBot.Economy({
             Id: mags.sender,
             money: 0,
             daily: 0,
@@ -79,7 +79,7 @@ module.exports = async (BloomBot, mags) => {
                 );
               } else {
                 if (userZoo.zootimeout - (Date.now() - userZoo.zoodone) > 0) {
-                  var time = BloomBot.ms(
+                  const time = BloomBot.ms(
                     userZoo.zootimeout - (Date.now() - userZoo.zoodone)
                   );
                   return await BloomBot.imagebutton(
@@ -93,15 +93,15 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot.display
                   );
                 } else {
-                  var zooId = Math.floor(Math.random() * 10) + 1;
-                  var rarity;
+                  const zooId = Math.floor(Math.random() * 10) + 1;
+                  const rarity;
                   if (zooId < 5) rarity = `small`;
                   else if (zooId < 8) rarity = `medium`;
                   else if (zooId < 9) rarity = `big`;
                   else if (zooId < 10) rarity = `large`;
                   else rarity = `legendary`;
-                  var anim = BloomBot.animals[rarity];
-                  var worth =
+                  const anim = BloomBot.animals[rarity];
+                  const worth =
                     Math.floor(Math.random() * (anim.max - anim.min + 1)) +
                     anim.min;
                   userEco.money = userEco.money + worth;

@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var { Cred, Key } = require("./auth");
-var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-var KEY_MAP = {
+const { Cred, Key } = require("./auth");
+const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -26,12 +26,12 @@ var KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-var useSqlAuthState = async (logger) => {
+const useSqlAuthState = async (logger) => {
   let creds;
   let keys = {};
 
-  var checkCreds = async () => {
-    var lock = await Cred.findOne({
+  const checkCreds = async () => {
+    const lock = await Cred.findOne({
       where: {
         key: "noiseKey",
       },
@@ -43,8 +43,8 @@ var useSqlAuthState = async (logger) => {
     }
   };
 
-  var loadCreds = async () => {
-    var allCreds = await Cred.findAll();
+  const loadCreds = async () => {
+    const allCreds = await Cred.findAll();
     let temp = {};
     allCreds.forEach((res) => {
       let val = res.getDataValue("value");
@@ -56,7 +56,7 @@ var useSqlAuthState = async (logger) => {
     return temp;
   };
 
-  var loadKeys = async () => {
+  const loadKeys = async () => {
     let keys = {
       preKeys: {},
       sessions: {},
@@ -65,7 +65,7 @@ var useSqlAuthState = async (logger) => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    var allKeys = await Key.findAll();
+    const allKeys = await Key.findAll();
     allKeys.forEach((res) => {
       let val = res.getDataValue("value");
       let key = res.getDataValue("key");
@@ -77,12 +77,12 @@ var useSqlAuthState = async (logger) => {
     return keys;
   };
 
-  var saveCreds = async (data) => {
+  const saveCreds = async (data) => {
     if (!data) {
       data = creds;
     }
-    for (var _key in data) {
-      var cred = await Cred.findOne({
+    for (const _key in data) {
+      const cred = await Cred.findOne({
         where: {
           key: _key,
         },
@@ -100,9 +100,9 @@ var useSqlAuthState = async (logger) => {
     }
   };
 
-  var saveKey = async (key, data, _key) => {
-    for (var subKey in data[_key]) {
-      var res = await Key.findOne({
+  const saveKey = async (key, data, _key) => {
+    for (const subKey in data[_key]) {
+      const res = await Key.findOne({
         where: {
           key: subKey,
           type: key,
@@ -129,13 +129,13 @@ var useSqlAuthState = async (logger) => {
       creds: {},
       keys: {},
     };
-    var allCreds = await loadCreds();
-    var allKeys = await loadKeys();
+    const allCreds = await loadCreds();
+    const allKeys = await loadKeys();
 
     parent.creds = allCreds;
     parent.keys = allKeys;
 
-    var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -149,7 +149,7 @@ var useSqlAuthState = async (logger) => {
       creds,
       keys: {
         get: (type, ids) => {
-          var key = KEY_MAP[type];
+          const key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
             let _a;
             let value =
@@ -164,8 +164,8 @@ var useSqlAuthState = async (logger) => {
           }, {});
         },
         set: async (data) => {
-          for (var _key in data) {
-            var key = KEY_MAP[_key];
+          for (const _key in data) {
+            const key = KEY_MAP[_key];
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);

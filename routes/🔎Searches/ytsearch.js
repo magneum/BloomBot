@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args.join(" ")) {
@@ -39,15 +39,15 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var no = 1;
-    var search = await BloomBot.ySearch(BloomBot.args.join(" "));
-    var Fetched =
+    const no = 1;
+    const search = await BloomBot.ySearch(BloomBot.args.join(" "));
+    const Fetched =
       `*🌻Here, ${fpth} for @${
         BloomBot.Tname || BloomBot.pushname
       }:\n\n Result for ` +
       BloomBot.args.join(" ") +
       "\n\n";
-    for (var i of search.all) {
+    for (const i of search.all) {
       Fetched += `#${no++}> *🏜️Title*: ${i.title}
 *🌸Duration*: ${i.timestamp}
 *🌐Url*: ${i.url}

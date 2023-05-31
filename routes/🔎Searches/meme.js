@@ -16,18 +16,18 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
-    var Rads = Reds[Math.floor(Math.random() * Reds.length)];
-    var res = await BloomBot.fetch(
+    const Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
+    const Rads = Reds[Math.floor(Math.random() * Reds.length)];
+    const res = await BloomBot.fetch(
       `https://www.reddit.com/r/${Rads}/random/.json`
     );
-    var json = await res.json();
-    var data = json[0].data.children[0].data;
+    const json = await res.json();
+    const data = json[0].data.children[0].data;
     await BloomBot.imagebutton(
       BloomBot,
       mags,

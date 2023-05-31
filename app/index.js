@@ -17,11 +17,11 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/config");
-var logger = require("@/logger");
-var purgepg = require("./purgepg");
-var gitPull = require("@/utils/gitPull");
-var dbConfig = require("@/auth/dbConfig");
-var {
+const logger = require("@/logger");
+const purgepg = require("./purgepg");
+const gitPull = require("@/utils/gitPull");
+const dbConfig = require("@/auth/dbConfig");
+const {
   default: Bloom_bot_client,
   DisconnectReason,
   generateforwardMessageContent,
@@ -32,15 +32,15 @@ var {
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
-var fs = require("fs");
-var path = require("path");
-var pino = require("pino");
-var monGoose = require("mongoose");
-var { Boom } = require("@hapi/boom");
-var { exec } = require("child_process");
+const fs = require("fs");
+const path = require("path");
+const pino = require("pino");
+const monGoose = require("mongoose");
+const { Boom } = require("@hapi/boom");
+const { exec } = require("child_process");
 let PhoneNumber = require("awesome-phonenumber");
-var useSqlAuthState = require("@/auth/sql/dbAuth");
-var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
+const useSqlAuthState = require("@/auth/sql/dbAuth");
+const { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function magneum() {
   await monGoose
@@ -54,13 +54,13 @@ async function magneum() {
     })
     .then(logger.info("📢 Connected with mongoose."));
 
-  var store = makeInMemoryStore({
+  const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
-  var getVersionWaweb = () => {
-    var version;
+  const getVersionWaweb = () => {
+    const version;
     try {
-      var a = fetchJson(
+      const a = fetchJson(
         "https://web.whatsapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
@@ -70,7 +70,7 @@ async function magneum() {
     return version;
   };
 
-  var sequelize = dbConfig.DATABASE;
+  const sequelize = dbConfig.DATABASE;
   logger.info("📢 Connecting to Database.");
   try {
     await sequelize.authenticate();
@@ -81,7 +81,7 @@ async function magneum() {
   logger.info("📢 Syncing Database...");
   await sequelize.sync();
   let { state, saveCreds } = await useSqlAuthState();
-  var BloomBot = Bloom_bot_client({
+  const BloomBot = Bloom_bot_client({
     auth: state,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
@@ -95,7 +95,7 @@ async function magneum() {
     generateHighQualityLinkPreview: true,
     getMessage: async (key) => {
       if (store) {
-        var msg = await store.loadMessage(key.remoteJid, key.id, undefined);
+        const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
         return msg.message || undefined;
       }
       return {
@@ -118,7 +118,7 @@ async function magneum() {
   }
   BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
   BloomBot.ev.on("connection.update", async (update) => {
-    var { lastDisconnect, connection, qr } = update;
+    const { lastDisconnect, connection, qr } = update;
     switch (connection) {
       case "connecting":
         logger.info("📢 Connecting to whatsApp...");
@@ -226,7 +226,7 @@ async function magneum() {
     let participants = update.participants;
     logger.info(update);
     for (let sperson of participants) {
-      var imåge;
+      const imåge;
       try {
         imåge = await BloomBot.profilePictureUrl(sperson, "image");
       } catch {
@@ -356,7 +356,7 @@ async function magneum() {
       { image: img },
       { upload: BloomBot.waUploadToServer }
     );
-    var template = generateWAMessageFromContent(
+    const template = generateWAMessageFromContent(
       mags.chat,
       proto.Message.fromObject({
         templateMessage: {
@@ -535,9 +535,9 @@ async function magneum() {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    var stream = await downloadContentFromMessage(quoted, messageType);
+    const stream = await downloadContentFromMessage(quoted, messageType);
     let buffer = Buffer.from([]);
-    for await (var chunk of stream) {
+    for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
     let type = await FileType.fromBuffer(buffer);
@@ -551,9 +551,9 @@ async function magneum() {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    var stream = await downloadContentFromMessage(message, messageType);
+    const stream = await downloadContentFromMessage(message, messageType);
     let buffer = Buffer.from([]);
-    for await (var chunk of stream) {
+    for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
     }
 
@@ -637,7 +637,7 @@ async function magneum() {
       ...context,
       ...content[ctype].contextInfo,
     };
-    var waMessage = await generateWAMessageFromContent(
+    const waMessage = await generateWAMessageFromContent(
       jid,
       content,
       options
@@ -731,10 +731,10 @@ async function magneum() {
   };
 
   BloomBot.ws.on("CB:call", async (update) => {
-    var sleep = async (ms) => {
+    const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
     };
-    var callerId = update.content[0].attrs["call-creator"];
+    const callerId = update.content[0].attrs["call-creator"];
     let person = await BloomBot.sendContact(callerId, global.owner);
     BloomBot.sendMessage(
       callerId,
@@ -755,7 +755,7 @@ async function magneum() {
     }
   });
   setInterval(async () => {
-    var _Type = [
+    const _Type = [
       "🎭Designer",
       "🌏Inventor",
       "🎨Creator",
@@ -815,7 +815,7 @@ async function magneum() {
       "🎬Stunt performer",
       "🛠️Handyman",
     ];
-    var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
+    const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
       "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );

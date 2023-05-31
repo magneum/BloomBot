@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var folders = [".", ...Object.keys(require("@/package.json").directories)];
-var rimraf = require("rimraf");
-for (var folder of folders) {
+const folders = [".", ...Object.keys(require("@/package.json").directories)];
+const rimraf = require("rimraf");
+for (const folder of folders) {
   rimraf(folder, function (Error) {
     if (Error) console.log(Error);
   });

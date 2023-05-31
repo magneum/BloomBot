@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
@@ -39,8 +39,8 @@ module.exports = async (BloomBot, mags) => {
       );
     }
 
-    var wall = new BloomBot.AnimeWallpaper();
-    var wallpaper = await wall.getAnimeWall4({
+    const wall = new BloomBot.AnimeWallpaper();
+    const wallpaper = await wall.getAnimeWall4({
       title: BloomBot.args.join(" "),
       type: "sfw",
       page: [1, 2, 3, 4],

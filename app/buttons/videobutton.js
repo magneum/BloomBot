@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 module.exports = async (BloomBot, mags, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
   if (BloomBot.isReply) {
-    var receiver =
+    const receiver =
       BloomBot.mtype == "extendedTextMessage" &&
       BloomBot.message.extendedTextMessage.contextInfo != null
         ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
@@ -51,7 +51,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (BloomBot.mentionByTag) {
-    var receiver =
+    const receiver =
       BloomBot.mtype == "extendedTextMessage" &&
       BloomBot.message.extendedTextMessage.contextInfo != null
         ? BloomBot.message.extendedTextMessage.contextInfo.mentionedJid

@@ -15,27 +15,27 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var fs = require("fs-extra");
-var logger = require("@/logger");
-var git = require("simple-git")();
-var { exec } = require("child_process");
+const fs = require("fs-extra");
+const logger = require("@/logger");
+const git = require("simple-git")();
+const { exec } = require("child_process");
 
-var gitPull = async () => {
+const gitPull = async () => {
   try {
     logger.info("📢 Checking for updates...");
     await git.fetch();
-    var newCommits = await git.log(["magneum..origin/magneum"]);
+    const newCommits = await git.log(["magneum..origin/magneum"]);
     if (newCommits.total) {
       logger.info("📢 New update pending, updating...");
       await git.pull("origin", "Magneum™");
-      var update = await git.diffSummary(["--name-only"]);
+      const update = await git.diffSummary(["--name-only"]);
       if (update.files.includes("package.json")) {
         logger.info(
           "📢 Changes in package.json detected, updating dependencies..."
         );
         await fs.emptyDir(__dirname);
         await new Promise((resolve, reject) => {
-          var childProcess = exec("yarn install");
+          const childProcess = exec("yarn install");
           childProcess.stderr.pipe(process.stderr);
           childProcess.stdout.pipe(process.stdout);
           childProcess.on("close", (code) => {

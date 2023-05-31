@@ -16,9 +16,9 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
-var ppth = require("path");
-var tpth = ppth.basename(__filename);
-var fpth = tpth.slice(0, -3).toLowerCase();
+const ppth = require("path");
+const tpth = ppth.basename(__filename);
+const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
     if (!BloomBot.args) {
@@ -43,10 +43,10 @@ module.exports = async (BloomBot, mags) => {
       BloomBot,
       "https://magneum.vercel.app/api/pinterest?q=" + BloomBot.args.join(" ")
     ).then(async (response) => {
-      var mgdata = response.data;
+      const mgdata = response.data;
       BloomBot.logger.info(mgdata);
 
-      var download =
+      const download =
         mgdata.meta.links[
           Math.floor(Math.random() * mgdata.meta.links.length)
         ];

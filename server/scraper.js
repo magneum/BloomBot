@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var axios = require("axios");
-var cheerio = require("cheerio");
+const axios = require("axios");
+const cheerio = require("cheerio");
 
 function pinterest(querry) {
   return new Promise(async (resolve, reject) => {
@@ -28,13 +28,13 @@ function pinterest(querry) {
         },
       })
       .then(({ data }) => {
-        var $ = cheerio.load(data);
-        var result = [];
-        var results = [];
+        const $ = cheerio.load(data);
+        const result = [];
+        const results = [];
         $("div > a")
           .get()
           .map((b) => {
-            var link = $(b).find("img").attr("public");
+            const link = $(b).find("img").attr("public");
             result.push(link);
           });
         result.forEach((v) => {
@@ -54,8 +54,8 @@ function wallpaper(title, page = "1") {
         `https://www.besthdwallpaper.com/search?CurrentPage=${page}&q=${title}`
       )
       .then(({ data }) => {
-        var $ = cheerio.load(data);
-        var results = [];
+        const $ = cheerio.load(data);
+        const results = [];
         $("div.grid-item").each(function (a, b) {
           results.push({
             title: $(b).find("div.info > a > h3").text(),
@@ -83,8 +83,8 @@ function wikimedia(title) {
         `https://commons.wikimedia.org/w/index.php?search=${title}&title=Special:MediaSearch&go=Go&type=image`
       )
       .then((res) => {
-        var $ = cheerio.load(res.data);
-        var results = [];
+        const $ = cheerio.load(res.data);
+        const results = [];
         $(".sdms-search-results__list-wrapper > div > a").each(function (a, b) {
           results.push({
             title: $(b).find("img").attr("alt"),
@@ -101,12 +101,12 @@ function wikimedia(title) {
 
 function quotesAnime() {
   return new Promise((resolve, reject) => {
-    var page = Math.floor(Math.random() * 184);
+    const page = Math.floor(Math.random() * 184);
     axios
       .get("https://otakotaku.com/quote/feed/" + page)
       .then(({ data }) => {
-        var $ = cheerio.load(data);
-        var results = [];
+        const $ = cheerio.load(data);
+        const results = [];
         $("div.kotodama-list").each(function (l, h) {
           results.push({
             link: $(h).find("a").attr("href"),
@@ -127,8 +127,8 @@ function quotesAnime() {
 function ringtone(title) {
   return new Promise((resolve, reject) => {
     axios.get("https://meloboom.com/en/search/" + title).then((get) => {
-      var $ = cheerio.load(get.data);
-      var results = [];
+      const $ = cheerio.load(get.data);
+      const results = [];
       $(
         "#__next > main > section > div.jsx-2244708474.container > div > div > div > div:nth-child(4) > div > div > div > ul > li"
       ).each(function (a, b) {

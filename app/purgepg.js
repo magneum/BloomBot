@@ -15,25 +15,25 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var chalk = require("chalk");
-var { Client } = require("pg");
-var dbConfig = require("../auth/dbConfig");
+const chalk = require("chalk");
+const { Client } = require("pg");
+const dbConfig = require("../auth/dbConfig");
 
 async function purgepg() {
-  var connectionString = dbConfig.DATABASE_URL;
-  var client = new Client({
+  const connectionString = dbConfig.DATABASE_URL;
+  const client = new Client({
     connectionString,
     ssl: { rejectUnauthorized: false },
   });
 
   try {
     await client.connect();
-    var res = await client.query(
+    const res = await client.query(
       "SELECT tablename FROM pg_tables WHERE schemaname = $1",
       ["public"]
     );
-    for (var row of res.rows) {
-      var tableName = row.tablename;
+    for (const row of res.rows) {
+      const tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
       console.log(chalk.green(`Dropped table: ${tableName}`));
     }
