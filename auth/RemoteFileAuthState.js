@@ -1,9 +1,8 @@
 require("@/logger/config");
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-const { DataTypes, Model } = require("sequelize");
-const debugEnabled = VERBOSE === "1";
-const chalk = require("chalk");
 const sequelize = DATABASE;
+const debugEnabled = VERBOSE === "1";
+const { DataTypes, Model } = require("sequelize");
+const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
 class Cred extends Model {}
 Cred.init(
@@ -161,9 +160,7 @@ const RemoteFileAuthState = async (logger) => {
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    process.env.VERBOSE === "1"
-      ? console.log("loading values back.")
-      : null;
+    process.env.VERBOSE === "1" ? console.log("loading values back.") : null;
     const parent = {
       creds: {},
       keys: {},
