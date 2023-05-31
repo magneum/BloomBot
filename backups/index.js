@@ -18,9 +18,8 @@
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
-const dbConfig = require("@/auth/dbConfig");
-var cleanDatabase = require("./purgepg");
 var gitPull = require("@/utils/gitPull");
+var cleanDatabase = require("./purgepg");
 var {
   default: Bloom_bot_client,
   DisconnectReason,
@@ -29,19 +28,36 @@ var {
   generateWAMessageFromContent,
   downloadContentFromMessage,
   makeInMemoryStore,
+  MessageRetryMap,
   jidDecode,
   proto,
 } = require("@adiwajshing/baileys");
 var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
+var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
+var bodyParser = require("body-parser");
 var { exec } = require("child_process");
-var useRemoteFileAuthState = require("./dbAuth");
+var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
+var remote_authstate = require("@/auth/remote_authstate");
+var { fallback_remote_authstate } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
+async function rmdb() {
+  await new Promise((resolve, reject) => {
+    exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve();
+      }
+    });
+  });
+  process.exit(0);
+}
 async function magneum() {
   await monGoose
     .connect(MONGODB_URL, {
@@ -53,7 +69,7 @@ async function magneum() {
       logger.error(error);
     })
     .then(logger.info("📢: Connected with mongoose."));
-
+  var opage = express();
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
@@ -69,21 +85,59 @@ async function magneum() {
     }
     return version;
   };
+  var urlencodedParser = bodyParser.urlencoded({ extended: false });
+  opage.engine("html", require("ejs").renderFile);
+  opage.use(express.static("./views"));
+  opage.set("view engine", "html");
+  opage.set("views", __dirname);
+  opage.get("/", (request, response) => {
+    response.redirect("https://bit.ly/magneum");
+  });
+  opage.get("/BloomBot", (request, response) => {
+    response.sendFile("views/BloomBot.html", { root: __dirname });
+  });
+  opage.post("/BloomBot", urlencodedParser, (request, response) => {
+    var phoneNum = request.body.phone.replace(
+      /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
+      ""
+    );
+    dashboards.findOne(
+      {
+        Id: phoneNum + "@s.whatsapp.net",
+      },
+      async (error, uBoard) => {
+        if (error) return logger.error("❌:", error);
+        if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
+        response.render(__dirname + "/views/dashboard.html", {
+          uBoard: uBoard,
+        });
+      }
+    );
+  });
+  opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
 
-  const sequelize = dbConfig.DATABASE;
-  logger.info("📢: Connecting to Database.");
+  // var sequelize = DATABASE;
+  // await sequelize.sync();
+  let state, saveCreds;
   try {
-    await sequelize.authenticate();
-    logger.info("📢: Connection has been established successfully.");
+    ({ state, saveCreds } = await remote_authstate());
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from remote_authstate."
+    );
   } catch (error) {
-    console.error("📢: Unable to connect to the database:", error);
+    logger.error("📢: Error occurred in remote_authstate:", error);
+    logger.debug(
+      "📢: Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
+    );
+    ({ state, saveCreds } = await fallback_remote_authstate(logger));
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from fallback_remote_authstate."
+    );
   }
-  logger.info("📢: Syncing Database...");
-  await sequelize.sync();
-  let { state, saveCreds } = await useRemoteFileAuthState();
 
   var BloomBot = Bloom_bot_client({
     auth: state,
+    MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
@@ -105,96 +159,61 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  async function rmdb() {
-    await new Promise((resolve, reject) => {
-      exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve();
-        }
-      });
-    });
-    process.exit(0);
-  }
-  BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
+
+  BloomBot.ev.on("creds.update", async (update) => await saveCreds());
   BloomBot.ev.on("connection.update", async (update) => {
-    var { lastDisconnect, connection, qr } = update;
-    switch (connection) {
-      case "connecting":
-        logger.info("📢: Connecting to whatsApp...");
-        break;
-      case "Bloom":
-        logger.info("📢: Login successful! ");
-        break;
-      case "close":
-        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-        switch (reason) {
-          case DisconnectReason.badSession:
-            logger.error("❌: Bad Session File...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionClosed:
-            logger.error("❌: Reconnecting....");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionLost:
-            logger.error("❌: Reconnecting...");
-            await magneum();
-            break;
-          case DisconnectReason.connectionReplaced:
-            logger.error("❌: Connection Replaced...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.loggedOut:
-            logger.error("❌: Device Logged Out...");
-            await cleanDatabase().catch(rmdb());
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.restartRequired:
-            logger.error("❌: Restart Required, Restarting...");
-            await magneum();
-            break;
-          case DisconnectReason.timedOut:
-            logger.error("❌: Connection TimedOut, Reconnecting...");
-            await magneum();
-            break;
-          default:
-            BloomBot.end(
-              logger.error(
-                `❌: Unknown DisconnectReason: ${reason}|${connection}`
-              )
-            );
-        }
-        break;
-      case true:
-        logger.debug("📢: Online.");
-        break;
-      case false:
-        logger.error("📢: Offline.");
-        break;
-      case true:
-        logger.debug("📢: Received Pending Notifications.");
-        break;
-      case false:
-        logger.error("📢: Not Received Pending Notifications.");
-        break;
-      case true:
-        logger.debug("📢: New Login.");
-        break;
-      case false:
-        logger.error("📢: Not New Login.");
-        break;
-      default:
-        logger.info("📢: BloomBot by Magneum™ connected...", update);
-    }
+    var {
+      lastDisconnect,
+      connection,
+      isNewLogin,
+      isOnline,
+      qr,
+      receivedPendingNotifications,
+    } = update;
+    if (connection == "connecting")
+      logger.info("📢: Connecting to WhatsApp...");
+    else if (connection == "open") logger.info("📢: Login successful!");
+    else if (connection == "close") {
+      let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+      if (reason === DisconnectReason.badSession) {
+        logger.error(
+          `❌: Bad Session File, Please Delete Session and Scan Again`
+        );
+        BloomBot.logout();
+      } else if (reason === DisconnectReason.connectionClosed) {
+        logger.error("❌: Connection closed, reconnecting....");
+        await magneum();
+      } else if (reason === DisconnectReason.connectionLost) {
+        logger.error("❌: Connection Lost from Server, reconnecting...");
+        await magneum();
+      } else if (reason === DisconnectReason.connectionReplaced) {
+        logger.error(
+          "❌: Connection Replaced, Another New Session Opened, Please Close Current Session First"
+        );
+        BloomBot.logout();
+      } else if (reason === DisconnectReason.loggedOut) {
+        logger.error(`❌: Device Logged Out, Please Scan Again And Run.`);
+        process.exit(0);
+      } else if (reason === DisconnectReason.restartRequired) {
+        logger.debug("💡: Restart Required, Restarting...");
+        await magneum();
+      } else if (reason === DisconnectReason.timedOut) {
+        logger.error("❌: Connection TimedOut, Reconnecting...");
+        await magneum();
+      } else
+        BloomBot.end(
+          logger.error(`❌: Unknown DisconnectReason: ${reason}|${connection}`)
+        );
+    } else if (isOnline === true) logger.debug("💡: Online.");
+    else if (isOnline === false) logger.error("📢: Offine.");
+    else if (receivedPendingNotifications === true)
+      logger.debug("💡: Received Pending Notifications.");
+    else if (receivedPendingNotifications === false)
+      logger.error("📢: Not Received Pending Notifications.");
+    else if (isNewLogin === true) logger.debug("💡: New Login.");
+    else if (isNewLogin === false) logger.error("📢: Not New Login.");
+    else if (qr) logger.info("Qr: "), console.log(qr);
+    else logger.info("📢: Connection...", update);
   });
 
   BloomBot.ev.on("messages.upsert", async (update) => {
@@ -533,6 +552,7 @@ async function magneum() {
     }
     let type = await FileType.fromBuffer(buffer);
     trueFileName = attachExtension ? filename + "." + type.ext : filename;
+    // save to file
     await fs.writeFileSync(trueFileName, buffer);
     return trueFileName;
   };
