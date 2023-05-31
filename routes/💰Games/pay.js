@@ -19,9 +19,9 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   if (!BloomBot.mentionByReply) {
-    return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -30,7 +30,7 @@ module.exports = async (BloomBot, vChat) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args.length === 0) {
-    return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -39,7 +39,7 @@ module.exports = async (BloomBot, vChat) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(BloomBot.args[0])) {
-    return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -48,7 +48,7 @@ module.exports = async (BloomBot, vChat) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args[0].match(/[a-z]/i)) {
-    return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_
@@ -64,8 +64,8 @@ module.exports = async (BloomBot, vChat) => {
         ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await BloomBot.getName(receiver);
-    if (receiver === vChat.sender) {
-      return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    if (receiver === blyat.sender) {
+      return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _Can't pay self account!_
@@ -76,13 +76,13 @@ module.exports = async (BloomBot, vChat) => {
 
     await BloomBot.Economy.findOne(
       {
-        Id: vChat.sender,
+        Id: blyat.sender,
       },
       async (error, uPayer) => {
-        if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
         if (!uPayer) {
           new BloomBot.Economy({
-            Id: vChat.sender,
+            Id: blyat.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -93,9 +93,9 @@ module.exports = async (BloomBot, vChat) => {
           })
             .save()
             .catch((error) => {
-              return BloomBot.handlerror(BloomBot, vChat, error);
+              return BloomBot.handlerror(BloomBot, blyat, error);
             });
-          return vChat.reply(`*😥Apologies:* _${
+          return blyat.reply(`*😥Apologies:* _${
             BloomBot.pushname || BloomBot.Tname
           }_ 
 
@@ -107,7 +107,7 @@ module.exports = async (BloomBot, vChat) => {
         }
 
         if (parseInt(BloomBot.args[0]) > uPayer.money) {
-          return vChat.reply(`*😥Apologies:* _${
+          return blyat.reply(`*😥Apologies:* _${
             BloomBot.pushname || BloomBot.Tname
           }_ 
 
@@ -125,7 +125,7 @@ module.exports = async (BloomBot, vChat) => {
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+              if (error) return BloomBot.handlerror(BloomBot, blyat, error);
               if (!uBonus) {
                 new BloomBot.Economy({
                   Id: receiver,
@@ -139,15 +139,15 @@ module.exports = async (BloomBot, vChat) => {
                 })
                   .save()
                   .catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                 uPayer.money = uPayer.money - parseInt(BloomBot.args[0]);
                 uPayer.save().catch((error) => {
-                  return BloomBot.handlerror(BloomBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, blyat, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -165,15 +165,15 @@ module.exports = async (BloomBot, vChat) => {
 
               uPayer.money = uPayer.money - parseInt(BloomBot.args[0]);
               uPayer.save().catch((error) => {
-                return BloomBot.handlerror(BloomBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, blyat, error);
               });
               uBonus.money = uBonus.money + parseInt(BloomBot.args[0]);
               uBonus.save().catch((error) => {
-                return BloomBot.handlerror(BloomBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, blyat, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                vChat,
+                blyat,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 
 ┌『 *📥Paying Account* 』
@@ -193,7 +193,7 @@ module.exports = async (BloomBot, vChat) => {
       }
     );
   } else {
-    return vChat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return blyat.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
 
 *❌Error* 
 > _No query provided!_

@@ -16,28 +16,28 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var moment = require("moment-timezone");
-module.exports = async (BloomBot, vChat, update, store) => {
+module.exports = async (BloomBot, blyat, update, store) => {
   BloomBot.body =
-    vChat.mtype === "conversation"
-      ? vChat.message.conversation
-      : vChat.mtype == "imageMessage"
-      ? vChat.message.imageMessage.caption
-      : vChat.mtype == "videoMessage"
-      ? vChat.message.videoMessage.caption
-      : vChat.mtype == "extendedTextMessage"
-      ? vChat.message.extendedTextMessage.text
-      : vChat.mtype == "buttonsResponseMessage"
-      ? vChat.message.buttonsResponseMessage.selectedButtonId
-      : vChat.mtype == "listResponseMessage"
-      ? vChat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : vChat.mtype == "templateButtonReplyMessage"
-      ? vChat.message.templateButtonReplyMessage.selectedId
-      : vChat.mtype === "messageContextInfo"
-      ? vChat.message.buttonsResponseMessage?.selectedButtonId ||
-        vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        vChat.text
+    blyat.mtype === "conversation"
+      ? blyat.message.conversation
+      : blyat.mtype == "imageMessage"
+      ? blyat.message.imageMessage.caption
+      : blyat.mtype == "videoMessage"
+      ? blyat.message.videoMessage.caption
+      : blyat.mtype == "extendedTextMessage"
+      ? blyat.message.extendedTextMessage.text
+      : blyat.mtype == "buttonsResponseMessage"
+      ? blyat.message.buttonsResponseMessage.selectedButtonId
+      : blyat.mtype == "listResponseMessage"
+      ? blyat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : blyat.mtype == "templateButtonReplyMessage"
+      ? blyat.message.templateButtonReplyMessage.selectedId
+      : blyat.mtype === "messageContextInfo"
+      ? blyat.message.buttonsResponseMessage?.selectedButtonId ||
+        blyat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        blyat.text
       : "";
-  BloomBot.budy = typeof vChat.text == "string" ? vChat.text : "";
+  BloomBot.budy = typeof blyat.text == "string" ? blyat.text : "";
   BloomBot.icmd = BloomBot.body.startsWith(prefix);
   BloomBot.isCommand =
     prefix.includes(BloomBot.body != "" && BloomBot.body.slice(0, 1)) &&
@@ -46,40 +46,40 @@ module.exports = async (BloomBot, vChat, update, store) => {
     ? BloomBot.body.slice(1).trim().split(" ")[0].toLowerCase()
     : "";
   BloomBot.args = BloomBot.body.trim().split(/ +/).slice(1);
-  BloomBot.pushname = vChat.pushName || "No Name";
+  BloomBot.pushname = blyat.pushName || "No Name";
   BloomBot.botNumber = await BloomBot.decodeJid(BloomBot.user.id);
-  BloomBot.frome = vChat.sender == BloomBot.botNumber ? true : false;
+  BloomBot.frome = blyat.sender == BloomBot.botNumber ? true : false;
   BloomBot.Fullarg = BloomBot.args.join(" ");
   BloomBot.contant = q = BloomBot.args.join(" ");
-  BloomBot.quoted = vChat.quoted ? vChat.quoted : vChat;
+  BloomBot.quoted = blyat.quoted ? blyat.quoted : blyat;
   BloomBot.mime = (BloomBot.quoted.msg || BloomBot.quoted).mimetype || "";
   BloomBot.isMedia = /image|video|sticker|audio/.test(BloomBot.mime);
   BloomBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
   BloomBot.isCreator = [BloomBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
-    .includes(vChat.sender);
+    .includes(blyat.sender);
   BloomBot.mentionByTag =
-    vChat.mtype == "extendedTextMessage" &&
-    vChat.message.extendedTextMessage.contextInfo != null
-      ? vChat.message.extendedTextMessage.contextInfo.mentionedJid
+    blyat.mtype == "extendedTextMessage" &&
+    blyat.message.extendedTextMessage.contextInfo != null
+      ? blyat.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
   BloomBot.mentionByReply =
-    vChat.mtype == "extendedTextMessage" &&
-    vChat.message.extendedTextMessage.contextInfo != null
-      ? vChat.message.extendedTextMessage.contextInfo.participant || ""
+    blyat.mtype == "extendedTextMessage" &&
+    blyat.message.extendedTextMessage.contextInfo != null
+      ? blyat.message.extendedTextMessage.contextInfo.participant || ""
       : "";
 
-  require("./relink")(BloomBot, vChat, update, store);
-  if (!vChat.isGroup && BloomBot.command)
-    return require("@/auth/noPrivate")(BloomBot, vChat, update);
-  if (vChat.isGroup && BloomBot.command)
+  require("./relink")(BloomBot, blyat, update, store);
+  if (!blyat.isGroup && BloomBot.command)
+    return require("@/auth/noPrivate")(BloomBot, blyat, update);
+  if (blyat.isGroup && BloomBot.command)
     BloomBot.userBanCheck.findOne(
       {
-        Id: vChat.sender,
+        Id: blyat.sender,
       },
       (error, banCheck) => {
         if (error) {
-          return vChat.reply(`*😥Apologies:* _${BloomBot.pushname}_
+          return blyat.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -88,11 +88,11 @@ module.exports = async (BloomBot, vChat, update, store) => {
         }
         BloomBot.userBanCheck.findOne(
           {
-            Id: vChat.chat,
+            Id: blyat.chat,
           },
           async (error, groupCheck) => {
             if (error) {
-              return vChat.reply(`*😥Apologies:* _${BloomBot.pushname}_
+              return blyat.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > There has been an API Error. Please try again later.
 
@@ -103,13 +103,13 @@ module.exports = async (BloomBot, vChat, update, store) => {
             if (groupCheck && !BloomBot.frome && !BloomBot.isSudo) return;
             await BloomBot.LinkList.findOne(
               {
-                serverId: vChat.chat,
+                serverId: blyat.chat,
               },
               async (error, server) => {
-                if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+                if (error) return BloomBot.handlerror(BloomBot, blyat, error);
                 if (!server) return;
                 var { noLink } = require("@/auth/antilink");
-                return noLink(BloomBot, vChat);
+                return noLink(BloomBot, blyat);
               }
             );
 
@@ -124,11 +124,11 @@ module.exports = async (BloomBot, vChat, update, store) => {
             // !BloomBot.fromme &&
             // !BloomBot.isSudo &&
             // !BloomBot.varResp.includes(BloomBot.command) &&
-            // !BloomBot.memberRespA.includes(vChat.sender) &&
-            // !BloomBot.memberRespB.includes(vChat.sender)
+            // !BloomBot.memberRespA.includes(blyat.sender) &&
+            // !BloomBot.memberRespB.includes(blyat.sender)
             // ) {
             // return await BloomBot.sendMessage(
-            // vChat.chat,
+            // blyat.chat,
             // {
             // gifPlayback: true,
             // video: BloomBot.fs.readFileSync("./public/how.mp4"),
@@ -142,15 +142,15 @@ module.exports = async (BloomBot, vChat, update, store) => {
             // *⚙️Webpage:*
             // > https://bit.ly/magneum
             // > Login To Your Dashboard`,
-            // mentions: [vChat.sender],
+            // mentions: [blyat.sender],
             // },
-            // { quoted: vChat }
+            // { quoted: blyat }
             // );
             // }
 
             if (process.env.runtype === "devar" && !BloomBot.isSudo) {
               return await BloomBot.sendMessage(
-                vChat.chat,
+                blyat.chat,
                 {
                   gifPlayback: true,
                   video: BloomBot.fs.readFileSync(
@@ -165,20 +165,20 @@ module.exports = async (BloomBot, vChat, update, store) => {
 *⚙️Webpage:*
 > https://bit.ly/magneum
 > Login To Your Dashboard`,
-                  mentions: [vChat.sender],
+                  mentions: [blyat.sender],
                 },
-                { quoted: vChat }
+                { quoted: blyat }
               );
             } else
-              await BloomBot.sendMessage(vChat.chat, {
+              await BloomBot.sendMessage(blyat.chat, {
                 react: {
                   text: "🌻",
-                  key: vChat.key,
+                  key: blyat.key,
                 },
               });
             return await require("@/server/library")(
               BloomBot,
-              vChat,
+              blyat,
               update,
               store
             );

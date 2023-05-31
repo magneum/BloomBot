@@ -88,21 +88,21 @@ exports.runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var vChat = Math.floor((seconds % 3600) / 60);
+  var blyat = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
   var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
   var mDisplay =
-    vChat > 0 ? vChat + (vChat == 1 ? " minute, " : " minutes, ") : "";
+    blyat > 0 ? blyat + (blyat == 1 ? " minute, " : " minutes, ") : "";
   var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 
 exports.clockString = function (seconds) {
   var h = isNaN(seconds) ? "--" : Math.floor((seconds % (3600 * 24)) / 3600);
-  var vChat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
+  var blyat = isNaN(seconds) ? "--" : Math.floor((seconds % 3600) / 60);
   var s = isNaN(seconds) ? "--" : Math.floor(seconds % 60);
-  return [h, vChat, s].map((v) => v.toString().padStart(2, 0)).join(":");
+  return [h, blyat, s].map((v) => v.toString().padStart(2, 0)).join(":");
 };
 
 exports.sleep = async (ms) => {
@@ -226,134 +226,134 @@ exports.GIFBufferToVideoBuffer = async (image) => {
   return buffer5;
 };
 
-exports.mMake = async (BloomBot, vChat, store) => {
-  if (!vChat) return vChat;
+exports.mMake = async (BloomBot, blyat, store) => {
+  if (!blyat) return blyat;
   var νproto = proto.WebMessageInfo;
-  if (vChat.key) {
-    vChat.id = vChat.key.id;
-    vChat.isBaileys =
-      vChat.id.startsWith("BAE5") && vChat.id.length === 16;
-    vChat.chat = vChat.key.remoteJid;
-    vChat.fromMe = vChat.key.fromMe;
-    vChat.isGroup = vChat.chat.endsWith("@g.us");
-    vChat.sender = BloomBot.decodeJid(
-      (vChat.fromMe && BloomBot.user.id) ||
-        vChat.participant ||
-        vChat.key.participant ||
-        vChat.chat ||
+  if (blyat.key) {
+    blyat.id = blyat.key.id;
+    blyat.isBaileys =
+      blyat.id.startsWith("BAE5") && blyat.id.length === 16;
+    blyat.chat = blyat.key.remoteJid;
+    blyat.fromMe = blyat.key.fromMe;
+    blyat.isGroup = blyat.chat.endsWith("@g.us");
+    blyat.sender = BloomBot.decodeJid(
+      (blyat.fromMe && BloomBot.user.id) ||
+        blyat.participant ||
+        blyat.key.participant ||
+        blyat.chat ||
         ""
     );
-    if (vChat.isGroup)
-      vChat.participant = BloomBot.decodeJid(vChat.key.participant) || "";
+    if (blyat.isGroup)
+      blyat.participant = BloomBot.decodeJid(blyat.key.participant) || "";
   }
-  if (vChat.message) {
-    vChat.mtype = getContentType(vChat.message);
-    vChat.msg =
-      vChat.mtype == "viewOnceMessage"
-        ? vChat.message[vChat.mtype].message[
-            getContentType(vChat.message[vChat.mtype].message)
+  if (blyat.message) {
+    blyat.mtype = getContentType(blyat.message);
+    blyat.msg =
+      blyat.mtype == "viewOnceMessage"
+        ? blyat.message[blyat.mtype].message[
+            getContentType(blyat.message[blyat.mtype].message)
           ]
-        : vChat.message[vChat.mtype];
-    vChat.body =
-      vChat.message.conversation ||
-      vChat.msg.caption ||
-      vChat.msg.text ||
-      (vChat.mtype == "listResponseMessage" &&
-        vChat.msg.singleSelectReply.selectedRowId) ||
-      (vChat.mtype == "buttonsResponseMessage" &&
-        vChat.msg.selectedButtonId) ||
-      (vChat.mtype == "viewOnceMessage" && vChat.msg.caption) ||
-      vChat.text;
-    var quoted = (vChat.quoted = vChat.msg.contextInfo
-      ? vChat.msg.contextInfo.quotedMessage
+        : blyat.message[blyat.mtype];
+    blyat.body =
+      blyat.message.conversation ||
+      blyat.msg.caption ||
+      blyat.msg.text ||
+      (blyat.mtype == "listResponseMessage" &&
+        blyat.msg.singleSelectReply.selectedRowId) ||
+      (blyat.mtype == "buttonsResponseMessage" &&
+        blyat.msg.selectedButtonId) ||
+      (blyat.mtype == "viewOnceMessage" && blyat.msg.caption) ||
+      blyat.text;
+    var quoted = (blyat.quoted = blyat.msg.contextInfo
+      ? blyat.msg.contextInfo.quotedMessage
       : null);
-    vChat.mentionedJid = vChat.msg.contextInfo
-      ? vChat.msg.contextInfo.mentionedJid
+    blyat.mentionedJid = blyat.msg.contextInfo
+      ? blyat.msg.contextInfo.mentionedJid
       : [];
-    if (vChat.quoted) {
+    if (blyat.quoted) {
       var type = getContentType(quoted);
-      vChat.quoted = vChat.quoted[type];
+      blyat.quoted = blyat.quoted[type];
       if (["productMessage"].includes(type)) {
-        type = getContentType(vChat.quoted);
-        vChat.quoted = vChat.quoted[type];
+        type = getContentType(blyat.quoted);
+        blyat.quoted = blyat.quoted[type];
       }
-      if (typeof vChat.quoted === "string")
-        vChat.quoted = {
-          text: vChat.quoted,
+      if (typeof blyat.quoted === "string")
+        blyat.quoted = {
+          text: blyat.quoted,
         };
-      vChat.quoted.mtype = type;
-      vChat.quoted.id = vChat.msg.contextInfo.stanzaId;
-      vChat.quoted.chat = vChat.msg.contextInfo.remoteJid || vChat.chat;
-      vChat.quoted.isBaileys = vChat.quoted.id
-        ? vChat.quoted.id.startsWith("BAE5") &&
-          vChat.quoted.id.length === 16
+      blyat.quoted.mtype = type;
+      blyat.quoted.id = blyat.msg.contextInfo.stanzaId;
+      blyat.quoted.chat = blyat.msg.contextInfo.remoteJid || blyat.chat;
+      blyat.quoted.isBaileys = blyat.quoted.id
+        ? blyat.quoted.id.startsWith("BAE5") &&
+          blyat.quoted.id.length === 16
         : false;
-      vChat.quoted.sender = BloomBot.decodeJid(
-        vChat.msg.contextInfo.participant
+      blyat.quoted.sender = BloomBot.decodeJid(
+        blyat.msg.contextInfo.participant
       );
-      vChat.quoted.fromMe =
-        vChat.quoted.sender === (BloomBot.user && BloomBot.user.id);
-      vChat.quoted.text =
-        vChat.quoted.text ||
-        vChat.quoted.caption ||
-        vChat.quoted.conversation ||
-        vChat.quoted.contentText ||
-        vChat.quoted.selectedDisplayText ||
-        vChat.quoted.title ||
+      blyat.quoted.fromMe =
+        blyat.quoted.sender === (BloomBot.user && BloomBot.user.id);
+      blyat.quoted.text =
+        blyat.quoted.text ||
+        blyat.quoted.caption ||
+        blyat.quoted.conversation ||
+        blyat.quoted.contentText ||
+        blyat.quoted.selectedDisplayText ||
+        blyat.quoted.title ||
         "";
-      vChat.quoted.mentionedJid = vChat.msg.contextInfo
-        ? vChat.msg.contextInfo.mentionedJid
+      blyat.quoted.mentionedJid = blyat.msg.contextInfo
+        ? blyat.msg.contextInfo.mentionedJid
         : [];
-      vChat.getQuotedObj = vChat.getQuotedMessage = async () => {
-        if (!vChat.quoted.id) return false;
+      blyat.getQuotedObj = blyat.getQuotedMessage = async () => {
+        if (!blyat.quoted.id) return false;
         var q = await store.loadMessage(
-          vChat.chat,
-          vChat.quoted.id,
+          blyat.chat,
+          blyat.quoted.id,
           BloomBot
         );
         return exports.mMake(BloomBot, q, store);
       };
-      var vM = (vChat.quoted.fakeObj = νproto.fromObject({
+      var vM = (blyat.quoted.fakeObj = νproto.fromObject({
         key: {
-          remoteJid: vChat.quoted.chat,
-          fromMe: vChat.quoted.fromMe,
-          id: vChat.quoted.id,
+          remoteJid: blyat.quoted.chat,
+          fromMe: blyat.quoted.fromMe,
+          id: blyat.quoted.id,
         },
         message: quoted,
-        ...(vChat.isGroup ? { participant: vChat.quoted.sender } : {}),
+        ...(blyat.isGroup ? { participant: blyat.quoted.sender } : {}),
       }));
-      vChat.quoted.delete = () =>
-        BloomBot.sendMessage(vChat.quoted.chat, { delete: vM.key });
-      vChat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
+      blyat.quoted.delete = () =>
+        BloomBot.sendMessage(blyat.quoted.chat, { delete: vM.key });
+      blyat.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         BloomBot.copyNForward(jid, vM, forceForward, options);
-      vChat.quoted.download = () =>
-        BloomBot.downloadMediaMessage(vChat.quoted);
+      blyat.quoted.download = () =>
+        BloomBot.downloadMediaMessage(blyat.quoted);
     }
   }
 
-  if (vChat.msg.url)
-    vChat.download = () => BloomBot.downloadMediaMessage(vChat.msg);
-  vChat.text =
-    vChat.msg.text ||
-    vChat.msg.caption ||
-    vChat.message.conversation ||
-    vChat.msg.contentText ||
-    vChat.msg.selectedDisplayText ||
-    vChat.msg.title ||
+  if (blyat.msg.url)
+    blyat.download = () => BloomBot.downloadMediaMessage(blyat.msg);
+  blyat.text =
+    blyat.msg.text ||
+    blyat.msg.caption ||
+    blyat.message.conversation ||
+    blyat.msg.contentText ||
+    blyat.msg.selectedDisplayText ||
+    blyat.msg.title ||
     "";
-  vChat.reply = (text, chatId = vChat.chat, options = {}) =>
+  blyat.reply = (text, chatId = blyat.chat, options = {}) =>
     Buffer.isBuffer(text)
-      ? BloomBot.sendMedia(chatId, text, "file", "", vChat, { ...options })
-      : BloomBot.sendText(chatId, text, vChat, { ...options });
-  vChat.copy = () =>
-    exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(vChat)));
-  vChat.copyNForward = (
-    jid = vChat.chat,
+      ? BloomBot.sendMedia(chatId, text, "file", "", blyat, { ...options })
+      : BloomBot.sendText(chatId, text, blyat, { ...options });
+  blyat.copy = () =>
+    exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(blyat)));
+  blyat.copyNForward = (
+    jid = blyat.chat,
     forceForward = false,
     options = {}
-  ) => BloomBot.copyNForward(jid, vChat, forceForward, options);
+  ) => BloomBot.copyNForward(jid, blyat, forceForward, options);
 
-  return vChat;
+  return blyat;
 };
 
 var file = require.resolve(__filename);

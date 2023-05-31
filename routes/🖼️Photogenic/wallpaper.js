@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -46,13 +46,13 @@ module.exports = async (BloomBot, vChat) => {
       page: [1, 2, 3, 4],
     });
     if (!wallpaper) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -62,12 +62,12 @@ module.exports = async (BloomBot, vChat) => {
 
     await BloomBot.imagebutton(
       BloomBot,
-      vChat,
+      blyat,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*`,
       wallpaper[Math.floor(Math.random() * wallpaper.length)].image
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

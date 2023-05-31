@@ -21,19 +21,19 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  vChat,
+  blyat,
   isAdmin,
   isbotAdmin,
 ) => {
   try {
-    if (!vChat.isGroup) {
-      await BloomBot.sendMessage(vChat.chat, {
+    if (!blyat.isGroup) {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -41,13 +41,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -55,13 +55,13 @@ module.exports = async (
       );
     }
     if (!isbotAdmin) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -69,13 +69,13 @@ module.exports = async (
       );
     }
     if (!/image/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -86,13 +86,13 @@ module.exports = async (
       );
     }
     if (/webp/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -104,11 +104,11 @@ module.exports = async (
     }
 
     var media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted);
-    await BloomBot.updateProfilePicture(vChat.chat, { url: media })
+    await BloomBot.updateProfilePicture(blyat.chat, { url: media })
       .then(
         BloomBot.imagebutton(
           BloomBot,
-          vChat,
+          blyat,
           `> *Group icone has been changed: ${
             BloomBot.pushname || BloomBot.Tname
           }*`,
@@ -117,13 +117,13 @@ module.exports = async (
       )
       .catch(async (error) => {
         BloomBot.fs.unlinkSync(media);
-        await BloomBot.sendMessage(vChat.chat, {
+        await BloomBot.sendMessage(blyat.chat, {
           react: {
             text: "❌",
-            key: vChat.key,
+            key: blyat.key,
           },
         });
-        return vChat.reply(
+        return blyat.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -134,7 +134,7 @@ module.exports = async (
         );
       });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

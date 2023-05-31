@@ -20,17 +20,17 @@ var path = require("path");
 var fileName = path.basename(__filename);
 var functionName = fileName.slice(0, -3).toLowerCase();
 
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     var query = BloomBot.args.join(" ");
     if (
       !query ||
       (query.includes("youtube") && !BloomBot.TubeRegex.test(query))
     ) {
-      await BloomBot.sendMessage(vChat.chat, {
-        react: { text: "❌", key: vChat.key },
+      await BloomBot.sendMessage(blyat.chat, {
+        react: { text: "❌", key: blyat.key },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥 Apologies:* ${BloomBot.pushname || BloomBot.Tname}
 *❌ Error* 
 > _No query provided!_
@@ -71,7 +71,7 @@ module.exports = async (BloomBot, vChat) => {
 
 *📜 Description:*
 ${description}`;
-    await BloomBot.sendMessage(vChat.chat, {
+    await BloomBot.sendMessage(blyat.chat, {
       text: message,
       options: {
         contextInfo: {
@@ -88,7 +88,7 @@ ${description}`;
         },
       },
     });
-    await BloomBot.sendMessage(vChat.chat, {
+    await BloomBot.sendMessage(blyat.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -108,7 +108,7 @@ ${description}`;
     });
     BloomBot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

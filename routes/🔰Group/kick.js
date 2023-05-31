@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
+module.exports = async (BloomBot, blyat, isAdmin, isbotAdmin) => {
   try {
-    if (!vChat.isGroup) {
-      await BloomBot.sendMessage(vChat.chat, {
+    if (!blyat.isGroup) {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -36,13 +36,13 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
       );
     }
     if (!isAdmin) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -50,13 +50,13 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
       );
     }
     if (!isbotAdmin) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -66,15 +66,15 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
 
     if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
       var mention = BloomBot.mentionByTag;
-      var users = (await mention[0]) || vChat.msg.contextInfo.participant;
+      var users = (await mention[0]) || blyat.msg.contextInfo.participant;
       if (!users) {
-        await BloomBot.sendMessage(vChat.chat, {
+        await BloomBot.sendMessage(blyat.chat, {
           react: {
             text: "❌",
-            key: vChat.key,
+            key: blyat.key,
           },
         });
-        return vChat.reply(
+        return blyat.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -85,15 +85,15 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        await BloomBot.groupParticipantsUpdate(vChat.chat, [users], "remove");
+        await BloomBot.groupParticipantsUpdate(blyat.chat, [users], "remove");
       } catch {
-        await BloomBot.sendMessage(vChat.chat, {
+        await BloomBot.sendMessage(blyat.chat, {
           react: {
             text: "❌",
-            key: vChat.key,
+            key: blyat.key,
           },
         });
-        return vChat.reply(
+        return blyat.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -107,24 +107,24 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
       }
       await BloomBot.imagebutton(
         BloomBot,
-        vChat,
+        blyat,
         `OOPs!! looks like someone removed @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else if (BloomBot.mentionByReply) {
       var users =
-        vChat.mtype == "extendedTextMessage" &&
-        vChat.message.extendedTextMessage.contextInfo != null
-          ? vChat.message.extendedTextMessage.contextInfo.participant || ""
+        blyat.mtype == "extendedTextMessage" &&
+        blyat.message.extendedTextMessage.contextInfo != null
+          ? blyat.message.extendedTextMessage.contextInfo.participant || ""
           : "";
       if (!users) {
-        await BloomBot.sendMessage(vChat.chat, {
+        await BloomBot.sendMessage(blyat.chat, {
           react: {
             text: "❌",
-            key: vChat.key,
+            key: blyat.key,
           },
         });
-        return vChat.reply(
+        return blyat.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -135,15 +135,15 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        await BloomBot.groupParticipantsUpdate(vChat.chat, [users], "remove");
+        await BloomBot.groupParticipantsUpdate(blyat.chat, [users], "remove");
       } catch {
-        await BloomBot.sendMessage(vChat.chat, {
+        await BloomBot.sendMessage(blyat.chat, {
           react: {
             text: "❌",
-            key: vChat.key,
+            key: blyat.key,
           },
         });
-        return vChat.reply(
+        return blyat.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -157,18 +157,18 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
       }
       await BloomBot.imagebutton(
         BloomBot,
-        vChat,
+        blyat,
         `OOPs!! looks like someone removed @${users.split("@")[0]}`,
         𝕯𝖎𝖘𝖕𝖑𝖆𝖞
       );
     } else {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -179,7 +179,7 @@ module.exports = async (BloomBot, vChat, isAdmin, isbotAdmin) => {
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

@@ -19,22 +19,22 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat, groupName) => {
-  await BloomBot.sendMessage(vChat.chat, {
+module.exports = async (BloomBot, blyat, groupName) => {
+  await BloomBot.sendMessage(blyat.chat, {
     react: {
       text: "🌻",
-      key: vChat.key,
+      key: blyat.key,
     },
   });
   try {
     if (!BloomBot.frome && !BloomBot.isSudo) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌Error* 
 > _Owner Only Command!_`
@@ -56,14 +56,14 @@ module.exports = async (BloomBot, vChat, groupName) => {
           Id: repliedPerson,
         },
         async (error, userBan) => {
-          if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+          if (error) return BloomBot.handlerror(BloomBot, blyat, error);
           if (!userBan) {
-            return vChat.reply(
+            return blyat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} is already un-banned!`
             );
           } else {
             userBan.delete();
-            return vChat.reply(
+            return blyat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${repliedPersonNum} has been un-banned!`
             );
           }
@@ -77,12 +77,12 @@ module.exports = async (BloomBot, vChat, groupName) => {
           Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
         },
         async (error, userBan) => {
-          if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+          if (error) return BloomBot.handlerror(BloomBot, blyat, error);
           if (!userBan) {
-            return vChat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
+            return blyat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} is already un-banned!`);
           } else {
             userBan.delete();
-            return vChat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
+            return blyat.reply(`*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* @${mention} has been un-banned!`);
           }
         }
       );
@@ -93,30 +93,30 @@ module.exports = async (BloomBot, vChat, groupName) => {
     ) {
       BloomBot.userBanCheck.findOne(
         {
-          Id: vChat.chat,
+          Id: blyat.chat,
         },
         async (error, userBan) => {
-          if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+          if (error) return BloomBot.handlerror(BloomBot, blyat, error);
           if (!userBan) {
-            return vChat.reply(
+            return blyat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup is already un-banned!`
             );
           } else {
             userBan.delete();
-            return vChat.reply(
+            return blyat.reply(
               `*🔒𝐒𝐭𝐚𝐭𝐮𝐬:* ${groupName}\nGroup Has Been un-banned!`
             );
           }
         }
       );
     } else {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌Error* 
 > _Could not find any context!_
@@ -127,7 +127,7 @@ module.exports = async (BloomBot, vChat, groupName) => {
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

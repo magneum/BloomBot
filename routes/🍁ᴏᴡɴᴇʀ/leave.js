@@ -21,7 +21,7 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  vChat,
+  blyat,
   gmeta,
   isAdmin,
   groupName,
@@ -29,26 +29,26 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await BloomBot.sendMessage(vChat.chat, {
+  await BloomBot.sendMessage(blyat.chat, {
     react: {
       text: "🌻",
-      key: vChat.key,
+      key: blyat.key,
     },
   });
   try {
-    await BloomBot.sendMessage(vChat.chat, {
+    await BloomBot.sendMessage(blyat.chat, {
       react: {
         text: "❌",
-        key: vChat.key,
+        key: blyat.key,
       },
     });
-    return vChat.reply(
+    return blyat.reply(
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌Error* 
 > _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

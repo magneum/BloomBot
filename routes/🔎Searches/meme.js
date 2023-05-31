@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     var Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     var Rads = Reds[Math.floor(Math.random() * Reds.length)];
@@ -30,7 +30,7 @@ module.exports = async (BloomBot, vChat) => {
     var data = json[0].data.children[0].data;
     await BloomBot.imagebutton(
       BloomBot,
-      vChat,
+      blyat,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
@@ -40,7 +40,7 @@ module.exports = async (BloomBot, vChat) => {
       data.url
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

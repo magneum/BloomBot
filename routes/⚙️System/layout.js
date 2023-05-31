@@ -22,7 +22,7 @@ var fpth = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  vChat,
+  blyat,
   gmeta,
   isAdmin,
   groupName,
@@ -32,7 +32,7 @@ module.exports = async (
 ) => {
   try {
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

@@ -19,17 +19,17 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
-    await BloomBot.sendMessage(vChat.chat, {
+    await BloomBot.sendMessage(blyat.chat, {
       react: {
         text: "🌻",
-        key: vChat.key,
+        key: blyat.key,
       },
     });
     await BloomBot.imagebutton(
       BloomBot,
-      vChat,
+      blyat,
       `*🌻Here, ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 *🤖Hello, I am BloomBot User-bot🤖*
 > Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
@@ -45,7 +45,7 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot.display
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

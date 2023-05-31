@@ -19,11 +19,11 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     await BloomBot.imagebutton(
       BloomBot,
-      vChat,
+      blyat,
       `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ┌『 *Games💰Category* 』
 │║⦁ ⚔️ *sword:* _1000gold/robbery_
@@ -42,7 +42,7 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot.display
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

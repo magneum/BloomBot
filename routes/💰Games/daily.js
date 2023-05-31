@@ -19,20 +19,20 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     BloomBot.Economy.findOne(
       {
-        Id: vChat.sender,
+        Id: blyat.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, vChat, error);
+          return BloomBot.handlerror(BloomBot, blyat, error);
         }
 
         if (!userEco) {
           new BloomBot.Economy({
-            Id: vChat.sender,
+            Id: blyat.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -43,11 +43,11 @@ module.exports = async (BloomBot, vChat) => {
           })
             .save()
             .catch((error) => {
-              return BloomBot.handlerror(BloomBot, vChat, error);
+              return BloomBot.handlerror(BloomBot, blyat, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            vChat,
+            blyat,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -62,7 +62,7 @@ module.exports = async (BloomBot, vChat) => {
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              vChat,
+              blyat,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
@@ -73,11 +73,11 @@ module.exports = async (BloomBot, vChat) => {
           userEco.daily = Date.now();
           userEco.money = userEco.money + 500;
           userEco.save().catch((error) => {
-            return BloomBot.handlerror(BloomBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, blyat, error);
           });
           return await BloomBot.imagebutton(
             BloomBot,
-            vChat,
+            blyat,
             `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -88,7 +88,7 @@ module.exports = async (BloomBot, vChat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

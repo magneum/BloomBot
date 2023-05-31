@@ -19,16 +19,16 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -48,7 +48,7 @@ module.exports = async (BloomBot, vChat) => {
           if (error) {
             return BloomBot.reply(`*🌻You:* ${
               BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢ChatId:* ${vChat.chat}
+            }\n*📢ChatId:* ${blyat.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 *❌ Error* 
@@ -67,13 +67,13 @@ module.exports = async (BloomBot, vChat) => {
           } else if (BloomBot.fs.existsSync(random + ".webp")) {
             Found = random + ".webp";
           } else {
-            await BloomBot.sendMessage(vChat.chat, {
+            await BloomBot.sendMessage(blyat.chat, {
               react: {
                 text: "❌",
-                key: vChat.key,
+                key: blyat.key,
               },
             });
-            return vChat.reply(
+            return blyat.reply(
               `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -85,12 +85,12 @@ module.exports = async (BloomBot, vChat) => {
           }
 
           return await BloomBot.sendMessage(
-            vChat.chat,
+            blyat.chat,
             {
               image: BloomBot.fs.readFileSync(Found),
               caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║⦁ *🌻You:* ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭ChatId:* ${vChat.chat.split("@")[0]}
+│║⦁ *🎭ChatId:* ${blyat.chat.split("@")[0]}
 │║⦁ *📢Console:* ${BloomBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -99,7 +99,7 @@ module.exports = async (BloomBot, vChat) => {
 
 _*💻HomePage:* ${BloomBot.ShowInfo}_
 _*⛺HomeLog:* ${BloomBot.Showlogger}_`,
-              mentions: [vChat.sender],
+              mentions: [blyat.sender],
               buttons: [
                 {
                   buttonId: `${BloomBot.prefix}Commands`,
@@ -117,7 +117,7 @@ _*⛺HomeLog:* ${BloomBot.Showlogger}_`,
               headerType: 4,
             },
             {
-              quoted: vChat,
+              quoted: blyat,
             }
           ).then(
             BloomBot.fs.unlinkSync(Found),
@@ -126,13 +126,13 @@ _*⛺HomeLog:* ${BloomBot.Showlogger}_`,
         }
       );
     } else {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -143,7 +143,7 @@ _*⛺HomeLog:* ${BloomBot.Showlogger}_`,
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

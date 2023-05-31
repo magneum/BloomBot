@@ -17,19 +17,18 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/logger/config");
 var ppth = require("path");
-var ytdl = require("ytdl-secktor");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -46,7 +45,7 @@ module.exports = async (BloomBot, vChat) => {
         var mgdata = response.data;
         console.log(mgdata);
         await BloomBot.sendMessage(
-          vChat.chat,
+          blyat.chat,
           {
             image: { url: mgdata.youtube_search[0].HQ_IMAGE },
             caption: `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
@@ -70,11 +69,11 @@ module.exports = async (BloomBot, vChat) => {
               },
             ],
             headerType: 4,
-            mentions: [vChat.sender],
+            mentions: [blyat.sender],
           },
           {
-            contextInfo: { mentionedJid: [vChat.sender] },
-            quoted: vChat,
+            contextInfo: { mentionedJid: [blyat.sender] },
+            quoted: blyat,
           }
         );
 
@@ -83,12 +82,12 @@ module.exports = async (BloomBot, vChat) => {
             if (AudioLink.status == false) {
               return BloomBot.handlerror(
                 BloomBot,
-                vChat,
+                blyat,
                 "Sorry no audio found!"
               );
             } else {
               await BloomBot.sendMessage(
-                vChat.chat,
+                blyat.chat,
                 {
                   headerType: 4,
                   mimetype: "audio/mpeg",
@@ -109,16 +108,16 @@ module.exports = async (BloomBot, vChat) => {
                     },
                   },
                 },
-                { quoted: vChat }
+                { quoted: blyat }
               );
             }
           })
           .catch((error) => {
-            return BloomBot.handlerror(BloomBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, blyat, error);
           });
       });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

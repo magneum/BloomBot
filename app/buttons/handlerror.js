@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (BloomBot, vChat, error) => {
+module.exports = async (BloomBot, blyat, error) => {
   console.log("❗Error: " + BloomBot.command.toUpperCase() + " :" + error);
-  return vChat.reply(
+  return blyat.reply(
     `*😥Apologies:* _${BloomBot.pushname}_
 *❌Error* 
 > _Please try again later._

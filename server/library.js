@@ -19,7 +19,7 @@ var fs = require("fs");
 var path = require("path");
 var didYouMean = require("didyoumean2").default;
 
-module.exports = async (BloomBot, vChat, update, store) => {
+module.exports = async (BloomBot, blyat, update, store) => {
   var routePath = path.join(__dirname, "..", "routes");
   var specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
@@ -41,39 +41,39 @@ module.exports = async (BloomBot, vChat, update, store) => {
     return null;
   };
 
-  var gmeta = vChat.isGroup
-    ? await BloomBot.groupMetadata(vChat.chat).catch((error) => {})
+  var gmeta = blyat.isGroup
+    ? await BloomBot.groupMetadata(blyat.chat).catch((error) => {})
     : "";
-  var groupName = vChat.isGroup ? gmeta.subject : "";
-  var participants = vChat.isGroup ? await gmeta.participants : "";
-  var groupAdmins = vChat.isGroup
+  var groupName = blyat.isGroup ? gmeta.subject : "";
+  var participants = blyat.isGroup ? await gmeta.participants : "";
+  var groupAdmins = blyat.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  var groupOwner = vChat.isGroup ? gmeta.owner : "";
-  var isbotAdmin = vChat.isGroup
+  var groupOwner = blyat.isGroup ? gmeta.owner : "";
+  var isbotAdmin = blyat.isGroup
     ? groupAdmins.includes(await BloomBot.decodeJid(BloomBot.user.id))
     : false;
-  var isAdmin = vChat.isGroup ? groupAdmins.includes(vChat.sender) : false;
+  var isAdmin = blyat.isGroup ? groupAdmins.includes(blyat.sender) : false;
 
   var vbody =
-    vChat.mtype === "conversation"
-      ? vChat.message.conversation
-      : vChat.mtype == "imageMessage"
-      ? vChat.message.imageMessage.caption
-      : vChat.mtype == "videoMessage"
-      ? vChat.message.videoMessage.caption
-      : vChat.mtype == "extendedTextMessage"
-      ? vChat.message.extendedTextMessage.text
-      : vChat.mtype == "buttonsResponseMessage"
-      ? vChat.message.buttonsResponseMessage.selectedButtonId
-      : vChat.mtype == "listResponseMessage"
-      ? vChat.message.listResponseMessage.singleSelectReply.selectedRowId
-      : vChat.mtype == "templateButtonReplyMessage"
-      ? vChat.message.templateButtonReplyMessage.selectedId
-      : vChat.mtype === "messageContextInfo"
-      ? vChat.message.buttonsResponseMessage?.selectedButtonId ||
-        vChat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        vChat.text
+    blyat.mtype === "conversation"
+      ? blyat.message.conversation
+      : blyat.mtype == "imageMessage"
+      ? blyat.message.imageMessage.caption
+      : blyat.mtype == "videoMessage"
+      ? blyat.message.videoMessage.caption
+      : blyat.mtype == "extendedTextMessage"
+      ? blyat.message.extendedTextMessage.text
+      : blyat.mtype == "buttonsResponseMessage"
+      ? blyat.message.buttonsResponseMessage.selectedButtonId
+      : blyat.mtype == "listResponseMessage"
+      ? blyat.message.listResponseMessage.singleSelectReply.selectedRowId
+      : blyat.mtype == "templateButtonReplyMessage"
+      ? blyat.message.templateButtonReplyMessage.selectedId
+      : blyat.mtype === "messageContextInfo"
+      ? blyat.message.buttonsResponseMessage?.selectedButtonId ||
+        blyat.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        blyat.text
       : "";
   var vcommand = vbody
     .replace(BloomBot.prefix, "")
@@ -99,11 +99,11 @@ module.exports = async (BloomBot, vChat, update, store) => {
   );
   console.log(
     BloomBot.chalk.blueBright("📱USER_NUMBER: "),
-    BloomBot.chalk.green(vChat.sender)
+    BloomBot.chalk.green(blyat.sender)
   );
   console.log(
     BloomBot.chalk.blueBright("💬CHAT_Id: "),
-    BloomBot.chalk.green(vChat.chat)
+    BloomBot.chalk.green(blyat.chat)
   );
   console.log(
     "◎✕———————————————————————✕ ⒸBloomBot by magneum™ ✕———————————————————————✕◎\n"
@@ -120,7 +120,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
         var commandFilePath = path.join(folderPath, commandFile);
         require(commandFilePath)(
           BloomBot,
-          vChat,
+          blyat,
           gmeta,
           isAdmin,
           groupName,
@@ -145,9 +145,9 @@ module.exports = async (BloomBot, vChat, update, store) => {
     if (suggestedCommand) {
       var suggestionMessage =
         "Command not found. Below are some suggestions. Press the button that is closest to what you need.";
-      return await BloomBot.sendMessage(vChat.chat, {
+      return await BloomBot.sendMessage(blyat.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢ChatId:* ${vChat.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ChatId:* ${blyat.chat}\n\n${suggestionMessage}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -164,16 +164,16 @@ module.exports = async (BloomBot, vChat, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [vChat.sender],
+        mentions: [blyat.sender],
       });
     } else {
       var errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${BloomBot.Tname}, it seems that the command you entered doesn't exist.\n` +
         "For more information, please visit: _bit.ly/magneum_";
-      return await BloomBot.sendMessage(vChat.chat, {
+      return await BloomBot.sendMessage(blyat.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢ChatId:* ${vChat.chat}\n\n${errorMessage}`,
+        caption: `*📢ChatId:* ${blyat.chat}\n\n${errorMessage}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
@@ -183,7 +183,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [vChat.sender],
+        mentions: [blyat.sender],
       });
     }
   }

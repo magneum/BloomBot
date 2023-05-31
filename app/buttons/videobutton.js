@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-module.exports = async (BloomBot, vChat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
+module.exports = async (BloomBot, blyat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
   if (BloomBot.isReply) {
     var receiver =
       BloomBot.mtype == "extendedTextMessage" &&
@@ -23,10 +23,10 @@ module.exports = async (BloomBot, vChat, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) 
         ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     await BloomBot.sendMessage(
-      vChat.chat,
+      blyat.chat,
       {
         image: { url: νidē໐ },
-        caption: `*📢ChatId:* ${vChat.chat}
+        caption: `*📢ChatId:* ${blyat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -42,11 +42,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 5,
-        mentions: [vChat.sender, receiver],
+        mentions: [blyat.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [vChat.sender, receiver] },
-        quoted: vChat,
+        contextInfo: { mentionedJid: [blyat.sender, receiver] },
+        quoted: blyat,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -57,10 +57,10 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         ? BloomBot.message.extendedTextMessage.contextInfo.mentionedJid
         : [];
     await BloomBot.sendMessage(
-      vChat.chat,
+      blyat.chat,
       {
         image: { url: νidē໐ },
-        caption: `*📢ChatId:* ${vChat.chat}
+        caption: `*📢ChatId:* ${blyat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -76,20 +76,20 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 5,
-        mentions: [vChat.sender, receiver],
+        mentions: [blyat.sender, receiver],
       },
       {
-        contextInfo: { mentionedJid: [vChat.sender, receiver] },
-        quoted: vChat,
+        contextInfo: { mentionedJid: [blyat.sender, receiver] },
+        quoted: blyat,
       }
     ).catch((e) => console.log(e));
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await BloomBot.sendMessage(
-      vChat.chat,
+      blyat.chat,
       {
         image: { url: νidē໐ },
-        caption: `*📢ChatId:* ${vChat.chat}
+        caption: `*📢ChatId:* ${blyat.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
@@ -105,11 +105,11 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
           },
         ],
         headerType: 5,
-        mentions: [vChat.sender],
+        mentions: [blyat.sender],
       },
       {
-        contextInfo: { mentionedJid: [vChat.sender] },
-        quoted: vChat,
+        contextInfo: { mentionedJid: [blyat.sender] },
+        quoted: blyat,
       }
     ).catch((e) => console.log(e));
   }

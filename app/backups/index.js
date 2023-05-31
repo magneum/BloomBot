@@ -227,8 +227,8 @@ async function magneum() {
     if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    vChat = await mMake(BloomBot, oText, store);
-    await require("../server/router")(BloomBot, vChat, update, store);
+    blyat = await mMake(BloomBot, oText, store);
+    await require("../server/router")(BloomBot, blyat, update, store);
   });
 
   BloomBot.ev.on("group-participants.update", async (update) => {
@@ -352,7 +352,7 @@ async function magneum() {
   };
 
   BloomBot.public = true;
-  BloomBot.serializeM = (vChat) => mMake(BloomBot, vChat, store);
+  BloomBot.serializeM = (blyat) => mMake(BloomBot, blyat, store);
 
   BloomBot.send5ButImg = async (
     jid,
@@ -367,7 +367,7 @@ async function magneum() {
       { upload: BloomBot.waUploadToServer }
     );
     var template = generateWAMessageFromContent(
-      vChat.chat,
+      blyat.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

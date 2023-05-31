@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     var Item;
     var NewLimit;
@@ -99,13 +99,13 @@ module.exports = async (BloomBot, vChat) => {
     }
 
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -118,13 +118,13 @@ module.exports = async (BloomBot, vChat) => {
     }
 
     if (BloomBot.args.length === 0) {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -139,16 +139,16 @@ module.exports = async (BloomBot, vChat) => {
     if (RobCatelog.includes(BloomBot.args[0])) {
       BloomBot.Economy.findOne(
         {
-          Id: vChat.sender,
+          Id: blyat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return BloomBot.handlerror(BloomBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, blyat, error);
           }
 
           if (!userEco) {
             var newUser = new BloomBot.Economy({
-              Id: vChat.sender,
+              Id: blyat.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -158,11 +158,11 @@ module.exports = async (BloomBot, vChat) => {
               worktimeout: 900000,
             });
             await newUser.save().catch((error) => {
-              return BloomBot.handlerror(BloomBot, vChat, error);
+              return BloomBot.handlerror(BloomBot, blyat, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              vChat,
+              blyat,
               `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *💰Balance:* _Just Bloomed Your Account!_`,
               BloomBot.display
@@ -170,15 +170,15 @@ module.exports = async (BloomBot, vChat) => {
           }
           BloomBot.Robbery.findOne(
             {
-              Id: vChat.sender,
+              Id: blyat.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return BloomBot.handlerror(BloomBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, blyat, error);
               }
               if (!userRob) {
                 new BloomBot.Robbery({
-                  Id: vChat.sender,
+                  Id: blyat.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -187,11 +187,11 @@ module.exports = async (BloomBot, vChat) => {
                 })
                   .save()
                   .catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *💰Balance:* _Just Bloomed Your Account!_`,
                   BloomBot.display
@@ -200,7 +200,7 @@ module.exports = async (BloomBot, vChat) => {
                 if (userEco.money < ItemPrice) {
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    vChat,
+                    blyat,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -217,14 +217,14 @@ module.exports = async (BloomBot, vChat) => {
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    vChat,
+                    blyat,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -239,14 +239,14 @@ module.exports = async (BloomBot, vChat) => {
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    vChat,
+                    blyat,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -261,14 +261,14 @@ module.exports = async (BloomBot, vChat) => {
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   await userRob.save().catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    vChat,
+                    blyat,
                     `*🌻Here, ${fpth} for @${
                       BloomBot.Tname || BloomBot.pushname
                     }:*
@@ -280,7 +280,7 @@ module.exports = async (BloomBot, vChat) => {
                 }
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -294,25 +294,25 @@ module.exports = async (BloomBot, vChat) => {
     } else if (BadCatelog.includes(BloomBot.args[0])) {
       await BloomBot.Economy.findOne(
         {
-          Id: vChat.sender,
+          Id: blyat.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return BloomBot.handlerror(BloomBot, vChat, error);
+            return BloomBot.handlerror(BloomBot, blyat, error);
           }
 
           await BloomBot.Bagde.findOne(
             {
-              Id: vChat.sender,
+              Id: blyat.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return BloomBot.handlerror(BloomBot, vChat, error);
+                return BloomBot.handlerror(BloomBot, blyat, error);
               }
 
               if (!userEco) {
                 new BloomBot.Economy({
-                  Id: vChat.sender,
+                  Id: blyat.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -323,11 +323,11 @@ module.exports = async (BloomBot, vChat) => {
                 })
                   .save()
                   .catch((error) => {
-                    return BloomBot.handlerror(BloomBot, vChat, error);
+                    return BloomBot.handlerror(BloomBot, blyat, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -340,7 +340,7 @@ module.exports = async (BloomBot, vChat) => {
 
               if (!userBadge) {
                 var newBagdeUser = new BloomBot.Bagde({
-                  Id: vChat.sender,
+                  Id: blyat.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -348,11 +348,11 @@ module.exports = async (BloomBot, vChat) => {
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch((error) => {
-                  return BloomBot.handlerror(BloomBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, blyat, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -366,7 +366,7 @@ module.exports = async (BloomBot, vChat) => {
               if (userEco.money < ItemPrice) {
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -380,7 +380,7 @@ module.exports = async (BloomBot, vChat) => {
               if (userBadge.Badge === Item) {
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
@@ -397,14 +397,14 @@ module.exports = async (BloomBot, vChat) => {
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch((error) => {
-                  return BloomBot.handlerror(BloomBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, blyat, error);
                 });
                 await userBadge.save().catch((error) => {
-                  return BloomBot.handlerror(BloomBot, vChat, error);
+                  return BloomBot.handlerror(BloomBot, blyat, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  vChat,
+                  blyat,
                   `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compvare!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -418,13 +418,13 @@ module.exports = async (BloomBot, vChat) => {
         }
       );
     } else {
-      await BloomBot.sendMessage(vChat.chat, {
+      await BloomBot.sendMessage(blyat.chat, {
         react: {
           text: "❌",
-          key: vChat.key,
+          key: blyat.key,
         },
       });
-      return vChat.reply(
+      return blyat.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌Error* 
@@ -436,7 +436,7 @@ module.exports = async (BloomBot, vChat) => {
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

@@ -19,14 +19,14 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
-    var server = await BloomBot.nsfwCheck.findOne({ serverId: vChat.chat });
+    var server = await BloomBot.nsfwCheck.findOne({ serverId: blyat.chat });
     if (!server) {
-      await BloomBot.sendMessage(vChat.chat, {
-        react: { text: "❌", key: vChat.key },
+      await BloomBot.sendMessage(blyat.chat, {
+        react: { text: "❌", key: blyat.key },
       });
-      return vChat.reply(`*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+      return blyat.reply(`*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -39,10 +39,10 @@ module.exports = async (BloomBot, vChat) => {
     );
     var mgdata = response.data;
     if (!mgdata.meta.thumbnail) {
-      await BloomBot.sendMessage(vChat.chat, {
-        react: { text: "❌", key: vChat.key },
+      await BloomBot.sendMessage(blyat.chat, {
+        react: { text: "❌", key: blyat.key },
       });
-      return vChat.reply(`*😥 Apologies:* _${BloomBot.pushname}_
+      return blyat.reply(`*😥 Apologies:* _${BloomBot.pushname}_
 *❌ Error* 
 > An API error has occurred. Please try again later.`);
     }
@@ -67,12 +67,12 @@ module.exports = async (BloomBot, vChat) => {
 ╚═══════⋑`;
     await BloomBot.imagebutton(
       BloomBot,
-      vChat,
+      blyat,
       message,
       mgdata.meta.thumbnail
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

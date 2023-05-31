@@ -19,22 +19,22 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     return await BloomBot.nsfwCheck.findOne(
       {
-        serverId: vChat.chat,
+        serverId: blyat.chat,
       },
       async (error, server) => {
-        if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+        if (error) return BloomBot.handlerror(BloomBot, blyat, error);
         if (!server) {
-          await BloomBot.sendMessage(vChat.chat, {
+          await BloomBot.sendMessage(blyat.chat, {
             react: {
               text: "❌",
-              key: vChat.key,
+              key: blyat.key,
             },
           });
-          return vChat.reply(
+          return blyat.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌ Error* 
@@ -49,13 +49,13 @@ module.exports = async (BloomBot, vChat) => {
             var mgdata = response.data;
             console.log(mgdata);
             if (!mgdata[0].meta.url) {
-              await BloomBot.sendMessage(vChat.chat, {
+              await BloomBot.sendMessage(blyat.chat, {
                 react: {
                   text: "❌",
-                  key: vChat.key,
+                  key: blyat.key,
                 },
               });
-              return vChat.reply(
+              return blyat.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
 *❌ Error* 
@@ -64,7 +64,7 @@ module.exports = async (BloomBot, vChat) => {
             } else
               await BloomBot.imagebutton(
                 BloomBot,
-                vChat,
+                blyat,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
 
 > *Description:* ${mgdata[0].meta.description}
@@ -76,7 +76,7 @@ module.exports = async (BloomBot, vChat) => {
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

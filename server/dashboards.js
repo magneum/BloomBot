@@ -16,21 +16,21 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-module.exports = async (BloomBot, vChat, updatedb) => {
+module.exports = async (BloomBot, blyat, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(vChat.sender, "image");
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(blyat.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/vChatbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/blyatbot.png";
   }
   await BloomBot.dashboard.findOne(
     {
-      Id: vChat.sender,
+      Id: blyat.sender,
     },
     async (error, udBase) => {
-      if (error) return BloomBot.handlerror(BloomBot, vChat, error);
+      if (error) return BloomBot.handlerror(BloomBot, blyat, error);
       if (!udBase) {
         new BloomBot.dashboard({
-          Id: vChat.sender,
+          Id: blyat.sender,
           profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
           username: BloomBot.pushname,
 
@@ -274,10 +274,10 @@ module.exports = async (BloomBot, vChat, updatedb) => {
           sfwlist: 0,
         })
           .save()
-          .catch((error) => BloomBot.handlerror(BloomBot, vChat, error));
+          .catch((error) => BloomBot.handlerror(BloomBot, blyat, error));
         await BloomBot.imagebutton(
           BloomBot,
-          vChat,
+          blyat,
           `*🌻Here, for ${BloomBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

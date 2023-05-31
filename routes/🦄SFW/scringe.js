@@ -19,7 +19,7 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
     BloomBot.magfetch(
       BloomBot,
@@ -29,7 +29,7 @@ module.exports = async (BloomBot, vChat) => {
       console.log(mgdata);
       return await BloomBot.imagebutton(
         BloomBot,
-        vChat,
+        blyat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
 *Topic*: ${mgdata.meta.topic}
 *Query*: ${mgdata.meta.query}`,
@@ -37,7 +37,7 @@ module.exports = async (BloomBot, vChat) => {
       );
     });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];

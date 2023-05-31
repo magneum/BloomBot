@@ -19,9 +19,9 @@ require("#/logger/config");
 var ppth = require("path");
 var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
-module.exports = async (BloomBot, vChat) => {
+module.exports = async (BloomBot, blyat) => {
   try {
-    var кяуяєs = await BloomBot.axios.get("https://vChat.life/api/v2/fact");
+    var кяуяєs = await BloomBot.axios.get("https://blyat.life/api/v2/fact");
     try {
       var кяуяєsi = await BloomBot.fetch(
         global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
@@ -35,7 +35,7 @@ module.exports = async (BloomBot, vChat) => {
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await BloomBot.imagebutton(
         BloomBot,
-        vChat,
+        blyat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
 > ${await BloomBot.getDadjoke()}`,
         bsoni.url_image
@@ -43,14 +43,14 @@ module.exports = async (BloomBot, vChat) => {
     } catch {
       await BloomBot.imagebutton(
         BloomBot,
-        vChat,
+        blyat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:* 
 > ${await BloomBot.getDadjoke()}`,
         "./public/BloomBot/BloomBot (8).png"
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, vChat, error);
+    return BloomBot.handlerror(BloomBot, blyat, error);
   }
 };
 module.exports.aliases = [];
