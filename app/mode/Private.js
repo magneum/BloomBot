@@ -21,7 +21,7 @@ module.exports = async (BloomBot, mags, update, store) => {
       {
         Id: mags.sender,
       },
-      (error, banCheck) => {
+      async (error, banCheck) => {
         if (error) {
           return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
 *❌ Error*
@@ -29,66 +29,41 @@ module.exports = async (BloomBot, mags, update, store) => {
 *🐞 Bug*
 > ${error}`);
         }
-        BloomBot.userBanCheck.findOne(
-          {
-            Id: mags.chat,
-          },
-          async (error, groupCheck) => {
-            if (error) {
-              return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error*
-> There has been an API Error. Please try again later.
-*🐞 Bug*
-> ${error}`);
-            }
-            if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
-            if (groupCheck && !BloomBot.frome && !BloomBot.isSudo) return;
-            await BloomBot.LinkList.findOne(
-              {
-                serverId: mags.chat,
-              },
-              async (error, server) => {
-                if (error) return BloomBot.handlerror(BloomBot, mags, error);
-                if (!server) return;
-                var { noLink } = require("#/auth/antilink");
-                return noLink(BloomBot, mags);
-              }
-            );
-            if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
-              return await BloomBot.sendMessage(
-                mags.chat,
-                {
-                  gifPlayback: true,
-                  video: BloomBot.fs.readFileSync(
-                    "./public/BloomBot/BloomBot (8)_white.png"
-                  ),
-                  caption: `*📢Maintenance Mode On*
+
+        if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
+        if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
+          return await BloomBot.sendMessage(
+            mags.chat,
+            {
+              gifPlayback: true,
+              video: BloomBot.fs.readFileSync(
+                "./public/BloomBot/BloomBot (8)_white.png"
+              ),
+              caption: `*📢Maintenance Mode On*
 *😥Apologies:* _${BloomBot.pushname}_
 > come back another time`,
-                  mentions: [mags.sender],
-                },
-                { quoted: mags }
-              );
-            }
+              mentions: [mags.sender],
+            },
+            { quoted: mags }
+          );
+        }
 
-            try {
-              require("#/server/library")(BloomBot, mags, update, store);
-              return await BloomBot.sendMessage(mags.chat, {
-                react: {
-                  text: "🌻",
-                  key: mags.key,
-                },
-              });
-            } catch {
-              await BloomBot.sendMessage(mags.chat, {
-                react: {
-                  text: "⚠️",
-                  key: mags.key,
-                },
-              });
-            }
-          }
-        );
+        try {
+          require("#/server/library")(BloomBot, mags, update, store);
+          return await BloomBot.sendMessage(mags.chat, {
+            react: {
+              text: "🌻",
+              key: mags.key,
+            },
+          });
+        } catch {
+          await BloomBot.sendMessage(mags.chat, {
+            react: {
+              text: "⚠️",
+              key: mags.key,
+            },
+          });
+        }
       }
     );
   }
