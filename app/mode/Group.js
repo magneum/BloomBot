@@ -105,7 +105,7 @@ module.exports = async (BloomBot, mags, update, store) => {
                 async (error, server) => {
                   if (error) return BloomBot.handlerror(BloomBot, mags, error);
                   if (!server) return;
-                  const { noLink } = require("#/auth/antilink");
+                  const { noLink } = require("#/utils/antilink");
                   return noLink(BloomBot, mags);
                 }
               );
