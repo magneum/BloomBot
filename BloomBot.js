@@ -21,7 +21,6 @@ var chalk = require("chalk");
 var yargs = require("yargs");
 var { join } = require("path");
 var { say } = require("cfonts");
-var Table = require("cli-table3");
 var mFolders = fs.readdirSync("./routes");
 var { execSync } = require("child_process");
 var { createInterface } = require("readline");
@@ -48,17 +47,11 @@ say(`~ by magneum™`, {
 });
 
 function showCommands(path) {
-  var table = new Table({
-    head: [chalk.bgGreen(chalk.black("Folder")), chalk.yellow("Files")],
-    colWidths: [20, 30],
-  });
-
   say("Loading Commands From Folders", {
     font: "console",
     align: "left",
     gradient: ["red", "blue"],
   });
-
   var specialFolders = [
     "⚙️System",
     "⭕YTFilter",
@@ -76,18 +69,18 @@ function showCommands(path) {
     "🖼️Photogenic",
     "🦄SFW",
   ];
-
   for (var cFolder of mFolders) {
     var cFiles = fs
       .readdirSync(`./${path}/${cFolder}`)
       .filter((cFile) => cFile.endsWith(""));
 
     if (specialFolders.includes(cFolder)) {
-      table.push([cFolder, cFiles.join(", ")]);
+      console.log(
+        chalk.bgGreen(chalk.black("> " + cFolder)),
+        chalk.yellow("  | " + cFiles)
+      );
     }
   }
-
-  console.log(table.toString());
 }
 
 let isRunning = false;
