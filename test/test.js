@@ -1,6 +1,6 @@
-const YouTubeAudio = require("../utils/YouAudio");
-const { randomUUID } = require("crypto");
-const ffmpeg = require("fluent-ffmpeg");
+var YouTubeAudio = require("../utils/YouAudio");
+var { randomUUID } = require("crypto");
+var ffmpeg = require("fluent-ffmpeg");
 
 function downloadAndConvertToMP3(url, outputPath) {
   return new Promise((resolve, reject) => {
@@ -23,7 +23,7 @@ function downloadAndConvertToMP3(url, outputPath) {
 
 return YouTubeAudio("5 sec music")
   .then(async (AudioLink) => {
-    const mp3FilePath = randomUUID() + ".mp3";
+    var mp3FilePath = randomUUID() + ".mp3";
     downloadAndConvertToMP3(AudioLink.audio, mp3FilePath).then();
   })
   .catch((error) => {

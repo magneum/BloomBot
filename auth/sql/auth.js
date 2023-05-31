@@ -15,9 +15,9 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const dbConfig = require("@/dbConfig");
-const { DataTypes, Model } = require("sequelize");
-const sequelize = dbConfig.DATABASE;
+var dbConfig = require("@/dbConfig");
+var { DataTypes, Model } = require("sequelize");
+var sequelize = dbConfig.DATABASE;
 
 class Cred extends Model {}
 Cred.init(

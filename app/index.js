@@ -20,7 +20,7 @@ require("@/logger/config");
 var logger = require("@/logger");
 var purgepg = require("./purgepg");
 var gitPull = require("@/utils/gitPull");
-const dbConfig = require("@/auth/dbConfig");
+var dbConfig = require("@/auth/dbConfig");
 var {
   default: Bloom_bot_client,
   DisconnectReason,
@@ -70,7 +70,7 @@ async function magneum() {
     return version;
   };
 
-  const sequelize = dbConfig.DATABASE;
+  var sequelize = dbConfig.DATABASE;
   logger.info("📢 Connecting to Database.");
   try {
     await sequelize.authenticate();
