@@ -15,24 +15,33 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var { Client } = require("pg");
-var dotenv = require("dotenv");
-var chalk = require("chalk");
+const { Sequelize } = require("sequelize");
+const chalk = require("chalk");
+const fs = require("fs");
 
-dotenv.config();
+if (fs.existsSync(".env")) {
+  require("dotenv").config({ path: ".env" });
+}
+
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
+  protocol: "postgres",
+  dialect: "postgres",
+  logging: false,
+});
 
 async function cleanDatabase() {
-  var connectionString = process.env.DATABASE_URL;
-  var client = new Client({ connectionString });
   try {
-    await client.connect();
-    var res = await client.query(
-      "SELECT tablename FROM pg_tables WHERE schemaname = $1",
-      ["public"]
-    );
-    for (var row of res.rows) {
-      var tableName = row.tablename;
-      await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
+    await sequelize.authenticate();
+    const tableNames = await sequelize.showAllSchemas();
+
+    for (const tableName of tableNames) {
+      await sequelize.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
       console.log(chalk.green(`Dropped table: ${tableName}`));
     }
 
@@ -43,9 +52,9 @@ async function cleanDatabase() {
       err
     );
   } finally {
-    await client.end();
+    await sequelize.close();
   }
 }
 
-cleanDatabase();
+// cleanDatabase();
 module.exports = cleanDatabase;

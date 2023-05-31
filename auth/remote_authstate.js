@@ -259,7 +259,7 @@ const remote_authstate = async () => {
             log(
               `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`,
               "info",
-              "yellow" // Specify the color for this log message
+              "yellow"
             );
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
@@ -273,5 +273,5 @@ const remote_authstate = async () => {
   };
 };
 
-remote_authstate();
+// remote_authstate();
 module.exports = remote_authstate;
