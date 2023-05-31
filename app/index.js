@@ -122,13 +122,16 @@ async function magneum() {
   try {
     ({ state, saveCreds } = await RemoteFileAuthState(logger));
     logger.info(
-      "Successfully retrieved state and saveCreds from RemoteFileAuthState."
+      "📢: Successfully retrieved state and saveCreds from RemoteFileAuthState."
     );
   } catch (error) {
-    logger.error("Error occurred in RemoteFileAuthState:", error);
+    logger.error("📢: Error occurred in RemoteFileAuthState:", error);
+    logger.debug(
+      "📢: Using useRemoteFileAuthState: Retrieving state and saveCreds from useRemoteFileAuthState."
+    );
     ({ state, saveCreds } = await useRemoteFileAuthState(logger));
     logger.info(
-      "Successfully retrieved state and saveCreds from useRemoteFileAuthState."
+      "📢: Successfully retrieved state and saveCreds from useRemoteFileAuthState."
     );
   }
 
