@@ -824,12 +824,11 @@ async function magneum() {
       "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );
   }, 300 * 1000);
-  setInterval(async () => {
-    await BloomBot.updateProfilePicture("120363020792949649@g.us", {
-      url: BloomBot.display,
-    });
-  }, 120 * 1000);
-
+  // setInterval(async () => {
+  // await BloomBot.updateProfilePicture("120363020792949649@g.us", {
+  // url: BloomBot.display,
+  // });
+  // }, 120 * 1000);
   setInterval(async () => {
     gitPull();
   }, 120 * 1000);
