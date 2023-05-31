@@ -119,7 +119,6 @@ async function magneum() {
 
   var BloomBot = Bloom_bot_client({
     auth: state,
-    MessageRetryMap,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
