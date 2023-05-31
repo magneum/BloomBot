@@ -3,13 +3,14 @@
 YELLOW="\033[0;33m"
 GREEN="\033[0;32m"
 RED="\033[0;31m"
+BOLD="\033[1m"
 NC="\033[0m"
 
-# Function to print colored output
-print_color() {
+# Function to print colored and bold output
+cecho() {
   local color=$1
   shift
-  echo -e "${color}$@${NC}"
+  echo -e "${BOLD}${color}$@${NC}"
 }
 
 # Function to check if a command exists
@@ -34,135 +35,66 @@ get_distribution() {
 }
 
 # Update package repositories and upgrade system packages (Debian-based)
-update_packages_debian() {
-  print_color "$YELLOW" "Updating package repositories..."
+update_packages() {
+  cecho "$YELLOW" "Updating package repositories..."
   sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update || {
-    print_color "$RED" "Failed to update package repositories. Exiting..."
+    cecho "$RED" "Failed to update package repositories. Exiting..."
     exit 1
   }
-  print_color "$YELLOW" "Upgrading system packages..."
+  cecho "$YELLOW" "Upgrading system packages..."
   sudo apt-get upgrade -y || {
-    print_color "$RED" "Failed to upgrade system packages. Exiting..."
+    cecho "$RED" "Failed to upgrade system packages. Exiting..."
     exit 1
   }
 }
 
-# Update package repositories and upgrade system packages (Arch Linux-based)
-update_packages_arch() {
-  print_color "$YELLOW" "Updating package repositories..."
-  sudo pacman -Syu --noconfirm || {
-    print_color "$RED" "Failed to update package repositories. Exiting..."
+# Install Node.js and npm
+install_nodejs_npm() {
+  cecho "$YELLOW" "Installing Node.js and npm..."
+  sudo apt-get install nodejs npm -y || {
+    cecho "$RED" "Failed to install Node.js and npm. Exiting..."
     exit 1
   }
-}
-
-# Install packages (Debian-based)
-install_packages_debian() {
-  local packages=(
-    jq git curl wget ffmpeg bpm-tools opus-tools nodejs npm python3-pip
-  )
-
-  for package in "${packages[@]}"; do
-    if ! command_exists "$package"; then
-      print_color "$YELLOW" "Installing $package..."
-      sudo apt-get install "$package" -y || {
-        print_color "$RED" "Failed to install $package. Exiting..."
-        exit 1
-      }
-    else
-      print_color "$GREEN" "$package is already installed."
-    fi
-  done
-}
-
-# Install packages (Arch Linux-based)
-install_packages_arch() {
-  local packages=(
-    jq git curl wget ffmpeg bpm-tools opus-tools nodejs npm python-pip
-  )
-
-  for package in "${packages[@]}"; do
-    if ! command_exists "$package"; then
-      print_color "$YELLOW" "Installing $package..."
-      sudo pacman -S "$package" --noconfirm || {
-        print_color "$RED" "Failed to install $package. Exiting..."
-        exit 1
-      }
-    else
-      print_color "$GREEN" "$package is already installed."
-    fi
-  done
-}
-
-
-# Install or update npm
-install_or_update_npm() {
-  if command_exists npm; then
-    print_color "$YELLOW" "Updating npm..."
-    sudo npm install -g npm@latest || {
-      print_color "$RED" "Failed to update npm. Exiting..."
-      exit 1
-    }
-  else
-    print_color "$YELLOW" "Installing npm..."
-    sudo apt-get install npm -y || {
-      print_color "$RED" "Failed to install npm. Exiting..."
-      exit 1
-    }
-  fi
 }
 
 # Install n
 install_n() {
   if ! command_exists n; then
-    print_color "$YELLOW" "Installing n..."
+    cecho "$YELLOW" "Installing n..."
     sudo npm install -g n || {
-      print_color "$RED" "Failed to install n. Exiting..."
+      cecho "$RED" "Failed to install n. Exiting..."
       exit 1
     }
   else
-    print_color "$GREEN" "n is already installed."
+    cecho "$GREEN" "n is already installed."
   fi
 }
 
 # Install Node.js LTS version using n
 install_nodejs_lts() {
-  print_color "$YELLOW" "Installing Node.js LTS version..."
+  cecho "$YELLOW" "Installing Node.js LTS version..."
   sudo n lts || {
-    print_color "$RED" "Failed to install Node.js LTS version. Exiting..."
+    cecho "$RED" "Failed to install Node.js LTS version. Exiting..."
     exit 1
   }
 }
 
-# Install yarn
+# Install yarn using npm
 install_yarn() {
-  if ! command_exists yarn; then
-    print_color "$YELLOW" "Installing yarn..."
-    sudo npm install -g yarn || {
-      print_color "$RED" "Failed to install yarn. Exiting..."
-      exit 1
-    }
-  else
-    print_color "$GREEN" "yarn is already installed."
-  fi
+  cecho "$YELLOW" "Installing yarn using npm..."
+  sudo npm install -g yarn || {
+    cecho "$RED" "Failed to install yarn. Exiting..."
+    exit 1
+  }
 }
 
-# Remove existing node_modules and yarn.lock if present
-remove_existing_files() {
-  if [ -d "node_modules" ] || [ -f "yarn.lock" ]; then
-    print_color "$YELLOW" "Removing existing node_modules and yarn.lock..."
-    rm -rf node_modules yarn.lock || {
-      print_color "$RED" "Failed to remove existing node_modules and yarn.lock. Exiting..."
-      exit 1
-    }
-  fi
-}
 
-# Build your project
-build_project() {
-  print_color "$YELLOW" "Building your project..."
-  yarn build || {
-    print_color "$RED" "Failed to build your project. Exiting..."
+# Run script using yarn
+run_script_with_yarn() {
+  local script_name=$1
+  cecho "$YELLOW" "Running script '$script_name' using yarn..."
+  yarn run "$script_name" || {
+    cecho "$RED" "Failed to run script '$script_name'. Exiting..."
     exit 1
   }
 }
@@ -170,36 +102,31 @@ build_project() {
 # Clear the console
 clear
 
+# Check if yarn is installed, otherwise install it using npm
+if ! command_exists yarn; then
+  cecho "$YELLOW" "yarn is not found. Installing yarn..."
+  install_yarn
+else
+  cecho "$GREEN" "yarn is already installed."
+fi
+
 # Get the distribution name
 distribution=$(get_distribution)
 
 # Perform setup based on the detected distribution
 case "$distribution" in
   debian)
-    update_packages_debian
-    install_packages_debian
-    install_or_update_npm
+    update_packages
+    install_nodejs_npm
     install_n
     install_nodejs_lts
-    install_yarn
-    remove_existing_files
-    build_project
-    ;;
-  arch)
-    update_packages_arch
-    install_packages_arch
-    install_or_update_npm
-    install_n
-    install_nodejs_lts
-    install_yarn
-    remove_existing_files
-    build_project
     ;;
   *)
-    print_color "$RED" "Unsupported distribution. Exiting..."
+    cecho "$RED" "Unsupported distribution. Exiting..."
     exit 1
     ;;
 esac
 
-# Show all scripts' choices from package.json in colored
-print_color "$GREEN" "Setup completed successfully."
+
+# Show completion message
+cecho "$GREEN" "Setup completed successfully."
