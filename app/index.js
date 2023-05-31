@@ -43,7 +43,7 @@ var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var remote_authstate = require("@/auth/remote_authstate");
-// var { fallback_remote_authstate } = require("@/auth/Database");
+var { fallback_remote_authstate } = require("@/auth/Database");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function rmdb() {
@@ -60,7 +60,7 @@ async function rmdb() {
 }
 async function magneum() {
   await monGoose
-    .connect(mongodb_url, {
+    .connect(MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
@@ -115,23 +115,26 @@ async function magneum() {
     );
   });
   opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
-  const { state, saveCreds } = await remote_authstate();
-  // let state, saveCreds;
-  // try {
-  // ({ state, saveCreds } = await remote_authstate());
-  // logger.info(
-  // "📢: Successfully retrieved state and saveCreds from remote_authstate."
-  // );
-  // } catch (error) {
-  // logger.error("📢: Error occurred in remote_authstate:", error);
-  // logger.debug(
-  // "📢: Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
-  // );
-  // ({ state, saveCreds } = await fallback_remote_authstate(logger));
-  // logger.info(
-  // "📢: Successfully retrieved state and saveCreds from fallback_remote_authstate."
-  // );
-  // }
+
+  // var sequelize = DATABASE;
+  // await sequelize.sync();
+  let state, saveCreds;
+  z;
+  try {
+    ({ state, saveCreds } = await remote_authstate());
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from remote_authstate."
+    );
+  } catch (error) {
+    logger.error("📢: Error occurred in remote_authstate:", error);
+    logger.debug(
+      "📢: Using fallback_remote_authstate: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
+    );
+    ({ state, saveCreds } = await fallback_remote_authstate(logger));
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from fallback_remote_authstate."
+    );
+  }
 
   var BloomBot = Bloom_bot_client({
     auth: state,

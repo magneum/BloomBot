@@ -287,7 +287,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
   BloomBot.packname = packname;
   BloomBot.pgdb = DATABASE_URL;
   BloomBot.ShowInfo = ShowInfo;
-  BloomBot.mongodb_url = mongodb_url;
+  BloomBot.MONGODB_URL = MONGODB_URL;
   BloomBot.author = author;
   BloomBot.prefix = prefix;
   BloomBot.sudo = sudo;

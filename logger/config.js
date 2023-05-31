@@ -17,11 +17,36 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("dotenv");
 var fs = require("fs");
+var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
-global.mongodb_url = process.env.mongodb_url;
-global.verbose_level = process.env.verbose_level || "info";
+
+process.env.DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./BloomBot.db"
+    : process.env.DATABASE_URL;
+global.DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./BloomBot.db"
+    : process.env.DATABASE_URL;
+global.DATABASE =
+  process.env.DATABASE_URL === "./BloomBot.db"
+    ? new sequelize.Sequelize({
+        dialect: "sqlite",
+        storage: process.env.DATABASE_URL,
+        logging: false,
+      })
+    : new sequelize.Sequelize(process.env.DATABASE_URL, {
+        dialect: "postgres",
+        protocol: "postgres",
+        logging: false,
+        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+      });
+
+global.MONGODB_URL = process.env.MONGODB_URL;
+global.REDIS_URL = process.env.REDIS_URL;
+global.verbose = process.env.verbose || "0";
 var sudo = process.env.sudo;
 if (!sudo) sudo = "918436686758,917430922909";
 global.upVersion = process.env.upVersion;
