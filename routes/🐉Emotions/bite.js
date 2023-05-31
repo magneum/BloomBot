@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("#/logger/config");
+require("#/config");
 const path = require("path");
 const fileName = path.basename(__filename);
 const feeling = fileName.slice(0, -3).toLowerCase();

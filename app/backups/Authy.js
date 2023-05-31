@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 ("use strict");
-require("@/logger/config");
+require("@/config");
 const __importDefault =
   (this && this.__importDefault) ||
   function (mod) {

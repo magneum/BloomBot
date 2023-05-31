@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("#/logger/config");
+require("#/config");
 const ppth = require("path");
 const ytdl = require("ytdl-secktor");
 const tpth = ppth.basename(__filename);

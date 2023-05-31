@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("@/logger/config");
+require("@/config");
 const { Boom } = require("@hapi/boom");
 const purgepg = require("@/app/purgepg");
 const { DisconnectReason } = require("@adiwajshing/baileys");
