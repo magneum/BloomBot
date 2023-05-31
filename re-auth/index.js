@@ -34,12 +34,9 @@ var {
 var fs = require("fs");
 var path = require("path");
 var pino = require("pino");
-var express = require("express");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
-var bodyParser = require("body-parser");
 var useRemoteFileAuthState = require("./dbAuth");
-var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
@@ -54,7 +51,7 @@ async function magneum() {
       logger.error(error);
     })
     .then(logger.info("📢: Connected with mongoose."));
-  var opage = express();
+
   var store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
@@ -70,36 +67,7 @@ async function magneum() {
     }
     return version;
   };
-  var urlencodedParser = bodyParser.urlencoded({ extended: false });
-  opage.engine("html", require("ejs").renderFile);
-  opage.use(express.static("./views"));
-  opage.set("view engine", "html");
-  opage.set("views", __dirname);
-  opage.get("/", (request, response) => {
-    response.redirect("https://bit.ly/magneum");
-  });
-  opage.get("/BloomBot", (request, response) => {
-    response.sendFile("views/BloomBot.html", { root: __dirname });
-  });
-  opage.post("/BloomBot", urlencodedParser, (request, response) => {
-    var phoneNum = request.body.phone.replace(
-      /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/,
-      ""
-    );
-    dashboards.findOne(
-      {
-        Id: phoneNum + "@s.whatsapp.net",
-      },
-      async (error, uBoard) => {
-        if (error) return logger.error("❌:", error);
-        if (!uBoard) return response.sendFile(__dirname + "/views/nodb.html");
-        response.render(__dirname + "/views/dashboard.html", {
-          uBoard: uBoard,
-        });
-      }
-    );
-  });
-  opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
+
   const sequelize = dbConfig.DATABASE;
   logger.info("📢: Connecting to Database.");
   try {

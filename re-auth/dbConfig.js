@@ -18,7 +18,7 @@ const convertToLogLevel = (value) => {
 
 process.env.DATABASE_URL =
   process.env.DATABASE_URL === undefined
-    ? "./BotsApp.db"
+    ? "./BloomBot.db"
     : process.env.DATABASE_URL;
 process.env.DEBUG =
   process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
@@ -26,11 +26,11 @@ process.env.DEBUG =
 const dbConfig = {
   DATABASE_URL:
     process.env.DATABASE_URL === undefined
-      ? "./BotsApp.db"
+      ? "./BloomBot.db"
       : process.env.DATABASE_URL,
   DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
   DATABASE:
-    process.env.DATABASE_URL === "./BotsApp.db"
+    process.env.DATABASE_URL === "./BloomBot.db"
       ? new Sequelize({
           dialect: "sqlite",
           storage: process.env.DATABASE_URL,

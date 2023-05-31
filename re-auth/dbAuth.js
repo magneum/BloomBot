@@ -1,5 +1,5 @@
-const { initAuthCreds, proto } = require("@adiwajshing/baileys");
-const { Cred, Key } = require("../database/auth");
+const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { Cred, Key } = require("./auth");
 
 const KEY_MAP = {
   "pre-key": "preKeys",
@@ -11,7 +11,6 @@ const KEY_MAP = {
 };
 
 const useRemoteFileAuthState = async (logger) => {
-  const { readFileSync, writeFileSync, existsSync } = require("fs");
   let creds;
   let keys = {};
 
