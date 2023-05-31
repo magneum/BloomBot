@@ -17,7 +17,59 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 module.exports = async (BloomBot, mags, update, store) => {
   if (!mags.isGroup && BloomBot.command) {
-    return require("#/auth/noPrivate")(BloomBot, mags, update);
+    if (!BloomBot.isSudo)
+      await BloomBot.UserPrivate.findOne(
+        {
+          Id: mags.sender,
+        },
+        async (error, user) => {
+          if (error) return BloomBot.handlerror(BloomBot, mags, error);
+          if (!user) {
+            new BloomBot.UserPrivate({
+              Id: mags.sender,
+              Amount: 1,
+            })
+              .save()
+              .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+            return await BloomBot.imagebutton(
+              BloomBot,
+              mags,
+              `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
+• This Private Is Being Guarded By BloomBot Ai!
+• Do Not Spam The Chat Box!
+
+*🌿Punishment*
+• Warnings 1/4
+• You Will be Auto-Blocked After 4 warnings!`,
+              BloomBot.display
+            );
+          } else if (user.Amount < 4) {
+            user.Amount = user.Amount + 1;
+            await user
+              .save()
+              .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+            return await BloomBot.imagebutton(
+              BloomBot,
+              mags,
+              `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
+• This Private Is Being Guarded By BloomBot Ai!
+• Do Not Spam The Chat Box!
+
+*🌿Punishment*
+• Warnings ${user.Amount}/4
+• You Will be Auto-Blocked After 4 warnings!`,
+              BloomBot.display
+            );
+          } else {
+            await user
+              .delete()
+              .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
+            return await BloomBot.updateBlockStatus(mags.sender, "block").catch(
+              (error) => BloomBot.handlerror(BloomBot, mags, error)
+            );
+          }
+        }
+      );
   } else {
     if (mags.isGroup && BloomBot.command) {
       BloomBot.userBanCheck.findOne(
@@ -27,9 +79,9 @@ module.exports = async (BloomBot, mags, update, store) => {
         (error, banCheck) => {
           if (error) {
             return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error*
-> There has been an API Error. Please try again later.
-*🐞 Bug*
+
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:*
 > ${error}`);
           }
           BloomBot.userBanCheck.findOne(
@@ -39,9 +91,9 @@ module.exports = async (BloomBot, mags, update, store) => {
             async (error, groupCheck) => {
               if (error) {
                 return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error*
-> There has been an API Error. Please try again later.
-*🐞 Bug*
+
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:*
 > ${error}`);
               }
               if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
@@ -62,9 +114,7 @@ module.exports = async (BloomBot, mags, update, store) => {
                   mags.chat,
                   {
                     gifPlayback: true,
-                    video: BloomBot.fs.readFileSync(
-                      "./public/BloomBot/BloomBot (8)_white.png"
-                    ),
+                    video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
                     caption: `*📢Maintenance Mode On*
 *😥Apologies:* _${BloomBot.pushname}_
 > come back another time`,

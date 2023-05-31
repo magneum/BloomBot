@@ -26,7 +26,9 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.sendMessage(mags.chat, {
         react: { text: "❌", key: mags.key },
       });
-      return mags.reply(`*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+      return mags.reply(`*😥 Apologies:* _${
+        BloomBot.pushname || BloomBot.Tname
+      }_
 
 *❌ Error* 
 > NSFW commands have been disabled for this group.
@@ -43,8 +45,8 @@ module.exports = async (BloomBot, mags) => {
         react: { text: "❌", key: mags.key },
       });
       return mags.reply(`*😥 Apologies:* _${BloomBot.pushname}_
-*❌ Error* 
-> An API error has occurred. Please try again later.`);
+
+*❌Error:* There has been an API Error. Please try again later.`);
     }
 
     var message = `
@@ -65,12 +67,7 @@ module.exports = async (BloomBot, mags) => {
 ║⦁ 💯 Subreddit Id: ${mgdata.meta.sub_reddit_id || "Not available"}
 ║⦁ 🌐 Link: ${mgdata.meta.web_link || "Not available"}
 ╚═══════⋑`;
-    await BloomBot.imagebutton(
-      BloomBot,
-      mags,
-      message,
-      mgdata.meta.thumbnail
-    );
+    await BloomBot.imagebutton(BloomBot, mags, message, mgdata.meta.thumbnail);
   } catch (error) {
     return BloomBot.handlerror(BloomBot, mags, error);
   }

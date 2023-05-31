@@ -56,15 +56,13 @@ module.exports = async (BloomBot, mags) => {
                 },
               });
               return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.`);
+
+*❌Error:* There has been an API Error. Please try again later.`);
             } else
               await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for @${
-                  BloomBot.Tname || BloomBot.pushname
-                }:*
+                `*🌻Here, ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
 ║⦁ 💡Title: ${mgdata.meta.title || null}

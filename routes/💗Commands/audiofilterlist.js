@@ -28,8 +28,6 @@ module.exports = async (BloomBot, mags) => {
 > ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 
 
-
-
 ┌『 *📢${fpth.toUpperCase()}📢* 』
 │║⦁ ${BloomBot.prefix}panning
 │║⦁ ${BloomBot.prefix}bassboost

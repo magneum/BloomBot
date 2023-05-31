@@ -19,10 +19,9 @@ module.exports = async (BloomBot, mags, error) => {
   console.log("❗Error: " + BloomBot.command.toUpperCase() + " :" + error);
   return mags.reply(
     `*😥Apologies:* _${BloomBot.pushname}_
-*❌Error* 
-> _Please try again later._
-
-*🐞Bug* 
+    
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:*
 > ${error}`
   );
 };

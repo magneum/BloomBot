@@ -53,10 +53,9 @@ module.exports = async (BloomBot, mags) => {
           }\n*📢ChatId:* ${mags.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.
 
-*🐞 Bug* 
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:* 
 > ${error}`);
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           var Thumb = await BloomBot.getBuffer(BloomBot.display);

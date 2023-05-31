@@ -27,9 +27,9 @@ module.exports = async (BloomBot, mags, update, store) => {
         (error, banCheck) => {
           if (error) {
             return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error*
-> There has been an API Error. Please try again later.
-*🐞 Bug*
+
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:*
 > ${error}`);
           }
           BloomBot.userBanCheck.findOne(
@@ -39,9 +39,9 @@ module.exports = async (BloomBot, mags, update, store) => {
             async (error, groupCheck) => {
               if (error) {
                 return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-*❌ Error*
-> There has been an API Error. Please try again later.
-*🐞 Bug*
+
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:*
 > ${error}`);
               }
               if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
@@ -93,9 +93,7 @@ module.exports = async (BloomBot, mags, update, store) => {
                   mags.chat,
                   {
                     gifPlayback: true,
-                    video: BloomBot.fs.readFileSync(
-                      "./public/BloomBot/BloomBot (8)_white.png"
-                    ),
+                    video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
                     caption: `*📢Maintenance Mode On*
 *😥Apologies:* _${BloomBot.pushname}_
 > come back another time`,

@@ -28,14 +28,13 @@ module.exports = async (BloomBot, mags) => {
     var magData = response.data;
     console.log(magData);
     if (!magData.meta.url) {
-      // Handle API error
       await BloomBot.sendMessage(mags.chat, {
         react: { text: "❌", key: mags.key },
       });
       return mags.reply(
         `*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error*
-> An API error has occurred. Please try again later.`
+
+*❌Error:* There has been an API Error. Please try again later.`
       );
     }
     var resultFilename = magData.resp.id + ".mp4";
@@ -51,12 +50,10 @@ module.exports = async (BloomBot, mags) => {
       .on("end", async () => {
         var mentionedUser = "";
         if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
-          // Check if a user is mentioned in the command arguments
           var mention = BloomBot.mentionByTag;
           mentionedUser =
             (await mention[0]) || mags.msg.contextInfo.participant;
         } else if (BloomBot.mentionByReply) {
-          // Check if a user is mentioned by replying to their message
           mentionedUser =
             mags.mtype === "extendedTextMessage" &&
             mags.message.extendedTextMessage.contextInfo != null
@@ -70,7 +67,6 @@ module.exports = async (BloomBot, mags) => {
 *📢From:* ${BloomBot.pushname}
 *🌻for:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
-        // Send the generated video and caption to the chat
         await BloomBot.sendMessage(
           mags.chat,
           {
@@ -81,7 +77,6 @@ module.exports = async (BloomBot, mags) => {
           },
           { quoted: mags }
         );
-        // Remove the generated video file
         BloomBot.fs.unlinkSync(resultFilename);
       })
       .on("error", (error) => console.log(error))

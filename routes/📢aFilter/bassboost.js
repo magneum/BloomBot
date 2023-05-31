@@ -41,7 +41,10 @@ module.exports = async (BloomBot, mags) => {
 
     if (/audio/.test(BloomBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted, random);
+      media = await BloomBot.downloadAndSaveMediaMessage(
+        BloomBot.quoted,
+        random
+      );
       BloomBot.exec(
         `${BloomBot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
@@ -51,10 +54,9 @@ module.exports = async (BloomBot, mags) => {
             }\n*📢ChatId:* ${mags.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
-*❌ Error* 
-> There has been an API Error. Please try again later.
 
-*🐞 Bug* 
+*❌Error:* There has been an API Error. Please try again later.
+*🐞Bug:* 
 > ${error}`);
           } else {
             var Thumb = await BloomBot.getBuffer(BloomBot.display);
