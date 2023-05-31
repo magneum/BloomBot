@@ -22,15 +22,16 @@ if (fs.existsSync(".env")) {
 } else {
   require("dotenv");
 }
-global.MONGODB_URL = process.env.MONGODB_URL;
-global.REDIS_URL = process.env.REDIS_URL;
-global.verbose = process.env.verbose || "0";
 var sudo = process.env.sudo;
-if (!sudo) sudo = "918436686758,917430922909";
-global.upVersion = process.env.upVersion;
-global.Showlogger = process.env.Showlogger;
-global.ShowInfo = process.env.ShowInfo;
 global.sudo = sudo.split(",");
+global.ShowInfo = process.env.ShowInfo;
+global.upVersion = process.env.upVersion;
+global.REDIS_URL = process.env.REDIS_URL;
+global.Showlogger = process.env.Showlogger;
+global.MONGODB_URL = process.env.MONGODB_URL;
+if (!sudo) sudo = "918436686758,917430922909";
+global.verbose = process.env.verbose || "0";
+global.bloom_mode = process.env.bloom_mode || "default";
 global.PORT = process.env.PORT || Math.floor(Math.random() * 65535) + 10;
 global.pgdb = process.env.pgdb;
 global.prefix = process.env.prefix || "#";

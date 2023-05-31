@@ -288,6 +288,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
   BloomBot.Showlogger = Showlogger;
+  BloomBot.bloom_mode = bloom_mode;
   BloomBot.packname = packname;
   BloomBot.ShowInfo = ShowInfo;
   BloomBot.author = author;
