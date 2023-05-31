@@ -21,20 +21,21 @@ var tpth = ppth.basename(__filename);
 var fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    BloomBot.magfetch(BloomBot, "https://magneum.vercel.app/api/sfw?q=bonk").then(
-      async (response) => {
-        var mgdata = response.data;
-        BloomBot.logger.info(mgdata);
-        return await BloomBot.imagebutton(
-          BloomBot,
-          mags,
-          `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+    BloomBot.magfetch(
+      BloomBot,
+      "https://magneum.vercel.app/api/sfw?q=bonk"
+    ).then(async (response) => {
+      var mgdata = response.data;
+      BloomBot.logger.info(mgdata);
+      return await BloomBot.imagebutton(
+        BloomBot,
+        mags,
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📚Topic:* ${mgdata.meta.topic}
 *❓Query*: ${mgdata.meta.query}`,
-          mgdata.meta.url
-        );
-      }
-    );
+        mgdata.meta.url
+      );
+    });
   } catch (error) {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
