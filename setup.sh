@@ -59,7 +59,7 @@ update_packages_arch() {
 # Install packages (Debian-based)
 install_packages_debian() {
   local packages=(
-    jq git curl wget ffmpeg bpm-tools opus-tools nodejs npm python3-pip libfdk-aac-dev
+    jq git curl wget ffmpeg bpm-tools opus-tools nodejs npm python3-pip
   )
 
   for package in "${packages[@]}"; do
@@ -94,17 +94,21 @@ install_packages_arch() {
   done
 }
 
+
 # Install or update npm
 install_or_update_npm() {
   if command_exists npm; then
     print_color "$YELLOW" "Updating npm..."
-    sudo npm install -g npm || {
+    sudo npm install -g npm@latest || {
       print_color "$RED" "Failed to update npm. Exiting..."
       exit 1
     }
   else
-    print_color "$RED" "npm is not installed. Please install it and run the script again."
-    exit 1
+    print_color "$YELLOW" "Installing npm..."
+    sudo apt-get install npm -y || {
+      print_color "$RED" "Failed to install npm. Exiting..."
+      exit 1
+    }
   fi
 }
 
@@ -163,6 +167,9 @@ build_project() {
   }
 }
 
+# Clear the console
+clear
+
 # Get the distribution name
 distribution=$(get_distribution)
 
@@ -194,4 +201,5 @@ case "$distribution" in
     ;;
 esac
 
+# Show all scripts' choices from package.json in colored
 print_color "$GREEN" "Setup completed successfully."
