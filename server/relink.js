@@ -285,9 +285,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
   BloomBot.Showlogger = Showlogger;
   BloomBot.packname = packname;
-  BloomBot.pgdb = DATABASE_URL;
   BloomBot.ShowInfo = ShowInfo;
-  BloomBot.MONGODB_URL = MONGODB_URL;
   BloomBot.author = author;
   BloomBot.prefix = prefix;
   BloomBot.sudo = sudo;

@@ -18,9 +18,9 @@
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
-const dbConfig = require("@/auth/dbConfig");
 var cleanDatabase = require("./purgepg");
 var gitPull = require("@/utils/gitPull");
+const dbConfig = require("@/auth/dbConfig");
 var {
   default: Bloom_bot_client,
   DisconnectReason,
@@ -38,7 +38,7 @@ var pino = require("pino");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var { exec } = require("child_process");
-var useRemoteFileAuthState = require("./dbAuth");
+var useRemoteFileAuthState = require("@/auth/dbAuth");
 let PhoneNumber = require("awesome-phonenumber");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
