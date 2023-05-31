@@ -1,72 +1,62 @@
-const progress = require("progress-estimator");
+const logger = require("progress-estimator")();
 const youtubedl = require("youtube-dl-exec");
 const axios = require("axios");
 const chalk = require("chalk");
 
-async function fetchDataAndDownloadAudio() {
+module.exports = async (query) => {
   try {
     console.log(chalk.yellow("Fetching data from API..."));
-    const response = await axios.get(
-      "https://magneum.vercel.app/api/youtube_sr?q=jaan nisar"
-    );
-    const searchData = response.data.youtube_search;
-    console.log(searchData);
-    const foundItems = [searchData];
-    let audioLink = await youtubedl(foundItems[0].LINK, {
-      noWarnings: true,
+    const apiUrl = `https://magneum.vercel.app/api/youtube_sr?q=${query}`;
+    const response = await axios.get(apiUrl);
+    const { youtube_search: searchData } = response.data;
+    if (!searchData || searchData.length === 0) {
+      return {
+        success: false,
+        error: "No search results found.",
+      };
+    }
+    const promise = youtubedl(searchData[0].LINK, {
       dumpSingleJson: true,
-      preferFreeformats: true,
-      noCheckCertificates: true,
-      addHeader: ["referer:youtube.com", "user-agent:googlebot"],
     });
-    console.log(chalk.yellow("Downloading audio..."));
-    const audioDownload = progress(audioLink, "Obtaining: ", {
-      format:
-        chalk.cyan("{bar}") +
-        " {percentage}% | ETA: {eta_formatted} | {value}/{total}",
-    });
-    const { formats } = audioDownload;
-    const ultralowFormats = formats.filter(
+    const { formats } = await logger(promise, "📢: Obtaining YouTube Data...");
+    if (!formats || formats.length === 0) {
+      return {
+        success: false,
+        error: "No audio formats available.",
+      };
+    }
+    const ultralowFormat = formats.find(
       (format) => format.format_id === "599" || format.format_id === "600"
     );
-    const ultralowFormat = ultralowFormats[0] || ultralowFormats;
-    const lowFormats = formats.filter(
+    const lowFormat = formats.find(
       (format) =>
         format.format_id === "139" ||
         format.format_id === "249" ||
         format.format_id === "250"
     );
-    const lowFormat = lowFormats[0] || lowFormats;
-    const mediumFormats = formats.filter(
+    const mediumFormat = formats.find(
       (format) => format.format_id === "140" || format.format_id === "251"
     );
-    const mediumFormat = mediumFormats[0] || mediumFormats;
-    if (mediumFormat.width !== undefined) {
-      audioLink = mediumFormat.url;
-    } else if (lowFormat.width !== undefined) {
-      audioLink = lowFormat.url;
-    } else if (ultralowFormat.width !== undefined) {
-      audioLink = ultralowFormat.url;
+    const audiolink =
+      (mediumFormat && mediumFormat.width && mediumFormat.url) ||
+      (lowFormat && lowFormat.width && lowFormat.url) ||
+      (ultralowFormat && ultralowFormat.width && ultralowFormat.url);
+    if (!audiolink) {
+      return {
+        success: false,
+        error: "Unable to determine download link.",
+      };
     }
-    console.log(chalk.green("Download complete!"));
+    console.log(chalk.green("📢: YouTube Fetching Completed..."));
     return {
       success: true,
-      searchResult: foundItems[0],
-      audio: audioLink,
+      audio: audiolink,
     };
   } catch (error) {
-    console.error(chalk.red("Error:"), error);
+    console.error(chalk.red("Error:"), error.message);
     return {
       success: false,
       error: error.message,
     };
   }
-}
-
-fetchDataAndDownloadAudio()
-  .then((result) => {
-    console.log(chalk.green("Result:"), result);
-  })
-  .catch((error) => {
-    console.error(chalk.red("Error:"), error);
-  });
+};
