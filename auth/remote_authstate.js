@@ -16,21 +16,35 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs");
+const colors = require("colors");
 const winston = require("winston");
 const { DataTypes, Model, Sequelize } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
+
 const loggingLevel = process.env.verbose_level === "info" ? "info" : "debug";
+
 const logger = winston.createLogger({
   level: loggingLevel,
   format: winston.format.simple(),
-  transports: [new winston.transports.Console()],
+  transports: [
+    new winston.transports.Console({
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.simple()
+      ),
+    }),
+  ],
 });
-const log = (message, level = "info") => {
-  logger.log(level, message);
+
+const log = (message, level = "info", color = "cyan") => {
+  const coloredMessage = colors[color](message);
+  logger.log(level, coloredMessage);
 };
+
 const DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
@@ -243,7 +257,9 @@ const remote_authstate = async () => {
             const key = KEY_MAP[_key];
 
             log(
-              `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
+              `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`,
+              "info",
+              "yellow" // Specify the color for this log message
             );
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
@@ -257,4 +273,5 @@ const remote_authstate = async () => {
   };
 };
 
+remote_authstate();
 module.exports = remote_authstate;
