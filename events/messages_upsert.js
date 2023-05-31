@@ -19,7 +19,7 @@ require("@/logger/config");
 const logger = require("@/logger");
 const { mMake } = require("@/server/obFunc");
 
-module.exports = async (BloomBot, update, store) => {
+module.exports = async (BloomBot, store) => {
   BloomBot.ev.on("messages.upsert", async (update) => {
     oText = update.messages[0];
     if (!oText.message) return;

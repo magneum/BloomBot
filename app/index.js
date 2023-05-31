@@ -121,12 +121,12 @@ async function magneum() {
     });
     process.exit(0);
   }
-  require("@/events/cb_call")(BloomBot, update, store);
+  require("@/events/cb_call")(BloomBot, store);
+  require("@/events/contacts_update")(BloomBot, store);
+  require("@/events/messages_upsert")(BloomBot, store);
+  require("@/events/connection_update")(BloomBot, store);
   require("@/events/creds_update")(BloomBot, saveCreds);
-  require("@/events/contacts_update")(BloomBot, update, store);
-  require("@/events/messages_upsert")(BloomBot, update, store);
-  require("@/events/connection_update")(BloomBot, update, store);
-  require("@/events/group_participants_update")(BloomBot, update, store);
+  require("@/events/group_participants_update")(BloomBot, store);
 
   // BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
   // BloomBot.ev.on("connection.update", async (update) => {

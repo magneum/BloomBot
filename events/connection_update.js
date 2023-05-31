@@ -21,7 +21,7 @@ const { Boom } = require("@hapi/boom");
 const purgepg = require("@/app/purgepg");
 const { DisconnectReason } = require("@adiwajshing/baileys");
 
-module.exports = async (BloomBot, update, store) => {
+module.exports = async (BloomBot, store) => {
   BloomBot.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,

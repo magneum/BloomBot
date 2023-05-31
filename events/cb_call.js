@@ -18,7 +18,7 @@
 require("@/logger/config");
 const logger = require("@/logger");
 
-module.exports = async (BloomBot, update, store) => {
+module.exports = async (BloomBot, store) => {
   BloomBot.ws.on("CB:call", async (update) => {
     const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));

@@ -18,7 +18,7 @@
 require("@/logger/config");
 const logger = require("@/logger");
 
-module.exports = async (BloomBot, update, store) => {
+module.exports = async (BloomBot, store) => {
   BloomBot.ev.on("group-participants.update", async (update) => {
     let metadata = await BloomBot.groupMetadata(update.id);
     let participants = update.participants;
