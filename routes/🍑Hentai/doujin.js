@@ -46,9 +46,9 @@ module.exports = async (BloomBot, vChat) => {
             BloomBot,
             "https://magneum.vercel.app/api/hentai?q=" + fpth
           ).then(async (response) => {
-            var fetchedata = response.data;
-            console.log(fetchedata);
-            if (!fetchedata[0].meta.url) {
+            var mgdata = response.data;
+            console.log(mgdata);
+            if (!mgdata[0].meta.url) {
               await BloomBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
@@ -67,9 +67,9 @@ module.exports = async (BloomBot, vChat) => {
                 vChat,
                 `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
 
-> *Description:* ${fetchedata[0].meta.description}
+> *Description:* ${mgdata[0].meta.description}
 > *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
-                fetchedata[0].meta.url
+                mgdata[0].meta.url
               );
           });
         }

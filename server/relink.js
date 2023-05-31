@@ -172,6 +172,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
   BloomBot.dare = require("@/public/dare.json");
   BloomBot.truth = require("@/public/truth.json");
   BloomBot.magfetch = require("@/server/magfetch");
+  BloomBot.YouTubeAudio = require("@/utils/YouAudio");
 
   BloomBot.os = require("os");
   BloomBot.fs = require("fs");

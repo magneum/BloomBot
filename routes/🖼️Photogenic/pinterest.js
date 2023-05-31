@@ -43,19 +43,19 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot,
       "https://magneum.vercel.app/api/pinterest?q=" + BloomBot.args.join(" ")
     ).then(async (response) => {
-      var fetchedata = response.data;
-      console.log(fetchedata);
+      var mgdata = response.data;
+      console.log(mgdata);
 
       var download =
-        fetchedata.meta.links[
-          Math.floor(Math.random() * fetchedata.meta.links.length)
+        mgdata.meta.links[
+          Math.floor(Math.random() * mgdata.meta.links.length)
         ];
       return await BloomBot.imagebutton(
         BloomBot,
         vChat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
-*Topic*: ${fetchedata.meta.topic}
-*Query*: ${fetchedata.meta.query}`,
+*Topic*: ${mgdata.meta.topic}
+*Query*: ${mgdata.meta.query}`,
         download
       );
     });

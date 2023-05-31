@@ -78,38 +78,44 @@ module.exports = async (BloomBot, vChat) => {
           }
         );
 
-        var stream = ytdl(mgdata.youtube_search[0].LINK, {
-          filter: (info) =>
-            info.audioBitrate == 160 || info.audioBitrate == 128,
-        }).pipe(BloomBot.fs.createWriteStream(`./${mgdata.uuid}`));
-        await new Promise((resolve, reject) => {
-          stream.on("error", reject);
-          stream.on("finish", resolve);
-        });
-        await BloomBot.sendMessage(
-          vChat.chat,
-          {
-            audio: BloomBot.fs.readFileSync(`./${mgdata.uuid}`),
-            mimetype: "audio/mpeg",
-            fileName: mgdata.youtube_search[0].TITLE + ".mp3",
-            headerType: 4,
-            contextInfo: {
-              externalAdReply: {
-                title: mgdata.youtube_search[0].TITLE,
-                body: "ⒸBloomBot by magneum™",
-                renderLargerThumbnail: true,
-                thumbnailUrl: mgdata.youtube_search[0].THUMB,
-                mediaUrl: mgdata.youtube_search[0].LINK,
-                mediaType: 1,
-                thumbnail: await BloomBot.getBuffer(
-                  mgdata.youtube_search[0].HQ_IMAGE
-                ),
-                sourceUrl: "https://bit.ly/magneum",
-              },
-            },
-          },
-          { quoted: vChat }
-        ).then(BloomBot.fs.unlinkSync(`./${mgdata.uuid}`));
+        BloomBot.YouTubeAudio(mgdata.youtube_search[0].LINK)
+          .then(async (AudioLink) => {
+            if (AudioLink.status == false) {
+              return BloomBot.handlerror(
+                BloomBot,
+                vChat,
+                "Sorry no audio found!"
+              );
+            } else {
+              await BloomBot.sendMessage(
+                vChat.chat,
+                {
+                  headerType: 4,
+                  mimetype: "audio/mpeg",
+                  audio: { url: AudioLink.audio },
+                  fileName: mgdata.youtube_search[0].TITLE + ".mp3",
+                  contextInfo: {
+                    externalAdReply: {
+                      mediaType: 1,
+                      body: "ⒸBloomBot by magneum™",
+                      renderLargerThumbnail: true,
+                      sourceUrl: "https://bit.ly/magneum",
+                      title: mgdata.youtube_search[0].TITLE,
+                      mediaUrl: mgdata.youtube_search[0].LINK,
+                      thumbnailUrl: mgdata.youtube_search[0].THUMB,
+                      thumbnail: await BloomBot.getBuffer(
+                        mgdata.youtube_search[0].HQ_IMAGE
+                      ),
+                    },
+                  },
+                },
+                { quoted: vChat }
+              );
+            }
+          })
+          .catch((error) => {
+            return BloomBot.handlerror(BloomBot, vChat, error);
+          });
       });
   } catch (error) {
     return BloomBot.handlerror(BloomBot, vChat, error);

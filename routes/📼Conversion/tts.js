@@ -76,12 +76,12 @@ module.exports = async (BloomBot, vChat) => {
           "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         },
       }).then(async (response) => {
-        var fetchedata = response.data;
-        console.log(fetchedata);
+        var mgdata = response.data;
+        console.log(mgdata);
         return await BloomBot.sendMessage(
           vChat.chat,
           {
-            audio: { url: fetchedata.meta.url },
+            audio: { url: mgdata.meta.url },
             mimetype: "audio/mpeg",
             fileName: "TalkToSpeech" + ".mp3",
             headerType: 4,

@@ -49,13 +49,13 @@ module.exports = async (BloomBot, vChat) => {
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
       },
     }).then(async (response) => {
-      var fetchedata = response.data;
-      console.log(fetchedata);
+      var mgdata = response.data;
+      console.log(mgdata);
       await BloomBot.imagebutton(
         BloomBot,
         vChat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
-> ${fetchedata.meta.url}`,
+> ${mgdata.meta.url}`,
         await BloomBot.akaneko.nsfw.ass()
       );
     });

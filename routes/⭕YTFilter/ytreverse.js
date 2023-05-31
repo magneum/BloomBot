@@ -77,7 +77,7 @@ ${description}`;
         contextInfo: {
           externalAdReply: {
             title: searchData.TITLE,
-            body: "This result is powered by magneum™'s YT-Filter.",
+            body: "ⒸBloomBot by magneum™",
             renderLargerThumbnail: true,
             thumbnailUrl: searchData.HQ_IMAGE,
             mediaUrl,
@@ -96,7 +96,7 @@ ${description}`;
       contextInfo: {
         externalAdReply: {
           title: searchData.TITLE,
-          body: "This result is powered by magneum™'s YT-Filter.",
+          body: "ⒸBloomBot by magneum™",
           renderLargerThumbnail: true,
           thumbnailUrl: searchData.HQ_IMAGE,
           mediaUrl,

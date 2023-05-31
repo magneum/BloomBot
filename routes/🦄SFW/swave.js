@@ -23,15 +23,15 @@ module.exports = async (BloomBot, vChat) => {
   try {
     BloomBot.magfetch(BloomBot, "https://magneum.vercel.app/api/sfw?q=wave").then(
       async (response) => {
-        var fetchedata = response.data;
-        console.log(fetchedata);
+        var mgdata = response.data;
+        console.log(mgdata);
         return await BloomBot.imagebutton(
           BloomBot,
           vChat,
           `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
-*Topic*: ${fetchedata.meta.topic}
-*Query*: ${fetchedata.meta.query}`,
-          fetchedata.meta.url
+*Topic*: ${mgdata.meta.topic}
+*Query*: ${mgdata.meta.query}`,
+          mgdata.meta.url
         );
       }
     );

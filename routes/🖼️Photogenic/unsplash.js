@@ -43,20 +43,20 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot,
       "https://magneum.vercel.app/api/unsplash?q=" + BloomBot.args.join(" ")
     ).then(async (response) => {
-      var fetchedata = response.data;
-      console.log(fetchedata);
+      var mgdata = response.data;
+      console.log(mgdata);
       return await BloomBot.imagebutton(
         BloomBot,
         vChat,
         `*🌻Here, ${fpth} for ${BloomBot.pushname || BloomBot.Tname}:*
-*Topic*: ${fetchedata.meta.topic}
-*Query*: ${fetchedata.meta.query}
-*Width*: ${fetchedata.meta.width}
-*Height*: ${fetchedata.meta.height}
-*Color*: ${fetchedata.meta.color}
-*Description*: ${fetchedata.meta.description || null}
-*Alt-Desc*: ${fetchedata.meta.alt_description || null}`,
-        fetchedata.meta.images[0]._raw
+*Topic*: ${mgdata.meta.topic}
+*Query*: ${mgdata.meta.query}
+*Width*: ${mgdata.meta.width}
+*Height*: ${mgdata.meta.height}
+*Color*: ${mgdata.meta.color}
+*Description*: ${mgdata.meta.description || null}
+*Alt-Desc*: ${mgdata.meta.alt_description || null}`,
+        mgdata.meta.images[0]._raw
       );
     });
   } catch (error) {

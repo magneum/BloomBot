@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 var fs = require("fs-extra");
 var request = require("request");
-var forfetchedata = require("form-data");
+var formgdata = require("form-data");
 var topdf = require("image-to-pdf");
 var nhentai = require("nhentai-node-api");
 var { default: Axios } = require("axios");
@@ -25,7 +25,7 @@ var { default: Axios } = require("axios");
 var uploadFile = (path) =>
   new Promise((resolve, reject) => {
     var fs = require("fs");
-    var fd = new forfetchedata();
+    var fd = new formgdata();
     fd.append("file", fs.createReadStream(path));
     Axios({
       method: "POST",

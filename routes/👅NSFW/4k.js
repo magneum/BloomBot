@@ -37,8 +37,8 @@ module.exports = async (BloomBot, vChat) => {
       BloomBot,
       `https://magneum.vercel.app/api/nsfw?q=${fpth}`
     );
-    var fetchedata = response.data;
-    if (!fetchedata.meta.thumbnail) {
+    var mgdata = response.data;
+    if (!mgdata.meta.thumbnail) {
       await BloomBot.sendMessage(vChat.chat, {
         react: { text: "❌", key: vChat.key },
       });
@@ -51,25 +51,25 @@ module.exports = async (BloomBot, vChat) => {
 *🌻 Here is ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
-║⦁ 💡 Title: ${fetchedata.meta.title || "Not available"}
-║⦁ 🖊️ Author: ${fetchedata.meta.author || "Not available"}
-║⦁ ❣️ Topic: ${fetchedata.meta.topic || "Not available"}
+║⦁ 💡 Title: ${mgdata.meta.title || "Not available"}
+║⦁ 🖊️ Author: ${mgdata.meta.author || "Not available"}
+║⦁ ❣️ Topic: ${mgdata.meta.topic || "Not available"}
 ╚══☰
 ┌╔═☰
 ║>  *❓ META INFO ❓*
-║⦁ 🎊 Status: ${fetchedata.meta.status || "Not available"}
-║⦁ 🔐 UUId: ${fetchedata.meta.uuid || "Not available"}
-║⦁ 🗓️ Date Created: ${fetchedata.meta.date_create || "Not available"}
-║⦁ 🧀 Query: ${fetchedata.meta.query || "Not available"}
-║⦁ 📢 Domain: ${fetchedata.meta.domain || "Not available"}
-║⦁ 💯 Subreddit Id: ${fetchedata.meta.sub_reddit_id || "Not available"}
-║⦁ 🌐 Link: ${fetchedata.meta.web_link || "Not available"}
+║⦁ 🎊 Status: ${mgdata.meta.status || "Not available"}
+║⦁ 🔐 UUId: ${mgdata.meta.uuid || "Not available"}
+║⦁ 🗓️ Date Created: ${mgdata.meta.date_create || "Not available"}
+║⦁ 🧀 Query: ${mgdata.meta.query || "Not available"}
+║⦁ 📢 Domain: ${mgdata.meta.domain || "Not available"}
+║⦁ 💯 Subreddit Id: ${mgdata.meta.sub_reddit_id || "Not available"}
+║⦁ 🌐 Link: ${mgdata.meta.web_link || "Not available"}
 ╚═══════⋑`;
     await BloomBot.imagebutton(
       BloomBot,
       vChat,
       message,
-      fetchedata.meta.thumbnail
+      mgdata.meta.thumbnail
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, vChat, error);

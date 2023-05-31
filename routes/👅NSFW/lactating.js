@@ -46,9 +46,9 @@ module.exports = async (BloomBot, vChat) => {
             BloomBot,
             "https://magneum.vercel.app/api/nsfw?q=" + fpth
           ).then(async (response) => {
-            var fetchedata = response.data;
-            console.log(fetchedata);
-            if (!fetchedata.meta.thumbnail) {
+            var mgdata = response.data;
+            console.log(mgdata);
+            if (!mgdata.meta.thumbnail) {
               await BloomBot.sendMessage(vChat.chat, {
                 react: {
                   text: "❌",
@@ -65,21 +65,21 @@ module.exports = async (BloomBot, vChat) => {
                 `*🌻Here, ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
-║⦁ 💡Title: ${fetchedata.meta.title || null}
-║⦁ 🖊️Author: ${fetchedata.meta.author || null}
-║⦁ ❣️Topic: ${fetchedata.meta.topic || null}
+║⦁ 💡Title: ${mgdata.meta.title || null}
+║⦁ 🖊️Author: ${mgdata.meta.author || null}
+║⦁ ❣️Topic: ${mgdata.meta.topic || null}
 ╚══☰
 ┌╔═☰
 ║>  *❓META INFO❓*
-║⦁ 🎊Status: ${fetchedata.meta.status || null}
-║⦁ 🔐Uuid: ${fetchedata.meta.uuid || null}
-║⦁ 🗓️Date_create: ${fetchedata.meta.date_create || null}
-║⦁ 🧀Query: ${fetchedata.meta.query || null}
-║⦁ 📢Domain: ${fetchedata.meta.domain || null}
-║⦁ 💯Sub_reddit_id: ${fetchedata.meta.sub_reddit_id || null}
-║⦁ 🌐Link: ${fetchedata.meta.web_link || null}
+║⦁ 🎊Status: ${mgdata.meta.status || null}
+║⦁ 🔐Uuid: ${mgdata.meta.uuid || null}
+║⦁ 🗓️Date_create: ${mgdata.meta.date_create || null}
+║⦁ 🧀Query: ${mgdata.meta.query || null}
+║⦁ 📢Domain: ${mgdata.meta.domain || null}
+║⦁ 💯Sub_reddit_id: ${mgdata.meta.sub_reddit_id || null}
+║⦁ 🌐Link: ${mgdata.meta.web_link || null}
 ╚═══════⋑`,
-                fetchedata.meta.thumbnail
+                mgdata.meta.thumbnail
               );
           });
         }

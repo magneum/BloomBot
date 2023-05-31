@@ -86,9 +86,9 @@ app.get("/spotify", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var fetchedata = response.data;
+      var mgdata = response.data;
       try {
-        _DROP = youtubedl(fetchedata.meta.url, {
+        _DROP = youtubedl(mgdata.meta.url, {
           noWarnings: true,
           dumpSingleJson: true,
           preferFreeformats: true,
@@ -96,7 +96,7 @@ app.get("/spotify", async (request, response) => {
           addHeader: ["referer:youtube.com", "user-agent:googlebot"],
         });
       } catch (error) {
-        _DROP = Tube(fetchedata.meta.url, {
+        _DROP = Tube(mgdata.meta.url, {
           noWarnings: true,
           dumpSingleJson: true,
           preferFreeformats: true,
@@ -229,21 +229,21 @@ app.get("/metadata", async (request, response) => {
         ],
       },
     }).then(async (response) => {
-      var fetchedata = response.data;
+      var mgdata = response.data;
       _FOUND = [
         {
-          YT_Id: fetchedata.youtube_search.YT_Id,
-          TITLE: fetchedata.youtube_search.TITLE,
-          UPLOADED: fetchedata.youtube_search.UPLOADED,
-          VIEWS: fetchedata.youtube_search.VIEWS,
-          DURATION_FULL: fetchedata.youtube_search.DURATION_FULL,
-          DURATION_SECONDS: fetchedata.youtube_search.DURATION_SECONDS,
-          AUTHOR_NAME: fetchedata.youtube_search.AUTHOR_NAME,
-          AUTHOR_CHANNEL: fetchedata.youtube_search.AUTHOR_CHANNEL,
-          LINK: fetchedata.youtube_search.LINK,
-          THUMB: fetchedata.youtube_search.THUMB,
-          HQ_IMAGE: fetchedata.youtube_search.HQ_IMAGE,
-          DESCRIPTION: fetchedata.youtube_search.DESCRIPTION,
+          YT_Id: mgdata.youtube_search.YT_Id,
+          TITLE: mgdata.youtube_search.TITLE,
+          UPLOADED: mgdata.youtube_search.UPLOADED,
+          VIEWS: mgdata.youtube_search.VIEWS,
+          DURATION_FULL: mgdata.youtube_search.DURATION_FULL,
+          DURATION_SECONDS: mgdata.youtube_search.DURATION_SECONDS,
+          AUTHOR_NAME: mgdata.youtube_search.AUTHOR_NAME,
+          AUTHOR_CHANNEL: mgdata.youtube_search.AUTHOR_CHANNEL,
+          LINK: mgdata.youtube_search.LINK,
+          THUMB: mgdata.youtube_search.THUMB,
+          HQ_IMAGE: mgdata.youtube_search.HQ_IMAGE,
+          DESCRIPTION: mgdata.youtube_search.DESCRIPTION,
         },
       ];
       var _DROP;
