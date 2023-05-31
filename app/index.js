@@ -18,12 +18,10 @@
 require("../module-alias");
 require("@/logger/config");
 const logger = require("@/logger");
-const purgepg = require("./purgepg");
 const gitPull = require("@/utils/gitPull");
 const dbConfig = require("@/auth/dbConfig");
 const {
   default: Bloom_bot_client,
-  DisconnectReason,
   generateforwardMessageContent,
   prepareWAMessageMedia,
   generateWAMessageFromContent,
@@ -36,7 +34,6 @@ const fs = require("fs");
 const path = require("path");
 const pino = require("pino");
 const monGoose = require("mongoose");
-const { Boom } = require("@hapi/boom");
 const { exec } = require("child_process");
 let PhoneNumber = require("awesome-phonenumber");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
@@ -121,12 +118,12 @@ async function magneum() {
     });
     process.exit(0);
   }
-  require("@/events/cb_call")(BloomBot, store);
-  require("@/events/contacts_update")(BloomBot, store);
-  require("@/events/messages_upsert")(BloomBot, store);
-  require("@/events/connection_update")(BloomBot, store);
-  require("@/events/creds_update")(BloomBot, saveCreds);
-  require("@/events/group_participants_update")(BloomBot, store);
+  require("@/events/cb_call")(BloomBot, store, logger);
+  require("@/events/contacts_update")(BloomBot, store, logger);
+  require("@/events/messages_upsert")(BloomBot, store, logger);
+  require("@/events/connection_update")(BloomBot, store, logger);
+  require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  require("@/events/group_participants_update")(BloomBot, store, logger);
 
   // BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
   // BloomBot.ev.on("connection.update", async (update) => {

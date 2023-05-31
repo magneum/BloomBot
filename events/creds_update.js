@@ -16,9 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
-
-module.exports = async (BloomBot, saveCreds) => {
+module.exports = async (BloomBot, saveCreds, logger) => {
   BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
   return BloomBot;
 };

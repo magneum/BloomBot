@@ -16,9 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
-
-module.exports = async (BloomBot, store) => {
+module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("contacts.update", async (update) => {
     for (let contact of update) {
       let jid = BloomBot.decodeJid(contact.id);

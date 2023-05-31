@@ -16,9 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
-
-module.exports = async (BloomBot, store) => {
+module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("group-participants.update", async (update) => {
     let metadata = await BloomBot.groupMetadata(update.id);
     let participants = update.participants;

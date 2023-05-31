@@ -16,12 +16,10 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
 const { Boom } = require("@hapi/boom");
 const purgepg = require("@/app/purgepg");
 const { DisconnectReason } = require("@adiwajshing/baileys");
-
-module.exports = async (BloomBot, store) => {
+module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,

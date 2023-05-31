@@ -16,10 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
 const { mMake } = require("@/server/obFunc");
-
-module.exports = async (BloomBot, store) => {
+module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("messages.upsert", async (update) => {
     oText = update.messages[0];
     if (!oText.message) return;

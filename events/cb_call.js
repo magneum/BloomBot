@@ -16,9 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-const logger = require("@/logger");
-
-module.exports = async (BloomBot, store) => {
+module.exports = async (BloomBot, store, logger) => {
   BloomBot.ws.on("CB:call", async (update) => {
     const sleep = async (ms) => {
       return new Promise((resolve) => setTimeout(resolve, ms));
