@@ -108,8 +108,8 @@ async function magneum() {
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/messages_upsert")(BloomBot, store, logger);
-  require("@/events/connection_update")(BloomBot, store, logger);
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  require("@/events/connection_update")(BloomBot, magneum, logger);
   require("@/events/group_participants_update")(BloomBot, store, logger);
 
   setInterval(async () => {
