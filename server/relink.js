@@ -45,6 +45,7 @@ var chalk = require("chalk");
 var { tmpdir } = require("os");
 var { JSDOM } = require("jsdom");
 var { Character } = require("mailist");
+const { randomUUID } = require("crypto");
 var { readFile } = require("fs/promises");
 var { performance } = require("perf_hooks");
 var { Primbon } = require("scrape-primbon");
@@ -100,6 +101,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.performance = performance;
   // BloomBot.createWorker = createWorker;
   BloomBot.JSDOM = JSDOM;
+  BloomBot.randomUUID = randomUUID;
   BloomBot.Character = Character;
   BloomBot.execSync = execSync;
   BloomBot.spawn = spawn;

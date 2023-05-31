@@ -70,8 +70,9 @@ module.exports = async (BloomBot, mags, update, store) => {
       : "";
 
   require("./relink")(BloomBot, mags, update, store);
-  if (!mags.isGroup && BloomBot.command)
+  if (!mags.isGroup && BloomBot.command) {
     return require("@/auth/noPrivate")(BloomBot, mags, update);
+  }
   if (mags.isGroup && BloomBot.command)
     BloomBot.userBanCheck.findOne(
       {

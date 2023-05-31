@@ -16,7 +16,7 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
-exports.noPrivate = async (BloomBot, mags, update) => {
+module.exports = async (BloomBot, mags, update) => {
   if (!BloomBot.isSudo)
     await BloomBot.UserPrivate.findOne(
       {
