@@ -42,10 +42,9 @@ var bodyParser = require("body-parser");
 var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
-
-var RemoteFileAuthState = require("@/auth/RemoteFileAuthState");
 var { useRemoteFileAuthState } = require("@/auth/Database");
+var RemoteFileAuthState = require("@/auth/RemoteFileAuthState");
+var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {
