@@ -25,6 +25,8 @@ var { createInterface } = require("readline");
 var { watchFile, unwatchFile } = require("fs");
 var { setupMaster, fork } = require("cluster");
 var rl = createInterface(process.stdin, process.stdout);
+var { execSync } = require("child_process");
+
 process.removeAllListeners("warning");
 process.env.NODE_NO_WARNINGS = "1";
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -126,4 +128,12 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
+
+try {
+  execSync("sudo systemctl start redis.service");
+  console.log("Redis service started successfully.");
+} catch (error) {
+  console.error("Failed to start Redis service:", error);
+}
+
 ignite("app/index", "uptime");
