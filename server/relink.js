@@ -109,6 +109,7 @@ module.exports = async (BloomBot, vChat, update, store) => {
   BloomBot.Ship = Ship;
   BloomBot.Pokemon = Pokemon;
   BloomBot.Simp = Simp;
+  BloomBot.IShipOptions = IShipOptions;
   BloomBot.readFile = readFile;
   BloomBot.tmpdir = tmpdir;
   BloomBot.Doujin = Doujin;
