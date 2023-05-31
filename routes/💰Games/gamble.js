@@ -234,11 +234,13 @@ module.exports = async (BloomBot, mags) => {
             }
 
             if (
-              userGamble.Gambconstimeout - (Date.now() - userGamble.Gambledone) >
+              userGamble.Gambconstimeout -
+                (Date.now() - userGamble.Gambledone) >
               0
             ) {
               const time = BloomBot.ms(
-                userGamble.Gambconstimeout - (Date.now() - userGamble.Gambledone)
+                userGamble.Gambconstimeout -
+                  (Date.now() - userGamble.Gambledone)
               );
               return await BloomBot.imagebutton(
                 BloomBot,

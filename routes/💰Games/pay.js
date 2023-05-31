@@ -65,7 +65,9 @@ module.exports = async (BloomBot, mags) => {
         : "";
     receiverName = await BloomBot.getName(receiver);
     if (receiver === mags.sender) {
-      return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+      return mags.reply(`*😥Apologies:* _${
+        BloomBot.pushname || BloomBot.Tname
+      }_ 
 
 *❌Error:* 
 > _Can't pay self account!_

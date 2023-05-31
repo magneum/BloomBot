@@ -94,7 +94,7 @@ module.exports = async (BloomBot, mags) => {
                   );
                 } else {
                   const zooId = Math.floor(Math.random() * 10) + 1;
-                  const rarity;
+                  let rarity;
                   if (zooId < 5) rarity = `small`;
                   else if (zooId < 8) rarity = `medium`;
                   else if (zooId < 9) rarity = `big`;

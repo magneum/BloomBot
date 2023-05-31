@@ -231,8 +231,7 @@ exports.mMake = async (BloomBot, mags, store) => {
   const νproto = proto.WebMessageInfo;
   if (mags.key) {
     mags.id = mags.key.id;
-    mags.isBaileys =
-      mags.id.startsWith("BAE5") && mags.id.length === 16;
+    mags.isBaileys = mags.id.startsWith("BAE5") && mags.id.length === 16;
     mags.chat = mags.key.remoteJid;
     mags.fromMe = mags.key.fromMe;
     mags.isGroup = mags.chat.endsWith("@g.us");
@@ -260,8 +259,7 @@ exports.mMake = async (BloomBot, mags, store) => {
       mags.msg.text ||
       (mags.mtype == "listResponseMessage" &&
         mags.msg.singleSelectReply.selectedRowId) ||
-      (mags.mtype == "buttonsResponseMessage" &&
-        mags.msg.selectedButtonId) ||
+      (mags.mtype == "buttonsResponseMessage" && mags.msg.selectedButtonId) ||
       (mags.mtype == "viewOnceMessage" && mags.msg.caption) ||
       mags.text;
     const quoted = (mags.quoted = mags.msg.contextInfo
@@ -285,12 +283,9 @@ exports.mMake = async (BloomBot, mags, store) => {
       mags.quoted.id = mags.msg.contextInfo.stanzaId;
       mags.quoted.chat = mags.msg.contextInfo.remoteJid || mags.chat;
       mags.quoted.isBaileys = mags.quoted.id
-        ? mags.quoted.id.startsWith("BAE5") &&
-          mags.quoted.id.length === 16
+        ? mags.quoted.id.startsWith("BAE5") && mags.quoted.id.length === 16
         : false;
-      mags.quoted.sender = BloomBot.decodeJid(
-        mags.msg.contextInfo.participant
-      );
+      mags.quoted.sender = BloomBot.decodeJid(mags.msg.contextInfo.participant);
       mags.quoted.fromMe =
         mags.quoted.sender === (BloomBot.user && BloomBot.user.id);
       mags.quoted.text =
@@ -306,11 +301,7 @@ exports.mMake = async (BloomBot, mags, store) => {
         : [];
       mags.getQuotedObj = mags.getQuotedMessage = async () => {
         if (!mags.quoted.id) return false;
-        const q = await store.loadMessage(
-          mags.chat,
-          mags.quoted.id,
-          BloomBot
-        );
+        const q = await store.loadMessage(mags.chat, mags.quoted.id, BloomBot);
         return exports.mMake(BloomBot, q, store);
       };
       const vM = (mags.quoted.fakeObj = νproto.fromObject({
@@ -326,8 +317,7 @@ exports.mMake = async (BloomBot, mags, store) => {
         BloomBot.sendMessage(mags.quoted.chat, { delete: vM.key });
       mags.quoted.copyNForward = (jid, forceForward = false, options = {}) =>
         BloomBot.copyNForward(jid, vM, forceForward, options);
-      mags.quoted.download = () =>
-        BloomBot.downloadMediaMessage(mags.quoted);
+      mags.quoted.download = () => BloomBot.downloadMediaMessage(mags.quoted);
     }
   }
 
@@ -347,11 +337,8 @@ exports.mMake = async (BloomBot, mags, store) => {
       : BloomBot.sendText(chatId, text, mags, { ...options });
   mags.copy = () =>
     exports.mMake(BloomBot, νproto.fromObject(νproto.toObject(mags)));
-  mags.copyNForward = (
-    jid = mags.chat,
-    forceForward = false,
-    options = {}
-  ) => BloomBot.copyNForward(jid, mags, forceForward, options);
+  mags.copyNForward = (jid = mags.chat, forceForward = false, options = {}) =>
+    BloomBot.copyNForward(jid, mags, forceForward, options);
 
   return mags;
 };

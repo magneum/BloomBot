@@ -161,7 +161,8 @@ module.exports = async (BloomBot, mags) => {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
-                    if (error) return BloomBot.handlerror(BloomBot, mags, error);
+                    if (error)
+                      return BloomBot.handlerror(BloomBot, mags, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       const newUser = new Robbery({
                         Id: receiver,

@@ -143,66 +143,75 @@ module.exports = async (BloomBot, mags, update, store) => {
     }
   }
 
-if (!commandFound) {
-  if (suggestedCommand) {
-    const suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
-    const suggestionMessage =
-      "Command not found. Below are some suggestions:\n\n";
-    const suggestedCommandsText = commandList
-      .filter(cmd => cmd.name === suggestedCommand || suggestedCommandAliases.includes(cmd.name))
-      .map(cmd => {
-        const aliasesText = cmd.aliases && cmd.aliases.length > 0 ? ` (${cmd.aliases.join(", ")})` : "";
-        return `${cmd.name}${aliasesText}`;
-      })
-      .join("\n");
+  if (!commandFound) {
+    if (suggestedCommand) {
+      const suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
+      const suggestionMessage =
+        "Command not found. Below are some suggestions:\n\n";
+      const suggestedCommandsText = commandList
+        .filter(
+          (cmd) =>
+            cmd.name === suggestedCommand ||
+            suggestedCommandAliases.includes(cmd.name)
+        )
+        .map((cmd) => {
+          const aliasesText =
+            cmd.aliases && cmd.aliases.length > 0
+              ? ` (${cmd.aliases.join(", ")})`
+              : "";
+          return `${cmd.name}${aliasesText}`;
+        })
+        .join("\n");
 
-    suggestionMessage += suggestedCommandsText;
+      suggestionMessage += suggestedCommandsText;
 
-    return await BloomBot.sendMessage(mags.chat, {
-      image: { url: BloomBot.display },
-      caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
-      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
-      buttons: [
-        {
-          buttonId: `${BloomBot.prefix}${suggestedCommand}`,
-          buttonText: {
-            displayText: suggestionButtonText,
+      return await BloomBot.sendMessage(mags.chat, {
+        image: { url: BloomBot.display },
+        caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
+        footer:
+          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
+        buttons: [
+          {
+            buttonId: `${BloomBot.prefix}${suggestedCommand}`,
+            buttonText: {
+              displayText: suggestionButtonText,
+            },
+            type: 1,
           },
-          type: 1,
-        },
-        {
-          buttonId: `${BloomBot.prefix}Home`,
-          buttonText: { displayText: `${BloomBot.prefix}Home` },
-          type: 1,
-        },
-      ],
-      headerType: 4,
-      mentions: [mags.sender],
-    });
-  } else {
-    const errorMessage =
-      "⚠️ *Apologies* ⚠️\n\n" +
-      `@${BloomBot.Tname}, it seems that the command you entered doesn't exist.\n` +
-      "For command list press below buttons.";
-    return await BloomBot.sendMessage(mags.chat, {
-      image: { url: BloomBot.display },
-      caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
-      footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
-      buttons: [
-        {
-          buttonId: `${BloomBot.prefix}Help`,
-          buttonText: { displayText: `${BloomBot.prefix}Help` },
-          type: 1,
-        },        {
-          buttonId: `${BloomBot.prefix}Home`,
-          buttonText: { displayText: `${BloomBot.prefix}Home` },
-          type: 1,
-        },
-      ],
-      headerType: 4,
-      mentions: [mags.sender],
-    });
+          {
+            buttonId: `${BloomBot.prefix}Home`,
+            buttonText: { displayText: `${BloomBot.prefix}Home` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        mentions: [mags.sender],
+      });
+    } else {
+      const errorMessage =
+        "⚠️ *Apologies* ⚠️\n\n" +
+        `@${BloomBot.Tname}, it seems that the command you entered doesn't exist.\n` +
+        "For command list press below buttons.";
+      return await BloomBot.sendMessage(mags.chat, {
+        image: { url: BloomBot.display },
+        caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
+        footer:
+          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
+        buttons: [
+          {
+            buttonId: `${BloomBot.prefix}Help`,
+            buttonText: { displayText: `${BloomBot.prefix}Help` },
+            type: 1,
+          },
+          {
+            buttonId: `${BloomBot.prefix}Home`,
+            buttonText: { displayText: `${BloomBot.prefix}Home` },
+            type: 1,
+          },
+        ],
+        headerType: 4,
+        mentions: [mags.sender],
+      });
+    }
   }
-}
-
 };

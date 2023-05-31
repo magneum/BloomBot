@@ -11,6 +11,7 @@
     "dev": "supervisor -w . BloomBot.js",
     "ffdev": "nodemon server/pfmpeg.js",
     "ffstart": "forever server/pfmpeg.js",
+    "format": "prettier --write '**/*.js',",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",

@@ -50,7 +50,9 @@ module.exports = async (BloomBot, mags) => {
       `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
     const musicData = musicResponse.data[0];
-    const audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
+    const audioFilename = `${BloomBot.between(3000, 4000)}${
+      musicData.YT_Id
+    }.mp3`;
     await BloomBot.exec(
       `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioFilename}`
     );

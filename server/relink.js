@@ -57,7 +57,11 @@ const { Doujin } = require("@shineiichijo/nhentai-pdf");
 const { exec, spawn, execSync } = require("child_process");
 const { DownloaderHelper } = require("node-downloader-helper");
 const { TelegraPh, UploadFileUgu, webp2mp4File } = require("./uploader");
-const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+const {
+  Sticker,
+  createSticker,
+  StickerTypes,
+} = require("wa-sticker-formatter");
 const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
 const ffprobe = require("@ffprobe-installer/ffprobe");
 const ffmpeg = require("fluent-ffmpeg")()

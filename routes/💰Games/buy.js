@@ -21,9 +21,9 @@ const tpth = ppth.basename(__filename);
 const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    const Item;
-    const NewLimit;
-    const ItemPrice;
+    let Item;
+    let NewLimit;
+    let ItemPrice;
     const BadgeCatelog = [
       "🥉Bronze 20 Commands",
       "🥈Silver 40 Commands",
