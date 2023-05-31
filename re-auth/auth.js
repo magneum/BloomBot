@@ -1,7 +1,7 @@
-const config = require("./dbConfig");
+const dbConfig = require("./dbConfig");
 const { DataTypes, Model } = require("sequelize");
 
-const sequelize = config.DATABASE;
+const sequelize = dbConfig.DATABASE;
 
 class Cred extends Model {}
 

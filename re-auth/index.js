@@ -18,6 +18,7 @@
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
+const dbConfig = require("./dbConfig");
 var gitPull = require("@/utils/gitPull");
 var {
   default: Bloom_bot_client,
@@ -99,8 +100,17 @@ async function magneum() {
     );
   });
   opage.listen(PORT, logger.info("📢: BloomBot started at port " + PORT));
+  const sequelize = dbConfig.DATABASE;
+  logger.info("📢: Connecting to Database.");
+  try {
+    await sequelize.authenticate();
+    logger.info("📢: Connection has been established successfully.");
+  } catch (error) {
+    console.error("📢: Unable to connect to the database:", error);
+  }
+  logger.info("📢: Syncing Database...");
+  await sequelize.sync();
   let { state, saveCreds } = await useRemoteFileAuthState();
-
   var BloomBot = Bloom_bot_client({
     auth: state,
     printQRInTerminal: true,
@@ -177,7 +187,7 @@ async function magneum() {
       logger.error("📢: Not Received Pending Notifications.");
     else if (isNewLogin === true) logger.debug("💡: New Login.");
     else if (isNewLogin === false) logger.error("📢: Not New Login.");
-    else if (qr) logger.info("Qr: "), console.log(qr);
+    else if (qr) logger.info("Qr: "), logger.info(qr);
     else logger.info("📢: Connection...", update);
   });
 
