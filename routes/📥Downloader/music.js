@@ -44,40 +44,18 @@ module.exports = async (BloomBot, mags) => {
       ).then(async (response) => {
         var mgdata = response.data;
         console.log(mgdata);
-        await BloomBot.sendMessage(
-          mags.chat,
-          {
-            image: { url: mgdata.youtube_search[0].HQ_IMAGE },
-            caption: `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
+        await BloomBot.imagebutton(
+          BloomBot,
+          mags,
+          `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
 *🍻Title:* ${mgdata.youtube_search[0].TITLE}
 *🙈Views:* ${mgdata.youtube_search[0].VIEWS}
 *🔗Link:* ${mgdata.youtube_search[0].LINK || "null"}
 *⏰Duration:* ${mgdata.youtube_search[0].DURATION_FULL}
 *📜Description:* ${mgdata.youtube_search[0].DESCRIPTION}`,
-            footer:
-              "*BloomBot™ by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${BloomBot.prefix}Dashboard`,
-                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Help`,
-                buttonText: { displayText: `${BloomBot.prefix}Help` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [mags.sender],
-          },
-          {
-            contextInfo: { mentionedJid: [mags.sender] },
-            quoted: mags,
-          }
+          mgdata.youtube_search[0].HQ_IMAGE
         );
-
-        BloomBot.YouTubeAudio(mgdata.youtube_search[0].LINK)
+        return BloomBot.YouTubeAudio(mgdata.youtube_search[0].LINK)
           .then(async (AudioLink) => {
             if (AudioLink.status == false) {
               return mags.reply(
