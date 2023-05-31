@@ -49,5 +49,5 @@ async function purgepg() {
   }
 }
 
-purgepg();
+// purgepg();
 module.exports = purgepg;
