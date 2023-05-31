@@ -132,13 +132,19 @@ async function magneum() {
         switch (reason) {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
-            await purgepg().catch(rmdb());
+            await purgepg().catch((e) => {
+              logger.error("❌: purging db error ", e);
+              rmdb();
+            });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
-            await purgepg().catch(rmdb());
+            await purgepg().catch((e) => {
+              logger.error("❌: purging db error ", e);
+              rmdb();
+            });
             BloomBot.end();
             await magneum();
             break;
@@ -148,13 +154,19 @@ async function magneum() {
             break;
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
-            await purgepg().catch(rmdb());
+            await purgepg().catch((e) => {
+              logger.error("❌: purging db error ", e);
+              rmdb();
+            });
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
-            await purgepg().catch(rmdb());
+            await purgepg().catch((e) => {
+              logger.error("❌: purging db error ", e);
+              rmdb();
+            });
             BloomBot.end();
             await magneum();
             break;
