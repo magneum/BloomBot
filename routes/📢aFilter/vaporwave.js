@@ -41,9 +41,12 @@ module.exports = async (BloomBot, vChat) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (/audio/.test(BloomBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted, random);
+      media = await BloomBot.downloadAndSaveMediaMessage(
+        BloomBot.quoted,
+        random
+      );
       BloomBot.exec(
-        `${BloomBot.pathFFmpeg} -i ${media} -af"aresample=48000,asetrate=48000*0.8" ${random}.mp3`,
+        `${BloomBot.pathFFmpeg} -i ${media} -af "aresample=48000,asetrate=48000*0.8" ${random}.mp3`,
         async (error) => {
           return vChat.reply(`*🌻You:* ${
             BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"

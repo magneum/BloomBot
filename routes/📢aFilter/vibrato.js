@@ -41,7 +41,10 @@ module.exports = async (BloomBot, vChat) => {
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
     if (/audio/.test(BloomBot.mime)) {
       random = Math.floor(Math.random() * 10000);
-      media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted, random);
+      media = await BloomBot.downloadAndSaveMediaMessage(
+        BloomBot.quoted,
+        random
+      );
       BloomBot.exec(
         `${BloomBot.pathFFmpeg} -i ${media} -af "vibrato=f=6.5" ${random}.mp3`,
         async (error) => {

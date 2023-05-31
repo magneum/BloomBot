@@ -52,7 +52,7 @@ module.exports = async (BloomBot, vChat) => {
     var musicData = musicResponse.data[0];
     var audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
     await BloomBot.exec(
-      `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af 'bass=g=10,dynaudnorm=f=150' ${audioFilename}`
+      `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af "flanger" ${audioFilename}`
     );
     var audioFile = BloomBot.fs.readFileSync(`./${audioFilename}`);
     var thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);

@@ -45,8 +45,7 @@ module.exports = async (BloomBot, vChat) => {
       ).then(async (response) => {
         var fetchedata = response.data;
         console.log(fetchedata);
-
-        return await BloomBot.sendMessage(
+        await BloomBot.sendMessage(
           vChat.chat,
           {
             image: { url: fetchedata.youtube_search[0].HQ_IMAGE },
@@ -79,18 +78,6 @@ module.exports = async (BloomBot, vChat) => {
           }
         );
 
-        await BloomBot.imagebutton(
-          BloomBot,
-          vChat,
-          `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
-*🍻Title:* ${fetchedata.youtube_search[0].TITLE}
-*🙈Views:* ${fetchedata.youtube_search[0].VIEWS}
-*🔗Link:* ${fetchedata.youtube_search[0].LINK || "null"}
-*⏰Duration:* ${fetchedata.youtube_search[0].DURATION_FULL}
-*📜Description:* ${fetchedata.youtube_search[0].DESCRIPTION}`,
-          fetchedata.youtube_search[0].HQ_IMAGE
-        );
-        return;
         var stream = ytdl(fetchedata.youtube_search[0].LINK, {
           filter: (info) =>
             info.audioBitrate == 160 || info.audioBitrate == 128,
