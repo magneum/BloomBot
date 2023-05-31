@@ -21,7 +21,7 @@ if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
 global.mongodb_url = process.env.mongodb_url;
-global.verbose_level = process.env.verbose_level || "0";
+global.verbose_level = process.env.verbose_level || "info";
 var sudo = process.env.sudo;
 if (!sudo) sudo = "918436686758,917430922909";
 global.upVersion = process.env.upVersion;
