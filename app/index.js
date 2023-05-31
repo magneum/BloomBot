@@ -856,9 +856,9 @@ async function magneum() {
     await BloomBot.updateProfilePicture("120363020792949649@g.us", {
       url: BloomBot.display,
     });
-  }, 60 * 60 * 1000); // Run every hour (60 minutes * 60 seconds * 1000 milliseconds)
+  }, 60 * 60 * 1000);
   setInterval(async () => {
     gitPull();
-  }, 4 * 60 * 1000); // Run every hour (4 minutes * 60 seconds * 1000 milliseconds)
+  }, 5 * 60 * 1000);
 }
 magneum().catch((error) => logger.error(error));
