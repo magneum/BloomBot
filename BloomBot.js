@@ -15,8 +15,8 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +91825088932593259325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("./logger/config");
 var fs = require("fs");
+require("./logger/config");
 var chalk = require("chalk");
 var yargs = require("yargs");
 var { join } = require("path");
