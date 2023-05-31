@@ -41,10 +41,7 @@ module.exports = async (query) => {
       const mediumFormat = formats.find(
         (format) => format.format_id === "140" || format.format_id === "251"
       );
-      const audiolink =
-        (mediumFormat && mediumFormat.width && mediumFormat.url) ||
-        (lowFormat && lowFormat.width && lowFormat.url) ||
-        (ultralowFormat && ultralowFormat.width && ultralowFormat.url);
+      const audiolink = mediumFormat.url || lowFormat.url || ultralowFormat.url;
       if (!audiolink) {
         return {
           success: false,

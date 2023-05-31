@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
         );
         return BloomBot.YouTubeAudio(mgdata.youtube_search[0].LINK)
           .then(async (AudioLink) => {
-            if (AudioLink.status == false) {
+            if (AudioLink.success == false) {
               return mags.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
 
@@ -68,6 +68,7 @@ module.exports = async (BloomBot, mags) => {
 > _${BloomBot.prefix}${fpth} song-name_`
               );
             } else {
+              console.log(AudioLink);
               await BloomBot.sendMessage(
                 mags.chat,
                 {
