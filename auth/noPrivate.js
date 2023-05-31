@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("@/logger/config");
 exports.noPrivate = async (BloomBot, mags, update) => {
   if (!BloomBot.isSudo)
@@ -41,7 +41,7 @@ exports.noPrivate = async (BloomBot, mags, update) => {
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: 1/4
 • You Will be Auto-Blocked After 4 warnings!`,
-            "./public/magneum™.png"
+            "./public/Magneum™.png"
           );
         } else if (user.Amount < 4) {
           user.Amount = user.Amount + 1;
@@ -58,7 +58,7 @@ exports.noPrivate = async (BloomBot, mags, update) => {
 🌿𝐏𝐮𝐧𝐢𝐬𝐡𝐦𝐞𝐧𝐭
 • 𝗪𝗮𝗿𝗻𝗶𝗻𝗴𝘀: ${user.Amount}/4
 • You Will be Auto-Blocked After 4 warnings!`,
-            "./public/magneum™.png"
+            "./public/Magneum™.png"
           );
         } else {
           await user

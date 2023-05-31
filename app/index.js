@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
@@ -247,7 +247,7 @@ async function magneum() {
 > I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
             footer:
-              "*ⒸBloomBot by magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
+              "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,
@@ -819,7 +819,7 @@ async function magneum() {
     ];
     var __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot by magneum™)"
+      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {

@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 //  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 module.exports = async (BloomBot, mags, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
   if (BloomBot.isReply) {
     var receiver =
@@ -28,7 +28,7 @@ module.exports = async (BloomBot, mags, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
         image: { url: imåge },
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,
@@ -49,7 +49,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         quoted: mags,
       }
     ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else if (BloomBot.mentionByTag) {
     var receiver =
       BloomBot.mtype == "extendedTextMessage" &&
@@ -62,7 +62,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         image: { url: imåge },
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,
@@ -83,7 +83,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         quoted: mags,
       }
     ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
+    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
   } else {
     return await BloomBot.sendMessage(
       mags.chat,
@@ -91,7 +91,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         image: { url: imåge },
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer: "*ⒸBloomBot by magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+        footer: "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,
