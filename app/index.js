@@ -121,161 +121,178 @@ async function magneum() {
     });
     process.exit(0);
   }
-  BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
-  BloomBot.ev.on("connection.update", async (update) => {
-    const { lastDisconnect, connection, qr } = update;
-    switch (connection) {
-      case "connecting":
-        logger.info("📢 Connecting to whatsApp...");
-        break;
-      case "Bloom":
-        logger.info("📢 Login successful! ");
-        break;
-      case "close":
-        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-        switch (reason) {
-          case DisconnectReason.badSession:
-            logger.error("❌ Bad Session File...");
-            await purgepg().catch((e) => {
-              logger.error("❌ purging db error ", e);
-              rmdb();
-            });
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionClosed:
-            logger.error("❌ Reconnecting....");
-            await purgepg().catch((e) => {
-              logger.error("❌ purging db error ", e);
-              rmdb();
-            });
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.connectionLost:
-            logger.error("❌ Reconnecting...");
-            await magneum();
-            break;
-          case DisconnectReason.connectionReplaced:
-            logger.error("❌ Connection Replaced...");
-            await purgepg().catch((e) => {
-              logger.error("❌ purging db error ", e);
-              rmdb();
-            });
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.loggedOut:
-            logger.error("❌ Device Logged Out...");
-            await purgepg().catch((e) => {
-              logger.error("❌ purging db error ", e);
-              rmdb();
-            });
-            BloomBot.end();
-            await magneum();
-            break;
-          case DisconnectReason.restartRequired:
-            logger.error("❌ Restart Required, Restarting...");
-            await magneum();
-            break;
-          case DisconnectReason.timedOut:
-            logger.error("❌ Connection TimedOut, Reconnecting...");
-            await magneum();
-            break;
-          default:
-            BloomBot.end(
-              logger.error(
-                `❌ Unknown DisconnectReason: ${reason}|${connection}`
-              )
-            );
-        }
-        break;
-      case true:
-        logger.debug("📢 Online.");
-        break;
-      case false:
-        logger.error("📢 Offline.");
-        break;
-      case true:
-        logger.debug("📢 Received Pending Notifications.");
-        break;
-      case false:
-        logger.error("📢 Not Received Pending Notifications.");
-        break;
-      case true:
-        logger.debug("📢 New Login.");
-        break;
-      case false:
-        logger.error("📢 Not New Login.");
-        break;
-    }
-  });
+  require("@/events/cb_call")(BloomBot, update, store);
+  require("@/events/creds_update")(BloomBot, saveCreds);
+  require("@/events/contacts_update")(BloomBot, update, store);
+  require("@/events/messages_upsert")(BloomBot, update, store);
+  require("@/events/connection_update")(BloomBot, update, store);
+  require("@/events/group_participants_update")(BloomBot, update, store);
 
-  BloomBot.ev.on("messages.upsert", async (update) => {
-    oText = update.messages[0];
-    if (!oText.message) return;
-    oText.message =
-      Object.keys(oText.message)[0] === "ephemeralMessage"
-        ? oText.message.ephemeralMessage.message
-        : oText.message;
-    if (oText.key && oText.key.remoteJid === "status@broadcast") return;
-    if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
-      return;
-    if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    mags = await mMake(BloomBot, oText, store);
-    await require("../server/symlink")(BloomBot, mags, update, store);
-  });
+  // BloomBot.ev.on("creds.update", async (update) => await saveCreds(update));
+  // BloomBot.ev.on("connection.update", async (update) => {
+  // const {
+  // lastDisconnect,
+  // connection,
+  // isNewLogin,
+  // isOnline,
+  // qr,
+  // receivedPendingNotifications,
+  // } = update;
 
-  BloomBot.ev.on("group-participants.update", async (update) => {
-    let metadata = await BloomBot.groupMetadata(update.id);
-    let participants = update.participants;
-    logger.info(update);
-    for (let sperson of participants) {
-      let imåge;
-      try {
-        imåge = await BloomBot.profilePictureUrl(sperson, "image");
-      } catch {
-        imåge = BloomBot.display;
-      }
+  // if (connection === "connecting") {
+  // logger.info("📢 Connecting to WhatsApp...");
+  // } else if (connection === "open") {
+  // logger.info("📢 Login successful! Connection to WhatsApp established.");
+  // } else if (connection === "close") {
+  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
 
-      if (update.action == "add") {
-        return await BloomBot.sendMessage(
-          update.id,
-          {
-            image: { url: imåge },
-            caption: `*🌻You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
-*📢ChatId:* ${update.id}
+  // if (reason === DisconnectReason.badSession) {
+  // logger.error(
+  // "❌ Bad Session File detected. Please delete the existing session file and scan again to establish a new session."
+  // );
+  // BloomBot.logout();
+  // } else if (reason === DisconnectReason.connectionClosed) {
+  // logger.error(
+  // "❌ Connection closed unexpectedly. Reconnecting to WhatsApp..."
+  // );
+  // await purgepg().catch((e) => {
+  // logger.error("❌ Error occurred while purging the database: ", e);
+  // rmdb();
+  // });
+  // BloomBot.end();
+  // await magneum();
+  // } else if (reason === DisconnectReason.connectionLost) {
+  // logger.error(
+  // "❌ Connection lost from the server. Reconnecting to WhatsApp..."
+  // );
+  // await purgepg().catch((e) => {
+  // logger.error("❌ Error occurred while purging the database: ", e);
+  // rmdb();
+  // });
+  // BloomBot.end();
+  // await magneum();
+  // } else if (reason === DisconnectReason.connectionReplaced) {
+  // logger.error(
+  // "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection."
+  // );
+  // BloomBot.logout();
+  // } else if (reason === DisconnectReason.loggedOut) {
+  // logger.error(
+  // "❌ Device logged out. Please scan again and run the program to establish a new session."
+  // );
+  // await purgepg().catch((e) => {
+  // logger.error("❌ Error occurred while purging the database: ", e);
+  // rmdb();
+  // });
+  // BloomBot.end();
+  // await magneum();
+  // } else if (reason === DisconnectReason.restartRequired) {
+  // logger.debug("🐞 Restart required. Restarting the program...");
+  // await purgepg().catch((e) => {
+  // logger.error("❌ Error occurred while purging the database: ", e);
+  // rmdb();
+  // });
+  // BloomBot.end();
+  // await magneum();
+  // } else if (reason === DisconnectReason.timedOut) {
+  // logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
+  // await purgepg().catch((e) => {
+  // logger.error("❌ Error occurred while purging the database: ", e);
+  // rmdb();
+  // });
+  // BloomBot.end();
+  // await magneum();
+  // } else {
+  // logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
+  // BloomBot.end();
+  // }
+  // } else if (isOnline === true) {
+  // logger.debug("📢 User is online. WhatsApp connection is active.");
+  // } else if (isOnline === false) {
+  // logger.error("📢 User is offline. WhatsApp connection is inactive.");
+  // } else if (receivedPendingNotifications === true) {
+  // logger.debug("📢 Received pending notifications. Processing...");
+  // } else if (receivedPendingNotifications === false) {
+  // logger.error("📢 No pending notifications received.");
+  // } else if (isNewLogin === true) {
+  // logger.debug("📢 New login detected. User has successfully logged in.");
+  // } else if (isNewLogin === false) {
+  // logger.error("📢 User is not performing a new login.");
+  // } else if (qr) {
+  // logger.info(
+  // "QR code received. Please scan the following QR code to log in:"
+  // );
+  // console.log(qr);
+  // } else {
+  // logger.info("📢 Connection event received:", update);
+  // }
+  // });
 
-> Firstly Welcome.
-> I am BloomBot whatsapp bot.
-> To Start using type .help or press below buttons.`,
-            footer: "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${BloomBot.prefix}Dashboard`,
-                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}BloomBot`,
-                buttonText: { displayText: `${BloomBot.prefix}BloomBot` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [sperson],
-          },
-          {
-            contextInfo: { mentionedJid: [sperson] },
-          }
-        ).catch((error) => logger.error(error));
-      } else if (update.action == "remove") {
-        return;
-      } else {
-        return;
-      }
-    }
-  });
+  // BloomBot.ev.on("messages.upsert", async (update) => {
+  // oText = update.messages[0];
+  // if (!oText.message) return;
+  // oText.message =
+  // Object.keys(oText.message)[0] === "ephemeralMessage"
+  // ? oText.message.ephemeralMessage.message
+  // : oText.message;
+  // if (oText.key && oText.key.remoteJid === "status@broadcast") return;
+  // if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
+  // return;
+  // if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
+  // mags = await mMake(BloomBot, oText, store);
+  // await require("../server/symlink")(BloomBot, mags, update, store);
+  // });
+
+  // BloomBot.ev.on("group-participants.update", async (update) => {
+  // let metadata = await BloomBot.groupMetadata(update.id);
+  // let participants = update.participants;
+  // logger.info(update);
+  // for (let sperson of participants) {
+  // let imåge;
+  // try {
+  // imåge = await BloomBot.profilePictureUrl(sperson, "image");
+  // } catch {
+  // imåge = BloomBot.display;
+  // }
+
+  // if (update.action == "add") {
+  // return await BloomBot.sendMessage(
+  // update.id,
+  // {
+  // image: { url: imåge },
+  // caption: `*🌻You:* @${sperson.replace(/['@s whatsapp.net']/g, "")}
+  // *📢ChatId:* ${update.id}
+
+  // > Firstly Welcome.
+  // > I am BloomBot whatsapp bot.
+  // > To Start using type .help or press below buttons.`,
+  // footer: "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
+  // buttons: [
+  //   {
+  //     buttonId: `${BloomBot.prefix}Dashboard`,
+  //     buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
+  //     type: 1,
+  //   },
+  //   {
+  //     buttonId: `${BloomBot.prefix}BloomBot`,
+  //     buttonText: { displayText: `${BloomBot.prefix}BloomBot` },
+  //     type: 1,
+  //   },
+  // ],
+  // headerType: 4,
+  // mentions: [sperson],
+  // },
+  // {
+  // contextInfo: { mentionedJid: [sperson] },
+  // }
+  // ).catch((error) => logger.error(error));
+  // } else if (update.action == "remove") {
+  // return;
+  // } else {
+  // return;
+  // }
+  // }
+  // });
 
   BloomBot.decodeJid = (jid) => {
     if (!jid) return jid;
@@ -734,30 +751,31 @@ async function magneum() {
     };
   };
 
-  BloomBot.ws.on("CB:call", async (update) => {
-    const sleep = async (ms) => {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    };
-    const callerId = update.content[0].attrs["call-creator"];
-    let person = await BloomBot.sendContact(callerId, global.owner);
-    BloomBot.sendMessage(
-      callerId,
-      {
-        text: "Automatic system block!",
-      },
-      { quoted: person }
-    );
-    await sleep(8000);
-    await BloomBot.updateBlockStatus(callerId, "block");
-  });
+  // BloomBot.ws.on("CB:call", async (update) => {
+  // const sleep = async (ms) => {
+  // return new Promise((resolve) => setTimeout(resolve, ms));
+  // };
+  // const callerId = update.content[0].attrs["call-creator"];
+  // let person = await BloomBot.sendContact(callerId, global.owner);
+  // BloomBot.sendMessage(
+  // callerId,
+  // {
+  // text: "Automatic system block!",
+  // },
+  // { quoted: person }
+  // );
+  // await sleep(8000);
+  // await BloomBot.updateBlockStatus(callerId, "block");
+  // });
 
-  BloomBot.ev.on("contacts.update", async (update) => {
-    for (let contact of update) {
-      let jid = BloomBot.decodeJid(contact.id);
-      if (store && store.contacts)
-        store.contacts[jid] = { jid, name: contact.notify };
-    }
-  });
+  // BloomBot.ev.on("contacts.update", async (update) => {
+  // for (let contact of update) {
+  // let jid = BloomBot.decodeJid(contact.id);
+  // if (store && store.contacts)
+  // store.contacts[jid] = { jid, name: contact.notify };
+  // }
+  // });
+
   setInterval(async () => {
     const _Type = [
       "🎭Designer",
