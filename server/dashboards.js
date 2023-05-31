@@ -20,7 +20,7 @@ module.exports = async (BloomBot, mags, updatedb) => {
   try {
     𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "https://i.postimg.cc/qBKwmM24/magsbot.png";
+    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "i.postimg.cc/qBKwmM24/magsbot.png";
   }
   await BloomBot.dashboard.findOne(
     {

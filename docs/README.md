@@ -1,6 +1,6 @@
-# [Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!](https://bit.ly/magneum)
+# [Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢𝐃𝐞𝐯𝐢𝐜𝐞: 𝐢𝐬 𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐰𝐢𝐭𝐡 𝐌𝐨𝐝𝐞𝐫𝐚𝐭𝐢𝐨𝐧, 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝟐𝟎𝟎++ 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬!](bit.ly/magneum)
 
-<p align="centre"><img  width="40%" height="80%" img public="https://github.com/Magneum™/BloomBot/blob/Magneum™/public/src/BloomBot (1).png" /></p>
+<p align="centre"><img  width="40%" height="80%" img public="github.com/Magneum™/BloomBot/blob/Magneum™/public/src/BloomBot (1).png" /></p>
 
 
 ## 🤖Hello, I am BloomBot
@@ -10,9 +10,9 @@
 
 <h1 align="left">🐧Node Package </h1>
 
-[![NPM](https://nodei.co/npm/BloomBot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/BloomBot)
+[![NPM](nodei.co/npm/BloomBot.png?downloads=true&downloadRank=true&stars=true)](nodei.co/npm/BloomBot)
 
-[![npm version](https://badge.fury.io/js/BloomBot.svg)](https://badge.fury.io/js/BloomBot/)
+[![npm version](badge.fury.io/js/BloomBot.svg)](badge.fury.io/js/BloomBot/)
 
 
 

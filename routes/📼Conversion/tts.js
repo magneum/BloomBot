@@ -68,7 +68,7 @@ module.exports = async (BloomBot, mags) => {
       BloomBot.axios({
         method: "get",
         url:
-          "https://magneum.vercel.app/api/text2speech?q=" +
+          "magneum.vercel.app/api/text2speech?q=" +
           BloomBot.args.join(" "),
         headers: {
           accept: "*/*",
@@ -90,12 +90,12 @@ module.exports = async (BloomBot, mags) => {
                 title: "📢Talk To Speech",
                 body: "❣️Made by BloomBot.",
                 renderLargerThumbnail: true,
-                mediaUrl: "https://i.postimg.cc/qBSnwdzq/White.png",
+                mediaUrl: "i.postimg.cc/qBSnwdzq/White.png",
                 mediaType: 1,
                 thumbnail: await BloomBot.getBuffer(
-                  "https://i.postimg.cc/qBSnwdzq/White.png"
+                  "i.postimg.cc/qBSnwdzq/White.png"
                 ),
-                sourceUrl: "https://bit.ly/BloomBot",
+                sourceUrl: "bit.ly/BloomBot",
               },
             },
           },

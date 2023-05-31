@@ -82,7 +82,7 @@ async function magneum() {
     let version;
     try {
       const a = fetchJson(
-        "https://web.whatsapp.com/check-update?version=1&platform=web"
+        "web.whatsapp.com/check-update?version=1&platform=web"
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
     } catch {
@@ -96,7 +96,7 @@ async function magneum() {
   opage.set("view engine", "html");
   opage.set("views", __dirname);
   opage.get("/", (request, response) => {
-    response.redirect("https://bit.ly/magneum");
+    response.redirect("bit.ly/magneum");
   });
   opage.get("/BloomBot", (request, response) => {
     response.sendFile("views/BloomBot.html", { root: __dirname });
@@ -259,7 +259,7 @@ async function magneum() {
 > I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
             footer:
-              "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* https://bit.ly/magneum",
+              "*ⒸBloomBot by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,
@@ -342,7 +342,7 @@ async function magneum() {
           i + "@s.whatsapp.net"
         )}\nFN:${await BloomBot.getName(
           i + "@s.whatsapp.net"
-        )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
+        )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
     BloomBot.sendMessage(

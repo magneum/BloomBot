@@ -41,7 +41,7 @@ module.exports = async (BloomBot, mags) => {
     } else
       BloomBot.magfetch(
         BloomBot,
-        "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
+        "magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
       ).then(async (response) => {
         const mgdata = response.data;
         BloomBot.logger.info(mgdata);
@@ -56,7 +56,7 @@ module.exports = async (BloomBot, mags) => {
 *⏰Duration:* ${mgdata.youtube_search[0].DURATION_FULL}
 *📜Description:* ${mgdata.youtube_search[0].DESCRIPTION}`,
             footer:
-              "*BloomBot™ by Magneum™*\n*💻HomePage:* https://bit.ly/magneum",
+              "*BloomBot™ by Magneum™*\n*💻HomePage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,
@@ -104,7 +104,7 @@ module.exports = async (BloomBot, mags) => {
                 thumbnail: await BloomBot.getBuffer(
                   mgdata.youtube_search[0].HQ_IMAGE
                 ),
-                sourceUrl: "https://bit.ly/magneum",
+                sourceUrl: "bit.ly/magneum",
               },
             },
           },

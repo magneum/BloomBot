@@ -7,7 +7,7 @@ module.exports = async (query) => {
   try {
     console.log(chalk.yellow("📢Info: Fetching data from API..."));
     const response = await axios.get(
-      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+      `magneum.vercel.app/api/youtube_sr?q=${query}`
     );
     const { youtube_search: searchData } = response.data;
     if (!searchData || searchData.length === 0) {

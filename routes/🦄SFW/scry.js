@@ -23,7 +23,7 @@ module.exports = async (BloomBot, mags) => {
   try {
     BloomBot.magfetch(
       BloomBot,
-      "https://magneum.vercel.app/api/sfw?q=cry"
+      "magneum.vercel.app/api/sfw?q=cry"
     ).then(async (response) => {
       const mgdata = response.data;
       BloomBot.logger.info(mgdata);

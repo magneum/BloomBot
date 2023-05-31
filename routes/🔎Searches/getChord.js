@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
     chordFound += clean(result.post.content);
     try {
       const кяуяєsi = await BloomBot.fetch(
-        global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
+        global.apiGet("wall.alphacoders.com/api2.0", "/get.php", {
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",

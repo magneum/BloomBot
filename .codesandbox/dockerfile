@@ -9,10 +9,10 @@ RUN apt-get update && apt-get install -y \
     opus-tools \
     python3-pip \
     python-is-python3
-RUN curl -s https://deb.nodesource.com/setup_16.x | bash
+RUN curl -s deb.nodesource.com/setup_16.x | bash
 RUN apt-get update && apt-get install nodejs -y
 RUN npm install -g spotify-dl spdl-core forever pm2 yarn corepack && hash -r
-RUN git clone https://github.com/magneum/BloomBot
+RUN git clone github.com/magneum/BloomBot
 RUN cd BloomBot
 WORKDIR /BloomBot
 RUN git init --initial-branch=magneum

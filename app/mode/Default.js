@@ -80,7 +80,7 @@ module.exports = async (BloomBot, mags, update, store) => {
               // > join official group
               // > chat.whatsapp.com/DU224C0c1ZO68yEXIAtvTi
               // *⚙️Webpage:*
-              // > https://bit.ly/magneum
+              // > bit.ly/magneum
               // > Login To Your Dashboard`,
               // mentions: [mags.sender],
               // },

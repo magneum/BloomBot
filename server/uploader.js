@@ -27,14 +27,14 @@ function TelegraPh(Path) {
       const form = new Bodyform();
       form.append("file", fs.createReadStream(Path));
       const data = await axios({
-        url: "https://telegra.ph/upload",
+        url: "telegra.ph/upload",
         method: "POST",
         headers: {
           ...form.getHeaders(),
         },
         data: form,
       });
-      return resolve("https://telegra.ph" + data.data[0].public);
+      return resolve("telegra.ph" + data.data[0].public);
     } catch (err) {
       return reject(new Error(String(err)));
     }
@@ -46,7 +46,7 @@ async function UploadFileUgu(input) {
     const form = new Bodyform();
     form.append("files[]", fs.createReadStream(input));
     await axios({
-      url: "https://uguu.se/upload.php",
+      url: "uguu.se/upload.php",
       method: "POST",
       headers: {
         "User-Agent":
@@ -69,7 +69,7 @@ function webp2mp4File(path) {
     form.append("new-image", fs.createReadStream(path));
     axios({
       method: "post",
-      url: "https://s6.ezgif.com/webp-to-mp4",
+      url: "s6.ezgif.com/webp-to-mp4",
       data: form,
       headers: {
         "Content-Type": `multipart/form-data; boundary=${form._boundary}`,
@@ -83,7 +83,7 @@ function webp2mp4File(path) {
         bodyformThen.append("convert", "Convert WebP to MP4!");
         axios({
           method: "post",
-          url: "https://ezgif.com/webp-to-mp4/" + file,
+          url: "ezgif.com/webp-to-mp4/" + file,
           data: bodyformThen,
           headers: {
             "Content-Type": `multipart/form-data; boundary=${bodyformThen._boundary}`,

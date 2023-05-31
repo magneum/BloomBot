@@ -169,7 +169,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
         footer:
-          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
+          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}${suggestedCommand}`,
@@ -196,7 +196,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
         footer:
-          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* https://bit.ly/magneum\n*🏘️Group:* https://tinyurl.com/magneum",
+          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Help`,

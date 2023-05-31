@@ -29,7 +29,7 @@ const uploadFile = (path) =>
     fd.append("file", fs.createReadStream(path));
     Axios({
       method: "POST",
-      url: "https://uploader.caliph.my.id/upload",
+      url: "uploader.caliph.my.id/upload",
       data: fd,
       maxContentLength: Infinity,
       maxBodyLength: Infinity,

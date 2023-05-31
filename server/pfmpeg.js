@@ -35,7 +35,7 @@ function shrink(url) {
   return new Promise((resolve, reject) => {
     https
       .get(
-        "https://tinyurl.com/api-create.php?url=" + encodeURIComponent(url),
+        "tinyurl.com/api-create.php?url=" + encodeURIComponent(url),
         (res) => {
           res.on("data", (chunk) => {
             resolve(chunk.toString());
@@ -66,7 +66,7 @@ app.get("/spotify", async (request, response) => {
     console.log(request.query);
     axios({
       method: "get",
-      url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
+      url: "magneum.vercel.app/api/youtube_sr?q=" + request.query,
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
@@ -209,7 +209,7 @@ app.get("/metadata", async (request, response) => {
     let _ALINK;
     axios({
       method: "get",
-      url: "https://magneum.vercel.app/api/youtube_sr?q=" + request.query,
+      url: "magneum.vercel.app/api/youtube_sr?q=" + request.query,
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",

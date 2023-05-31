@@ -41,7 +41,7 @@ module.exports = async (BloomBot, mags) => {
 
     try {
       const { data: gi } = await BloomBot.axios.get(
-        `https://g.tenor.com/v1/search?q=${BloomBot.args.join(
+        `g.tenor.com/v1/search?q=${BloomBot.args.join(
           " "
         )}&key=LIVDSRZULELA&limit=8`
       );
@@ -53,7 +53,7 @@ module.exports = async (BloomBot, mags) => {
             url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
               ?.media[0]?.mp4?.url,
           },
-          caption: `*BloomBot™ By KryKenz*\n*💻HomePage:* https://bit.ly/krykenz\n\n
+          caption: `*BloomBot™ By KryKenz*\n*💻HomePage:* bit.ly/krykenz\n\n
 *🎋Feeling:* ${fpth}
 *🌻for:* @${mags.sender.split("@")[0] || ""}`,
           mentions: [mags.sender],

@@ -21,10 +21,10 @@ const tpth = ppth.basename(__filename);
 const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    const кяуяєs = await BloomBot.axios.get("https://mags.life/api/v2/fact");
+    const кяуяєs = await BloomBot.axios.get("mags.life/api/v2/fact");
     try {
       const кяуяєsi = await BloomBot.fetch(
-        global.apiGet("https://wall.alphacoders.com/api2.0", "/get.php", {
+        global.apiGet("wall.alphacoders.com/api2.0", "/get.php", {
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",

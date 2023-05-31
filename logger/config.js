@@ -40,20 +40,20 @@ global.sessionName = process.env.sessionName;
 global.timezone = process.env.timezone;
 global.upbranch = process.env.upbranch;
 global.nameApi = {
-  nrtm: "https://nurutomo.herokuapp.com",
-  dzx: "https://api.dhamzxploit.my.id",
-  xteam: "https://api.xteam.xyz",
-  zahir: "https://zahirr-web.herokuapp.com",
-  zeks: "https://api.zeks.xyz",
-  pencarikode: "https://pencarikode.xyz",
-  LeysCoder: "https://leyscoders-api.herokuapp.com",
+  nrtm: "nurutomo.herokuapp.com",
+  dzx: "api.dhamzxploit.my.id",
+  xteam: "api.xteam.xyz",
+  zahir: "zahirr-web.herokuapp.com",
+  zeks: "api.zeks.xyz",
+  pencarikode: "pencarikode.xyz",
+  LeysCoder: "leyscoders-api.herokuapp.com",
 };
 global.keyApi = {
-  "https://api.xteam.xyz": "d90a9e986e18778b",
-  "https://zahirr-web.herokuapp.com": "zahirgans",
-  "https://api.zeks.xyz": "apivinz",
-  "https://pencarikode.xyz": "pais",
-  "https://leyscoders-api.herokuapp.com": "dappakntlll",
+  "api.xteam.xyz": "d90a9e986e18778b",
+  "zahirr-web.herokuapp.com": "zahirgans",
+  "api.zeks.xyz": "apivinz",
+  "pencarikode.xyz": "pais",
+  "leyscoders-api.herokuapp.com": "dappakntlll",
 };
 global.packname = "BloomBot";
 global.author = "Magneum™";

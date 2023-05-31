@@ -21,7 +21,7 @@ module.exports = async (BloomBot, mags) => {
   const GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   const isGroupLink = GroupLinkRegex.exec(BloomBot.budy);
   const PresentGroupLink = new RegExp(
-    `https://chat.whatsapp.com/${FetchCurrentGroupLink}`,
+    `chat.whatsapp.com/${FetchCurrentGroupLink}`,
     "i"
   );
   const isCurrentGroupLink = PresentGroupLink.test(BloomBot.budy);
@@ -45,7 +45,7 @@ module.exports = async (BloomBot, mags) => {
       },
     });
   } else if (
-    BloomBot.budy.includes("https://t.me/") &&
+    BloomBot.budy.includes("t.me/") &&
     BloomBot.budy.includes("discord.gg") &&
     BloomBot.budy.includes("discord.com") &&
     BloomBot.budy.includes("/t.me/") &&

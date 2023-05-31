@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags) => {
     let json;
     try {
       const res = await BloomBot.fetch(
-        API(`https://some-random-api.ml`, `/pokedex`, {
+        API(`some-random-api.ml`, `/pokedex`, {
           pokemon: BloomBot.args.join(" "),
         })
       );

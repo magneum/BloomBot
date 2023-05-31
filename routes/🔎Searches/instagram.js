@@ -41,7 +41,7 @@ module.exports = async (BloomBot, mags) => {
 
     try {
       fids = await BloomBot.axios.get(
-        `https://api.popcat.xyz/instagram?user=${BloomBot.args.join(" ")}`
+        `api.popcat.xyz/instagram?user=${BloomBot.args.join(" ")}`
       );
       const reply = `
 *🀄Username:* ${fids.data.username}

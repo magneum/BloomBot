@@ -24,7 +24,7 @@ module.exports = async (BloomBot, mags) => {
     const Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     const Rads = Reds[Math.floor(Math.random() * Reds.length)];
     const res = await BloomBot.fetch(
-      `https://www.reddit.com/r/${Rads}/random/.json`
+      `www.reddit.com/r/${Rads}/random/.json`
     );
     const json = await res.json();
     const data = json[0].data.children[0].data;
