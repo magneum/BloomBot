@@ -16,8 +16,8 @@
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs-extra");
-const logger = require("@/logger");
 const git = require("simple-git")();
+const logger = require("@/logger");
 const { exec } = require("child_process");
 
 const gitPull = async () => {
