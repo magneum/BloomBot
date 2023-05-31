@@ -15,37 +15,33 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-var logger = require("../logger");
-const { DataTypes, Model } = require("sequelize");
+const { DataTypes, Model, Sequelize } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
-var fs = require("fs");
+const fs = require("fs");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
-process.env.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./BloomBot.db"
-    : process.env.DATABASE_URL;
-global.DATABASE_URL =
+const DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
     : process.env.DATABASE_URL;
 
-global.DATABASE =
-  process.env.DATABASE_URL === "./BloomBot.db"
-    ? new sequelize.Sequelize({
+const sequelize =
+  DATABASE_URL === "./BloomBot.db"
+    ? new Sequelize({
+        storage: DATABASE_URL,
         dialect: "sqlite",
-        storage: process.env.DATABASE_URL,
         logging: false,
       })
-    : new sequelize.Sequelize(process.env.DATABASE_URL, {
-        dialect: "postgres",
-        protocol: "postgres",
-        logging: false,
+    : new Sequelize(DATABASE_URL, {
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+        protocol: "postgres",
+        dialect: "postgres",
+        logging: false,
       });
-const sequelize = DATABASE_URL;
+
+console.log(DATABASE_URL);
 
 class Cred extends Model {}
 Cred.init(
@@ -98,6 +94,8 @@ const KEY_MAP = {
 };
 
 const remote_authstate = async () => {
+  await sequelize.sync(); // Synchronize the models with the database
+
   let creds;
   let keys = {};
 
@@ -146,7 +144,7 @@ const remote_authstate = async () => {
 
   const saveCreds = async (data) => {
     if (!data) {
-      logger.info("Saving all creds");
+      console.info("Saving all creds");
       data = creds;
     }
     for (const _key in data) {
@@ -159,20 +157,20 @@ const remote_authstate = async () => {
         cred = await cred.update({
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        logger.info(`updated value ${_key}`);
+        console.info(`updated value ${_key}`);
       } else {
         cred = await Cred.create({
           key: _key,
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        logger.info(`inserted value ${_key}`);
+        console.info(`inserted value ${_key}`);
       }
     }
   };
 
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
-      logger.info(`Trying to find key ${key} and subKey ${subKey}.`);
+      console.info(`Trying to find key ${key} and subKey ${subKey}.`);
 
       let res = await Key.findOne({
         where: {
@@ -185,7 +183,7 @@ const remote_authstate = async () => {
           value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
         });
 
-        logger.info(`updated key ${key} and subKey ${subKey}`);
+        console.info(`updated key ${key} and subKey ${subKey}`);
       } else {
         res = await Key.create({
           key: subKey,
@@ -193,14 +191,14 @@ const remote_authstate = async () => {
           type: key,
         });
 
-        logger.info(`inserted key ${key} and subKey ${subKey}`);
+        console.info(`inserted key ${key} and subKey ${subKey}`);
       }
     }
   };
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    logger.info("loading values back.");
+    console.info("loading values back.");
     const parent = {
       creds: {},
       keys: {},
@@ -212,7 +210,7 @@ const remote_authstate = async () => {
     parent.keys = allKeys;
 
     const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    logger.info(final);
+    console.info(final);
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -242,7 +240,7 @@ const remote_authstate = async () => {
           for (const _key in data) {
             const key = KEY_MAP[_key];
 
-            logger.info(
+            console.info(
               `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
             );
 
@@ -257,5 +255,16 @@ const remote_authstate = async () => {
     saveCreds,
   };
 };
+
+const authenticate = async () => {
+  try {
+    await sequelize.authenticate();
+    console.log("Connection has been established successfully.");
+  } catch (error) {
+    console.error("Unable to connect to the database:", error);
+  }
+};
+
+authenticate();
 
 remote_authstate();
