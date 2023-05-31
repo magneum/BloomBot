@@ -24,17 +24,12 @@ dotenv.config();
 async function cleanDatabase() {
   var connectionString = process.env.DATABASE_URL;
   var client = new Client({ connectionString });
-
   try {
     await client.connect();
-
-    // Get a list of all tables in the public schema
     var res = await client.query(
       "SELECT tablename FROM pg_tables WHERE schemaname = $1",
       ["public"]
     );
-
-    // Iterate over each table and drop it
     for (var row of res.rows) {
       var tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
