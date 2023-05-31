@@ -21,15 +21,7 @@ var sequelize = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
 }
-var sqlLog = (value) => {
-  var log = false;
-  if (typeof value === "string") {
-    if (value.toLowerCase() === "true") {
-      log = console.log;
-    }
-  }
-  return log;
-};
+
 process.env.DATABASE_URL =
   process.env.DATABASE_URL === undefined
     ? "./BloomBot.db"
@@ -43,14 +35,15 @@ global.DATABASE =
     ? new sequelize.Sequelize({
         dialect: "sqlite",
         storage: process.env.DATABASE_URL,
-        logging: sqlLog("false"),
+        logging: false,
       })
     : new sequelize.Sequelize(process.env.DATABASE_URL, {
         dialect: "postgres",
         protocol: "postgres",
-        logging: sqlLog("false"),
+        logging: false,
         dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
       });
+
 global.MONGODB_URL = process.env.MONGODB_URL;
 global.REDIS_URL = process.env.REDIS_URL;
 
