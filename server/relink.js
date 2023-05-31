@@ -191,6 +191,8 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.ms = require("parse-ms");
   BloomBot.hxz = require("hxz-api");
   BloomBot.axios = require("axios");
+  BloomBot.cors = require("cors");
+  BloomBot.express = require("express");
   BloomBot.chalk = require("chalk");
   BloomBot.playdl = require("play-dl");
   BloomBot.request = require("request");

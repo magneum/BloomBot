@@ -39,3 +39,20 @@ module.exports = async (BloomBot, url) => {
     },
   });
 };
+
+module.exports = async (BloomBot, url) => {
+  const app = BloomBot.express();
+  app.use(BloomBot.cors());
+  return BloomBot.axios({
+    method: "get",
+    url: url,
+    headers: {
+      accept: "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+      "user-agent": [
+        "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 YaBrowser/19.10.3.281 Yowser/2.5 Safari/537.36",
+      ],
+    },
+  });
+};
