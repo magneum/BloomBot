@@ -19,7 +19,7 @@ var { Client } = require("pg");
 var chalk = require("chalk");
 var dbConfig = require("../auth/dbConfig");
 
-async function cleanDatabase() {
+async function purgepg() {
   var connectionString = dbConfig.DATABASE_URL;
   var client = new Client({ connectionString });
   try {
@@ -45,5 +45,5 @@ async function cleanDatabase() {
   }
 }
 
-// cleanDatabase();
-module.exports = cleanDatabase;
+purgepg();
+module.exports = purgepg;

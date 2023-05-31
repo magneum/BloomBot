@@ -18,7 +18,7 @@
 require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
-var cleanDatabase = require("./purgepg");
+var purgepg = require("./purgepg");
 var gitPull = require("@/utils/gitPull");
 const dbConfig = require("@/auth/dbConfig");
 var {
@@ -132,13 +132,13 @@ async function magneum() {
         switch (reason) {
           case DisconnectReason.badSession:
             logger.error("❌: Bad Session File...");
-            await cleanDatabase().catch(rmdb());
+            await purgepg().catch(rmdb());
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.connectionClosed:
             logger.error("❌: Reconnecting....");
-            await cleanDatabase().catch(rmdb());
+            await purgepg().catch(rmdb());
             BloomBot.end();
             await magneum();
             break;
@@ -148,13 +148,13 @@ async function magneum() {
             break;
           case DisconnectReason.connectionReplaced:
             logger.error("❌: Connection Replaced...");
-            await cleanDatabase().catch(rmdb());
+            await purgepg().catch(rmdb());
             BloomBot.end();
             await magneum();
             break;
           case DisconnectReason.loggedOut:
             logger.error("❌: Device Logged Out...");
-            await cleanDatabase().catch(rmdb());
+            await purgepg().catch(rmdb());
             BloomBot.end();
             await magneum();
             break;

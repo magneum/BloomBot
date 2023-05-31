@@ -19,7 +19,7 @@ require("../module-alias");
 require("@/logger/config");
 var logger = require("@/logger");
 var gitPull = require("@/utils/gitPull");
-var cleanDatabase = require("./purgepg");
+var purgepg = require("./purgepg");
 var {
   default: Bloom_bot_client,
   DisconnectReason,
