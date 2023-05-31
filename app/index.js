@@ -38,8 +38,9 @@ var pino = require("pino");
 var monGoose = require("mongoose");
 var { Boom } = require("@hapi/boom");
 var { exec } = require("child_process");
-var useRemoteFileAuthState = require("@/auth/dbAuth");
 let PhoneNumber = require("awesome-phonenumber");
+var useSqlAuthState = require("@/auth/dbAuth");
+var useRedisAuthState = require("@/auth/redis/dbAuth");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function magneum() {
@@ -80,7 +81,7 @@ async function magneum() {
   }
   logger.info("📢: Syncing Database...");
   await sequelize.sync();
-  let { state, saveCreds } = await useRemoteFileAuthState();
+  let { state, saveCreds } = await useSqlAuthState();
 
   var BloomBot = Bloom_bot_client({
     auth: state,
