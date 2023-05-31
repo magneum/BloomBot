@@ -1,8 +1,8 @@
 {
   "main": "app",
   "name": "bloombot",
-  "version": "1.1.1",
-  "description": "BloomBot is a whatsapp user-bot with automation, moderation, music, games and 200+ commands!",
+  "version": "1.0.0",
+  "description": "BloomBot is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.22.19"
