@@ -1,12 +1,11 @@
 require("@/logger/config");
-var sequelize = DATABASE;
-var chalk = require("chalk");
-var logger = require("@/logger");
-var { DataTypes, Model } = require("sequelize");
-var { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { DataTypes, Model } = require("sequelize");
+const debugEnabled = VERBOSE === "1";
+const chalk = require("chalk");
+const sequelize = DATABASE;
 
 class Cred extends Model {}
-
 Cred.init(
   {
     key: {
@@ -26,7 +25,6 @@ Cred.init(
 );
 
 class Key extends Model {}
-
 Key.init(
   {
     key: {
@@ -48,7 +46,7 @@ Key.init(
   }
 );
 
-var KEY_MAP = {
+const KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -57,38 +55,34 @@ var KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-var RemoteFileAuthState = async () => {
+const RemoteFileAuthState = async (logger) => {
   let creds;
   let keys = {};
 
-  var checkCreds = async () => {
-    var lock = await Cred.findOne({
+  const checkCreds = async () => {
+    const lock = await Cred.findOne({
       where: {
         key: "noiseKey",
       },
     });
-    if (lock) {
-      return true;
-    } else {
-      return false;
-    }
+    return lock !== null;
   };
 
-  var loadCreds = async () => {
-    var allCreds = await Cred.findAll();
-    let temp = {};
+  const loadCreds = async () => {
+    const allCreds = await Cred.findAll();
+    const temp = {};
     allCreds.forEach((res) => {
-      let val = res.getDataValue("value");
-      let key = res.getDataValue("key");
-      val = JSON.parse(val, BufferJSON.reviver);
-      temp[key] = val;
+      const val = res.getDataValue("value");
+      const key = res.getDataValue("key");
+      const parsedVal = JSON.parse(val, BufferJSON.reviver);
+      temp[key] = parsedVal;
     });
 
     return temp;
   };
 
-  var loadKeys = async () => {
-    let keys = {
+  const loadKeys = async () => {
+    const keys = {
       preKeys: {},
       sessions: {},
       senderKeys: {},
@@ -96,121 +90,92 @@ var RemoteFileAuthState = async () => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    var allKeys = await Key.findAll();
+    const allKeys = await Key.findAll();
     allKeys.forEach((res) => {
-      let val = res.getDataValue("value");
-      let key = res.getDataValue("key");
-      let type = res.getDataValue("type");
-      val = JSON.parse(val, BufferJSON.reviver);
-      keys[type][key] = val;
+      const val = res.getDataValue("value");
+      const key = res.getDataValue("key");
+      const type = res.getDataValue("type");
+      const parsedVal = JSON.parse(val, BufferJSON.reviver);
+      keys[type][key] = parsedVal;
     });
 
     return keys;
   };
 
-  var saveCreds = async (data) => {
+  const saveCreds = async (data) => {
     if (!data) {
-      logger.info("Saving all creds");
+      debugEnabled ? console.log("Saving all creds") : null;
       data = creds;
     }
-    for (var _key in data) {
-      var cred = await Cred.findOne({
+    for (const _key in data) {
+      let cred = await Cred.findOne({
         where: {
           key: _key,
         },
       });
       if (cred) {
-        await cred
-          .update({
-            value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
-          })
-          .then((res) => {
-            if (logger.isEnabled()) {
-              logger.info(`updated value ${_key}`);
-            }
-          })
-          .catch((err) => {
-            logger.error(chalk.whiteBright(err));
-          });
+        cred = await cred.update({
+          value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
+        });
+        debugEnabled ? console.log(`updated value ${_key}`) : null;
       } else {
-        await Cred.create({
+        cred = await Cred.create({
           key: _key,
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
-        })
-          .then((res) => {
-            if (logger.isEnabled()) {
-              logger.info(`inserted value ${_key}`);
-            }
-          })
-          .catch((err) => {
-            logger.error(chalk.whiteBright(err));
-          });
+        });
+        debugEnabled ? console.log(`inserted value ${_key}`) : null;
       }
     }
   };
 
-  var saveKey = async (key, data, _key) => {
-    for (var subKey in data[_key]) {
-      if (logger.isEnabled()) {
-        logger.info(`Trying to find key ${key} and subKey ${subKey}.`);
-      }
-      var res = await Key.findOne({
+  const saveKey = async (key, data, _key) => {
+    for (const subKey in data[_key]) {
+      debugEnabled
+        ? console.log(`Trying to find key ${key} and subKey ${subKey}.`)
+        : null;
+      let res = await Key.findOne({
         where: {
           key: subKey,
           type: key,
         },
       });
       if (res) {
-        await res
-          .update({
-            value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
-          })
-          .then((res) => {
-            if (logger.isEnabled()) {
-              logger.info(`updated key ${key} and subKey ${subKey}`);
-            }
-          })
-          .catch((err) => {
-            logger.error(chalk.blueBright(err));
-          });
+        res = await res.update({
+          value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
+        });
+        debugEnabled
+          ? console.log(`updated key ${key} and subKey ${subKey}`)
+          : null;
       } else {
-        await Key.create({
+        res = await Key.create({
           key: subKey,
           value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
           type: key,
-        })
-          .then((res) => {
-            if (logger.isEnabled()) {
-              logger.info(`inserted key ${key} and subKey ${subKey}`);
-            }
-          })
-          .catch((err) => {
-            logger.error(chalk.blueBright(err));
-          });
+        });
+        debugEnabled
+          ? console.log(`inserted key ${key} and subKey ${subKey}`)
+          : null;
       }
     }
-    return;
   };
 
-  let credsExist = await checkCreds();
+  const credsExist = await checkCreds();
   if (credsExist) {
-    if (logger.isEnabled()) {
-      logger.info("loading values back.");
-    }
-    let parent = {
+    process.env.VERBOSE === "1"
+      ? console.log("loading values back.")
+      : null;
+    const parent = {
       creds: {},
       keys: {},
     };
-    var allCreds = await loadCreds();
-    var allKeys = await loadKeys();
+    const allCreds = await loadCreds();
+    const allKeys = await loadKeys();
 
     parent.creds = allCreds;
     parent.keys = allKeys;
 
-    var final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    if (logger.isEnabled()) {
-      logger.info(final);
-    }
+    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    process.env.VERBOSE === "1" ? console.log(final) : null;
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -224,13 +189,9 @@ var RemoteFileAuthState = async () => {
       creds,
       keys: {
         get: (type, ids) => {
-          var key = KEY_MAP[type];
+          const key = KEY_MAP[type];
           return ids.reduce((dict, id) => {
-            let _a;
-            let value =
-              (_a = keys[key]) === null || _a === undefined
-                ? undefined
-                : _a[id];
+            let value = keys[key]?.[id];
             if (value) {
               if (type === "app-state-sync-key") {
                 value = proto.AppStateSyncKeyData.fromObject(value);
@@ -241,17 +202,19 @@ var RemoteFileAuthState = async () => {
           }, {});
         },
         set: async (data) => {
-          for (var _key in data) {
-            var key = KEY_MAP[_key];
-            if (logger.isEnabled()) {
-              logger.info(
-                `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
-              );
-            }
+          for (const _key in data) {
+            const key = KEY_MAP[_key];
+
+            debugEnabled
+              ? console.log(
+                  `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
+                )
+              : null;
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);
           }
+          saveState();
         },
       },
     },
