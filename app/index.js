@@ -223,7 +223,7 @@ async function magneum() {
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
     mags = await mMake(BloomBot, oText, store);
-    await require("../server/router")(BloomBot, mags, update, store);
+    await require("../server/symlink")(BloomBot, mags, update, store);
   });
 
   BloomBot.ev.on("group-participants.update", async (update) => {
