@@ -129,14 +129,4 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
-// if (REDIS_URL && REDIS_URL.toLowerCase().includes("127.0.0.1:6379")) {
-// REDIS_URL = REDIS_URL.replace(/127.0.0.1:6379/i, "");
-
-// try {
-// execSync("sudo systemctl start redis.service");
-// console.log(chalk.green("Redis service started successfully."));
-// } catch (error) {
-// console.error(chalk.red("Failed to start Redis service:"), error);
-// }
-// }
 ignite("app/index", "uptime");

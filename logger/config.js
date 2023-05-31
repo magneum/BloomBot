@@ -45,7 +45,6 @@ global.DATABASE =
       });
 
 global.MONGODB_URL = process.env.MONGODB_URL;
-global.REDIS_URL = process.env.REDIS_URL;
 global.VERBOSE = process.env.VERBOSE || "0";
 var sudo = process.env.sudo;
 if (!sudo) sudo = "918436686758,917430922909";
