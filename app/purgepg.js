@@ -21,7 +21,11 @@ var dbConfig = require("../auth/dbConfig");
 
 async function purgepg() {
   var connectionString = dbConfig.DATABASE_URL;
-  var client = new Client({ connectionString });
+  var client = new Client({
+    connectionString,
+    ssl: { rejectUnauthorized: false },
+  });
+
   try {
     await client.connect();
     var res = await client.query(
