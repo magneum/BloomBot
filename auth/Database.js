@@ -21,7 +21,7 @@ function _0x4fac() {
   var _0x2e8149 = [
     "log",
     "@adiwajshing/baileys",
-    "useRemoteFileAuthState",
+    "fallback_RemoteFileAuthState",
     "update",
     "then",
     "map",
@@ -144,7 +144,7 @@ Object["defineProperty"](exports, _0x3afda0(0x73), { value: !![] }),
   (exports[_0x3afda0(0x85)] = void 0x0);
 var baileys_1 = require(_0x3afda0(0x84)),
   auth_1 = require("./Authy"),
-  useRemoteFileAuthState = () =>
+  fallback_RemoteFileAuthState = () =>
     __awaiter(void 0x0, void 0x0, void 0x0, function* () {
       var _0x12efa4 = _0x3afda0,
         _0x54def0 = (_0x516877, _0x4e11e6, _0x2c7103) =>
@@ -272,4 +272,4 @@ var baileys_1 = require(_0x3afda0(0x84)),
         },
       };
     });
-exports["useRemoteFileAuthState"] = useRemoteFileAuthState;
+exports["fallback_RemoteFileAuthState"] = fallback_RemoteFileAuthState;

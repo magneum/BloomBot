@@ -42,9 +42,8 @@ var bodyParser = require("body-parser");
 var { exec } = require("child_process");
 var dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-var { useRemoteFileAuthState } = require("@/auth/Database");
-var Sql_RemoteFileAuthState = require("@/auth/Sql_RemoteFileAuthState");
-var Reddis_RemoteFileAuthState = require("@/auth/Reddis_RemoteFileAuthState");
+var { fallback_RemoteFileAuthState } = require("@/auth/Database");
+var RemoteFileAuthState = require("@/auth/RemoteFileAuthState");
 var { mMake, fetchJson, getBuffer, getSizeMedia } = require("@/server/obFunc");
 
 async function rmdb() {
@@ -121,35 +120,19 @@ async function magneum() {
 
   let state, saveCreds;
   try {
-    if (REDIS_URL) {
-      ({ state, saveCreds } = await Reddis_RemoteFileAuthState());
-      logger.info(
-        "Successfully retrieved state and saveCreds from Redis version."
-      );
-    } else {
-      ({ state, saveCreds } = await Sql_RemoteFileAuthState());
-      logger.info(
-        "Successfully retrieved state and saveCreds from SQL version."
-      );
-    }
-  } catch (error) {
-    logger.error(
-      "An error occurred while retrieving state and saveCreds:",
-      error
+    ({ state, saveCreds } = await RemoteFileAuthState());
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from RemoteFileAuthState."
     );
-    if (REDIS_URL) {
-      logger.info(
-        "REDIS_URL is provided, but there was an error in the Redis version. Falling back to the SQL version."
-      );
-      ({ state, saveCreds } = await Sql_RemoteFileAuthState());
-      logger.info(
-        "Successfully retrieved state and saveCreds from SQL version."
-      );
-    } else {
-      logger.info(
-        "REDIS_URL is not provided. Unable to retrieve state and saveCreds."
-      );
-    }
+  } catch (error) {
+    logger.error("📢: Error occurred in RemoteFileAuthState:", error);
+    logger.debug(
+      "📢: Using fallback_RemoteFileAuthState: Retrieving state and saveCreds from Reddis_RemoteFileAuthState."
+    );
+    ({ state, saveCreds } = await fallback_RemoteFileAuthState(logger));
+    logger.info(
+      "📢: Successfully retrieved state and saveCreds from fallback_RemoteFileAuthState."
+    );
   }
 
   var BloomBot = Bloom_bot_client({
