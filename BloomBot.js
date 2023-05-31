@@ -129,7 +129,11 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
-if (REDIS_URL && REDIS_URL != undefined && REDIS_URL != null) {
+if (REDIS_URL) {
+  if (REDIS_URL.includes("local_")) {
+    REDIS_URL = REDIS_URL.replace("local_", "");
+  }
+
   try {
     execSync("sudo systemctl start redis.service");
     console.log(chalk.green("Redis service started successfully."));
