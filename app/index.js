@@ -119,7 +119,6 @@ async function magneum() {
   // var sequelize = DATABASE;
   // await sequelize.sync();
   let state, saveCreds;
-  z;
   try {
     ({ state, saveCreds } = await remote_authstate());
     logger.info(
