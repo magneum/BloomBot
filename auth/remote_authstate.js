@@ -15,12 +15,32 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("@/logger/config");
-const sequelize = DATABASE;
-var logger = require("@/logger");
 const debugEnabled = VERBOSE === "1";
-const { DataTypes, Model } = require("sequelize");
+const { DataTypes, Model, Sequelize } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+
+const fs = require("fs");
+if (fs.existsSync(".env")) {
+  require("dotenv").config({ path: ".env" });
+}
+const DATABASE_URL =
+  process.env.DATABASE_URL === undefined
+    ? "./BloomBot.db"
+    : process.env.DATABASE_URL;
+
+const sequelize =
+  DATABASE_URL === "./BloomBot.db"
+    ? new Sequelize({
+        storage: DATABASE_URL,
+        dialect: "sqlite",
+        logging: false,
+      })
+    : new Sequelize(DATABASE_URL, {
+        dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
+        protocol: "postgres",
+        dialect: "postgres",
+        logging: false,
+      });
 
 class Cred extends Model {}
 Cred.init(
@@ -121,7 +141,7 @@ const remote_authstate = async () => {
 
   const saveCreds = async (data) => {
     if (!data) {
-      debugEnabled ? logger.info("Saving all creds") : null;
+      debugEnabled ? console.info("Saving all creds") : null;
       data = creds;
     }
     for (const _key in data) {
@@ -134,13 +154,13 @@ const remote_authstate = async () => {
         cred = await cred.update({
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? logger.info(`updated value ${_key}`) : null;
+        debugEnabled ? console.info(`updated value ${_key}`) : null;
       } else {
         cred = await Cred.create({
           key: _key,
           value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
         });
-        debugEnabled ? logger.info(`inserted value ${_key}`) : null;
+        debugEnabled ? console.info(`inserted value ${_key}`) : null;
       }
     }
   };
@@ -148,7 +168,7 @@ const remote_authstate = async () => {
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
       debugEnabled
-        ? logger.info(`Trying to find key ${key} and subKey ${subKey}.`)
+        ? console.info(`Trying to find key ${key} and subKey ${subKey}.`)
         : null;
       let res = await Key.findOne({
         where: {
@@ -161,7 +181,7 @@ const remote_authstate = async () => {
           value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
         });
         debugEnabled
-          ? logger.info(`updated key ${key} and subKey ${subKey}`)
+          ? console.info(`updated key ${key} and subKey ${subKey}`)
           : null;
       } else {
         res = await Key.create({
@@ -170,7 +190,7 @@ const remote_authstate = async () => {
           type: key,
         });
         debugEnabled
-          ? logger.info(`inserted key ${key} and subKey ${subKey}`)
+          ? console.info(`inserted key ${key} and subKey ${subKey}`)
           : null;
       }
     }
@@ -178,7 +198,7 @@ const remote_authstate = async () => {
 
   const credsExist = await checkCreds();
   if (credsExist) {
-    debugEnabled ? logger.info("loading values back.") : null;
+    debugEnabled ? console.info("loading values back.") : null;
     const parent = {
       creds: {},
       keys: {},
@@ -190,7 +210,7 @@ const remote_authstate = async () => {
     parent.keys = allKeys;
 
     const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    debugEnabled ? logger.info(final) : null;
+    debugEnabled ? console.info(final) : null;
     creds = final.creds;
     keys = final.keys;
   } else {
@@ -221,7 +241,7 @@ const remote_authstate = async () => {
             const key = KEY_MAP[_key];
 
             debugEnabled
-              ? logger.info(
+              ? console.info(
                   `Got raw key - ${_key} and got mapped key ${key}. The value is ${data[_key]}`
                 )
               : null;
