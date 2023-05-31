@@ -351,4 +351,13 @@ module.exports = async (BloomBot, mags) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "list",
+  "choices",
+  "display",
+  "options",
+  "show",
+  "panel",
+  "catalog",
+  "commands",
+];

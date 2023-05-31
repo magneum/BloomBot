@@ -86,4 +86,15 @@ module.exports = async (BloomBot, mags, isAdmin, participants) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "mention",
+  "callall",
+  "alltag",
+  "allping",
+  "groupall",
+  "notifall",
+  "massping",
+  "crowdtag",
+  "teamall",
+  "groupmsg",
+];

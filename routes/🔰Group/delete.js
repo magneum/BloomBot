@@ -70,4 +70,16 @@ module.exports = async (BloomBot, mags, isAdmin) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "remove",
+  "purge",
+  "del",
+  "erase",
+  "clear",
+  "trash",
+  "dlt",
+  "purge",
+  "scrap",
+  "void",
+  "discard",
+];

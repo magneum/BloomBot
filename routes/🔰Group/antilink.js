@@ -177,4 +177,15 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "nohyper",
+  "nolink",
+  "unlinks",
+  "urlstop",
+  "linkoff",
+  "antiurl",
+  "nourl",
+  "nobind",
+  "nolinks",
+  "unlink",
+];

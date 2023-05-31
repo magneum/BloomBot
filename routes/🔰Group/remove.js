@@ -182,4 +182,15 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "remove",
+  "expel",
+  "banish",
+  "oust",
+  "eject",
+  "boot",
+  "dismiss",
+  "evict",
+  "pushout",
+  "ban",
+];

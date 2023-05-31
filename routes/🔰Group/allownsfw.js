@@ -171,4 +171,36 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     return BloomBot.handlerror(BloomBot, mags, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "nsfw_enabled",
+  "allow_nsfw",
+  "enable_nsfw",
+  "nsfw_content",
+  "nsfw_mode",
+  "nsfw_toggle",
+  "nsfw_filter",
+  "explicit_content",
+  "adult_content",
+  "mature_content",
+  "unsafe_content",
+  "nsfw_filter",
+  "nsfw_option",
+  "risky_content",
+  "sensitive_content",
+  "not_safe_for_work",
+  "content_warning",
+  "explicit_filter",
+  "mature_filter",
+  "unsafe_filter",
+  "nsfw_warning",
+  "risky_warning",
+  "sensitive_warning",
+  "nsfw_flag",
+  "explicit_flag",
+  "mature_flag",
+  "unsafe_flag",
+  "nsfw_switch",
+  "explicit_switch",
+  "mature_switch",
+  "unsafe_switch",
+];
