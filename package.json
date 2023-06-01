@@ -68,7 +68,6 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.0.0",
     "@hapi/boom": "^10.0.0",
-    "@huggingface/inference": "^2.5.0",
     "@next/font": "^13.1.2",
     "@prisma/client": "^4.14.1",
     "@shineiichijo/canvas-chan": "^1.0.0",
