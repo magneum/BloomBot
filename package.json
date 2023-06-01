@@ -16,7 +16,8 @@
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",
-    "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
+    "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install",
+    "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
   "depecrated": false,
   "directories": {

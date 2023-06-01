@@ -5,7 +5,7 @@ async function chatWithBot(input) {
   const inference = new HfInference(process.env.HUGGING_FACE_API_TOKEN);
 
   const response = await inference.textGeneration({
-    model: "t5-base",
+    model: "wizard-vicuna-13B-GPTQ",
     inputs: input,
     parameters: {
       max_length: 50,
