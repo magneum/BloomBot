@@ -19,7 +19,7 @@ require("../module-alias");
 require("@/config");
 const logger = require("@/logger");
 const gitPull = require("@/utils/gitPull");
-const dbConfig = require("@/auth/dbConfig");
+const dbConfig = require("@/config/dbConfig");
 const {
   default: Bloom_bot_client,
   makeInMemoryStore,
