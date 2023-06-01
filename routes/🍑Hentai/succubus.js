@@ -1,4 +1,4 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 //  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
 //  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
 //  ║
@@ -14,7 +14,7 @@
 //  ║   whatsApp group management experience! 🎉
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("#/config");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
@@ -23,11 +23,11 @@ module.exports = async (BloomBot, mags) => {
   try {
     return await BloomBot.nsfwCheck.findOne(
       {
-        serverId: mags.chat,
+        libId: mags.chat,
       },
-      async (error, server) => {
+      async (error, lib) => {
         if (error) return BloomBot.handlerror(BloomBot, mags, error);
-        if (!server) {
+        if (!lib) {
           await BloomBot.sendMessage(mags.chat, {
             react: {
               text: "❌",
@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags) => {
 > You may ask the admins to turn it on.`
           );
         } else {
-          BloomBot.magfetch(
+          BloomBot.ApiFetch(
             BloomBot,
             "https://magneum.vercel.app/api/hentai?q=" + fpth
           ).then(async (response) => {

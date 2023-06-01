@@ -1,8 +1,31 @@
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+//  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
+//  ║
+//  ║
+//  ║⦁> 🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
+//  ║⦁> 🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⦁> ⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║⦁> 🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║⦁> 🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⦁> ⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║⦁> 📞 Need assistance or have issues? Contact our developers.
+//  ║⦁> 🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║⦁> 👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
+//  ║    whatsApp group management experience! 🎉
+//  ║
+//  ║     🚨LEGAL NOTICE🚨
+//  ║⦁>    ⒸBloomBot is in no way affiliated with, authorized, maintained,
+//  ║⦁>    sponsored or endorsed by whatsApp or any of its affiliates or
+//  ║⦁>    subsidiaries. This is an independent and unofficial software.
+//  ║⦁>    Use at your own risk.
+//  ║
+//  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const fs = require("fs");
 const path = require("path");
 const readline = require("readline");
 
-// List of file extensions to ignore for content changes
 const ignoredContentExtensions = [
   ".jpg",
   ".jpeg",
@@ -16,11 +39,7 @@ const ignoredContentExtensions = [
   ".webm",
   ".db",
 ];
-
-// List of folder names to ignore
 const ignoredFolders = [".git", "node_modules"];
-
-// List of file extensions to ignore for renaming
 const ignoredRenameExtensions = [
   ".jpg",
   ".jpeg",
@@ -35,7 +54,6 @@ const ignoredRenameExtensions = [
   ".db",
 ];
 
-// Function to recursively rename files and folders
 function renameFilesAndFolders(dirPath, oldWord, newWord) {
   const files = fs.readdirSync(dirPath);
 
@@ -52,7 +70,7 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
       if (ignoredContentExtensions.includes(fileExtension)) {
         const newFilePath = path.join(
           dirPath,
-          replaceAll(file, oldWord, newWord)
+          replaceAll(file, oldWord, newWord),
         );
         fs.renameSync(filePath, newFilePath);
       } else if (!ignoredRenameExtensions.includes(fileExtension)) {
@@ -62,20 +80,25 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
 
         const newFilePath = path.join(
           dirPath,
-          replaceAll(file, oldWord, newWord)
+          replaceAll(file, oldWord, newWord),
         );
         fs.renameSync(filePath, newFilePath);
       }
     }
   });
+
+  // Prompt for new input after completing renaming
+  rl.question("Enter the old word: ", (oldWord) => {
+    rl.question("Enter the new word: ", (newWord) => {
+      renameFilesAndFolders(".", oldWord, newWord);
+    });
+  });
 }
 
-// Helper function to replace all occurrences of a string within another string
 function replaceAll(str, search, replacement) {
   return str.split(search).join(replacement);
 }
 
-// Readline interface for user input
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -83,12 +106,6 @@ const rl = readline.createInterface({
 
 rl.question("Enter the old word: ", (oldWord) => {
   rl.question("Enter the new word: ", (newWord) => {
-    rl.question("Enter the working directory: ", (workDir) => {
-      // Rename files and folders
-      renameFilesAndFolders(workDir, oldWord, newWord);
-
-      console.log("Renaming completed.");
-      rl.close();
-    });
+    renameFilesAndFolders(".", oldWord, newWord);
   });
 });
