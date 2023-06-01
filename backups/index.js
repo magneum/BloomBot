@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/config");
-const logger = require("@/logger");
+const logger = require("@/log");
 const gitPull = require("@/utils/gitPull");
 const purgepg = require("./purgepg");
 const {

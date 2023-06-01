@@ -50,7 +50,7 @@ const { readFile } = require("fs/promises");
 const { performance } = require("perf_hooks");
 const { Primbon } = require("scrape-primbon");
 const { getDadjoke } = require("random-jokes");
-// const { createWorker } = require("tesseract");
+const { createWorker } = require("tesseract");
 const { Manga } = require("@shineiichijo/marika");
 const { AnimeWallpaper } = require("anime-wallpaper");
 const { Doujin } = require("@shineiichijo/nhentai-pdf");
@@ -103,7 +103,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     });
 
   BloomBot.performance = performance;
-  // BloomBot.createWorker = createWorker;
+  BloomBot.createWorker = createWorker;
   BloomBot.JSDOM = JSDOM;
   BloomBot.randomUUID = randomUUID;
   BloomBot.Character = Character;
@@ -179,7 +179,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.truth = require("@/public/truth.json");
   BloomBot.magfetch = require("@/server/magfetch");
   BloomBot.YouTubeAudio = require("@/utils/YouAudio");
-  BloomBot.logger = require("@/logger/index.js");
+  BloomBot.logger = require("@/log/index.js");
 
   BloomBot.os = require("os");
   BloomBot.fs = require("fs");

@@ -17,30 +17,17 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/config");
-const logger = require("@/logger");
+const logger = require("@/log");
 const gitPull = require("@/utils/gitPull");
-const dbConfig = require("@/config/dbConfig");
 const {
   default: Bloom_bot_client,
   makeInMemoryStore,
 } = require("@adiwajshing/baileys");
 const pino = require("pino");
-const monGoose = require("mongoose");
 const { fetchJson } = require("@/server/obFunc");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
 
 async function magneum() {
-  await monGoose
-    .connect(MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .catch((error) => {
-      logger.error("❌ Unable to Connect with mongoose.");
-      logger.error(error);
-    })
-    .then(logger.info("📢 Connected with mongoose."));
-
   const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
@@ -57,16 +44,6 @@ async function magneum() {
     return version;
   };
 
-  const sequelize = dbConfig.DATABASE;
-  logger.info("📢 Connecting to Database.");
-  try {
-    await sequelize.authenticate();
-    logger.info("📢 Connection has been established successfully.");
-  } catch (error) {
-    console.error("📢 Unable to connect to the database:", error);
-  }
-  logger.info("📢 Syncing Database...");
-  await sequelize.sync();
   let { state, saveCreds } = await useSqlAuthState();
   const BloomBot = Bloom_bot_client({
     auth: state,

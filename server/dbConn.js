@@ -15,36 +15,32 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("../module-alias");
-const { Client } = require("pg");
-const logger = require("@/log");
+require("@/config");
+const logger = require("../log/index");
+const monGoose = require("mongoose");
+const sequelize = dbConfig.DATABASE;
 const dbConfig = require("@/config/dbConfig");
+module.exports = async () => {
+  logger.info("📢 Connecting to Mongodb() database...");
+  await monGoose
+    .connect(MONGODB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .catch((error) => {
+      logger.error("❌ Unable to Connect with Mongodb():", error);
+      process.exit(0);
+    })
+    .then(logger.info("📢 Connected with mongoose."));
 
-async function purgepg() {
-  const connectionString = dbConfig.DATABASE_URL;
-  const client = new Client({
-    connectionString,
-    ssl: { rejectUnauthorized: false },
-  });
-
+  logger.info("📢 Connecting to Sequelize() database...");
   try {
-    await client.connect();
-    const res = await client.query(
-      "SELECT tablename FROM pg_tables WHERE schemaname = $1",
-      ["public"]
-    );
-    for (const row of res.rows) {
-      const tableName = row.tablename;
-      await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
-      logger.debug(`📢 Dropped table: ${tableName}`);
-    }
-    logger.info("📢 Database cleaned successfully.");
-  } catch (err) {
-    logger.error("❌ An error occurred while cleaning the database:", err);
-  } finally {
-    await client.end();
+    await sequelize.authenticate();
+    logger.info("📢 Connection has been established successfully.");
+  } catch (error) {
+    console.error("❌ Unable to connect to the Sequelize():", error);
+    process.exit(0);
   }
-}
-
-// purgepg();
-module.exports = purgepg;
+  logger.info("📢 Syncing Sequelize() Database...");
+  await sequelize.sync();
+};

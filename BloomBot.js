@@ -128,4 +128,5 @@ function ignite(cFile) {
 }
 
 showCommands("routes");
+require("./server/dbConn");
 ignite("app/index", "uptime");
