@@ -19,7 +19,6 @@ require("./config");
 const fs = require("fs");
 const chalk = require("chalk");
 const yargs = require("yargs");
-const logger = require("./log");
 const { join } = require("path");
 const { say } = require("cfonts");
 const clear = require("cli-clear");
