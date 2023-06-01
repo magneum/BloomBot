@@ -41,13 +41,13 @@ module.exports = async (BloomBot, mags) => {
     }
     const response = await BloomBot.magfetch(
       BloomBot,
-      `magneum.vercel.app/api/youtube_sr?q=${query}`
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
     console.log(response.response);
     const searchData = response.data.youtube_search[0];
     const musicResponse = await BloomBot.magfetch(
       BloomBot,
-      `magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
+      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
     );
     const musicData = musicResponse.data[0];
     const audioFilename = `${BloomBot.between(3000, 4000)}${

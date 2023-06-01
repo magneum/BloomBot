@@ -44,7 +44,7 @@ module.exports = async (BloomBot, mags) => {
         } else {
           BloomBot.magfetch(
             BloomBot,
-            "magneum.vercel.app/api/hentai?q=" + fpth
+            "https://magneum.vercel.app/api/hentai?q=" + fpth
           ).then(async (response) => {
             const mgdata = response.data;
             BloomBot.logger.info(mgdata);
@@ -68,7 +68,7 @@ module.exports = async (BloomBot, mags) => {
                 `*🌻Here, ${fpth} for ${BloomBot.pushname}:*
 
 > *Description:* ${mgdata[0].meta.description}
-> *Api Fetch Url:* magneum.vercel.app/api/hentai`,
+> *Api Fetch Url:* https://magneum.vercel.app/api/hentai`,
                 mgdata[0].meta.url
               );
           });

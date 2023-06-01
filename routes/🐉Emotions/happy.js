@@ -23,7 +23,7 @@ module.exports = async (BloomBot, mags) => {
   try {
     const response = await BloomBot.magfetch(
       BloomBot,
-      `magneum.vercel.app/api/emotions?q=${feeling}`
+      `https://magneum.vercel.app/api/emotions?q=${feeling}`
     );
     const magData = response.data;
     console.log(magData);
@@ -66,7 +66,7 @@ module.exports = async (BloomBot, mags) => {
 *🎋Emo:* ${feeling}
 *📢From:* ${BloomBot.pushname}
 *🌻for:* @${mentionedUser.split("@")[0] || ""}
-*🐞Api:* magneum.vercel.app/api/emotions`;
+*🐞Api:* https://magneum.vercel.app/api/emotions`;
         await BloomBot.sendMessage(
           mags.chat,
           {

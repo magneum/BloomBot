@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags) => {
     BloomBot.axios({
       method: "get",
       url:
-        "magneum.vercel.app/api/shorten?q=" + BloomBot.args.join(" "),
+        "https://magneum.vercel.app/api/shorten?q=" + BloomBot.args.join(" "),
       headers: {
         accept: "*/*",
         "accept-language": "en-US,en;q=0.9",

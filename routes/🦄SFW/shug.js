@@ -21,7 +21,7 @@ const tpth = ppth.basename(__filename);
 const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   try {
-    BloomBot.magfetch(BloomBot, "magneum.vercel.app/api/sfw?q=hug").then(
+    BloomBot.magfetch(BloomBot, "https://magneum.vercel.app/api/sfw?q=hug").then(
       async (response) => {
         const mgdata = response.data;
         BloomBot.logger.info(mgdata);

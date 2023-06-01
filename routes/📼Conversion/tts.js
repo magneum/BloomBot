@@ -68,7 +68,7 @@ module.exports = async (BloomBot, mags) => {
       BloomBot.axios({
         method: "get",
         url:
-          "magneum.vercel.app/api/text2speech?q=" +
+          "https://magneum.vercel.app/api/text2speech?q=" +
           BloomBot.args.join(" "),
         headers: {
           accept: "*/*",
