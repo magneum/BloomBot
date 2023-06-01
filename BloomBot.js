@@ -23,12 +23,15 @@ const logger = require("./log");
 const { join } = require("path");
 const { say } = require("cfonts");
 const clear = require("cli-clear");
+const monGoose = require("mongoose");
 const mFolders = fs.readdirSync("./routes");
+const dbConfig = require("./config/dbConfig");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
 const { setupMaster, fork } = require("cluster");
 const rl = createInterface(process.stdin, process.stdout);
 
+const sequelize = dbConfig.DATABASE;
 process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
