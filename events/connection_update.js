@@ -64,14 +64,12 @@ module.exports = async (BloomBot, magneum, logger) => {
           logger.error(
             "❌ Connection closed unexpectedly. Reconnecting to WhatsApp..."
           );
-          await handledbChange();
           await magneum();
           break;
         case DisconnectReason.connectionLost:
           logger.error(
             "❌ Connection lost from the server. Reconnecting to WhatsApp..."
           );
-          await handledbChange();
           await magneum();
           break;
         case DisconnectReason.connectionReplaced:
@@ -79,6 +77,8 @@ module.exports = async (BloomBot, magneum, logger) => {
             "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection."
           );
           BloomBot.logout();
+          await handledbChange();
+          await magneum();
           break;
         case DisconnectReason.loggedOut:
           logger.error(
@@ -89,17 +89,14 @@ module.exports = async (BloomBot, magneum, logger) => {
           break;
         case DisconnectReason.restartRequired:
           logger.debug("🐞 Restart required. Restarting the program...");
-          BloomBot.end();
-          await magneum();
+          process.exit(0);
           break;
         case DisconnectReason.timedOut:
           logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
-          await handledbChange();
           await magneum();
           break;
         default:
           logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
-          await handledbChange();
           await magneum();
           break;
       }

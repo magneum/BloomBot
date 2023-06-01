@@ -33,6 +33,7 @@ global.MAINTAINANCE_MODE = process.env.MAINTAINANCE_MODE;
 if (!SUDO) SUDO = "918436686758,917430922909";
 global.verbose = process.env.verbose || "0";
 global.BLOOM_MODE = process.env.BLOOM_MODE || "default";
+global.HUGGING_FACE_API_TOKEN = process.env.HUGGING_FACE_API_TOKEN;
 global.PORT = process.env.PORT || Math.floor(Math.random() * 65535) + 10;
 global.pgdb = process.env.pgdb;
 global.prefix = process.env.prefix || "#";
