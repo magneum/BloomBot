@@ -82,9 +82,9 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.chat, "image");
+      ProfilePic = await BloomBot.profilePictureUrl(mags.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+      ProfilePic = BloomBot.display;
     }
     await BloomBot.groupUpdateDescription(mags.chat, BloomBot.args.join(" "));
     return await BloomBot.imagebutton(
@@ -96,7 +96,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
 
 *📜New Description:*
 ${BloomBot.args.join(" ")}`,
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+      ProfilePic
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, mags, error);

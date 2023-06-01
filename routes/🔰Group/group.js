@@ -65,9 +65,9 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.sender, "image");
+      ProfilePic = await BloomBot.profilePictureUrl(mags.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+      ProfilePic = BloomBot.display;
     }
 
     if (BloomBot.args[0] === "Bloom") {
@@ -80,7 +80,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               `> *Group have been Bloomed by: ${
                 BloomBot.pushname || BloomBot.Tname
               }*`,
-              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+              ProfilePic
             )
         )
         .catch((error) =>
@@ -100,7 +100,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               `> *Group have been Closed by: ${
                 BloomBot.pushname || BloomBot.Tname
               }*`,
-              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+              ProfilePic
             )
         )
         .catch((error) =>
@@ -143,14 +143,14 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
                 BloomBot,
                 mags,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
-                𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+                ProfilePic
               );
             } else {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
-                𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+                ProfilePic
               );
             }
           }
@@ -182,7 +182,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
                 BloomBot,
                 mags,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
-                𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+                ProfilePic
               );
             } else {
               await server.delete();
@@ -190,7 +190,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
                 BloomBot,
                 mags,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
-                𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+                ProfilePic
               );
             }
           }

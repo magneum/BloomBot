@@ -101,15 +101,15 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(users, "image");
+        ProfilePic = await BloomBot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+        ProfilePic = BloomBot.display;
       }
       await BloomBot.imagebutton(
         BloomBot,
         mags,
         `OOPs!! looks like someone removed @${users.split("@")[0]}`,
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+        ProfilePic
       );
     } else if (BloomBot.mentionByReply) {
       const users =
@@ -151,15 +151,15 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         );
       }
       try {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(users, "image");
+        ProfilePic = await BloomBot.profilePictureUrl(users, "image");
       } catch {
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+        ProfilePic = BloomBot.display;
       }
       await BloomBot.imagebutton(
         BloomBot,
         mags,
         `OOPs!! looks like someone removed @${users.split("@")[0]}`,
-        𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+        ProfilePic
       );
     } else {
       await BloomBot.sendMessage(mags.chat, {

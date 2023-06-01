@@ -15,7 +15,7 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const dbConfig = require("@/dbConfig");
+const dbConfig = require("#/config/dbConfig");
 const { DataTypes, Model } = require("sequelize");
 const sequelize = dbConfig.DATABASE;
 

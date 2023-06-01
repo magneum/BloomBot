@@ -18,9 +18,9 @@
 require("@/config");
 module.exports = async (BloomBot, mags, updatedb) => {
   try {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.sender, "image");
+    ProfilePic = await BloomBot.profilePictureUrl(mags.sender, "image");
   } catch {
-    𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = "i.postimg.cc/qBKwmM24/magsbot.png";
+    ProfilePic = "i.postimg.cc/qBKwmM24/magsbot.png";
   }
   await BloomBot.dashboard.findOne(
     {
@@ -31,7 +31,7 @@ module.exports = async (BloomBot, mags, updatedb) => {
       if (!udBase) {
         new BloomBot.dashboard({
           Id: mags.sender,
-          profile: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞,
+          profile: ProfilePic,
           username: BloomBot.pushname,
 
           bite: 0,
@@ -291,7 +291,7 @@ module.exports = async (BloomBot, mags, updatedb) => {
         return updatedb(udBase);
       }
       udBase.username = `${BloomBot.pushname}`;
-      udBase.profile = `${𝕯𝖎𝖘𝖕𝖑𝖆𝖞}`;
+      udBase.profile = `${ProfilePic}`;
       return updatedb(udBase);
     }
   );

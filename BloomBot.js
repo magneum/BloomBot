@@ -21,6 +21,7 @@ const chalk = require("chalk");
 const yargs = require("yargs");
 const { join } = require("path");
 const { say } = require("cfonts");
+const clear = require("cli-clear");
 const mFolders = fs.readdirSync("./routes");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
@@ -31,7 +32,7 @@ process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 process.on("uncaughtException", (error) => {
-  logger.error(error);
+  console.error(error);
 });
 require("events").EventEmitter.prototype._maxListeners = 0;
 say("BloomBot\nwhatsApp Multi Device\nUser bot", {
@@ -127,5 +128,6 @@ function ignite(cFile) {
   }
 }
 
+clear();
 showCommands("routes");
 ignite("app/index", "uptime");

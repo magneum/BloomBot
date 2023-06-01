@@ -17,30 +17,43 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("../module-alias");
 require("@/config");
-const logger = require("@/logger");
+const logger = require("@/log");
 const gitPull = require("@/utils/gitPull");
-const dbConfig = require("@/auth/dbConfig");
 const {
   default: Bloom_bot_client,
   makeInMemoryStore,
 } = require("@adiwajshing/baileys");
 const pino = require("pino");
 const monGoose = require("mongoose");
-const { exec } = require("child_process");
+const dbConfig = require("@/config/dbConfig");
 const { fetchJson } = require("@/server/obFunc");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
 
 async function magneum() {
-  await monGoose
-    .connect(MONGODB_URL, {
+  const sequelize = dbConfig.DATABASE;
+  logger.info("📢 Connecting to Mongodb() database...");
+  try {
+    await monGoose.connect(MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    })
-    .catch((error) => {
-      logger.error("❌ Unable to Connect with mongoose.");
-      logger.error(error);
-    })
-    .then(logger.info("📢 Connected with mongoose."));
+    });
+    logger.info("📢 Connected with mongoose.");
+  } catch (error) {
+    logger.error("❌ Unable to Connect with Mongodb():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Connecting to Sequelize() database...");
+  try {
+    await sequelize.authenticate();
+    logger.info("📢 Connection has been established successfully.");
+  } catch (error) {
+    logger.error("❌ Unable to connect to the Sequelize():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Syncing Sequelize() Database...");
+  await sequelize.sync();
 
   const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
@@ -58,16 +71,6 @@ async function magneum() {
     return version;
   };
 
-  const sequelize = dbConfig.DATABASE;
-  logger.info("📢 Connecting to Database.");
-  try {
-    await sequelize.authenticate();
-    logger.info("📢 Connection has been established successfully.");
-  } catch (error) {
-    console.error("📢 Unable to connect to the database:", error);
-  }
-  logger.info("📢 Syncing Database...");
-  await sequelize.sync();
   let { state, saveCreds } = await useSqlAuthState();
   const BloomBot = Bloom_bot_client({
     auth: state,
@@ -92,24 +95,12 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  async function rmdb() {
-    await new Promise((resolve, reject) => {
-      exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve();
-        }
-      });
-    });
-    process.exit(0);
-  }
   require("./bExts")(BloomBot);
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/messages_upsert")(BloomBot, store, logger);
-  require("@/events/connection_update")(BloomBot, store, logger);
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  require("@/events/connection_update")(BloomBot, magneum, logger);
   require("@/events/group_participants_update")(BloomBot, store, logger);
 
   setInterval(async () => {

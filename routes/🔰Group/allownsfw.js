@@ -63,9 +63,9 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     } else
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.chat, "image");
+      ProfilePic = await BloomBot.profilePictureUrl(mags.chat, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+      ProfilePic = BloomBot.display;
     }
     if (!BloomBot.args) {
       await BloomBot.sendMessage(mags.chat, {
@@ -106,7 +106,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
-              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+              ProfilePic
             );
           } else
             return await BloomBot.imagebutton(
@@ -115,7 +115,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
-              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+              ProfilePic
             );
         }
       );
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
-              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+              ProfilePic
             );
           } else await server.delete();
           return await BloomBot.imagebutton(
@@ -146,7 +146,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
             `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
-            𝕯𝖎𝖘𝖕𝖑𝖆𝖞
+            ProfilePic
           );
         }
       );

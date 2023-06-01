@@ -15,9 +15,10 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-const chalk = require("chalk");
+require("../module-alias");
 const { Client } = require("pg");
-const dbConfig = require("../auth/dbConfig");
+const logger = require("@/log");
+const dbConfig = require("@/config/dbConfig");
 
 async function purgepg() {
   const connectionString = dbConfig.DATABASE_URL;
@@ -35,15 +36,11 @@ async function purgepg() {
     for (const row of res.rows) {
       const tableName = row.tablename;
       await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
-      console.log(chalk.green(`Dropped table: ${tableName}`));
+      logger.debug(`📢 Dropped table: ${tableName}`);
     }
-
-    console.log(chalk.green("Database cleaned successfully."));
+    logger.info("📢 Database cleaned successfully.");
   } catch (err) {
-    console.error(
-      chalk.red("An error occurred while cleaning the database:"),
-      err
-    );
+    logger.error("❌ An error occurred while cleaning the database:", err);
   } finally {
     await client.end();
   }

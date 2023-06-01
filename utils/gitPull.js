@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const fs = require("fs-extra");
 const git = require("simple-git")();
-const logger = require("@/logger");
+const logger = require("@/log");
 const { exec } = require("child_process");
 
 const gitPull = async () => {
