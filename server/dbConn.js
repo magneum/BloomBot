@@ -15,11 +15,12 @@
 //  ║
 //  ║🐞 Developers: +918436686758, +918250889325
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
-require("@/config");
+require("../config");
 const logger = require("../log/index");
 const monGoose = require("mongoose");
 const sequelize = dbConfig.DATABASE;
-const dbConfig = require("@/config/dbConfig");
+const dbConfig = require(".../config/dbConfig");
+
 module.exports = async () => {
   logger.info("📢 Connecting to Mongodb() database...");
   await monGoose
