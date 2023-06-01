@@ -51,19 +51,19 @@ module.exports = async (BloomBot, mags, isAdmin, participants) => {
     }
 
     try {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.sender, "image");
+      ProfilePic = await BloomBot.profilePictureUrl(mags.sender, "image");
     } catch {
-      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
+      ProfilePic = BloomBot.display;
     }
     if (BloomBot.args) {
       return await BloomBot.sendMessage(
         mags.chat,
         {
-          image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
+          image: { url: ProfilePic },
           caption: `*📢ChatId:* ${mags.chat}
-Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-Ῠ 🕛𝐓𝐢𝐦𝐞:  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
-📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \n${BloomBot.args.join(" ")}`,
+*💫Pinged By:*:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+*🕛Time:*  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* \n${BloomBot.args.join(" ")}`,
           mentions: await participants.map((a) => a.id),
         },
         { quoted: mags }
@@ -72,11 +72,11 @@ module.exports = async (BloomBot, mags, isAdmin, participants) => {
       return await BloomBot.sendMessage(
         mags.chat,
         {
-          image: { url: 𝕯𝖎𝖘𝖕𝖑𝖆𝖞 },
+          image: { url: ProfilePic },
           caption: `*📢ChatId:* ${mags.chat}
-Ῠ 💫𝐏𝐢𝐧𝐠𝐞𝐝 𝐁𝐲:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-Ῠ 🕛𝐓𝐢𝐦𝐞:  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
-📌𝐌𝐞𝐬𝐬𝐚𝐠𝐞: \nAttention Everyone`,
+*💫Pinged By:*:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+*🕛Time:*  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* \nAttention Everyone`,
           mentions: await participants.map((a) => a.id),
         },
         { quoted: mags }
