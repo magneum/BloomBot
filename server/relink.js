@@ -194,6 +194,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.cors = require("cors");
   BloomBot.express = require("express");
   BloomBot.chalk = require("chalk");
+  BloomBot.clear = require("cli-clear");
   BloomBot.playdl = require("play-dl");
   BloomBot.request = require("request");
   BloomBot.xfar = require("xfarr-api");

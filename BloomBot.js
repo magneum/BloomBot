@@ -21,6 +21,7 @@ const chalk = require("chalk");
 const yargs = require("yargs");
 const { join } = require("path");
 const { say } = require("cfonts");
+const clear = require("cli-clear");
 const mFolders = fs.readdirSync("./routes");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
@@ -127,6 +128,41 @@ function ignite(cFile) {
   }
 }
 
-showCommands("routes");
-require("./server/dbConn");
-ignite("app/index", "uptime");
+async function connectToDatabases() {
+  logger.info("📢 Connecting to Mongodb() database...");
+  try {
+    await monGoose.connect(MONGODB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    logger.info("📢 Connected with mongoose.");
+  } catch (error) {
+    logger.error("❌ Unable to Connect with Mongodb():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Connecting to Sequelize() database...");
+  try {
+    await sequelize.authenticate();
+    logger.info("📢 Connection has been established successfully.");
+  } catch (error) {
+    logger.error("❌ Unable to connect to the Sequelize():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Syncing Sequelize() Database...");
+  await sequelize.sync();
+}
+
+connectToDatabases()
+  .then(() => {
+    clear();
+    logger.info("📢 Databases connected successfully.");
+    console.clear();
+    showCommands("routes");
+    ignite("app/index", "uptime");
+  })
+  .catch((error) => {
+    clear();
+    logger.error("❌ Error connecting to databases:", error);
+  });
