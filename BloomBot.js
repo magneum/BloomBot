@@ -23,15 +23,12 @@ const logger = require("./log");
 const { join } = require("path");
 const { say } = require("cfonts");
 const clear = require("cli-clear");
-const monGoose = require("mongoose");
 const mFolders = fs.readdirSync("./routes");
-const dbConfig = require("./config/dbConfig");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
 const { setupMaster, fork } = require("cluster");
 const rl = createInterface(process.stdin, process.stdout);
 
-const sequelize = dbConfig.DATABASE;
 process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -132,41 +129,6 @@ function ignite(cFile) {
   }
 }
 
-async function connectToDatabases() {
-  logger.info("📢 Connecting to Mongodb() database...");
-  try {
-    await monGoose.connect(MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    logger.info("📢 Connected with mongoose.");
-  } catch (error) {
-    logger.error("❌ Unable to Connect with Mongodb():", error);
-    process.exit(0);
-  }
-
-  logger.info("📢 Connecting to Sequelize() database...");
-  try {
-    await sequelize.authenticate();
-    logger.info("📢 Connection has been established successfully.");
-  } catch (error) {
-    logger.error("❌ Unable to connect to the Sequelize():", error);
-    process.exit(0);
-  }
-
-  logger.info("📢 Syncing Sequelize() Database...");
-  await sequelize.sync();
-}
-
-connectToDatabases()
-  .then(() => {
-    clear();
-    logger.info("📢 Databases connected successfully.");
-    console.clear();
-    showCommands("routes");
-    ignite("app/index", "uptime");
-  })
-  .catch((error) => {
-    clear();
-    logger.error("❌ Error connecting to databases:", error);
-  });
+clear();
+showCommands("routes");
+ignite("app/index", "uptime");

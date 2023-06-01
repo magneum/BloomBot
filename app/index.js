@@ -24,10 +24,37 @@ const {
   makeInMemoryStore,
 } = require("@adiwajshing/baileys");
 const pino = require("pino");
+const monGoose = require("mongoose");
+const dbConfig = require("@/config/dbConfig");
 const { fetchJson } = require("@/server/obFunc");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
 
 async function magneum() {
+  const sequelize = dbConfig.DATABASE;
+  logger.info("📢 Connecting to Mongodb() database...");
+  try {
+    await monGoose.connect(MONGODB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    logger.info("📢 Connected with mongoose.");
+  } catch (error) {
+    logger.error("❌ Unable to Connect with Mongodb():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Connecting to Sequelize() database...");
+  try {
+    await sequelize.authenticate();
+    logger.info("📢 Connection has been established successfully.");
+  } catch (error) {
+    logger.error("❌ Unable to connect to the Sequelize():", error);
+    process.exit(0);
+  }
+
+  logger.info("📢 Syncing Sequelize() Database...");
+  await sequelize.sync();
+
   const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
