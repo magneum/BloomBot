@@ -26,7 +26,6 @@ const {
 } = require("@adiwajshing/baileys");
 const pino = require("pino");
 const monGoose = require("mongoose");
-const { exec } = require("child_process");
 const { fetchJson } = require("@/server/obFunc");
 const useSqlAuthState = require("@/auth/sql/dbAuth");
 
@@ -92,18 +91,6 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  async function rmdb() {
-    await new Promise((resolve, reject) => {
-      exec("rm -rf BloomBot.db", (error, stdout, stderr) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve();
-        }
-      });
-    });
-    process.exit(0);
-  }
   require("./bExts")(BloomBot);
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);

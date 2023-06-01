@@ -18,8 +18,24 @@
 require("@/config");
 const { Boom } = require("@hapi/boom");
 const purgepg = require("@/app/purgepg");
+const { exec } = require("child_process");
+const dbConfig = require("@/config/dbConfig");
 const { DisconnectReason } = require("@adiwajshing/baileys");
+
 module.exports = async (BloomBot, magneum, logger) => {
+  async function handledbChange(BloomBot, magneum) {
+    if (dbConfig.DATABASE_URL.includes("postgres")) {
+      await purgepg().catch((e) => {
+        logger.error("❌ Error occurred while purging the database: ", e);
+      });
+      process.exit(0);
+    } else {
+      exec("rm -rf ./BloomBot.db");
+      process.exit(0);
+    }
+    BloomBot.end();
+    await magneum();
+  }
   BloomBot.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,
@@ -36,32 +52,19 @@ module.exports = async (BloomBot, magneum, logger) => {
       logger.info("📢 Login successful! Connection to WhatsApp established.");
     } else if (connection === "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-
       if (reason === DisconnectReason.badSession) {
-        logger.error(
-          "❌ Bad Session File detected. Please delete the existing session file and scan again to establish a new session."
-        );
-        BloomBot.logout();
+        logger.error("❌ Bad Session File detected.");
+        await handledbChange(BloomBot, magneum);
       } else if (reason === DisconnectReason.connectionClosed) {
         logger.error(
           "❌ Connection closed unexpectedly. Reconnecting to WhatsApp..."
         );
-        await purgepg().catch((e) => {
-          logger.error("❌ Error occurred while purging the database: ", e);
-          rmdb();
-        });
-        BloomBot.end();
-        await magneum();
+        await handledbChange(BloomBot, magneum);
       } else if (reason === DisconnectReason.connectionLost) {
         logger.error(
           "❌ Connection lost from the server. Reconnecting to WhatsApp..."
         );
-        await purgepg().catch((e) => {
-          logger.error("❌ Error occurred while purging the database: ", e);
-          rmdb();
-        });
-        BloomBot.end();
-        await magneum();
+        await handledbChange(BloomBot, magneum);
       } else if (reason === DisconnectReason.connectionReplaced) {
         logger.error(
           "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection."
@@ -71,31 +74,17 @@ module.exports = async (BloomBot, magneum, logger) => {
         logger.error(
           "❌ Device logged out. Please scan again and run the program to establish a new session."
         );
-        await purgepg().catch((e) => {
-          logger.error("❌ Error occurred while purging the database: ", e);
-          rmdb();
-        });
-        BloomBot.end();
-        await magneum();
+        await handledbChange(BloomBot, magneum);
       } else if (reason === DisconnectReason.restartRequired) {
         logger.debug("🐞 Restart required. Restarting the program...");
-        await purgepg().catch((e) => {
-          logger.error("❌ Error occurred while purging the database: ", e);
-          rmdb();
-        });
         BloomBot.end();
         await magneum();
       } else if (reason === DisconnectReason.timedOut) {
         logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
-        await purgepg().catch((e) => {
-          logger.error("❌ Error occurred while purging the database: ", e);
-          rmdb();
-        });
-        BloomBot.end();
-        await magneum();
+        await handledbChange(BloomBot, magneum);
       } else {
         logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
-        BloomBot.end();
+        await handledbChange(BloomBot, magneum);
       }
     } else if (isOnline === true) {
       logger.debug("📢 User is online. WhatsApp connection is active.");
