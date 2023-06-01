@@ -36,8 +36,7 @@ module.exports = async (BloomBot, magneum, logger) => {
       process.exit(0);
     }
   };
-
-  const handleConnectionUpdate = async (update) => {
+  BloomBot.ev.on("connection.update", async (update) => {
     const {
       lastDisconnect,
       connection,
@@ -123,8 +122,6 @@ module.exports = async (BloomBot, magneum, logger) => {
     } else {
       logger.info("📢 Connection event received:", update);
     }
-  };
-
-  BloomBot.ev.on("connection.update", handleConnectionUpdate);
+  });
   return BloomBot;
 };
