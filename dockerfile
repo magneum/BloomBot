@@ -5,6 +5,5 @@ RUN n install 18 && hash -r
 RUN git clone https://github.com/magneum/BloomBot
 RUN cd BloomBot
 WORKDIR /BloomBot
-RUN git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum
 RUN yarn build
 CMD [ "yarn", "run", "start" ]
