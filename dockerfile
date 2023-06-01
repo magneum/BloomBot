@@ -9,5 +9,5 @@ WORKDIR /BloomBot
 RUN git init --initial-branch=magneum
 RUN git fetch origin magneum
 RUN git reset --hard origin/magneum
-RUN yarn install
+RUN yarn build
 CMD [ "yarn", "run", "start" ]
