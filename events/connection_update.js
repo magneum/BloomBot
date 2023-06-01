@@ -24,7 +24,6 @@ const { DisconnectReason } = require("@adiwajshing/baileys");
 
 module.exports = async (BloomBot, magneum, logger) => {
   const handledbChange = async () => {
-    BloomBot.end();
     if (dbConfig.DATABASE_URL.includes("postgres")) {
       try {
         await purgepg();
@@ -58,18 +57,21 @@ module.exports = async (BloomBot, magneum, logger) => {
         case DisconnectReason.badSession:
           logger.error("❌ Bad Session File detected.");
           await handledbChange();
+          BloomBot.end();
           await magneum();
           break;
         case DisconnectReason.connectionClosed:
           logger.error(
             "❌ Connection closed unexpectedly. Reconnecting to WhatsApp..."
           );
+          BloomBot.end();
           await magneum();
           break;
         case DisconnectReason.connectionLost:
           logger.error(
             "❌ Connection lost from the server. Reconnecting to WhatsApp..."
           );
+          BloomBot.end();
           await magneum();
           break;
         case DisconnectReason.connectionReplaced:
@@ -85,20 +87,20 @@ module.exports = async (BloomBot, magneum, logger) => {
             "❌ Device logged out. Please scan again and run the program to establish a new session."
           );
           await handledbChange();
+          BloomBot.end();
           await magneum();
           break;
         case DisconnectReason.restartRequired:
           logger.debug("🐞 Restart required. Restarting the program...");
-          await magneum();
           process.exit(0);
           break;
         case DisconnectReason.timedOut:
           logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
+          BloomBot.end();
           await magneum();
           break;
         default:
           logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
-          await magneum();
           break;
       }
     } else if (isOnline === true) {
