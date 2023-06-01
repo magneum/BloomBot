@@ -5,8 +5,7 @@
   "description": "BloomBot is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "engines": {
     "npm": "please-use-yarn",
-    "yarn": ">= 1.22.19",
-    "node": "18.x"
+    "yarn": ">= 1.22.19"
   },
   "scripts": {
     "dbclean": "node app/purgepg.js",
