@@ -8,14 +8,14 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
+    "dev": "supervisor -w . Boot.js",
     "dbclean": "node app/purgepg.js",
     "ffdev": "nodemon server/pfmpeg.js",
-    "dev": "supervisor -w . BloomBot.js",
     "ffstart": "forever server/pfmpeg.js",
     "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms Boot.js --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
   "depecrated": false,

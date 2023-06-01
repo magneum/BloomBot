@@ -22,50 +22,63 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-const fs = require("fs");
-const { Sequelize } = require("sequelize");
-if (fs.existsSync(".env")) {
-  require("dotenv").config({ path: ".env" });
-} else {
-  require("dotenv");
-}
+require("../module-alias");
+require("@/config");
+const logger = require("@/log");
+const clear = require("cli-clear");
+const readline = require("readline");
+const { LocalHfInference } = require("@huggingface/inference-local");
 
-const convertToLogLevel = (value) => {
-  const log = false;
-  if (typeof value === "string") {
-    if (value.toLowerCase() === "true") {
-      log = console.log;
+const promptUser = (rl, message) => {
+  return new Promise((resolve) => {
+    rl.question(message, (answer) => {
+      resolve(answer);
+    });
+  });
+};
+
+const generateResponse = async (inference, userInput) => {
+  const response = await inference.generate({
+    input: userInput,
+    options: {
+      model: "your-local-model-identifier", // Replace with the identifier of your local model
+      parameters: {
+        max_length: 100,
+      },
+    },
+  });
+  return response;
+};
+
+const displayResponse = (prefix, message) => {
+  logger.info(`📢 ${prefix} ${message}`);
+};
+
+const ChatBot = async () => {
+  clear();
+  const inference = new LocalHfInference({
+    modelPath: "/path/to/your/model", // Replace with the path to your local model
+    library: "tensorflow", // Replace with the appropriate library (tensorflow or pytorch)
+  });
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  while (true) {
+    try {
+      const userInput = await promptUser(rl, "User: ");
+      if (userInput.toLowerCase() === "exit") {
+        rl.close();
+        break;
+      }
+
+      const response = await generateResponse(inference, userInput);
+      displayResponse("Bot:", response.generated_text);
+    } catch (error) {
+      logger.error("❌ An error occurred:", error);
     }
   }
-  return log;
 };
 
-process.env.DATABASE_URL =
-  process.env.DATABASE_URL === undefined
-    ? "./BloomBot.db"
-    : process.env.DATABASE_URL;
-process.env.DEBUG =
-  process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
-
-const dbConfig = {
-  DATABASE_URL:
-    process.env.DATABASE_URL === undefined
-      ? "./BloomBot.db"
-      : process.env.DATABASE_URL,
-  DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
-  DATABASE:
-    process.env.DATABASE_URL === "./BloomBot.db"
-      ? new Sequelize({
-          dialect: "sqlite",
-          storage: process.env.DATABASE_URL,
-          logging: convertToLogLevel(process.env.DEBUG),
-        })
-      : new Sequelize(process.env.DATABASE_URL, {
-          dialect: "postgres",
-          protocol: "postgres",
-          logging: convertToLogLevel(process.env.DEBUG),
-          dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-        }),
-};
-
-module.exports = dbConfig;
+ChatBot();
