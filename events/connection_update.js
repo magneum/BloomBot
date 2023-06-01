@@ -90,6 +90,7 @@ module.exports = async (BloomBot, magneum, logger) => {
         case DisconnectReason.restartRequired:
           logger.debug("🐞 Restart required. Restarting the program...");
           await magneum();
+          process.exit(0);
           break;
         case DisconnectReason.timedOut:
           logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
