@@ -1,0 +1,4 @@
+python-dotenv
+GitPython
+termcolor
+loguru
