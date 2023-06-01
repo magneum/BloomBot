@@ -8,13 +8,14 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "dev": "supervisor -w . BloomBot.js",
-    "ffdev": "nodemon server/pfmpeg.js",
-    "ffstart": "forever server/pfmpeg.js",
-    "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
-    "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",
-    "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
+    "dbclean": "clear && node app/purgepg.js",
+    "ffdev": "clear && nodemon server/pfmpeg.js",
+    "dev": "clear && supervisor -w . BloomBot.js",
+    "ffstart": "clear && forever server/pfmpeg.js",
+    "magdev": "clear && concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
+    "magstart": "clear && concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
+    "start": "clear && forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",
+    "build": "clear && rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
   },
   "depecrated": false,
   "directories": {

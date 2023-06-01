@@ -17,7 +17,7 @@
 //  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 const chalk = require("chalk");
 const { Client } = require("pg");
-const dbConfig = require("@/config/dbConfig");
+const dbConfig = require("../config/dbConfig");
 
 async function purgepg() {
   const connectionString = dbConfig.DATABASE_URL;
@@ -49,5 +49,5 @@ async function purgepg() {
   }
 }
 
-// purgepg();
-module.exports = purgepg;
+purgepg();
+// module.exports = purgepg;
