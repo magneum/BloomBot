@@ -7,14 +7,6 @@ dotenv.config();
 // Get the database URL from the environment variable
 const url = process.env.MONGODB_URL;
 
-// Validate the database URL
-try {
-  url = url.parse();
-} catch (error) {
-  console.error(`Invalid database URL: ${url}`);
-  process.exit(1);
-}
-
 // Connect to the database
 const db = mongoose.connect(url, {
   useNewUrlParser: true,
