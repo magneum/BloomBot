@@ -8,7 +8,10 @@ dotenv.config();
 const url = process.env.MONGODB_URL;
 
 // Connect to the database
-const db = mongoose.connect(url, { useNewUrlParser: true });
+const db = mongoose.connect(url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // Get all the collections in the database
 const collections = db.listCollections();
