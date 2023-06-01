@@ -24,6 +24,7 @@ const { DisconnectReason } = require("@adiwajshing/baileys");
 
 module.exports = async (BloomBot, magneum, logger) => {
   const handledbChange = async () => {
+    BloomBot.end();
     if (dbConfig.DATABASE_URL.includes("postgres")) {
       try {
         await purgepg();
@@ -56,7 +57,6 @@ module.exports = async (BloomBot, magneum, logger) => {
       switch (reason) {
         case DisconnectReason.badSession:
           logger.error("❌ Bad Session File detected.");
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
@@ -64,7 +64,6 @@ module.exports = async (BloomBot, magneum, logger) => {
           logger.error(
             "❌ Connection closed unexpectedly. Reconnecting to WhatsApp..."
           );
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
@@ -72,7 +71,6 @@ module.exports = async (BloomBot, magneum, logger) => {
           logger.error(
             "❌ Connection lost from the server. Reconnecting to WhatsApp..."
           );
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
@@ -86,7 +84,6 @@ module.exports = async (BloomBot, magneum, logger) => {
           logger.error(
             "❌ Device logged out. Please scan again and run the program to establish a new session."
           );
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
@@ -97,13 +94,11 @@ module.exports = async (BloomBot, magneum, logger) => {
           break;
         case DisconnectReason.timedOut:
           logger.error("❌ Connection timed out. Reconnecting to WhatsApp...");
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
         default:
           logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
-          BloomBot.end();
           await handledbChange();
           await magneum();
           break;
