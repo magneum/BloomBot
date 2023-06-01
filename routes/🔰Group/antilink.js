@@ -1,27 +1,20 @@
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
-//  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
+//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
+//  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
+//  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
 //  ║
+//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
+//  ║🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
+//  ║🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
+//  ║   whatsApp group management experience! 🎉
 //  ║
-//  ║⦁> 🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
-//  ║⦁> 🚀 Simplifies group management tasks and enhances the overall user experience.
-//  ║⦁> ⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║⦁> 🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║⦁> 🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⦁> ⚠️ Exercise caution and take responsibility for any modifications made to the bot.
-//  ║⦁> 📞 Need assistance or have issues? Contact our developers.
-//  ║⦁> 🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║⦁> 👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
-//  ║    whatsApp group management experience! 🎉
-//  ║
-//  ║     🚨LEGAL NOTICE🚨
-//  ║⦁>    ⒸBloomBot is in no way affiliated with, authorized, maintained,
-//  ║⦁>    sponsored or endorsed by whatsApp or any of its affiliates or
-//  ║⦁>    subsidiaries. This is an independent and unofficial software.
-//  ║⦁>    Use at your own risk.
-//  ║
-//  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ║🐞 Developers: +918436686758, +918250889325
+//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎"
 require("#/config");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
@@ -72,9 +65,9 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     }
 
     try {
-      ProfilePic = await BloomBot.profilePictureUrl(mags.chat, "image");
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = await BloomBot.profilePictureUrl(mags.chat, "image");
     } catch {
-      ProfilePic = BloomBot.Logos;
+      𝕯𝖎𝖘𝖕𝖑𝖆𝖞 = BloomBot.display;
     }
     if (!BloomBot.args) {
       await BloomBot.sendMessage(mags.chat, {
@@ -100,13 +93,13 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await BloomBot.LinkList.findOne(
         {
-          libId: mags.chat,
+          serverId: mags.chat,
         },
-        async (error, lib) => {
+        async (error, server) => {
           if (error) return BloomBot.handlerror(BloomBot, mags, error);
-          if (!lib) {
+          if (!server) {
             new BloomBot.LinkList({
-              libId: mags.chat,
+              serverId: mags.chat,
               value: "ON",
             }).save();
             return await BloomBot.imagebutton(
@@ -115,7 +108,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
-              ProfilePic
+              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else {
             return await BloomBot.imagebutton(
@@ -124,7 +117,7 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
-              ProfilePic
+              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           }
         }
@@ -136,28 +129,28 @@ module.exports = async (BloomBot, mags, gmeta, isAdmin, isbotAdmin) => {
     ) {
       return await BloomBot.LinkList.findOne(
         {
-          libId: mags.chat,
+          serverId: mags.chat,
         },
-        async (error, lib) => {
+        async (error, server) => {
           if (error) return BloomBot.handlerror(BloomBot, mags, error);
-          if (!lib) {
+          if (!server) {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
-              ProfilePic
+              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           } else {
-            await lib.delete();
+            await server.delete();
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
               `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
-              ProfilePic
+              𝕯𝖎𝖘𝖕𝖑𝖆𝖞
             );
           }
         }

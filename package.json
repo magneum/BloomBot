@@ -1,66 +1,33 @@
 {
-  "version": "0.0.4",
+  "main": "app",
   "name": "bloombot",
-  "main": "app/index.js",
-  "description": "ⒸBloomBot by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
-  "scripts": {
-    "local": "python3 python",
-    "dbclean": "node app/purgepg.js",
-    "ffdev": "nodemon lib/pfmpeg.js",
-    "ffstart": "forever lib/pfmpeg.js",
-    "dev": "supervisor -w . boot.js",
-    "test": "supervisor -w . test/index.js",
-    "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
-    "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
-    "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
-    "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/magneum/bloombot.git"
-  },
-  "keywords": [
-    "bot",
-    "music",
-    "games",
-    "whatsapp",
-    "moderation",
-    "automation"
-  ],
-  "author": "Magneum",
-  "license": "MIT",
+  "version": "0.0.2",
+  "description": "BloomBot is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "engines": {
-    "node": ">= 16",
-    "yarn": ">= 1.22.19",
-    "npm": "❌Error: This project requires you to use 'Yarn' package manager!"
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.19"
   },
-  "config": {
-    "libPort": 8080,
-    "logLevel": "info"
+  "scripts": {
+    "dev": "supervisor -w . BloomBot.js",
+    "ffdev": "nodemon server/pfmpeg.js",
+    "ffstart": "forever server/pfmpeg.js",
+    "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
+    "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms BloomBot.js --color",
+    "build": "rm -rf yarn.lock && rm -rf node_modules && pip install -r requirements.txt && yarn install"
   },
-  "browserslist": [
-    "defaults"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "depecrated": false,
+  "directories": {
+    "auth": "auth",
+    "docs": "docs",
+    "views": "views",
+    "public": "public",
+    "logger": "logger",
+    "routes": "routes",
+    "server": "server",
+    "database": "database"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "printWidth": 80,
-    "singleQuote": false,
-    "trailingComma": "all",
-    "arrowParens": "always"
-  },
-  "private": false,
+  "packageManager": "yarn@3.3.1",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
@@ -68,6 +35,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.0.0",
     "@hapi/boom": "^10.0.0",
+    "@next/font": "^13.1.2",
     "@prisma/client": "^4.14.1",
     "@shineiichijo/canvas-chan": "^1.0.0",
     "@shineiichijo/marika": "^2.0.2",
@@ -85,7 +53,6 @@
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
-    "cli-clear": "^1.0.4",
     "cli-table3": "^0.6.3",
     "cluster": "^0.7.7",
     "codecov": "^3.8.3",
@@ -102,7 +69,6 @@
     "express": "^4.18.2",
     "ffmpeg-static": "^5.1.0",
     "fluent-ffmpeg": "^2.1.2",
-    "form-data": "^4.0.0",
     "fs-extra": "^10.1.0",
     "g-i-s": "^2.1.6",
     "genius-lyrics": "^4.4.2",
@@ -130,6 +96,7 @@
     "node-downloader-helper": "^2.1.1",
     "node-fetch": "^2.6.1",
     "node-webpmux": "^3.1.0",
+    "nodemon": "^2.0.20",
     "os": "^0.1.2",
     "parse-ms": "^2.1.0",
     "parse-time": "^0.1.4",
@@ -163,6 +130,8 @@
     "sqlite": "^4.2.1",
     "sqlite3": "^5.1.6",
     "string-similarity": "^4.0.4",
+    "supervisor": "^0.12.0",
+    "tesseract.js": "^2.1.5",
     "tinyurl": "^1.1.7",
     "tinyurl-api": "^1.0.1",
     "tube-exec": "^0.0.1",
@@ -173,16 +142,18 @@
     "xfarr-api": "^1.0.3",
     "yargs": "^17.6.2",
     "youtube-avdl": "^1.1.0",
-    "youtube-dl-exec": "^*",
+    "youtube-dl-exec": "latest",
     "ytdl-secktor": "^0.0.1-development"
   },
   "devDependencies": {
-    "autoprefixer": "^*",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "autoprefixer": "^10.4.13",
     "concurrently": "^*",
-    "forever": "^*",
-    "nodemon": "^*",
-    "postcss": "^*",
-    "supervisor": "^*",
-    "tailwindcss": "^*"
+    "forever": "^4.0.3",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6"
   }
 }
