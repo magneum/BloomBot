@@ -131,18 +131,10 @@ module.exports = async (BloomBot, mags, update, store) => {
               // );
               // }
 
-              // try {
-              // require("#/server/library")(BloomBot, mags, update, store);
-              // return await BloomBot.sendMessage(mags.chat, {
-              // react: {
-              // text: "🌻",
-              // key: mags.key,
-              // },
-              // });
-              // } catch {
-              await BloomBot.sendMessage(mags.chat, {
+              require("#/server/library")(BloomBot, mags, update, store);
+              return await BloomBot.sendMessage(mags.chat, {
                 react: {
-                  text: "⚠️",
+                  text: "🌻",
                   key: mags.key,
                 },
               });
