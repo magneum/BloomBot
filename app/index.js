@@ -1,5 +1,5 @@
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ ⒸBloomBot (multi-device) by Magneum™
 //  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
 //  ║
 //  ║
@@ -21,7 +21,7 @@
 //  ║⦁>    Use at your own risk.
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../module-alias");
 require("@/config");
 const logger = require("@/log");
@@ -101,7 +101,7 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  require("./bExts")(BloomBot);
+  require("./battery")(BloomBot);
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/messages_upsert")(BloomBot, store, logger);
@@ -172,7 +172,7 @@ async function magneum() {
     ];
     const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)",
+      "Feeling: " + __Feeling + " (ⒸBloomBot (md) by Magneum™)",
     );
   }, 300 * 1000);
   // setInterval(async () => {

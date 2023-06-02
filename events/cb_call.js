@@ -1,5 +1,5 @@
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ ⒸBloomBot (multi-device) by Magneum™
 //  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
 //  ║
 //  ║
@@ -21,7 +21,7 @@
 //  ║⦁>    Use at your own risk.
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("@/config");
 module.exports = async (BloomBot, store, logger) => {
   BloomBot.ws.on("CB:call", async (update) => {
@@ -46,7 +46,7 @@ This feature has been enabled by the owner for their privacy. As a result, I am 
 If you need any assistance or have any questions, please join our support group for further help.
 
 
-*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
+*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
 
         await BloomBot.sendMessage(
           callerId,

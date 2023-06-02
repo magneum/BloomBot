@@ -2,7 +2,7 @@
   "version": "0.0.4",
   "name": "bloombot",
   "main": "app/index.js",
-  "description": "ⒸBloomBot by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
+  "description": "ⒸBloomBot (md) by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "scripts": {
     "local": "python3 python",
     "dev": "supervisor -w . boot.js",

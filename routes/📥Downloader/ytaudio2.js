@@ -1,5 +1,5 @@
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ ⒸBloomBot (multi-device) by Magneum™
 //  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
 //  ║
 //  ║
@@ -21,7 +21,7 @@
 //  ║⦁>    Use at your own risk.
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config");
 const ppth = require("path");
 const ytdl = require("ytdl-secktor");
@@ -99,7 +99,7 @@ module.exports = async (BloomBot, mags) => {
             contextInfo: {
               externalAdReply: {
                 title: mgdata.youtube_search[0].TITLE,
-                body: "ⒸBloomBot by Magneum™",
+                body: "ⒸBloomBot (md) by Magneum™",
                 renderLargerThumbnail: true,
                 thumbnailUrl: mgdata.youtube_search[0].THUMB,
                 mediaUrl: mgdata.youtube_search[0].LINK,

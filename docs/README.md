@@ -1,4 +1,4 @@
-# [Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞](https://bit.ly/magneum)
+# [ⒸBloomBot (multi-device) by Magneum™](https://bit.ly/magneum)
 
 
 
@@ -22,7 +22,7 @@ Use at your own risk.
 <h1 align="center"><b>🚨Description</b></h1>
 
 ```
-╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+╔⧉༻ ⒸBloomBot (multi-device) by Magneum™
 ║   is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
 ║
 ║ 🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.

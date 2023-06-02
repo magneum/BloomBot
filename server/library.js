@@ -1,5 +1,5 @@
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 🤖📱 𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ ⒸBloomBot (multi-device) by Magneum™
 //  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
 //  ║
 //  ║
@@ -21,7 +21,7 @@
 //  ║⦁>    Use at your own risk.
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
-"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
@@ -86,7 +86,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎"
+    "\n◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎"
   );
   console.log(
     BloomBot.chalk.blueBright("🖊️COMMANDS: "),
@@ -109,7 +109,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     BloomBot.chalk.green(mags.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎\n"
+    "◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -176,7 +176,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
         footer:
-          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}${suggestedCommand}`,
@@ -203,7 +203,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
         footer:
-          "*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Help`,
