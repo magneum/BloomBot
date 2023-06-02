@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-const dbdata = require("@/config/dbdata");
+const dbdata = require("#/config/dbdata");
 const { DataTypes, Model } = require("sequelize");
 const sequelize = dbdata.DATABASE;
 
