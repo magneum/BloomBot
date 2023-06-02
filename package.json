@@ -180,6 +180,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "concurrently": "^8.1.0",
     "forever": "^4.0.3",
     "nodemon": "^2.0.20",
     "postcss": "^8.4.21",
