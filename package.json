@@ -1,24 +1,66 @@
 {
-  "name": "bloombot",
   "version": "0.0.4",
-  "main": "app",
-  "description": "BloomBot is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
-  "engines": {
-    "npm": "please-use-yarn",
-    "yarn": ">= 1.22.19"
-  },
+  "name": "bloombot",
+  "main": "app/index.js",
+  "description": "ⒸBloomBot by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "scripts": {
-    "dev": "supervisor -w . Boot.js",
+    "local": "python3 python",
     "dbclean": "node app/purgepg.js",
-    "ffdev": "nodemon server/pfmpeg.js",
-    "ffstart": "forever server/pfmpeg.js",
-    "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
+    "ffdev": "nodemon lib/pfmpeg.js",
+    "ffstart": "forever lib/pfmpeg.js",
+    "dev": "supervisor -w . boot.js",
+    "test": "supervisor -w . test/index.js",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
+    "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
     "magstart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms Boot.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
-  "depecrated": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magneum/bloombot.git"
+  },
+  "keywords": [
+    "bot",
+    "music",
+    "games",
+    "whatsapp",
+    "moderation",
+    "automation"
+  ],
+  "author": "Magneum",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16",
+    "yarn": ">= 1.22.19",
+    "npm": "❌Error: This project requires you to use 'Yarn' package manager!"
+  },
+  "config": {
+    "libPort": 8080,
+    "logLevel": "info"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 80,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  },
+  "private": false,
   "dependencies": {
     "@adiwajshing/baileys": "4.4.0",
     "@adiwajshing/keyed-db": "0.2.4",
