@@ -35,7 +35,6 @@ global.ShowInfo = process.env.ShowInfo;
 global.upVersion = process.env.upVersion;
 global.REDIS_URL = process.env.REDIS_URL;
 global.Showlogger = process.env.Showlogger;
-global.MONGODB_URL = process.env.MONGODB_URL;
 global.MAINTAINANCE_MODE = process.env.MAINTAINANCE_MODE;
 if (!SUDO) SUDO = "918436686758,917430922909";
 global.verbose = process.env.verbose || "0";

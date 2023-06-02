@@ -40,7 +40,7 @@ async function magneum() {
   const sequelize = dbConfig.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
   try {
-    await monGoose.connect(MONGODB_URL, {
+    await monGoose.connect(dbConfig.MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -69,7 +69,7 @@ async function magneum() {
     let version;
     try {
       const a = fetchJson(
-        "web.whatsapp.com/check-update?version=1&platform=web"
+        "web.whatsapp.com/check-update?version=1&platform=web",
       );
       version = [a.currentVersion.replace(/[.]/g, ", ")];
     } catch {
@@ -173,7 +173,7 @@ async function magneum() {
     ];
     const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
+      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)",
     );
   }, 300 * 1000);
   // setInterval(async () => {
