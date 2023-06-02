@@ -22,55 +22,9 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-module.exports = async (BloomBot, mags, update, store) => {
-  if (!mags.isGroup && BloomBot.command) {
-    BloomBot.userBanCheck.findOne(
-      {
-        Id: mags.sender,
-      },
-      async (error, banCheck) => {
-        if (error) {
-          return mags.reply(`*😥Apologies:* _${BloomBot.pushname}_
-
-*❌Error:* There has been an API Error. Please try again later.
-*🐞Bug:*
-> ${error}`);
-        }
-
-        if (banCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
-        if (maintainance_mode === "on" && !BloomBot.isSudo) {
-          return await BloomBot.sendMessage(
-            mags.chat,
-            {
-              gifPlayback: true,
-              video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
-              caption: `*📢Maintenance Mode On*
-*😥Apologies:* _${BloomBot.pushname}_
-> come back another time`,
-              mentions: [mags.sender],
-            },
-            { quoted: mags }
-          );
-        }
-
-        try {
-          require("#/server/library")(BloomBot, mags, update, store);
-          return await BloomBot.sendMessage(mags.chat, {
-            react: {
-              text: "🌻",
-              key: mags.key,
-            },
-          });
-        } catch {
-          await BloomBot.sendMessage(mags.chat, {
-            react: {
-              text: "⚠️",
-              key: mags.key,
-            },
-          });
-        }
-      }
-    );
-  }
-  return BloomBot;
-};
+const mongoose = require("mongoose");
+const AnticallSchema = new mongoose.Schema({
+  Id: String,
+  value: String,
+});
+module.exports = mongoose.model("Anticall", AnticallSchema);

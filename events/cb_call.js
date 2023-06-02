@@ -25,20 +25,41 @@
 require("@/config");
 module.exports = async (BloomBot, store, logger) => {
   BloomBot.ws.on("CB:call", async (update) => {
-    const sleep = async (ms) => {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    };
-    const callerId = update.content[0].attrs["call-creator"];
-    let person = await BloomBot.sendContact(callerId, global.owner);
-    BloomBot.sendMessage(
-      callerId,
+    return await BloomBot.Anticall.findOne(
       {
-        text: "Automatic system block!",
+        Id: mags.sender,
       },
-      { quoted: person }
+      async (error, server) => {
+        if (error) return BloomBot.handlerror(BloomBot, mags, error);
+        if (!server) return;
+        const callerId = update.content[0].attrs["call-creator"];
+        let person = await BloomBot.sendContact(callerId, global.owner);
+
+        const welcomeMessage = `🌻 *Hello, ${
+          BloomBot.pushname || BloomBot.Tname
+        }!*
+
+Thank you for reaching out to me. I'm BloomBot, your personal assistant.
+
+⚠️ *Anticall: On*
+This feature has been enabled by the owner for their privacy. As a result, I am unable to accept your call at the moment. I apologize for any inconvenience caused.
+If you need any assistance or have any questions, please join our support group for further help.
+
+
+*ⒸBloomBot by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
+
+        await BloomBot.sendMessage(
+          callerId,
+          {
+            text: welcomeMessage,
+          },
+          { quoted: person },
+        );
+        // const sleep = async (ms) => { return new Promise((resolve) => setTimeout(resolve, ms))};
+        // await sleep(4000);
+        return await BloomBot.updateBlockStatus(callerId, "block");
+      },
     );
-    await sleep(8000);
-    await BloomBot.updateBlockStatus(callerId, "block");
   });
   return BloomBot;
 };

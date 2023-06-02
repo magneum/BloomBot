@@ -62,7 +62,7 @@ function showCommands(path) {
   const specialFolders = [
     "⚙️System",
     "⭕YTFilter",
-    "🍁ᴏᴡɴᴇʀ",
+    "🍁Owner",
     "🍑Hentai",
     "🐉Emotions",
     "👅NSFW",

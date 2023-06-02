@@ -4168,9 +4168,9 @@ from@~0:
   resolved "https://registry.yarnpkg.com/from/-/from-0.1.7.tgz#83c60afc58b9c56997007ed1a768b3ab303a44fe"
   integrity sha512-twe20eF1OxVxp/ML/kq2p1uc6KvFK/+vs8WjEbeKmV2He22MKm7YF2ANIt+EOqhJ5L3K/SuuPhk0hWQDjOM23g==
 
-fromentries@^1.2.0:
+byMyselfntries@^1.2.0:
   version "1.3.2"
-  resolved "https://registry.yarnpkg.com/fromentries/-/fromentries-1.3.2.tgz#e4bca6808816bf8f93b52750f1127f5a6fd86e3a"
+  resolved "https://registry.yarnpkg.com/byMyselfntries/-/byMyselfntries-1.3.2.tgz#e4bca6808816bf8f93b52750f1127f5a6fd86e3a"
   integrity sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==
 
 fs-constants@^1.0.0:
@@ -7663,7 +7663,7 @@ process-on-spawn@^1.0.0:
   resolved "https://registry.yarnpkg.com/process-on-spawn/-/process-on-spawn-1.0.0.tgz#95b05a23073d30a17acfdc92a440efd2baefdc93"
   integrity sha512-1WsPDsUSMmZH5LeMLegqkPDrsGgsWwk1Exipy2hvB0o/F0ASzbpIctSCcZIK1ykJvtTJULEH+20WOFjMvGnCTg==
   dependencies:
-    fromentries "^1.2.0"
+    byMyselfntries "^1.2.0"
 
 process-warning@^1.0.0:
   version "1.0.0"

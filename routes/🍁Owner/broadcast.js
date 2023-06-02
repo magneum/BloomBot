@@ -34,7 +34,7 @@ module.exports = async (BloomBot, mags) => {
     },
   });
   try {
-    if (!BloomBot.frome && !BloomBot.isSudo) {
+    if (!BloomBot.byMyself && !BloomBot.isSudo) {
       await BloomBot.sendMessage(mags.chat, {
         react: {
           text: "❌",

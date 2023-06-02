@@ -51,8 +51,8 @@ module.exports = async (BloomBot, mags, update, store) => {
 *🐞Bug:*
 > ${error}`);
               }
-              if (banCheck && !BloomBot.frome && !BloomBot.isSudo) return;
-              if (groupCheck && !BloomBot.frome && !BloomBot.isSudo) return;
+              if (banCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
+              if (groupCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
               await BloomBot.LinkList.findOne(
                 {
                   serverId: mags.chat,

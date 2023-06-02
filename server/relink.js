@@ -160,6 +160,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   // BloomBot.nhentaidl = require("./nhentaidl");
   BloomBot.dashboard = require("@/database/dashboard");
   BloomBot.LinkList = require("@/database/antilink");
+  BloomBot.Anticall = require("@/database/anticall");
   BloomBot.Ranker = require("@/database/autorank");
   BloomBot.Bagde = require("@/database/badge");
   BloomBot.premium = require("@/database/premium");

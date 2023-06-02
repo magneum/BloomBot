@@ -23,4 +23,25 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("@/config");
-module.exports = async (BloomBot, mags) => {};
+module.exports = async (BloomBot, mags) => {
+  antical = true;
+  client.on("CB:Call", (json) => {
+    if (antical === false) return;
+    let call;
+    calling = JSON.parse(JSON.stringify(json));
+    call = calling[1].from;
+    client
+      .sendMessage(
+        call,
+        `*Sorry ${client.user.name} can't receive calls.*\n*Call = Block!*`,
+        MessageType.text,
+      )
+      .then(() => client.blockUser(call, "add"));
+  });
+  client.on("CB:Blocklist", (json) => {
+    if (blocked.length > 2) return;
+    for (let i of json[1].blocklist) {
+      blocked.push(i.replace("c.us", "s.whatsapp.net"));
+    }
+  });
+};

@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.args = BloomBot.body.trim().split(/ +/).slice(1);
   BloomBot.pushname = mags.pushName || "No Name";
   BloomBot.botNumber = await BloomBot.decodeJid(BloomBot.user.id);
-  BloomBot.frome = mags.sender == BloomBot.botNumber ? true : false;
+  BloomBot.byMyself = mags.sender == BloomBot.botNumber ? true : false;
   BloomBot.Fullarg = BloomBot.args.join(" ");
   BloomBot.contant = q = BloomBot.args.join(" ");
   BloomBot.quoted = mags.quoted ? mags.quoted : mags;
