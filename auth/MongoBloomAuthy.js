@@ -22,9 +22,38 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-const { Cred, Key } = require("./auth");
+const mongoose = require("mongoose");
+const { MONGODB_URL } = require("@/config/idbConfig");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
-const KEY_MAP = {
+
+const { Schema } = mongoose;
+const CredSchema = new Schema({
+  key: {
+    type: String,
+    required: true,
+  },
+  value: {
+    type: Schema.Types.Mixed,
+  },
+});
+
+const KeySchema = new Schema({
+  key: {
+    type: String,
+    required: true,
+  },
+  value: {
+    type: Schema.Types.Mixed,
+  },
+  type: {
+    type: String,
+  },
+});
+
+const Cred = mongoose.model("Cred", CredSchema, "Creds");
+const Key = mongoose.model("Key", KeySchema, "Keys");
+
+const key_mapper = {
   "pre-key": "preKeys",
   session: "sessions",
   "sender-key": "senderKeys",
@@ -33,30 +62,25 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const useSqlAuthState = async (logger) => {
-  let creds;
+const MongoBloomAuthy = async () => {
+  await mongoose.connect(MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  let creds = {};
   let keys = {};
 
   const checkCreds = async () => {
-    const lock = await Cred.findOne({
-      where: {
-        key: "noiseKey",
-      },
-    });
-    if (lock) {
-      return true;
-    } else {
-      return false;
-    }
+    const lock = await Cred.exists({ key: "noiseKey" });
+    return lock;
   };
 
   const loadCreds = async () => {
-    const allCreds = await Cred.findAll();
+    const allCreds = await Cred.find();
     let temp = {};
     allCreds.forEach((res) => {
-      let val = res.getDataValue("value");
-      let key = res.getDataValue("key");
-      val = JSON.parse(val, BufferJSON.reviver);
+      let val = res.value;
+      let key = res.key;
       temp[key] = val;
     });
 
@@ -72,12 +96,11 @@ const useSqlAuthState = async (logger) => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    const allKeys = await Key.findAll();
+    const allKeys = await Key.find();
     allKeys.forEach((res) => {
-      let val = res.getDataValue("value");
-      let key = res.getDataValue("key");
-      let type = res.getDataValue("type");
-      val = JSON.parse(val, BufferJSON.reviver);
+      let val = res.value;
+      let key = res.key;
+      let type = res.type;
       keys[type][key] = val;
     });
 
@@ -89,66 +112,34 @@ const useSqlAuthState = async (logger) => {
       data = creds;
     }
     for (const _key in data) {
-      const cred = await Cred.findOne({
-        where: {
-          key: _key,
-        },
-      });
-      if (cred) {
-        await cred.update({
-          value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
-        });
-      } else {
-        await Cred.create({
-          key: _key,
-          value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
-        });
-      }
+      await Cred.findOneAndUpdate(
+        { key: _key },
+        { value: JSON.stringify(data[_key], BufferJSON.replacer, 2) },
+        { upsert: true },
+      );
     }
   };
 
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
-      const res = await Key.findOne({
-        where: {
-          key: subKey,
-          type: key,
-        },
-      });
-      if (res) {
-        await res.update({
-          value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
-        });
-      } else {
-        await Key.create({
-          key: subKey,
-          value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
-          type: key,
-        });
-      }
+      await Key.findOneAndUpdate(
+        { key: subKey, type: key },
+        { value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2) },
+        { upsert: true },
+      );
     }
-    return;
   };
 
   let credsExist = await checkCreds();
   if (credsExist) {
-    let parent = {
-      creds: {},
-      keys: {},
-    };
     const allCreds = await loadCreds();
     const allKeys = await loadKeys();
-
-    parent.creds = allCreds;
-    parent.keys = allKeys;
-
-    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
-    creds = final.creds;
-    keys = final.keys;
+    creds = allCreds;
+    keys = allKeys;
   } else {
     creds = initAuthCreds();
     keys = {};
-    saveCreds();
+    await saveCreds();
   }
 
   return {
@@ -156,11 +147,13 @@ const useSqlAuthState = async (logger) => {
       creds,
       keys: {
         get: (type, ids) => {
-          const key = KEY_MAP[type];
+          const key = key_mapper[type];
           return ids.reduce((dict, id) => {
             let _a;
             let value =
-              (_a = keys[key]) === null || _a === void 0 ? void 0 : _a[id];
+              (_a = keys[key]) === null || _a === undefined
+                ? undefined
+                : _a[id];
             if (value) {
               if (type === "app-state-sync-key") {
                 value = proto.AppStateSyncKeyData.fromObject(value);
@@ -172,7 +165,7 @@ const useSqlAuthState = async (logger) => {
         },
         set: async (data) => {
           for (const _key in data) {
-            const key = KEY_MAP[_key];
+            const key = key_mapper[_key];
             keys[key] = keys[key] || {};
             Object.assign(keys[key], data[_key]);
             await saveKey(key, data, _key);
@@ -180,8 +173,7 @@ const useSqlAuthState = async (logger) => {
         },
       },
     },
-    saveCreds,
   };
 };
 
-module.exports = useSqlAuthState;
+module.exports = MongoBloomAuthy;

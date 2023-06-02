@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-const dbConfig = require("#/config/dbConfig");
+const dbConfig = require("@/config/dbConfig");
 const { DataTypes, Model } = require("sequelize");
 const sequelize = dbConfig.DATABASE;
 
@@ -41,7 +41,7 @@ Cred.init(
     sequelize,
     tableName: "Creds",
     timestamps: false,
-  }
+  },
 );
 
 class Key extends Model {}
@@ -62,7 +62,7 @@ Key.init(
     sequelize,
     tableName: "Keys",
     timestamps: false,
-  }
+  },
 );
 
 module.exports = { Cred, Key };
