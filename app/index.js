@@ -32,15 +32,15 @@ const {
 } = require("@adiwajshing/baileys");
 const pino = require("pino");
 const monGoose = require("mongoose");
-const dbConfig = require("@/config/dbConfig");
 const BloomAuthy = require("@/auth/Authy");
+const dbdata = require("@/config/dbdata");
 const { fetchJson } = require("@/server/obFunc");
 
 async function magneum() {
-  const sequelize = dbConfig.DATABASE;
+  const sequelize = dbdata.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
   try {
-    await monGoose.connect(dbConfig.MONGODB_URL, {
+    await monGoose.connect(dbdata.MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

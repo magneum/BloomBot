@@ -47,7 +47,7 @@ process.env.DATABASE_URL =
 process.env.DEBUG =
   process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
 
-const dbConfig = {
+const dbdata = {
   MONGODB_URL: process.env.MONGODB_URL || undefined,
   DATABASE_URL:
     process.env.DATABASE_URL === undefined
@@ -69,4 +69,4 @@ const dbConfig = {
         }),
 };
 
-module.exports = dbConfig;
+module.exports = dbdata;

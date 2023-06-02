@@ -23,10 +23,10 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const SqlClient = require("sequelize");
-const dbConfig = require("@/config/dbConfig");
+const dbdata = require("@/config/dbdata");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
-const sequelize = dbConfig.DATABASE;
+const sequelize = dbdata.DATABASE;
 class Cred extends SqlClient.Model {}
 Cred.init(
   {

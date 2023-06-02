@@ -25,10 +25,10 @@
 require("../module-alias");
 const { Client } = require("pg");
 const logger = require("@/log");
-const dbConfig = require("@/config/dbConfig");
+const dbdata = require("@/config/dbdata");
 
 async function purgepg() {
-  const connectionString = dbConfig.DATABASE_URL;
+  const connectionString = dbdata.DATABASE_URL;
   const client = new Client({
     connectionString,
     ssl: { rejectUnauthorized: false },

@@ -26,12 +26,12 @@ require("@/config");
 const { Boom } = require("@hapi/boom");
 const purgepg = require("@/app/purgepg");
 const { exec } = require("child_process");
-const dbConfig = require("@/config/dbConfig");
+const dbdata = require("@/config/dbdata");
 const { DisconnectReason } = require("@adiwajshing/baileys");
 
 module.exports = async (BloomBot, magneum, logger) => {
   const handledbChange = async () => {
-    if (dbConfig.DATABASE_URL.includes("postgres")) {
+    if (dbdata.DATABASE_URL.includes("postgres")) {
       try {
         await purgepg();
       } catch (error) {
