@@ -84,7 +84,7 @@ function showCommands(path) {
     if (specialFolders.includes(cFolder)) {
       console.log(
         chalk.bgGreen(chalk.black("> " + cFolder)),
-        chalk.yellow("  | " + cFiles)
+        chalk.yellow("  | " + cFiles),
       );
     }
   }

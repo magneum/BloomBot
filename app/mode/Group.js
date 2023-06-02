@@ -112,8 +112,7 @@ module.exports = async (BloomBot, mags, update, store) => {
                 async (error, server) => {
                   if (error) return BloomBot.handlerror(BloomBot, mags, error);
                   if (!server) return;
-                  const { noLink } = require("#/utils/antilink");
-                  return noLink(BloomBot, mags);
+                  return require("#/utils/antilink")(BloomBot, mags);
                 },
               );
               // if (maintainance_mode === "on" && !BloomBot.isSudo) {
