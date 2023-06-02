@@ -48,7 +48,7 @@ module.exports = async (BloomBot, mags, update, store) => {
 *🌿Punishment*
 • Warnings 1/4
 • You Will be Auto-Blocked After 4 warnings!`,
-              BloomBot.display
+              BloomBot.display,
             );
           } else if (user.Amount < 4) {
             user.Amount = user.Amount + 1;
@@ -65,17 +65,17 @@ module.exports = async (BloomBot, mags, update, store) => {
 *🌿Punishment*
 • Warnings ${user.Amount}/4
 • You Will be Auto-Blocked After 4 warnings!`,
-              BloomBot.display
+              BloomBot.display,
             );
           } else {
             await user
               .delete()
               .catch((error) => BloomBot.handlerror(BloomBot, mags, error));
             return await BloomBot.updateBlockStatus(mags.sender, "block").catch(
-              (error) => BloomBot.handlerror(BloomBot, mags, error)
+              (error) => BloomBot.handlerror(BloomBot, mags, error),
             );
           }
-        }
+        },
       );
   } else {
     if (mags.isGroup && BloomBot.command) {
@@ -105,7 +105,7 @@ module.exports = async (BloomBot, mags, update, store) => {
               }
               if (banCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
               if (groupCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
-              await BloomBot.LinkList.findOne(
+              BloomBot.LinkList.findOne(
                 {
                   serverId: mags.chat,
                 },
@@ -114,42 +114,41 @@ module.exports = async (BloomBot, mags, update, store) => {
                   if (!server) return;
                   const { noLink } = require("#/utils/antilink");
                   return noLink(BloomBot, mags);
-                }
+                },
               );
-              if (maintainance_mode === "on" && !BloomBot.isSudo) {
-                return await BloomBot.sendMessage(
-                  mags.chat,
-                  {
-                    gifPlayback: true,
-                    video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
-                    caption: `*📢Maintenance Mode On*
-*😥Apologies:* _${BloomBot.pushname}_
-> come back another time`,
-                    mentions: [mags.sender],
-                  },
-                  { quoted: mags }
-                );
-              }
+              // if (maintainance_mode === "on" && !BloomBot.isSudo) {
+              // return await BloomBot.sendMessage(
+              // mags.chat,
+              // {
+              // gifPlayback: true,
+              // video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
+              // caption: `*📢Maintenance Mode On*
+              // *😥Apologies:* _${BloomBot.pushname}_
+              // > come back another time`,
+              // mentions: [mags.sender],
+              // },
+              // { quoted: mags },
+              // );
+              // }
 
-              try {
-                require("#/server/library")(BloomBot, mags, update, store);
-                return await BloomBot.sendMessage(mags.chat, {
-                  react: {
-                    text: "🌻",
-                    key: mags.key,
-                  },
-                });
-              } catch {
-                await BloomBot.sendMessage(mags.chat, {
-                  react: {
-                    text: "⚠️",
-                    key: mags.key,
-                  },
-                });
-              }
-            }
+              // try {
+              // require("#/server/library")(BloomBot, mags, update, store);
+              // return await BloomBot.sendMessage(mags.chat, {
+              // react: {
+              // text: "🌻",
+              // key: mags.key,
+              // },
+              // });
+              // } catch {
+              await BloomBot.sendMessage(mags.chat, {
+                react: {
+                  text: "⚠️",
+                  key: mags.key,
+                },
+              });
+            },
           );
-        }
+        },
       );
     }
   }
