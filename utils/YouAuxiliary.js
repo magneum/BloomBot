@@ -22,6 +22,45 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+const youtubedl = require("youtube-dl-exec");
+const progress = require("progress-estimator")();
+
+async function GetYouTubeInfo(query, type = "audio") {
+  const promise = youtubedl(query, {
+    noWarnings: true,
+    dumpSingleJson: true,
+    noCheckCertificates: true,
+    addHeader: ["referer:youtube.com", "user-agent:googlebot"],
+  });
+  const result = await progress(promise, "📢 Obtaining...");
+  const formats = result.formats;
+  if (type === "audio") {
+    const audioFormats = formats.filter((format) => format.vcodec === "none");
+    return audioFormats;
+  } else if (type === "video") {
+    const videoFormats = formats.filter(
+      (format) =>
+        format.acodec === "none" && !format.format_note.includes("storyboard")
+    );
+    const highestFormat = findHighestFormatByProperty(videoFormats, "filesize");
+    return highestFormat;
+  } else {
+    return "❌ Error: Invalid type argument. Supported types are 'audio' and 'video'.";
+  }
+}
+function findHighestFormatByProperty(formats, property) {
+  let highestFormat = null;
+  let highestSize = 0;
+  for (const format of formats) {
+    if (format[property] > highestSize) {
+      highestFormat = format;
+      highestSize = format[property];
+    }
+  }
+  return highestFormat;
+}
+module.exports = GetYouTubeInfo;
+
 // const logger = require("progress-estimator")();
 // const youtubedl = require("youtube-dl-exec");
 // const axios = require("axios");
@@ -87,43 +126,3 @@
 // };
 // }
 // };
-const youtubedl = require("youtube-dl-exec");
-const progress = require("progress-estimator")();
-
-async function GetYouTubeInfo(query, type = "audio") {
-  const promise = youtubedl(query, {
-    noWarnings: true,
-    dumpSingleJson: true,
-    noCheckCertificates: true,
-    addHeader: ["referer:youtube.com", "user-agent:googlebot"],
-  });
-  const result = await progress(promise, "📢 Obtaining...");
-  const formats = result.formats;
-  if (type === "audio") {
-    const audioFormats = formats.filter((format) => format.vcodec === "none");
-    return audioFormats;
-  } else if (type === "video") {
-    const videoFormats = formats.filter(
-      (format) =>
-        format.acodec === "none" && !format.format_note.includes("storyboard")
-    );
-    const highestFormat = findHighestFormatByProperty(videoFormats, "filesize");
-    return highestFormat;
-  } else {
-    return "❌ Error: Invalid type argument. Supported types are 'audio' and 'video'.";
-  }
-}
-
-function findHighestFormatByProperty(formats, property) {
-  let highestFormat = null;
-  let highestSize = 0;
-  for (const format of formats) {
-    if (format[property] > highestSize) {
-      highestFormat = format;
-      highestSize = format[property];
-    }
-  }
-  return highestFormat;
-}
-
-module.exports = GetYouTubeInfo;
