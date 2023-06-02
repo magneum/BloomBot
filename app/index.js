@@ -33,8 +33,8 @@ const {
 const pino = require("pino");
 const monGoose = require("mongoose");
 const dbConfig = require("@/config/dbConfig");
+const BloomAuthy = require("@/auth/Authy");
 const { fetchJson } = require("@/server/obFunc");
-const useSqlAuthState = require("@/auth/BloomAuthy");
 
 async function magneum() {
   const sequelize = dbConfig.DATABASE;
@@ -77,8 +77,7 @@ async function magneum() {
     }
     return version;
   };
-
-  let { state, saveCreds } = await useSqlAuthState();
+  let { state, saveCreds } = await BloomAuthy();
   const BloomBot = Bloom_bot_client({
     auth: state,
     printQRInTerminal: true,

@@ -22,36 +22,49 @@
 //  ║
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-const mongoose = require("mongoose");
-const { MONGODB_URL } = require("@/config/idbConfig");
+const SqlClient = require("sequelize");
+const dbConfig = require("@/config/dbConfig");
 const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
 
-const { Schema } = mongoose;
-const CredSchema = new Schema({
-  key: {
-    type: String,
-    required: true,
+const sequelize = dbConfig.DATABASE;
+class Cred extends SqlClient.Model {}
+Cred.init(
+  {
+    key: {
+      type: SqlClient.DataTypes.STRING,
+      allowNull: false,
+    },
+    value: {
+      type: SqlClient.DataTypes.JSON,
+    },
   },
-  value: {
-    type: Schema.Types.Mixed,
+  {
+    sequelize,
+    tableName: "Creds",
+    timestamps: false,
   },
-});
+);
 
-const KeySchema = new Schema({
-  key: {
-    type: String,
-    required: true,
+class Key extends SqlClient.Model {}
+Key.init(
+  {
+    key: {
+      type: SqlClient.DataTypes.STRING(1000000),
+      allowNull: false,
+    },
+    value: {
+      type: SqlClient.DataTypes.STRING(1000000),
+    },
+    type: {
+      type: SqlClient.DataTypes.STRING(1000000),
+    },
   },
-  value: {
-    type: Schema.Types.Mixed,
+  {
+    sequelize,
+    tableName: "Keys",
+    timestamps: false,
   },
-  type: {
-    type: String,
-  },
-});
-
-const Cred = mongoose.model("Cred", CredSchema, "Creds");
-const Key = mongoose.model("Key", KeySchema, "Keys");
+);
 
 const key_mapper = {
   "pre-key": "preKeys",
@@ -62,25 +75,30 @@ const key_mapper = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const MongoBloomAuthy = async () => {
-  await mongoose.connect(MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  let creds = {};
+const BloomAuthy = async (logger) => {
+  let creds;
   let keys = {};
 
   const checkCreds = async () => {
-    const lock = await Cred.exists({ key: "noiseKey" });
-    return lock;
+    const lock = await Cred.findOne({
+      where: {
+        key: "noiseKey",
+      },
+    });
+    if (lock) {
+      return true;
+    } else {
+      return false;
+    }
   };
 
   const loadCreds = async () => {
-    const allCreds = await Cred.find();
+    const allCreds = await Cred.findAll();
     let temp = {};
     allCreds.forEach((res) => {
-      let val = res.value;
-      let key = res.key;
+      let val = res.getDataValue("value");
+      let key = res.getDataValue("key");
+      val = JSON.parse(val, BufferJSON.reviver);
       temp[key] = val;
     });
 
@@ -96,11 +114,12 @@ const MongoBloomAuthy = async () => {
       appStateVersions: {},
       senderKeyMemory: {},
     };
-    const allKeys = await Key.find();
+    const allKeys = await Key.findAll();
     allKeys.forEach((res) => {
-      let val = res.value;
-      let key = res.key;
-      let type = res.type;
+      let val = res.getDataValue("value");
+      let key = res.getDataValue("key");
+      let type = res.getDataValue("type");
+      val = JSON.parse(val, BufferJSON.reviver);
       keys[type][key] = val;
     });
 
@@ -112,34 +131,66 @@ const MongoBloomAuthy = async () => {
       data = creds;
     }
     for (const _key in data) {
-      await Cred.findOneAndUpdate(
-        { key: _key },
-        { value: JSON.stringify(data[_key], BufferJSON.replacer, 2) },
-        { upsert: true },
-      );
+      const cred = await Cred.findOne({
+        where: {
+          key: _key,
+        },
+      });
+      if (cred) {
+        await cred.update({
+          value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
+        });
+      } else {
+        await Cred.create({
+          key: _key,
+          value: JSON.stringify(data[_key], BufferJSON.replacer, 2),
+        });
+      }
     }
   };
 
   const saveKey = async (key, data, _key) => {
     for (const subKey in data[_key]) {
-      await Key.findOneAndUpdate(
-        { key: subKey, type: key },
-        { value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2) },
-        { upsert: true },
-      );
+      const res = await Key.findOne({
+        where: {
+          key: subKey,
+          type: key,
+        },
+      });
+      if (res) {
+        await res.update({
+          value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
+        });
+      } else {
+        await Key.create({
+          key: subKey,
+          value: JSON.stringify(data[_key][subKey], BufferJSON.replacer, 2),
+          type: key,
+        });
+      }
     }
+    return;
   };
 
   let credsExist = await checkCreds();
   if (credsExist) {
+    let parent = {
+      creds: {},
+      keys: {},
+    };
     const allCreds = await loadCreds();
     const allKeys = await loadKeys();
-    creds = allCreds;
-    keys = allKeys;
+
+    parent.creds = allCreds;
+    parent.keys = allKeys;
+
+    const final = JSON.parse(JSON.stringify(parent), BufferJSON.reviver);
+    creds = final.creds;
+    keys = final.keys;
   } else {
     creds = initAuthCreds();
     keys = {};
-    await saveCreds();
+    saveCreds();
   }
 
   return {
@@ -151,9 +202,7 @@ const MongoBloomAuthy = async () => {
           return ids.reduce((dict, id) => {
             let _a;
             let value =
-              (_a = keys[key]) === null || _a === undefined
-                ? undefined
-                : _a[id];
+              (_a = keys[key]) === null || _a === void 0 ? void 0 : _a[id];
             if (value) {
               if (type === "app-state-sync-key") {
                 value = proto.AppStateSyncKeyData.fromObject(value);
@@ -176,4 +225,4 @@ const MongoBloomAuthy = async () => {
   };
 };
 
-module.exports = MongoBloomAuthy;
+module.exports = BloomAuthy;
