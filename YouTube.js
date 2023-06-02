@@ -23,7 +23,6 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const GetYouTubeInfo = require("./utils/YouAuxiliary");
-
 GetYouTubeInfo("https://youtu.be/5Eqb_-j3FDA", "audio").then((data) =>
   console.log(data)
 );
