@@ -94,7 +94,7 @@ module.exports = async (BloomBot, mags, update, store) => {
               // { quoted: mags }
               // );
               // }
-              if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
+              if (maintainance_mode === "on" && !BloomBot.isSudo) {
                 return await BloomBot.sendMessage(
                   mags.chat,
                   {

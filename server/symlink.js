@@ -62,7 +62,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.mime = (BloomBot.quoted.msg || BloomBot.quoted).mimetype || "";
   BloomBot.isMedia = /image|video|sticker|audio/.test(BloomBot.mime);
   BloomBot.time = moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss");
-  BloomBot.isCreator = [BloomBot.botNumber, ...global.SUDO]
+  BloomBot.isCreator = [BloomBot.botNumber, ...global.sudo]
     .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
     .includes(mags.sender);
   BloomBot.mentionByTag =
@@ -77,9 +77,9 @@ module.exports = async (BloomBot, mags, update, store) => {
       : "";
 
   require("./relink")(BloomBot, mags, update, store);
-  if (BloomBot.BLOOM_MODE == "group") {
+  if (BloomBot.bloom_mode == "group") {
     return require("@/app/mode/Group")(BloomBot, mags, update, store);
-  } else if (BloomBot.BLOOM_MODE == "private") {
+  } else if (BloomBot.bloom_mode == "private") {
     return require("@/app/mode/Private")(BloomBot, mags, update, store);
   } else return require("@/app/mode/Default")(BloomBot, mags, update, store);
 };

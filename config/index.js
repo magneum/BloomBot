@@ -29,17 +29,17 @@ if (fs.existsSync(".env")) {
 } else {
   require("dotenv");
 }
-const SUDO = process.env.SUDO;
-global.SUDO = SUDO.split(",");
+const sudo = process.env.SUDO;
+global.sudo = sudo.split(",");
 global.ShowInfo = process.env.ShowInfo;
 global.upVersion = process.env.upVersion;
 global.REDIS_URL = process.env.REDIS_URL;
 global.Showlogger = process.env.Showlogger;
-global.MAINTAINANCE_MODE = process.env.MAINTAINANCE_MODE;
-if (!SUDO) SUDO = "918436686758,917430922909";
+global.maintainance_mode = process.env.MAINTAINANCE_MODE;
+if (!sudo) sudo = "918436686758,917430922909";
 global.verbose = process.env.verbose || "0";
-global.BLOOM_MODE = process.env.BLOOM_MODE || "default";
-global.HUGGING_FACE_API_TOKEN = process.env.HUGGING_FACE_API_TOKEN;
+global.bloom_mode = process.env.BLOOM_MODE || "default";
+global.hugging_face_token = process.env.HUGGING_FACE_API_TOKEN;
 global.PORT = process.env.PORT || Math.floor(Math.random() * 65535) + 10;
 global.pgdb = process.env.pgdb;
 global.prefix = process.env.prefix || "#";
@@ -82,6 +82,6 @@ global.apiGet = (name, path = "/", query = {}, queryname) =>
                   ],
               }
             : {}),
-        })
+        }),
       )
     : "");

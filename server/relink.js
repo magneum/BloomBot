@@ -139,7 +139,7 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.runtime = runtime;
   BloomBot.fetchJson = fetchJson;
   BloomBot.getBuffer = getBuffer;
-  Boot.jsonformat = jsonformat;
+  BloomBot.jsonformat = jsonformat;
   BloomBot.format = format;
   BloomBot.parseMention = parseMention;
   BloomBot.GIFBufferToVideoBuffer = GIFBufferToVideoBuffer;
@@ -245,7 +245,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     const Show = BloomBot.chalk.hex("#849871").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
-      BloomBot.chalk.black(Show)
+      BloomBot.chalk.black(Show),
     );
   }
   function ShowBlue(Topic, Text) {
@@ -253,7 +253,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     const Show = BloomBot.chalk.hex("#818d94").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
-      BloomBot.chalk.black(Show)
+      BloomBot.chalk.black(Show),
     );
   }
   function ShowRed(Topic, Text) {
@@ -261,7 +261,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     const Show = BloomBot.chalk.hex("#ed7777").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
-      BloomBot.chalk.black(Show)
+      BloomBot.chalk.black(Show),
     );
   }
   function ShowYellow(Topic, Text) {
@@ -269,7 +269,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     const Show = BloomBot.chalk.hex("#ECCF8D").italic.bold(Text);
     console.log(
       BloomBot.chalk.black(BloomBot.chalk.bgBlack(TShow)),
-      BloomBot.chalk.black(Show)
+      BloomBot.chalk.black(Show),
     );
   }
   function between(min, max) {
@@ -301,18 +301,18 @@ module.exports = async (BloomBot, mags, update, store) => {
   BloomBot.TubeRegex =
     /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/;
   BloomBot.Showlogger = Showlogger;
-  BloomBot.BLOOM_MODE = BLOOM_MODE;
+  BloomBot.bloom_mode = bloom_mode;
   BloomBot.packname = packname;
   BloomBot.ShowInfo = ShowInfo;
   BloomBot.author = author;
   BloomBot.prefix = prefix;
-  BloomBot.SUDO = SUDO;
-  SUDOtring =
-    process.env.SUDO === undefined
+  BloomBot.sudo = sudo;
+  sudotring =
+    process.env.sudo === undefined
       ? "918436686758,917430922909"
-      : process.env.SUDO;
-  BloomBot.isSudo = SUDOtring.includes(
-    mags.sender.substring(0, mags.sender.indexOf("@"))
+      : process.env.sudo;
+  BloomBot.isSudo = sudotring.includes(
+    mags.sender.substring(0, mags.sender.indexOf("@")),
   );
   return BloomBot;
 };

@@ -5,10 +5,10 @@
   "description": "ⒸBloomBot by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "scripts": {
     "local": "python3 python",
+    "dev": "supervisor -w . boot.js",
     "dbclean": "node app/purgepg.js",
     "ffdev": "nodemon lib/pfmpeg.js",
     "ffstart": "forever lib/pfmpeg.js",
-    "dev": "supervisor -w . boot.js",
     "test": "supervisor -w . test/index.js",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
