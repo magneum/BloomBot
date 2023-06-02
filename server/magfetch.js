@@ -23,8 +23,6 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 module.exports = async (BloomBot, url) => {
-  const app = BloomBot.express();
-  app.use(BloomBot.cors());
   return BloomBot.axios({
     method: "get",
     url: url,
