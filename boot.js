@@ -137,4 +137,4 @@ function ignite(cFile) {
 
 clear();
 showCommands("models");
-ignite("app/index", "uptime");
+ignite("client/index", "uptime");
