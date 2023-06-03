@@ -53,7 +53,7 @@ module.exports = async (
 *❌Error:* There has been an API Error. Please try again later.`,
           );
         }
-        const resultFilename = BloomBot.randomUUID + ".mp4";
+        const resultFilename = new Date().getTime() + ".mp4";
         const ffmpegCommand = `${BloomBot.pathFFmpeg} -i ${json.url} -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' ${resultFilename}`;
         await exec(ffmpegCommand);
         const mentionedUser = "";
