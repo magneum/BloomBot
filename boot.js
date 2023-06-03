@@ -29,7 +29,7 @@ const yargs = require("yargs");
 const { join } = require("path");
 const { say } = require("cfonts");
 const clear = require("cli-clear");
-const mFolders = fs.readdirSync("./routes");
+const mFolders = fs.readdirSync("./models");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
 const { setupMaster, fork } = require("cluster");
@@ -136,5 +136,5 @@ function ignite(cFile) {
 }
 
 clear();
-showCommands("routes");
+showCommands("models");
 ignite("app/index", "uptime");

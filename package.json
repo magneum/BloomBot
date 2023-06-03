@@ -8,6 +8,7 @@
     "dev": "supervisor -w . boot.js",
     "dbclean": "node app/purgepg.js",
     "ffdev": "nodemon lib/pfmpeg.js",
+    "replace": "node utils/replace.js",
     "ffstart": "forever lib/pfmpeg.js",
     "test": "supervisor -w . test/index.js",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",

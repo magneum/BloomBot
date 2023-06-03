@@ -61,7 +61,7 @@ module.exports = async (BloomBot, mags) => {
       mags,
       `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
 > ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
-> Total Commands: ${countFiles("./routes")}
+> Total Commands: ${countFiles("./models")}
 
 
 ╔═☰ *❗ CONSOLE*
