@@ -265,7 +265,7 @@ async function magneum() {
 > Firstly Welcome.
 > I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
-            footer: "*ⒸBloomBot (md) by Magneum™ *\n*💻HomePage:* bit.ly/magneum",
+            footer: "*ⒸBloomBot (md) by Magneum™ *\n*💻homePage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,

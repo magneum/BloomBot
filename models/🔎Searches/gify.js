@@ -60,7 +60,7 @@ module.exports = async (BloomBot, mags) => {
             url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
               ?.media[0]?.mp4?.url,
           },
-          caption: `*BloomBot™ By KryKenz*\n*💻HomePage:* bit.ly/krykenz\n\n
+          caption: `*BloomBot™ By KryKenz*\n*💻homePage:* bit.ly/krykenz\n\n
 *🎋Feeling:* ${fpth}
 *🌻for:* @${mags.sender.split("@")[0] || ""}`,
           mentions: [mags.sender],

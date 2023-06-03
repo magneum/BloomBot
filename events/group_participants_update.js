@@ -57,10 +57,10 @@ module.exports = async (BloomBot, store, logger) => {
 1. ${BloomBot.prefix}Git - Access the GitHub page.
 2. ${BloomBot.prefix}Help - Access the command menu.
 3. ${BloomBot.prefix}Dashboard - Access the dashboard.
-4. ${BloomBot.prefix}Home - Learn more about BloomBot.
+4. ${BloomBot.prefix}home - Learn more about BloomBot.
 
 🌈 Let's make this group a vibrant and engaging community together!`,
-            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 Homepage:* bit.ly/magneum",
+            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Smile`,
@@ -99,7 +99,7 @@ module.exports = async (BloomBot, store, logger) => {
 ✨ Remember, the door is always open for you. If you ever decide to come back, we'll be here to welcome you with open arms.
 
 🌈 Take care and stay amazing!`,
-            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 Homepage:* bit.ly/magneum",
+            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Cry`,

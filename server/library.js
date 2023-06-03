@@ -176,7 +176,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}${suggestedCommand}`,
@@ -186,8 +186,8 @@ module.exports = async (BloomBot, mags, update, store) => {
             type: 1,
           },
           {
-            buttonId: `${BloomBot.prefix}Home`,
-            buttonText: { displayText: `${BloomBot.prefix}Home` },
+            buttonId: `${BloomBot.prefix}home`,
+            buttonText: { displayText: `${BloomBot.prefix}home` },
             type: 1,
           },
         ],
@@ -203,7 +203,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Help`,
@@ -211,8 +211,8 @@ module.exports = async (BloomBot, mags, update, store) => {
             type: 1,
           },
           {
-            buttonId: `${BloomBot.prefix}Home`,
-            buttonText: { displayText: `${BloomBot.prefix}Home` },
+            buttonId: `${BloomBot.prefix}home`,
+            buttonText: { displayText: `${BloomBot.prefix}home` },
             type: 1,
           },
         ],

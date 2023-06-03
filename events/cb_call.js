@@ -46,7 +46,7 @@ This feature has been enabled by the owner for their privacy. As a result, I am 
 If you need any assistance or have any questions, please join our support group for further help.
 
 
-*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
+*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
 
         await BloomBot.sendMessage(
           callerId,

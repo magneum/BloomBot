@@ -68,7 +68,7 @@ module.exports = async (BloomBot, mags) => {
               : "";
         }
         const message = `*ⒸBloomBot (md) by Magneum™*
-*💻HomePage:* bit.ly/magneum
+*💻homePage:* bit.ly/magneum
 
 *🎋Emo:* ${feeling}
 *📢From:* ${BloomBot.pushname}

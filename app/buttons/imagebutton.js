@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, 𝚌𝚘𝚗𝚝є𝚡𝚝, imåge) => {
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,
@@ -71,7 +71,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,
@@ -101,7 +101,7 @@ ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         caption: `*📢ChatId:* ${mags.chat}
 ${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻HomePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Dashboard`,

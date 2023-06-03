@@ -106,8 +106,8 @@ module.exports = async (BloomBot, mags) => {
 *🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}`,
               footer: `*BloomBot™ bot By KRYKNZ*
 
-_*💻HomePage:* ${BloomBot.ShowInfo}_
-_*⛺HomeLog:* ${BloomBot.Showlogger}_`,
+_*💻homePage:* ${BloomBot.ShowInfo}_
+_*⛺homeLog:* ${BloomBot.Showlogger}_`,
               mentions: [mags.sender],
               buttons: [
                 {
