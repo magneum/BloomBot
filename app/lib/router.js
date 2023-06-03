@@ -186,6 +186,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.Zoology = require("@/database/mongo/zoo");
   BloomBot.Fishes = require("@/database/json/fishes.json");
   BloomBot.animals = require("@/database/json/animals.json");
+  BloomBot.YouAuxiliary = require("@/utils/YouAuxiliary.js");
   BloomBot.Jwork = require("@/database/json/works.json");
   BloomBot.dare = require("@/database/json/dare.json");
   BloomBot.truth = require("@/database/json/truth.json");

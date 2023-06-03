@@ -24,9 +24,9 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const ppth = require("path");
-const ytdl = require("ytdl-secktor");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -38,6 +38,7 @@ module.exports = async (
   participants,
 ) => {
   try {
+    const pExec = BloomBot.promisify(require("child_process").exec);
     if (!BloomBot.args) {
       await BloomBot.sendMessage(chatkey.chat, {
         react: {
@@ -93,12 +94,12 @@ module.exports = async (
             quoted: chatkey,
           },
         );
-        const GetYouTubeInfo = require("#/utils/YouAuxiliary");
-        const audioData = await GetYouTubeInfo(
+        const audioData = await BloomBot.YouAuxiliary(
           mgdata.youtube_search[0].LINK,
           "audio",
         );
         console.log(audioData);
+
         await BloomBot.sendMessage(
           chatkey.chat,
           {
