@@ -73,7 +73,7 @@ function genMath(mode) {
     const b = randomInt(b1, b2);
     const op = pickRandom([...ops]);
     const result = new Function(
-      `return ${a} ${op.replace("/", "*")} ${b < 0 ? `(${b})` : b}`
+      `return ${a} ${op.replace("/", "*")} ${b < 0 ? `(${b})` : b}`,
     )();
     if (op == "/") [a, result] = [result, a];
     hasil = {
