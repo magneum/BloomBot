@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _It's a group command!_`
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This is an Admin only Command!_`
@@ -64,7 +64,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _bot not Admin!_`
@@ -85,14 +85,14 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               BloomBot,
               mags,
               `> *Group have been Bloomed by: ${
-                BloomBot.pushname || BloomBot.Tname
+                BloomBot.pushname || BloomBot.tagname
               }*`,
               ProfilePic
             )
         )
         .catch((error) =>
           mags.reply(
-            `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 > ${jsonformat(error)}`
           )
@@ -105,14 +105,14 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
               BloomBot,
               mags,
               `> *Group have been Closed by: ${
-                BloomBot.pushname || BloomBot.Tname
+                BloomBot.pushname || BloomBot.tagname
               }*`,
               ProfilePic
             )
         )
         .catch((error) =>
           mags.reply(
-            `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 > ${jsonformat(error)}`
           )
@@ -133,7 +133,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ChatId:* ${mags.chat}
 
-*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
@@ -177,7 +177,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
               }\n*📢ChatId:* ${mags.chat}
 
-*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
@@ -210,7 +210,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Argument Missing!_
@@ -228,7 +228,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Argument Missing!_

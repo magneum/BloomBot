@@ -34,7 +34,7 @@ module.exports = async (BloomBot, mags) => {
         react: { text: "❌", key: mags.key },
       });
       return mags.reply(`*😥 Apologies:* _${
-        BloomBot.pushname || BloomBot.Tname
+        BloomBot.pushname || BloomBot.tagname
       }_
 
 *❌Error:*
@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
     }
 
     const message = `
-*🌻 Here is ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
+*🌻 Here is ${fpth} for @${BloomBot.tagname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
 ║⦁ 💡 Title: ${mgdata.meta.title || "Not available"}

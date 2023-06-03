@@ -39,7 +39,7 @@ module.exports = async (BloomBot, mags) => {
         react: { text: "❌", key: mags.key },
       });
       return mags.reply(
-        `*😥 Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥 Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* There has been an API Error. Please try again later.`
       );

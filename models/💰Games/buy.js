@@ -113,7 +113,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -132,7 +132,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -170,7 +170,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* _Just Bloomed Your Account!_`,
               BloomBot.display
             );
@@ -199,7 +199,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* _Just Bloomed Your Account!_`,
                   BloomBot.display
                 );
@@ -209,7 +209,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
@@ -233,7 +233,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -255,7 +255,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -277,7 +277,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -288,7 +288,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
                   BloomBot.display
@@ -335,7 +335,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *❌𝗘𝗿𝗿𝗼𝗿:* _You Are Broke!_
 💼 𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
@@ -360,7 +360,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -374,7 +374,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _You Are Broke!_
 💼𝗘𝗮𝗿𝗻: _read ${prefix}ecomenu._
 🧀𝗜𝘁𝗲𝗺: _${Item}_
@@ -388,7 +388,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
                   BloomBot.display
@@ -412,7 +412,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
@@ -432,7 +432,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_

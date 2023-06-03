@@ -63,7 +63,7 @@ exports.premium = async (BloomBot, mags, update, store) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
+              `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
 *💵Renew:* ${clock.hours}h ${clock.minutes}m ${clock.seconds}s`,

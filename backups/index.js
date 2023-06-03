@@ -52,7 +52,7 @@ let PhoneNumber = require("awesome-phonenumber");
 const remote_authstate = require("@/auth/remote_authstate");
 const { fallback_remote_authstate } = require("@/auth/Database");
 const {
-  mMake,
+  mags_maker,
   fetchJson,
   getBuffer,
   getSizeMedia,
@@ -238,7 +238,7 @@ async function magneum() {
     if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    mags = await mMake(BloomBot, oText, store);
+    mags = await mags_maker(BloomBot, oText, store);
     await require("../lib/symlink")(BloomBot, mags, update, store);
   });
 
@@ -362,7 +362,7 @@ async function magneum() {
   };
 
   BloomBot.public = true;
-  BloomBot.serializeM = (mags) => mMake(BloomBot, mags, store);
+  BloomBot.serializeM = (mags) => mags_maker(BloomBot, mags, store);
 
   BloomBot.send5ButImg = async (
     jid,

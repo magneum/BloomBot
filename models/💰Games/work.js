@@ -57,7 +57,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
             BloomBot.display
@@ -70,7 +70,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
               BloomBot.display
@@ -86,7 +86,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
               BloomBot.display

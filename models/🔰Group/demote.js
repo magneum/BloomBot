@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _It's a group command!_`
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This is an Admin only Command!_`
@@ -64,7 +64,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _bot not Admin!_`
@@ -82,7 +82,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Couldn't find any userId in context!_
@@ -101,7 +101,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Check if the person already not an admin!_`
@@ -132,7 +132,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Couldn't find any userId in context!_
@@ -151,7 +151,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Check if the person already not an admin!_`
@@ -176,7 +176,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Couldn't find any userId in context!_

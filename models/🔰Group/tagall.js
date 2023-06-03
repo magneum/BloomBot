@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, isAdmin, participants) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*  
 > _It's a group command!_`
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags, isAdmin, participants) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This is an Admin only Command!_`

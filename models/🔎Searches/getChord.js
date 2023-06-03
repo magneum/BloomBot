@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -76,7 +76,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname} 
 > ${chordFound}`,
         bsoni.url_image
       );
@@ -84,7 +84,7 @@ module.exports = async (BloomBot, mags) => {
       await BloomBot.imagebutton(
         BloomBot,
         mags,
-        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
+        `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname} 
 > ${chordFound}`,
         BloomBot.display
       );

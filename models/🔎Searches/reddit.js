@@ -35,7 +35,7 @@ module.exports = async (BloomBot, mags) => {
       },
     });
     return mags.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This Command is not yet ready for public usage!_`

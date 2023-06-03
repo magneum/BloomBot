@@ -28,7 +28,7 @@ const path = require("path");
 const gitPull = require("@/utils/gitPull");
 const Baileys = require("@adiwajshing/baileys");
 let PhoneNumber = require("awesome-phonenumber");
-const { getBuffer, getSizeMedia, mMake } = require("@/lib/bloomHive");
+const { getBuffer, getSizeMedia, mags_maker } = require("@/lib/bloomHive");
 
 module.exports = async (BloomBot) => {
   BloomBot.send5ButImg = async (
@@ -494,7 +494,7 @@ module.exports = async (BloomBot) => {
   };
 
   BloomBot.public = true;
-  BloomBot.serializeM = (mags) => mMake(BloomBot, mags, store);
+  BloomBot.serializeM = (mags) => mags_maker(BloomBot, mags, store);
   setInterval(async () => {
     const _Type = [
       "🎭Designer",

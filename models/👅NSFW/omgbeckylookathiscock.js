@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags) => {
             },
           });
           return mags.reply(
-            `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*
 > NSFW Commands have been turned off for this group.
@@ -69,7 +69,7 @@ module.exports = async (BloomBot, mags) => {
               await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here, ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
+                `*🌻Here, ${fpth} for @${BloomBot.tagname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ADULT❗*
 ║⦁ 💡Title: ${mgdata.meta.title || null}

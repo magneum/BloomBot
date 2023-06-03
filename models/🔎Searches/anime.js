@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -56,7 +56,7 @@ module.exports = async (BloomBot, mags) => {
         BloomBot,
         mags,
         `🌻 *Here's some information about ${
-          BloomBot.pushname || BloomBot.Tname
+          BloomBot.pushname || BloomBot.tagname
         }:*
 
 *🔍 MAL Id:* ${mgdata.meta.id_mal}

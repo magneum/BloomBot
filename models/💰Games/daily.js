@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
@@ -70,7 +70,7 @@ module.exports = async (BloomBot, mags) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+              `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
               BloomBot.display
@@ -85,7 +85,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,

@@ -41,7 +41,7 @@ module.exports = async (BloomBot, mags, update, store) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
+              `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
 
@@ -58,7 +58,7 @@ module.exports = async (BloomBot, mags, update, store) => {
             return await BloomBot.imagebutton(
               BloomBot,
               mags,
-              `*Dear* _${BloomBot.pushname || BloomBot.Tname}_
+              `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
 

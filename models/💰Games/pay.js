@@ -28,7 +28,7 @@ const tpth = ppth.basename(__filename);
 const fpth = tpth.slice(0, -3).toLowerCase();
 module.exports = async (BloomBot, mags) => {
   if (!BloomBot.mentionByReply) {
-    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_ 
 
 *❌Error:* 
 > _No query provided!_
@@ -37,7 +37,7 @@ module.exports = async (BloomBot, mags) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args.length === 0) {
-    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_ 
 
 *❌Error:* 
 > _No query provided!_
@@ -46,7 +46,7 @@ module.exports = async (BloomBot, mags) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(BloomBot.args[0])) {
-    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_ 
 
 *❌Error:* 
 > _No query provided!_
@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags) => {
 > Reply-Person: _${BloomBot.prefix}${fpth} amount_`);
   }
   if (BloomBot.args[0].match(/[a-z]/i)) {
-    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_ 
 
 *❌Error:* 
 > _No query provided!_
@@ -73,7 +73,7 @@ module.exports = async (BloomBot, mags) => {
     receiverName = await BloomBot.getName(receiver);
     if (receiver === mags.sender) {
       return mags.reply(`*😥Apologies:* _${
-        BloomBot.pushname || BloomBot.Tname
+        BloomBot.pushname || BloomBot.tagname
       }_ 
 
 *❌Error:* 
@@ -105,7 +105,7 @@ module.exports = async (BloomBot, mags) => {
               return BloomBot.handlerror(BloomBot, mags, error);
             });
           return mags.reply(`*😥Apologies:* _${
-            BloomBot.pushname || BloomBot.Tname
+            BloomBot.pushname || BloomBot.tagname
           }_ 
 
 *❌Error:* 
@@ -117,7 +117,7 @@ module.exports = async (BloomBot, mags) => {
 
         if (parseInt(BloomBot.args[0]) > uPayer.money) {
           return mags.reply(`*😥Apologies:* _${
-            BloomBot.pushname || BloomBot.Tname
+            BloomBot.pushname || BloomBot.tagname
           }_ 
 
 *❌Error:* 
@@ -157,11 +157,11 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${BloomBot.pushname || BloomBot.Tname}
+│║⦁ *🦚Account Holder:* ${BloomBot.pushname || BloomBot.tagname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -183,11 +183,11 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 
 ┌『 *📥Paying Account* 』
 │║⦁ *💰Balance:* ${uPayer.money}
-│║⦁ *🦚Account Holder:* ${BloomBot.pushname || BloomBot.Tname}
+│║⦁ *🦚Account Holder:* ${BloomBot.pushname || BloomBot.tagname}
 ┕╚═══════⋑
 
 ┌『 *📥Receiver Account* 』
@@ -202,7 +202,7 @@ module.exports = async (BloomBot, mags) => {
       }
     );
   } else {
-    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_ 
+    return mags.reply(`*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_ 
 
 *❌Error:* 
 > _No query provided!_

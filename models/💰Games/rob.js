@@ -39,7 +39,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Can't rob your own bank_`
@@ -75,7 +75,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -104,7 +104,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -121,7 +121,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, mags) => {
               return await BloomBot.imagebutton(
                 BloomBot,
                 mags,
-                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -187,7 +187,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -226,7 +226,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -253,7 +253,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -299,7 +299,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -348,7 +348,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -397,7 +397,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -432,7 +432,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -445,7 +445,7 @@ module.exports = async (BloomBot, mags) => {
                         }!
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.tagname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
@@ -472,7 +472,7 @@ module.exports = async (BloomBot, mags) => {
                         BloomBot,
                         mags,
                         `*🌻Here, ${fpth} for ${
-                          BloomBot.pushname || BloomBot.Tname
+                          BloomBot.pushname || BloomBot.tagname
                         }:*
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
@@ -483,7 +483,7 @@ module.exports = async (BloomBot, mags) => {
 *👑𝗔𝗺𝗼𝘂𝗻𝘁:* You Got ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 *⚰️𝗥𝗲𝗮𝘀𝗼𝗻:* Didn't have any safety stuffs. @${receiverName}, visit ${prefix}shop ASAP.
 
-*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.Tname}, 
+*🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${BloomBot.pushname || BloomBot.tagname}, 
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴄᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴄᴇᴄᴏ.money + ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}
 
@@ -505,7 +505,7 @@ module.exports = async (BloomBot, mags) => {
     return await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝

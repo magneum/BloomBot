@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags, groupName) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 > _Owner Only Command!_`
       );
@@ -132,7 +132,7 @@ module.exports = async (BloomBot, mags, groupName) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 > _Could not find any context!_
 

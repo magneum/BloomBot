@@ -42,7 +42,7 @@ module.exports = async (BloomBot, mags) => {
             },
           });
           return mags.reply(
-            `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*
 > NSFW Commands have been turned off for this group.
@@ -63,7 +63,7 @@ module.exports = async (BloomBot, mags) => {
                 },
               });
               return mags.reply(
-                `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+                `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*
 > There has been an API Error. Please try again later.`

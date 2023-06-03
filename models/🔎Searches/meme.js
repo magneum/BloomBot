@@ -38,7 +38,7 @@ module.exports = async (BloomBot, mags) => {
     await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname} 
+      `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname} 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
 > *👍🏽‍Ups:* ${data.ups || 0} 👍

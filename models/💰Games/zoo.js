@@ -54,7 +54,7 @@ module.exports = async (BloomBot, mags) => {
           return await BloomBot.imagebutton(
             BloomBot,
             mags,
-            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+            `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
             BloomBot.display
@@ -79,7 +79,7 @@ module.exports = async (BloomBot, mags) => {
                 return await BloomBot.imagebutton(
                   BloomBot,
                   mags,
-                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}
+                  `*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}
 🌿𝗡𝗮𝗺𝗲: _Amature Zoo Keeper!_
 🐓*Type:* _Nothing Found_`,
                   BloomBot.display
@@ -93,7 +93,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Bought a New Animal. 
 🐓𝗭𝗼𝗼_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
@@ -121,7 +121,7 @@ module.exports = async (BloomBot, mags) => {
                     BloomBot,
                     mags,
                     `*🌻Here, ${fpth} for @${
-                      BloomBot.Tname || BloomBot.pushname
+                      BloomBot.tagname || BloomBot.pushname
                     }:*
 🐆𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: _You Added ${anim.symbol} in your Zoo!_
 💵𝗪𝗼𝗿𝘁𝗵: _People paid you *${worth}* to see._

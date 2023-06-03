@@ -37,7 +37,7 @@ module.exports = async (BloomBot, mags) => {
     await BloomBot.imagebutton(
       BloomBot,
       mags,
-      `*🌻Here, ${fpth} for @${BloomBot.Tname || BloomBot.pushname}:*
+      `*🌻Here, ${fpth} for @${BloomBot.tagname || BloomBot.pushname}:*
 *🤖Hello, I am BloomBot User-bot🤖*
 > ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 

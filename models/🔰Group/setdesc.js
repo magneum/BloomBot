@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _It's a group command!_`
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This is an Admin only Command!_`
@@ -64,7 +64,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _bot not Admin!_`
@@ -78,7 +78,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -98,7 +98,7 @@ module.exports = async (BloomBot, mags, isAdmin, isbotAdmin) => {
       BloomBot,
       mags,
       `> *Group Description Changed successfuly by: ${
-        BloomBot.pushname || BloomBot.Tname
+        BloomBot.pushname || BloomBot.tagname
       }*
 
 *📜New Description:*

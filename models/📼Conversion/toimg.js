@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image in context!_
@@ -60,7 +60,7 @@ module.exports = async (BloomBot, mags) => {
               BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
             }\n*📢ChatId:* ${mags.chat}
 
-*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
@@ -83,7 +83,7 @@ module.exports = async (BloomBot, mags) => {
               },
             });
             return mags.reply(
-              `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+              `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image in context!_
@@ -103,7 +103,7 @@ module.exports = async (BloomBot, mags) => {
 │║⦁ *📢Console:* ${BloomBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
-*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.Tname}`,
+*🌻Here:* ${fpth} for ${BloomBot.pushname || BloomBot.tagname}`,
               footer: `*BloomBot™ bot By KRYKNZ*
 
 _*💻homePage:* ${BloomBot.ShowInfo}_
@@ -142,7 +142,7 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image in context!_

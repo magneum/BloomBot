@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
@@ -50,7 +50,7 @@ module.exports = async (BloomBot, mags) => {
     const search = await BloomBot.ySearch(BloomBot.args.join(" "));
     const Fetched =
       `*🌻Here, ${fpth} for @${
-        BloomBot.Tname || BloomBot.pushname
+        BloomBot.tagname || BloomBot.pushname
       }:\n\n Result for ` +
       BloomBot.args.join(" ") +
       "\n\n";

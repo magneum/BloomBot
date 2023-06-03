@@ -41,7 +41,7 @@ module.exports = async (
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _It's a group command!_`
@@ -55,7 +55,7 @@ module.exports = async (
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _This is an Admin only Command!_`
@@ -69,7 +69,7 @@ module.exports = async (
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _bot not Admin!_`
@@ -83,7 +83,7 @@ module.exports = async (
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image in context!_
@@ -100,7 +100,7 @@ module.exports = async (
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image in context!_
@@ -117,7 +117,7 @@ module.exports = async (
           BloomBot,
           mags,
           `> *Group icone has been changed: ${
-            BloomBot.pushname || BloomBot.Tname
+            BloomBot.pushname || BloomBot.tagname
           }*`,
           media
         )
@@ -131,7 +131,7 @@ module.exports = async (
           },
         });
         return mags.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not change group image!_

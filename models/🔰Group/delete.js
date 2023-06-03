@@ -36,7 +36,7 @@ module.exports = async (BloomBot, mags, isAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Could not find any Image/Video/Text in context!_
@@ -55,7 +55,7 @@ module.exports = async (BloomBot, mags, isAdmin) => {
         },
       });
       return mags.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.Tname}_
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _Can not delete massage from another userId except mine!_

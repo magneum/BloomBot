@@ -38,7 +38,7 @@ module.exports = async (BloomBot, mags) => {
         react: { text: "❌", key: mags.key },
       });
       return mags.reply(
-        `*😥 Apologies:* ${BloomBot.pushname || BloomBot.Tname}
+        `*😥 Apologies:* ${BloomBot.pushname || BloomBot.tagname}
 *❌Error:*
 > _No query provided!_
 
@@ -68,7 +68,7 @@ module.exports = async (BloomBot, mags) => {
     const description = searchData.DESCRIPTION || "No description available";
     const message = `
 *🌻 Here's the information for ${functionName} requested by ${
-      BloomBot.pushname || BloomBot.Tname
+      BloomBot.pushname || BloomBot.tagname
     }:*
 *🎵 Title:* ${searchData.TITLE}
 *👁️ Views:* ${searchData.VIEWS}  

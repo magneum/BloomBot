@@ -36,7 +36,7 @@ module.exports = async (BloomBot, store, logger) => {
         let person = await BloomBot.sendContact(callerId, global.owner);
 
         const welcomeMessage = `🌻 *Hello, ${
-          BloomBot.pushname || BloomBot.Tname
+          BloomBot.pushname || BloomBot.tagname
         }!*
 
 Thank you for reaching out to me. I'm BloomBot, your personal assistant.
