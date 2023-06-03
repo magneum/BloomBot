@@ -71,6 +71,7 @@ const {
   createSticker,
   StickerTypes,
 } = require("wa-sticker-formatter");
+const { promisify } = require("util");
 const { randomUUID } = require("crypto");
 const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
 const ffprobe = require("@ffprobe-installer/ffprobe");
@@ -156,6 +157,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.writeExifVid = writeExifVid;
   BloomBot.writeExif = writeExif;
   BloomBot.nhentaidl = NhentaiDL;
+  BloomBot.promisify = promisify;
 
   BloomBot.msgFilter = require("./msgFilter.js");
   BloomBot.imagebutton = require("@/client/buttons/imagebutton");

@@ -24,10 +24,8 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const path = require("path");
-const { promisify } = require("util");
 const fileName = path.basename(__filename);
 const feeling = fileName.slice(0, -3).toLowerCase();
-const exec = promisify(require("child_process").exec);
 
 module.exports = async (
   BloomBot,
@@ -40,6 +38,7 @@ module.exports = async (
   participants,
 ) => {
   try {
+    const pExec = BloomBot.promisify(require("child_process").exec);
     return BloomBot.fetch("https://api.waifu.pics/sfw/bite")
       .then((res) => res.json())
       .then(async (json) => {
@@ -55,7 +54,7 @@ module.exports = async (
         }
         const resultFilename = new Date().getTime() + ".mp4";
         const ffmpegCommand = `${BloomBot.pathFFmpeg} -i ${json.url} -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' ${resultFilename}`;
-        await exec(ffmpegCommand);
+        await pExec(ffmpegCommand);
         const mentionedUser = "";
         if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
           const mention = BloomBot.mentionByTag;
@@ -85,7 +84,8 @@ module.exports = async (
           },
           { quoted: chatkey },
         ).then(BloomBot.fs.unlinkSync(resultFilename));
-      });
+      })
+      .catch((error) => BloomBot.handlerror(BloomBot, chatkey, error));
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
