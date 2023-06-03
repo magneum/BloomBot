@@ -26,6 +26,10 @@ require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+const First_Try_Lyrics = require("genius-lyrics");
+const GeniusClient = new First_Try_Lyrics.Client();
+const Second_Try_Lyrics = require("songlyrics").default;
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -37,18 +41,55 @@ module.exports = async (
   participants,
 ) => {
   try {
-    await BloomBot.sendMessage(chatkey.chat, {
-      react: {
-        text: "❌",
-        key: chatkey.key,
-      },
-    });
-    return chatkey.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    if (!BloomBot.args.join(" ")) {
+      await BloomBot.sendMessage(chatkey.chat, {
+        react: {
+          text: "❌",
+          key: chatkey.key,
+        },
+      });
+      return chatkey.reply(
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _This Command is not yet ready for public usage!_`,
-    );
+> _No query provided!_
+
+*🌻Usage:* 
+> _${BloomBot.prefix}${currFile} manga-name_`,
+      );
+    }
+    try {
+      const searches = await GeniusClient.songs.search(BloomBot.args.join(" "));
+      const GeniusSong = searches[0];
+      const Geniuslyrics = await GeniusSong.lyrics();
+      return await BloomBot.imagebutton(
+        BloomBot,
+        chatkey,
+        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+
+*📜 Lyrics For:* ${BloomBot.args.join(" ")}
+*🎹 Title:* ${GeniusSong.raw.title}
+*💡 Source:* Genius-Lyrics
+*🔗 Url:* ${GeniusSong.raw.url}
+
+${Geniuslyrics}`,
+        GeniusSong.raw.song_art_image_thumbnail_url,
+      );
+    } catch (error) {
+      const lyricssong = await Second_Try_Lyrics(BloomBot.args.join(" "));
+      return await BloomBot.imagebutton(
+        BloomBot,
+        chatkey,
+        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+
+*📜 Lyrics For:* ${BloomBot.args.join(" ")}
+*💡 Source:* ${lyricssong.source.name}
+*🔗 Url:* ${lyricssong.source.link}
+
+${lyricssong.lyrics}`,
+        BloomBot.display,
+      );
+    }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }

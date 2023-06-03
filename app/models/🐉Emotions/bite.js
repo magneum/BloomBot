@@ -24,8 +24,11 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const path = require("path");
+const { promisify } = require("util");
 const fileName = path.basename(__filename);
 const feeling = fileName.slice(0, -3).toLowerCase();
+const exec = promisify(require("child_process").exec);
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -54,51 +57,40 @@ module.exports = async (
       );
     }
     const resultFilename = magData.resp.id + ".mp4";
-    await BloomBot.ffmpeg
-      .input(magData.meta.url)
-      .outputOptions([
-        "-pix_fmt yuv420p",
-        "-c:v libx264",
-        "-movflags +faststart",
-        "-filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2'",
-      ])
-      .output(resultFilename)
-      .on("end", async () => {
-        const mentionedUser = "";
-        if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
-          const mention = BloomBot.mentionByTag;
-          mentionedUser =
-            (await mention[0]) || chatkey.msg.contextInfo.participant;
-        } else if (BloomBot.mentionByReply) {
-          mentionedUser =
-            chatkey.mtype === "extendedTextMessage" &&
-            chatkey.message.extendedTextMessage.contextInfo != null
-              ? chatkey.message.extendedTextMessage.contextInfo.participant || ""
-              : "";
-        }
-        const message = `*ⒸBloomBot (md) by Magneum™*
+    const ffmpegCommand = `${BloomBot.pathFFmpeg} -i ${magData.meta.url} -pix_fmt yuv420p -c:v libx264 -movflags +faststart -filter:v crop='floor(in_w/2)*2:floor(in_h/2)*2' ${resultFilename}`;
+    await exec(ffmpegCommand);
+    const mentionedUser = "";
+    if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
+      const mention = BloomBot.mentionByTag;
+      mentionedUser = (await mention[0]) || chatkey.msg.contextInfo.participant;
+    } else if (BloomBot.mentionByReply) {
+      mentionedUser =
+        chatkey.mtype === "extendedTextMessage" &&
+        chatkey.message.extendedTextMessage.contextInfo != null
+          ? chatkey.message.extendedTextMessage.contextInfo.participant || ""
+          : "";
+    }
+    const message = `*ⒸBloomBot (md) by Magneum™*
 *💻homePage:* bit.ly/magneum
 
 *🎋Emo:* ${feeling}
 *📢From:* ${BloomBot.pushname}
 *🌻for:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/emotions`;
-        await BloomBot.sendMessage(
-          chatkey.chat,
-          {
-            gifPlayback: true,
-            video: BloomBot.fs.readFileSync(resultFilename),
-            caption: message,
-            mentions: [mentionedUser, chatkey.sender],
-          },
-          { quoted: chatkey },
-        );
-        BloomBot.fs.unlinkSync(resultFilename);
-      })
-      .on("error", (error) => console.log(error))
-      .run();
+    await BloomBot.sendMessage(
+      chatkey.chat,
+      {
+        gifPlayback: true,
+        video: BloomBot.fs.readFileSync(resultFilename),
+        caption: message,
+        mentions: [mentionedUser, chatkey.sender],
+      },
+      { quoted: chatkey },
+    );
+    BloomBot.fs.unlinkSync(resultFilename);
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];

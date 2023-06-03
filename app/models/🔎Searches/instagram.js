@@ -68,8 +68,7 @@ module.exports = async (
 *🍃Following:* ${fids.data.following}
 *🎛 Post:* ${fids.data.posts}
 *🧑🏻reels:* ${fids.data.reels}
-*📖Bio:* ${fids.data.biography}
-`;
+*📖Bio:* ${fids.data.biography}`;
       await BloomBot.imagebutton(
         BloomBot,
         chatkey,

@@ -57,7 +57,7 @@ module.exports = async (
 
     await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/anime?q=${currFile}`,
+      `https://magneum.vercel.app/api/anime?q=${BloomBot.args.join(" ")}`,
     ).then(async (response) => {
       const mgdata = response.data;
       BloomBot.logger.info(mgdata);
