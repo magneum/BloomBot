@@ -71,6 +71,7 @@ const {
   createSticker,
   StickerTypes,
 } = require("wa-sticker-formatter");
+const { randomUUID } = require("crypto");
 const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
 const ffprobe = require("@ffprobe-installer/ffprobe");
 const ffmpeg = require("fluent-ffmpeg")()
@@ -131,6 +132,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.formatp = formatp;
   BloomBot.formatDate = formatDate;
   BloomBot.getTime = getTime;
+  BloomBot.randomUUID = randomUUID;
   BloomBot.isUrl = isUrl;
   BloomBot.sleep = sleep;
   BloomBot.clockString = clockString;
