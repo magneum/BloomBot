@@ -31,7 +31,7 @@ const monGoose = require("mongoose");
 const dbdata = require("@/config/dbdata");
 const packageJson = require("@/package.json");
 const { fetchJson } = require("@/lib/bloomHive");
-const useSqlAuthState = require("@/auth/useSqlAuthState");
+const BloomAuthy = require("@/auth/BloomAuthy");
 const { default: bClient, makeInMemoryStore } = require("@adiwajshing/baileys");
 
 async function magneum() {
@@ -76,7 +76,7 @@ async function magneum() {
     }
     return version;
   };
-  let { state, saveCreds } = await useSqlAuthState();
+  let { state, saveCreds } = await BloomAuthy();
   const BloomBot = bClient({
     auth: state,
     printQRInTerminal: true,

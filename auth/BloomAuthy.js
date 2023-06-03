@@ -33,7 +33,7 @@ const KEY_MAP = {
   "sender-key-memory": "senderKeyMemory",
 };
 
-const useSqlAuthState = async (logger) => {
+const BloomAuthy = async (logger) => {
   let creds;
   let keys = {};
 
@@ -184,4 +184,4 @@ const useSqlAuthState = async (logger) => {
   };
 };
 
-module.exports = useSqlAuthState;
+module.exports = BloomAuthy;
