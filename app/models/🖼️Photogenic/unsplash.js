@@ -60,7 +60,7 @@ module.exports = async (
       "https://magneum.vercel.app/api/unsplash?q=" + BloomBot.args.join(" "),
     ).then(async (response) => {
       const mgdata = response.data;
-      BloomBot.logger.info(mgdata);
+      console.log(mgdata);
       return await BloomBot.imagebutton(
         BloomBot,
         chatkey,

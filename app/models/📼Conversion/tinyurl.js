@@ -66,7 +66,7 @@ module.exports = async (
       },
     }).then(async (response) => {
       const mgdata = response.data;
-      BloomBot.logger.info(mgdata);
+      console.log(mgdata);
       await BloomBot.imagebutton(
         BloomBot,
         chatkey,

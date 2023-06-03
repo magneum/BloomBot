@@ -87,14 +87,14 @@ module.exports = async (
 ║⦁ 🖼️ ${BloomBot.prefix}photolist
 ║⦁ 🔎 ${BloomBot.prefix}searchlist
 ║⦁ ⭕ ${BloomBot.prefix}ytfilterlist
-║⦁ 🦄 ${BloomBot.prefix}sfwlist
 ║⦁ 🍑 ${BloomBot.prefix}hentailist
 ║⦁ 👅 ${BloomBot.prefix}nsfwlist
+║⦁ 🦄 ${BloomBot.prefix}sfwlist (coming-soon)
 ╚══════⋑
 
 
 
-┌╔═☰ *🍁${currFile.toUpperCase()}🍁*
+┌╔═☰ *🍁${"ownerlist".toUpperCase()}🍁*
 │║⦁ ${BloomBot.prefix}ban
 │║⦁ ${BloomBot.prefix}broadcast
 │║⦁ ${BloomBot.prefix}join
@@ -104,7 +104,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}unban
 │║⦁ ${BloomBot.prefix}verify
 ┕╚═☰
-┌╔═☰ *📢${currFile.toUpperCase()}📢*
+┌╔═☰ *📢${"audiofilterlist".toUpperCase()}📢*
 │║⦁ ${BloomBot.prefix}panning
 │║⦁ ${BloomBot.prefix}bassboost
 │║⦁ ${BloomBot.prefix}echo
@@ -122,7 +122,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}vaporwave
 │║⦁ ${BloomBot.prefix}vibrato
 ┕╚═☰
-┌╔═☰ *📼${currFile.toUpperCase()}📼*
+┌╔═☰ *📼${"conversionlist".toUpperCase()}📼*
 │║⦁ ${BloomBot.prefix}carbon
 │║⦁ ${BloomBot.prefix}ship
 │║⦁ ${BloomBot.prefix}sticker
@@ -130,7 +130,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}tourl
 │║⦁ ${BloomBot.prefix}tts
 ┕╚═☰
-┌╔═☰ *📥${currFile.toUpperCase()}📥* 
+┌╔═☰ *📥${"downloadlist".toUpperCase()}📥* 
 │║⦁ ${BloomBot.prefix}yta
 │║⦁ ${BloomBot.prefix}play
 │║⦁ ${BloomBot.prefix}song
@@ -151,7 +151,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}ytvideo
 │║⦁ ${BloomBot.prefix}youtubevideo
 ┕╚═☰
-┌╔═☰ *🐉${currFile.toUpperCase()}🐉* 
+┌╔═☰ *🐉${"emotionslist".toUpperCase()}🐉* 
 │║⦁ ${BloomBot.prefix}bite
 │║⦁ ${BloomBot.prefix}blush
 │║⦁ ${BloomBot.prefix}bonk
@@ -180,7 +180,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}yeet
 │║⦁ ${BloomBot.prefix}yes
 ┕╚═☰
-┌╔═☰ *💰${currFile.toUpperCase()}💰* 
+┌╔═☰ *💰${"gameslist".toUpperCase()}💰* 
 │║⦁ ${BloomBot.prefix}balance
 │║⦁ ${BloomBot.prefix}buy
 │║⦁ ${BloomBot.prefix}daily
@@ -193,7 +193,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}work
 │║⦁ ${BloomBot.prefix}zoo
 ┕╚═☰
-┌╔═☰ *🔰${currFile.toUpperCase()}🔰* 
+┌╔═☰ *🔰${"grouplist".toUpperCase()}🔰* 
 │║⦁ ${BloomBot.prefix}antilink
 │║⦁ ${BloomBot.prefix}allownsfw
 │║⦁ ${BloomBot.prefix}delete
@@ -204,13 +204,13 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}seticon
 │║⦁ ${BloomBot.prefix}tagall
 ┕╚═☰
-┌╔═☰ *🖼️${currFile.toUpperCase()}🖼️* 
+┌╔═☰ *🖼️${"photolist".toUpperCase()}🖼️* 
 │║⦁ ${BloomBot.prefix}image
 │║⦁ ${BloomBot.prefix}unsplash
 │║⦁ ${BloomBot.prefix}pinterest
 │║⦁ ${BloomBot.prefix}wallpaper
 ┕╚═☰
-┌╔═☰ *🔎${currFile.toUpperCase()}🔎* 
+┌╔═☰ *🔎${"searchlist".toUpperCase()}🔎* 
 │║⦁ ${BloomBot.prefix}advice
 │║⦁ ${BloomBot.prefix}anime
 │║⦁ ${BloomBot.prefix}chordlist
@@ -228,7 +228,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}reddit
 │║⦁ ${BloomBot.prefix}ytsearch
 ┕╚═☰
-┌╔═☰ *🍑${currFile.toUpperCase()}🍑* 
+┌╔═☰ *🍑${"hentailist".toUpperCase()}🍑* 
 │║⦁ ${BloomBot.prefix}ass
 │║⦁ ${BloomBot.prefix}bdsm
 │║⦁ ${BloomBot.prefix}blowjob
@@ -254,7 +254,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}yuri
 │║⦁ ${BloomBot.prefix}zettaiRyouiki
 ┕╚═☰
-┌╔═☰ *👅${currFile.toUpperCase()}👅* 
+┌╔═☰ *👅${"nsfwlist".toUpperCase()}👅* 
 │║⦁ ${BloomBot.prefix}nsfw
 │║⦁ ${BloomBot.prefix}nsfw2
 │║⦁ ${BloomBot.prefix}bonermaterial
@@ -292,48 +292,7 @@ module.exports = async (
 │║⦁ ${BloomBot.prefix}slut
 │║⦁ ${BloomBot.prefix}cumslut
 ┕╚═☰
-┌╔═☰ *🦄${currFile.toUpperCase()}🦄* 
-│║⦁ ${BloomBot.prefix}waifu
-│║⦁ ${BloomBot.prefix}swaifu
-│║⦁ ${BloomBot.prefix}whats
-│║⦁ ${BloomBot.prefix}swhats
-│║⦁ ${BloomBot.prefix}shinobu
-│║⦁ ${BloomBot.prefix}sshinobu
-│║⦁ ${BloomBot.prefix}megumin
-│║⦁ ${BloomBot.prefix}smegumin
-│║⦁ ${BloomBot.prefix}awoo
-│║⦁ ${BloomBot.prefix}sawoo
-│║⦁ ${BloomBot.prefix}glomp
-│║⦁ ${BloomBot.prefix}sglomp
-│║⦁ ${BloomBot.prefix}handhold
-│║⦁ ${BloomBot.prefix}shandhold
-│║⦁
-│║⦁ ${BloomBot.prefix}sbully
-│║⦁ ${BloomBot.prefix}scuddle
-│║⦁ ${BloomBot.prefix}scry
-│║⦁ ${BloomBot.prefix}shug
-│║⦁ ${BloomBot.prefix}skiss
-│║⦁ ${BloomBot.prefix}slick
-│║⦁ ${BloomBot.prefix}spat
-│║⦁ ${BloomBot.prefix}ssmug
-│║⦁ ${BloomBot.prefix}sbonk
-│║⦁ ${BloomBot.prefix}syeet
-│║⦁ ${BloomBot.prefix}sblush
-│║⦁ ${BloomBot.prefix}ssmile
-│║⦁ ${BloomBot.prefix}swave
-│║⦁ ${BloomBot.prefix}shighfive
-│║⦁ ${BloomBot.prefix}snom
-│║⦁ ${BloomBot.prefix}sbite
-│║⦁ ${BloomBot.prefix}sslap
-│║⦁ ${BloomBot.prefix}skill
-│║⦁ ${BloomBot.prefix}skick
-│║⦁ ${BloomBot.prefix}shappy
-│║⦁ ${BloomBot.prefix}swink
-│║⦁ ${BloomBot.prefix}spoke
-│║⦁ ${BloomBot.prefix}sdance
-│║⦁ ${BloomBot.prefix}scringe
-┕╚═☰
-┌╔═☰ *⭕${currFile.toUpperCase()}⭕* 
+┌╔═☰ *⭕${"ytfilterlist".toUpperCase()}⭕* 
 │║⦁ ${BloomBot.prefix}ytpanning
 │║⦁ ${BloomBot.prefix}ytbassboost
 │║⦁ ${BloomBot.prefix}ytecho

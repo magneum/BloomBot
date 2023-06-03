@@ -60,7 +60,7 @@ module.exports = async (
       `https://magneum.vercel.app/api/anime?q=${BloomBot.args.join(" ")}`,
     ).then(async (response) => {
       const mgdata = response.data;
-      BloomBot.logger.info(mgdata);
+      console.log(mgdata);
       BloomBot.imagebutton(
         BloomBot,
         chatkey,
