@@ -23,6 +23,7 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const fs = require("fs");
+const chalk = require("chalk");
 const { Sequelize } = require("sequelize");
 if (fs.existsSync(".env")) {
   require("dotenv").config({ path: ".env" });
@@ -31,10 +32,15 @@ if (fs.existsSync(".env")) {
 }
 
 const convertToLogLevel = (value) => {
-  const log = false;
+  let log = false;
   if (typeof value === "string") {
     if (value.toLowerCase() === "true") {
-      log = console.log;
+      log = (message) =>
+        console.log(
+          chalk.bgGreen.black.bold(" Auth-db Logs:") +
+            " " +
+            chalk.reset(message),
+        );
     }
   }
   return log;
@@ -59,12 +65,18 @@ const dbdata = {
       ? new Sequelize({
           dialect: "sqlite",
           storage: process.env.DATABASE_URL,
-          logging: convertToLogLevel(process.env.DEBUG),
+          logging:
+            process.env.VERBOSE_MODE === "debug"
+              ? convertToLogLevel("true")
+              : convertToLogLevel("false"),
         })
       : new Sequelize(process.env.DATABASE_URL, {
           dialect: "postgres",
           protocol: "postgres",
-          logging: convertToLogLevel(process.env.DEBUG),
+          logging:
+            process.env.VERBOSE_MODE === "debug"
+              ? convertToLogLevel("true")
+              : convertToLogLevel("false"),
           dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
         }),
 };
