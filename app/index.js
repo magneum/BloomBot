@@ -33,7 +33,7 @@ const {
 const pino = require("pino");
 const monGoose = require("mongoose");
 const dbdata = require("@/config/dbdata");
-const { fetchJson } = require("@/server/bloomHive");
+const { fetchJson } = require("@/lib/bloomHive");
 const useSqlAuthState = require("@/auth/useSqlAuthState");
 
 async function magneum() {

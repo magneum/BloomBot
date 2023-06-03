@@ -34,7 +34,7 @@ const {
 const fs = require("fs");
 const path = require("path");
 let PhoneNumber = require("awesome-phonenumber");
-const { getBuffer, getSizeMedia, mMake } = require("@/server/bloomHive");
+const { getBuffer, getSizeMedia, mMake } = require("@/lib/bloomHive");
 
 module.exports = async (BloomBot) => {
   BloomBot.send5ButImg = async (
@@ -275,7 +275,7 @@ module.exports = async (BloomBot) => {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("../server/exif");
+      let { writeExif } = require("../lib/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,

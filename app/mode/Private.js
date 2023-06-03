@@ -54,7 +54,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         }
 
         try {
-          require("#/server/library")(BloomBot, mags, update, store);
+          require("#/lib/library")(BloomBot, mags, update, store);
           return await BloomBot.sendMessage(mags.chat, {
             react: {
               text: "🌻",

@@ -114,7 +114,7 @@ module.exports = async (BloomBot, mags, update, store) => {
                   key: mags.key,
                 },
               });
-              return await require("#/server/library")(
+              return await require("#/lib/library")(
                 BloomBot,
                 mags,
                 update,

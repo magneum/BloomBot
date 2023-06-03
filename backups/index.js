@@ -56,7 +56,7 @@ const {
   fetchJson,
   getBuffer,
   getSizeMedia,
-} = require("@/server/bloomHive");
+} = require("@/lib/bloomHive");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {
@@ -239,7 +239,7 @@ async function magneum() {
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
     mags = await mMake(BloomBot, oText, store);
-    await require("../server/symlink")(BloomBot, mags, update, store);
+    await require("../lib/symlink")(BloomBot, mags, update, store);
   });
 
   BloomBot.ev.on("group-participants.update", async (update) => {
@@ -603,7 +603,7 @@ async function magneum() {
       pathFile = filename;
     if (options.asDocument) type = "document";
     if (options.asSticker || /webp/.test(mime)) {
-      let { writeExif } = require("../server/exif");
+      let { writeExif } = require("../lib/exif");
       let media = { mimetype: mime, data };
       pathFile = await writeExif(media, {
         packname: options.packname ? options.packname : global.packname,

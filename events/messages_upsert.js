@@ -23,7 +23,7 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("@/config");
-const { mMake } = require("@/server/bloomHive");
+const { mMake } = require("@/lib/bloomHive");
 module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("messages.upsert", async (update) => {
     oText = update.messages[0];
@@ -37,7 +37,7 @@ module.exports = async (BloomBot, store, logger) => {
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
     mags = await mMake(BloomBot, oText, store);
-    await require("@/server/symlink")(BloomBot, mags, update, store);
+    await require("@/lib/symlink")(BloomBot, mags, update, store);
   });
   return BloomBot;
 };
