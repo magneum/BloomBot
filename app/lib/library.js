@@ -26,41 +26,57 @@ const fs = require("fs");
 const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
-module.exports = async (BloomBot, chatkey, update, store) => {
-  const gmeta = chatkey.isGroup
-    ? await BloomBot.groupMetadata(chatkey.chat).catch(async (error) => {})
+module.exports = async (BloomBot, mags, update, store) => {
+  const routePath = path.join(__dirname, "..", "models");
+  const specialFolders = fs
+    .readdirSync(routePath, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+  const commandList = [];
+  const findCommandFile = (folderPath, command) => {
+    const files = fs.readdirSync(folderPath);
+    for (const file of files) {
+      const fileName = path.parse(file).name.toLowerCase();
+      const commandAliases = require(path.join(folderPath, file)).aliases || [];
+      commandList.push({ name: fileName, aliases: commandAliases });
+      if (fileName === command || commandAliases.includes(command)) {
+        return file;
+      }
+    }
+    return null;
+  };
+  const gmeta = mags.isGroup
+    ? await BloomBot.groupMetadata(mags.chat).catch((error) => {})
     : "";
-  const groupName = chatkey.isGroup ? gmeta.subject : "";
-  const participants = chatkey.isGroup ? await gmeta.participants : "";
-  const groupAdmins = chatkey.isGroup
+  const groupName = mags.isGroup ? gmeta.subject : "";
+  const participants = mags.isGroup ? await gmeta.participants : "";
+  const groupAdmins = mags.isGroup
     ? await participants.filter((v) => v.admin !== null).map((v) => v.id)
     : "";
-  const groupOwner = chatkey.isGroup ? gmeta.owner : "";
-  const isbotAdmin = chatkey.isGroup
+  const groupOwner = mags.isGroup ? gmeta.owner : "";
+  const isbotAdmin = mags.isGroup
     ? groupAdmins.includes(await BloomBot.decodeJid(BloomBot.user.id))
     : false;
-  const isAdmin = chatkey.isGroup
-    ? groupAdmins.includes(chatkey.sender)
-    : false;
+  const isAdmin = mags.isGroup ? groupAdmins.includes(mags.sender) : false;
   const vbody =
-    chatkey.mtype === "conversation"
-      ? chatkey.message.conversation
-      : chatkey.mtype == "imageMessage"
-      ? chatkey.message.imageMessage.caption
-      : chatkey.mtype == "videoMessage"
-      ? chatkey.message.videoMessage.caption
-      : chatkey.mtype == "extendedTextMessage"
-      ? chatkey.message.extendedTextMessage.text
-      : chatkey.mtype == "buttonsResponseMessage"
-      ? chatkey.message.buttonsResponseMessage.selectedButtonId
-      : chatkey.mtype == "listResponseMessage"
-      ? chatkey.message.listResponseMessage.singleSelectReply.selectedRowId
-      : chatkey.mtype == "templateButtonReplyMessage"
-      ? chatkey.message.templateButtonReplyMessage.selectedId
-      : chatkey.mtype === "messageContextInfo"
-      ? chatkey.message.buttonsResponseMessage?.selectedButtonId ||
-        chatkey.message.listResponseMessage?.singleSelectReply.selectedRowId ||
-        chatkey.text
+    mags.mtype === "conversation"
+      ? mags.message.conversation
+      : mags.mtype == "imageMessage"
+      ? mags.message.imageMessage.caption
+      : mags.mtype == "videoMessage"
+      ? mags.message.videoMessage.caption
+      : mags.mtype == "extendedTextMessage"
+      ? mags.message.extendedTextMessage.text
+      : mags.mtype == "buttonsResponseMessage"
+      ? mags.message.buttonsResponseMessage.selectedButtonId
+      : mags.mtype == "listResponseMessage"
+      ? mags.message.listResponseMessage.singleSelectReply.selectedRowId
+      : mags.mtype == "templateButtonReplyMessage"
+      ? mags.message.templateButtonReplyMessage.selectedId
+      : mags.mtype === "messageContextInfo"
+      ? mags.message.buttonsResponseMessage?.selectedButtonId ||
+        mags.message.listResponseMessage?.singleSelectReply.selectedRowId ||
+        mags.text
       : "";
   const vcommand = vbody
     .replace(BloomBot.prefix, "")
@@ -68,6 +84,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
     .split(/ +/)
     .shift()
     .toLowerCase();
+
   console.log(
     "\n◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎",
   );
@@ -85,74 +102,55 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   );
   console.log(
     BloomBot.chalk.blueBright("📱USER_NUMBER: "),
-    BloomBot.chalk.green(chatkey.sender),
+    BloomBot.chalk.green(mags.sender),
   );
   console.log(
     BloomBot.chalk.blueBright("💬CHAT_Id: "),
-    BloomBot.chalk.green(chatkey.chat),
+    BloomBot.chalk.green(mags.chat),
   );
   console.log(
     "◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎\n",
   );
 
-  if (chatkey.isGroup) {
-    const routePath = path.join(__dirname, "..", "models");
-    const specialFolders = fs
-      .readdirSync(routePath, { withFileTypes: true })
-      .filter((dirent) => dirent.isDirectory())
-      .map((dirent) => dirent.name);
-    const commandList = [];
-    const findCommandFile = (folderPath, command) => {
-      const files = fs.readdirSync(folderPath);
-      for (const file of files) {
-        const fileName = path.parse(file).name.toLowerCase();
-        const commandAliases =
-          require(path.join(folderPath, file)).aliases || [];
-        commandList.push({ name: fileName, aliases: commandAliases });
-        if (fileName === command || commandAliases.includes(command)) {
-          return file;
-        }
-      }
-      return null;
-    };
-
-    let commandFound = false;
-    let suggestedCommand = null;
-    let suggestedCommandAliases = [];
-    for (const folder of specialFolders) {
-      const folderPath = path.join(routePath, folder);
-      if (fs.existsSync(folderPath)) {
-        const commandFile = findCommandFile(folderPath, vcommand);
-        if (commandFile) {
-          const commandFilePath = path.join(folderPath, commandFile);
-          require(commandFilePath)(
-            BloomBot,
-            chatkey,
-            gmeta,
-            isAdmin,
-            groupName,
-            isbotAdmin,
-            groupAdmins,
-            participants,
+  let commandFound = false;
+  let suggestedCommand = null;
+  let suggestedCommandAliases = [];
+  for (const folder of specialFolders) {
+    const folderPath = path.join(routePath, folder);
+    if (fs.existsSync(folderPath)) {
+      const commandFile = findCommandFile(folderPath, vcommand);
+      if (commandFile) {
+        const commandFilePath = path.join(folderPath, commandFile);
+        require(commandFilePath)(
+          BloomBot,
+          mags,
+          gmeta,
+          isAdmin,
+          groupName,
+          isbotAdmin,
+          groupAdmins,
+          participants,
+          BloomBot.isSudo,
+        );
+        commandFound = true;
+        break;
+      } else {
+        const folderCommands = commandList.map((cmd) => cmd.name);
+        const suggestion = didYouMean(vcommand, folderCommands);
+        if (suggestion) {
+          suggestedCommand = suggestion;
+          const suggestedCommandData = commandList.find(
+            (cmd) => cmd.name === suggestedCommand,
           );
-          commandFound = true;
-          break;
-        } else {
-          const folderCommands = commandList.map((cmd) => cmd.name);
-          const suggestion = didYouMean(vcommand, folderCommands);
-          if (suggestion) {
-            suggestedCommand = suggestion;
-            const suggestedCommandData = commandList.find(
-              (cmd) => cmd.name === suggestedCommand,
-            );
-            if (suggestedCommandData) {
-              suggestedCommandAliases = suggestedCommandData.aliases || [];
-            }
+          if (suggestedCommandData) {
+            suggestedCommandAliases = suggestedCommandData.aliases || [];
           }
         }
       }
     }
+  }
 
+  if (!commandFound) {
     if (suggestedCommand) {
       let suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
       let suggestionMessage =
@@ -174,9 +172,9 @@ module.exports = async (BloomBot, chatkey, update, store) => {
 
       suggestionMessage += suggestedCommandsText;
 
-      return await BloomBot.sendMessage(chatkey.chat, {
+      return await BloomBot.sendMessage(mags.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢Chat Id:* ${chatkey.chat}\n\n${suggestionMessage}`,
+        caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
         footer:
           "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
@@ -194,22 +192,22 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [chatkey.sender],
+        mentions: [mags.sender],
       });
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${BloomBot.tagname}, it seems that the command you entered doesn't exist.\n` +
         "For command list press below buttons.";
-      return await BloomBot.sendMessage(chatkey.chat, {
+      return await BloomBot.sendMessage(mags.chat, {
         image: { url: BloomBot.display },
-        caption: `*📢Chat Id:* ${chatkey.chat}\n\n${errorMessage}`,
+        caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
         footer:
           "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
-            buttonId: `${BloomBot.prefix}Menu`,
-            buttonText: { displayText: `${BloomBot.prefix}Menu` },
+            buttonId: `${BloomBot.prefix}Help`,
+            buttonText: { displayText: `${BloomBot.prefix}Help` },
             type: 1,
           },
           {
@@ -219,7 +217,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           },
         ],
         headerType: 4,
-        mentions: [chatkey.sender],
+        mentions: [mags.sender],
       });
     }
   }
