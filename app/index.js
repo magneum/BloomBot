@@ -101,7 +101,7 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  require("./battery")(BloomBot);
+  require("./brain")(BloomBot);
   require("@/events/cb_call")(BloomBot, store, logger);
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/messages_upsert")(BloomBot, store, logger);
