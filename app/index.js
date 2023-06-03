@@ -25,16 +25,13 @@
 require("../module-alias");
 require("@/config");
 const logger = require("@/log");
-const gitPull = require("@/utils/gitPull");
-const {
-  default: Bloom_bot_client,
-  makeInMemoryStore,
-} = require("@adiwajshing/baileys");
 const pino = require("pino");
 const monGoose = require("mongoose");
 const dbdata = require("@/config/dbdata");
+const packageJson = require("@/package.json");
 const { fetchJson } = require("@/lib/bloomHive");
 const useSqlAuthState = require("@/auth/useSqlAuthState");
+const { default: bClient, makeInMemoryStore } = require("@adiwajshing/baileys");
 
 async function magneum() {
   const sequelize = dbdata.DATABASE;
@@ -78,12 +75,16 @@ async function magneum() {
     return version;
   };
   let { state, saveCreds } = await useSqlAuthState();
-  const BloomBot = Bloom_bot_client({
+  const BloomBot = bClient({
     auth: state,
     printQRInTerminal: true,
     defaultQueryTimeoutMs: undefined,
     logger: pino({ level: "silent" }),
-    browser: ["BloomBot-by-magneum", "Chrome", "4.0.0"],
+    browser: [
+      `ⒸBloomBot (v${packageJson.version}) by Magneum™`,
+      "Chrome",
+      "4.0.0",
+    ],
     version: getVersionWaweb() || [2, 2242, 6],
     fireInitQueries: false,
     downloadHistory: false,
@@ -108,80 +109,5 @@ async function magneum() {
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
   require("@/events/connection_update")(BloomBot, magneum, logger);
   require("@/events/group_participants_update")(BloomBot, store, logger);
-
-  setInterval(async () => {
-    const _Type = [
-      "🎭Designer",
-      "🌏Inventor",
-      "🎨Creator",
-      "🎉Founder",
-      "🐞Innovator",
-      "🏗️Builder",
-      "🖊️Author",
-      "💡Maker",
-      "🎤Speaker",
-      "🎬Director",
-      "🎼Musician",
-      "📷Photographer",
-      "🎮Gamer",
-      "🎯Strategist",
-      "📚Educator",
-      "🔬Scientist",
-      "👩‍💻Programmer",
-      "🎓Researcher",
-      "📺TV host",
-      "🎤Singer",
-      "🎥Filmmaker",
-      "🎧Audio engineer",
-      "🎪Circus performer",
-      "🧪Chemist",
-      "🗺️Cartographer",
-      "🎢Roller coaster designer",
-      "🎁Gift wrapper",
-      "🚀Space explorer",
-      "🔮Psychic",
-      "🌳Environmentalist",
-      "🎟️Ticket collector",
-      "🍽️Chef",
-      "📈Financial analyst",
-      "🧩Puzzle solver",
-      "🌌Astronomer",
-      "🔍Investigator",
-      "🎭Actor",
-      "🌋Volcanologist",
-      "🔐Locksmith",
-      "🎡Amusement park designer",
-      "🏰Architect",
-      "📓Journalist",
-      "📡Radio host",
-      "🎭Mime artist",
-      "🎮Game tester",
-      "🚒Firefighter",
-      "🚁Pilot",
-      "🎾Tennis player",
-      "⚖️Lawyer",
-      "🎧DJ",
-      "📻Radio presenter",
-      "🍳Cook",
-      "🏇Jockey",
-      "🔧Mechanic",
-      "🎪Acrobat",
-      "🎯Archer",
-      "🎬Stunt performer",
-      "🛠️Handyman",
-    ];
-    const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
-    await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot (md) by Magneum™)",
-    );
-  }, 300 * 1000);
-  // setInterval(async () => {
-  // await BloomBot.updateProfilePicture("120363020792949649@g.us", {
-  // url: BloomBot.display,
-  // });
-  // }, 120 * 1000);
-  setInterval(async () => {
-    gitPull();
-  }, 120 * 1000);
 }
 magneum().catch((error) => logger.error(error));

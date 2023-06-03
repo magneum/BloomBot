@@ -23,16 +23,10 @@
 //  ╚◎ 🐞 DEVELOPERS: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("@/config");
-const {
-  generateforwardMessageContent,
-  prepareWAMessageMedia,
-  generateWAMessageFromContent,
-  downloadContentFromMessage,
-  proto,
-  jidDecode,
-} = require("@adiwajshing/baileys");
 const fs = require("fs");
 const path = require("path");
+const gitPull = require("@/utils/gitPull");
+const Baileys = require("@adiwajshing/baileys");
 let PhoneNumber = require("awesome-phonenumber");
 const { getBuffer, getSizeMedia, mMake } = require("@/lib/bloomHive");
 
@@ -45,13 +39,13 @@ module.exports = async (BloomBot) => {
     but = [],
     options = {},
   ) => {
-    let message = await prepareWAMessageMedia(
+    let message = await Baileys.prepareWAMessageMedia(
       { image: img },
       { upload: BloomBot.waUploadToServer },
     );
-    const template = generateWAMessageFromContent(
+    const template = Baileys.generateWAMessageFromContent(
       mags.chat,
-      proto.Message.fromObject({
+      Baileys.proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
             imageMessage: message.imageMessage,
@@ -228,7 +222,10 @@ module.exports = async (BloomBot) => {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    const stream = await downloadContentFromMessage(quoted, messageType);
+    const stream = await Baileys.downloadContentFromMessage(
+      quoted,
+      messageType,
+    );
     let buffer = Buffer.from([]);
     for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
@@ -244,7 +241,10 @@ module.exports = async (BloomBot) => {
     let messageType = message.mtype
       ? message.mtype.replace(/Message/gi, "")
       : mime.split("/")[0];
-    const stream = await downloadContentFromMessage(message, messageType);
+    const stream = await Baileys.downloadContentFromMessage(
+      message,
+      messageType,
+    );
     let buffer = Buffer.from([]);
     for await (const chunk of stream) {
       buffer = Buffer.concat([buffer, chunk]);
@@ -322,7 +322,10 @@ module.exports = async (BloomBot) => {
     }
 
     let mtype = Object.keys(message.message)[0];
-    let content = await generateforwardMessageContent(message, forceforward);
+    let content = await Baileys.generateforwardMessageContent(
+      message,
+      forceforward,
+    );
     let ctype = Object.keys(content)[0];
     let context = {};
     if (mtype != "conversation") context = message.message[mtype].contextInfo;
@@ -330,7 +333,7 @@ module.exports = async (BloomBot) => {
       ...context,
       ...content[ctype].contextInfo,
     };
-    const waMessage = await generateWAMessageFromContent(
+    const waMessage = await Baileys.generateWAMessageFromContent(
       jid,
       content,
       options
@@ -389,7 +392,7 @@ module.exports = async (BloomBot) => {
     copy.key.remoteJid = jid;
     copy.key.fromMe = sender === BloomBot.user.id;
 
-    return proto.WebMessageInfo.fromObject(copy);
+    return Baileys.proto.WebMessageInfo.fromObject(copy);
   };
 
   BloomBot.getFile = async (PATH, save) => {
@@ -425,7 +428,7 @@ module.exports = async (BloomBot) => {
   BloomBot.decodeJid = (jid) => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
-      let decode = jidDecode(jid) || {};
+      let decode = Baileys.jidDecode(jid) || {};
       return (
         (decode.user && decode.server && decode.user + "@" + decode.server) ||
         jid
@@ -492,5 +495,74 @@ module.exports = async (BloomBot) => {
 
   BloomBot.public = true;
   BloomBot.serializeM = (mags) => mMake(BloomBot, mags, store);
+  setInterval(async () => {
+    const _Type = [
+      "🎭Designer",
+      "🌏Inventor",
+      "🎨Creator",
+      "🎉Founder",
+      "🐞Innovator",
+      "🏗️Builder",
+      "🖊️Author",
+      "💡Maker",
+      "🎤Speaker",
+      "🎬Director",
+      "🎼Musician",
+      "📷Photographer",
+      "🎮Gamer",
+      "🎯Strategist",
+      "📚Educator",
+      "🔬Scientist",
+      "👩‍💻Programmer",
+      "🎓Researcher",
+      "📺TV host",
+      "🎤Singer",
+      "🎥Filmmaker",
+      "🎧Audio engineer",
+      "🎪Circus performer",
+      "🧪Chemist",
+      "🗺️Cartographer",
+      "🎢Roller coaster designer",
+      "🎁Gift wrapper",
+      "🚀Space explorer",
+      "🔮Psychic",
+      "🌳Environmentalist",
+      "🎟️Ticket collector",
+      "🍽️Chef",
+      "📈Financial analyst",
+      "🧩Puzzle solver",
+      "🌌Astronomer",
+      "🔍Investigator",
+      "🎭Actor",
+      "🌋Volcanologist",
+      "🔐Locksmith",
+      "🎡Amusement park designer",
+      "🏰Architect",
+      "📓Journalist",
+      "📡Radio host",
+      "🎭Mime artist",
+      "🎮Game tester",
+      "🚒Firefighter",
+      "🚁Pilot",
+      "🎾Tennis player",
+      "⚖️Lawyer",
+      "🎧DJ",
+      "📻Radio presenter",
+      "🍳Cook",
+      "🏇Jockey",
+      "🔧Mechanic",
+      "🎪Acrobat",
+      "🎯Archer",
+      "🎬Stunt performer",
+      "🛠️Handyman",
+    ];
+    const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
+    await BloomBot.updateProfileStatus(
+      "Feeling: " + __Feeling + " (ⒸBloomBot (md) by Magneum™)",
+    );
+  }, 300 * 1000);
+  setInterval(async () => {
+    gitPull();
+  }, 120 * 1000);
   return BloomBot;
 };
