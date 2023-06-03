@@ -33,8 +33,8 @@ const {
 const pino = require("pino");
 const monGoose = require("mongoose");
 const dbdata = require("@/config/dbdata");
-const { fetchJson } = require("@/server/obFunc");
-const useSqlAuthState = require("@/auth/backup/useSqlAuthState");
+const { fetchJson } = require("@/server/bloomHive");
+const useSqlAuthState = require("@/auth/useSqlAuthState");
 
 async function magneum() {
   const sequelize = dbdata.DATABASE;

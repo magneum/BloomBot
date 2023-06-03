@@ -56,7 +56,7 @@ const {
   fetchJson,
   getBuffer,
   getSizeMedia,
-} = require("@/server/obFunc");
+} = require("@/server/bloomHive");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {

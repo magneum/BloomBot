@@ -45,7 +45,7 @@ const {
   parseMention,
   GIFBufferToVideoBuffer,
   getRandom,
-} = require("./obFunc");
+} = require("./bloomHive");
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");

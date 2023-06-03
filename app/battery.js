@@ -34,7 +34,7 @@ const {
 const fs = require("fs");
 const path = require("path");
 let PhoneNumber = require("awesome-phonenumber");
-const { getBuffer, getSizeMedia, mMake } = require("@/server/obFunc");
+const { getBuffer, getSizeMedia, mMake } = require("@/server/bloomHive");
 
 module.exports = async (BloomBot) => {
   BloomBot.send5ButImg = async (
