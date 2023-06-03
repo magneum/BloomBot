@@ -24,8 +24,9 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[  ⒸBloomBot (md) by Magneum™  ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../module-alias");
 require("@/config");
-const logger = require("@/log");
 const pino = require("pino");
+const logger = require("@/log");
+const clear = require("cli-clear");
 const monGoose = require("mongoose");
 const dbdata = require("@/config/dbdata");
 const packageJson = require("@/package.json");
@@ -34,6 +35,7 @@ const useSqlAuthState = require("@/auth/useSqlAuthState");
 const { default: bClient, makeInMemoryStore } = require("@adiwajshing/baileys");
 
 async function magneum() {
+  clear();
   const sequelize = dbdata.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
   try {
