@@ -22,11 +22,11 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("./app/config/index.js");
 const fs = require("fs");
 const chalk = require("chalk");
 const yargs = require("yargs");
 const { join } = require("path");
+require("./app/config/index.js");
 const { say } = require("cfonts");
 const { createInterface } = require("readline");
 const { watchFile, unwatchFile } = require("fs");
