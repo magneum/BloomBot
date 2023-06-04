@@ -38,20 +38,27 @@ module.exports = async (
   participants,
 ) => {
   try {
-    await BloomBot.sendMessage(chatkey.chat, {
-      react: {
-        text: "❌",
-        key: chatkey.key,
-      },
-    });
-    return chatkey.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    const gitHubUrl = "https://github.com/magneum";
+    const bloomBotGitHubUrl = "https://github.com/magneum/BloomBot";
 
-*❌Error:* 
-> _This Command is not yet ready for public usage!_`,
+    return await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+
+ⒸBloomBot (multi-device) by Magneum™
+📱 is a WhatsApp user-bot with automation, moderation, music, games, and more than 200+ commands! 🎮🎵🤖
+
+🔗 *GitHub Information:*
+🔹 GitHub URL: ${gitHubUrl}
+🔹 BloomBot GitHub URL: ${bloomBotGitHubUrl}
+
+⚙️𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +𝟗𝟏𝟖𝟒𝟑𝟔𝟔𝟖𝟔𝟕𝟓𝟖 & +𝟗𝟏𝟖𝟐𝟓𝟎𝟖𝟖𝟗𝟑𝟐𝟓 🧑‍💻`,
+      BloomBot.display,
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
-module.exports.aliases = [];
+
+module.exports.aliases = ["git", "github", "repo", "web"];
