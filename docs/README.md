@@ -36,5 +36,5 @@ Use at your own risk.
 ║ 👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your 
 ║     whatsApp group management experience! 🎉
 ║
-╚◎ ⚙️𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +𝟗𝟏𝟖𝟒𝟑𝟔𝟔𝟖𝟔𝟕𝟓𝟖 & +𝟗𝟏𝟖𝟐𝟓𝟎𝟖𝟖𝟗𝟑𝟐𝟓
+╚◎ ⚙️Developers: +918436686758, +918250889325
 ```
