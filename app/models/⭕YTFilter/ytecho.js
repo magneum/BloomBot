@@ -25,7 +25,7 @@
 require("#/config/index.js");
 const path = require("path");
 const fileName = path.basename(__filename);
-const functionName = fileName.slice(0, -3).toLowerCase();
+const currFile = fileName.slice(0, -3).toLowerCase();
 
 module.exports = async (
 BloomBot,
@@ -52,14 +52,14 @@ participants,
 > _No query provided!_
 
 *🌻 Usage* 
-> _${BloomBot.prefix}${functionName} song/link_`
+> _${BloomBot.prefix}${currFile} song/link_`
       );
     }
     const response = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`
     );
-    console.log(response.response);
+    console.log(response.data);
     const searchData = response.data.youtube_search[0];
     const musicResponse = await BloomBot.magfetch(
       BloomBot,
@@ -76,7 +76,7 @@ participants,
     const authorName = searchData.AUTHOR_NAME || "Not available";
     const description = searchData.DESCRIPTION || "No description available";
     const message = `
-*🌻 Here's the information for ${functionName} requested by ${
+*🌻 Here's the information for ${currFile} requested by ${
       BloomBot.pushname || BloomBot.tagname
     }:*
 *🎵 Title:* ${searchData.TITLE}
