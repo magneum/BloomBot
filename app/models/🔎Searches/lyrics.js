@@ -27,7 +27,6 @@ const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const lyricsFinder = require("lyrics-finder");
 const currFile = tpth.slice(0, -3).toLowerCase();
-const imageSearchEngine = require("image-search-engine");
 
 module.exports = async (
   BloomBot,
@@ -57,13 +56,9 @@ module.exports = async (
 > _${BloomBot.prefix}${currFile} manga-name_`,
       );
     }
-
-    const artist = ""; // Provide the artist's name if available
+    const artist = "";
     const title = BloomBot.args.join(" ");
     const lyrics = await lyricsFinder(artist, title);
-
-    const albumArt = await searchAlbumArt(artist, title);
-
     if (lyrics) {
       return await BloomBot.imagebutton(
         BloomBot,
@@ -71,9 +66,8 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
 *📜 Lyrics For:* ${title}
-
 ${lyrics}`,
-        albumArt,
+        BloomBot.display,
       );
     } else {
       return await BloomBot.sendMessage(chatkey.chat, {
@@ -87,18 +81,4 @@ ${lyrics}`,
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
-
-async function searchAlbumArt(artist, title) {
-  try {
-    const results = await imageSearchEngine(`${artist} ${title} album cover`);
-    if (results && results.length > 0) {
-      return results[0].url;
-    }
-    return null;
-  } catch (error) {
-    console.error("Error searching for album art:", error);
-    return null;
-  }
-}
-
 module.exports.aliases = [];
