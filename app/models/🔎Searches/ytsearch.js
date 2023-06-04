@@ -55,13 +55,10 @@ module.exports = async (
 > _${BloomBot.prefix}${currentFile} song-name_`,
       );
     }
-
     const searchQuery = BloomBot.args.join(" ");
     const searchResults = await BloomBot.ySearch(searchQuery);
-
     let fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
     fetchedData += `Requested by: ${BloomBot.tagname || BloomBot.pushname}\n\n`;
-
     let resultNumber = 1;
     for (const result of searchResults.all) {
       fetchedData += `#${resultNumber}\n`;
@@ -70,9 +67,7 @@ module.exports = async (
       fetchedData += `🌐 *URL*: ${result.url}\n\n`;
       resultNumber++;
     }
-
     const thumbnailUrl = searchResults.all[0].thumbnail;
-
     return await BloomBot.imagebutton(
       BloomBot,
       chatkey,

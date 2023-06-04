@@ -39,7 +39,8 @@ module.exports = async (
   participants,
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
+    const query = BloomBot.args.join(" ");
+    if (!query) {
       await BloomBot.sendMessage(chatkey.chat, {
         react: {
           text: "❌",
@@ -56,18 +57,35 @@ module.exports = async (
 > _${BloomBot.prefix}${currFile} manga-name_`,
       );
     }
+
+    const response = await BloomBot.magfetch(
+      BloomBot,
+      "https://magneum.vercel.app/api/youtube_sr?q=" + query,
+    );
+    const mgdata = response.data;
+    console.log(mgdata);
+
     const artist = "";
-    const title = BloomBot.args.join(" ");
+    const title = query;
     const lyrics = await lyricsFinder(artist, title);
     if (lyrics) {
+      const metadeta = `*🌻Hola!* ${currFile} for ${
+        BloomBot.pushname || BloomBot.tagname
+      }
+
+*📜Lyrics For:* ${mgdata.youtube_search[0].TITLE}
+*🙈Views:* ${mgdata.youtube_search[0].VIEWS}
+*🔗Link:* ${mgdata.youtube_search[0].LINK || "null"}
+*⏰Duration:* ${mgdata.youtube_search[0].DURATION_FULL}`;
+
       return await BloomBot.imagebutton(
         BloomBot,
         chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+        `${metadeta}
 
-*📜 Lyrics For:* ${title}
 ${lyrics}`,
         BloomBot.display,
+        mgdata.youtube_search[0].HQ_IMAGE,
       );
     } else {
       return await BloomBot.sendMessage(chatkey.chat, {
