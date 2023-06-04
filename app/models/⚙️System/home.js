@@ -20,7 +20,7 @@
 //  ║⦁>    subsidiaries. This is an independent and unofficial software.
 //  ║⦁>    Use at your own risk.
 //  ║
-//  ╚◎ ⚙️𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +𝟗𝟏𝟖𝟒𝟑𝟔𝟔𝟖𝟔𝟕𝟓𝟖 & +𝟗𝟏𝟖𝟐𝟓𝟎𝟖𝟖𝟗𝟑𝟐𝟓
+//  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const ppth = require("path");
@@ -59,7 +59,7 @@ module.exports = async (
 🚨LEGAL NOTICE🚨
 ⒸBloomBot is in no way affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk. ⚠️
 
-⚙️𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +𝟗𝟏𝟖𝟒𝟑𝟔𝟔𝟖𝟔𝟕𝟓𝟖 & +𝟗𝟏𝟖𝟐𝟓𝟎𝟖𝟖𝟗𝟑𝟐𝟓 🧑‍💻`,
+⚙️Developers: +918436686758, +918250889325 🧑‍💻`,
       BloomBot.display,
     );
   } catch (error) {
