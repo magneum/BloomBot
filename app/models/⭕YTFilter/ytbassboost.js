@@ -87,17 +87,15 @@ module.exports = async (
     const thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
     const mediaUrl = searchData.LINK || "Not available";
     const authorName = searchData.AUTHOR_NAME || "Not available";
-    const description = searchData.DESCRIPTION || "No description available";
-
     await BloomBot.imagebutton(
       BloomBot,
       chatkey,
-      `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+      `*🌻Hello!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
-*🧀YT Filter:* ${currFile}
+*🧀YouTube Filter:* ${currFile}
 *🎵Title:* ${searchData.TITLE}
 *👁️Views:* ${searchData.VIEWS}  
-*⏱️ uration:* ${searchData.DURATION_FULL}
+*⏱️Duration:* ${searchData.DURATION_FULL}
 *🔗Link:* ${mediaUrl}
 *✍️Author:* ${authorName}
 
@@ -105,7 +103,7 @@ module.exports = async (
       searchData.HQ_IMAGE,
     );
 
-    await BloomBot.sendMessage(chatkey.chat, {
+    return await BloomBot.sendMessage(chatkey.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
