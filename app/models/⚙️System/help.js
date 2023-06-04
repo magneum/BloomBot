@@ -320,6 +320,7 @@ module.exports.aliases = [
   "choices",
   "display",
   "options",
+  "menu",
   "show",
   "panel",
   "catalog/index.js",
