@@ -97,18 +97,19 @@ module.exports = async (
       const audioStream = ytdl(response.data.youtube_search[0].LINK, {
         filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
       });
-      const audioFilePath = `./${new Date().getTime()}.mp3`;
+      const AudioFilePath = `./${new Date().getTime()}.mp3`;
+      const newAudioFilePath = `./${chatkey.chat}.mp3`;
       await new Promise((resolve, reject) => {
         const stream = audioStream.pipe(
-          BloomBot.fs.createWriteStream(audioFilePath),
+          BloomBot.fs.createWriteStream(AudioFilePath),
         );
         stream.on("error", reject);
         stream.on("finish", async () => {
           try {
             await BloomBot.exec(
-              `${BloomBot.pathFFmpeg} -i ${audioFilePath} ${audioFilter} ${audioFilePath}`,
+              `${BloomBot.pathFFmpeg} -i ${AudioFilePath} ${audioFilter} ${newAudioFilePath}`,
             );
-            const file = BloomBot.fs.readFileSync(audioFilePath);
+            const file = BloomBot.fs.readFileSync(newAudioFilePath);
             const thumbnail = await BloomBot.getBuffer(
               response.data.youtube_search[0].HQ_IMAGE,
             );
@@ -136,7 +137,7 @@ module.exports = async (
             await BloomBot.sendMessage(chatkey.chat, {
               audio: file,
               mimetype: "audio/mpeg",
-              fileName: `${response.data.youtube_search[0].TITLE}.mp3`,
+              fileName: `${chatkey.chat}.mp3`,
               headerType: 4,
               contextInfo: {
                 externalAdReply: {
@@ -151,7 +152,10 @@ module.exports = async (
                 },
               },
             });
-            await Promise.all([unlink(audioFilePath)]);
+            await Promise.all([
+              unlink(AudioFilePath),
+              unlink(newAudioFilePath),
+            ]);
             resolve();
           } catch (error) {
             reject(error);
