@@ -73,6 +73,7 @@ module.exports = async (
   participants,
 ) => {
   try {
+    const unlink = BloomBot.util.promisify(BloomBot.fs.unlink);
     const query = BloomBot.args.join(" ");
     if (
       !query ||
@@ -106,12 +107,12 @@ module.exports = async (
         BloomBot.fs.createWriteStream(`./${musicpath}`),
       );
       stream.on("error", reject);
-      stream.on("finish", () => {
+      stream.on("finish", async () => {
         BloomBot.exec(execCommand, async () => {
           const file = BloomBot.fs.readFileSync(`./${audioFilename}`);
           resolve(file);
-          BloomBot.fs.unlinkSync(`./${audioFilename}`);
-          BloomBot.fs.unlinkSync(`./${musicpath}`);
+          await unlink(`./${audioFilename}`);
+          await unlink(`./${musicpath}`);
         });
       });
     });
