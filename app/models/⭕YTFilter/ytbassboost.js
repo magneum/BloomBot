@@ -25,6 +25,7 @@
 require("#/config/index.js");
 const path = require("path");
 const ytdl = require("ytdl-secktor");
+
 const fileName = path.basename(__filename);
 const currFile = fileName.slice(0, -3).toLowerCase();
 
@@ -91,6 +92,7 @@ module.exports = async (
 > _${BloomBot.prefix}${currFile} song/link_`,
       );
     }
+
     const response = await BloomBot.magfetch(
       BloomBot,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
@@ -102,24 +104,29 @@ module.exports = async (
     });
     const audioFilename = `${BloomBot.between(3000, 4000)}.mp3`;
     const execCommand = `${BloomBot.pathFFmpeg} -i ${musicpath} ${audioFilter} ${audioFilename}`;
+
     const audioFile = await new Promise((resolve, reject) => {
       const stream = audioStream.pipe(
         BloomBot.fs.createWriteStream(`./${musicpath}`),
       );
       stream.on("error", reject);
       stream.on("finish", async () => {
-        BloomBot.exec(execCommand, async () => {
+        try {
+          await BloomBot.exec(execCommand);
           const file = BloomBot.fs.readFileSync(`./${audioFilename}`);
           resolve(file);
           await unlink(`./${audioFilename}`);
           await unlink(`./${musicpath}`);
-        });
+        } catch (error) {
+          reject(error);
+        }
       });
     });
 
     const thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
     const mediaUrl = searchData.LINK || "Not available";
     const authorName = searchData.AUTHOR_NAME || "Not available";
+
     await BloomBot.imagebutton(
       BloomBot,
       chatkey,
@@ -135,6 +142,7 @@ module.exports = async (
 *📜Description:*`,
       searchData.HQ_IMAGE,
     );
+
     return await BloomBot.sendMessage(chatkey.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
