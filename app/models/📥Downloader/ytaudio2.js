@@ -62,7 +62,7 @@ module.exports = async (
           BloomBot.args.join(" "),
       ).then(async (response) => {
         const mgdata = response.data;
-        
+
         await BloomBot.sendMessage(
           chatkey.chat,
           {
@@ -140,6 +140,7 @@ module.exports.aliases = [
   "musicspk2",
   "song2",
   "sing2",
+  "play2",
   "music2",
   "playmp32",
   "tune2",

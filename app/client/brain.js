@@ -25,10 +25,15 @@
 require("@/config/index.js");
 const fs = require("fs");
 const path = require("path");
+var FileType = require("file-type");
 const gitPull = require("@/utils/gitPull.js");
 const Baileys = require("@adiwajshing/baileys");
 let PhoneNumber = require("awesome-phonenumber");
-const { getBuffer, getSizeMedia, chatkey_maker } = require("@/lib/bloomHive.js");
+const {
+  getBuffer,
+  getSizeMedia,
+  chatkey_maker,
+} = require("@/lib/bloomHive.js");
 
 module.exports = async (BloomBot) => {
   BloomBot.send5ButImg = async (
