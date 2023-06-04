@@ -56,18 +56,18 @@ module.exports = async (
 > _${BloomBot.prefix}${currentFile} song-name_`,
       );
     }
-    const searchQuery = BloomBot.args.join(" ");
-    const searchResults = await ytSearch(searchQuery);
-    const fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
+    let searchQuery = BloomBot.args.join(" ");
+    let searchResults = await ytSearch(searchQuery);
+    let fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
     let resultNumber = 1;
-    for (const result of searchResults.videos) {
+    for (let result of searchResults.videos) {
       fetchedData += `#${resultNumber}\n`;
       fetchedData += `🏜️ *Title*: ${result.title}\n`;
       fetchedData += `🌸 *Duration*: ${result.duration.timestamp}\n`;
       fetchedData += `🌐 *URL*: ${result.url}\n\n`;
       resultNumber++;
     }
-    const thumbnailUrl = searchResults.videos[0].thumbnail;
+    let thumbnailUrl = searchResults.videos[0].thumbnail;
     return await BloomBot.imagebutton(
       BloomBot,
       chatkey,

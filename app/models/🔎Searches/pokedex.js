@@ -86,35 +86,37 @@ module.exports = async (
         return await BloomBot.imagebutton(
           BloomBot,
           chatkey,
-          `💫 *Name:* ${json.name}
-〽️ *Pokedex Id:* ${json.id}
-🎀 *Type:* ${json.type}
-🐞 *Species*: ${json.species}
-📛 *Abilities:* ${json.abilities}
-🔆 *Height:* ${json.height}
-⚖ *Weight:* ${json.weight}
-🌟 *Base Experience:* ${json.base_experience}
-♀️ *Geder*: ${json.gender}
-★ *Egg Groups*: ${json.egg_groups}
+          `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+          
+*💫Name:* ${json.name}
+*〽️Pokedex Id:* ${json.id}
+*🎀Type:* ${json.type}
+*🐞Species*: ${json.species}
+*📛Abilities:* ${json.abilities}
+*🔆Height:* ${json.height}
+*⚖Weight:* ${json.weight}
+*🌟Base Experience:* ${json.base_experience}
+*♀️Geder*: ${json.gender}
+*★Egg Groups*: ${json.egg_groups}
 
-🌽𝐒𝐓𝐀𝐓𝐈𝐒𝐓𝐈𝐂𝐒
-✳ *HP:* ${json.stats.hp}
-⚔ *Attack:* ${json.stats.attack}
-🔰 *Defense:* ${json.stats.defense}
-☄ *Special Attack:* ${json.stats.sp_atk}
-🛡 *Special Defense:* ${json.stats.sp_def}
-🎐 *Speed:* ${json.stats.speed}
-🍯 *Total*: ${json.stats.total}
+*🌽STATISTICS*
+*✳HP:* ${json.stats.hp}
+*⚔Attack:* ${json.stats.attack}
+*🔰Defense:* ${json.stats.defense}
+*☄Special Attack:* ${json.stats.sp_atk}
+*🛡Special Defense:* ${json.stats.sp_def}
+*🎐Speed:* ${json.stats.speed}
+*🍯Total*: ${json.stats.total}
 
-🌶️𝐅𝐀𝐌𝐈𝐋𝐘
-🌸 *Evolved Stage:* ${json.family.evolutionStage}
-💮 *Evolved Line:* ${json.family.evolutionLine}
-🪐 *Generation:* ${json.generation}
+*🌶️FAMILY*
+*🌸Evolved Stage:* ${json.family.evolutionStage}
+*💮Evolved Line:* ${json.family.evolutionLine}
+*🪐Generation:* ${json.generation}
 
 
-💬 *Summary:* ${json.description}
-🛍️ *Card Market:* ${card[0].cardmarket.url}
-🧀 *TGC Player:* ${card[0].tcgplayer.url}
+*💬Summary:* ${json.description}
+*🛍️Card Market:* ${card[0].cardmarket.url}
+*🧀TGC Player:* ${card[0].tcgplayer.url}
 `.trim(),
           card[0].images.large,
         );
