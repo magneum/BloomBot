@@ -9,8 +9,8 @@ function truncateString(str, maxLength) {
   return str;
 }
 
-function logWithBullet(bullet, message) {
-  console.log(chalk.yellow(`${bullet} ${message}`));
+function logWithBullet(bullet, message, color) {
+  console.log(chalk[color](`${bullet} ${message}`));
 }
 
 async function downloadAudio() {
@@ -40,16 +40,21 @@ async function downloadAudio() {
       prev.abr > current.abr ? prev : current,
     );
 
-    logWithBullet("•", "Video title: " + info.title);
-    logWithBullet("•", "Video duration: " + info.duration);
-    logWithBullet("•", "Video author: " + info.uploader);
-    logWithBullet("•", "Video view count: " + info.view_count);
-    logWithBullet("•", "Video thumbnail URL: " + info.thumbnail);
-    logWithBullet("•", "Audio download URL: " + chalk.blue(bestAudio.url));
+    logWithBullet("•", "Video title: " + info.title, "cyan");
+    logWithBullet("•", "Video duration: " + info.duration, "green");
+    logWithBullet("•", "Video author: " + info.uploader, "magenta");
+    logWithBullet("•", "Video view count: " + info.view_count, "yellow");
+    logWithBullet("•", "Video thumbnail URL: " + info.thumbnail, "blue");
+    logWithBullet("•", "Audio download URL: " + bestAudio.url, "cyanBright");
 
-    logWithBullet("•", "Best Audio Format:");
+    logWithBullet(chalk.white("• Best Audio Format:"), "", "white");
     Object.entries(bestAudio).forEach(([key, value]) => {
-      logWithBullet("   -", `${key}: ${value}`);
+      const keyColor = key === "url" ? "cyan" : "gray";
+      logWithBullet(
+        chalk.gray("  - " + key + ":"),
+        chalk[keyColor](value),
+        keyColor,
+      );
     });
 
     const maxLength = 50;
@@ -66,6 +71,7 @@ async function downloadAudio() {
           logWithBullet(
             "✓",
             "Audio file downloaded successfully: " + outputPath,
+            "green",
           );
           resolve();
         })
