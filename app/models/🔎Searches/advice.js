@@ -38,34 +38,17 @@ module.exports = async (
   participants,
 ) => {
   try {
-    const кяуяєs = await BloomBot.axios.get("api.adviceslip.com/advice");
-    try {
-      const кяуяєsi = await BloomBot.fetch(
-        global.apiGet("wall.alphacoders.com/api2.0", "/get.php", {
-          auth: "3e7756c85df54b78f934a284c11abe4e",
-          method: "search",
-          term: "random",
-        }),
-      );
-      const bson = await кяуяєsi.json();
-      const bsoni =
-        bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.slip.advice}`,
-        bsoni.url_image,
-      );
-    } catch {
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.slip.advice}`,
-        BloomBot.display,
-      );
-    }
+    const response = await BloomBot.axios.get(
+      "https://api.adviceslip.com/advice",
+    );
+    await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
+      
+> ${response.data.slip.advice}`,
+      BloomBot.display,
+    );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }

@@ -93,7 +93,7 @@ module.exports = async (
         },
       }).then(async (response) => {
         const mgdata = response.data;
-        console.log(mgdata);
+        
         return await BloomBot.sendMessage(
           chatkey.chat,
           {

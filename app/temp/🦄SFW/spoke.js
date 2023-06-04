@@ -42,7 +42,7 @@ module.exports = async (
       `https://magneum.vercel.app/api/sfw?q=${currFile.slice(1)}`,
     ).then(async (response) => {
       const mgdata = response.data;
-      console.log(mgdata);
+      
 
       return await BloomBot.imagebutton(
         BloomBot,

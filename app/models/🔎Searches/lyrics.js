@@ -63,7 +63,7 @@ module.exports = async (
       "https://magneum.vercel.app/api/youtube_sr?q=" + query,
     );
     const mgdata = response.data;
-    console.log(mgdata);
+    
 
     const artist = "";
     const title = query;

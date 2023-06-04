@@ -56,7 +56,7 @@ module.exports = async (
             "https://magneum.vercel.app/api/hentai?q=" + currFile,
           ).then(async (response) => {
             const mgdata = response.data;
-            console.log(mgdata);
+            
             if (!mgdata[0].meta.url) {
               await BloomBot.sendMessage(chatkey.chat, {
                 react: {

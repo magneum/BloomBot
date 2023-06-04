@@ -62,7 +62,7 @@ module.exports = async (
           BloomBot.args.join(" "),
       ).then(async (response) => {
         const mgdata = response.data;
-        console.log(mgdata);
+        
         await BloomBot.sendMessage(
           chatkey.chat,
           {

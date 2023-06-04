@@ -63,7 +63,7 @@ module.exports = async (
             "https://magneum.vercel.app/api/nsfw?q=" + currFile,
           ).then(async (response) => {
             const mgdata = response.data;
-            console.log(mgdata);
+            
             if (!mgdata.meta.thumbnail) {
               await BloomBot.sendMessage(chatkey.chat, {
                 react: {
