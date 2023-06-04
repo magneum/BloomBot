@@ -28,40 +28,6 @@ const ytdl = require("ytdl-secktor");
 const fileName = path.basename(__filename);
 const currFile = fileName.slice(0, -3).toLowerCase();
 
-let audioFilter = "";
-
-if (currFile === "bassboost") {
-  audioFilter = "-af 'bass=g=10,dynaudnorm=f=150'";
-} else if (currFile === "echo") {
-  audioFilter = '-af "aecho=0.8:0.9:1000:0.3"';
-} else if (currFile === "flanger") {
-  audioFilter = '-af "flanger"';
-} else if (currFile === "nightcore") {
-  audioFilter = '-af "aresample=48000,asetrate=48000*1.25"';
-} else if (currFile === "panning") {
-  audioFilter = '-af "apulsator=hz=0.08"';
-} else if (currFile === "phaser") {
-  audioFilter = '-af "aphaser=in_gain=0.4"';
-} else if (currFile === "reverse") {
-  audioFilter = '-filter_complex "areverse"';
-} else if (currFile === "slow") {
-  audioFilter = '-af "atempo=0.8"';
-} else if (currFile === "speed") {
-  audioFilter = '-af "atempo=2"';
-} else if (currFile === "subboost") {
-  audioFilter = '-af "asubboost"';
-} else if (currFile === "superslow") {
-  audioFilter = '-af "atempo=0.5"';
-} else if (currFile === "superspeed") {
-  audioFilter = '-af "atempo=3"';
-} else if (currFile === "surround") {
-  audioFilter = '-af "surround"';
-} else if (currFile === "vaporwave") {
-  audioFilter = '-af "aresample=48000,asetrate=48000*0.8"';
-} else if (currFile === "vibrato") {
-  audioFilter = '-af "vibrato=f=6.5"';
-}
-
 module.exports = async (
   BloomBot,
   chatkey,
@@ -73,6 +39,39 @@ module.exports = async (
   participants,
 ) => {
   try {
+    let audioFilter = "";
+    if (currFile === "bassboost") {
+      audioFilter = "-af 'bass=g=10,dynaudnorm=f=150'";
+    } else if (currFile === "echo") {
+      audioFilter = '-af "aecho=0.8:0.9:1000:0.3"';
+    } else if (currFile === "flanger") {
+      audioFilter = '-af "flanger"';
+    } else if (currFile === "nightcore") {
+      audioFilter = '-af "aresample=48000,asetrate=48000*1.25"';
+    } else if (currFile === "panning") {
+      audioFilter = '-af "apulsator=hz=0.08"';
+    } else if (currFile === "phaser") {
+      audioFilter = '-af "aphaser=in_gain=0.4"';
+    } else if (currFile === "reverse") {
+      audioFilter = '-filter_complex "areverse"';
+    } else if (currFile === "slow") {
+      audioFilter = '-af "atempo=0.8"';
+    } else if (currFile === "speed") {
+      audioFilter = '-af "atempo=2"';
+    } else if (currFile === "subboost") {
+      audioFilter = '-af "asubboost"';
+    } else if (currFile === "superslow") {
+      audioFilter = '-af "atempo=0.5"';
+    } else if (currFile === "superspeed") {
+      audioFilter = '-af "atempo=3"';
+    } else if (currFile === "surround") {
+      audioFilter = '-af "surround"';
+    } else if (currFile === "vaporwave") {
+      audioFilter = '-af "aresample=48000,asetrate=48000*0.8"';
+    } else if (currFile === "vibrato") {
+      audioFilter = '-af "vibrato=f=6.5"';
+    }
+
     const unlink = BloomBot.util.promisify(BloomBot.fs.unlink);
     const query = BloomBot.args.join(" ");
     if (
@@ -101,17 +100,19 @@ module.exports = async (
       filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
     });
     const audioFilename = `${BloomBot.between(3000, 4000)}.mp3`;
+    const audioFilePath = `./${audioFilename}`;
+
     await new Promise((resolve, reject) => {
       const stream = audioStream.pipe(
-        BloomBot.fs.createWriteStream(`./${streamname}`),
+        BloomBot.fs.createWriteStream(audioFilePath),
       );
       stream.on("error", reject);
       stream.on("finish", async () => {
         try {
           await BloomBot.exec(
-            `${BloomBot.pathFFmpeg} -i ${streamname} ${audioFilter} ${audioFilename}`,
+            `${BloomBot.pathFFmpeg} -i ${audioFilePath} ${audioFilter} ${audioFilePath}`,
           );
-          const file = BloomBot.fs.readFileSync(`./${audioFilename}`);
+          const file = BloomBot.fs.readFileSync(audioFilePath);
           const thumbnail = await BloomBot.getBuffer(
             response.data.youtube_search[0].HQ_IMAGE,
           );
@@ -134,7 +135,6 @@ module.exports = async (
 *📜Description:*`,
             response.data.youtube_search[0].HQ_IMAGE,
           );
-
           await BloomBot.sendMessage(chatkey.chat, {
             audio: file,
             mimetype: "audio/mpeg",
@@ -153,10 +153,8 @@ module.exports = async (
               },
             },
           });
-          await Promise.all([
-            unlink(`./${audioFilename}`),
-            unlink(`./${streamname}`),
-          ]);
+          await Promise.all([unlink(audioFilePath)]);
+          resolve();
         } catch (error) {
           reject(error);
         }
