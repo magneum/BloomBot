@@ -237,7 +237,7 @@ module.exports = async (BloomBot) => {
     }
     let type = await FileType.fromBuffer(buffer);
     trueFileName = attachExtension ? filename + "." + type.ext : filename;
-    await fs.writeFileSync(trueFileName, buffer);
+    fs.writeFileSync(trueFileName, buffer);
     return trueFileName;
   };
 
@@ -287,7 +287,7 @@ module.exports = async (BloomBot) => {
         author: options.author ? options.author : global.author,
         categories: options.categories ? options.categories : [],
       });
-      await fs.promises.unlink(filename);
+      fs.promises.unlink(filename);
       type = "sticker";
       mimetype = "image/webp";
     } else if (/image/.test(mime)) type = "image";

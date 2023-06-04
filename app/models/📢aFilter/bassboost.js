@@ -56,12 +56,12 @@ module.exports = async (
     }
 
     if (/audio/.test(BloomBot.mime)) {
-      random = Math.floor(Math.random() * 10000);
-      media = await BloomBot.downloadAndSaveMediaMessage(
+      let random = Math.floor(Math.random() * 10000) + "_" + chatkey.chat;
+      let media = await BloomBot.downloadAndSaveMediaMessage(
         BloomBot.quoted,
         random,
       );
-      BloomBot.exec(
+      await BloomBot.exec(
         `${BloomBot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
           if (error) {
@@ -82,17 +82,17 @@ module.exports = async (
                 audio: BloomBot.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
                   externalAdReply: {
-                    title: `🎙️Filter: ${currFile}`,
                     body: "ⒸBloomBot (md) by Magneum™",
-                    mediaType: 2,
+                    title: `🎙️Filter: ${currFile}`,
                     thumbnail: Thumb,
+                    mediaType: 2,
                   },
                 },
-                mimetype: "audio/mpeg",
                 fileName: `${random}.mp3`,
+                mimetype: "audio/mpeg",
               },
               { quoted: chatkey },
-            ).then(BloomBot.fs.unlinkSync(`${random}.mp3`));
+            ).then(BloomBot.fs.unlinkSync(`${random}.mp3`, media));
           }
         },
       );
