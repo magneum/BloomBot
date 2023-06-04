@@ -24,18 +24,53 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const path = require("path");
+const ytdl = require("ytdl-secktor");
 const fileName = path.basename(__filename);
 const currFile = fileName.slice(0, -3).toLowerCase();
 
+// Define the dynamic audio filter based on currFile
+let audioFilter;
+if (currFile === "bassboost") {
+  audioFilter = "-af 'bass=g=10,dynaudnorm=f=150'";
+} else if (currFile === "echo") {
+  audioFilter = '-af "aecho=0.8:0.9:1000:0.3"';
+} else if (currFile === "flanger") {
+  audioFilter = '-af "flanger"';
+} else if (currFile === "nightcore") {
+  audioFilter = '-af "aresample=48000,asetrate=48000*1.25"';
+} else if (currFile === "panning") {
+  audioFilter = '-af "apulsator=hz=0.08"';
+} else if (currFile === "phaser") {
+  audioFilter = '-af "aphaser=in_gain=0.4"';
+} else if (currFile === "reverse") {
+  audioFilter = '-filter_complex "areverse"';
+} else if (currFile === "slow") {
+  audioFilter = '-af "atempo=0.8"';
+} else if (currFile === "speed") {
+  audioFilter = '-af "atempo=2"';
+} else if (currFile === "subboost") {
+  audioFilter = '-af "asubboost"';
+} else if (currFile === "superslow") {
+  audioFilter = '-af "atempo=0.5"';
+} else if (currFile === "superspeed") {
+  audioFilter = '-af "atempo=3"';
+} else if (currFile === "surround") {
+  audioFilter = '-af "surround"';
+} else if (currFile === "vaporwave") {
+  audioFilter = '-af "aresample=48000,asetrate=48000*0.8"';
+} else if (currFile === "vibrato") {
+  audioFilter = '-af "vibrato=f=6.5"';
+}
+
 module.exports = async (
-BloomBot,
-chatkey,
-gmeta,
-isAdmin,
-groupName,
-isbotAdmin,
-groupAdmins,
-participants,
+  BloomBot,
+  chatkey,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants,
 ) => {
   try {
     const query = BloomBot.args.join(" ");
@@ -52,59 +87,54 @@ participants,
 > _No query provided!_
 
 *🌻 Usage* 
-> _${BloomBot.prefix}${currFile} song/link_`
+> _${BloomBot.prefix}${currFile} song/link_`,
       );
     }
     const response = await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
     );
-    console.log(response.data);
     const searchData = response.data.youtube_search[0];
-    const musicResponse = await BloomBot.magfetch(
-      BloomBot,
-      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
-    );
-    const musicData = musicResponse.data[0];
-    const audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
-    await BloomBot.exec(
-      `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af "atempo=2" ${audioFilename}`
-    );
-    const audioFile = BloomBot.fs.readFileSync(`./${audioFilename}`);
+    const musicpath = BloomBot.randomUUID() + ".mp3";
+    const audioStream = ytdl(searchData.LINK, {
+      filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
+    });
+    const audioFilename = `${BloomBot.between(3000, 4000)}.mp3`;
+    const execCommand = `${BloomBot.pathFFmpeg} -i ${musicpath} ${audioFilter} ${audioFilename}`;
+    const audioFile = await new Promise((resolve, reject) => {
+      const stream = audioStream.pipe(
+        BloomBot.fs.createWriteStream(`./${musicpath}`),
+      );
+      stream.on("error", reject);
+      stream.on("finish", () => {
+        BloomBot.exec(execCommand, async () => {
+          const file = BloomBot.fs.readFileSync(`./${audioFilename}`);
+          resolve(file);
+          BloomBot.fs.unlinkSync(`./${audioFilename}`);
+          BloomBot.fs.unlinkSync(`./${musicpath}`);
+        });
+      });
+    });
+
     const thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
     const mediaUrl = searchData.LINK || "Not available";
     const authorName = searchData.AUTHOR_NAME || "Not available";
-    const description = searchData.DESCRIPTION || "No description available";
-    const message = `
-*🌻 Here's the information for ${currFile} requested by ${
-      BloomBot.pushname || BloomBot.tagname
-    }:*
-*🎵 Title:* ${searchData.TITLE}
-*👁️ Views:* ${searchData.VIEWS}  
-*⏱️ Duration:* ${searchData.DURATION_FULL}
-*🔗 Link:* ${mediaUrl}
-*✍️ Author:* ${authorName}
+    await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      `*🌻Hello!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
-*📜 Description:*
-${description}`;
-    await BloomBot.sendMessage(chatkey.chat, {
-      text: message,
-      options: {
-        contextInfo: {
-          externalAdReply: {
-            title: searchData.TITLE,
-            body: "ⒸBloomBot (md) by Magneum™",
-            renderLargerThumbnail: true,
-            thumbnailUrl: searchData.HQ_IMAGE,
-            mediaUrl,
-            mediaType: 1,
-            thumbnail,
-            sourceUrl: "bit.ly/magneum",
-          },
-        },
-      },
-    });
-    await BloomBot.sendMessage(chatkey.chat, {
+*🧀YouTube Filter:* ${currFile}
+*🎵Title:* ${searchData.TITLE}
+*👁️Views:* ${searchData.VIEWS}  
+*⏱️Duration:* ${searchData.DURATION_FULL}
+*🔗Link:* ${mediaUrl}
+*✍️Author:* ${authorName}
+
+*📜Description:*`,
+      searchData.HQ_IMAGE,
+    );
+    return await BloomBot.sendMessage(chatkey.chat, {
       audio: audioFile,
       mimetype: "audio/mpeg",
       fileName: `${searchData.TITLE}.mp3`,
@@ -122,9 +152,9 @@ ${description}`;
         },
       },
     });
-    BloomBot.fs.unlinkSync(`./${audioFilename}`);
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];

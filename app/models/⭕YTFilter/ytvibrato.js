@@ -28,14 +28,14 @@ const fileName = path.basename(__filename);
 const currFile = fileName.slice(0, -3).toLowerCase();
 
 module.exports = async (
-BloomBot,
-chatkey,
-gmeta,
-isAdmin,
-groupName,
-isbotAdmin,
-groupAdmins,
-participants,
+  BloomBot,
+  chatkey,
+  gmeta,
+  isAdmin,
+  groupName,
+  isbotAdmin,
+  groupAdmins,
+  participants,
 ) => {
   try {
     const query = BloomBot.args.join(" ");
@@ -52,23 +52,25 @@ participants,
 > _No query provided!_
 
 *🌻 Usage* 
-> _${BloomBot.prefix}${currFile} song/link_`
+> _${BloomBot.prefix}${currFile} song/link_`,
       );
     }
     const response = await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
     );
     console.log(response.data);
     const searchData = response.data.youtube_search[0];
     const musicResponse = await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`
+      `https://magneum.vercel.app/api/youtube_dl?q=${searchData.TITLE}&quality=music`,
     );
     const musicData = musicResponse.data[0];
-    const audioFilename = `${BloomBot.between(3000, 4000)}${musicData.YT_Id}.mp3`;
+    const audioFilename = `${BloomBot.between(3000, 4000)}${
+      musicData.YT_Id
+    }.mp3`;
     await BloomBot.exec(
-      `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af "vibrato=f=6.5" ${audioFilename}`
+      `${BloomBot.pathFFmpeg} -i ${musicData.quick_dl} -af "vibrato=f=6.5" ${audioFilename}`,
     );
     const audioFile = BloomBot.fs.readFileSync(`./${audioFilename}`);
     const thumbnail = await BloomBot.getBuffer(searchData.HQ_IMAGE);
