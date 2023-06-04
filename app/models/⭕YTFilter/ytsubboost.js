@@ -95,7 +95,6 @@ module.exports = async (
       BloomBot,
       `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
     );
-    const streamname = BloomBot.randomUUID();
     const audioStream = ytdl(response.data.youtube_search[0].LINK, {
       filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
     });
