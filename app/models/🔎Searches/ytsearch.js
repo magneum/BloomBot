@@ -24,6 +24,7 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
 const path = require("path");
+const ytSearch = require("yt-search");
 const filePath = path.basename(__filename);
 const currentFile = filePath.slice(0, -3).toLowerCase();
 
@@ -56,18 +57,17 @@ module.exports = async (
       );
     }
     const searchQuery = BloomBot.args.join(" ");
-    const searchResults = await BloomBot.ySearch(searchQuery);
-    let fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
-    fetchedData += `Requested by: ${BloomBot.tagname || BloomBot.pushname}\n\n`;
+    const searchResults = await ytSearch(searchQuery);
+    const fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
     let resultNumber = 1;
-    for (const result of searchResults.all) {
+    for (const result of searchResults.videos) {
       fetchedData += `#${resultNumber}\n`;
       fetchedData += `🏜️ *Title*: ${result.title}\n`;
-      fetchedData += `🌸 *Duration*: ${result.timestamp}\n`;
+      fetchedData += `🌸 *Duration*: ${result.duration.timestamp}\n`;
       fetchedData += `🌐 *URL*: ${result.url}\n\n`;
       resultNumber++;
     }
-    const thumbnailUrl = searchResults.all[0].thumbnail;
+    const thumbnailUrl = searchResults.videos[0].thumbnail;
     return await BloomBot.imagebutton(
       BloomBot,
       chatkey,

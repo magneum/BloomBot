@@ -84,7 +84,6 @@ module.exports = async (
         `${metadeta}
 
 ${lyrics}`,
-        BloomBot.display,
         mgdata.youtube_search[0].HQ_IMAGE,
       );
     } else {
