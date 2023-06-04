@@ -23,9 +23,10 @@
 //  ╚◎ ⚙️𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫𝐬: +𝟗𝟏𝟖𝟒𝟑𝟔𝟔𝟖𝟔𝟕𝟓𝟖 & +𝟗𝟏𝟖𝟐𝟓𝟎𝟖𝟖𝟗𝟑𝟐𝟓
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
-const ppth = require("path");
-const tpth = ppth.basename(__filename);
-const currFile = tpth.slice(0, -3).toLowerCase();
+const path = require("path");
+const filePath = path.basename(__filename);
+const currentFile = filePath.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -51,32 +52,36 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} song-name_`,
+> _${BloomBot.prefix}${currentFile} song-name_`,
       );
     }
 
-    const no = 1;
-    const search = await BloomBot.ySearch(BloomBot.args.join(" "));
-    const Fetched =
-      `*🌻Here, ${currFile} for @${
-        BloomBot.tagname || BloomBot.pushname
-      }:\n\n Result for ` +
-      BloomBot.args.join(" ") +
-      "\n\n";
-    for (const i of search.all) {
-      Fetched += `#${no++}> *🏜️Title*: ${i.title}
-*🌸Duration*: ${i.timestamp}
-*🌐Url*: ${i.url}
-\n`;
+    const searchQuery = BloomBot.args.join(" ");
+    const searchResults = await BloomBot.ySearch(searchQuery);
+
+    let fetchedData = `*🌻Here are the search results for "${searchQuery}"*\n\n`;
+    fetchedData += `Requested by: ${BloomBot.tagname || BloomBot.pushname}\n\n`;
+
+    let resultNumber = 1;
+    for (const result of searchResults.all) {
+      fetchedData += `#${resultNumber}\n`;
+      fetchedData += `🏜️ *Title*: ${result.title}\n`;
+      fetchedData += `🌸 *Duration*: ${result.timestamp}\n`;
+      fetchedData += `🌐 *URL*: ${result.url}\n\n`;
+      resultNumber++;
     }
+
+    const thumbnailUrl = searchResults.all[0].thumbnail;
+
     return await BloomBot.imagebutton(
       BloomBot,
       chatkey,
-      `${Fetched}`,
-      search.all[0].thumbnail,
+      fetchedData,
+      thumbnailUrl,
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];
