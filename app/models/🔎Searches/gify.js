@@ -70,7 +70,10 @@ module.exports = async (
             url: gi.results?.[Math.floor(Math.random() * gi.results.length)]
               ?.media[0]?.mp4?.url,
           },
-          caption: `*BloomBot™ By KryKenz*\n*💻homePage:* bit.ly/krykenz\n\n
+          caption: `*🌻Hola!* ${currFile} for ${
+            BloomBot.pushname || BloomBot.tagname
+          } 
+          
 *🎋Feeling:* ${currFile}
 *🌻for:* @${chatkey.sender.split("@")[0] || ""}`,
           mentions: [chatkey.sender],

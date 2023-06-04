@@ -60,7 +60,10 @@ module.exports = async (
       fids = await BloomBot.axios.get(
         `api.popcat.xyz/instagram?user=${BloomBot.args.join(" ")}`,
       );
-      const reply = `
+      await BloomBot.imagebutton(
+        BloomBot,
+        chatkey,
+        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 *🀄Username:* ${fids.data.username}
 *📃Name:* ${fids.data.full_name}
 *🗣Private:* ${fids.data.private}
@@ -69,12 +72,7 @@ module.exports = async (
 *🍃Following:* ${fids.data.following}
 *🎛 Post:* ${fids.data.posts}
 *🧑🏻reels:* ${fids.data.reels}
-*📖Bio:* ${fids.data.biography}`;
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${reply}`,
+*📖Bio:* ${fids.data.biography}`,
         fids.data.profile_pic,
       );
     } catch {

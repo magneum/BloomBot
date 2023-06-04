@@ -38,34 +38,13 @@ module.exports = async (
   participants,
 ) => {
   try {
-    const кяуяєs = await BloomBot.axios.get("chatkey.life/api/v2/fact");
-    try {
-      const кяуяєsi = await BloomBot.fetch(
-        global.apiGet("wall.alphacoders.com/api2.0", "/get.php", {
-          auth: "3e7756c85df54b78f934a284c11abe4e",
-          method: "search",
-          term: "random",
-        }),
-      );
-      const bson = await кяуяєsi.json();
-      const bsoni =
-        bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
+    await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 > ${await BloomBot.getDadjoke()}`,
-        bsoni.url_image,
-      );
-    } catch {
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${await BloomBot.getDadjoke()}`,
-        "./public/BloomBot/BloomBot (8).png",
-      );
-    }
+      BloomBot.display,
+    );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
