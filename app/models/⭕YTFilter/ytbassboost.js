@@ -101,17 +101,19 @@ module.exports = async (
       filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
     });
     const audioFilename = `${BloomBot.between(3000, 4000)}.mp3`;
+    const audioFilePath = `./${audioFilename}`;
+
     await new Promise((resolve, reject) => {
       const stream = audioStream.pipe(
-        BloomBot.fs.createWriteStream(`./${streamname}`),
+        BloomBot.fs.createWriteStream(audioFilePath),
       );
       stream.on("error", reject);
       stream.on("finish", async () => {
         try {
           await BloomBot.exec(
-            `${BloomBot.pathFFmpeg} -i ${streamname} ${audioFilter} ${audioFilename}`,
+            `${BloomBot.pathFFmpeg} -i ${audioFilePath} ${audioFilter} ${audioFilePath}`,
           );
-          const file = BloomBot.fs.readFileSync(`./${audioFilename}`);
+          const file = BloomBot.fs.readFileSync(audioFilePath);
           const thumbnail = await BloomBot.getBuffer(
             response.data.youtube_search[0].HQ_IMAGE,
           );
@@ -153,10 +155,8 @@ module.exports = async (
               },
             },
           });
-          await Promise.all([
-            unlink(`./${audioFilename}`),
-            unlink(`./${streamname}`),
-          ]);
+          await Promise.all([unlink(audioFilePath)]);
+          resolve();
         } catch (error) {
           reject(error);
         }
