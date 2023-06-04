@@ -25,9 +25,9 @@
 require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
-const mm = require("music-metadata");
 const lyricsFinder = require("lyrics-finder");
 const currFile = tpth.slice(0, -3).toLowerCase();
+const imageSearchEngine = require("image-search-engine");
 
 module.exports = async (
   BloomBot,
@@ -62,7 +62,7 @@ module.exports = async (
     const title = BloomBot.args.join(" ");
     const lyrics = await lyricsFinder(artist, title);
 
-    const albumArt = await fetchAlbumArt(artist, title);
+    const albumArt = await searchAlbumArt(artist, title);
 
     if (lyrics) {
       return await BloomBot.imagebutton(
@@ -88,17 +88,15 @@ ${lyrics}`,
   }
 };
 
-async function fetchAlbumArt(artist, title) {
+async function searchAlbumArt(artist, title) {
   try {
-    const metadata = await mm.parseFile("path/to/your/audio/file.mp3");
-    if (metadata.common.picture && metadata.common.picture.length > 0) {
-      const pictureData = metadata.common.picture[0];
-      const base64Image = pictureData.data.toString("base64");
-      return `data:${pictureData.format};base64,${base64Image}`;
+    const results = await imageSearchEngine(`${artist} ${title} album cover`);
+    if (results && results.length > 0) {
+      return results[0].url;
     }
     return null;
   } catch (error) {
-    console.error("Error retrieving album art:", error);
+    console.error("Error searching for album art:", error);
     return null;
   }
 }
