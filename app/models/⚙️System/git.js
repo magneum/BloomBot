@@ -40,7 +40,6 @@ module.exports = async (
   try {
     const gitHubUrl = "https://github.com/magneum";
     const bloomBotGitHubUrl = "https://github.com/magneum/BloomBot";
-
     return await BloomBot.imagebutton(
       BloomBot,
       chatkey,

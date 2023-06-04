@@ -89,34 +89,21 @@ module.exports = async (
     const authorName = searchData.AUTHOR_NAME || "Not available";
     const description = searchData.DESCRIPTION || "No description available";
 
-    await BloomBot.sendMessage(chatkey.chat, {
-      text: `*🌻Hola!* ${currFile} for ${
-        BloomBot.pushname || BloomBot.tagname
-      }
-      
-*🎵 Title:* ${searchData.TITLE}
-*👁️ Views:* ${searchData.VIEWS}  
-*⏱️ Duration:* ${searchData.DURATION_FULL}
-*🔗 Link:* ${mediaUrl}
-*✍️ Author:* ${authorName}
+    await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
-*📜 Description:*
-${description}`,
-      options: {
-        contextInfo: {
-          externalAdReply: {
-            title: searchData.TITLE,
-            body: "ⒸBloomBot (md) by Magneum™",
-            renderLargerThumbnail: true,
-            thumbnailUrl: searchData.HQ_IMAGE,
-            mediaUrl,
-            mediaType: 1,
-            thumbnail,
-            sourceUrl: "bit.ly/magneum",
-          },
-        },
-      },
-    });
+*🧀YT Filter:* ${currFile}
+*🎵Title:* ${searchData.TITLE}
+*👁️Views:* ${searchData.VIEWS}  
+*⏱️ uration:* ${searchData.DURATION_FULL}
+*🔗Link:* ${mediaUrl}
+*✍️Author:* ${authorName}
+
+*📜Description:*`,
+      searchData.HQ_IMAGE,
+    );
 
     await BloomBot.sendMessage(chatkey.chat, {
       audio: audioFile,
