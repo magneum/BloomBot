@@ -5929,9 +5929,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-"libsignal@git+https://github.com/adiwajshing/libsignal-node.git":
+"libsignal@git+https://github.com/adiwajshing/libsignal-node":
   version "2.0.1"
-  resolved "git+https://github.com/adiwajshing/libsignal-node.git#11dbd962ea108187c79a7c46fe4d6f790e23da97"
+  resolved "git+https://github.com/adiwajshing/libsignal-node#11dbd962ea108187c79a7c46fe4d6f790e23da97"
   dependencies:
     curve25519-js "^0.0.4"
     protobufjs "6.8.8"
@@ -10673,6 +10673,20 @@ youtube-dl-exec@^2.4.4:
     execa "~5.1.0"
     is-unix "~2.0.1"
     simple-get "~4.0.1"
+
+yt-search@^2.10.4:
+  version "2.10.4"
+  resolved "https://registry.yarnpkg.com/yt-search/-/yt-search-2.10.4.tgz#cb2718c4235b0e4bf61a9b00b87bd57dec1bfcf8"
+  integrity sha512-cJeSdCxQYEV+gKxCeWbOcqgkHtyxLRF2Pt/57AJValzaf07JbJmRIoT9SR/XG2Ed6HIEEuD06WcgZS+6qRvajQ==
+  dependencies:
+    async.parallellimit "~0.5.2"
+    boolstring "~1.0.2"
+    cheerio "^1.0.0-rc.10"
+    dasu "~0.4.3"
+    human-time "0.0.2"
+    jsonpath-plus "~5.0.2"
+    minimist "~1.2.5"
+    node-fzf "~0.5.1"
 
 ytdl-secktor@^0.0.1-development:
   version "0.0.1-development"
