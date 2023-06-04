@@ -25,10 +25,9 @@
 require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
+const mm = require("music-metadata");
+const lyricsFinder = require("lyrics-finder");
 const currFile = tpth.slice(0, -3).toLowerCase();
-const First_Try_Lyrics = require("genius-lyrics");
-const GeniusClient = new First_Try_Lyrics.Client();
-const Second_Try_Lyrics = require("songlyrics").default;
 
 module.exports = async (
   BloomBot,
@@ -58,40 +57,50 @@ module.exports = async (
 > _${BloomBot.prefix}${currFile} manga-name_`,
       );
     }
-    try {
-      const searches = await GeniusClient.songs.search(BloomBot.args.join(" "));
-      const GeniusSong = searches[0];
-      const Geniuslyrics = await GeniusSong.lyrics();
+
+    const artist = ""; // Provide the artist's name if available
+    const title = BloomBot.args.join(" ");
+    const lyrics = await lyricsFinder(artist, title);
+
+    const albumArt = await fetchAlbumArt(artist, title);
+
+    if (lyrics) {
       return await BloomBot.imagebutton(
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
-*📜 Lyrics For:* ${BloomBot.args.join(" ")}
-*🎹 Title:* ${GeniusSong.raw.title}
-*💡 Source:* Genius-Lyrics
-*🔗 Url:* ${GeniusSong.raw.url}
+*📜 Lyrics For:* ${title}
 
-${Geniuslyrics}`,
-        GeniusSong.raw.song_art_image_thumbnail_url,
+${lyrics}`,
+        albumArt,
       );
-    } catch (error) {
-      const lyricssong = await Second_Try_Lyrics(BloomBot.args.join(" "));
-      return await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
-
-*📜 Lyrics For:* ${BloomBot.args.join(" ")}
-*💡 Source:* ${lyricssong.source.name}
-*🔗 Url:* ${lyricssong.source.link}
-
-${lyricssong.lyrics}`,
-        BloomBot.display,
-      );
+    } else {
+      return await BloomBot.sendMessage(chatkey.chat, {
+        react: {
+          text: "❌",
+          key: chatkey.key,
+        },
+      });
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
+async function fetchAlbumArt(artist, title) {
+  try {
+    const metadata = await mm.parseFile("path/to/your/audio/file.mp3");
+    if (metadata.common.picture && metadata.common.picture.length > 0) {
+      const pictureData = metadata.common.picture[0];
+      const base64Image = pictureData.data.toString("base64");
+      return `data:${pictureData.format};base64,${base64Image}`;
+    }
+    return null;
+  } catch (error) {
+    console.error("Error retrieving album art:", error);
+    return null;
+  }
+}
+
 module.exports.aliases = [];
