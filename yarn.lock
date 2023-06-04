@@ -1149,9 +1149,9 @@
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
 "@sindresorhus/is@^5.2.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.4.0.tgz#b1bfbd6024311ade045093b424536cefcc8e3a42"
-  integrity sha512-Ggh6E9AnMpiNXlbXfFUcWE9qm408rL8jDi7+PMBBx7TMbwEmiqAiSmZ+zydYwxcJLqPGNDoLc9mXDuMDBZg0sA==
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.4.1.tgz#c4383ce702fb90531c3d310506bab89e70427c53"
+  integrity sha512-axlrvsHlHlFmKKMEg4VyvMzFr93JWJj4eIfXY1STVuO2fsImCa7ncaiG5gC8HKOX590AW5RtRsC41/B+OfrSqw==
 
 "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.1":
   version "1.8.6"
@@ -2292,9 +2292,9 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001489:
-  version "1.0.30001492"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001492.tgz#4a06861788a52b4c81fd3344573b68cc87fe062b"
-  integrity sha512-2efF8SAZwgAX1FJr87KWhvuJxnGJKOnctQa8xLOskAXNXq8oiuqgl6u1kk3fFpsp3GgvzlRjiK1sl63hNtFADw==
+  version "1.0.30001494"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001494.tgz#3e56e04a48da7a79eae994559eb1ec02aaac862f"
+  integrity sha512-sY2B5Qyl46ZzfYDegrl8GBCzdawSLT4ThM9b9F+aDYUrAG2zCOyMbd2Tq34mS1g4ZKBfjRlzOohQMxx28x6wJg==
 
 canvacord@^5.2.3:
   version "5.4.9"
@@ -6406,9 +6406,9 @@ mocha@^7.0.0:
     yargs-unparser "1.6.0"
 
 module-alias@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
-  integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.3.tgz#ec2e85c68973bda6ab71ce7c93b763ec96053221"
+  integrity sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==
 
 moment-duration-format@^2.3.2:
   version "2.3.2"
