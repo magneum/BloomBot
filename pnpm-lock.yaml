@@ -252,9 +252,6 @@ dependencies:
   promise-mysql:
     specifier: ^5.2.0
     version: 5.2.0
-  prompt-sync:
-    specifier: ^4.2.0
-    version: 4.2.0
   qrcode-reader:
     specifier: ^1.0.4
     version: 1.0.4
@@ -8044,12 +8041,6 @@ packages:
       retry: 0.12.0
     dev: false
     optional: true
-
-  /prompt-sync@4.2.0:
-    resolution: {integrity: sha512-BuEzzc5zptP5LsgV5MZETjDaKSWfchl5U9Luiu8SKp7iZWD5tZalOxvNcZRwv+d2phNFr8xlbxmFNcRKfJOzJw==}
-    dependencies:
-      strip-ansi: 5.2.0
-    dev: false
 
   /prompt@0.2.14:
     resolution: {integrity: sha512-jDK5yEbAakJmNm+260gZG1+PuzX3jT5Jy0VZAUGrrW9RQ1JEWEDEVNnhO70mL3+U5r6bSJo02xsE34wOS/LnrA==}
