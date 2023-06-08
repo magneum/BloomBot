@@ -12,8 +12,8 @@
     "dbclean": "node app/client/purgepg.js",
     "test": "supervisor -w . app/test/index.js",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
-    "build": "rm -rf yarn.lock && rm -rf node_modules && yarn install",
     "chatkeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
+    "build": "rm -rf node_modules yarn.lock package-json.lock && node script.js",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
@@ -33,8 +33,8 @@
   "license": "MIT",
   "engines": {
     "node": ">= 16",
-    "yarn": ">= 1.22.19",
-    "npm": "❌Error: This project requires you to use 'Yarn' package manager!"
+    "npm": ">= 8.19.4",
+    "yarn": ">= 1.22.19"
   },
   "config": {
     "libPort": 8080,
