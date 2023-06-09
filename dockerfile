@@ -20,7 +20,7 @@ RUN npm install -g n
 # Clear the hash cache
 RUN hash -r
 
-# Install the latest LTS version of Node.js (14.x)
+# Install the latest LTS version of Node.js
 RUN n lts
 
 # Install Yarn package manager
