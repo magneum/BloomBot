@@ -1,9 +1,36 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get install -y jq git curl wget ffmpeg bpm-tools opus-tools python3-pip python-is-python3 nodejs npm
-RUN npm install -g n spotify-dl spdl-core forever pm2 && hash -r
-RUN n install 16 && hash -r
+
+# Update and install required packages
+RUN apt-get update && apt-get install -y \
+    jq \
+    git \
+    curl \
+    wget \
+    ffmpeg \
+    bpm-tools \
+    opus-tools \
+    python3-pip \
+    python-is-python3 \
+    nodejs \
+    npm
+
+# Install n package manager for managing Node.js versions
+RUN npm install -g n
+
+# Install the latest LTS version of Node.js
+RUN n lts
+
+# Install Yarn package manager
+RUN npm install -g yarn
+
+# Clone the repository
 RUN git clone https://github.com/magneum/BloomBot
-RUN cd BloomBot
+
+# Set the working directory
 WORKDIR /BloomBot
-RUN npm install
-CMD [ "npm", "run", "start" ]
+
+# Install project dependencies using Yarn
+RUN yarn
+
+# Start the application
+CMD [ "yarn", "run", "start" ]
