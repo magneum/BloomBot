@@ -5,16 +5,16 @@
   "description": "ⒸBloomBot (md) by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "scripts": {
     "local": "python3 app/python",
-    "dev": "supervisor -w . boot.js",
     "replace": "node app/utils/replace.js",
     "ffdev": "nodemon app/lib/pfmpeg.js",
     "ffstart": "forever app/lib/pfmpeg.js",
     "dbclean": "node app/client/purgepg.js",
     "test": "supervisor -w . app/test/index.js",
+    "dev": "supervisor -w . app/client/index.js",
     "build": "rm -rf node_modules yarn.lock && yarn install",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "chatkeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms app/client/index.js --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
   "repository": {

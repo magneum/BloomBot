@@ -25,22 +25,78 @@
 require("../../module-alias.js");
 require("@/config/index.js");
 const pino = require("pino");
-const monGoose = require("mongoose");
+const fs = require("fs");
+const chalk = require("chalk");
+const { say } = require("cfonts");
+const mFolders = fs.readdirSync("./app/models");
+const mogclient = require("mongoose");
 const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
 const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
-const {
-  default: bClient,
-  MessageRetryMap,
-  makeInMemoryStore,
-} = require("@adiwajshing/baileys");
+const { default: bClient, makeInMemoryStore } = require("@adiwajshing/baileys");
+
+process.env.NODE_NO_WARNINGS = "1";
+process.removeAllListeners("warning");
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+process.on("uncaughtException", (error) => {
+  console.error(error);
+});
+require("events").EventEmitter.prototype._maxListeners = 0;
+say("BloomBot\nwhatsApp Multi Device\nUser bot", {
+  font: "chrome",
+  align: "center",
+  gradient: ["red", "yellow"],
+});
+say(`~ by Magneum™`, {
+  font: "console",
+  align: "center",
+  gradient: ["green", "red"],
+});
+
+function showCommands(path) {
+  say("Loading Commands From Folders", {
+    font: "console",
+    align: "left",
+    gradient: ["red", "blue"],
+  });
+  const specialFolders = [
+    "⚙️System",
+    "⭕YTFilter",
+    "🍁Owner",
+    "🍑Hentai",
+    "🐉Emotions",
+    "👅NSFW",
+    "💗Commands",
+    "💰Games",
+    "📢aFilter",
+    "📥Downloader",
+    "📼Conversion",
+    "🔎Searches",
+    "🔰Group",
+    "🖼️Photogenic",
+    "🦄SFW",
+  ];
+  for (const cFolder of mFolders) {
+    const cFiles = fs
+      .readdirSync(`./${path}/${cFolder}`)
+      .filter((cFile) => cFile.endsWith(""));
+
+    if (specialFolders.includes(cFolder)) {
+      console.log(
+        chalk.bgGreen(chalk.black("> " + cFolder)),
+        chalk.yellow("  | " + cFiles),
+      );
+    }
+  }
+}
+showCommands("app/models");
 
 async function magneum() {
   const sequelize = dbdata.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
   try {
-    await monGoose.connect(dbdata.MONGODB_URL, {
+    await mogclient.connect(dbdata.MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -66,10 +122,8 @@ async function magneum() {
     logger: pino().child({ level: "silent", stream: "store" }),
   });
   let { state, saveCreds } = await BloomAuthy();
-  var msgRetryCounterMap = MessageRetryMap;
   const BloomBot = bClient({
     auth: state,
-    msgRetryCounterMap,
     syncFullHistory: false,
     fireInitQueries: false,
     downloadHistory: false,
