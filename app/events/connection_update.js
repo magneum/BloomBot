@@ -103,7 +103,12 @@ module.exports = async (BloomBot, magneum, logger) => {
           await magneum();
           break;
         default:
-          logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`);
+          BloomBot.end(
+            logger.error(
+              `❌ Unknown DisconnectReason: ${reason}|${connection}`,
+            ),
+          );
+          await dbrem();
           await magneum();
           break;
       }
