@@ -5,5 +5,5 @@ RUN n install 16 && hash -r
 RUN git clone https://github.com/magneum/BloomBot
 RUN cd BloomBot
 WORKDIR /BloomBot
-RUN yarn install
-CMD [ "yarn", "run", "start" ]
+RUN npm install
+CMD [ "npm", "run", "start" ]
