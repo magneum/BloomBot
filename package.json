@@ -11,9 +11,9 @@
     "ffstart": "forever app/lib/pfmpeg.js",
     "dbclean": "node app/client/purgepg.js",
     "test": "supervisor -w . app/test/index.js",
+    "build": "rm -rf node_modules yarn.lock && yarn install",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "chatkeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "build": "rm -rf node_modules yarn.lock package-json.lock && node script.js",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms boot.js --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
