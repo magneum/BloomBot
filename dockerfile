@@ -17,11 +17,17 @@ RUN apt-get update && apt-get install -y \
 # Install n package manager for managing Node.js versions
 RUN npm install -g n
 
-# Install the latest LTS version of Node.js
+# Clear the hash cache
+RUN hash -r
+
+# Install the latest LTS version of Node.js (14.x)
 RUN n lts
 
 # Install Yarn package manager
 RUN npm install -g yarn
+
+# Clear the hash cache
+RUN hash -r
 
 # Clone the repository
 RUN git clone https://github.com/magneum/BloomBot
