@@ -29,7 +29,7 @@ const monGoose = require("mongoose");
 const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
-const { useRemoteFileAuthState } = require("../auth/old/dbAuth.js");
+const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
 const {
   default: bClient,
   MessageRetryMap,
@@ -65,7 +65,7 @@ async function magneum() {
   const store = makeInMemoryStore({
     logger: pino().child({ level: "silent", stream: "store" }),
   });
-  let { state, saveCreds } = await useRemoteFileAuthState(); // BloomAuthy();
+  let { state, saveCreds } = await BloomAuthy();
   var msgRetryCounterMap = MessageRetryMap;
   const BloomBot = bClient({
     auth: state,
