@@ -24,18 +24,51 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const readline = require("readline");
 
-function installDependencies() {
-  const packageManager = process.env.PACKAGE_MANAGER;
-  if (packageManager === "pnpm") {
-    console.log("Installing dependencies using pnpm...");
-  } else if (packageManager === "npm") {
-    console.log("Installing dependencies using npm...");
-  } else if (packageManager === "yarn") {
-    console.log("Installing dependencies using yarn...");
-  } else {
-    console.log("Invalid choice. Exiting...");
-    return;
+// ASCII color codes for background colors
+const colors = {
+  reset: "\x1b[0m",
+  bright: "\x1b[1m",
+  bgGreen: "\x1b[42m",
+  bgBlue: "\x1b[44m",
+  bgOrange: "\x1b[43m",
+  fgWhite: "\x1b[37m",
+};
+
+function installDependencies(packageManager) {
+  let installMessage = "";
+  switch (packageManager) {
+    case "pnpm":
+      installMessage =
+        colors.bgOrange +
+        colors.fgWhite +
+        " Installing dependencies using pnpm... " +
+        colors.reset;
+      break;
+    case "npm":
+      installMessage =
+        colors.bgGreen +
+        colors.fgWhite +
+        " Installing dependencies using npm... " +
+        colors.reset;
+      break;
+    case "yarn":
+      installMessage =
+        colors.bgBlue +
+        colors.fgWhite +
+        " Installing dependencies using yarn... " +
+        colors.reset;
+      break;
+    default:
+      console.log(
+        colors.bgOrange +
+          colors.fgWhite +
+          " Invalid choice. Exiting... " +
+          colors.reset,
+      );
+      return;
   }
+
+  console.log(installMessage);
 
   const childProcess = require("child_process");
   childProcess.execSync(`${packageManager} install`, { stdio: "inherit" });
@@ -47,33 +80,41 @@ function promptUser() {
   console.log("1. pnpm");
   console.log("2. npm");
   console.log("3. yarn");
+
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
+
   rl.question("Enter your choice (1, 2, or 3): ", (choice) => {
     rl.close();
-    process.env.PACKAGE_MANAGER = "";
+    let packageManager = "";
     switch (choice) {
       case "1":
-        process.env.PACKAGE_MANAGER = "pnpm";
+        packageManager = "pnpm";
         break;
       case "2":
-        process.env.PACKAGE_MANAGER = "npm";
+        packageManager = "npm";
         break;
       case "3":
-        process.env.PACKAGE_MANAGER = "yarn";
+        packageManager = "yarn";
         break;
       default:
-        console.log("Invalid choice. Exiting...");
-        break;
+        console.log(
+          colors.bgOrange +
+            colors.fgWhite +
+            " Invalid choice. Exiting... " +
+            colors.reset,
+        );
+        return;
     }
-    if (process.env.PACKAGE_MANAGER) {
-      console.log(
-        `Using ${process.env.PACKAGE_MANAGER} as the package manager.`,
-      );
-      installDependencies();
-    }
+
+    console.log(
+      colors.bright +
+        `Using ${packageManager} as the package manager.` +
+        colors.reset,
+    );
+    installDependencies(packageManager);
   });
 }
 
