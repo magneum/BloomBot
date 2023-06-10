@@ -21,7 +21,7 @@ RUN npm install -g n
 RUN hash -r
 
 # Install the latest LTS version of Node.js
-RUN n lts
+RUN n 16
 
 # Install Yarn package manager
 RUN npm install -g yarn
