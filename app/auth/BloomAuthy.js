@@ -180,7 +180,7 @@ const BloomAuthy = async (logger) => {
         },
       },
     },
-    saveCreds,
+    // saveCreds,
   };
 };
 

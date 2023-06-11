@@ -34,7 +34,10 @@ const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
 const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
-const { default: bClient, makeInMemoryStore } = require("@adiwajshing/baileys");
+const {
+  default: BloomerClient,
+  makeInMemoryStore,
+} = require("@adiwajshing/baileys");
 
 process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
@@ -120,7 +123,7 @@ async function magneum() {
     logger: pino().child({ level: "silent", stream: "store" }),
   });
   let { state, saveCreds } = await BloomAuthy();
-  const BloomBot = bClient({
+  const BloomBot = BloomerClient({
     auth: state,
     syncFullHistory: false,
     fireInitQueries: false,
@@ -130,7 +133,7 @@ async function magneum() {
     shouldSyncHistoryMessage: false,
     defaultQueryTimeoutMs: undefined,
     generateHighQualityLinkPreview: true,
-    browser: [`ⒸBloomBot`, "Chrome", "4.0.0"],
+    browser: ["BloomBot by Magneum", "Chrome", "4.0.0"],
     getMessage: async (key) => {
       if (store) {
         const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
@@ -142,13 +145,13 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  require("./brain")(BloomBot);
-  require("@/events/contacts_update")(BloomBot, store, logger);
-  require("@/events/messages_upsert")(BloomBot, store, logger);
-  require("@/events/group_participants_update")(BloomBot, store, logger);
-  require("@/events/cb_call")(BloomBot, store, logger);
-  require("@/events/creds_update")(BloomBot, saveCreds, logger);
-  require("@/events/connection_update")(BloomBot, magneum, logger);
+  await require("./brain")(BloomBot);
+  await require("@/events/messages_upsert")(BloomBot, store, logger);
+  await require("@/events/group_participants_update")(BloomBot, store, logger);
+  await require("@/events/cb_call")(BloomBot, store, logger);
+  await require("@/events/connection_update")(BloomBot, magneum, logger);
+  await require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  await require("@/events/contacts_update")(BloomBot, store, logger);
 }
 
 showCommands("app/models");

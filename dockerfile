@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     ffmpeg \
-    bpm-tools \
+    bpm-tools 
     opus-tools \
     python3-pip \
     python-is-python3 \
@@ -20,7 +20,7 @@ RUN npm install -g n
 # Clear the hash cache
 RUN hash -r
 
-# Install the latest LTS version of Node.js
+# Install the latest 16 version of Node.js
 RUN n 16
 
 # Install Yarn package manager
