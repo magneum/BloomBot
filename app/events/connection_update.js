@@ -44,7 +44,7 @@ module.exports = async (BloomBot, magneum, logger) => {
     }
   };
 
-  const handleConnectionUpdate = async (update) => {
+  BloomBot.ev.on("connection.update", async (update) => {
     const {
       qr,
       isOnline,
@@ -60,57 +60,43 @@ module.exports = async (BloomBot, magneum, logger) => {
       logger.info("📢 Login successful! Connection to WhatsApp established.");
     } else if (connection === "close") {
       let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-      switch (reason) {
-        case DisconnectReason.badSession:
-          logger.error("❌ Bad Session File detected.");
-          BloomBot.end();
-          await dbrem();
-          await magneum();
-          break;
-        case DisconnectReason.connectionClosed:
-          logger.error(
-            "❌ Connection closed unexpectedly. Reconnecting to WhatsApp.",
-          );
-          await magneum();
-          break;
-        case DisconnectReason.connectionLost:
-          logger.error(
-            "❌ Connection lost from the server. Reconnecting to WhatsApp.",
-          );
-          await magneum();
-          break;
-        case DisconnectReason.connectionReplaced:
-          logger.error(
-            "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection.",
-          );
-          BloomBot.logout();
-          break;
-        case DisconnectReason.loggedOut:
-          logger.error(
-            "❌ Device logged out. Please scan again and run the program to establish a new session.",
-          );
-          BloomBot.end();
-          await dbrem();
-          await magneum();
-          break;
-        case DisconnectReason.restartRequired:
-          logger.debug("🐞 Restart required. Restarting the program.");
-          BloomBot.end();
-          await magneum();
-          break;
-        case DisconnectReason.timedOut:
-          logger.error("❌ Connection timed out. Reconnecting to WhatsApp.");
-          await magneum();
-          break;
-        default:
-          BloomBot.end(
-            logger.error(
-              `❌ Unknown DisconnectReason: ${reason}|${connection}`,
-            ),
-          );
-          await dbrem();
-          await magneum();
-          break;
+
+      if (reason === DisconnectReason.badSession) {
+        logger.error("❌ Bad Session File detected.");
+        await dbrem();
+        await magneum();
+      } else if (reason === DisconnectReason.connectionClosed) {
+        logger.error(
+          "❌ Connection closed unexpectedly. Reconnecting to WhatsApp.",
+        );
+        await magneum();
+      } else if (reason === DisconnectReason.connectionLost) {
+        logger.error(
+          "❌ Connection lost from the server. Reconnecting to WhatsApp.",
+        );
+        await magneum();
+      } else if (reason === DisconnectReason.connectionReplaced) {
+        logger.error(
+          "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection.",
+        );
+      } else if (reason === DisconnectReason.loggedOut) {
+        logger.error(
+          "❌ Device logged out. Please scan again and run the program to establish a new session.",
+        );
+        await dbrem();
+        await magneum();
+      } else if (reason === DisconnectReason.restartRequired) {
+        logger.debug("🐞 Restart required. Restarting the program.");
+        await magneum();
+      } else if (reason === DisconnectReason.timedOut) {
+        logger.error("❌ Connection timed out. Reconnecting to WhatsApp.");
+        await magneum();
+      } else {
+        BloomBot.end(
+          logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`),
+        );
+        await dbrem();
+        await magneum();
       }
     } else if (isOnline === true) {
       logger.debug("📢 User is online. WhatsApp connection is active.");
@@ -132,8 +118,7 @@ module.exports = async (BloomBot, magneum, logger) => {
     } else {
       logger.info("📢 Connection event received:", update);
     }
-  };
+  });
 
-  BloomBot.ev.on("connection.update", handleConnectionUpdate);
   return BloomBot;
 };
