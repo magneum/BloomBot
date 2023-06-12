@@ -145,13 +145,13 @@ async function magneum() {
     },
   });
   store.bind(BloomBot.ev);
-  await require("./brain")(BloomBot);
-  await require("@/events/messages_upsert")(BloomBot, store, logger);
-  await require("@/events/group_participants_update")(BloomBot, store, logger);
-  await require("@/events/cb_call")(BloomBot, store, logger);
-  await require("@/events/connection_update")(BloomBot, magneum, logger);
-  await require("@/events/creds_update")(BloomBot, saveCreds, logger);
-  await require("@/events/contacts_update")(BloomBot, store, logger);
+  require("./brain")(BloomBot);
+  require("@/events/connection_update")(BloomBot, magneum, logger);
+  require("@/events/messages_upsert")(BloomBot, store, logger);
+  require("@/events/group_participants_update")(BloomBot, store, logger);
+  require("@/events/cb_call")(BloomBot, store, logger);
+  require("@/events/contacts_update")(BloomBot, store, logger);
+  require("@/events/creds_update")(BloomBot, saveCreds, logger);
 }
 
 showCommands("app/models");
