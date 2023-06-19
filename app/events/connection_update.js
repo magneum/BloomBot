@@ -27,7 +27,7 @@ const { Boom } = require("@hapi/boom");
 const { exec } = require("child_process");
 const dbdata = require("@/config/dbdata.js");
 const purgepg = require("@/client/purgepg.js");
-const { DisconnectReason } = require("@adiwajshing/baileys");
+const { DisconnectReason } = require("@whiskeysockets/baileys");
 
 module.exports = async (BloomBot, magneum, logger) => {
   const dbrem = async () => {
@@ -45,98 +45,97 @@ module.exports = async (BloomBot, magneum, logger) => {
   };
 
   BloomBot.ev.on("connection.update", async (update) => {
-    const { connection, lastDisconnect } = update;
-    if (connection === "close") {
-      if (
-        lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut
-      ) {
-        magneum();
-      } else {
-        console.log(
-          "Connection closed. You are logged out. Delete the BotsApp.db and session.data.json files to rescan the code.",
-        );
-        process.exit(0);
-      }
-    } else if (connection === "connecting") {
-      console.log("[INFO] Connecting to WhatsApp...");
-    } else if (connection === "open") {
-      console.log("[INFO] Connected! Welcome to BotsApp");
+    const {
+      qr,
+      connection,
+      isNewLogin,
+      lastDisconnect,
+      receivedPendingNotifications,
+    } = update;
+
+    switch (connection) {
+      case "connecting":
+        logger.info("📢 Connecting to WhatsApp.");
+        break;
+      case "open":
+        logger.info("📢 Login successful! Connection to WhatsApp established.");
+        break;
+      case "close":
+        let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+        logger.info(reason);
+        switch (reason) {
+          case DisconnectReason.badSession:
+            logger.error("❌ Bad Session File detected.");
+            await dbrem();
+            await magneum();
+            break;
+          case DisconnectReason.connectionClosed:
+            logger.error(
+              "❌ Connection closed unexpectedly. Reconnecting to WhatsApp."
+            );
+            await magneum();
+            break;
+          case DisconnectReason.connectionLost:
+            logger.error(
+              "❌ Connection lost from the server. Reconnecting to WhatsApp."
+            );
+            await magneum();
+            break;
+          case DisconnectReason.connectionReplaced:
+            logger.error(
+              "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection."
+            );
+            break;
+          case DisconnectReason.loggedOut:
+            logger.error(
+              "❌ Device logged out. Please scan again and run the program to establish a new session."
+            );
+            await dbrem();
+            await magneum();
+            break;
+          case DisconnectReason.restartRequired:
+            logger.debug("🐞 Restart required. Restarting the program.");
+            await magneum();
+            break;
+          case DisconnectReason.timedOut:
+            logger.error("❌ Connection timed out. Reconnecting to WhatsApp.");
+            await magneum();
+            break;
+          default:
+            logger.error("❌ Unknown DisconnectReason: " + reason, connection);
+            await dbrem();
+            await magneum();
+            break;
+        }
+        break;
+      case true:
+        logger.debug("📢 User is online. WhatsApp connection is active.");
+        break;
+      case false:
+        logger.error("📢 User is offline. WhatsApp connection is inactive.");
+        break;
+      default:
+        if (receivedPendingNotifications === true) {
+          logger.debug("📢 Received pending notifications. Processing.");
+        } else if (receivedPendingNotifications === false) {
+          logger.error("📢 No pending notifications received.");
+        } else if (isNewLogin === true) {
+          logger.debug(
+            "📢 New login detected. User has successfully logged in."
+          );
+        } else if (isNewLogin === false) {
+          logger.error("📢 User is not performing a new login.");
+        } else if (qr) {
+          logger.info(
+            "QR code received. Please scan the following QR code to log in:"
+          );
+          console.log(qr);
+        } else {
+          logger.info("📢 Connection event received:", update);
+        }
+        break;
     }
   });
-
-  // BloomBot.ev.on("connection.update", async (update) => {
-  // const {
-  // qr,
-  // isOnline,
-  // connection,
-  // isNewLogin,
-  // lastDisconnect,
-  // receivedPendingNotifications,
-  // } = update;
-  // if (connection === "connecting") {
-  // logger.info("📢 Connecting to WhatsApp.");
-  // } else if (connection === "open") {
-  // logger.info("📢 Login successful! Connection to WhatsApp established.");
-  // } else if (connection === "close") {
-  // let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-  // if (reason === DisconnectReason.badSession) {
-  // logger.error("❌ Bad Session File detected.");
-  // await dbrem();
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionClosed) {
-  // logger.error(
-  // "❌ Connection closed unexpectedly. Reconnecting to WhatsApp.",
-  // );
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionLost) {
-  // logger.error(
-  // "❌ Connection lost from the server. Reconnecting to WhatsApp.",
-  // );
-  // await magneum();
-  // } else if (reason === DisconnectReason.connectionReplaced) {
-  // logger.error(
-  // "❌ Connection replaced. Another new session is opened. Please close the current session first before establishing a new connection.",
-  // );
-  // } else if (reason === DisconnectReason.loggedOut) {
-  // logger.error(
-  // "❌ Device logged out. Please scan again and run the program to establish a new session.",
-  // );
-  // await dbrem();
-  // await magneum();
-  // } else if (reason === DisconnectReason.restartRequired) {
-  // logger.debug("🐞 Restart required. Restarting the program.");
-  // await magneum();
-  // } else if (reason === DisconnectReason.timedOut) {
-  // logger.error("❌ Connection timed out. Reconnecting to WhatsApp.");
-  // await magneum();
-  // } else {
-  // BloomBot.end(
-  // logger.error(`❌ Unknown DisconnectReason: ${reason}|${connection}`),
-  // );
-  // await dbrem();
-  // await magneum();
-  // }
-  // } else if (isOnline === true) {
-  // logger.debug("📢 User is online. WhatsApp connection is active.");
-  // } else if (isOnline === false) {
-  // logger.error("📢 User is offline. WhatsApp connection is inactive.");
-  // } else if (receivedPendingNotifications === true) {
-  // logger.debug("📢 Received pending notifications. Processing.");
-  // } else if (receivedPendingNotifications === false) {
-  // logger.error("📢 No pending notifications received.");
-  // } else if (isNewLogin === true) {
-  // logger.debug("📢 New login detected. User has successfully logged in.");
-  // } else if (isNewLogin === false) {
-  // logger.error("📢 User is not performing a new login.");
-  // } else if (qr) {
-  // logger.info(
-  // "QR code received. Please scan the following QR code to log in:",
-  // );
-  // console.log(qr);
-  // } else {
-  // logger.info("📢 Connection event received:", update);
-  // }
-  // });
 
   return BloomBot;
 };

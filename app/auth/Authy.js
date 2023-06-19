@@ -24,7 +24,7 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const SqlClient = require("sequelize");
 const dbdata = require("@/config/dbdata.js");
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { initAuthCreds, proto, BufferJSON } = require("@whiskeysockets/baileys");
 
 const sequelize = dbdata.DATABASE;
 class Cred extends SqlClient.Model {}

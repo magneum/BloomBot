@@ -27,7 +27,7 @@ const sequelize = DATABASE;
 const logger = require("@/log/index.js");
 const debugEnabled = VERBOSE === "1";
 const { DataTypes, Model } = require("sequelize");
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { initAuthCreds, proto, BufferJSON } = require("@whiskeysockets/baileys");
 
 class Cred extends Model {}
 Cred.init(

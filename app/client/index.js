@@ -37,7 +37,7 @@ const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
 const {
   default: BloomerClient,
   makeInMemoryStore,
-} = require("@adiwajshing/baileys");
+} = require("@whiskeysockets/baileys");
 
 process.env.NODE_NO_WARNINGS = "1";
 process.removeAllListeners("warning");
@@ -87,7 +87,7 @@ function showCommands(path) {
     if (specialFolders.includes(cFolder)) {
       console.log(
         chalk.bgGreen(chalk.black("> " + cFolder)),
-        chalk.yellow("  | " + cFiles),
+        chalk.yellow("  | " + cFiles)
       );
     }
   }

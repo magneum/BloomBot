@@ -27,7 +27,7 @@ const _0x3afda0 = _0x15f5;
 function _0x4fac() {
   const _0x2e8149 = [
     "log/index.js",
-    "@adiwajshing/baileys",
+    "@whiskeysockets/baileys",
     "fallback_remote_authstate",
     "update",
     "then",

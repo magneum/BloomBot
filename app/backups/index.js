@@ -38,7 +38,7 @@ const {
   MessageRetryMap,
   jidDecode,
   proto,
-} = require("@adiwajshing/baileys");
+} = require("@whiskeysockets/baileys");
 const fs = require("fs");
 const path = require("path");
 const pino = require("pino");

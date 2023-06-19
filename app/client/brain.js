@@ -27,7 +27,7 @@ const fs = require("fs");
 const path = require("path");
 var FileType = require("file-type");
 const gitPull = require("@/utils/gitPull.js");
-const Baileys = require("@adiwajshing/baileys");
+const Baileys = require("@whiskeysockets/baileys");
 let PhoneNumber = require("awesome-phonenumber");
 const {
   getBuffer,

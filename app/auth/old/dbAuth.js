@@ -28,7 +28,7 @@ var _0x3afda0 = _0x15f5;
 function _0x4fac() {
   var _0x2e8149 = [
     "log",
-    "@adiwajshing/baileys",
+    "@whiskeysockets/baileys",
     "useRemoteFileAuthState",
     "update",
     "then",

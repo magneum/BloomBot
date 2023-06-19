@@ -23,7 +23,7 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const { Cred, Key } = require("./AuthyTable");
-const { initAuthCreds, proto, BufferJSON } = require("@adiwajshing/baileys");
+const { initAuthCreds, proto, BufferJSON } = require("@whiskeysockets/baileys");
 const KEY_MAP = {
   "pre-key": "preKeys",
   session: "sessions",
