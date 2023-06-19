@@ -26,7 +26,6 @@ require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
-const countFiles = require("../../../countFiles.js");
 module.exports = async (
   BloomBot,
   chatkey,

@@ -226,7 +226,6 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.Levels = require("discord-xp");
   BloomBot.canvacord = require("canvacord");
   BloomBot.randomMC = require("random-material-color");
-  BloomBot.yClient = require("youtube-avdl");
   BloomBot.pokemontcgsdk = require("pokemontcgsdk");
   BloomBot.singer = require("play-dl");
   BloomBot.ffmpeg = ffmpeg;
