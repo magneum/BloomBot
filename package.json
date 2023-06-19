@@ -1,20 +1,20 @@
 {
   "version": "1.0.0",
   "name": "bloombot",
-  "main": "app/client/index.js",
+  "main": "app/client",
   "description": "ⒸBloomBot (md) by Magneum™ is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!",
   "scripts": {
     "local": "python3 app/python",
-    "replace": "node app/utils/replace.js",
-    "ffdev": "nodemon app/lib/pfmpeg.js",
-    "ffstart": "forever app/lib/pfmpeg.js",
-    "dbclean": "node app/client/purgepg.js",
-    "test": "supervisor -w . app/test/index.js",
-    "dev": "supervisor -w . app/client/index.js",
+    "test": "supervisor -w . app/test",
+    "replace": "node app/utils/replace",
+    "ffdev": "nodemon app/lib/pfmpeg",
+    "dev": "supervisor -w . app/client",
+    "ffstart": "forever app/lib/pfmpeg",
+    "dbclean": "node app/client/purgepg",
     "build": "rm -rf node_modules yarn.lock && yarn install",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
     "chatkeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
-    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms app/client/index.js --color",
+    "start": "forever --minUptime=1000ms --spinSleepTime=1000ms app/client --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },
   "repository": {
@@ -30,36 +30,11 @@
     "automation"
   ],
   "author": "Magneum",
-  "license": "MIT",
+  "license": "Mozilla Public License",
   "engines": {
     "node": ">= 16",
     "npm": ">= 8.19.4",
     "yarn": ">= 1.22.19"
-  },
-  "config": {
-    "libPort": 8080,
-    "logLevel": "info"
-  },
-  "browserslist": [
-    "defaults"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "printWidth": 80,
-    "singleQuote": false,
-    "trailingComma": "all",
-    "arrowParens": "always"
   },
   "private": false,
   "dependencies": {
