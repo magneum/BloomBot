@@ -62,35 +62,39 @@ module.exports = async (
 > ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 
 
-╔═☰ *❗ CONSOLE*
-║⦁ *⏲️Uptime :* ${runtime(process.uptime())}
-║⦁ *💻OS Release:* ${BloomBot.os.release()}
-║⦁ *💻OS Type:*   ${BloomBot.os.type()}
-║⦁ *📂Directory:*  ${BloomBot.os.homedir()}
-║⦁ *🌻Speed :* ${latensie.toFixed(4)} sec
-║⦁ *🖥️Ram Usage :* ${ramUsage}
-║⦁ *🌐Platform :* ${BloomBot.os.platform()}
-║⦁ *🆓Free memory:* ${BloomBot.os.freemem()}
-║⦁ *💾Total memory:* ${BloomBot.os.totalmem()}
-║⦁ *🏠Host device :* ${BloomBot.os.hostname()}
-║⦁ *📋OS Version:* ${BloomBot.os.version()}
-╚═☰
-╔═☰ *❕ COMMANDS*
-║⦁ 🐉 ${BloomBot.prefix}emotionslist
-║⦁ 📢 ${BloomBot.prefix}audiofilterlist
-║⦁ 📼 ${BloomBot.prefix}conversionlist
-║⦁ 📥 ${BloomBot.prefix}downloadlist
-║⦁ 💰 ${BloomBot.prefix}gameslist
-║⦁ 🔰 ${BloomBot.prefix}grouplist
-║⦁ 🍁 ${BloomBot.prefix}ownerlist
-║⦁ 🖼️ ${BloomBot.prefix}photolist
-║⦁ 🔎 ${BloomBot.prefix}searchlist
-║⦁ ⭕ ${BloomBot.prefix}ytfilterlist
-║⦁ 🍑 ${BloomBot.prefix}hentailist
-║⦁ 👅 ${BloomBot.prefix}nsfwlist
-║⦁ 🦄 ${BloomBot.prefix}sfwlist (coming-soon)
-╚══════⋑
+╭──────────────────────╮
+│       ❗ CONSOLE        
+│───────────────────────
+│ ⏲️ Uptime: ${runtime(process.uptime())}
+│ 💻 OS Release: ${BloomBot.os.release()}
+│ 💻 OS Type: ${BloomBot.os.type()}
+│ 📂 Directory: ${BloomBot.os.homedir()}
+│ 🌻 Speed: ${latensie.toFixed(4)} sec
+│ 🖥️ Ram Usage: ${ramUsage}
+│ 🌐 Platform: ${BloomBot.os.platform()}
+│ 🆓 Free Memory: ${BloomBot.os.freemem()}
+│ 💾 Total Memory: ${BloomBot.os.totalmem()}
+│ 🏠 Host Device: ${BloomBot.os.hostname()}
+│ 📋 OS Version: ${BloomBot.os.version()}
+╰──────────────────────╯
 
+╭──────────────────────╮
+│        ❕ COMMANDS        
+│───────────────────────
+│ 🐉 ${BloomBot.prefix}emotionslist
+│ 📢 ${BloomBot.prefix}audiofilterlist
+│ 📼 ${BloomBot.prefix}conversionlist
+│ 📥 ${BloomBot.prefix}downloadlist
+│ 💰 ${BloomBot.prefix}gameslist
+│ 🔰 ${BloomBot.prefix}grouplist
+│ 🍁 ${BloomBot.prefix}ownerlist
+│ 🖼️ ${BloomBot.prefix}photolist
+│ 🔎 ${BloomBot.prefix}searchlist
+│ ⭕ ${BloomBot.prefix}ytfilterlists
+│ 🍑 ${BloomBot.prefix}hentailist
+│ 👅 ${BloomBot.prefix}nsfwlist
+│ 🦄 ${BloomBot.prefix}sfwlist
+╰──────────────────────╯
 
 
 *🍁${"ownerlist".toUpperCase()}🍁*
