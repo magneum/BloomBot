@@ -26,6 +26,7 @@ require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -36,44 +37,81 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  if (!chatkey.isGroup) {
-    await BloomBot.sendMessage(chatkey.chat, {
-      react: {
-        text: "❌",
-        key: chatkey.key,
-      },
-    });
-    return chatkey.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+  try {
+    switch (true) {
+      case !chatkey.isGroup:
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*  
 > _It's a group command!_`
-    );
+        );
+
+      case !(isAdmin || BloomBot.isSudo):
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+
+*❌Error:* 
+> _This is an Admin/Sudo only Command!_`
+        );
+
+      default:
+        let imåge = "./app/public/mention.png";
+        let buffer = Buffer.isBuffer(imåge)
+          ? imåge
+          : /^data:.*?\/.*?;base64,/i.test(imåge)
+          ? Buffer.from(imåge.split(",")[1], "base64")
+          : /^https?:\/\//.test(imåge)
+          ? await BloomBot.getBuffer(imåge)
+          : BloomBot.fs.existsSync(imåge)
+          ? BloomBot.fs.readFileSync(imåge)
+          : Buffer.alloc(0);
+        if (BloomBot.args) {
+          await BloomBot.sendMessage(chatkey.chat, {
+            image: buffer,
+            caption: `*📢Chat Id:* ${chatkey.chat}
+*💫Pinged By:*:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+*🕛Time:*  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* \n${BloomBot.args.join(" ")}`,
+            mentions: await participants.map((a) => a.id),
+          }).catch((e) => console.log(e));
+        } else {
+          await BloomBot.sendMessage(chatkey.chat, {
+            image: buffer,
+            caption: `*📢Chat Id:* ${chatkey.chat}
+*💫Pinged By:*:  ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+*🕛Time:*  ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
+*📌Message:* \nAttention Everyone`,
+            mentions: await participants.map((a) => a.id),
+          }).catch((e) => console.log(e));
+        }
+    }
+  } catch (error) {
+    return BloomBot.handlerror(BloomBot, chatkey, error);
   }
-  let imåge = "./app/public/mention.png";
-  let buffer = Buffer.isBuffer(imåge)
-    ? imåge
-    : /^data:.*?\/.*?;base64,/i.test(imåge)
-    ? Buffer.from(imåge.split(",")[1], "base64")
-    : /^https?:\/\//.test(imåge)
-    ? await BloomBot.getBuffer(imåge)
-    : BloomBot.fs.existsSync(imåge)
-    ? BloomBot.fs.readFileSync(imåge)
-    : Buffer.alloc(0);
-
-  await BloomBot.sendMessage(chatkey.chat, {
-    image: buffer,
-    caption: `*💫Pinged By:*:  ${BloomBot.pushname}
-*📌Message:*
-Attention Everyone`,
-    mentions: await participants.map((a) => a.id),
-  }).catch((e) => console.log(e));
-
-  // await BloomBot.sendMessage(chatkey.chat, {
-  // text: `*💫Pinged By:*:  ${BloomBot.pushname}
-  // *📌Message:*
-  // Attention Everyone`,
-  // mentions: await participants.map((a) => a.id),
-  // }).catch((e) => console.log(e));
 };
-module.exports.aliases = [];
+
+module.exports.aliases = [
+  "tagalls",
+  "callall",
+  "alltag",
+  "allping",
+  "groupall",
+  "notifall",
+  "massping",
+  "crowdtag",
+  "teamall",
+  "groupmsg",
+];
