@@ -86,30 +86,30 @@ module.exports = async (BloomBot, mags, update, store) => {
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎",
+    "\n◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎"
   );
   console.log(
     BloomBot.chalk.blueBright("🖊️COMMANDS: "),
-    BloomBot.chalk.green(vcommand),
+    BloomBot.chalk.green(vcommand)
   );
   console.log(
     BloomBot.chalk.blueBright("🖊️MESSAGE: "),
-    BloomBot.chalk.green(vbody),
+    BloomBot.chalk.green(vbody)
   );
   console.log(
     BloomBot.chalk.blueBright("❣️USER_NAME: "),
-    BloomBot.chalk.green(BloomBot.pushname),
+    BloomBot.chalk.green(BloomBot.pushname)
   );
   console.log(
     BloomBot.chalk.blueBright("📱USER_NUMBER: "),
-    BloomBot.chalk.green(mags.sender),
+    BloomBot.chalk.green(mags.sender)
   );
   console.log(
     BloomBot.chalk.blueBright("💬CHAT_Id: "),
-    BloomBot.chalk.green(mags.chat),
+    BloomBot.chalk.green(mags.chat)
   );
   console.log(
-    "◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎\n",
+    "◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎\n"
   );
 
   let commandFound = false;
@@ -130,7 +130,7 @@ module.exports = async (BloomBot, mags, update, store) => {
           isbotAdmin,
           groupAdmins,
           participants,
-          BloomBot.isSudo,
+          BloomBot.isSudo
         );
         commandFound = true;
         break;
@@ -140,7 +140,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         if (suggestion) {
           suggestedCommand = suggestion;
           const suggestedCommandData = commandList.find(
-            (cmd) => cmd.name === suggestedCommand,
+            (cmd) => cmd.name === suggestedCommand
           );
           if (suggestedCommandData) {
             suggestedCommandAliases = suggestedCommandData.aliases || [];
@@ -152,14 +152,13 @@ module.exports = async (BloomBot, mags, update, store) => {
 
   if (!commandFound) {
     if (suggestedCommand) {
-      let suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
       let suggestionMessage =
         "Command not found. Below are some suggestions:\n\n";
       let suggestedCommandsText = commandList
         .filter(
           (cmd) =>
             cmd.name === suggestedCommand ||
-            suggestedCommandAliases.includes(cmd.name),
+            suggestedCommandAliases.includes(cmd.name)
         )
         .map((cmd) => {
           let aliasesText =
@@ -171,54 +170,96 @@ module.exports = async (BloomBot, mags, update, store) => {
         .join("\n");
 
       suggestionMessage += suggestedCommandsText;
-
-      return await BloomBot.sendMessage(mags.chat, {
-        image: { url: BloomBot.display },
-        caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
-        footer:
-          "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
-        buttons: [
-          {
-            buttonId: `${BloomBot.prefix}${suggestedCommand}`,
-            buttonText: {
-              displayText: suggestionButtonText,
-            },
-            type: 1,
-          },
-          {
-            buttonId: `${BloomBot.prefix}home`,
-            buttonText: { displayText: `${BloomBot.prefix}home` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        mentions: [mags.sender],
-      });
+      return await BloomBot.imagebutton(
+        BloomBot,
+        chatkey,
+        suggestionMessage,
+        BloomBot.display
+      );
     } else {
       const errorMessage =
         "⚠️ *Apologies* ⚠️\n\n" +
         `@${BloomBot.tagname}, it seems that the command you entered doesn't exist.\n` +
         "For command list press below buttons.";
-      return await BloomBot.sendMessage(mags.chat, {
-        image: { url: BloomBot.display },
-        caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
-        footer:
-          "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
-        buttons: [
-          {
-            buttonId: `${BloomBot.prefix}Help`,
-            buttonText: { displayText: `${BloomBot.prefix}Help` },
-            type: 1,
-          },
-          {
-            buttonId: `${BloomBot.prefix}home`,
-            buttonText: { displayText: `${BloomBot.prefix}home` },
-            type: 1,
-          },
-        ],
-        headerType: 4,
-        mentions: [mags.sender],
-      });
+      return await BloomBot.imagebutton(
+        BloomBot,
+        chatkey,
+        errorMessage,
+        BloomBot.display
+      );
     }
   }
+
+  // disabled since buttons having bugs
+  // if (!commandFound) {
+  // if (suggestedCommand) {
+  // let suggestionButtonText = `${BloomBot.prefix}${suggestedCommand}`;
+  // let suggestionMessage =
+  // "Command not found. Below are some suggestions:\n\n";
+  // let suggestedCommandsText = commandList
+  // .filter(
+  // (cmd) =>
+  // cmd.name === suggestedCommand ||
+  // suggestedCommandAliases.includes(cmd.name),
+  // )
+  // .map((cmd) => {
+  // let aliasesText =
+  // cmd.aliases && cmd.aliases.length > 0
+  // ? ` (${cmd.aliases.join(", ")})`
+  // : "";
+  // return `${cmd.name}${aliasesText}`;
+  // })
+  // .join("\n");
+
+  // suggestionMessage += suggestedCommandsText;
+
+  // return await BloomBot.sendMessage(mags.chat, {
+  // image: { url: BloomBot.display },
+  // caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
+  // footer:
+  // "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+  // buttons: [
+  // {
+  // buttonId: `${BloomBot.prefix}${suggestedCommand}`,
+  // buttonText: {
+  // displayText: suggestionButtonText,
+  // },
+  // type: 1,
+  // },
+  // {
+  // buttonId: `${BloomBot.prefix}home`,
+  // buttonText: { displayText: `${BloomBot.prefix}home` },
+  // type: 1,
+  // },
+  // ],
+  // headerType: 4,
+  // mentions: [mags.sender],
+  // });
+  // } else {
+  // const errorMessage =
+  // "⚠️ *Apologies* ⚠️\n\n" +
+  // `@${BloomBot.tagname}, it seems that the command you entered doesn't exist.\n` +
+  // "For command list press below buttons.";
+  // return await BloomBot.sendMessage(mags.chat, {
+  // image: { url: BloomBot.display },
+  // caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
+  // footer:
+  // "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+  // buttons: [
+  // {
+  // buttonId: `${BloomBot.prefix}Help`,
+  // buttonText: { displayText: `${BloomBot.prefix}Help` },
+  // type: 1,
+  // },
+  // {
+  // buttonId: `${BloomBot.prefix}home`,
+  // buttonText: { displayText: `${BloomBot.prefix}home` },
+  // type: 1,
+  // },
+  // ],
+  // headerType: 4,
+  // mentions: [mags.sender],
+  // });
+  // }
+  // }
 };
