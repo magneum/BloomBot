@@ -37,96 +37,54 @@ module.exports = async (BloomBot, store, logger) => {
         imåge = BloomBot.display;
       }
 
-      if (update.action == "add") {
-        return await BloomBot.sendMessage(
-          update.id,
-          {
-            image: { url: imåge },
-            caption: `*🌻 Welcome to the Group! 🌻*
+      let buffer = Buffer.isBuffer(imåge)
+        ? imåge
+        : /^data:.*?\/.*?;base64,/i.test(imåge)
+        ? Buffer.from(imåge.split(",")[1], "base64")
+        : /^https?:\/\//.test(imåge)
+        ? await BloomBot.getBuffer(imåge)
+        : BloomBot.fs.existsSync(imåge)
+        ? BloomBot.fs.readFileSync(imåge)
+        : Buffer.alloc(0);
 
-👋 Hi @${sperson.replace(/['@s whatsapp.net']/g, "")}!
+      let action = update.action;
+      let mentions = sperson;
 
-✨ Congratulations on finding your way to this awesome group! I'm BloomBot, your cheerful WhatsApp bot here to assist you.
-
-🎉 Get ready to have fun, learn, and connect with other amazing individuals. If you ever have any questions or need assistance, don't hesitate to ask.
-
-📚 To get started, you can type ${
+      switch (action) {
+        case "add":
+          await BloomBot.sendMessage(chatkey.chat, {
+            image: buffer,
+            caption: `*🌻 Welcome to the Group! 🌻*\n\n👋 Hi @${sperson.replace(
+              /['@s whatsapp.net']/g,
+              ""
+            )}!\n\n✨ Congratulations on finding your way to this awesome group! I'm BloomBot, your cheerful WhatsApp bot here to assist you.\n\n🎉 Get ready to have fun, learn, and connect with other amazing individuals. If you ever have any questions or need assistance, don't hesitate to ask.\n\n📚 To get started, you can type ${
               BloomBot.prefix
-            }menu or use the buttons below to explore different features.
+            }menu or use the buttons below to explore different features.\n\n🌼 *Buttons:*\n1. ${
+              BloomBot.prefix
+            }Git - Access the GitHub page.\n2. ${
+              BloomBot.prefix
+            }Menu - Access the command menu.\n3. ${
+              BloomBot.prefix
+            }Dashboard - Access the dashboard.\n4. ${
+              BloomBot.prefix
+            }home - Learn more about BloomBot.\n\n🌈 Let's make this group a vibrant and engaging community together!\n*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum`,
+            mentions: mentions,
+          }).catch((e) => console.log(e));
+          break;
 
-🌼 *Buttons:*
-1. ${BloomBot.prefix}Git - Access the GitHub page.
-2. ${BloomBot.prefix}Menu - Access the command menu.
-3. ${BloomBot.prefix}Dashboard - Access the dashboard.
-4. ${BloomBot.prefix}home - Learn more about BloomBot.
+        case "remove":
+          await BloomBot.sendMessage(chatkey.chat, {
+            image: buffer,
+            caption: `*🌻 Farewell! 🌻*\n\n👋 @${sperson.replace(
+              /['@s whatsapp.net']/g,
+              ""
+            )}, we're sad to see you leave.\n\n😔 Although you won't be with us in the group anymore, your presence and contributions will be missed. We hope you had a great time here and wish you all the best on your future endeavors.\n\n✨ Remember, the door is always open for you. If you ever decide to come back, we'll be here to welcome you with open arms.\n\n🌈 Take care and stay amazing!\n*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum`,
+            mentions: mentions,
+          }).catch((e) => console.log(e));
+          break;
 
-🌈 Let's make this group a vibrant and engaging community together!`,
-            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${BloomBot.prefix}Smile`,
-                buttonText: { displayText: `${BloomBot.prefix}Smile` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Menu`,
-                buttonText: { displayText: `${BloomBot.prefix}Menu` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Dashboard`,
-                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [sperson],
-          },
-          {
-            contextInfo: { mentionedJid: [sperson] },
-          },
-        ).catch(async (error) => logger.error(error));
-      } else if (update.action == "remove") {
-        return await BloomBot.sendMessage(
-          update.id,
-          {
-            image: { url: imåge },
-            caption: `*🌻 Farewell! 🌻*
-
-👋 @${sperson.replace(/['@s whatsapp.net']/g, "")}, we're sad to see you leave.
-
-😔 Although you won't be with us in the group anymore, your presence and contributions will be missed. We hope you had a great time here and wish you all the best on your future endeavors.
-
-✨ Remember, the door is always open for you. If you ever decide to come back, we'll be here to welcome you with open arms.
-
-🌈 Take care and stay amazing!`,
-            footer: "*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${BloomBot.prefix}Cry`,
-                buttonText: { displayText: `${BloomBot.prefix}Cry` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Hug`,
-                buttonText: { displayText: `${BloomBot.prefix}Hug` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Menu`,
-                buttonText: { displayText: `${BloomBot.prefix}Menu` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [sperson],
-          },
-          {
-            contextInfo: { mentionedJid: [sperson] },
-          },
-        ).catch(async (error) => logger.error(error));
-      } else {
-        return;
+        default:
+          break;
       }
     }
   });
