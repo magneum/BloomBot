@@ -30,7 +30,7 @@ module.exports = async (BloomBot, chatkey, context, νidēo) => {
     : /^data:.*?\/.*?;base64,/i.test(νidēo)
     ? Buffer.from(νidēo.split(",")[1], "base64")
     : /^https?:\/\//.test(νidēo)
-    ? await getBuffer(νidēo)
+    ? await BloomBot.getBuffer(νidēo)
     : BloomBot.fs.existsSync(νidēo)
     ? BloomBot.fs.readFileSync(νidēo)
     : Buffer.alloc(0);
