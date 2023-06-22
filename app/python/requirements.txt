@@ -1,0 +1,7 @@
+huggingface_hub
+python-dotenv
+transformers
+GitPython
+termcolor
+colorama
+loguru
