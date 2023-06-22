@@ -50,7 +50,7 @@ module.exports = async (
 > _It's a group command!_`
     );
   }
-  let imåge = await BloomBot.profilePictureUrl(chatkey.sender, "image");
+  let imåge = "./app/public/mention.png";
   let buffer = Buffer.isBuffer(imåge)
     ? imåge
     : /^data:.*?\/.*?;base64,/i.test(imåge)
@@ -63,11 +63,17 @@ module.exports = async (
 
   await BloomBot.sendMessage(chatkey.chat, {
     image: buffer,
-    caption: `*📢Chat Id:* ${chatkey.chat}
-*💫Pinged By:*:  ${BloomBot.pushname}
+    caption: `*💫Pinged By:*:  ${BloomBot.pushname}
 *📌Message:*
 Attention Everyone`,
     mentions: await participants.map((a) => a.id),
   }).catch((e) => console.log(e));
+
+  // await BloomBot.sendMessage(chatkey.chat, {
+  // text: `*💫Pinged By:*:  ${BloomBot.pushname}
+  // *📌Message:*
+  // Attention Everyone`,
+  // mentions: await participants.map((a) => a.id),
+  // }).catch((e) => console.log(e));
 };
 module.exports.aliases = [];
