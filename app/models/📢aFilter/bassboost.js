@@ -82,7 +82,7 @@ module.exports = async (
                 audio: BloomBot.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
                   externalAdReply: {
-                    body: "ⒸBloomBot (md) by Magneum™",
+                    body: "ⒸBloomBot by Magneum™",
                     title: `🎙️Filter: ${currFile}`,
                     thumbnail: Thumb,
                     mediaType: 2,

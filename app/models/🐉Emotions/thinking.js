@@ -76,7 +76,7 @@ module.exports = async (
           {
             gifPlayback: true,
             video: BloomBot.fs.readFileSync(resultFilename),
-            caption: `*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum
+            caption: `*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum
 
 *🎋Emo:* ${feeling}
 *📢From:* ${BloomBot.pushname}

@@ -563,7 +563,7 @@ module.exports = async (BloomBot) => {
     ];
     const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot (md) by Magneum™)",
+      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)",
     );
   }, 300 * 1000);
   setInterval(async () => {

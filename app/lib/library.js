@@ -86,7 +86,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     .toLowerCase();
 
   console.log(
-    "\n◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎",
+    "\n◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎",
   );
   console.log(
     BloomBot.chalk.blueBright("🖊️COMMANDS: "),
@@ -109,7 +109,7 @@ module.exports = async (BloomBot, mags, update, store) => {
     BloomBot.chalk.green(mags.chat),
   );
   console.log(
-    "◎✕———————————————————————✕ ⒸBloomBot (md) by Magneum™ ✕———————————————————————✕◎\n",
+    "◎✕———————————————————————✕ ⒸBloomBot by Magneum™ ✕———————————————————————✕◎\n",
   );
 
   let commandFound = false;
@@ -176,7 +176,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${suggestionMessage}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}${suggestedCommand}`,
@@ -203,7 +203,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         image: { url: BloomBot.display },
         caption: `*📢ChatId:* ${mags.chat}\n\n${errorMessage}`,
         footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
+          "*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
         buttons: [
           {
             buttonId: `${BloomBot.prefix}Help`,

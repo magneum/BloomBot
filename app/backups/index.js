@@ -265,7 +265,7 @@ async function magneum() {
 > Firstly Welcome.
 > I am BloomBot whatsapp bot.
 > To Start using type .help or press below buttons.`,
-            footer: "*ⒸBloomBot (md) by Magneum™ *\n*💻homePage:* bit.ly/magneum",
+            footer: "*ⒸBloomBot by Magneum™ *\n*💻homePage:* bit.ly/magneum",
             buttons: [
               {
                 buttonId: `${BloomBot.prefix}Dashboard`,
@@ -838,7 +838,7 @@ async function magneum() {
     ];
     const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot (md) by Magneum™)"
+      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );
   }, 2 * 60 * 1000); // Run every 2 minutes (2 minutes * 60 seconds * 1000 milliseconds)
   setInterval(async () => {

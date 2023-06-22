@@ -143,7 +143,7 @@ module.exports = async (
             contextInfo: {
               externalAdReply: {
                 title: response.data.youtube_search[0].TITLE,
-                body: "ⒸBloomBot (md) by Magneum™",
+                body: "ⒸBloomBot by Magneum™",
                 renderLargerThumbnail: true,
                 thumbnailUrl: response.data.youtube_search[0].HQ_IMAGE,
                 mediaUrl,

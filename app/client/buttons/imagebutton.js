@@ -52,7 +52,7 @@ module.exports = async (BloomBot, chatkey, context, imåge) => {
         chatkey.chat,
         {
           image: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
           mentions: mentions,
         },
         { quoted: chatkey }
@@ -72,7 +72,7 @@ module.exports = async (BloomBot, chatkey, context, imåge) => {
         chatkey.chat,
         {
           image: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
           mentions: mentions,
         },
         { quoted: chatkey }
@@ -84,7 +84,7 @@ module.exports = async (BloomBot, chatkey, context, imåge) => {
         chatkey.chat,
         {
           image: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
           mentions: mentions,
         },
         { quoted: chatkey }
