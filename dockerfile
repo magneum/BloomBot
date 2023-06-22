@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y \
     wget \
     ffmpeg \
     bpm-tools 
-    opus-tools \
     python3-pip \
     python-is-python3 \
     nodejs \
