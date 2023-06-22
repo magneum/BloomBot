@@ -34,7 +34,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -51,15 +51,15 @@ module.exports = async (
 > _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+> _${BloomBot.prefix}${currFile} reply to Image/Video_`
       );
     }
 
     if (/image/.test(BloomBot.mime)) {
       const media = await BloomBot.quoted.download();
       const sticker = new BloomBot.Sticker(media, {
-        pack: "Magneum™",
-        author: "by BloomBot",
+        pack: "ⒸBloomBot",
+        author: BloomBot.args.join(" ") || "Magneum™",
         type: BloomBot.StickerTypes.FULL,
         categories: ["🤩", "🎉"],
         id: "12345",
@@ -72,7 +72,7 @@ module.exports = async (
         {
           sticker: buffer,
         },
-        { quoted: chatkey },
+        { quoted: chatkey }
       );
     } else if (/video/.test(BloomBot.mime)) {
       if ((BloomBot.quoted.msg || BloomBot.quoted).seconds > 20) {
@@ -86,13 +86,13 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Cannot convert videos longer than 21 Seconds!_`,
+> _Cannot convert videos longer than 21 Seconds!_`
         );
       } else {
         const media = await BloomBot.quoted.download();
         const sticker = new BloomBot.Sticker(media, {
-          pack: "Magneum™",
-          author: "by BloomBot",
+          pack: "ⒸBloomBot",
+          author: BloomBot.args.join(" ") || "Magneum™",
           type: BloomBot.StickerTypes.FULL,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -105,7 +105,7 @@ module.exports = async (
           {
             sticker: buffer,
           },
-          { quoted: chatkey },
+          { quoted: chatkey }
         );
       }
     } else {
@@ -122,7 +122,7 @@ module.exports = async (
 > _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+> _${BloomBot.prefix}${currFile} reply to Image/Video_`
       );
     }
   } catch (error) {
