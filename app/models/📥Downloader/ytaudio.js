@@ -36,7 +36,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.args) {
@@ -53,46 +53,24 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} song-name_`,
+> _${BloomBot.prefix}${currFile} song-name_`
       );
     } else
       await BloomBot.magfetch(
         BloomBot,
-        "https://magneum.vercel.app/api/youtube_sr?q=" +
-          BloomBot.args.join(" "),
+        "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
       ).then(async (response) => {
         const mgdata = response.data;
-
-        await BloomBot.sendMessage(
-          chatkey.chat,
-          {
-            image: { url: mgdata.youtube_search[0].HQ_IMAGE },
-            caption: `*🌻Here, ${currFile} for ${BloomBot.pushname}:*
+        await BloomBot.imagebutton(
+          BloomBot,
+          chatkey,
+          `*🌻Here, ${currFile} for ${BloomBot.pushname}:*
 *🍻Title:* ${mgdata.youtube_search[0].TITLE}
 *🙈Views:* ${mgdata.youtube_search[0].VIEWS}
 *🔗Link:* ${mgdata.youtube_search[0].LINK || "null"}
 *⏰Duration:* ${mgdata.youtube_search[0].DURATION_FULL}
 *📜Description:* ${mgdata.youtube_search[0].DESCRIPTION}`,
-            footer: "*BloomBot™ by Magneum™*\n*💻homePage:* bit.ly/magneum",
-            buttons: [
-              {
-                buttonId: `${BloomBot.prefix}Dashboard`,
-                buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-                type: 1,
-              },
-              {
-                buttonId: `${BloomBot.prefix}Menu`,
-                buttonText: { displayText: `${BloomBot.prefix}Menu` },
-                type: 1,
-              },
-            ],
-            headerType: 4,
-            mentions: [chatkey.sender],
-          },
-          {
-            contextInfo: { mentionedJid: [chatkey.sender] },
-            quoted: chatkey,
-          },
+          mgdata.youtube_search[0].HQ_IMAGE
         );
 
         const stream = ytdl(mgdata.youtube_search[0].LINK, {
@@ -119,13 +97,13 @@ module.exports = async (
                 mediaUrl: mgdata.youtube_search[0].LINK,
                 mediaType: 1,
                 thumbnail: await BloomBot.getBuffer(
-                  mgdata.youtube_search[0].HQ_IMAGE,
+                  mgdata.youtube_search[0].HQ_IMAGE
                 ),
                 sourceUrl: "bit.ly/magneum",
               },
             },
           },
-          { quoted: chatkey },
+          { quoted: chatkey }
         ).then(BloomBot.fs.unlinkSync(`./${mgdata.uuid}`));
       });
   } catch (error) {
