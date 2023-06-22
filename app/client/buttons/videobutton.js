@@ -52,7 +52,7 @@ module.exports = async (BloomBot, chatkey, context, νidēo) => {
         chatkey.chat,
         {
           video: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum\n*⚙️Developers:* +918436686758, +918250889325`,
           gifPlayback: true,
           mentions: mentions,
         },
@@ -73,7 +73,7 @@ module.exports = async (BloomBot, chatkey, context, νidēo) => {
         chatkey.chat,
         {
           video: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum\n*⚙️Developers:* +918436686758, +918250889325`,
           gifPlayback: true,
           mentions: mentions,
         },
@@ -86,7 +86,7 @@ module.exports = async (BloomBot, chatkey, context, νidēo) => {
         chatkey.chat,
         {
           video: buffer,
-          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum\n*⚙️Developers:* +918436686758, +918250889325`,
           gifPlayback: true,
           mentions: mentions,
         },

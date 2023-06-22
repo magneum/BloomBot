@@ -35,7 +35,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const gitHubUrl = "https://github.com/magneum";
@@ -50,10 +50,8 @@ module.exports = async (
 
 🔗 *GitHub Information:*
 🔹 GitHub URL: ${gitHubUrl}
-🔹 BloomBot GitHub URL: ${bloomBotGitHubUrl}
-
-⚙️Developers: +918436686758, +918250889325 🧑‍💻`,
-      BloomBot.display,
+🔹 BloomBot GitHub URL: ${bloomBotGitHubUrl}`,
+      BloomBot.display
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

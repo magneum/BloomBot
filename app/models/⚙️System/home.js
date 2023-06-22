@@ -35,7 +35,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     return await BloomBot.imagebutton(
@@ -57,10 +57,8 @@ module.exports = async (
 👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your WhatsApp group management experience! 🎉✨
 
 🚨LEGAL NOTICE🚨
-ⒸBloomBot is in no way affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk. ⚠️
-
-⚙️Developers: +918436686758, +918250889325 🧑‍💻`,
-      BloomBot.display,
+ⒸBloomBot is in no way affiliated with, authorized, maintained, sponsored, or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk. ⚠️`,
+      BloomBot.display
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
