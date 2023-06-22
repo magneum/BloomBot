@@ -23,105 +23,75 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
-module.exports = async (BloomBot, chatkey, 𝚌𝚘𝚗𝚝є𝚡𝚝, νidē໐) => {
-  if (BloomBot.isReply) {
-    const receiver =
-      BloomBot.mtype == "extendedTextMessage" &&
-      BloomBot.message.extendedTextMessage.contextInfo != null
-        ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
-        : "";
-    await BloomBot.sendMessage(
-      chatkey.chat,
-      {
-        image: { url: νidē໐ },
-        caption: `*📢Chat Id:* ${chatkey.chat}
-${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
-        buttons: [
-          {
-            buttonId: `${BloomBot.prefix}Dashboard`,
-            buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${BloomBot.prefix}Menu`,
-            buttonText: { displayText: `${BloomBot.prefix}Menu` },
-            type: 1,
-          },
-        ],
-        headerType: 5,
-        mentions: [chatkey.sender, receiver],
-      },
-      {
-        contextInfo: { mentionedJid: [chatkey.sender, receiver] },
-        quoted: chatkey,
-      },
-    ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot (md) by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } else if (BloomBot.mentionByTag) {
-    const receiver =
-      BloomBot.mtype == "extendedTextMessage" &&
-      BloomBot.message.extendedTextMessage.contextInfo != null
-        ? BloomBot.message.extendedTextMessage.contextInfo.mentionedJid
-        : [];
-    await BloomBot.sendMessage(
-      chatkey.chat,
-      {
-        image: { url: νidē໐ },
-        caption: `*📢Chat Id:* ${chatkey.chat}
-${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
-        buttons: [
-          {
-            buttonId: `${BloomBot.prefix}Dashboard`,
-            buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${BloomBot.prefix}Menu`,
-            buttonText: { displayText: `${BloomBot.prefix}Menu` },
-            type: 1,
-          },
-        ],
-        headerType: 5,
-        mentions: [chatkey.sender, receiver],
-      },
-      {
-        contextInfo: { mentionedJid: [chatkey.sender, receiver] },
-        quoted: chatkey,
-      },
-    ).catch((e) => console.log(e));
-    ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot (md) by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
-  } else {
-    return await BloomBot.sendMessage(
-      chatkey.chat,
-      {
-        image: { url: νidē໐ },
-        caption: `*📢Chat Id:* ${chatkey.chat}
-${𝚌𝚘𝚗𝚝є𝚡𝚝}`,
-        footer:
-          "*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum",
-        buttons: [
-          {
-            buttonId: `${BloomBot.prefix}Dashboard`,
-            buttonText: { displayText: `${BloomBot.prefix}Dashboard` },
-            type: 1,
-          },
-          {
-            buttonId: `${BloomBot.prefix}Menu`,
-            buttonText: { displayText: `${BloomBot.prefix}Menu` },
-            type: 1,
-          },
-        ],
-        headerType: 5,
-        mentions: [chatkey.sender],
-      },
-      {
-        contextInfo: { mentionedJid: [chatkey.sender] },
-        quoted: chatkey,
-      },
-    ).catch((e) => console.log(e));
+
+module.exports = async (BloomBot, chatkey, context, νidēo) => {
+  let buffer = Buffer.isBuffer(νidēo)
+    ? νidēo
+    : /^data:.*?\/.*?;base64,/i.test(νidēo)
+    ? Buffer.from(νidēo.split(",")[1], "base64")
+    : /^https?:\/\//.test(νidēo)
+    ? await getBuffer(νidēo)
+    : BloomBot.fs.existsSync(νidēo)
+    ? BloomBot.fs.readFileSync(νidēo)
+    : Buffer.alloc(0);
+
+  let receiver;
+  let mentions = [chatkey.sender];
+
+  switch (true) {
+    case BloomBot.isReply:
+      receiver =
+        BloomBot.mtype == "extendedTextMessage" &&
+        BloomBot.message.extendedTextMessage.contextInfo != null
+          ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
+          : "";
+
+      mentions.push(receiver);
+
+      await BloomBot.sendMessage(
+        chatkey.chat,
+        {
+          video: buffer,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          gifPlayback: true,
+          mentions: mentions,
+        },
+        { quoted: chatkey }
+      ).catch((e) => console.log(e));
+      break;
+
+    case BloomBot.mentionByTag:
+      receiver =
+        BloomBot.mtype == "extendedTextMessage" &&
+        BloomBot.message.extendedTextMessage.contextInfo != null
+          ? BloomBot.message.extendedTextMessage.contextInfo.mentionedJid
+          : [];
+
+      mentions.push(receiver);
+
+      await BloomBot.sendMessage(
+        chatkey.chat,
+        {
+          video: buffer,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          gifPlayback: true,
+          mentions: mentions,
+        },
+        { quoted: chatkey }
+      ).catch((e) => console.log(e));
+      break;
+
+    default:
+      await BloomBot.sendMessage(
+        chatkey.chat,
+        {
+          video: buffer,
+          caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot (md) by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+          gifPlayback: true,
+          mentions: mentions,
+        },
+        { quoted: chatkey }
+      ).catch((e) => console.log(e));
+      break;
   }
 };
