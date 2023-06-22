@@ -5,13 +5,13 @@ RUN apt-get update && apt-get install -y \
     jq \
     git \
     curl \
+    npm \
     wget \
-    ffmpeg \
-    bpm-tools 
-    python3-pip \
-    python-is-python3 \
     nodejs \
-    npm
+    ffmpeg \
+    bpm-tools \
+    python3-pip \
+    python-is-python3 
 
 # Install n package manager for managing Node.js versions
 RUN npm install -g n
