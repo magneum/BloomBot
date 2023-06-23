@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!Sockey.isGroup) {
@@ -24,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _It's a group command!_`,
+• _It's a group command!_`
       );
     }
     if (!isAdmin) {
@@ -38,7 +39,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _This is an Admin only Command!_`,
+• _This is an Admin only Command!_`
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +53,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _bot not Admin!_`,
+• _bot not Admin!_`
       );
     }
     if (!BloomBot.args.join(" ")) {
@@ -69,7 +70,7 @@ module.exports = async (
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} manga-name_`,
+• _${BloomBot.prefix}${currFile} manga-name_`
       );
     }
 
@@ -88,7 +89,7 @@ module.exports = async (
 
 *📜New Description:*
 ${BloomBot.args.join(" ")}`,
-      ProfilePic,
+      ProfilePic
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);

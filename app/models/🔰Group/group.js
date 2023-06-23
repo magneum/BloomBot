@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!Sockey.isGroup) {
@@ -24,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _It's a group command!_`,
+• _It's a group command!_`
       );
     }
     if (!isAdmin) {
@@ -38,7 +39,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _This is an Admin only Command!_`,
+• _This is an Admin only Command!_`
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +53,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _bot not Admin!_`,
+• _bot not Admin!_`
       );
     }
 
@@ -72,15 +73,15 @@ module.exports = async (
               `> *Group have been Bloomed by: ${
                 BloomBot.pushname || BloomBot.tagname
               }*`,
-              ProfilePic,
-            ),
+              ProfilePic
+            )
         )
         .catch(async (error) =>
           Sockey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-• ${jsonformat(error)}`,
-          ),
+• ${jsonformat(error)}`
+          )
         );
     } else if (BloomBot.args[0] === "close") {
       await BloomBot.groupSettingUpdate(Sockey.chat, "announcement")
@@ -92,15 +93,15 @@ module.exports = async (
               `> *Group have been Closed by: ${
                 BloomBot.pushname || BloomBot.tagname
               }*`,
-              ProfilePic,
-            ),
+              ProfilePic
+            )
         )
         .catch(async (error) =>
           Sockey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-• ${jsonformat(error)}`,
-          ),
+• ${jsonformat(error)}`
+          )
         );
     } else if (BloomBot.args[0] === "antilink") {
       if (
@@ -135,17 +136,17 @@ module.exports = async (
                 BloomBot,
                 Sockey,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
-                ProfilePic,
+                ProfilePic
               );
             } else {
               return await BloomBot.imagebutton(
                 BloomBot,
                 Sockey,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
-                ProfilePic,
+                ProfilePic
               );
             }
-          },
+          }
         );
       } else if (
         BloomBot.args[1] === "OFF" ||
@@ -174,7 +175,7 @@ module.exports = async (
                 BloomBot,
                 Sockey,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
-                ProfilePic,
+                ProfilePic
               );
             } else {
               await server.delete();
@@ -182,10 +183,10 @@ module.exports = async (
                 BloomBot,
                 Sockey,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
-                ProfilePic,
+                ProfilePic
               );
             }
-          },
+          }
         );
       } else {
         await BloomBot.sendMessage(Sockey.chat, {
@@ -202,7 +203,7 @@ module.exports = async (
 
 *🌻Usage:* 
 • _${BloomBot.prefix}${currFile} close/Bloom
-• _${BloomBot.prefix}${currFile} antilink on/off`,
+• _${BloomBot.prefix}${currFile} antilink on/off`
         );
       }
     } else {
@@ -220,7 +221,7 @@ module.exports = async (
 
 *🌻Usage:* 
 • _${BloomBot.prefix}${currFile} close/Bloom
-• _${BloomBot.prefix}${currFile} antilink on/off`,
+• _${BloomBot.prefix}${currFile} antilink on/off`
       );
     }
   } catch (error) {

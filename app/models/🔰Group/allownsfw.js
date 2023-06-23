@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!Sockey.isGroup) {
@@ -24,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> It's a group command!`,
+> It's a group command!`
       );
     } else if (!isAdmin) {
       await BloomBot.sendMessage(Sockey.chat, {
@@ -37,7 +38,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> This is an Admin only Command!`,
+> This is an Admin only Command!`
       );
     } else if (!isbotAdmin) {
       await BloomBot.sendMessage(Sockey.chat, {
@@ -50,7 +51,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> bot not Admin!`,
+> bot not Admin!`
       );
     } else
       "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
@@ -74,7 +75,7 @@ module.exports = async (
 
 *🌻Usage:*   
 • ${BloomBot.prefix}${currFile} on
-• ${BloomBot.prefix}${currFile} off`,
+• ${BloomBot.prefix}${currFile} off`
       );
     } else if (
       BloomBot.args[0] === "ON" ||
@@ -95,21 +96,25 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               Sockey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
-              ProfilePic,
+              ProfilePic
             );
           } else
             return await BloomBot.imagebutton(
               BloomBot,
               Sockey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ✅On`,
-              ProfilePic,
+              ProfilePic
             );
-        },
+        }
       );
     } else if (
       BloomBot.args[0] === "OFF" ||
@@ -126,10 +131,12 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               Sockey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
-              ProfilePic,
+              ProfilePic
             );
           } else await server.delete();
           return await BloomBot.imagebutton(
@@ -138,9 +145,9 @@ module.exports = async (
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Antinsfw:* ❌OFF`,
-            ProfilePic,
+            ProfilePic
           );
-        },
+        }
       );
     } else
       await BloomBot.sendMessage(Sockey.chat, {
@@ -157,7 +164,7 @@ module.exports = async (
 
 *🌻Usage:*   
 • ${BloomBot.prefix}${currFile} on
-• ${BloomBot.prefix}${currFile} off`,
+• ${BloomBot.prefix}${currFile} off`
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);

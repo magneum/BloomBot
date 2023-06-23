@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any Image/Video/Text in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`
       );
     }
 
@@ -46,7 +47,7 @@ module.exports = async (
 • _Can not delete massage from another userId except mine!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`
       );
     } else {
       return await BloomBot.sendMessage(Sockey.chat, {

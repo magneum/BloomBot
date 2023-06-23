@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,33 +11,33 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (!BloomBot.args) {
+      case true:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} manga-name_`,
-      );
+• _${BloomBot.prefix}${currFile} manga-name_`
+        );
     }
 
     await BloomBot.magfetch(
       BloomBot,
-      "https://magneum.vercel.app/api/pinterest?q=" + BloomBot.args.join(" "),
+      "https://magneum.vercel.app/api/pinterest?q=" + BloomBot.args.join(" ")
     ).then(async (response) => {
       const mgdata = response.data;
-      
 
       const download =
         mgdata.meta.links[Math.floor(Math.random() * mgdata.meta.links.length)];
@@ -46,7 +47,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *📚Topic:* ${mgdata.meta.topic}
 *❓Query*: ${mgdata.meta.query}`,
-        download,
+        download
       );
     });
   } catch (error) {

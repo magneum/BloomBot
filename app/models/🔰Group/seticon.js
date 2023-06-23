@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   Sockey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!Sockey.isGroup) {
@@ -24,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _It's a group command!_`,
+• _It's a group command!_`
       );
     }
     if (!isAdmin) {
@@ -38,7 +39,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _This is an Admin only Command!_`,
+• _This is an Admin only Command!_`
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +53,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _bot not Admin!_`,
+• _bot not Admin!_`
       );
     }
     if (!/image/.test(BloomBot.mime)) {
@@ -69,7 +70,7 @@ module.exports = async (
 • _Could not find any Image in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply/send image_`,
+• _${BloomBot.prefix}${currFile} reply/send image_`
       );
     }
     if (/webp/.test(BloomBot.mime)) {
@@ -86,7 +87,7 @@ module.exports = async (
 • _Could not find any Image in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply/send image_`,
+• _${BloomBot.prefix}${currFile} reply/send image_`
       );
     }
 
@@ -99,8 +100,8 @@ module.exports = async (
           `> *Group icone has been changed: ${
             BloomBot.pushname || BloomBot.tagname
           }*`,
-          media,
-        ),
+          media
+        )
       )
       .catch(async (error) => {
         BloomBot.fs.unlinkSync(media);
@@ -117,7 +118,7 @@ module.exports = async (
 • _Could not change group image!_
 
 *🐞Bug* 
-• ${error}`,
+• ${error}`
         );
       });
   } catch (error) {
