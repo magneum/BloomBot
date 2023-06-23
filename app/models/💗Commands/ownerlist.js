@@ -21,14 +21,14 @@ module.exports = async (
 
 
 ┌『 *🍁${currFile.toUpperCase()}🍁* 』
-│║⦁ ${BloomBot.prefix}ban
-│║⦁ ${BloomBot.prefix}broadcast
-│║⦁ ${BloomBot.prefix}join
-│║⦁ ${BloomBot.prefix}leave
-│║⦁ ${BloomBot.prefix}reboot
-│║⦁ ${BloomBot.prefix}rules
-│║⦁ ${BloomBot.prefix}unban
-│║⦁ ${BloomBot.prefix}verify
+│║> ${BloomBot.prefix}ban
+│║> ${BloomBot.prefix}broadcast
+│║> ${BloomBot.prefix}join
+│║> ${BloomBot.prefix}leave
+│║> ${BloomBot.prefix}reboot
+│║> ${BloomBot.prefix}rules
+│║> ${BloomBot.prefix}unban
+│║> ${BloomBot.prefix}verify
 ┕╚═══════⋑`,
     BloomBot.display,
   );

@@ -21,10 +21,10 @@ module.exports = async (
 
 
 ┌『 *🖼️${currFile.toUpperCase()}🖼️* 』
-│║⦁ ${BloomBot.prefix}image
-│║⦁ ${BloomBot.prefix}unsplash
-│║⦁ ${BloomBot.prefix}pinterest
-│║⦁ ${BloomBot.prefix}wallpaper
+│║> ${BloomBot.prefix}image
+│║> ${BloomBot.prefix}unsplash
+│║> ${BloomBot.prefix}pinterest
+│║> ${BloomBot.prefix}wallpaper
 ┕╚═══════⋑`,
     BloomBot.display,
   );

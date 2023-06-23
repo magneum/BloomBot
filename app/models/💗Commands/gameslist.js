@@ -21,17 +21,17 @@ module.exports = async (
 
 
 ┌『 *💰${currFile.toUpperCase()}💰* 』
-│║⦁ ${BloomBot.prefix}balance
-│║⦁ ${BloomBot.prefix}buy
-│║⦁ ${BloomBot.prefix}daily
-│║⦁ ${BloomBot.prefix}fish
-│║⦁ ${BloomBot.prefix}gamble
-│║⦁ ${BloomBot.prefix}inv
-│║⦁ ${BloomBot.prefix}pay
-│║⦁ ${BloomBot.prefix}rob
-│║⦁ ${BloomBot.prefix}store
-│║⦁ ${BloomBot.prefix}work
-│║⦁ ${BloomBot.prefix}zoo
+│║> ${BloomBot.prefix}balance
+│║> ${BloomBot.prefix}buy
+│║> ${BloomBot.prefix}daily
+│║> ${BloomBot.prefix}fish
+│║> ${BloomBot.prefix}gamble
+│║> ${BloomBot.prefix}inv
+│║> ${BloomBot.prefix}pay
+│║> ${BloomBot.prefix}rob
+│║> ${BloomBot.prefix}store
+│║> ${BloomBot.prefix}work
+│║> ${BloomBot.prefix}zoo
 ┕╚═══════⋑`,
     BloomBot.display,
   );

@@ -21,30 +21,30 @@ module.exports = async (
 
 
 ┌『 *🍑${currFile.toUpperCase()}🍑* 』
-│║⦁ ${BloomBot.prefix}ass
-│║⦁ ${BloomBot.prefix}bdsm
-│║⦁ ${BloomBot.prefix}blowjob
-│║⦁ ${BloomBot.prefix}cum
-│║⦁ ${BloomBot.prefix}doujin
-│║⦁ ${BloomBot.prefix}feet
-│║⦁ ${BloomBot.prefix}femdom  
-│║⦁ ${BloomBot.prefix}whatsgirl  
-│║⦁ ${BloomBot.prefix}glasses  
-│║⦁ ${BloomBot.prefix}hentai
-│║⦁ ${BloomBot.prefix}maid
-│║⦁ ${BloomBot.prefix}masturbation
-│║⦁ ${BloomBot.prefix}netorare
-│║⦁ ${BloomBot.prefix}orgy
-│║⦁ ${BloomBot.prefix}panties
-│║⦁ ${BloomBot.prefix}pussy
-│║⦁ ${BloomBot.prefix}school
-│║⦁ ${BloomBot.prefix}succubus
-│║⦁ ${BloomBot.prefix}tentacles
-│║⦁ ${BloomBot.prefix}thighs
-│║⦁ ${BloomBot.prefix}uglyBastard
-│║⦁ ${BloomBot.prefix}uniform
-│║⦁ ${BloomBot.prefix}yuri
-│║⦁ ${BloomBot.prefix}zettaiRyouiki
+│║> ${BloomBot.prefix}ass
+│║> ${BloomBot.prefix}bdsm
+│║> ${BloomBot.prefix}blowjob
+│║> ${BloomBot.prefix}cum
+│║> ${BloomBot.prefix}doujin
+│║> ${BloomBot.prefix}feet
+│║> ${BloomBot.prefix}femdom  
+│║> ${BloomBot.prefix}whatsgirl  
+│║> ${BloomBot.prefix}glasses  
+│║> ${BloomBot.prefix}hentai
+│║> ${BloomBot.prefix}maid
+│║> ${BloomBot.prefix}masturbation
+│║> ${BloomBot.prefix}netorare
+│║> ${BloomBot.prefix}orgy
+│║> ${BloomBot.prefix}panties
+│║> ${BloomBot.prefix}pussy
+│║> ${BloomBot.prefix}school
+│║> ${BloomBot.prefix}succubus
+│║> ${BloomBot.prefix}tentacles
+│║> ${BloomBot.prefix}thighs
+│║> ${BloomBot.prefix}uglyBastard
+│║> ${BloomBot.prefix}uniform
+│║> ${BloomBot.prefix}yuri
+│║> ${BloomBot.prefix}zettaiRyouiki
 ┕╚═══════⋑`,
     BloomBot.display,
   );

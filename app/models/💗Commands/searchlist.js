@@ -21,22 +21,22 @@ module.exports = async (
 
 
 ┌『 *🔎${currFile.toUpperCase()}🔎* 』
-│║⦁ ${BloomBot.prefix}advice
-│║⦁ ${BloomBot.prefix}anime
-│║⦁ ${BloomBot.prefix}chordlist
-│║⦁ ${BloomBot.prefix}fact
-│║⦁ ${BloomBot.prefix}getchord
-│║⦁ ${BloomBot.prefix}gify
-│║⦁ ${BloomBot.prefix}google
-│║⦁ ${BloomBot.prefix}instagram
-│║⦁ ${BloomBot.prefix}joke
-│║⦁ ${BloomBot.prefix}lyrics
-│║⦁ ${BloomBot.prefix}manga
-│║⦁ ${BloomBot.prefix}meme
-│║⦁ ${BloomBot.prefix}pokedex
-│║⦁ ${BloomBot.prefix}quote
-│║⦁ ${BloomBot.prefix}reddit
-│║⦁ ${BloomBot.prefix}ytsearch
+│║> ${BloomBot.prefix}advice
+│║> ${BloomBot.prefix}anime
+│║> ${BloomBot.prefix}chordlist
+│║> ${BloomBot.prefix}fact
+│║> ${BloomBot.prefix}getchord
+│║> ${BloomBot.prefix}gify
+│║> ${BloomBot.prefix}google
+│║> ${BloomBot.prefix}instagram
+│║> ${BloomBot.prefix}joke
+│║> ${BloomBot.prefix}lyrics
+│║> ${BloomBot.prefix}manga
+│║> ${BloomBot.prefix}meme
+│║> ${BloomBot.prefix}pokedex
+│║> ${BloomBot.prefix}quote
+│║> ${BloomBot.prefix}reddit
+│║> ${BloomBot.prefix}ytsearch
 ┕╚═══════⋑`,
     BloomBot.display,
   );

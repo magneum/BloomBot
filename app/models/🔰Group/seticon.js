@@ -24,7 +24,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _It's a group command!_`,
+> _It's a group command!_`,
       );
     }
     if (!isAdmin) {
@@ -38,7 +38,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _This is an Admin only Command!_`,
+> _This is an Admin only Command!_`,
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +52,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _bot not Admin!_`,
+> _bot not Admin!_`,
       );
     }
     if (!/image/.test(BloomBot.mime)) {
@@ -66,10 +66,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not find any Image in context!_
+> _Could not find any Image in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply/send image_`,
+> _${BloomBot.prefix}${currFile} reply/send image_`,
       );
     }
     if (/webp/.test(BloomBot.mime)) {
@@ -83,10 +83,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not find any Image in context!_
+> _Could not find any Image in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply/send image_`,
+> _${BloomBot.prefix}${currFile} reply/send image_`,
       );
     }
 
@@ -114,7 +114,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not change group image!_
+> _Could not change group image!_
 
 *🐞Bug* 
 > ${error}`,

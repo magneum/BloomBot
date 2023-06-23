@@ -24,7 +24,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _It's a group command!_`,
+> _It's a group command!_`,
       );
     }
     if (!isAdmin) {
@@ -38,7 +38,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _This is an Admin only Command!_`,
+> _This is an Admin only Command!_`,
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +52,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _bot not Admin!_`,
+> _bot not Admin!_`,
       );
     }
 
@@ -70,10 +70,10 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Couldn't find any userId in context!_
+> _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
+> _${BloomBot.prefix}${currFile} @tag/reply_`,
         );
       }
       try {
@@ -89,7 +89,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Check if the person already not an admin!_`,
+> _Check if the person already not an admin!_`,
         );
       }
       try {
@@ -120,10 +120,10 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Couldn't find any userId in context!_
+> _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
+> _${BloomBot.prefix}${currFile} @tag/reply_`,
         );
       }
       try {
@@ -139,7 +139,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Check if the person already not an admin!_`,
+> _Check if the person already not an admin!_`,
         );
       }
       try {
@@ -164,10 +164,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Couldn't find any userId in context!_
+> _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
+> _${BloomBot.prefix}${currFile} @tag/reply_`,
       );
     }
   } catch (error) {

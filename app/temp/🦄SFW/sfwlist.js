@@ -21,45 +21,45 @@ module.exports = async (
 
 
 ┌『 *🦄${currFile.toUpperCase()}🦄* 』
-│║⦁ ${BloomBot.prefix}waifu
-│║⦁ ${BloomBot.prefix}swaifu
-│║⦁ ${BloomBot.prefix}whats
-│║⦁ ${BloomBot.prefix}swhats
-│║⦁ ${BloomBot.prefix}shinobu
-│║⦁ ${BloomBot.prefix}sshinobu
-│║⦁ ${BloomBot.prefix}megumin
-│║⦁ ${BloomBot.prefix}smegumin
-│║⦁ ${BloomBot.prefix}awoo
-│║⦁ ${BloomBot.prefix}sawoo
-│║⦁ ${BloomBot.prefix}glomp
-│║⦁ ${BloomBot.prefix}sglomp
-│║⦁ ${BloomBot.prefix}handhold
-│║⦁ ${BloomBot.prefix}shandhold
-│║⦁
-│║⦁ ${BloomBot.prefix}sbully
-│║⦁ ${BloomBot.prefix}scuddle
-│║⦁ ${BloomBot.prefix}scry
-│║⦁ ${BloomBot.prefix}shug
-│║⦁ ${BloomBot.prefix}skiss
-│║⦁ ${BloomBot.prefix}slick
-│║⦁ ${BloomBot.prefix}spat
-│║⦁ ${BloomBot.prefix}ssmug
-│║⦁ ${BloomBot.prefix}sbonk
-│║⦁ ${BloomBot.prefix}syeet
-│║⦁ ${BloomBot.prefix}sblush
-│║⦁ ${BloomBot.prefix}ssmile
-│║⦁ ${BloomBot.prefix}swave
-│║⦁ ${BloomBot.prefix}shighfive
-│║⦁ ${BloomBot.prefix}snom
-│║⦁ ${BloomBot.prefix}sbite
-│║⦁ ${BloomBot.prefix}sslap
-│║⦁ ${BloomBot.prefix}skill
-│║⦁ ${BloomBot.prefix}skick
-│║⦁ ${BloomBot.prefix}shappy
-│║⦁ ${BloomBot.prefix}swink
-│║⦁ ${BloomBot.prefix}spoke
-│║⦁ ${BloomBot.prefix}sdance
-│║⦁ ${BloomBot.prefix}scringe
+│║> ${BloomBot.prefix}waifu
+│║> ${BloomBot.prefix}swaifu
+│║> ${BloomBot.prefix}whats
+│║> ${BloomBot.prefix}swhats
+│║> ${BloomBot.prefix}shinobu
+│║> ${BloomBot.prefix}sshinobu
+│║> ${BloomBot.prefix}megumin
+│║> ${BloomBot.prefix}smegumin
+│║> ${BloomBot.prefix}awoo
+│║> ${BloomBot.prefix}sawoo
+│║> ${BloomBot.prefix}glomp
+│║> ${BloomBot.prefix}sglomp
+│║> ${BloomBot.prefix}handhold
+│║> ${BloomBot.prefix}shandhold
+│║>
+│║> ${BloomBot.prefix}sbully
+│║> ${BloomBot.prefix}scuddle
+│║> ${BloomBot.prefix}scry
+│║> ${BloomBot.prefix}shug
+│║> ${BloomBot.prefix}skiss
+│║> ${BloomBot.prefix}slick
+│║> ${BloomBot.prefix}spat
+│║> ${BloomBot.prefix}ssmug
+│║> ${BloomBot.prefix}sbonk
+│║> ${BloomBot.prefix}syeet
+│║> ${BloomBot.prefix}sblush
+│║> ${BloomBot.prefix}ssmile
+│║> ${BloomBot.prefix}swave
+│║> ${BloomBot.prefix}shighfive
+│║> ${BloomBot.prefix}snom
+│║> ${BloomBot.prefix}sbite
+│║> ${BloomBot.prefix}sslap
+│║> ${BloomBot.prefix}skill
+│║> ${BloomBot.prefix}skick
+│║> ${BloomBot.prefix}shappy
+│║> ${BloomBot.prefix}swink
+│║> ${BloomBot.prefix}spoke
+│║> ${BloomBot.prefix}sdance
+│║> ${BloomBot.prefix}scringe
 ┕╚═══════⋑`,
     BloomBot.display,
   );

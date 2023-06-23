@@ -21,21 +21,21 @@ module.exports = async (
 
 
 ┌『 *⭕${currFile.toUpperCase()}⭕* 』
-│║⦁ ${BloomBot.prefix}ytpanning
-│║⦁ ${BloomBot.prefix}ytbassboost
-│║⦁ ${BloomBot.prefix}ytecho
-│║⦁ ${BloomBot.prefix}ytflanger
-│║⦁ ${BloomBot.prefix}ytnightcore
-│║⦁ ${BloomBot.prefix}ytphaser
-│║⦁ ${BloomBot.prefix}ytreverse
-│║⦁ ${BloomBot.prefix}ytslow
-│║⦁ ${BloomBot.prefix}ytspeed
-│║⦁ ${BloomBot.prefix}ytsubboost
-│║⦁ ${BloomBot.prefix}ytsuperslow
-│║⦁ ${BloomBot.prefix}ytsuperspeed
-│║⦁ ${BloomBot.prefix}ytsurround
-│║⦁ ${BloomBot.prefix}ytvaporwave
-│║⦁ ${BloomBot.prefix}ytvibrato
+│║> ${BloomBot.prefix}ytpanning
+│║> ${BloomBot.prefix}ytbassboost
+│║> ${BloomBot.prefix}ytecho
+│║> ${BloomBot.prefix}ytflanger
+│║> ${BloomBot.prefix}ytnightcore
+│║> ${BloomBot.prefix}ytphaser
+│║> ${BloomBot.prefix}ytreverse
+│║> ${BloomBot.prefix}ytslow
+│║> ${BloomBot.prefix}ytspeed
+│║> ${BloomBot.prefix}ytsubboost
+│║> ${BloomBot.prefix}ytsuperslow
+│║> ${BloomBot.prefix}ytsuperspeed
+│║> ${BloomBot.prefix}ytsurround
+│║> ${BloomBot.prefix}ytvaporwave
+│║> ${BloomBot.prefix}ytvibrato
 ┕╚═══════⋑`,
     BloomBot.display,
   );

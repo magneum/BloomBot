@@ -21,33 +21,33 @@ module.exports = async (
 
 
 ┌『 *🐉${currFile.toUpperCase()}🐉* 』
-│║⦁ ${BloomBot.prefix}bite
-│║⦁ ${BloomBot.prefix}blush
-│║⦁ ${BloomBot.prefix}bonk
-│║⦁ ${BloomBot.prefix}bored
-│║⦁ ${BloomBot.prefix}confused
-│║⦁ ${BloomBot.prefix}cry
-│║⦁ ${BloomBot.prefix}cuddle
-│║⦁ ${BloomBot.prefix}dance
-│║⦁ ${BloomBot.prefix}goodnight
-│║⦁ ${BloomBot.prefix}happy
-│║⦁ ${BloomBot.prefix}highfive
-│║⦁ ${BloomBot.prefix}hug
-│║⦁ ${BloomBot.prefix}kill
-│║⦁ ${BloomBot.prefix}kiss
-│║⦁ ${BloomBot.prefix}nervous
-│║⦁ ${BloomBot.prefix}pat
-│║⦁ ${BloomBot.prefix}poke
-│║⦁ ${BloomBot.prefix}punch
-│║⦁ ${BloomBot.prefix}sad
-│║⦁ ${BloomBot.prefix}scream
-│║⦁ ${BloomBot.prefix}slap
-│║⦁ ${BloomBot.prefix}smile
-│║⦁ ${BloomBot.prefix}stare
-│║⦁ ${BloomBot.prefix}wave
-│║⦁ ${BloomBot.prefix}wink
-│║⦁ ${BloomBot.prefix}yeet
-│║⦁ ${BloomBot.prefix}yes
+│║> ${BloomBot.prefix}bite
+│║> ${BloomBot.prefix}blush
+│║> ${BloomBot.prefix}bonk
+│║> ${BloomBot.prefix}bored
+│║> ${BloomBot.prefix}confused
+│║> ${BloomBot.prefix}cry
+│║> ${BloomBot.prefix}cuddle
+│║> ${BloomBot.prefix}dance
+│║> ${BloomBot.prefix}goodnight
+│║> ${BloomBot.prefix}happy
+│║> ${BloomBot.prefix}highfive
+│║> ${BloomBot.prefix}hug
+│║> ${BloomBot.prefix}kill
+│║> ${BloomBot.prefix}kiss
+│║> ${BloomBot.prefix}nervous
+│║> ${BloomBot.prefix}pat
+│║> ${BloomBot.prefix}poke
+│║> ${BloomBot.prefix}punch
+│║> ${BloomBot.prefix}sad
+│║> ${BloomBot.prefix}scream
+│║> ${BloomBot.prefix}slap
+│║> ${BloomBot.prefix}smile
+│║> ${BloomBot.prefix}stare
+│║> ${BloomBot.prefix}wave
+│║> ${BloomBot.prefix}wink
+│║> ${BloomBot.prefix}yeet
+│║> ${BloomBot.prefix}yes
 ┕╚═══════⋑`,
     "./public/BloomBot/BloomBot (8).png",
   );

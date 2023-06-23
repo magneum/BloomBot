@@ -59,19 +59,19 @@ module.exports = async (
                 }:*
 
 ┌╔═☰ *❗ADULT❗*
-║⦁ 💡Title: ${mgdata.meta.title || null}
-║⦁ 🖊️Author: ${mgdata.meta.author || null}
-║⦁ ❣️Topic: ${mgdata.meta.topic || null}
+║> 💡Title: ${mgdata.meta.title || null}
+║> 🖊️Author: ${mgdata.meta.author || null}
+║> ❣️Topic: ${mgdata.meta.topic || null}
 ╚══☰
 ┌╔═☰
 ║>  *❓META INFO❓*
-║⦁ 🎊Status: ${mgdata.meta.status || null}
-║⦁ 🔐Uuid: ${mgdata.meta.uuid || null}
-║⦁ 🗓️Date_create: ${mgdata.meta.date_create || null}
-║⦁ 🧀Query: ${mgdata.meta.query || null}
-║⦁ 📢Domain: ${mgdata.meta.domain || null}
-║⦁ 💯Sub_reddit_id: ${mgdata.meta.sub_reddit_id || null}
-║⦁ 🌐Link: ${mgdata.meta.web_link || null}
+║> 🎊Status: ${mgdata.meta.status || null}
+║> 🔐Uuid: ${mgdata.meta.uuid || null}
+║> 🗓️Date_create: ${mgdata.meta.date_create || null}
+║> 🧀Query: ${mgdata.meta.query || null}
+║> 📢Domain: ${mgdata.meta.domain || null}
+║> 💯Sub_reddit_id: ${mgdata.meta.sub_reddit_id || null}
+║> 🌐Link: ${mgdata.meta.web_link || null}
 ╚═══════⋑`,
                 mgdata.meta.thumbnail,
               );

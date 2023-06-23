@@ -25,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _It's an Owner command!_`
+> _It's an Owner command!_`
       );
     }
 
@@ -40,11 +40,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _No query provided!_
+> _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on
-⦁ _${BloomBot.prefix}${currFile} off_`
+> _${BloomBot.prefix}${currFile} on
+> _${BloomBot.prefix}${currFile} off_`
       );
     }
 
@@ -118,11 +118,11 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _No query provided!_
+> _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on_
-⦁ _${BloomBot.prefix}${currFile} off_`
+> _${BloomBot.prefix}${currFile} on_
+> _${BloomBot.prefix}${currFile} off_`
         );
     }
   } catch (error) {

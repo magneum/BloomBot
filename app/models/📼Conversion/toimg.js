@@ -24,10 +24,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not find any Image in context!_
+> _Could not find any Image in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply to Image_`,
+> _${BloomBot.prefix}${currFile} reply to Image_`,
       );
     }
 
@@ -71,10 +71,10 @@ module.exports = async (
               `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not find any Image in context!_
+> _Could not find any Image in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply to Image_`,
+> _${BloomBot.prefix}${currFile} reply to Image_`,
             );
           }
 
@@ -83,9 +83,9 @@ module.exports = async (
             {
               image: BloomBot.fs.readFileSync(Found),
               caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
-│║⦁ *🌻You:* ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║⦁ *🎭Chat Id:* ${chatkey.chat.split("@")[0]}
-│║⦁ *📢Console:* ${BloomBot.ShowInfo.replace("http://", "")}
+│║> *🌻You:* ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
+│║> *🎭Chat Id:* ${chatkey.chat.split("@")[0]}
+│║> *📢Console:* ${BloomBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
 *🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}`,
@@ -130,10 +130,10 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Could not find any Image in context!_
+> _Could not find any Image in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply to Image_`,
+> _${BloomBot.prefix}${currFile} reply to Image_`,
       );
     }
   } catch (error) {

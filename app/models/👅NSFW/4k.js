@@ -45,19 +45,19 @@ module.exports = async (
 *🌻 Here is ${currFile} for @${BloomBot.tagname || BloomBot.pushname}:*
 
 ┌╔═☰ *❗ ADULT CONTENT ❗*
-║⦁ 💡 Title: ${mgdata.meta.title || "Not available"}
-║⦁ 🖊️ Author: ${mgdata.meta.author || "Not available"}
-║⦁ ❣️ Topic: ${mgdata.meta.topic || "Not available"}
+║> 💡 Title: ${mgdata.meta.title || "Not available"}
+║> 🖊️ Author: ${mgdata.meta.author || "Not available"}
+║> ❣️ Topic: ${mgdata.meta.topic || "Not available"}
 ╚══☰
 ┌╔═☰
 ║>  *❓ META INFO ❓*
-║⦁ 🎊 Status: ${mgdata.meta.status || "Not available"}
-║⦁ 🔐 UUId: ${mgdata.meta.uuid || "Not available"}
-║⦁ 🗓️ Date Created: ${mgdata.meta.date_create || "Not available"}
-║⦁ 🧀 Query: ${mgdata.meta.query || "Not available"}
-║⦁ 📢 Domain: ${mgdata.meta.domain || "Not available"}
-║⦁ 💯 Subreddit Id: ${mgdata.meta.sub_reddit_id || "Not available"}
-║⦁ 🌐 Link: ${mgdata.meta.web_link || "Not available"}
+║> 🎊 Status: ${mgdata.meta.status || "Not available"}
+║> 🔐 UUId: ${mgdata.meta.uuid || "Not available"}
+║> 🗓️ Date Created: ${mgdata.meta.date_create || "Not available"}
+║> 🧀 Query: ${mgdata.meta.query || "Not available"}
+║> 📢 Domain: ${mgdata.meta.domain || "Not available"}
+║> 💯 Subreddit Id: ${mgdata.meta.sub_reddit_id || "Not available"}
+║> 🌐 Link: ${mgdata.meta.web_link || "Not available"}
 ╚═══════⋑`;
     await BloomBot.imagebutton(BloomBot, chatkey, message, mgdata.meta.thumbnail);
   } catch (error) {

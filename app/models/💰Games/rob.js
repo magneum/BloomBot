@@ -51,7 +51,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _Can't rob your own bank_`,
+> _Can't rob your own bank_`,
       );
     }
 
@@ -524,21 +524,21 @@ module.exports = async (
 
 
 ┌『 *⚔️Swords* 』
-│║⦁ *🛸𝗧𝘆𝗽𝗲:* The medium account safe mode. 
-│║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy sword you will need to have 4000gold.
-│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!
+│║> *🛸𝗧𝘆𝗽𝗲:* The medium account safe mode. 
+│║> *🧀𝗚𝗼𝗹𝗱:* To buy sword you will need to have 4000gold.
+│║> *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a sword will save your entire balance and will automatically deduct random(1000-2000) from Culprit's account and add it to your account!
 ┕╚═══════⋑
 
 ┌『 *💻laptop* 』
-│║⦁ *🛸𝗧𝘆𝗽𝗲:* The hard account safe mode.
-│║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 3000gold.
-│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!
+│║> *🛸𝗧𝘆𝗽𝗲:* The hard account safe mode.
+│║> *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 3000gold.
+│║> *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a laptop will save your entire balance and will automatically deduct random(3000-4000) from Culprit's account and add it to your account!
 ┕╚═══════⋑
 
 ┌『 *💻Charm* 』
-│║⦁ *🛸𝗧𝘆𝗽𝗲:* The devil account safe mode.
-│║⦁ *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
-│║⦁ *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
+│║> *🛸𝗧𝘆𝗽𝗲:* The devil account safe mode.
+│║> *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
+│║> *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
       BloomBot.display,
     );

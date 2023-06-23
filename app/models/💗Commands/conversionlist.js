@@ -21,12 +21,12 @@ module.exports = async (
 
 
 ┌『 *📼${currFile.toUpperCase()}📼* 』
-│║⦁ ${BloomBot.prefix}carbon
-│║⦁ ${BloomBot.prefix}ship
-│║⦁ ${BloomBot.prefix}sticker
-│║⦁ ${BloomBot.prefix}tinyurl
-│║⦁ ${BloomBot.prefix}tourl
-│║⦁ ${BloomBot.prefix}tts
+│║> ${BloomBot.prefix}carbon
+│║> ${BloomBot.prefix}ship
+│║> ${BloomBot.prefix}sticker
+│║> ${BloomBot.prefix}tinyurl
+│║> ${BloomBot.prefix}tourl
+│║> ${BloomBot.prefix}tts
 ┕╚═══════⋑`,
     BloomBot.display,
   );

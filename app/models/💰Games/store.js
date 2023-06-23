@@ -18,18 +18,18 @@ module.exports = async (
       chatkey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ┌『 *Games💰Category* 』
-│║⦁ ⚔️ *sword:* _1000gold/robbery_
-│║⦁ 💻 *laptop:* _4000gold/robbery_
-│║⦁ 🔮 *charm:* _6000gold/robbery_
+│║> ⚔️ *sword:* _1000gold/robbery_
+│║> 💻 *laptop:* _4000gold/robbery_
+│║> 🔮 *charm:* _6000gold/robbery_
 ┕╚═══════⋑
 
 ┌『 *Badges🍯Category* 』
-│║⦁ 🧵 *Basic:* 10 Commands
-│║⦁ 🥉 *Bronze:* 20 Commands
-│║⦁ 🥈 *Silver:* 40 Commands
-│║⦁ 🥇 *Golden:* 60 Commands
-│║⦁ 💍 *Platinum:* 80 Commands
-│║⦁ 💎 *Diamond:* 100 Commands
+│║> 🧵 *Basic:* 10 Commands
+│║> 🥉 *Bronze:* 20 Commands
+│║> 🥈 *Silver:* 40 Commands
+│║> 🥇 *Golden:* 60 Commands
+│║> 💍 *Platinum:* 80 Commands
+│║> 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
       BloomBot.display,
     );

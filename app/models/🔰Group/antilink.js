@@ -24,7 +24,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _It's a group command!_`,
+> _It's a group command!_`,
       );
     }
     if (!isAdmin) {
@@ -38,7 +38,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _This is an Admin only Command!_`,
+> _This is an Admin only Command!_`,
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +52,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _bot not Admin!_`,
+> _bot not Admin!_`,
       );
     }
 
@@ -72,11 +72,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _No query provided!_
+> _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on
-⦁ _${BloomBot.prefix}${currFile} off_`,
+> _${BloomBot.prefix}${currFile} on
+> _${BloomBot.prefix}${currFile} off_`,
       );
     } else if (
       BloomBot.args[0] === "ON" ||
@@ -158,11 +158,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-⦁ _No query provided!_
+> _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on
-⦁ _${BloomBot.prefix}${currFile} off_`,
+> _${BloomBot.prefix}${currFile} on
+> _${BloomBot.prefix}${currFile} off_`,
       );
     }
   } catch (error) {
