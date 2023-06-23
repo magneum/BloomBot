@@ -93,7 +93,7 @@ module.exports = async (
 > _Could not find any Image in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply/send image_`,
+⦁ _${BloomBot.prefix}${currFile} reply/send image_`,
       );
     }
     if (/webp/.test(BloomBot.mime)) {
@@ -110,7 +110,7 @@ module.exports = async (
 > _Could not find any Image in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply/send image_`,
+⦁ _${BloomBot.prefix}${currFile} reply/send image_`,
       );
     }
 

@@ -51,7 +51,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} image-name_`,
+⦁ _${BloomBot.prefix}${currFile} image-name_`,
       );
     }
 

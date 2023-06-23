@@ -128,7 +128,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
+⦁ _${BloomBot.prefix}${currFile} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
@@ -147,7 +147,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
+⦁ _${BloomBot.prefix}${currFile} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
@@ -461,7 +461,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
+⦁ _${BloomBot.prefix}${currFile} item_
 > _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }

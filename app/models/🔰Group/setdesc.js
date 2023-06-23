@@ -93,7 +93,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} manga-name_`,
+⦁ _${BloomBot.prefix}${currFile} manga-name_`,
       );
     }
 

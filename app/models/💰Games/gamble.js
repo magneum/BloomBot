@@ -53,7 +53,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -75,7 +75,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -97,7 +97,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -123,7 +123,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -294,7 +294,7 @@ module.exports = async (
 > _Argument Needed!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} _color money_
+⦁ _${BloomBot.prefix}${currFile} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
@@ -317,7 +317,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -339,7 +339,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
@@ -367,7 +367,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+⦁ _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 

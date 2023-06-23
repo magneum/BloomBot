@@ -146,8 +146,8 @@ module.exports = async (
 > _Could not find any context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to person to ban_
-> _${BloomBot.prefix}${currFile} don't reply to anyone and group will be banned_`,
+⦁ _${BloomBot.prefix}${currFile} reply to person to ban_
+⦁ _${BloomBot.prefix}${currFile} don't reply to anyone and group will be banned_`,
       );
     }
   } catch (error) {

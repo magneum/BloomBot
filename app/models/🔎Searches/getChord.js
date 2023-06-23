@@ -52,7 +52,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} Id_
+⦁ _${BloomBot.prefix}${currFile} Id_
 > _get the Id from ${BloomBot.prefix}${currFile}chordlist command!_`,
       );
     }

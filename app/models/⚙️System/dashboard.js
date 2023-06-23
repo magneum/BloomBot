@@ -35,7 +35,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     await BloomBot.sendMessage(chatkey.chat, {
@@ -44,12 +44,22 @@ module.exports = async (
         key: chatkey.key,
       },
     });
-    return chatkey.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
+    switch (true) {
+      case isAdmin:
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+          
 *❌Error:* 
-> _This Command is not yet ready for public usage!_`,
-    );
+> _This Command is not yet ready for public usage!_`
+        );
+      case !isAdmin:
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+          
+*❌Error:* 
+> _You are not authorized to use this command!_`
+        );
+    }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }

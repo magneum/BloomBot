@@ -51,7 +51,7 @@ module.exports = async (
 > _Could not find any text and code in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} text | language-code_`,
+⦁ _${BloomBot.prefix}${currFile} text | language-code_`,
       );
     }
 
@@ -78,7 +78,7 @@ module.exports = async (
 > _Total characters should be less than 200!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} text | language-code_`,
+⦁ _${BloomBot.prefix}${currFile} text | language-code_`,
       );
     } else {
       BloomBot.axios({

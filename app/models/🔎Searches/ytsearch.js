@@ -50,7 +50,7 @@ module.exports = async (
   // *❌Error:*
   // > _No query provided!_
   // *🌻Usage:*
-  // > _${BloomBot.prefix}${currentFile} song-name_`,
+  // ⦁ _${BloomBot.prefix}${currentFile} song-name_`,
   // );
   // }
   // let searchQuery = BloomBot.args.join(" ");

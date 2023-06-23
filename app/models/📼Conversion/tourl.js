@@ -51,7 +51,7 @@ module.exports = async (
 > _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+⦁ _${BloomBot.prefix}${currFile} reply to Image/Video_`,
       );
     }
 
@@ -90,7 +90,7 @@ module.exports = async (
 > _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+⦁ _${BloomBot.prefix}${currFile} reply to Image/Video_`,
       );
     }
   } catch (error) {

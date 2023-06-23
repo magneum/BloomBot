@@ -97,7 +97,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} @tag/reply_`,
+⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
         );
       }
       try {
@@ -147,7 +147,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} @tag/reply_`,
+⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
         );
       }
       try {
@@ -191,7 +191,7 @@ module.exports = async (
 > _Couldn't find any userId in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} @tag/reply_`,
+⦁ _${BloomBot.prefix}${currFile} @tag/reply_`,
       );
     }
   } catch (error) {

@@ -52,7 +52,7 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} user Id_`,
+⦁ _${BloomBot.prefix}${currFile} user Id_`,
       );
     }
 
@@ -89,7 +89,7 @@ module.exports = async (
 > _Please provide a valid instagram Id!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} user Id_`,
+⦁ _${BloomBot.prefix}${currFile} user Id_`,
       );
     }
   } catch (error) {

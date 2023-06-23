@@ -225,8 +225,8 @@ module.exports = async (
 > _Argument Missing!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} close/Bloom
-> _${BloomBot.prefix}${currFile} antilink on/off`,
+⦁ _${BloomBot.prefix}${currFile} close/Bloom
+⦁ _${BloomBot.prefix}${currFile} antilink on/off`,
         );
       }
     } else {
@@ -243,8 +243,8 @@ module.exports = async (
 > _Argument Missing!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} close/Bloom
-> _${BloomBot.prefix}${currFile} antilink on/off`,
+⦁ _${BloomBot.prefix}${currFile} close/Bloom
+⦁ _${BloomBot.prefix}${currFile} antilink on/off`,
       );
     }
   } catch (error) {

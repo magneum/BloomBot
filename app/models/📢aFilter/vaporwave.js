@@ -51,7 +51,7 @@ module.exports = async (
 > _Could not find any Audio in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Audio_`,
+⦁ _${BloomBot.prefix}${currFile} reply to Audio_`,
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -110,7 +110,7 @@ module.exports = async (
 > _Could not find any Audio in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Audio_`,
+⦁ _${BloomBot.prefix}${currFile} reply to Audio_`,
       );
     }
   } catch (error) {
