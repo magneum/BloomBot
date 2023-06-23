@@ -23,13 +23,17 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("#/config/index.js");
+
 module.exports = async (BloomBot, chatkey, error) => {
-  console.log("❗Error: " + BloomBot.command.toUpperCase() + " :" + error);
-  return chatkey.reply(
-    `*😥Apologies:* _${BloomBot.pushname}_
-    
-*❌Error:* There has been an API Error. Please try again later.
-*🐞Bug:*
-> ${error}`,
-  );
+  const errorMessage = `❗ Oops! An error occurred while processing the command: ${BloomBot.command.toUpperCase()}\n\n${error}`;
+  console.log(errorMessage);
+  const replyMessage = `😔 Apologies, ${BloomBot.pushname}!
+
+*⚠️ Error:* 
+- An unexpected error occurred while processing your request. 
+- Please try again later.
+
+*🐞 Error Details:*
+${error}`;
+  return chatkey.reply(replyMessage);
 };
