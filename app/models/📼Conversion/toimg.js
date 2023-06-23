@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any Image in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`
       );
     }
 
@@ -35,7 +36,7 @@ module.exports = async (
       random = Math.floor(Math.random() * 10000);
       media = await BloomBot.downloadAndSaveMediaMessage(
         BloomBot.quoted,
-        random,
+        random
       );
       BloomBot.exec(
         BloomBot.pathFFmpeg + ` -i ${media} ${random}.png`,
@@ -74,7 +75,7 @@ module.exports = async (
 • _Could not find any Image in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`
             );
           }
 
@@ -112,12 +113,12 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
             },
             {
               quoted: chatkey,
-            },
+            }
           ).then(
             BloomBot.fs.unlinkSync(Found),
-            BloomBot.fs.unlinkSync(random + ".png"),
+            BloomBot.fs.unlinkSync(random + ".png")
           );
-        },
+        }
       );
     } else {
       await BloomBot.sendMessage(chatkey.chat, {
@@ -133,7 +134,7 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
 • _Could not find any Image in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`
       );
     }
   } catch (error) {

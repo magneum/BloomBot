@@ -64,11 +64,23 @@ module.exports = async (
           } else {
             const fishId = Math.floor(Math.random() * 10) + 1;
             let rarity;
-            if (fishId < 5) rarity = `junk`;
-            else if (fishId < 8) rarity = `common`;
-            else if (fishId < 9) rarity = `uncommon`;
-            else if (fishId < 10) rarity = `rare`;
-            else rarity = `legendary`;
+            switch (true) {
+              case fishId < 5:
+                rarity = `junk`;
+                break;
+              case fishId < 8:
+                rarity = `common`;
+                break;
+              case fishId < 9:
+                rarity = `uncommon`;
+                break;
+              case fishId < 10:
+                rarity = `rare`;
+                break;
+              default:
+                rarity = `legendary`;
+                break;
+            }
             const fishh = BloomBot.Fishes[rarity];
             const worth =
               Math.floor(Math.random() * (fishh.max - fishh.min + 1)) +

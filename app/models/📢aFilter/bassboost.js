@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any Audio in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`
       );
     }
 
@@ -35,7 +36,7 @@ module.exports = async (
       let random = Math.floor(Math.random() * 10000) + "_" + chatkey.chat;
       let media = await BloomBot.downloadAndSaveMediaMessage(
         BloomBot.quoted,
-        random,
+        random
       );
       await BloomBot.exec(
         `${BloomBot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
@@ -67,10 +68,10 @@ module.exports = async (
                 fileName: `${random}.mp3`,
                 mimetype: "audio/mpeg",
               },
-              { quoted: chatkey },
+              { quoted: chatkey }
             ).then(BloomBot.fs.unlinkSync(`${random}.mp3`, media));
           }
-        },
+        }
       );
     } else {
       await BloomBot.sendMessage(chatkey.chat, {
@@ -86,7 +87,7 @@ module.exports = async (
 • _Could not find any Audio in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`
       );
     }
   } catch (error) {

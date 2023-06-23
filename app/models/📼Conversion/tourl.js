@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video_`
       );
     }
 
@@ -40,7 +41,7 @@ module.exports = async (
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🎊Link: * _${BloomBot.util.format(upload)}_`,
-        BloomBot.display,
+        BloomBot.display
       );
     } else if (/video/.test(BloomBot.mime)) {
       media = await BloomBot.quoted.download();
@@ -50,7 +51,7 @@ module.exports = async (
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🎊Link: * _${BloomBot.util.format(upload)}_`,
-        BloomBot.display,
+        BloomBot.display
       );
     } else {
       await BloomBot.sendMessage(chatkey.chat, {
@@ -66,7 +67,7 @@ module.exports = async (
 • _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video_`
       );
     }
   } catch (error) {

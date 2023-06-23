@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,25 +11,26 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _No query provided!_
-
-*🌻Usage:*   
-• _${BloomBot.prefix}${currFile} text_`,
-      );
+    switch (true) {
+      case !BloomBot.args.join(" "):
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+  
+  *❌Error:* 
+  • _No query provided!_
+  
+  *🌻Usage:*   
+  • _${BloomBot.prefix}${currFile} text_`
+        );
     }
 
     BloomBot.axios({
@@ -42,13 +44,13 @@ module.exports = async (
       },
     }).then(async (response) => {
       const mgdata = response.data;
-      
+
       await BloomBot.imagebutton(
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
-• ${mgdata.meta.url}`,
-        await BloomBot.akaneko.nsfw.ass(),
+  • ${mgdata.meta.url}`,
+        await BloomBot.akaneko.nsfw.ass()
       );
     });
   } catch (error) {

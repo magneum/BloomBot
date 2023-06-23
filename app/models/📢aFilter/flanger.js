@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.quoted) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any Audio in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -35,7 +36,7 @@ module.exports = async (
       random = Math.floor(Math.random() * 10000);
       media = await BloomBot.downloadAndSaveMediaMessage(
         BloomBot.quoted,
-        random,
+        random
       );
       BloomBot.exec(
         `${BloomBot.pathFFmpeg} -i ${media} -af "flanger" ${random}.mp3`,
@@ -67,9 +68,9 @@ module.exports = async (
               mimetype: "audio/mpeg",
               fileName: `${one.title}.mp3`,
             },
-            { quoted: chatkey },
+            { quoted: chatkey }
           ).then(BloomBot.fs.unlinkSync(`${random}.mp3`));
-        },
+        }
       );
     } else {
       ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -86,7 +87,7 @@ module.exports = async (
 • _Could not find any Audio in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`
       );
     }
   } catch (error) {

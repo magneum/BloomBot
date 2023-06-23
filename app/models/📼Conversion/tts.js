@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     if (!BloomBot.args) {
@@ -27,7 +28,7 @@ module.exports = async (
 • _Could not find any text and code in context!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} text | language-code_`,
+• _${BloomBot.prefix}${currFile} text | language-code_`
       );
     }
 
@@ -54,7 +55,7 @@ module.exports = async (
 • _Total characters should be less than 200!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} text | language-code_`,
+• _${BloomBot.prefix}${currFile} text | language-code_`
       );
     } else {
       BloomBot.axios({
@@ -69,7 +70,7 @@ module.exports = async (
         },
       }).then(async (response) => {
         const mgdata = response.data;
-        
+
         return await BloomBot.sendMessage(
           chatkey.chat,
           {
@@ -85,13 +86,13 @@ module.exports = async (
                 mediaUrl: "i.postimg.cc/qBSnwdzq/White.png",
                 mediaType: 1,
                 thumbnail: await BloomBot.getBuffer(
-                  "i.postimg.cc/qBSnwdzq/White.png",
+                  "i.postimg.cc/qBSnwdzq/White.png"
                 ),
                 sourceUrl: "bit.ly/BloomBot",
               },
             },
           },
-          { quoted: chatkey },
+          { quoted: chatkey }
         );
       });
     }
