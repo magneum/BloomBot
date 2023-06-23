@@ -25,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} song-name_`,
@@ -48,7 +48,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _no chords for this song were found_`,
+⦁ _no chords for this song were found_`,
       );
     }
     no = 1;

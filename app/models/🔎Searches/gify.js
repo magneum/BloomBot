@@ -25,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} gif-name_`,
@@ -67,7 +67,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No such gif found!_`,
+⦁ _No such gif found!_`,
       );
     }
   } catch (error) {

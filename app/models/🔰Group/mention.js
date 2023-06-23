@@ -26,7 +26,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*  
-> _This command can only be used in groups!_`
+⦁ _This command can only be used in groups!_`
         );
 
       case !(isAdmin || BloomBot.isSudo):
@@ -40,7 +40,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _This is an admin/sudo-only command!_`
+⦁ _This is an admin/sudo-only command!_`
         );
 
       default:

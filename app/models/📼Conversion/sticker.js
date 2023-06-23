@@ -25,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image/Video in context!_
+⦁ _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} reply to Image/Video_`
@@ -63,7 +63,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Cannot convert videos longer than 21 Seconds!_`
+⦁ _Cannot convert videos longer than 21 Seconds!_`
         );
       } else {
         const media = await BloomBot.quoted.download();
@@ -96,7 +96,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image/Video in context!_
+⦁ _Could not find any Image/Video in context!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} reply to Image/Video_`

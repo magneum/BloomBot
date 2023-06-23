@@ -101,11 +101,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+⦁ _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
 
@@ -120,11 +120,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+⦁ _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
 
@@ -434,11 +434,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+⦁ _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
   } catch (error) {

@@ -24,7 +24,7 @@ module.exports = async (
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _This Command is not yet ready for public usage!_`,
+⦁ _This Command is not yet ready for public usage!_`,
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

@@ -51,7 +51,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Can't rob your own bank_`,
+⦁ _Can't rob your own bank_`,
       );
     }
 

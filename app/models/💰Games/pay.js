@@ -18,7 +18,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -29,7 +29,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -40,7 +40,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -51,7 +51,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -70,7 +70,7 @@ module.exports = async (
       }_ 
 
 *❌Error:* 
-> _Can't pay self account!_
+⦁ _Can't pay self account!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -102,7 +102,7 @@ module.exports = async (
           }_ 
 
 *❌Error:* 
-> _You Have 0-gold To Pay_
+⦁ _You Have 0-gold To Pay_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -114,7 +114,7 @@ module.exports = async (
           }_ 
 
 *❌Error:* 
-> _You Have 0-gold To Pay_
+⦁ _You Have 0-gold To Pay_
 
 *💰Balance:*
 >${uPayer.money}
@@ -202,7 +202,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);

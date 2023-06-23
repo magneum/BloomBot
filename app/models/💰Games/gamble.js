@@ -26,7 +26,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -48,7 +48,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -70,7 +70,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -96,7 +96,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -267,7 +267,7 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Argument Needed!_
+⦁ _Argument Needed!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} _color money_
@@ -290,7 +290,7 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -312,7 +312,7 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_
@@ -340,7 +340,7 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} color money_

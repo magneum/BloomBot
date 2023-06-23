@@ -77,7 +77,7 @@ module.exports = async (
       return chatkey.reply(
         `*😥 Apologies:* ${BloomBot.pushname || BloomBot.tagname}
 *❌Error:*
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻 Usage* 
 ⦁ _${BloomBot.prefix}${currFile} song/link_`

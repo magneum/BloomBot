@@ -24,7 +24,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any text and code in context!_
+⦁ _Could not find any text and code in context!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} text | language-code_`,
@@ -51,7 +51,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Total characters should be less than 200!_
+⦁ _Total characters should be less than 200!_
 
 *🌻Usage:* 
 ⦁ _${BloomBot.prefix}${currFile} text | language-code_`,

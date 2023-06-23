@@ -24,7 +24,7 @@ module.exports = async (
   // return chatkey.reply(
   // `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
   // *❌Error:*
-  // > _No query provided!_
+  // ⦁ _No query provided!_
   // *🌻Usage:*
   // ⦁ _${BloomBot.prefix}${currentFile} song-name_`,
   // );

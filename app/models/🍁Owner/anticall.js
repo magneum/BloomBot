@@ -25,7 +25,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _It's an Owner command!_`
+⦁ _It's an Owner command!_`
       );
     }
 
@@ -40,7 +40,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:*   
 ⦁ _${BloomBot.prefix}${currFile} on
@@ -118,7 +118,7 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+⦁ _No query provided!_
 
 *🌻Usage:*   
 ⦁ _${BloomBot.prefix}${currFile} on_
