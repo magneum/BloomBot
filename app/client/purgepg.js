@@ -33,17 +33,23 @@ async function purgepg() {
     connectionString,
     ssl: { rejectUnauthorized: false },
   });
-
   try {
     await client.connect();
     const res = await client.query(
       "SELECT tablename FROM pg_tables WHERE schemaname = $1",
-      ["public"],
+      ["public"]
     );
     for (const row of res.rows) {
       const tableName = row.tablename;
-      await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
-      logger.debug(`📢 Dropped table: ${tableName}`);
+      switch (true) {
+        case tableName !== undefined:
+          await client.query(`DROP TABLE IF EXISTS "${tableName}" CASCADE`);
+          logger.debug(`📢 Dropped table: ${tableName}`);
+          break;
+
+        default:
+          break;
+      }
     }
     logger.info("📢 Database cleaned successfully.");
   } catch (err) {
@@ -52,6 +58,4 @@ async function purgepg() {
     await client.end();
   }
 }
-
-// purgepg();
 module.exports = purgepg;

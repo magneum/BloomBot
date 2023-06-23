@@ -84,11 +84,13 @@ function showCommands(path) {
     const cFiles = fs
       .readdirSync(`./${path}/${cFolder}`)
       .filter((file) => file.endsWith(""));
-    if (specialFolders.includes(cFolder)) {
-      console.log(
-        chalk.bgGreen(chalk.black("> " + cFolder)),
-        chalk.yellow("  | " + cFiles)
-      );
+    switch (true) {
+      case specialFolders.includes(cFolder):
+        console.log(
+          chalk.bgGreen(chalk.black("> " + cFolder)),
+          chalk.yellow("  | " + cFiles)
+        );
+        break;
     }
   }
 }
