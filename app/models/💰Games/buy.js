@@ -1,17 +1,40 @@
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+//  ╔⧉༻ Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™
+//  ║>>  is a whatsapp user-bot with automation, moderation, music, games and more of 200+ commands!
+//  ║
+//  ║
+//  ║⦁> 🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
+//  ║⦁> 🚀 Simplifies group management tasks and enhances the overall user experience.
+//  ║⦁> ⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
+//  ║⦁> 🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
+//  ║⦁> 🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
+//  ║⦁> ⚠️ Exercise caution and take responsibility for any modifications made to the bot.
+//  ║⦁> 📞 Need assistance or have issues? Contact our developers.
+//  ║⦁> 🔄 We'll continue providing updates and support for the original version of the bot.
+//  ║⦁> 👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
+//  ║    whatsApp group management experience! 🎉
+//  ║
+//  ║     🚨𝐔𝐬𝐚𝐠𝐞 𝐍𝐨𝐭𝐢𝐜𝐞🚨
+//  ║⦁>    ⒸBloomBot is in no way affiliated with, authorized, maintained,
+//  ║⦁>    sponsored or endorsed by whatsApp or any of its affiliates or
+//  ║⦁>    subsidiaries. This is an independent and unofficial software.
+//  ║⦁>    Use at your own risk.
+//  ║
+//  ╚◎ ⚙️Developers: +918436686758, +918250889325
+"◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
-
 module.exports = async (
   BloomBot,
-  Sockey,
+  chatkey,
   gmeta,
   isAdmin,
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants
+  participants,
 ) => {
   try {
     let Item;
@@ -92,56 +115,56 @@ module.exports = async (
     }
 
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(Sockey.chat, {
+      await BloomBot.sendMessage(chatkey.chat, {
         react: {
           text: "❌",
-          key: Sockey.key,
+          key: chatkey.key,
         },
       });
-      return Sockey.reply(
+      return chatkey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _No query provided!_
+> _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} item_
-• _You may use ${BloomBot.prefix}shop to look for items..._`
+⦁ _${BloomBot.prefix}${currFile} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
 
     if (BloomBot.args.length === 0) {
-      await BloomBot.sendMessage(Sockey.chat, {
+      await BloomBot.sendMessage(chatkey.chat, {
         react: {
           text: "❌",
-          key: Sockey.key,
+          key: chatkey.key,
         },
       });
-      return Sockey.reply(
+      return chatkey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _No query provided!_
+> _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} item_
-• _You may use ${BloomBot.prefix}shop to look for items..._`
+⦁ _${BloomBot.prefix}${currFile} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
 
     if (RobCatelog.includes(BloomBot.args[0])) {
       BloomBot.Economy.findOne(
         {
-          Id: Sockey.sender,
+          Id: chatkey.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return BloomBot.handlerror(BloomBot, Sockey, error);
+            return BloomBot.handlerror(BloomBot, chatkey, error);
           }
 
           if (!userEco) {
             const newUser = new BloomBot.Economy({
-              Id: Sockey.sender,
+              Id: chatkey.sender,
               money: 0,
               daily: 0,
               timeout: 86400000,
@@ -151,29 +174,27 @@ module.exports = async (
               worktimeout: 900000,
             });
             await newUser.save().catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, Sockey, error);
+              return BloomBot.handlerror(BloomBot, chatkey, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+              chatkey,
+              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* _Just Bloomed Your Account!_`,
-              BloomBot.display
+              BloomBot.display,
             );
           }
           BloomBot.Robbery.findOne(
             {
-              Id: Sockey.sender,
+              Id: chatkey.sender,
             },
             async (error, userRob) => {
               if (error) {
-                return BloomBot.handlerror(BloomBot, Sockey, error);
+                return BloomBot.handlerror(BloomBot, chatkey, error);
               }
               if (!userRob) {
                 new BloomBot.Robbery({
-                  Id: Sockey.sender,
+                  Id: chatkey.sender,
                   sword: 0,
                   laptop: 0,
                   charm: 0,
@@ -182,22 +203,22 @@ module.exports = async (
                 })
                   .save()
                   .catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
 *💰Balance:* _Just Bloomed Your Account!_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               } else {
                 if (userEco.money < ItemPrice) {
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    Sockey,
+                    chatkey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
@@ -206,7 +227,7 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display
+                    BloomBot.display,
                   );
                 }
 
@@ -214,21 +235,21 @@ module.exports = async (
                   userRob.sword = userRob.sword + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   await userRob.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    Sockey,
+                    chatkey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display
+                    BloomBot.display,
                   );
                 }
 
@@ -236,21 +257,21 @@ module.exports = async (
                   userRob.laptop = userRob.laptop + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   await userRob.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    Sockey,
+                    chatkey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display
+                    BloomBot.display,
                   );
                 }
 
@@ -258,60 +279,60 @@ module.exports = async (
                   userRob.charm = userRob.charm + 1;
                   userEco.money = userEco.money - ItemPrice;
                   await userEco.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   await userRob.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    Sockey,
+                    chatkey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display
+                    BloomBot.display,
                   );
                 }
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
-            }
+            },
           );
-        }
+        },
       );
     } else if (BadCatelog.includes(BloomBot.args[0])) {
       await BloomBot.Economy.findOne(
         {
-          Id: Sockey.sender,
+          Id: chatkey.sender,
         },
         async (error, userEco) => {
           if (error) {
-            return BloomBot.handlerror(BloomBot, Sockey, error);
+            return BloomBot.handlerror(BloomBot, chatkey, error);
           }
 
           await BloomBot.Bagde.findOne(
             {
-              Id: Sockey.sender,
+              Id: chatkey.sender,
             },
             async (error, userBadge) => {
               if (error) {
-                return BloomBot.handlerror(BloomBot, Sockey, error);
+                return BloomBot.handlerror(BloomBot, chatkey, error);
               }
 
               if (!userEco) {
                 new BloomBot.Economy({
-                  Id: Sockey.sender,
+                  Id: chatkey.sender,
                   money: 0,
                   daily: 0,
                   timeout: 86400000,
@@ -322,11 +343,11 @@ module.exports = async (
                 })
                   .save()
                   .catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, Sockey, error);
+                    return BloomBot.handlerror(BloomBot, chatkey, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -335,13 +356,13 @@ module.exports = async (
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
 
               if (!userBadge) {
                 const newBagdeUser = new BloomBot.Bagde({
-                  Id: Sockey.sender,
+                  Id: chatkey.sender,
                   Badge: `🧵ʙᴀꜱɪᴄ-10ᴄᴏᴍᴍᴀɴᴅꜱ`,
                   value: `True`,
                   Limits: 10,
@@ -349,11 +370,11 @@ module.exports = async (
                   PermanentLimitTime: 0,
                 });
                 newBagdeUser.save().catch(async (error) => {
-                  return BloomBot.handlerror(BloomBot, Sockey, error);
+                  return BloomBot.handlerror(BloomBot, chatkey, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -362,14 +383,14 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
 
               if (userEco.money < ItemPrice) {
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -378,20 +399,20 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
 
               if (userBadge.Badge === Item) {
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
 
@@ -404,14 +425,14 @@ module.exports = async (
                 userBadge.Limits = NewLimit;
                 userBadge.Badge = Item;
                 await userEco.save().catch(async (error) => {
-                  return BloomBot.handlerror(BloomBot, Sockey, error);
+                  return BloomBot.handlerror(BloomBot, chatkey, error);
                 });
                 await userBadge.save().catch(async (error) => {
-                  return BloomBot.handlerror(BloomBot, Sockey, error);
+                  return BloomBot.handlerror(BloomBot, chatkey, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  Sockey,
+                  chatkey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -419,33 +440,33 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  BloomBot.display
+                  BloomBot.display,
                 );
               }
-            }
+            },
           );
-        }
+        },
       );
     } else {
-      await BloomBot.sendMessage(Sockey.chat, {
+      await BloomBot.sendMessage(chatkey.chat, {
         react: {
           text: "❌",
-          key: Sockey.key,
+          key: chatkey.key,
         },
       });
-      return Sockey.reply(
+      return chatkey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _No query provided!_
+> _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} item_
-• _You may use ${BloomBot.prefix}shop to look for items..._`
+⦁ _${BloomBot.prefix}${currFile} item_
+> _You may use ${BloomBot.prefix}shop to look for items..._`,
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, Sockey, error);
+    return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
 module.exports.aliases = [];
