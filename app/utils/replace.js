@@ -70,7 +70,7 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
       if (ignoredContentExtensions.includes(fileExtension)) {
         const newFilePath = path.join(
           dirPath,
-          replaceAll(file, oldWord, newWord),
+          replaceAll(file, oldWord, newWord)
         );
         fs.renameSync(filePath, newFilePath);
       } else if (!ignoredRenameExtensions.includes(fileExtension)) {
@@ -80,7 +80,7 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
 
         const newFilePath = path.join(
           dirPath,
-          replaceAll(file, oldWord, newWord),
+          replaceAll(file, oldWord, newWord)
         );
         fs.renameSync(filePath, newFilePath);
       }
