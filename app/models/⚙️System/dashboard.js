@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🌟/config/index.js");
+require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
@@ -35,7 +35,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants
+  participants,
 ) => {
   try {
     await BloomBot.sendMessage(chatkey.chat, {
@@ -44,22 +44,12 @@ module.exports = async (
         key: chatkey.key,
       },
     });
-    switch (true) {
-      case isAdmin:
-        return chatkey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-          
+    return chatkey.reply(
+      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+
 *❌Error:* 
-> _This Command is not yet ready for public usage!_`
-        );
-      case !isAdmin:
-        return chatkey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-          
-*❌Error:* 
-> _You are not authorized to use this command!_`
-        );
-    }
+> _This Command is not yet ready for public usage!_`,
+    );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }

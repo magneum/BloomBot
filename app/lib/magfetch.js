@@ -27,7 +27,7 @@ module.exports = async (BloomBot, url) => {
     method: "get",
     url: url,
     headers: {
-      accept: "🚀/*",
+      accept: "*/*",
       "accept-language": "en-US,en;q=0.9",
       "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
       "user-agent": [

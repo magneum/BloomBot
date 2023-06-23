@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🌟/config/index.js");
+require("#/config/index.js");
 const path = require("path");
 const ytdl = require("ytdl-secktor");
 const fileName = path.basename(__filename);
@@ -36,57 +36,40 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants
+  participants,
 ) => {
   try {
     let audioFilter = "";
-
-    switch (currFile) {
-      case "bassboost":
-        audioFilter = "-af 'bass=g=10,dynaudnorm=f=150'";
-        break;
-      case "echo":
-        audioFilter = '-af "aecho=0.8:0.9:1000:0.3"';
-        break;
-      case "flanger":
-        audioFilter = '-af "flanger"';
-        break;
-      case "nightcore":
-        audioFilter = '-af "aresample=48000,asetrate=48000*1.25"';
-        break;
-      case "panning":
-        audioFilter = '-af "apulsator=hz=0.08"';
-        break;
-      case "phaser":
-        audioFilter = '-af "aphaser=in_gain=0.4"';
-        break;
-      case "reverse":
-        audioFilter = '-filter_complex "areverse"';
-        break;
-      case "slow":
-        audioFilter = '-af "atempo=0.8"';
-        break;
-      case "speed":
-        audioFilter = '-af "atempo=2"';
-        break;
-      case "subboost":
-        audioFilter = '-af "asubboost"';
-        break;
-      case "superslow":
-        audioFilter = '-af "atempo=0.5"';
-        break;
-      case "superspeed":
-        audioFilter = '-af "atempo=3"';
-        break;
-      case "surround":
-        audioFilter = '-af "surround"';
-        break;
-      case "vaporwave":
-        audioFilter = '-af "aresample=48000,asetrate=48000*0.8"';
-        break;
-      case "vibrato":
-        audioFilter = '-af "vibrato=f=6.5"';
-        break;
+    if (currFile === "bassboost") {
+      audioFilter = "-af 'bass=g=10,dynaudnorm=f=150'";
+    } else if (currFile === "echo") {
+      audioFilter = '-af "aecho=0.8:0.9:1000:0.3"';
+    } else if (currFile === "flanger") {
+      audioFilter = '-af "flanger"';
+    } else if (currFile === "nightcore") {
+      audioFilter = '-af "aresample=48000,asetrate=48000*1.25"';
+    } else if (currFile === "panning") {
+      audioFilter = '-af "apulsator=hz=0.08"';
+    } else if (currFile === "phaser") {
+      audioFilter = '-af "aphaser=in_gain=0.4"';
+    } else if (currFile === "reverse") {
+      audioFilter = '-filter_complex "areverse"';
+    } else if (currFile === "slow") {
+      audioFilter = '-af "atempo=0.8"';
+    } else if (currFile === "speed") {
+      audioFilter = '-af "atempo=2"';
+    } else if (currFile === "subboost") {
+      audioFilter = '-af "asubboost"';
+    } else if (currFile === "superslow") {
+      audioFilter = '-af "atempo=0.5"';
+    } else if (currFile === "superspeed") {
+      audioFilter = '-af "atempo=3"';
+    } else if (currFile === "surround") {
+      audioFilter = '-af "surround"';
+    } else if (currFile === "vaporwave") {
+      audioFilter = '-af "aresample=48000,asetrate=48000*0.8"';
+    } else if (currFile === "vibrato") {
+      audioFilter = '-af "vibrato=f=6.5"';
     }
 
     const unlink = BloomBot.util.promisify(BloomBot.fs.unlink);
@@ -104,42 +87,43 @@ module.exports = async (
 > _No query provided!_
 
 *🌻 Usage* 
-⦁ _${BloomBot.prefix}${currFile} song/link_`
+> _${BloomBot.prefix}${currFile} song/link_`,
       );
-    } else {
-      const response = await BloomBot.magfetch(
-        BloomBot,
-        `https://magneum.vercel.app/api/youtube_sr?q=${query}`
+    }
+
+    const response = await BloomBot.magfetch(
+      BloomBot,
+      `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
+    );
+    const streamname = BloomBot.randomUUID();
+    const audioStream = ytdl(response.data.youtube_search[0].LINK, {
+      filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
+    });
+    const audioFilename = `${BloomBot.between(3000, 4000)}.mp3`;
+    const audioFilePath = `./${audioFilename}`;
+
+    await new Promise((resolve, reject) => {
+      const stream = audioStream.pipe(
+        BloomBot.fs.createWriteStream(audioFilePath),
       );
-      const audioStream = ytdl(response.data.youtube_search[0].LINK, {
-        filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-      });
-      const AudioFilePath = `./${new Date().getTime()}.mp3`;
-      const newAudioFilePath = `./${chatkey.chat}.mp3`;
-      await new Promise((resolve, reject) => {
-        const stream = audioStream.pipe(
-          BloomBot.fs.createWriteStream(AudioFilePath)
-        );
-        stream.on("error", reject);
-        stream.on("finish", async () => {
-          try {
-            await BloomBot.exec(
-              `${BloomBot.pathFFmpeg} -i ${AudioFilePath} ${audioFilter} ${newAudioFilePath}`
-            );
-            const file = BloomBot.fs.readFileSync(newAudioFilePath);
-            const thumbnail = await BloomBot.getBuffer(
-              response.data.youtube_search[0].HQ_IMAGE
-            );
-            const mediaUrl =
-              response.data.youtube_search[0].LINK || "Not available";
-            const authorName =
-              response.data.youtube_search[0].AUTHOR_NAME || "Not available";
-            await BloomBot.imagebutton(
-              BloomBot,
-              chatkey,
-              `*🌻Hello!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+      stream.on("error", reject);
+      stream.on("finish", async () => {
+        try {
+          await BloomBot.exec(
+            `${BloomBot.pathFFmpeg} -i ${audioFilePath} ${audioFilter} ${audioFilePath}`,
+          );
+          const file = BloomBot.fs.readFileSync(audioFilePath);
+          const thumbnail = await BloomBot.getBuffer(
+            response.data.youtube_search[0].HQ_IMAGE,
+          );
+          const mediaUrl =
+            response.data.youtube_search[0].LINK || "Not available";
+          const authorName =
+            response.data.youtube_search[0].AUTHOR_NAME || "Not available";
+          await BloomBot.imagebutton(
+            BloomBot,
+            chatkey,
+            `*🌻Hello!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 
 *🧀YouTube Filter:* ${currFile}
 *🎵Title:* ${response.data.youtube_search[0].TITLE}
@@ -149,37 +133,33 @@ module.exports = async (
 *✍️Author:* ${authorName}
 
 *📜Description:*`,
-              response.data.youtube_search[0].HQ_IMAGE
-            );
-            await BloomBot.sendMessage(chatkey.chat, {
-              audio: file,
-              mimetype: "audio/mpeg",
-              fileName: `${chatkey.chat}.mp3`,
-              headerType: 4,
-              contextInfo: {
-                externalAdReply: {
-                  title: response.data.youtube_search[0].TITLE,
-                  body: "ⒸBloomBot by Magneum™",
-                  renderLargerThumbnail: true,
-                  thumbnailUrl: response.data.youtube_search[0].HQ_IMAGE,
-                  mediaUrl,
-                  mediaType: 1,
-                  thumbnail,
-                  sourceUrl: "bit.ly/magneum",
-                },
+            response.data.youtube_search[0].HQ_IMAGE,
+          );
+          await BloomBot.sendMessage(chatkey.chat, {
+            audio: file,
+            mimetype: "audio/mpeg",
+            fileName: `${response.data.youtube_search[0].TITLE}.mp3`,
+            headerType: 4,
+            contextInfo: {
+              externalAdReply: {
+                title: response.data.youtube_search[0].TITLE,
+                body: "ⒸBloomBot by Magneum™",
+                renderLargerThumbnail: true,
+                thumbnailUrl: response.data.youtube_search[0].HQ_IMAGE,
+                mediaUrl,
+                mediaType: 1,
+                thumbnail,
+                sourceUrl: "bit.ly/magneum",
               },
-            });
-            await Promise.all([
-              unlink(AudioFilePath),
-              unlink(newAudioFilePath),
-            ]);
-            resolve();
-          } catch (error) {
-            reject(error);
-          }
-        });
+            },
+          });
+          await Promise.all([unlink(audioFilePath)]);
+          resolve();
+        } catch (error) {
+          reject(error);
+        }
       });
-    }
+    });
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }

@@ -75,7 +75,7 @@ client.get("/spotify", async (request, response) => {
       method: "get",
       url: "https://magneum.vercel.client/api/youtube_sr?q=" + request.query,
       headers: {
-        accept: "🚀/*",
+        accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "user-agent": [
@@ -220,7 +220,7 @@ client.get("/metadata", async (request, response) => {
       method: "get",
       url: "https://magneum.vercel.client/api/youtube_sr?q=" + request.query,
       headers: {
-        accept: "🚀/*",
+        accept: "*/*",
         "accept-language": "en-US,en;q=0.9",
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "user-agent": [

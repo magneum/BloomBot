@@ -22,11 +22,10 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🌟/config/index.js");
+require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
-
 module.exports = async (
   BloomBot,
   chatkey,
@@ -35,7 +34,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants
+  participants,
 ) => {
   try {
     if (!BloomBot.byMyself) {
@@ -49,7 +48,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _It's an Owner command!_`
+> _It's an Owner command!_`,
       );
     }
 
@@ -67,90 +66,105 @@ module.exports = async (
 > _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on
-⦁ _${BloomBot.prefix}${currFile} off_`
+> _${BloomBot.prefix}${currFile} on
+> _${BloomBot.prefix}${currFile} off_`,
       );
-    }
-
-    switch (BloomBot.args[0].toLowerCase()) {
-      case "on":
-        return await BloomBot.Anticall.findOne(
-          {
-            Id: chatkey.sender,
-          },
-          async (error, server) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
-            if (!server) {
-              new BloomBot.Anticall({
-                Id: chatkey.sender,
-                value: "ON",
-              }).save();
-            }
-
+    } else if (
+      BloomBot.args[0] === "ON" ||
+      BloomBot.args[0] === "on" ||
+      BloomBot.args[0] === "On"
+    ) {
+      return await BloomBot.Anticall.findOne(
+        {
+          Id: chatkey.sender,
+        },
+        async (error, server) => {
+          if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+          if (!server) {
+            new BloomBot.Anticall({
+              Id: chatkey.sender,
+              value: "ON",
+            }).save();
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🎖️Anticall:* ✅On`,
-              BloomBot.display
+              BloomBot.display,
+            );
+          } else {
+            return await BloomBot.imagebutton(
+              BloomBot,
+              chatkey,
+              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+*🎖️Anticall:* ✅On`,
+              BloomBot.display,
             );
           }
-        );
-
-      case "off":
-        return await BloomBot.Anticall.findOne(
-          {
-            Id: chatkey.sender,
-          },
-          async (error, server) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
-            if (!server) {
-              return await BloomBot.imagebutton(
-                BloomBot,
-                chatkey,
-                `*🌻Hola!* ${currFile} for ${
-                  BloomBot.pushname || BloomBot.tagname
-                }
+        },
+      );
+    } else if (
+      BloomBot.args[0] === "OFF" ||
+      BloomBot.args[0] === "off" ||
+      BloomBot.args[0] === "Off"
+    ) {
+      return await BloomBot.Anticall.findOne(
+        {
+          Id: chatkey.sender,
+        },
+        async (error, server) => {
+          if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+          if (!server) {
+            return await BloomBot.imagebutton(
+              BloomBot,
+              chatkey,
+              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🎖️Anticall:* ❌OFF`,
-                BloomBot.display
-              );
-            } else {
-              await server.delete();
-              return await BloomBot.imagebutton(
-                BloomBot,
-                chatkey,
-                `*🌻Hola!* ${currFile} for ${
-                  BloomBot.pushname || BloomBot.tagname
-                }
+              BloomBot.display,
+            );
+          } else {
+            await server.delete();
+            return await BloomBot.imagebutton(
+              BloomBot,
+              chatkey,
+              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🎖️Anticall:* ❌OFF`,
-                BloomBot.display
-              );
-            }
+              BloomBot.display,
+            );
           }
-        );
-
-      default:
-        await BloomBot.sendMessage(chatkey.chat, {
-          react: {
-            text: "❌",
-            key: chatkey.key,
-          },
-        });
-        return chatkey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+        },
+      );
+    } else {
+      await BloomBot.sendMessage(chatkey.chat, {
+        react: {
+          text: "❌",
+          key: chatkey.key,
+        },
+      });
+      return chatkey.reply(
+        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 > _No query provided!_
 
 *🌻Usage:*   
-⦁ _${BloomBot.prefix}${currFile} on_
-⦁ _${BloomBot.prefix}${currFile} off_`
-        );
+> _${BloomBot.prefix}${currFile} on
+> _${BloomBot.prefix}${currFile} off_`,
+      );
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
-module.exports.aliases = [];
+module.exports.aliases = [
+  "nohyper",
+  "nolink",
+  "unlinks",
+  "urlstop",
+  "linkoff",
+  "antiurl",
+  "nourl",
+  "nobind",
+  "nolinks",
+  "unlink",
+];

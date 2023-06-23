@@ -22,18 +22,18 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🔥/config/index.js");
+require("@/config/index.js");
 const fs = require("fs");
 const path = require("path");
 var FileType = require("file-type");
-const gitPull = require("🔥/utils/gitPull.js");
+const gitPull = require("@/utils/gitPull.js");
 const Baileys = require("@whiskeysockets/baileys");
 let PhoneNumber = require("awesome-phonenumber");
 const {
   getBuffer,
   getSizeMedia,
   chatkey_maker,
-} = require("🔥/lib/bloomHive.js");
+} = require("@/lib/bloomHive.js");
 
 module.exports = async (BloomBot) => {
   BloomBot.send5ButImg = async (
@@ -419,7 +419,7 @@ module.exports = async (BloomBot) => {
     };
     filename = path.join(
       __filename,
-      "🔥/Bin/" + new Date() * 1 + "." + type.ext,
+      "@/Bin/" + new Date() * 1 + "." + type.ext,
     );
     if (data && save) fs.promises.writeFile(filename, data);
     return {
@@ -432,7 +432,7 @@ module.exports = async (BloomBot) => {
   };
   BloomBot.decodeJid = (jid) => {
     if (!jid) return jid;
-    if (/:\d+🔥/gi.test(jid)) {
+    if (/:\d+@/gi.test(jid)) {
       let decode = Baileys.jidDecode(jid) || {};
       return (
         (decode.user && decode.server && decode.user + "@" + decode.server) ||

@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🌟/config/index.js");
+require("#/config/index.js");
 const path = require("path");
 const filePath = path.basename(__filename);
 const currentFile = filePath.slice(0, -3).toLowerCase();
@@ -50,7 +50,7 @@ module.exports = async (
   // *❌Error:*
   // > _No query provided!_
   // *🌻Usage:*
-  // ⦁ _${BloomBot.prefix}${currentFile} song-name_`,
+  // > _${BloomBot.prefix}${currentFile} song-name_`,
   // );
   // }
   // let searchQuery = BloomBot.args.join(" ");

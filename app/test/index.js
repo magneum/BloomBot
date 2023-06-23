@@ -23,8 +23,8 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../module-alias");
-require("🔥/config/index.js");
-const logger = require("🔥/log/index.js");
+require("@/config/index.js");
+const logger = require("@/log/index.js");
 const clear = require("cli-clear");
 const readline = require("readline");
 const { LocalHfInference } = require("@huggingface/inference-local");

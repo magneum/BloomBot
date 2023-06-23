@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("🌟/config/index.js");
+require("#/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
@@ -51,7 +51,7 @@ module.exports = async (
 > _Could not find any Image/Video/Text in context!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+> _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
       );
     }
 
@@ -70,7 +70,7 @@ module.exports = async (
 > _Can not delete massage from another userId except mine!_
 
 *🌻Usage:* 
-⦁ _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+> _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
       );
     } else {
       return await BloomBot.sendMessage(chatkey.chat, {

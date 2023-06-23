@@ -23,9 +23,9 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../module-alias");
-require("🔥/config/index.js");
-const logger = require("🔥/log/index.js");
-const gitPull = require("🔥/utils/gitPull");
+require("@/config/index.js");
+const logger = require("@/log/index.js");
+const gitPull = require("@/utils/gitPull");
 const purgepg = require("./purgepg");
 const {
   default: Bloom_bot_client,
@@ -47,16 +47,16 @@ const monGoose = require("mongoose");
 const { Boom } = require("@hapi/boom");
 const bodyParser = require("body-parser");
 const { exec } = require("child_process");
-const dashboards = require("🔥/database/dashboard");
+const dashboards = require("@/database/dashboard");
 let PhoneNumber = require("awesome-phonenumber");
-const remote_authstate = require("🔥/auth/remote_authstate");
-const { fallback_remote_authstate } = require("🔥/auth/Database");
+const remote_authstate = require("@/auth/remote_authstate");
+const { fallback_remote_authstate } = require("@/auth/Database");
 const {
   chatkey_maker,
   fetchJson,
   getBuffer,
   getSizeMedia,
-} = require("🔥/lib/bloomHive");
+} = require("@/lib/bloomHive");
 
 async function rmdb() {
   await new Promise((resolve, reject) => {
@@ -295,7 +295,7 @@ async function magneum() {
 
   BloomBot.decodeJid = (jid) => {
     if (!jid) return jid;
-    if (/:\d+🔥/gi.test(jid)) {
+    if (/:\d+@/gi.test(jid)) {
       let decode = jidDecode(jid) || {};
       return (
         (decode.user && decode.server && decode.user + "@" + decode.server) ||
@@ -739,7 +739,7 @@ async function magneum() {
     };
     filename = path.join(
       __filename,
-      "🔥/Bin/" + new Date() * 1 + "." + type.ext
+      "@/Bin/" + new Date() * 1 + "." + type.ext
     );
     if (data && save) fs.promises.writeFile(filename, data);
     return {
