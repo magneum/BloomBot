@@ -58,12 +58,12 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
   const files = fs.readdirSync(dirPath);
 
   files.forEach((file) => {
-    const filePath = path.join(dirPath, file);
-    const stats = fs.statSync(filePath);
+    const tpth = path.join(dirPath, file);
+    const stats = fs.statSync(tpth);
 
     if (stats.isDirectory()) {
       if (!ignoredFolders.includes(file)) {
-        renameFilesAndFolders(filePath, oldWord, newWord);
+        renameFilesAndFolders(tpth, oldWord, newWord);
       }
     } else {
       const fileExtension = path.extname(file).toLowerCase();
@@ -72,17 +72,17 @@ function renameFilesAndFolders(dirPath, oldWord, newWord) {
           dirPath,
           replaceAll(file, oldWord, newWord)
         );
-        fs.renameSync(filePath, newFilePath);
+        fs.renameSync(tpth, newFilePath);
       } else if (!ignoredRenameExtensions.includes(fileExtension)) {
-        const fileContent = fs.readFileSync(filePath, "utf8");
+        const fileContent = fs.readFileSync(tpth, "utf8");
         const newContent = replaceAll(fileContent, oldWord, newWord);
-        fs.writeFileSync(filePath, newContent, "utf8");
+        fs.writeFileSync(tpth, newContent, "utf8");
 
         const newFilePath = path.join(
           dirPath,
           replaceAll(file, oldWord, newWord)
         );
-        fs.renameSync(filePath, newFilePath);
+        fs.renameSync(tpth, newFilePath);
       }
     }
   });

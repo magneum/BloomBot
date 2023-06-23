@@ -11,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const кяуяєs = await BloomBot.axios.get("favqs.com/api/qotd");
@@ -21,7 +21,7 @@ module.exports = async (
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",
-        }),
+        })
       );
       const bson = await кяуяєsi.json();
       const bsoni =
@@ -33,7 +33,7 @@ module.exports = async (
 • ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
-        bsoni.url_image,
+        bsoni.url_image
       );
     } catch {
       await BloomBot.imagebutton(
@@ -43,11 +43,12 @@ module.exports = async (
 • ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
+
 module.exports.aliases = [];

@@ -32,36 +32,36 @@ function convertFilesAndFolders(directoryPath) {
       return;
     }
     files.forEach((file) => {
-      const filePath = path.join(directoryPath, file);
-      fs.stat(filePath, (err, stat) => {
+      const tpth = path.join(directoryPath, file);
+      fs.stat(tpth, (err, stat) => {
         if (err) {
           console.error("Error retrieving file stats:", err);
           return;
         }
 
         if (stat.isDirectory()) {
-          convertFilesAndFolders(filePath);
+          convertFilesAndFolders(tpth);
         } else if (stat.isFile() && file.endsWith(".js")) {
-          convertFile(filePath);
+          convertFile(tpth);
         }
       });
     });
   });
 }
 
-function convertFile(filePath) {
-  fs.readFile(filePath, "utf8", (err, data) => {
+function convertFile(tpth) {
+  fs.readFile(tpth, "utf8", (err, data) => {
     if (err) {
       console.error("Error reading file:", err);
       return;
     }
     const convertedData = data.replace(/var/g, "const");
-    fs.writeFile(filePath, convertedData, "utf8", (err) => {
+    fs.writeFile(tpth, convertedData, "utf8", (err) => {
       if (err) {
         console.error("Error writing file:", err);
         return;
       }
-      console.log("Converted file:", filePath);
+      console.log("Converted file:", tpth);
     });
   });
 }

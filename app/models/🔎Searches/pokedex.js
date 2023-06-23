@@ -31,7 +31,8 @@ module.exports = async (
 *🌻Usage:* 
 • _${BloomBot.prefix}${currFile} manga-name_`
         );
-      default:
+
+      case true:
         let json;
         try {
           const res = await BloomBot.fetch(
