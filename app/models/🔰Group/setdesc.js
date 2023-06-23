@@ -14,64 +14,62 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!Sockey.isGroup) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (true) {
+      case !Sockey.isGroup:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _It's a group command!_`
-      );
-    }
-    if (!isAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+        );
+      case !isAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _This is an Admin only Command!_`
-      );
-    }
-    if (!isbotAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+        );
+      case !isbotAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _bot not Admin!_`
-      );
-    }
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+        );
+      case !BloomBot.args.join(" "):
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
 • _${BloomBot.prefix}${currFile} manga-name_`
-      );
+        );
     }
 
     try {

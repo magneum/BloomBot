@@ -14,81 +14,58 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!Sockey.isGroup) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _It's a group command!_`
-      );
-    }
-    if (!isAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _This is an Admin only Command!_`
-      );
-    }
-    if (!isbotAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _bot not Admin!_`
-      );
-    }
-    if (!/image/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Could not find any Image in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply/send image_`
-      );
-    }
-    if (/webp/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Could not find any Image in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply/send image_`
-      );
+    switch (true) {
+      case !Sockey.isGroup:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _It's a group command!_`
+        );
+      case !isAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _This is an Admin only Command!_`
+        );
+      case !isbotAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _bot not Admin!_`
+        );
+      case !/image/.test(BloomBot.mime):
+      case /webp/.test(BloomBot.mime):
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _Could not find any Image in context!_\n\n*🌻Usage:* \n• _${
+            BloomBot.prefix
+          }${currFile} reply/send image_`
+        );
     }
 
     const media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted);
@@ -97,7 +74,7 @@ module.exports = async (
         BloomBot.imagebutton(
           BloomBot,
           Sockey,
-          `> *Group icone has been changed: ${
+          `> *Group icon has been changed: ${
             BloomBot.pushname || BloomBot.tagname
           }*`,
           media
@@ -112,17 +89,14 @@ module.exports = async (
           },
         });
         return Sockey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Could not change group image!_
-
-*🐞Bug* 
-• ${error}`
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _Could not change group image!_\n\n*🐞Bug* \n• ${error}`
         );
       });
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
+
 module.exports.aliases = [];

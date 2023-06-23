@@ -14,47 +14,45 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!Sockey.isGroup) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (true) {
+      case !Sockey.isGroup:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _It's a group command!_`
+        );
 
-*❌Error:* 
-• _It's a group command!_`
-      );
-    }
-    if (!isAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+      case !isAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _This is an Admin only Command!_`
+        );
 
-*❌Error:* 
-• _This is an Admin only Command!_`
-      );
-    }
-    if (!isbotAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _bot not Admin!_`
-      );
+      case !isbotAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _bot not Admin!_`
+        );
     }
 
     if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
@@ -68,13 +66,11 @@ module.exports = async (
           },
         });
         return Sockey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Couldn't find any userId in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} @tag/reply_`
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _Couldn't find any userId in context!_\n\n*🌻Usage:*\n• _${
+            BloomBot.prefix
+          }${currFile} @tag/reply_`
         );
       }
       try {
@@ -87,10 +83,9 @@ module.exports = async (
           },
         });
         return Sockey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Check if the person already not an admin!_`
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _Check if the person already not an admin!_`
         );
       }
       try {
@@ -118,13 +113,11 @@ module.exports = async (
           },
         });
         return Sockey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Couldn't find any userId in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} @tag/reply_`
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _Couldn't find any userId in context!_\n\n*🌻Usage:*\n• _${
+            BloomBot.prefix
+          }${currFile} @tag/reply_`
         );
       }
       try {
@@ -137,10 +130,9 @@ module.exports = async (
           },
         });
         return Sockey.reply(
-          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Check if the person already not an admin!_`
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:*\n• _Check if the person already not an admin!_`
         );
       }
       try {
@@ -162,13 +154,11 @@ module.exports = async (
         },
       });
       return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Couldn't find any userId in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} @tag/reply_`
+        `*😥Apologies:* _${
+          BloomBot.pushname || BloomBot.tagname
+        }_\n\n*❌Error:*\n• _Couldn't find any userId in context!_\n\n*🌻Usage:*\n• _${
+          BloomBot.prefix
+        }${currFile} @tag/reply_`
       );
     }
   } catch (error) {

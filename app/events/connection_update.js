@@ -62,7 +62,6 @@ module.exports = async (BloomBot, magneum, logger) => {
         break;
       case "close":
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
-        logger.info(reason);
         switch (reason) {
           case DisconnectReason.badSession:
             logger.error("❌ Bad Session File detected.");
