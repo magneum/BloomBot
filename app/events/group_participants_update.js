@@ -25,68 +25,88 @@
 require("@/config/index.js");
 
 module.exports = async (BloomBot, store, logger) => {
-  BloomBot.ev.on("group-participants.update", async (update) => {
-    let metadata = await BloomBot.groupMetadata(update.id);
-    let participants = update.participants;
-    logger.info(update);
-    for (let sperson of participants) {
-      let imåge;
+  BloomBot.ev.on(
+    "group-participants.update",
+    async ({ id, participants, action, jid }) => {
       try {
-        imåge = await BloomBot.profilePictureUrl(sperson, "image");
-      } catch {
-        imåge = BloomBot.display;
-      }
+        const metadata = await BloomBot.groupMetadata(id);
+        logger.info(metadata);
+        logger.info(store);
 
-      let buffer = Buffer.isBuffer(imåge)
-        ? imåge
-        : /^data:.*?\/.*?;base64,/i.test(imåge)
-        ? Buffer.from(imåge.split(",")[1], "base64")
-        : /^https?:\/\//.test(imåge)
-        ? await BloomBot.getBuffer(imåge)
-        : BloomBot.fs.existsSync(imåge)
-        ? BloomBot.fs.readFileSync(imåge)
-        : Buffer.alloc(0);
+        for (const sperson of participants) {
+          let profile;
+          try {
+            profile = await BloomBot.profilePictureUrl(sperson, "image");
+          } catch {
+            profile = BloomBot.display;
+          }
 
-      let action = update.action;
-      let mentions = sperson;
+          let buffer = Buffer.isBuffer(profile)
+            ? profile
+            : /^data:.*?\/.*?;base64,/i.test(profile)
+            ? Buffer.from(profile.split(",")[1], "base64")
+            : /^https?:\/\//.test(profile)
+            ? await BloomBot.getBuffer(profile)
+            : BloomBot.fs.existsSync(profile)
+            ? BloomBot.fs.readFileSync(profile)
+            : Buffer.alloc(0);
 
-      switch (action) {
-        case "add":
-          await BloomBot.sendMessage(chatkey.chat, {
-            image: buffer,
-            caption: `*🌻 Welcome to the Group! 🌻*\n\n👋 Hi @${sperson.replace(
-              /['@s whatsapp.net']/g,
-              ""
-            )}!\n\n✨ Congratulations on finding your way to this awesome group! I'm BloomBot, your cheerful WhatsApp bot here to assist you.\n\n🎉 Get ready to have fun, learn, and connect with other amazing individuals. If you ever have any questions or need assistance, don't hesitate to ask.\n\n📚 To get started, you can type ${
-              BloomBot.prefix
-            }menu or use the buttons below to explore different features.\n\n🌼 *Buttons:*\n1. ${
-              BloomBot.prefix
-            }Git - Access the GitHub page.\n2. ${
-              BloomBot.prefix
-            }Menu - Access the command menu.\n3. ${
-              BloomBot.prefix
-            }Dashboard - Access the dashboard.\n4. ${
-              BloomBot.prefix
-            }home - Learn more about BloomBot.\n\n🌈 Let's make this group a vibrant and engaging community together!\n*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum`,
-            mentions: mentions,
-          }).catch((e) => console.log(e));
-          break;
+          let mentions = sperson;
 
-        case "remove":
-          await BloomBot.sendMessage(chatkey.chat, {
-            image: buffer,
-            caption: `*🌻 Farewell! 🌻*\n\n👋 @${sperson.replace(
-              /['@s whatsapp.net']/g,
-              ""
-            )}, we're sad to see you leave.\n\n😔 Although you won't be with us in the group anymore, your presence and contributions will be missed. We hope you had a great time here and wish you all the best on your future endeavors.\n\n✨ Remember, the door is always open for you. If you ever decide to come back, we'll be here to welcome you with open arms.\n\n🌈 Take care and stay amazing!\n*Ⓒ BloomBot by Magneum™*\n*💻 homepage:* bit.ly/magneum`,
-            mentions: mentions,
-          }).catch((e) => console.log(e));
-          break;
+          switch (action) {
+            case "add": {
+              const welcomeMessage = `*🌻 Welcome to the Group! 🌻*
 
-        default:
-          break;
+👋 Hi @${sperson.replace(/['@s whatsapp.net']/g, "")}!
+✨ Congratulations on finding your way to this awesome group! I'm BloomBot, your cheerful WhatsApp bot here to assist you.
+🎉 Get ready to have fun, learn, and connect with other amazing individuals. If you ever have any questions or need assistance, don't hesitate to ask.
+📚 To get started, you can type ${
+                BloomBot.prefix
+              }help or use the buttons below to explore different features.
+
+🌼 *Buttons:*
+1. ${BloomBot.prefix}Git - Access the GitHub page.
+2. ${BloomBot.prefix}Menu - Access the command menu.
+3. ${BloomBot.prefix}Dashboard - Access the dashboard.
+4. ${BloomBot.prefix}home - Learn more about BloomBot.
+🌈 Let's make this group a vibrant and engaging community together!
+
+*Ⓒ BloomBot by Magneum™*
+*💻 homepage:* bit.ly/magneum`;
+
+              await BloomBot.sendMessage(jid, {
+                caption: welcomeMessage,
+                image: buffer,
+                mentions,
+              });
+              break;
+            }
+            case "remove": {
+              const farewellMessage = `*🌻 Farewell! 🌻*
+👋 @${sperson.replace(/['@s whatsapp.net']/g, "")}, we're sad to see you leave.
+😔 Although you won't be with us in the group anymore, your presence and contributions will be missed. We hope you had a great time here and wish you all the best on your future endeavors.
+✨ Remember, the door is always open for you. If you ever decide to come back, we'll be here to welcome you with open arms.
+🌈 Take care and stay amazing!
+
+*Ⓒ BloomBot by Magneum™*
+*💻 homepage:* bit.ly/magneum`;
+
+              await BloomBot.sendMessage(jid, {
+                caption: farewellMessage,
+                image: buffer,
+                mentions,
+              });
+              break;
+            }
+            default:
+              break;
+          }
+        }
+      } catch (error) {
+        logger.error(error);
       }
     }
-  });
+  );
+
   return BloomBot;
 };
