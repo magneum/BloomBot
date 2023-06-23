@@ -11,48 +11,50 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (!BloomBot.args.join(" ")) {
+      case true:
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} song-name_`,
-      );
+• _${BloomBot.prefix}${currFile} song-name_`
+        );
     }
 
     const data = await BloomBot.axios.get(
       "http://app.chordindonesia.com/?json=get_search_results&search=" +
-        BloomBot.args.join(" "),
+        BloomBot.args.join(" ")
     );
     const result = data.data;
-    if (result.count < 0) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (result.count < 0) {
+      case true:
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _no chords for this song were found_`,
-      );
+• _no chords for this song were found_`
+        );
     }
-    no = 1;
-    chord = "*•Chord Search Engine*\n\n";
+    let no = 1;
+    let chord = "*•Chord Search Engine*\n\n";
     for (const i of result.posts) {
       chord += `*📚Name:*  ${no++}\n`;
       chord += `*🌻Id:* ${i.id}\n`;
@@ -66,7 +68,7 @@ module.exports = async (
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",
-        }),
+        })
       );
       const bson = await кяуяєsi.json();
       const bsoni =
@@ -76,7 +78,7 @@ module.exports = async (
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${chord}`,
-        bsoni.url_image,
+        bsoni.url_image
       );
     } catch {
       await BloomBot.imagebutton(
@@ -84,7 +86,7 @@ module.exports = async (
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${chord}`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
   } catch (error) {

@@ -33,13 +33,16 @@ module.exports = async (
     }
 
     const text = "";
-    const langCode = "en";
-    for (const i = 0; i < BloomBot.args.length; i++) {
-      if (BloomBot.args[i] == `=`) {
-        langCode = BloomBot.args[i + 1];
-        break;
+    let langCode = "en";
+    for (let i = 0; i < BloomBot.args.length; i++) {
+      switch (BloomBot.args[i]) {
+        case "=":
+          langCode = BloomBot.args[i + 1];
+          break;
+        default:
+          text += BloomBot.args[i] + " ";
+          break;
       }
-      text += BloomBot.args[i] + " ";
     }
     if (text.length > 200) {
       await BloomBot.sendMessage(chatkey.chat, {

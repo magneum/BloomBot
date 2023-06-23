@@ -11,32 +11,33 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (true) {
+      case !BloomBot.args.join(" "):
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} gif-name_`,
-      );
+• _${BloomBot.prefix}${currFile} gif-name_`
+        );
     }
 
     try {
       const { data: gi } = await BloomBot.axios.get(
         `g.tenor.com/v1/search?q=${BloomBot.args.join(
-          " ",
-        )}&key=LIVDSRZULELA&limit=8`,
+          " "
+        )}&key=LIVDSRZULELA&limit=8`
       );
       return await BloomBot.sendMessage(
         chatkey.chat,
@@ -54,7 +55,7 @@ module.exports = async (
 *🌻for:* @${chatkey.sender.split("@")[0] || ""}`,
           mentions: [chatkey.sender],
         },
-        { quoted: chatkey },
+        { quoted: chatkey }
       );
     } catch (Èrrðr) {
       await BloomBot.sendMessage(chatkey.chat, {
@@ -67,7 +68,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _No such gif found!_`,
+• _No such gif found!_`
       );
     }
   } catch (error) {

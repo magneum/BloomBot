@@ -11,11 +11,11 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const response = await BloomBot.axios.get(
-      "https://api.adviceslip.com/advice",
+      "https://api.adviceslip.com/advice"
     );
     await BloomBot.imagebutton(
       BloomBot,
@@ -23,7 +23,7 @@ module.exports = async (
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
       
 • ${response.data.slip.advice}`,
-      BloomBot.display,
+      BloomBot.display
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

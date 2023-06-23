@@ -11,39 +11,40 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (true) {
+      case !BloomBot.args.join(" "):
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: {
+            text: "❌",
+            key: chatkey.key,
+          },
+        });
+        return chatkey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} manga-name_`,
-      );
-    }
+• _${BloomBot.prefix}${currFile} manga-name_`
+        );
 
-    await BloomBot.magfetch(
-      BloomBot,
-      `https://magneum.vercel.app/api/anime?q=${BloomBot.args.join(" ")}`,
-    ).then(async (response) => {
-      const mgdata = response.data;
+      default:
+        await BloomBot.magfetch(
+          BloomBot,
+          `https://magneum.vercel.app/api/anime?q=${BloomBot.args.join(" ")}`
+        ).then(async (response) => {
+          const mgdata = response.data;
 
-      BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `🌻 *Here's some information about ${
-          BloomBot.pushname || BloomBot.tagname
-        }:*
+          BloomBot.imagebutton(
+            BloomBot,
+            chatkey,
+            `🌻 *Here's some information about ${
+              BloomBot.pushname || BloomBot.tagname
+            }:*
 
 *🔍Mal Id:* ${mgdata.meta.id_mal}
 *🎬Title:* ${mgdata.meta.title}
@@ -72,11 +73,13 @@ module.exports = async (
 *📖Synopsis:* ${mgdata.meta.synopsis}
 *👥Characters:* ${mgdata.meta.characters}
 *👥Staff:* ${mgdata.meta.staffs}`,
-        mgdata.meta.image,
-      );
-    });
+            mgdata.meta.image
+          );
+        });
+    }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];

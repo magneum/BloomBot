@@ -11,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const кяуяєs = await BloomBot.axios.get("chatkey.life/api/v2/fact");
@@ -21,29 +21,42 @@ module.exports = async (
           auth: "3e7756c85df54b78f934a284c11abe4e",
           method: "search",
           term: "random",
-        }),
+        })
       );
       const bson = await кяуяєsi.json();
       const bsoni =
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
-      await BloomBot.imagebutton(
-        BloomBot,
-        chatkey,
-        `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
+      switch (true) {
+        case Boolean(BloomBot.pushname || BloomBot.tagname):
+          await BloomBot.imagebutton(
+            BloomBot,
+            chatkey,
+            `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${кяуяєs.data.fact}`,
-        bsoni.url_image,
-      );
+            bsoni.url_image
+          );
+          break;
+        default:
+          await BloomBot.imagebutton(
+            BloomBot,
+            chatkey,
+            `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
+• ${кяуяєs.data.fact}`,
+            BloomBot.display
+          );
+      }
     } catch {
       await BloomBot.imagebutton(
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${кяуяєs.data.fact}`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];
