@@ -62,15 +62,17 @@ module.exports = async (
     } catch {
       ProfilePic = BloomBot.display;
     }
-    if (!BloomBot.args) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+
+    switch (true) {
+      case !BloomBot.args:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
@@ -78,93 +80,88 @@ module.exports = async (
 *🌻Usage:*   
 • _${BloomBot.prefix}${currFile} on
 • _${BloomBot.prefix}${currFile} off_`
-      );
-    } else if (
-      BloomBot.args[0] === "ON" ||
-      BloomBot.args[0] === "on" ||
-      BloomBot.args[0] === "On"
-    ) {
-      return await BloomBot.LinkList.findOne(
-        {
-          serverId: Sockey.chat,
-        },
-        async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
-          if (!server) {
-            new BloomBot.LinkList({
-              serverId: Sockey.chat,
-              value: "ON",
-            }).save();
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+        );
+
+      case ["ON", "on", "On"].includes(BloomBot.args[0]):
+        return await BloomBot.LinkList.findOne(
+          {
+            serverId: Sockey.chat,
+          },
+          async (error, server) => {
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
+            if (!server) {
+              new BloomBot.LinkList({
+                serverId: Sockey.chat,
+                value: "ON",
+              }).save();
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
-              ProfilePic
-            );
-          } else {
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+                ProfilePic
+              );
+            } else {
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ✅On`,
-              ProfilePic
-            );
+                ProfilePic
+              );
+            }
           }
-        }
-      );
-    } else if (
-      BloomBot.args[0] === "OFF" ||
-      BloomBot.args[0] === "off" ||
-      BloomBot.args[0] === "Off"
-    ) {
-      return await BloomBot.LinkList.findOne(
-        {
-          serverId: Sockey.chat,
-        },
-        async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
-          if (!server) {
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+        );
+
+      case ["OFF", "off", "Off"].includes(BloomBot.args[0]):
+        return await BloomBot.LinkList.findOne(
+          {
+            serverId: Sockey.chat,
+          },
+          async (error, server) => {
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
+            if (!server) {
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
-              ProfilePic
-            );
-          } else {
-            await server.delete();
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
+                ProfilePic
+              );
+            } else {
+              await server.delete();
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 *📜Group:* ${gmeta.subject || ""}
 *🎖️Autolink:* ❌OFF`,
-              ProfilePic
-            );
+                ProfilePic
+              );
+            }
           }
-        }
-      );
-    } else {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+        );
+
+      default:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
@@ -172,12 +169,13 @@ module.exports = async (
 *🌻Usage:*   
 • _${BloomBot.prefix}${currFile} on
 • _${BloomBot.prefix}${currFile} off_`
-      );
+        );
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
+
 module.exports.aliases = [
   "nohyper",
   "nolink",

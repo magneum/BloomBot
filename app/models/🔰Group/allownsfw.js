@@ -14,47 +14,46 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!Sockey.isGroup) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-> It's a group command!`
-      );
-    } else if (!isAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-> This is an Admin only Command!`
-      );
-    } else if (!isbotAdmin) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-> bot not Admin!`
-      );
-    } else
-      "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+    switch (true) {
+      case !Sockey.isGroup:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n> It's a group command!`
+        );
+      case !isAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n> This is an Admin only Command!`
+        );
+      case !isbotAdmin:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n> bot not Admin!`
+        );
+      default:
+        "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ⒸBloomBot by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+    }
     try {
       ProfilePic = await BloomBot.profilePictureUrl(Sockey.chat, "image");
     } catch {
@@ -68,108 +67,95 @@ module.exports = async (
         },
       });
       return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-> No query provided!
-
-*🌻Usage:*   
-• ${BloomBot.prefix}${currFile} on
-• ${BloomBot.prefix}${currFile} off`
+        `*😥Apologies:* _${
+          BloomBot.pushname || BloomBot.tagname
+        }_\n\n*❌Error:* \n> No query provided!\n\n*🌻Usage:* \n• ${
+          BloomBot.prefix
+        }${currFile} on\n• ${BloomBot.prefix}${currFile} off`
       );
-    } else if (
-      BloomBot.args[0] === "ON" ||
-      BloomBot.args[0] === "on" ||
-      BloomBot.args[0] === "On"
-    ) {
-      return await BloomBot.nsfwCheck.findOne(
-        {
-          serverId: Sockey.chat,
-        },
-        async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
-          if (!server) {
-            new BloomBot.nsfwCheck({
-              serverId: Sockey.chat,
-              value: "ON",
-            }).save();
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
-*📜Group:* ${gmeta.subject || ""}
-*🎖️Antinsfw:* ✅On`,
-              ProfilePic
-            );
-          } else
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
-*📜Group:* ${gmeta.subject || ""}
-*🎖️Antinsfw:* ✅On`,
-              ProfilePic
-            );
-        }
-      );
-    } else if (
-      BloomBot.args[0] === "OFF" ||
-      BloomBot.args[0] === "off" ||
-      BloomBot.args[0] === "Off"
-    ) {
-      return await BloomBot.nsfwCheck.findOne(
-        {
-          serverId: Sockey.chat,
-        },
-        async (error, server) => {
-          if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
-          if (!server) {
-            return await BloomBot.imagebutton(
-              BloomBot,
-              Sockey,
-              `*🌻Hola!* ${currFile} for ${
-                BloomBot.pushname || BloomBot.tagname
-              }
-*📜Group:* ${gmeta.subject || ""}
-*🎖️Antinsfw:* ❌OFF`,
-              ProfilePic
-            );
-          } else await server.delete();
-          return await BloomBot.imagebutton(
-            BloomBot,
-            Sockey,
-            `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
-*📜Group:* ${gmeta.subject || ""}
-*🎖️Antinsfw:* ❌OFF`,
-            ProfilePic
-          );
-        }
-      );
-    } else
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-    return Sockey.reply(
-      `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-> No query provided!
-
-*🌻Usage:*   
-• ${BloomBot.prefix}${currFile} on
-• ${BloomBot.prefix}${currFile} off`
-    );
+    }
+    switch (BloomBot.args[0].toUpperCase()) {
+      case "ON":
+        return await BloomBot.nsfwCheck.findOne(
+          {
+            serverId: Sockey.chat,
+          },
+          async (error, server) => {
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
+            if (!server) {
+              new BloomBot.nsfwCheck({
+                serverId: Sockey.chat,
+                value: "ON",
+              }).save();
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }\n\n*📜Group:* ${gmeta.subject || ""}\n*🎖️Antinsfw:* ✅On`,
+                ProfilePic
+              );
+            } else {
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }\n\n*📜Group:* ${gmeta.subject || ""}\n*🎖️Antinsfw:* ✅On`,
+                ProfilePic
+              );
+            }
+          }
+        );
+      case "OFF":
+        return await BloomBot.nsfwCheck.findOne(
+          {
+            serverId: Sockey.chat,
+          },
+          async (error, server) => {
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
+            if (!server) {
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }\n\n*📜Group:* ${gmeta.subject || ""}\n*🎖️Antinsfw:* ❌OFF`,
+                ProfilePic
+              );
+            } else {
+              await server.delete();
+              return await BloomBot.imagebutton(
+                BloomBot,
+                Sockey,
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }\n\n*📜Group:* ${gmeta.subject || ""}\n*🎖️Antinsfw:* ❌OFF`,
+                ProfilePic
+              );
+            }
+          }
+        );
+      default:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n> No query provided!\n\n*🌻Usage:* \n• ${
+            BloomBot.prefix
+          }${currFile} on\n• ${BloomBot.prefix}${currFile} off`
+        );
+    }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
+
 module.exports.aliases = [
   "nsfw_enabled",
   "allow_nsfw",

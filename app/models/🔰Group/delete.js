@@ -14,55 +14,54 @@ module.exports = async (
   participants
 ) => {
   try {
-    if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Could not find any Image/Video/Text in context!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`
-      );
+    switch (!BloomBot.quoted) {
+      case true:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _Could not find any Image/Video/Text in context!_\n\n*🌻Usage:* \n• _${
+            BloomBot.prefix
+          }${currFile} reply to Image/Video/Text_`
+        );
     }
 
     const { isBaileys } = BloomBot.quoted;
-    if (!isBaileys) {
-      await BloomBot.sendMessage(Sockey.chat, {
-        react: {
-          text: "❌",
-          key: Sockey.key,
-        },
-      });
-      return Sockey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
-
-*❌Error:* 
-• _Can not delete massage from another userId except mine!_
-
-*🌻Usage:* 
-• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`
-      );
-    } else {
-      return await BloomBot.sendMessage(Sockey.chat, {
-        delete: {
-          remoteJid: Sockey.chat,
-          fromMe: true,
-          id: Sockey.quoted.id,
-          participant: Sockey.quoted.sender,
-        },
-      });
+    switch (!isBaileys) {
+      case true:
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${
+            BloomBot.pushname || BloomBot.tagname
+          }_\n\n*❌Error:* \n• _Can not delete massage from another userId except mine!_\n\n*🌻Usage:* \n• _${
+            BloomBot.prefix
+          }${currFile} reply to Image/Video/Text_`
+        );
+      default:
+        return await BloomBot.sendMessage(Sockey.chat, {
+          delete: {
+            remoteJid: Sockey.chat,
+            fromMe: true,
+            id: Sockey.quoted.id,
+            participant: Sockey.quoted.sender,
+          },
+        });
     }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
+
 module.exports.aliases = [
   "remove",
   "purge",
