@@ -31,7 +31,7 @@ module.exports = async (
         return chatkey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
           *❌Error:* 
-          > _Owner Only Command!_`
+          • _Owner Only Command!_`
         );
       case !BloomBot.args.join(" "):
         await BloomBot.sendMessage(chatkey.chat, {
@@ -43,9 +43,9 @@ module.exports = async (
         return chatkey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
           *❌Error:* 
-          > _No query provided!_
+          • _No query provided!_
           *🌻Usage:*   
-          > _${BloomBot.prefix}${currFile} message_`
+          • _${BloomBot.prefix}${currFile} message_`
         );
       default:
         const BloomBotGroups = await BloomBot.groupFetchAllParticipating();

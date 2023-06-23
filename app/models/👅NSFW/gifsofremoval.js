@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,77 +11,66 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    return await BloomBot.nsfwCheck.findOne(
-      {
-        serverId: chatkey.chat,
-      },
-      async (error, server) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
-        if (!server) {
-          await BloomBot.sendMessage(chatkey.chat, {
-            react: {
-              text: "❌",
-              key: chatkey.key,
-            },
-          });
-          return chatkey.reply(
-            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    const server = await BloomBot.nsfwCheck.findOne({ serverId: chatkey.chat });
+
+    switch (!server) {
+      case true:
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: { text: "❌", key: chatkey.key },
+        });
+        return chatkey.reply(`*😥 Apologies:* _${
+          BloomBot.pushname || BloomBot.tagname
+        }_
 
 *❌Error:*
-> NSFW Commands have been turned off for this group.
-> You may ask the admins to turn it on.`,
-          );
-        } else {
-          await BloomBot.magfetch(
-            BloomBot,
-            "https://magneum.vercel.app/api/nsfw?q=" + currFile,
-          ).then(async (response) => {
-            const mgdata = response.data;
-            
-            if (!mgdata.meta.thumbnail) {
-              await BloomBot.sendMessage(chatkey.chat, {
-                react: {
-                  text: "❌",
-                  key: chatkey.key,
-                },
-              });
-              return chatkey.reply(`*😥Apologies:* _${BloomBot.pushname}_
+> NSFW commands have been disabled for this group.
+> You can ask the administrators to enable them.`);
+    }
+
+    const response = await BloomBot.magfetch(
+      BloomBot,
+      `https://magneum.vercel.app/api/nsfw?q=${currFile}`
+    );
+    const mgdata = response.data;
+
+    switch (!mgdata.meta.thumbnail) {
+      case true:
+        await BloomBot.sendMessage(chatkey.chat, {
+          react: { text: "❌", key: chatkey.key },
+        });
+        return chatkey.reply(`*😥 Apologies:* _${BloomBot.pushname}_
 
 *❌Error:* There has been an API Error. Please try again later.`);
-            } else
-              await BloomBot.imagebutton(
-                BloomBot,
-                chatkey,
-                `*🌻Here, ${currFile} for @${
-                  BloomBot.tagname || BloomBot.pushname
-                }:*
+    }
 
-┌╔═☰ *❗ADULT❗*
-║> 💡Title: ${mgdata.meta.title || null}
-║> 🖊️Author: ${mgdata.meta.author || null}
-║> ❣️Topic: ${mgdata.meta.topic || null}
-╚══☰
-┌╔═☰
-║>  *❓META INFO❓*
-║> 🎊Status: ${mgdata.meta.status || null}
-║> 🔐Uuid: ${mgdata.meta.uuid || null}
-║> 🗓️Date_create: ${mgdata.meta.date_create || null}
-║> 🧀Query: ${mgdata.meta.query || null}
-║> 📢Domain: ${mgdata.meta.domain || null}
-║> 💯Sub_reddit_id: ${mgdata.meta.sub_reddit_id || null}
-║> 🌐Link: ${mgdata.meta.web_link || null}
-╚═══════⋑`,
-                mgdata.meta.thumbnail,
-              );
-          });
-        }
-      },
+    const message = `
+*🌻 Here is ${currFile} for @${BloomBot.tagname || BloomBot.pushname}:*
+
+*❗ ADULT CONTENT ❗*
+*• 💡Title:* ${mgdata.meta.title || "Not available"}
+*• 🖊️Author:* ${mgdata.meta.author || "Not available"}
+*• ❣️Topic:* ${mgdata.meta.topic || "Not available"}
+
+*❓ META INFO ❓*
+*• 🎊Status:* ${mgdata.meta.status || "Not available"}
+*• 🔐UUId:* ${mgdata.meta.uuid || "Not available"}
+*• 🗓️Date Created:* ${mgdata.meta.date_create || "Not available"}
+*• 🧀Query:* ${mgdata.meta.query || "Not available"}
+*• 📢Domain:* ${mgdata.meta.domain || "Not available"}
+*• 💯Subreddit Id:* ${mgdata.meta.sub_reddit_id || "Not available"}
+*• 🌐Link:* ${mgdata.meta.web_link || "Not available"}`;
+    await BloomBot.imagebutton(
+      BloomBot,
+      chatkey,
+      message,
+      mgdata.meta.thumbnail
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [];

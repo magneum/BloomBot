@@ -25,10 +25,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} user Id_`,
+• _${BloomBot.prefix}${currFile} user Id_`,
       );
     }
 
@@ -62,10 +62,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Please provide a valid instagram Id!_
+• _Please provide a valid instagram Id!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} user Id_`,
+• _${BloomBot.prefix}${currFile} user Id_`,
       );
     }
   } catch (error) {

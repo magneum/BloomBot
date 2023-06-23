@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   if (!BloomBot.mentionByReply) {
     return chatkey.reply(`*😥Apologies:* _${
@@ -18,7 +19,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -29,7 +30,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -40,7 +41,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -51,7 +52,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -70,7 +71,7 @@ module.exports = async (
       }_ 
 
 *❌Error:* 
-> _Can't pay self account!_
+• _Can't pay self account!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -102,7 +103,7 @@ module.exports = async (
           }_ 
 
 *❌Error:* 
-> _You Have 0-gold To Pay_
+• _You Have 0-gold To Pay_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
@@ -114,7 +115,7 @@ module.exports = async (
           }_ 
 
 *❌Error:* 
-> _You Have 0-gold To Pay_
+• _You Have 0-gold To Pay_
 
 *💰Balance:*
 >${uPayer.money}
@@ -163,7 +164,7 @@ module.exports = async (
 │║> *💰Balance:* ${payGold}
 │║> *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
 
@@ -178,7 +179,9 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 
 ┌『 *📥Paying Account* 』
 │║> *💰Balance:* ${uPayer.money}
@@ -189,12 +192,12 @@ module.exports = async (
 │║> *💰Balance:* ${uBonus.money}
 │║> *🐿️Account To Pay:* @${receiverName}
 ┕╚═══════⋑`,
-                BloomBot.display,
+                BloomBot.display
               );
-            },
+            }
           );
         }
-      },
+      }
     );
   } else {
     return chatkey.reply(`*😥Apologies:* _${
@@ -202,7 +205,7 @@ module.exports = async (
     }_ 
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);

@@ -32,7 +32,7 @@ module.exports = async (
         return chatkey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-> _Owner Only Command!_`
+• _Owner Only Command!_`
         );
 
       case BloomBot.mentionByReply:
@@ -128,11 +128,11 @@ module.exports = async (
         return chatkey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-> _Could not find any context!_
+• _Could not find any context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to person to ban_
-> _${
+• _${BloomBot.prefix}${currFile} reply to person to ban_
+• _${
             BloomBot.prefix
           }${currFile} don't reply to anyone and group will be banned_`
         );

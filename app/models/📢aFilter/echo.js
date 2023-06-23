@@ -24,10 +24,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Audio in context!_
+• _Could not find any Audio in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`,
       );
     }
     ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
@@ -83,10 +83,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Audio in context!_
+• _Could not find any Audio in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Audio_`,
+• _${BloomBot.prefix}${currFile} reply to Audio_`,
       );
     }
   } catch (error) {

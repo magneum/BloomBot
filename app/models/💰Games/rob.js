@@ -1,24 +1,8 @@
-//  ╔◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
-//  ║⧉༻ 🤖𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭🌻𝐌𝐮𝐥𝐭𝐢-𝐃𝐞𝐯𝐢𝐜𝐞🤖
-//  ║  IS A WHATSAPP USER-BOT WITH AUTOMATION, MODERATION, MUSIC, GAMES AND MORE OF 200+ COMMANDS!
-//  ║
-//  ║🌟 A versatile whatsApp multi-purpose bot designed for group management and user convenience.
-//  ║🚀 Simplifies group management tasks and enhances the overall user experience.
-//  ║⚠️ Please note: Engaging in spamming activities may lead to account suspension. Use responsibly!
-//  ║🎉 BloomBot is intended for fun and convenience, but we're not responsible for account bans.
-//  ║🔀 forking the repository is allowed, but customized versions or modified plugins are unsupported.
-//  ║⚠️ Exercise caution and take responsibility for any modifications made to the bot.
-//  ║📞 Need assistance or have issues? Contact our developers at +918436686758 and +918250889325.
-//  ║🔄 We'll continue providing updates and support for the original version of the bot.
-//  ║👉 Enjoy the features and functionality of BloomBot responsibly! Make the most out of your
-//  ║   whatsApp group management experience! 🎉
-//  ║
-//  ║🐞 Developers: +918436686758, +918250889325
-//  ╚◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ ᴠᴏxʙᴏᴛ вσт by Magneum™ ]☱☱☱☱☱☱☱☱☱☱☱☱☱"
 require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -27,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   const ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ = Math.floor(Math.random() * (2000 - 1500 + 1)) + 1500;
   const MoneyLaptop = Math.floor(Math.random() * (4000 - 3000 + 1)) + 3000;
@@ -51,7 +35,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Can't rob your own bank_`,
+• _Can't rob your own bank_`
       );
     }
 
@@ -80,11 +64,15 @@ module.exports = async (
               });
               await newUser
                 .save()
-                .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+                .catch(async (error) =>
+                  BloomBot.handlerror(BloomBot, chatkey, error)
+                );
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -92,7 +80,7 @@ module.exports = async (
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 1/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Guard Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took 0gold.ReTry Again!`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -109,11 +97,15 @@ module.exports = async (
               });
               await newUser
                 .save()
-                .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+                .catch(async (error) =>
+                  BloomBot.handlerror(BloomBot, chatkey, error)
+                );
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -122,7 +114,7 @@ module.exports = async (
 *🔥𝐁𝐚𝐧𝐤 𝗦𝗮𝗳𝗲𝘁𝘆:* 2/4 used
 *❌𝗘𝗿𝗿𝗼𝗿:* You are the worst robber.
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:  Fell On a pool and died!.ReTry!`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -130,7 +122,9 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -138,7 +132,7 @@ module.exports = async (
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You Will Need Atleast 1000 in your bank before you can rob someone!
 🍌‍𝗥𝗲𝗮𝘀𝗼𝗻: If You Get Caught, ᴠɪᴄᴛɪᴍ will charge you money to spare your life.`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -146,7 +140,9 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲
 ╚◇══════════◇╝
@@ -155,7 +151,7 @@ module.exports = async (
 *@${receiverName}*
 *❌𝗘𝗿𝗿𝗼𝗿:*  needs atleast 1000gold in their account before you can rob them!
 *🍌‍𝗥𝗲𝗮𝘀𝗼𝗻:* Broke AF! Leave This Begger Alone!`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -184,13 +180,13 @@ module.exports = async (
                       await newUser
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -207,7 +203,7 @@ module.exports = async (
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName}'s Bank Police Caught You and Took You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     }
 
@@ -223,13 +219,13 @@ module.exports = async (
                       await newUser
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -245,7 +241,7 @@ module.exports = async (
 *❌𝗘𝗿𝗿𝗼𝗿:* @${receiverName} caught You Red Handed and Sent You To The Jail!
 *🧈Status:* You Got Arrested and Took ${ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}gold!
 *💰Balance:* ${ᴄᴇᴄᴏ.money}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     }
 
@@ -256,7 +252,7 @@ module.exports = async (
                     ) {
                       const Time = ms(
                         ᴄᴜʟᴘʀɪᴛ.PermanentRobberyTime -
-                          (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime),
+                          (Date.now() - ᴄᴜʟᴘʀɪᴛ.CurrentRobberyTime)
                       );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -270,7 +266,7 @@ module.exports = async (
 
 *❌𝗘𝗿𝗿𝗼𝗿:* You've Recently Tried Robbing Someone!.
 🕐𝐑𝐨𝐛 𝗔𝗴𝗮𝗶𝗻: ${Time.minutes}m ${Time.seconds}s.`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     }
 
@@ -287,22 +283,22 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -321,7 +317,7 @@ module.exports = async (
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.laptop > 0) {
                       ᴠɪᴄᴛɪᴍ.laptop = ᴠɪᴄᴛɪᴍ.laptop - 1;
@@ -336,22 +332,22 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -370,7 +366,7 @@ module.exports = async (
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     } else if (ᴠɪᴄᴛɪᴍ.charm > 0) {
                       ᴠɪᴄᴛɪᴍ.charm = ᴠɪᴄᴛɪᴍ.charm - 1;
@@ -385,22 +381,22 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -419,7 +415,7 @@ module.exports = async (
 **💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲* *
 *🐌𝐂𝐮𝐥𝐩𝐫𝐢𝐭:* ${ᴄᴇᴄᴏ.money}
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* ${ᴠᴇᴄᴏ.money}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     }
 
@@ -430,12 +426,12 @@ module.exports = async (
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -461,7 +457,7 @@ module.exports = async (
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     } else {
                       ᴠᴇᴄᴏ.money = ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
@@ -470,12 +466,12 @@ module.exports = async (
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error),
+                          BloomBot.handlerror(BloomBot, chatkey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
@@ -499,16 +495,16 @@ module.exports = async (
 *💀𝐕𝐢𝐜𝐭𝐢𝐦:* @${receiverName}
 *❓𝗕𝗲𝗳𝗼𝗿𝗲:* ${ᴠᴇᴄᴏ.money}
 *💸𝗔𝗳𝘁𝗲𝗿:* ${ᴠᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ}`,
-                        BloomBot.display,
+                        BloomBot.display
                       );
                     }
-                  },
+                  }
                 );
-              },
+              }
             );
-          },
+          }
         );
-      },
+      }
     );
   } else {
     return await BloomBot.imagebutton(
@@ -540,7 +536,7 @@ module.exports = async (
 │║> *🧀𝗚𝗼𝗹𝗱:* To buy laptop you will need to have 6000gold.
 │║> *🌻𝗣𝗲𝗿𝗸𝘀:* If robbery attempt was made on your account, a charm will save your entire balance and will automatically deduct random(5000-6000) from Culprit's account and add it to your account!
 ┕╚═══════⋑`,
-      BloomBot.display,
+      BloomBot.display
     );
   }
 };

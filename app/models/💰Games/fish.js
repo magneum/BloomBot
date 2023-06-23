@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     await BloomBot.Economy.findOne(
@@ -43,20 +44,22 @@ module.exports = async (
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
-            BloomBot.display,
+            BloomBot.display
           );
         } else {
           if (userEco.fishtimeout - (Date.now() - userEco.fishdone) > 0) {
             const time = BloomBot.ms(
-              userEco.fishtimeout - (Date.now() - userEco.fishdone),
+              userEco.fishtimeout - (Date.now() - userEco.fishdone)
             );
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 ❌𝗘𝗿𝗿𝗼𝗿: You've Recently Casted A Line. 
 🕐𝗙𝗶𝘀𝗵 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              BloomBot.display,
+              BloomBot.display
             );
           } else {
             const fishId = Math.floor(Math.random() * 10) + 1;
@@ -79,15 +82,17 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 🎣𝗜𝘁𝗲𝗺_𝗙𝗼𝘂𝗻𝗱: You Cast Out Your Line And Caught A ${fishh.symbol}.
 💵𝗪𝗼𝗿𝘁𝗵: It'd Sell for Around *${worth}*!
 💍𝗜𝘁𝗲𝗺 𝗥𝗮𝗿𝗶𝘁𝘆: ${rarity}`,
-              BloomBot.display,
+              BloomBot.display
             );
           }
         }
-      },
+      }
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

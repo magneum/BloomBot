@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     BloomBot.Economy.findOne(
@@ -45,20 +46,22 @@ module.exports = async (
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 *💰Balance:* Just Bloomed Your Account!`,
-            BloomBot.display,
+            BloomBot.display
           );
         } else {
           if (userEco.timeout - (Date.now() - userEco.daily) > 0) {
             const ᴄʟᴏᴄᴋ = BloomBot.ms(
-              userEco.timeout - (Date.now() - userEco.daily),
+              userEco.timeout - (Date.now() - userEco.daily)
             );
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 ❌𝗘𝗿𝗿𝗼𝗿: You've already collected your daily reward!
 💵𝗡𝗲𝘅𝘁 𝗗𝗮𝗶𝗹𝘆: ${ᴄʟᴏᴄᴋ.hours}h ${ᴄʟᴏᴄᴋ.minutes}m ${ᴄʟᴏᴄᴋ.seconds}s`,
-              BloomBot.display,
+              BloomBot.display
             );
           }
 
@@ -74,10 +77,10 @@ module.exports = async (
 ✅ 𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
 💵 𝐃𝐚𝐢𝐥𝐲 𝐌𝐨𝐧𝐞𝐲:  500 
 💰 𝗧𝗼𝘁𝗮𝗹 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: ${userEco.money}`,
-            BloomBot.display,
+            BloomBot.display
           );
         }
-      },
+      }
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const JworkR =
@@ -45,20 +46,22 @@ module.exports = async (
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
-            BloomBot.display,
+            BloomBot.display
           );
         } else {
           if (userEco.worktimeout - (Date.now() - userEco.workdone) > 0) {
             const time = BloomBot.ms(
-              userEco.worktimeout - (Date.now() - userEco.workdone),
+              userEco.worktimeout - (Date.now() - userEco.workdone)
             );
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 ❌ 𝗘𝗿𝗿𝗼𝗿: _You have already worked recently._ 
 🕐 𝗪𝗼𝗿𝗸_𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-              BloomBot.display,
+              BloomBot.display
             );
           } else {
             const amount = Math.floor(Math.random() * 80) + 1;
@@ -71,14 +74,16 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 👔𝗪𝗼𝗿𝗸_𝗦𝘁𝗮𝘁𝘂𝘀: ${JworkR}.
 🪙𝗘𝗮𝗿𝗻𝗲𝗱: ${amount}`,
-              BloomBot.display,
+              BloomBot.display
             );
           }
         }
-      },
+      }
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

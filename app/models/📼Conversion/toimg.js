@@ -24,10 +24,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image in context!_
+• _Could not find any Image in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`,
       );
     }
 
@@ -71,10 +71,10 @@ module.exports = async (
               `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image in context!_
+• _Could not find any Image in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`,
             );
           }
 
@@ -130,10 +130,10 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image in context!_
+• _Could not find any Image in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image_`,
+• _${BloomBot.prefix}${currFile} reply to Image_`,
       );
     }
   } catch (error) {

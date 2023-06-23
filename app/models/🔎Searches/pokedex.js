@@ -25,10 +25,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} manga-name_`,
+• _${BloomBot.prefix}${currFile} manga-name_`,
       );
     }
 
@@ -51,7 +51,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No Such Pokemon available!_`,
+• _No Such Pokemon available!_`,
       );
     }
 

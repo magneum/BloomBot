@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     await BloomBot.imagebutton(
@@ -31,7 +32,7 @@ module.exports = async (
 │║> 💍 *Platinum:* 80 Commands
 │║> 💎 *Diamond:* 100 Commands
 ┕╚═══════⋑`,
-      BloomBot.display,
+      BloomBot.display
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

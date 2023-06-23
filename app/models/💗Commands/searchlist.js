@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   await BloomBot.imagebutton(
     BloomBot,
@@ -38,6 +39,6 @@ module.exports = async (
 │║• ${BloomBot.prefix}reddit
 │║• ${BloomBot.prefix}ytsearch
 ┕╚═══════⋑`,
-    BloomBot.display,
+    BloomBot.display
   );
 };

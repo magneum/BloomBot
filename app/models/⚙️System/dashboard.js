@@ -26,14 +26,14 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
           
 *❌Error:* 
-> _This Command is not yet ready for public usage!_`
+• _This Command is not yet ready for public usage!_`
         );
       case !isAdmin:
         return chatkey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
           
 *❌Error:* 
-> _You are not authorized to use this command!_`
+• _You are not authorized to use this command!_`
         );
     }
   } catch (error) {

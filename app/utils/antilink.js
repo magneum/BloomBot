@@ -50,7 +50,7 @@ participants,
     await chatkey.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
-> _Kicked! One Less MoFo!_`
+• _Kicked! One Less MoFo!_`
     );
     return await BloomBot.sendMessage(chatkey.chat, {
       delete: {
@@ -76,7 +76,7 @@ participants,
     await chatkey.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
-> _Kicked! One Less MoFo!_`
+• _Kicked! One Less MoFo!_`
     );
     return await BloomBot.sendMessage(chatkey.chat, {
       delete: {

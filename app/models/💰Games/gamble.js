@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
@@ -26,14 +27,14 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
       );
     }
 
@@ -48,14 +49,14 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
       );
     }
 
@@ -70,14 +71,14 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
       );
     }
 
@@ -96,14 +97,14 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
       );
     }
 
@@ -116,7 +117,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
 
@@ -127,7 +128,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
 
@@ -138,7 +139,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
 
@@ -149,7 +150,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
 
@@ -160,7 +161,7 @@ module.exports = async (
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
-        BloomBot.display,
+        BloomBot.display
       );
     }
 
@@ -192,7 +193,7 @@ module.exports = async (
             chatkey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* Just Bloomed Your Account!`,
-            BloomBot.display,
+            BloomBot.display
           );
         }
 
@@ -218,10 +219,12 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 *🧈Status:* Added To DB!
 🦋Try Again!`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -232,15 +235,17 @@ module.exports = async (
             ) {
               const time = BloomBot.ms(
                 userGamble.Gambconstimeout -
-                  (Date.now() - userGamble.Gambledone),
+                  (Date.now() - userGamble.Gambledone)
               );
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ❌𝗘𝗿𝗿𝗼𝗿: _You've Recently Gambled!_
 🕐𝗚𝗮𝗺𝗯𝗹𝗲 𝗔𝗴𝗮𝗶𝗻: ${time.minutes}m ${time.seconds}s`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -267,14 +272,14 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Argument Needed!_
+• _Argument Needed!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} _color money_
+• _${BloomBot.prefix}${currFile} _color money_
 🌿𝐓𝐨𝐩𝐢𝐜: Gamble🤑AI
 (medium) *Red:* _even out of 10_ 
 (hard) *Black:* _2 out of 10_ 
-(god) *Purple:* _1 out of 10_`,
+(god) *Purple:* _1 out of 10_`
               );
             }
 
@@ -290,14 +295,14 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
               );
             }
 
@@ -312,14 +317,14 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
               );
             }
 
@@ -340,14 +345,14 @@ module.exports = async (
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} color money_
+• _${BloomBot.prefix}${currFile} color money_
 
 *(medium) Red:* _even out of 10_ 
 *(hard) Black:* _2 out of 10_ 
-*(god) Purple:* _1 out of 10_`,
+*(god) Purple:* _1 out of 10_`
               );
             }
 
@@ -364,10 +369,12 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 🟣𝗘𝗮𝗿𝗻𝗲𝗱: You won *${money}* gold.
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _15x_`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -384,10 +391,12 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 🔴𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _1.5x_`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -404,10 +413,12 @@ module.exports = async (
               return await BloomBot.imagebutton(
                 BloomBot,
                 chatkey,
-                `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+                `*🌻Hola!* ${currFile} for ${
+                  BloomBot.pushname || BloomBot.tagname
+                }
 ⚫𝗘𝗮𝗿𝗻𝗲𝗱: _won *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _2x_`,
-                BloomBot.display,
+                BloomBot.display
               );
             }
 
@@ -422,14 +433,16 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 💀𝗥𝗲𝘀𝘂𝗹𝘁: _lost *${money}* gold!_
 ⭐𝗠𝘂𝗹𝘁𝗶𝗽𝗹𝗶𝗲𝗿: _0x_`,
-              BloomBot.display,
+              BloomBot.display
             );
-          },
+          }
         );
-      },
+      }
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

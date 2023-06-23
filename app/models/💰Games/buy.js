@@ -2,6 +2,7 @@ require("🌟/config/index.js");
 const ppth = require("path");
 const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
+
 module.exports = async (
   BloomBot,
   chatkey,
@@ -10,7 +11,7 @@ module.exports = async (
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     let Item;
@@ -101,11 +102,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+• _${BloomBot.prefix}${currFile} item_
+• _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
 
@@ -120,11 +121,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+• _${BloomBot.prefix}${currFile} item_
+• _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
 
@@ -155,9 +156,11 @@ module.exports = async (
             return await BloomBot.imagebutton(
               BloomBot,
               chatkey,
-              `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
 *💰Balance:* _Just Bloomed Your Account!_`,
-              BloomBot.display,
+              BloomBot.display
             );
           }
           BloomBot.Robbery.findOne(
@@ -188,7 +191,7 @@ module.exports = async (
                     BloomBot.pushname || BloomBot.tagname
                   }
 *💰Balance:* _Just Bloomed Your Account!_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               } else {
                 if (userEco.money < ItemPrice) {
@@ -203,7 +206,7 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display,
+                    BloomBot.display
                   );
                 }
 
@@ -225,7 +228,7 @@ module.exports = async (
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display,
+                    BloomBot.display
                   );
                 }
 
@@ -247,7 +250,7 @@ module.exports = async (
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display,
+                    BloomBot.display
                   );
                 }
 
@@ -269,7 +272,7 @@ module.exports = async (
 🥳𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬: _Transaction Compconste!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                    BloomBot.display,
+                    BloomBot.display
                   );
                 }
                 return await BloomBot.imagebutton(
@@ -280,12 +283,12 @@ module.exports = async (
                   }
 *❌𝗘𝗿𝗿𝗼𝗿:* _Check If You Already Have That Item!_
 🧀 𝗜𝘁𝗲𝗺: _${Item}_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
-            },
+            }
           );
-        },
+        }
       );
     } else if (BadCatelog.includes(BloomBot.args[0])) {
       await BloomBot.Economy.findOne(
@@ -332,7 +335,7 @@ module.exports = async (
 🧀 𝗜𝘁𝗲𝗺: _${Item}_
 🪙 𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰 𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
 
@@ -359,7 +362,7 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _Just Bloomed Your Account!_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
 
@@ -375,7 +378,7 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🪙𝗜𝘁𝗲𝗺_𝗣𝗿𝗶𝗰𝗲: _${ItemPrice} gold_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
 
@@ -388,7 +391,7 @@ module.exports = async (
                   }
 ❌𝗘𝗿𝗿𝗼𝗿: _You Already Have That Item!_
 🧀𝗜𝘁𝗲𝗺: _${Item}_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
 
@@ -416,12 +419,12 @@ module.exports = async (
 🧀𝗜𝘁𝗲𝗺: _${Item}_
 🍯𝐏𝐞𝐫𝐤𝐬: _${userBadge.Limits}commands per day_
 💰𝗕𝗮𝗹𝗮𝗻𝗰𝗲: _${userEco.money} gold_`,
-                  BloomBot.display,
+                  BloomBot.display
                 );
               }
-            },
+            }
           );
-        },
+        }
       );
     } else {
       await BloomBot.sendMessage(chatkey.chat, {
@@ -434,11 +437,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _No query provided!_
+• _No query provided!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} item_
-> _You may use ${BloomBot.prefix}shop to look for items..._`,
+• _${BloomBot.prefix}${currFile} item_
+• _You may use ${BloomBot.prefix}shop to look for items..._`
       );
     }
   } catch (error) {

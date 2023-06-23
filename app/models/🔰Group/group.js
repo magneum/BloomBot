@@ -24,7 +24,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _It's a group command!_`,
+• _It's a group command!_`,
       );
     }
     if (!isAdmin) {
@@ -38,7 +38,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _This is an Admin only Command!_`,
+• _This is an Admin only Command!_`,
       );
     }
     if (!isbotAdmin) {
@@ -52,7 +52,7 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _bot not Admin!_`,
+• _bot not Admin!_`,
       );
     }
 
@@ -198,11 +198,11 @@ module.exports = async (
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Argument Missing!_
+• _Argument Missing!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} close/Bloom
-> _${BloomBot.prefix}${currFile} antilink on/off`,
+• _${BloomBot.prefix}${currFile} close/Bloom
+• _${BloomBot.prefix}${currFile} antilink on/off`,
         );
       }
     } else {
@@ -216,11 +216,11 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Argument Missing!_
+• _Argument Missing!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} close/Bloom
-> _${BloomBot.prefix}${currFile} antilink on/off`,
+• _${BloomBot.prefix}${currFile} close/Bloom
+• _${BloomBot.prefix}${currFile} antilink on/off`,
       );
     }
   } catch (error) {

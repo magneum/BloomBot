@@ -24,10 +24,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Could not find any Image/Video/Text in context!_
+• _Could not find any Image/Video/Text in context!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
       );
     }
 
@@ -43,10 +43,10 @@ module.exports = async (
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-> _Can not delete massage from another userId except mine!_
+• _Can not delete massage from another userId except mine!_
 
 *🌻Usage:* 
-> _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
+• _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
       );
     } else {
       return await BloomBot.sendMessage(chatkey.chat, {
