@@ -63,7 +63,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${chordFound}`,
+• ${chordFound}`,
         bsoni.url_image,
       );
     } catch {
@@ -71,7 +71,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${chordFound}`,
+• ${chordFound}`,
         BloomBot.display,
       );
     }

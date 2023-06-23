@@ -61,7 +61,7 @@ module.exports = async (
       BloomBot,
       chatkey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${Found}`,
+• ${Found}`,
       response.data[0].images.png.large_image_url,
     );
   } catch (error) {

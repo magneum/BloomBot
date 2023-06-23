@@ -43,7 +43,7 @@ module.exports = async (
       BloomBot,
       chatkey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${Gxt}`,
+• ${Gxt}`,
       BloomBot.display,
     );
   } catch (error) {

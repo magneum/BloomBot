@@ -30,7 +30,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.fact}`,
+• ${кяуяєs.data.fact}`,
         bsoni.url_image,
       );
     } catch {
@@ -38,7 +38,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.fact}`,
+• ${кяуяєs.data.fact}`,
         BloomBot.display,
       );
     }

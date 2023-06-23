@@ -73,8 +73,8 @@ module.exports = async (
 > No query provided!
 
 *🌻Usage:*   
-> ${BloomBot.prefix}${currFile} on
-> ${BloomBot.prefix}${currFile} off`,
+• ${BloomBot.prefix}${currFile} on
+• ${BloomBot.prefix}${currFile} off`,
       );
     } else if (
       BloomBot.args[0] === "ON" ||
@@ -156,8 +156,8 @@ module.exports = async (
 > No query provided!
 
 *🌻Usage:*   
-> ${BloomBot.prefix}${currFile} on
-> ${BloomBot.prefix}${currFile} off`,
+• ${BloomBot.prefix}${currFile} on
+• ${BloomBot.prefix}${currFile} off`,
     );
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);

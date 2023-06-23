@@ -17,19 +17,19 @@ module.exports = async (
     chatkey,
     `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🤖Hello, I am BloomBot User-bot🤖*
-> ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
+• ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 
 
 ┌『 *🔰${currFile.toUpperCase()}🔰* 』
-│║> ${BloomBot.prefix}antilink
-│║> ${BloomBot.prefix}allownsfw
-│║> ${BloomBot.prefix}delete
-│║> ${BloomBot.prefix}group
-│║> ${BloomBot.prefix}kick
-│║> ${BloomBot.prefix}promote
-│║> ${BloomBot.prefix}setdesc
-│║> ${BloomBot.prefix}seticon
-│║> ${BloomBot.prefix}tagall
+│║• ${BloomBot.prefix}antilink
+│║• ${BloomBot.prefix}allownsfw
+│║• ${BloomBot.prefix}delete
+│║• ${BloomBot.prefix}group
+│║• ${BloomBot.prefix}kick
+│║• ${BloomBot.prefix}promote
+│║• ${BloomBot.prefix}setdesc
+│║• ${BloomBot.prefix}seticon
+│║• ${BloomBot.prefix}tagall
 ┕╚═══════⋑`,
     BloomBot.display,
   );

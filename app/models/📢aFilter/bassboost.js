@@ -49,7 +49,7 @@ module.exports = async (
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
-> ${error}`);
+• ${error}`);
           } else {
             const Thumb = await BloomBot.getBuffer(BloomBot.display);
             return await BloomBot.sendMessage(

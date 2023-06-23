@@ -79,7 +79,7 @@ module.exports = async (
           chatkey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-> ${jsonformat(error)}`,
+• ${jsonformat(error)}`,
           ),
         );
     } else if (BloomBot.args[0] === "close") {
@@ -99,7 +99,7 @@ module.exports = async (
           chatkey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
-> ${jsonformat(error)}`,
+• ${jsonformat(error)}`,
           ),
         );
     } else if (BloomBot.args[0] === "antilink") {
@@ -122,7 +122,7 @@ module.exports = async (
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
-> ${error}`);
+• ${error}`);
             }
 
             if (!server) {
@@ -166,7 +166,7 @@ module.exports = async (
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
-> ${error}`);
+• ${error}`);
             }
 
             if (!server) {

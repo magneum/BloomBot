@@ -18,7 +18,7 @@ module.exports = async (
       BloomBot,
       chatkey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${await BloomBot.getDadjoke()}`,
+• ${await BloomBot.getDadjoke()}`,
       BloomBot.display,
     );
   } catch (error) {

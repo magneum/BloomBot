@@ -47,7 +47,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
-> ${mgdata.meta.url}`,
+• ${mgdata.meta.url}`,
         await BloomBot.akaneko.nsfw.ass(),
       );
     });

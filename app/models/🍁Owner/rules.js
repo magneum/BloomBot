@@ -25,7 +25,7 @@ module.exports = async (
       chatkey,
       `*🌻Here, ${currFile} for @${BloomBot.tagname || BloomBot.pushname}:*
 *🤖Hello, I am BloomBot User-bot🤖*
-> ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
+• ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 
 *🏮Rules:*
 > Do not abuse/disrespect bot and its owner.

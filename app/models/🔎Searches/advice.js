@@ -22,7 +22,7 @@ module.exports = async (
       chatkey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
       
-> ${response.data.slip.advice}`,
+• ${response.data.slip.advice}`,
       BloomBot.display,
     );
   } catch (error) {

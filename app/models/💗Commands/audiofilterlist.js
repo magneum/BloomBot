@@ -17,26 +17,26 @@ module.exports = async (
     chatkey,
     `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🤖Hello, I am BloomBot User-bot🤖*
-> ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
+• ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!
 
 
 ┌『 *📢${currFile.toUpperCase()}📢* 』
-│║> ${BloomBot.prefix}panning
-│║> ${BloomBot.prefix}bassboost
-│║> ${BloomBot.prefix}echo
-│║> ${BloomBot.prefix}fast
-│║> ${BloomBot.prefix}flanger
-│║> ${BloomBot.prefix}nightcore
-│║> ${BloomBot.prefix}phaser
-│║> ${BloomBot.prefix}reverse
-│║> ${BloomBot.prefix}slow
-│║> ${BloomBot.prefix}speed
-│║> ${BloomBot.prefix}subboost
-│║> ${BloomBot.prefix}superslow
-│║> ${BloomBot.prefix}superspeed
-│║> ${BloomBot.prefix}surround
-│║> ${BloomBot.prefix}vaporwave
-│║> ${BloomBot.prefix}vibrato
+│║• ${BloomBot.prefix}panning
+│║• ${BloomBot.prefix}bassboost
+│║• ${BloomBot.prefix}echo
+│║• ${BloomBot.prefix}fast
+│║• ${BloomBot.prefix}flanger
+│║• ${BloomBot.prefix}nightcore
+│║• ${BloomBot.prefix}phaser
+│║• ${BloomBot.prefix}reverse
+│║• ${BloomBot.prefix}slow
+│║• ${BloomBot.prefix}speed
+│║• ${BloomBot.prefix}subboost
+│║• ${BloomBot.prefix}superslow
+│║• ${BloomBot.prefix}superspeed
+│║• ${BloomBot.prefix}surround
+│║• ${BloomBot.prefix}vaporwave
+│║• ${BloomBot.prefix}vibrato
 ┕╚═══════⋑`,
     BloomBot.display,
   );

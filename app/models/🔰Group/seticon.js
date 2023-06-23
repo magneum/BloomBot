@@ -117,7 +117,7 @@ module.exports = async (
 > _Could not change group image!_
 
 *🐞Bug* 
-> ${error}`,
+• ${error}`,
         );
       });
   } catch (error) {

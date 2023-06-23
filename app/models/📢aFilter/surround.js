@@ -48,7 +48,7 @@ module.exports = async (
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:* 
-> ${error}`);
+• ${error}`);
           ("◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱[ BloomBot вσт by xhåÐr ]☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎");
           const Thumb = await BloomBot.getBuffer(BloomBot.display);
           return await BloomBot.sendMessage(

@@ -177,7 +177,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:*
-> ${error}`);
+• ${error}`);
         }
         BloomBot.userBanCheck.findOne(
           {
@@ -189,7 +189,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:*
-> ${error}`);
+• ${error}`);
             }
             if (banCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
             if (groupCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;

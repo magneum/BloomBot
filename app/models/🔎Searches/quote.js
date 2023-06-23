@@ -30,7 +30,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.fact}
+• ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
         bsoni.url_image,
@@ -40,7 +40,7 @@ module.exports = async (
         BloomBot,
         chatkey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
-> ${кяуяєs.data.fact}
+• ${кяуяєs.data.fact}
 > *📝Content:* ${кяуяєs.data.quote.body}
 > *✍️Author:* ${кяуяєs.data.quote.author}`,
         BloomBot.display,
