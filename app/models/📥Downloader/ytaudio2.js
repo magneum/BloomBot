@@ -55,7 +55,7 @@ module.exports = async (
 *🌻Usage:* 
 > _${BloomBot.prefix}${currFile} song-name_`
       );
-    } else
+    } else {
       await BloomBot.magfetch(
         BloomBot,
         "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
@@ -77,11 +77,14 @@ module.exports = async (
           "audio"
         );
         console.log(audioData);
-
+        const audioResponse = await BloomBot.axios.get(audioData.url, {
+          responseType: "arraybuffer",
+        });
+        console.log(audioResponse);
         await BloomBot.sendMessage(
           chatkey.chat,
           {
-            audio: { url: audioData.url },
+            audio: audioResponse,
             mimetype: "audio/mpeg",
             fileName: mgdata.youtube_search[0].TITLE + ".mp3",
             headerType: 4,
@@ -103,10 +106,12 @@ module.exports = async (
           { quoted: chatkey }
         );
       });
+    }
   } catch (error) {
     return BloomBot.handlerror(BloomBot, chatkey, error);
   }
 };
+
 module.exports.aliases = [
   "musictube2",
   "playtube2",
