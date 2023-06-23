@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,13 +15,13 @@ module.exports = async (
 ) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -45,7 +45,7 @@ module.exports = async (
             if (error) {
               return BloomBot.reply(`*🌻You:* ${
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Chat Id:* ${chatkey.chat}
+              }\n*📢Chat Id:* ${Sockey.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
@@ -65,13 +65,13 @@ module.exports = async (
                 Found = random + ".webp";
                 break;
               default:
-                await BloomBot.sendMessage(chatkey.chat, {
+                await BloomBot.sendMessage(Sockey.chat, {
                   react: {
                     text: "❌",
-                    key: chatkey.key,
+                    key: Sockey.key,
                   },
                 });
-                return chatkey.reply(
+                return Sockey.reply(
                   `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -83,12 +83,12 @@ module.exports = async (
             }
 
             return await BloomBot.sendMessage(
-              chatkey.chat,
+              Sockey.chat,
               {
                 image: BloomBot.fs.readFileSync(Found),
                 caption: `╭╔══『 𝐊𝐫𝐲𝐙𝐨𝐧𝐞® 』
 │║> *🌻You:* ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
-│║> *🎭Chat Id:* ${chatkey.chat.split("@")[0]}
+│║> *🎭Chat Id:* ${Sockey.chat.split("@")[0]}
 │║> *📢Console:* ${BloomBot.ShowInfo.replace("http://", "")}
 ╰╚═══════⋑
 
@@ -97,7 +97,7 @@ module.exports = async (
 
 _*💻homePage:* ${BloomBot.ShowInfo}_
 _*⛺homeLog:* ${BloomBot.Showlogger}_`,
-                mentions: [chatkey.sender],
+                mentions: [Sockey.sender],
                 buttons: [
                   {
                     buttonId: `${BloomBot.prefix}Commands`,
@@ -115,7 +115,7 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
                 headerType: 4,
               },
               {
-                quoted: chatkey,
+                quoted: Sockey,
               }
             ).then(() => {
               BloomBot.fs.unlinkSync(Found);
@@ -125,13 +125,13 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
         );
         break;
       default:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -142,7 +142,7 @@ _*⛺homeLog:* ${BloomBot.Showlogger}_`,
         );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

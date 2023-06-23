@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,14 +14,14 @@ module.exports = async (
   participants
 ) => {
   try {
-    const server = await BloomBot.nsfwCheck.findOne({ serverId: chatkey.chat });
+    const server = await BloomBot.nsfwCheck.findOne({ serverId: Sockey.chat });
 
     switch (!server) {
       case true:
-        await BloomBot.sendMessage(chatkey.chat, {
-          react: { text: "❌", key: chatkey.key },
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: { text: "❌", key: Sockey.key },
         });
-        return chatkey.reply(`*😥 Apologies:* _${
+        return Sockey.reply(`*😥 Apologies:* _${
           BloomBot.pushname || BloomBot.tagname
         }_
 
@@ -38,10 +38,10 @@ module.exports = async (
 
     switch (!mgdata.meta.thumbnail) {
       case true:
-        await BloomBot.sendMessage(chatkey.chat, {
-          react: { text: "❌", key: chatkey.key },
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: { text: "❌", key: Sockey.key },
         });
-        return chatkey.reply(`*😥 Apologies:* _${BloomBot.pushname}_
+        return Sockey.reply(`*😥 Apologies:* _${BloomBot.pushname}_
 
 *❌Error:* There has been an API Error. Please try again later.`);
     }
@@ -64,12 +64,12 @@ module.exports = async (
 *• 🌐Link:* ${mgdata.meta.web_link || "Not available"}`;
     await BloomBot.imagebutton(
       BloomBot,
-      chatkey,
+      Sockey,
       message,
       mgdata.meta.thumbnail
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

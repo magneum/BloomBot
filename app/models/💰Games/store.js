@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,7 +16,7 @@ module.exports = async (
   try {
     await BloomBot.imagebutton(
       BloomBot,
-      chatkey,
+      Sockey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ┌『 *Games💰Category* 』
 │║> ⚔️ *sword:* _1000gold/robbery_
@@ -35,7 +35,7 @@ module.exports = async (
       BloomBot.display
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

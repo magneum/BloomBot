@@ -5,35 +5,35 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
     const Reds = ["memes", "me_irl", "dankmemes", "comedyheaven", "Animemes"];
     const Rads = Reds[Math.floor(Math.random() * Reds.length)];
     const res = await BloomBot.fetch(
-      `https://www.reddit.com/r/${Rads}/random/.json`,
+      `https://www.reddit.com/r/${Rads}/random/.json`
     );
     const json = await res.json();
     const data = json[0].data.children[0].data;
     await BloomBot.imagebutton(
       BloomBot,
-      chatkey,
+      Sockey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 > *🥪Title:* ${data.title}
 > *✒️Author:* ${data.author}
 > *👍🏽‍Ups:* ${data.ups || 0} 👍
 > *👎🏽‍Downs:* ${data.downs || 0} 👎
 > *💬Comments:* ${data.num_comments || 0} 💬`,
-      data.url,
+      data.url
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,13 +15,13 @@ module.exports = async (
 ) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -33,7 +33,7 @@ module.exports = async (
     }
 
     if (/audio/.test(BloomBot.mime)) {
-      let random = Math.floor(Math.random() * 10000) + "_" + chatkey.chat;
+      let random = Math.floor(Math.random() * 10000) + "_" + Sockey.chat;
       let media = await BloomBot.downloadAndSaveMediaMessage(
         BloomBot.quoted,
         random
@@ -42,9 +42,9 @@ module.exports = async (
         `${BloomBot.pathFFmpeg} -i ${media} -af "bass=g=10,dynaudnorm=f=150" ${random}.mp3`,
         async (error) => {
           if (error) {
-            return chatkey.reply(`*🌻You:* ${
+            return Sockey.reply(`*🌻You:* ${
               BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-            }\n*📢Chat Id:* ${chatkey.chat}
+            }\n*📢Chat Id:* ${Sockey.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
@@ -54,7 +54,7 @@ module.exports = async (
           } else {
             const Thumb = await BloomBot.getBuffer(BloomBot.display);
             return await BloomBot.sendMessage(
-              chatkey.chat,
+              Sockey.chat,
               {
                 audio: BloomBot.fs.readFileSync(`${random}.mp3`),
                 contextInfo: {
@@ -68,19 +68,19 @@ module.exports = async (
                 fileName: `${random}.mp3`,
                 mimetype: "audio/mpeg",
               },
-              { quoted: chatkey }
+              { quoted: Sockey }
             ).then(BloomBot.fs.unlinkSync(`${random}.mp3`, media));
           }
         }
       );
     } else {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -91,7 +91,7 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

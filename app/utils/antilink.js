@@ -25,7 +25,7 @@
 require("🔥/config/index.js");
 module.exports = async (
 BloomBot,
-chatkey,
+Sockey,
 gmeta,
 isAdmin,
 groupName,
@@ -33,7 +33,7 @@ isbotAdmin,
 groupAdmins,
 participants,
 ) => {
-  const FetchCurrentGroupLink = await BloomBot.groupInviteCode(chatkey.chat);
+  const FetchCurrentGroupLink = await BloomBot.groupInviteCode(Sockey.chat);
   const GroupLinkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i;
   const isGroupLink = GroupLinkRegex.exec(BloomBot.budy);
   const PresentGroupLink = new RegExp(
@@ -43,18 +43,18 @@ participants,
   const isCurrentGroupLink = PresentGroupLink.test(BloomBot.budy);
   if (isGroupLink && !isCurrentGroupLink) {
     await BloomBot.groupParticipantsUpdate(
-      chatkey.chat,
+      Sockey.chat,
       [BloomBot.sender],
       "remove"
-    ).catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
-    await chatkey.reply(
+    ).catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
+    await Sockey.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
 • _Kicked! One Less MoFo!_`
     );
-    return await BloomBot.sendMessage(chatkey.chat, {
+    return await BloomBot.sendMessage(Sockey.chat, {
       delete: {
-        remoteJid: chatkey.chat,
+        remoteJid: Sockey.chat,
         fromMe: false,
         id: BloomBot.quoted.id,
         participant: BloomBot.quoted.sender,
@@ -69,18 +69,18 @@ participants,
     BloomBot.budy.includes("www.")
   ) {
     await BloomBot.groupParticipantsUpdate(
-      chatkey.chat,
+      Sockey.chat,
       [BloomBot.sender],
       "remove"
-    ).catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
-    await chatkey.reply(
+    ).catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
+    await Sockey.reply(
       `*😥Apologies:* _${BloomBot.pushname}_
 *KryZen❌Anti-Link*
 • _Kicked! One Less MoFo!_`
     );
-    return await BloomBot.sendMessage(chatkey.chat, {
+    return await BloomBot.sendMessage(Sockey.chat, {
       delete: {
-        remoteJid: chatkey.chat,
+        remoteJid: Sockey.chat,
         fromMe: false,
         id: BloomBot.quoted.id,
         participant: BloomBot.quoted.sender,

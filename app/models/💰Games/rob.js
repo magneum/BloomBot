@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -19,19 +19,19 @@ module.exports = async (
   const MoneySword = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
   if (BloomBot.mentionByReply) {
     const receiver =
-      chatkey.mtype == "extendedTextMessage" &&
-      chatkey.message.extendedTextMessage.contextInfo != null
-        ? chatkey.message.extendedTextMessage.contextInfo.participant || ""
+      Sockey.mtype == "extendedTextMessage" &&
+      Sockey.message.extendedTextMessage.contextInfo != null
+        ? Sockey.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     const receiverName = await BloomBot.getName(receiver);
-    if (receiver === chatkey.sender) {
-      await BloomBot.sendMessage(chatkey.chat, {
+    if (receiver === Sockey.sender) {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -41,16 +41,16 @@ module.exports = async (
 
     BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, ᴄᴇᴄᴏ) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
         BloomBot.Economy.findOne(
           {
             Id: receiver,
           },
           async (error, ᴠᴇᴄᴏ) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!ᴠᴇᴄᴏ) {
               const newUser = new BloomBot.Economy({
                 Id: receiver,
@@ -65,11 +65,11 @@ module.exports = async (
               await newUser
                 .save()
                 .catch(async (error) =>
-                  BloomBot.handlerror(BloomBot, chatkey, error)
+                  BloomBot.handlerror(BloomBot, Sockey, error)
                 );
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -86,7 +86,7 @@ module.exports = async (
 
             if (!ᴄᴇᴄᴏ) {
               const newUser = new BloomBot.Economy({
-                Id: chatkey.sender,
+                Id: Sockey.sender,
                 money: 0,
                 daily: 0,
                 timeout: 86400000,
@@ -98,11 +98,11 @@ module.exports = async (
               await newUser
                 .save()
                 .catch(async (error) =>
-                  BloomBot.handlerror(BloomBot, chatkey, error)
+                  BloomBot.handlerror(BloomBot, Sockey, error)
                 );
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -121,7 +121,7 @@ module.exports = async (
             if (ᴄᴇᴄᴏ.money < 1000) {
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -139,7 +139,7 @@ module.exports = async (
             if (ᴠᴇᴄᴏ.money < 1000) {
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -157,17 +157,17 @@ module.exports = async (
 
             Robbery.findOne(
               {
-                Id: chatkey.sender,
+                Id: Sockey.sender,
               },
               async (error, ᴄᴜʟᴘʀɪᴛ) => {
-                if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+                if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
                 Robbery.findOne(
                   {
                     Id: receiver,
                   },
                   async (error, ᴠɪᴄᴛɪᴍ) => {
                     if (error)
-                      return BloomBot.handlerror(BloomBot, chatkey, error);
+                      return BloomBot.handlerror(BloomBot, Sockey, error);
                     if (!ᴠɪᴄᴛɪᴍ) {
                       const newUser = new Robbery({
                         Id: receiver,
@@ -180,17 +180,17 @@ module.exports = async (
                       await newUser
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -209,7 +209,7 @@ module.exports = async (
 
                     if (!ᴄᴜʟᴘʀɪᴛ) {
                       const newUser = new Robbery({
-                        Id: chatkey.sender,
+                        Id: Sockey.sender,
                         sword: 0,
                         laptop: 0,
                         charm: 0,
@@ -219,17 +219,17 @@ module.exports = async (
                       await newUser
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       ᴄᴇᴄᴏ.money = ᴄᴇᴄᴏ.money - ʀᴀɴᴅᴏᴍ_ᴍᴏɴᴇʏ;
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -256,7 +256,7 @@ module.exports = async (
                       );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -283,26 +283,26 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -332,26 +332,26 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -381,26 +381,26 @@ module.exports = async (
                       await ᴠɪᴄᴛɪᴍ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴜʟᴘʀɪᴛ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -426,16 +426,16 @@ module.exports = async (
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -466,16 +466,16 @@ module.exports = async (
                       await ᴠᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       await ᴄᴇᴄᴏ
                         .save()
                         .catch(async (error) =>
-                          BloomBot.handlerror(BloomBot, chatkey, error)
+                          BloomBot.handlerror(BloomBot, Sockey, error)
                         );
                       return await BloomBot.imagebutton(
                         BloomBot,
-                        chatkey,
+                        Sockey,
                         `*🌻Here, ${currFile} for ${
                           BloomBot.pushname || BloomBot.tagname
                         }:*
@@ -509,7 +509,7 @@ module.exports = async (
   } else {
     return await BloomBot.imagebutton(
       BloomBot,
-      chatkey,
+      Sockey,
       `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ╔◇══════════◇╗
 ┊ 𝐁𝐚𝐧𝐤🚓𝐑𝐨𝐛𝐛𝐞𝐫𝐲

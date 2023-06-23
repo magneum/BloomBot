@@ -23,34 +23,34 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("🔥/config/index.js");
-exports.premium = async (BloomBot, chatkey, update, store) => {
+exports.premium = async (BloomBot, Sockey, update, store) => {
   if (BloomBot.isSudo) {
-    await BloomBot.sendMessage(chatkey.chat, {
+    await BloomBot.sendMessage(Sockey.chat, {
       react: {
         text: "🌻",
-        key: chatkey.key,
+        key: Sockey.key,
       },
     });
-    return await require("🔥/System/library")(BloomBot, chatkey, update, store);
+    return await require("🔥/System/library")(BloomBot, Sockey, update, store);
   } else
     await BloomBot.premium.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userVium) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
         if (!userVium) {
           new BloomBot.premium({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             Limits: 30,
             currTime: Date.now(),
             permTime: 86400000, //3600000
           })
             .save()
-            .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+            .catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
           return await require("🔥/System/library")(
             BloomBot,
-            chatkey,
+            Sockey,
             update,
             store
           );
@@ -62,7 +62,7 @@ exports.premium = async (BloomBot, chatkey, update, store) => {
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 > You have used up all your free commands for the day.
 *💵Limit:* ${userVium.Limits - 1}/30
@@ -71,20 +71,20 @@ exports.premium = async (BloomBot, chatkey, update, store) => {
             );
           }
         } else {
-          await BloomBot.sendMessage(chatkey.chat, {
+          await BloomBot.sendMessage(Sockey.chat, {
             react: {
               text: "🌻",
-              key: chatkey.key,
+              key: Sockey.key,
             },
           });
           userVium.currTime = Date.now();
           userVium.Limits = userVium.Limits - 1;
           userVium
             .save()
-            .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+            .catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
           return await require("🔥/System/library")(
             BloomBot,
-            chatkey,
+            Sockey,
             update,
             store
           );

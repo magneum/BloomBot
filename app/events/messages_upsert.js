@@ -23,7 +23,7 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("🔥/config/index.js");
-const { chatkey_maker } = require("🔥/lib/bloomHive.js");
+const { Sockey_maker } = require("🔥/lib/bloomHive.js");
 
 module.exports = async (BloomBot, store, logger) => {
   BloomBot.ev.on("messages.upsert", async (update) => {
@@ -37,8 +37,8 @@ module.exports = async (BloomBot, store, logger) => {
     if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    chatkey = await chatkey_maker(BloomBot, oText, store);
-    await require("🔥/lib/symlink")(BloomBot, chatkey, update, store);
+    Sockey = await Sockey_maker(BloomBot, oText, store);
+    await require("🔥/lib/symlink")(BloomBot, Sockey, update, store);
   });
   return BloomBot;
 };

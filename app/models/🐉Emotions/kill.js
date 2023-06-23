@@ -5,7 +5,7 @@ const feeling = fileName.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -19,10 +19,10 @@ module.exports = async (
       .then((res) => res.json())
       .then(async (json) => {
         if (!json.url) {
-          await BloomBot.sendMessage(chatkey.chat, {
-            react: { text: "❌", key: chatkey.key },
+          await BloomBot.sendMessage(Sockey.chat, {
+            react: { text: "❌", key: Sockey.key },
           });
-          return chatkey.reply(
+          return Sockey.reply(
             `*😥 Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* There has been an API Error. Please try again later.`,
@@ -35,18 +35,18 @@ module.exports = async (
         if (BloomBot.args[0] && BloomBot.args[0].startsWith("@")) {
           const mention = BloomBot.mentionByTag;
           mentionedUser =
-            (await mention[0]) || chatkey.msg.contextInfo.participant;
+            (await mention[0]) || Sockey.msg.contextInfo.participant;
         } else if (BloomBot.mentionByReply) {
           mentionedUser =
-            chatkey.mtype === "extendedTextMessage" &&
-            chatkey.message.extendedTextMessage.contextInfo != null
-              ? chatkey.message.extendedTextMessage.contextInfo.participant ||
+            Sockey.mtype === "extendedTextMessage" &&
+            Sockey.message.extendedTextMessage.contextInfo != null
+              ? Sockey.message.extendedTextMessage.contextInfo.participant ||
                 ""
               : "";
         }
 
         await BloomBot.sendMessage(
-          chatkey.chat,
+          Sockey.chat,
           {
             gifPlayback: true,
             video: BloomBot.fs.readFileSync(resultFilename),
@@ -56,14 +56,14 @@ module.exports = async (
 *📢From:* ${BloomBot.pushname}
 *🌻for:* @${mentionedUser.split("@")[0] || ""}
 *🐞Api:* https://magneum.vercel.app/api/`,
-            mentions: [mentionedUser, chatkey.sender],
+            mentions: [mentionedUser, Sockey.sender],
           },
-          { quoted: chatkey },
+          { quoted: Sockey },
         ).then(BloomBot.fs.unlinkSync(resultFilename));
       })
-      .catch((error) => BloomBot.handlerror(BloomBot, chatkey, error));
+      .catch((error) => BloomBot.handlerror(BloomBot, Sockey, error));
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

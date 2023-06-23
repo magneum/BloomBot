@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,14 +15,14 @@ module.exports = async (
 ) => {
   try {
     switch (true) {
-      case !chatkey.isGroup:
-        await BloomBot.sendMessage(chatkey.chat, {
+      case !Sockey.isGroup:
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*  
@@ -30,13 +30,13 @@ module.exports = async (
         );
 
       case !(isAdmin || BloomBot.isSudo):
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -58,19 +58,19 @@ module.exports = async (
         let message = BloomBot.args
           ? BloomBot.args.join(" ")
           : "Attention Everyone";
-        let caption = `*📢 Chat Id:* ${chatkey.chat}
+        let caption = `*📢 Chat Id:* ${Sockey.chat}
 *💫 Pinged By:* ${BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"}
 *🕛 Time:* ${BloomBot.moment.tz("Asia/Kolkata").format("DD/MM HH:mm:ss")}
 *📌 Message:* \n${message}`;
 
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           image: buffer,
           caption,
           mentions: await participants.map((a) => a.id),
         }).catch((e) => console.log(e));
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

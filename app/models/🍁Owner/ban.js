@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -13,23 +13,23 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await BloomBot.sendMessage(chatkey.chat, {
+  await BloomBot.sendMessage(Sockey.chat, {
     react: {
       text: "🌻",
-      key: chatkey.key,
+      key: Sockey.key,
     },
   });
 
   try {
     switch (true) {
       case !BloomBot.byMyself && !BloomBot.isSudo:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • _Owner Only Command!_`
@@ -50,16 +50,16 @@ module.exports = async (
             Id: repliedPerson,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
               new BloomBot.userBanCheck({
                 Id: repliedPerson,
               }).save();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${repliedPersonNum} has been banned and won't respond to that Dumbo!`
               );
             } else {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${repliedPersonNum} is already banned!`
               );
             }
@@ -76,16 +76,16 @@ module.exports = async (
             Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
               new BloomBot.userBanCheck({
                 Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
               }).save();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${mention} has been banned and won't respond to that Dumbo!`
               );
             } else {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${mention} is already banned!`
               );
             }
@@ -98,19 +98,19 @@ module.exports = async (
         !BloomBot.args[0].startsWith("@"):
         BloomBot.userBanCheck.findOne(
           {
-            Id: chatkey.chat,
+            Id: Sockey.chat,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
               new BloomBot.userBanCheck({
-                Id: chatkey.chat,
+                Id: Sockey.chat,
               }).save();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* ${groupName}\nGroup Has Been Banned!`
               );
             } else {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* ${groupName}\nGroup is already banned!`
               );
             }
@@ -119,13 +119,13 @@ module.exports = async (
         break;
 
       default:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • _Could not find any context!_
@@ -138,7 +138,7 @@ module.exports = async (
         );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

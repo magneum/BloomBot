@@ -52,7 +52,7 @@ let PhoneNumber = require("awesome-phonenumber");
 const remote_authstate = require("🔥/auth/remote_authstate");
 const { fallback_remote_authstate } = require("🔥/auth/Database");
 const {
-  chatkey_maker,
+  Sockey_maker,
   fetchJson,
   getBuffer,
   getSizeMedia,
@@ -238,8 +238,8 @@ async function magneum() {
     if (!BloomBot.public && !oText.key.fromMe && update.type === "notify")
       return;
     if (oText.key.id.startsWith("BAE5") && oText.key.id.length === 16) return;
-    chatkey = await chatkey_maker(BloomBot, oText, store);
-    await require("../lib/symlink")(BloomBot, chatkey, update, store);
+    Sockey = await Sockey_maker(BloomBot, oText, store);
+    await require("../lib/symlink")(BloomBot, Sockey, update, store);
   });
 
   BloomBot.ev.on("group-participants.update", async (update) => {
@@ -362,7 +362,7 @@ async function magneum() {
   };
 
   BloomBot.public = true;
-  BloomBot.serializeM = (chatkey) => chatkey_maker(BloomBot, chatkey, store);
+  BloomBot.serializeM = (Sockey) => Sockey_maker(BloomBot, Sockey, store);
 
   BloomBot.send5ButImg = async (
     jid,
@@ -377,7 +377,7 @@ async function magneum() {
       { upload: BloomBot.waUploadToServer }
     );
     const template = generateWAMessageFromContent(
-      chatkey.chat,
+      Sockey.chat,
       proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {

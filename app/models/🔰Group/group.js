@@ -4,7 +4,7 @@ const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -13,14 +13,14 @@ module.exports = async (
   participants,
 ) => {
   try {
-    if (!chatkey.isGroup) {
-      await BloomBot.sendMessage(chatkey.chat, {
+    if (!Sockey.isGroup) {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -28,13 +28,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -42,13 +42,13 @@ module.exports = async (
       );
     }
     if (!isbotAdmin) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -57,18 +57,18 @@ module.exports = async (
     }
 
     try {
-      ProfilePic = await BloomBot.profilePictureUrl(chatkey.sender, "image");
+      ProfilePic = await BloomBot.profilePictureUrl(Sockey.sender, "image");
     } catch {
       ProfilePic = BloomBot.display;
     }
 
     if (BloomBot.args[0] === "Bloom") {
-      await BloomBot.groupSettingUpdate(chatkey.chat, "not_announcement")
+      await BloomBot.groupSettingUpdate(Sockey.chat, "not_announcement")
         .then(
           async (res) =>
             await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `> *Group have been Bloomed by: ${
                 BloomBot.pushname || BloomBot.tagname
               }*`,
@@ -76,19 +76,19 @@ module.exports = async (
             ),
         )
         .catch(async (error) =>
-          chatkey.reply(
+          Sockey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • ${jsonformat(error)}`,
           ),
         );
     } else if (BloomBot.args[0] === "close") {
-      await BloomBot.groupSettingUpdate(chatkey.chat, "announcement")
+      await BloomBot.groupSettingUpdate(Sockey.chat, "announcement")
         .then(
           async (res) =>
             await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `> *Group have been Closed by: ${
                 BloomBot.pushname || BloomBot.tagname
               }*`,
@@ -96,7 +96,7 @@ module.exports = async (
             ),
         )
         .catch(async (error) =>
-          chatkey.reply(
+          Sockey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • ${jsonformat(error)}`,
@@ -110,13 +110,13 @@ module.exports = async (
       ) {
         return await BloomBot.LinkList.findOne(
           {
-            serverId: chatkey.chat,
+            serverId: Sockey.chat,
           },
           async (error, server) => {
             if (error) {
               return BloomBot.reply(`*🌻You:* ${
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Chat Id:* ${chatkey.chat}
+              }\n*📢Chat Id:* ${Sockey.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
@@ -127,20 +127,20 @@ module.exports = async (
 
             if (!server) {
               const newServer = new BloomBot.LinkList({
-                serverId: chatkey.chat,
+                serverId: Sockey.chat,
                 value: "ON",
               });
               await newServer.save();
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `> *🔗Antilink:* _✅Has been turned ON_`,
                 ProfilePic,
               );
             } else {
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `> *🔗Antilink:* _✅Was already turned ON_`,
                 ProfilePic,
               );
@@ -154,13 +154,13 @@ module.exports = async (
       ) {
         return await BloomBot.LinkList.findOne(
           {
-            serverId: chatkey.chat,
+            serverId: Sockey.chat,
           },
           async (error, server) => {
             if (error) {
               return BloomBot.reply(`*🌻You:* ${
                 BloomBot.pushname || "ɴᴏ_ɴᴀᴍᴇ"
-              }\n*📢Chat Id:* ${chatkey.chat}
+              }\n*📢Chat Id:* ${Sockey.chat}
 
 *😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
@@ -172,7 +172,7 @@ module.exports = async (
             if (!server) {
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `> *🔗Antilink:* _❌Has been turned OFF_`,
                 ProfilePic,
               );
@@ -180,7 +180,7 @@ module.exports = async (
               await server.delete();
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `> *🔗Antilink:* _❌was not turned OFF_`,
                 ProfilePic,
               );
@@ -188,13 +188,13 @@ module.exports = async (
           },
         );
       } else {
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -206,13 +206,13 @@ module.exports = async (
         );
       }
     } else {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -224,7 +224,7 @@ module.exports = async (
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

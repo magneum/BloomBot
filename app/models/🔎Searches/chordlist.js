@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,13 +16,13 @@ module.exports = async (
   try {
     switch (!BloomBot.args.join(" ")) {
       case true:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -40,13 +40,13 @@ module.exports = async (
     const result = data.data;
     switch (result.count < 0) {
       case true:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -75,7 +75,7 @@ module.exports = async (
         bson.wallpapers[Math.floor(Math.random() * bson.wallpapers.length)];
       await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${chord}`,
         bsoni.url_image
@@ -83,14 +83,14 @@ module.exports = async (
     } catch {
       await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${chord}`,
         BloomBot.display
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

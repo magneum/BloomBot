@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -18,16 +18,16 @@ module.exports = async (
       BloomBot.Jwork[Math.floor(Math.random() * BloomBot.Jwork.length)];
     BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, chatkey, error);
+          return BloomBot.handlerror(BloomBot, Sockey, error);
         }
 
         if (!userEco) {
           new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -38,11 +38,11 @@ module.exports = async (
           })
             .save()
             .catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -55,7 +55,7 @@ module.exports = async (
             );
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*🌻Hola!* ${currFile} for ${
                 BloomBot.pushname || BloomBot.tagname
               }
@@ -69,11 +69,11 @@ module.exports = async (
             userEco.workdone = Date.now();
             userEco.worktimeout = 900000;
             userEco.save().catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*🌻Hola!* ${currFile} for ${
                 BloomBot.pushname || BloomBot.tagname
               }
@@ -86,7 +86,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

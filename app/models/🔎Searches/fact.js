@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,7 +14,7 @@ module.exports = async (
   participants
 ) => {
   try {
-    const кяуяєs = await BloomBot.axios.get("chatkey.life/api/v2/fact");
+    const кяуяєs = await BloomBot.axios.get("Sockey.life/api/v2/fact");
     try {
       const кяуяєsi = await BloomBot.fetch(
         global.apiGet("wall.alphacoders.com/api2.0", "/get.php", {
@@ -30,7 +30,7 @@ module.exports = async (
         case Boolean(BloomBot.pushname || BloomBot.tagname):
           await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${кяуяєs.data.fact}`,
             bsoni.url_image
@@ -39,7 +39,7 @@ module.exports = async (
         default:
           await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${кяуяєs.data.fact}`,
             BloomBot.display
@@ -48,14 +48,14 @@ module.exports = async (
     } catch {
       await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${кяуяєs.data.fact}`,
         BloomBot.display
       );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,15 +15,15 @@ module.exports = async (
 ) => {
   await BloomBot.Economy.findOne(
     {
-      Id: chatkey.sender,
+      Id: Sockey.sender,
     },
     async (error, data) => {
       switch (true) {
         case error:
-          return BloomBot.handlerror(BloomBot, chatkey, error);
+          return BloomBot.handlerror(BloomBot, Sockey, error);
         case !data:
           new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -34,11 +34,11 @@ module.exports = async (
           })
             .save()
             .catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -47,7 +47,7 @@ module.exports = async (
         default:
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* ${data.money}`,
             BloomBot.display

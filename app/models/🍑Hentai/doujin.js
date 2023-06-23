@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,20 +16,20 @@ module.exports = async (
   try {
     return await BloomBot.nsfwCheck.findOne(
       {
-        serverId: chatkey.chat,
+        serverId: Sockey.chat,
       },
       async (error, server) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
 
         switch (!!server) {
           case false:
-            await BloomBot.sendMessage(chatkey.chat, {
+            await BloomBot.sendMessage(Sockey.chat, {
               react: {
                 text: "❌",
-                key: chatkey.key,
+                key: Sockey.key,
               },
             });
-            return chatkey.reply(
+            return Sockey.reply(
               `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*
@@ -46,13 +46,13 @@ module.exports = async (
 
               switch (!mgdata[0].meta.url) {
                 case true:
-                  await BloomBot.sendMessage(chatkey.chat, {
+                  await BloomBot.sendMessage(Sockey.chat, {
                     react: {
                       text: "❌",
-                      key: chatkey.key,
+                      key: Sockey.key,
                     },
                   });
-                  return chatkey.reply(
+                  return Sockey.reply(
                     `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:*
@@ -62,7 +62,7 @@ module.exports = async (
                 case false:
                   await BloomBot.imagebutton(
                     BloomBot,
-                    chatkey,
+                    Sockey,
                     `*🌻Here, ${currFile} for ${BloomBot.pushname}:*
 
 > *Description:* ${mgdata[0].meta.description}
@@ -75,7 +75,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

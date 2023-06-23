@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,16 +16,16 @@ module.exports = async (
   try {
     BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, chatkey, error);
+          return BloomBot.handlerror(BloomBot, Sockey, error);
         }
 
         if (!userEco) {
           new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 500,
             daily: Date.now(),
             timeout: 86400000,
@@ -36,11 +36,11 @@ module.exports = async (
           })
             .save()
             .catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 ✅𝗗𝗮𝗶𝗹𝘆 𝗦𝘁𝗮𝘁𝘂𝘀: You've collected your daily reward!
@@ -55,7 +55,7 @@ module.exports = async (
               const ᴄʟᴏᴄᴋ = BloomBot.ms(timeout);
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -67,11 +67,11 @@ module.exports = async (
               userEco.daily = Date.now();
               userEco.money = userEco.money + 500;
               userEco.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -85,7 +85,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

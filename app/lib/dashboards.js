@@ -23,21 +23,21 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("🔥/config/index.js");
-module.exports = async (BloomBot, chatkey, updatedb) => {
+module.exports = async (BloomBot, Sockey, updatedb) => {
   try {
-    ProfilePic = await BloomBot.profilePictureUrl(chatkey.sender, "image");
+    ProfilePic = await BloomBot.profilePictureUrl(Sockey.sender, "image");
   } catch {
-    ProfilePic = "i.postimg.cc/qBKwmM24/chatkeybot.png";
+    ProfilePic = "i.postimg.cc/qBKwmM24/Sockeybot.png";
   }
   await BloomBot.dashboard.findOne(
     {
-      Id: chatkey.sender,
+      Id: Sockey.sender,
     },
     async (error, udBase) => {
-      if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+      if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
       if (!udBase) {
         new BloomBot.dashboard({
-          Id: chatkey.sender,
+          Id: Sockey.sender,
           profile: ProfilePic,
           username: BloomBot.pushname,
 
@@ -283,11 +283,11 @@ module.exports = async (BloomBot, chatkey, updatedb) => {
           .save()
           .catch(
             async (error) =>
-              BloomBot.handlerror(BloomBot, chatkey, error),
+              BloomBot.handlerror(BloomBot, Sockey, error),
           );
         await BloomBot.imagebutton(
           BloomBot,
-          chatkey,
+          Sockey,
           `*🌻Here, for ${BloomBot.pushname}:*
 > Your Dashboard has been made.
 > Visit ⚙️webpage or retype previous command.

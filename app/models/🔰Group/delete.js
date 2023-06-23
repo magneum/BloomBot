@@ -4,7 +4,7 @@ const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,13 +14,13 @@ module.exports = async (
 ) => {
   try {
     if (!BloomBot.quoted) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -33,13 +33,13 @@ module.exports = async (
 
     const { isBaileys } = BloomBot.quoted;
     if (!isBaileys) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -49,17 +49,17 @@ module.exports = async (
 • _${BloomBot.prefix}${currFile} reply to Image/Video/Text_`,
       );
     } else {
-      return await BloomBot.sendMessage(chatkey.chat, {
+      return await BloomBot.sendMessage(Sockey.chat, {
         delete: {
-          remoteJid: chatkey.chat,
+          remoteJid: Sockey.chat,
           fromMe: true,
-          id: chatkey.quoted.id,
-          participant: chatkey.quoted.sender,
+          id: Sockey.quoted.id,
+          participant: Sockey.quoted.sender,
         },
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [

@@ -13,7 +13,7 @@
     "dbclean": "node app/client/purgepg",
     "build": "rm -rf node_modules yarn.lock && yarn install",
     "magdev": "concurrently --kill-others \"yarn dev\" \"yarn ffdev\"",
-    "chatkeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
+    "Sockeytart": "concurrently --kill-others \"yarn start\" \"yarn ffstart\"",
     "start": "forever --minUptime=1000ms --spinSleepTime=1000ms app/client --color",
     "sync": "git init --initial-branch=magneum && git fetch origin magneum && git reset --hard origin/magneum"
   },

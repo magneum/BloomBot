@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,20 +14,20 @@ module.exports = async (
   participants
 ) => {
   try {
-    await BloomBot.sendMessage(chatkey.chat, {
+    await BloomBot.sendMessage(Sockey.chat, {
       react: {
         text: "❌",
-        key: chatkey.key,
+        key: Sockey.key,
       },
     });
-    return chatkey.reply(
+    return Sockey.reply(
       `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _This Command is not yet ready for public usage!_`
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

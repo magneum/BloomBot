@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,7 +14,7 @@ module.exports = async (
   participants
 ) => {
   if (!BloomBot.mentionByReply) {
-    return chatkey.reply(`*😥Apologies:* _${
+    return Sockey.reply(`*😥Apologies:* _${
       BloomBot.pushname || BloomBot.tagname
     }_ 
 
@@ -25,7 +25,7 @@ module.exports = async (
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
   }
   if (BloomBot.args.length === 0) {
-    return chatkey.reply(`*😥Apologies:* _${
+    return Sockey.reply(`*😥Apologies:* _${
       BloomBot.pushname || BloomBot.tagname
     }_ 
 
@@ -36,7 +36,7 @@ module.exports = async (
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
   }
   if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(BloomBot.args[0])) {
-    return chatkey.reply(`*😥Apologies:* _${
+    return Sockey.reply(`*😥Apologies:* _${
       BloomBot.pushname || BloomBot.tagname
     }_ 
 
@@ -47,7 +47,7 @@ module.exports = async (
 > Reply-Person: _${BloomBot.prefix}${currFile} amount_`);
   }
   if (BloomBot.args[0].match(/[a-z]/i)) {
-    return chatkey.reply(`*😥Apologies:* _${
+    return Sockey.reply(`*😥Apologies:* _${
       BloomBot.pushname || BloomBot.tagname
     }_ 
 
@@ -65,8 +65,8 @@ module.exports = async (
         ? BloomBot.message.extendedTextMessage.contextInfo.participant || ""
         : "";
     receiverName = await BloomBot.getName(receiver);
-    if (receiver === chatkey.sender) {
-      return chatkey.reply(`*😥Apologies:* _${
+    if (receiver === Sockey.sender) {
+      return Sockey.reply(`*😥Apologies:* _${
         BloomBot.pushname || BloomBot.tagname
       }_ 
 
@@ -79,13 +79,13 @@ module.exports = async (
 
     await BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, uPayer) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
         if (!uPayer) {
           new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -96,9 +96,9 @@ module.exports = async (
           })
             .save()
             .catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
-          return chatkey.reply(`*😥Apologies:* _${
+          return Sockey.reply(`*😥Apologies:* _${
             BloomBot.pushname || BloomBot.tagname
           }_ 
 
@@ -110,7 +110,7 @@ module.exports = async (
         }
 
         if (parseInt(BloomBot.args[0]) > uPayer.money) {
-          return chatkey.reply(`*😥Apologies:* _${
+          return Sockey.reply(`*😥Apologies:* _${
             BloomBot.pushname || BloomBot.tagname
           }_ 
 
@@ -128,7 +128,7 @@ module.exports = async (
               Id: receiver,
             },
             async (error, uBonus) => {
-              if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+              if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
               if (!uBonus) {
                 new BloomBot.Economy({
                   Id: receiver,
@@ -142,15 +142,15 @@ module.exports = async (
                 })
                   .save()
                   .catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, chatkey, error);
+                    return BloomBot.handlerror(BloomBot, Sockey, error);
                   });
                 uPayer.money = uPayer.money - parseInt(BloomBot.args[0]);
                 uPayer.save().catch(async (error) => {
-                  return BloomBot.handlerror(BloomBot, chatkey, error);
+                  return BloomBot.handlerror(BloomBot, Sockey, error);
                 });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  chatkey,
+                  Sockey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -170,15 +170,15 @@ module.exports = async (
 
               uPayer.money = uPayer.money - parseInt(BloomBot.args[0]);
               uPayer.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               uBonus.money = uBonus.money + parseInt(BloomBot.args[0]);
               uBonus.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -200,7 +200,7 @@ module.exports = async (
       }
     );
   } else {
-    return chatkey.reply(`*😥Apologies:* _${
+    return Sockey.reply(`*😥Apologies:* _${
       BloomBot.pushname || BloomBot.tagname
     }_ 
 

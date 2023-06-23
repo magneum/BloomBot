@@ -1,6 +1,6 @@
 require("🌟/config/index.js");
 
-module.exports = async (BloomBot, chatkey, error) => {
+module.exports = async (BloomBot, Sockey, error) => {
   const errorMessage = `❗ Oops! An error occurred while processing the command: ${BloomBot.command.toUpperCase()}\n\n${error}`;
   console.log(errorMessage);
   const replyMessage = `😔 Apologies, ${BloomBot.pushname}!
@@ -11,5 +11,5 @@ module.exports = async (BloomBot, chatkey, error) => {
 
 *🐞 Error Details:*
 ${error}`;
-  return chatkey.reply(replyMessage);
+  return Sockey.reply(replyMessage);
 };

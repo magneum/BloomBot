@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,16 +16,16 @@ module.exports = async (
   try {
     await BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, chatkey, error);
+          return BloomBot.handlerror(BloomBot, Sockey, error);
         }
 
         if (!userEco) {
           const newUser = new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -35,11 +35,11 @@ module.exports = async (
             worktimeout: 900000,
           });
           await newUser.save().catch(async (error) => {
-            return BloomBot.handlerror(BloomBot, chatkey, error);
+            return BloomBot.handlerror(BloomBot, Sockey, error);
           });
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 ◇ *Type:* _Just Bought A Zoo!_`,
@@ -48,23 +48,23 @@ module.exports = async (
         } else {
           await BloomBot.Zoology.findOne(
             {
-              Id: chatkey.sender,
+              Id: Sockey.sender,
             },
             async (error, userZoo) => {
               if (error) return Caught(ӄryӄnz, BloomBot, error);
               if (!userZoo) {
                 new BloomBot.Zoology({
-                  Id: chatkey.sender,
+                  Id: Sockey.sender,
                   zoodone: Date.now(),
                   zootimeout: 1800000,
                 })
                   .save()
                   .catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, chatkey, error);
+                    return BloomBot.handlerror(BloomBot, Sockey, error);
                   });
                 return await BloomBot.imagebutton(
                   BloomBot,
-                  chatkey,
+                  Sockey,
                   `*🌻Hola!* ${currFile} for ${
                     BloomBot.pushname || BloomBot.tagname
                   }
@@ -79,7 +79,7 @@ module.exports = async (
                   );
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    chatkey,
+                    Sockey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
@@ -103,11 +103,11 @@ module.exports = async (
                   userZoo.zoodone = Date.now();
                   userZoo.zootimeout = 1800000;
                   userZoo.save().catch(async (error) => {
-                    return BloomBot.handlerror(BloomBot, chatkey, error);
+                    return BloomBot.handlerror(BloomBot, Sockey, error);
                   });
                   return await BloomBot.imagebutton(
                     BloomBot,
-                    chatkey,
+                    Sockey,
                     `*🌻Here, ${currFile} for @${
                       BloomBot.tagname || BloomBot.pushname
                     }:*
@@ -124,7 +124,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

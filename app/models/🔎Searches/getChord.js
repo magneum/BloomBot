@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,13 +16,13 @@ module.exports = async (
   try {
     switch (true) {
       case !BloomBot.args[0] && isNaN(BloomBot.args[0]):
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -66,7 +66,7 @@ module.exports = async (
                 ];
               await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 } 
@@ -78,7 +78,7 @@ module.exports = async (
             default:
               await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 } 
@@ -90,7 +90,7 @@ module.exports = async (
         } catch {
           await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 • ${chordFound}`,
             BloomBot.display
@@ -99,7 +99,7 @@ module.exports = async (
         break;
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

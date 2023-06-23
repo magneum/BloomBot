@@ -1,6 +1,6 @@
 require("🌟/config/index.js");
 
-module.exports = async (BloomBot, chatkey, context, video) => {
+module.exports = async (BloomBot, Sockey, context, video) => {
   let buffer;
   if (Buffer.isBuffer(video)) {
     buffer = video;
@@ -14,7 +14,7 @@ module.exports = async (BloomBot, chatkey, context, video) => {
     buffer = Buffer.alloc(0);
   }
   let receiver;
-  let mentions = [chatkey.sender];
+  let mentions = [Sockey.sender];
   await (async () => {
     switch (true) {
       case BloomBot.isReply:
@@ -35,7 +35,7 @@ module.exports = async (BloomBot, chatkey, context, video) => {
         break;
     }
   })();
-  const caption = `*📢Chat Id:* ${chatkey.chat}\n${context}
+  const caption = `*📢Chat Id:* ${Sockey.chat}\n${context}
   
 *ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
   const messageOptions = {
@@ -44,12 +44,12 @@ module.exports = async (BloomBot, chatkey, context, video) => {
     gifPlayback: true,
     mentions: mentions,
   };
-  await BloomBot.sendMessage(chatkey.chat, messageOptions, {
-    quoted: chatkey,
+  await BloomBot.sendMessage(Sockey.chat, messageOptions, {
+    quoted: Sockey,
   }).catch((e) => console.log(e));
 };
 
-// module.exports = async (BloomBot, chatkey, context, νidēo) => {
+// module.exports = async (BloomBot, Sockey, context, νidēo) => {
 // let buffer = Buffer.isBuffer(νidēo)
 // ? νidēo
 // : /^data:.*?\/.*?;base64,/i.test(νidēo)
@@ -61,7 +61,7 @@ module.exports = async (BloomBot, chatkey, context, video) => {
 // : Buffer.alloc(0);
 
 // let receiver;
-// let mentions = [chatkey.sender];
+// let mentions = [Sockey.sender];
 
 // switch (true) {
 // case BloomBot.isReply:
@@ -74,14 +74,14 @@ module.exports = async (BloomBot, chatkey, context, video) => {
 // mentions.push(receiver);
 
 // await BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // video: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // gifPlayback: true,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 
@@ -95,27 +95,27 @@ module.exports = async (BloomBot, chatkey, context, video) => {
 // mentions.push(receiver);
 
 // await BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // video: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // gifPlayback: true,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 
 // default:
 // await BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // video: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // gifPlayback: true,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 // }

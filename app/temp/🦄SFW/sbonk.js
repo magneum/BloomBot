@@ -4,7 +4,7 @@ const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -22,7 +22,7 @@ module.exports = async (
 
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *📚Topic:* ${mgdata.meta.topic}
 *❓Query*: ${mgdata.meta.query}`,
@@ -30,7 +30,7 @@ module.exports = async (
       );
     });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

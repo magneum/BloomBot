@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -17,13 +17,13 @@ module.exports = async (
     const formatColor = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     const formatAmount = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?rpb]+/;
     if (!BloomBot.args[0] && !BloomBot.args[1]) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -39,13 +39,13 @@ module.exports = async (
     }
 
     if (formatColor.test(BloomBot.args[0])) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -61,13 +61,13 @@ module.exports = async (
     }
 
     if (formatAmount.test(BloomBot.args[1])) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -87,13 +87,13 @@ module.exports = async (
       !BloomBot.args[0].includes("black") &&
       !BloomBot.args[0].includes("purple")
     ) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -113,7 +113,7 @@ module.exports = async (
     if (AmountRoom < 50) {
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _min 50gold needed to gamble_`,
@@ -124,7 +124,7 @@ module.exports = async (
     if (AmountRoom > 800) {
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money Amount!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 800gold for gamble_`,
@@ -135,7 +135,7 @@ module.exports = async (
     if (ColorRoom === "red" && AmountRoom > 200) {
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Red!_
 💡𝗟𝗶𝗺𝗶𝘁: _max 200gold_`,
@@ -146,7 +146,7 @@ module.exports = async (
     if (ColorRoom === "black" && AmountRoom > 500) {
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Black!_
 ⚫𝗟𝗶𝗺𝗶𝘁: _max 500gold_`,
@@ -157,7 +157,7 @@ module.exports = async (
     if (ColorRoom === "purple" && AmountRoom > 800) {
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ❌𝗘𝗿𝗿𝗼𝗿: _Money for Purple!_
 🟣𝗟𝗶𝗺𝗶𝘁: _max 800gold_`,
@@ -167,16 +167,16 @@ module.exports = async (
 
     BloomBot.Economy.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userEco) => {
         if (error) {
-          return BloomBot.handlerror(BloomBot, chatkey, error);
+          return BloomBot.handlerror(BloomBot, Sockey, error);
         }
 
         if (!userEco) {
           const newUser = new BloomBot.Economy({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             money: 0,
             daily: 0,
             timeout: 86400000,
@@ -186,11 +186,11 @@ module.exports = async (
             worktimeout: 900000,
           });
           await newUser.save().catch(async (error) => {
-            return BloomBot.handlerror(BloomBot, chatkey, error);
+            return BloomBot.handlerror(BloomBot, Sockey, error);
           });
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *💰Balance:* Just Bloomed Your Account!`,
             BloomBot.display
@@ -199,26 +199,26 @@ module.exports = async (
 
         BloomBot.Gamble.findOne(
           {
-            Id: chatkey.sender,
+            Id: Sockey.sender,
           },
           async (error, userGamble) => {
             if (error) {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             }
 
             if (!userGamble) {
               const newUser = new BloomBot.Gamble({
-                Id: chatkey.sender,
-                serverId: chatkey.chat,
+                Id: Sockey.sender,
+                serverId: Sockey.chat,
                 Gambledone: 0,
                 Gambconstimeout: 480000,
               });
               await newUser.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -239,7 +239,7 @@ module.exports = async (
               );
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -262,13 +262,13 @@ module.exports = async (
             const Amount = Math.floor(Math.random() * 10);
 
             if (!Color) {
-              await BloomBot.sendMessage(chatkey.chat, {
+              await BloomBot.sendMessage(Sockey.chat, {
                 react: {
                   text: "❌",
-                  key: chatkey.key,
+                  key: Sockey.key,
                 },
               });
-              return chatkey.reply(
+              return Sockey.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -285,13 +285,13 @@ module.exports = async (
 
             Color = Color.toLowerCase();
             if (!money) {
-              await BloomBot.sendMessage(chatkey.chat, {
+              await BloomBot.sendMessage(Sockey.chat, {
                 react: {
                   text: "❌",
-                  key: chatkey.key,
+                  key: Sockey.key,
                 },
               });
-              return chatkey.reply(
+              return Sockey.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -307,13 +307,13 @@ module.exports = async (
             }
 
             if (money > CurrentMoney) {
-              await BloomBot.sendMessage(chatkey.chat, {
+              await BloomBot.sendMessage(Sockey.chat, {
                 react: {
                   text: "❌",
-                  key: chatkey.key,
+                  key: Sockey.key,
                 },
               });
-              return chatkey.reply(
+              return Sockey.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -335,13 +335,13 @@ module.exports = async (
             } else if (Color.includes("purple")) {
               Color = 2;
             } else {
-              await BloomBot.sendMessage(chatkey.chat, {
+              await BloomBot.sendMessage(Sockey.chat, {
                 react: {
                   text: "❌",
-                  key: chatkey.key,
+                  key: Sockey.key,
                 },
               });
-              return chatkey.reply(
+              return Sockey.reply(
                 `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -361,14 +361,14 @@ module.exports = async (
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               await userEco.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -383,14 +383,14 @@ module.exports = async (
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               await userEco.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -405,14 +405,14 @@ module.exports = async (
               userEco.money = userEco.money + money;
               userGamble.Gambledone = Date.now();
               await userGamble.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               await userEco.save().catch(async (error) => {
-                return BloomBot.handlerror(BloomBot, chatkey, error);
+                return BloomBot.handlerror(BloomBot, Sockey, error);
               });
               return await BloomBot.imagebutton(
                 BloomBot,
-                chatkey,
+                Sockey,
                 `*🌻Hola!* ${currFile} for ${
                   BloomBot.pushname || BloomBot.tagname
                 }
@@ -425,14 +425,14 @@ module.exports = async (
             userEco.money = userEco.money - money;
             userGamble.Gambledone = Date.now();
             await userGamble.save().catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
             await userEco.save().catch(async (error) => {
-              return BloomBot.handlerror(BloomBot, chatkey, error);
+              return BloomBot.handlerror(BloomBot, Sockey, error);
             });
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*🌻Hola!* ${currFile} for ${
                 BloomBot.pushname || BloomBot.tagname
               }
@@ -445,7 +445,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

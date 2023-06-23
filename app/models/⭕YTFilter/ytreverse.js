@@ -6,7 +6,7 @@ const currFile = fileName.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -71,10 +71,10 @@ module.exports = async (
       !query ||
       (query.includes("youtube") && !BloomBot.TubeRegex.test(query))
     ) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: { text: "❌", key: chatkey.key },
+      await BloomBot.sendMessage(Sockey.chat, {
+        react: { text: "❌", key: Sockey.key },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥 Apologies:* ${BloomBot.pushname || BloomBot.tagname}
 *❌Error:*
 • _No query provided!_
@@ -91,7 +91,7 @@ module.exports = async (
         filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
       });
       const AudioFilePath = `./${new Date().getTime()}.mp3`;
-      const newAudioFilePath = `./${chatkey.chat}.mp3`;
+      const newAudioFilePath = `./${Sockey.chat}.mp3`;
       await new Promise((resolve, reject) => {
         const stream = audioStream.pipe(
           BloomBot.fs.createWriteStream(AudioFilePath)
@@ -112,7 +112,7 @@ module.exports = async (
               response.data.youtube_search[0].AUTHOR_NAME || "Not available";
             await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*🌻Hello!* ${currFile} for ${
                 BloomBot.pushname || BloomBot.tagname
               }
@@ -127,10 +127,10 @@ module.exports = async (
 *📜Description:*`,
               response.data.youtube_search[0].HQ_IMAGE
             );
-            await BloomBot.sendMessage(chatkey.chat, {
+            await BloomBot.sendMessage(Sockey.chat, {
               audio: file,
               mimetype: "audio/mpeg",
-              fileName: `${chatkey.chat}.mp3`,
+              fileName: `${Sockey.chat}.mp3`,
               headerType: 4,
               contextInfo: {
                 externalAdReply: {
@@ -157,7 +157,7 @@ module.exports = async (
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

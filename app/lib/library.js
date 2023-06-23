@@ -172,7 +172,7 @@ module.exports = async (BloomBot, mags, update, store) => {
       suggestionMessage += suggestedCommandsText;
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         suggestionMessage,
         BloomBot.display
       );
@@ -183,7 +183,7 @@ module.exports = async (BloomBot, mags, update, store) => {
         "For command list press below buttons.";
       return await BloomBot.imagebutton(
         BloomBot,
-        chatkey,
+        Sockey,
         errorMessage,
         BloomBot.display
       );

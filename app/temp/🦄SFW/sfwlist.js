@@ -4,7 +4,7 @@ const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -14,7 +14,7 @@ module.exports = async (
 ) => {
   await BloomBot.imagebutton(
     BloomBot,
-    chatkey,
+    Sockey,
     `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🤖Hello, I am BloomBot User-bot🤖*
 • ⒸBloomBot: is a whatsapp userbot with automation,moderation,music,games and 200+ commands!

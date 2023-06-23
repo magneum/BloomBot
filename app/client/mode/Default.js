@@ -1,46 +1,46 @@
 require("🌟/config/index.js");
-module.exports = async (BloomBot, chatkey, update, store) => {
-  if (!chatkey.isGroup && BloomBot.command) {
+module.exports = async (BloomBot, Sockey, update, store) => {
+  if (!Sockey.isGroup && BloomBot.command) {
     if (BloomBot.command == "bot") {
       if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
         return await BloomBot.sendMessage(
-          chatkey.chat,
+          Sockey.chat,
           {
             gifPlayback: true,
             video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
             caption: `*📢Maintenance Mode On*
 *😥Apologies:* _${BloomBot.pushname}_
 > come back another time`,
-            mentions: [chatkey.sender],
+            mentions: [Sockey.sender],
           },
-          { quoted: chatkey },
+          { quoted: Sockey },
         );
       } else {
-        require("🌟/lib/library")(BloomBot, chatkey, update, store);
-        return await BloomBot.sendMessage(chatkey.chat, {
+        require("🌟/lib/library")(BloomBot, Sockey, update, store);
+        return await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "🌻",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
       }
     } else {
       await BloomBot.UserPrivate.findOne(
         {
-          Id: chatkey.sender,
+          Id: Sockey.sender,
         },
         async (error, user) => {
-          if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+          if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
           if (!user) {
             new BloomBot.UserPrivate({
-              Id: chatkey.sender,
+              Id: Sockey.sender,
               Amount: 1,
             })
               .save()
-              .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+              .catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
@@ -54,10 +54,10 @@ module.exports = async (BloomBot, chatkey, update, store) => {
             user.Amount = user.Amount + 1;
             await user
               .save()
-              .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
+              .catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
             return await BloomBot.imagebutton(
               BloomBot,
-              chatkey,
+              Sockey,
               `*Dear* _${BloomBot.pushname || BloomBot.tagname}_
 • This Private Is Being Guarded By BloomBot Ai!
 • Do Not Spam The Chat Box!
@@ -70,23 +70,23 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           } else {
             await user
               .delete()
-              .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
-            return await BloomBot.updateBlockStatus(chatkey.sender, "block").catch(
-              (error) => BloomBot.handlerror(BloomBot, chatkey, error),
+              .catch(async (error) => BloomBot.handlerror(BloomBot, Sockey, error));
+            return await BloomBot.updateBlockStatus(Sockey.sender, "block").catch(
+              (error) => BloomBot.handlerror(BloomBot, Sockey, error),
             );
           }
         },
       );
     }
   } else {
-    if (chatkey.isGroup && BloomBot.command) {
+    if (Sockey.isGroup && BloomBot.command) {
       BloomBot.userBanCheck.findOne(
         {
-          Id: chatkey.sender,
+          Id: Sockey.sender,
         },
         (error, banCheck) => {
           if (error) {
-            return chatkey.reply(`*😥Apologies:* _${BloomBot.pushname}_
+            return Sockey.reply(`*😥Apologies:* _${BloomBot.pushname}_
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:*
@@ -94,11 +94,11 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           }
           BloomBot.userBanCheck.findOne(
             {
-              Id: chatkey.chat,
+              Id: Sockey.chat,
             },
             async (error, groupCheck) => {
               if (error) {
-                return chatkey.reply(`*😥Apologies:* _${BloomBot.pushname}_
+                return Sockey.reply(`*😥Apologies:* _${BloomBot.pushname}_
 
 *❌Error:* There has been an API Error. Please try again later.
 *🐞Bug:*
@@ -108,12 +108,12 @@ module.exports = async (BloomBot, chatkey, update, store) => {
               if (groupCheck && !BloomBot.byMyself && !BloomBot.isSudo) return;
               await BloomBot.LinkList.findOne(
                 {
-                  serverId: chatkey.chat,
+                  serverId: Sockey.chat,
                 },
                 async (error, server) => {
-                  if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+                  if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
                   if (!server) return;
-                  return require("🌟/auth/antilink")(BloomBot, chatkey);
+                  return require("🌟/auth/antilink")(BloomBot, Sockey);
                 },
               );
               // respA = await BloomBot.groupMetadata("120363020792949649@g.us");
@@ -126,11 +126,11 @@ module.exports = async (BloomBot, chatkey, update, store) => {
               // !BloomBot.fromme &&
               // !BloomBot.isSudo &&
               // !BloomBot.constResp.includes(BloomBot.command) &&
-              // !BloomBot.memberRespA.includes(chatkey.sender) &&
-              // !BloomBot.memberRespB.includes(chatkey.sender)
+              // !BloomBot.memberRespA.includes(Sockey.sender) &&
+              // !BloomBot.memberRespB.includes(Sockey.sender)
               // ) {
               // return await BloomBot.sendMessage(
-              // chatkey.chat,
+              // Sockey.chat,
               // {
               // gifPlayback: true,
               // video: BloomBot.fs.readFileSync("./public/how.mp4"),
@@ -142,34 +142,34 @@ module.exports = async (BloomBot, chatkey, update, store) => {
               // *⚙️Webpage:*
               // > bit.ly/magneum
               // > Login To Your Dashboard`,
-              // mentions: [chatkey.sender],
+              // mentions: [Sockey.sender],
               // },
-              // { quoted: chatkey }
+              // { quoted: Sockey }
               // );
               // }
               if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
                 return await BloomBot.sendMessage(
-                  chatkey.chat,
+                  Sockey.chat,
                   {
                     gifPlayback: true,
                     video: BloomBot.fs.readFileSync("./public/Maintenance.mp4"),
                     caption: `*📢Maintenance Mode On*
 *😥Apologies:* _${BloomBot.pushname}_
 > come back another time`,
-                    mentions: [chatkey.sender],
+                    mentions: [Sockey.sender],
                   },
-                  { quoted: chatkey },
+                  { quoted: Sockey },
                 );
               }
-              await BloomBot.sendMessage(chatkey.chat, {
+              await BloomBot.sendMessage(Sockey.chat, {
                 react: {
                   text: "🌻",
-                  key: chatkey.key,
+                  key: Sockey.key,
                 },
               });
               return await require("🌟/lib/library")(
                 BloomBot,
-                chatkey,
+                Sockey,
                 update,
                 store,
               );

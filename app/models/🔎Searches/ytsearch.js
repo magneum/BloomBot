@@ -5,7 +5,7 @@ const currentFile = filePath.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,13 +15,13 @@ module.exports = async (
 ) => {
   // try {
   // if (!BloomBot.args.join(" ")) {
-  // await BloomBot.sendMessage(chatkey.chat, {
+  // await BloomBot.sendMessage(Sockey.chat, {
   // react: {
   // text: "❌",
-  // key: chatkey.key,
+  // key: Sockey.key,
   // },
   // });
-  // return chatkey.reply(
+  // return Sockey.reply(
   // `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
   // *❌Error:*
   // • _No query provided!_
@@ -43,12 +43,12 @@ module.exports = async (
   // let thumbnailUrl = searchResults.videos[0].thumbnail;
   // return await BloomBot.imagebutton(
   // BloomBot,
-  // chatkey,
+  // Sockey,
   // fetchedData,
   // thumbnailUrl,
   // );
   // } catch (error) {
-  // return BloomBot.handlerror(BloomBot, chatkey, error);
+  // return BloomBot.handlerror(BloomBot, Sockey, error);
   // }
 };
 

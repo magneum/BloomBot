@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -15,13 +15,13 @@ module.exports = async (
 ) => {
   try {
     if (!BloomBot.args) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -45,13 +45,13 @@ module.exports = async (
       }
     }
     if (text.length > 200) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -75,7 +75,7 @@ module.exports = async (
         const mgdata = response.data;
 
         return await BloomBot.sendMessage(
-          chatkey.chat,
+          Sockey.chat,
           {
             audio: { url: mgdata.meta.url },
             mimetype: "audio/mpeg",
@@ -95,12 +95,12 @@ module.exports = async (
               },
             },
           },
-          { quoted: chatkey }
+          { quoted: Sockey }
         );
       });
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

@@ -4,7 +4,7 @@ const tpth = ppth.basename(__filename);
 const currFile = tpth.slice(0, -3).toLowerCase();
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -13,14 +13,14 @@ module.exports = async (
   participants,
 ) => {
   try {
-    if (!chatkey.isGroup) {
-      await BloomBot.sendMessage(chatkey.chat, {
+    if (!Sockey.isGroup) {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -28,13 +28,13 @@ module.exports = async (
       );
     }
     if (!isAdmin) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -42,13 +42,13 @@ module.exports = async (
       );
     }
     if (!isbotAdmin) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -56,13 +56,13 @@ module.exports = async (
       );
     }
     if (!/image/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -73,13 +73,13 @@ module.exports = async (
       );
     }
     if (/webp/.test(BloomBot.mime)) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -91,11 +91,11 @@ module.exports = async (
     }
 
     const media = await BloomBot.downloadAndSaveMediaMessage(BloomBot.quoted);
-    await BloomBot.updateProfilePicture(chatkey.chat, { url: media })
+    await BloomBot.updateProfilePicture(Sockey.chat, { url: media })
       .then(
         BloomBot.imagebutton(
           BloomBot,
-          chatkey,
+          Sockey,
           `> *Group icone has been changed: ${
             BloomBot.pushname || BloomBot.tagname
           }*`,
@@ -104,13 +104,13 @@ module.exports = async (
       )
       .catch(async (error) => {
         BloomBot.fs.unlinkSync(media);
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -121,7 +121,7 @@ module.exports = async (
         );
       });
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

@@ -1,6 +1,6 @@
 require("🌟/config/index.js");
 
-module.exports = async (BloomBot, chatkey, context, image) => {
+module.exports = async (BloomBot, Sockey, context, image) => {
   let buffer;
   if (Buffer.isBuffer(image)) {
     buffer = image;
@@ -14,7 +14,7 @@ module.exports = async (BloomBot, chatkey, context, image) => {
     buffer = Buffer.alloc(0);
   }
   let receiver;
-  let mentions = [chatkey.sender];
+  let mentions = [Sockey.sender];
   await (async () => {
     switch (true) {
       case BloomBot.isReply:
@@ -35,7 +35,7 @@ module.exports = async (BloomBot, chatkey, context, image) => {
         break;
     }
   })();
-  const caption = `*📢Chat Id:* ${chatkey.chat}\n${context}
+  const caption = `*📢Chat Id:* ${Sockey.chat}\n${context}
   
 *ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`;
   const messageOptions = {
@@ -43,12 +43,12 @@ module.exports = async (BloomBot, chatkey, context, image) => {
     caption: caption,
     mentions: mentions,
   };
-  BloomBot.sendMessage(chatkey.chat, messageOptions, { quoted: chatkey }).catch(
+  BloomBot.sendMessage(Sockey.chat, messageOptions, { quoted: Sockey }).catch(
     (e) => console.log(e)
   );
 };
 
-// module.exports = async (BloomBot, chatkey, context, imåge) => {
+// module.exports = async (BloomBot, Sockey, context, imåge) => {
 // let buffer = Buffer.isBuffer(imåge)
 // ? imåge
 // : /^data:.*?\/.*?;base64,/i.test(imåge)
@@ -60,7 +60,7 @@ module.exports = async (BloomBot, chatkey, context, image) => {
 // : Buffer.alloc(0);
 
 // let receiver;
-// let mentions = [chatkey.sender];
+// let mentions = [Sockey.sender];
 // switch (true) {
 // case BloomBot.isReply:
 // receiver =
@@ -70,13 +70,13 @@ module.exports = async (BloomBot, chatkey, context, image) => {
 // : "";
 // mentions.push(receiver);
 // BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // image: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 // case BloomBot.mentionByTag:
@@ -87,25 +87,25 @@ module.exports = async (BloomBot, chatkey, context, image) => {
 // : [];
 // mentions.push(receiver);
 // BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // image: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 
 // default:
 // BloomBot.sendMessage(
-// chatkey.chat,
+// Sockey.chat,
 // {
 // image: buffer,
-// caption: `*📢Chat Id:* ${chatkey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
+// caption: `*📢Chat Id:* ${Sockey.chat}\n${context}\n\n*ⒸBloomBot by Magneum™*\n*💻homePage:* bit.ly/magneum\n*🏘️Group:* tinyurl.com/magneum`,
 // mentions: mentions,
 // },
-// { quoted: chatkey }
+// { quoted: Sockey }
 // ).catch((e) => console.log(e));
 // break;
 // }

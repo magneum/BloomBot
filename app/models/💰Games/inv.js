@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,13 +16,13 @@ module.exports = async (
   try {
     BloomBot.Robbery.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, userRob) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
         if (!userRob) {
           new BloomBot.Robbery({
-            Id: chatkey.sender,
+            Id: Sockey.sender,
             sword: 0,
             laptop: 0,
             charm: 0,
@@ -31,11 +31,11 @@ module.exports = async (
           })
             .save()
             .catch(async (error) =>
-              BloomBot.handlerror(BloomBot, chatkey, error)
+              BloomBot.handlerror(BloomBot, Sockey, error)
             );
           return await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 *🧈Status:* Added To DB!
 *💰Balance:* Just Bloomed Your Account!`,
@@ -44,7 +44,7 @@ module.exports = async (
         }
         return await BloomBot.imagebutton(
           BloomBot,
-          chatkey,
+          Sockey,
           `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
 ⚔️ 𝗦𝘄𝗼𝗿𝗱: ${userRob.sword}
 💻 𝗟𝗮𝗽𝘁𝗼𝗽: ${userRob.laptop}
@@ -54,7 +54,7 @@ module.exports = async (
       }
     );
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

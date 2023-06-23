@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -13,21 +13,21 @@ module.exports = async (
   groupAdmins,
   participants
 ) => {
-  await BloomBot.sendMessage(chatkey.chat, {
+  await BloomBot.sendMessage(Sockey.chat, {
     react: {
       text: "🌻",
-      key: chatkey.key,
+      key: Sockey.key,
     },
   });
   try {
     if (!BloomBot.byMyself && !BloomBot.isSudo) {
-      await BloomBot.sendMessage(chatkey.chat, {
+      await BloomBot.sendMessage(Sockey.chat, {
         react: {
           text: "❌",
-          key: chatkey.key,
+          key: Sockey.key,
         },
       });
-      return chatkey.reply(
+      return Sockey.reply(
         `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • _Owner Only Command!_`
@@ -50,14 +50,14 @@ module.exports = async (
             Id: repliedPerson,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${repliedPersonNum} is already un-banned!`
               );
             } else {
               userBan.delete();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${repliedPersonNum} has been un-banned!`
               );
             }
@@ -74,14 +74,14 @@ module.exports = async (
             Id: 𝕻𝖊𝖗𝖘𝖔𝖓,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${mention} is already un-banned!`
               );
             } else {
               userBan.delete();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* @${mention} has been un-banned!`
               );
             }
@@ -94,17 +94,17 @@ module.exports = async (
         !BloomBot.args[0].startsWith("@"):
         BloomBot.userBanCheck.findOne(
           {
-            Id: chatkey.chat,
+            Id: Sockey.chat,
           },
           async (error, userBan) => {
-            if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+            if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
             if (!userBan) {
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* ${groupName}\nGroup is already un-banned!`
               );
             } else {
               userBan.delete();
-              return chatkey.reply(
+              return Sockey.reply(
                 `*🔒Status:* ${groupName}\nGroup Has Been un-banned!`
               );
             }
@@ -113,13 +113,13 @@ module.exports = async (
         break;
 
       default:
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 *❌Error:* 
 • _Could not find any context!_
@@ -132,7 +132,7 @@ module.exports = async (
         );
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

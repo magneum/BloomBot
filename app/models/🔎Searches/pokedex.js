@@ -5,64 +5,66 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
   isbotAdmin,
   groupAdmins,
-  participants,
+  participants
 ) => {
   try {
-    if (!BloomBot.args.join(" ")) {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+    switch (true) {
+      case !BloomBot.args.join(" "):
+        await BloomBot.sendMessage(Sockey.chat, {
+          react: {
+            text: "❌",
+            key: Sockey.key,
+          },
+        });
+        return Sockey.reply(
+          `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
 • _No query provided!_
 
 *🌻Usage:* 
-• _${BloomBot.prefix}${currFile} manga-name_`,
-      );
-    }
-
-    let json;
-    try {
-      const res = await BloomBot.fetch(
-        API(`some-random-api.ml`, `/pokedex`, {
-          pokemon: BloomBot.args.join(" "),
-        }),
-      );
-      json = await res.json();
-    } catch {
-      await BloomBot.sendMessage(chatkey.chat, {
-        react: {
-          text: "❌",
-          key: chatkey.key,
-        },
-      });
-      return chatkey.reply(
-        `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
+• _${BloomBot.prefix}${currFile} manga-name_`
+        );
+      default:
+        let json;
+        try {
+          const res = await BloomBot.fetch(
+            API(`some-random-api.ml`, `/pokedex`, {
+              pokemon: BloomBot.args.join(" "),
+            })
+          );
+          json = await res.json();
+        } catch {
+          await BloomBot.sendMessage(Sockey.chat, {
+            react: {
+              text: "❌",
+              key: Sockey.key,
+            },
+          });
+          return Sockey.reply(
+            `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
-• _No Such Pokemon available!_`,
-      );
-    }
+• _No Such Pokemon available!_`
+          );
+        }
 
-    pokemon.configure({ apiKey: "123abc" });
-    await pokemon.card
-      .all({ q: `name:${BloomBot.args.join(" ")}` })
-      .then(async (card) => {
-        return await BloomBot.imagebutton(
-          BloomBot,
-          chatkey,
-          `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname}
+        pokemon.configure({ apiKey: "123abc" });
+        await pokemon.card
+          .all({ q: `name:${BloomBot.args.join(" ")}` })
+          .then(async (card) => {
+            return await BloomBot.imagebutton(
+              BloomBot,
+              Sockey,
+              `*🌻Hola!* ${currFile} for ${
+                BloomBot.pushname || BloomBot.tagname
+              }
           
 *💫Name:* ${json.name}
 *〽️Pokedex Id:* ${json.id}
@@ -94,11 +96,13 @@ module.exports = async (
 *🛍️Card Market:* ${card[0].cardmarket.url}
 *🧀TGC Player:* ${card[0].tcgplayer.url}
 `.trim(),
-          card[0].images.large,
-        );
-      });
+              card[0].images.large
+            );
+          });
+        break;
+    }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 module.exports.aliases = [];

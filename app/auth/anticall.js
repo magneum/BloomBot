@@ -25,7 +25,7 @@
 require("🔥/config/index.js");
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,

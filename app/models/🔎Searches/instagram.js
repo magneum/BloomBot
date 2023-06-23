@@ -5,7 +5,7 @@ const currFile = tpth.slice(0, -3).toLowerCase();
 
 module.exports = async (
   BloomBot,
-  chatkey,
+  Sockey,
   gmeta,
   isAdmin,
   groupName,
@@ -16,13 +16,13 @@ module.exports = async (
   try {
     switch (true) {
       case !BloomBot.args.join(" "):
-        await BloomBot.sendMessage(chatkey.chat, {
+        await BloomBot.sendMessage(Sockey.chat, {
           react: {
             text: "❌",
-            key: chatkey.key,
+            key: Sockey.key,
           },
         });
-        return chatkey.reply(
+        return Sockey.reply(
           `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -39,7 +39,7 @@ module.exports = async (
           );
           await BloomBot.imagebutton(
             BloomBot,
-            chatkey,
+            Sockey,
             `*🌻Hola!* ${currFile} for ${BloomBot.pushname || BloomBot.tagname} 
 *🀄Username:* ${fids.data.username}
 *📃Name:* ${fids.data.full_name}
@@ -53,13 +53,13 @@ module.exports = async (
             fids.data.profile_pic
           );
         } catch {
-          await BloomBot.sendMessage(chatkey.chat, {
+          await BloomBot.sendMessage(Sockey.chat, {
             react: {
               text: "❌",
-              key: chatkey.key,
+              key: Sockey.key,
             },
           });
-          return chatkey.reply(
+          return Sockey.reply(
             `*😥Apologies:* _${BloomBot.pushname || BloomBot.tagname}_
 
 *❌Error:* 
@@ -71,7 +71,7 @@ module.exports = async (
         }
     }
   } catch (error) {
-    return BloomBot.handlerror(BloomBot, chatkey, error);
+    return BloomBot.handlerror(BloomBot, Sockey, error);
   }
 };
 

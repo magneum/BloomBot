@@ -28,10 +28,10 @@ module.exports = async (BloomBot, store, logger) => {
   BloomBot.ws.on("CB:call", async (update) => {
     return await BloomBot.Anticall.findOne(
       {
-        Id: chatkey.sender,
+        Id: Sockey.sender,
       },
       async (error, server) => {
-        if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
+        if (error) return BloomBot.handlerror(BloomBot, Sockey, error);
         if (!server) return;
         const callerId = update.content[0].attrs["call-creator"];
         let person = await BloomBot.sendContact(callerId, global.owner);

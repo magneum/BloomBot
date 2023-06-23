@@ -32,7 +32,7 @@ let PhoneNumber = require("awesome-phonenumber");
 const {
   getBuffer,
   getSizeMedia,
-  chatkey_maker,
+  Sockey_maker,
 } = require("🔥/lib/bloomHive.js");
 
 module.exports = async (BloomBot) => {
@@ -49,7 +49,7 @@ module.exports = async (BloomBot) => {
       { upload: BloomBot.waUploadToServer },
     );
     const template = Baileys.generateWAMessageFromContent(
-      chatkey.chat,
+      Sockey.chat,
       Baileys.proto.Message.fromObject({
         templateMessage: {
           hydratedTemplate: {
@@ -499,7 +499,7 @@ module.exports = async (BloomBot) => {
   };
 
   BloomBot.public = true;
-  BloomBot.serializeM = (chatkey) => chatkey_maker(BloomBot, chatkey, store);
+  BloomBot.serializeM = (Sockey) => Sockey_maker(BloomBot, Sockey, store);
   setInterval(async () => {
     const _Type = [
       "🎭Designer",

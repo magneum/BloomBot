@@ -50,7 +50,7 @@ const {
 } = require("./convr.js");
 const { NhentaiDL } = require("./nhentaidl.js");
 const {
-  chatkey_maker,
+  Sockey_maker,
   formatp,
   formatDate,
   getTime,
@@ -105,7 +105,7 @@ function getRandomImagePath() {
   });
 }
 
-module.exports = async (BloomBot, chatkey, update, store) => {
+module.exports = async (BloomBot, Sockey, update, store) => {
   BloomBot.display = getRandomImagePath().then((imagePath) => {
     BloomBot.display = imagePath;
   });
@@ -129,7 +129,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.Sticker = Sticker;
   BloomBot.createSticker = createSticker;
   BloomBot.StickerTypes = StickerTypes;
-  BloomBot.chatkey_maker = chatkey_maker;
+  BloomBot.Sockey_maker = Sockey_maker;
   BloomBot.formatp = formatp;
   BloomBot.formatDate = formatDate;
   BloomBot.getTime = getTime;
@@ -269,8 +269,8 @@ module.exports = async (BloomBot, chatkey, update, store) => {
       ? "918436686758,917430922909"
       : process.env.sudo;
   BloomBot.isSudo = sudotring.includes(
-    chatkey.sender.substring(0, chatkey.sender.indexOf("@")),
+    Sockey.sender.substring(0, Sockey.sender.indexOf("@")),
   );
-  BloomBot.tagname = chatkey.sender.replace(/['@s whatsapp.net']/g, "");
+  BloomBot.tagname = Sockey.sender.replace(/['@s whatsapp.net']/g, "");
   return BloomBot;
 };
