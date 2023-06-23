@@ -22,12 +22,44 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
+const logger = require("./app/log/index.js");
 const moduleAlias = require("module-alias");
-const aliasMapping = {
-  "@": "../",
-  "#": "../../",
-  "*": "../../../",
+
+const setupModuleAliases = () => {
+  try {
+    const aliasMapping = {
+      "🔥": "../",
+      "🌟": "../../",
+      "🚀": "../../../",
+      "❗️": "../../../../",
+    };
+    Object.entries(aliasMapping).forEach(([alias, target]) => {
+      moduleAlias.addAlias(alias, target);
+    });
+    logger.info("Module aliases successfully set up.");
+    logger.info("Logger is ready to use.");
+    return true;
+  } catch (error) {
+    logger.error("Failed to set up module aliases:", error);
+    return false;
+  }
 };
-Object.entries(aliasMapping).forEach(([alias, target]) => {
-  moduleAlias.addAlias(alias, target);
-});
+
+const initmodule = () => {
+  const isAliasesSetupSuccessful = setupModuleAliases();
+  if (!isAliasesSetupSuccessful) {
+    logger.error("Application initialization failed. Exiting...");
+    process.exit(1);
+  }
+};
+
+initmodule();
+
+// const aliasMapping = {
+// "@": "../",
+// "#": "../../",
+// "*": "../../../",
+// };
+// Object.entries(aliasMapping).forEach(([alias, target]) => {
+// moduleAlias.addAlias(alias, target);
+// });
