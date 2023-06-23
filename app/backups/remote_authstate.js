@@ -22,9 +22,9 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("@/config/index.js");
+require("🔥/config/index.js");
 const sequelize = DATABASE;
-const logger = require("@/log/index.js");
+const logger = require("🔥/log/index.js");
 const debugEnabled = VERBOSE === "1";
 const { DataTypes, Model } = require("sequelize");
 const { initAuthCreds, proto, BufferJSON } = require("@whiskeysockets/baileys");

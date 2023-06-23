@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("@/config/index");
+require("🔥/config/index");
 const moment = require("moment-timezone");
 module.exports = async (BloomBot, chatkey, update, store) => {
   BloomBot.body =
@@ -94,7 +94,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           { quoted: chatkey },
         );
       } else {
-        require("#/lib/library")(BloomBot, chatkey, update, store);
+        require("🌟/lib/library")(BloomBot, chatkey, update, store);
         return await BloomBot.sendMessage(chatkey.chat, {
           react: {
             text: "🌻",
@@ -200,7 +200,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
               async (error, server) => {
                 if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
                 if (!server) return;
-                require("@/utils/antilink")(BloomBot, chatkey);
+                require("🔥/utils/antilink")(BloomBot, chatkey);
                 if (MAINTAINANCE_MODE === "on" && !BloomBot.isSudo) {
                   return await BloomBot.sendMessage(
                     chatkey.chat,

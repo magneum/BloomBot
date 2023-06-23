@@ -24,7 +24,7 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 const fs = require("fs-extra");
 const git = require("simple-git")();
-const logger = require("@/log/index.js");
+const logger = require("🔥/log/index.js");
 const { exec } = require("child_process");
 
 const gitPull = async () => {

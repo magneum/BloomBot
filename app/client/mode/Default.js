@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("#/config/index.js");
+require("🌟/config/index.js");
 module.exports = async (BloomBot, chatkey, update, store) => {
   if (!chatkey.isGroup && BloomBot.command) {
     if (BloomBot.command == "bot") {
@@ -40,7 +40,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
           { quoted: chatkey },
         );
       } else {
-        require("#/lib/library")(BloomBot, chatkey, update, store);
+        require("🌟/lib/library")(BloomBot, chatkey, update, store);
         return await BloomBot.sendMessage(chatkey.chat, {
           react: {
             text: "🌻",
@@ -137,7 +137,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
                 async (error, server) => {
                   if (error) return BloomBot.handlerror(BloomBot, chatkey, error);
                   if (!server) return;
-                  return require("#/auth/antilink")(BloomBot, chatkey);
+                  return require("🌟/auth/antilink")(BloomBot, chatkey);
                 },
               );
               // respA = await BloomBot.groupMetadata("120363020792949649@g.us");
@@ -191,7 +191,7 @@ module.exports = async (BloomBot, chatkey, update, store) => {
                   key: chatkey.key,
                 },
               });
-              return await require("#/lib/library")(
+              return await require("🌟/lib/library")(
                 BloomBot,
                 chatkey,
                 update,

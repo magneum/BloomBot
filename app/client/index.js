@@ -23,17 +23,17 @@
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../../module-alias.js");
-require("@/config/index.js");
+require("🔥/config/index.js");
 const pino = require("pino");
 const fs = require("fs");
 const chalk = require("chalk");
 const { say } = require("cfonts");
 const mFolders = fs.readdirSync("./app/models");
 const mogclient = require("mongoose");
-const logger = require("@/log/index.js");
-const dbdata = require("@/config/dbdata.js");
-const BloomAuthy = require("@/auth/BloomAuthy.js");
-const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
+const logger = require("🔥/log/index.js");
+const dbdata = require("🔥/config/dbdata.js");
+const BloomAuthy = require("🔥/auth/BloomAuthy.js");
+const { useRemoteFileAuthState } = require("🔥/auth/old/dbAuth.js");
 const {
   default: BloomerClient,
   makeInMemoryStore,
@@ -146,12 +146,12 @@ async function magneum() {
   });
   store.bind(BloomBot.ev);
   require("./brain")(BloomBot);
-  require("@/events/connection_update")(BloomBot, magneum, logger);
-  require("@/events/messages_upsert")(BloomBot, store, logger);
-  require("@/events/group_participants_update")(BloomBot, store, logger);
-  require("@/events/cb_call")(BloomBot, store, logger);
-  require("@/events/contacts_update")(BloomBot, store, logger);
-  require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  require("🔥/events/connection_update")(BloomBot, magneum, logger);
+  require("🔥/events/messages_upsert")(BloomBot, store, logger);
+  require("🔥/events/group_participants_update")(BloomBot, store, logger);
+  require("🔥/events/cb_call")(BloomBot, store, logger);
+  require("🔥/events/contacts_update")(BloomBot, store, logger);
+  require("🔥/events/creds_update")(BloomBot, saveCreds, logger);
 }
 
 showCommands("app/models");

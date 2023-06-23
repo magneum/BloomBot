@@ -31,7 +31,6 @@ const setupModuleAliases = () => {
       "🔥": "../",
       "🌟": "../../",
       "🚀": "../../../",
-      "❗️": "../../../../",
     };
     Object.entries(aliasMapping).forEach(([alias, target]) => {
       moduleAlias.addAlias(alias, target);

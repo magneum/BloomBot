@@ -24,8 +24,8 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../../module-alias.js");
 const { Client } = require("pg");
-const logger = require("@/log/index.js");
-const dbdata = require("@/config/dbdata.js");
+const logger = require("🔥/log/index.js");
+const dbdata = require("🔥/config/dbdata.js");
 
 async function purgepg() {
   const connectionString = dbdata.DATABASE_URL;

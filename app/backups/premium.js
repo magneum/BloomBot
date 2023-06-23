@@ -22,7 +22,7 @@
 //  ║
 //  ╚◎ ⚙️Developers: +918436686758, +918250889325
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
-require("@/config/index.js");
+require("🔥/config/index.js");
 exports.premium = async (BloomBot, chatkey, update, store) => {
   if (BloomBot.isSudo) {
     await BloomBot.sendMessage(chatkey.chat, {
@@ -31,7 +31,7 @@ exports.premium = async (BloomBot, chatkey, update, store) => {
         key: chatkey.key,
       },
     });
-    return await require("@/System/library")(BloomBot, chatkey, update, store);
+    return await require("🔥/System/library")(BloomBot, chatkey, update, store);
   } else
     await BloomBot.premium.findOne(
       {
@@ -48,7 +48,7 @@ exports.premium = async (BloomBot, chatkey, update, store) => {
           })
             .save()
             .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
-          return await require("@/System/library")(
+          return await require("🔥/System/library")(
             BloomBot,
             chatkey,
             update,
@@ -82,7 +82,7 @@ exports.premium = async (BloomBot, chatkey, update, store) => {
           userVium
             .save()
             .catch(async (error) => BloomBot.handlerror(BloomBot, chatkey, error));
-          return await require("@/System/library")(
+          return await require("🔥/System/library")(
             BloomBot,
             chatkey,
             update,
