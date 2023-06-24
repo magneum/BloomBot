@@ -31,9 +31,8 @@ const { say } = require("cfonts");
 const mogclient = require("mongoose");
 const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
-const mFolders = fs.readdirSync("./server/commands");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
-const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
+const mFolders = fs.readdirSync("./server/commands");
 const {
   default: BloomerClient,
   makeInMemoryStore,
