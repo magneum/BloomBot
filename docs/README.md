@@ -2,8 +2,6 @@
 
 🌼🤖🌟🔮💫
 
-![BloomBot Banner](app/public/bloom/bloomer1.png)
-
 | ![GitHub stars](https://img.shields.io/github/stars/magneum/BloomBot?style=social) | ![GitHub forks](https://img.shields.io/github/forks/magneum/BloomBot?style=social) | ![GitHub issues](https://img.shields.io/github/issues/magneum/BloomBot) | ![GitHub license](https://img.shields.io/github/license/magneum/BloomBot) |
 | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 
