@@ -68,7 +68,7 @@ module.exports = async (
         );
 
       default:
-        let imåge = "./app/public/mention.png";
+        let imåge = "./server/public/mention.png";
         let buffer = Buffer.isBuffer(imåge)
           ? imåge
           : /^data:.*?\/.*?;base64,/i.test(imåge)

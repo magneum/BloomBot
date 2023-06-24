@@ -81,7 +81,7 @@ module.exports = async (
 *🎋Emo:* ${feeling}
 *📢From:* ${BloomBot.pushname}
 *🌻for:* @${mentionedUser.split("@")[0] || ""}
-*🐞Api:* https://magneum.vercel.app/api/`,
+*🐞Api:* https://magneum.vercel.server/api/`,
             mentions: [mentionedUser, chatkey.sender],
           },
           { quoted: chatkey },

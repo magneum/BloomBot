@@ -39,7 +39,7 @@ module.exports = async (BloomBot, magneum, logger) => {
       }
       process.exit(0);
     } else {
-      exec("rm -rf ./app/database/sql/auth.db");
+      exec("rm -rf ./server/database/sql/auth.db");
       process.exit(0);
     }
   };

@@ -31,7 +31,7 @@ const { say } = require("cfonts");
 const mogclient = require("mongoose");
 const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
-const mFolders = fs.readdirSync("./app/commands");
+const mFolders = fs.readdirSync("./server/commands");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
 const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
 const {
@@ -154,5 +154,5 @@ async function magneum() {
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
 }
 
-showCommands("app/commands");
+showCommands("server/commands");
 magneum().catch(async (error) => logger.error(error));

@@ -58,7 +58,7 @@ module.exports = async (
     } else {
       await BloomBot.magfetch(
         BloomBot,
-        "https://magneum.vercel.app/api/youtube_sr?q=" + BloomBot.args.join(" ")
+        "https://magneum.vercel.server/api/youtube_sr?q=" + BloomBot.args.join(" ")
       ).then(async (response) => {
         const mgdata = response.data;
         await BloomBot.imagebutton(

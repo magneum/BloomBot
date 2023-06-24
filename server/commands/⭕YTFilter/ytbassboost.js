@@ -92,7 +92,7 @@ module.exports = async (
     } else {
       const response = await BloomBot.magfetch(
         BloomBot,
-        `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
+        `https://magneum.vercel.server/api/youtube_sr?q=${query}`,
       );
       const audioStream = ytdl(response.data.youtube_search[0].LINK, {
         filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,

@@ -81,7 +81,7 @@ const ffmpeg = require("fluent-ffmpeg")()
 
 function getRandomImagePath() {
   return new Promise((resolve, reject) => {
-    const folderPath = "app/public/bloom";
+    const folderPath = "server/public/bloom";
     fs.readdir(folderPath, (err, files) => {
       if (err) {
         reject(err);

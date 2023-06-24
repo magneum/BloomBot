@@ -53,7 +53,7 @@ module.exports = async (
 
     const response = await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/nsfw?q=${currFile}`,
+      `https://magneum.vercel.server/api/nsfw?q=${currFile}`,
     );
     const mgdata = response.data;
     if (!mgdata.meta.thumbnail) {

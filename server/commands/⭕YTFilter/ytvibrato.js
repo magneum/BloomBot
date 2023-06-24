@@ -93,7 +93,7 @@ module.exports = async (
 
     const response = await BloomBot.magfetch(
       BloomBot,
-      `https://magneum.vercel.app/api/youtube_sr?q=${query}`,
+      `https://magneum.vercel.server/api/youtube_sr?q=${query}`,
     );
     const streamname = BloomBot.randomUUID();
     const audioStream = ytdl(response.data.youtube_search[0].LINK, {

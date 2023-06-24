@@ -38,7 +38,7 @@ module.exports = async (
   participants,
 ) => {
   try {
-    BloomBot.fetch(`https://magneum.vercel.app/api/sfw?q=${currFile.slice(1)}`)
+    BloomBot.fetch(`https://magneum.vercel.server/api/sfw?q=${currFile.slice(1)}`)
       .then((res) => res.json())
       .then(async (json) => {
         if (json.meta.url) {

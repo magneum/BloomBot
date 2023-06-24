@@ -48,7 +48,7 @@ const convertToLogLevel = (value) => {
 
 process.env.DATABASE_URL =
   process.env.DATABASE_URL === undefined
-    ? "./app/database/sql/auth.db"
+    ? "./server/database/sql/auth.db"
     : process.env.DATABASE_URL;
 process.env.DEBUG =
   process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
@@ -57,11 +57,11 @@ const dbdata = {
   MONGODB_URL: process.env.MONGODB_URL || undefined,
   DATABASE_URL:
     process.env.DATABASE_URL === undefined
-      ? "./app/database/sql/auth.db"
+      ? "./server/database/sql/auth.db"
       : process.env.DATABASE_URL,
   DEBUG: process.env.DEBUG === undefined ? false : process.env.DEBUG,
   DATABASE:
-    process.env.DATABASE_URL === "./app/database/sql/auth.db"
+    process.env.DATABASE_URL === "./server/database/sql/auth.db"
       ? new Sequelize({
           dialect: "sqlite",
           storage: process.env.DATABASE_URL,
