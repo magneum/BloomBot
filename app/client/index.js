@@ -28,10 +28,10 @@ const pino = require("pino");
 const fs = require("fs");
 const chalk = require("chalk");
 const { say } = require("cfonts");
-const mFolders = fs.readdirSync("./app/models");
 const mogclient = require("mongoose");
 const logger = require("@/log/index.js");
 const dbdata = require("@/config/dbdata.js");
+const mFolders = fs.readdirSync("./app/commands");
 const BloomAuthy = require("@/auth/BloomAuthy.js");
 const { useRemoteFileAuthState } = require("@/auth/old/dbAuth.js");
 const {
@@ -154,5 +154,5 @@ async function magneum() {
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
 }
 
-showCommands("app/models");
+showCommands("app/commands");
 magneum().catch(async (error) => logger.error(error));

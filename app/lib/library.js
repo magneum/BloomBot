@@ -27,7 +27,7 @@ const path = require("path");
 const didYouMean = require("didyoumean2").default;
 
 module.exports = async (BloomBot, mags, update, store) => {
-  const routePath = path.join(__dirname, "..", "models");
+  const routePath = path.join(__dirname, "..", "commands");
   const specialFolders = fs
     .readdirSync(routePath, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
