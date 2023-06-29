@@ -54,7 +54,7 @@ process.env.DEBUG =
   process.env.DEBUG === undefined ? "false" : process.env.DEBUG;
 
 const dbdata = {
-  MONGODB_URL: process.env.MONGODB_URL || undefined,
+  MONGO_URL: process.env.MONGO_URL || undefined,
   DATABASE_URL:
     process.env.DATABASE_URL === undefined
       ? "./server/database/sql/auth.db"

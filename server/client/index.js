@@ -96,7 +96,7 @@ async function magneum() {
   const sequelize = dbdata.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
   try {
-    await mogclient.connect(dbdata.MONGODB_URL, {
+    await mogclient.connect(dbdata.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
