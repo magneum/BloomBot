@@ -19,7 +19,8 @@ But beware, for as in any realm of magic, there may be a few mischievous bugs th
 
 Are you ready to unleash the power of BloomBot and witness its enchanting capabilities firsthand? It's time to make your move, brave adventurer! With just a click of a button, you can deploy BloomBot effortlessly using the magical Railway platform. Prepare to be amazed as the magic unfolds before your very eyes!
 
-[![Deploy on Railway](https://railway.server/button.svg)](https://railway.server/template/3wb-AP?referralCode=B6ZmKf)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/rwLjVm?referralCode=B6ZmKf)
+[Template Url](https://railway.app/template/rwLjVm?referralCode%253DB6ZmKf)
 
 ---
 
