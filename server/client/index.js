@@ -126,8 +126,8 @@ async function magneum() {
   }
   const BloomBot = BloomerClient({
     auth: state,
-    syncFullHistory: truerue,
-    fireInitQueries: truetru,
+    syncFullHistory: true,
+    fireInitQueries: true,
     downloadHistory: true,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
