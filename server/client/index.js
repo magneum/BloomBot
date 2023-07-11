@@ -120,9 +120,9 @@ async function magneum() {
   });
   let state, saveCreds;
   try {
-    ({ state, saveCreds } = await useMultiFileAuthState("application"));
-  } catch (error) {
     ({ state, saveCreds } = await BloomAuthy());
+  } catch (error) {
+    ({ state, saveCreds } = await useMultiFileAuthState("application"));
   }
   const BloomBot = BloomerClient({
     auth: state,
