@@ -126,33 +126,31 @@ async function magneum() {
   }
   const BloomBot = BloomerClient({
     auth: state,
-    syncFullHistory: false,
-    fireInitQueries: false,
-    downloadHistory: false,
+    syncFullHistory: truerue,
+    fireInitQueries: truetru,
+    downloadHistory: true,
     printQRInTerminal: true,
     logger: pino({ level: "silent" }),
-    shouldSyncHistoryMessage: false,
+    shouldSyncHistoryMessage: true,
     defaultQueryTimeoutMs: undefined,
     generateHighQualityLinkPreview: true,
-    browser: ["BloomBot by Magneum", "Chrome", "4.0.0"],
+    browser: ["BloomBot", "Chrome", "1.0.0"],
     getMessage: async (key) => {
       if (store) {
         const msg = await store.loadMessage(key.remoteJid, key.id, undefined);
         return msg.message || undefined;
       }
-      return {
-        conversation: "An Error Occurred, Repeat Command!",
-      };
+      return;
     },
   });
   store.bind(BloomBot.ev);
-  require("./brain")(BloomBot);
-  require("@/events/connection_update")(BloomBot, magneum, logger);
-  require("@/events/messages_upsert")(BloomBot, store, logger);
-  require("@/events/group_participants_update")(BloomBot, store, logger);
-  require("@/events/cb_call")(BloomBot, store, logger);
-  require("@/events/contacts_update")(BloomBot, store, logger);
-  require("@/events/creds_update")(BloomBot, saveCreds, logger);
+  await require("./brain.js")(BloomBot);
+  await require("@/events/connection_update")(BloomBot, magneum, logger);
+  await require("@/events/messages_upsert")(BloomBot, store, logger);
+  await require("@/events/group_participants_update")(BloomBot, store, logger);
+  await require("@/events/cb_call")(BloomBot, store, logger);
+  await require("@/events/contacts_update")(BloomBot, store, logger);
+  await require("@/events/creds_update")(BloomBot, saveCreds, logger);
 }
 showCommands("server/commands");
 magneum().catch(async (error) => logger.error(error));
