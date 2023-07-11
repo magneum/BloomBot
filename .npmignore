@@ -1,6 +1,7 @@
+*application
 node_modules
-json.sqlite
 *.yarnrc.yml
+json.sqlite
 *.pnp.cjs
 *.vscode
 scraper
