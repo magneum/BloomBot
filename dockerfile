@@ -19,8 +19,8 @@ RUN npm install -g n
 # Clear the hash cache
 RUN hash -r
 
-# Install the latest 16 version of Node.js
-RUN n 16
+# Install the latest 18 version of Node.js
+RUN n 18
 
 # Install Yarn package manager
 RUN npm install -g yarn
