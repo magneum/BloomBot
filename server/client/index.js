@@ -24,8 +24,8 @@
 "◎☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱( Ⓒ𝐁𝐥𝐨𝐨𝐦𝐁𝐨𝐭 (𝐦𝐮𝐥𝐭𝐢-𝐝𝐞𝐯𝐢𝐜𝐞) 𝐛𝐲 𝐌𝐚𝐠𝐧𝐞𝐮𝐦™ )☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱☱◎";
 require("../../module-alias.js");
 require("@/config/index.js");
-const pino = require("pino");
 const fs = require("fs");
+const pino = require("pino");
 const chalk = require("chalk");
 const { say } = require("cfonts");
 const mogclient = require("mongoose");
@@ -35,6 +35,7 @@ const BloomAuthy = require("@/auth/BloomAuthy.js");
 const mFolders = fs.readdirSync("./server/commands");
 const {
   default: BloomerClient,
+  useMultiFileAuthState,
   makeInMemoryStore,
 } = require("@whiskeysockets/baileys");
 
@@ -91,7 +92,6 @@ function showCommands(path) {
     }
   }
 }
-
 async function magneum() {
   const sequelize = dbdata.DATABASE;
   logger.info("📢 Connecting to Mongodb() database...");
@@ -105,7 +105,6 @@ async function magneum() {
     logger.error("❌ Unable to Connect with Mongodb():", error);
     process.exit(0);
   }
-
   logger.info("📢 Connecting to Sequelize() database...");
   try {
     await sequelize.authenticate();
@@ -114,14 +113,17 @@ async function magneum() {
     logger.error("❌ Unable to connect to the Sequelize():", error);
     process.exit(0);
   }
-
   logger.info("📢 Syncing Sequelize() Database...");
   await sequelize.sync();
-
   const store = makeInMemoryStore({
-    logger: pino().child({ level: "silent", stream: "store" }),
+    logger: pino().child({ level: "error", stream: "store" }),
   });
-  let { state, saveCreds } = await BloomAuthy();
+  let state, saveCreds;
+  try {
+    ({ state, saveCreds } = await useMultiFileAuthState("application"));
+  } catch (error) {
+    ({ state, saveCreds } = await BloomAuthy());
+  }
   const BloomBot = BloomerClient({
     auth: state,
     syncFullHistory: false,
@@ -152,6 +154,5 @@ async function magneum() {
   require("@/events/contacts_update")(BloomBot, store, logger);
   require("@/events/creds_update")(BloomBot, saveCreds, logger);
 }
-
 showCommands("server/commands");
 magneum().catch(async (error) => logger.error(error));
