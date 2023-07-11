@@ -26,7 +26,7 @@ require("@/config/index.js");
 const fs = require("fs");
 const path = require("path");
 var FileType = require("file-type");
-const gitPull = require("@/utils/gitPull.js");
+// const gitPull = require("@/utils/gitPull.js");
 const Baileys = require("@whiskeysockets/baileys");
 let PhoneNumber = require("awesome-phonenumber");
 const {
@@ -42,11 +42,11 @@ module.exports = async (BloomBot) => {
     footer = "",
     img,
     but = [],
-    options = {},
+    options = {}
   ) => {
     let message = await Baileys.prepareWAMessageMedia(
       { image: img },
-      { upload: BloomBot.waUploadToServer },
+      { upload: BloomBot.waUploadToServer }
     );
     const template = Baileys.generateWAMessageFromContent(
       chatkey.chat,
@@ -60,7 +60,7 @@ module.exports = async (BloomBot) => {
           },
         },
       }),
-      options,
+      options
     );
     BloomBot.relayMessage(jid, template.message, {
       messageId: template.key.id,
@@ -73,7 +73,7 @@ module.exports = async (BloomBot) => {
     text,
     footer,
     quoted = "",
-    options = {},
+    options = {}
   ) => {
     let buttonMessage = {
       text,
@@ -93,7 +93,7 @@ module.exports = async (BloomBot) => {
     path,
     caption = "",
     quoted = "",
-    options,
+    options
   ) => {
     let buffer = Buffer.isBuffer(path)
       ? path
@@ -107,7 +107,7 @@ module.exports = async (BloomBot) => {
     return await BloomBot.sendMessage(
       jid,
       { image: buffer, caption: caption, ...options },
-      { quoted },
+      { quoted }
     );
   };
 
@@ -117,7 +117,7 @@ module.exports = async (BloomBot) => {
     caption = "",
     quoted = "",
     gif = false,
-    options,
+    options
   ) => {
     let buffer = Buffer.isBuffer(path)
       ? path
@@ -131,7 +131,7 @@ module.exports = async (BloomBot) => {
     return await BloomBot.sendMessage(
       jid,
       { video: buffer, caption: caption, gifPlayback: gif, ...options },
-      { quoted },
+      { quoted }
     );
   };
 
@@ -148,7 +148,7 @@ module.exports = async (BloomBot) => {
     return await BloomBot.sendMessage(
       jid,
       { audio: buffer, ptt: ptt, ...options },
-      { quoted },
+      { quoted }
     );
   };
 
@@ -159,12 +159,12 @@ module.exports = async (BloomBot) => {
         text: text,
         contextInfo: {
           mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(
-            (v) => v[1] + "@s.whatsapp.net",
+            (v) => v[1] + "@s.whatsapp.net"
           ),
         },
         ...options,
       },
-      { quoted },
+      { quoted }
     );
 
   BloomBot.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
@@ -187,7 +187,7 @@ module.exports = async (BloomBot) => {
     await BloomBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
-      { quoted },
+      { quoted }
     );
     return buffer;
   };
@@ -212,7 +212,7 @@ module.exports = async (BloomBot) => {
     await BloomBot.sendMessage(
       jid,
       { sticker: { url: buffer }, ...options },
-      { quoted },
+      { quoted }
     );
     return buffer;
   };
@@ -220,7 +220,7 @@ module.exports = async (BloomBot) => {
   BloomBot.downloadAndSaveMediaMessage = async (
     message,
     filename,
-    attachExtension = true,
+    attachExtension = true
   ) => {
     let quoted = message.msg ? message.msg : message;
     let mime = (message.msg || message).mimetype || "";
@@ -229,7 +229,7 @@ module.exports = async (BloomBot) => {
       : mime.split("/")[0];
     const stream = await Baileys.downloadContentFromMessage(
       quoted,
-      messageType,
+      messageType
     );
     let buffer = Buffer.from([]);
     for await (const chunk of stream) {
@@ -248,7 +248,7 @@ module.exports = async (BloomBot) => {
       : mime.split("/")[0];
     const stream = await Baileys.downloadContentFromMessage(
       message,
-      messageType,
+      messageType
     );
     let buffer = Buffer.from([]);
     for await (const chunk of stream) {
@@ -264,7 +264,7 @@ module.exports = async (BloomBot) => {
     fileName = "",
     caption = "",
     quoted = "",
-    options = {},
+    options = {}
   ) => {
     let types = await BloomBot.getFile(path, true);
     let { mime, ext, response, data, filename } = types;
@@ -297,7 +297,7 @@ module.exports = async (BloomBot) => {
     await BloomBot.sendMessage(
       jid,
       { [type]: { url: pathFile }, caption, mimetype, fileName, ...options },
-      { quoted, ...options },
+      { quoted, ...options }
     );
     return fs.promises.unlink(pathFile);
   };
@@ -306,7 +306,7 @@ module.exports = async (BloomBot) => {
     jid,
     message,
     forceforward = false,
-    options = {},
+    options = {}
   ) => {
     let vtype;
     if (options.readViewOnce) {
@@ -329,7 +329,7 @@ module.exports = async (BloomBot) => {
     let mtype = Object.keys(message.message)[0];
     let content = await Baileys.generateforwardMessageContent(
       message,
-      forceforward,
+      forceforward
     );
     let ctype = Object.keys(content)[0];
     let context = {};
@@ -354,7 +354,7 @@ module.exports = async (BloomBot) => {
                 }
               : {}),
           }
-        : {},
+        : {}
     );
     await BloomBot.relayMessage(jid, waMessage.message, {
       messageId: waMessage.key.id,
@@ -367,7 +367,7 @@ module.exports = async (BloomBot) => {
     copy,
     text = "",
     sender = BloomBot.user.id,
-    options = {},
+    options = {}
   ) => {
     let mtype = Object.keys(copy.message)[0];
     let isEphemeral = mtype === "ephemeralMessage";
@@ -419,7 +419,7 @@ module.exports = async (BloomBot) => {
     };
     filename = path.join(
       __filename,
-      "@/Bin/" + new Date() * 1 + "." + type.ext,
+      "@/Bin/" + new Date() * 1 + "." + type.ext
     );
     if (data && save) fs.promises.writeFile(filename, data);
     return {
@@ -452,8 +452,8 @@ module.exports = async (BloomBot) => {
           v.name ||
             v.subject ||
             PhoneNumber("+" + id.replace("@s.whatsapp.net", "")).getNumber(
-              "international",
-            ),
+              "international"
+            )
         );
       });
     else
@@ -471,7 +471,7 @@ module.exports = async (BloomBot) => {
       v.subject ||
       v.verifiedName ||
       PhoneNumber("+" + jid.replace("@s.whatsapp.net", "")).getNumber(
-        "international",
+        "international"
       )
     );
   };
@@ -482,9 +482,9 @@ module.exports = async (BloomBot) => {
       list.push({
         displayName: await BloomBot.getName(i + "@s.whatsapp.net"),
         vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await BloomBot.getName(
-          i + "@s.whatsapp.net",
+          i + "@s.whatsapp.net"
         )}\nFN:${await BloomBot.getName(
-          i + "@s.whatsapp.net",
+          i + "@s.whatsapp.net"
         )}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Phone\nitem2.EMAIL;type=INTERNET:νℓкуяєbots@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:instagram.com/riki_4932\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;India;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
       });
     }
@@ -494,7 +494,7 @@ module.exports = async (BloomBot) => {
         contacts: { displayName: `${list.length} contact`, contacts: list },
         ...opts,
       },
-      { quoted },
+      { quoted }
     );
   };
 
@@ -563,11 +563,11 @@ module.exports = async (BloomBot) => {
     ];
     const __Feeling = _Type[Math.floor(Math.random() * _Type.length)];
     await BloomBot.updateProfileStatus(
-      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)",
+      "Feeling: " + __Feeling + " (ⒸBloomBot by Magneum™)"
     );
   }, 300 * 1000);
-  setInterval(async () => {
-    gitPull();
-  }, 120 * 1000);
+  // setInterval(async () => {
+  // gitPull();
+  // }, 120 * 1000);
   return BloomBot;
 };
