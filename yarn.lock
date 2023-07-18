@@ -4971,9 +4971,10 @@ libphonenumber-js@^1.10.20:
   resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.37.tgz#185264130c9375f17d0c487a288223294579929c"
   integrity sha512-Z10PCaOCiAxbUxLyR31DNeeNugSVP6iv/m7UrSKS5JHziEMApJtgku4e9Q69pzzSC9LnQiM09sqsGf2ticZnMw==
 
-"libsignal@git+https://github.com/adiwajshing/libsignal-node.git":
+"libsignal@https://github.com/adiwajshing/libsignal-node.git":
   version "2.0.1"
-  resolved "git+https://github.com/adiwajshing/libsignal-node.git#11dbd962ea108187c79a7c46fe4d6f790e23da97"
+  uid "11dbd962ea108187c79a7c46fe4d6f790e23da97"
+  resolved "https://github.com/adiwajshing/libsignal-node.git#11dbd962ea108187c79a7c46fe4d6f790e23da97"
   dependencies:
     curve25519-js "^0.0.4"
     protobufjs "6.8.8"
@@ -5520,10 +5521,10 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@^5.10.7, mongoose@^5.11.11:
-  version "5.13.19"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.13.19.tgz#062f63937aa08efa96d04ed6ee532a81bfd2111d"
-  integrity sha512-t65+DaVfjlSfCPaPsev4YsbB2jHg4vylvkuQOBaCXkXIenXLDhE5ZNEXbChGoPUSFRUp7ihze6YenQwK3nIhPA==
+mongoose@^5.11.11, mongoose@^5.13.20:
+  version "5.13.20"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.13.20.tgz#247d3b2c6c4c4b71779d07dda0c72e1bd48a7370"
+  integrity sha512-TjGFa/XnJYt+wLmn8y9ssjyO2OhBMeEBtOHb9iJM16EWu2Du6L1Q6zSiEK2ziyYQM8agb4tumNIQFzqbxId7MA==
   dependencies:
     "@types/bson" "1.x || 4.0.x"
     "@types/mongodb" "^3.5.27"
